@@ -269,7 +269,7 @@ LANG = {
                "AI 사안별 요약과 관련 기사 원문 링크 제공"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
-  "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사(공습·교전), 외교·중재, 에너지·유가·LNG, "
+  "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
             "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 중심으로 정리합니다."),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
@@ -285,7 +285,7 @@ LANG = {
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순",
+  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "관련 매체 · 정부 · 유관기관 바로가기", "quick_note": "(가나다·알파벳순)",
@@ -305,7 +305,7 @@ LANG = {
                "domestic/foreign think-tank reports · AI issue summaries with source links"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
-  "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military (strikes/clashes), "
+  "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
             "economy &amp; trade, and aviation &amp; citizen safety."),
   "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
@@ -322,7 +322,7 @@ LANG = {
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest",
+  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — quick links", "quick_note": "(sorted alphabetically)",
@@ -343,7 +343,7 @@ LANG = {
                "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
-  "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر (الغارات/الاشتباكات)، "
+  "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
             "الاقتصاد والتجارة، والطيران وسلامة المواطنين."),
   "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
@@ -360,7 +360,7 @@ LANG = {
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات", "rep_badge": "الأحدث",
+  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "الإعلام · الحكومة · المؤسسات — روابط سريعة", "quick_note": "(مرتّبة أبجديًا)",
@@ -1073,7 +1073,7 @@ def _ql_key(item):
 
 
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
-           reports=None, issue_label=None, weekly_inline=None, lang="ko", nav=None, home_url=None):
+           reports=None, issue_label=None, weekly_inline=None, lang="ko", nav=None, home_url=None, new_since=None):
     L = LANG.get(lang, LANG["ko"])
     home_url = home_url or SITE_BASE
     now_utc = datetime.now(timezone.utc)
@@ -1122,16 +1122,19 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     def rep_dt(x):
         d = x.get("dt")
         return d.astimezone(TZ).strftime("%m/%d") if hasattr(d, "astimezone") else str(d or "")[:10]
-    rows = "".join(
-        f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
-        f'<span class="tag">{esc(tagmap.get(x.get("region","overseas"),L["t_over"]))}</span>{esc(x["title"])}'
-        f'<span class="src">{esc(x["source"])} · {rep_dt(x)}</span></a>'
-        for x in rep_list[:REPORT_SHOW_MAX])
+    def rep_row(x):
+        d = x.get("dt")
+        is_new = bool(new_since and hasattr(d, "astimezone") and d >= new_since)
+        newb = f'<span class="newtag">{esc(L["rep_new"])}</span>' if is_new else ""
+        return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
+                f'<span class="tag">{esc(tagmap.get(x.get("region","overseas"),L["t_over"]))}</span>{newb}{esc(x["title"])}'
+                f'<span class="src">{esc(x["source"])} · {rep_dt(x)}</span></a>')
+    rows = "".join(rep_row(x) for x in rep_list[:REPORT_SHOW_MAX])
     if rows:
         report_html = ('<details class="card report reportfold" open>'
                        '<summary class="repsum"><span class="bar" style="background:var(--gold)"></span>'
                        f'{esc(L["rep_head"])}<span class="hnote">{esc(L["rep_note"])}</span>'
-                       f'<span class="ai" style="background:var(--gold)">{esc(L["rep_badge"])}</span>'
+                       f'<span class="repbadge">{esc(L["rep_badge"])}</span>'
                        f'<span class="exp exp-c">{esc(L["expand"])} ▾</span>'
                        f'<span class="exp exp-o">{esc(L["collapse"])} ▴</span></summary>'
                        f'<div class="reprows">{rows}</div></details>')
@@ -1267,7 +1270,9 @@ TEMPLATE = """<!DOCTYPE html>
     font-size:15px;font-weight:800}}
   details.reportfold>summary::-webkit-details-marker{{display:none}}
   details.reportfold[open]>summary{{margin-bottom:10px}}
-  details.reportfold>summary .exp{{background:var(--gold)}}
+  details.reportfold>summary .exp{{margin-inline-start:0;background:var(--gold)}}
+  .repbadge{{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#111;background:var(--green);
+    border-radius:7px;padding:3px 10px;white-space:nowrap}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
@@ -1302,6 +1307,7 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
   .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
+  .reprows a .newtag{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:#e5484d;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
   footer .sign{{text-align:end;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
   .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
@@ -1502,6 +1508,8 @@ def main():
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
 
+    new_since_daily = start_q.astimezone(timezone.utc)          # 이번 회차 창(window) 시작 — 이후 발간 보고서는 '신규' 표기
+    new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
     os.makedirs("archive", exist_ok=True)
     slot_dt, ampm = _slot_of(now_q)
     dno = _daily_no(slot_dt)
@@ -1551,7 +1559,8 @@ def main():
             wwin = wlabel_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
             whtml = render(witems, wwin, wiss_l, wflat, issue_pool=wpool,
                            archive_list=archive_list, reports=wreports,
-                           issue_label=L["weekly_no"].format(n=wno), lang=lang, nav=nav, home_url=home_url(lang))
+                           issue_label=L["weekly_no"].format(n=wno), lang=lang, nav=nav,
+                           home_url=home_url(lang), new_since=new_since_weekly)
             with open(os.path.join("archive", wfn), "w", encoding="utf-8") as fh:
                 fh.write(whtml)
             if wiss_l:
@@ -1572,7 +1581,7 @@ def main():
         html = render(items, win_label, iss_l, flat, issue_pool=pool,
                       archive_list=archive_list, reports=reports,
                       issue_label=issue_label, weekly_inline=weekly_inline,
-                      lang=lang, nav=nav, home_url=home_url(lang))
+                      lang=lang, nav=nav, home_url=home_url(lang), new_since=new_since_daily)
         with open(main_out(lang), "w", encoding="utf-8") as fh:
             fh.write(html)
         with open(os.path.join("archive", cur), "w", encoding="utf-8") as fh:
