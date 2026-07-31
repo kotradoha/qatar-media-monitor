@@ -661,7 +661,8 @@ def gemini_issues(pool, win_label, weekly=False):
              if weekly else "아래 [기사 목록]을 읽고 이 갱신 주기의 내용을 ")
     prompt = (
         "당신은 주카타르대사관 상황실 분석관입니다. " + scope +
-        "'사안(issue)'별로 3~6개로 묶으세요. 카테고리 예시: 전쟁·군사 / 외교·중재 / 에너지·유가 / "
+        "'사안(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 사안이 많으면 8개 이상도 가능, "
+        "정말 조용하면 2개까지 줄여도 됨). 카테고리 예시: 전쟁·군사 / 외교·중재 / 에너지·유가 / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 항공·교민안전 / 경제.\n"
         "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), "
         "summary(한국어, 정부보고서식 '개조식·했음체'로 3~5개 핵심 포인트. "
@@ -795,7 +796,7 @@ def _ql_key(item):
 
 
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
-           reports=None, issue_label=None, weekly_link=None):
+           reports=None, issue_label=None, weekly_inline=None):
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     if issue_pool is None:
@@ -866,8 +867,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
                     f'<select onchange="if(this.value)location.href=this.value">{groups}</select></div>')
 
     issuelabel = f'<span class="issno">{esc(issue_label)}</span>' if issue_label else ""
-    weekly_html = (f'<a class="wbanner" href="{esc(weekly_link)}">📅 지난주 주간 종합 리포트 보기'
-                   f'<span class="em">일요일 자동 생성 · 지난 7일 종합</span></a>') if weekly_link else ""
+    weekly_html = weekly_inline or ""
 
     return TEMPLATE.format(
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
@@ -966,11 +966,13 @@ TEMPLATE = """<!DOCTYPE html>
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;max-width:60%}}
   .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
-  .wbanner{{display:block;background:linear-gradient(180deg,rgba(242,177,52,.14),rgba(242,177,52,.05));
-    border:1px solid rgba(242,177,52,.5);border-radius:12px;padding:11px 14px;margin:2px 0 14px;
-    color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700}}
-  .wbanner:hover{{border-color:var(--gold)}}
-  .wbanner .em{{color:var(--muted);font-weight:400;font-size:12px;margin-left:6px}}
+  .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(242,177,52,.5);border-radius:14px;
+    background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
+  .wsec .sumhead{{margin-top:2px}}
+  .wsec .wmeta{{font-size:11.5px;color:var(--muted);font-weight:400;margin-left:auto}}
+  .wsec .wlink{{margin-top:8px;font-size:12.5px}}
+  .wsec .wlink a{{color:var(--accent);text-decoration:none}}
+  .wsec .wlink a:hover{{text-decoration:underline}}
   .searchbox{{display:flex;align-items:center;gap:8px;margin:2px 0 16px;font-size:13px}}
   .searchbox input{{flex:1;max-width:440px;font-size:13px;color:var(--txt);background:var(--panel2);
     border:1px solid var(--line);border-radius:9px;padding:8px 11px}}
@@ -1174,10 +1176,10 @@ def main():
     daily_fname = f"d-{slot_dt.strftime('%Y%m%d')}-{ampm}.html"
     issue_label = (f"일간 제{dno}호" if dno else "일간(시범)")
 
-    # 일요일 오전 회차 → 지난 7일 주간 종합 리포트도 생성(일간과 동시 노출)
+    # 일요일 오전 회차 → 지난 7일 주간 종합 리포트도 생성(일간과 같은 페이지에 동시 노출)
     is_weekly = (ampm == "0700" and slot_dt.weekday() == WEEKLY_WEEKDAY and dno is not None)
     weekly_fname = f"w-{slot_dt.strftime('%Y%m%d')}.html" if is_weekly else None
-    weekly_link = (SITE_BASE + "archive/" + weekly_fname) if is_weekly else None
+    weekly_inline = None
 
     # 콤보박스 목록: 기존 아카이브 전부 보관(삭제 없음) + 이번 생성분 포함, 최신순
     files = {f for f in os.listdir("archive") if f.endswith(".html")}
@@ -1202,15 +1204,32 @@ def main():
         wissues = gemini_issues(wpool, wlabel, weekly=True)
         wflat = None if wissues else gemini_flat(wpool, wlabel)
         wreports = _merge_reports(witems, now_utc)
+        wno = _weekly_no(slot_dt.date())
+        # (1) 주간 단독 아카이브 페이지(콤보박스·영구 보관용)
         whtml = render(witems, wlabel, wissues, wflat, issue_pool=wpool,
                        archive_list=archive_list, reports=wreports,
-                       issue_label=f"주간 제{_weekly_no(slot_dt.date())}호")
+                       issue_label=f"주간 제{wno}호")
         with open(os.path.join("archive", weekly_fname), "w", encoding="utf-8") as f:
             f.write(whtml)
+        # (2) 일간 페이지 상단에 함께 노출할 주간 요약 인라인 블록
+        if wissues:
+            wbody = render_issues(wissues, wpool, now_utc)
+        elif wflat:
+            wbody = f'<div class="card sum"><div class="sumbody">{summary_to_html(wflat)}</div></div>'
+        else:
+            wbody = '<div class="empty" style="padding:8px 2px">주간 요약 미생성 — 다음 갱신에 재시도됩니다.</div>'
+        weekly_inline = (
+            '<div class="wsec">'
+            '<div class="sumhead"><span class="bar" style="background:var(--gold)"></span>'
+            f'📅 지난주 주간 종합 리포트 <span class="ai" style="background:var(--gold)">주간 제{wno}호</span>'
+            f'<span class="wmeta">{esc(wlabel)}</span></div>'
+            + wbody +
+            f'<div class="wlink"><a href="{SITE_BASE}archive/{esc(weekly_fname)}">주간 리포트 단독 페이지로 열기 →</a></div>'
+            '</div>')
 
     html = render(items, label, issues, flat, issue_pool=pool,
                   archive_list=archive_list, reports=reports,
-                  issue_label=issue_label, weekly_link=weekly_link)
+                  issue_label=issue_label, weekly_inline=weekly_inline)
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
     with open(os.path.join("archive", daily_fname), "w", encoding="utf-8") as f:
