@@ -47,11 +47,11 @@ DIRECT_FEEDS = [
 ]
 
 QUICK_LINKS = {
-    "카타르 현지 매체": [("Gulf Times", "https://www.gulf-times.com/"),
+    "카타르 현지 매체": [("Al Jazeera", "https://www.aljazeera.com/news/"),
+        ("Gulf Times", "https://www.gulf-times.com/"),
         ("The Peninsula", "https://thepeninsulaqatar.com/"),
         ("Qatar Tribune", "https://www.qatar-tribune.com/")],
-    "미국·해외 주요 매체": [("Al Jazeera", "https://www.aljazeera.com/news/"),
-        ("CNN", "https://www.cnn.com/world"),
+    "미국·해외 주요 매체": [("CNN", "https://www.cnn.com/world"),
         ("Reuters — Middle East", "https://www.reuters.com/world/middle-east/"),
         ("BBC — Middle East", "https://www.bbc.com/news/world/middle_east"),
         ("AP — Middle East", "https://apnews.com/hub/middle-east"),
@@ -62,7 +62,7 @@ QUICK_LINKS = {
         ("Iran International", "https://www.iranintl.com/en")],
     "국내(한국) 매체": [("연합뉴스 국제", "https://www.yna.co.kr/international/all"),
         ("YTN", "https://www.ytn.co.kr/"), ("한국경제", "https://www.hankyung.com/"),
-        ("문화일보", "https://www.munhwa.com/"), ("파이낸셜뉴스", "https://www.fnnews.com/"),
+        ("매일경제", "https://www.mk.co.kr/"), ("파이낸셜뉴스", "https://www.fnnews.com/"),
         ("조선일보", "https://www.chosun.com/"), ("중앙일보", "https://www.joongang.co.kr/")],
     "정부·공식 공지": [("카타르 외무부(MOFA) 성명", "https://mofa.gov.qa/en/latest-articles/statements"),
         ("한국 외교부 해외안전여행(0404)", "https://www.0404.go.kr/"),
