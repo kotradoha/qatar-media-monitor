@@ -809,17 +809,21 @@ TEMPLATE = """<!DOCTYPE html>
     <br>GitHub Actions가 매일 카타르시간 오전 7:00·오후 3:30에 자동 갱신합니다. © {year}
   </footer>
 </div>
-<script src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script>
   // 국기 이모지가 윈도우 등에서 'QA/IR/KR' 글자로 보이는 문제 방지 → 실제 국기 이미지로 렌더
-  window.addEventListener('DOMContentLoaded', function () {{
-    try {{
-      if (window.twemoji) twemoji.parse(document.body, {{
-        base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
-        folder: 'svg', ext: '.svg'
-      }});
-    }} catch (e) {{}}
-  }});
+  (function () {{
+    function run() {{
+      try {{
+        if (window.twemoji) twemoji.parse(document.body, {{
+          base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
+          folder: 'svg', ext: '.svg'
+        }});
+      }} catch (e) {{}}
+    }}
+    run();
+    window.addEventListener('DOMContentLoaded', run);
+  }})();
 </script>
 </body>
 </html>
