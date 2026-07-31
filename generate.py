@@ -356,6 +356,14 @@ def _domain_is_report(shref):
     s = (shref or "").lower()
     return any(dom in s for dom in REPORT_DOMAINS)
 
+# 한국 기관 '자체 발간물' 직접 포착용 — 각 기관 도메인을 구글뉴스 site: 로 조준 수집.
+# (기관 자체 RSS는 robots/비표준으로 확인이 어려워, 발행처 도메인을 직접 겨냥하는 방식으로 연결)
+KO_REPORT_SITE_DOMAINS = [
+    "kiep.go.kr", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
+    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "posri.re.kr", "kcmi.re.kr",
+]
+
 def is_report_source(src):
     s = (src or "").lower()
     if any(h in s for h in _REPORT_SUBS):
@@ -383,6 +391,9 @@ def collect(win_start_utc, now_utc, when_days=2):
     for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
     for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko", REPORT_QUERY_DAYS)))
     for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en", REPORT_QUERY_DAYS)))
+    # 한국 기관 자체 발간물: 기관 도메인을 site: 로 직접 조준(중동·유가·카타르 주제만 통과)
+    for dom in KO_REPORT_SITE_DOMAINS:
+        feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
     for lang, label, url in feeds:
@@ -729,7 +740,8 @@ def gemini_issues(pool, win_label, weekly=False):
         "다만 이런 소재라도 카타르 국익·에너지·안보·물류·외교에 직접 연결되면 포함합니다"
         "(예: 가자 휴전 협상·카타르 중재는 '외교·중재' 사안으로 포함하되, 개별 난민의 생활고 미담은 제외).\n"
         "핵심 판별 기준: 가자·이스라엘·이란 등 소재라도 ①카타르가 실제로 역할·조치를 했거나(중재·성명·정상외교·지원·군사·에너지 등), "
-        "②사안이 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
+        "②카타르가 공격·공습을 당하거나 카타르의 안보·영공·경제·에너지·항공·교민 안전이 직접 영향받거나, "
+        "③사안이 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
         "'카타르 매체에 실렸다'는 사실만으로는 관련성이 생기지 않습니다 — 카타르의 역할도 없고 정세·에너지·경제 함의도 없는 기사는 제외하세요.\n"
         "관련성이 약한 기사는 억지로 사안으로 묶지 말고 제외하고, 애매하면 사안 수를 줄이세요 — 수량보다 정확도·논리성 우선.\n"
         "'사안(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
@@ -747,8 +759,8 @@ def gemini_issues(pool, win_label, weekly=False):
         "ids(그 사안 관련 기사 id 정수 배열, 최대 16개).\n"
         "중요 규칙:\n"
         "- [카타르현지]는 '카타르 매체발'이라는 출처 표시일 뿐, 그 자체로 사안 가치를 부여하지 않습니다. "
-        "카타르가 실제로 역할·조치를 한 사안(중재·성명·정상외교·지원·군사·에너지 계약 등)이나 카타르 국익·안보·경제에 직접 영향을 주는 사안만 "
-        "'카타르 관련'으로 최우선하세요. 그런 카타르 실질 관여 사안이 있으면 반드시 1개 이상 만들고 관련 [카타르현지] 기사를 ids에 우선 포함하세요. "
+        "카타르가 실제로 역할·조치를 한 사안(중재·성명·정상외교·지원·군사·에너지 계약 등)이나, 카타르가 공격·공습을 당하거나 "
+        "카타르 국익·안보·영공·경제·에너지·교민 안전에 직접 영향을 주는 사안만 '카타르 관련'으로 최우선하세요. 그런 카타르 실질 관여 사안이 있으면 반드시 1개 이상 만들고 관련 [카타르현지] 기사를 ids에 우선 포함하세요. "
         "단, 카타르 매체에 실렸을 뿐 카타르의 역할이 없고 정세·에너지·경제 함의도 없는 연성기사(예: 난민 개인사 미담, 지역 생활기사)는 "
         "최우선은커녕 사안으로 만들지 마세요.\n"
         "- 각 사안의 ids에는 그 사안과 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
@@ -1315,6 +1327,11 @@ def main():
     mode = "issues" if issues else ("flat" if flat else "none")
     print(f"generated · {issue_label} · window={label} · items={len(items)} · summary={mode} · "
           f"weekly={'Y' if is_weekly else 'N'} · reports_total={len(reports)} · archive={len(archive_list)}")
+    # 진단: 보고서 발행처 분포(한국 기관이 실제 잡히는지 확인용)
+    rep_srcs = {}
+    for r in reports:
+        rep_srcs[r.get("source", "?")] = rep_srcs.get(r.get("source", "?"), 0) + 1
+    print("report sources:", sorted(rep_srcs.items(), key=lambda kv: -kv[1]))
 
 
 def _merge_reports(items, now_utc):
