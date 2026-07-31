@@ -1211,7 +1211,7 @@ TEMPLATE = """<!DOCTYPE html>
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:19px;margin:0}}
   .sub{{color:var(--muted);font-size:12.5px;margin-top:6px}}
-  .submeta{{color:var(--muted);font-size:12.5px;margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}}
+  .submeta{{color:var(--muted);font-size:12.5px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}}
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
