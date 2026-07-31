@@ -30,7 +30,7 @@ TITLE = "🇶🇦 카타르·중동정세 언론 모니터링"
 SUBTITLE = "갱신 주기 내 사안별 요약 · 카타르 관련 필수 포함 · 공관 모니터링용"
 
 Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security"]
-Q_QATAR_KO = ["카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세"]
+Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관"]
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
                 "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping"]
 Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동"]
@@ -261,35 +261,63 @@ def _gemini_key():
     return ""
 
 
+# 진단 메시지(요약 실패 시 사이트에 표시 → 원인 파악용)
+LLM_DIAG = []
+def _diag(msg):
+    print(msg)
+    if len(LLM_DIAG) < 8:
+        LLM_DIAG.append(msg)
+
+
 # ───────────────────── GitHub Models (1순위·무료·전세계) ─────────────────────
+# 엔드포인트/모델ID 포맷이 시점마다 달라 여러 조합을 순차 시도.
+GH_ENDPOINTS = [
+    "https://models.github.ai/inference/chat/completions",
+    "https://models.inference.ai.azure.com/chat/completions",
+]
+
+def _gh_model_variants(model):
+    # "openai/gpt-4o-mini" ↔ "gpt-4o-mini" 양쪽 포맷 모두 시도
+    v = [model]
+    if "/" in model:
+        v.append(model.split("/", 1)[1])
+    else:
+        v.append("openai/" + model)
+    return v
+
 def github_models_call(model, prompt, json_mode):
     key = _gh_token()
     if not key:
         return None
-    payload = {
-        "model": model,
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.3,
-        "max_tokens": 2048,
-    }
-    if json_mode:
-        payload["response_format"] = {"type": "json_object"}
-    body = json.dumps(payload).encode("utf-8")
-    for attempt in range(3):
-        req = urllib.request.Request(
-            GH_ENDPOINT, data=body,
-            headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                data = json.loads(r.read().decode("utf-8"))
-            return data["choices"][0]["message"]["content"].strip()
-        except urllib.error.HTTPError as ex:
-            if ex.code == 429:
-                print(f"[warn] ghmodels {model} 429, retry {attempt+1}/3")
-                time.sleep(5 * (attempt + 1)); continue
-            print(f"[warn] ghmodels {model} HTTP {ex.code}"); return None
-        except Exception as ex:
-            print(f"[warn] ghmodels {model} failed: {ex}"); return None
+    for endpoint in GH_ENDPOINTS:
+        for mid in _gh_model_variants(model):
+            payload = {
+                "model": mid,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.3,
+                "max_tokens": 2048,
+            }
+            if json_mode:
+                payload["response_format"] = {"type": "json_object"}
+            body = json.dumps(payload).encode("utf-8")
+            req = urllib.request.Request(
+                endpoint, data=body,
+                headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
+            try:
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    data = json.loads(r.read().decode("utf-8"))
+                return data["choices"][0]["message"]["content"].strip()
+            except urllib.error.HTTPError as ex:
+                try:
+                    errbody = ex.read().decode("utf-8", "ignore")[:200]
+                except Exception:
+                    errbody = ""
+                host = endpoint.split("/")[2]
+                _diag(f"[warn] ghmodels {mid}@{host} HTTP {ex.code} {errbody}")
+                if ex.code == 429:
+                    time.sleep(4);
+            except Exception as ex:
+                _diag(f"[warn] ghmodels {mid} failed: {ex}")
     return None
 
 
@@ -313,9 +341,10 @@ def gemini_call(model, prompt, json_mode):
             if ex.code == 429:                     # 한도 초과 → 잠깐 쉬고 재시도
                 print(f"[warn] {model} 429, retry {attempt+1}/3")
                 time.sleep(6 * (attempt + 1)); continue
-            print(f"[warn] {model} HTTP {ex.code}"); return None
+            _diag(f"[warn] gemini {model} HTTP {ex.code}"); return None
         except Exception as ex:
-            print(f"[warn] {model} failed: {ex}"); return None
+            _diag(f"[warn] gemini {model} failed: {ex}"); return None
+    _diag(f"[warn] gemini {model} 429(한도)")
     return None
 
 
@@ -345,9 +374,9 @@ def groq_call(model, prompt, json_mode):
             if ex.code == 429:
                 print(f"[warn] groq {model} 429, retry {attempt+1}/3")
                 time.sleep(4 * (attempt + 1)); continue
-            print(f"[warn] groq {model} HTTP {ex.code}"); return None
+            _diag(f"[warn] groq {model} HTTP {ex.code}"); return None
         except Exception as ex:
-            print(f"[warn] groq {model} failed: {ex}"); return None
+            _diag(f"[warn] groq {model} failed: {ex}"); return None
     return None
 
 
@@ -517,9 +546,12 @@ def render(items, win_label, issues, flat_text):
                         '<span class="ai">AI 자동요약</span></div>'
                         f'<div class="sumbody">{summary_to_html(flat_text)}</div></div>')
     else:
+        diag = " · ".join(LLM_DIAG[-3:]) if LLM_DIAG else ""
+        diag_html = f'<div class="pl" style="color:var(--muted);font-size:11px;margin-top:6px">진단: {esc(diag)}</div>' if diag else ""
         summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 갱신 핵심 요약</div>'
-                        '<div class="sumbody"><div class="pl" style="color:var(--muted)">요약 일시 미생성(무료 Gemini 한도 초과 등) — '
-                        '다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.</div></div></div>')
+                        '<div class="sumbody"><div class="pl" style="color:var(--muted)">요약 일시 미생성 — '
+                        '다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.</div>'
+                        f'{diag_html}</div></div>')
 
     quick = ""
     for g, links in QUICK_LINKS.items():
