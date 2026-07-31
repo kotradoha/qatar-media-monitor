@@ -266,7 +266,7 @@ LANG = {
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
-            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 위주로 정리합니다."),
+            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 위주로 정리"),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
@@ -303,7 +303,7 @@ LANG = {
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
-            "economy &amp; trade, and aviation &amp; citizen safety."),
+            "economy &amp; trade, and aviation &amp; citizen safety"),
   "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
   "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
@@ -341,7 +341,7 @@ LANG = {
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
-            "الاقتصاد والتجارة، والطيران وسلامة المواطنين."),
+            "الاقتصاد والتجارة، والطيران وسلامة المواطنين"),
   "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
   "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
@@ -1164,7 +1164,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     return TEMPLATE.format(
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
-        title=esc(L["title"]), subtitle=esc((f'[{L["org"]}] ' if L.get("org") else "") + L["subtitle"]), scope=L["scope"],
+        title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
         orgline="",
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
@@ -1289,9 +1289,8 @@ TEMPLATE = """<!DOCTYPE html>
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;max-width:60%}}
   .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
-  .scopebar{{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
-    border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}}
-  .scopebar b{{color:var(--txt);font-weight:700}}
+  .scopeline{{font-size:12.5px;color:var(--muted);line-height:1.55;margin:3px 0 0}}
+  .scopeline b{{color:var(--txt);font-weight:700}}
   .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(242,177,52,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .wsec .sumhead{{margin-top:2px}}
@@ -1322,7 +1321,7 @@ TEMPLATE = """<!DOCTYPE html>
     .issue,.card,details,.grp,.reprows a,li,.qgroup{{break-inside:avoid}}
     .issue,.card{{box-shadow:none}}
     h1{{font-size:16px}}
-    .scopebar,.card.report{{background:#fff !important}}
+    .card.report{{background:#fff !important}}
   }}
 </style>
 </head>
@@ -1331,14 +1330,13 @@ TEMPLATE = """<!DOCTYPE html>
   <header>
     <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}{nav}</div>
     <div class="sub"><span>{subtitle}</span></div>
+    <div class="scopeline">🎯 {scope}</div>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
       <span>{coverage_label}: <b>{window}</b></span>
       <span>{counts}</span>
     </div>
   </header>
-
-  <div class="scopebar">🎯 {scope}</div>
 
   {archive}
 
