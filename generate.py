@@ -269,6 +269,8 @@ LANG = {
                "AI 사안별 요약과 관련 기사 원문 링크 제공"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
+  "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 <b>전쟁·군사(공습·교전), 외교·중재, 에너지·유가·LNG, "
+            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전</b> 중심으로 정리합니다."),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
@@ -303,6 +305,9 @@ LANG = {
                "domestic/foreign think-tank reports · AI issue summaries with source links"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
+  "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in <b>war &amp; military (strikes/clashes), "
+            "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
+            "economy &amp; trade, and aviation &amp; citizen safety</b>."),
   "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
   "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
@@ -338,6 +343,9 @@ LANG = {
                "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
+  "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في <b>الحرب والعسكر (الغارات/الاشتباكات)، "
+            "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
+            "الاقتصاد والتجارة، والطيران وسلامة المواطنين</b>."),
   "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
   "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
@@ -1157,7 +1165,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     return TEMPLATE.format(
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
-        title=esc(L["title"]), subtitle=esc(L["subtitle"]),
+        title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
@@ -1272,6 +1280,9 @@ TEMPLATE = """<!DOCTYPE html>
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;max-width:60%}}
   .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
+  .scopebar{{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
+    border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}}
+  .scopebar b{{color:var(--txt);font-weight:700}}
   .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(242,177,52,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .wsec .sumhead{{margin-top:2px}}
@@ -1301,6 +1312,8 @@ TEMPLATE = """<!DOCTYPE html>
       <span>{counts}</span>
     </div>
   </header>
+
+  <div class="scopebar">🎯 {scope}</div>
 
   {archive}
 
