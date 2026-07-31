@@ -167,13 +167,13 @@ QUICK_LINKS = {
         ("파이낸셜뉴스", "https://www.fnnews.com/"),
         ("서울경제", "https://www.sedaily.com/"),
         ("이데일리", "https://www.edaily.co.kr/")],
-    "🏛️ 카타르 정부 공식": [("외교부 (MOFA)", "https://mofa.gov.qa/en"),
+    "🏛️ 카타르 정부": [("외교부 (MOFA)", "https://mofa.gov.qa/en"),
         ("내무부 (MOI)", "https://www.moi.gov.qa/"),
         ("국방부 (MOD)", "https://www.mod.gov.qa/"),
         ("카타르에너지 (QatarEnergy)", "https://www.qatarenergy.qa/en"),
         ("민간항공청 (CAA)", "https://caa.gov.qa/en/"),
         ("정부 커뮤니케이션실 (GCO)", "https://www.gco.gov.qa/en/")],
-    "🏛️ 우리 정부(한국) 공식": [("외교부", "https://www.mofa.go.kr/"),
+    "🏛️ 우리 정부(한국)": [("외교부", "https://www.mofa.go.kr/"),
         ("주카타르대사관", "https://overseas.mofa.go.kr/qa-ko/index.do"),
         ("해외안전여행(0404)", "https://www.0404.go.kr/"),
         ("대통령실", "https://www.president.go.kr/"),
@@ -182,26 +182,26 @@ QUICK_LINKS = {
         ("국토교통부", "https://www.molit.go.kr/"),
         ("해양수산부", "https://www.mof.go.kr/"),
         ("국방부", "https://www.mnd.go.kr/")],
-    "📑 연구기관·에너지(국책)": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
+    "📑 국내 연구기관": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
         ("KDI 한국개발연구원", "https://www.kdi.re.kr/"),
         ("에너지경제연구원(KEEI)", "https://www.keei.re.kr/"),
         ("국제금융센터(KCIF)", "https://www.kcif.or.kr/"),
         ("산업연구원(KIET)", "https://www.kiet.re.kr/"),
         ("한국가스공사(KOGAS)", "https://www.kogas.or.kr/"),
         ("한국석유공사 오피넷(유가)", "https://www.opinet.co.kr/"),
-        ("KOTRA 해외시장뉴스", "https://dream.kotra.or.kr/")],
-    "📑 민간·금융 연구소": [("현대경제연구원(HRI)", "http://www.hri.co.kr/"),
+        ("KOTRA 해외시장뉴스", "https://dream.kotra.or.kr/"),
+        ("현대경제연구원(HRI)", "http://www.hri.co.kr/"),
         ("삼성글로벌리서치(SGR)", "https://www.samsungsgr.com/"),
         ("LG경영연구원", "https://www.lgbr.co.kr/"),
         ("포스코경영연구원(POSRI)", "https://www.posri.re.kr/"),
         ("하나금융경영연구소", "https://www.hanaif.re.kr/"),
         ("한국무역협회(KITA)", "https://www.kita.net/"),
         ("무역협회 국제무역통상연구원", "https://iit.kita.net/"),
-        ("자본시장연구원(KCMI)", "https://www.kcmi.re.kr/")],
-    "📑 외교·안보 연구기관(국책)": [("국립외교원(IFANS)", "https://www.ifans.go.kr/"),
+        ("자본시장연구원(KCMI)", "https://www.kcmi.re.kr/"),
+        ("국립외교원(IFANS)", "https://www.ifans.go.kr/"),
         ("아산정책연구원", "https://www.asaninst.org/"),
         ("세종연구소", "https://www.sejong.org/")],
-    "🌐 해외 연구기관·국제기구": [("IEA 국제에너지기구", "https://www.iea.org/"),
+    "🌐 해외 연구기관": [("IEA 국제에너지기구", "https://www.iea.org/"),
         ("OPEC", "https://www.opec.org/"),
         ("美 EIA 에너지정보청", "https://www.eia.gov/"),
         ("IMF", "https://www.imf.org/"),
@@ -217,8 +217,8 @@ QUICK_LINKS = {
         ("Middle East Institute", "https://www.mei.edu/"),
         ("Middle East Council(도하)", "https://mecouncil.org/"),
         ("Al Jazeera Centre for Studies", "https://studies.aljazeera.net/en"),
-        ("Eurasia Group", "https://www.eurasiagroup.net/")],
-    "📰 해외 심층분석·경제전망": [("The Economist — ME·Africa", "https://www.economist.com/middle-east-and-africa"),
+        ("Eurasia Group", "https://www.eurasiagroup.net/"),
+        ("The Economist — ME·Africa", "https://www.economist.com/middle-east-and-africa"),
         ("Economist Intelligence(EIU)", "https://www.eiu.com/"),
         ("Foreign Affairs — ME", "https://www.foreignaffairs.com/middle-east"),
         ("Foreign Policy", "https://foreignpolicy.com/"),
@@ -228,13 +228,12 @@ QUICK_LINKS = {
         ("S&P Global Commodity Insights", "https://www.spglobal.com/commodityinsights/")],
 }
 
-# 바로가기 대분류: 관련 매체 / 정부 / 유관기관 (각 아래에 위 세부 그룹을 배치)
+# 바로가기 대분류: 언론 매체 / 정부 / 유관기관·연구소 (각 아래에 세부 그룹 배치)
 QUICK_SECTIONS = [
-    ("📰 관련 매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
+    ("📰 언론 매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
                    "🇰🇷 국내 종합·방송", "🇰🇷 국내 경제지"]),
-    ("🏛️ 정부", ["🏛️ 카타르 정부 공식", "🏛️ 우리 정부(한국) 공식"]),
-    ("📑 유관기관", ["📑 연구기관·에너지(국책)", "📑 민간·금융 연구소", "📑 외교·안보 연구기관(국책)",
-                 "🌐 해외 연구기관·국제기구", "📰 해외 심층분석·경제전망"]),
+    ("🏛️ 정부", ["🏛️ 카타르 정부", "🏛️ 우리 정부(한국)"]),
+    ("📑 유관기관·연구소", ["📑 국내 연구기관", "🌐 해외 연구기관"]),
 ]
 
 # ───────────── 다국어(i18n): 한국어(기본)·영어·아랍어 ─────────────
@@ -242,9 +241,9 @@ LANGS = ["ko", "en", "ar"]
 LANG_NAME = {"ko": "한국어", "en": "English", "ar": "العربية"}
 
 QSEC_I18N = {
-    "📰 관련 매체": {"en": "📰 Media", "ar": "📰 وسائل الإعلام"},
+    "📰 언론 매체": {"en": "📰 Media", "ar": "📰 وسائل الإعلام"},
     "🏛️ 정부": {"en": "🏛️ Government", "ar": "🏛️ الجهات الحكومية"},
-    "📑 유관기관": {"en": "📑 Institutions & Research", "ar": "📑 المؤسسات ومراكز الأبحاث"},
+    "📑 유관기관·연구소": {"en": "📑 Institutions & Research", "ar": "📑 المؤسسات ومراكز الأبحاث"},
 }
 QGROUP_I18N = {
     "🇶🇦 카타르 현지 매체": {"en": "🇶🇦 Qatar local media", "ar": "🇶🇦 وسائل إعلام قطرية"},
@@ -252,13 +251,10 @@ QGROUP_I18N = {
     "🌐 해외(미국·유럽 등) 매체": {"en": "🌐 Global media (US·Europe)", "ar": "🌐 إعلام دولي (أمريكا·أوروبا)"},
     "🇰🇷 국내 종합·방송": {"en": "🇰🇷 Korea — general & broadcast", "ar": "🇰🇷 كوريا — عام وبث"},
     "🇰🇷 국내 경제지": {"en": "🇰🇷 Korea — business press", "ar": "🇰🇷 كوريا — صحافة اقتصادية"},
-    "🏛️ 카타르 정부 공식": {"en": "🏛️ Qatar government", "ar": "🏛️ حكومة قطر"},
-    "🏛️ 우리 정부(한국) 공식": {"en": "🏛️ Korean government", "ar": "🏛️ الحكومة الكورية"},
-    "📑 연구기관·에너지(국책)": {"en": "📑 Public research & energy (Korea)", "ar": "📑 أبحاث حكومية وطاقة (كوريا)"},
-    "📑 민간·금융 연구소": {"en": "📑 Private & financial institutes", "ar": "📑 معاهد خاصة ومالية"},
-    "📑 외교·안보 연구기관(국책)": {"en": "📑 Foreign-policy & security institutes", "ar": "📑 معاهد السياسة والأمن"},
-    "🌐 해외 연구기관·국제기구": {"en": "🌐 Global institutes & int'l orgs", "ar": "🌐 معاهد دولية ومنظمات"},
-    "📰 해외 심층분석·경제전망": {"en": "📰 Global analysis & outlook", "ar": "📰 تحليلات وتوقعات دولية"},
+    "🏛️ 카타르 정부": {"en": "🏛️ Qatar government", "ar": "🏛️ حكومة قطر"},
+    "🏛️ 우리 정부(한국)": {"en": "🏛️ Korean government", "ar": "🏛️ الحكومة الكورية"},
+    "📑 국내 연구기관": {"en": "📑 Korean research institutes", "ar": "📑 معاهد بحثية كورية"},
+    "🌐 해외 연구기관": {"en": "🌐 Global research institutes", "ar": "🌐 معاهد بحثية دولية"},
 }
 
 LANG = {
@@ -288,7 +284,7 @@ LANG = {
   "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
-  "quick_head": "관련 매체 · 정부 · 유관기관 바로가기", "quick_note": "(가나다·알파벳순)",
+  "quick_head": "언론 매체 · 정부 · 유관기관·연구소 바로가기", "quick_note": "(가나다·알파벳순)",
   "foot1": ("본 페이지는 카타르·한국·해외 주요 언론과 국내외 연구기관·국제기구·정부기관의 공개 자료를 자동으로 수집하여, "
             "카타르와 관련된 중동 정세를 사안별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다."),
   "foot2": "갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.",
@@ -1039,10 +1035,9 @@ def render_issues(issues, pool, now_utc, L=None):
         if kr: groups += f'<div class="grp"><div class="gh">{esc(L["g_korea"])}</div>' + "".join(link_row(a) for a in kr) + '</div>'
         if not groups:
             groups = f'<div class="grp"><div class="gh" style="color:var(--muted)">{esc(L["nomap"])}</div></div>'
-        fig = f'<div class="figs">{esc(L["key_fig"])}: {figures}</div>' if figures else ""
         out.append(
             f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
-            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div><p>{summary}</p>{fig}</div>'
+            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div><p>{summary}</p></div>'
             f'<div class="right">{groups}</div></div></div>')
     return "\n".join(out)
 
@@ -1258,15 +1253,16 @@ TEMPLATE = """<!DOCTYPE html>
   details.fulllist{{margin-top:6px}}
   details.fulllist>summary{{cursor:pointer;list-style:none;user-select:none;display:flex;align-items:center;gap:8px;
     font-size:14px;font-weight:800;color:var(--txt);letter-spacing:.2px;
-    padding:13px 16px;border:1px solid var(--accent);border-radius:12px;
-    background:linear-gradient(180deg,rgba(77,163,255,.12),transparent),var(--panel2);transition:background .15s,box-shadow .15s}}
+    padding:13px 16px;border:1px solid var(--line);border-radius:12px;
+    background:var(--panel2);transition:background .15s,box-shadow .15s}}
   details.fulllist>summary::-webkit-details-marker{{display:none}}
-  details.fulllist>summary:hover{{background:linear-gradient(180deg,rgba(77,163,255,.22),transparent),var(--panel2);
-    box-shadow:0 0 0 3px rgba(77,163,255,.12)}}
+  details.fulllist>summary:hover{{background:var(--panel);box-shadow:0 0 0 3px rgba(127,127,127,.12)}}
   details.fulllist[open]>summary{{margin-bottom:12px}}
   details.fulllist .chev{{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
-    border-radius:50%;background:var(--accent);color:#111;font-size:12px;transition:transform .15s;flex:0 0 auto}}
+    border-radius:50%;background:var(--muted);color:#fff;font-size:12px;transition:transform .15s;flex:0 0 auto}}
   details.fulllist[open] .chev{{transform:rotate(90deg)}}
+  details.fulllist>summary .exp{{background:var(--muted);color:#fff}}
+  details.reportfold{{margin-top:20px}}
   summary .exp{{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#111;
     background:var(--accent);border-radius:7px;padding:3px 10px;white-space:nowrap}}
   summary .exp-o{{display:none;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}}
