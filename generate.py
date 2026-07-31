@@ -1128,11 +1128,13 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         f'<span class="src">{esc(x["source"])} · {rep_dt(x)}</span></a>'
         for x in rep_list[:REPORT_SHOW_MAX])
     if rows:
-        report_html = ('<div class="card report"><div class="sumhead">'
-                       f'<span class="bar" style="background:var(--gold)"></span>{esc(L["rep_head"])}'
-                       f'<span class="hnote">{esc(L["rep_note"])}</span>'
-                       f'<span class="ai" style="background:var(--gold)">{esc(L["rep_badge"])}</span></div>'
-                       f'<div class="reprows">{rows}</div></div>')
+        report_html = ('<details class="card report reportfold" open>'
+                       '<summary class="repsum"><span class="bar" style="background:var(--gold)"></span>'
+                       f'{esc(L["rep_head"])}<span class="hnote">{esc(L["rep_note"])}</span>'
+                       f'<span class="ai" style="background:var(--gold)">{esc(L["rep_badge"])}</span>'
+                       f'<span class="exp exp-c">{esc(L["expand"])} ▾</span>'
+                       f'<span class="exp exp-o">{esc(L["collapse"])} ▴</span></summary>'
+                       f'<div class="reprows">{rows}</div></details>')
     else:
         report_html = ""
 
@@ -1256,11 +1258,16 @@ TEMPLATE = """<!DOCTYPE html>
   details.fulllist .chev{{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
     border-radius:50%;background:var(--accent);color:#111;font-size:12px;transition:transform .15s;flex:0 0 auto}}
   details.fulllist[open] .chev{{transform:rotate(90deg)}}
-  details.fulllist>summary .exp{{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#111;
+  summary .exp{{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#111;
     background:var(--accent);border-radius:7px;padding:3px 10px;white-space:nowrap}}
-  details.fulllist>summary .exp-o{{display:none;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}}
-  details.fulllist[open]>summary .exp-c{{display:none}}
-  details.fulllist[open]>summary .exp-o{{display:inline-block}}
+  summary .exp-o{{display:none;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}}
+  details[open]>summary .exp-c{{display:none}}
+  details[open]>summary .exp-o{{display:inline-block}}
+  details.reportfold>summary{{cursor:pointer;list-style:none;user-select:none;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+    font-size:15px;font-weight:800}}
+  details.reportfold>summary::-webkit-details-marker{{display:none}}
+  details.reportfold[open]>summary{{margin-bottom:10px}}
+  details.reportfold>summary .exp{{background:var(--gold)}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
@@ -1299,6 +1306,21 @@ TEMPLATE = """<!DOCTYPE html>
   footer .sign{{text-align:end;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
   .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
+  /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
+  @media print {{
+    :root{{--bg:#fff;--panel:#fff;--panel2:#fbfbfd;--line:#d0d0d0;--txt:#000;--muted:#555;--accent:#1e6bd6;--gold:#b8860b;--green:#2fbf71}}
+    @page{{size:A4;margin:12mm}}
+    html,body{{background:#fff;color:#000}}
+    .wrap{{max-width:none;margin:0;padding:0}}
+    header{{position:static;border-bottom:1px solid #ccc}}
+    .langbar,.archsel,.exp,.dot{{display:none !important}}
+    a{{color:#000 !important;text-decoration:none}}
+    .grid4{{grid-template-columns:1fr 1fr}}
+    .issue,.card,details,.grp,.reprows a,li,.qgroup{{break-inside:avoid}}
+    .issue,.card{{box-shadow:none}}
+    h1{{font-size:16px}}
+    .scopebar,.card.report{{background:#fff !important}}
+  }}
 </style>
 </head>
 <body>
@@ -1359,6 +1381,18 @@ TEMPLATE = """<!DOCTYPE html>
     }}
     run();
     window.addEventListener('DOMContentLoaded', run);
+  }})();
+  // 인쇄·PDF 저장 시 접힌 섹션(전체 목록·보고서)을 자동으로 펼쳐 전부 출력, 인쇄 후 원복
+  (function () {{
+    var saved = [];
+    window.addEventListener('beforeprint', function () {{
+      saved = [];
+      document.querySelectorAll('details').forEach(function (d) {{ saved.push([d, d.open]); d.open = true; }});
+    }});
+    window.addEventListener('afterprint', function () {{
+      saved.forEach(function (p) {{ p[0].open = p[1]; }});
+      saved = [];
+    }});
   }})();
 </script>
 </body>
