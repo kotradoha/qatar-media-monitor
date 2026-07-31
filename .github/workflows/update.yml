@@ -37,7 +37,6 @@ jobs:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # 1순위: GitHub Models(내장 토큰, 키 발급 불필요)
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # 2순위(선택)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 3순위(선택). 모두 없으면 헤드라인만
-          BUTTONDOWN_USER: ${{ vars.BUTTONDOWN_USER }}     # 이메일 구독폼 사용자명(있으면 구독폼 활성화)
         run: python generate.py
 
       - name: Commit & push if changed
