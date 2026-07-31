@@ -277,11 +277,11 @@ LANG = {
   "issue": "사안", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
-  "full_summary": "전체 기사 목록 (총 {n}건)", "expand": "펼쳐보기", "collapse": "접기",
+  "full_summary": "전체 기사 목록 (총 {n}건)", "list_note": "(카타르, 이란, 해외, 한국)", "expand": "펼쳐보기", "collapse": "접기",
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 최신 발간물)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론 매체 · 정부 · 유관기관·연구소 링크 모음", "quick_note": "(가나다·알파벳순)",
@@ -314,11 +314,11 @@ LANG = {
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
   "flag": "Qatar",
-  "full_summary": "Full article list (total {n})", "expand": "Expand", "collapse": "Collapse",
+  "full_summary": "Full article list (total {n})", "list_note": "(Qatar, Iran, Global, Korea)", "expand": "Expand", "collapse": "Collapse",
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Latest publications by research institutes)", "rep_badge": "Newest", "rep_new": "New this edition",
+  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes and others)", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — quick links", "quick_note": "(sorted alphabetically)",
@@ -352,11 +352,11 @@ LANG = {
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
   "flag": "قطر",
-  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "expand": "توسيع", "collapse": "طيّ",
+  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "expand": "توسيع", "collapse": "طيّ", "list_note": "(قطر، إيران، دولي، كوريا)",
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(أحدث منشورات مراكز الأبحاث)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
+  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "الإعلام · الحكومة · المؤسسات — روابط سريعة", "quick_note": "(مرتّبة أبجديًا)",
@@ -518,7 +518,7 @@ def is_report_source(src):
         return True
     return any(rx.search(s) for rx in _REPORT_REGEXES)
 
-# 심층 보고서 판별: '발행처(source 이름 또는 원발행처 도메인)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
+# 심층 보고서 판별: '발행처(source 이름 또는 원발행처 도메인)가 실제 연구기관 등'인 경우만 인정.
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
 def looks_report(title, src, shref=""):
     # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
@@ -1171,7 +1171,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
-        expand=esc(L["expand"]), collapse=esc(L["collapse"]),
+        expand=esc(L["expand"]), collapse=esc(L["collapse"]), list_note=esc(L["list_note"]),
         col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
         quick_head=esc(L["quick_head"]), quick_note=esc(L["quick_note"]),
         foot1=L["foot1"], foot2=L["foot2"], foot3=L["foot3"], sign=esc(L["sign"]),
@@ -1203,7 +1203,7 @@ TEMPLATE = """<!DOCTYPE html>
   .titcol{{display:flex;flex-direction:column;gap:1px}}
   .entitle{{font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;font-size:14px;font-weight:600;color:#52514e;letter-spacing:-0.14px}}
   .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
-  .langbar{{display:flex;gap:6px;margin-inline-start:auto}}
+  .langrow{{display:flex;justify-content:flex-end;margin-bottom:6px}} .langbar{{display:flex;gap:6px}}
   .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
   .langbtn.on{{color:#111;background:var(--accent);border-color:var(--accent);font-weight:700}}
   .langbtn:hover{{color:var(--txt)}}
@@ -1306,7 +1306,7 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a .newtag{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:#e5484d;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
   footer .sign{{text-align:end;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
-  .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
+  .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}} .hsub{{order:2;flex-basis:100%;font-size:11px;font-weight:400;color:var(--muted);margin-top:-4px}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {{
@@ -1328,7 +1328,7 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <div class="wrap">
   <header>
-    <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}{nav}</div>
+    <div class="langrow">{nav}</div><div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}</div>
     <div class="sub"><span>{subtitle}</span></div>
     <div class="scopeline">🎯 {scope}</div>
     <div class="submeta">
@@ -1345,7 +1345,7 @@ TEMPLATE = """<!DOCTYPE html>
   {summary}
 
   <details class="fulllist foldbox">
-    <summary><span class="chev">▸</span> {full_summary} <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
+    <summary><span class="chev">▸</span> {full_summary}<span class="hsub">{list_note}</span> <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
     <div class="grid4">
       <div class="card"><h2><span class="bar"></span>{col_qatar}</h2><ul>{qatar}</ul></div>
       <div class="card"><h2><span class="bar"></span>{col_iran}</h2><ul>{me_ir}</ul></div>
