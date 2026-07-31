@@ -693,7 +693,7 @@ TEMPLATE = """<!DOCTYPE html>
   @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85}}}}
   *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--txt);line-height:1.5;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}}
-  .wrap{{max-width:1100px;margin:0 auto;padding:18px 14px 60px}}
+  .wrap{{max-width:1180px;margin:0 auto;padding:18px 14px 60px}}
   header{{position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 72%,transparent);
     padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
@@ -735,6 +735,9 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:720px){{.grid{{grid-template-columns:1fr}}}}
   .grid3{{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}}
   @media (max-width:820px){{.grid3{{grid-template-columns:1fr}}}}
+  .grid4{{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px}}
+  @media (max-width:980px){{.grid4{{grid-template-columns:1fr 1fr}}}}
+  @media (max-width:560px){{.grid4{{grid-template-columns:1fr}}}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
@@ -768,15 +771,11 @@ TEMPLATE = """<!DOCTYPE html>
 
   <div class="sechd">— 전체 기사 목록 —</div>
 
-  <div class="card pin">
-    <h2><span class="bar"></span>🇶🇦 카타르 관련 (필수 포함)</h2>
-    <ul>{qatar}</ul>
-  </div>
-
-  <div class="grid3">
-    <div class="card"><h2><span class="bar"></span>🇮🇷 이란·역내 매체</h2><ul>{me_ir}</ul></div>
-    <div class="card"><h2><span class="bar"></span>🌐 해외 언론</h2><ul>{me_en}</ul></div>
-    <div class="card"><h2><span class="bar"></span>🇰🇷 국내(한국) 언론</h2><ul>{me_ko}</ul></div>
+  <div class="grid4">
+    <div class="card"><h2><span class="bar"></span>🇶🇦 카타르</h2><ul>{qatar}</ul></div>
+    <div class="card"><h2><span class="bar"></span>🇮🇷 이란·역내</h2><ul>{me_ir}</ul></div>
+    <div class="card"><h2><span class="bar"></span>🌐 해외</h2><ul>{me_en}</ul></div>
+    <div class="card"><h2><span class="bar"></span>🇰🇷 국내(한국)</h2><ul>{me_ko}</ul></div>
   </div>
 
   <div class="card">
