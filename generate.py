@@ -37,7 +37,8 @@ Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz"
 Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동"]
 # 연구기관·에너지 기관의 중동·유가·카타르 분석/보고서 수집용 쿼리(뜨면 최상단 강조)
 Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
-                "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석"]
+                "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석",
+                "현대경제연구원 중동", "삼성글로벌리서치 중동 유가", "산업연구원 중동", "중동 리스크 보고서"]
 
 QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "hamad",
             "카타르", "도하", "알우데이드", "라스라판", "하마드"]
@@ -71,11 +72,16 @@ KOREA_SOURCES = [
 
 # 분석·보고서(연구기관·에너지·국책연구원) — 출처가 이들이면 최상단 '분석·보고서' 섹션으로 강조
 REPORT_HINTS = [
+    # 국책·공공 연구기관
     "대외경제정책연구원", "kiep", "한국개발연구원", "kdi", "에너지경제연구원", "keei",
     "국제금융센터", "kcif", "산업연구원", "kiet", "국립외교원", "ifans",
     "아산정책", "asan", "세종연구소", "sejong", "한국무역협회", "kita", "국제무역통상연구원",
     "가스공사", "kogas", "석유공사", "knoc", "오피넷", "opinet",
     "수출입은행", "koreaexim", "무역보험공사", "ksure", "kotra", "코트라",
+    # 민간·금융 연구소
+    "현대경제연구원", "hri", "삼성글로벌리서치", "삼성경제연구소", "seri",
+    "lg경영연구원", "포스코경영연구원", "posri", "하나금융경영연구소", "하나금융연구소",
+    "우리금융경영연구소", "국제금융", "자본시장연구원",
 ]
 
 
@@ -142,13 +148,21 @@ QUICK_LINKS = {
         ("국토교통부", "https://www.molit.go.kr/"),
         ("해양수산부", "https://www.mof.go.kr/"),
         ("국방부", "https://www.mnd.go.kr/")],
-    "📑 연구기관·에너지": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
+    "📑 연구기관·에너지(국책)": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
         ("KDI 한국개발연구원", "https://www.kdi.re.kr/"),
         ("에너지경제연구원(KEEI)", "https://www.keei.re.kr/"),
         ("국제금융센터(KCIF)", "https://www.kcif.or.kr/"),
+        ("산업연구원(KIET)", "https://www.kiet.re.kr/"),
         ("한국가스공사(KOGAS)", "https://www.kogas.or.kr/"),
         ("한국석유공사 오피넷(유가)", "https://www.opinet.co.kr/"),
         ("KOTRA 해외시장뉴스", "https://dream.kotra.or.kr/")],
+    "📑 민간·금융 연구소": [("현대경제연구원(HRI)", "http://www.hri.co.kr/"),
+        ("삼성글로벌리서치(SGR)", "https://www.samsungsgr.com/"),
+        ("LG경영연구원", "https://www.lgbr.co.kr/"),
+        ("포스코경영연구원(POSRI)", "https://www.posri.re.kr/"),
+        ("하나금융경영연구소", "https://www.hanaif.re.kr/"),
+        ("무역협회 국제무역통상연구원", "https://iit.kita.net/"),
+        ("자본시장연구원(KCMI)", "https://www.kcmi.re.kr/")],
 }
 
 MAX_PER_SECTION = 60
