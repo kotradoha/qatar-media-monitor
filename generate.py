@@ -520,11 +520,16 @@ def gemini_issues(pool, win_label):
     prompt = (
         "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]을 읽고 이 갱신 주기의 내용을 "
         "'사안(issue)'별로 3~6개로 묶으세요. 카테고리 예시: 전쟁·군사 / 외교·중재 / 에너지·유가 / "
-        "물류·해상안전(홍해·수에즈·호르무즈) / 항공·교민안전 / 경제. 카타르 직접 관련 사안은 우선 포함.\n"
-        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), summary(한국어 2~4문장, 핵심), "
+        "물류·해상안전(홍해·수에즈·호르무즈) / 항공·교민안전 / 경제.\n"
+        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), summary(한국어 2~4문장, 핵심만 간결·명료하게), "
         "figures(핵심 수치 한 줄; 사상자/미사일/유가/호르무즈 비중/휴전기간 등, 없으면 \"\"), "
-        "ids(그 사안 관련 기사 id 정수 배열, 중요 기사 위주 최대 8개).\n"
-        "규칙: 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
+        "ids(그 사안 관련 기사 id 정수 배열, 최대 8개).\n"
+        "중요 규칙:\n"
+        "- [카타르현지] 및 (카타르관련) 표시 기사는 대사관 업무상 최우선. 카타르가 직접 얽힌 사안을 반드시 1개 이상 만들고, "
+        "각 사안 ids에는 가능하면 [카타르현지] 기사를 우선 포함하세요.\n"
+        "- ids에는 동일 내용이면 메이저·공신력 매체(연합/뉴시스/KBS/조선/중앙/동아/한경/매경, Reuters/AP/AFP/Bloomberg/CNN/BBC, QNA/Al Jazeera/Gulf Times/Peninsula) 기사를 우선 선택하세요.\n"
+        "- 한 사안의 ids는 가능하면 카타르·이란·해외·국내 매체가 고루 들어가게 하세요.\n"
+        "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
         "{\"issues\":[{\"theme\":\"\",\"summary\":\"\",\"figures\":\"\",\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
     )
@@ -631,9 +636,11 @@ def summary_to_html(text):
     return "\n".join(out)
 
 
-def render(items, win_label, issues, flat_text):
+def render(items, win_label, issues, flat_text, issue_pool=None):
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
+    if issue_pool is None:
+        issue_pool = items[:POOL_FOR_ISSUES]
     def is_pin(x): return x["qatar"] or x["region"] == "qatar"
     qatar = [x for x in items if is_pin(x)][:MAX_PER_SECTION]
     me_ov = [x for x in items if not is_pin(x) and x["region"] == "overseas"][:MAX_PER_SECTION]
@@ -645,7 +652,7 @@ def render(items, win_label, issues, flat_text):
 
     if issues:
         summary_html = ('<div class="sumhead"><span class="bar"></span>🧭 이번 갱신 사안별 요약 '
-                        '<span class="ai">AI 자동요약</span></div>' + render_issues(issues, items[:POOL_FOR_ISSUES], now_utc))
+                        '<span class="ai">AI 자동요약</span></div>' + render_issues(issues, issue_pool, now_utc))
     elif flat_text:
         summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 갱신 핵심 요약 '
                         '<span class="ai">AI 자동요약</span></div>'
@@ -787,16 +794,43 @@ TEMPLATE = """<!DOCTYPE html>
 """
 
 
+# 요약 풀에 우선 넣을 '메이저/공신력' 매체 힌트(카타르 현지는 별도로 최우선 고정)
+MAJOR_HINTS = [
+    "qatar news agency", "qna", "gulf times", "peninsula", "qatar tribune", "doha news",
+    "al jazeera", "aljazeera", "lusail",
+    "yonhap", "연합", "ytn", "kbs", "mbc", "sbs", "뉴시스", "newsis", "조선", "chosun",
+    "중앙", "joongang", "동아", "donga", "한국경제", "hankyung", "매일경제", "mk.co", "maeil",
+    "한겨레", "hani", "경향", "kyunghyang", "서울신문", "seoul",
+    "reuters", "ap ", "associated press", "afp", "bloomberg", "cnn", "bbc",
+    "the guardian", "washington post", "new york times", "wall street journal", "financial times",
+    "irna", "press tv", "tehran times", "mehr", "al-alam",
+]
+
+def _is_major(x):
+    s = (x.get("source") or "").lower()
+    return any(m in s for m in MAJOR_HINTS)
+
+def build_issue_pool(items):
+    """사안 요약용 풀: 카타르 관련 최우선 + 국내/해외 메이저 우선, 나머지 최신순."""
+    qatar = [x for x in items if x["qatar"] or x["region"] == "qatar"]
+    others = [x for x in items if not (x["qatar"] or x["region"] == "qatar")]
+    others_major = [x for x in others if _is_major(x)]
+    others_rest = [x for x in others if not _is_major(x)]
+    n_qatar = min(len(qatar), 14)                      # 카타르 현지 최소 확보
+    pool = qatar[:n_qatar] + others_major + others_rest
+    return pool[:POOL_FOR_ISSUES]
+
+
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     start_q, label = window_bounds(now_q)
     items = collect(start_q.astimezone(timezone.utc), now_utc)
-    pool = items[:POOL_FOR_ISSUES]
+    pool = build_issue_pool(items)
     issues = gemini_issues(pool, label)
     flat = None if issues else gemini_flat(pool, label)
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(render(items, label, issues, flat))
+        f.write(render(items, label, issues, flat, issue_pool=pool))
     mode = "issues" if issues else ("flat" if flat else "none")
     print(f"generated · window={label} · items={len(items)} · summary={mode}")
 
