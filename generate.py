@@ -34,6 +34,9 @@ Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
                 "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping"]
 Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동"]
+# 연구기관·에너지 기관의 중동·유가·카타르 분석/보고서 수집용 쿼리(뜨면 최상단 강조)
+Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
+                "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석"]
 
 QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "hamad",
             "카타르", "도하", "알우데이드", "라스라판", "하마드"]
@@ -65,6 +68,15 @@ KOREA_SOURCES = [
     "서울경제", "sedaily", "헤럴드경제", "heraldcorp", "아시아경제", "asiae",
 ]
 
+# 분석·보고서(연구기관·에너지·국책연구원) — 출처가 이들이면 최상단 '분석·보고서' 섹션으로 강조
+REPORT_HINTS = [
+    "대외경제정책연구원", "kiep", "한국개발연구원", "kdi", "에너지경제연구원", "keei",
+    "국제금융센터", "kcif", "산업연구원", "kiet", "국립외교원", "ifans",
+    "아산정책", "asan", "세종연구소", "sejong", "한국무역협회", "kita", "국제무역통상연구원",
+    "가스공사", "kogas", "석유공사", "knoc", "오피넷", "opinet",
+    "수출입은행", "koreaexim", "무역보험공사", "ksure", "kotra", "코트라",
+]
+
 
 # 이란·역내 매체
 IRAN_SOURCES = ["tehran times", "press tv", "presstv", "irna", "mehr", "fars", "isna",
@@ -87,34 +99,62 @@ DIRECT_FEEDS = [
 ]
 
 QUICK_LINKS = {
-    "카타르 현지 매체": [("Qatar News Agency (QNA)", "https://www.qna.org.qa/en"),
+    "🇶🇦 카타르 현지 매체": [("Qatar News Agency (QNA)", "https://www.qna.org.qa/en"),
         ("Al Jazeera", "https://www.aljazeera.com/news/"),
         ("Gulf Times", "https://www.gulf-times.com/"),
         ("The Peninsula", "https://thepeninsulaqatar.com/"),
         ("Qatar Tribune", "https://www.qatar-tribune.com/"),
         ("Doha News", "https://dohanews.co/")],
-    "미국·해외 주요 매체": [("CNN", "https://www.cnn.com/world"),
+    "🇮🇷 이란·역내 매체": [("Tehran Times", "https://www.tehrantimes.com/"),
+        ("Press TV", "https://www.presstv.ir/"),
+        ("IRNA (English)", "https://en.irna.ir/"),
+        ("Iran International", "https://www.iranintl.com/en"),
+        ("Al Arabiya", "https://english.alarabiya.net/")],
+    "🌐 해외(미국·유럽 등) 매체": [("CNN", "https://www.cnn.com/world"),
         ("Reuters — Middle East", "https://www.reuters.com/world/middle-east/"),
         ("BBC — Middle East", "https://www.bbc.com/news/world/middle_east"),
         ("AP — Middle East", "https://apnews.com/hub/middle-east"),
+        ("The Guardian — ME", "https://www.theguardian.com/world/middleeast"),
         ("The New York Times — ME", "https://www.nytimes.com/section/world/middleeast")],
-    "이란·역내 매체": [("Tehran Times", "https://www.tehrantimes.com/"),
-        ("Press TV", "https://www.presstv.ir/"),
-        ("IRNA (English)", "https://en.irna.ir/"),
-        ("Iran International", "https://www.iranintl.com/en")],
-    "국내(한국) 매체": [("연합뉴스 국제", "https://www.yna.co.kr/international/all"),
+    "🇰🇷 국내 종합·방송": [("연합뉴스 국제", "https://www.yna.co.kr/international/all"),
         ("YTN", "https://www.ytn.co.kr/"), ("KBS", "https://news.kbs.co.kr/"),
         ("조선일보", "https://www.chosun.com/"), ("중앙일보", "https://www.joongang.co.kr/"),
-        ("동아일보", "https://www.donga.com/"),
-        ("한국경제", "https://www.hankyung.com/"), ("매일경제", "https://www.mk.co.kr/")],
-    "정부·공식 공지": [("카타르 외무부(MOFA) 성명", "https://mofa.gov.qa/en/latest-articles/statements"),
-        ("한국 외교부 해외안전여행(0404)", "https://www.0404.go.kr/"),
-        ("외교부 이란 여행경보", "https://0404.go.kr/ntnSafetyInfo/176/detail")],
+        ("동아일보", "https://www.donga.com/"), ("한겨레", "https://www.hani.co.kr/"),
+        ("경향신문", "https://www.khan.co.kr/")],
+    "🇰🇷 국내 경제지": [("매일경제", "https://www.mk.co.kr/"),
+        ("한국경제", "https://www.hankyung.com/"),
+        ("파이낸셜뉴스", "https://www.fnnews.com/"),
+        ("서울경제", "https://www.sedaily.com/"),
+        ("이데일리", "https://www.edaily.co.kr/")],
+    "🏛️ 카타르 정부 공식": [("외교부 (MOFA)", "https://mofa.gov.qa/en"),
+        ("내무부 (MOI)", "https://www.moi.gov.qa/"),
+        ("국방부 (MOD)", "https://www.mod.gov.qa/"),
+        ("카타르에너지 (QatarEnergy)", "https://www.qatarenergy.qa/en"),
+        ("민간항공청 (CAA)", "https://caa.gov.qa/en/"),
+        ("정부 커뮤니케이션실 (GCO)", "https://www.gco.gov.qa/en/")],
+    "🏛️ 우리 정부(한국) 공식": [("외교부", "https://www.mofa.go.kr/"),
+        ("주카타르대사관", "https://overseas.mofa.go.kr/qa-ko/index.do"),
+        ("해외안전여행(0404)", "https://www.0404.go.kr/"),
+        ("대통령실", "https://www.president.go.kr/"),
+        ("korea.net", "https://www.korea.net/"),
+        ("산업통상자원부", "https://www.motie.go.kr/"),
+        ("국토교통부", "https://www.molit.go.kr/"),
+        ("해양수산부", "https://www.mof.go.kr/"),
+        ("국방부", "https://www.mnd.go.kr/")],
+    "📑 연구기관·에너지": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
+        ("KDI 한국개발연구원", "https://www.kdi.re.kr/"),
+        ("에너지경제연구원(KEEI)", "https://www.keei.re.kr/"),
+        ("국제금융센터(KCIF)", "https://www.kcif.or.kr/"),
+        ("한국가스공사(KOGAS)", "https://www.kogas.or.kr/"),
+        ("한국석유공사 오피넷(유가)", "https://www.opinet.co.kr/"),
+        ("KOTRA 해외시장뉴스", "https://dream.kotra.or.kr/")],
 }
 
 MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
 DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
+SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
+ARCHIVE_KEEP = 14             # 아카이브 보관 개수(하루 2회 × 7일 = 1주)
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
@@ -198,6 +238,18 @@ def blocked_source(src):
     return any(b in low for b in BLOCK_SOURCES)
 
 
+def is_report_source(src):
+    s = (src or "").lower()
+    return any(h in s for h in REPORT_HINTS)
+
+def looks_report(title, src):
+    if is_report_source(src):
+        return True
+    inst = any(h in title.lower() for h in REPORT_HINTS)
+    topic = has(title + " ", QATAR_KW) or has(title + " ", MIDEAST_KW)
+    return inst and topic
+
+
 def collect(win_start_utc, now_utc):
     items, seen = [], set()
     feeds = []
@@ -205,6 +257,7 @@ def collect(win_start_utc, now_utc):
     for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
     for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en")))
     for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
+    for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
     for lang, label, url in feeds:
@@ -224,7 +277,8 @@ def collect(win_start_utc, now_utc):
             desc = clean_desc(e.get("summary", ""))
             text = title + " " + desc
             is_qatar = has(text, QATAR_KW)
-            if not is_qatar and not has(text, MIDEAST_KW):
+            report = looks_report(title, src)
+            if not is_qatar and not has(text, MIDEAST_KW) and not report:
                 continue
             dt = entry_time(e)
             if dt is None or dt < win_start_utc or dt > now_utc + timedelta(minutes=5):
@@ -237,7 +291,7 @@ def collect(win_start_utc, now_utc):
             kor = bool(HANGUL_RE.search(title))
             items.append({"title": title, "link": link, "source": src, "dt": dt,
                           "qatar": is_qatar, "desc": desc, "korean": kor,
-                          "region": source_region(src, kor)})
+                          "report": report, "region": source_region(src, kor)})
     items.sort(key=lambda x: x["dt"], reverse=True)
     return items
 
@@ -529,7 +583,9 @@ def gemini_issues(pool, win_label):
         "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]을 읽고 이 갱신 주기의 내용을 "
         "'사안(issue)'별로 3~6개로 묶으세요. 카테고리 예시: 전쟁·군사 / 외교·중재 / 에너지·유가 / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 항공·교민안전 / 경제.\n"
-        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), summary(한국어 2~4문장, 핵심만 간결·명료하게), "
+        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), "
+        "summary(한국어, 정부보고서식 '개조식·했음체'로 2~4개 핵심 포인트. 각 포인트는 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 "
+        "서술체 '-했다/-이다/-된다'는 절대 쓰지 말 것. 예: '미군이 이란 인프라 공격함. 이란은 유조선 2척 타격 주장함. 카타르는 규탄 성명 발표함.'), "
         "figures(핵심 수치 한 줄; 사상자/미사일/유가/호르무즈 비중/휴전기간 등, 없으면 \"\"), "
         "ids(그 사안 관련 기사 id 정수 배열, 최대 16개).\n"
         "중요 규칙:\n"
@@ -566,8 +622,9 @@ def gemini_flat(pool, win_label):
     prompt = (
         "당신은 주카타르대사관 상황실의 뉴스 요약 담당입니다. 아래 커버기간 "
         f"'{win_label}' 기사(제목/매체/발췌)를 근거로 한국어 핵심 요약을 작성하세요. 형식:\n"
-        "■ 핵심 요약: (3~6문장)\n■ 핵심 수치: (사상자·미사일·유가·호르무즈 비중 등 불릿; 없으면 '특이 수치 없음')\n"
+        "■ 핵심 요약: (불릿 3~6개)\n■ 핵심 수치: (사상자·미사일·유가·호르무즈 비중 등 불릿; 없으면 '특이 수치 없음')\n"
         "■ 카타르 관련: (불릿 2~4개, 없으면 '해당 기간 카타르 직접 특이사항 없음')\n■ 중동정세 주요: (불릿 3~6개)\n"
+        "모든 불릿은 정부보고서식 '개조식·했음체'로, 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝낼 것(서술체 '-했다/-이다' 금지). "
         "제목·발췌에 없는 사실은 창작 금지. 불릿 끝에 (매체명). '- '로 시작. 마크다운 헤더(#) 금지.\n\n"
         + "\n".join(lines)
     )
@@ -645,7 +702,7 @@ def summary_to_html(text):
     return "\n".join(out)
 
 
-def render(items, win_label, issues, flat_text, issue_pool=None):
+def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None):
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     if issue_pool is None:
@@ -679,7 +736,36 @@ def render(items, win_label, issues, flat_text, issue_pool=None):
         chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in links)
         quick += f'<div class="qgroup"><div class="qh">{esc(g)}</div><div class="qchips">{chips}</div></div>'
 
+    # 분석·보고서(연구기관·에너지) — 있으면 최상단 강조
+    reports, rseen = [], set()
+    for x in items:
+        if x.get("report"):
+            k = x["link"].split("?")[0]
+            if k in rseen:
+                continue
+            rseen.add(k); reports.append(x)
+    reports = reports[:6]
+    if reports:
+        rows = "".join(
+            f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}'
+            f'<span class="src">{esc(x["source"])} · {x["dt"].astimezone(TZ).strftime("%m/%d")}</span></a>'
+            for x in reports)
+        report_html = ('<div class="card report"><div class="sumhead">'
+                       '<span class="bar" style="background:var(--gold)"></span>📑 중동정세 분석·보고서'
+                       '<span class="ai" style="background:var(--gold)">주목</span></div>'
+                       f'<div class="reprows">{rows}</div></div>')
+    else:
+        report_html = ""
+
+    # 지난 갱신 콤보박스(최근 1주)
+    opts = f'<option value="{SITE_BASE}">이번 갱신 (최신)</option>'
+    for label, fname in (archive_list or []):
+        opts += f'<option value="{SITE_BASE}archive/{esc(fname)}">{esc(label)}</option>'
+    archive_html = ('<div class="archsel">🗂️ 지난 갱신본 보기: '
+                    f'<select onchange="if(this.value)location.href=this.value">{opts}</select></div>')
+
     return TEMPLATE.format(
+        archive=archive_html, report=report_html,
         title=esc(TITLE), subtitle=esc(SUBTITLE),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
         n_q=len(qatar), n_me=len(me_ov) + len(me_ir) + len(me_kr),
@@ -719,7 +805,7 @@ TEMPLATE = """<!DOCTYPE html>
   .issue .ihead{{display:flex;align-items:center;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);background:var(--panel2)}}
   .issue .ihead .num{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px}}
   .issue .ihead h2{{font-size:14.5px;margin:0}}
-  .row{{display:grid;grid-template-columns:1.05fr 1fr;gap:0}}
+  .row{{display:grid;grid-template-columns:0.78fr 1.22fr;gap:0}}
   @media (max-width:760px){{.row{{grid-template-columns:1fr}}}}
   .left{{padding:13px 16px;border-right:1px solid var(--line)}}
   @media (max-width:760px){{.left{{border-right:none;border-bottom:1px solid var(--line)}}}}
@@ -771,8 +857,15 @@ TEMPLATE = """<!DOCTYPE html>
   .qchips{{display:flex;flex-wrap:wrap;gap:7px}}
   .qchips a{{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}}
   .qchips a:hover{{text-decoration:underline}}
+  .archsel{{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 14px}}
+  .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
+    border-radius:8px;padding:5px 9px;max-width:60%}}
+  .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
+  .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
+  .reprows a:hover{{color:var(--accent);text-decoration:underline}}
+  .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
-  @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}}}}
+  @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
 </style>
 </head>
 <body>
@@ -786,6 +879,10 @@ TEMPLATE = """<!DOCTYPE html>
       <span>카타르 <b>{n_q}</b>건 · 중동정세 <b>{n_me}</b>건</span>
     </div>
   </header>
+
+  {archive}
+
+  {report}
 
   {summary}
 
@@ -859,6 +956,14 @@ def build_issue_pool(items):
     return pool[:POOL_FOR_ISSUES]
 
 
+def _stamp_label(stamp):
+    # "20260731-1852" -> "07/31 18:52"
+    try:
+        return f"{stamp[4:6]}/{stamp[6:8]} {stamp[9:11]}:{stamp[11:13]}"
+    except Exception:
+        return stamp
+
+
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
@@ -867,10 +972,31 @@ def main():
     pool = build_issue_pool(items)
     issues = gemini_issues(pool, label)
     flat = None if issues else gemini_flat(pool, label)
+
+    # ── 아카이브: 이번 스냅샷 저장 + 최근 1주 목록 구성 + 오래된 것 정리 ──
+    stamp = now_q.strftime("%Y%m%d-%H%M")
+    os.makedirs("archive", exist_ok=True)
+    existing = sorted({f[:-5] for f in os.listdir("archive")
+                       if f.endswith(".html") and f[:-5] != stamp}, reverse=True)
+    # 콤보박스에는 과거 스냅샷(최근 ARCHIVE_KEEP)만 노출
+    keep = existing[:ARCHIVE_KEEP]
+    archive_entries = [(_stamp_label(s), s + ".html") for s in keep]
+    # 오래된 스냅샷 삭제(보관 한도 초과분)
+    for s in existing[ARCHIVE_KEEP:]:
+        try:
+            os.remove(os.path.join("archive", s + ".html"))
+        except OSError:
+            pass
+
+    html = render(items, label, issues, flat, issue_pool=pool, archive_list=archive_entries)
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(render(items, label, issues, flat, issue_pool=pool))
+        f.write(html)
+    with open(os.path.join("archive", stamp + ".html"), "w", encoding="utf-8") as f:
+        f.write(html)
+
     mode = "issues" if issues else ("flat" if flat else "none")
-    print(f"generated · window={label} · items={len(items)} · summary={mode}")
+    n_report = sum(1 for x in items if x.get("report"))
+    print(f"generated · window={label} · items={len(items)} · summary={mode} · reports={n_report} · archive={len(keep)}")
 
 
 if __name__ == "__main__":
