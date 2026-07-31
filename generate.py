@@ -1126,8 +1126,8 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
                 f'<span class="src">{esc(x["source"])} · {rep_dt(x)}</span></a>')
     rows = "".join(rep_row(x) for x in rep_list[:REPORT_SHOW_MAX])
     if rows:
-        report_html = ('<details class="card report reportfold" open>'
-                       '<summary class="repsum"><span class="bar" style="background:var(--gold)"></span>'
+        report_html = ('<details class="foldbox reportfold">'
+                       '<summary><span class="chev">▸</span>'
                        f'{esc(L["rep_head"])}<span class="hnote">{esc(L["rep_note"])}</span>'
                        f'<span class="exp exp-c">{esc(L["expand"])} ▾</span>'
                        f'<span class="exp exp-o">{esc(L["collapse"])} ▴</span></summary>'
@@ -1250,29 +1250,26 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:980px){{.grid4{{grid-template-columns:1fr 1fr}}}}
   @media (max-width:560px){{.grid4{{grid-template-columns:1fr}}}}
   img.emoji{{height:1em;width:1em;margin:0 .06em 0 .05em;vertical-align:-0.12em}}
-  details.fulllist{{margin-top:6px}}
-  details.fulllist>summary{{cursor:pointer;list-style:none;user-select:none;display:flex;align-items:center;gap:8px;
+  /* 접이식 박스(전체목록·보고서·바로가기) — 동일한 회색 스타일·기본 접힘 */
+  details.foldbox{{margin:14px 0}}
+  details.reportfold{{margin-top:20px}}
+  .foldbox>summary{{cursor:pointer;list-style:none;user-select:none;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
     font-size:14px;font-weight:800;color:var(--txt);letter-spacing:.2px;
     padding:13px 16px;border:1px solid var(--line);border-radius:12px;
     background:var(--panel2);transition:background .15s,box-shadow .15s}}
-  details.fulllist>summary::-webkit-details-marker{{display:none}}
-  details.fulllist>summary:hover{{background:var(--panel);box-shadow:0 0 0 3px rgba(127,127,127,.12)}}
-  details.fulllist[open]>summary{{margin-bottom:12px}}
-  details.fulllist .chev{{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
+  .foldbox>summary::-webkit-details-marker{{display:none}}
+  .foldbox>summary:hover{{background:var(--panel);box-shadow:0 0 0 3px rgba(127,127,127,.12)}}
+  .foldbox[open]>summary{{margin-bottom:12px}}
+  .foldbox .chev{{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
     border-radius:50%;background:var(--muted);color:#fff;font-size:12px;transition:transform .15s;flex:0 0 auto}}
-  details.fulllist[open] .chev{{transform:rotate(90deg)}}
-  details.fulllist>summary .exp{{background:var(--muted);color:#fff}}
-  details.reportfold{{margin-top:20px}}
-  summary .exp{{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#111;
-    background:var(--accent);border-radius:7px;padding:3px 10px;white-space:nowrap}}
+  .foldbox[open] .chev{{transform:rotate(90deg)}}
+  .foldbox .hnote{{font-weight:400}}
+  summary .exp{{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#fff;
+    background:var(--muted);border-radius:7px;padding:3px 10px;white-space:nowrap}}
   summary .exp-o{{display:none;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}}
   details[open]>summary .exp-c{{display:none}}
   details[open]>summary .exp-o{{display:inline-block}}
-  details.reportfold>summary{{cursor:pointer;list-style:none;user-select:none;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
-    font-size:15px;font-weight:800}}
-  details.reportfold>summary::-webkit-details-marker{{display:none}}
-  details.reportfold[open]>summary{{margin-bottom:10px}}
-  details.reportfold>summary .exp{{background:var(--gold)}}
+  .foldbox>.reprows,.foldbox>.qbody{{padding:0 2px}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
@@ -1349,7 +1346,7 @@ TEMPLATE = """<!DOCTYPE html>
 
   {summary}
 
-  <details class="fulllist">
+  <details class="fulllist foldbox">
     <summary><span class="chev">▸</span> {full_summary} <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
     <div class="grid4">
       <div class="card"><h2><span class="bar"></span>{col_qatar}</h2><ul>{qatar}</ul></div>
@@ -1361,10 +1358,10 @@ TEMPLATE = """<!DOCTYPE html>
 
   {report}
 
-  <div class="card">
-    <h2><span class="bar"></span>{quick_head} <span class="hnote">{quick_note}</span></h2>
-    {quick}
-  </div>
+  <details class="foldbox">
+    <summary><span class="chev">▸</span> {quick_head} <span class="hnote">{quick_note}</span> <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
+    <div class="qbody">{quick}</div>
+  </details>
 
   <footer>
     ※ {foot1}
