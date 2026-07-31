@@ -266,7 +266,7 @@ LANG = {
   "dir": "ltr", "html": "ko",
   "title": "🇶🇦 카타르·중동정세 언론 모니터링", "title2": "Qatar & Middle East — Media Monitor",
   "subtitle": ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
-               "AI 사안별 요약과 관련 기사 원문 링크 제공 [주카타르대사관 Commercial Section]"),
+               "AI 사안별 요약과 관련 기사 원문 링크 제공"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
@@ -294,7 +294,7 @@ LANG = {
   "foot2": "갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.",
   "foot3": ("자동 수집 특성상 일부 기사·보고서가 누락될 수 있습니다. 본 화면은 <b>참고용</b>이오니, "
             "중요한 사안은 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
-  "sign": "— 주카타르대사관 Commercial Section",
+  "sign": "— 주카타르대사관 Commercial Section", "org": "주카타르대사관 Commercial Section",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
   "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)",
  },
@@ -302,8 +302,7 @@ LANG = {
   "dir": "ltr", "html": "en",
   "title": "🇶🇦 Qatar & Middle East — Media Monitor", "title2": "",
   "subtitle": ("Auto-updated daily at 07:00 & 15:30 (Qatar time) · Monitoring Qatar, Korea & global media and "
-               "domestic/foreign think-tank reports · AI issue summaries with source links "
-               "[Embassy of the Republic of Korea in Qatar, Commercial Section]"),
+               "domestic/foreign think-tank reports · AI issue summaries with source links"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
@@ -333,7 +332,7 @@ LANG = {
   "foot2": "Updates run automatically every day at 07:00 and 15:30 Qatar time; the Sunday morning edition also includes a digest of the past week.",
   "foot3": ("Automatic collection may miss some articles or reports. "
             "This page is <b>for reference only</b>; please verify important matters against the original sources and further searches."),
-  "sign": "— Embassy of the Republic of Korea in Qatar, Commercial Section",
+  "sign": "— Embassy of the Republic of Korea in Qatar, Commercial Section", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
   "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)",
  },
@@ -341,7 +340,7 @@ LANG = {
   "dir": "rtl", "html": "ar",
   "title": "🇶🇦 رصد الإعلام: قطر والشرق الأوسط", "title2": "",
   "subtitle": ("تحديث تلقائي يوميًا الساعة 07:00 و15:30 (بتوقيت قطر) · رصد إعلام قطر وكوريا والعالم وتقارير مراكز الأبحاث المحلية والدولية · "
-               "ملخصات بالذكاء الاصطناعي مع روابط المصادر [سفارة جمهورية كوريا لدى قطر، القسم التجاري]"),
+               "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
@@ -371,7 +370,7 @@ LANG = {
   "foot2": "تُجرى التحديثات تلقائيًا يوميًا الساعة 07:00 و15:30 بتوقيت قطر، ويتضمن إصدار صباح الأحد موجزًا للأسبوع المنصرم.",
   "foot3": ("قد يُغفل الجمع التلقائي بعض المقالات أو التقارير. "
             "هذه الصفحة <b>للاطلاع فقط</b>؛ يُرجى التحقق من المسائل المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
-  "sign": "— سفارة جمهورية كوريا لدى قطر، القسم التجاري",
+  "sign": "— سفارة جمهورية كوريا لدى قطر، القسم التجاري", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
   "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)",
  },
@@ -1172,6 +1171,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
+        orgline=(f'<div class="orgline">{esc(L["org"])}</div>' if L.get("org") else ""),
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
@@ -1201,11 +1201,13 @@ TEMPLATE = """<!DOCTYPE html>
   *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--txt);line-height:1.5;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}}
   .wrap{{max-width:1180px;margin:0 auto;padding:18px 14px 60px}}
-  header{{position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 72%,transparent);
+  header{{position:sticky;top:0;background:var(--bg);
     padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}}
+  @media (max-width:760px){{header{{position:static}}}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
   .titcol{{display:flex;flex-direction:column;gap:1px}}
   .entitle{{font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:.2px}}
+  .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
   .langbar{{display:flex;gap:6px;margin-inline-start:auto}}
   .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
   .langbtn.on{{color:#111;background:var(--accent);border-color:var(--accent);font-weight:700}}
@@ -1213,8 +1215,9 @@ TEMPLATE = """<!DOCTYPE html>
   .dot{{width:10px;height:10px;border-radius:50%;background:var(--green);animation:p 2s infinite}}
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:19px;margin:0}}
-  .sub{{color:var(--muted);font-size:12.5px;margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}}
-  .sub b{{color:var(--txt)}}
+  .sub{{color:var(--muted);font-size:12.5px;margin-top:6px}}
+  .submeta{{color:var(--muted);font-size:12.5px;margin-top:6px;display:flex;gap:14px;flex-wrap:wrap}}
+  .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
   .ai{{font-size:10.5px;font-weight:700;color:#111;background:var(--accent);padding:1px 7px;border-radius:6px}}
@@ -1333,9 +1336,9 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <div class="wrap">
   <header>
-    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}</div>{issuelabel}{nav}</div>
-    <div class="sub">
-      <span>{subtitle}</span>
+    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}{nav}</div>
+    <div class="sub"><span>{subtitle}</span></div>
+    <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
       <span>{coverage_label}: <b>{window}</b></span>
       <span>{counts}</span>
