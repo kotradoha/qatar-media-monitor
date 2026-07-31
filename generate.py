@@ -228,6 +228,15 @@ QUICK_LINKS = {
         ("S&P Global Commodity Insights", "https://www.spglobal.com/commodityinsights/")],
 }
 
+# 바로가기 대분류: 관련 매체 / 정부 / 유관기관 (각 아래에 위 세부 그룹을 배치)
+QUICK_SECTIONS = [
+    ("📰 관련 매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
+                   "🇰🇷 국내 종합·방송", "🇰🇷 국내 경제지"]),
+    ("🏛️ 정부", ["🏛️ 카타르 정부 공식", "🏛️ 우리 정부(한국) 공식"]),
+    ("📑 유관기관", ["📑 연구기관·에너지(국책)", "📑 민간·금융 연구소", "📑 외교·안보 연구기관(국책)",
+                 "🌐 해외 연구기관·국제기구", "📰 해외 심층분석·경제전망"]),
+]
+
 MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
 DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
@@ -917,10 +926,15 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
                         f'{diag_html}</div></div>')
 
     quick = ""
-    for g, links in QUICK_LINKS.items():
-        slinks = sorted(links, key=_ql_key)   # 그룹 내 가나다/ABC 정렬
-        chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in slinks)
-        quick += f'<div class="qgroup"><div class="qh">{esc(g)}</div><div class="qchips">{chips}</div></div>'
+    for sec_title, group_names in QUICK_SECTIONS:
+        quick += f'<div class="qsec">{esc(sec_title)}</div>'
+        for g in group_names:
+            links = QUICK_LINKS.get(g, [])
+            if not links:
+                continue
+            slinks = sorted(links, key=_ql_key)   # 그룹 내 가나다/ABC 정렬
+            chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in slinks)
+            quick += f'<div class="qgroup"><div class="qh">{esc(g)}</div><div class="qchips">{chips}</div></div>'
 
     # 분석·보고서 — main()에서 누적·정렬해 넘겨준 목록(최신순)을 표시. 없으면 이번 창의 report 항목으로 폴백.
     rep_list = reports if reports is not None else [x for x in items if x.get("report")]
@@ -1050,6 +1064,8 @@ TEMPLATE = """<!DOCTYPE html>
   .meta{{color:var(--muted);font-size:11.5px;margin-top:3px;opacity:.85}}
   .empty{{color:var(--muted);font-size:13px}}
   .sechd{{font-size:13px;font-weight:800;color:var(--muted);margin:20px 0 8px;text-transform:uppercase;letter-spacing:.5px}}
+  .qsec{{font-size:13.5px;font-weight:800;color:var(--txt);margin:18px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line)}}
+  .qsec:first-child{{margin-top:2px}}
   .qgroup{{margin:2px 0 12px}} .qh{{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}}
   .qchips{{display:flex;flex-wrap:wrap;gap:7px}}
   .qchips a{{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}}
@@ -1117,7 +1133,7 @@ TEMPLATE = """<!DOCTYPE html>
   {report}
 
   <div class="card">
-    <h2><span class="bar"></span>관심 매체 · 정부 공지 바로가기 <span class="hnote">(가나다·알파벳순 기재)</span></h2>
+    <h2><span class="bar"></span>관련 매체 · 정부 · 유관기관 바로가기 <span class="hnote">(가나다·알파벳순 기재)</span></h2>
     {quick}
   </div>
 
