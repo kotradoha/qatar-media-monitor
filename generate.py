@@ -223,9 +223,29 @@ def collect(win_start_utc, now_utc):
     return items
 
 
+# ───────────────────── LLM 키 라우팅 ─────────────────────
+# 키는 GROQ_API_KEY / GEMINI_API_KEY 어느 슬롯에 넣어도, 접두어로 자동 판별해 알맞은 엔진에 사용.
+#   Groq 키: "gsk_..."  |  Gemini 키: "AQ..." 또는 "AIza..."
+def _all_keys():
+    return [k for k in (os.environ.get("GROQ_API_KEY", "").strip(),
+                        os.environ.get("GEMINI_API_KEY", "").strip()) if k]
+
+def _groq_key():
+    for k in _all_keys():
+        if k.startswith("gsk_"):
+            return k
+    return ""
+
+def _gemini_key():
+    for k in _all_keys():
+        if k.startswith("AQ") or k.startswith("AIza"):
+            return k
+    return ""
+
+
 # ───────────────────── Gemini (사안별/폴백) ─────────────────────
 def gemini_call(model, prompt, json_mode):
-    key = os.environ.get("GEMINI_API_KEY", "").strip()
+    key = _gemini_key()
     if not key:
         return None
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
@@ -250,7 +270,7 @@ def gemini_call(model, prompt, json_mode):
 
 
 def groq_call(model, prompt, json_mode):
-    key = os.environ.get("GROQ_API_KEY", "").strip()
+    key = _groq_key()
     if not key:
         return None
     url = "https://api.groq.com/openai/v1/chat/completions"
