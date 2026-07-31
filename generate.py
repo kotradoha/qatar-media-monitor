@@ -110,13 +110,19 @@ DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 �
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
-# 요약 엔진 우선순위: GitHub Models → Groq → Gemini (되는 것 자동 사용)
-# GitHub Models(무료·GitHub 계정·전세계·리전제한 없음). OpenAI 호환.
-# GitHub Actions 내장 GITHUB_TOKEN(permissions: models:read)으로 호출 → 별도 키/PAT 불필요.
+# 요약 엔진 우선순위(키 접두어로 자동 판별, 되는 것 사용):
+#   Claude API(sk-ant-) → OpenRouter(sk-or-) → Groq(gsk_) → Gemini(AQ/AIza) → GitHub Models(ghs_/PAT)
+# Claude API(Anthropic·소액·카타르 지원·최고 품질). Haiku 저렴.
+ANTHROPIC_MODELS = ["claude-haiku-4-5", "claude-3-5-haiku-latest"]
+# OpenRouter(무료 모델·GitHub 로그인 가입·OpenAI 호환).
+OR_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
+OR_MODELS = ["openai/gpt-oss-20b:free", "google/gemma-4-31b-it:free",
+             "meta-llama/llama-3.3-70b-instruct:free", "openrouter/free"]
+# GitHub Models(현재 서비스 종료 진행 중 — 최후 폴백). OpenAI 호환.
 GH_ENDPOINT = "https://models.github.ai/inference/chat/completions"
-GH_MODELS = ["openai/gpt-4o-mini", "openai/gpt-4.1-mini", "meta/Llama-3.3-70B-Instruct"]
-GEMINI_MODELS = ["gemini-2.0-flash-lite", "gemini-2.0-flash"]  # 순서대로 폴백(무료 한도 넉넉한 lite 우선)
-GROQ_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]  # Groq(무료·카드불필요·전세계)
+GH_MODELS = ["openai/gpt-4o-mini", "meta/Llama-3.3-70B-Instruct"]
+GEMINI_MODELS = ["gemini-2.0-flash-lite", "gemini-2.0-flash"]
+GROQ_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
 # ──────────────────────────────────────────────────────────
 
 feedparser.USER_AGENT = "Mozilla/5.0 (compatible; MideastMediaMonitor/1.0)"
@@ -229,13 +235,27 @@ def collect(win_start_utc, now_utc):
 
 
 # ───────────────────── LLM 키 라우팅 ─────────────────────
-# 키는 GROQ_API_KEY / GEMINI_API_KEY 어느 슬롯에 넣어도, 접두어로 자동 판별해 알맞은 엔진에 사용.
-#   GitHub Models 토큰: "github_pat_..." 또는 "ghp_..."
-#   Groq 키: "gsk_..."  |  Gemini 키: "AQ..." 또는 "AIza..."
+# 키는 어느 시크릿 슬롯(GEMINI_API_KEY/GROQ_API_KEY/LLM_API_KEY/GH_MODELS_TOKEN)에 넣어도
+# 접두어로 자동 판별해 알맞은 엔진에 사용.
+#   Claude API: "sk-ant-..."  |  OpenRouter: "sk-or-..."  |  Groq: "gsk_..."
+#   Gemini: "AQ..."/"AIza..."  |  GitHub 토큰: "ghs_/ghp_/github_pat_..."
 def _all_keys():
-    return [k for k in (os.environ.get("GH_MODELS_TOKEN", "").strip(),
+    return [k for k in (os.environ.get("LLM_API_KEY", "").strip(),
+                        os.environ.get("GH_MODELS_TOKEN", "").strip(),
                         os.environ.get("GROQ_API_KEY", "").strip(),
                         os.environ.get("GEMINI_API_KEY", "").strip()) if k]
+
+def _anthropic_key():
+    for k in _all_keys():
+        if k.startswith("sk-ant-"):
+            return k
+    return ""
+
+def _openrouter_key():
+    for k in _all_keys():
+        if k.startswith("sk-or-"):
+            return k
+    return ""
 
 def _gh_token():
     # GH_MODELS_TOKEN 슬롯에 값이 있으면(예: Actions 내장 GITHUB_TOKEN=ghs_...) 그대로 사용.
@@ -269,7 +289,80 @@ def _diag(msg):
         LLM_DIAG.append(msg)
 
 
-# ───────────────────── GitHub Models (1순위·무료·전세계) ─────────────────────
+# ───────────────────── Claude API (Anthropic·최우선·최고 품질) ─────────────────────
+def anthropic_call(model, prompt, json_mode):
+    key = _anthropic_key()
+    if not key:
+        return None
+    url = "https://api.anthropic.com/v1/messages"
+    msgs = [{"role": "user", "content": prompt}]
+    if json_mode:
+        msgs.append({"role": "assistant", "content": "{"})   # JSON 출력 강제(프리필)
+    payload = {"model": model, "max_tokens": 2048, "temperature": 0.3, "messages": msgs}
+    body = json.dumps(payload).encode("utf-8")
+    for attempt in range(3):
+        req = urllib.request.Request(
+            url, data=body,
+            headers={"content-type": "application/json", "x-api-key": key,
+                     "anthropic-version": "2023-06-01"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            txt = data["content"][0]["text"].strip()
+            return ("{" + txt) if json_mode else txt          # 프리필한 '{' 복원
+        except urllib.error.HTTPError as ex:
+            try:
+                eb = ex.read().decode("utf-8", "ignore")[:200]
+            except Exception:
+                eb = ""
+            if ex.code == 429:
+                _diag(f"[warn] claude {model} 429, retry {attempt+1}/3")
+                time.sleep(5 * (attempt + 1)); continue
+            _diag(f"[warn] claude {model} HTTP {ex.code} {eb}"); return None
+        except Exception as ex:
+            _diag(f"[warn] claude {model} failed: {ex}"); return None
+    return None
+
+
+# ───────────────────── OpenRouter (무료 모델·OpenAI 호환) ─────────────────────
+def openrouter_call(model, prompt, json_mode):
+    key = _openrouter_key()
+    if not key:
+        return None
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.3,
+        "max_tokens": 2048,
+    }
+    if json_mode:
+        payload["response_format"] = {"type": "json_object"}
+    body = json.dumps(payload).encode("utf-8")
+    for attempt in range(3):
+        req = urllib.request.Request(
+            OR_ENDPOINT, data=body,
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}",
+                     "HTTP-Referer": "https://kotradoha.github.io/qatar-media-monitor/",
+                     "X-Title": "Qatar Media Monitor"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            return data["choices"][0]["message"]["content"].strip()
+        except urllib.error.HTTPError as ex:
+            try:
+                eb = ex.read().decode("utf-8", "ignore")[:160]
+            except Exception:
+                eb = ""
+            if ex.code == 429:
+                _diag(f"[warn] openrouter {model} 429, retry {attempt+1}/3")
+                time.sleep(4 * (attempt + 1)); continue
+            _diag(f"[warn] openrouter {model} HTTP {ex.code} {eb}"); return None
+        except Exception as ex:
+            _diag(f"[warn] openrouter {model} failed: {ex}"); return None
+    return None
+
+
+# ───────────────────── GitHub Models (폴백·서비스 종료 진행중) ─────────────────────
 # 엔드포인트/모델ID 포맷이 시점마다 달라 여러 조합을 순차 시도.
 GH_ENDPOINTS = [
     "https://models.github.ai/inference/chat/completions",
@@ -381,23 +474,35 @@ def groq_call(model, prompt, json_mode):
 
 
 def gemini_generate(prompt, json_mode):
-    # 1순위: GitHub Models(무료·GitHub 계정·리전제한 없음).
-    for m in GH_MODELS:
-        out = github_models_call(m, prompt, json_mode)
+    # 1순위: Claude API(최고 품질·카타르 지원·소액).
+    for m in ANTHROPIC_MODELS:
+        out = anthropic_call(m, prompt, json_mode)
         if out:
-            print(f"[info] summary ok via ghmodels:{m}")
+            print(f"[info] summary ok via claude:{m}")
             return out
-    # 2순위: Groq(무료·전세계).
+    # 2순위: OpenRouter(무료).
+    for m in OR_MODELS:
+        out = openrouter_call(m, prompt, json_mode)
+        if out:
+            print(f"[info] summary ok via openrouter:{m}")
+            return out
+    # 3순위: Groq(무료).
     for m in GROQ_MODELS:
         out = groq_call(m, prompt, json_mode)
         if out:
             print(f"[info] summary ok via groq:{m}")
             return out
-    # 3순위: Gemini(무료 한도가 리전별로 잡히면 사용).
+    # 4순위: Gemini(리전 무료 한도 잡히면).
     for m in GEMINI_MODELS:
         out = gemini_call(m, prompt, json_mode)
         if out:
             print(f"[info] summary ok via gemini:{m}")
+            return out
+    # 5순위: GitHub Models(서비스 종료 진행중 — 최후).
+    for m in GH_MODELS:
+        out = github_models_call(m, prompt, json_mode)
+        if out:
+            print(f"[info] summary ok via ghmodels:{m}")
             return out
     return None
 
