@@ -277,14 +277,14 @@ LANG = {
   "issue": "사안", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
-  "full_summary": "전체 기사 목록 (총 {n}건) · 카타르/이란/해외/국내", "expand": "펼쳐보기", "collapse": "접기",
+  "full_summary": "전체 기사 목록 (총 {n}건)", "expand": "펼쳐보기", "collapse": "접기",
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
-  "quick_head": "언론 매체 · 정부 · 유관기관·연구소 바로가기", "quick_note": "(가나다·알파벳순)",
+  "quick_head": "언론 매체 · 정부 · 유관기관·연구소 링크 모음", "quick_note": "(가나다·알파벳순)",
   "foot1": ("본 페이지는 카타르·한국·해외 주요 언론과 국내외 연구기관·국제기구·정부기관의 공개 자료를 자동으로 수집하여, "
             "카타르와 관련된 중동 정세를 사안별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다."),
   "foot2": "갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.",
@@ -314,11 +314,11 @@ LANG = {
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
   "flag": "Qatar",
-  "full_summary": "Full article list (total {n}) · Qatar / Iran / Global / Korea", "expand": "Expand", "collapse": "Collapse",
+  "full_summary": "Full article list (total {n})", "expand": "Expand", "collapse": "Collapse",
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest", "rep_new": "New this edition",
+  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "Publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — quick links", "quick_note": "(sorted alphabetically)",
@@ -352,11 +352,11 @@ LANG = {
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
   "flag": "قطر",
-  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n}) · قطر / إيران / دولي / كوريا", "expand": "توسيع", "collapse": "طيّ",
+  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "expand": "توسيع", "collapse": "طيّ",
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
+  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "الإعلام · الحكومة · المؤسسات — روابط سريعة", "quick_note": "(مرتّبة أبجديًا)",
@@ -1164,9 +1164,9 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     return TEMPLATE.format(
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
-        title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
+        title=esc(L["title"]), subtitle=esc((f'[{L["org"]}] ' if L.get("org") else "") + L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
-        orgline=(f'<div class="orgline">{esc(L["org"])}</div>' if L.get("org") else ""),
+        orgline="",
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
@@ -1201,7 +1201,7 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:760px){{header{{position:static}}}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
   .titcol{{display:flex;flex-direction:column;gap:1px}}
-  .entitle{{font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:.2px}}
+  .entitle{{font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;font-size:14px;font-weight:600;color:#52514e;letter-spacing:-0.14px}}
   .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
   .langbar{{display:flex;gap:6px;margin-inline-start:auto}}
   .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
@@ -1329,7 +1329,7 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <div class="wrap">
   <header>
-    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}{nav}</div>
+    <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}{nav}</div>
     <div class="sub"><span>{subtitle}</span></div>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
