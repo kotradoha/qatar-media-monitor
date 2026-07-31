@@ -218,9 +218,6 @@ MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
 DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
-# 이메일 구독(뉴스레터 서비스 Buttondown) — 사용자명을 repo Variable(BUTTONDOWN_USER)로 넣으면 구독폼 활성화.
-# 구독은 사이트에서 바로, 구독취소는 발송 메일 하단 링크로 자동 처리(자체 백엔드 불필요).
-NEWSLETTER_USER = os.environ.get("BUTTONDOWN_USER", "").strip()
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
 WEEKLY_LOOKBACK_DAYS = 7      # 주간 리포트 커버 기간(일)
@@ -868,27 +865,12 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     archive_html = ('<div class="archsel">🗂️ 지난 회차 보기: '
                     f'<select onchange="if(this.value)location.href=this.value">{groups}</select></div>')
 
-    if NEWSLETTER_USER:
-        subscribe_html = (
-            '<div class="card"><h2><span class="bar"></span>📬 이메일 구독</h2>'
-            '<p class="subdesc">이메일 주소를 입력하시면 갱신 때 요약을 받아보실 수 있습니다. '
-            '구독 취소는 발송 메일 맨 아래의 링크로 언제든 가능합니다.</p>'
-            f'<form class="subform" action="https://buttondown.com/api/emails/embed-subscribe/{esc(NEWSLETTER_USER)}" '
-            'method="post" target="_blank" rel="noopener">'
-            '<input type="email" name="email" placeholder="you@example.com" aria-label="이메일 주소" required>'
-            '<button type="submit">구독</button></form></div>')
-    else:
-        subscribe_html = (
-            '<div class="card"><h2><span class="bar"></span>📬 이메일 구독</h2>'
-            '<p class="subdesc">이메일 구독 기능을 준비 중입니다. 연결되면 이 자리에서 바로 구독·해지하실 수 있습니다.</p></div>')
-
     issuelabel = f'<span class="issno">{esc(issue_label)}</span>' if issue_label else ""
     weekly_html = (f'<a class="wbanner" href="{esc(weekly_link)}">📅 지난주 주간 종합 리포트 보기'
                    f'<span class="em">일요일 자동 생성 · 지난 7일 종합</span></a>') if weekly_link else ""
 
     return TEMPLATE.format(
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
-        subscribe=subscribe_html,
         title=esc(TITLE), subtitle=esc(SUBTITLE),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
         n_q=len(qatar), n_me=len(me_ov) + len(me_ir) + len(me_kr),
@@ -994,14 +976,6 @@ TEMPLATE = """<!DOCTYPE html>
     border:1px solid var(--line);border-radius:9px;padding:8px 11px}}
   .searchbox input::placeholder{{color:var(--muted)}}
   .kwn{{color:var(--muted);font-size:12px;white-space:nowrap}}
-  .subdesc{{color:var(--muted);font-size:12.5px;margin:0 0 8px}}
-  .subform{{display:flex;gap:8px;flex-wrap:wrap}}
-  .subform input{{flex:1;min-width:200px;max-width:340px;font-size:13px;color:var(--txt);
-    background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:9px 11px}}
-  .subform input::placeholder{{color:var(--muted)}}
-  .subform button{{font-size:13px;font-weight:700;color:#111;background:var(--accent);border:none;
-    border-radius:9px;padding:9px 20px;cursor:pointer}}
-  .subform button:hover{{opacity:.9}}
   .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
@@ -1050,8 +1024,6 @@ TEMPLATE = """<!DOCTYPE html>
     <h2><span class="bar"></span>관심 매체 · 정부 공지 바로가기</h2>
     {quick}
   </div>
-
-  {subscribe}
 
   <footer>
     ※ Google News RSS 및 주요 매체 피드를 자동 집계하고 Claude가 사안별로 한국어 요약합니다. <b>직전 갱신 → 이번 갱신</b> 창(window)에 보도된 기사만 표시하며, 취합·비정식 소스는 제외합니다.
