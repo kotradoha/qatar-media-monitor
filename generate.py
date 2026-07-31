@@ -1135,7 +1135,6 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         report_html = ('<details class="card report reportfold" open>'
                        '<summary class="repsum"><span class="bar" style="background:var(--gold)"></span>'
                        f'{esc(L["rep_head"])}<span class="hnote">{esc(L["rep_note"])}</span>'
-                       f'<span class="repbadge">{esc(L["rep_badge"])}</span>'
                        f'<span class="exp exp-c">{esc(L["expand"])} ▾</span>'
                        f'<span class="exp exp-o">{esc(L["collapse"])} ▴</span></summary>'
                        f'<div class="reprows">{rows}</div></details>')
@@ -1274,9 +1273,7 @@ TEMPLATE = """<!DOCTYPE html>
     font-size:15px;font-weight:800}}
   details.reportfold>summary::-webkit-details-marker{{display:none}}
   details.reportfold[open]>summary{{margin-bottom:10px}}
-  details.reportfold>summary .exp{{margin-inline-start:0;background:var(--gold)}}
-  .repbadge{{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#111;background:var(--green);
-    border-radius:7px;padding:3px 10px;white-space:nowrap}}
+  details.reportfold>summary .exp{{background:var(--gold)}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
