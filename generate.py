@@ -104,6 +104,11 @@ REPORT_HINTS = [
     "foreign affairs", "foreign policy", "oxford economics", "capital economics",
     "peterson institute", "piie", "mckinsey global", "맥킨지",
     "rusi", "stratfor", "geopolitical futures", "ispi", "merics", "bruegel",
+    # 글로벌 회계·컨설팅펌(심층 산업·에너지·지정학 보고서 발간)
+    "kpmg", "삼정", "삼정회계", "pwc", "삼일회계", "삼일pwc", "pricewaterhouse",
+    "deloitte", "딜로이트", "안진회계", "ernst & young", "ernst and young", "한영회계", "ey 한영",
+    "bcg", "boston consulting", "bain & company", "베인앤컴퍼니", "accenture", "액센츄어",
+    "oliver wyman", "올리버와이먼", "roland berger", "롤랜드버거",
     "middle east council", "mecouncil", "gulf research", "걸프연구",
     "al jazeera centre for studies", "aljazeera centre", "doha institute", "브루킹스 도하",
 ]
@@ -313,12 +318,16 @@ def is_report_source(src):
     s = (src or "").lower()
     return any(h in s for h in REPORT_HINTS)
 
+# 심층 보고서 판별: '발행처(source)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
+# 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
 def looks_report(title, src):
-    if is_report_source(src):
-        return True
-    inst = any(h in title.lower() for h in REPORT_HINTS)
-    topic = has(title + " ", QATAR_KW) or has(title + " ", MIDEAST_KW)
-    return inst and topic
+    # 1) 발행처가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
+    if not is_report_source(src):
+        return False
+    # 2) 중동·카타르 주제와 연관되어야 함
+    if not (has(title + " ", QATAR_KW) or has(title + " ", MIDEAST_KW)):
+        return False
+    return True
 
 
 def collect(win_start_utc, now_utc, when_days=2):
@@ -844,7 +853,8 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         for x in rep_list[:REPORT_SHOW_MAX])
     if rows:
         report_html = ('<div class="card report"><div class="sumhead">'
-                       '<span class="bar" style="background:var(--gold)"></span>📑 중동정세 분석·보고서'
+                       '<span class="bar" style="background:var(--gold)"></span>📑 중동정세 심층 분석·보고서'
+                       '<span class="hnote">국내외 연구기관·국제기구·컨설팅펌 발간물만</span>'
                        '<span class="ai" style="background:var(--gold)">최신순</span></div>'
                        f'<div class="reprows">{rows}</div></div>')
     else:
@@ -879,7 +889,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         me_en=block(me_ov, "이번 창에 해외 신규 기사 없음"),
         me_ir=block(me_ir, "이번 창에 이란·역내 매체 신규 기사 없음"),
         me_ko=block(me_kr, "이번 창에 국내 신규 기사 없음"),
-        quick=quick, year=now_q.year,
+        quick=quick,
     )
 
 
@@ -985,7 +995,7 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-right:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
   footer .sign{{text-align:right;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
-  footer .copy{{text-align:right;margin-top:2px;font-size:11px;color:var(--muted)}}
+  .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
 </style>
 </head>
@@ -1023,7 +1033,7 @@ TEMPLATE = """<!DOCTYPE html>
   {report}
 
   <div class="card">
-    <h2><span class="bar"></span>관심 매체 · 정부 공지 바로가기</h2>
+    <h2><span class="bar"></span>관심 매체 · 정부 공지 바로가기 <span class="hnote">(가나다·알파벳순 기재)</span></h2>
     {quick}
   </div>
 
@@ -1032,7 +1042,6 @@ TEMPLATE = """<!DOCTYPE html>
     <br>GitHub Actions가 매일 카타르시간 오전 7:00·오후 3:30에 자동 갱신합니다.
     <br>본 화면은 <b>참고용</b>이며, 자동 수집 특성상 일부 기사·보고서가 누락될 수 있으므로 관심 사안은 추가 검색으로 재확인하시기 바랍니다.
     <div class="sign">— 주카타르대사관 Commercial Section</div>
-    <div class="copy">© {year}</div>
   </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
@@ -1247,6 +1256,9 @@ def _merge_reports(items, now_utc):
     try:
         with open(path, encoding="utf-8") as f:
             for r in json.load(f):
+                # 과거 느슨한 기준으로 저장된 뉴스성 항목은 재검증해 정리(발행처가 연구기관/컨설팅펌인 것만 유지)
+                if not looks_report(r.get("title", ""), r.get("source", "")):
+                    continue
                 k = (r.get("link", "").split("?")[0]).lower()
                 if k:
                     store[k] = r
