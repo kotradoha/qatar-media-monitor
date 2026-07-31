@@ -16,11 +16,14 @@
    > 웹 업로드로 폴더가 안 되면 **Add file → Create new file** 에서 파일명에 `.github/workflows/update.yml` 처럼 경로를 직접 입력하면 폴더가 자동 생성됩니다.
 3. **Settings → Pages** → Source: **Deploy from a branch**, Branch: **main / (root)** → Save.
 4. **Settings → Actions → General** → 하단 *Workflow permissions* 를 **Read and write permissions** 로 설정(자동 커밋용).
-5. **(무료 AI 요약)** 한국어 자동 요약을 켜려면 **구글 Gemini 무료 API 키**를 등록합니다:
-   - https://aistudio.google.com/apikey 접속(구글 로그인) → **Create API key** 로 무료 키 발급.
-   - 저장소 **Settings → Secrets and variables → Actions → New repository secret**
-     → Name: `GEMINI_API_KEY`, Value: (발급받은 키) → 저장.
-   - 키를 넣지 않아도 **요약만 빠지고** 헤드라인/링크는 정상 자동 생성됩니다.
+5. **(무료 AI 요약)** 한국어 자동 요약을 켜려면 **무료 LLM API 키**를 등록합니다. 요약 엔진은 **Groq(1순위) → Gemini(2순위)** 순으로 시도합니다.
+   - **권장: Groq(무료·신용카드 불필요·전세계 사용 가능)**
+     → https://console.groq.com 접속(구글 로그인) → **API Keys → Create API Key** 로 무료 키 발급.
+     → 저장소 **Settings → Secrets and variables → Actions → New repository secret**
+       → Name: `GROQ_API_KEY`, Value: (발급받은 키) → 저장.
+   - (선택) Gemini도 넣어두면 Groq 실패 시 폴백으로 시도합니다. 단, **일부 국가/리전(예: 카타르)에서는 Gemini 무료 등급이 0으로 잡혀 429**가 나므로 Groq를 우선 권장합니다.
+     → https://aistudio.google.com/apikey → Create API key → Secret 이름 `GEMINI_API_KEY`.
+   - 키를 하나도 넣지 않아도 **요약만 빠지고** 헤드라인/링크는 정상 자동 생성됩니다.
    - 하루 2회 호출이라 무료 한도 내에서 충분합니다.
 6. **Actions** 탭 → `Update monitor` → **Run workflow**(수동 1회 실행)로 첫 생성.
 7. 1~2분 뒤 접속: **https://kotradoha.github.io/qatar-media-monitor/**

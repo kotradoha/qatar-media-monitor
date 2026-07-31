@@ -110,6 +110,8 @@ BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
 GEMINI_MODELS = ["gemini-2.0-flash-lite", "gemini-2.0-flash"]  # 순서대로 폴백(무료 한도 넉넉한 lite 우선)
+# Groq(무료·카드불필요·전세계) — 순서대로 폴백. 요약 우선 엔진.
+GROQ_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
 # ──────────────────────────────────────────────────────────
 
 feedparser.USER_AGENT = "Mozilla/5.0 (compatible; MideastMediaMonitor/1.0)"
@@ -247,11 +249,50 @@ def gemini_call(model, prompt, json_mode):
     return None
 
 
+def groq_call(model, prompt, json_mode):
+    key = os.environ.get("GROQ_API_KEY", "").strip()
+    if not key:
+        return None
+    url = "https://api.groq.com/openai/v1/chat/completions"
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.3,
+        "max_tokens": 2048,
+    }
+    if json_mode:
+        payload["response_format"] = {"type": "json_object"}
+    body = json.dumps(payload).encode("utf-8")
+    for attempt in range(3):
+        req = urllib.request.Request(
+            url, data=body,
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            return data["choices"][0]["message"]["content"].strip()
+        except urllib.error.HTTPError as ex:
+            if ex.code == 429:
+                print(f"[warn] groq {model} 429, retry {attempt+1}/3")
+                time.sleep(4 * (attempt + 1)); continue
+            print(f"[warn] groq {model} HTTP {ex.code}"); return None
+        except Exception as ex:
+            print(f"[warn] groq {model} failed: {ex}"); return None
+    return None
+
+
 def gemini_generate(prompt, json_mode):
+    # 1순위: Groq(무료·전세계). GROQ_API_KEY 있으면 우선 사용.
+    for m in GROQ_MODELS:
+        out = groq_call(m, prompt, json_mode)
+        if out:
+            print(f"[info] summary ok via groq:{m}")
+            return out
+    # 2순위: Gemini(무료 한도가 리전별로 잡히면 사용).
     for m in GEMINI_MODELS:
         out = gemini_call(m, prompt, json_mode)
         if out:
-            print(f"[info] gemini ok via {m}")
+            print(f"[info] summary ok via gemini:{m}")
             return out
     return None
 
