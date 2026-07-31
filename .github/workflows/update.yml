@@ -2,15 +2,16 @@ name: Update monitor
 
 on:
   schedule:
+    # GitHub Actions는 UTC 기준. 카타르(UTC+3) 07:00 = 04:00 UTC / 15:30 = 12:30 UTC
     - cron: "0 4 * * *"
     - cron: "30 12 * * *"
-  workflow_dispatch:
+  workflow_dispatch:        # 수동 실행 버튼
   push:
-    branches: [ main ]
+    branches: [ main ]      # 코드 수정 시에도 한 번 생성
 
 permissions:
-  contents: write
-  models: read
+  contents: write           # 생성한 index.html을 커밋/푸시하기 위함
+  models: read              # GitHub Models(무료 AI 요약) 호출 권한
 
 concurrency:
   group: update-monitor
@@ -33,16 +34,17 @@ jobs:
 
       - name: Generate index.html
         env:
-          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # 1순위: GitHub Models(내장 토큰, 키 발급 불필요)
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # 2순위(선택)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 3순위(선택). 모두 없으면 헤드라인만
+          BUTTONDOWN_USER: ${{ vars.BUTTONDOWN_USER }}     # 이메일 구독폼 사용자명(있으면 구독폼 활성화)
         run: python generate.py
 
       - name: Commit & push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add -A index.html archive
           if git diff --staged --quiet; then
             echo "No changes."
           else
