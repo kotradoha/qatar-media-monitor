@@ -314,9 +314,25 @@ def blocked_source(src):
     return any(b in low for b in BLOCK_SOURCES)
 
 
+def _build_report_matchers():
+    """짧은 영숫자 힌트(hri, kdi, eia…)는 단어경계로 매칭해 'christian⊃hri' 같은 오탐 방지.
+    한글·공백·기호 포함 힌트는 부분문자열 매칭."""
+    subs, regexes = [], []
+    for h in REPORT_HINTS:
+        hl = h.lower()
+        if re.fullmatch(r"[a-z0-9]+", hl):
+            regexes.append(re.compile(r"(?<![a-z0-9])" + re.escape(hl) + r"(?![a-z0-9])"))
+        else:
+            subs.append(hl)
+    return subs, regexes
+
+_REPORT_SUBS, _REPORT_REGEXES = _build_report_matchers()
+
 def is_report_source(src):
     s = (src or "").lower()
-    return any(h in s for h in REPORT_HINTS)
+    if any(h in s for h in _REPORT_SUBS):
+        return True
+    return any(rx.search(s) for rx in _REPORT_REGEXES)
 
 # 심층 보고서 판별: '발행처(source)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
