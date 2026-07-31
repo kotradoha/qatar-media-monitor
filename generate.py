@@ -27,7 +27,8 @@ except ImportError:
 
 # ───────────────────────── CONFIG ─────────────────────────
 TITLE = "🇶🇦 카타르·중동정세 언론 모니터링"
-SUBTITLE = "갱신 주기 내 사안별 요약 · 카타르 관련 필수 포함 · 공관 모니터링용"
+SUBTITLE = ("매일 오전 7:00 · 오후 3:30(카타르시간) 갱신 · 카타르 · 한국 · 해외 언론 모니터링 · "
+            "AI 사안별 요약(우측에 관련 기사 원문 링크)")
 
 Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security"]
 Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관"]
@@ -902,7 +903,7 @@ TEMPLATE = """<!DOCTYPE html>
   </div>
 
   <footer>
-    ※ 공관 모니터링용 · Google News RSS 및 주요 매체 피드 자동 집계 + Claude 사안별 한국어 요약. <b>직전 갱신 → 이번 갱신</b> 창(window) 기사만 표시, 취합/비정식 소스는 제외.
+    ※ Google News RSS 및 주요 매체 피드 자동 집계 + Claude 사안별 한국어 요약. <b>직전 갱신 → 이번 갱신</b> 창(window) 기사만 표시, 취합/비정식 소스는 제외.
     <br>GitHub Actions가 매일 카타르시간 오전 7:00·오후 3:30에 자동 갱신합니다. © {year}
   </footer>
 </div>
