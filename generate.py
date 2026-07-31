@@ -39,6 +39,11 @@ Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 
 Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
                 "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석",
                 "현대경제연구원 중동", "삼성글로벌리서치 중동 유가", "산업연구원 중동", "중동 리스크 보고서"]
+# 해외 연구기관·국제기구 리포트 수집용(영문)
+Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Middle East analysis",
+                "Crisis Group Iran Gulf", "IEA oil market report Middle East", "OPEC monthly oil report",
+                "Brookings Middle East Iran", "Carnegie Middle East analysis", "Eurasia Group Middle East risk",
+                "Strait of Hormuz shipping analysis report"]
 
 QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "hamad",
             "카타르", "도하", "알우데이드", "라스라판", "하마드"]
@@ -82,6 +87,15 @@ REPORT_HINTS = [
     "현대경제연구원", "hri", "삼성글로벌리서치", "삼성경제연구소", "seri",
     "lg경영연구원", "포스코경영연구원", "posri", "하나금융경영연구소", "하나금융연구소",
     "우리금융경영연구소", "국제금융", "자본시장연구원",
+    # 해외 연구기관·국제기구·에너지
+    "imf", "국제통화기금", "world bank", "세계은행", "oecd",
+    "iea", "international energy agency", "국제에너지기구", "opec", "석유수출국기구",
+    "eia", "energy information administration", "미 에너지정보청",
+    "iiss", "chatham house", "채텀하우스", "csis", "전략국제문제연구소",
+    "brookings", "브루킹스", "carnegie", "카네기", "atlantic council", "애틀랜틱카운슬",
+    "rand", "랜드연구소", "crisis group", "국제위기그룹", "middle east institute",
+    "council on foreign relations", "eurasia group", "유라시아그룹",
+    "rystad", "wood mackenzie", "우드매켄지", "s&p global", "wilson center", "bruegel",
 ]
 
 
@@ -163,6 +177,20 @@ QUICK_LINKS = {
         ("하나금융경영연구소", "https://www.hanaif.re.kr/"),
         ("무역협회 국제무역통상연구원", "https://iit.kita.net/"),
         ("자본시장연구원(KCMI)", "https://www.kcmi.re.kr/")],
+    "🌐 해외 연구기관·국제기구": [("IEA 국제에너지기구", "https://www.iea.org/"),
+        ("OPEC", "https://www.opec.org/"),
+        ("美 EIA 에너지정보청", "https://www.eia.gov/"),
+        ("IMF", "https://www.imf.org/"),
+        ("World Bank", "https://www.worldbank.org/"),
+        ("IISS", "https://www.iiss.org/"),
+        ("Chatham House", "https://www.chathamhouse.org/"),
+        ("CSIS", "https://www.csis.org/"),
+        ("Brookings", "https://www.brookings.edu/"),
+        ("Carnegie", "https://carnegieendowment.org/"),
+        ("Atlantic Council", "https://www.atlanticcouncil.org/"),
+        ("Int'l Crisis Group", "https://www.crisisgroup.org/"),
+        ("Middle East Institute", "https://www.mei.edu/"),
+        ("Eurasia Group", "https://www.eurasiagroup.net/")],
 }
 
 MAX_PER_SECTION = 60
@@ -273,6 +301,7 @@ def collect(win_start_utc, now_utc):
     for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en")))
     for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
     for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
+    for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en")))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
     for lang, label, url in feeds:
@@ -880,6 +909,8 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
+  footer .sign{{text-align:right;margin-top:10px;font-weight:800;color:var(--txt);font-size:13px}}
+  footer .copy{{text-align:right;margin-top:2px;font-size:11px;color:var(--muted)}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
 </style>
 </head>
@@ -917,8 +948,11 @@ TEMPLATE = """<!DOCTYPE html>
   </div>
 
   <footer>
-    ※ Google News RSS 및 주요 매체 피드 자동 집계 + Claude 사안별 한국어 요약. <b>직전 갱신 → 이번 갱신</b> 창(window) 기사만 표시, 취합/비정식 소스는 제외.
-    <br>GitHub Actions가 매일 카타르시간 오전 7:00·오후 3:30에 자동 갱신합니다. © {year}
+    ※ Google News RSS 및 주요 매체 피드를 자동 집계하고 Claude가 사안별로 한국어 요약합니다. <b>직전 갱신 → 이번 갱신</b> 창(window)에 보도된 기사만 표시하며, 취합·비정식 소스는 제외합니다.
+    <br>GitHub Actions가 매일 카타르시간 오전 7:00·오후 3:30에 자동 갱신합니다.
+    <br>본 화면은 <b>참고용</b>이며, 자동 수집 특성상 일부 기사·보고서가 누락될 수 있으므로 관심 사안은 추가 검색으로 재확인하시기 바랍니다.
+    <div class="sign">— 주카타르대사관 Commercial Section</div>
+    <div class="copy">© {year}</div>
   </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
