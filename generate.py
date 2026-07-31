@@ -168,7 +168,7 @@ QUICK_LINKS = {
         ("해외안전여행(0404)", "https://www.0404.go.kr/"),
         ("대통령실", "https://www.president.go.kr/"),
         ("korea.net", "https://www.korea.net/"),
-        ("산업통상자원부", "https://www.motie.go.kr/"),
+        ("산업통상부", "https://www.motie.go.kr/"),
         ("국토교통부", "https://www.molit.go.kr/"),
         ("해양수산부", "https://www.mof.go.kr/"),
         ("국방부", "https://www.mnd.go.kr/")],
@@ -218,7 +218,9 @@ MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
 DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
-ARCHIVE_KEEP = 14             # 아카이브 보관 개수(하루 2회 × 7일 = 1주)
+ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
+WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
+WEEKLY_LOOKBACK_DAYS = 7      # 주간 리포트 커버 기간(일)
 REPORT_PERSIST_DAYS = 120     # 좋은 보고서는 약 6월경부터 최근까지 누적 유지(일)
 REPORT_QUERY_DAYS = 120       # 보고서 수집 쿼리 조회 기간(Google News when:Nd)
 REPORT_SHOW_MAX = 15          # 보고서 섹션 표시 최대 개수(최신 순)
@@ -319,13 +321,13 @@ def looks_report(title, src):
     return inst and topic
 
 
-def collect(win_start_utc, now_utc):
+def collect(win_start_utc, now_utc, when_days=2):
     items, seen = [], set()
     feeds = []
-    for q in Q_QATAR_EN: feeds.append(("en", q, gnews_url(q, "en")))
-    for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
-    for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en")))
-    for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
+    for q in Q_QATAR_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
+    for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
+    for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
+    for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
     for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko", REPORT_QUERY_DAYS)))
     for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
@@ -645,7 +647,7 @@ def gemini_generate(prompt, json_mode):
     return None
 
 
-def gemini_issues(pool, win_label):
+def gemini_issues(pool, win_label, weekly=False):
     if not pool:
         return None
     lines = []
@@ -655,14 +657,20 @@ def gemini_issues(pool, win_label):
         d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
         desc = (x["desc"] or "")[:DESC_MAX]
         lines.append(f"{i}: {reg}{qt} ({x['source']}, {d}) {x['title']} :: {desc}")
+    scope = ("아래 [기사 목록]은 지난 한 주(약 7일)치입니다. 한 주간의 흐름을 종합해 "
+             if weekly else "아래 [기사 목록]을 읽고 이 갱신 주기의 내용을 ")
     prompt = (
-        "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]을 읽고 이 갱신 주기의 내용을 "
+        "당신은 주카타르대사관 상황실 분석관입니다. " + scope +
         "'사안(issue)'별로 3~6개로 묶으세요. 카테고리 예시: 전쟁·군사 / 외교·중재 / 에너지·유가 / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 항공·교민안전 / 경제.\n"
         "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), "
-        "summary(한국어, 정부보고서식 '개조식·했음체'로 2~4개 핵심 포인트. 각 포인트는 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 "
-        "서술체 '-했다/-이다/-된다'는 절대 쓰지 말 것. 예: '미군이 이란 인프라 공격함. 이란은 유조선 2척 타격 주장함. 카타르는 규탄 성명 발표함.'), "
-        "figures(핵심 수치 한 줄; 사상자/미사일/유가/호르무즈 비중/휴전기간 등, 없으면 \"\"), "
+        "summary(한국어, 정부보고서식 '개조식·했음체'로 3~5개 핵심 포인트. "
+        "각 포인트에는 **구체적 수치·일자·주체·규모**(예: 사상자 수, 미사일·드론 수, 국제유가 가격·변동폭, "
+        "통항·피격 선박 수, 봉쇄·휴전·중단 기간, 계약·금액·물동량, 지명·기관명 등)를 **가능한 한 포함**해 "
+        "이 요약만으로도 상황보고가 될 만큼 충실히 작성. "
+        "각 포인트는 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체 '-했다/-이다/-된다'는 절대 쓰지 말 것. "
+        "예: '7/31 이란 IRGC가 미군 호위 유조선 2척을 호르무즈 해협서 타격, 승조원 3명 사망 주장함. 브렌트유 배럴당 약 $1 상승함.'), "
+        "figures(핵심 수치를 세미콜론(;)으로 2~5개 나열; 사상자·미사일/유가($·변동폭)/통항·물동량/휴전·봉쇄 기간/금액 등, 없으면 \"\"), "
         "ids(그 사안 관련 기사 id 정수 배열, 최대 16개).\n"
         "중요 규칙:\n"
         "- [카타르현지] 및 (카타르관련) 표시 기사는 대사관 업무상 최우선. 카타르가 직접 얽힌 사안을 반드시 1개 이상 만들고, "
@@ -778,7 +786,16 @@ def summary_to_html(text):
     return "\n".join(out)
 
 
-def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None, reports=None):
+def _ql_key(item):
+    """관심 매체 정렬키: 한글명은 가나다 우선, 그다음 ABC(대소문자 무시)."""
+    name = item[0] or ""
+    first = name[0] if name else ""
+    is_hangul = "가" <= first <= "힣"
+    return (0 if is_hangul else 1, name.lower())
+
+
+def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
+           reports=None, issue_label=None, weekly_link=None):
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     if issue_pool is None:
@@ -809,7 +826,8 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
 
     quick = ""
     for g, links in QUICK_LINKS.items():
-        chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in links)
+        slinks = sorted(links, key=_ql_key)   # 그룹 내 가나다/ABC 정렬
+        chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in slinks)
         quick += f'<div class="qgroup"><div class="qh">{esc(g)}</div><div class="qchips">{chips}</div></div>'
 
     # 분석·보고서 — main()에서 누적·정렬해 넘겨준 목록(최신순)을 표시. 없으면 이번 창의 report 항목으로 폴백.
@@ -831,15 +849,28 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     else:
         report_html = ""
 
-    # 지난 갱신 콤보박스(최근 1주)
-    opts = f'<option value="{SITE_BASE}">이번 갱신 (최신)</option>'
-    for label, fname in (archive_list or []):
-        opts += f'<option value="{SITE_BASE}archive/{esc(fname)}">{esc(label)}</option>'
-    archive_html = ('<div class="archsel">🗂️ 지난 갱신본 보기: '
-                    f'<select onchange="if(this.value)location.href=this.value">{opts}</select></div>')
+    # 지난 회차 콤보박스 — 전 회차 보관(일간/주간 optgroup 구분, 최신순)
+    opts_daily, opts_weekly = "", ""
+    for kind, label, fname in (archive_list or []):
+        o = f'<option value="{SITE_BASE}archive/{esc(fname)}">{esc(label)}</option>'
+        if kind == "weekly":
+            opts_weekly += o
+        else:
+            opts_daily += o
+    groups = f'<option value="{SITE_BASE}">이번 회차 (최신)</option>'
+    if opts_daily:
+        groups += f'<optgroup label="일간">{opts_daily}</optgroup>'
+    if opts_weekly:
+        groups += f'<optgroup label="주간 종합">{opts_weekly}</optgroup>'
+    archive_html = ('<div class="archsel">🗂️ 지난 회차 보기: '
+                    f'<select onchange="if(this.value)location.href=this.value">{groups}</select></div>')
+
+    issuelabel = f'<span class="issno">{esc(issue_label)}</span>' if issue_label else ""
+    weekly_html = (f'<a class="wbanner" href="{esc(weekly_link)}">📅 지난주 주간 종합 리포트 보기'
+                   f'<span class="em">일요일 자동 생성 · 지난 7일 종합</span></a>') if weekly_link else ""
 
     return TEMPLATE.format(
-        archive=archive_html, report=report_html,
+        archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
         title=esc(TITLE), subtitle=esc(SUBTITLE),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
         n_q=len(qatar), n_me=len(me_ov) + len(me_ir) + len(me_kr),
@@ -931,16 +962,27 @@ TEMPLATE = """<!DOCTYPE html>
   .qchips{{display:flex;flex-wrap:wrap;gap:7px}}
   .qchips a{{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}}
   .qchips a:hover{{text-decoration:underline}}
-  .archsel{{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 14px}}
+  .archsel{{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px}}
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;max-width:60%}}
+  .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
+  .wbanner{{display:block;background:linear-gradient(180deg,rgba(242,177,52,.14),rgba(242,177,52,.05));
+    border:1px solid rgba(242,177,52,.5);border-radius:12px;padding:11px 14px;margin:2px 0 14px;
+    color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700}}
+  .wbanner:hover{{border-color:var(--gold)}}
+  .wbanner .em{{color:var(--muted);font-weight:400;font-size:12px;margin-left:6px}}
+  .searchbox{{display:flex;align-items:center;gap:8px;margin:2px 0 16px;font-size:13px}}
+  .searchbox input{{flex:1;max-width:440px;font-size:13px;color:var(--txt);background:var(--panel2);
+    border:1px solid var(--line);border-radius:9px;padding:8px 11px}}
+  .searchbox input::placeholder{{color:var(--muted)}}
+  .kwn{{color:var(--muted);font-size:12px;white-space:nowrap}}
   .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
   .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-right:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
-  footer .sign{{text-align:right;margin-top:10px;font-weight:800;color:var(--txt);font-size:13px}}
+  footer .sign{{text-align:right;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
   footer .copy{{text-align:right;margin-top:2px;font-size:11px;color:var(--muted)}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
 </style>
@@ -948,7 +990,7 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <div class="wrap">
   <header>
-    <div class="titrow"><span class="dot"></span><h1>{title}</h1></div>
+    <div class="titrow"><span class="dot"></span><h1>{title}</h1>{issuelabel}</div>
     <div class="sub">
       <span>{subtitle}</span>
       <span>최종 갱신: <b>{updated} (카타르시간)</b></span>
@@ -958,6 +1000,11 @@ TEMPLATE = """<!DOCTYPE html>
   </header>
 
   {archive}
+
+  {weekly}
+
+  <div class="searchbox">🔎 <input id="kw" type="search" autocomplete="off"
+      placeholder="키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)"> <span id="kwn" class="kwn"></span></div>
 
   {summary}
 
@@ -1001,6 +1048,28 @@ TEMPLATE = """<!DOCTYPE html>
     run();
     window.addEventListener('DOMContentLoaded', run);
   }})();
+  // 키워드 검색 — 사안 요약·전체목록·보고서·관심매체 링크를 즉시 필터
+  (function () {{
+    var inp = document.getElementById('kw');
+    if (!inp) return;
+    var sels = ['.issue', 'details.fulllist li', '.reprows a', '.qchips a'];
+    function apply() {{
+      var q = inp.value.trim().toLowerCase();
+      var fl = document.querySelector('details.fulllist');
+      if (fl && q) fl.open = true;
+      var shown = 0;
+      sels.forEach(function (s) {{
+        document.querySelectorAll(s).forEach(function (el) {{
+          var hit = !q || (el.textContent || '').toLowerCase().indexOf(q) >= 0;
+          el.style.display = hit ? '' : 'none';
+          if (hit && q) shown++;
+        }});
+      }});
+      var n = document.getElementById('kwn');
+      if (n) n.textContent = q ? (shown + '건 표시') : '';
+    }}
+    inp.addEventListener('input', apply);
+  }})();
 </script>
 </body>
 </html>
@@ -1036,12 +1105,57 @@ def build_issue_pool(items):
     return pool[:POOL_FOR_ISSUES]
 
 
-def _stamp_label(stamp):
-    # "20260731-1852" -> "07/31 18:52"
+def _issue_base_dt():
+    return datetime(ISSUE_BASE[0], ISSUE_BASE[1], ISSUE_BASE[2], 7, 0, tzinfo=TZ)
+
+def _slot_of(now_q):
+    """이번 회차가 대표하는 브리핑 슬롯(직전 07:00/15:30 경계)과 라벨(0700/1530)."""
+    am = now_q.replace(hour=7, minute=0, second=0, microsecond=0)
+    pm = now_q.replace(hour=15, minute=30, second=0, microsecond=0)
+    if now_q >= pm:
+        return pm, "1530"
+    if now_q >= am:
+        return am, "0700"
+    prev = (now_q - timedelta(days=1)).replace(hour=15, minute=30, second=0, microsecond=0)
+    return prev, "1530"
+
+def _daily_no(slot_dt):
+    base = _issue_base_dt()
+    if slot_dt < base:
+        return None
+    d = (slot_dt.date() - base.date()).days
+    return d * 2 + (1 if slot_dt.hour == 7 else 2)
+
+def _first_weekly_sunday():
+    b = _issue_base_dt().date()
+    return b + timedelta(days=(WEEKLY_WEEKDAY - b.weekday()) % 7)
+
+def _weekly_no(sun_date):
+    first = _first_weekly_sunday()
+    if sun_date < first:
+        return None
+    return (sun_date - first).days // 7 + 1
+
+def _archive_label(fname):
+    """아카이브 파일명 → (kind, 정렬키(datetime), 라벨). 알 수 없으면 None."""
+    n = fname[:-5] if fname.endswith(".html") else fname
     try:
-        return f"{stamp[4:6]}/{stamp[6:8]} {stamp[9:11]}:{stamp[11:13]}"
+        if n.startswith("d-"):
+            y, m, d = int(n[2:6]), int(n[6:8]), int(n[8:10])
+            ampm = n[11:15]
+            hh, mm = (7, 0) if ampm == "0700" else (15, 30)
+            slot = datetime(y, m, d, hh, mm, tzinfo=TZ)
+            no = _daily_no(slot)
+            tail = f"{m:02d}/{d:02d} {hh:02d}:{mm:02d}"
+            return ("daily", slot, (f"제{no}호 · {tail}" if no else f"(시범) {tail}"))
+        if n.startswith("w-"):
+            y, m, d = int(n[2:6]), int(n[6:8]), int(n[8:10])
+            sd = datetime(y, m, d, 7, 0, tzinfo=TZ)
+            no = _weekly_no(sd.date())
+            return ("weekly", sd, (f"주간 제{no}호 · ~{m:02d}/{d:02d}" if no else f"주간 ~{m:02d}/{d:02d}"))
     except Exception:
-        return stamp
+        return None
+    return None
 
 
 def main():
@@ -1052,35 +1166,59 @@ def main():
     pool = build_issue_pool(items)
     issues = gemini_issues(pool, label)
     flat = None if issues else gemini_flat(pool, label)
-
-    # ── 아카이브: 이번 스냅샷 저장 + 최근 1주 목록 구성 + 오래된 것 정리 ──
-    stamp = now_q.strftime("%Y%m%d-%H%M")
-    os.makedirs("archive", exist_ok=True)
-    existing = sorted({f[:-5] for f in os.listdir("archive")
-                       if f.endswith(".html") and f[:-5] != stamp}, reverse=True)
-    # 콤보박스에는 과거 스냅샷(최근 ARCHIVE_KEEP)만 노출
-    keep = existing[:ARCHIVE_KEEP]
-    archive_entries = [(_stamp_label(s), s + ".html") for s in keep]
-    # 오래된 스냅샷 삭제(보관 한도 초과분)
-    for s in existing[ARCHIVE_KEEP:]:
-        try:
-            os.remove(os.path.join("archive", s + ".html"))
-        except OSError:
-            pass
-
-    # ── 분석·보고서 누적(reports.json): 6월경~ 최근까지 유지, 최신순, 갱신마다 새 것만 추가 ──
     reports = _merge_reports(items, now_utc)
 
+    os.makedirs("archive", exist_ok=True)
+    slot_dt, ampm = _slot_of(now_q)
+    dno = _daily_no(slot_dt)
+    daily_fname = f"d-{slot_dt.strftime('%Y%m%d')}-{ampm}.html"
+    issue_label = (f"일간 제{dno}호" if dno else "일간(시범)")
+
+    # 일요일 오전 회차 → 지난 7일 주간 종합 리포트도 생성(일간과 동시 노출)
+    is_weekly = (ampm == "0700" and slot_dt.weekday() == WEEKLY_WEEKDAY and dno is not None)
+    weekly_fname = f"w-{slot_dt.strftime('%Y%m%d')}.html" if is_weekly else None
+    weekly_link = (SITE_BASE + "archive/" + weekly_fname) if is_weekly else None
+
+    # 콤보박스 목록: 기존 아카이브 전부 보관(삭제 없음) + 이번 생성분 포함, 최신순
+    files = {f for f in os.listdir("archive") if f.endswith(".html")}
+    files.add(daily_fname)
+    if weekly_fname:
+        files.add(weekly_fname)
+    entries = []
+    for f in files:
+        info = _archive_label(f)
+        if info:
+            entries.append((info[0], info[1], info[2], f))
+    entries.sort(key=lambda e: e[1], reverse=True)
+    archive_list = [(k, lab, f) for (k, sk, lab, f) in entries if f != daily_fname]
+
+    # 주간 리포트 생성
+    if is_weekly:
+        wk_from = (now_q - timedelta(days=WEEKLY_LOOKBACK_DAYS)).strftime("%m/%d")
+        wlabel = f"지난주 종합 · {wk_from} → {now_q.strftime('%m/%d')} (카타르시간)"
+        witems = collect(now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS), now_utc,
+                         when_days=WEEKLY_LOOKBACK_DAYS + 1)
+        wpool = build_issue_pool(witems)
+        wissues = gemini_issues(wpool, wlabel, weekly=True)
+        wflat = None if wissues else gemini_flat(wpool, wlabel)
+        wreports = _merge_reports(witems, now_utc)
+        whtml = render(witems, wlabel, wissues, wflat, issue_pool=wpool,
+                       archive_list=archive_list, reports=wreports,
+                       issue_label=f"주간 제{_weekly_no(slot_dt.date())}호")
+        with open(os.path.join("archive", weekly_fname), "w", encoding="utf-8") as f:
+            f.write(whtml)
+
     html = render(items, label, issues, flat, issue_pool=pool,
-                  archive_list=archive_entries, reports=reports)
+                  archive_list=archive_list, reports=reports,
+                  issue_label=issue_label, weekly_link=weekly_link)
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
-    with open(os.path.join("archive", stamp + ".html"), "w", encoding="utf-8") as f:
+    with open(os.path.join("archive", daily_fname), "w", encoding="utf-8") as f:
         f.write(html)
 
     mode = "issues" if issues else ("flat" if flat else "none")
-    print(f"generated · window={label} · items={len(items)} · summary={mode} · "
-          f"reports_new={sum(1 for x in items if x.get('report'))} · reports_total={len(reports)} · archive={len(keep)}")
+    print(f"generated · {issue_label} · window={label} · items={len(items)} · summary={mode} · "
+          f"weekly={'Y' if is_weekly else 'N'} · reports_total={len(reports)} · archive={len(archive_list)}")
 
 
 def _merge_reports(items, now_utc):
