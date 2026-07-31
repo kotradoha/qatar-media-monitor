@@ -237,6 +237,137 @@ QUICK_SECTIONS = [
                  "🌐 해외 연구기관·국제기구", "📰 해외 심층분석·경제전망"]),
 ]
 
+# ───────────── 다국어(i18n): 한국어(기본)·영어·아랍어 ─────────────
+LANGS = ["ko", "en", "ar"]
+LANG_NAME = {"ko": "한국어", "en": "English", "ar": "العربية"}
+
+QSEC_I18N = {
+    "📰 관련 매체": {"en": "📰 Media", "ar": "📰 وسائل الإعلام"},
+    "🏛️ 정부": {"en": "🏛️ Government", "ar": "🏛️ الجهات الحكومية"},
+    "📑 유관기관": {"en": "📑 Institutions & Research", "ar": "📑 المؤسسات ومراكز الأبحاث"},
+}
+QGROUP_I18N = {
+    "🇶🇦 카타르 현지 매체": {"en": "🇶🇦 Qatar local media", "ar": "🇶🇦 وسائل إعلام قطرية"},
+    "🇮🇷 이란·역내 매체": {"en": "🇮🇷 Iran & regional media", "ar": "🇮🇷 إعلام إيراني وإقليمي"},
+    "🌐 해외(미국·유럽 등) 매체": {"en": "🌐 Global media (US·Europe)", "ar": "🌐 إعلام دولي (أمريكا·أوروبا)"},
+    "🇰🇷 국내 종합·방송": {"en": "🇰🇷 Korea — general & broadcast", "ar": "🇰🇷 كوريا — عام وبث"},
+    "🇰🇷 국내 경제지": {"en": "🇰🇷 Korea — business press", "ar": "🇰🇷 كوريا — صحافة اقتصادية"},
+    "🏛️ 카타르 정부 공식": {"en": "🏛️ Qatar government", "ar": "🏛️ حكومة قطر"},
+    "🏛️ 우리 정부(한국) 공식": {"en": "🏛️ Korean government", "ar": "🏛️ الحكومة الكورية"},
+    "📑 연구기관·에너지(국책)": {"en": "📑 Public research & energy (Korea)", "ar": "📑 أبحاث حكومية وطاقة (كوريا)"},
+    "📑 민간·금융 연구소": {"en": "📑 Private & financial institutes", "ar": "📑 معاهد خاصة ومالية"},
+    "📑 외교·안보 연구기관(국책)": {"en": "📑 Foreign-policy & security institutes", "ar": "📑 معاهد السياسة والأمن"},
+    "🌐 해외 연구기관·국제기구": {"en": "🌐 Global institutes & int'l orgs", "ar": "🌐 معاهد دولية ومنظمات"},
+    "📰 해외 심층분석·경제전망": {"en": "📰 Global analysis & outlook", "ar": "📰 تحليلات وتوقعات دولية"},
+}
+
+LANG = {
+ "ko": {
+  "dir": "ltr", "html": "ko",
+  "title": "🇶🇦 카타르·중동정세 언론 모니터링",
+  "subtitle": ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
+               "AI 사안별 요약과 관련 기사 원문 링크 제공"),
+  "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
+  "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
+  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
+  "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
+  "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
+                  "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
+  "search_count": "건 표시",
+  "sum_head": "🧭 이번 회차 사안별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
+  "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
+  "issue": "사안", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
+  "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
+  "flag": "카타르",
+  "full_summary": "전체 기사 목록 (총 {n}건) — 클릭해서 펼치기 · 카타르/이란/해외/국내",
+  "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
+  "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
+  "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
+  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물만", "rep_badge": "최신순",
+  "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
+  "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
+  "quick_head": "관련 매체 · 정부 · 유관기관 바로가기", "quick_note": "(가나다·알파벳순 기재)",
+  "foot1": ("본 페이지는 카타르·한국·해외 주요 언론과 국내외 연구기관·국제기구·정부기관의 공개 자료를 자동으로 수집하여, "
+            "카타르와 관련된 중동 정세를 사안별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다."),
+  "foot2": "갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.",
+  "foot3": ("사안 요약은 AI가 자동 생성하므로 사실관계·수치에 오류가 있을 수 있으며, 자동 수집 특성상 일부 기사·보고서가 누락될 수 있습니다. "
+            "본 화면은 <b>참고용</b>이오니, 중요한 사안은 각 원문과 추가 검색을 통해 반드시 재확인하시기 바랍니다."),
+  "sign": "— 주카타르대사관 Commercial Section",
+  "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
+  "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)",
+ },
+ "en": {
+  "dir": "ltr", "html": "en",
+  "title": "🇶🇦 Qatar & Middle East — Media Monitor",
+  "subtitle": ("Auto-updated daily at 07:00 & 15:30 (Qatar time) · Monitoring Qatar, Korea & global media and "
+               "domestic/foreign think-tank reports · AI issue summaries with source links"),
+  "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
+  "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
+  "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
+  "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
+  "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
+                  "(full article text and past editions are not searched; open a past edition from the selector above to search it)."),
+  "search_count": " shown",
+  "sum_head": "🧭 This edition — issue briefs", "sum_head_flat": "🧭 This edition — key summary", "ai": "AI summary",
+  "sum_none_body": "Summary not generated this time — it will retry on the next update. The article lists below are fine.", "diag": "Diagnostics",
+  "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
+  "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
+  "flag": "Qatar",
+  "full_summary": "Full article list (total {n}) — click to expand · Qatar / Iran / Global / Korea",
+  "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
+  "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
+  "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
+  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Only publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest",
+  "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
+  "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
+  "quick_head": "Media · Government · Institutions — quick links", "quick_note": "(sorted alphabetically)",
+  "foot1": ("This page automatically collects public material from major Qatari, Korean and global media and from domestic and "
+            "international research institutes, international organizations and government bodies, and organizes Qatar-related Middle East "
+            "developments by issue. Only material newly reported or published since the previous edition is included; simple aggregators and non-official outlets are excluded."),
+  "foot2": "Updates run automatically every day at 07:00 and 15:30 Qatar time; the Sunday morning edition also includes a digest of the past week.",
+  "foot3": ("Issue summaries are generated by AI and may contain factual or numerical errors, and automatic collection may miss some articles or reports. "
+            "This page is <b>for reference only</b>; please verify important matters against the original sources and further searches."),
+  "sign": "— Embassy of the Republic of Korea in Qatar, Commercial Section",
+  "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
+  "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)",
+ },
+ "ar": {
+  "dir": "rtl", "html": "ar",
+  "title": "🇶🇦 رصد الإعلام: قطر والشرق الأوسط",
+  "subtitle": ("تحديث تلقائي يوميًا الساعة 07:00 و15:30 (بتوقيت قطر) · رصد إعلام قطر وكوريا والعالم وتقارير مراكز الأبحاث المحلية والدولية · "
+               "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
+  "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
+  "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
+  "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
+  "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
+  "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
+                  "(لا يشمل البحث النص الكامل للمقالات ولا الإصدارات السابقة؛ افتح إصدارًا سابقًا من القائمة أعلاه للبحث فيه)."),
+  "search_count": " ظاهر",
+  "sum_head": "🧭 هذا الإصدار — ملخص القضايا", "sum_head_flat": "🧭 هذا الإصدار — الملخص الرئيسي", "ai": "ملخص آلي",
+  "sum_none_body": "لم يُنشأ الملخص هذه المرة — ستُعاد المحاولة في التحديث التالي. قوائم الأخبار أدناه سليمة.", "diag": "تشخيص",
+  "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
+  "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
+  "flag": "قطر",
+  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n}) — اضغط للتوسيع · قطر / إيران / دولي / كوريا",
+  "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
+  "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
+  "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
+  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات فقط", "rep_badge": "الأحدث",
+  "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
+  "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
+  "quick_head": "الإعلام · الحكومة · المؤسسات — روابط سريعة", "quick_note": "(مرتّبة أبجديًا)",
+  "foot1": ("تجمع هذه الصفحة تلقائيًا المواد العامة من كبرى وسائل الإعلام القطرية والكورية والعالمية ومن مراكز الأبحاث والمنظمات الدولية "
+            "والجهات الحكومية المحلية والدولية، وتنظّم تطورات الشرق الأوسط المتعلقة بقطر حسب القضية. تُدرَج فقط المواد المنشورة حديثًا منذ الإصدار السابق، "
+            "وتُستبعد المجمّعات والمصادر غير الرسمية."),
+  "foot2": "تُجرى التحديثات تلقائيًا يوميًا الساعة 07:00 و15:30 بتوقيت قطر، ويتضمن إصدار صباح الأحد موجزًا للأسبوع المنصرم.",
+  "foot3": ("تُنشأ ملخصات القضايا بالذكاء الاصطناعي وقد تتضمن أخطاء في الوقائع أو الأرقام، وقد يُغفل الجمع التلقائي بعض المقالات أو التقارير. "
+            "هذه الصفحة <b>للاطلاع فقط</b>؛ يُرجى التحقق من المسائل المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
+  "sign": "— سفارة جمهورية كوريا لدى قطر، القسم التجاري",
+  "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
+  "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)",
+ },
+}
+
 MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
 DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
@@ -816,22 +947,59 @@ def gemini_flat(pool, win_label):
     return gemini_generate(prompt, json_mode=False)
 
 
+def translate_issues(issues, lang):
+    """사안 요약(theme/summary/figures)을 영어/아랍어로 번역. 실패 시 원문(한국어) 유지."""
+    if not issues or lang == "ko":
+        return issues
+    target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
+    if not target:
+        return issues
+    payload = [{"theme": i.get("theme", ""), "summary": i.get("summary", ""), "figures": i.get("figures", "")}
+               for i in issues]
+    prompt = (
+        f"Translate the 'theme', 'summary' and 'figures' fields of the following JSON into {target}. "
+        "Keep all numbers, dates, currencies and proper nouns; keep any leading emoji in 'theme'. "
+        "Return ONLY a JSON object of the exact form {\"issues\":[{\"theme\":\"\",\"summary\":\"\",\"figures\":\"\"}]} "
+        "with the same number and order of items, no commentary.\n\n"
+        + json.dumps({"issues": payload}, ensure_ascii=False))
+    out = gemini_generate(prompt, json_mode=True)
+    if not out:
+        return issues
+    try:
+        tr = json.loads(out).get("issues")
+        if isinstance(tr, list) and len(tr) == len(issues):
+            merged = []
+            for orig, t in zip(issues, tr):
+                m = dict(orig)
+                if isinstance(t, dict):
+                    m["theme"] = t.get("theme") or orig.get("theme", "")
+                    m["summary"] = t.get("summary") or orig.get("summary", "")
+                    m["figures"] = t.get("figures", orig.get("figures", ""))
+                merged.append(m)
+            return merged
+    except Exception as ex:
+        print(f"[warn] translate_issues {lang} failed: {ex}")
+    return issues
+
+
 # ───────────────────── 렌더링 ─────────────────────
-def ago(dt, now):
+def ago(dt, now, L=None):
+    L = L or LANG["ko"]
     m = int((now - dt).total_seconds() // 60)
-    if m < 60: return f"{m}분 전"
-    if m < 1440: return f"{m//60}시간 전"
-    return f"{m//1440}일 전"
+    if m < 60: return L["ago_min"].format(n=m)
+    if m < 1440: return L["ago_hr"].format(n=m // 60)
+    return L["ago_day"].format(n=m // 1440)
 
 
 def esc(s):
     return html.escape(s or "", quote=True)
 
 
-def li(x, now_utc):
+def li(x, now_utc, L=None):
+    L = L or LANG["ko"]
     d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
-    meta = " · ".join([esc(x["source"]), d, ago(x["dt"], now_utc)])
-    flag = '<span class="qflag">카타르</span> ' if x["qatar"] else ""
+    meta = " · ".join([esc(x["source"]), d, ago(x["dt"], now_utc, L)])
+    flag = f'<span class="qflag">{esc(L["flag"])}</span> ' if x["qatar"] else ""
     desc = f'<div class="dsc">{esc(x["desc"])}</div>' if x["desc"] else ""
     return (f'<li>{flag}<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}</a>'
             f'{desc}<div class="meta">{meta}</div></li>')
@@ -843,10 +1011,11 @@ def link_row(x):
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
 
-def render_issues(issues, pool, now_utc):
+def render_issues(issues, pool, now_utc, L=None):
+    L = L or LANG["ko"]
     out = []
     for n, iss in enumerate(issues, 1):
-        theme = esc(str(iss.get("theme", f"사안 {n}")))
+        theme = esc(str(iss.get("theme", f"{L['issue']} {n}")))
         summary = esc(str(iss.get("summary", "")))
         figures = esc(str(iss.get("figures", "")))
         ids = [j for j in iss.get("ids", []) if isinstance(j, int) and 0 <= j < len(pool)]
@@ -856,16 +1025,16 @@ def render_issues(issues, pool, now_utc):
         ov = [a for a in arts if a["region"] == "overseas"]
         kr = [a for a in arts if a["region"] == "korea"]
         groups = ""
-        if q:  groups += '<div class="grp"><div class="gh">🇶🇦 카타르 현지</div>' + "".join(link_row(a) for a in q) + '</div>'
-        if ir: groups += '<div class="grp"><div class="gh">🇮🇷 이란·역내</div>' + "".join(link_row(a) for a in ir) + '</div>'
-        if ov: groups += '<div class="grp"><div class="gh">🌐 해외(미국·유럽 등)</div>' + "".join(link_row(a) for a in ov) + '</div>'
-        if kr: groups += '<div class="grp"><div class="gh">🇰🇷 국내(한국)</div>' + "".join(link_row(a) for a in kr) + '</div>'
+        if q:  groups += f'<div class="grp"><div class="gh">{esc(L["g_qatar"])}</div>' + "".join(link_row(a) for a in q) + '</div>'
+        if ir: groups += f'<div class="grp"><div class="gh">{esc(L["g_iran"])}</div>' + "".join(link_row(a) for a in ir) + '</div>'
+        if ov: groups += f'<div class="grp"><div class="gh">{esc(L["g_over"])}</div>' + "".join(link_row(a) for a in ov) + '</div>'
+        if kr: groups += f'<div class="grp"><div class="gh">{esc(L["g_korea"])}</div>' + "".join(link_row(a) for a in kr) + '</div>'
         if not groups:
-            groups = '<div class="grp"><div class="gh" style="color:var(--muted)">관련 링크 매핑 없음</div></div>'
-        fig = f'<div class="figs">핵심 수치: {figures}</div>' if figures else ""
+            groups = f'<div class="grp"><div class="gh" style="color:var(--muted)">{esc(L["nomap"])}</div></div>'
+        fig = f'<div class="figs">{esc(L["key_fig"])}: {figures}</div>' if figures else ""
         out.append(
-            f'<div class="issue"><div class="ihead"><span class="num">사안 {n}</span><h2>{theme}</h2></div>'
-            f'<div class="row"><div class="left"><div class="sh">핵심 요약</div><p>{summary}</p>{fig}</div>'
+            f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
+            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div><p>{summary}</p>{fig}</div>'
             f'<div class="right">{groups}</div></div></div>')
     return "\n".join(out)
 
@@ -896,7 +1065,9 @@ def _ql_key(item):
 
 
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
-           reports=None, issue_label=None, weekly_inline=None):
+           reports=None, issue_label=None, weekly_inline=None, lang="ko", nav=None, home_url=None):
+    L = LANG.get(lang, LANG["ko"])
+    home_url = home_url or SITE_BASE
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     if issue_pool is None:
@@ -908,55 +1079,56 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     me_kr = [x for x in items if not is_pin(x) and x["region"] == "korea"][:MAX_PER_SECTION]
 
     def block(rows, empty):
-        return "\n".join(li(x, now_utc) for x in rows) or f'<li class="empty">{empty}</li>'
+        return "\n".join(li(x, now_utc, L) for x in rows) or f'<li class="empty">{empty}</li>'
 
     if issues:
-        summary_html = ('<div class="sumhead"><span class="bar"></span>🧭 이번 회차 사안별 요약 '
-                        '<span class="ai">AI 자동요약</span></div>' + render_issues(issues, issue_pool, now_utc))
+        summary_html = (f'<div class="sumhead"><span class="bar"></span>{esc(L["sum_head"])} '
+                        f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L))
     elif flat_text:
-        summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 회차 핵심 요약 '
-                        '<span class="ai">AI 자동요약</span></div>'
+        summary_html = (f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(L["sum_head_flat"])} '
+                        f'<span class="ai">{esc(L["ai"])}</span></div>'
                         f'<div class="sumbody">{summary_to_html(flat_text)}</div></div>')
     else:
         diag = " · ".join(LLM_DIAG[-3:]) if LLM_DIAG else ""
-        diag_html = f'<div class="pl" style="color:var(--muted);font-size:11px;margin-top:6px">진단: {esc(diag)}</div>' if diag else ""
-        summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 회차 핵심 요약</div>'
-                        '<div class="sumbody"><div class="pl" style="color:var(--muted)">요약 일시 미생성 — '
-                        '다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.</div>'
+        diag_html = f'<div class="pl" style="color:var(--muted);font-size:11px;margin-top:6px">{esc(L["diag"])}: {esc(diag)}</div>' if diag else ""
+        summary_html = (f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(L["sum_head_flat"])}</div>'
+                        f'<div class="sumbody"><div class="pl" style="color:var(--muted)">{esc(L["sum_none_body"])}</div>'
                         f'{diag_html}</div></div>')
 
     quick = ""
     for sec_title, group_names in QUICK_SECTIONS:
-        quick += f'<div class="qsec">{esc(sec_title)}</div>'
+        sec_disp = sec_title if lang == "ko" else QSEC_I18N.get(sec_title, {}).get(lang, sec_title)
+        quick += f'<div class="qsec">{esc(sec_disp)}</div>'
         for g in group_names:
             links = QUICK_LINKS.get(g, [])
             if not links:
                 continue
-            slinks = sorted(links, key=_ql_key)   # 그룹 내 가나다/ABC 정렬
+            g_disp = g if lang == "ko" else QGROUP_I18N.get(g, {}).get(lang, g)
+            slinks = sorted(links, key=_ql_key)   # 그룹 내 가나다/ABC 정렬(표기명은 고유명 유지)
             chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in slinks)
-            quick += f'<div class="qgroup"><div class="qh">{esc(g)}</div><div class="qchips">{chips}</div></div>'
+            quick += f'<div class="qgroup"><div class="qh">{esc(g_disp)}</div><div class="qchips">{chips}</div></div>'
 
-    # 분석·보고서 — main()에서 누적·정렬해 넘겨준 목록(최신순)을 표시. 없으면 이번 창의 report 항목으로 폴백.
+    # 분석·보고서 — main()에서 누적·정렬해 넘겨준 목록(최신순). 없으면 이번 창의 report 항목으로 폴백.
     rep_list = reports if reports is not None else [x for x in items if x.get("report")]
-    tagmap = {"qatar": "카타르", "iran": "이란", "overseas": "해외", "korea": "국내"}
+    tagmap = {"qatar": L["t_qatar"], "iran": L["t_iran"], "overseas": L["t_over"], "korea": L["t_korea"]}
     def rep_dt(x):
         d = x.get("dt")
         return d.astimezone(TZ).strftime("%m/%d") if hasattr(d, "astimezone") else str(d or "")[:10]
     rows = "".join(
         f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
-        f'<span class="tag">{esc(tagmap.get(x.get("region","overseas"),"해외"))}</span>{esc(x["title"])}'
+        f'<span class="tag">{esc(tagmap.get(x.get("region","overseas"),L["t_over"]))}</span>{esc(x["title"])}'
         f'<span class="src">{esc(x["source"])} · {rep_dt(x)}</span></a>'
         for x in rep_list[:REPORT_SHOW_MAX])
     if rows:
         report_html = ('<div class="card report"><div class="sumhead">'
-                       '<span class="bar" style="background:var(--gold)"></span>📑 중동정세 심층 분석·보고서'
-                       '<span class="hnote">국내외 연구기관·국제기구·컨설팅펌 발간물만</span>'
-                       '<span class="ai" style="background:var(--gold)">최신순</span></div>'
+                       f'<span class="bar" style="background:var(--gold)"></span>{esc(L["rep_head"])}'
+                       f'<span class="hnote">{esc(L["rep_note"])}</span>'
+                       f'<span class="ai" style="background:var(--gold)">{esc(L["rep_badge"])}</span></div>'
                        f'<div class="reprows">{rows}</div></div>')
     else:
         report_html = ""
 
-    # 지난 회차 콤보박스 — 전 회차 보관(일간/주간 optgroup 구분, 최신순)
+    # 지난 회차 콤보박스 — 해당 언어 아카이브(일간/주간 optgroup 구분, 최신순)
     opts_daily, opts_weekly = "", ""
     for kind, label, fname in (archive_list or []):
         o = f'<option value="{SITE_BASE}archive/{esc(fname)}">{esc(label)}</option>'
@@ -964,33 +1136,47 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
             opts_weekly += o
         else:
             opts_daily += o
-    groups = f'<option value="{SITE_BASE}">이번 회차 (최신)</option>'
+    aopts = f'<option value="{esc(home_url)}">{esc(L["arch_latest"])}</option>'
     if opts_daily:
-        groups += f'<optgroup label="일간">{opts_daily}</optgroup>'
+        aopts += f'<optgroup label="{esc(L["arch_daily"])}">{opts_daily}</optgroup>'
     if opts_weekly:
-        groups += f'<optgroup label="주간 종합">{opts_weekly}</optgroup>'
-    archive_html = ('<div class="archsel">🗂️ 지난 회차 보기: '
-                    f'<select onchange="if(this.value)location.href=this.value">{groups}</select></div>')
+        aopts += f'<optgroup label="{esc(L["arch_weekly"])}">{opts_weekly}</optgroup>'
+    archive_html = (f'<div class="archsel">{esc(L["arch_view"])} '
+                    f'<select onchange="if(this.value)location.href=this.value">{aopts}</select></div>')
+
+    # 언어 전환 버튼
+    nav = nav or {l: home_url for l in LANGS}
+    navbtns = "".join(
+        f'<a class="langbtn{" on" if l == lang else ""}" href="{esc(nav.get(l, home_url))}">{esc(LANG_NAME[l])}</a>'
+        for l in LANGS)
+    nav_html = f'<div class="langbar">{navbtns}</div>'
 
     issuelabel = f'<span class="issno">{esc(issue_label)}</span>' if issue_label else ""
     weekly_html = weekly_inline or ""
 
     return TEMPLATE.format(
+        dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
-        title=esc(TITLE), subtitle=esc(SUBTITLE),
+        title=esc(L["title"]), subtitle=esc(L["subtitle"]),
+        updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
+        counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
-        n_q=len(qatar), n_me=len(me_ov) + len(me_ir) + len(me_kr),
-        n_all=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr), summary=summary_html,
-        qatar=block(qatar, "이번 창(window)에 카타르 직접 관련 신규 기사 없음"),
-        me_en=block(me_ov, "이번 창에 해외 신규 기사 없음"),
-        me_ir=block(me_ir, "이번 창에 이란·역내 매체 신규 기사 없음"),
-        me_ko=block(me_kr, "이번 창에 국내 신규 기사 없음"),
+        search_ph=esc(L["search_ph"]), search_hint=L["search_hint"], search_count=esc(L["search_count"]),
+        full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
+        col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
+        quick_head=esc(L["quick_head"]), quick_note=esc(L["quick_note"]),
+        foot1=L["foot1"], foot2=L["foot2"], foot3=L["foot3"], sign=esc(L["sign"]),
+        summary=summary_html,
+        qatar=block(qatar, esc(L["empty_q"])),
+        me_en=block(me_ov, esc(L["empty_over"])),
+        me_ir=block(me_ir, esc(L["empty_iran"])),
+        me_ko=block(me_kr, esc(L["empty_korea"])),
         quick=quick,
     )
 
 
 TEMPLATE = """<!DOCTYPE html>
-<html lang="ko">
+<html lang="{htmllang}" dir="{dir}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1004,6 +1190,10 @@ TEMPLATE = """<!DOCTYPE html>
   header{{position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 72%,transparent);
     padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
+  .langbar{{display:flex;gap:6px;margin-inline-start:auto}}
+  .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
+  .langbtn.on{{color:#111;background:var(--accent);border-color:var(--accent);font-weight:700}}
+  .langbtn:hover{{color:var(--txt)}}
   .dot{{width:10px;height:10px;border-radius:50%;background:var(--green);animation:p 2s infinite}}
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:19px;margin:0}}
@@ -1018,8 +1208,8 @@ TEMPLATE = """<!DOCTYPE html>
   .issue .ihead h2{{font-size:14.5px;margin:0}}
   .row{{display:grid;grid-template-columns:0.78fr 1.22fr;gap:0}}
   @media (max-width:760px){{.row{{grid-template-columns:1fr}}}}
-  .left{{padding:13px 16px;border-right:1px solid var(--line)}}
-  @media (max-width:760px){{.left{{border-right:none;border-bottom:1px solid var(--line)}}}}
+  .left{{padding:13px 16px;border-inline-end:1px solid var(--line)}}
+  @media (max-width:760px){{.left{{border-inline-end:none;border-bottom:1px solid var(--line)}}}}
   .left .sh{{font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}}
   .left p{{margin:0 0 8px;font-size:13.5px}}
   .left .figs{{font-size:12.5px;color:var(--muted)}}
@@ -1028,7 +1218,7 @@ TEMPLATE = """<!DOCTYPE html>
   .grp a{{display:block;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;margin:5px 0}}
   .grp a:hover{{color:var(--accent);text-decoration:underline}}
   .grp a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
-  .tq{{font-size:10px;font-weight:700;color:#111;background:var(--gold);border-radius:5px;padding:0 5px;margin-right:4px;vertical-align:middle}}
+  .tq{{font-size:10px;font-weight:700;color:#111;background:var(--gold);border-radius:5px;padding:0 5px;margin-inline-end:4px;vertical-align:middle}}
   .card{{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 15px;margin-bottom:14px}}
   .card.sum{{background:linear-gradient(180deg,rgba(77,163,255,.08),transparent),var(--panel)}}
   .sumbody .sh{{font-weight:800;margin:11px 0 4px;font-size:13px;color:var(--accent)}}
@@ -1053,7 +1243,7 @@ TEMPLATE = """<!DOCTYPE html>
   details.fulllist>summary::-webkit-details-marker{{display:none}}
   details.fulllist>summary:hover{{color:var(--txt)}}
   details.fulllist[open]>summary{{margin-bottom:12px}}
-  details.fulllist .chev{{display:inline-block;transition:transform .15s;margin-right:4px}}
+  details.fulllist .chev{{display:inline-block;transition:transform .15s;margin-inline-end:4px}}
   details.fulllist[open] .chev{{transform:rotate(90deg)}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
@@ -1077,7 +1267,7 @@ TEMPLATE = """<!DOCTYPE html>
   .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(242,177,52,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .wsec .sumhead{{margin-top:2px}}
-  .wsec .wmeta{{font-size:11.5px;color:var(--muted);font-weight:400;margin-left:auto}}
+  .wsec .wmeta{{font-size:11.5px;color:var(--muted);font-weight:400;margin-inline-start:auto}}
   .wsec .wlink{{margin-top:8px;font-size:12.5px}}
   .wsec .wlink a{{color:var(--accent);text-decoration:none}}
   .wsec .wlink a:hover{{text-decoration:underline}}
@@ -1091,9 +1281,9 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
-  .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-right:6px;vertical-align:middle}}
+  .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
-  footer .sign{{text-align:right;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
+  footer .sign{{text-align:end;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
   .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
 </style>
@@ -1101,12 +1291,12 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <div class="wrap">
   <header>
-    <div class="titrow"><span class="dot"></span><h1>{title}</h1>{issuelabel}</div>
+    <div class="titrow"><span class="dot"></span><h1>{title}</h1>{issuelabel}{nav}</div>
     <div class="sub">
       <span>{subtitle}</span>
-      <span>최종 갱신: <b>{updated} (카타르시간)</b></span>
-      <span>커버 기간: <b>{window}</b></span>
-      <span>카타르 <b>{n_q}</b>건 · 중동정세 <b>{n_me}</b>건</span>
+      <span>{updated_label}: <b>{updated} ({tz})</b></span>
+      <span>{coverage_label}: <b>{window}</b></span>
+      <span>{counts}</span>
     </div>
   </header>
 
@@ -1115,33 +1305,33 @@ TEMPLATE = """<!DOCTYPE html>
   {weekly}
 
   <div class="searchbox">🔎 <input id="kw" type="search" autocomplete="off"
-      placeholder="키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)"> <span id="kwn" class="kwn"></span></div>
-  <div class="searchhint">※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색).</div>
+      placeholder="{search_ph}"> <span id="kwn" class="kwn"></span></div>
+  <div class="searchhint">{search_hint}</div>
 
   {summary}
 
   <details class="fulllist">
-    <summary><span class="chev">▸</span> 전체 기사 목록 (총 {n_all}건) — 클릭해서 펼치기 · 카타르/이란/해외/국내</summary>
+    <summary><span class="chev">▸</span> {full_summary}</summary>
     <div class="grid4">
-      <div class="card"><h2><span class="bar"></span>🇶🇦 카타르</h2><ul>{qatar}</ul></div>
-      <div class="card"><h2><span class="bar"></span>🇮🇷 이란·역내</h2><ul>{me_ir}</ul></div>
-      <div class="card"><h2><span class="bar"></span>🌐 해외(미국·유럽 등)</h2><ul>{me_en}</ul></div>
-      <div class="card"><h2><span class="bar"></span>🇰🇷 국내(한국)</h2><ul>{me_ko}</ul></div>
+      <div class="card"><h2><span class="bar"></span>{col_qatar}</h2><ul>{qatar}</ul></div>
+      <div class="card"><h2><span class="bar"></span>{col_iran}</h2><ul>{me_ir}</ul></div>
+      <div class="card"><h2><span class="bar"></span>{col_over}</h2><ul>{me_en}</ul></div>
+      <div class="card"><h2><span class="bar"></span>{col_korea}</h2><ul>{me_ko}</ul></div>
     </div>
   </details>
 
   {report}
 
   <div class="card">
-    <h2><span class="bar"></span>관련 매체 · 정부 · 유관기관 바로가기 <span class="hnote">(가나다·알파벳순 기재)</span></h2>
+    <h2><span class="bar"></span>{quick_head} <span class="hnote">{quick_note}</span></h2>
     {quick}
   </div>
 
   <footer>
-    본 페이지는 카타르·한국·해외 주요 언론과 국내외 연구기관·국제기구·정부기관의 공개 자료를 자동으로 수집하여, 카타르와 관련된 중동 정세를 사안별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다.
-    <br>갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.
-    <br>사안 요약은 AI가 자동 생성하므로 사실관계·수치에 오류가 있을 수 있으며, 자동 수집 특성상 일부 기사·보고서가 누락될 수 있습니다. 본 화면은 <b>참고용</b>이오니, 중요한 사안은 각 원문과 추가 검색을 통해 반드시 재확인하시기 바랍니다.
-    <div class="sign">— 주카타르대사관 Commercial Section</div>
+    {foot1}
+    <br>{foot2}
+    <br>{foot3}
+    <div class="sign">{sign}</div>
   </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
@@ -1177,7 +1367,7 @@ TEMPLATE = """<!DOCTYPE html>
         }});
       }});
       var n = document.getElementById('kwn');
-      if (n) n.textContent = q ? (shown + '건 표시') : '';
+      if (n) n.textContent = q ? (shown + '{search_count}') : '';
     }}
     inp.addEventListener('input', apply);
   }})();
@@ -1247,107 +1437,127 @@ def _weekly_no(sun_date):
         return None
     return (sun_date - first).days // 7 + 1
 
-def _archive_label(fname):
-    """아카이브 파일명 → (kind, 정렬키(datetime), 라벨). 알 수 없으면 None."""
+def _archive_meta(fname):
+    """아카이브 파일명 → dict(kind, dt, lang, no, m, d[, hh, mm]). 언어접미사 없으면 ko로 간주."""
     n = fname[:-5] if fname.endswith(".html") else fname
+    parts = n.split("-")
     try:
-        if n.startswith("d-"):
-            y, m, d = int(n[2:6]), int(n[6:8]), int(n[8:10])
-            ampm = n[11:15]
-            hh, mm = (7, 0) if ampm == "0700" else (15, 30)
+        if parts[0] == "d" and len(parts) >= 3:
+            ymd, hhmm = parts[1], parts[2]
+            lang = parts[3] if len(parts) >= 4 and parts[3] in LANGS else "ko"
+            y, m, d = int(ymd[:4]), int(ymd[4:6]), int(ymd[6:8])
+            hh, mm = (7, 0) if hhmm == "0700" else (15, 30)
             slot = datetime(y, m, d, hh, mm, tzinfo=TZ)
-            no = _daily_no(slot)
-            tail = f"{m:02d}/{d:02d} {hh:02d}:{mm:02d}"
-            return ("daily", slot, (f"제{no}호 · {tail}" if no else f"(시범) {tail}"))
-        if n.startswith("w-"):
-            y, m, d = int(n[2:6]), int(n[6:8]), int(n[8:10])
+            return {"kind": "daily", "dt": slot, "lang": lang, "no": _daily_no(slot),
+                    "m": m, "d": d, "hh": hh, "mm": mm}
+        if parts[0] == "w" and len(parts) >= 2:
+            ymd = parts[1]
+            lang = parts[2] if len(parts) >= 3 and parts[2] in LANGS else "ko"
+            y, m, d = int(ymd[:4]), int(ymd[4:6]), int(ymd[6:8])
             sd = datetime(y, m, d, 7, 0, tzinfo=TZ)
-            no = _weekly_no(sd.date())
-            return ("weekly", sd, (f"주간 제{no}호 · ~{m:02d}/{d:02d}" if no else f"주간 ~{m:02d}/{d:02d}"))
+            return {"kind": "weekly", "dt": sd, "lang": lang, "no": _weekly_no(sd.date()), "m": m, "d": d}
     except Exception:
         return None
     return None
 
 
+def _archive_label_text(meta, L):
+    if meta["kind"] == "daily":
+        tail = f"{meta['m']:02d}/{meta['d']:02d} {meta['hh']:02d}:{meta['mm']:02d}"
+        return (L["daily_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["daily_demo"] + " · " + tail)
+    tail = f"~{meta['m']:02d}/{meta['d']:02d}"
+    return (L["weekly_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_weekly"] + " " + tail)
+
+
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
-    start_q, label = window_bounds(now_q)
+    start_q, label_ko = window_bounds(now_q)
     items = collect(start_q.astimezone(timezone.utc), now_utc)
     pool = build_issue_pool(items)
-    issues = gemini_issues(pool, label)
-    flat = None if issues else gemini_flat(pool, label)
+    issues = gemini_issues(pool, label_ko)
+    flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
 
     os.makedirs("archive", exist_ok=True)
     slot_dt, ampm = _slot_of(now_q)
     dno = _daily_no(slot_dt)
-    daily_fname = f"d-{slot_dt.strftime('%Y%m%d')}-{ampm}.html"
-    issue_label = (f"일간 제{dno}호" if dno else "일간(시범)")
-
-    # 일요일 오전 회차 → 지난 7일 주간 종합 리포트도 생성(일간과 같은 페이지에 동시 노출)
+    ymd = slot_dt.strftime('%Y%m%d')
     is_weekly = (ampm == "0700" and slot_dt.weekday() == WEEKLY_WEEKDAY and dno is not None)
-    weekly_fname = f"w-{slot_dt.strftime('%Y%m%d')}.html" if is_weekly else None
-    weekly_inline = None
+    wno = _weekly_no(slot_dt.date()) if is_weekly else None
 
-    # 콤보박스 목록: 기존 아카이브 전부 보관(삭제 없음) + 이번 생성분 포함, 최신순
-    files = {f for f in os.listdir("archive") if f.endswith(".html")}
-    files.add(daily_fname)
-    if weekly_fname:
-        files.add(weekly_fname)
-    entries = []
-    for f in files:
-        info = _archive_label(f)
-        if info:
-            entries.append((info[0], info[1], info[2], f))
-    entries.sort(key=lambda e: e[1], reverse=True)
-    archive_list = [(k, lab, f) for (k, sk, lab, f) in entries if f != daily_fname]
+    def daily_fname(lang): return f"d-{ymd}-{ampm}-{lang}.html"
+    def weekly_fname(lang): return f"w-{ymd}-{lang}.html"
+    def home_url(lang): return SITE_BASE if lang == "ko" else f"{SITE_BASE}{lang}.html"
+    def main_out(lang): return "index.html" if lang == "ko" else f"{lang}.html"
 
-    # 주간 리포트 생성
+    # 주간 데이터(1회 수집·요약 후 언어별 번역)
     if is_weekly:
         wk_from = (now_q - timedelta(days=WEEKLY_LOOKBACK_DAYS)).strftime("%m/%d")
-        wlabel = f"지난주 종합 · {wk_from} → {now_q.strftime('%m/%d')} (카타르시간)"
-        witems = collect(now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS), now_utc,
-                         when_days=WEEKLY_LOOKBACK_DAYS + 1)
+        wlabel_ko = f"지난주 종합 · {wk_from} → {now_q.strftime('%m/%d')} (카타르시간)"
+        witems = collect(now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS), now_utc, when_days=WEEKLY_LOOKBACK_DAYS + 1)
         wpool = build_issue_pool(witems)
-        wissues = gemini_issues(wpool, wlabel, weekly=True)
-        wflat = None if wissues else gemini_flat(wpool, wlabel)
+        wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
+        wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
-        wno = _weekly_no(slot_dt.date())
-        # (1) 주간 단독 아카이브 페이지(콤보박스·영구 보관용)
-        whtml = render(witems, wlabel, wissues, wflat, issue_pool=wpool,
-                       archive_list=archive_list, reports=wreports,
-                       issue_label=f"주간 제{wno}호")
-        with open(os.path.join("archive", weekly_fname), "w", encoding="utf-8") as f:
-            f.write(whtml)
-        # (2) 일간 페이지 상단에 함께 노출할 주간 요약 인라인 블록
-        if wissues:
-            wbody = render_issues(wissues, wpool, now_utc)
-        elif wflat:
-            wbody = f'<div class="card sum"><div class="sumbody">{summary_to_html(wflat)}</div></div>'
-        else:
-            wbody = '<div class="empty" style="padding:8px 2px">주간 요약 미생성 — 다음 갱신에 재시도됩니다.</div>'
-        weekly_inline = (
-            '<div class="wsec">'
-            '<div class="sumhead"><span class="bar" style="background:var(--gold)"></span>'
-            f'📅 지난주 주간 종합 리포트 <span class="ai" style="background:var(--gold)">주간 제{wno}호</span>'
-            f'<span class="wmeta">{esc(wlabel)}</span></div>'
-            + wbody +
-            f'<div class="wlink"><a href="{SITE_BASE}archive/{esc(weekly_fname)}">주간 리포트 단독 페이지로 열기 →</a></div>'
-            '</div>')
 
-    html = render(items, label, issues, flat, issue_pool=pool,
-                  archive_list=archive_list, reports=reports,
-                  issue_label=issue_label, weekly_inline=weekly_inline)
-    with open("index.html", "w", encoding="utf-8") as f:
-        f.write(html)
-    with open(os.path.join("archive", daily_fname), "w", encoding="utf-8") as f:
-        f.write(html)
+    # 아카이브 파일 목록(기존 전부 보관 + 이번 생성분 3개 언어)
+    files = {f for f in os.listdir("archive") if f.endswith(".html")}
+    for lang in LANGS:
+        files.add(daily_fname(lang))
+        if is_weekly:
+            files.add(weekly_fname(lang))
+    metas = [(m, f) for f in files for m in [_archive_meta(f)] if m]
+
+    nav = {l: home_url(l) for l in LANGS}
+    for lang in LANGS:
+        L = LANG[lang]
+        win_label = label_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
+        issue_label = L["daily_no"].format(n=dno) if dno else L["daily_demo"]
+        iss_l = translate_issues(issues, lang) if issues else None
+
+        cur = daily_fname(lang)
+        lm = [(m, f) for (m, f) in metas if m["lang"] == lang and f != cur]
+        lm.sort(key=lambda mf: mf[0]["dt"], reverse=True)
+        archive_list = [(m["kind"], _archive_label_text(m, L), f) for (m, f) in lm]
+
+        weekly_inline = None
+        if is_weekly:
+            wfn = weekly_fname(lang)
+            wiss_l = translate_issues(wissues, lang) if wissues else None
+            wwin = wlabel_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
+            whtml = render(witems, wwin, wiss_l, wflat, issue_pool=wpool,
+                           archive_list=archive_list, reports=wreports,
+                           issue_label=L["weekly_no"].format(n=wno), lang=lang, nav=nav, home_url=home_url(lang))
+            with open(os.path.join("archive", wfn), "w", encoding="utf-8") as fh:
+                fh.write(whtml)
+            if wiss_l:
+                wbody = render_issues(wiss_l, wpool, now_utc, L)
+            elif wflat:
+                wbody = f'<div class="card sum"><div class="sumbody">{summary_to_html(wflat)}</div></div>'
+            else:
+                wbody = f'<div class="empty" style="padding:8px 2px">{esc(L["wk_none"])}</div>'
+            weekly_inline = (
+                '<div class="wsec">'
+                '<div class="sumhead"><span class="bar" style="background:var(--gold)"></span>'
+                f'{esc(L["wk_head"])} <span class="ai" style="background:var(--gold)">{esc(L["weekly_no"].format(n=wno))}</span>'
+                f'<span class="wmeta">{esc(wwin)}</span></div>'
+                + wbody +
+                f'<div class="wlink"><a href="{SITE_BASE}archive/{esc(wfn)}">{esc(L["wk_open"])}</a></div>'
+                '</div>')
+
+        html = render(items, win_label, iss_l, flat, issue_pool=pool,
+                      archive_list=archive_list, reports=reports,
+                      issue_label=issue_label, weekly_inline=weekly_inline,
+                      lang=lang, nav=nav, home_url=home_url(lang))
+        with open(main_out(lang), "w", encoding="utf-8") as fh:
+            fh.write(html)
+        with open(os.path.join("archive", cur), "w", encoding="utf-8") as fh:
+            fh.write(html)
 
     mode = "issues" if issues else ("flat" if flat else "none")
-    print(f"generated · {issue_label} · window={label} · items={len(items)} · summary={mode} · "
-          f"weekly={'Y' if is_weekly else 'N'} · reports_total={len(reports)} · archive={len(archive_list)}")
-    # 진단: 보고서 발행처 분포(한국 기관이 실제 잡히는지 확인용)
+    print(f"generated ko/en/ar · dno={dno} · window={label_ko} · items={len(items)} · summary={mode} · "
+          f"weekly={'Y' if is_weekly else 'N'} · reports_total={len(reports)}")
     rep_srcs = {}
     for r in reports:
         rep_srcs[r.get("source", "?")] = rep_srcs.get(r.get("source", "?"), 0) + 1
