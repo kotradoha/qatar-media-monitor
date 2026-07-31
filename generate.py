@@ -109,7 +109,7 @@ POOL_FOR_ISSUES = 60          # 사안 분류에 넘길 기사 수
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
-GEMINI_MODELS = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.5-flash"]  # 순서대로 폴백
+GEMINI_MODELS = ["gemini-2.0-flash-lite", "gemini-2.0-flash"]  # 순서대로 폴백(무료 한도 넉넉한 lite 우선)
 # ──────────────────────────────────────────────────────────
 
 feedparser.USER_AGENT = "Mozilla/5.0 (compatible; MideastMediaMonitor/1.0)"
@@ -240,7 +240,7 @@ def gemini_call(model, prompt, json_mode):
         except urllib.error.HTTPError as ex:
             if ex.code == 429:                     # 한도 초과 → 잠깐 쉬고 재시도
                 print(f"[warn] {model} 429, retry {attempt+1}/3")
-                time.sleep(3 * (attempt + 1)); continue
+                time.sleep(6 * (attempt + 1)); continue
             print(f"[warn] {model} HTTP {ex.code}"); return None
         except Exception as ex:
             print(f"[warn] {model} failed: {ex}"); return None
@@ -349,8 +349,8 @@ def render_issues(issues, pool, now_utc):
         kr = [a for a in arts if a["region"] == "korea"]
         groups = ""
         if q:  groups += '<div class="grp"><div class="gh">🇶🇦 카타르 현지</div>' + "".join(link_row(a) for a in q) + '</div>'
-        if ov: groups += '<div class="grp"><div class="gh">🌐 해외</div>' + "".join(link_row(a) for a in ov) + '</div>'
         if ir: groups += '<div class="grp"><div class="gh">🇮🇷 이란·역내</div>' + "".join(link_row(a) for a in ir) + '</div>'
+        if ov: groups += '<div class="grp"><div class="gh">🌐 해외</div>' + "".join(link_row(a) for a in ov) + '</div>'
         if kr: groups += '<div class="grp"><div class="gh">🇰🇷 국내(한국)</div>' + "".join(link_row(a) for a in kr) + '</div>'
         if not groups:
             groups = '<div class="grp"><div class="gh" style="color:var(--muted)">관련 링크 매핑 없음</div></div>'
@@ -512,8 +512,8 @@ TEMPLATE = """<!DOCTYPE html>
   </div>
 
   <div class="grid3">
-    <div class="card"><h2><span class="bar"></span>🌐 해외 언론</h2><ul>{me_en}</ul></div>
     <div class="card"><h2><span class="bar"></span>🇮🇷 이란·역내 매체</h2><ul>{me_ir}</ul></div>
+    <div class="card"><h2><span class="bar"></span>🌐 해외 언론</h2><ul>{me_en}</ul></div>
     <div class="card"><h2><span class="bar"></span>🇰🇷 국내(한국) 언론</h2><ul>{me_ko}</ul></div>
   </div>
 
