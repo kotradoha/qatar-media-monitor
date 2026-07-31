@@ -264,13 +264,13 @@ QGROUP_I18N = {
 LANG = {
  "ko": {
   "dir": "ltr", "html": "ko",
-  "title": "🇶🇦 카타르·중동정세 언론 모니터링",
+  "title": "🇶🇦 카타르·중동정세 언론 모니터링", "title2": "Qatar & Middle East — Media Monitor",
   "subtitle": ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
                "AI 사안별 요약과 관련 기사 원문 링크 제공 [주카타르대사관 Commercial Section]"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
-            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 중심으로 정리합니다."),
+            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 위주로 정리합니다."),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
@@ -300,7 +300,7 @@ LANG = {
  },
  "en": {
   "dir": "ltr", "html": "en",
-  "title": "🇶🇦 Qatar & Middle East — Media Monitor",
+  "title": "🇶🇦 Qatar & Middle East — Media Monitor", "title2": "",
   "subtitle": ("Auto-updated daily at 07:00 & 15:30 (Qatar time) · Monitoring Qatar, Korea & global media and "
                "domestic/foreign think-tank reports · AI issue summaries with source links "
                "[Embassy of the Republic of Korea in Qatar, Commercial Section]"),
@@ -339,7 +339,7 @@ LANG = {
  },
  "ar": {
   "dir": "rtl", "html": "ar",
-  "title": "🇶🇦 رصد الإعلام: قطر والشرق الأوسط",
+  "title": "🇶🇦 رصد الإعلام: قطر والشرق الأوسط", "title2": "",
   "subtitle": ("تحديث تلقائي يوميًا الساعة 07:00 و15:30 (بتوقيت قطر) · رصد إعلام قطر وكوريا والعالم وتقارير مراكز الأبحاث المحلية والدولية · "
                "ملخصات بالذكاء الاصطناعي مع روابط المصادر [سفارة جمهورية كوريا لدى قطر، القسم التجاري]"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
@@ -1172,6 +1172,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
+        title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
@@ -1204,6 +1205,8 @@ TEMPLATE = """<!DOCTYPE html>
   header{{position:sticky;top:0;background:linear-gradient(180deg,var(--bg) 72%,transparent);
     padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
+  .titcol{{display:flex;flex-direction:column;gap:1px}}
+  .entitle{{font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:.2px}}
   .langbar{{display:flex;gap:6px;margin-inline-start:auto}}
   .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
   .langbtn.on{{color:#111;background:var(--accent);border-color:var(--accent);font-weight:700}}
@@ -1333,7 +1336,7 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <div class="wrap">
   <header>
-    <div class="titrow"><span class="dot"></span><h1>{title}</h1>{issuelabel}{nav}</div>
+    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}</div>{issuelabel}{nav}</div>
     <div class="sub">
       <span>{subtitle}</span>
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
