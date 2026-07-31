@@ -52,10 +52,18 @@ QATAR_SOURCES = ["qatar news agency", "qna", "gulf times", "gulf-times", "the pe
                  "peninsula qatar", "peninsulaqatar", "qatar tribune", "qatar-tribune",
                  "doha news", "dohanews", "al jazeera", "aljazeera", "al-jazeera", "lusail"]
 # 국내(한국) 매체
-KOREA_SOURCES = ["yonhap", "연합", "ytn", "kbs", "mbc", "sbs", "조선", "chosun", "중앙", "joongang",
-                 "joins", "동아", "donga", "한국경제", "hankyung", "매일경제", "mk.co", "maeil",
-                 "한겨레", "hani", "경향", "khan", "서울", "문화", "파이낸셜", "fnnews", "뉴시스", "newsis",
-                 "이데일리", "edaily", "머니투데이", "news1", "뉴스1"]
+KOREA_SOURCES = [
+    # 통신사·방송
+    "yonhap", "연합", "뉴시스", "newsis", "뉴스1", "news1", "ytn", "kbs", "mbc", "sbs", "jtbc", "연합뉴스tv",
+    # 종합일간지
+    "조선", "chosun", "중앙", "joongang", "joins", "동아", "donga",
+    "한겨레", "hani", "경향", "khan", "kyunghyang",
+    "서울신문", "seoul", "문화일보", "munhwa", "국민일보", "kmib", "세계일보", "segye", "한국일보", "hankookilbo",
+    # 경제지
+    "매일경제", "매경", "mk.co", "maeil", "한국경제", "hankyung",
+    "파이낸셜뉴스", "파이낸셜", "fnnews", "이데일리", "edaily", "머니투데이", "mt.co", "moneytoday",
+    "서울경제", "sedaily", "헤럴드경제", "heraldcorp", "아시아경제", "asiae",
+]
 
 
 # 이란·역내 매체
@@ -523,12 +531,13 @@ def gemini_issues(pool, win_label):
         "물류·해상안전(홍해·수에즈·호르무즈) / 항공·교민안전 / 경제.\n"
         "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), summary(한국어 2~4문장, 핵심만 간결·명료하게), "
         "figures(핵심 수치 한 줄; 사상자/미사일/유가/호르무즈 비중/휴전기간 등, 없으면 \"\"), "
-        "ids(그 사안 관련 기사 id 정수 배열, 최대 8개).\n"
+        "ids(그 사안 관련 기사 id 정수 배열, 최대 16개).\n"
         "중요 규칙:\n"
         "- [카타르현지] 및 (카타르관련) 표시 기사는 대사관 업무상 최우선. 카타르가 직접 얽힌 사안을 반드시 1개 이상 만들고, "
         "각 사안 ids에는 가능하면 [카타르현지] 기사를 우선 포함하세요.\n"
-        "- ids에는 동일 내용이면 메이저·공신력 매체(연합/뉴시스/KBS/조선/중앙/동아/한경/매경, Reuters/AP/AFP/Bloomberg/CNN/BBC, QNA/Al Jazeera/Gulf Times/Peninsula) 기사를 우선 선택하세요.\n"
-        "- 한 사안의 ids는 가능하면 카타르·이란·해외·국내 매체가 고루 들어가게 하세요.\n"
+        "- 각 사안의 ids에는 그 사안과 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
+        "(권역별 최대 4~5개까지). 요약 옆에서 웬만한 주요 기사가 다 보이게 하는 것이 목표입니다.\n"
+        "- 동일 내용이면 메이저·공신력 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제/파이낸셜뉴스, Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian, QNA/Al Jazeera/Gulf Times/Peninsula/Doha News) 기사를 우선 선택하세요.\n"
         "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
         "{\"issues\":[{\"theme\":\"\",\"summary\":\"\",\"figures\":\"\",\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
@@ -607,7 +616,7 @@ def render_issues(issues, pool, now_utc):
         groups = ""
         if q:  groups += '<div class="grp"><div class="gh">🇶🇦 카타르 현지</div>' + "".join(link_row(a) for a in q) + '</div>'
         if ir: groups += '<div class="grp"><div class="gh">🇮🇷 이란·역내</div>' + "".join(link_row(a) for a in ir) + '</div>'
-        if ov: groups += '<div class="grp"><div class="gh">🌐 해외</div>' + "".join(link_row(a) for a in ov) + '</div>'
+        if ov: groups += '<div class="grp"><div class="gh">🌐 해외(미국·유럽 등)</div>' + "".join(link_row(a) for a in ov) + '</div>'
         if kr: groups += '<div class="grp"><div class="gh">🇰🇷 국내(한국)</div>' + "".join(link_row(a) for a in kr) + '</div>'
         if not groups:
             groups = '<div class="grp"><div class="gh" style="color:var(--muted)">관련 링크 매핑 없음</div></div>'
@@ -673,7 +682,8 @@ def render(items, win_label, issues, flat_text, issue_pool=None):
     return TEMPLATE.format(
         title=esc(TITLE), subtitle=esc(SUBTITLE),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
-        n_q=len(qatar), n_me=len(me_ov) + len(me_ir) + len(me_kr), summary=summary_html,
+        n_q=len(qatar), n_me=len(me_ov) + len(me_ir) + len(me_kr),
+        n_all=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr), summary=summary_html,
         qatar=block(qatar, "이번 창(window)에 카타르 직접 관련 신규 기사 없음"),
         me_en=block(me_ov, "이번 창에 해외 신규 기사 없음"),
         me_ir=block(me_ir, "이번 창에 이란·역내 매체 신규 기사 없음"),
@@ -738,6 +748,16 @@ TEMPLATE = """<!DOCTYPE html>
   .grid4{{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px}}
   @media (max-width:980px){{.grid4{{grid-template-columns:1fr 1fr}}}}
   @media (max-width:560px){{.grid4{{grid-template-columns:1fr}}}}
+  img.emoji{{height:1em;width:1em;margin:0 .06em 0 .05em;vertical-align:-0.12em}}
+  details.fulllist{{margin-top:6px}}
+  details.fulllist>summary{{cursor:pointer;list-style:none;user-select:none;
+    font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;
+    padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}}
+  details.fulllist>summary::-webkit-details-marker{{display:none}}
+  details.fulllist>summary:hover{{color:var(--txt)}}
+  details.fulllist[open]>summary{{margin-bottom:12px}}
+  details.fulllist .chev{{display:inline-block;transition:transform .15s;margin-right:4px}}
+  details.fulllist[open] .chev{{transform:rotate(90deg)}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
@@ -769,14 +789,15 @@ TEMPLATE = """<!DOCTYPE html>
 
   {summary}
 
-  <div class="sechd">— 전체 기사 목록 —</div>
-
-  <div class="grid4">
-    <div class="card"><h2><span class="bar"></span>🇶🇦 카타르</h2><ul>{qatar}</ul></div>
-    <div class="card"><h2><span class="bar"></span>🇮🇷 이란·역내</h2><ul>{me_ir}</ul></div>
-    <div class="card"><h2><span class="bar"></span>🌐 해외</h2><ul>{me_en}</ul></div>
-    <div class="card"><h2><span class="bar"></span>🇰🇷 국내(한국)</h2><ul>{me_ko}</ul></div>
-  </div>
+  <details class="fulllist">
+    <summary><span class="chev">▸</span> 전체 기사 목록 (총 {n_all}건) — 클릭해서 펼치기 · 카타르/이란/해외/국내</summary>
+    <div class="grid4">
+      <div class="card"><h2><span class="bar"></span>🇶🇦 카타르</h2><ul>{qatar}</ul></div>
+      <div class="card"><h2><span class="bar"></span>🇮🇷 이란·역내</h2><ul>{me_ir}</ul></div>
+      <div class="card"><h2><span class="bar"></span>🌐 해외(미국·유럽 등)</h2><ul>{me_en}</ul></div>
+      <div class="card"><h2><span class="bar"></span>🇰🇷 국내(한국)</h2><ul>{me_ko}</ul></div>
+    </div>
+  </details>
 
   <div class="card">
     <h2><span class="bar"></span>관심 매체 · 정부 공지 바로가기</h2>
@@ -784,10 +805,22 @@ TEMPLATE = """<!DOCTYPE html>
   </div>
 
   <footer>
-    ※ 공관 모니터링용 · Google News RSS 및 주요 매체 피드 자동 집계 + (무료) Gemini 사안별 한국어 요약. <b>직전 갱신 → 이번 갱신</b> 창(window) 기사만 표시, 취합/비정식 소스는 제외, 카타르 직접 관련은 상단 고정.
+    ※ 공관 모니터링용 · Google News RSS 및 주요 매체 피드 자동 집계 + Claude 사안별 한국어 요약. <b>직전 갱신 → 이번 갱신</b> 창(window) 기사만 표시, 취합/비정식 소스는 제외.
     <br>GitHub Actions가 매일 카타르시간 오전 7:00·오후 3:30에 자동 갱신합니다. © {year}
   </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script>
+  // 국기 이모지가 윈도우 등에서 'QA/IR/KR' 글자로 보이는 문제 방지 → 실제 국기 이미지로 렌더
+  window.addEventListener('DOMContentLoaded', function () {{
+    try {{
+      if (window.twemoji) twemoji.parse(document.body, {{
+        base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/',
+        folder: 'svg', ext: '.svg'
+      }});
+    }} catch (e) {{}}
+  }});
+</script>
 </body>
 </html>
 """
@@ -797,9 +830,11 @@ TEMPLATE = """<!DOCTYPE html>
 MAJOR_HINTS = [
     "qatar news agency", "qna", "gulf times", "peninsula", "qatar tribune", "doha news",
     "al jazeera", "aljazeera", "lusail",
-    "yonhap", "연합", "ytn", "kbs", "mbc", "sbs", "뉴시스", "newsis", "조선", "chosun",
-    "중앙", "joongang", "동아", "donga", "한국경제", "hankyung", "매일경제", "mk.co", "maeil",
-    "한겨레", "hani", "경향", "kyunghyang", "서울신문", "seoul",
+    "yonhap", "연합", "뉴시스", "newsis", "뉴스1", "news1", "ytn", "kbs", "mbc", "sbs", "jtbc",
+    "조선", "chosun", "중앙", "joongang", "joins", "동아", "donga",
+    "한겨레", "hani", "경향", "khan", "kyunghyang", "서울신문", "seoul", "문화일보", "munhwa",
+    "매일경제", "매경", "mk.co", "maeil", "한국경제", "hankyung",
+    "파이낸셜뉴스", "fnnews", "이데일리", "edaily", "머니투데이", "moneytoday", "서울경제", "sedaily",
     "reuters", "ap ", "associated press", "afp", "bloomberg", "cnn", "bbc",
     "the guardian", "washington post", "new york times", "wall street journal", "financial times",
     "irna", "press tv", "tehran times", "mehr", "al-alam",
