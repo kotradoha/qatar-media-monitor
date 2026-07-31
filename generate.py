@@ -27,8 +27,8 @@ except ImportError:
 
 # ───────────────────────── CONFIG ─────────────────────────
 TITLE = "🇶🇦 카타르·중동정세 언론 모니터링"
-SUBTITLE = ("매일 오전 7:00 · 오후 3:30(카타르시간) 갱신 · 카타르 · 한국 · 해외 언론 모니터링 · "
-            "AI 사안별 요약(우측에 관련 기사 원문 링크)")
+SUBTITLE = ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
+            "AI 사안별 요약과 관련 기사 원문 링크 제공")
 
 Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security"]
 Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관"]
@@ -911,16 +911,16 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         return "\n".join(li(x, now_utc) for x in rows) or f'<li class="empty">{empty}</li>'
 
     if issues:
-        summary_html = ('<div class="sumhead"><span class="bar"></span>🧭 이번 갱신 사안별 요약 '
+        summary_html = ('<div class="sumhead"><span class="bar"></span>🧭 이번 회차 사안별 요약 '
                         '<span class="ai">AI 자동요약</span></div>' + render_issues(issues, issue_pool, now_utc))
     elif flat_text:
-        summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 갱신 핵심 요약 '
+        summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 회차 핵심 요약 '
                         '<span class="ai">AI 자동요약</span></div>'
                         f'<div class="sumbody">{summary_to_html(flat_text)}</div></div>')
     else:
         diag = " · ".join(LLM_DIAG[-3:]) if LLM_DIAG else ""
         diag_html = f'<div class="pl" style="color:var(--muted);font-size:11px;margin-top:6px">진단: {esc(diag)}</div>' if diag else ""
-        summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 갱신 핵심 요약</div>'
+        summary_html = ('<div class="card sum"><div class="sumhead"><span class="bar"></span>🧭 이번 회차 핵심 요약</div>'
                         '<div class="sumbody"><div class="pl" style="color:var(--muted)">요약 일시 미생성 — '
                         '다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.</div>'
                         f'{diag_html}</div></div>')
@@ -1138,9 +1138,9 @@ TEMPLATE = """<!DOCTYPE html>
   </div>
 
   <footer>
-    ※ Google News RSS 및 주요 매체 피드를 자동 집계하고 Claude가 사안별로 한국어 요약합니다. <b>직전 갱신 → 이번 갱신</b> 창(window)에 보도된 기사만 표시하며, 취합·비정식 소스는 제외합니다.
-    <br>GitHub Actions가 매일 카타르시간 오전 7:00·오후 3:30에 자동 갱신합니다.
-    <br>본 화면은 <b>참고용</b>이며, 자동 수집 특성상 일부 기사·보고서가 누락될 수 있으므로 관심 사안은 추가 검색으로 재확인하시기 바랍니다.
+    본 페이지는 카타르·한국·해외 주요 언론과 국내외 연구기관·국제기구·정부기관의 공개 자료를 자동으로 수집하여, 카타르와 관련된 중동 정세를 사안별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다.
+    <br>갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.
+    <br>사안 요약은 AI가 자동 생성하므로 사실관계·수치에 오류가 있을 수 있으며, 자동 수집 특성상 일부 기사·보고서가 누락될 수 있습니다. 본 화면은 <b>참고용</b>이오니, 중요한 사안은 각 원문과 추가 검색을 통해 반드시 재확인하시기 바랍니다.
     <div class="sign">— 주카타르대사관 Commercial Section</div>
   </footer>
 </div>
