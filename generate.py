@@ -43,7 +43,10 @@ Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 
 Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Middle East analysis",
                 "Crisis Group Iran Gulf", "IEA oil market report Middle East", "OPEC monthly oil report",
                 "Brookings Middle East Iran", "Carnegie Middle East analysis", "Eurasia Group Middle East risk",
-                "Strait of Hormuz shipping analysis report"]
+                "Strait of Hormuz shipping analysis report", "World Bank Middle East economic outlook",
+                "Economist Intelligence Iran Gulf", "Foreign Affairs Iran Middle East",
+                "Oxford Economics oil Middle East outlook", "Middle East Council Qatar analysis",
+                "한국무역협회 중동 수출", "Doha Institute Gulf study"]
 
 QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "hamad",
             "카타르", "도하", "알우데이드", "라스라판", "하마드"]
@@ -96,6 +99,13 @@ REPORT_HINTS = [
     "rand", "랜드연구소", "crisis group", "국제위기그룹", "middle east institute",
     "council on foreign relations", "eurasia group", "유라시아그룹",
     "rystad", "wood mackenzie", "우드매켄지", "s&p global", "wilson center", "bruegel",
+    # 해외 심층분석·경제전망 발간처
+    "economist", "이코노미스트", "eiu", "economist intelligence",
+    "foreign affairs", "foreign policy", "oxford economics", "capital economics",
+    "peterson institute", "piie", "mckinsey global", "맥킨지",
+    "rusi", "stratfor", "geopolitical futures", "ispi", "merics", "bruegel",
+    "middle east council", "mecouncil", "gulf research", "걸프연구",
+    "al jazeera centre for studies", "aljazeera centre", "doha institute", "브루킹스 도하",
 ]
 
 
@@ -175,6 +185,7 @@ QUICK_LINKS = {
         ("LG경영연구원", "https://www.lgbr.co.kr/"),
         ("포스코경영연구원(POSRI)", "https://www.posri.re.kr/"),
         ("하나금융경영연구소", "https://www.hanaif.re.kr/"),
+        ("한국무역협회(KITA)", "https://www.kita.net/"),
         ("무역협회 국제무역통상연구원", "https://iit.kita.net/"),
         ("자본시장연구원(KCMI)", "https://www.kcmi.re.kr/")],
     "🌐 해외 연구기관·국제기구": [("IEA 국제에너지기구", "https://www.iea.org/"),
@@ -190,7 +201,17 @@ QUICK_LINKS = {
         ("Atlantic Council", "https://www.atlanticcouncil.org/"),
         ("Int'l Crisis Group", "https://www.crisisgroup.org/"),
         ("Middle East Institute", "https://www.mei.edu/"),
+        ("Middle East Council(도하)", "https://mecouncil.org/"),
+        ("Al Jazeera Centre for Studies", "https://studies.aljazeera.net/en"),
         ("Eurasia Group", "https://www.eurasiagroup.net/")],
+    "📰 해외 심층분석·경제전망": [("The Economist — ME·Africa", "https://www.economist.com/middle-east-and-africa"),
+        ("Economist Intelligence(EIU)", "https://www.eiu.com/"),
+        ("Foreign Affairs — ME", "https://www.foreignaffairs.com/middle-east"),
+        ("Foreign Policy", "https://foreignpolicy.com/"),
+        ("Oxford Economics", "https://www.oxfordeconomics.com/"),
+        ("Peterson Institute(PIIE)", "https://www.piie.com/"),
+        ("RUSI", "https://www.rusi.org/"),
+        ("S&P Global Commodity Insights", "https://www.spglobal.com/commodityinsights/")],
 }
 
 MAX_PER_SECTION = 60
@@ -198,6 +219,10 @@ POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM �
 DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
 ARCHIVE_KEEP = 14             # 아카이브 보관 개수(하루 2회 × 7일 = 1주)
+REPORT_PERSIST_DAYS = 120     # 좋은 보고서는 약 6월경부터 최근까지 누적 유지(일)
+REPORT_QUERY_DAYS = 120       # 보고서 수집 쿼리 조회 기간(Google News when:Nd)
+REPORT_SHOW_MAX = 15          # 보고서 섹션 표시 최대 개수(최신 순)
+REPORT_STORE_MAX = 80         # reports.json 보관 최대 개수
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
@@ -221,11 +246,12 @@ TAG_RE = re.compile(r"<[^>]+>")
 HANGUL_RE = re.compile(r"[가-힣]")
 
 
-def gnews_url(query, lang):
+def gnews_url(query, lang, when_days=2):
     q = query.replace(" ", "%20")
+    w = f"%20when:{int(when_days)}d"
     if lang == "ko":
-        return f"https://news.google.com/rss/search?q={q}%20when:2d&hl=ko&gl=KR&ceid=KR:ko"
-    return f"https://news.google.com/rss/search?q={q}%20when:2d&hl=en-US&gl=US&ceid=US:en"
+        return f"https://news.google.com/rss/search?q={q}{w}&hl=ko&gl=KR&ceid=KR:ko"
+    return f"https://news.google.com/rss/search?q={q}{w}&hl=en-US&gl=US&ceid=US:en"
 
 
 def window_bounds(now_q):
@@ -300,8 +326,8 @@ def collect(win_start_utc, now_utc):
     for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
     for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en")))
     for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
-    for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko")))
-    for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en")))
+    for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko", REPORT_QUERY_DAYS)))
+    for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
     for lang, label, url in feeds:
@@ -325,7 +351,13 @@ def collect(win_start_utc, now_utc):
             if not is_qatar and not has(text, MIDEAST_KW) and not report:
                 continue
             dt = entry_time(e)
-            if dt is None or dt < win_start_utc or dt > now_utc + timedelta(minutes=5):
+            if dt is None or dt > now_utc + timedelta(minutes=5):
+                continue
+            # 일반 기사: 이번 창(window)만. 보고서: 창 밖이라도 최근 REPORT_PERSIST_DAYS(약 6월~)까지 허용.
+            lo = win_start_utc
+            if report:
+                lo = min(win_start_utc, now_utc - timedelta(days=REPORT_PERSIST_DAYS))
+            if dt < lo:
                 continue
             key = link.split("?")[0].lower()
             tkey = "".join(title.lower().split())[:60]
@@ -746,7 +778,7 @@ def summary_to_html(text):
     return "\n".join(out)
 
 
-def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None):
+def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None, reports=None):
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     if issue_pool is None:
@@ -780,23 +812,21 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in links)
         quick += f'<div class="qgroup"><div class="qh">{esc(g)}</div><div class="qchips">{chips}</div></div>'
 
-    # 분석·보고서(연구기관·에너지) — 있으면 최상단 강조
-    reports, rseen = [], set()
-    for x in items:
-        if x.get("report"):
-            k = x["link"].split("?")[0]
-            if k in rseen:
-                continue
-            rseen.add(k); reports.append(x)
-    reports = reports[:6]
-    if reports:
-        rows = "".join(
-            f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}'
-            f'<span class="src">{esc(x["source"])} · {x["dt"].astimezone(TZ).strftime("%m/%d")}</span></a>'
-            for x in reports)
+    # 분석·보고서 — main()에서 누적·정렬해 넘겨준 목록(최신순)을 표시. 없으면 이번 창의 report 항목으로 폴백.
+    rep_list = reports if reports is not None else [x for x in items if x.get("report")]
+    tagmap = {"qatar": "카타르", "iran": "이란", "overseas": "해외", "korea": "국내"}
+    def rep_dt(x):
+        d = x.get("dt")
+        return d.astimezone(TZ).strftime("%m/%d") if hasattr(d, "astimezone") else str(d or "")[:10]
+    rows = "".join(
+        f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
+        f'<span class="tag">{esc(tagmap.get(x.get("region","overseas"),"해외"))}</span>{esc(x["title"])}'
+        f'<span class="src">{esc(x["source"])} · {rep_dt(x)}</span></a>'
+        for x in rep_list[:REPORT_SHOW_MAX])
+    if rows:
         report_html = ('<div class="card report"><div class="sumhead">'
                        '<span class="bar" style="background:var(--gold)"></span>📑 중동정세 분석·보고서'
-                       '<span class="ai" style="background:var(--gold)">주목</span></div>'
+                       '<span class="ai" style="background:var(--gold)">최신순</span></div>'
                        f'<div class="reprows">{rows}</div></div>')
     else:
         report_html = ""
@@ -908,6 +938,7 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
+  .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-right:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
   footer .sign{{text-align:right;margin-top:10px;font-weight:800;color:var(--txt);font-size:13px}}
   footer .copy{{text-align:right;margin-top:2px;font-size:11px;color:var(--muted)}}
@@ -928,8 +959,6 @@ TEMPLATE = """<!DOCTYPE html>
 
   {archive}
 
-  {report}
-
   {summary}
 
   <details class="fulllist">
@@ -941,6 +970,8 @@ TEMPLATE = """<!DOCTYPE html>
       <div class="card"><h2><span class="bar"></span>🇰🇷 국내(한국)</h2><ul>{me_ko}</ul></div>
     </div>
   </details>
+
+  {report}
 
   <div class="card">
     <h2><span class="bar"></span>관심 매체 · 정부 공지 바로가기</h2>
@@ -1037,15 +1068,63 @@ def main():
         except OSError:
             pass
 
-    html = render(items, label, issues, flat, issue_pool=pool, archive_list=archive_entries)
+    # ── 분석·보고서 누적(reports.json): 6월경~ 최근까지 유지, 최신순, 갱신마다 새 것만 추가 ──
+    reports = _merge_reports(items, now_utc)
+
+    html = render(items, label, issues, flat, issue_pool=pool,
+                  archive_list=archive_entries, reports=reports)
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
     with open(os.path.join("archive", stamp + ".html"), "w", encoding="utf-8") as f:
         f.write(html)
 
     mode = "issues" if issues else ("flat" if flat else "none")
-    n_report = sum(1 for x in items if x.get("report"))
-    print(f"generated · window={label} · items={len(items)} · summary={mode} · reports={n_report} · archive={len(keep)}")
+    print(f"generated · window={label} · items={len(items)} · summary={mode} · "
+          f"reports_new={sum(1 for x in items if x.get('report'))} · reports_total={len(reports)} · archive={len(keep)}")
+
+
+def _merge_reports(items, now_utc):
+    """이번 수집의 report 항목을 reports.json에 누적(dedupe·기간 정리·최신순)하고 목록 반환."""
+    path = "reports.json"
+    store = {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            for r in json.load(f):
+                k = (r.get("link", "").split("?")[0]).lower()
+                if k:
+                    store[k] = r
+    except Exception:
+        pass
+    for x in items:
+        if not x.get("report"):
+            continue
+        k = x["link"].split("?")[0].lower()
+        if k in store:
+            continue
+        store[k] = {"title": x["title"], "link": x["link"], "source": x["source"],
+                    "dt": x["dt"].astimezone(timezone.utc).isoformat(), "region": x.get("region", "overseas")}
+    # 기간 정리(REPORT_PERSIST_DAYS 이내) + 최신순 정렬 + 보관 상한
+    floor = now_utc - timedelta(days=REPORT_PERSIST_DAYS)
+    out = []
+    for r in store.values():
+        try:
+            d = datetime.fromisoformat(r["dt"])
+            if d.tzinfo is None:
+                d = d.replace(tzinfo=timezone.utc)
+        except Exception:
+            continue
+        if d < floor:
+            continue
+        r2 = dict(r); r2["_dt"] = d
+        out.append(r2)
+    out.sort(key=lambda r: r["_dt"], reverse=True)
+    out = out[:REPORT_STORE_MAX]
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump([{k: v for k, v in r.items() if k != "_dt"} for r in out], f, ensure_ascii=False, indent=1)
+    # render용: dt를 datetime으로
+    for r in out:
+        r["dt"] = r.pop("_dt")
+    return out
 
 
 if __name__ == "__main__":
