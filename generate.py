@@ -269,8 +269,8 @@ LANG = {
                "AI 사안별 요약과 관련 기사 원문 링크 제공"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
-  "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 <b>전쟁·군사(공습·교전), 외교·중재, 에너지·유가·LNG, "
-            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전</b> 중심으로 정리합니다."),
+  "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사(공습·교전), 외교·중재, 에너지·유가·LNG, "
+            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 중심으로 정리합니다."),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
@@ -285,7 +285,7 @@ LANG = {
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물만", "rep_badge": "최신순",
+  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "관련 매체 · 정부 · 유관기관 바로가기", "quick_note": "(가나다·알파벳순)",
@@ -305,9 +305,9 @@ LANG = {
                "domestic/foreign think-tank reports · AI issue summaries with source links"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
-  "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in <b>war &amp; military (strikes/clashes), "
+  "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military (strikes/clashes), "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
-            "economy &amp; trade, and aviation &amp; citizen safety</b>."),
+            "economy &amp; trade, and aviation &amp; citizen safety."),
   "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
   "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
@@ -322,7 +322,7 @@ LANG = {
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Only publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest",
+  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — quick links", "quick_note": "(sorted alphabetically)",
@@ -343,9 +343,9 @@ LANG = {
                "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
-  "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في <b>الحرب والعسكر (الغارات/الاشتباكات)، "
+  "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر (الغارات/الاشتباكات)، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
-            "الاقتصاد والتجارة، والطيران وسلامة المواطنين</b>."),
+            "الاقتصاد والتجارة، والطيران وسلامة المواطنين."),
   "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
   "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
@@ -360,7 +360,7 @@ LANG = {
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات فقط", "rep_badge": "الأحدث",
+  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات", "rep_badge": "الأحدث",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "الإعلام · الحكومة · المؤسسات — روابط سريعة", "quick_note": "(مرتّبة أبجديًا)",
