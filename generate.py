@@ -105,13 +105,18 @@ QUICK_LINKS = {
 }
 
 MAX_PER_SECTION = 60
-POOL_FOR_ISSUES = 60          # 사안 분류에 넘길 기사 수
+POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
+DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
+# 요약 엔진 우선순위: GitHub Models → Groq → Gemini (되는 것 자동 사용)
+# GitHub Models(무료·GitHub 계정·전세계·리전제한 없음). OpenAI 호환.
+# GitHub Actions 내장 GITHUB_TOKEN(permissions: models:read)으로 호출 → 별도 키/PAT 불필요.
+GH_ENDPOINT = "https://models.github.ai/inference/chat/completions"
+GH_MODELS = ["openai/gpt-4o-mini", "openai/gpt-4.1-mini", "meta/Llama-3.3-70B-Instruct"]
 GEMINI_MODELS = ["gemini-2.0-flash-lite", "gemini-2.0-flash"]  # 순서대로 폴백(무료 한도 넉넉한 lite 우선)
-# Groq(무료·카드불필요·전세계) — 순서대로 폴백. 요약 우선 엔진.
-GROQ_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
+GROQ_MODELS = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]  # Groq(무료·카드불필요·전세계)
 # ──────────────────────────────────────────────────────────
 
 feedparser.USER_AGENT = "Mozilla/5.0 (compatible; MideastMediaMonitor/1.0)"
@@ -225,10 +230,23 @@ def collect(win_start_utc, now_utc):
 
 # ───────────────────── LLM 키 라우팅 ─────────────────────
 # 키는 GROQ_API_KEY / GEMINI_API_KEY 어느 슬롯에 넣어도, 접두어로 자동 판별해 알맞은 엔진에 사용.
+#   GitHub Models 토큰: "github_pat_..." 또는 "ghp_..."
 #   Groq 키: "gsk_..."  |  Gemini 키: "AQ..." 또는 "AIza..."
 def _all_keys():
-    return [k for k in (os.environ.get("GROQ_API_KEY", "").strip(),
+    return [k for k in (os.environ.get("GH_MODELS_TOKEN", "").strip(),
+                        os.environ.get("GROQ_API_KEY", "").strip(),
                         os.environ.get("GEMINI_API_KEY", "").strip()) if k]
+
+def _gh_token():
+    # GH_MODELS_TOKEN 슬롯에 값이 있으면(예: Actions 내장 GITHUB_TOKEN=ghs_...) 그대로 사용.
+    direct = os.environ.get("GH_MODELS_TOKEN", "").strip()
+    if direct:
+        return direct
+    # 그 외 슬롯에 GitHub PAT가 들어있으면 접두어로 인식.
+    for k in _all_keys():
+        if k.startswith("github_pat_") or k.startswith("ghp_") or k.startswith("ghs_"):
+            return k
+    return ""
 
 def _groq_key():
     for k in _all_keys():
@@ -241,6 +259,38 @@ def _gemini_key():
         if k.startswith("AQ") or k.startswith("AIza"):
             return k
     return ""
+
+
+# ───────────────────── GitHub Models (1순위·무료·전세계) ─────────────────────
+def github_models_call(model, prompt, json_mode):
+    key = _gh_token()
+    if not key:
+        return None
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.3,
+        "max_tokens": 2048,
+    }
+    if json_mode:
+        payload["response_format"] = {"type": "json_object"}
+    body = json.dumps(payload).encode("utf-8")
+    for attempt in range(3):
+        req = urllib.request.Request(
+            GH_ENDPOINT, data=body,
+            headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            return data["choices"][0]["message"]["content"].strip()
+        except urllib.error.HTTPError as ex:
+            if ex.code == 429:
+                print(f"[warn] ghmodels {model} 429, retry {attempt+1}/3")
+                time.sleep(5 * (attempt + 1)); continue
+            print(f"[warn] ghmodels {model} HTTP {ex.code}"); return None
+        except Exception as ex:
+            print(f"[warn] ghmodels {model} failed: {ex}"); return None
+    return None
 
 
 # ───────────────────── Gemini (사안별/폴백) ─────────────────────
@@ -302,13 +352,19 @@ def groq_call(model, prompt, json_mode):
 
 
 def gemini_generate(prompt, json_mode):
-    # 1순위: Groq(무료·전세계). GROQ_API_KEY 있으면 우선 사용.
+    # 1순위: GitHub Models(무료·GitHub 계정·리전제한 없음).
+    for m in GH_MODELS:
+        out = github_models_call(m, prompt, json_mode)
+        if out:
+            print(f"[info] summary ok via ghmodels:{m}")
+            return out
+    # 2순위: Groq(무료·전세계).
     for m in GROQ_MODELS:
         out = groq_call(m, prompt, json_mode)
         if out:
             print(f"[info] summary ok via groq:{m}")
             return out
-    # 2순위: Gemini(무료 한도가 리전별로 잡히면 사용).
+    # 3순위: Gemini(무료 한도가 리전별로 잡히면 사용).
     for m in GEMINI_MODELS:
         out = gemini_call(m, prompt, json_mode)
         if out:
@@ -325,7 +381,8 @@ def gemini_issues(pool, win_label):
         reg = {"qatar": "[카타르현지]", "iran": "[이란매체]", "korea": "[국내]", "overseas": "[해외]"}[x["region"]]
         qt = "(카타르관련)" if x["qatar"] else ""
         d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
-        lines.append(f"{i}: {reg}{qt} ({x['source']}, {d}) {x['title']} :: {x['desc']}")
+        desc = (x["desc"] or "")[:DESC_MAX]
+        lines.append(f"{i}: {reg}{qt} ({x['source']}, {d}) {x['title']} :: {desc}")
     prompt = (
         "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]을 읽고 이 갱신 주기의 내용을 "
         "'사안(issue)'별로 3~6개로 묶으세요. 카테고리 예시: 전쟁·군사 / 외교·중재 / 에너지·유가 / "
