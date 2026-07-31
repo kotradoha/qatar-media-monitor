@@ -266,7 +266,7 @@ LANG = {
   "dir": "ltr", "html": "ko",
   "title": "🇶🇦 카타르·중동정세 언론 모니터링",
   "subtitle": ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
-               "AI 사안별 요약과 관련 기사 원문 링크 제공"),
+               "AI 사안별 요약과 관련 기사 원문 링크 제공 [주카타르대사관 Commercial Section]"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
@@ -302,7 +302,8 @@ LANG = {
   "dir": "ltr", "html": "en",
   "title": "🇶🇦 Qatar & Middle East — Media Monitor",
   "subtitle": ("Auto-updated daily at 07:00 & 15:30 (Qatar time) · Monitoring Qatar, Korea & global media and "
-               "domestic/foreign think-tank reports · AI issue summaries with source links"),
+               "domestic/foreign think-tank reports · AI issue summaries with source links "
+               "[Embassy of the Republic of Korea in Qatar, Commercial Section]"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
@@ -340,7 +341,7 @@ LANG = {
   "dir": "rtl", "html": "ar",
   "title": "🇶🇦 رصد الإعلام: قطر والشرق الأوسط",
   "subtitle": ("تحديث تلقائي يوميًا الساعة 07:00 و15:30 (بتوقيت قطر) · رصد إعلام قطر وكوريا والعالم وتقارير مراكز الأبحاث المحلية والدولية · "
-               "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
+               "ملخصات بالذكاء الاصطناعي مع روابط المصادر [سفارة جمهورية كوريا لدى قطر، القسم التجاري]"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
