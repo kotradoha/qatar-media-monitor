@@ -1,0 +1,52 @@
+.github/workflows/update.ymlname: Update monitor
+
+on:
+  schedule:
+    # GitHub Actions는 UTC 기준. 카타르(UTC+3) 07:00 = 04:00 UTC / 15:30 = 12:30 UTC
+    - cron: "0 4 * * *"
+    - cron: "30 12 * * *"
+  workflow_dispatch:        # 수동 실행 버튼
+  push:
+    branches: [ main ]      # 코드 수정 시에도 한 번 생성
+
+permissions:
+  contents: write           # 생성한 index.html을 커밋/푸시하기 위함
+  models: read              # GitHub Models(무료 AI 요약) 호출 권한
+
+concurrency:
+  group: update-monitor
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install feedparser
+
+      - name: Generate index.html
+        env:
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # 1순위: GitHub Models(내장 토큰, 키 발급 불필요)
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # 2순위(선택)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 3순위(선택). 모두 없으면 헤드라인만
+        run: python generate.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A index.html archive
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "auto: update $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
