@@ -38,7 +38,12 @@ Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 
 # 연구기관·에너지 기관의 중동·유가·카타르 분석/보고서 수집용 쿼리(뜨면 최상단 강조)
 Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
                 "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석",
-                "현대경제연구원 중동", "삼성글로벌리서치 중동 유가", "산업연구원 중동", "중동 리스크 보고서"]
+                "현대경제연구원 중동", "삼성글로벌리서치 중동 유가", "산업연구원 중동", "중동 리스크 보고서",
+                # 한국 기관 보고서 수집 강화(기관명+주제)
+                "대외경제정책연구원 유가 전망", "에너지경제연구원 중동 정세", "KDI 국제유가",
+                "국제금융센터 중동 리스크", "한국무역협회 중동", "KOTRA 카타르", "코트라 중동 에너지",
+                "석유공사 국제유가 전망", "산업연구원 에너지 안보", "국립외교원 중동", "아산정책연구원 중동",
+                "세종연구소 중동", "자본시장연구원 유가", "삼정KPMG 에너지", "딜로이트 중동 전망"]
 # 해외 연구기관·국제기구 리포트 수집용(영문)
 Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Middle East analysis",
                 "Crisis Group Iran Gulf", "IEA oil market report Middle East", "OPEC monthly oil report",
@@ -328,17 +333,40 @@ def _build_report_matchers():
 
 _REPORT_SUBS, _REPORT_REGEXES = _build_report_matchers()
 
+# 발행처 도메인으로도 보고서 판별(구글뉴스 <source url>=원발행처 도메인). 특히 한국 기관 포착에 유효.
+REPORT_DOMAINS = [
+    # 한국 국책·공공·민간 연구기관
+    "kiep.go.kr", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
+    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "koreaexim.go.kr", "ksure.or.kr", "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "seri.org",
+    "lgbr.co.kr", "posri.re.kr", "hanaif.re.kr", "kcmi.re.kr",
+    # 해외 연구기관·국제기구·에너지
+    "imf.org", "worldbank.org", "oecd.org", "iea.org", "opec.org", "eia.gov", "iiss.org",
+    "chathamhouse.org", "csis.org", "brookings.edu", "carnegieendowment.org", "atlanticcouncil.org",
+    "crisisgroup.org", "mei.edu", "cfr.org", "eurasiagroup.net", "rystadenergy.com", "woodmac.com",
+    "spglobal.com", "economist.com", "eiu.com", "foreignaffairs.com", "foreignpolicy.com",
+    "oxfordeconomics.com", "piie.com", "rusi.org", "mecouncil.org", "studies.aljazeera.net",
+    "dohainstitute.org", "wilsoncenter.org", "bruegel.org",
+    # 글로벌 회계·컨설팅펌
+    "kpmg.com", "pwc.com", "deloitte.com", "ey.com", "bcg.com", "bain.com", "mckinsey.com",
+    "accenture.com", "oliverwyman.com", "rolandberger.com",
+]
+
+def _domain_is_report(shref):
+    s = (shref or "").lower()
+    return any(dom in s for dom in REPORT_DOMAINS)
+
 def is_report_source(src):
     s = (src or "").lower()
     if any(h in s for h in _REPORT_SUBS):
         return True
     return any(rx.search(s) for rx in _REPORT_REGEXES)
 
-# 심층 보고서 판별: '발행처(source)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
+# 심층 보고서 판별: '발행처(source 이름 또는 원발행처 도메인)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
-def looks_report(title, src):
-    # 1) 발행처가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
-    if not is_report_source(src):
+def looks_report(title, src, shref=""):
+    # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
+    if not (is_report_source(src) or _domain_is_report(shref)):
         return False
     # 2) 중동·카타르 주제와 연관되어야 함
     if not (has(title + " ", QATAR_KW) or has(title + " ", MIDEAST_KW)):
@@ -371,10 +399,16 @@ def collect(win_start_utc, now_utc, when_days=2):
             src = source_of(e, label)
             if blocked_source(src):          # 취합/비정식/해외발 소스 제외
                 continue
+            sd = e.get("source")             # 구글뉴스 <source url="원발행처">
+            shref = ""
+            if isinstance(sd, dict):
+                shref = sd.get("href", "") or sd.get("url", "") or ""
+            elif sd is not None:
+                shref = getattr(sd, "href", "") or ""
             desc = clean_desc(e.get("summary", ""))
             text = title + " " + desc
             is_qatar = has(text, QATAR_KW)
-            report = looks_report(title, src)
+            report = looks_report(title, src, shref)
             if not is_qatar and not has(text, MIDEAST_KW) and not report:
                 continue
             dt = entry_time(e)
@@ -393,7 +427,7 @@ def collect(win_start_utc, now_utc, when_days=2):
             seen.add(key); seen.add(tkey)
             kor = bool(HANGUL_RE.search(title))
             items.append({"title": title, "link": link, "source": src, "dt": dt,
-                          "qatar": is_qatar, "desc": desc, "korean": kor,
+                          "qatar": is_qatar, "desc": desc, "korean": kor, "shref": shref,
                           "report": report, "region": source_region(src, kor)})
     items.sort(key=lambda x: x["dt"], reverse=True)
     return items
@@ -999,7 +1033,8 @@ TEMPLATE = """<!DOCTYPE html>
   .wsec .wlink{{margin-top:8px;font-size:12.5px}}
   .wsec .wlink a{{color:var(--accent);text-decoration:none}}
   .wsec .wlink a:hover{{text-decoration:underline}}
-  .searchbox{{display:flex;align-items:center;gap:8px;margin:2px 0 16px;font-size:13px}}
+  .searchbox{{display:flex;align-items:center;gap:8px;margin:2px 0 6px;font-size:13px}}
+  .searchhint{{font-size:11.5px;color:var(--muted);margin:0 0 16px;line-height:1.45}}
   .searchbox input{{flex:1;max-width:440px;font-size:13px;color:var(--txt);background:var(--panel2);
     border:1px solid var(--line);border-radius:9px;padding:8px 11px}}
   .searchbox input::placeholder{{color:var(--muted)}}
@@ -1033,6 +1068,7 @@ TEMPLATE = """<!DOCTYPE html>
 
   <div class="searchbox">🔎 <input id="kw" type="search" autocomplete="off"
       placeholder="키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)"> <span id="kwn" class="kwn"></span></div>
+  <div class="searchhint">※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색).</div>
 
   {summary}
 
@@ -1273,7 +1309,7 @@ def _merge_reports(items, now_utc):
         with open(path, encoding="utf-8") as f:
             for r in json.load(f):
                 # 과거 느슨한 기준으로 저장된 뉴스성 항목은 재검증해 정리(발행처가 연구기관/컨설팅펌인 것만 유지)
-                if not looks_report(r.get("title", ""), r.get("source", "")):
+                if not looks_report(r.get("title", ""), r.get("source", ""), r.get("shref", "")):
                     continue
                 k = (r.get("link", "").split("?")[0]).lower()
                 if k:
@@ -1287,6 +1323,7 @@ def _merge_reports(items, now_utc):
         if k in store:
             continue
         store[k] = {"title": x["title"], "link": x["link"], "source": x["source"],
+                    "shref": x.get("shref", ""),
                     "dt": x["dt"].astimezone(timezone.utc).isoformat(), "region": x.get("region", "overseas")}
     # 기간 정리(REPORT_PERSIST_DAYS 이내) + 최신순 정렬 + 보관 상한
     floor = now_utc - timedelta(days=REPORT_PERSIST_DAYS)
