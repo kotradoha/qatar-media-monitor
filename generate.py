@@ -278,9 +278,9 @@ LANG = {
  "ko": {
   "dir": "ltr", "html": "ko",
   "title": "카타르·중동 정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
-  "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·글로벌·한국 주요 언론보도를 취합하여 "
+  "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 참고로 보실 수 있으며, "
-               "매주 일요일 오전에는 지난 한 주를 총정리한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
+               "매주 일요일 오전에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
@@ -429,7 +429,7 @@ def window_bounds(now_q):
     am = now_q.replace(hour=BOUNDARY_AM[0], minute=BOUNDARY_AM[1], second=0, microsecond=0)
     pm = now_q.replace(hour=BOUNDARY_PM[0], minute=BOUNDARY_PM[1], second=0, microsecond=0)
     start = am if now_q >= pm else pm - timedelta(days=1)
-    label = f"{start.strftime('%m/%d %H:%M')} → {now_q.strftime('%m/%d %H:%M')} (카타르시간)"
+    label = f"{start.strftime('%m/%d %H:%M')} ~ {now_q.strftime('%m/%d %H:%M')} (카타르시간)"
     return start, label
 
 
@@ -1232,9 +1232,9 @@ TEMPLATE = """<!DOCTYPE html>
   @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85;--note-bg:#fbeceb;--crit-text:#b4211f}}}}
   *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--txt);line-height:1.5;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}}
-  .wrap{{max-width:1180px;margin:0 auto;padding:18px 14px 60px}}
+  .wrap{{max-width:1180px;margin:0 auto;padding:6px 14px 60px}}
   header{{position:sticky;top:0;background:var(--bg);
-    padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}}
+    padding:4px 0 12px;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}}
   @media (max-width:760px){{header{{position:static}}}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
   .titcol{{display:flex;flex-direction:column;gap:1px}}
@@ -1566,7 +1566,7 @@ def main():
     # 주간 데이터(1회 수집·요약 후 언어별 번역)
     if is_weekly:
         wk_from = (now_q - timedelta(days=WEEKLY_LOOKBACK_DAYS)).strftime("%m/%d")
-        wlabel_ko = f"지난주 종합 · {wk_from} → {now_q.strftime('%m/%d')} (카타르시간)"
+        wlabel_ko = f"지난주 종합 · {wk_from} ~ {now_q.strftime('%m/%d')} (카타르시간)"
         witems = collect(now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS), now_utc, when_days=WEEKLY_LOOKBACK_DAYS + 1)
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
