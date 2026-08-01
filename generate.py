@@ -1243,7 +1243,7 @@ def _summary_bullets(summary):
 
 
 def link_row(x):
-    d = x["dt"].astimezone(TZ).strftime("%m/%d")
+    d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")   # 게재 시각까지 표기(모니터링 기간 내 최신순 확인용)
     return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}'
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
