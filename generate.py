@@ -391,8 +391,8 @@ LANG = {
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
-           "심층 보고서는 국내외 연구기관·국제기구·에너지기관의 발행처 도메인을 직접 조준해 수집합니다. "
-           "수집·요약은 각 매체가 공개한 제목과 요약 발췌(스니펫)만을 근거로 하며, 유료 구독·멤버십 매체의 기사 전문(full text)은 제공된 원문 링크를 통해 독자께서 해당 매체에 직접 로그인·구독하셔야 열람하실 수 있습니다. "
+           "심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. "
+           "수집·요약은 각 매체가 공개한 제목과 요약 발췌(스니펫)를 근거로 하며, 유료 구독·멤버십 매체의 기사 전문은 제공된 원문 링크를 통해 독자께서 해당 매체에 직접 로그인·구독하셔야 열람하실 수 있습니다. "
            "수집된 기사는 Anthropic Claude(Sonnet 5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역합니다. "
            "전 과정은 GitHub Actions로 하루 두 차례(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. "
            "자동 수집 특성상 일부 기사·보고서들이 누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
@@ -438,7 +438,7 @@ LANG = {
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
            "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
            "are collected by directly targeting the publishing domains of domestic and international research institutes, "
-           "international organizations and energy agencies. Collection and summarization rely only on each outlet's publicly available headline and snippet; "
+           "international organizations, etc. Collection and summarization rely on each outlet's publicly available headline and snippet; "
            "for subscription or paywalled outlets, the full article can be opened through the provided source link only after the reader signs in or subscribes to that outlet directly. "
            "The collected articles are automatically clustered and summarized by issue, "
            "and translated into English and Arabic, by Anthropic Claude (Sonnet 5) AI. The whole process runs and publishes automatically "
@@ -484,7 +484,7 @@ LANG = {
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
            "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
-           "والمنظمات الدولية وهيئات الطاقة مباشرةً. ويعتمد الجمع والتلخيص فقط على العنوان والمقتطف المتاحَين علنًا لكل وسيلة؛ "
+           "والمنظمات الدولية وغيرها مباشرةً. ويعتمد الجمع والتلخيص على العنوان والمقتطف المتاحَين علنًا لكل وسيلة؛ "
            "أمّا النص الكامل لوسائل الاشتراك المدفوع فلا يُتاح الاطلاع عليه إلا عبر رابط المصدر المرفق وبعد أن يسجّل القارئ دخوله أو يشترك في تلك الوسيلة مباشرةً. "
            "وتُصنَّف المقالات المجمّعة وتُلخَّص تلقائيًا حسب القضية وتُترجَم إلى الإنجليزية والعربية "
            "بواسطة Anthropic Claude (Sonnet 5) للذكاء الاصطناعي. وتُنفَّذ العملية بأكملها وتُنشَر تلقائيًا مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. "
