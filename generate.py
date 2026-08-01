@@ -363,7 +363,7 @@ LANG = {
   "title": "카타르·중동 정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
   "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고로 보실 수 있으며, "
-               "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
+               "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]"),
   "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
   "two_wk": "(주간)", "two_dl": "(일일)", "wk_range": "지난주 일 07:00 ~ 당일 07:00",
   "win_am": "전일 15:30 ~ 당일 07:00", "win_pm": "당일 07:00 ~ 당일 15:30", "win_pre": "전일 07:00 ~ 전일 15:30",
@@ -395,7 +395,7 @@ LANG = {
            "수집된 기사는 Anthropic Claude(Sonnet 5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역합니다. "
            "전 과정은 GitHub Actions로 하루 두 차례(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. "
            "자동 수집 특성상 일부 기사·보고서들이 누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
-  "sign": "- 주카타르대사관 Commercial Section·도하무역관", "org": "주카타르대사관 Commercial Section·도하무역관",
+  "sign": "- 주카타르대사관 Commercial Section · 도하무역관", "org": "주카타르대사관 Commercial Section · 도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
   "daily_no": "일일 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일일(시범)", "ed_daily": "일일", "ed_weekly": "주간",
  },
