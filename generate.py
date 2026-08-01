@@ -290,15 +290,15 @@ LANG = {
   "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
-  "full_summary": "전체 기사 목록 (총 {n}건) · 카타르/이란/해외/국내", "expand": "펼쳐보기", "collapse": "접기",
+  "full_summary": "전체 기사 목록 (총 {n}건)", "full_note": "(카타르·이란·해외·한국)", "expand": "펼쳐보기", "collapse": "접기",
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅사 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "(국내외 연구기관·국제기구·컨설팅사 발간물)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
-  "foot": ("본 페이지는 공개된 언론 보도와 유관기관 자료를 자동으로 수집·요약한 것으로, 자동 수집 특성상 일부 기사·보고서가 "
+  "foot": ("본 페이지는 공개된 언론 보도와 유관기관 자료를 API로 끌어와 수집·요약한 것으로, 자동 수집 특성상 일부 기사·보고서가 "
            "누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "- 주카타르대사관 Commercial Section·도하무역관", "org": "주카타르대사관 Commercial Section·도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
@@ -325,15 +325,15 @@ LANG = {
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
   "flag": "Qatar",
-  "full_summary": "Full article list (total {n}) · Qatar / Iran / Global / Korea", "expand": "Expand", "collapse": "Collapse",
+  "full_summary": "Full article list (total {n})", "full_note": "(Qatar·Iran·Global·Korea)", "expand": "Expand", "collapse": "Collapse",
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest", "rep_new": "New this edition",
+  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Publications by research institutes, int'l orgs & consultancies)", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
-  "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions; "
+  "foot": ("This page pulls public news coverage and material from relevant institutions via APIs to collect and summarize them; "
            "owing to automated collection some articles or reports may be missed, so please re-verify important issues "
            "against the original sources and further searches."),
   "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
@@ -361,15 +361,15 @@ LANG = {
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
   "flag": "قطر",
-  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n}) · قطر / إيران / دولي / كوريا", "expand": "توسيع", "collapse": "طيّ",
+  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "full_note": "(قطر·إيران·دولي·كوريا)", "expand": "توسيع", "collapse": "طيّ",
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
+  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
-  "foot": ("تجمع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية؛ ونظرًا لطبيعة الجمع التلقائي "
+  "foot": ("تسحب هذه الصفحة التغطيات الإعلامية العامة ومواد الجهات المعنية عبر واجهات برمجية (API) لجمعها وتلخيصها؛ ونظرًا لطبيعة الجمع التلقائي "
            "قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
   "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
@@ -1197,6 +1197,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
+        full_note=esc(L["full_note"]),
         expand=esc(L["expand"]), collapse=esc(L["collapse"]),
         col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
         quick_head=esc(L["quick_head"]), quick_note=esc(L["quick_note"]),
@@ -1379,7 +1380,7 @@ TEMPLATE = """<!DOCTYPE html>
   {summary}
 
   <details class="fulllist foldbox">
-    <summary><span class="chev">▸</span> {full_summary} <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
+    <summary><span class="chev">▸</span> {full_summary} <span class="hnote">{full_note}</span> <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
     <div class="grid4">
       <div class="card"><h2><span class="bar"></span>{col_qatar}</h2><ul>{qatar}</ul></div>
       <div class="card"><h2><span class="bar"></span>{col_iran}</h2><ul>{me_ir}</ul></div>
