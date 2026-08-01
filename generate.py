@@ -1572,10 +1572,10 @@ TEMPLATE = """<!DOCTYPE html>
   *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--txt);line-height:1.5;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}}
   .wrap{{max-width:1180px;margin:0 auto;padding:6px 14px 60px}}
-  header{{position:sticky;top:0;background:var(--bg);
+  header{{position:static;background:var(--bg);
     padding:4px 0 12px;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}}
-  @media (max-width:760px){{header{{position:static}}}}
-  .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
+  .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+    position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);padding:7px 0 8px;margin-bottom:4px}}
   .titcol{{display:flex;flex-direction:column;gap:1px}}
   .entitle{{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:-.01em;margin-top:2px}}
   .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
