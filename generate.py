@@ -378,7 +378,7 @@ LANG = {
   "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
   "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
-  "qbox": "카타르 영향·피해",
+  "qbox": "카타르 영향·피해", "links_fold": "🔗 이 이슈 관련 보도·링크 펼쳐보기",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
   "full_summary": "전체 기사 목록 (총 {n}건)", "full_note": "(카타르·이란·해외·한국)", "expand": "펼쳐보기", "collapse": "접기",
@@ -421,7 +421,7 @@ LANG = {
   "sum_head": "🧭 This edition — issue briefs", "sum_head_flat": "🧭 This edition — key summary", "ai": "AI summary",
   "sum_none_body": "Summary not generated this time — it will retry on the next update. The article lists below are fine.", "diag": "Diagnostics",
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
-  "qbox": "Impact on Qatar",
+  "qbox": "Impact on Qatar", "links_fold": "🔗 Show related articles for this issue",
   "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
   "flag": "Qatar",
   "full_summary": "Full article list (total {n})", "full_note": "(Qatar·Iran·Global·Korea)", "expand": "Expand", "collapse": "Collapse",
@@ -465,7 +465,7 @@ LANG = {
   "sum_head": "🧭 هذا الإصدار — ملخص القضايا", "sum_head_flat": "🧭 هذا الإصدار — الملخص الرئيسي", "ai": "ملخص آلي",
   "sum_none_body": "لم يُنشأ الملخص هذه المرة — ستُعاد المحاولة في التحديث التالي. قوائم الأخبار أدناه سليمة.", "diag": "تشخيص",
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
-  "qbox": "الأثر على قطر",
+  "qbox": "الأثر على قطر", "links_fold": "🔗 عرض الأخبار والروابط المتعلقة بهذه القضية",
   "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
   "flag": "قطر",
   "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "full_note": "(قطر·إيران·دولي·كوريا)", "expand": "توسيع", "collapse": "طيّ",
@@ -1068,8 +1068,18 @@ def gemini_issues(pool, win_label, weekly=False):
         lines.append(f"{i}: {reg}{qt} ({x['source']}, {d}) {x['title']} :: {desc}")
     scope = ("아래 [기사 목록]은 지난 한 주(약 7일)치입니다. 한 주간의 흐름을 종합해 "
              if weekly else "아래 [기사 목록]을 읽고 이 갱신 주기의 내용을 ")
+    weekly_flow = (
+        "【주간 종합·흐름 재구성 — 주간 보고 전용(가장 중요)】 이 보고는 특정 시점의 스냅숏(일일 보고)이 아니라 "
+        "**지난 한 주 전체를 관통하는 큰 흐름을 재구성**하는 주간 종합입니다. 개별 기사·시점을 단순 나열·집계하지 말고, 한 주의 맥락과 인과를 엮으세요.\n"
+        "① 먼저 한 주간 **반복적으로 등장하며 이번 주를 규정한 핵심 키워드·쟁점·행위자**(예: 특정 휴전·핵협상 국면, 공습·교전 라운드, 국제유가 추세, 호르무즈·홍해 긴장, 카타르의 중재 역할 등)를 추출하세요.\n"
+        "② 이를 중심으로 사안을 묶어, 각 사안이 **주 초반→중반→후반으로 어떻게 시작되어 전개·전환·격화/완화·귀결됐는지 시간 순 '흐름'이 드러나게** 서술하세요. "
+        "즉 각 summary 항목은 단발 사실이 아니라 그 사안이 한 주 동안 **어떻게 변화·진전됐는지의 경과**를 담되, 반드시 구체적 날짜·수치·전환점을 명시하세요"
+        "(예: '주 초 ~로 시작 → 중반 ~로 확대·격화 → 주말 ~로 완화/봉합', '유가는 주 초 배럴당 ~달러에서 ~ 여파로 주중 ~달러까지 상승 후 주말 ~로 조정' 등). 원문에 없는 사실·수치는 창작 금지.\n"
+        "③ 결과적으로 '이번 한 주 중동 정세가 카타르의 국익·안보·에너지·물류·외교 관점에서 어떻게 흘러갔는가'가 이 요약만으로 한눈에·조리 있게 읽혀야 합니다. "
+        "흐름·경과를 담아야 하므로 summary 항목 수는 사안당 **3~5개까지 허용**하며, 각 항목은 (일일보다) 다소 길어도 좋으나 개조식·명사형 종결은 유지하세요.\n"
+        if weekly else "")
     prompt = (
-        "당신은 주카타르대사관 상황실 분석관입니다. " + scope +
+        "당신은 주카타르대사관 상황실 분석관입니다. " + scope + weekly_flow +
         "【모니터링 주제 범위】 이 브리핑의 주제는 '카타르의 국익·안보·경제에 유의미한 중동 정세'입니다. "
         "즉 이스라엘·이란·걸프 무력충돌 및 공습·교전 동향, 외교·중재(특히 카타르의 중재 역할), "
         "호르무즈·홍해 등 해상안전·물류, 국제유가·LNG·에너지, 경제·통상·투자, 항공·교민 안전의 관점에서 "
@@ -1285,7 +1295,7 @@ def link_row(x):
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
 
-def render_issues(issues, pool, now_utc, L=None):
+def render_issues(issues, pool, now_utc, L=None, collapse_links=False):
     L = L or LANG["ko"]
     out = []
     for n, iss in enumerate((i for i in issues if isinstance(i, dict)), 1):
@@ -1338,10 +1348,19 @@ def render_issues(issues, pool, now_utc, L=None):
         if kr: groups += f'<div class="grp"><div class="gh">{esc(L["g_korea"])}</div>' + "".join(link_row(a) for a in kr) + '</div>'
         if not groups:
             groups = f'<div class="grp"><div class="gh" style="color:var(--muted)">{esc(L["nomap"])}</div></div>'
-        out.append(
-            f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
-            f'<div class="row"><div class="left">{qbox}<div class="sh">{esc(L["key_sum"])}</div>{body}</div>'
-            f'<div class="right">{groups}</div></div></div>')
+        head = f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
+        if collapse_links:
+            # 주간: 요약을 전폭으로 보여 흐름을 직관적으로 읽게 하고, 이슈별 관련 링크는 접어두기(펼치면 표시)
+            out.append(
+                head
+                + f'<div class="row"><div class="left" style="border-right:none;flex-basis:100%">{qbox}<div class="sh">{esc(L["key_sum"])}</div>{body}</div></div>'
+                + f'<details class="linkfold"><summary>{esc(L["links_fold"])}</summary><div class="foldwrap">{groups}</div></details>'
+                + '</div>')
+        else:
+            out.append(
+                head
+                + f'<div class="row"><div class="left">{qbox}<div class="sh">{esc(L["key_sum"])}</div>{body}</div>'
+                + f'<div class="right">{groups}</div></div></div>')
     return "\n".join(out)
 
 
@@ -1408,7 +1427,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
 
     if issues:
         summary_html = (f'<div class="sumhead"><span class="bar"></span>{esc(L["sum_head"])} '
-                        f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L))
+                        f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L, collapse_links=(edition == "weekly")))
     elif flat_text:
         summary_html = (f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(L["sum_head_flat"])} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>'
@@ -1591,6 +1610,14 @@ TEMPLATE = """<!DOCTYPE html>
   .grp a{{display:block;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;margin:5px 0}}
   .grp a:hover{{color:var(--accent);text-decoration:underline}}
   .grp a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
+  .linkfold{{border-top:1px solid var(--line)}}
+  .linkfold>summary{{list-style:none;cursor:pointer;padding:9px 16px;font-size:12.5px;font-weight:700;color:var(--accent);user-select:none;display:flex;align-items:center;gap:6px}}
+  .linkfold>summary::-webkit-details-marker{{display:none}}
+  .linkfold>summary::before{{content:"▸";font-size:11px;transition:transform .15s}}
+  .linkfold[open]>summary::before{{content:"▾"}}
+  .linkfold>summary:hover{{text-decoration:underline}}
+  .foldwrap{{padding:2px 16px 12px;display:flex;flex-wrap:wrap;gap:0 26px}}
+  .foldwrap .grp{{flex:1 1 240px;min-width:220px}}
   .tq{{font-size:10px;font-weight:700;color:#111;background:var(--gold);border-radius:5px;padding:0 5px;margin-inline-end:4px;vertical-align:middle}}
   .card{{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 15px;margin-bottom:14px}}
   .card.sum{{background:linear-gradient(180deg,rgba(77,163,255,.08),transparent),var(--panel)}}
@@ -1962,7 +1989,7 @@ def main():
             with open(os.path.join("archive", wfn), "w", encoding="utf-8") as fh:
                 fh.write(whtml)
             if wiss_l:
-                wbody = render_issues(wiss_l, wpool, now_utc, L)
+                wbody = render_issues(wiss_l, wpool, now_utc, L, collapse_links=True)
             elif wflat:
                 wbody = f'<div class="card sum"><div class="sumbody">{summary_to_html(wflat)}</div></div>'
             else:
