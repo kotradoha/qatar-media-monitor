@@ -3,8 +3,8 @@
 """
 카타르·중동정세 언론 모니터링 (대사관/공관용, 무료·완전자동)
 - 갱신 주기(직전 갱신 → 이번 갱신) '창(window)' 안 기사만 수집
-- (무료 Gemini) 창 내 기사를 '이슈(issue)'별로 자동 묶어: 왼쪽=요약, 오른쪽=관련 기사(카타르/해외/국내)
-  * 이슈 묶기 실패 시 → '전체 요약 → 기사 나열' 자동 폴백
+- (무료 Gemini) 창 내 기사를 '사안(issue)'별로 자동 묶어: 왼쪽=요약, 오른쪽=관련 기사(카타르/해외/국내)
+  * 사안 묶기 실패 시 → '전체 요약 → 기사 나열' 자동 폴백
 - 아래에 전체 기사 목록(카타르 필수 / 중동정세 해외·국내) + 관심 매체 링크
 - GitHub Actions가 하루 2회(카타르시간 07:00 / 15:30) 실행 → 커밋/게시 → 공개 URL 자동 갱신
 
@@ -26,9 +26,9 @@ except ImportError:
     raise SystemExit("feedparser가 필요합니다: pip install feedparser")
 
 # ───────────────────────── CONFIG ─────────────────────────
-TITLE = "🇶🇦 카타르·중동정세 일일·주간 언론 모니터링"
-SUBTITLE = ("카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
-            "이슈별 AI 요약과 관련 기사 원문 링크 제공")
+TITLE = "🇶🇦 카타르·중동정세 언론 모니터링"
+SUBTITLE = ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
+            "AI 사안별 요약과 관련 기사 원문 링크 제공")
 
 Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security"]
 Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관"]
@@ -73,6 +73,7 @@ QATAR_SOURCES = ["qatar news agency", "qna", "gulf times", "gulf-times", "the pe
 KOREA_SOURCES = [
     # 통신사·방송
     "yonhap", "연합", "뉴시스", "newsis", "뉴스1", "news1", "ytn", "kbs", "mbc", "sbs", "jtbc", "연합뉴스tv",
+    "cbs", "노컷", "nocut", "nocutnews",
     # 종합일간지
     "조선", "chosun", "중앙", "joongang", "joins", "동아", "donga",
     "한겨레", "hani", "경향", "khan", "kyunghyang",
@@ -86,7 +87,7 @@ KOREA_SOURCES = [
 # 분석·보고서(연구기관·에너지·국책연구원) — 출처가 이들이면 최상단 '분석·보고서' 섹션으로 강조
 REPORT_HINTS = [
     # 국책·공공 연구기관
-    "대외경제정책연구원", "kiep", "한국개발연구원", "kdi", "에너지경제연구원", "keei",
+    "대외경제정책연구원", "kiep", "emerics", "이머릭스", "신흥지역정보", "한국개발연구원", "kdi", "에너지경제연구원", "keei",
     "국제금융센터", "kcif", "산업연구원", "kiet", "국립외교원", "ifans",
     "아산정책", "asan", "세종연구소", "sejong", "한국무역협회", "kita", "국제무역통상연구원",
     "가스공사", "kogas", "석유공사", "knoc", "오피넷", "opinet",
@@ -156,9 +157,16 @@ QUICK_LINKS = {
         ("BBC — Middle East", "https://www.bbc.com/news/world/middle_east"),
         ("AP — Middle East", "https://apnews.com/hub/middle-east"),
         ("The Guardian — ME", "https://www.theguardian.com/world/middleeast"),
-        ("The New York Times — ME", "https://www.nytimes.com/section/world/middleeast")],
+        ("The New York Times — ME", "https://www.nytimes.com/section/world/middleeast"),
+        ("Bloomberg", "https://www.bloomberg.com/middleeast"),
+        ("The Wall Street Journal", "https://www.wsj.com/world/middle-east"),
+        ("Financial Times", "https://www.ft.com/middle-east"),
+        ("The Washington Post", "https://www.washingtonpost.com/world/middle-east/"),
+        ("The Economist — ME·Africa", "https://www.economist.com/middle-east-and-africa")],
     "🇰🇷 국내 종합·방송": [("연합뉴스 국제", "https://www.yna.co.kr/international/all"),
         ("YTN", "https://www.ytn.co.kr/"), ("KBS", "https://news.kbs.co.kr/"),
+        ("MBC", "https://imnews.imbc.com/"), ("SBS", "https://news.sbs.co.kr/"),
+        ("JTBC", "https://news.jtbc.co.kr/"), ("CBS 노컷뉴스", "https://www.nocutnews.co.kr/"),
         ("조선일보", "https://www.chosun.com/"), ("중앙일보", "https://www.joongang.co.kr/"),
         ("동아일보", "https://www.donga.com/"), ("한겨레", "https://www.hani.co.kr/"),
         ("경향신문", "https://www.khan.co.kr/")],
@@ -183,6 +191,7 @@ QUICK_LINKS = {
         ("해양수산부", "https://www.mof.go.kr/"),
         ("국방부", "https://www.mnd.go.kr/")],
     "📑 국내 연구기관": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
+        ("신흥지역정보 종합지식포털(EMERiCs)", "https://www.emerics.org:446/index.do"),
         ("KDI 한국개발연구원", "https://www.kdi.re.kr/"),
         ("에너지경제연구원(KEEI)", "https://www.keei.re.kr/"),
         ("국제금융센터(KCIF)", "https://www.kcif.or.kr/"),
@@ -228,9 +237,9 @@ QUICK_LINKS = {
         ("S&P Global Commodity Insights", "https://www.spglobal.com/commodityinsights/")],
 }
 
-# 바로가기 대분류: 언론매체 / 정부 / 유관기관·연구소 (각 아래에 세부 그룹 배치)
+# 바로가기 대분류: 언론 매체 / 정부 / 유관기관·연구소 (각 아래에 세부 그룹 배치)
 QUICK_SECTIONS = [
-    ("📰 언론매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
+    ("📰 언론 매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
                    "🇰🇷 국내 종합·방송", "🇰🇷 국내 경제지"]),
     ("🏛️ 정부", ["🏛️ 카타르 정부", "🏛️ 우리 정부(한국)"]),
     ("📑 유관기관·연구소", ["📑 국내 연구기관", "🌐 해외 연구기관"]),
@@ -241,7 +250,7 @@ LANGS = ["ko", "en", "ar"]
 LANG_NAME = {"ko": "한국어", "en": "English", "ar": "العربية"}
 
 QSEC_I18N = {
-    "📰 언론매체": {"en": "📰 Media", "ar": "📰 وسائل الإعلام"},
+    "📰 언론 매체": {"en": "📰 Media", "ar": "📰 وسائل الإعلام"},
     "🏛️ 정부": {"en": "🏛️ Government", "ar": "🏛️ الجهات الحكومية"},
     "📑 유관기관·연구소": {"en": "📑 Institutions & Research", "ar": "📑 المؤسسات ومراكز الأبحاث"},
 }
@@ -260,50 +269,49 @@ QGROUP_I18N = {
 LANG = {
  "ko": {
   "dir": "ltr", "html": "ko",
-  "title": "🇶🇦 카타르·중동정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily & Weekly Media Monitor",
-  "subtitle": ("카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
-               "이슈별 AI 요약과 관련 기사 원문 링크 제공"),
+  "title": "카타르·중동정세 언론 모니터링", "title2": "Qatar & Middle East — Media Monitor",
+  "subtitle": ("매일 두 차례(카타르 시각 오전 7시, 오후 3시 30분)에 걸쳐 카타르, 이란, 글로벌 및 한국 주요 언론 보도를 취합하여 "
+               "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 내역도 참고로 보실 수 있으며, "
+               "매주 일요일 오전에는 지난 한 주를 총정리한 주간 리포트가 함께 발행됩니다."),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
-            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 위주로 정리"),
+            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 위주로 정리합니다."),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
   "search_count": "건 표시",
-  "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
+  "sum_head": "🧭 이번 회차 사안별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
-  "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
+  "issue": "사안", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
-  "full_summary": "전체 기사 목록 (총 {n}건)", "list_note": "(카타르·이란·기타 국가·한국)", "expand": "펼쳐보기", "collapse": "접기",
+  "full_summary": "전체 기사 목록 (총 {n}건) · 카타르/이란/해외/국내", "expand": "펼쳐보기", "collapse": "접기",
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "(국내외 연구기관·컨설팅사·국제기구 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
-  "quick_head": "언론매체 · 정부 · 유관기관·연구소 링크 모음", "quick_note": "(가나다·알파벳순)",
-  "foot1": ("본 페이지는 카타르·한국·해외 주요 언론과 국내외 연구기관·국제기구·정부기관의 공개 자료를 자동으로 수집하여, "
-            "카타르와 관련된 중동 정세를 이슈별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다."),
-  "foot2": "갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.",
-  "foot3": ("자동 수집 특성상 일부 기사·보고서가 누락될 수 있습니다. 본 화면은 <b>참고용</b>이오니, "
-            "중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
-  "sign": "— 주카타르대사관 Commercial Section", "org": "주카타르대사관 Commercial Section",
+  "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
+  "foot": ("본 페이지는 공개된 언론 보도와 유관기관 자료를 자동으로 수집·요약한 것으로, 자동 수집 특성상 일부 기사·보고서가 "
+           "누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
+  "sign": "- 주카타르대사관 Commercial Section·도하무역관", "org": "주카타르대사관 Commercial Section·도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
   "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)",
  },
  "en": {
   "dir": "ltr", "html": "en",
-  "title": "🇶🇦 Qatar & Middle East — Daily & Weekly Media Monitor", "title2": "",
-  "subtitle": ("Monitoring Qatar, Korea & global media and "
-               "domestic/foreign think-tank reports · AI issue summaries with source links"),
+  "title": "Qatar & Middle East — Media Monitor", "title2": "",
+  "subtitle": ("Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, global and Korean outlets "
+               "is compiled into AI issue summaries with source links. Recent reports from relevant institutions are also "
+               "provided for reference, and every Sunday morning a weekly report recapping the past week is published."),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
-            "economy &amp; trade, and aviation &amp; citizen safety"),
+            "economy &amp; trade, and aviation &amp; citizen safety."),
   "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
   "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
@@ -314,34 +322,32 @@ LANG = {
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
   "flag": "Qatar",
-  "full_summary": "Full article list (total {n})", "list_note": "(Qatar · Iran · Other countries · Korea)", "expand": "Expand", "collapse": "Collapse",
+  "full_summary": "Full article list (total {n}) · Qatar / Iran / Global / Korea", "expand": "Expand", "collapse": "Collapse",
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes, consultancies, international organizations, etc.)", "rep_badge": "Newest", "rep_new": "New this edition",
+  "rep_head": "📑 Middle East — in-depth analysis & reports", "rep_note": "Publications by research institutes, int'l orgs & consultancies", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
-  "quick_head": "Media · Government · Institutions — quick links", "quick_note": "(sorted alphabetically)",
-  "foot1": ("This page automatically collects public material from major Qatari, Korean and global media and from domestic and "
-            "international research institutes, international organizations and government bodies, and organizes Qatar-related Middle East "
-            "developments by issue. Only material newly reported or published since the previous edition is included; simple aggregators and non-official outlets are excluded."),
-  "foot2": "Updates run automatically every day at 07:00 and 15:30 Qatar time; the Sunday morning edition also includes a digest of the past week.",
-  "foot3": ("Automatic collection may miss some articles or reports. "
-            "This page is <b>for reference only</b>; please verify important matters against the original sources and further searches."),
-  "sign": "— Embassy of the Republic of Korea in Qatar, Commercial Section", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section",
+  "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
+  "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions; "
+           "owing to automated collection some articles or reports may be missed, so please re-verify important issues "
+           "against the original sources and further searches."),
+  "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
   "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)",
  },
  "ar": {
   "dir": "rtl", "html": "ar",
-  "title": "🇶🇦 الرصد الإعلامي اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "",
-  "subtitle": ("رصد إعلام قطر وكوريا والعالم وتقارير مراكز الأبحاث المحلية والدولية · "
-               "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
+  "title": "رصد الإعلام: قطر والشرق الأوسط", "title2": "",
+  "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني والعالمي والكوري في "
+               "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر أحدث تقارير المؤسسات المعنية للاطلاع، "
+               "ويصدر صباح كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم."),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
-            "الاقتصاد والتجارة، والطيران وسلامة المواطنين"),
+            "الاقتصاد والتجارة، والطيران وسلامة المواطنين."),
   "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
   "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
@@ -352,29 +358,25 @@ LANG = {
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
   "flag": "قطر",
-  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "expand": "توسيع", "collapse": "طيّ", "list_note": "(قطر · إيران · دول أخرى · كوريا)",
+  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n}) · قطر / إيران / دولي / كوريا", "expand": "توسيع", "collapse": "طيّ",
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث والشركات الاستشارية والمنظمات الدولية وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
+  "rep_head": "📑 الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
-  "quick_head": "الإعلام · الحكومة · المؤسسات — روابط سريعة", "quick_note": "(مرتّبة أبجديًا)",
-  "foot1": ("تجمع هذه الصفحة تلقائيًا المواد العامة من كبرى وسائل الإعلام القطرية والكورية والعالمية ومن مراكز الأبحاث والمنظمات الدولية "
-            "والجهات الحكومية المحلية والدولية، وتنظّم تطورات الشرق الأوسط المتعلقة بقطر حسب القضية. تُدرَج فقط المواد المنشورة حديثًا منذ الإصدار السابق، "
-            "وتُستبعد المجمّعات والمصادر غير الرسمية."),
-  "foot2": "تُجرى التحديثات تلقائيًا يوميًا الساعة 07:00 و15:30 بتوقيت قطر، ويتضمن إصدار صباح الأحد موجزًا للأسبوع المنصرم.",
-  "foot3": ("قد يُغفل الجمع التلقائي بعض المقالات أو التقارير. "
-            "هذه الصفحة <b>للاطلاع فقط</b>؛ يُرجى التحقق من المسائل المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
-  "sign": "— سفارة جمهورية كوريا لدى قطر، القسم التجاري", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري",
+  "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
+  "foot": ("تجمع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية؛ ونظرًا لطبيعة الجمع التلقائي "
+           "قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
+  "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
   "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)",
  },
 }
 
 MAX_PER_SECTION = 60
-POOL_FOR_ISSUES = 70          # 이슈 분류에 넘길 기사 수(Claude Sonnet 기준 확대 — 핵심 누락 방지)
-DESC_MAX = 240                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이
+POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
+DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
@@ -388,9 +390,8 @@ BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
 # 요약 엔진 우선순위(키 접두어로 자동 판별, 되는 것 사용):
 #   Claude API(sk-ant-) → OpenRouter(sk-or-) → Groq(gsk_) → Gemini(AQ/AIza) → GitHub Models(ghs_/PAT)
-# Claude API(Anthropic·소액·카타르 지원·최고 품질). 품질 우선: Sonnet 먼저, 실패 시 Haiku 폴백.
-ANTHROPIC_MODELS = ["claude-sonnet-4-5", "claude-3-7-sonnet-latest",
-                    "claude-haiku-4-5", "claude-3-5-haiku-latest"]
+# Claude API(Anthropic·소액·카타르 지원·최고 품질). Haiku 저렴.
+ANTHROPIC_MODELS = ["claude-haiku-4-5", "claude-3-5-haiku-latest"]
 # OpenRouter(무료 모델·GitHub 로그인 가입·OpenAI 호환).
 OR_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 OR_MODELS = ["openai/gpt-oss-20b:free", "google/gemma-4-31b-it:free",
@@ -485,7 +486,7 @@ _REPORT_SUBS, _REPORT_REGEXES = _build_report_matchers()
 # 발행처 도메인으로도 보고서 판별(구글뉴스 <source url>=원발행처 도메인). 특히 한국 기관 포착에 유효.
 REPORT_DOMAINS = [
     # 한국 국책·공공·민간 연구기관
-    "kiep.go.kr", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
+    "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
     "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
     "koreaexim.go.kr", "ksure.or.kr", "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "seri.org",
     "lgbr.co.kr", "posri.re.kr", "hanaif.re.kr", "kcmi.re.kr",
@@ -508,7 +509,7 @@ def _domain_is_report(shref):
 # 한국 기관 '자체 발간물' 직접 포착용 — 각 기관 도메인을 구글뉴스 site: 로 조준 수집.
 # (기관 자체 RSS는 robots/비표준으로 확인이 어려워, 발행처 도메인을 직접 겨냥하는 방식으로 연결)
 KO_REPORT_SITE_DOMAINS = [
-    "kiep.go.kr", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
+    "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
     "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
     "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "posri.re.kr", "kcmi.re.kr",
 ]
@@ -519,7 +520,7 @@ def is_report_source(src):
         return True
     return any(rx.search(s) for rx in _REPORT_REGEXES)
 
-# 심층 보고서 판별: '발행처(source 이름 또는 원발행처 도메인)가 실제 연구기관 등'인 경우만 인정.
+# 심층 보고서 판별: '발행처(source 이름 또는 원발행처 도메인)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
 def looks_report(title, src, shref=""):
     # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
@@ -531,13 +532,7 @@ def looks_report(title, src, shref=""):
     return True
 
 
-FEED_RETRY = int(os.getenv("FEED_RETRY", "3"))            # 피드당 최대 시도 횟수(빈 응답이면 재시도)
-FEED_BACKOFF = float(os.getenv("FEED_BACKOFF", "2.0"))    # 재시도 대기(초): 2 → 4
-FEED_STATS = {}                                           # 마지막 collect() 피드 건전성 통계
-
-
 def collect(win_start_utc, now_utc, when_days=2):
-    global FEED_STATS
     items, seen = [], set()
     feeds = []
     for q in Q_QATAR_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
@@ -551,28 +546,12 @@ def collect(win_start_utc, now_utc, when_days=2):
         feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
-    stats = {"feeds": len(feeds), "ok": 0, "empty": 0, "failed": 0}
     for lang, label, url in feeds:
-        d, n = None, 0
-        for attempt in range(FEED_RETRY):
-            try:
-                d = feedparser.parse(url)
-                n = len(getattr(d, "entries", []) or [])
-            except Exception as ex:
-                d, n = None, 0
-                print(f"[warn] feed error {label}: {ex}")
-            if n:
-                break
-            if attempt < FEED_RETRY - 1:
-                time.sleep(FEED_BACKOFF * (2 ** attempt))
-        if d is None:
-            stats["failed"] += 1
+        try:
+            d = feedparser.parse(url)
+        except Exception as ex:
+            print(f"[warn] feed failed {url}: {ex}")
             continue
-        if not n:
-            stats["empty"] += 1
-            print(f"[warn] feed empty {label} status={getattr(d, 'status', '?')} bozo={int(bool(getattr(d, 'bozo', 0)))}")
-            continue
-        stats["ok"] += 1
         for e in d.entries:
             title = clean_title(e.get("title", "").strip())
             link = e.get("link", "").strip()
@@ -611,10 +590,6 @@ def collect(win_start_utc, now_utc, when_days=2):
             items.append({"title": title, "link": link, "source": src, "dt": dt,
                           "qatar": is_qatar, "desc": desc, "korean": kor, "shref": shref,
                           "report": report, "region": source_region(src, kor)})
-    stats["items"] = len(items)
-    FEED_STATS = stats
-    print(f"[info] feeds={stats['feeds']} ok={stats['ok']} empty={stats['empty']} "
-          f"failed={stats['failed']} items={len(items)}")
     items.sort(key=lambda x: x["dt"], reverse=True)
     return items
 
@@ -683,7 +658,7 @@ def anthropic_call(model, prompt, json_mode):
     msgs = [{"role": "user", "content": prompt}]
     if json_mode:
         msgs.append({"role": "assistant", "content": "{"})   # JSON 출력 강제(프리필)
-    payload = {"model": model, "max_tokens": 6000, "temperature": 0.15, "messages": msgs}
+    payload = {"model": model, "max_tokens": 2048, "temperature": 0.3, "messages": msgs}
     body = json.dumps(payload).encode("utf-8")
     for attempt in range(3):
         req = urllib.request.Request(
@@ -691,7 +666,7 @@ def anthropic_call(model, prompt, json_mode):
             headers={"content-type": "application/json", "x-api-key": key,
                      "anthropic-version": "2023-06-01"})
         try:
-            with urllib.request.urlopen(req, timeout=180) as r:
+            with urllib.request.urlopen(req, timeout=60) as r:
                 data = json.loads(r.read().decode("utf-8"))
             txt = data["content"][0]["text"].strip()
             return ("{" + txt) if json_mode else txt          # 프리필한 '{' 복원
@@ -799,7 +774,7 @@ def github_models_call(model, prompt, json_mode):
     return None
 
 
-# ───────────────────── Gemini (이슈별/폴백) ─────────────────────
+# ───────────────────── Gemini (사안별/폴백) ─────────────────────
 def gemini_call(model, prompt, json_mode):
     key = _gemini_key()
     if not key:
@@ -909,48 +884,41 @@ def gemini_issues(pool, win_label, weekly=False):
         "【모니터링 주제 범위】 이 브리핑의 주제는 '카타르의 국익·안보·경제에 유의미한 중동 정세'입니다. "
         "즉 이스라엘·이란·걸프 무력충돌 및 공습·교전 동향, 외교·중재(특히 카타르의 중재 역할), "
         "호르무즈·홍해 등 해상안전·물류, 국제유가·LNG·에너지, 경제·통상·투자, 항공·교민 안전의 관점에서 "
-        "의미 있는 이슈만 다룹니다.\n"
-        "【이슈로 만들지 말 것(주제 밖)】 정책·전략·안보·경제 함의가 없는 순수 인도적 사연·난민 개인사·미담/르포, "
-        "날씨·기상, 스포츠, 연예·문화·생활, 단순 지역 사건사고, 종교 일반 등은 이슈로 뽑지 마세요. "
+        "의미 있는 사안만 다룹니다.\n"
+        "【사안으로 만들지 말 것(주제 밖)】 정책·전략·안보·경제 함의가 없는 순수 인도적 사연·난민 개인사·미담/르포, "
+        "날씨·기상, 스포츠, 연예·문화·생활, 단순 지역 사건사고, 종교 일반 등은 사안으로 뽑지 마세요. "
         "다만 이런 소재라도 카타르 국익·에너지·안보·물류·외교에 직접 연결되면 포함합니다"
-        "(예: 가자 휴전 협상·카타르 중재는 '외교·중재' 이슈로 포함하되, 개별 난민의 생활고 미담은 제외).\n"
+        "(예: 가자 휴전 협상·카타르 중재는 '외교·중재' 사안으로 포함하되, 개별 난민의 생활고 미담은 제외).\n"
         "핵심 판별 기준: 가자·이스라엘·이란 등 소재라도 ①카타르가 실제로 역할·조치를 했거나(중재·성명·정상외교·지원·군사·에너지 등), "
         "②카타르가 공격·공습을 당하거나 카타르의 안보·영공·경제·에너지·항공·교민 안전이 직접 영향받거나, "
-        "③이슈가 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
+        "③사안이 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
         "'카타르 매체에 실렸다'는 사실만으로는 관련성이 생기지 않습니다 — 카타르의 역할도 없고 정세·에너지·경제 함의도 없는 기사는 제외하세요.\n"
-        "관련성이 약한 기사는 억지로 이슈로 묶지 말고 제외하고, 애매하면 이슈 수를 줄이세요 — 수량보다 정확도·논리성 우선.\n"
-        "'이슈(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
+        "관련성이 약한 기사는 억지로 사안으로 묶지 말고 제외하고, 애매하면 사안 수를 줄이세요 — 수량보다 정확도·논리성 우선.\n"
+        "'사안(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
         "카테고리 예시: 전쟁·군사(공습·교전 추이) / 외교·중재 / 에너지·유가·LNG / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 경제·통상 / 항공·교민안전.\n"
-        "이슈는 카타르 국익 관련성이 높은 순서로 배열하세요.\n"
-        "각 이슈 필드: theme(이슈명, 앞에 이모지 1개 권장), "
-        "summary(한국어, 정부보고서식 '개조식·했음체'로 4~6개 핵심 포인트. "
-        "각 포인트에는 **구체적 수치·일자·주체·규모**(예: 사상자 수, 미사일·드론 수, 국제유가 가격·변동폭, "
-        "통항·피격 선박 수, 봉쇄·휴전·중단 기간, 계약·금액·물동량, 지명·기관명 등)를 **가능한 한 포함**해 "
-        "이 요약만으로도 상황보고가 될 만큼 충실히 작성. "
-        "각 포인트는 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체 '-했다/-이다/-된다'는 절대 쓰지 말 것. "
-        "포인트마다 반드시 줄을 바꿔 각 줄을 '- '로 시작하세요(줄바꿈 문자 \\n 사용). 한 단락으로 이어 쓰지 말 것. "
-        "요약 본문에는 기사 번호·id(예: '기사 5·18', '(51·62)')를 절대 쓰지 마세요 — 근거 기사는 ids 필드로만 전달합니다. "
-        "예시 형식: '- 7/31 이란 IRGC가 미군 호위 유조선 2척을 호르무즈 해협서 타격, 승조원 3명 사망 주장함.\\n- 브렌트유 배럴당 약 $1(1%) 상승함.'), "
-        "figures(핵심 수치를 세미콜론(;)으로 2~5개 나열; 사상자·미사일/유가($·변동폭)/통항·물동량/휴전·봉쇄 기간/금액 등, 없으면 \"\"), "
-        "ids(그 이슈 관련 기사 id 정수 배열, 최대 16개).\n"
+        "사안은 카타르 국익 관련성이 높은 순서로 배열하세요.\n"
+        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), "
+        "summary(한국어 서술 항목의 **배열**. 항목 수는 2~4개로, 내용을 잘게 쪼개지 말 것. "
+        "하나의 하위 사건·현상에 대한 원인·경과·결과·예상효과 등 서로 연관된 내용은 **한 항목으로 묶고**, 성격이 다른 내용은 항목을 나눠 구분. "
+        "각 항목은 정부보고서식 개조식으로, 핵심 사실과 함께 **구체적 수치·규모·주체**(사상자·미사일/드론 수, 국제유가 가격·변동폭, 통항·피격 선박 수, 봉쇄·휴전 기간, 계약·금액·물동량, 지명·기관명 등)를 "
+        "문장 안에 충실히 담아 **이 요약만으로 내부 보고가 될 수준**으로 작성. "
+        "명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체('-했다/-이다') 금지. "
+        "**문두에 날짜(예: '7/31')를 붙이지 말 것**(커버 기간이 이미 명시됨). '(기사 8·21)' 같은 기사 번호 표기도 절대 쓰지 말 것. "
+        "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
+        "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
+        "ids(그 사안 관련 기사 id 정수 배열, 최대 16개).\n"
         "중요 규칙:\n"
-        "- [카타르현지]는 '카타르 매체발'이라는 출처 표시일 뿐, 그 자체로 이슈 가치를 부여하지 않습니다. "
-        "카타르가 실제로 역할·조치를 한 이슈(중재·성명·정상외교·지원·군사·에너지 계약 등)이나, 카타르가 공격·공습을 당하거나 "
-        "카타르 국익·안보·영공·경제·에너지·교민 안전에 직접 영향을 주는 이슈만 '카타르 관련'으로 최우선하세요. 그런 카타르 실질 관여 이슈가 있으면 반드시 1개 이상 만들고 관련 [카타르현지] 기사를 ids에 우선 포함하세요. "
+        "- [카타르현지]는 '카타르 매체발'이라는 출처 표시일 뿐, 그 자체로 사안 가치를 부여하지 않습니다. "
+        "카타르가 실제로 역할·조치를 한 사안(중재·성명·정상외교·지원·군사·에너지 계약 등)이나, 카타르가 공격·공습을 당하거나 "
+        "카타르 국익·안보·영공·경제·에너지·교민 안전에 직접 영향을 주는 사안만 '카타르 관련'으로 최우선하세요. 그런 카타르 실질 관여 사안이 있으면 반드시 1개 이상 만들고 관련 [카타르현지] 기사를 ids에 우선 포함하세요. "
         "단, 카타르 매체에 실렸을 뿐 카타르의 역할이 없고 정세·에너지·경제 함의도 없는 연성기사(예: 난민 개인사 미담, 지역 생활기사)는 "
-        "최우선은커녕 이슈로 만들지 마세요.\n"
-        "- 각 이슈의 ids에는 그 이슈와 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
+        "최우선은커녕 사안으로 만들지 마세요.\n"
+        "- 각 사안의 ids에는 그 사안과 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
         "(권역별 최대 4~5개까지). 요약 옆에서 웬만한 주요 기사가 다 보이게 하는 것이 목표입니다.\n"
         "- 동일 내용이면 메이저·공신력 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제/파이낸셜뉴스, Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian, QNA/Al Jazeera/Gulf Times/Peninsula/Doha News) 기사를 우선 선택하세요.\n"
-        "- 【정확도·충실도 원칙】 모든 문장은 제공된 [기사 목록]의 제목·요약에 실제로 있는 내용에만 근거하세요. "
-        "배경지식·추정·전망을 사실처럼 쓰지 말고, 확인된 사실과 일방의 주장을 구분해 '~라고 발표함/주장함/보도됨'으로 표기하세요. "
-        "보도 간 내용이 엇갈리면 '보도별 상이함'을 명시하세요. 수치·일자·금액·단위·고유명사는 원문 표기를 그대로 옮기고 반올림·각색하지 마세요. "
-        "날짜는 MM/DD 형식으로 쓰고, 시점이 불분명하면 날짜를 쓰지 마세요.\n"
-        "- 【누락 방지】 각 이슈에서 가장 중요한 전개(무엇이·언제·누가·얼마나)를 첫 포인트에 두고, "
-        "카타르에 미치는 영향(안보·에너지·경제·물류·교민)을 마지막 포인트로 반드시 1개 넣으세요.\n"
         "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
-        "{\"issues\":[{\"theme\":\"\",\"summary\":\"\",\"figures\":\"\",\"ids\":[0,1]}]}\n\n"
+        "{\"issues\":[{\"theme\":\"\",\"summary\":[\"\",\"\"],\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
     )
     out = gemini_generate(prompt, json_mode=True)
@@ -960,10 +928,6 @@ def gemini_issues(pool, win_label, weekly=False):
         data = json.loads(out)
         issues = data.get("issues") if isinstance(data, dict) else None
         if issues and isinstance(issues, list):
-            for it in issues:
-                if isinstance(it, dict):
-                    it["summary"] = _strip_cites(str(it.get("summary", "")))
-                    it["figures"] = _strip_cites(str(it.get("figures", "")))
             return issues
     except Exception as ex:
         print(f"[warn] issues json parse failed: {ex}")
@@ -991,22 +955,18 @@ def gemini_flat(pool, win_label):
 
 
 def translate_issues(issues, lang):
-    """이슈 요약(theme/summary/figures)을 영어/아랍어로 번역. 실패 시 원문(한국어) 유지."""
+    """사안 요약(theme/summary/figures)을 영어/아랍어로 번역. 실패 시 원문(한국어) 유지."""
     if not issues or lang == "ko":
         return issues
     target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
     if not target:
         return issues
-    payload = [{"theme": i.get("theme", ""), "summary": i.get("summary", ""), "figures": i.get("figures", "")}
-               for i in issues]
+    payload = [{"theme": i.get("theme", ""), "summary": i.get("summary", "")} for i in issues]
     prompt = (
-        f"Translate the 'theme', 'summary' and 'figures' fields of the following JSON into {target}. "
+        f"Translate the 'theme' and 'summary' fields of the following JSON into {target}. "
+        "'summary' is an array of bullet strings — translate each element and return it as an array of the SAME length and order. "
         "Keep all numbers, dates, currencies and proper nouns; keep any leading emoji in 'theme'. "
-        "Translate faithfully and completely: do not add, omit, merge, reorder or soften any fact; "
-        "keep the same number of bullet points, the leading \"- \" of each point and the line breaks, "
-        "and the same concise official-report register as the source. "
-        "Use the standard official terminology for governments, agencies, places, energy and finance terms. "
-        "Return ONLY a JSON object of the exact form {\"issues\":[{\"theme\":\"\",\"summary\":\"\",\"figures\":\"\"}]} "
+        "Return ONLY a JSON object of the exact form {\"issues\":[{\"theme\":\"\",\"summary\":[\"\"]}]} "
         "with the same number and order of items, no commentary.\n\n"
         + json.dumps({"issues": payload}, ensure_ascii=False))
     out = gemini_generate(prompt, json_mode=True)
@@ -1020,8 +980,8 @@ def translate_issues(issues, lang):
                 m = dict(orig)
                 if isinstance(t, dict):
                     m["theme"] = t.get("theme") or orig.get("theme", "")
-                    m["summary"] = t.get("summary") or orig.get("summary", "")
-                    m["figures"] = t.get("figures", orig.get("figures", ""))
+                    if t.get("summary"):
+                        m["summary"] = t.get("summary")
                 merged.append(m)
             return merged
     except Exception as ex:
@@ -1046,10 +1006,25 @@ def li(x, now_utc, L=None):
     L = L or LANG["ko"]
     d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
     meta = " · ".join([esc(x["source"]), d, ago(x["dt"], now_utc, L)])
-    flag = f'<span class="qflag">{esc(L["flag"])}</span> ' if x["qatar"] else ""
     desc = f'<div class="dsc">{esc(x["desc"])}</div>' if x["desc"] else ""
-    return (f'<li>{flag}<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}</a>'
+    return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}</a>'
             f'{desc}<div class="meta">{meta}</div></li>')
+
+
+def _clean_bullet(s):
+    s = str(s or "")
+    s = re.sub(r"\(\s*(?:기사|article|مقال)[^)]*\)", "", s, flags=re.I)   # (기사 8·21) 류 표기 제거
+    s = re.sub(r"^\s*\d{1,2}\s*[/·.\-]\s*\d{1,2}\.?\s*", "", s)            # 문두 날짜(7/31 등) 제거
+    return re.sub(r"\s{2,}", " ", s).strip()
+
+
+def _summary_bullets(summary):
+    if isinstance(summary, list):
+        items = summary
+    else:
+        s = str(summary or "")
+        items = re.split(r"\n+", s) if "\n" in s else [s]
+    return [c for c in (_clean_bullet(x) for x in items) if c]
 
 
 def link_row(x):
@@ -1058,34 +1033,13 @@ def link_row(x):
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
 
-_CITE_RE = re.compile(r"[,，]?\s*(?:기사|article[s]?)\s*[0-9][0-9\s·•,、~\-–—－번]*(?=[)）.\n]|$)", re.I)
-
-
-def _strip_cites(text):
-    """LLM이 요약 본문에 넣은 '(기사 5·18)' 류 기사번호 인용을 제거."""
-    t = _CITE_RE.sub("", text or "")
-    t = re.sub(r"[（(]\s*[)）]", "", t)
-    t = re.sub(r"\s+([.,)）])", r"\1", t)
-    return re.sub(r"[ \t]{2,}", " ", t).strip()
-
-
-def _summary_html(text):
-    """요약을 포인트 단위 불릿 목록으로 렌더(줄바꿈이 없으면 '- ' 기준으로 분할)."""
-    t = _strip_cites(text)
-    parts = [p.strip() for p in t.split("\n") if p.strip()]
-    if len(parts) == 1 and len(re.findall(r"(?:^|\s)[-•*]\s+", parts[0])) >= 2:
-        parts = [p.strip() for p in re.split(r"(?:^|\s)[-•*]\s+", parts[0]) if p.strip()]
-    items = "".join(f'<li>{esc(p.lstrip("-•* ").strip())}</li>' for p in parts if p.strip())
-    return f'<ul class="pts">{items}</ul>' if items else ""
-
-
 def render_issues(issues, pool, now_utc, L=None):
     L = L or LANG["ko"]
     out = []
     for n, iss in enumerate(issues, 1):
         theme = esc(str(iss.get("theme", f"{L['issue']} {n}")))
-        summary = _summary_html(str(iss.get("summary", "")))
-        figures = esc(_strip_cites(str(iss.get("figures", ""))))
+        bullets = _summary_bullets(iss.get("summary", ""))
+        body = ('<ul class="sumbul">' + "".join(f'<li>{esc(b)}</li>' for b in bullets) + '</ul>') if bullets else ""
         ids = [j for j in iss.get("ids", []) if isinstance(j, int) and 0 <= j < len(pool)]
         arts = [pool[j] for j in ids]
         q = [a for a in arts if a["region"] == "qatar"]
@@ -1101,7 +1055,7 @@ def render_issues(issues, pool, now_utc, L=None):
             groups = f'<div class="grp"><div class="gh" style="color:var(--muted)">{esc(L["nomap"])}</div></div>'
         out.append(
             f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
-            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div>{summary}</div>'
+            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div>{body}</div>'
             f'<div class="right">{groups}</div></div></div>')
     return "\n".join(out)
 
@@ -1230,15 +1184,15 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
-        orgline="",
+        orgline=(f'<div class="orgline">{esc(L["org"])}</div>' if L.get("org") else ""),
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
-        expand=esc(L["expand"]), collapse=esc(L["collapse"]), list_note=esc(L["list_note"]),
+        expand=esc(L["expand"]), collapse=esc(L["collapse"]),
         col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
         quick_head=esc(L["quick_head"]), quick_note=esc(L["quick_note"]),
-        foot1=L["foot1"], foot2=L["foot2"], foot3=L["foot3"], sign=esc(L["sign"]),
+        foot=esc(L["foot"]), sign=esc(L["sign"]),
         summary=summary_html,
         qatar=block(qatar, esc(L["empty_q"])),
         me_en=block(me_ov, esc(L["empty_over"])),
@@ -1265,14 +1219,12 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:760px){{header{{position:static}}}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
   .titcol{{display:flex;flex-direction:column;gap:1px}}
-  .entitle{{font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;font-size:14px;font-weight:600;color:#52514e;letter-spacing:-0.14px}}
+  .entitle{{font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:.2px}}
   .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
-  .langrow{{display:flex;justify-content:flex-end;margin-bottom:8px}}
-  .langbar{{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px;background:var(--panel2)}}
-  .langbtn{{display:inline-flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;border:none;border-radius:6px;padding:5px 12px;background:transparent;line-height:1.5}}
-  .langbtn.on{{color:#111;background:var(--accent);font-weight:800}}
+  .langbar{{display:flex;gap:6px;margin-inline-start:auto;align-self:flex-start}}
+  .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
+  .langbtn.on{{color:#111;background:var(--accent);border-color:var(--accent);font-weight:700}}
   .langbtn:hover{{color:var(--txt)}}
-  html[dir="rtl"] .langrow{{justify-content:flex-start}}
   .dot{{width:10px;height:10px;border-radius:50%;background:var(--green);animation:p 2s infinite}}
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:19px;margin:0}}
@@ -1292,9 +1244,9 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:760px){{.left{{border-inline-end:none;border-bottom:1px solid var(--line)}}}}
   .left .sh{{font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}}
   .left p{{margin:0 0 8px;font-size:13.5px}}
-  .left .pts{{list-style:disc;margin:0 0 8px;padding-inline-start:18px;font-size:13.5px}}
-  .left .pts li{{padding:0;border-bottom:none;margin:0 0 6px;line-height:1.62}}
-  .left .figs{{font-size:12.5px;color:var(--muted)}}
+  .left .sumbul{{list-style:disc;margin:0;padding-inline-start:18px}}
+  .left .sumbul li{{font-size:13.5px;line-height:1.55;margin:0 0 8px;padding:0;border:none}}
+  .left .sumbul li:last-child{{margin-bottom:0}}
   .right{{padding:13px 16px}}
   .grp{{margin-bottom:9px}} .grp .gh{{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}}
   .grp a{{display:block;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;margin:5px 0}}
@@ -1342,7 +1294,6 @@ TEMPLATE = """<!DOCTYPE html>
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
   li a:hover{{color:var(--accent);text-decoration:underline}}
-  .qflag{{font-size:10.5px;font-weight:700;color:#111;background:var(--gold);padding:1px 6px;border-radius:6px;vertical-align:middle}}
   .dsc{{color:var(--muted);font-size:12.5px;margin-top:3px}}
   .meta{{color:var(--muted);font-size:11.5px;margin-top:3px;opacity:.85}}
   .empty{{color:var(--muted);font-size:13px}}
@@ -1357,8 +1308,9 @@ TEMPLATE = """<!DOCTYPE html>
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;max-width:60%}}
   .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
-  .scopeline{{font-size:12.5px;color:var(--muted);line-height:1.55;margin:3px 0 0}}
-  .scopeline b{{color:var(--txt);font-weight:700}}
+  .scopebar{{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
+    border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}}
+  .scopebar b{{color:var(--txt);font-weight:700}}
   .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(242,177,52,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .wsec .sumhead{{margin-top:2px}}
@@ -1374,16 +1326,7 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a .newtag{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:#e5484d;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
   footer .sign{{text-align:end;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
-  .hnote,.hsub{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
-  .subnote{{color:var(--muted);font-size:12.5px;margin-top:5px;line-height:1.6}}
-  .notebox{{background:#e8f2fd;border:1px solid rgba(42,120,214,.35);color:#12417a;border-radius:10px;padding:12px 14px;font-size:12.5px;font-weight:600;line-height:1.75}}
-  .notebox b{{color:#0b2f5e}}
-  @media (max-width:640px){{
-    .langrow{{justify-content:stretch}}
-    .langbar{{width:100%;gap:6px}}
-    .langbtn{{flex:1;padding:12px 8px;font-size:15px;min-height:46px}}
-    .foldbox>summary .hnote,.foldbox>summary .hsub{{order:2;flex-basis:100%;margin-top:-4px}}
-  }}
+  .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {{
@@ -1398,23 +1341,23 @@ TEMPLATE = """<!DOCTYPE html>
     .issue,.card,details,.grp,.reprows a,li,.qgroup{{break-inside:avoid}}
     .issue,.card{{box-shadow:none}}
     h1{{font-size:16px}}
-    .card.report{{background:#fff !important}}
+    .scopebar,.card.report{{background:#fff !important}}
   }}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="langrow">{nav}</div><div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}</div>
+    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}{nav}</div>
     <div class="sub"><span>{subtitle}</span></div>
-    <div class="subnote">※ {foot2}</div>
-    <div class="scopeline">🎯 {scope}</div>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
       <span>{coverage_label}: <b>{window}</b></span>
       <span>{counts}</span>
     </div>
   </header>
+
+  <div class="scopebar">🎯 {scope}</div>
 
   {archive}
 
@@ -1423,7 +1366,7 @@ TEMPLATE = """<!DOCTYPE html>
   {summary}
 
   <details class="fulllist foldbox">
-    <summary><span class="chev">▸</span> {full_summary}<span class="hsub">{list_note}</span> <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
+    <summary><span class="chev">▸</span> {full_summary} <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
     <div class="grid4">
       <div class="card"><h2><span class="bar"></span>{col_qatar}</h2><ul>{qatar}</ul></div>
       <div class="card"><h2><span class="bar"></span>{col_iran}</h2><ul>{me_ir}</ul></div>
@@ -1440,10 +1383,7 @@ TEMPLATE = """<!DOCTYPE html>
   </details>
 
   <footer>
-    <div class="notebox">
-      ※ {foot1}
-      <br>※ {foot3}
-    </div>
+    {foot}
     <div class="sign">{sign}</div>
   </footer>
 </div>
@@ -1485,12 +1425,14 @@ MAJOR_HINTS = [
     "qatar news agency", "qna", "gulf times", "peninsula", "qatar tribune", "doha news",
     "al jazeera", "aljazeera", "lusail",
     "yonhap", "연합", "뉴시스", "newsis", "뉴스1", "news1", "ytn", "kbs", "mbc", "sbs", "jtbc",
+    "cbs", "노컷", "nocut", "nocutnews",
     "조선", "chosun", "중앙", "joongang", "joins", "동아", "donga",
     "한겨레", "hani", "경향", "khan", "kyunghyang", "서울신문", "seoul", "문화일보", "munhwa",
     "매일경제", "매경", "mk.co", "maeil", "한국경제", "hankyung",
     "파이낸셜뉴스", "fnnews", "이데일리", "edaily", "머니투데이", "moneytoday", "서울경제", "sedaily",
     "reuters", "ap ", "associated press", "afp", "bloomberg", "cnn", "bbc",
     "the guardian", "washington post", "new york times", "wall street journal", "financial times",
+    "economist", "이코노미스트",
     "irna", "press tv", "tehran times", "mehr", "al-alam",
 ]
 
@@ -1499,12 +1441,12 @@ def _is_major(x):
     return any(m in s for m in MAJOR_HINTS)
 
 def build_issue_pool(items):
-    """이슈 요약용 풀: 카타르 관련 최우선 + 국내/해외 메이저 우선, 나머지 최신순."""
+    """사안 요약용 풀: 카타르 관련 최우선 + 국내/해외 메이저 우선, 나머지 최신순."""
     qatar = [x for x in items if x["qatar"] or x["region"] == "qatar"]
     others = [x for x in items if not (x["qatar"] or x["region"] == "qatar")]
     others_major = [x for x in others if _is_major(x)]
     others_rest = [x for x in others if not _is_major(x)]
-    n_qatar = min(len(qatar), 26)                      # 카타르 현지 최소 확보(품질 우선 모델 기준 확대)
+    n_qatar = min(len(qatar), 14)                      # 카타르 현지 최소 확보
     pool = qatar[:n_qatar] + others_major + others_rest
     return pool[:POOL_FOR_ISSUES]
 
@@ -1567,111 +1509,16 @@ def _archive_meta(fname):
 def _archive_label_text(meta, L):
     if meta["kind"] == "daily":
         tail = f"{meta['m']:02d}/{meta['d']:02d} {meta['hh']:02d}:{meta['mm']:02d}"
-        return (L["daily_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_daily"] + " · " + tail)
+        return (L["daily_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["daily_demo"] + " · " + tail)
     tail = f"~{meta['m']:02d}/{meta['d']:02d}"
     return (L["weekly_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_weekly"] + " " + tail)
-
-
-# ───────────────── 안전장치: 수집 급감 검증 · 캐시 재사용 ─────────────────
-STATE_PATH = "state.json"
-CACHE_PATH = ".cache/last_items.json"
-DROP_RATIO = float(os.getenv("DROP_RATIO", "0.30"))          # 직전 판 대비 이 비율 미만이면 '급감' 의심
-DROP_MIN_PREV = int(os.getenv("DROP_MIN_PREV", "20"))        # 직전 판이 이보다 적으면 검사 생략
-FEED_BAD_RATIO = float(os.getenv("FEED_BAD_RATIO", "0.35"))  # 빈/실패 피드 비율이 이 이상이면 수집 장애로 판정
-CACHE_MAX_HOURS = float(os.getenv("CACHE_MAX_HOURS", "14"))  # 캐시 유효 시간
-
-
-def _load_state():
-    try:
-        with open(STATE_PATH, encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return {}
-
-
-def _save_state(items_n, stats):
-    try:
-        with open(STATE_PATH, "w", encoding="utf-8") as f:
-            json.dump({"last_items": items_n,
-                       "last_run_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-                       "feeds": stats}, f, ensure_ascii=False, indent=1)
-    except Exception as ex:
-        print(f"[warn] state save failed: {ex}")
-
-
-def _feeds_unhealthy(stats):
-    total = stats.get("feeds") or 0
-    if not total:
-        return True
-    return (stats.get("empty", 0) + stats.get("failed", 0)) / total >= FEED_BAD_RATIO
-
-
-def _cache_save(items):
-    try:
-        os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
-        rows = []
-        for it in items:
-            r = dict(it)
-            r["dt"] = it["dt"].isoformat()
-            rows.append(r)
-        with open(CACHE_PATH, "w", encoding="utf-8") as f:
-            json.dump({"saved_utc": datetime.now(timezone.utc).isoformat(), "items": rows},
-                      f, ensure_ascii=False)
-    except Exception as ex:
-        print(f"[warn] cache save failed: {ex}")
-
-
-def _cache_load():
-    try:
-        with open(CACHE_PATH, encoding="utf-8") as f:
-            blob = json.load(f)
-        saved = datetime.fromisoformat(blob.get("saved_utc", ""))
-        if saved.tzinfo is None:
-            saved = saved.replace(tzinfo=timezone.utc)
-        if datetime.now(timezone.utc) - saved > timedelta(hours=CACHE_MAX_HOURS):
-            print("[info] 캐시가 오래되어 정상 수집으로 전환")
-            return None
-        rows = []
-        for r in blob.get("items", []):
-            r = dict(r)
-            r["dt"] = datetime.fromisoformat(r["dt"])
-            rows.append(r)
-        return rows or None
-    except Exception:
-        return None
 
 
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     start_q, label_ko = window_bounds(now_q)
-    render_only = os.getenv("RENDER_ONLY", "") == "1"
-    force_pub = os.getenv("FORCE_PUBLISH", "") == "1"
-    state = _load_state()
-    prev_n = int(state.get("last_items") or 0)
-    floor_n = prev_n * DROP_RATIO
-
-    items = _cache_load() if render_only else None
-    if items is not None:
-        stats = dict(state.get("feeds") or {})
-        print(f"[info] RENDER_ONLY: 직전 수집 캐시 {len(items)}건 재사용(재수집 생략)")
-    else:
-        items = collect(start_q.astimezone(timezone.utc), now_utc)
-        stats = dict(FEED_STATS)
-        # 급감이 보여도 바로 중단하지 않고 재수집으로 교차검증 → 피드가 정상이면 '실제 감소'로 보고 발행
-        if not force_pub and prev_n >= DROP_MIN_PREV and len(items) < floor_n:
-            print(f"[warn] 기사 급감 감지: {len(items)}건 (직전 {prev_n}건) — 30초 후 재수집해 검증")
-            time.sleep(30)
-            items2 = collect(start_q.astimezone(timezone.utc), now_utc)
-            stats2 = dict(FEED_STATS)
-            if len(items2) > len(items):
-                items, stats = items2, stats2
-            if len(items) < floor_n and _feeds_unhealthy(stats):
-                print(f"[abort] 수집 장애로 판단(빈 {stats.get('empty')}·실패 {stats.get('failed')}/{stats.get('feeds')} 피드) — 기존 페이지 유지, 이번 회차 발행 생략")
-                return
-            if len(items) < floor_n:
-                print(f"[info] 피드 정상(빈 {stats.get('empty')}·실패 {stats.get('failed')}/{stats.get('feeds')}) — 실제 감소로 확인, 그대로 발행")
-        _cache_save(items)
+    items = collect(start_q.astimezone(timezone.utc), now_utc)
     pool = build_issue_pool(items)
     issues = gemini_issues(pool, label_ko)
     flat = None if issues else gemini_flat(pool, label_ko)
@@ -1679,6 +1526,8 @@ def main():
 
     new_since_daily = start_q.astimezone(timezone.utc)          # 이번 회차 창(window) 시작 — 이후 발간 보고서는 '신규' 표기
     new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
+    # 전체 기사 목록/사안 풀에는 모니터링 기간 내 기사만(누적 보고서는 별도 섹션에서만 노출)
+    items_win = [x for x in items if x["dt"] >= new_since_daily]
     os.makedirs("archive", exist_ok=True)
     slot_dt, ampm = _slot_of(now_q)
     dno = _daily_no(slot_dt)
@@ -1700,6 +1549,7 @@ def main():
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
+        witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
 
     # 아카이브 파일 목록(기존 전부 보관 + 이번 생성분 3개 언어)
     files = {f for f in os.listdir("archive") if f.endswith(".html")}
@@ -1713,7 +1563,7 @@ def main():
     for lang in LANGS:
         L = LANG[lang]
         win_label = label_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
-        issue_label = L["daily_no"].format(n=dno) if dno else ""
+        issue_label = L["daily_no"].format(n=dno) if dno else L["daily_demo"]
         iss_l = translate_issues(issues, lang) if issues else None
 
         cur = daily_fname(lang)
@@ -1726,7 +1576,7 @@ def main():
             wfn = weekly_fname(lang)
             wiss_l = translate_issues(wissues, lang) if wissues else None
             wwin = wlabel_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
-            whtml = render(witems, wwin, wiss_l, wflat, issue_pool=wpool,
+            whtml = render(witems_win, wwin, wiss_l, wflat, issue_pool=wpool,
                            archive_list=archive_list, reports=wreports,
                            issue_label=L["weekly_no"].format(n=wno), lang=lang, nav=nav,
                            home_url=home_url(lang), new_since=new_since_weekly)
@@ -1747,7 +1597,7 @@ def main():
                 f'<div class="wlink"><a href="{SITE_BASE}archive/{esc(wfn)}">{esc(L["wk_open"])}</a></div>'
                 '</div>')
 
-        html = render(items, win_label, iss_l, flat, issue_pool=pool,
+        html = render(items_win, win_label, iss_l, flat, issue_pool=pool,
                       archive_list=archive_list, reports=reports,
                       issue_label=issue_label, weekly_inline=weekly_inline,
                       lang=lang, nav=nav, home_url=home_url(lang), new_since=new_since_daily)
@@ -1763,7 +1613,6 @@ def main():
     for r in reports:
         rep_srcs[r.get("source", "?")] = rep_srcs.get(r.get("source", "?"), 0) + 1
     print("report sources:", sorted(rep_srcs.items(), key=lambda kv: -kv[1]))
-    _save_state(len(items), stats)
 
 
 def _merge_reports(items, now_utc):
