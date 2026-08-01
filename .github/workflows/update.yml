@@ -6,6 +6,15 @@ on:
     - cron: "0 4 * * *"
     - cron: "30 12 * * *"
   workflow_dispatch:        # 수동 실행 버튼
+    inputs:
+      force_publish:
+        description: "급감 검증을 무시하고 강제 발행"
+        type: boolean
+        default: false
+      render_only:
+        description: "재수집 없이 직전 캐시로 렌더만"
+        type: boolean
+        default: false
   push:
     branches: [ main ]      # 코드 수정 시에도 한 번 생성
 
@@ -37,7 +46,8 @@ jobs:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # 1순위: GitHub Models(내장 토큰, 키 발급 불필요)
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # 2순위(선택)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 3순위(선택). 모두 없으면 헤드라인만
-          RENDER_ONLY: ${{ github.event_name == 'push' && '1' || '0' }}   # 코드 푸시 실행은 재수집 없이 캐시로 렌더만
+          RENDER_ONLY: ${{ (github.event_name == 'push' || inputs.render_only) && '1' || '0' }}   # 코드 푸시는 재수집 없이 캐시로 렌더만
+          FORCE_PUBLISH: ${{ inputs.force_publish && '1' || '0' }}                              # 급감 검증 우회(수동 실행 전용)
         run: python generate.py
 
       - name: Commit & push if changed
