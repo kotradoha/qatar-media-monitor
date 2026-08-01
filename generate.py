@@ -46,6 +46,16 @@ Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 
 # 네이버 뉴스에서 '카타르'·'중동' 검색 시 노출되는 기사 포함(구글뉴스 site:로 네이버 뉴스 도메인 조준)
 Q_NAVER_KO = ["카타르", "중동"]
 NAVER_NEWS_DOMAINS = ["n.news.naver.com", "news.naver.com"]
+# 카타르 현지 주요 매체 도메인(구글뉴스 site:로 직접 조준 — 이슈별 현지 소스 확보용)
+QATAR_LOCAL_SITES = ["gulf-times.com", "thepeninsulaqatar.com", "dohanews.co",
+                     "qatar-tribune.com", "lusailnews.qa", "qna.org.qa"]
+# 링크모음에 실린 해외·역내 주요 매체를 매 회차 직접 모니터링(중동 주제로 조준 — 누락 방지)
+MEDIA_MONITOR_SITES = [   # ME 전문·역내·신흥 매체는 도메인 조준으로 직접 확보(글로벌 대형지는 영문 주제쿼리로 이미 커버, CNN·BBC·Times of Israel·Al Jazeera는 DIRECT_FEEDS)
+    "axios.com", "politico.com", "cnbc.com",
+    "middleeasteye.net", "al-monitor.com", "aa.com.tr", "english.alarabiya.net",
+    "tehrantimes.com", "presstv.ir", "en.irna.ir", "iranintl.com",
+]
+MEDIA_TOPIC = "(Qatar OR Iran OR Israel OR Gaza OR Hormuz OR Gulf)"
 # 연구기관·에너지 기관의 중동·유가·카타르 분석/보고서 수집용 쿼리(뜨면 최상단 강조)
 Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
                 "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석",
@@ -196,7 +206,14 @@ QUICK_LINKS = {
         ("The Wall Street Journal", "https://www.wsj.com/world/middle-east"),
         ("Financial Times", "https://www.ft.com/middle-east"),
         ("The Washington Post", "https://www.washingtonpost.com/world/middle-east/"),
-        ("The Economist — ME·Africa", "https://www.economist.com/middle-east-and-africa")],
+        ("The Economist — ME·Africa", "https://www.economist.com/middle-east-and-africa"),
+        ("Axios", "https://www.axios.com/world"),
+        ("Politico", "https://www.politico.com/"),
+        ("Al-Monitor", "https://www.al-monitor.com/"),
+        ("Middle East Eye", "https://www.middleeasteye.net/"),
+        ("The Times of Israel", "https://www.timesofisrael.com/"),
+        ("Anadolu Agency", "https://www.aa.com.tr/en"),
+        ("CNBC", "https://www.cnbc.com/world/")],
     "🇰🇷 국내 종합·방송": [("연합뉴스 국제", "https://www.yna.co.kr/international/all"),
         ("YTN", "https://www.ytn.co.kr/"), ("KBS", "https://news.kbs.co.kr/"),
         ("MBC", "https://imnews.imbc.com/"), ("SBS", "https://news.sbs.co.kr/"),
@@ -308,8 +325,9 @@ LANG = {
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고로 보실 수 있으며, "
                "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
   "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
+  "win_am": "전일 15:30 ~ 당일 07:00", "win_pm": "당일 07:00 ~ 당일 15:30", "win_pre": "전일 07:00 ~ 전일 15:30",
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건", "counts_label": "모니터링 건수",
-  "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
+  "scope": ("<b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
             "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리"),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일일", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
@@ -347,6 +365,7 @@ LANG = {
                "available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. "
                "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
   "updated": "Monitored at", "tz": "Qatar time", "coverage": "Monitoring period",
+  "win_am": "Prev day 15:30 – same day 07:00", "win_pm": "Same day 07:00 – 15:30", "win_pre": "Prev day 07:00 – 15:30",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>", "counts_label": "Monitored items",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
@@ -388,6 +407,7 @@ LANG = {
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
                "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
   "updated": "وقت الرصد", "tz": "بتوقيت قطر", "coverage": "فترة الرصد",
+  "win_am": "الأمس 15:30 – اليوم 07:00", "win_pm": "اليوم 07:00 – 15:30", "win_pre": "الأمس 07:00 – 15:30",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>", "counts_label": "عدد المرصود",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
@@ -469,13 +489,12 @@ def window_bounds(now_q):
     am = now_q.replace(hour=BOUNDARY_AM[0], minute=BOUNDARY_AM[1], second=0, microsecond=0)
     pm = now_q.replace(hour=BOUNDARY_PM[0], minute=BOUNDARY_PM[1], second=0, microsecond=0)
     if now_q >= pm:
-        start, end = am, pm                                             # 오늘 07:00 ~ 오늘 15:30
+        start, end, slot = am, pm, "pm"                                 # 오늘 07:00 ~ 오늘 15:30
     elif now_q >= am:
-        start, end = pm - timedelta(days=1), am                         # 어제 15:30 ~ 오늘 07:00
+        start, end, slot = pm - timedelta(days=1), am, "am"             # 어제 15:30 ~ 오늘 07:00
     else:
-        start, end = am - timedelta(days=1), pm - timedelta(days=1)     # 어제 07:00 ~ 어제 15:30
-    label = f"{start.strftime('%m/%d %H:%M')} ~ {end.strftime('%m/%d %H:%M')} (카타르시간)"
-    return start, end, label
+        start, end, slot = am - timedelta(days=1), pm - timedelta(days=1), "pre"  # 어제 07:00 ~ 어제 15:30
+    return start, end, slot
 
 
 def entry_time(e):
@@ -593,6 +612,12 @@ def collect(win_start_utc, now_utc, when_days=2):
     for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
     for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
     for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
+    # 카타르 현지 주요 매체를 도메인 조준으로 직접 수집(이슈별 현지 소스 누락 방지 — 관련성 필터가 비관련 기사 제거)
+    for dom in QATAR_LOCAL_SITES:
+        feeds.append(("en", f"[qa]{dom}", gnews_url(f"site:{dom}", "en", when_days)))
+    # 링크모음에 실린 해외·역내 주요 매체를 중동 주제로 매 회차 직접 모니터링(누락 방지)
+    for dom in MEDIA_MONITOR_SITES:
+        feeds.append(("en", f"[m]{dom}", gnews_url(f"site:{dom} {MEDIA_TOPIC}", "en", when_days)))
     # 네이버 뉴스 '카타르'/'중동' 검색 결과(네이버 도메인 조준)
     for q in Q_NAVER_KO:
         for dom in NAVER_NEWS_DOMAINS:
@@ -1365,7 +1390,8 @@ TEMPLATE = """<!DOCTYPE html>
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}}
   .sub{{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}}
-  .submeta{{color:var(--muted);font-size:12.5px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}}
+  .submeta{{color:var(--muted);font-size:14px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}}
+  .submeta > span::before{{content:"• ";color:var(--accent);font-weight:700}}
   .submeta .cnt{{flex-basis:100%}}
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}}
@@ -1668,7 +1694,8 @@ def main():
         now_q = _am
     elif _pm - _grace <= now_q < _pm:
         now_q = _pm
-    start_q, end_q, label_ko = window_bounds(now_q)
+    start_q, end_q, win_slot = window_bounds(now_q)
+    label_ko = f"{LANG['ko']['win_' + win_slot]} (카타르시간)"   # LLM 프롬프트·로그용(한국어)
     items = collect(start_q.astimezone(timezone.utc), now_utc)
     new_since_daily = start_q.astimezone(timezone.utc)          # 이번 회차 창(window) 시작 — 이후 발간 보고서는 '신규' 표기
     end_utc = end_q.astimezone(timezone.utc)                    # 모니터링 기간 끝(경계 시각) — 실행 시각이 아니라 07:00/15:30 경계로 고정
@@ -1714,7 +1741,7 @@ def main():
     nav = {l: home_url(l) for l in LANGS}
     for lang in LANGS:
         L = LANG[lang]
-        win_label = label_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
+        win_label = f"{L['win_' + win_slot]} ({L['tz']})"
         issue_label = L["daily_no"].format(n=dno) if dno else L["daily_demo"]
         iss_l = translate_issues(issues, lang) if issues else None
 
