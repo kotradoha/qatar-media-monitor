@@ -1288,8 +1288,8 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:760px){{.left{{border-inline-end:none;border-bottom:1px solid var(--line)}}}}
   .left .sh{{font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}}
   .left p{{margin:0 0 8px;font-size:13.5px}}
-  .left .pts{{margin:0 0 8px;padding-inline-start:17px;font-size:13.5px}}
-  .left .pts li{{margin:0 0 5px;line-height:1.62}}
+  .left .pts{{list-style:disc;margin:0 0 8px;padding-inline-start:18px;font-size:13.5px}}
+  .left .pts li{{padding:0;border-bottom:none;margin:0 0 6px;line-height:1.62}}
   .left .figs{{font-size:12.5px;color:var(--muted)}}
   .right{{padding:13px 16px}}
   .grp{{margin-bottom:9px}} .grp .gh{{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}}
