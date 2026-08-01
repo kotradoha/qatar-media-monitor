@@ -17,8 +17,6 @@ on:
         description: "재수집 없이 직전 캐시로 렌더만"
         type: boolean
         default: false
-  push:
-    branches: [ main ]      # 코드 수정 시에도 한 번 생성
 
 permissions:
   contents: write           # 생성한 index.html을 커밋/푸시하기 위함
