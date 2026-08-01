@@ -37,6 +37,7 @@ jobs:
           GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # 1순위: GitHub Models(내장 토큰, 키 발급 불필요)
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # 2순위(선택)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 3순위(선택). 모두 없으면 헤드라인만
+          RENDER_ONLY: ${{ github.event_name == 'push' && '1' || '0' }}   # 코드 푸시 실행은 재수집 없이 캐시로 렌더만
         run: python generate.py
 
       - name: Commit & push if changed
@@ -48,6 +49,10 @@ jobs:
             echo "No changes."
           else
             git commit -m "auto: update $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase --autostash origin main || true
-            git push
+            for i in 1 2 3 4 5; do
+              git pull --rebase --autostash origin main || true
+              if git push; then echo "pushed on try $i"; exit 0; fi
+              echo "[warn] push rejected, retry $i"; sleep $((5 * i))
+            done
+            echo "[error] push failed after 5 tries"; exit 1
           fi
