@@ -737,7 +737,19 @@ def anthropic_call(model, prompt, json_mode):
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
                 data = json.loads(r.read().decode("utf-8"))
-            txt = data["content"][0]["text"].strip()
+            # content 배열에서 첫 'text' 블록을 추출(Sonnet 5 등은 앞에 thinking 등 비-text 블록이 올 수 있음)
+            blocks = data.get("content") or []
+            txt = ""
+            for b in blocks:
+                if isinstance(b, dict) and b.get("type") == "text" and b.get("text"):
+                    txt = b["text"]; break
+            if not txt:
+                for b in blocks:
+                    if isinstance(b, dict) and b.get("text"):
+                        txt = b["text"]; break
+            txt = (txt or "").strip()
+            if not txt:
+                _diag(f"[warn] claude {model} empty/nontext content"); return None
             return _extract_json(txt) if json_mode else txt
         except urllib.error.HTTPError as ex:
             try:
