@@ -5,6 +5,8 @@ on:
     # GitHub Actions는 UTC 기준. 카타르(UTC+3) 07:00 = 04:00 UTC / 15:30 = 12:30 UTC
     - cron: "0 4 * * *"
     - cron: "30 12 * * *"
+  repository_dispatch:      # 외부 cron(cron-job.org 등)이 정시에 호출 → 브라우저·PC 없이도 발행
+    types: [scheduled-run]
   workflow_dispatch:        # 수동 실행 버튼
     inputs:
       force_publish:
