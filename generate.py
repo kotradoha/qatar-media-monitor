@@ -680,6 +680,8 @@ def collect(win_start_utc, now_utc, when_days=2):
             link = e.get("link", "").strip()
             if not title or not link:
                 continue
+            if not link.lower().startswith(("http://", "https://")):   # 안전: http/https 링크만 허용(javascript:/data: 등 차단)
+                continue
             src = source_of(e, label)
             if blocked_source(src):          # 취합/비정식/해외발 소스 제외
                 continue
@@ -764,10 +766,11 @@ def _gemini_key():
     return ""
 
 
-# 진단 메시지(요약 실패 시 사이트에 표시 → 원인 파악용)
+# 진단 메시지(요약 실패 시 사이트에 표시 → 원인 파악용). msg=상세(로그·비공개), public=페이지 노출용(제공사 에러본문 등 미포함)
 LLM_DIAG = []
-def _diag(msg):
+def _diag(msg, public=None):
     print(msg)
+    msg = public if public is not None else msg
     if len(LLM_DIAG) < 8:
         LLM_DIAG.append(msg)
 
@@ -845,7 +848,7 @@ def anthropic_call(model, prompt, json_mode):
             if ex.code == 429:
                 _diag(f"[warn] claude {model} 429, retry {attempt+1}/3")
                 time.sleep(5 * (attempt + 1)); continue
-            _diag(f"[warn] claude {model} HTTP {ex.code} {eb}"); return None
+            _diag(f"[warn] claude {model} HTTP {ex.code} {eb}", public=f"[warn] claude {model} HTTP {ex.code}"); return None
         except Exception as ex:
             _diag(f"[warn] claude {model} failed: {ex}"); return None
     return None
@@ -883,7 +886,7 @@ def openrouter_call(model, prompt, json_mode):
             if ex.code == 429:
                 _diag(f"[warn] openrouter {model} 429, retry {attempt+1}/3")
                 time.sleep(4 * (attempt + 1)); continue
-            _diag(f"[warn] openrouter {model} HTTP {ex.code} {eb}"); return None
+            _diag(f"[warn] openrouter {model} HTTP {ex.code} {eb}", public=f"[warn] openrouter {model} HTTP {ex.code}"); return None
         except Exception as ex:
             _diag(f"[warn] openrouter {model} failed: {ex}"); return None
     return None
@@ -933,7 +936,7 @@ def github_models_call(model, prompt, json_mode):
                 except Exception:
                     errbody = ""
                 host = endpoint.split("/")[2]
-                _diag(f"[warn] ghmodels {mid}@{host} HTTP {ex.code} {errbody}")
+                _diag(f"[warn] ghmodels {mid}@{host} HTTP {ex.code} {errbody}", public=f"[warn] ghmodels {mid}@{host} HTTP {ex.code}")
                 if ex.code == 429:
                     time.sleep(4);
             except Exception as ex:
