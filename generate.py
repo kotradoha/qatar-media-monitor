@@ -35,10 +35,13 @@ TITLE = "🇶🇦 카타르·중동 정세 언론 모니터링"
 SUBTITLE = ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
             "AI 사안별 요약과 관련 기사 원문 링크 제공")
 
-Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security"]
+Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security",
+              "QatarEnergy LNG", "Qatar mediation Gaza", "Qatar Airways", "Qatar Emir diplomacy"]
 Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관"]
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
-                "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping"]
+                "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping",
+                "Iran nuclear talks", "Houthi Red Sea attack", "OPEC oil output", "Israel Iran strike",
+                "Hormuz tanker", "Hamas disarm Gaza"]
 Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동"]
 # 네이버 뉴스에서 '카타르'·'중동' 검색 시 노출되는 기사 포함(구글뉴스 site:로 네이버 뉴스 도메인 조준)
 Q_NAVER_KO = ["카타르", "중동"]
@@ -418,8 +421,8 @@ LANG = {
 }
 
 MAX_PER_SECTION = 60
-POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
-DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
+POOL_FOR_ISSUES = 72          # 사안 분류에 넘길 기사 수(Sonnet 5 대용량 컨텍스트 — 원산지 고루 반영·중요 기사 누락 방지)
+DESC_MAX = 220                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
@@ -1007,9 +1010,13 @@ def gemini_issues(pool, win_label, weekly=False):
         "카테고리 예시: 전쟁·군사(공습·교전 추이) / 외교·중재 / 에너지·유가·LNG / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 경제·통상 / 항공·교민안전.\n"
         "【사안 배열 순서】 기본적으로 위 모니터링 분야 순서, 즉 ①전쟁·군사 ②외교·중재 ③에너지·유가·LNG "
-        "④물류·해상안전 ⑤경제·통상 ⑥항공·교민안전 의 순서를 가급적 따르되, 그날 실제로 기사량이 많거나 "
-        "사안의 가중치·심각도·긴급성이 높아 보이는 사안은 그 순서보다 앞으로 유연하게 배치하세요. "
+        "④물류·해상안전 ⑤경제·통상 ⑥항공·교민안전 의 순서를 가급적 따르되, 사안의 **시급성·중요성·파급효과**가 높은 사안을 "
+        "그 순서보다 앞으로 유연하게 배치하세요. "
         "(예: 카타르항공 운항 차질 등 '항공·교민' 사안은 특별히 심각·시급하지 않는 한 뒤쪽에 배치.)\n"
+        "【정보원 우선순위·편향 방지】 중동 정세는 **카타르 현지·중동·이란·미국·글로벌 매체가 더 빠르고 정확한 1차 정보원**인 경우가 많으므로, "
+        "사안 선정과 사실관계는 이들 1차 소스를 우선 근거로 삼고 **국내(한국) 보도는 보완적으로** 활용하세요. "
+        "특히 **국내 언론이 같은 사안을 여러 건 전재하더라도 그 '기사 수량'을 사안의 중요도·상단 배치 근거로 삼지 말 것** "
+        "— 중요도는 오직 사안의 실제 시급성·중요성·파급효과로 판단하고, 한국 고유 관점(정부 대응·국내 산업 영향 등)은 해당될 때만 반영하세요.\n"
         "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장. "
         "단, 사안이 '카타르 교민 안전' 또는 '항공 운영'을 다루되 교민이 직접 알아야 할 실질적·행동가능한 "
         "안전 경보·항공 운항 변동 정보가 아니라 배경·정황 참고 수준이면 사안명 맨 끝에 ' 참고'를 붙일 것"
@@ -1560,10 +1567,12 @@ MAJOR_HINTS = [
     "한겨레", "hani", "경향", "khan", "kyunghyang", "서울신문", "seoul", "문화일보", "munhwa",
     "매일경제", "매경", "mk.co", "maeil", "한국경제", "hankyung",
     "파이낸셜뉴스", "fnnews", "이데일리", "edaily", "머니투데이", "moneytoday", "서울경제", "sedaily",
-    "reuters", "ap ", "associated press", "afp", "bloomberg", "cnn", "bbc",
-    "the guardian", "washington post", "new york times", "wall street journal", "financial times",
-    "economist", "이코노미스트",
-    "irna", "press tv", "tehran times", "mehr", "al-alam",
+    "reuters", "ap news", "apnews", "associated press", "afp", "bloomberg", "cnn", "bbc",
+    "the guardian", "washington post", "new york times", "nytimes", "wall street journal", "wsj",
+    "financial times", "ft.com", "economist", "이코노미스트", "cnbc", "npr", "politico", "axios", "semafor",
+    "al arabiya", "al-arabiya", "middle east eye", "middle east institute", "al monitor", "al-monitor",
+    "times of israel", "jerusalem post", "the national", "anadolu", "amwaj",
+    "irna", "press tv", "presstv", "tehran times", "mehr", "al-alam", "tasnim",
 ]
 
 def _is_major(x):
@@ -1571,13 +1580,15 @@ def _is_major(x):
     return any(m in s for m in MAJOR_HINTS)
 
 def build_issue_pool(items):
-    """사안 요약용 풀: 카타르 관련 최우선 + 국내/해외 메이저 우선, 나머지 최신순."""
+    """사안 요약용 풀: 원산지·속보성 우선(카타르 현지 → 해외 글로벌·미국·유럽 → 이란·역내 → 국내 한국·보완).
+    국내 언론이 같은 사안을 다수 전재해 풀이 국내 위주로 쏠리지 않도록 권역별 상한을 두고 1차 정보원을 앞세움."""
+    maj = lambda lst: [x for x in lst if _is_major(x)] + [x for x in lst if not _is_major(x)]
     qatar = [x for x in items if x["qatar"] or x["region"] == "qatar"]
-    others = [x for x in items if not (x["qatar"] or x["region"] == "qatar")]
-    others_major = [x for x in others if _is_major(x)]
-    others_rest = [x for x in others if not _is_major(x)]
-    n_qatar = min(len(qatar), 14)                      # 카타르 현지 최소 확보
-    pool = qatar[:n_qatar] + others_major + others_rest
+    rest = [x for x in items if not (x["qatar"] or x["region"] == "qatar")]
+    overseas = [x for x in rest if x["region"] == "overseas"]   # 글로벌·미국·유럽 등 1차/속보 정보원
+    iran = [x for x in rest if x["region"] == "iran"]           # 이란·역내 1차 정보원
+    korea = [x for x in rest if x["region"] == "korea"]         # 국내(한국) — 보완적
+    pool = maj(qatar)[:22] + maj(overseas)[:28] + maj(iran)[:10] + maj(korea)[:14]
     return pool[:POOL_FOR_ISSUES]
 
 
