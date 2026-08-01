@@ -715,7 +715,8 @@ def anthropic_call(model, prompt, json_mode):
     msgs = [{"role": "user", "content": prompt}]
     if json_mode:
         msgs.append({"role": "assistant", "content": "{"})   # JSON 출력 강제(프리필)
-    payload = {"model": model, "max_tokens": 2048, "temperature": 0.3, "messages": msgs}
+    # 주의: 일부 최신 모델(예: Sonnet 5)은 temperature 파라미터를 거부(400)하므로 보내지 않음. max_tokens는 여유 있게.
+    payload = {"model": model, "max_tokens": 4096, "messages": msgs}
     body = json.dumps(payload).encode("utf-8")
     for attempt in range(3):
         req = urllib.request.Request(
