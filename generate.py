@@ -374,6 +374,7 @@ LANG = {
   "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
   "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
+  "qbox": "카타르 영향·피해",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
   "full_summary": "전체 기사 목록 (총 {n}건)", "full_note": "(카타르·이란·해외·한국)", "expand": "펼쳐보기", "collapse": "접기",
@@ -415,6 +416,7 @@ LANG = {
   "sum_head": "🧭 This edition — issue briefs", "sum_head_flat": "🧭 This edition — key summary", "ai": "AI summary",
   "sum_none_body": "Summary not generated this time — it will retry on the next update. The article lists below are fine.", "diag": "Diagnostics",
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
+  "qbox": "Impact on Qatar",
   "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
   "flag": "Qatar",
   "full_summary": "Full article list (total {n})", "full_note": "(Qatar·Iran·Global·Korea)", "expand": "Expand", "collapse": "Collapse",
@@ -457,6 +459,7 @@ LANG = {
   "sum_head": "🧭 هذا الإصدار — ملخص القضايا", "sum_head_flat": "🧭 هذا الإصدار — الملخص الرئيسي", "ai": "ملخص آلي",
   "sum_none_body": "لم يُنشأ الملخص هذه المرة — ستُعاد المحاولة في التحديث التالي. قوائم الأخبار أدناه سليمة.", "diag": "تشخيص",
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
+  "qbox": "الأثر على قطر",
   "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
   "flag": "قطر",
   "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "full_note": "(قطر·إيران·دولي·كوريا)", "expand": "توسيع", "collapse": "طيّ",
@@ -1070,8 +1073,11 @@ def gemini_issues(pool, win_label, weekly=False):
         "다만 이런 소재라도 카타르 국익·에너지·안보·물류·외교에 직접 연결되면 포함합니다"
         "(예: 가자 휴전 협상·카타르 중재는 '외교·중재' 사안으로 포함하되, 개별 난민의 생활고 미담은 제외).\n"
         "【최우선 감지(반드시)】 카타르 본토·시설·기지(예: 알우데이드)·영공·해역·인원이 직접 공격·피격·미사일/드론 침범을 당했거나 "
-        "카타르 내 피해(사상·시설 파손·폭발·정전·통신/항공 마비 등)가 발생한 정황이 기사에 조금이라도 있으면, **절대 누락하지 말고 반드시 최상단 사안으로** 뽑고, "
-        "무엇이·어디를·언제·피해규모(사상자·피해 정도)·현재 상태를 구체적으로 명시하세요(정보가 단편적이면 '확인 중'으로라도 반드시 다룸).\n"
+        "카타르 내 피해(사상·시설 파손·폭발·정전·통신/항공 마비 등)가 발생한 정황이 기사에 조금이라도 있으면 **절대 누락하지 마세요.** "
+        "무엇이·어디를·언제·피해규모(사상자·피해 정도)·현재 상태를 구체적으로 명시하되(정보가 단편적이면 '확인 중'으로라도 반드시 다룸), "
+        "**표현 방식은 두 가지 중 택1**: ①카타르 피격·피해가 그 자체로 독립적 사안이면 **최상단 사안**으로 뽑고, "
+        "②카타르 피격·피해가 더 큰 사안(예: 미·이란 확전, 호르무즈 위기)의 일부로 맥락상 그 안에 들어가는 것이 자연스러우면 **별도 사안으로 빼지 말고 그 사안의 `qatar_impact` 필드**에 카타르 피해 상세(무엇·어디·언제·피해규모·현재 상태)를 담으세요"
+        "(이 필드는 화면에서 해당 이슈 안의 '※ 카타르 영향·피해' 별도 박스로 강조 표시됨). 카타르 직접 피해 정황이 없으면 qatar_impact는 비워 두세요.\n"
         "핵심 판별 기준: 가자·이스라엘·이란 등 소재라도 ①카타르가 실제로 역할·조치를 했거나(중재·성명·정상외교·지원·군사·에너지 등), "
         "②카타르가 공격·공습을 당하거나 카타르의 안보·영공·경제·에너지·항공·교민 안전이 직접 영향받거나, "
         "③사안이 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
@@ -1120,7 +1126,9 @@ def gemini_issues(pool, win_label, weekly=False):
         "(사건의 주체·당사자인 기관·기업·정부·인물은 당연히 서술 대상이므로 그대로 포함.) "
         "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
         "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
-        "ids(그 사안 관련 기사 id 정수 배열, 최대 30개).\n"
+        "ids(그 사안 관련 기사 id 정수 배열, 최대 30개), "
+        "qatar_impact(선택. 이 사안 안에 카타르 본토·시설·영공·해역·인원의 직접 피격·피해가 포함될 때만, 그 카타르 피해 상세를 담는 한국어 서술 배열 1~3개 — 명사형 종결어미, 무엇·어디·언제·피해규모·현재 상태 구체 명시. 카타르 직접 피해가 없으면 빈 배열 []). "
+        "qatar_impact의 내용도 반드시 [기사 목록]의 기사로 뒷받침돼야 하며 그 id를 ids에 포함하세요.\n"
         "【요약↔링크 일치(필수·양방향)】 summary의 모든 문장·사실·주장·수치는 반드시 [기사 목록]의 특정 기사에 근거해야 하며, 그 근거 기사의 id를 **빠짐없이 그 사안의 ids에 포함**하세요. "
         "즉 아래 '연관 보도내역·링크'만으로 요약의 모든 내용을 검증할 수 있어야 합니다. "
         "**역으로, [기사 목록]의 어떤 기사로도 뒷받침되지 않는 내용(특정 매체가 무엇을 보도·분석했다는 서술 포함)은 요약에 절대 쓰지 말고 제외하세요.** "
@@ -1138,7 +1146,7 @@ def gemini_issues(pool, win_label, weekly=False):
         "②국제 통신·속보 매체(Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian/NYT/WSJ/Al Arabiya/Anadolu/Middle East Eye) ③한국 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제 — 대개 전재·2차이므로 보완용). "
         "국제 현안에서 ①②의 1차 기사가 목록에 있으면 반드시 그 id를 우선 포함하고, 한국 기사만으로 사안 링크를 채우지 마세요.\n"
         "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
-        "{\"issues\":[{\"theme\":\"\",\"summary\":[\"\",\"\"],\"ids\":[0,1]}]}\n\n"
+        "{\"issues\":[{\"theme\":\"\",\"summary\":[\"\",\"\"],\"qatar_impact\":[],\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
     )
     # 이슈 생성은 품질 핵심이므로, 빈 결과/파싱 실패 시 flat 폴백 대신 최대 3회 재시도(간헐적 토큰초과·빈배열 방지)
@@ -1191,12 +1199,13 @@ def translate_issues(issues, lang):
     target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
     if not target:
         return issues
-    payload = [{"theme": i.get("theme", ""), "summary": i.get("summary", "")} for i in issues if isinstance(i, dict)]
+    payload = [{"theme": i.get("theme", ""), "summary": i.get("summary", ""), "qatar_impact": i.get("qatar_impact", "")} for i in issues if isinstance(i, dict)]
     prompt = (
-        f"Translate the 'theme' and 'summary' fields of the following JSON into {target}. "
+        f"Translate the 'theme', 'summary' and 'qatar_impact' fields of the following JSON into {target}. "
         "'summary' is an array of bullet strings — translate each element and return it as an array of the SAME length and order. "
+        "'qatar_impact' may be a string or an array — translate it keeping the same type; if it is empty, return it empty. "
         "Keep all numbers, dates, currencies and proper nouns; keep any leading emoji in 'theme'. "
-        "Return ONLY a JSON object of the exact form {\"issues\":[{\"theme\":\"\",\"summary\":[\"\"]}]} "
+        "Return ONLY a JSON object of the exact form {\"issues\":[{\"theme\":\"\",\"summary\":[\"\"],\"qatar_impact\":\"\"}]} "
         "with the same number and order of items, no commentary.\n\n"
         + json.dumps({"issues": payload}, ensure_ascii=False))
     out = gemini_generate(prompt, json_mode=True)
@@ -1212,6 +1221,8 @@ def translate_issues(issues, lang):
                     m["theme"] = t.get("theme") or orig.get("theme", "")
                     if t.get("summary"):
                         m["summary"] = t.get("summary")
+                    if t.get("qatar_impact"):
+                        m["qatar_impact"] = t.get("qatar_impact")
                 merged.append(m)
             return merged
     except Exception as ex:
@@ -1270,6 +1281,10 @@ def render_issues(issues, pool, now_utc, L=None):
         theme = esc(str(iss.get("theme", f"{L['issue']} {n}")))
         bullets = _summary_bullets(iss.get("summary", ""))
         body = ('<ul class="sumbul">' + "".join(f'<li>{esc(b)}</li>' for b in bullets) + '</ul>') if bullets else ""
+        # 카타르 직접 피격·피해가 이 사안에 포함되면 별도 이슈로 빼지 않고 이슈 내부에 ※ 박스로 상세 표기
+        qi_items = _summary_bullets(iss.get("qatar_impact", ""))
+        qbox = (f'<div class="qimpact"><div class="qh">※ {esc(L["qbox"])}</div>'
+                + '<ul class="qbul">' + "".join(f'<li>{esc(b)}</li>' for b in qi_items) + '</ul></div>') if qi_items else ""
         raw_ids = iss.get("ids")
         ids = [j for j in (raw_ids if isinstance(raw_ids, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
         arts = [pool[j] for j in ids]
@@ -1287,7 +1302,7 @@ def render_issues(issues, pool, now_utc, L=None):
             groups = f'<div class="grp"><div class="gh" style="color:var(--muted)">{esc(L["nomap"])}</div></div>'
         out.append(
             f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
-            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div>{body}</div>'
+            f'<div class="row"><div class="left">{qbox}<div class="sh">{esc(L["key_sum"])}</div>{body}</div>'
             f'<div class="right">{groups}</div></div></div>')
     return "\n".join(out)
 
@@ -1494,6 +1509,11 @@ TEMPLATE = """<!DOCTYPE html>
   .left .sumbul{{list-style:disc;margin:0;padding-inline-start:18px}}
   .left .sumbul li{{font-size:13.5px;line-height:1.55;margin:0 0 8px;padding:0;border:none}}
   .left .sumbul li:last-child{{margin-bottom:0}}
+  .left .qimpact{{background:var(--note-bg);border:1px solid var(--gold);border-radius:10px;padding:9px 11px;margin:0 0 11px}}
+  .left .qimpact .qh{{font-size:11.5px;font-weight:800;color:var(--crit-text);letter-spacing:.3px;margin-bottom:5px}}
+  .left .qbul{{list-style:disc;margin:0;padding-inline-start:18px}}
+  .left .qbul li{{font-size:13px;line-height:1.5;margin:0 0 6px;color:var(--txt)}}
+  .left .qbul li:last-child{{margin-bottom:0}}
   .right{{padding:13px 16px}}
   .grp{{margin-bottom:9px}} .grp .gh{{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}}
   .grp a{{display:block;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;margin:5px 0}}
