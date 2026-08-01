@@ -35,6 +35,9 @@ Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
                 "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping"]
 Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동"]
+# 네이버 뉴스에서 '카타르'·'중동' 검색 시 노출되는 기사 포함(구글뉴스 site:로 네이버 뉴스 도메인 조준)
+Q_NAVER_KO = ["카타르", "중동"]
+NAVER_NEWS_DOMAINS = ["n.news.naver.com", "news.naver.com"]
 # 연구기관·에너지 기관의 중동·유가·카타르 분석/보고서 수집용 쿼리(뜨면 최상단 강조)
 Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
                 "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석",
@@ -276,15 +279,15 @@ LANG = {
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
-            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 안전 위주로 정리합니다."),
+            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등"),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
   "search_count": "건 표시",
-  "sum_head": "🧭 이번 회차 사안별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
+  "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
-  "issue": "사안", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
+  "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
   "full_summary": "전체 기사 목록 (총 {n}건) · 카타르/이란/해외/국내", "expand": "펼쳐보기", "collapse": "접기",
@@ -299,7 +302,7 @@ LANG = {
            "누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "- 주카타르대사관 Commercial Section·도하무역관", "org": "주카타르대사관 Commercial Section·도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
-  "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)",
+  "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)", "ed_daily": "일일", "ed_weekly": "주간",
  },
  "en": {
   "dir": "ltr", "html": "en",
@@ -311,7 +314,7 @@ LANG = {
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
-            "economy &amp; trade, and aviation &amp; citizen safety."),
+            "economy &amp; trade, aviation·citizens, etc."),
   "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
   "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
@@ -335,7 +338,7 @@ LANG = {
            "against the original sources and further searches."),
   "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
-  "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)",
+  "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)", "ed_daily": "Daily", "ed_weekly": "Weekly",
  },
  "ar": {
   "dir": "rtl", "html": "ar",
@@ -347,7 +350,7 @@ LANG = {
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
-            "الاقتصاد والتجارة، والطيران وسلامة المواطنين."),
+            "الاقتصاد والتجارة، والطيران والمواطنين، إلخ."),
   "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
   "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
@@ -370,7 +373,7 @@ LANG = {
            "قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
   "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
-  "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)",
+  "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)", "ed_daily": "يومي", "ed_weekly": "أسبوعي",
  },
 }
 
@@ -539,6 +542,10 @@ def collect(win_start_utc, now_utc, when_days=2):
     for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
     for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
     for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
+    # 네이버 뉴스 '카타르'/'중동' 검색 결과(네이버 도메인 조준)
+    for q in Q_NAVER_KO:
+        for dom in NAVER_NEWS_DOMAINS:
+            feeds.append(("ko", f"[naver]{q}", gnews_url(f"{q} site:{dom}", "ko", when_days)))
     for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko", REPORT_QUERY_DAYS)))
     for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en", REPORT_QUERY_DAYS)))
     # 한국 기관 자체 발간물: 기관 도메인을 site: 로 직접 조준(중동·유가·카타르 주제만 통과)
@@ -1086,7 +1093,7 @@ def _ql_key(item):
 
 
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
-           reports=None, issue_label=None, weekly_inline=None, lang="ko", nav=None, home_url=None, new_since=None):
+           reports=None, edition=None, weekly_inline=None, lang="ko", nav=None, home_url=None, new_since=None):
     L = LANG.get(lang, LANG["ko"])
     home_url = home_url or SITE_BASE
     now_utc = datetime.now(timezone.utc)
@@ -1176,12 +1183,13 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         for l in LANGS)
     nav_html = f'<div class="langrow"><div class="lang">{navbtns}</div></div>'
 
-    issuelabel = f'<span class="issno">{esc(issue_label)}</span>' if issue_label else ""
+    ed_word = {"daily": L.get("ed_daily", ""), "weekly": L.get("ed_weekly", "")}.get(edition, "")
+    edition_html = f' <span class="edtag">{esc(ed_word)}</span>' if ed_word else ""
     weekly_html = weekly_inline or ""
 
     return TEMPLATE.format(
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
-        archive=archive_html, report=report_html, weekly=weekly_html, issuelabel=issuelabel,
+        archive=archive_html, report=report_html, weekly=weekly_html, edition=edition_html,
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
         orgline=(f'<div class="orgline">{esc(L["org"])}</div>' if L.get("org") else ""),
@@ -1310,6 +1318,7 @@ TEMPLATE = """<!DOCTYPE html>
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;max-width:60%}}
   .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
+  h1 .edtag{{font-size:13px;font-weight:700;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px;vertical-align:middle;letter-spacing:0}}
   .scopebar{{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
     border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}}
   .scopebar b{{color:var(--txt);font-weight:700}}
@@ -1353,16 +1362,15 @@ TEMPLATE = """<!DOCTYPE html>
 <div class="wrap">
   <header>
     {nav}
-    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}</div>
+    <div class="titrow"><div class="titcol"><h1>{title}{edition}</h1>{title2}{orgline}</div></div>
     <div class="sub"><span>{subtitle}</span></div>
+    <div class="scopebar">🎯 {scope}</div>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
       <span>{coverage_label}: <b>{window}</b></span>
       <span>{counts}</span>
     </div>
   </header>
-
-  <div class="scopebar">🎯 {scope}</div>
 
   {archive}
 
@@ -1582,7 +1590,7 @@ def main():
             wwin = wlabel_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
             whtml = render(witems_win, wwin, wiss_l, wflat, issue_pool=wpool,
                            archive_list=archive_list, reports=wreports,
-                           issue_label=L["weekly_no"].format(n=wno), lang=lang, nav=nav,
+                           edition="weekly", lang=lang, nav=nav,
                            home_url=home_url(lang), new_since=new_since_weekly)
             with open(os.path.join("archive", wfn), "w", encoding="utf-8") as fh:
                 fh.write(whtml)
@@ -1603,7 +1611,7 @@ def main():
 
         html = render(items_win, win_label, iss_l, flat, issue_pool=pool,
                       archive_list=archive_list, reports=reports,
-                      issue_label=issue_label, weekly_inline=weekly_inline,
+                      edition="daily", weekly_inline=weekly_inline,
                       lang=lang, nav=nav, home_url=home_url(lang), new_since=new_since_daily)
         with open(main_out(lang), "w", encoding="utf-8") as fh:
             fh.write(html)
