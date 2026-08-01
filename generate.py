@@ -530,7 +530,13 @@ def looks_report(title, src, shref=""):
     return True
 
 
+FEED_RETRY = int(os.getenv("FEED_RETRY", "3"))            # 피드당 최대 시도 횟수(빈 응답이면 재시도)
+FEED_BACKOFF = float(os.getenv("FEED_BACKOFF", "2.0"))    # 재시도 대기(초): 2 → 4
+FEED_STATS = {}                                           # 마지막 collect() 피드 건전성 통계
+
+
 def collect(win_start_utc, now_utc, when_days=2):
+    global FEED_STATS
     items, seen = [], set()
     feeds = []
     for q in Q_QATAR_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
@@ -544,12 +550,28 @@ def collect(win_start_utc, now_utc, when_days=2):
         feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
+    stats = {"feeds": len(feeds), "ok": 0, "empty": 0, "failed": 0}
     for lang, label, url in feeds:
-        try:
-            d = feedparser.parse(url)
-        except Exception as ex:
-            print(f"[warn] feed failed {url}: {ex}")
+        d, n = None, 0
+        for attempt in range(FEED_RETRY):
+            try:
+                d = feedparser.parse(url)
+                n = len(getattr(d, "entries", []) or [])
+            except Exception as ex:
+                d, n = None, 0
+                print(f"[warn] feed error {label}: {ex}")
+            if n:
+                break
+            if attempt < FEED_RETRY - 1:
+                time.sleep(FEED_BACKOFF * (2 ** attempt))
+        if d is None:
+            stats["failed"] += 1
             continue
+        if not n:
+            stats["empty"] += 1
+            print(f"[warn] feed empty {label} status={getattr(d, 'status', '?')} bozo={int(bool(getattr(d, 'bozo', 0)))}")
+            continue
+        stats["ok"] += 1
         for e in d.entries:
             title = clean_title(e.get("title", "").strip())
             link = e.get("link", "").strip()
@@ -588,6 +610,10 @@ def collect(win_start_utc, now_utc, when_days=2):
             items.append({"title": title, "link": link, "source": src, "dt": dt,
                           "qatar": is_qatar, "desc": desc, "korean": kor, "shref": shref,
                           "report": report, "region": source_region(src, kor)})
+    stats["items"] = len(items)
+    FEED_STATS = stats
+    print(f"[info] feeds={stats['feeds']} ok={stats['ok']} empty={stats['empty']} "
+          f"failed={stats['failed']} items={len(items)}")
     items.sort(key=lambda x: x["dt"], reverse=True)
     return items
 
@@ -1493,11 +1519,106 @@ def _archive_label_text(meta, L):
     return (L["weekly_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_weekly"] + " " + tail)
 
 
+# ───────────────── 안전장치: 수집 급감 검증 · 캐시 재사용 ─────────────────
+STATE_PATH = "state.json"
+CACHE_PATH = ".cache/last_items.json"
+DROP_RATIO = float(os.getenv("DROP_RATIO", "0.30"))          # 직전 판 대비 이 비율 미만이면 '급감' 의심
+DROP_MIN_PREV = int(os.getenv("DROP_MIN_PREV", "20"))        # 직전 판이 이보다 적으면 검사 생략
+FEED_BAD_RATIO = float(os.getenv("FEED_BAD_RATIO", "0.35"))  # 빈/실패 피드 비율이 이 이상이면 수집 장애로 판정
+CACHE_MAX_HOURS = float(os.getenv("CACHE_MAX_HOURS", "14"))  # 캐시 유효 시간
+
+
+def _load_state():
+    try:
+        with open(STATE_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _save_state(items_n, stats):
+    try:
+        with open(STATE_PATH, "w", encoding="utf-8") as f:
+            json.dump({"last_items": items_n,
+                       "last_run_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+                       "feeds": stats}, f, ensure_ascii=False, indent=1)
+    except Exception as ex:
+        print(f"[warn] state save failed: {ex}")
+
+
+def _feeds_unhealthy(stats):
+    total = stats.get("feeds") or 0
+    if not total:
+        return True
+    return (stats.get("empty", 0) + stats.get("failed", 0)) / total >= FEED_BAD_RATIO
+
+
+def _cache_save(items):
+    try:
+        os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
+        rows = []
+        for it in items:
+            r = dict(it)
+            r["dt"] = it["dt"].isoformat()
+            rows.append(r)
+        with open(CACHE_PATH, "w", encoding="utf-8") as f:
+            json.dump({"saved_utc": datetime.now(timezone.utc).isoformat(), "items": rows},
+                      f, ensure_ascii=False)
+    except Exception as ex:
+        print(f"[warn] cache save failed: {ex}")
+
+
+def _cache_load():
+    try:
+        with open(CACHE_PATH, encoding="utf-8") as f:
+            blob = json.load(f)
+        saved = datetime.fromisoformat(blob.get("saved_utc", ""))
+        if saved.tzinfo is None:
+            saved = saved.replace(tzinfo=timezone.utc)
+        if datetime.now(timezone.utc) - saved > timedelta(hours=CACHE_MAX_HOURS):
+            print("[info] 캐시가 오래되어 정상 수집으로 전환")
+            return None
+        rows = []
+        for r in blob.get("items", []):
+            r = dict(r)
+            r["dt"] = datetime.fromisoformat(r["dt"])
+            rows.append(r)
+        return rows or None
+    except Exception:
+        return None
+
+
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
     start_q, label_ko = window_bounds(now_q)
-    items = collect(start_q.astimezone(timezone.utc), now_utc)
+    render_only = os.getenv("RENDER_ONLY", "") == "1"
+    force_pub = os.getenv("FORCE_PUBLISH", "") == "1"
+    state = _load_state()
+    prev_n = int(state.get("last_items") or 0)
+    floor_n = prev_n * DROP_RATIO
+
+    items = _cache_load() if render_only else None
+    if items is not None:
+        stats = dict(state.get("feeds") or {})
+        print(f"[info] RENDER_ONLY: 직전 수집 캐시 {len(items)}건 재사용(재수집 생략)")
+    else:
+        items = collect(start_q.astimezone(timezone.utc), now_utc)
+        stats = dict(FEED_STATS)
+        # 급감이 보여도 바로 중단하지 않고 재수집으로 교차검증 → 피드가 정상이면 '실제 감소'로 보고 발행
+        if not force_pub and prev_n >= DROP_MIN_PREV and len(items) < floor_n:
+            print(f"[warn] 기사 급감 감지: {len(items)}건 (직전 {prev_n}건) — 30초 후 재수집해 검증")
+            time.sleep(30)
+            items2 = collect(start_q.astimezone(timezone.utc), now_utc)
+            stats2 = dict(FEED_STATS)
+            if len(items2) > len(items):
+                items, stats = items2, stats2
+            if len(items) < floor_n and _feeds_unhealthy(stats):
+                print(f"[abort] 수집 장애로 판단(빈 {stats.get('empty')}·실패 {stats.get('failed')}/{stats.get('feeds')} 피드) — 기존 페이지 유지, 이번 회차 발행 생략")
+                return
+            if len(items) < floor_n:
+                print(f"[info] 피드 정상(빈 {stats.get('empty')}·실패 {stats.get('failed')}/{stats.get('feeds')}) — 실제 감소로 확인, 그대로 발행")
+        _cache_save(items)
     pool = build_issue_pool(items)
     issues = gemini_issues(pool, label_ko)
     flat = None if issues else gemini_flat(pool, label_ko)
@@ -1589,6 +1710,7 @@ def main():
     for r in reports:
         rep_srcs[r.get("source", "?")] = rep_srcs.get(r.get("source", "?"), 0) + 1
     print("report sources:", sorted(rep_srcs.items(), key=lambda kv: -kv[1]))
+    _save_state(len(items), stats)
 
 
 def _merge_reports(items, now_utc):
