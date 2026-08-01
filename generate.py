@@ -170,6 +170,8 @@ def source_region(src, korean):
 DIRECT_FEEDS = [
     ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
     ("BBC Middle East", "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
+    ("CNN Middle East", "http://rss.cnn.com/rss/edition_meast.rss"),
+    ("Times of Israel", "https://www.timesofisrael.com/feed/"),
 ]
 
 QUICK_LINKS = {
