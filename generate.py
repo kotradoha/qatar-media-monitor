@@ -1285,11 +1285,26 @@ def render_issues(issues, pool, now_utc, L=None):
         theme = esc(str(iss.get("theme", f"{L['issue']} {n}")))
         bullets = _summary_bullets(iss.get("summary", ""))
         body = ('<ul class="sumbul">' + "".join(f'<li>{esc(b)}</li>' for b in bullets) + '</ul>') if bullets else ""
+        # 이슈의 유효 ids 먼저 계산(※ 박스 근거 링크 폴백에 사용)
+        raw_ids = iss.get("ids")
+        ids = [j for j in (raw_ids if isinstance(raw_ids, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
         # 카타르 직접 피격·피해가 이 사안에 포함되면 별도 이슈로 빼지 않고 이슈 내부에 ※ 박스로 상세 표기
         qi_items = _summary_bullets(iss.get("qatar_impact", ""))
-        # ※ 박스 근거 출처를 ↗ 외부링크 칩으로(한 곳이면 하나, 여러 곳이면 여럿). 해당 기사는 우측 목록에도 그대로 노출됨.
+        # ※ 박스 근거 출처를 ↗ 외부링크 칩으로. 모델이 qatar_impact_ids를 주면 그걸 쓰고,
+        #  안 주면 요약 텍스트에 언급된 출처명 → (없으면) 제목에 '카타르/Qatar' 포함 기사로 자동 매칭(폴백).
         _qraw = iss.get("qatar_impact_ids")
         qi_ids = [j for j in (_qraw if isinstance(_qraw, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
+        if qi_items and not qi_ids:
+            _qtxt = " ".join(str(x) for x in (iss.get("qatar_impact") if isinstance(iss.get("qatar_impact"), list) else [iss.get("qatar_impact") or ""])).lower()
+            for j in ids:
+                _k = (pool[j].get("source") or "").split()
+                if _k and _k[0].lower() in _qtxt:
+                    qi_ids.append(j)
+            if not qi_ids:
+                _cand = [j for j in ids if ("qatar" in (pool[j].get("title") or "").lower() or "카타르" in (pool[j].get("title") or ""))]
+                _cand.sort(key=lambda j: 0 if pool[j]["region"] != "korea" else 1)
+                qi_ids = _cand[:2]
+            qi_ids = qi_ids[:4]
         _seen_q = set()
         qi_links = ""
         for j in qi_ids:
@@ -1303,8 +1318,6 @@ def render_issues(issues, pool, now_utc, L=None):
                 + '<ul class="qbul">' + "".join(f'<li>{esc(b)}</li>' for b in qi_items) + '</ul>'
                 + (f'<div class="qlinks">{qi_links}</div>' if qi_links else "")
                 + '</div>') if qi_items else ""
-        raw_ids = iss.get("ids")
-        ids = [j for j in (raw_ids if isinstance(raw_ids, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
         arts = [pool[j] for j in ids]
         _recent = lambda lst: sorted(lst, key=lambda a: a["dt"], reverse=True)   # 권역 그룹 내 최신 기사 순
         q = _recent([a for a in arts if a["region"] == "qatar"])
@@ -1367,10 +1380,11 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     if issue_pool is None:
         issue_pool = items[:POOL_FOR_ISSUES]
     # 전체 기사 목록 컬럼은 '출처 매체의 권역' 기준으로 분류(한국 매체가 카타르 현지 칸에 섞이지 않도록)
-    qatar = [x for x in items if x["region"] == "qatar"][:MAX_PER_SECTION]
-    me_ir = [x for x in items if x["region"] == "iran"][:MAX_PER_SECTION]
-    me_ov = [x for x in items if x["region"] == "overseas"][:MAX_PER_SECTION]
-    me_kr = [x for x in items if x["region"] == "korea"][:MAX_PER_SECTION]
+    # 전체 목록은 권역별 상한 없이 전량 노출 → 목록 총계가 상단 '모니터링 건수' 합계와 정확히 일치(4개 권역이 items를 빠짐없이 분할).
+    qatar = [x for x in items if x["region"] == "qatar"]
+    me_ir = [x for x in items if x["region"] == "iran"]
+    me_ov = [x for x in items if x["region"] == "overseas"]
+    me_kr = [x for x in items if x["region"] == "korea"]
     # 모니터링 건수: 카타르 관련(현지매체+카타르 키워드) vs 그 외 중동 정세 — 관련성 기준, 미제한 집계
     n_qatar = sum(1 for x in items if x["qatar"] or x["region"] == "qatar")
     n_mideast = len(items) - n_qatar
