@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-카타르·중동정세 언론 모니터링 (대사관/공관용, 무료·완전자동)
+카타르·중동 정세 언론 모니터링 (대사관/공관용, 무료·완전자동)
 - 갱신 주기(직전 갱신 → 이번 갱신) '창(window)' 안 기사만 수집
 - (무료 Gemini) 창 내 기사를 '사안(issue)'별로 자동 묶어: 왼쪽=요약, 오른쪽=관련 기사(카타르/해외/국내)
   * 사안 묶기 실패 시 → '전체 요약 → 기사 나열' 자동 폴백
-- 아래에 전체 기사 목록(카타르 필수 / 중동정세 해외·국내) + 관심 매체 링크
+- 아래에 전체 기사 목록(카타르 필수 / 중동 정세 해외·국내) + 관심 매체 링크
 - GitHub Actions가 하루 2회(카타르시간 07:00 / 15:30) 실행 → 커밋/게시 → 공개 URL 자동 갱신
 
 환경변수 GEMINI_API_KEY 필요(무료). 없거나 한도 초과(429) 시 요약만 빠지고 나머지는 정상.
@@ -26,7 +26,7 @@ except ImportError:
     raise SystemExit("feedparser가 필요합니다: pip install feedparser")
 
 # ───────────────────────── CONFIG ─────────────────────────
-TITLE = "🇶🇦 카타르·중동정세 언론 모니터링"
+TITLE = "🇶🇦 카타르·중동 정세 언론 모니터링"
 SUBTITLE = ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
             "AI 사안별 요약과 관련 기사 원문 링크 제공")
 
@@ -272,14 +272,14 @@ QGROUP_I18N = {
 LANG = {
  "ko": {
   "dir": "ltr", "html": "ko",
-  "title": "카타르·중동정세 언론 모니터링", "title2": "Qatar & Middle East — Media Monitor",
-  "subtitle": ("매일 두 차례(카타르 시각 오전 7시, 오후 3시 30분)에 걸쳐 카타르, 이란, 글로벌 및 한국 주요 언론 보도를 취합하여 "
-               "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 내역도 참고로 보실 수 있으며, "
-               "매주 일요일 오전에는 지난 한 주를 총정리한 주간 리포트가 함께 발행됩니다."),
+  "title": "카타르·중동 정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
+  "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·글로벌·한국 주요 언론보도를 취합하여 "
+               "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 참고로 보실 수 있으며, "
+               "매주 일요일 오전에는 지난 한 주를 총정리한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
-  "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
+  "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
-            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등"),
+            "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리"),
   "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
@@ -294,7 +294,7 @@ LANG = {
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "(국내외 연구기관·국제기구·컨설팅사 발간물)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "중동 정세 심층 분석·보고서", "rep_note": "(국내외 연구기관·국제기구·컨설팅사 발간물)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
@@ -306,10 +306,11 @@ LANG = {
  },
  "en": {
   "dir": "ltr", "html": "en",
-  "title": "Qatar & Middle East — Media Monitor", "title2": "",
+  "title": "Qatar & Middle East — Daily·Weekly Media Monitor", "title2": "",
   "subtitle": ("Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, global and Korean outlets "
                "is compiled into AI issue summaries with source links. Recent reports from relevant institutions are also "
-               "provided for reference, and every Sunday morning a weekly report recapping the past week is published."),
+               "provided for reference, and every Sunday morning a weekly report recapping the past week is published. "
+               "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
@@ -342,10 +343,10 @@ LANG = {
  },
  "ar": {
   "dir": "rtl", "html": "ar",
-  "title": "رصد الإعلام: قطر والشرق الأوسط", "title2": "",
+  "title": "رصد الإعلام اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "",
   "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني والعالمي والكوري في "
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر أحدث تقارير المؤسسات المعنية للاطلاع، "
-               "ويصدر صباح كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم."),
+               "ويصدر صباح كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
@@ -953,7 +954,7 @@ def gemini_flat(pool, win_label):
         "당신은 주카타르대사관 상황실의 뉴스 요약 담당입니다. 아래 커버기간 "
         f"'{win_label}' 기사(제목/매체/발췌)를 근거로 한국어 핵심 요약을 작성하세요. 형식:\n"
         "■ 핵심 요약: (불릿 3~6개)\n■ 핵심 수치: (사상자·미사일·유가·호르무즈 비중 등 불릿; 없으면 '특이 수치 없음')\n"
-        "■ 카타르 관련: (불릿 2~4개, 없으면 '해당 기간 카타르 직접 특이사항 없음')\n■ 중동정세 주요: (불릿 3~6개)\n"
+        "■ 카타르 관련: (불릿 2~4개, 없으면 '해당 기간 카타르 직접 특이사항 없음')\n■ 중동 정세 주요: (불릿 3~6개)\n"
         "모든 불릿은 정부보고서식 '개조식·했음체'로, 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝낼 것(서술체 '-했다/-이다' 금지). "
         "제목·발췌에 없는 사실은 창작 금지. 불릿 끝에 (매체명). '- '로 시작. 마크다운 헤더(#) 금지.\n\n"
         + "\n".join(lines)
@@ -1363,7 +1364,7 @@ TEMPLATE = """<!DOCTYPE html>
 <div class="wrap">
   <header>
     {nav}
-    <div class="titrow"><div class="titcol"><h1>{title}{edition}</h1>{title2}{orgline}</div></div>
+    <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}</div></div>
     <div class="sub"><span>{subtitle}</span></div>
     <div class="scopebar">🎯 {scope}</div>
     <div class="submeta">
