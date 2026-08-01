@@ -37,8 +37,10 @@ SUBTITLE = ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 
             "AI 사안별 요약과 관련 기사 원문 링크 제공")
 
 Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security",
-              "QatarEnergy LNG", "Qatar mediation Gaza", "Qatar Airways", "Qatar Emir diplomacy"]
-Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관"]
+              "QatarEnergy LNG", "Qatar mediation Gaza", "Qatar Airways", "Qatar Emir diplomacy",
+              "Qatar attack strike", "Al Udeid base attack", "Qatar airspace missile drone"]
+Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관",
+              "카타르 피격", "카타르 공격", "카타르 영공"]
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
                 "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping",
                 "Iran nuclear talks", "Houthi Red Sea attack", "OPEC oil output", "Israel Iran strike",
@@ -248,6 +250,7 @@ QUICK_LINKS = {
         ("이데일리", "https://www.edaily.co.kr/")],
     "🏛️ 카타르 정부": [("외교부 (MOFA)", "https://mofa.gov.qa/en"),
         ("내무부 (MOI)", "https://www.moi.gov.qa/"),
+        ("내무부 공식 X — 보안·긴급 공지", "https://x.com/MOI_QatarEn"),
         ("국방부 (MOD)", "https://www.mod.gov.qa/"),
         ("카타르에너지 (QatarEnergy)", "https://www.qatarenergy.qa/en"),
         ("민간항공청 (CAA)", "https://caa.gov.qa/en/"),
@@ -256,7 +259,7 @@ QUICK_LINKS = {
         ("주카타르대사관", "https://overseas.mofa.go.kr/qa-ko/index.do"),
         ("해외안전여행(0404)", "https://www.0404.go.kr/"),
         ("대통령실", "https://www.president.go.kr/"),
-        ("korea.net", "https://www.korea.net/"),
+        ("Korea.net", "https://www.korea.net/"),
         ("산업통상부", "https://www.motie.go.kr/"),
         ("국토교통부", "https://www.molit.go.kr/"),
         ("해양수산부", "https://www.mof.go.kr/"),
@@ -1066,6 +1069,9 @@ def gemini_issues(pool, win_label, weekly=False):
         "날씨·기상, 스포츠, 연예·문화·생활, 단순 지역 사건사고, 종교 일반 등은 사안으로 뽑지 마세요. "
         "다만 이런 소재라도 카타르 국익·에너지·안보·물류·외교에 직접 연결되면 포함합니다"
         "(예: 가자 휴전 협상·카타르 중재는 '외교·중재' 사안으로 포함하되, 개별 난민의 생활고 미담은 제외).\n"
+        "【최우선 감지(반드시)】 카타르 본토·시설·기지(예: 알우데이드)·영공·해역·인원이 직접 공격·피격·미사일/드론 침범을 당했거나 "
+        "카타르 내 피해(사상·시설 파손·폭발·정전·통신/항공 마비 등)가 발생한 정황이 기사에 조금이라도 있으면, **절대 누락하지 말고 반드시 최상단 사안으로** 뽑고, "
+        "무엇이·어디를·언제·피해규모(사상자·피해 정도)·현재 상태를 구체적으로 명시하세요(정보가 단편적이면 '확인 중'으로라도 반드시 다룸).\n"
         "핵심 판별 기준: 가자·이스라엘·이란 등 소재라도 ①카타르가 실제로 역할·조치를 했거나(중재·성명·정상외교·지원·군사·에너지 등), "
         "②카타르가 공격·공습을 당하거나 카타르의 안보·영공·경제·에너지·항공·교민 안전이 직접 영향받거나, "
         "③사안이 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
@@ -1077,6 +1083,8 @@ def gemini_issues(pool, win_label, weekly=False):
         "(예: '미·이스라엘의 이란 공습설'과 '이란의 보복 위협'이 같은 국면이면 한 사안으로 묶고, 각 전개는 그 사안의 summary 항목으로 정리). "
         "사실상 중복·인접한 국면을 여러 사안으로 쪼개지 말고, 반대로 본질이 다른 사안(예: 군사충돌 vs LNG 계약)은 분명히 분리하세요. "
         "묶을지 나눌지 애매하면, 카타르 국익 관점에서 '하나의 판단 단위'가 되는지를 기준으로 결정하세요.\n"
+        "【다수 소스 종합】 카타르 현지·이란·역내·미국·유럽·글로벌·국내 등 다양한 매체가 대량 취합됩니다. 그만큼 "
+        "**가장 중요·시급·파급력 큰 사안을 정확히 선별하고 우선순위를 매기는 것**과, **핵심 팩트·수치·구체 정황을 밀도 있게 담는 것**이 특히 중요합니다.\n"
         "【품질 기준】 요약은 반드시 **객관적·팩트 위주**로, 오직 **취합된 기사(제목·발췌) 내용에만 근거**해 작성하세요. "
         "확인된 사실과 수치만 사용하고 추측·과장·주관적 논평·창작은 금지하며(원문에 없는 내용·수치·전망을 지어내지 말 것), "
         "각 사안이 '무엇이 일어났고 카타르에 어떤 함의인지'가 요약만으로 드러나게 작성하세요.\n"
