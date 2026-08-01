@@ -19,6 +19,7 @@ import time
 import socket
 import calendar
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 
 # 네트워크 무한 대기 방지: 어떤 소켓 작업도 이 시간을 넘기면 예외 발생(피드/LLM 호출이 걸려도 빌드가 멈추지 않도록).
@@ -46,16 +47,28 @@ Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 
 # 네이버 뉴스에서 '카타르'·'중동' 검색 시 노출되는 기사 포함(구글뉴스 site:로 네이버 뉴스 도메인 조준)
 Q_NAVER_KO = ["카타르", "중동"]
 NAVER_NEWS_DOMAINS = ["n.news.naver.com", "news.naver.com"]
-# 카타르 현지 주요 매체 도메인(구글뉴스 site:로 직접 조준 — 이슈별 현지 소스 확보용)
+# ── 하단 '링크모음'의 전(全) 언론매체를 매 회차 site: 조준으로 직접 모니터링(내부보고: 링크의 모든 매체 상시 모니터링) ──
+# 카타르 현지: Qatar/Middle East 주제와 무관하게도 현지 보도를 폭넓게 확보(관련성 필터가 비관련 제거) → 바로 site:
 QATAR_LOCAL_SITES = ["gulf-times.com", "thepeninsulaqatar.com", "dohanews.co",
-                     "qatar-tribune.com", "lusailnews.qa", "qna.org.qa"]
-# 링크모음에 실린 해외·역내 주요 매체를 매 회차 직접 모니터링(중동 주제로 조준 — 누락 방지)
-MEDIA_MONITOR_SITES = [   # ME 전문·역내·신흥 매체는 도메인 조준으로 직접 확보(글로벌 대형지는 영문 주제쿼리로 이미 커버, CNN·BBC·Times of Israel·Al Jazeera는 DIRECT_FEEDS)
-    "axios.com", "politico.com", "cnbc.com",
-    "middleeasteye.net", "al-monitor.com", "aa.com.tr", "english.alarabiya.net",
-    "tehrantimes.com", "presstv.ir", "en.irna.ir", "iranintl.com",
+                     "qatar-tribune.com", "lusailnews.qa", "qna.org.qa", "aljazeera.com"]
+# 이란·역내 + 해외(미국·유럽 등) 매체 — 전 세계 보도를 다루므로 '중동 주제'로 조준
+FOREIGN_MEDIA_SITES = [
+    # 이란·역내
+    "tehrantimes.com", "presstv.ir", "irna.ir", "iranintl.com", "english.alarabiya.net",
+    # 해외(미국·유럽 등)
+    "cnn.com", "reuters.com", "bbc.com", "apnews.com", "theguardian.com", "nytimes.com",
+    "bloomberg.com", "wsj.com", "ft.com", "washingtonpost.com", "economist.com",
+    "axios.com", "politico.com", "cnbc.com", "al-monitor.com", "middleeasteye.net",
+    "timesofisrael.com", "aa.com.tr",
+]
+# 국내(한국) 종합·방송·경제지 — 국문 '중동 주제'로 조준
+KOREA_MEDIA_SITES = [
+    "yna.co.kr", "ytn.co.kr", "kbs.co.kr", "imbc.com", "sbs.co.kr", "jtbc.co.kr", "nocutnews.co.kr",
+    "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "khan.co.kr",
+    "mk.co.kr", "hankyung.com", "fnnews.com", "sedaily.com", "edaily.co.kr",
 ]
 MEDIA_TOPIC = "(Qatar OR Iran OR Israel OR Gaza OR Hormuz OR Gulf)"
+MEDIA_TOPIC_KO = "(카타르 OR 중동 OR 이란 OR 이스라엘 OR 호르무즈 OR 걸프 OR 가자)"
 # 연구기관·에너지 기관의 중동·유가·카타르 분석/보고서 수집용 쿼리(뜨면 최상단 강조)
 Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
                 "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석",
@@ -612,12 +625,13 @@ def collect(win_start_utc, now_utc, when_days=2):
     for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
     for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
     for q in Q_MIDEAST_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
-    # 카타르 현지 주요 매체를 도메인 조준으로 직접 수집(이슈별 현지 소스 누락 방지 — 관련성 필터가 비관련 기사 제거)
+    # 링크모음의 전 언론매체를 매 회차 site: 조준으로 직접 모니터링(카타르 현지=폭넓게, 해외·역내=중동주제, 국내=국문 중동주제)
     for dom in QATAR_LOCAL_SITES:
         feeds.append(("en", f"[qa]{dom}", gnews_url(f"site:{dom}", "en", when_days)))
-    # 링크모음에 실린 해외·역내 주요 매체를 중동 주제로 매 회차 직접 모니터링(누락 방지)
-    for dom in MEDIA_MONITOR_SITES:
+    for dom in FOREIGN_MEDIA_SITES:
         feeds.append(("en", f"[m]{dom}", gnews_url(f"site:{dom} {MEDIA_TOPIC}", "en", when_days)))
+    for dom in KOREA_MEDIA_SITES:
+        feeds.append(("ko", f"[kr]{dom}", gnews_url(f"site:{dom} {MEDIA_TOPIC_KO}", "ko", when_days)))
     # 네이버 뉴스 '카타르'/'중동' 검색 결과(네이버 도메인 조준)
     for q in Q_NAVER_KO:
         for dom in NAVER_NEWS_DOMAINS:
@@ -629,13 +643,23 @@ def collect(win_start_utc, now_utc, when_days=2):
         feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
-    socket.setdefaulttimeout(FEED_TIMEOUT)   # 피드 수집 동안엔 더 짧은 타임아웃 적용
-    try:
-      for lang, label, url in feeds:
+    def _fetch(job):
+        lang, label, url = job
         try:
-            d = feedparser.parse(url)
+            return (lang, label, feedparser.parse(url))
         except Exception as ex:
             print(f"[warn] feed failed {url}: {ex}")
+            return (lang, label, None)
+
+    socket.setdefaulttimeout(FEED_TIMEOUT)   # 피드 수집 동안엔 더 짧은 타임아웃 적용
+    try:
+        with ThreadPoolExecutor(max_workers=16) as _ex:   # 피드 병렬 수집(매체 수 많아도 빠르게)
+            fetched = list(_ex.map(_fetch, feeds))
+    finally:
+        socket.setdefaulttimeout(90)   # 피드 수집 종료 후 기본 타임아웃 복원(LLM 호출 여유)
+    # 결과 처리(단일 스레드 — dedup/append 안전)
+    for lang, label, d in fetched:
+        if d is None:
             continue
         for e in d.entries:
             title = clean_title(e.get("title", "").strip())
@@ -675,8 +699,6 @@ def collect(win_start_utc, now_utc, when_days=2):
             items.append({"title": title, "link": link, "source": src, "dt": dt,
                           "qatar": is_qatar, "desc": desc, "korean": kor, "shref": shref,
                           "report": report, "region": source_region(src, kor)})
-    finally:
-        socket.setdefaulttimeout(90)   # 피드 수집 종료 후 기본 타임아웃 복원(LLM 호출 여유)
     items.sort(key=lambda x: x["dt"], reverse=True)
     return items
 
@@ -1062,7 +1084,10 @@ def gemini_issues(pool, win_label, weekly=False):
         "(사건의 주체·당사자인 기관·기업·정부·인물은 당연히 서술 대상이므로 그대로 포함.) "
         "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
         "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
-        "ids(그 사안 관련 기사 id 정수 배열, 최대 16개).\n"
+        "ids(그 사안 관련 기사 id 정수 배열, 최대 30개).\n"
+        "【요약↔링크 일치(필수)】 summary에서 인용·참조하거나 근거로 삼은 기사는 **반드시 그 사안의 ids에 그 기사 id를 포함**하세요. "
+        "즉 요약에 등장하는 사실·주장·수치의 출처가 된 기사는 하나도 빠짐없이 ids에 넣어, 아래 '연관 보도내역·링크'만 봐도 요약의 근거를 모두 확인할 수 있게 하세요. "
+        "요약에 담기지 않은 관련 기사라도 같은 사안이면 ids에 포함하되, **요약에 쓴 내용의 출처 기사는 절대 누락 금지**입니다.\n"
         "중요 규칙:\n"
         "- [카타르현지]는 '카타르 매체발'이라는 출처 표시일 뿐, 그 자체로 사안 가치를 부여하지 않습니다. "
         "카타르가 실제로 역할·조치를 한 사안(중재·성명·정상외교·지원·군사·에너지 계약 등)이나, 카타르가 공격·공습을 당하거나 "
@@ -1250,6 +1275,11 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     home_url = home_url or SITE_BASE
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
+    _wd = {"ko": ["월", "화", "수", "목", "금", "토", "일"],
+           "en": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+           "ar": ["الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
+           }.get(lang, ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"])
+    updated_str = f"{now_q.strftime('%Y/%m/%d')}({_wd[now_q.weekday()]}) {now_q.strftime('%H:%M')}"
     if issue_pool is None:
         issue_pool = items[:POOL_FOR_ISSUES]
     def is_pin(x): return x["qatar"] or x["region"] == "qatar"
@@ -1345,7 +1375,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
         counts_label=esc(L["counts_label"]),
-        updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
+        updated=updated_str, window=esc(win_label),
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
         full_note=esc(L["full_note"]),
         expand=esc(L["expand"]), collapse=esc(L["collapse"]),
