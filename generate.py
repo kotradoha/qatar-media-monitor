@@ -16,9 +16,14 @@ import re
 import json
 import html
 import time
+import socket
 import calendar
 import urllib.request
 from datetime import datetime, timezone, timedelta
+
+# 네트워크 무한 대기 방지: 어떤 소켓 작업도 이 시간을 넘기면 예외 발생(피드/LLM 호출이 걸려도 빌드가 멈추지 않도록).
+socket.setdefaulttimeout(90)
+FEED_TIMEOUT = 20   # RSS 피드는 응답이 빠르므로 더 짧게 제한
 
 try:
     import feedparser
@@ -554,7 +559,9 @@ def collect(win_start_utc, now_utc, when_days=2):
         feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
 
-    for lang, label, url in feeds:
+    socket.setdefaulttimeout(FEED_TIMEOUT)   # 피드 수집 동안엔 더 짧은 타임아웃 적용
+    try:
+      for lang, label, url in feeds:
         try:
             d = feedparser.parse(url)
         except Exception as ex:
@@ -598,6 +605,8 @@ def collect(win_start_utc, now_utc, when_days=2):
             items.append({"title": title, "link": link, "source": src, "dt": dt,
                           "qatar": is_qatar, "desc": desc, "korean": kor, "shref": shref,
                           "report": report, "region": source_region(src, kor)})
+    finally:
+        socket.setdefaulttimeout(90)   # 피드 수집 종료 후 기본 타임아웃 복원(LLM 호출 여유)
     items.sort(key=lambda x: x["dt"], reverse=True)
     return items
 
