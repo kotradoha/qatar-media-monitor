@@ -55,6 +55,7 @@ QATAR_LOCAL_SITES = ["gulf-times.com", "thepeninsulaqatar.com", "dohanews.co",
 FOREIGN_MEDIA_SITES = [
     # 이란·역내
     "tehrantimes.com", "presstv.ir", "irna.ir", "iranintl.com", "english.alarabiya.net",
+    "tasnimnews.com", "en.mehrnews.com", "farsnews.ir",
     # 해외(미국·유럽 등)
     "cnn.com", "reuters.com", "bbc.com", "apnews.com", "theguardian.com", "nytimes.com",
     "bloomberg.com", "wsj.com", "ft.com", "washingtonpost.com", "economist.com",
@@ -195,6 +196,12 @@ DIRECT_FEEDS = [
     ("BBC Middle East", "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
     ("CNN Middle East", "http://rss.cnn.com/rss/edition_meast.rss"),
     ("Times of Israel", "https://www.timesofisrael.com/feed/"),
+    # 이란·역내 1차 정보원 — 구글뉴스가 이란 국영매체를 잘 색인하지 않으므로 직접 RSS로 확보(누락 방지)
+    ("Tehran Times", "https://www.tehrantimes.com/rss"),
+    ("Press TV", "https://www.presstv.ir/rss.xml"),
+    ("Mehr News", "https://en.mehrnews.com/rss"),
+    ("IRNA", "https://en.irna.ir/rss"),
+    ("Middle East Eye", "https://www.middleeasteye.net/rss"),
 ]
 
 QUICK_LINKS = {
@@ -1299,11 +1306,14 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     updated_str = f"{now_q.strftime('%Y/%m/%d')}({_wd[now_q.weekday()]}) {now_q.strftime('%H:%M')}"
     if issue_pool is None:
         issue_pool = items[:POOL_FOR_ISSUES]
-    def is_pin(x): return x["qatar"] or x["region"] == "qatar"
-    qatar = [x for x in items if is_pin(x)][:MAX_PER_SECTION]
-    me_ov = [x for x in items if not is_pin(x) and x["region"] == "overseas"][:MAX_PER_SECTION]
-    me_ir = [x for x in items if not is_pin(x) and x["region"] == "iran"][:MAX_PER_SECTION]
-    me_kr = [x for x in items if not is_pin(x) and x["region"] == "korea"][:MAX_PER_SECTION]
+    # 전체 기사 목록 컬럼은 '출처 매체의 권역' 기준으로 분류(한국 매체가 카타르 현지 칸에 섞이지 않도록)
+    qatar = [x for x in items if x["region"] == "qatar"][:MAX_PER_SECTION]
+    me_ir = [x for x in items if x["region"] == "iran"][:MAX_PER_SECTION]
+    me_ov = [x for x in items if x["region"] == "overseas"][:MAX_PER_SECTION]
+    me_kr = [x for x in items if x["region"] == "korea"][:MAX_PER_SECTION]
+    # 모니터링 건수: 카타르 관련(현지매체+카타르 키워드) vs 그 외 중동 정세 — 관련성 기준, 미제한 집계
+    n_qatar = sum(1 for x in items if x["qatar"] or x["region"] == "qatar")
+    n_mideast = len(items) - n_qatar
 
     def block(rows, empty):
         return "\n".join(li(x, now_utc, L) for x in rows) or f'<li class="empty">{empty}</li>'
@@ -1390,7 +1400,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
-        counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
+        counts=L["counts"].format(q=n_qatar, me=n_mideast),
         counts_label=esc(L["counts_label"]),
         updated=updated_str, window=esc(win_label),
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
