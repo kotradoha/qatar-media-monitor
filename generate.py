@@ -1729,9 +1729,9 @@ TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
 <div class="wrap">
+  {nav}
+  <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}</div></div>
   <header>
-    {nav}
-    <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}</div></div>
     <div class="sub"><span>{subtitle}</span></div>
     <div class="scopebar">🎯 {scope}</div>
     <div class="submeta">
