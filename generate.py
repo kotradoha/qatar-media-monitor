@@ -81,7 +81,7 @@ QATAR_SOURCES = ["qatar news agency", "qna", "gulf times", "gulf-times", "the pe
 KOREA_SOURCES = [
     # 통신사·방송
     "yonhap", "연합", "뉴시스", "newsis", "뉴스1", "news1", "ytn", "kbs", "mbc", "sbs", "jtbc", "연합뉴스tv",
-    "cbs", "노컷", "nocut", "nocutnews",
+    "노컷", "nocut", "nocutnews",
     # 종합일간지
     "조선", "chosun", "중앙", "joongang", "joins", "동아", "donga",
     "한겨레", "hani", "경향", "khan", "kyunghyang",
@@ -145,7 +145,7 @@ OVERSEAS_SOURCES = [
     "the national", "gulf news", "khaleej times", "arab news", "anadolu", "aa.com",
     "news on air", "akashvani", "the hindu", "hindustan times", "times of india", "ndtv",
     "modern ghana", "indexbox", "south china morning post", "scmp", "nikkei", "the diplomat",
-    "semafor", "cbs news", "cbsnews", "abc news", "nbc news", "usa today", "al monitor",
+    "semafor", "cbs news", "cbsnews", "sbs news", "sbs world", "sbs.com.au", "abc news", "nbc news", "usa today", "al monitor",
     "al-monitor", "middle east institute", "amwaj", "the cradle", "responsible statecraft",
 ]
 
@@ -301,8 +301,8 @@ LANG = {
   "title": "카타르·중동 정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
   "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고로 보실 수 있으며, "
-               "매주 일요일 오전에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
-  "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
+               "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
+  "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
             "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리"),
@@ -324,7 +324,7 @@ LANG = {
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
-  "foot": ("본 페이지는 카타르·이란·기타 주요 국가·한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
+  "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
            "심층 보고서는 국내외 연구기관·국제기구·에너지기관의 발행처 도메인을 직접 조준해 수집합니다. "
            "수집된 기사는 Anthropic Claude(Haiku 4.5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역합니다. "
@@ -339,9 +339,9 @@ LANG = {
   "title": "Qatar & Middle East — Daily·Weekly Media Monitor", "title2": "",
   "subtitle": ("Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, other major countries' and Korean outlets "
                "is compiled into AI issue summaries with source links. A list of the latest reports from relevant institutions is also "
-               "available for reference lower on the page, and every Sunday morning a weekly report recapping the past week is published. "
+               "available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. "
                "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
-  "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
+  "updated": "Monitored at", "tz": "Qatar time", "coverage": "Monitoring period",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
@@ -381,8 +381,8 @@ LANG = {
   "title": "رصد الإعلام اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "",
   "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني وسائر الدول الرئيسية والكوري في "
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
-               "ويصدر صباح كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
-  "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
+               "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
+  "updated": "وقت الرصد", "tz": "بتوقيت قطر", "coverage": "فترة الرصد",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
@@ -948,7 +948,10 @@ def gemini_issues(pool, win_label, weekly=False):
         "'사안(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
         "카테고리 예시: 전쟁·군사(공습·교전 추이) / 외교·중재 / 에너지·유가·LNG / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 경제·통상 / 항공·교민안전.\n"
-        "사안은 카타르 국익 관련성이 높은 순서로 배열하세요.\n"
+        "【사안 배열 순서】 기본적으로 위 모니터링 분야 순서, 즉 ①전쟁·군사 ②외교·중재 ③에너지·유가·LNG "
+        "④물류·해상안전 ⑤경제·통상 ⑥항공·교민안전 의 순서를 가급적 따르되, 그날 실제로 기사량이 많거나 "
+        "사안의 가중치·심각도·긴급성이 높아 보이는 사안은 그 순서보다 앞으로 유연하게 배치하세요. "
+        "(예: 카타르항공 운항 차질 등 '항공·교민' 사안은 특별히 심각·시급하지 않는 한 뒤쪽에 배치.)\n"
         "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장. "
         "단, 사안이 '카타르 교민 안전' 또는 '항공 운영'을 다루되 교민이 직접 알아야 할 실질적·행동가능한 "
         "안전 경보·항공 운항 변동 정보가 아니라 배경·정황 참고 수준이면 사안명 맨 끝에 ' 참고'를 붙일 것"
@@ -982,7 +985,10 @@ def gemini_issues(pool, win_label, weekly=False):
         data = json.loads(out)
         issues = data.get("issues") if isinstance(data, dict) else None
         if issues and isinstance(issues, list):
-            return issues
+            # LLM이 문자열/비정상 원소를 섞어 반환해도 빌드가 죽지 않도록 dict 원소만 채택
+            issues = [x for x in issues if isinstance(x, dict) and (x.get("theme") or x.get("summary"))]
+            if issues:
+                return issues
     except Exception as ex:
         print(f"[warn] issues json parse failed: {ex}")
     return None
@@ -1015,7 +1021,7 @@ def translate_issues(issues, lang):
     target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
     if not target:
         return issues
-    payload = [{"theme": i.get("theme", ""), "summary": i.get("summary", "")} for i in issues]
+    payload = [{"theme": i.get("theme", ""), "summary": i.get("summary", "")} for i in issues if isinstance(i, dict)]
     prompt = (
         f"Translate the 'theme' and 'summary' fields of the following JSON into {target}. "
         "'summary' is an array of bullet strings — translate each element and return it as an array of the SAME length and order. "
@@ -1090,7 +1096,7 @@ def link_row(x):
 def render_issues(issues, pool, now_utc, L=None):
     L = L or LANG["ko"]
     out = []
-    for n, iss in enumerate(issues, 1):
+    for n, iss in enumerate((i for i in issues if isinstance(i, dict)), 1):
         theme = esc(str(iss.get("theme", f"{L['issue']} {n}")))
         bullets = _summary_bullets(iss.get("summary", ""))
         body = ('<ul class="sumbul">' + "".join(f'<li>{esc(b)}</li>' for b in bullets) + '</ul>') if bullets else ""
