@@ -1336,8 +1336,8 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   .reprows a .newtag{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:#e5484d;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   footer{{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}}
-  footer .notice-emph{{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--note-bg);border:1px solid rgba(208,59,59,0.35);color:var(--crit-text);font-weight:600;font-size:12.5px;line-height:1.6}}
-  footer .notice-sign{{text-align:end;margin-top:10px;font-weight:400;font-size:12px;color:var(--crit-text);opacity:.85}}
+  footer .notice-emph{{margin-top:12px;padding:12px 14px;border-radius:10px;background:#e2eefb;border:1px solid rgba(42,120,214,0.35);color:#16305e;font-weight:600;font-size:12.5px;line-height:1.6}}
+  footer .notice-sign{{text-align:end;margin-top:10px;font-weight:400;font-size:12px;color:#16305e;opacity:.9}}
   .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}
     .langrow{{justify-content:stretch}} .lang{{width:100%;gap:6px}} .langbtn{{flex:1;text-align:center;padding:10px 8px;font-size:14px}}}}
