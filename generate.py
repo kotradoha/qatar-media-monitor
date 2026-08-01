@@ -399,6 +399,7 @@ LANG = {
   "sign": "- 주카타르대사관 Commercial Section · 도하무역관", "org": "주카타르대사관 Commercial Section · 도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
   "daily_no": "일일 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일일(시범)", "ed_daily": "일일", "ed_weekly": "주간",
+  "no_only": "제{n}호", "wk_incl": " (주간 포함)", "wdays": ["월","화","수","목","금","토","일"],
  },
  "en": {
   "dir": "ltr", "html": "en",
@@ -446,6 +447,7 @@ LANG = {
   "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
   "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)", "ed_daily": "Daily", "ed_weekly": "Weekly",
+  "no_only": "No.{n}", "wk_incl": " (incl. weekly)", "wdays": ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
  },
  "ar": {
   "dir": "rtl", "html": "ar",
@@ -490,6 +492,7 @@ LANG = {
   "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
   "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)", "ed_daily": "يومي", "ed_weekly": "أسبوعي",
+  "no_only": "رقم {n}", "wk_incl": " (يشمل الأسبوعي)", "wdays": ["الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت","الأحد"],
  },
 }
 
@@ -1890,8 +1893,15 @@ def _archive_meta(fname):
 
 def _archive_label_text(meta, L):
     if meta["kind"] == "daily":
-        tail = f"{meta['m']:02d}/{meta['d']:02d} {meta['hh']:02d}:{meta['mm']:02d}"
-        return (L["daily_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["daily_demo"] + " · " + tail)
+        _wd = L.get("wdays", ["","","","","","",""])[meta["dt"].weekday()]
+        tail = f"{meta['m']:02d}/{meta['d']:02d}({_wd}) {meta['hh']:02d}:{meta['mm']:02d}"
+        if not meta["no"]:
+            return L["daily_demo"] + " · " + tail
+        label = L["no_only"].format(n=meta["no"]) + " " + tail
+        # 주간이 함께 발행되는 일요일 오전(07:00) 회차만 '(주간 포함)' 표기
+        if meta.get("hh") == 7 and meta.get("mm") == 0 and meta["dt"].weekday() == WEEKLY_WEEKDAY:
+            label += L["wk_incl"]
+        return label
     tail = f"~{meta['m']:02d}/{meta['d']:02d}"
     return (L["weekly_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_weekly"] + " " + tail)
 
