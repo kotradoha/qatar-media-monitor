@@ -365,6 +365,7 @@ LANG = {
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고로 보실 수 있으며, "
                "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
   "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
+  "two_wk": "(주간)", "two_dl": "(일일)", "wk_range": "지난주 일 07:00 ~ 당일 07:00",
   "win_am": "전일 15:30 ~ 당일 07:00", "win_pm": "당일 07:00 ~ 당일 15:30", "win_pre": "전일 07:00 ~ 전일 15:30",
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건", "counts_label": "모니터링 건수",
   "scope": ("<b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
@@ -406,6 +407,7 @@ LANG = {
                "available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. "
                "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
   "updated": "Monitored at", "tz": "Qatar time", "coverage": "Monitoring period",
+  "two_wk": "(Weekly)", "two_dl": "(Daily)", "wk_range": "Last Sunday 07:00 ~ today 07:00",
   "win_am": "Prev day 15:30 – same day 07:00", "win_pm": "Same day 07:00 – 15:30", "win_pre": "Prev day 07:00 – 15:30",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>", "counts_label": "Monitored items",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
@@ -449,6 +451,7 @@ LANG = {
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
                "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
   "updated": "وقت الرصد", "tz": "بتوقيت قطر", "coverage": "فترة الرصد",
+  "two_wk": "(أسبوعي)", "two_dl": "(يومي)", "wk_range": "الأحد الماضي 07:00 ~ اليوم 07:00",
   "win_am": "الأمس 15:30 – اليوم 07:00", "win_pm": "اليوم 07:00 – 15:30", "win_pre": "الأمس 07:00 – 15:30",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>", "counts_label": "عدد المرصود",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
@@ -1368,8 +1371,15 @@ def _ql_key(item):
 
 
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
-           reports=None, edition=None, weekly_inline=None, lang="ko", nav=None, home_url=None, new_since=None):
+           reports=None, edition=None, weekly_inline=None, lang="ko", nav=None, home_url=None, new_since=None,
+           weekly_from=None):
     L = LANG.get(lang, LANG["ko"])
+    # 모니터링 기간 표기: 주간+일일 동시 발행일(weekly_from 있음)은 두 줄로 (주간)/(일일) 구분
+    if weekly_from:
+        _wk = L["wk_range"]
+        window_html = f'{esc(L["two_wk"])} {esc(_wk)}<br>{esc(L["two_dl"])} {esc(win_label)}'
+    else:
+        window_html = esc(win_label)
     home_url = home_url or SITE_BASE
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
@@ -1502,7 +1512,7 @@ if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=n_qatar, me=n_mideast),
         counts_label=esc(L["counts_label"]),
-        updated=updated_str, window=esc(win_label),
+        updated=updated_str, window=window_html,
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
         full_note=esc(L["full_note"]),
         expand=esc(L["expand"]), collapse=esc(L["collapse"]),
@@ -1887,9 +1897,8 @@ def main():
     is_weekly = (ampm == "0700" and slot_dt.weekday() == WEEKLY_WEEKDAY and dno is not None)
     wno = _weekly_no(slot_dt.date()) if is_weekly else None
 
-    # 1회성 표기시각 보정: 실험으로 실제 실행이 늦어진 특정 회차만 정규 슬롯 근처 시각으로 표시(내용·창구간은 그대로).
-    _TIME_FIX = {"20260801-1530": "15:34", "20260801-0700": "07:04"}
-    globals()["UPDATED_TIME_OVERRIDE"] = _TIME_FIX.get(f"{ymd}-{ampm}")
+    # 모니터링 일시는 실제 실행 분이 아니라 정규 슬롯 시각(07:00/15:30)으로 표기(늦게 실행돼도 일관).
+    globals()["UPDATED_TIME_OVERRIDE"] = "07:00" if ampm == "0700" else "15:30"
 
     def daily_fname(lang): return f"d-{ymd}-{ampm}-{lang}.html"
     def weekly_fname(lang): return f"w-{ymd}-{lang}.html"
@@ -1970,7 +1979,8 @@ def main():
         html = render(items_win, win_label, iss_l, flat, issue_pool=pool,
                       archive_list=archive_list, reports=reports,
                       edition="daily", weekly_inline=weekly_inline,
-                      lang=lang, nav=nav, home_url=home_url(lang), new_since=new_since_daily)
+                      lang=lang, nav=nav, home_url=home_url(lang), new_since=new_since_daily,
+                      weekly_from=(wk_from if is_weekly else None))
         with open(main_out(lang), "w", encoding="utf-8") as fh:
             fh.write(html)
         with open(os.path.join("archive", cur), "w", encoding="utf-8") as fh:
