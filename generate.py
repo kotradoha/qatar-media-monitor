@@ -373,8 +373,8 @@ LANG = {
 }
 
 MAX_PER_SECTION = 60
-POOL_FOR_ISSUES = 40          # 이슈 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
-DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
+POOL_FOR_ISSUES = 70          # 이슈 분류에 넘길 기사 수(Claude Sonnet 기준 확대 — 핵심 누락 방지)
+DESC_MAX = 240                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
@@ -388,8 +388,9 @@ BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
 # 요약 엔진 우선순위(키 접두어로 자동 판별, 되는 것 사용):
 #   Claude API(sk-ant-) → OpenRouter(sk-or-) → Groq(gsk_) → Gemini(AQ/AIza) → GitHub Models(ghs_/PAT)
-# Claude API(Anthropic·소액·카타르 지원·최고 품질). Haiku 저렴.
-ANTHROPIC_MODELS = ["claude-haiku-4-5", "claude-3-5-haiku-latest"]
+# Claude API(Anthropic·소액·카타르 지원·최고 품질). 품질 우선: Sonnet 먼저, 실패 시 Haiku 폴백.
+ANTHROPIC_MODELS = ["claude-sonnet-4-5", "claude-3-7-sonnet-latest",
+                    "claude-haiku-4-5", "claude-3-5-haiku-latest"]
 # OpenRouter(무료 모델·GitHub 로그인 가입·OpenAI 호환).
 OR_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 OR_MODELS = ["openai/gpt-oss-20b:free", "google/gemma-4-31b-it:free",
@@ -682,7 +683,7 @@ def anthropic_call(model, prompt, json_mode):
     msgs = [{"role": "user", "content": prompt}]
     if json_mode:
         msgs.append({"role": "assistant", "content": "{"})   # JSON 출력 강제(프리필)
-    payload = {"model": model, "max_tokens": 2048, "temperature": 0.3, "messages": msgs}
+    payload = {"model": model, "max_tokens": 6000, "temperature": 0.15, "messages": msgs}
     body = json.dumps(payload).encode("utf-8")
     for attempt in range(3):
         req = urllib.request.Request(
@@ -690,7 +691,7 @@ def anthropic_call(model, prompt, json_mode):
             headers={"content-type": "application/json", "x-api-key": key,
                      "anthropic-version": "2023-06-01"})
         try:
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=180) as r:
                 data = json.loads(r.read().decode("utf-8"))
             txt = data["content"][0]["text"].strip()
             return ("{" + txt) if json_mode else txt          # 프리필한 '{' 복원
@@ -923,7 +924,7 @@ def gemini_issues(pool, win_label, weekly=False):
         "물류·해상안전(홍해·수에즈·호르무즈) / 경제·통상 / 항공·교민안전.\n"
         "이슈는 카타르 국익 관련성이 높은 순서로 배열하세요.\n"
         "각 이슈 필드: theme(이슈명, 앞에 이모지 1개 권장), "
-        "summary(한국어, 정부보고서식 '개조식·했음체'로 3~5개 핵심 포인트. "
+        "summary(한국어, 정부보고서식 '개조식·했음체'로 4~6개 핵심 포인트. "
         "각 포인트에는 **구체적 수치·일자·주체·규모**(예: 사상자 수, 미사일·드론 수, 국제유가 가격·변동폭, "
         "통항·피격 선박 수, 봉쇄·휴전·중단 기간, 계약·금액·물동량, 지명·기관명 등)를 **가능한 한 포함**해 "
         "이 요약만으로도 상황보고가 될 만큼 충실히 작성. "
@@ -940,6 +941,12 @@ def gemini_issues(pool, win_label, weekly=False):
         "- 각 이슈의 ids에는 그 이슈와 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
         "(권역별 최대 4~5개까지). 요약 옆에서 웬만한 주요 기사가 다 보이게 하는 것이 목표입니다.\n"
         "- 동일 내용이면 메이저·공신력 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제/파이낸셜뉴스, Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian, QNA/Al Jazeera/Gulf Times/Peninsula/Doha News) 기사를 우선 선택하세요.\n"
+        "- 【정확도·충실도 원칙】 모든 문장은 제공된 [기사 목록]의 제목·요약에 실제로 있는 내용에만 근거하세요. "
+        "배경지식·추정·전망을 사실처럼 쓰지 말고, 확인된 사실과 일방의 주장을 구분해 '~라고 발표함/주장함/보도됨'으로 표기하세요. "
+        "보도 간 내용이 엇갈리면 '보도별 상이함'을 명시하세요. 수치·일자·금액·단위·고유명사는 원문 표기를 그대로 옮기고 반올림·각색하지 마세요. "
+        "날짜는 MM/DD 형식으로 쓰고, 시점이 불분명하면 날짜를 쓰지 마세요.\n"
+        "- 【누락 방지】 각 이슈에서 가장 중요한 전개(무엇이·언제·누가·얼마나)를 첫 포인트에 두고, "
+        "카타르에 미치는 영향(안보·에너지·경제·물류·교민)을 마지막 포인트로 반드시 1개 넣으세요.\n"
         "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
         "{\"issues\":[{\"theme\":\"\",\"summary\":\"\",\"figures\":\"\",\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
@@ -989,6 +996,9 @@ def translate_issues(issues, lang):
     prompt = (
         f"Translate the 'theme', 'summary' and 'figures' fields of the following JSON into {target}. "
         "Keep all numbers, dates, currencies and proper nouns; keep any leading emoji in 'theme'. "
+        "Translate faithfully and completely: do not add, omit, merge, reorder or soften any fact; "
+        "keep the same number of bullet points and the same concise official-report register as the source. "
+        "Use the standard official terminology for governments, agencies, places, energy and finance terms. "
         "Return ONLY a JSON object of the exact form {\"issues\":[{\"theme\":\"\",\"summary\":\"\",\"figures\":\"\"}]} "
         "with the same number and order of items, no commentary.\n\n"
         + json.dumps({"issues": payload}, ensure_ascii=False))
@@ -1464,7 +1474,7 @@ def build_issue_pool(items):
     others = [x for x in items if not (x["qatar"] or x["region"] == "qatar")]
     others_major = [x for x in others if _is_major(x)]
     others_rest = [x for x in others if not _is_major(x)]
-    n_qatar = min(len(qatar), 14)                      # 카타르 현지 최소 확보
+    n_qatar = min(len(qatar), 26)                      # 카타르 현지 최소 확보(품질 우선 모델 기준 확대)
     pool = qatar[:n_qatar] + others_major + others_rest
     return pool[:POOL_FOR_ISSUES]
 
