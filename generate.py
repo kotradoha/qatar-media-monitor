@@ -300,7 +300,7 @@ LANG = {
   "dir": "ltr", "html": "ko",
   "title": "카타르·중동 정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
   "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
-               "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 참고로 보실 수 있으며, "
+               "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고로 보실 수 있으며, "
                "매주 일요일 오전에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건",
@@ -324,8 +324,12 @@ LANG = {
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
-  "foot": ("본 페이지는 공개된 언론 보도와 유관기관 자료를 API로 끌어와 수집·요약한 것으로, 자동 수집 특성상 일부 기사·보고서들이 "
-           "누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
+  "foot": ("본 페이지는 카타르·이란·기타 주요 국가·한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
+           "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
+           "심층 보고서는 국내외 연구기관·국제기구·에너지기관의 발행처 도메인을 직접 조준해 수집합니다. "
+           "수집된 기사는 Anthropic Claude(Haiku 4.5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역합니다. "
+           "전 과정은 GitHub Actions로 하루 두 차례(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. "
+           "자동 수집 특성상 일부 기사·보고서들이 누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "- 주카타르대사관 Commercial Section·도하무역관", "org": "주카타르대사관 Commercial Section·도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
   "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)", "ed_daily": "일일", "ed_weekly": "주간",
@@ -333,9 +337,9 @@ LANG = {
  "en": {
   "dir": "ltr", "html": "en",
   "title": "Qatar & Middle East — Daily·Weekly Media Monitor", "title2": "",
-  "subtitle": ("Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, global and Korean outlets "
-               "is compiled into AI issue summaries with source links. Recent reports from relevant institutions are also "
-               "provided for reference, and every Sunday morning a weekly report recapping the past week is published. "
+  "subtitle": ("Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, other major countries' and Korean outlets "
+               "is compiled into AI issue summaries with source links. A list of the latest reports from relevant institutions is also "
+               "available for reference lower on the page, and every Sunday morning a weekly report recapping the past week is published. "
                "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
@@ -360,9 +364,14 @@ LANG = {
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
-  "foot": ("This page pulls public news coverage and material from relevant institutions via APIs to collect and summarize them; "
-           "owing to automated collection some articles or reports may be missed, so please re-verify important issues "
-           "against the original sources and further searches."),
+  "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
+           "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
+           "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
+           "are collected by directly targeting the publishing domains of domestic and international research institutes, "
+           "international organizations and energy agencies. The collected articles are automatically clustered and summarized by issue, "
+           "and translated into English and Arabic, by Anthropic Claude (Haiku 4.5) AI. The whole process runs and publishes automatically "
+           "twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. Owing to automated collection some articles or reports may be missed, "
+           "so please re-verify important issues against the original sources and further searches."),
   "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
   "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)", "ed_daily": "Daily", "ed_weekly": "Weekly",
@@ -370,8 +379,8 @@ LANG = {
  "ar": {
   "dir": "rtl", "html": "ar",
   "title": "رصد الإعلام اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "",
-  "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني والعالمي والكوري في "
-               "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر أحدث تقارير المؤسسات المعنية للاطلاع، "
+  "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني وسائر الدول الرئيسية والكوري في "
+               "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
                "ويصدر صباح كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
@@ -396,8 +405,12 @@ LANG = {
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
-  "foot": ("تسحب هذه الصفحة التغطيات الإعلامية العامة ومواد الجهات المعنية عبر واجهات برمجية (API) لجمعها وتلخيصها؛ ونظرًا لطبيعة الجمع التلقائي "
-           "قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
+  "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
+           "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
+           "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
+           "والمنظمات الدولية وهيئات الطاقة مباشرةً. وتُصنَّف المقالات المجمّعة وتُلخَّص تلقائيًا حسب القضية وتُترجَم إلى الإنجليزية والعربية "
+           "بواسطة Anthropic Claude (Haiku 4.5) للذكاء الاصطناعي. وتُنفَّذ العملية بأكملها وتُنشَر تلقائيًا مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. "
+           "ونظرًا لطبيعة الجمع التلقائي قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
   "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
   "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)", "ed_daily": "يومي", "ed_weekly": "أسبوعي",
