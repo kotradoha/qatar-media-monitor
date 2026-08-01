@@ -132,6 +132,23 @@ REPORT_HINTS = [
 IRAN_SOURCES = ["tehran times", "press tv", "presstv", "irna", "mehr", "fars", "isna",
                 "al-alam", "alalam", "iran international", "iranintl", "tasnim", "kayhan"]
 
+# 해외(미국·유럽·글로벌·역내 기타) 매체 — 제목이 한글이어도(한국어판·번역 제목) 국내가 아닌 '해외'로 분류.
+# ※ 짧고 모호한 토큰(ap, rt, dw 단독 등)은 오탐 방지를 위해 쓰지 않고, 구별되는 문자열만 사용.
+OVERSEAS_SOURCES = [
+    "reuters", "associated press", "ap news", "apnews", "afp", "agence france",
+    "bloomberg", "cnn", "bbc", "the guardian", "guardian", "washington post",
+    "new york times", "nytimes", "wall street journal", "wsj", "financial times", "ft.com",
+    "the economist", "economist", "cnbc", "npr", "politico", "axios", "forbes", "newsweek",
+    "al arabiya", "al-arabiya", "alarabiya", "france 24", "france24", "deutsche welle", "dw.com",
+    "미국의 소리", "voa korea", "voanews", "자유아시아방송", "rfa", "sputnik", "tass", "rt.com",
+    "times of israel", "jerusalem post", "haaretz", "middle east eye", "middle east monitor",
+    "the national", "gulf news", "khaleej times", "arab news", "anadolu", "aa.com",
+    "news on air", "akashvani", "the hindu", "hindustan times", "times of india", "ndtv",
+    "modern ghana", "indexbox", "south china morning post", "scmp", "nikkei", "the diplomat",
+    "semafor", "cbs news", "cbsnews", "abc news", "nbc news", "usa today", "al monitor",
+    "al-monitor", "middle east institute", "amwaj", "the cradle", "responsible statecraft",
+]
+
 
 def source_region(src, korean):
     low = (src or "").lower()
@@ -139,7 +156,11 @@ def source_region(src, korean):
         return "qatar"
     if any(k in low for k in IRAN_SOURCES):
         return "iran"
-    if korean or any(k in low for k in KOREA_SOURCES):
+    if any(k in low for k in OVERSEAS_SOURCES):   # 해외 매체는 한글 제목이어도 '해외'로(국내 오분류 방지)
+        return "overseas"
+    if any(k in low for k in KOREA_SOURCES):
+        return "korea"
+    if korean:                                    # 출처 미상 + 한글 제목이면 국내로 추정
         return "korea"
     return "overseas"
 
@@ -299,11 +320,11 @@ LANG = {
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "중동 정세 심층 분석·보고서", "rep_note": "(국내외 연구기관·국제기구·컨설팅사 발간물)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "중동 정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
-  "foot": ("본 페이지는 공개된 언론 보도와 유관기관 자료를 API로 끌어와 수집·요약한 것으로, 자동 수집 특성상 일부 기사·보고서가 "
+  "foot": ("본 페이지는 공개된 언론 보도와 유관기관 자료를 API로 끌어와 수집·요약한 것으로, 자동 수집 특성상 일부 기사·보고서들이 "
            "누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "- 주카타르대사관 Commercial Section·도하무역관", "org": "주카타르대사관 Commercial Section·도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
@@ -335,7 +356,7 @@ LANG = {
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Publications by research institutes, int'l orgs & consultancies)", "rep_badge": "Newest", "rep_new": "New this edition",
+  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes, etc.)", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
@@ -371,7 +392,7 @@ LANG = {
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(منشورات مراكز الأبحاث والمنظمات الدولية وشركات الاستشارات)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
+  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
@@ -915,7 +936,10 @@ def gemini_issues(pool, win_label, weekly=False):
         "카테고리 예시: 전쟁·군사(공습·교전 추이) / 외교·중재 / 에너지·유가·LNG / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 경제·통상 / 항공·교민안전.\n"
         "사안은 카타르 국익 관련성이 높은 순서로 배열하세요.\n"
-        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), "
+        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장. "
+        "단, 사안이 '카타르 교민 안전' 또는 '항공 운영'을 다루되 교민이 직접 알아야 할 실질적·행동가능한 "
+        "안전 경보·항공 운항 변동 정보가 아니라 배경·정황 참고 수준이면 사안명 맨 끝에 ' 참고'를 붙일 것"
+        "(예: '카타르 내 교민 안전 및 항공 운영 참고')), "
         "summary(한국어 서술 항목의 **배열**. 항목 수는 2~4개로, 내용을 잘게 쪼개지 말 것. "
         "하나의 하위 사건·현상에 대한 원인·경과·결과·예상효과 등 서로 연관된 내용은 **한 항목으로 묶고**, 성격이 다른 내용은 항목을 나눠 구분. "
         "각 항목은 정부보고서식 개조식으로, 핵심 사실과 함께 **구체적 수치·규모·주체**(사상자·미사일/드론 수, 국제유가 가격·변동폭, 통항·피격 선박 수, 봉쇄·휴전 기간, 계약·금액·물동량, 지명·기관명 등)를 "
@@ -1448,7 +1472,7 @@ MAJOR_HINTS = [
     "qatar news agency", "qna", "gulf times", "peninsula", "qatar tribune", "doha news",
     "al jazeera", "aljazeera", "lusail",
     "yonhap", "연합", "뉴시스", "newsis", "뉴스1", "news1", "ytn", "kbs", "mbc", "sbs", "jtbc",
-    "cbs", "노컷", "nocut", "nocutnews",
+    "노컷", "nocut", "nocutnews",
     "조선", "chosun", "중앙", "joongang", "joins", "동아", "donga",
     "한겨레", "hani", "경향", "khan", "kyunghyang", "서울신문", "seoul", "문화일보", "munhwa",
     "매일경제", "매경", "mk.co", "maeil", "한국경제", "hankyung",
