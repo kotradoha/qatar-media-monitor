@@ -960,6 +960,10 @@ def gemini_issues(pool, win_label, weekly=False):
         data = json.loads(out)
         issues = data.get("issues") if isinstance(data, dict) else None
         if issues and isinstance(issues, list):
+            for it in issues:
+                if isinstance(it, dict):
+                    it["summary"] = _strip_cites(str(it.get("summary", "")))
+                    it["figures"] = _strip_cites(str(it.get("figures", "")))
             return issues
     except Exception as ex:
         print(f"[warn] issues json parse failed: {ex}")
@@ -1054,7 +1058,7 @@ def link_row(x):
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
 
-_CITE_RE = re.compile(r"[,，]?\s*(?:기사|article[s]?)\s*[0-9][0-9\s·•,、~\-번]*(?=[)）.\n]|$)", re.I)
+_CITE_RE = re.compile(r"[,，]?\s*(?:기사|article[s]?)\s*[0-9][0-9\s·•,、~\-–—－번]*(?=[)）.\n]|$)", re.I)
 
 
 def _strip_cites(text):
