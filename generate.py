@@ -807,7 +807,7 @@ def anthropic_call(model, prompt, json_mode):
     # 주의: 일부 최신 모델(예: Sonnet 5)은 temperature·assistant 프리필을 거부(400)하고, freeform JSON 신뢰도가 낮음.
     #  → JSON은 tool_use(구조화 출력)로 강제해 항상 유효한 JSON을 받고, 서술형은 text 블록을 추출. max_tokens는 여유 있게.
     msgs = [{"role": "user", "content": prompt}]
-    payload = {"model": model, "max_tokens": 8192, "messages": msgs}
+    payload = {"model": model, "max_tokens": 16000, "messages": msgs}
     if json_mode:
         payload["tools"] = [{
             "name": "emit_result",
@@ -1094,10 +1094,13 @@ def gemini_issues(pool, win_label, weekly=False):
         "④물류·해상안전 ⑤경제·통상 ⑥항공·교민안전 의 순서를 가급적 따르되, 사안의 **시급성·중요성·파급효과**가 높은 사안을 "
         "그 순서보다 앞으로 유연하게 배치하세요. "
         "(예: 카타르항공 운항 차질 등 '항공·교민' 사안은 특별히 심각·시급하지 않는 한 뒤쪽에 배치.)\n"
-        "【정보원 우선순위·편향 방지】 중동 정세는 **카타르 현지·중동·이란·미국·글로벌 매체가 더 빠르고 정확한 1차 정보원**인 경우가 많으므로, "
-        "사안 선정과 사실관계는 이들 1차 소스를 우선 근거로 삼고 **국내(한국) 보도는 보완적으로** 활용하세요. "
+        "【정보원 우선순위·편향 방지】 중동 정세는 **사건 당사국 매체(카타르 현지·이란·이스라엘·걸프)와 CNN·Reuters·AP·AFP·Bloomberg·BBC·Al Jazeera·이란 국영매체(Press TV/Tasnim/Mehr/IRNA) 등 국제 1차·속보 매체가 원(原)보도처**인 경우가 대부분입니다. "
+        "**미국이 어떻다·이란이 어떻다·중동에서 무슨 일이 있었다 류의 국제 현안은 그 당사국·현지·국제 통신사가 가장 먼저·정확히 보도**하며, "
+        "**한국 언론(연합뉴스·YTN·KBS·MBC·SBS·조선·중앙·동아 등)은 이들 외신을 전재·인용하는 2차(전달) 매체인 경우가 많습니다.** "
+        "따라서 사안 선정·사실관계·요약 서술은 **1차 원보도처를 우선 근거**로 삼고, **한국 보도는 원출처가 없거나 한국 고유 관점(정부 대응·국내 산업·교민 영향)일 때만 보완적으로** 쓰세요. "
+        "요약에 (맥락상) 출처를 밝힐 때에도 **원보도처(1차 매체)를 표기하고 한국 전재 매체를 출처로 내세우지 말 것** — 기사 목록에 그 사건의 1차 매체가 있으면 그 매체가 근거·링크의 중심이어야 합니다. "
         "특히 **국내 언론이 같은 사안을 여러 건 전재하더라도 그 '기사 수량'을 사안의 중요도·상단 배치 근거로 삼지 말 것** "
-        "— 중요도는 오직 사안의 실제 시급성·중요성·파급효과로 판단하고, 한국 고유 관점(정부 대응·국내 산업 영향 등)은 해당될 때만 반영하세요.\n"
+        "— 중요도는 오직 사안의 실제 시급성·중요성·파급효과로 판단하세요.\n"
         "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장. "
         "단, 사안이 '카타르 교민 안전' 또는 '항공 운영'을 다루되 교민이 직접 알아야 할 실질적·행동가능한 "
         "안전 경보·항공 운항 변동 정보가 아니라 배경·정황 참고 수준이면 사안명 맨 끝에 ' 참고'를 붙일 것"
@@ -1112,7 +1115,7 @@ def gemini_issues(pool, win_label, weekly=False):
         "**문두에 날짜(예: '7/31')를 붙이지 말 것**(커버 기간이 이미 명시됨). '(기사 8·21)' 같은 기사 번호 표기, "
         "그리고 **어느 언론이 보도했는지 매체명을 습관적으로 나열하지 말 것(예: '(연합뉴스·한겨레·뉴시스 등)', '~라고 조선비즈가 보도함')** "
         "— 보도 매체·원문은 우측 관련기사 목록에 이미 표시되므로, 요약 본문에는 사실·수치 위주로 서술하세요. "
-        "다만 특정 매체의 단독보도·공식 입장 등 매체명이 맥락상 꼭 필요한 경우에는 포함 가능합니다. "
+        "다만 특정 매체의 단독보도·공식 입장 등 매체명이 맥락상 꼭 필요한 경우에는 포함 가능하되, **반드시 원(原)보도처(1차 매체)를 표기하고 한국 전재 매체는 출처로 쓰지 마세요**(국제 현안에서 '다수 매체(…, YTN, KBS, 연합뉴스, 조선비즈 등)'처럼 한국 전재 매체를 나열하는 것은 금지). "
         "(사건의 주체·당사자인 기관·기업·정부·인물은 당연히 서술 대상이므로 그대로 포함.) "
         "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
         "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
@@ -1130,24 +1133,30 @@ def gemini_issues(pool, win_label, weekly=False):
         "최우선은커녕 사안으로 만들지 마세요.\n"
         "- 각 사안의 ids에는 그 사안과 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
         "(권역별 최대 4~5개까지). 요약 옆에서 웬만한 주요 기사가 다 보이게 하는 것이 목표입니다.\n"
-        "- 동일 내용이면 메이저·공신력 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제/파이낸셜뉴스, Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian, QNA/Al Jazeera/Gulf Times/Peninsula/Doha News) 기사를 우선 선택하세요.\n"
+        "- 동일 내용이면 **원(原)보도처·1차 매체를 우선**하세요. 우선순위: ①사건 당사국·현지매체(QNA/Al Jazeera/Gulf Times/Peninsula/Doha News, 이란 Press TV/Tasnim/Mehr/IRNA, 이스라엘 Times of Israel/Jerusalem Post) "
+        "②국제 통신·속보 매체(Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian/NYT/WSJ/Al Arabiya/Anadolu/Middle East Eye) ③한국 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제 — 대개 전재·2차이므로 보완용). "
+        "국제 현안에서 ①②의 1차 기사가 목록에 있으면 반드시 그 id를 우선 포함하고, 한국 기사만으로 사안 링크를 채우지 마세요.\n"
         "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
         "{\"issues\":[{\"theme\":\"\",\"summary\":[\"\",\"\"],\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
     )
-    out = gemini_generate(prompt, json_mode=True)
-    if not out:
-        return None
-    try:
-        data = json.loads(out)
-        issues = data.get("issues") if isinstance(data, dict) else None
-        if issues and isinstance(issues, list):
-            # LLM이 문자열/비정상 원소를 섞어 반환해도 빌드가 죽지 않도록 dict 원소만 채택
-            issues = [x for x in issues if isinstance(x, dict) and (x.get("theme") or x.get("summary"))]
-            if issues:
-                return issues
-    except Exception as ex:
-        print(f"[warn] issues json parse failed: {ex}")
+    # 이슈 생성은 품질 핵심이므로, 빈 결과/파싱 실패 시 flat 폴백 대신 최대 3회 재시도(간헐적 토큰초과·빈배열 방지)
+    for attempt in range(3):
+        out = gemini_generate(prompt, json_mode=True)
+        if not out:
+            _diag(f"[warn] issues empty response, retry {attempt+1}/3")
+            continue
+        try:
+            data = json.loads(out)
+            issues = data.get("issues") if isinstance(data, dict) else None
+            if issues and isinstance(issues, list):
+                # LLM이 문자열/비정상 원소를 섞어 반환해도 빌드가 죽지 않도록 dict 원소만 채택
+                issues = [x for x in issues if isinstance(x, dict) and (x.get("theme") or x.get("summary"))]
+                if issues:
+                    return issues
+            _diag(f"[warn] issues parsed but empty, retry {attempt+1}/3")
+        except Exception as ex:
+            _diag(f"[warn] issues json parse failed: {ex}, retry {attempt+1}/3")
     return None
 
 
@@ -1165,7 +1174,10 @@ def gemini_flat(pool, win_label):
         "■ 핵심 요약: (불릿 3~6개)\n■ 핵심 수치: (사상자·미사일·유가·호르무즈 비중 등 불릿; 없으면 '특이 수치 없음')\n"
         "■ 카타르 관련: (불릿 2~4개, 없으면 '해당 기간 카타르 직접 특이사항 없음')\n■ 중동 정세 주요: (불릿 3~6개)\n"
         "모든 불릿은 정부보고서식 '개조식·했음체'로, 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝낼 것(서술체 '-했다/-이다' 금지). "
-        "제목·발췌에 없는 사실은 창작 금지. 불릿 끝에 (매체명). '- '로 시작. 마크다운 헤더(#) 금지.\n\n"
+        "제목·발췌에 없는 사실은 창작 금지. '- '로 시작. 마크다운 헤더(#) 금지.\n"
+        "각 불릿 끝에는 그 내용의 **원(原)보도처 1곳**을 괄호로 표기하되, **국제 현안은 사건 당사국·현지매체나 CNN·Reuters·AP·AFP·Bloomberg·BBC·Al Jazeera·이란 국영매체(Press TV/Tasnim/Mehr/IRNA) 등 국제 1차 매체를 표기**하세요. "
+        "**한국 언론(연합뉴스·YTN·KBS·MBC·SBS·조선 등)은 외신을 전재한 2차 매체인 경우가 많으므로, 목록에 원보도처가 있으면 한국 매체를 출처로 쓰지 말고 그 1차 매체를 표기**하세요"
+        "(예: '(Anadolu, YTN, KBS, 연합뉴스, 조선비즈 등)'처럼 한국 매체를 나열하지 말 것). 한국 고유 사안일 때만 한국 매체를 출처로 표기.\n\n"
         + "\n".join(lines)
     )
     return gemini_generate(prompt, json_mode=False)
@@ -1314,7 +1326,10 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
            "en": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
            "ar": ["الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
            }.get(lang, ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"])
-    updated_str = f"{now_q.strftime('%Y/%m/%d')}({_wd[now_q.weekday()]}) {now_q.strftime('%H:%M')}"
+    # 표시용 모니터링 일시. 특정 회차의 실제 실행이 늦어졌을 때 표기 시각만 정규 슬롯(예: 07:0X·15:3X)으로 보정하기 위한 1회성 override 지원.
+    _ov = globals().get("UPDATED_TIME_OVERRIDE")
+    _hhmm = _ov if _ov else now_q.strftime('%H:%M')
+    updated_str = f"{now_q.strftime('%Y/%m/%d')}({_wd[now_q.weekday()]}) {_hhmm}"
     if issue_pool is None:
         issue_pool = items[:POOL_FOR_ISSUES]
     # 전체 기사 목록 컬럼은 '출처 매체의 권역' 기준으로 분류(한국 매체가 카타르 현지 칸에 섞이지 않도록)
@@ -1780,6 +1795,10 @@ def main():
     ymd = slot_dt.strftime('%Y%m%d')
     is_weekly = (ampm == "0700" and slot_dt.weekday() == WEEKLY_WEEKDAY and dno is not None)
     wno = _weekly_no(slot_dt.date()) if is_weekly else None
+
+    # 1회성 표기시각 보정: 실험으로 실제 실행이 늦어진 특정 회차만 정규 슬롯 근처 시각으로 표시(내용·창구간은 그대로).
+    _TIME_FIX = {"20260801-1530": "15:34", "20260801-0700": "07:04"}
+    globals()["UPDATED_TIME_OVERRIDE"] = _TIME_FIX.get(f"{ymd}-{ampm}")
 
     def daily_fname(lang): return f"d-{ymd}-{ampm}-{lang}.html"
     def weekly_fname(lang): return f"w-{ymd}-{lang}.html"
