@@ -254,6 +254,19 @@ QUICK_LINKS = {
         ("국토교통부", "https://www.molit.go.kr/"),
         ("해양수산부", "https://www.mof.go.kr/"),
         ("국방부", "https://www.mnd.go.kr/")],
+    "🏛️ 주요국 정부(미·이스라엘·이란 등)": [
+        ("美 백악관", "https://www.whitehouse.gov/"),
+        ("美 국무부", "https://www.state.gov/"),
+        ("美 국방부(펜타곤)", "https://www.defense.gov/"),
+        ("美 에너지부(EIA)", "https://www.energy.gov/"),
+        ("이스라엘 외교부", "https://www.gov.il/en/departments/ministry_of_foreign_affairs/govil-landing-page"),
+        ("이스라엘 총리실(PMO)", "https://www.gov.il/en/departments/pmo/govil-landing-page"),
+        ("이스라엘 국방부(IDF)", "https://www.idf.il/en/"),
+        ("이란 외교부", "https://en.mfa.gov.ir/"),
+        ("이란 대통령실", "https://president.ir/en"),
+        ("사우디 외교부", "https://www.mofa.gov.sa/en/"),
+        ("UAE 외교부", "https://www.mofa.gov.ae/en"),
+        ("UN 안전보장이사회", "https://www.un.org/securitycouncil/")],
     "📑 국내 연구기관": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
         ("신흥지역정보 종합지식포털(EMERiCs)", "https://www.emerics.org:446/index.do"),
         ("KDI 한국개발연구원", "https://www.kdi.re.kr/"),
@@ -305,7 +318,7 @@ QUICK_LINKS = {
 QUICK_SECTIONS = [
     ("📰 언론 매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
                    "🇰🇷 국내 종합·방송", "🇰🇷 국내 경제지"]),
-    ("🏛️ 정부", ["🏛️ 카타르 정부", "🏛️ 우리 정부(한국)"]),
+    ("🏛️ 정부", ["🏛️ 카타르 정부", "🏛️ 우리 정부(한국)", "🏛️ 주요국 정부(미·이스라엘·이란 등)"]),
     ("📑 유관기관·연구소", ["📑 국내 연구기관", "🌐 해외 연구기관"]),
 ]
 
@@ -326,6 +339,7 @@ QGROUP_I18N = {
     "🇰🇷 국내 경제지": {"en": "🇰🇷 Korea — business press", "ar": "🇰🇷 كوريا — صحافة اقتصادية"},
     "🏛️ 카타르 정부": {"en": "🏛️ Qatar government", "ar": "🏛️ حكومة قطر"},
     "🏛️ 우리 정부(한국)": {"en": "🏛️ Korean government", "ar": "🏛️ الحكومة الكورية"},
+    "🏛️ 주요국 정부(미·이스라엘·이란 등)": {"en": "🏛️ Key governments (US·Israel·Iran, etc.)", "ar": "🏛️ حكومات رئيسية (الولايات المتحدة·إسرائيل·إيران، إلخ)"},
     "📑 국내 연구기관": {"en": "📑 Korean research institutes", "ar": "📑 معاهد بحثية كورية"},
     "🌐 해외 연구기관": {"en": "🌐 Global research institutes", "ar": "🌐 معاهد بحثية دولية"},
 }
