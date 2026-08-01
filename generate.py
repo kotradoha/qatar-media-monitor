@@ -1258,10 +1258,11 @@ def render_issues(issues, pool, now_utc, L=None):
         raw_ids = iss.get("ids")
         ids = [j for j in (raw_ids if isinstance(raw_ids, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
         arts = [pool[j] for j in ids]
-        q = [a for a in arts if a["region"] == "qatar"]
-        ir = [a for a in arts if a["region"] == "iran"]
-        ov = [a for a in arts if a["region"] == "overseas"]
-        kr = [a for a in arts if a["region"] == "korea"]
+        _recent = lambda lst: sorted(lst, key=lambda a: a["dt"], reverse=True)   # 권역 그룹 내 최신 기사 순
+        q = _recent([a for a in arts if a["region"] == "qatar"])
+        ir = _recent([a for a in arts if a["region"] == "iran"])
+        ov = _recent([a for a in arts if a["region"] == "overseas"])
+        kr = _recent([a for a in arts if a["region"] == "korea"])
         groups = ""
         if q:  groups += f'<div class="grp"><div class="gh">{esc(L["g_qatar"])}</div>' + "".join(link_row(a) for a in q) + '</div>'
         if ir: groups += f'<div class="grp"><div class="gh">{esc(L["g_iran"])}</div>' + "".join(link_row(a) for a in ir) + '</div>'
