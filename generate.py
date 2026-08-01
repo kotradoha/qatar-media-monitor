@@ -725,10 +725,19 @@ def anthropic_call(model, prompt, json_mode):
     if not key:
         return None
     url = "https://api.anthropic.com/v1/messages"
-    # 주의: 일부 최신 모델(예: Sonnet 5)은 (1)temperature 파라미터와 (2)assistant 메시지 프리필을 거부(400)함.
-    #  → temperature는 보내지 않고, JSON 강제는 프리필 대신 프롬프트 지시 + 응답 추출로 처리. max_tokens는 여유 있게.
+    # 주의: 일부 최신 모델(예: Sonnet 5)은 temperature·assistant 프리필을 거부(400)하고, freeform JSON 신뢰도가 낮음.
+    #  → JSON은 tool_use(구조화 출력)로 강제해 항상 유효한 JSON을 받고, 서술형은 text 블록을 추출. max_tokens는 여유 있게.
     msgs = [{"role": "user", "content": prompt}]
-    payload = {"model": model, "max_tokens": 4096, "messages": msgs}
+    payload = {"model": model, "max_tokens": 8192, "messages": msgs}
+    if json_mode:
+        payload["tools"] = [{
+            "name": "emit_result",
+            "description": "지시된 형식의 결과 JSON을 그대로 반환한다.",
+            "input_schema": {"type": "object",
+                             "properties": {"issues": {"type": "array", "items": {"type": "object"}}},
+                             "required": ["issues"]},
+        }]
+        payload["tool_choice"] = {"type": "tool", "name": "emit_result"}
     body = json.dumps(payload).encode("utf-8")
     for attempt in range(3):
         req = urllib.request.Request(
@@ -736,10 +745,20 @@ def anthropic_call(model, prompt, json_mode):
             headers={"content-type": "application/json", "x-api-key": key,
                      "anthropic-version": "2023-06-01"})
         try:
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=90) as r:
                 data = json.loads(r.read().decode("utf-8"))
-            # content 배열에서 첫 'text' 블록을 추출(Sonnet 5 등은 앞에 thinking 등 비-text 블록이 올 수 있음)
             blocks = data.get("content") or []
+            if json_mode:
+                # tool_use 블록의 input(검증된 JSON 객체)을 그대로 직렬화 반환 → 항상 유효한 JSON
+                for b in blocks:
+                    if isinstance(b, dict) and b.get("type") == "tool_use" and isinstance(b.get("input"), dict):
+                        return json.dumps(b["input"], ensure_ascii=False)
+                # 폴백: tool_use 없으면 text에서 추출 시도
+                for b in blocks:
+                    if isinstance(b, dict) and b.get("type") == "text" and b.get("text"):
+                        return _extract_json(b["text"])
+                _diag(f"[warn] claude {model} no tool_use/text"); return None
+            # 서술형: 첫 text 블록
             txt = ""
             for b in blocks:
                 if isinstance(b, dict) and b.get("type") == "text" and b.get("text"):
@@ -751,7 +770,7 @@ def anthropic_call(model, prompt, json_mode):
             txt = (txt or "").strip()
             if not txt:
                 _diag(f"[warn] claude {model} empty/nontext content"); return None
-            return _extract_json(txt) if json_mode else txt
+            return txt
         except urllib.error.HTTPError as ex:
             try:
                 eb = ex.read().decode("utf-8", "ignore")[:200]
