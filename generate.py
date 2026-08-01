@@ -291,7 +291,7 @@ LANG = {
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅펌 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "📑 중동정세 심층 분석·보고서", "rep_note": "국내외 연구기관·국제기구·컨설팅사 발간물", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
@@ -1008,7 +1008,7 @@ def li(x, now_utc, L=None):
     meta = " · ".join([esc(x["source"]), d, ago(x["dt"], now_utc, L)])
     desc = f'<div class="dsc">{esc(x["desc"])}</div>' if x["desc"] else ""
     return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}</a>'
-            f'{desc}<div class="meta">{meta}</div></li>')
+            f'{desc}<div class="meta">({meta})</div></li>')
 
 
 def _clean_bullet(s):
@@ -1141,7 +1141,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         newb = f'<span class="newtag">{esc(L["rep_new"])}</span>' if is_new else ""
         return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
                 f'<span class="tag">{esc(tagmap.get(x.get("region","overseas"),L["t_over"]))}</span>{newb}{esc(x["title"])}'
-                f'<span class="src">{esc(x["source"])} · {rep_dt(x)}</span></a>')
+                f'<span class="src">({esc(x["source"])} · {rep_dt(x)})</span></a>')
     rows = "".join(rep_row(x) for x in rep_list[:REPORT_SHOW_MAX])
     if rows:
         report_html = ('<details class="foldbox reportfold">'
@@ -1174,7 +1174,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     navbtns = "".join(
         f'<a class="langbtn{" on" if l == lang else ""}" href="{esc(nav.get(l, home_url))}">{esc(LANG_NAME[l])}</a>'
         for l in LANGS)
-    nav_html = f'<div class="langbar">{navbtns}</div>'
+    nav_html = f'<div class="langrow"><div class="lang">{navbtns}</div></div>'
 
     issuelabel = f'<span class="issno">{esc(issue_label)}</span>' if issue_label else ""
     weekly_html = weekly_inline or ""
@@ -1209,8 +1209,8 @@ TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <style>
-  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--green:#2fbf71;--gold:#f2b134}}
-  @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85}}}}
+  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--green:#2fbf71;--gold:#f2b134;--note-bg:#2a1615;--crit-text:#ff6b6a}}
+  @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85;--note-bg:#fbeceb;--crit-text:#b4211f}}}}
   *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--txt);line-height:1.5;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}}
   .wrap{{max-width:1180px;margin:0 auto;padding:18px 14px 60px}}
@@ -1219,16 +1219,18 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:760px){{header{{position:static}}}}
   .titrow{{display:flex;align-items:center;gap:9px;flex-wrap:wrap}}
   .titcol{{display:flex;flex-direction:column;gap:1px}}
-  .entitle{{font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:.2px}}
+  .entitle{{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:-.01em;margin-top:2px}}
   .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
-  .langbar{{display:flex;gap:6px;margin-inline-start:auto;align-self:flex-start}}
-  .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
-  .langbtn.on{{color:#111;background:var(--accent);border-color:var(--accent);font-weight:700}}
+  .langrow{{display:flex;justify-content:flex-end;margin-bottom:8px}}
+  .lang{{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}}
+  .langbtn{{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none}}
+  .langbtn.on{{background:var(--accent);color:#fff}}
   .langbtn:hover{{color:var(--txt)}}
+  .langbtn.on:hover{{color:#fff}}
   .dot{{width:10px;height:10px;border-radius:50%;background:var(--green);animation:p 2s infinite}}
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
-  h1{{font-size:19px;margin:0}}
-  .sub{{color:var(--muted);font-size:12.5px;margin-top:6px}}
+  h1{{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}}
+  .sub{{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}}
   .submeta{{color:var(--muted);font-size:12.5px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}}
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}}
@@ -1295,7 +1297,7 @@ TEMPLATE = """<!DOCTYPE html>
   li a{{color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}}
   li a:hover{{color:var(--accent);text-decoration:underline}}
   .dsc{{color:var(--muted);font-size:12.5px;margin-top:3px}}
-  .meta{{color:var(--muted);font-size:11.5px;margin-top:3px;opacity:.85}}
+  .meta{{color:var(--muted);font-size:11px;margin-top:3px;opacity:.8}}
   .empty{{color:var(--muted);font-size:13px}}
   .sechd{{font-size:13px;font-weight:800;color:var(--muted);margin:20px 0 8px;text-transform:uppercase;letter-spacing:.5px}}
   .qsec{{font-size:13.5px;font-weight:800;color:var(--txt);margin:18px 0 10px;padding-bottom:5px;border-bottom:1px solid var(--line)}}
@@ -1324,13 +1326,15 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
   .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   .reprows a .newtag{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:#e5484d;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
-  footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
-  footer .sign{{text-align:end;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
+  footer{{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}}
+  footer .notice-emph{{margin-top:12px;padding:12px 14px;border-radius:10px;background:var(--note-bg);border:1px solid rgba(208,59,59,0.35);color:var(--crit-text);font-weight:600;font-size:12.5px;line-height:1.6}}
+  footer .notice-sign{{text-align:end;margin-top:10px;font-weight:400;font-size:12px;color:var(--crit-text);opacity:.85}}
   .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
-  @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
+  @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}
+    .langrow{{justify-content:stretch}} .lang{{width:100%;gap:6px}} .langbtn{{flex:1;text-align:center;padding:10px 8px;font-size:14px}}}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {{
-    :root{{--bg:#fff;--panel:#fff;--panel2:#fbfbfd;--line:#d0d0d0;--txt:#000;--muted:#555;--accent:#1e6bd6;--gold:#b8860b;--green:#2fbf71}}
+    :root{{--bg:#fff;--panel:#fff;--panel2:#fbfbfd;--line:#d0d0d0;--txt:#000;--muted:#555;--accent:#1e6bd6;--gold:#b8860b;--green:#2fbf71;--note-bg:#fbeceb;--crit-text:#b4211f}}
     @page{{size:A4;margin:12mm}}
     html,body{{background:#fff;color:#000}}
     .wrap{{max-width:none;margin:0;padding:0}}
@@ -1348,7 +1352,8 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
 <div class="wrap">
   <header>
-    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}{nav}</div>
+    {nav}
+    <div class="titrow"><span class="dot"></span><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}</div>
     <div class="sub"><span>{subtitle}</span></div>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
@@ -1383,8 +1388,7 @@ TEMPLATE = """<!DOCTYPE html>
   </details>
 
   <footer>
-    {foot}
-    <div class="sign">{sign}</div>
+    <div class="notice-emph">{foot}<div class="notice-sign">{sign}</div></div>
   </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
