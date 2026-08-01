@@ -1127,8 +1127,11 @@ def gemini_issues(pool, win_label, weekly=False):
         "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
         "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
         "ids(그 사안 관련 기사 id 정수 배열, 최대 30개), "
-        "qatar_impact(선택. 이 사안 안에 카타르 본토·시설·영공·해역·인원의 직접 피격·피해가 포함될 때만, 그 카타르 피해 상세를 담는 한국어 서술 배열 1~3개 — 명사형 종결어미, 무엇·어디·언제·피해규모·현재 상태 구체 명시. 카타르 직접 피해가 없으면 빈 배열 []). "
-        "qatar_impact의 내용도 반드시 [기사 목록]의 기사로 뒷받침돼야 하며 그 id를 ids에 포함하세요.\n"
+        "qatar_impact(선택. 이 사안 안에 카타르 본토·시설·영공·해역·인원의 직접 피격·피해가 포함될 때만, 그 카타르 피해 상세를 담는 한국어 서술 배열 1~3개 — 명사형 종결어미, 무엇·어디·언제·피해규모·현재 상태 구체 명시. 카타르 직접 피해가 없으면 빈 배열 []. "
+        "**qatar_impact 본문에는 매체명·기사번호를 넣지 말 것**(근거 출처는 아래 qatar_impact_ids로 제공되어 화면에 ↗ 링크로 표시됨). "
+        "단, 그 피해·위협 주장이 **단일·비정통 매체(예: 지역 밖 2차 매체) 단독 보도이고 1차·현지 정통 소스가 없으면** 본문 끝에 '(단일 매체 보도, 교차확인 필요)'를 반드시 붙일 것), "
+        "qatar_impact_ids(qatar_impact를 뒷받침하는 기사 id 정수 배열. 반드시 ids에도 포함. 카타르 피해가 없으면 빈 배열 []).\n"
+        "qatar_impact의 내용은 반드시 [기사 목록]의 기사로 뒷받침돼야 하며 그 id를 ids와 qatar_impact_ids 양쪽에 포함하세요.\n"
         "【요약↔링크 일치(필수·양방향)】 summary의 모든 문장·사실·주장·수치는 반드시 [기사 목록]의 특정 기사에 근거해야 하며, 그 근거 기사의 id를 **빠짐없이 그 사안의 ids에 포함**하세요. "
         "즉 아래 '연관 보도내역·링크'만으로 요약의 모든 내용을 검증할 수 있어야 합니다. "
         "**역으로, [기사 목록]의 어떤 기사로도 뒷받침되지 않는 내용(특정 매체가 무엇을 보도·분석했다는 서술 포함)은 요약에 절대 쓰지 말고 제외하세요.** "
@@ -1146,7 +1149,7 @@ def gemini_issues(pool, win_label, weekly=False):
         "②국제 통신·속보 매체(Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian/NYT/WSJ/Al Arabiya/Anadolu/Middle East Eye) ③한국 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제 — 대개 전재·2차이므로 보완용). "
         "국제 현안에서 ①②의 1차 기사가 목록에 있으면 반드시 그 id를 우선 포함하고, 한국 기사만으로 사안 링크를 채우지 마세요.\n"
         "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
-        "{\"issues\":[{\"theme\":\"\",\"summary\":[\"\",\"\"],\"qatar_impact\":[],\"ids\":[0,1]}]}\n\n"
+        "{\"issues\":[{\"theme\":\"\",\"summary\":[\"\",\"\"],\"qatar_impact\":[],\"qatar_impact_ids\":[],\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
     )
     # 이슈 생성은 품질 핵심이므로, 빈 결과/파싱 실패 시 flat 폴백 대신 최대 3회 재시도(간헐적 토큰초과·빈배열 방지)
@@ -1254,6 +1257,8 @@ def li(x, now_utc, L=None):
 def _clean_bullet(s):
     s = str(s or "")
     s = re.sub(r"\(\s*(?:기사|article|مقال)[^)]*\)", "", s, flags=re.I)   # (기사 8·21) 류 표기 제거
+    s = re.sub(r"\s*[,，]?\s*(?:기사|article)\s*\d+(?:\s*[·,]\s*\d+)*", "", s, flags=re.I)  # '…, 기사 8' 같은 내부 잔여 표기 제거
+    s = re.sub(r"\(\s*\)", "", s)  # 위 제거로 빈 괄호가 남으면 정리
     s = re.sub(r"^\s*\d{1,2}\s*[/·.\-]\s*\d{1,2}\.?\s*", "", s)            # 문두 날짜(7/31 등) 제거
     return re.sub(r"\s{2,}", " ", s).strip()
 
@@ -1282,8 +1287,22 @@ def render_issues(issues, pool, now_utc, L=None):
         body = ('<ul class="sumbul">' + "".join(f'<li>{esc(b)}</li>' for b in bullets) + '</ul>') if bullets else ""
         # 카타르 직접 피격·피해가 이 사안에 포함되면 별도 이슈로 빼지 않고 이슈 내부에 ※ 박스로 상세 표기
         qi_items = _summary_bullets(iss.get("qatar_impact", ""))
+        # ※ 박스 근거 출처를 ↗ 외부링크 칩으로(한 곳이면 하나, 여러 곳이면 여럿). 해당 기사는 우측 목록에도 그대로 노출됨.
+        _qraw = iss.get("qatar_impact_ids")
+        qi_ids = [j for j in (_qraw if isinstance(_qraw, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
+        _seen_q = set()
+        qi_links = ""
+        for j in qi_ids:
+            if j in _seen_q:
+                continue
+            _seen_q.add(j)
+            a = pool[j]
+            qi_links += (f'<a class="qlink" href="{esc(a["link"])}" target="_blank" rel="noopener" '
+                         f'title="{esc(a["title"])}"><span class="ic">↗</span>{esc(a["source"])}</a>')
         qbox = (f'<div class="qimpact"><div class="qh">※ {esc(L["qbox"])}</div>'
-                + '<ul class="qbul">' + "".join(f'<li>{esc(b)}</li>' for b in qi_items) + '</ul></div>') if qi_items else ""
+                + '<ul class="qbul">' + "".join(f'<li>{esc(b)}</li>' for b in qi_items) + '</ul>'
+                + (f'<div class="qlinks">{qi_links}</div>' if qi_links else "")
+                + '</div>') if qi_items else ""
         raw_ids = iss.get("ids")
         ids = [j for j in (raw_ids if isinstance(raw_ids, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
         arts = [pool[j] for j in ids]
@@ -1535,6 +1554,10 @@ TEMPLATE = """<!DOCTYPE html>
   .left .qbul{{list-style:disc;margin:0;padding-inline-start:18px}}
   .left .qbul li{{font-size:13px;line-height:1.5;margin:0 0 6px;color:var(--txt)}}
   .left .qbul li:last-child{{margin-bottom:0}}
+  .left .qimpact .qlinks{{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}}
+  .left .qimpact .qlink{{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--crit-text);border:1px solid var(--gold);border-radius:6px;padding:2px 8px;text-decoration:none;background:transparent}}
+  .left .qimpact .qlink .ic{{font-weight:800}}
+  .left .qimpact .qlink:hover{{background:var(--gold);color:#1a1a1a}}
   .right{{padding:13px 16px}}
   .grp{{margin-bottom:9px}} .grp .gh{{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}}
   .grp a{{display:block;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;margin:5px 0}}
