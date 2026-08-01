@@ -3,8 +3,8 @@
 """
 카타르·중동정세 언론 모니터링 (대사관/공관용, 무료·완전자동)
 - 갱신 주기(직전 갱신 → 이번 갱신) '창(window)' 안 기사만 수집
-- (무료 Gemini) 창 내 기사를 '사안(issue)'별로 자동 묶어: 왼쪽=요약, 오른쪽=관련 기사(카타르/해외/국내)
-  * 사안 묶기 실패 시 → '전체 요약 → 기사 나열' 자동 폴백
+- (무료 Gemini) 창 내 기사를 '이슈(issue)'별로 자동 묶어: 왼쪽=요약, 오른쪽=관련 기사(카타르/해외/국내)
+  * 이슈 묶기 실패 시 → '전체 요약 → 기사 나열' 자동 폴백
 - 아래에 전체 기사 목록(카타르 필수 / 중동정세 해외·국내) + 관심 매체 링크
 - GitHub Actions가 하루 2회(카타르시간 07:00 / 15:30) 실행 → 커밋/게시 → 공개 URL 자동 갱신
 
@@ -26,9 +26,9 @@ except ImportError:
     raise SystemExit("feedparser가 필요합니다: pip install feedparser")
 
 # ───────────────────────── CONFIG ─────────────────────────
-TITLE = "🇶🇦 카타르·중동정세 언론 모니터링"
-SUBTITLE = ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
-            "AI 사안별 요약과 관련 기사 원문 링크 제공")
+TITLE = "🇶🇦 카타르·중동정세 일일·주간 언론 모니터링"
+SUBTITLE = ("카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
+            "이슈별 AI 요약과 관련 기사 원문 링크 제공")
 
 Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security"]
 Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관"]
@@ -228,9 +228,9 @@ QUICK_LINKS = {
         ("S&P Global Commodity Insights", "https://www.spglobal.com/commodityinsights/")],
 }
 
-# 바로가기 대분류: 언론 매체 / 정부 / 유관기관·연구소 (각 아래에 세부 그룹 배치)
+# 바로가기 대분류: 언론매체 / 정부 / 유관기관·연구소 (각 아래에 세부 그룹 배치)
 QUICK_SECTIONS = [
-    ("📰 언론 매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
+    ("📰 언론매체", ["🇶🇦 카타르 현지 매체", "🇮🇷 이란·역내 매체", "🌐 해외(미국·유럽 등) 매체",
                    "🇰🇷 국내 종합·방송", "🇰🇷 국내 경제지"]),
     ("🏛️ 정부", ["🏛️ 카타르 정부", "🏛️ 우리 정부(한국)"]),
     ("📑 유관기관·연구소", ["📑 국내 연구기관", "🌐 해외 연구기관"]),
@@ -241,7 +241,7 @@ LANGS = ["ko", "en", "ar"]
 LANG_NAME = {"ko": "한국어", "en": "English", "ar": "العربية"}
 
 QSEC_I18N = {
-    "📰 언론 매체": {"en": "📰 Media", "ar": "📰 وسائل الإعلام"},
+    "📰 언론매체": {"en": "📰 Media", "ar": "📰 وسائل الإعلام"},
     "🏛️ 정부": {"en": "🏛️ Government", "ar": "🏛️ الجهات الحكومية"},
     "📑 유관기관·연구소": {"en": "📑 Institutions & Research", "ar": "📑 المؤسسات ومراكز الأبحاث"},
 }
@@ -260,9 +260,9 @@ QGROUP_I18N = {
 LANG = {
  "ko": {
   "dir": "ltr", "html": "ko",
-  "title": "🇶🇦 카타르·중동정세 언론 모니터링", "title2": "Qatar & Middle East — Media Monitor",
-  "subtitle": ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
-               "AI 사안별 요약과 관련 기사 원문 링크 제공"),
+  "title": "🇶🇦 카타르·중동정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily & Weekly Media Monitor",
+  "subtitle": ("카타르·한국·해외 언론 및 국내외 연구기관 보고서 모니터링 · "
+               "이슈별 AI 요약과 관련 기사 원문 링크 제공"),
   "updated": "최종 갱신", "tz": "카타르시간", "coverage": "커버 기간",
   "counts": "카타르 <b>{q}</b>건 · 중동정세 <b>{me}</b>건",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
@@ -272,32 +272,32 @@ LANG = {
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
   "search_count": "건 표시",
-  "sum_head": "🧭 이번 회차 사안별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
+  "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
-  "issue": "사안", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
+  "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "g_qatar": "🇶🇦 카타르 현지", "g_iran": "🇮🇷 이란·역내", "g_over": "🌐 해외(미국·유럽 등)", "g_korea": "🇰🇷 국내(한국)",
   "flag": "카타르",
-  "full_summary": "전체 기사 목록 (총 {n}건)", "list_note": "(카타르, 이란, 해외, 한국)", "expand": "펼쳐보기", "collapse": "접기",
+  "full_summary": "전체 기사 목록 (총 {n}건)", "list_note": "(카타르·이란·기타 국가·한국)", "expand": "펼쳐보기", "collapse": "접기",
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
-  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
+  "rep_head": "중동정세 심층 분석·보고서", "rep_note": "(국내외 연구기관·컨설팅사·국제기구 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
-  "quick_head": "언론 매체 · 정부 · 유관기관·연구소 링크 모음", "quick_note": "(가나다·알파벳순)",
+  "quick_head": "언론매체 · 정부 · 유관기관·연구소 링크 모음", "quick_note": "(가나다·알파벳순)",
   "foot1": ("본 페이지는 카타르·한국·해외 주요 언론과 국내외 연구기관·국제기구·정부기관의 공개 자료를 자동으로 수집하여, "
-            "카타르와 관련된 중동 정세를 사안별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다."),
+            "카타르와 관련된 중동 정세를 이슈별로 정리한 것입니다. 직전 회차 이후 새로 보도·발간된 자료만 반영하며, 단순 취합·비정식 매체는 제외합니다."),
   "foot2": "갱신은 매일 카타르 시간 오전 7:00과 오후 3:30에 자동으로 이루어지며, 일요일 오전 회차에는 지난 한 주를 종합한 주간 리포트를 함께 제공합니다.",
   "foot3": ("자동 수집 특성상 일부 기사·보고서가 누락될 수 있습니다. 본 화면은 <b>참고용</b>이오니, "
-            "중요한 사안은 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
+            "중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "— 주카타르대사관 Commercial Section", "org": "주카타르대사관 Commercial Section",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
   "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)",
  },
  "en": {
   "dir": "ltr", "html": "en",
-  "title": "🇶🇦 Qatar & Middle East — Media Monitor", "title2": "",
-  "subtitle": ("Auto-updated daily at 07:00 & 15:30 (Qatar time) · Monitoring Qatar, Korea & global media and "
+  "title": "🇶🇦 Qatar & Middle East — Daily & Weekly Media Monitor", "title2": "",
+  "subtitle": ("Monitoring Qatar, Korea & global media and "
                "domestic/foreign think-tank reports · AI issue summaries with source links"),
   "updated": "Last updated", "tz": "Qatar time", "coverage": "Coverage",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
@@ -314,11 +314,11 @@ LANG = {
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "g_qatar": "🇶🇦 Qatar (local)", "g_iran": "🇮🇷 Iran & regional", "g_over": "🌐 Global (US·Europe)", "g_korea": "🇰🇷 Korea",
   "flag": "Qatar",
-  "full_summary": "Full article list (total {n})", "list_note": "(Qatar, Iran, Global, Korea)", "expand": "Expand", "collapse": "Collapse",
+  "full_summary": "Full article list (total {n})", "list_note": "(Qatar · Iran · Other countries · Korea)", "expand": "Expand", "collapse": "Collapse",
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
-  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes and others)", "rep_badge": "Newest", "rep_new": "New this edition",
+  "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes, consultancies, international organizations, etc.)", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — quick links", "quick_note": "(sorted alphabetically)",
@@ -334,8 +334,8 @@ LANG = {
  },
  "ar": {
   "dir": "rtl", "html": "ar",
-  "title": "🇶🇦 رصد الإعلام: قطر والشرق الأوسط", "title2": "",
-  "subtitle": ("تحديث تلقائي يوميًا الساعة 07:00 و15:30 (بتوقيت قطر) · رصد إعلام قطر وكوريا والعالم وتقارير مراكز الأبحاث المحلية والدولية · "
+  "title": "🇶🇦 الرصد الإعلامي اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "",
+  "subtitle": ("رصد إعلام قطر وكوريا والعالم وتقارير مراكز الأبحاث المحلية والدولية · "
                "ملخصات بالذكاء الاصطناعي مع روابط المصادر"),
   "updated": "آخر تحديث", "tz": "بتوقيت قطر", "coverage": "الفترة المغطاة",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
@@ -352,11 +352,11 @@ LANG = {
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "g_qatar": "🇶🇦 قطر (محلي)", "g_iran": "🇮🇷 إيران والإقليم", "g_over": "🌐 دولي (أمريكا·أوروبا)", "g_korea": "🇰🇷 كوريا",
   "flag": "قطر",
-  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "expand": "توسيع", "collapse": "طيّ", "list_note": "(قطر، إيران، دولي، كوريا)",
+  "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "expand": "توسيع", "collapse": "طيّ", "list_note": "(قطر · إيران · دول أخرى · كوريا)",
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
-  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
+  "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث والشركات الاستشارية والمنظمات الدولية وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "الإعلام · الحكومة · المؤسسات — روابط سريعة", "quick_note": "(مرتّبة أبجديًا)",
@@ -373,7 +373,7 @@ LANG = {
 }
 
 MAX_PER_SECTION = 60
-POOL_FOR_ISSUES = 40          # 사안 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
+POOL_FOR_ISSUES = 40          # 이슈 분류에 넘길 기사 수(무료 LLM 입력 8K 토큰 한도 고려)
 DESC_MAX = 160                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이(토큰 절약)
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
@@ -798,7 +798,7 @@ def github_models_call(model, prompt, json_mode):
     return None
 
 
-# ───────────────────── Gemini (사안별/폴백) ─────────────────────
+# ───────────────────── Gemini (이슈별/폴백) ─────────────────────
 def gemini_call(model, prompt, json_mode):
     key = _gemini_key()
     if not key:
@@ -908,21 +908,21 @@ def gemini_issues(pool, win_label, weekly=False):
         "【모니터링 주제 범위】 이 브리핑의 주제는 '카타르의 국익·안보·경제에 유의미한 중동 정세'입니다. "
         "즉 이스라엘·이란·걸프 무력충돌 및 공습·교전 동향, 외교·중재(특히 카타르의 중재 역할), "
         "호르무즈·홍해 등 해상안전·물류, 국제유가·LNG·에너지, 경제·통상·투자, 항공·교민 안전의 관점에서 "
-        "의미 있는 사안만 다룹니다.\n"
-        "【사안으로 만들지 말 것(주제 밖)】 정책·전략·안보·경제 함의가 없는 순수 인도적 사연·난민 개인사·미담/르포, "
-        "날씨·기상, 스포츠, 연예·문화·생활, 단순 지역 사건사고, 종교 일반 등은 사안으로 뽑지 마세요. "
+        "의미 있는 이슈만 다룹니다.\n"
+        "【이슈로 만들지 말 것(주제 밖)】 정책·전략·안보·경제 함의가 없는 순수 인도적 사연·난민 개인사·미담/르포, "
+        "날씨·기상, 스포츠, 연예·문화·생활, 단순 지역 사건사고, 종교 일반 등은 이슈로 뽑지 마세요. "
         "다만 이런 소재라도 카타르 국익·에너지·안보·물류·외교에 직접 연결되면 포함합니다"
-        "(예: 가자 휴전 협상·카타르 중재는 '외교·중재' 사안으로 포함하되, 개별 난민의 생활고 미담은 제외).\n"
+        "(예: 가자 휴전 협상·카타르 중재는 '외교·중재' 이슈로 포함하되, 개별 난민의 생활고 미담은 제외).\n"
         "핵심 판별 기준: 가자·이스라엘·이란 등 소재라도 ①카타르가 실제로 역할·조치를 했거나(중재·성명·정상외교·지원·군사·에너지 등), "
         "②카타르가 공격·공습을 당하거나 카타르의 안보·영공·경제·에너지·항공·교민 안전이 직접 영향받거나, "
-        "③사안이 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
+        "③이슈가 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
         "'카타르 매체에 실렸다'는 사실만으로는 관련성이 생기지 않습니다 — 카타르의 역할도 없고 정세·에너지·경제 함의도 없는 기사는 제외하세요.\n"
-        "관련성이 약한 기사는 억지로 사안으로 묶지 말고 제외하고, 애매하면 사안 수를 줄이세요 — 수량보다 정확도·논리성 우선.\n"
-        "'사안(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
+        "관련성이 약한 기사는 억지로 이슈로 묶지 말고 제외하고, 애매하면 이슈 수를 줄이세요 — 수량보다 정확도·논리성 우선.\n"
+        "'이슈(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
         "카테고리 예시: 전쟁·군사(공습·교전 추이) / 외교·중재 / 에너지·유가·LNG / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 경제·통상 / 항공·교민안전.\n"
-        "사안은 카타르 국익 관련성이 높은 순서로 배열하세요.\n"
-        "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장), "
+        "이슈는 카타르 국익 관련성이 높은 순서로 배열하세요.\n"
+        "각 이슈 필드: theme(이슈명, 앞에 이모지 1개 권장), "
         "summary(한국어, 정부보고서식 '개조식·했음체'로 3~5개 핵심 포인트. "
         "각 포인트에는 **구체적 수치·일자·주체·규모**(예: 사상자 수, 미사일·드론 수, 국제유가 가격·변동폭, "
         "통항·피격 선박 수, 봉쇄·휴전·중단 기간, 계약·금액·물동량, 지명·기관명 등)를 **가능한 한 포함**해 "
@@ -930,14 +930,14 @@ def gemini_issues(pool, win_label, weekly=False):
         "각 포인트는 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체 '-했다/-이다/-된다'는 절대 쓰지 말 것. "
         "예: '7/31 이란 IRGC가 미군 호위 유조선 2척을 호르무즈 해협서 타격, 승조원 3명 사망 주장함. 브렌트유 배럴당 약 $1 상승함.'), "
         "figures(핵심 수치를 세미콜론(;)으로 2~5개 나열; 사상자·미사일/유가($·변동폭)/통항·물동량/휴전·봉쇄 기간/금액 등, 없으면 \"\"), "
-        "ids(그 사안 관련 기사 id 정수 배열, 최대 16개).\n"
+        "ids(그 이슈 관련 기사 id 정수 배열, 최대 16개).\n"
         "중요 규칙:\n"
-        "- [카타르현지]는 '카타르 매체발'이라는 출처 표시일 뿐, 그 자체로 사안 가치를 부여하지 않습니다. "
-        "카타르가 실제로 역할·조치를 한 사안(중재·성명·정상외교·지원·군사·에너지 계약 등)이나, 카타르가 공격·공습을 당하거나 "
-        "카타르 국익·안보·영공·경제·에너지·교민 안전에 직접 영향을 주는 사안만 '카타르 관련'으로 최우선하세요. 그런 카타르 실질 관여 사안이 있으면 반드시 1개 이상 만들고 관련 [카타르현지] 기사를 ids에 우선 포함하세요. "
+        "- [카타르현지]는 '카타르 매체발'이라는 출처 표시일 뿐, 그 자체로 이슈 가치를 부여하지 않습니다. "
+        "카타르가 실제로 역할·조치를 한 이슈(중재·성명·정상외교·지원·군사·에너지 계약 등)이나, 카타르가 공격·공습을 당하거나 "
+        "카타르 국익·안보·영공·경제·에너지·교민 안전에 직접 영향을 주는 이슈만 '카타르 관련'으로 최우선하세요. 그런 카타르 실질 관여 이슈가 있으면 반드시 1개 이상 만들고 관련 [카타르현지] 기사를 ids에 우선 포함하세요. "
         "단, 카타르 매체에 실렸을 뿐 카타르의 역할이 없고 정세·에너지·경제 함의도 없는 연성기사(예: 난민 개인사 미담, 지역 생활기사)는 "
-        "최우선은커녕 사안으로 만들지 마세요.\n"
-        "- 각 사안의 ids에는 그 사안과 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
+        "최우선은커녕 이슈로 만들지 마세요.\n"
+        "- 각 이슈의 ids에는 그 이슈와 관련된 카타르·이란·해외·국내 4개 권역의 '주요(메이저) 기사를 가능한 한 빠짐없이' 넣으세요"
         "(권역별 최대 4~5개까지). 요약 옆에서 웬만한 주요 기사가 다 보이게 하는 것이 목표입니다.\n"
         "- 동일 내용이면 메이저·공신력 매체(연합/뉴시스/KBS/MBC/SBS/조선/중앙/동아/한겨레/경향/한국경제/매일경제/파이낸셜뉴스, Reuters/AP/AFP/Bloomberg/CNN/BBC/Guardian, QNA/Al Jazeera/Gulf Times/Peninsula/Doha News) 기사를 우선 선택하세요.\n"
         "- 제공된 기사에 없는 사실·수치는 절대 창작 금지. 한국어로. 반드시 아래 JSON만 출력:\n"
@@ -978,7 +978,7 @@ def gemini_flat(pool, win_label):
 
 
 def translate_issues(issues, lang):
-    """사안 요약(theme/summary/figures)을 영어/아랍어로 번역. 실패 시 원문(한국어) 유지."""
+    """이슈 요약(theme/summary/figures)을 영어/아랍어로 번역. 실패 시 원문(한국어) 유지."""
     if not issues or lang == "ko":
         return issues
     target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
@@ -1229,10 +1229,12 @@ TEMPLATE = """<!DOCTYPE html>
   .titcol{{display:flex;flex-direction:column;gap:1px}}
   .entitle{{font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;font-size:14px;font-weight:600;color:#52514e;letter-spacing:-0.14px}}
   .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
-  .langrow{{display:flex;justify-content:flex-end;margin-bottom:6px}} .langbar{{display:flex;gap:6px}}
-  .langbtn{{font-size:11.5px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:3px 9px;background:var(--panel2)}}
-  .langbtn.on{{color:#111;background:var(--accent);border-color:var(--accent);font-weight:700}}
+  .langrow{{display:flex;justify-content:flex-end;margin-bottom:8px}}
+  .langbar{{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px;background:var(--panel2)}}
+  .langbtn{{display:inline-flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;border:none;border-radius:6px;padding:5px 12px;background:transparent;line-height:1.5}}
+  .langbtn.on{{color:#111;background:var(--accent);font-weight:800}}
   .langbtn:hover{{color:var(--txt)}}
+  html[dir="rtl"] .langrow{{justify-content:flex-start}}
   .dot{{width:10px;height:10px;border-radius:50%;background:var(--green);animation:p 2s infinite}}
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:19px;margin:0}}
@@ -1332,7 +1334,16 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a .newtag{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:#e5484d;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   footer{{margin-top:6px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:12px}}
   footer .sign{{text-align:end;margin-top:10px;font-weight:300;color:var(--muted);font-size:12.5px;letter-spacing:.2px}}
-  .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}} .hsub{{order:2;flex-basis:100%;font-size:11px;font-weight:400;color:var(--muted);margin-top:-4px}}
+  .hnote,.hsub{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
+  .subnote{{color:var(--muted);font-size:12.5px;margin-top:5px;line-height:1.6}}
+  .notebox{{background:#e8f2fd;border:1px solid rgba(42,120,214,.35);color:#12417a;border-radius:10px;padding:12px 14px;font-size:12.5px;font-weight:600;line-height:1.75}}
+  .notebox b{{color:#0b2f5e}}
+  @media (max-width:640px){{
+    .langrow{{justify-content:stretch}}
+    .langbar{{width:100%;gap:6px}}
+    .langbtn{{flex:1;padding:12px 8px;font-size:15px;min-height:46px}}
+    .foldbox>summary .hnote,.foldbox>summary .hsub{{order:2;flex-basis:100%;margin-top:-4px}}
+  }}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {{
@@ -1356,6 +1367,7 @@ TEMPLATE = """<!DOCTYPE html>
   <header>
     <div class="langrow">{nav}</div><div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}{orgline}</div>{issuelabel}</div>
     <div class="sub"><span>{subtitle}</span></div>
+    <div class="subnote">※ {foot2}</div>
     <div class="scopeline">🎯 {scope}</div>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
@@ -1388,9 +1400,10 @@ TEMPLATE = """<!DOCTYPE html>
   </details>
 
   <footer>
-    ※ {foot1}
-    <br>※ {foot2}
-    <br>※ {foot3}
+    <div class="notebox">
+      ※ {foot1}
+      <br>※ {foot3}
+    </div>
     <div class="sign">{sign}</div>
   </footer>
 </div>
@@ -1446,7 +1459,7 @@ def _is_major(x):
     return any(m in s for m in MAJOR_HINTS)
 
 def build_issue_pool(items):
-    """사안 요약용 풀: 카타르 관련 최우선 + 국내/해외 메이저 우선, 나머지 최신순."""
+    """이슈 요약용 풀: 카타르 관련 최우선 + 국내/해외 메이저 우선, 나머지 최신순."""
     qatar = [x for x in items if x["qatar"] or x["region"] == "qatar"]
     others = [x for x in items if not (x["qatar"] or x["region"] == "qatar")]
     others_major = [x for x in others if _is_major(x)]
@@ -1514,7 +1527,7 @@ def _archive_meta(fname):
 def _archive_label_text(meta, L):
     if meta["kind"] == "daily":
         tail = f"{meta['m']:02d}/{meta['d']:02d} {meta['hh']:02d}:{meta['mm']:02d}"
-        return (L["daily_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["daily_demo"] + " · " + tail)
+        return (L["daily_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_daily"] + " · " + tail)
     tail = f"~{meta['m']:02d}/{meta['d']:02d}"
     return (L["weekly_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_weekly"] + " " + tail)
 
@@ -1660,7 +1673,7 @@ def main():
     for lang in LANGS:
         L = LANG[lang]
         win_label = label_ko.replace("(카타르시간)", "(" + L["tz"] + ")")
-        issue_label = L["daily_no"].format(n=dno) if dno else L["daily_demo"]
+        issue_label = L["daily_no"].format(n=dno) if dno else ""
         iss_l = translate_issues(issues, lang) if issues else None
 
         cur = daily_fname(lang)
