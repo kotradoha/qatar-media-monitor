@@ -1623,7 +1623,8 @@ def main():
         files.add(daily_fname(lang))
         if is_weekly:
             files.add(weekly_fname(lang))
-    metas = [(m, f) for f in files for m in [_archive_meta(f)] if m]
+    # 정식 호수(제N호)가 매겨진 회차만 콤보박스에 노출 — 정식 발행(제1호) 이전의 '시범' 스냅샷은 목록에서 제외
+    metas = [(m, f) for f in files for m in [_archive_meta(f)] if m and m.get("no") is not None]
 
     nav = {l: home_url(l) for l in LANGS}
     for lang in LANGS:
