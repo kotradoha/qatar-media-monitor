@@ -714,7 +714,8 @@ def _extract_json(txt):
         t = re.sub(r"\s*```$", "", t).strip()
     i, j = t.find("{"), t.rfind("}")
     if i != -1 and j != -1 and j > i:
-        return t[i:j + 1]
+        t = t[i:j + 1]
+    t = re.sub(r",(\s*[}\]])", r"\1", t)   # 배열/객체 후행 콤마 제거(LLM JSON 오류 대비)
     return t
 
 
