@@ -1120,10 +1120,10 @@ def gemini_issues(pool, win_label, weekly=False):
         "요약이라도 가능한 한 빠짐없이 반영해 최대한 상세하게 쓸 것(단, 원문에 없는 수치·사실은 절대 창작·추정하지 말 것). "
         "명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체('-했다/-이다') 금지. "
         "**문두에 날짜(예: '7/31')를 붙이지 말 것**(커버 기간이 이미 명시됨). '(기사 8·21)' 같은 기사 번호 표기, "
-        "그리고 **어느 언론이 보도했는지 매체명을 습관적으로 나열하지 말 것(예: '(연합뉴스·한겨레·뉴시스 등)', '~라고 조선비즈가 보도함')** "
-        "— 보도 매체·원문은 우측 관련기사 목록에 이미 표시되므로, 요약 본문에는 사실·수치 위주로 서술하세요. "
-        "다만 특정 매체의 단독보도·공식 입장·독자적 분석·논평 등 매체명이 맥락상 필요하면 포함 가능합니다. 이때 **동일 사건·팩트는 원(原)보도처(1차 매체)를 먼저 표기**하고, 한국 매체가 단순 전재이면 나열하지 마세요(예: '다수 매체(…, YTN, KBS, 연합뉴스, 조선비즈 등)'식 습관적 나열 금지). **한국 매체가 독자적 시각·분석·논평을 담았다면 그 매체를 명시해 인용해도 됩니다.** "
-        "(사건의 주체·당사자인 기관·기업·정부·인물은 당연히 서술 대상이므로 그대로 포함.) "
+        "【매체명 표기 원칙 — 내용 우선】 **요약 본문에는 기본적으로 매체명을 넣지 말고 검증된 사실·수치만** 밀도 있게 서술하세요(보도 매체·원문은 우측 관련기사 목록에 이미 표시됨). "
+        "여러 매체가 동일하게 보도한 사실일수록 매체명은 정보가치가 없으니 **절대 나열하지 마세요**(예: '(이스라엘타임스·KBS·경향신문 등)', '~라고 조선비즈가 보도함' 금지). "
+        "매체명은 **다음 네 경우에만** 밝힙니다: ①단독·독점 보도(누가·어떻게가 사실의 일부일 때, 예: '뉴욕타임스가 위성사진으로 ~ 확인함'), ②공식 입장·성명(매체가 아니라 발표 주체를 명시, 예: '이란 외무부', '카타르 국방부(QNA)', '쿠웨이트 국방부'), ③상반·미확인 주장(출처를 밝혀야 편향·진위가 드러날 때, 예: '이란 국영매체 주장'), ④신뢰도가 사안 판단에 결정적일 때. "
+        "이 경우에도 반드시 **원(原)·현지·1차 매체**를 밝히고 한국 전재 매체는 쓰지 마세요. (사건의 주체·당사자인 기관·기업·정부·인물명은 매체명이 아니므로 당연히 그대로 서술.) "
         "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
         "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
         "ids(그 사안 관련 기사 id 정수 배열, 최대 30개), "
@@ -1184,9 +1184,8 @@ def gemini_flat(pool, win_label):
         "■ 카타르 관련: (불릿 2~4개, 없으면 '해당 기간 카타르 직접 특이사항 없음')\n■ 중동 정세 주요: (불릿 3~6개)\n"
         "모든 불릿은 정부보고서식 '개조식·했음체'로, 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝낼 것(서술체 '-했다/-이다' 금지). "
         "제목·발췌에 없는 사실은 창작 금지. '- '로 시작. 마크다운 헤더(#) 금지.\n"
-        "각 불릿 끝에는 그 내용의 **원(原)보도처 1곳**을 괄호로 표기하되, **국제 현안은 사건 당사국·현지매체나 CNN·Reuters·AP·AFP·Bloomberg·BBC·Al Jazeera·이란 국영매체(Press TV/Tasnim/Mehr/IRNA) 등 국제 1차 매체를 표기**하세요. "
-        "**동일 사건·팩트에 현지·1차 원보도처가 목록에 있으면 그 매체를 먼저 표기**하고, 한국 언론(연합뉴스·YTN·KBS 등)이 단순 전재이면 출처로 쓰지 마세요"
-        "(예: '(Anadolu, YTN, KBS, 연합뉴스, 조선비즈 등)'식 습관적 나열 금지). 단, **한국 매체가 독자적 시각·분석·논평을 담았거나 한국 고유 사안이면 그 매체를 출처로 명시해도 됩니다.**\n\n"
+        "【매체명 — 내용 우선】 불릿에는 **기본적으로 매체명을 넣지 말고 사실·수치만** 쓰세요. 여러 매체가 동일 보도한 사실은 매체명 나열 금지"
+        "(예: '(이스라엘타임스·KBS·경향 등)' 금지). 단독·독점 보도, 공식 성명(발표 주체 명시), 상반·미확인 주장, 신뢰도가 결정적인 경우에만 출처를 밝히되 **원(原)·현지·1차 매체**를 쓰고 한국 전재 매체는 쓰지 마세요.\n\n"
         + "\n".join(lines)
     )
     return gemini_generate(prompt, json_mode=False)
@@ -1424,8 +1423,30 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         aopts += f'<optgroup label="{esc(L["arch_daily"])}">{opts_daily}</optgroup>'
     if opts_weekly:
         aopts += f'<optgroup label="{esc(L["arch_weekly"])}">{opts_weekly}</optgroup>'
+    # 서버측 옵션은 무JS 폴백. 아래 스크립트가 매니페스트(archive/manifest.json)를 불러와 '전체 회차'로 동적 재구성 →
+    # 오래된 아카이브 페이지에서도 항상 최신 목록이 보이고, 어느 날짜 회차로든 자유롭게 이동 가능(현재 보는 회차는 selected 표시).
+    _albl = json.dumps({"latest": L["arch_latest"], "daily": L["arch_daily"], "weekly": L["arch_weekly"]}, ensure_ascii=False)
+    _archscript = """<script>(function(){var LB=__LB__;var B="__BASE__";
+var lang=document.documentElement.lang||"ko";
+var cur=(location.pathname.split("/").pop()||"index.html");
+fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){
+var s=document.getElementById("archsel");if(!s||!m)return;
+var home=(m.home&&m.home[lang])||B;var ld=(m.latest_daily&&m.latest_daily[lang])||"";
+var xs=(m.issues||[]).filter(function(x){return x.lang===lang;});
+xs.sort(function(a,b){return a.dt<b.dt?1:(a.dt>b.dt?-1:0);});
+function e(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+var h='<option value="'+e(home)+'">'+e(LB.latest)+'</option>';var d="",w="";
+xs.forEach(function(x){if(x.kind!=="weekly"&&x.file===ld)return;
+var o='<option value="'+e(B+"archive/"+x.file)+'"'+(x.file===cur?" selected":"")+'>'+e(x.label)+'</option>';
+if(x.kind==="weekly")w+=o;else d+=o;});
+if(d)h+='<optgroup label="'+e(LB.daily)+'">'+d+'</optgroup>';
+if(w)h+='<optgroup label="'+e(LB.weekly)+'">'+w+'</optgroup>';
+s.innerHTML=h;
+if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0;}
+}).catch(function(){});})();</script>""".replace("__LB__", _albl).replace("__BASE__", SITE_BASE)
     archive_html = (f'<div class="archsel">{esc(L["arch_view"])} '
-                    f'<select onchange="if(this.value)location.href=this.value">{aopts}</select></div>')
+                    f'<select id="archsel" onchange="if(this.value)location.href=this.value">{aopts}</select></div>'
+                    + _archscript)
 
     # 언어 전환 버튼
     nav = nav or {l: home_url for l in LANGS}
@@ -1798,6 +1819,14 @@ def main():
         now_q = _am
     elif _pm - _grace <= now_q < _pm:
         now_q = _pm
+    # 멱등성: 정기 트리거(schedule·외부 dispatch)가 '이미 발행된 슬롯'을 다시 실행하지 않도록 스킵.
+    #  → 늦게 발화한 GitHub 크론이 정시(외부 cron) 결과를 늦은 시각으로 덮어쓰거나 API를 낭비하는 것을 방지.
+    #    push·수동(workflow_dispatch)은 항상 재생성(코드 반영·강제 발행용).
+    _sd0, _ap0 = _slot_of(now_q)
+    if os.environ.get("GITHUB_EVENT_NAME", "") in ("schedule", "repository_dispatch") \
+            and os.path.exists(f"archive/d-{_sd0.strftime('%Y%m%d')}-{_ap0}-ko.html"):
+        print(f"[skip] slot {_sd0.strftime('%Y%m%d')}-{_ap0} already published (event={os.environ.get('GITHUB_EVENT_NAME')})")
+        return
     start_q, end_q, win_slot = window_bounds(now_q)
     label_ko = f"{LANG['ko']['win_' + win_slot]} (카타르시간)"   # LLM 프롬프트·로그용(한국어)
     items = collect(start_q.astimezone(timezone.utc), now_utc)
@@ -1845,6 +1874,19 @@ def main():
             files.add(weekly_fname(lang))
     # 정식 호수(제N호)가 매겨진 회차만 콤보박스에 노출 — 정식 발행(제1호) 이전의 '시범' 스냅샷은 목록에서 제외
     metas = [(m, f) for f in files for m in [_archive_meta(f)] if m and m.get("no") is not None]
+
+    # 회차 이동 콤보박스용 매니페스트 — 모든 페이지가 이 파일을 불러와 '전체 회차'를 동적 구성(어느 페이지·어느 날짜로든 자유 이동)
+    _manifest = {
+        "home": {l: home_url(l) for l in LANGS},
+        "latest_daily": {l: daily_fname(l) for l in LANGS},
+        "issues": [
+            {"lang": m["lang"], "kind": m["kind"], "no": m["no"],
+             "dt": m["dt"].isoformat(), "label": _archive_label_text(m, LANG[m["lang"]]), "file": f}
+            for (m, f) in metas
+        ],
+    }
+    with open("archive/manifest.json", "w", encoding="utf-8") as _mf:
+        json.dump(_manifest, _mf, ensure_ascii=False)
 
     nav = {l: home_url(l) for l in LANGS}
     for lang in LANGS:
