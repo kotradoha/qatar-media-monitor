@@ -706,16 +706,27 @@ def _diag(msg):
         LLM_DIAG.append(msg)
 
 
+def _extract_json(txt):
+    """LLM 응답에서 JSON 객체만 추출(코드펜스 제거 + 최외곽 {..} 슬라이스). 프리필 미지원 모델 대응."""
+    t = (txt or "").strip()
+    if t.startswith("```"):
+        t = re.sub(r"^```[a-zA-Z]*\s*", "", t)
+        t = re.sub(r"\s*```$", "", t).strip()
+    i, j = t.find("{"), t.rfind("}")
+    if i != -1 and j != -1 and j > i:
+        return t[i:j + 1]
+    return t
+
+
 # ───────────────────── Claude API (Anthropic·최우선·최고 품질) ─────────────────────
 def anthropic_call(model, prompt, json_mode):
     key = _anthropic_key()
     if not key:
         return None
     url = "https://api.anthropic.com/v1/messages"
+    # 주의: 일부 최신 모델(예: Sonnet 5)은 (1)temperature 파라미터와 (2)assistant 메시지 프리필을 거부(400)함.
+    #  → temperature는 보내지 않고, JSON 강제는 프리필 대신 프롬프트 지시 + 응답 추출로 처리. max_tokens는 여유 있게.
     msgs = [{"role": "user", "content": prompt}]
-    if json_mode:
-        msgs.append({"role": "assistant", "content": "{"})   # JSON 출력 강제(프리필)
-    # 주의: 일부 최신 모델(예: Sonnet 5)은 temperature 파라미터를 거부(400)하므로 보내지 않음. max_tokens는 여유 있게.
     payload = {"model": model, "max_tokens": 4096, "messages": msgs}
     body = json.dumps(payload).encode("utf-8")
     for attempt in range(3):
@@ -727,7 +738,7 @@ def anthropic_call(model, prompt, json_mode):
             with urllib.request.urlopen(req, timeout=60) as r:
                 data = json.loads(r.read().decode("utf-8"))
             txt = data["content"][0]["text"].strip()
-            return ("{" + txt) if json_mode else txt          # 프리필한 '{' 복원
+            return _extract_json(txt) if json_mode else txt
         except urllib.error.HTTPError as ex:
             try:
                 eb = ex.read().decode("utf-8", "ignore")[:200]
