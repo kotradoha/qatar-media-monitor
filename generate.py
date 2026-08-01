@@ -363,7 +363,7 @@ LANG = {
   "title": "카타르·중동 정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
   "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고로 보실 수 있으며, "
-               "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]"),
+               "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]"),
   "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
   "two_wk": "(주간)", "two_dl": "(일일)", "wk_range": "지난주 일 07:00 ~ 당일 07:00",
   "win_am": "전일 15:30 ~ 당일 07:00", "win_pm": "당일 07:00 ~ 당일 15:30", "win_pre": "전일 07:00 ~ 전일 15:30",
@@ -395,7 +395,7 @@ LANG = {
            "수집된 기사는 Anthropic Claude(Sonnet 5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역합니다. "
            "전 과정은 GitHub Actions로 하루 두 차례(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. "
            "자동 수집 특성상 일부 기사·보고서들이 누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
-  "sign": "- 주카타르대사관 Commercial Section · 도하무역관", "org": "주카타르대사관 Commercial Section · 도하무역관",
+  "sign": "- 주카타르대사관 Commercial Section · 도하무역관", "org": "주카타르대사관 Commercial Section · 도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
   "daily_no": "일일 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일일(시범)", "ed_daily": "일일", "ed_weekly": "주간",
  },
@@ -405,7 +405,7 @@ LANG = {
   "subtitle": ("Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, other major countries' and Korean outlets "
                "is compiled into AI issue summaries with source links. A list of the latest reports from relevant institutions is also "
                "available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. "
-               "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
+               "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
   "updated": "Monitored at", "tz": "Qatar time", "coverage": "Monitoring period",
   "two_wk": "(Weekly)", "two_dl": "(Daily)", "wk_range": "Last Sunday 07:00 ~ today 07:00",
   "win_am": "Prev day 15:30 – same day 07:00", "win_pm": "Same day 07:00 – 15:30", "win_pre": "Prev day 07:00 – 15:30",
@@ -440,7 +440,7 @@ LANG = {
            "and translated into English and Arabic, by Anthropic Claude (Sonnet 5) AI. The whole process runs and publishes automatically "
            "twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. Owing to automated collection some articles or reports may be missed, "
            "so please re-verify important issues against the original sources and further searches."),
-  "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
+  "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
   "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)", "ed_daily": "Daily", "ed_weekly": "Weekly",
  },
@@ -449,7 +449,7 @@ LANG = {
   "title": "رصد الإعلام اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "",
   "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني وسائر الدول الرئيسية والكوري في "
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
-               "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
+               "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
   "updated": "وقت الرصد", "tz": "بتوقيت قطر", "coverage": "فترة الرصد",
   "two_wk": "(أسبوعي)", "two_dl": "(يومي)", "wk_range": "الأحد الماضي 07:00 ~ اليوم 07:00",
   "win_am": "الأمس 15:30 – اليوم 07:00", "win_pm": "اليوم 07:00 – 15:30", "win_pre": "الأمس 07:00 – 15:30",
@@ -482,7 +482,7 @@ LANG = {
            "والمنظمات الدولية وهيئات الطاقة مباشرةً. وتُصنَّف المقالات المجمّعة وتُلخَّص تلقائيًا حسب القضية وتُترجَم إلى الإنجليزية والعربية "
            "بواسطة Anthropic Claude (Sonnet 5) للذكاء الاصطناعي. وتُنفَّذ العملية بأكملها وتُنشَر تلقائيًا مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. "
            "ونظرًا لطبيعة الجمع التلقائي قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
-  "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
+  "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
   "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)", "ed_daily": "يومي", "ed_weekly": "أسبوعي",
  },
