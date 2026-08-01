@@ -303,10 +303,10 @@ LANG = {
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고로 보실 수 있으며, "
                "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section·도하무역관]"),
   "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
-  "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건",
+  "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건", "counts_label": "모니터링 건수",
   "scope": ("<b>모니터링 분야</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
             "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리"),
-  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일간", "arch_weekly": "주간 종합",
+  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일일", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
@@ -327,12 +327,12 @@ LANG = {
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
            "심층 보고서는 국내외 연구기관·국제기구·에너지기관의 발행처 도메인을 직접 조준해 수집합니다. "
-           "수집된 기사는 Anthropic Claude(Haiku 4.5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역합니다. "
+           "수집된 기사는 Anthropic Claude(Sonnet 5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역합니다. "
            "전 과정은 GitHub Actions로 하루 두 차례(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. "
            "자동 수집 특성상 일부 기사·보고서들이 누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "- 주카타르대사관 Commercial Section·도하무역관", "org": "주카타르대사관 Commercial Section·도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
-  "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)", "ed_daily": "일일", "ed_weekly": "주간",
+  "daily_no": "일일 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일일(시범)", "ed_daily": "일일", "ed_weekly": "주간",
  },
  "en": {
   "dir": "ltr", "html": "en",
@@ -342,7 +342,7 @@ LANG = {
                "available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. "
                "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
   "updated": "Monitored at", "tz": "Qatar time", "coverage": "Monitoring period",
-  "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>",
+  "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>", "counts_label": "Monitored items",
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
             "economy &amp; trade, aviation·citizens, etc."),
@@ -369,7 +369,7 @@ LANG = {
            "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
            "are collected by directly targeting the publishing domains of domestic and international research institutes, "
            "international organizations and energy agencies. The collected articles are automatically clustered and summarized by issue, "
-           "and translated into English and Arabic, by Anthropic Claude (Haiku 4.5) AI. The whole process runs and publishes automatically "
+           "and translated into English and Arabic, by Anthropic Claude (Sonnet 5) AI. The whole process runs and publishes automatically "
            "twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. Owing to automated collection some articles or reports may be missed, "
            "so please re-verify important issues against the original sources and further searches."),
   "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
@@ -383,7 +383,7 @@ LANG = {
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
                "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
   "updated": "وقت الرصد", "tz": "بتوقيت قطر", "coverage": "فترة الرصد",
-  "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>",
+  "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>", "counts_label": "عدد المرصود",
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
             "الاقتصاد والتجارة، والطيران والمواطنين، إلخ."),
@@ -409,7 +409,7 @@ LANG = {
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
            "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
            "والمنظمات الدولية وهيئات الطاقة مباشرةً. وتُصنَّف المقالات المجمّعة وتُلخَّص تلقائيًا حسب القضية وتُترجَم إلى الإنجليزية والعربية "
-           "بواسطة Anthropic Claude (Haiku 4.5) للذكاء الاصطناعي. وتُنفَّذ العملية بأكملها وتُنشَر تلقائيًا مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. "
+           "بواسطة Anthropic Claude (Sonnet 5) للذكاء الاصطناعي. وتُنفَّذ العملية بأكملها وتُنشَر تلقائيًا مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. "
            "ونظرًا لطبيعة الجمع التلقائي قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
   "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
@@ -434,7 +434,7 @@ TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
 # 요약 엔진 우선순위(키 접두어로 자동 판별, 되는 것 사용):
 #   Claude API(sk-ant-) → OpenRouter(sk-or-) → Groq(gsk_) → Gemini(AQ/AIza) → GitHub Models(ghs_/PAT)
 # Claude API(Anthropic·소액·카타르 지원·최고 품질). Haiku 저렴.
-ANTHROPIC_MODELS = ["claude-haiku-4-5", "claude-3-5-haiku-latest"]
+ANTHROPIC_MODELS = ["claude-sonnet-5", "claude-haiku-4-5"]
 # OpenRouter(무료 모델·GitHub 로그인 가입·OpenAI 호환).
 OR_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 OR_MODELS = ["openai/gpt-oss-20b:free", "google/gemma-4-31b-it:free",
@@ -460,11 +460,17 @@ def gnews_url(query, lang, when_days=2):
 
 
 def window_bounds(now_q):
+    # 이번 회차가 대표하는 '정기 모니터링 기간'(직전 경계 ~ 이번 경계). 실제 실행 시각이 아니라 07:00/15:30 경계로 고정.
     am = now_q.replace(hour=BOUNDARY_AM[0], minute=BOUNDARY_AM[1], second=0, microsecond=0)
     pm = now_q.replace(hour=BOUNDARY_PM[0], minute=BOUNDARY_PM[1], second=0, microsecond=0)
-    start = am if now_q >= pm else pm - timedelta(days=1)
-    label = f"{start.strftime('%m/%d %H:%M')} ~ {now_q.strftime('%m/%d %H:%M')} (카타르시간)"
-    return start, label
+    if now_q >= pm:
+        start, end = am, pm                                             # 오늘 07:00 ~ 오늘 15:30
+    elif now_q >= am:
+        start, end = pm - timedelta(days=1), am                         # 어제 15:30 ~ 오늘 07:00
+    else:
+        start, end = am - timedelta(days=1), pm - timedelta(days=1)     # 어제 07:00 ~ 어제 15:30
+    label = f"{start.strftime('%m/%d %H:%M')} ~ {end.strftime('%m/%d %H:%M')} (카타르시간)"
+    return start, end, label
 
 
 def entry_time(e):
@@ -946,6 +952,11 @@ def gemini_issues(pool, win_label, weekly=False):
         "'카타르 매체에 실렸다'는 사실만으로는 관련성이 생기지 않습니다 — 카타르의 역할도 없고 정세·에너지·경제 함의도 없는 기사는 제외하세요.\n"
         "관련성이 약한 기사는 억지로 사안으로 묶지 말고 제외하고, 애매하면 사안 수를 줄이세요 — 수량보다 정확도·논리성 우선.\n"
         "'사안(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
+        "【유사 사안 통합】 같은 사건·동일 국면을 다룬 기사들은 출처·표현·보도 각도가 달라도 반드시 '하나의 사안'으로 통합하세요"
+        "(예: '미·이스라엘의 이란 공습설'과 '이란의 보복 위협'이 같은 국면이면 한 사안으로 묶고, 각 전개는 그 사안의 summary 항목으로 정리). "
+        "사실상 중복·인접한 국면을 여러 사안으로 쪼개지 말고, 반대로 본질이 다른 사안(예: 군사충돌 vs LNG 계약)은 분명히 분리하세요. "
+        "묶을지 나눌지 애매하면, 카타르 국익 관점에서 '하나의 판단 단위'가 되는지를 기준으로 결정하세요.\n"
+        "【품질 기준】 확인된 사실과 수치만 사용하고 추측·과장·창작은 금지하며, 각 사안이 '무엇이 일어났고 카타르에 어떤 함의인지'가 요약만으로 드러나게 작성하세요.\n"
         "카테고리 예시: 전쟁·군사(공습·교전 추이) / 외교·중재 / 에너지·유가·LNG / "
         "물류·해상안전(홍해·수에즈·호르무즈) / 경제·통상 / 항공·교민안전.\n"
         "【사안 배열 순서】 기본적으로 위 모니터링 분야 순서, 즉 ①전쟁·군사 ②외교·중재 ③에너지·유가·LNG "
@@ -1100,7 +1111,8 @@ def render_issues(issues, pool, now_utc, L=None):
         theme = esc(str(iss.get("theme", f"{L['issue']} {n}")))
         bullets = _summary_bullets(iss.get("summary", ""))
         body = ('<ul class="sumbul">' + "".join(f'<li>{esc(b)}</li>' for b in bullets) + '</ul>') if bullets else ""
-        ids = [j for j in iss.get("ids", []) if isinstance(j, int) and 0 <= j < len(pool)]
+        raw_ids = iss.get("ids")
+        ids = [j for j in (raw_ids if isinstance(raw_ids, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
         arts = [pool[j] for j in ids]
         q = [a for a in arts if a["region"] == "qatar"]
         ir = [a for a in arts if a["region"] == "iran"]
@@ -1236,18 +1248,16 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         for l in LANGS)
     nav_html = f'<div class="langrow"><div class="lang">{navbtns}</div></div>'
 
-    ed_word = {"daily": L.get("ed_daily", ""), "weekly": L.get("ed_weekly", "")}.get(edition, "")
-    edition_html = f' <span class="edtag">{esc(ed_word)}</span>' if ed_word else ""
     weekly_html = weekly_inline or ""
 
     return TEMPLATE.format(
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
-        archive=archive_html, report=report_html, weekly=weekly_html, edition=edition_html,
+        archive=archive_html, report=report_html, weekly=weekly_html,
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
-        orgline=(f'<div class="orgline">{esc(L["org"])}</div>' if L.get("org") else ""),
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=len(qatar), me=len(me_ov) + len(me_ir) + len(me_kr)),
+        counts_label=esc(L["counts_label"]),
         updated=now_q.strftime("%Y-%m-%d %H:%M"), window=esc(win_label),
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
         full_note=esc(L["full_note"]),
@@ -1294,6 +1304,7 @@ TEMPLATE = """<!DOCTYPE html>
   h1{{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}}
   .sub{{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}}
   .submeta{{color:var(--muted);font-size:12.5px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}}
+  .submeta .cnt{{flex-basis:100%;margin-top:2px}}
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
@@ -1422,7 +1433,7 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
       <span>{coverage_label}: <b>{window}</b></span>
-      <span>{counts}</span>
+      <span class="cnt">{counts_label}: {counts}</span>
     </div>
   </header>
 
@@ -1583,17 +1594,25 @@ def _archive_label_text(meta, L):
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
-    start_q, label_ko = window_bounds(now_q)
+    # 크론 조기 실행 보정: 07:00/15:30 경계 20분 전 이내에 실행되면 해당 경계 회차로 스냅(회차 번호·기간 선택 일관성 확보)
+    _am = now_q.replace(hour=BOUNDARY_AM[0], minute=BOUNDARY_AM[1], second=0, microsecond=0)
+    _pm = now_q.replace(hour=BOUNDARY_PM[0], minute=BOUNDARY_PM[1], second=0, microsecond=0)
+    _grace = timedelta(minutes=20)
+    if _am - _grace <= now_q < _am:
+        now_q = _am
+    elif _pm - _grace <= now_q < _pm:
+        now_q = _pm
+    start_q, end_q, label_ko = window_bounds(now_q)
     items = collect(start_q.astimezone(timezone.utc), now_utc)
-    pool = build_issue_pool(items)
+    new_since_daily = start_q.astimezone(timezone.utc)          # 이번 회차 창(window) 시작 — 이후 발간 보고서는 '신규' 표기
+    end_utc = end_q.astimezone(timezone.utc)                    # 모니터링 기간 끝(경계 시각) — 실행 시각이 아니라 07:00/15:30 경계로 고정
+    new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
+    # 전체 기사 목록/사안 풀에는 '모니터링 기간(경계~경계)' 내 기사만 사용(누적 보고서는 별도 섹션에서만 노출)
+    items_win = [x for x in items if new_since_daily <= x["dt"] <= end_utc]
+    pool = build_issue_pool(items_win)
     issues = gemini_issues(pool, label_ko)
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
-
-    new_since_daily = start_q.astimezone(timezone.utc)          # 이번 회차 창(window) 시작 — 이후 발간 보고서는 '신규' 표기
-    new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
-    # 전체 기사 목록/사안 풀에는 모니터링 기간 내 기사만(누적 보고서는 별도 섹션에서만 노출)
-    items_win = [x for x in items if x["dt"] >= new_since_daily]
     os.makedirs("archive", exist_ok=True)
     slot_dt, ampm = _slot_of(now_q)
     dno = _daily_no(slot_dt)
