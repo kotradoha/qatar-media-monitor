@@ -176,6 +176,9 @@ OVERSEAS_SOURCES = [
     "modern ghana", "indexbox", "south china morning post", "scmp", "nikkei", "the diplomat",
     "semafor", "cbs news", "cbsnews", "sbs news", "sbs world", "sbs.com.au", "abc news", "nbc news", "usa today", "al monitor",
     "al-monitor", "middle east institute", "amwaj", "the cradle", "responsible statecraft",
+    # 인도·기타 해외 매체(한국 매체 'news1'과의 부분일치 오분류 방지 위해 명시)
+    "news18", "network18", "cnn-news18", "firstpost", "wion", "the print", "theprint",
+    "indian express", "indianexpress", "india today", "livemint", "moneycontrol", "opindia", "zee news",
 ]
 
 
@@ -1108,6 +1111,7 @@ def gemini_issues(pool, win_label, weekly=False):
         "**다만 한국 매체가 단순 전재가 아니라 독자적 시각·분석·논평(국내 영향 해석, 전문가 코멘트 등)을 담고 있으면 그 부분은 해당 매체를 명시해 인용해도 됩니다.** "
         "특히 **국내 언론이 같은 사안을 여러 건 전재하더라도 그 '기사 수량'을 사안의 중요도·상단 배치 근거로 삼지 말 것** "
         "— 중요도는 오직 사안의 실제 시급성·중요성·파급효과로 판단하세요.\n"
+        "【한국 보도 내용 반드시 반영】 위 '1차·현지 우선'은 **출처·링크·매체명 표기**에 한한 원칙입니다. **이슈 선정과 요약 내용에는 한국 언론이 보도 중인 사안·정보도 반드시 포함**하세요 — 한국에서 활발히 다뤄지는 주제는 (전재라도) 누락하지 말고 이슈로 포착하고, **한국 정부·외교부 대응, 교민 안전·대피 안내, 국내 산업·에너지 안보 영향, 한국 관련 언급** 등 한국에서 중요한 관점·정보는 요약에 충실히 담으세요(관련 [국내] 기사를 ids에 포함). 대사관은 '현지에서 무슨 일이 일어나는가'와 함께 '한국에서 무엇이 어떻게 보도·논의되는가'를 모두 알아야 합니다.\n"
         "각 사안 필드: theme(사안명, 앞에 이모지 1개 권장. "
         "단, 사안이 '카타르 교민 안전' 또는 '항공 운영'을 다루되 교민이 직접 알아야 할 실질적·행동가능한 "
         "안전 경보·항공 운항 변동 정보가 아니라 배경·정황 참고 수준이면 사안명 맨 끝에 ' 참고'를 붙일 것"
