@@ -1054,13 +1054,34 @@ def link_row(x):
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
 
+_CITE_RE = re.compile(r"[,，]?\s*(?:기사|article[s]?)\s*[0-9][0-9\s·•,、~\-번]*(?=[)）.\n]|$)", re.I)
+
+
+def _strip_cites(text):
+    """LLM이 요약 본문에 넣은 '(기사 5·18)' 류 기사번호 인용을 제거."""
+    t = _CITE_RE.sub("", text or "")
+    t = re.sub(r"[（(]\s*[)）]", "", t)
+    t = re.sub(r"\s+([.,)）])", r"\1", t)
+    return re.sub(r"[ \t]{2,}", " ", t).strip()
+
+
+def _summary_html(text):
+    """요약을 포인트 단위 불릿 목록으로 렌더(줄바꿈이 없으면 '- ' 기준으로 분할)."""
+    t = _strip_cites(text)
+    parts = [p.strip() for p in t.split("\n") if p.strip()]
+    if len(parts) == 1 and len(re.findall(r"(?:^|\s)[-•*]\s+", parts[0])) >= 2:
+        parts = [p.strip() for p in re.split(r"(?:^|\s)[-•*]\s+", parts[0]) if p.strip()]
+    items = "".join(f'<li>{esc(p.lstrip("-•* ").strip())}</li>' for p in parts if p.strip())
+    return f'<ul class="pts">{items}</ul>' if items else ""
+
+
 def render_issues(issues, pool, now_utc, L=None):
     L = L or LANG["ko"]
     out = []
     for n, iss in enumerate(issues, 1):
         theme = esc(str(iss.get("theme", f"{L['issue']} {n}")))
-        summary = esc(str(iss.get("summary", "")))
-        figures = esc(str(iss.get("figures", "")))
+        summary = _summary_html(str(iss.get("summary", "")))
+        figures = esc(_strip_cites(str(iss.get("figures", ""))))
         ids = [j for j in iss.get("ids", []) if isinstance(j, int) and 0 <= j < len(pool)]
         arts = [pool[j] for j in ids]
         q = [a for a in arts if a["region"] == "qatar"]
@@ -1076,7 +1097,7 @@ def render_issues(issues, pool, now_utc, L=None):
             groups = f'<div class="grp"><div class="gh" style="color:var(--muted)">{esc(L["nomap"])}</div></div>'
         out.append(
             f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
-            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div><p>{summary}</p></div>'
+            f'<div class="row"><div class="left"><div class="sh">{esc(L["key_sum"])}</div>{summary}</div>'
             f'<div class="right">{groups}</div></div></div>')
     return "\n".join(out)
 
@@ -1267,6 +1288,8 @@ TEMPLATE = """<!DOCTYPE html>
   @media (max-width:760px){{.left{{border-inline-end:none;border-bottom:1px solid var(--line)}}}}
   .left .sh{{font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}}
   .left p{{margin:0 0 8px;font-size:13.5px}}
+  .left .pts{{margin:0 0 8px;padding-inline-start:17px;font-size:13.5px}}
+  .left .pts li{{margin:0 0 5px;line-height:1.62}}
   .left .figs{{font-size:12.5px;color:var(--muted)}}
   .right{{padding:13px 16px}}
   .grp{{margin-bottom:9px}} .grp .gh{{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}}
