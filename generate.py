@@ -404,7 +404,7 @@ LANG = {
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
   "rep_head": "중동 정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
-  "wk_head": "📅 지난주 언론동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
+  "wk_head": "🗓️ 지난주 언론동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
@@ -449,7 +449,7 @@ LANG = {
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
   "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes, etc.)", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
-  "wk_head": "📅 Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
+  "wk_head": "🗓️ Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
@@ -496,7 +496,7 @@ LANG = {
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
   "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
-  "wk_head": "📅 الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
+  "wk_head": "🗓️ الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
@@ -1164,8 +1164,9 @@ def gemini_issues(pool, win_label, weekly=False):
         "요약이라도 가능한 한 빠짐없이 반영해 최대한 상세하게 쓸 것(단, 원문에 없는 수치·사실은 절대 창작·추정하지 말 것). "
         "명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체('-했다/-이다') 금지. "
         "**문두에 날짜(예: '7/31')를 붙이지 말 것**(커버 기간이 이미 명시됨). "
-        "**'(현지시간)'·'(현지시각)'·'(한국시간)' 등 시간대 표기를 불릿·문장 맨 앞에 단독으로 붙이지 말 것**"
-        "(시간대가 꼭 필요하면 해당 시각 바로 뒤에 괄호로 자연스럽게 녹일 것, 예: '오후 3시(현지시간)'). "
+        "**'(현지시간)'·'(현지시각)'·'(한국시간)' 같은 막연한 시간대 표기를 불릿·문장 맨 앞에 단독으로 붙이지 말 것**"
+        "(시점이 중요하면 막연히 '현지시간'이라 쓰지 말고 **어느 나라 시간인지와 구체적 날짜를 함께** 문장 안에 자연스럽게 녹일 것, "
+        "예: '미국시간 8월 2일 트럼프가 ~ 발표함', '이란시간 8월 1일 새벽 ~'. 원문에 없는 날짜·시각은 창작 금지). "
         "'(기사 8·21)' 같은 기사 번호 표기, "
         "【매체명 표기 원칙 — 내용 우선】 **요약 본문에는 기본적으로 매체명을 넣지 말고 검증된 사실·수치만** 밀도 있게 서술하세요(보도 매체·원문은 우측 관련기사 목록에 이미 표시됨). "
         "여러 매체가 동일하게 보도한 사실일수록 매체명은 정보가치가 없으니 **절대 나열하지 마세요**(예: '(이스라엘타임스·KBS·경향신문 등)', '~라고 조선비즈가 보도함' 금지). "
@@ -1623,7 +1624,7 @@ TEMPLATE = """<!DOCTYPE html>
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
-  .ai{{font-size:10.5px;font-weight:700;color:#111;background:var(--accent);padding:1px 7px;border-radius:6px;white-space:nowrap}}
+  .ai{{font-size:10.5px;font-weight:700;color:var(--accent);background:transparent;border:1px solid var(--accent);padding:1px 7px;border-radius:6px;white-space:nowrap}}
   .issue{{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}}
   .issue .ihead{{display:flex;align-items:baseline;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);background:var(--panel2)}}
   .issue .ihead .num{{flex:0 0 auto;font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px}}
@@ -2116,7 +2117,7 @@ def main():
             weekly_inline = (
                 '<div class="wsec">'
                 '<div class="sumhead"><span class="bar" style="background:var(--accent)"></span>'
-                f'{esc(L["wk_head"])} <span class="ai" style="background:var(--accent)">{esc(L["weekly_no"].format(n=wno))}</span>'
+                f'{esc(L["wk_head"])} <span class="ai">{esc(L["weekly_no"].format(n=wno))}</span>'
                 f'<span class="wmeta">{esc(wwin)}</span></div>'
                 + wbody +
                 f'<div class="wlink"><a href="{SITE_BASE}archive/{esc(wfn)}">{esc(L["wk_open"])}</a></div>'
