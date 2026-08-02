@@ -50,8 +50,13 @@ Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
                 "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping",
                 "Iran nuclear talks", "Houthi Red Sea attack", "OPEC oil output", "Israel Iran strike",
-                "Hormuz tanker", "Hamas disarm Gaza", "Trump Truth Social Iran", "Trump Truth Social strike Middle East"]
-Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동", "트럼프 트루스소셜"]
+                "Hormuz tanker", "Hamas disarm Gaza", "Trump Truth Social Iran", "Trump Truth Social strike Middle East",
+                # 아랍·GCC 국가 간 공동성명·정상회의·외교장관 회의 조준
+                "GCC summit Iran war", "Gulf Cooperation Council statement Iran", "GCC foreign ministers meeting",
+                "Arab League statement Iran Israel", "Arab summit Iran war", "GCC joint statement"]
+Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동", "트럼프 트루스소셜",
+                # 아랍·GCC 공동성명·회의
+                "걸프협력회의 성명", "GCC 정상회의", "아랍연맹 성명", "걸프 국가 공동성명", "아랍 정상회의 이란"]
 # 네이버 뉴스에서 '카타르'·'중동' 검색 시 노출되는 기사 포함(구글뉴스 site:로 네이버 뉴스 도메인 조준)
 Q_NAVER_KO = ["카타르", "중동"]
 NAVER_NEWS_DOMAINS = ["n.news.naver.com", "news.naver.com"]
@@ -1321,6 +1326,7 @@ def gemini_qatar_gov(pool, win_label):
         "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]에서 **전쟁(미·이스라엘-이란 전쟁)과 직접 관련된 카타르 '정부'의 공식 동향**만 뽑아 한국어로 정리하세요. "
         "대상: 카타르 국왕(에미르)·총리·외교부(MOFA)·국방부·내무부·정부커뮤니케이션실(GCO)·카타르에너지(QatarEnergy)·QNA(국영통신)의 "
         "**전쟁·이란 정세 관련** 공식 성명·발표·결정·조치 — 예: 전쟁 관련 중재·외교, 공습·정전·핵협상에 대한 지지/규탄/우려 성명, 자국민·교민 안전조치·여행/영공 공지, 에너지·LNG·불가항력 관련 공식 입장, 대이란 제재·추방 등. "
+        "**카타르가 참여·서명한 GCC(걸프협력회의)·아랍연맹 공동성명이나 정상·외교장관 회의 결과도 카타르 정부의 공식 동향으로 포함**하세요(전쟁 관련일 때). "
         "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
         "**전쟁과 무관한 의례적 외교(축전·조전·일반 정상회담 등)·일반 정세·타국 발표·언론 논평은 제외**하고, **전쟁 관련으로 카타르 정부가 실제로 한 것**만. "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
@@ -1550,6 +1556,10 @@ TIMELINE = [
    "ko": "트럼프, 이란 추가 대규모 공습 전격 취소 발표 — '합의의 윤곽' 마련·이란 등의 보류 요청 수용, 호르무즈 전면 개방과 '핵 위협' 종식을 조건으로 제시.",
    "en": "Trump abruptly cancels a planned large-scale strike on Iran, citing agreed 'parameters of a deal' and Tehran's request for a pause; sets full reopening of Hormuz and ending the 'nuclear threat' as conditions.",
    "ar": "ترامب يلغي فجأة ضربة واسعة مخطّطة على إيران، مشيراً إلى 'معالم اتفاق' وطلب طهران وقفاً؛ ويشترط إعادة فتح هرمز بالكامل وإنهاء 'التهديد النووي'."},
+  {"d": "2026-07-30", "q": False,
+   "ko": "이집트 최초 피격 — 드론이 지중해 다미에타 항의 선박 2척(가스선)을 타격, 이집트가 확전 경고. 전쟁이 에너지 인프라·역내로 확산되며 이집트가 처음으로 표적이 됨(후티는 관여 부인).",
+   "en": "Egypt struck for the first time — a drone hits two (gas) ships at the Damietta Mediterranean port; Egypt warns of escalation. The war widens to energy infrastructure with Egypt targeted for the first time (Houthis deny involvement).",
+   "ar": "استهداف مصر لأول مرة — مسيّرة تضرب سفينتين (للغاز) في ميناء دمياط المتوسطي، ومصر تحذّر من التصعيد. تتّسع الحرب لتطال البنية التحتية للطاقة مع استهداف مصر للمرة الأولى (والحوثيون ينفون الضلوع)."},
   {"d": "2026-07-28", "q": False,
    "ko": "사우디아라비아가 이라크 내 친이란 민병대를 겨냥한 미국의 공습에 가담 — 사우디의 참전.",
    "en": "Saudi Arabia joins U.S. strikes on Iran-backed militias in Iraq, marking Riyadh's entry into the war.",
@@ -1626,6 +1636,10 @@ TIMELINE = [
    "ko": "이란이 카타르 라스라판 가스시설을 타격 — LNG 수출 약 17% 차질(복구 3~5년 추정), 카타르는 이란 무관을 24시간 내 추방.",
    "en": "An Iranian strike hits Qatar's Ras Laffan gas facility, disrupting ~17% of LNG exports (repairs estimated at 3–5 years); Qatar expels Iranian attachés within 24 hours.",
    "ar": "ضربة إيرانية تصيب منشأة الغاز في رأس لفان بقطر، معطّلةً نحو 17% من صادرات الغاز المسال (تُقدَّر الإصلاحات بـ3–5 سنوات)؛ وقطر تطرد الملحقين الإيرانيين خلال 24 ساعة."},
+  {"d": "2026-03-13", "q": False,
+   "ko": "카르그섬 타격 — 이란 원유 수출의 대부분(약 90%)을 처리하는 최대 석유 수출 터미널(카르그섬)이 공습받아 이란 원유 수출·국제유가에 큰 충격.",
+   "en": "Kharg Island struck — the terminal that handles the bulk (about 90%) of Iran's crude exports is hit, dealing a major blow to Iranian oil exports and to global oil prices.",
+   "ar": "ضرب جزيرة خرج — استُهدفت المحطة التي تصدّر نحو 90% من النفط الإيراني، ما وجّه ضربة كبيرة لصادرات النفط الإيرانية ولأسعار النفط العالمية."},
   {"d": "2026-03-11", "q": True,
    "ko": "카타르가 밤사이 이란의 미사일·드론을 요격.",
    "en": "Qatar intercepts Iranian missiles and drones overnight.",
