@@ -397,17 +397,17 @@ QGROUP_I18N = {
 LANG = {
  "ko": {
   "dir": "ltr", "html": "ko",
-  "title": "카타르·중동 정세 일일·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
+  "title": "카타르·중동 정세 일간·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
   "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고하실 수 있으며, "
                "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]"),
   "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
-  "two_wk": "(주간)", "two_dl": "(일일)", "wk_range": "지난주 일 07:00 ~ 당일 07:00",
+  "two_wk": "(주간)", "two_dl": "(일간)", "wk_range": "지난주 일 07:00 ~ 당일 07:00",
   "win_am": "전일 15:30 ~ 당일 07:00", "win_pm": "당일 07:00 ~ 당일 15:30", "win_pre": "전일 07:00 ~ 전일 15:30",
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건", "counts_label": "모니터링 건수",
   "scope": ("<b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
             "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리"),
-  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "지난 회차", "arch_weekly": "주간 종합",
+  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "지난 회차", "arch_weekly": "주간 종합", "sel_d": "일간", "sel_w": "주간", "sister": "✈️ 항공 모니터링",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
@@ -428,7 +428,7 @@ LANG = {
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
-  "gov_head": "🏛️ 전쟁 관련 카타르 정부 동향", "gov_none": "모니터링 기간 중 별도 동향 무",
+  "gov_head": "🏛️ 전쟁 관련 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
            "심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. "
@@ -438,8 +438,8 @@ LANG = {
            "자동 수집 특성상 일부 기사·보고서들이 누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "- 주카타르대사관 Commercial Section · 도하무역관", "org": "주카타르대사관 Commercial Section · 도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
-  "daily_no": "일일 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일일(시범)", "ed_daily": "일일", "ed_weekly": "주간",
-  "no_only": "제{n}호", "wk_incl": " (주간 포함)", "wdays": ["월","화","수","목","금","토","일"],
+  "daily_no": "일간 제{n}호", "weekly_no": "주간 제{n}호", "daily_demo": "일간(시범)", "ed_daily": "일간", "ed_weekly": "주간",
+  "no_only": "제{n}호", "wk_incl": " (주간)", "wdays": ["월","화","수","목","금","토","일"],
  },
  "en": {
   "dir": "ltr", "html": "en",
@@ -455,7 +455,7 @@ LANG = {
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
             "economy &amp; trade, aviation·citizens, etc."),
-  "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly",
+  "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly", "sel_d": "Daily", "sel_w": "Weekly", "sister": "✈️ Flight monitor",
   "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
                   "(full article text and past editions are not searched; open a past edition from the selector above to search it)."),
@@ -476,7 +476,7 @@ LANG = {
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
-  "gov_head": "🏛️ War-related Qatar government activity", "gov_none": "No separate government activity during this monitoring window.",
+  "gov_head": "🏛️ War-related Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
            "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
@@ -490,7 +490,7 @@ LANG = {
   "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
   "daily_no": "Daily No.{n}", "weekly_no": "Weekly No.{n}", "daily_demo": "Daily (preview)", "ed_daily": "Daily", "ed_weekly": "Weekly",
-  "no_only": "No.{n}", "wk_incl": " (incl. weekly)", "wdays": ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+  "no_only": "No.{n}", "wk_incl": " (+wk)", "wdays": ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
  },
  "ar": {
   "dir": "rtl", "html": "ar",
@@ -505,7 +505,7 @@ LANG = {
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
             "الاقتصاد والتجارة، والطيران والمواطنين، إلخ."),
-  "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي",
+  "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي", "sel_d": "يومي", "sel_w": "أسبوعي", "sister": "✈️ رصد الطيران",
   "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
                   "(لا يشمل البحث النص الكامل للمقالات ولا الإصدارات السابقة؛ افتح إصدارًا سابقًا من القائمة أعلاه للبحث فيه)."),
@@ -526,7 +526,7 @@ LANG = {
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
-  "gov_head": "🏛️ نشاط الحكومة القطرية المتعلق بالحرب", "gov_none": "لا يوجد نشاط حكومي منفصل خلال فترة الرصد هذه.",
+  "gov_head": "🏛️ نشاط الحكومة القطرية المتعلق بالحرب", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
            "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
@@ -538,7 +538,7 @@ LANG = {
   "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
   "daily_no": "يومي رقم {n}", "weekly_no": "أسبوعي رقم {n}", "daily_demo": "يومي (تجريبي)", "ed_daily": "يومي", "ed_weekly": "أسبوعي",
-  "no_only": "رقم {n}", "wk_incl": " (يشمل الأسبوعي)", "wdays": ["الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت","الأحد"],
+  "no_only": "رقم {n}", "wk_incl": " (أسبوعي)", "wdays": ["الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت","الأحد"],
  },
 }
 
@@ -546,6 +546,7 @@ MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 72          # 사안 분류에 넘길 기사 수(Sonnet 5 대용량 컨텍스트 — 원산지 고루 반영·중요 기사 누락 방지)
 DESC_MAX = 220                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
+FLIGHT_URL = "https://kotradoha.github.io/qatar-korea-flight-monitor/"   # 자매 사이트(항공 모니터링)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
 WEEKLY_LOOKBACK_DAYS = 7      # 주간 리포트 커버 기간(일)
@@ -1711,13 +1712,13 @@ def _timeline_sources_html(lang="ko"):
     return (f'<div class="tlsrc"><span class="tlsrc-l">{esc(L["tl_src_label"])}</span> {items}'
             f'<div class="tlsrc-n">{esc(L["tl_src_note"])}</div></div>')
 
-def timeline_button(lang="ko"):
+def timeline_ref(lang="ko"):
+    # 별도 버튼 대신 '모니터링 부문' 박스 안에 참고 링크로 삽입 (본문과 동일 크기, 언어버튼 색)
     L = LANG.get(lang, LANG["ko"])
     url = f"{SITE_BASE}timeline-{lang}.html"
-    return (f'<div class="tlbtnrow"><a class="tlbtn" href="{esc(url)}" target="_blank" rel="noopener">'
-            f'<span class="tlbtn-tag">{esc(L["tl_tag"])}</span>'
-            f'<span class="tlbtn-t">{esc(L["tl_head"])}</span>'
-            f'<span class="tlbtn-arr">↗</span></a></div>')
+    return (f'<span class="tldiv"></span>'
+            f'<span class="tlref">📌 {esc(L["tl_tag"])}: '
+            f'<a href="{esc(url)}" target="_blank" rel="noopener">🗓️ {esc(L["tl_head"])} →</a></span>')
 
 def render_timeline_page(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
@@ -1832,42 +1833,41 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
             opts_weekly += o
         else:
             opts_daily += o
-    aopts = f'<option value="{esc(home_url)}">{esc(L["arch_latest"])}</option>'
-    if opts_daily:
-        aopts += f'<optgroup label="{esc(L["arch_daily"])}">{opts_daily}</optgroup>'
-    if opts_weekly:
-        aopts += f'<optgroup label="{esc(L["arch_weekly"])}">{opts_weekly}</optgroup>'
-    # 서버측 옵션은 무JS 폴백. 아래 스크립트가 매니페스트(archive/manifest.json)를 불러와 '전체 회차'로 동적 재구성 →
-    # 오래된 아카이브 페이지에서도 항상 최신 목록이 보이고, 어느 날짜 회차로든 자유롭게 이동 가능(현재 보는 회차는 selected 표시).
-    _albl = json.dumps({"latest": L["arch_latest"], "daily": L["arch_daily"], "weekly": L["arch_weekly"]}, ensure_ascii=False)
+    # 일간·주간을 좌우 두 개의 별도 드롭다운으로 분리 — 각각 쌓여도 서로 안 묻히고 짧게 유지
+    # 서버측 옵션은 무JS 폴백. 아래 스크립트가 매니페스트로 '전체 회차'를 동적 재구성(현재 보는 회차 selected).
+    _albl = json.dumps({"latest": L["arch_latest"], "daily": L["arch_daily"], "weekly": L["arch_weekly"], "seld": L["sel_d"], "selw": L["sel_w"]}, ensure_ascii=False)
     _archscript = """<script>(function(){var LB=__LB__;var B="__BASE__";
 var lang=document.documentElement.lang||"ko";
 var cur=(location.pathname.split("/").pop()||"index.html");
 fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){
-var s=document.getElementById("archsel");if(!s||!m)return;
+var sd=document.getElementById("archsel-d"),sw=document.getElementById("archsel-w");if(!m)return;
 var home=(m.home&&m.home[lang])||B;var ld=(m.latest_daily&&m.latest_daily[lang])||"";
 var xs=(m.issues||[]).filter(function(x){return x.lang===lang;});
 xs.sort(function(a,b){return a.dt<b.dt?1:(a.dt>b.dt?-1:0);});
 function e(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-var h='<option value="'+e(home)+'">'+e(LB.latest)+'</option>';var d="",w="";
+var d='<option value="">'+e(LB.seld)+'</option><option value="'+e(home)+'">'+e(LB.latest)+'</option>';var w='<option value="">'+e(LB.selw)+'</option>';
 xs.forEach(function(x){if(x.kind!=="weekly"&&x.file===ld)return;
-var o='<option value="'+e(B+"archive/"+x.file)+'"'+(x.file===cur?" selected":"")+'>'+e(x.label)+'</option>';
+var sel=(x.file===cur?" selected":"");
+var o='<option value="'+e(B+"archive/"+x.file)+'"'+sel+'>'+e(x.label)+'</option>';
 if(x.kind==="weekly")w+=o;else d+=o;});
-if(d)h+='<optgroup label="'+e(LB.daily)+'">'+d+'</optgroup>';
-if(w)h+='<optgroup label="'+e(LB.weekly)+'">'+w+'</optgroup>';
-s.innerHTML=h;
-if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0;}
+if(sd){sd.innerHTML=d;if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){sd.selectedIndex=0;}}
+if(sw){sw.innerHTML=w;}
 }).catch(function(){});})();</script>""".replace("__LB__", _albl).replace("__BASE__", SITE_BASE)
+    _dsel = (f'<select id="archsel-d" aria-label="{esc(L["arch_daily"])}" onchange="if(this.value)location.href=this.value">'
+             f'<option value="">{esc(L["sel_d"])}</option><option value="{esc(home_url)}">{esc(L["arch_latest"])}</option>{opts_daily}</select>')
+    _wsel = (f'<select id="archsel-w" aria-label="{esc(L["arch_weekly"])}" onchange="if(this.value)location.href=this.value">'
+             f'<option value="">{esc(L["sel_w"])}</option>{opts_weekly}</select>')
     archive_html = (f'<div class="archsel"><span class="archlbl">{esc(L["arch_view"])}</span>'
-                    f'<select id="archsel" onchange="if(this.value)location.href=this.value">{aopts}</select></div>'
-                    + _archscript)
+                    f'{_dsel}{_wsel}</div>' + _archscript)
 
     # 언어 전환 버튼
     nav = nav or {l: home_url for l in LANGS}
     navbtns = "".join(
         f'<a class="langbtn{" on" if l == lang else ""}" href="{esc(nav.get(l, home_url))}">{esc(LANG_NAME[l])}</a>'
         for l in LANGS)
-    nav_html = f'<div class="langrow"><div class="lang">{navbtns}</div></div>'
+    nav_html = (f'<div class="langrow">'
+                f'<div class="lang">{navbtns}</div>'
+                f'<a class="sitelink" href="{esc(FLIGHT_URL)}" target="_blank" rel="noopener">{esc(L["sister"])} →</a></div>')
 
     weekly_html = weekly_inline or ""
 
@@ -1886,7 +1886,7 @@ if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0
         expand=esc(L["expand"]), collapse=esc(L["collapse"]),
         col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
         quick_head=esc(L["quick_head"]), quick_note=esc(L["quick_note"]),
-        tlbutton=timeline_button(lang),
+        tlref=timeline_ref(lang),
         foot=esc(L["foot"]), sign=esc(L["sign"]),
         summary=summary_html,
         qatar=block(qatar, esc(L["empty_q"])),
@@ -1916,9 +1916,12 @@ TEMPLATE = """<!DOCTYPE html>
   .titcol{{display:flex;flex-direction:column;gap:1px}}
   .entitle{{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:-.01em;margin-top:2px}}
   .orgline{{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}}
-  .langrow{{display:flex;justify-content:flex-end;margin-bottom:8px}}
+  .langrow{{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}}
+  .sitelink{{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--accent);
+    text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:var(--panel2);white-space:nowrap}}
+  .sitelink:hover{{background:var(--panel);border-color:var(--accent)}}
   .lang{{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}}
-  .langbtn{{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none}}
+  .langbtn{{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap}}
   .langbtn.on{{background:var(--accent);color:#fff}}
   .langbtn:hover{{color:var(--txt)}}
   .langbtn.on:hover{{color:#fff}}
@@ -1926,7 +1929,7 @@ TEMPLATE = """<!DOCTYPE html>
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}}
   .sub{{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}}
-  .submeta{{color:var(--muted);font-size:14px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}}
+  .submeta{{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}}
   .submeta > span::before{{content:"• ";color:var(--accent);font-weight:700}}
   .submeta > span{{flex-basis:100%}}
   .sub b,.submeta b{{color:var(--txt)}}
@@ -2039,7 +2042,7 @@ TEMPLATE = """<!DOCTYPE html>
   .qchips{{display:flex;flex-wrap:wrap;gap:7px}}
   .qchips a{{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}}
   .qchips a:hover{{text-decoration:underline}}
-  .archsel{{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:nowrap}}
+  .archsel{{display:flex;align-items:center;gap:6px 8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:wrap}}
   .archlbl{{flex:0 0 auto;white-space:nowrap}}
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;flex:0 1 auto;min-width:0;max-width:max-content;
@@ -2049,6 +2052,11 @@ TEMPLATE = """<!DOCTYPE html>
   .scopebar{{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
     border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}}
   .scopebar b{{color:var(--txt);font-weight:700}}
+  .tldiv{{display:block;border-top:1px dashed var(--line);margin:9px 0 8px}}
+  .tlref{{display:block;font-size:12.5px;color:var(--muted)}}
+  .tlref a{{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45)}}
+  .tlref a:hover{{text-decoration-color:var(--accent)}}
+  .tlref img.emoji{{height:1em;width:1em;vertical-align:-0.12em}}
   .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(77,163,255,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(77,163,255,.08),transparent)}}
   .wsec .sumhead{{margin-top:2px}}
@@ -2069,8 +2077,10 @@ TEMPLATE = """<!DOCTYPE html>
   footer .notice-emph{{margin-top:12px;padding:12px 14px;border-radius:10px;background:#e2eefb;border:1px solid rgba(42,120,214,0.35);color:#16305e;font-weight:600;font-size:12.5px;line-height:1.6}}
   footer .notice-sign{{text-align:end;margin-top:10px;font-weight:400;font-size:12px;color:#16305e;opacity:.9}}
   .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
-  @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}} .archsel select{{max-width:100%}}
-    .langrow{{justify-content:stretch}} .lang{{width:100%;gap:6px}} .langbtn{{flex:1;text-align:center;padding:10px 8px;font-size:14px}}}}
+  @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}}
+    .archsel{{flex-wrap:nowrap;gap:6px}} .archlbl{{font-size:11.5px}}
+    .archsel select{{max-width:max-content;font-size:11.5px;padding:5px 7px}}
+    .langrow{{justify-content:space-between;flex-wrap:wrap;gap:8px}} .lang{{flex:1 1 auto;gap:6px}} .langbtn{{flex:1;text-align:center;padding:10px 8px;font-size:14px}}}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {{
     :root{{--bg:#fff;--panel:#fff;--panel2:#fbfbfd;--line:#d0d0d0;--txt:#000;--muted:#555;--accent:#1e6bd6;--gold:#b8860b;--green:#2fbf71;--note-bg:#fbeceb;--crit-text:#b4211f}}
@@ -2094,16 +2104,14 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}</div></div>
   <header>
     <div class="sub"><span>{subtitle}</span></div>
-    {tlbutton}
-    <div class="scopebar">🎯 {scope}</div>
+    <div class="scopebar">🎯 {scope}{tlref}</div>
+    {archive}
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
       <span>{coverage_label}: <b>{window}</b></span>
       <span class="cnt">{counts_label}: {counts}</span>
     </div>
   </header>
-
-  {archive}
 
   {weekly}
 
