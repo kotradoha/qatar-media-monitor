@@ -232,7 +232,8 @@ QUICK_LINKS = {
         ("Gulf Times", "https://www.gulf-times.com/"),
         ("The Peninsula", "https://thepeninsulaqatar.com/"),
         ("Qatar Tribune", "https://www.qatar-tribune.com/"),
-        ("Doha News", "https://dohanews.co/")],
+        ("Doha News", "https://dohanews.co/"),
+        ("Doha News 인스타그램 (@dohanews)", "https://www.instagram.com/dohanews/")],
     "🇮🇷 이란·역내 매체": [("Tehran Times", "https://www.tehrantimes.com/"),
         ("Press TV", "https://www.presstv.ir/"),
         ("IRNA (English)", "https://en.irna.ir/"),
@@ -407,6 +408,9 @@ LANG = {
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
   "wk_head": "🗓️ 지난주 언론동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
+  "tl_head": "🕰️ 중동 전쟁 타임라인 (2026)", "tl_note": "2026.2.28 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
+  "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "공개 보도를 교차 확인해 정리했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
+  "gov_head": "🏛️ 카타르 정부 동향", "gov_none": "금일 별도 동향 무",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
            "심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. "
@@ -452,6 +456,9 @@ LANG = {
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
   "wk_head": "🗓️ Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
+  "tl_head": "🕰️ Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
+  "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Compiled by cross-checking public reporting; please verify specific figures and wording against each outlet and primary announcements.",
+  "gov_head": "🏛️ Qatar government activity", "gov_none": "No separate government action in this update.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
            "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
@@ -499,6 +506,9 @@ LANG = {
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
   "wk_head": "🗓️ الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
+  "tl_head": "🕰️ الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
+  "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "جُمِعت بالتحقّق المتقاطع من تقارير عامة؛ يُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
+  "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_none": "لا يوجد إجراء حكومي منفصل في هذا التحديث.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
            "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
@@ -1286,6 +1296,72 @@ def translate_issues(issues, lang):
     return issues
 
 
+def gemini_qatar_gov(pool, win_label):
+    """카타르 '정부' 공식 동향만 별도 경량 추출(코어 이슈 로직과 분리). 카타르 관련 기사만 대상.
+    반환: 한국어 개조식 불릿 리스트(없으면 [])."""
+    qpool = [x for x in pool if x.get("qatar") or x.get("region") == "qatar"]
+    if not qpool:
+        return []
+    lines = []
+    for i, x in enumerate(qpool[:40]):
+        d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
+        desc = (x.get("desc") or "")[:DESC_MAX]
+        lines.append(f"{i}: ({x['source']}, {d}) {x['title']} :: {desc}")
+    prompt = (
+        "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]에서 **카타르 '정부'의 공식 동향**만 뽑아 한국어로 정리하세요. "
+        "대상: 카타르 국왕(에미르)·총리·외교부(MOFA)·국방부·내무부·정부커뮤니케이션실(GCO)·카타르에너지(QatarEnergy)·QNA(국영통신)의 "
+        "공식 성명·발표·결정·조치 — 예: 중재·외교 활동, 지지/규탄/우려 성명, 자국민·교민 안전조치·여행/영공 공지, 에너지·계약·불가항력 관련 공식 입장, 제재·추방 등. "
+        "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
+        "일반 정세·타국 발표·언론 논평은 제외하고 **카타르 정부가 실제로 한 것**만. "
+        "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 1줄, 핵심 사실·수치·주체를 담아 최대 3개. "
+        "카타르 정부의 뚜렷한 공식 동향이 없으면 반드시 빈 배열을 반환하세요. "
+        "출력은 오직 JSON: {\"gov\":[\"\"]} (없으면 {\"gov\":[]}).\n\n"
+        f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
+    out = gemini_generate(prompt, json_mode=True)
+    if not out:
+        return []
+    try:
+        g = json.loads(out).get("gov")
+        if isinstance(g, list):
+            return [s.strip() for s in g if isinstance(s, str) and s.strip()][:3]
+    except Exception as ex:
+        print(f"[warn] qatar_gov parse failed: {ex}")
+    return []
+
+
+def translate_bullets(bullets, lang):
+    """짧은 불릿 문자열 배열을 영어/아랍어로 번역(정부 동향 박스용). 실패 시 원문 유지."""
+    if not bullets or lang == "ko":
+        return bullets
+    target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
+    if not target:
+        return bullets
+    prompt = (
+        f"Translate each string in this JSON array into {target}, keeping numbers, dates and proper nouns. "
+        "Return ONLY a JSON object {\"gov\":[\"\"]} with the same number and order of items, no commentary.\n\n"
+        + json.dumps({"gov": bullets}, ensure_ascii=False))
+    out = gemini_generate(prompt, json_mode=True)
+    if not out:
+        return bullets
+    try:
+        tr = json.loads(out).get("gov")
+        if isinstance(tr, list) and len(tr) == len(bullets):
+            return [t if isinstance(t, str) and t.strip() else o for o, t in zip(bullets, tr)]
+    except Exception as ex:
+        print(f"[warn] translate_bullets {lang} failed: {ex}")
+    return bullets
+
+
+def render_qatar_gov(gov, lang="ko"):
+    """카타르 정부 동향 고정 박스 — 항상 표시, 동향 없으면 '금일 별도 동향 무'."""
+    L = LANG.get(lang, LANG["ko"])
+    if gov:
+        body = "<ul class=\"govul\">" + "".join(f"<li>{esc(b)}</li>" for b in gov) + "</ul>"
+    else:
+        body = f'<div class="govnone">{esc(L["gov_none"])}</div>'
+    return (f'<div class="govbox"><div class="govhead">{esc(L["gov_head"])}</div>{body}</div>')
+
+
 # ───────────────────── 렌더링 ─────────────────────
 def ago(dt, now, L=None):
     L = L or LANG["ko"]
@@ -1426,9 +1502,175 @@ def _ql_key(item):
     return (0 if is_hangul else 1, name.lower())
 
 
+# ── 중동 전쟁 주요 일지(타임라인) — 공신력 있는 공개 출처(CFR·Wikipedia '2026 Iranian strikes on Qatar'·Stars and Stripes 등) 기반, 최신순.
+# 새 사건이 생기면 이 리스트 맨 앞에 dict 하나만 추가하면 됨. q=True는 카타르 직접 관련.
+TIMELINE = [
+  {"d": "2026-08-01", "q": False, "note": {"ko": "미국시각", "en": "U.S. time", "ar": "بتوقيت أمريكا"},
+   "ko": "트럼프, 이란 추가 대규모 공습 전격 취소 발표 — '합의의 윤곽' 마련·이란 등의 보류 요청 수용, 호르무즈 전면 개방과 '핵 위협' 종식을 조건으로 제시.",
+   "en": "Trump abruptly cancels a planned large-scale strike on Iran, citing agreed 'parameters of a deal' and Tehran's request for a pause; sets full reopening of Hormuz and ending the 'nuclear threat' as conditions.",
+   "ar": "ترامب يلغي فجأة ضربة واسعة مخطّطة على إيران، مشيراً إلى 'معالم اتفاق' وطلب طهران وقفاً؛ ويشترط إعادة فتح هرمز بالكامل وإنهاء 'التهديد النووي'."},
+  {"d": "2026-07-28", "q": False,
+   "ko": "사우디아라비아가 이라크 내 친이란 민병대를 겨냥한 미국의 공습에 가담 — 사우디의 참전.",
+   "en": "Saudi Arabia joins U.S. strikes on Iran-backed militias in Iraq, marking Riyadh's entry into the war.",
+   "ar": "السعودية تنضم إلى الضربات الأمريكية على الميليشيات المدعومة من إيران في العراق، إيذاناً بدخولها الحرب."},
+  {"d": "2026-07-27", "q": False,
+   "ko": "13일 연속 야간 공습 끝에 미국이 폭격을 중단하고, 이란도 조건부로 공격을 멈춤.",
+   "en": "After 13 consecutive nights of strikes, the U.S. halts bombing and Iran conditionally suspends its attacks.",
+   "ar": "بعد 13 ليلة متتالية من الضربات، توقف الولايات المتحدة قصفها وتعلّق إيران هجماتها بشروط."},
+  {"d": "2026-07-13", "q": False,
+   "ko": "트럼프, 호르무즈 해협 봉쇄와 통항 20% 통행료 부과 방침 발표 — 이란은 복수의 걸프국을 타격.",
+   "en": "Trump announces a naval blockade of the Strait of Hormuz with a 20% transit toll; Iran strikes multiple Gulf states.",
+   "ar": "ترامب يعلن حصاراً بحرياً لمضيق هرمز مع رسم عبور 20%؛ وإيران تضرب عدة دول خليجية."},
+  {"d": "2026-07-08", "q": False,
+   "ko": "이란이 바레인·쿠웨이트 주둔 미군 시설에 미사일·드론 공격 → 트럼프 '휴전 종료' 선언.",
+   "en": "Iran fires missiles and drones at U.S. installations in Bahrain and Kuwait; Trump declares the ceasefire 'over.'",
+   "ar": "إيران تطلق صواريخ ومسيّرات على منشآت أمريكية في البحرين والكويت؛ وترامب يعلن انتهاء وقف إطلاق النار."},
+  {"d": "2026-07-01", "q": True,
+   "ko": "미국·이란 협상단이 카타르에서 중재국과 각각 회동(직접 대화는 없음) — 카타르의 중재 무대 역할 부각.",
+   "en": "U.S. and Iranian negotiators meet separately with mediators in Qatar (no direct talks), underscoring Doha's mediation role.",
+   "ar": "مفاوضون أمريكيون وإيرانيون يجتمعون منفصلين مع وسطاء في قطر (دون محادثات مباشرة)، ما يؤكد دور الدوحة كوسيط."},
+  {"d": "2026-07-01", "q": True,
+   "ko": "카타르 LNG 불가항력이 4개월째 지속 — 이탈리아 에디슨 등 일부 계약은 9월까지 연장, 글로벌 LNG 공급 차질 장기화.",
+   "en": "Qatar's LNG force majeure enters its fourth month — some contracts (e.g., Italy's Edison) extended into September, prolonging the disruption to global LNG supply.",
+   "ar": "القوة القاهرة على الغاز المسال القطري تدخل شهرها الرابع — وتُمدَّد بعض العقود (مثل شركة إديسون الإيطالية) حتى سبتمبر، ما يُطيل اضطراب إمدادات الغاز المسال عالمياً."},
+  {"d": "2026-06-28", "q": True,
+   "ko": "군사작전 중 파편으로 카타르 국민 1명 사망, 이집트인 1명 부상 — 개전 이후 카타르 내 첫 사망자.",
+   "en": "One Qatari national is killed and an Egyptian injured by shrapnel during military operations — the first death inside Qatar since the war began.",
+   "ar": "مقتل مواطن قطري وإصابة مصري بشظايا أثناء العمليات العسكرية — أول وفاة داخل قطر منذ بدء الحرب."},
+  {"d": "2026-06-25", "q": False,
+   "ko": "이란 드론이 호르무즈에서 상선을 타격, 국제 대피 작전이 중단됨.",
+   "en": "An Iranian drone strikes a commercial vessel in the Strait of Hormuz, halting international evacuation operations.",
+   "ar": "مسيّرة إيرانية تضرب سفينة تجارية في مضيق هرمز، ما يوقف عمليات الإجلاء الدولية."},
+  {"d": "2026-06-20", "q": False,
+   "ko": "이란이 레바논 휴전 위반을 주장하며 호르무즈 해협을 다시 봉쇄.",
+   "en": "Iran again closes the Strait of Hormuz, alleging violations of the Lebanon ceasefire.",
+   "ar": "إيران تغلق مضيق هرمز مجدداً، متّهمةً الطرف الآخر بانتهاك وقف إطلاق النار في لبنان."},
+  {"d": "2026-06-17", "q": False,
+   "ko": "트럼프와 이란 대통령이 3천억 달러 규모 투자기금을 포함한 프레임워크 합의에 서명.",
+   "en": "Trump and Iran's president sign a framework agreement that includes a $300 billion investment fund.",
+   "ar": "ترامب والرئيس الإيراني يوقّعان اتفاقاً إطارياً يتضمّن صندوق استثمار بقيمة 300 مليار دولار."},
+  {"d": "2026-06-14", "q": False,
+   "ko": "파키스탄 중재로 잠정 합의 — 호르무즈 재개방, 레바논 휴전, 60일 적대행위 중단 포함.",
+   "en": "A Pakistan-mediated interim deal is signed: reopening Hormuz, a Lebanon ceasefire, and a 60-day halt to hostilities.",
+   "ar": "توقيع اتفاق مؤقت بوساطة باكستانية يشمل إعادة فتح هرمز ووقف إطلاق النار في لبنان ووقف الأعمال العدائية 60 يوماً."},
+  {"d": "2026-06-08", "q": False,
+   "ko": "트럼프의 휴전 촉구에 이란과 이스라엘이 상호 군사작전 종료를 발표.",
+   "en": "Following Trump's call for a ceasefire, Iran and Israel announce a mutual end to military operations.",
+   "ar": "عقب دعوة ترامب لوقف إطلاق النار، تعلن إيران وإسرائيل إنهاءً متبادلاً للعمليات العسكرية."},
+  {"d": "2026-05-03", "q": False,
+   "ko": "트럼프가 호르무즈 통항 상선을 호위하는 '프로젝트 프리덤'을 발표(5/5 교전으로 일시 중단, 상선 2척 통항 성공).",
+   "en": "Trump launches 'Project Freedom' to escort commercial vessels through Hormuz (paused May 5 amid clashes; two vessels transit successfully).",
+   "ar": "ترامب يطلق 'مشروع الحرية' لمرافقة السفن التجارية عبر هرمز (عُلّق في 5 مايو بسبب اشتباكات، ونجح عبور سفينتين)."},
+  {"d": "2026-04-07", "q": False,
+   "ko": "초기 대규모 교전 국면이 끝나고 2주간의 휴전이 성립.",
+   "en": "After the initial large-scale fighting phase, a two-week ceasefire takes hold.",
+   "ar": "بعد مرحلة القتال الواسع الأولى، يبدأ سريان وقف إطلاق نار لمدة أسبوعين."},
+  {"d": "2026-04-01", "q": True,
+   "ko": "이란이 순항미사일 3발 발사, 2발 요격되고 1발이 카타르 인근 유조선에 명중 — 인명피해 없음.",
+   "en": "Iran fires three cruise missiles; two are intercepted and one hits an oil tanker near Qatar, with no casualties.",
+   "ar": "إيران تطلق ثلاثة صواريخ كروز؛ يُعترض اثنان ويصيب ثالث ناقلة نفط قرب قطر دون خسائر بشرية."},
+  {"d": "2026-03-24", "q": True,
+   "ko": "카타르에너지, 라스라판 피해로 LNG 장기계약에 '불가항력(force majeure)' 선언 — 14개 LNG 트레인 중 2개+GTL 1기 손상으로 수출능력 약 17%(연 1,280만t) 상실, 한국·이탈리아·벨기에·중국 4개국 수입에 영향, 연 200억 달러 손실 추정.",
+   "en": "QatarEnergy declares force majeure on long-term LNG contracts after the Ras Laffan damage — with 2 of 14 LNG trains and one GTL plant hit, it loses ~17% of export capacity (12.8 mtpa) and affects buyers in South Korea, Italy, Belgium and China; estimated $20bn in lost annual revenue.",
+   "ar": "قطر للطاقة تعلن 'القوة القاهرة' على عقود الغاز المسال طويلة الأجل بعد أضرار رأس لفان — مع تضرّر قطارين من أصل 14 ومنشأة GTL واحدة، تفقد نحو 17% من طاقة التصدير (12.8 مليون طن سنوياً) وتتأثّر مشتريات كوريا الجنوبية وإيطاليا وبلجيكا والصين؛ وخسائر سنوية تُقدَّر بـ20 مليار دولار."},
+  {"d": "2026-03-23", "q": False,
+   "ko": "트럼프가 이란 발전소 공습을 5일간 유예한다고 발표하며 '생산적 대화'를 주장(이란은 직접 대화 부인).",
+   "en": "Trump announces a five-day pause on strikes against Iranian power plants, claiming 'productive' talks (Iran denies any direct negotiations).",
+   "ar": "ترامب يعلن تعليقاً لخمسة أيام للضربات على محطات الطاقة الإيرانية مدّعياً محادثات 'مثمرة' (وإيران تنفي أي مفاوضات مباشرة)."},
+  {"d": "2026-03-19", "q": True,
+   "ko": "라스라판 가동중단이 헬륨 공급으로 확산 — 헬륨은 LNG 생산의 부산물이라 LNG가 멈추면 함께 끊겨 세계 헬륨 공급의 약 11%(카타르 물량의 약 30%)가 차질, 반도체 제조 리스크 부각(특히 한국·대만이 최대 노출).",
+   "en": "The Ras Laffan shutdown spreads to helium — a byproduct of LNG, so no LNG means no helium — putting ~11% of global helium supply (about 30% of Qatar's 2026 volume) at risk and raising semiconductor-manufacturing risk, with South Korea and Taiwan most exposed.",
+   "ar": "توقّف رأس لفان يمتدّ إلى الهيليوم — وهو منتج ثانوي للغاز المسال، فتوقُّف الغاز يوقفه أيضاً — ما يعرّض نحو 11% من الإمداد العالمي للهيليوم (نحو 30% من حجم قطر لعام 2026) للخطر ويرفع مخاطر تصنيع أشباه الموصلات، وكوريا الجنوبية وتايوان الأكثر تعرّضاً."},
+  {"d": "2026-03-18", "q": True,
+   "ko": "이란이 카타르 라스라판 가스시설을 타격 — LNG 수출 약 17% 차질(복구 3~5년 추정), 카타르는 이란 무관을 24시간 내 추방.",
+   "en": "An Iranian strike hits Qatar's Ras Laffan gas facility, disrupting ~17% of LNG exports (repairs estimated at 3–5 years); Qatar expels Iranian attachés within 24 hours.",
+   "ar": "ضربة إيرانية تصيب منشأة الغاز في رأس لفان بقطر، معطّلةً نحو 17% من صادرات الغاز المسال (تُقدَّر الإصلاحات بـ3–5 سنوات)؛ وقطر تطرد الملحقين الإيرانيين خلال 24 ساعة."},
+  {"d": "2026-03-11", "q": True,
+   "ko": "카타르가 밤사이 이란의 미사일·드론을 요격.",
+   "en": "Qatar intercepts Iranian missiles and drones overnight.",
+   "ar": "قطر تعترض صواريخ ومسيّرات إيرانية خلال الليل."},
+  {"d": "2026-03-03", "q": True,
+   "ko": "이란 미사일이 알우데이드 공군기지에 명중 — 인명피해는 보고되지 않음.",
+   "en": "An Iranian missile hits Al Udeid Air Base; no casualties are reported.",
+   "ar": "صاروخ إيراني يصيب قاعدة العديد الجوية دون تسجيل خسائر بشرية."},
+  {"d": "2026-03-02", "q": True,
+   "ko": "이란이 하마드국제공항을 재차 겨냥(요격), 카타르 F-15가 Su-24 폭격기 2대를 격추(첫 공대공 전과), 드론이 라스라판·메사이드 산업지구를 타격.",
+   "en": "Iran again targets Hamad International Airport (intercepted); Qatari F-15s down two Su-24 bombers (first air-to-air kills), while drones hit the Ras Laffan and Mesaieed industrial areas.",
+   "ar": "إيران تستهدف مطار حمد الدولي مجدداً (تم اعتراضه)؛ ومقاتلات F-15 القطرية تسقط قاذفتي Su-24 (أول إسقاط جوي)، بينما تضرب مسيّرات منطقتي رأس لفان ومسيعيد الصناعيتين."},
+  {"d": "2026-02-28", "q": True,
+   "ko": "이란 보복 개시 — 카타르에 미사일 66발(대부분 요격, 16명 부상)과 하마드공항 겨냥으로 영공 폐쇄; 알우데이드·바레인 5함대·쿠웨이트 미군기지와 이스라엘도 동시 타격.",
+   "en": "Iran's retaliation begins — 66 missiles at Qatar (mostly intercepted, 16 injured) and a strike aimed at Hamad Airport close Qatari airspace; Al Udeid, the Fifth Fleet in Bahrain, U.S. bases in Kuwait, and Israel are hit simultaneously.",
+   "ar": "بدء الرد الإيراني — 66 صاروخاً على قطر (اعتُرض معظمها وأُصيب 16) واستهداف مطار حمد يغلقان الأجواء القطرية؛ وتُضرب في الوقت نفسه العديد والأسطول الخامس في البحرين وقواعد أمريكية في الكويت وإسرائيل."},
+  {"d": "2026-02-28", "q": False,
+   "ko": "미국·이스라엘이 이란 핵·군사시설을 동시 기습 공습(하메네이 사망 보도) — 중동 전쟁 발발.",
+   "en": "The U.S. and Israel launch simultaneous surprise strikes on Iran's nuclear and military sites (Khamenei reported killed) — the Middle East war breaks out.",
+   "ar": "الولايات المتحدة وإسرائيل تشنّان ضربات مفاجئة متزامنة على مواقع إيران النووية والعسكرية (أنباء عن مقتل خامنئي) — اندلاع حرب الشرق الأوسط."},
+]
+
+_TL_MON = {"ko": ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]}
+
+# 타임라인 정리에 사용한 공신력 있는 공개 출처(하단에 작고 연하게 링크로 표기)
+TL_SOURCES = [
+    ("CFR Global Conflict Tracker", "https://www.cfr.org/global-conflict-tracker"),
+    ("Al Jazeera", "https://www.aljazeera.com/"),
+    ("Reuters", "https://www.reuters.com/"),
+    ("AP News", "https://apnews.com/"),
+    ("CNBC", "https://www.cnbc.com/"),
+    ("Fox Business", "https://www.foxbusiness.com/"),
+    ("Gulf News", "https://gulfnews.com/"),
+    ("AGBI (Arabian Gulf Business Insight)", "https://www.agbi.com/"),
+    ("Stars and Stripes", "https://www.stripes.com/"),
+    ("Wikipedia — 2026 Iran war / Iranian strikes on Qatar", "https://en.wikipedia.org/wiki/2026_Iranian_strikes_on_Qatar"),
+]
+
+def _timeline_rows(lang="ko"):
+    L = LANG.get(lang, LANG["ko"])
+    rows = []
+    for e in TIMELINE:
+        y, m, d = e["d"].split("-")
+        mi = int(m)
+        if lang == "ko":
+            datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi}월 {int(d)}일</span>'
+        else:
+            datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi:02d}/{int(d):02d}</span>'
+        note = e.get("note", {}).get(lang, "") if e.get("note") else ""
+        note_html = f' <span class="tlnote">({esc(note)})</span>' if note else ""
+        qcls = " q" if e.get("q") else ""
+        qbadge = f'<span class="tlq">{esc(L["tl_q"])}</span>' if e.get("q") else ""
+        rows.append(
+            f'<div class="tlrow{qcls}"><div class="tldot"></div>'
+            f'<div class="tldate">{datestr}</div>'
+            f'<div class="tlbody">{qbadge}{esc(e.get(lang) or e.get("ko"))}{note_html}</div></div>')
+    return '<div class="tlwrap">' + "".join(rows) + '</div>'
+
+def _timeline_sources_html(lang="ko"):
+    L = LANG.get(lang, LANG["ko"])
+    items = " · ".join(
+        f'<a href="{esc(u)}" target="_blank" rel="noopener">{esc(n)}</a>' for n, u in TL_SOURCES)
+    return (f'<div class="tlsrc"><span class="tlsrc-l">{esc(L["tl_src_label"])}</span> {items}'
+            f'<div class="tlsrc-n">{esc(L["tl_src_note"])}</div></div>')
+
+def timeline_button(lang="ko"):
+    L = LANG.get(lang, LANG["ko"])
+    url = f"{SITE_BASE}timeline-{lang}.html"
+    return (f'<div class="tlbtnrow"><a class="tlbtn" href="{esc(url)}" target="_blank" rel="noopener">'
+            f'<span class="tlbtn-tag">{esc(L["tl_tag"])}</span>'
+            f'<span class="tlbtn-t">{esc(L["tl_head"])}</span>'
+            f'<span class="tlbtn-arr">↗</span></a></div>')
+
+def render_timeline_page(lang="ko"):
+    L = LANG.get(lang, LANG["ko"])
+    home = SITE_BASE if lang == "ko" else f"{SITE_BASE}{lang}.html"
+    return TIMELINE_PAGE.format(
+        dir=L["dir"], htmllang=L["html"], title=esc(L["tl_head"]),
+        tag=esc(L["tl_tag"]), head=esc(L["tl_head"]), note=esc(L["tl_note"]),
+        rows=_timeline_rows(lang), sources=_timeline_sources_html(lang),
+        back=esc(L["tl_back"]), home=esc(home))
+
+
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
            reports=None, edition=None, weekly_inline=None, lang="ko", nav=None, home_url=None, new_since=None,
-           weekly_from=None):
+           weekly_from=None, qatar_gov=None):
     L = LANG.get(lang, LANG["ko"])
     # 모니터링 기간 표기: 주간+일일 동시 발행일(weekly_from 있음)은 두 줄로 (주간)/(일일) 구분
     if weekly_from:
@@ -1581,6 +1823,8 @@ if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0
         expand=esc(L["expand"]), collapse=esc(L["collapse"]),
         col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
         quick_head=esc(L["quick_head"]), quick_note=esc(L["quick_note"]),
+        tlbutton=timeline_button(lang),
+        qatar_gov=render_qatar_gov(qatar_gov, lang),
         foot=esc(L["foot"]), sign=esc(L["sign"]),
         summary=summary_html,
         qatar=block(qatar, esc(L["empty_q"])),
@@ -1700,6 +1944,23 @@ TEMPLATE = """<!DOCTYPE html>
   summary .exp-o{{display:none;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}}
   details[open]>summary .exp-c{{display:none}}
   details[open]>summary .exp-o{{display:inline-block}}
+  /* ── 중동 전쟁 타임라인 버튼(상단, 작게, 새 탭 링크) ── */
+  .tlbtnrow{{display:flex;justify-content:flex-start;margin:4px 0 2px}}
+  .tlbtn{{display:inline-flex;align-items:center;gap:7px;max-width:100%;padding:7px 13px;
+    border:1px solid var(--line);border-radius:999px;background:var(--panel2);
+    text-decoration:none;color:var(--muted);font-weight:700;font-size:12px;
+    transition:background .15s,box-shadow .15s,color .15s}}
+  .tlbtn:hover{{background:var(--panel);color:var(--txt);box-shadow:0 0 0 3px rgba(127,127,127,.1)}}
+  .tlbtn-tag{{font-size:10px;font-weight:800;color:#fff;background:var(--accent);border-radius:5px;padding:1px 6px;white-space:nowrap;flex:0 0 auto}}
+  .tlbtn-t{{word-break:keep-all;line-height:1.3}}
+  .tlbtn-arr{{flex:0 0 auto;font-weight:700}}
+  /* ── 카타르 정부 동향 박스 ── */
+  .govbox{{margin:12px 0;padding:12px 15px;border:1px solid var(--line);border-radius:12px;
+    background:linear-gradient(180deg,rgba(242,177,52,.09),transparent),var(--panel);border-inline-start:3px solid var(--gold)}}
+  .govhead{{font-size:13.5px;font-weight:800;margin-bottom:6px}}
+  .govul{{margin:0;padding-inline-start:18px;list-style:disc}}
+  .govul li{{font-size:13px;line-height:1.6;margin:3px 0;color:var(--txt)}}
+  .govnone{{font-size:12.5px;color:var(--muted)}}
   .foldbox>.reprows,.foldbox>.qbody{{padding:0 2px}}
   ul{{list-style:none;margin:0;padding:0}}
   li{{padding:10px 0;border-bottom:1px solid var(--line)}} li:last-child{{border-bottom:none}}
@@ -1776,7 +2037,11 @@ TEMPLATE = """<!DOCTYPE html>
     </div>
   </header>
 
+  {tlbutton}
+
   {archive}
+
+  {qatar_gov}
 
   {weekly}
 
@@ -1832,6 +2097,89 @@ TEMPLATE = """<!DOCTYPE html>
   }})();
 </script>
 <img src="https://hits.sh/kotradoha.github.io/qatar-media-monitor.svg" alt="" aria-hidden="true" loading="eager" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;opacity:0;pointer-events:none">
+</body>
+</html>
+"""
+
+# 타임라인 독립 페이지(새 탭으로 열림) — 자체 완결형 스타일
+TIMELINE_PAGE = """<!DOCTYPE html>
+<html lang="{htmllang}" dir="{dir}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<style>
+  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--gold:#f2b134}}
+  @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85}}}}
+  *{{box-sizing:border-box}}
+  body{{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Malgun Gothic",sans-serif;
+    -webkit-text-size-adjust:100%}}
+  .wrap{{max-width:920px;margin:0 auto;padding:18px 16px 60px}}
+  .tlback{{display:inline-block;font-size:12.5px;font-weight:700;color:var(--accent);text-decoration:none;margin-bottom:8px}}
+  .tlback:hover{{text-decoration:underline}}
+  .tlpage-div{{border:0;border-top:2px solid var(--line);margin:6px 0 14px}}
+  .tlpage-h{{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 8px;font-size:20px;font-weight:800;line-height:1.3;word-break:keep-all}}
+  .tlpage-tag{{font-size:12px;font-weight:800;color:#fff;background:var(--accent);border-radius:7px;padding:2px 9px;white-space:nowrap}}
+  .tlnotehead{{font-size:12px;color:var(--muted);line-height:1.55;margin:0 2px 20px}}
+  .tlwrap{{position:relative}}
+  .tlwrap::before{{content:"";position:absolute;inset-inline-start:99px;top:6px;bottom:8px;width:2px;background:var(--line)}}
+  .tlrow{{position:relative;display:grid;grid-template-columns:88px 1fr;gap:0 22px;padding:0 0 18px}}
+  .tlrow:last-child{{padding-bottom:2px}}
+  .tldate{{text-align:end;line-height:1.25}}
+  .tldate .tly{{display:block;font-size:11px;color:var(--muted);font-weight:700}}
+  .tldate .tlmd{{display:block;font-size:13px;font-weight:800;color:var(--txt);white-space:nowrap}}
+  .tldot{{position:absolute;inset-inline-start:94px;top:4px;width:11px;height:11px;border-radius:50%;
+    background:var(--accent);border:2px solid var(--bg);z-index:1}}
+  .tlbody{{font-size:13.5px;line-height:1.6;color:var(--txt);word-break:keep-all}}
+  .tlnote{{color:var(--muted);font-weight:400}}
+  .tlrow.q .tldot{{background:var(--gold);width:13px;height:13px;inset-inline-start:93px;top:3px}}
+  .tlrow.q .tlbody{{font-weight:600}}
+  .tlq{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);
+    border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle;white-space:nowrap}}
+  .tlsrc{{margin-top:22px;padding-top:12px;border-top:1px solid var(--line);
+    font-size:10.5px;color:var(--muted);line-height:1.7}}
+  .tlsrc-l{{font-weight:800}}
+  .tlsrc a{{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}}
+  .tlsrc a:hover{{color:var(--accent)}}
+  .tlsrc-n{{margin-top:5px;font-size:10px;opacity:.85}}
+  @media (max-width:560px){{
+    .tlwrap::before{{inset-inline-start:64px}}
+    .tlrow{{grid-template-columns:54px 1fr;gap:0 16px}}
+    .tldate .tlmd{{font-size:12px}}
+    .tldot{{inset-inline-start:59px}}
+    .tlrow.q .tldot{{inset-inline-start:58px}}
+    .tlpage-h{{font-size:17px}}
+  }}
+  /* A4 인쇄 최적화 */
+  @media print{{
+    :root{{--bg:#fff;--panel:#fff;--panel2:#f5f5f5;--line:#c9c9c9;--txt:#111;--muted:#555;--accent:#1668c4;--gold:#a9791a}}
+    @page{{size:A4;margin:14mm}}
+    html,body{{background:#fff}}
+    .wrap{{max-width:none;margin:0;padding:0}}
+    .tlback{{display:none}}
+    .tlpage-div{{border-top-color:#111}}
+    .tlrow{{break-inside:avoid;page-break-inside:avoid;padding-bottom:12px}}
+    .tlbody{{font-size:11.5pt;line-height:1.5}}
+    .tldate .tlmd{{font-size:11pt}}
+    .tldate .tly{{font-size:9pt}}
+    .tldot{{border-color:#fff}}
+    .tlsrc a{{color:#555;border:none}}
+    .tlsrc{{break-inside:avoid}}
+  }}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="tlback" href="{home}">{back}</a>
+  <hr class="tlpage-div">
+  <h1 class="tlpage-h"><span class="tlpage-tag">{tag}</span>{head}</h1>
+  <div class="tlnotehead">{note}</div>
+  {rows}
+  {sources}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script>if(window.twemoji)twemoji.parse(document.body,{{folder:'svg',ext:'.svg'}});</script>
 </body>
 </html>
 """
@@ -2036,6 +2384,7 @@ def main():
     items_win = [x for x in items if new_since_daily <= x["dt"] <= end_utc]
     pool = build_issue_pool(items_win)
     issues = gemini_issues(pool, label_ko)
+    gov_ko = gemini_qatar_gov(pool, label_ko)
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
     os.makedirs("archive", exist_ok=True)
@@ -2061,6 +2410,7 @@ def main():
         witems = filter_minor(witems)
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
+        gov_wk_ko = gemini_qatar_gov(wpool, wlabel_ko)
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
         witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
@@ -2093,6 +2443,7 @@ def main():
         win_label = f"{L['win_' + win_slot]} ({L['tz']})"
         issue_label = L["daily_no"].format(n=dno) if dno else L["daily_demo"]
         iss_l = translate_issues(issues, lang) if issues else None
+        gov_l = translate_bullets(gov_ko, lang)
 
         cur = daily_fname(lang)
         lm = [(m, f) for (m, f) in metas if m["lang"] == lang and f != cur]
@@ -2107,7 +2458,8 @@ def main():
             whtml = render(witems_win, wwin, wiss_l, wflat, issue_pool=wpool,
                            archive_list=archive_list, reports=wreports,
                            edition="weekly", lang=lang, nav=nav,
-                           home_url=home_url(lang), new_since=new_since_weekly)
+                           home_url=home_url(lang), new_since=new_since_weekly,
+                           qatar_gov=translate_bullets(gov_wk_ko, lang))
             with open(os.path.join("archive", wfn), "w", encoding="utf-8") as fh:
                 fh.write(whtml)
             if wiss_l:
@@ -2129,11 +2481,14 @@ def main():
                       archive_list=archive_list, reports=reports,
                       edition="daily", weekly_inline=weekly_inline,
                       lang=lang, nav=nav, home_url=home_url(lang), new_since=new_since_daily,
-                      weekly_from=(wk_from if is_weekly else None))
+                      weekly_from=(wk_from if is_weekly else None), qatar_gov=gov_l)
         with open(main_out(lang), "w", encoding="utf-8") as fh:
             fh.write(html)
         with open(os.path.join("archive", cur), "w", encoding="utf-8") as fh:
             fh.write(html)
+        # 중동 전쟁 타임라인 독립 페이지(새 탭으로 열림)
+        with open(f"timeline-{lang}.html", "w", encoding="utf-8") as fh:
+            fh.write(render_timeline_page(lang))
 
     mode = "issues" if issues else ("flat" if flat else "none")
     print(f"generated ko/en/ar · dno={dno} · window={label_ko} · items={len(items)} · summary={mode} · "
