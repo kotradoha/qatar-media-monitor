@@ -35,6 +35,7 @@
   .submeta .tz{font-weight:400;color:var(--muted)}
   .submeta > span{flex-basis:100%}
   .submeta img.emoji{height:1.15em;width:1.15em;vertical-align:-0.18em;margin-inline-end:2px}
+  .submeta .cnt img.emoji{filter:grayscale(.4) saturate(.6)}
   .sub b,.submeta b{color:var(--txt)}
   .sumhead{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}
   .sumhead .bar{width:3px;height:16px;background:var(--accent);border-radius:2px}
@@ -212,7 +213,7 @@
   <div class="titrow"><div class="titcol"><h1>카타르·중동 정세 일간·주간 언론 모니터링</h1><div class="entitle">Qatar &amp; Middle East — Daily·Weekly Media Monitor</div></div></div>
   <header>
     <div class="sub"><span>매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고하실 수 있으며, 매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]</span></div>
-    <div class="scopebar">🎯 <b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, 물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리<span class="tldiv"></span><span class="tlref">📌 참고: <a href="/qatar-media-monitor/timeline-ko.html" target="_blank" rel="noopener">🗓️ 중동 전쟁 타임라인 (2026) →</a></span></div>
+    <div class="scopebar">🎯 <b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, 물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리<span class="tldiv"></span><span class="tlref">📌 참고: <a href="/qatar-media-monitor/timeline-ko.html" target="_blank" rel="noopener">중동 전쟁 타임라인 (2026) →</a></span></div>
     <div class="archsel"><span class="archlbl">🗂️ 지난 회차 보기:</span><select id="archsel-d" aria-label="지난 회차" onchange="if(this.value)location.href=this.value"><option value="">일간</option><option value="/qatar-media-monitor/">이번 회차 (최신)</option></select><select id="archsel-w" aria-label="주간 종합" onchange="if(this.value)location.href=this.value"><option value="">주간</option></select></div><script>(function(){var LB={"latest": "이번 회차 (최신)", "daily": "지난 회차", "weekly": "주간 종합", "seld": "일간", "selw": "주간"};var B="/qatar-media-monitor/";
 var lang=document.documentElement.lang||"ko";
 var cur=(location.pathname.split("/").pop()||"index.html");
@@ -233,7 +234,7 @@ if(sw){sw.innerHTML=w;}
     <div class="submeta">
       <span>🕒 모니터링 일시: <b>2026/08/02(일) 07:00</b> <span class="tz">(카타르시간)</span></span>
       <span>🗓️ 모니터링 기간: <b>(주간) 지난주 일 07:00 ~ 당일 07:00<br>(일일) 전일 15:30 ~ 당일 07:00</b> <span class="tz">(카타르시간)</span></span>
-      <span class="cnt">🔢 모니터링 건수: 카타르 <b>108</b>건 · 중동 정세 <b>434</b>건</span>
+      <span class="cnt">📊 모니터링 건수: 카타르 <b>108</b>건 · 중동 정세 <b>434</b>건</span>
     </div>
   </header>
 
