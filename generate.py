@@ -370,7 +370,7 @@ LANG = {
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건", "counts_label": "모니터링 건수",
   "scope": ("<b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
             "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리"),
-  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "일일", "arch_weekly": "주간 종합",
+  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "지난 회차", "arch_weekly": "주간 종합",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
@@ -1472,8 +1472,9 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         d = x.get("dt")
         return d.astimezone(TZ).strftime("%m/%d") if hasattr(d, "astimezone") else str(d or "")[:10]
     def rep_row(x):
-        d = x.get("dt")
-        is_new = bool(new_since and hasattr(d, "astimezone") and d >= new_since)
+        # '이번 회차 신규'는 발행일이 아니라 '이번 회차에 처음 목록에 들어온 시각(added)' 기준
+        _a = x.get("added") or x.get("dt")
+        is_new = bool(new_since and hasattr(_a, "astimezone") and _a >= new_since)
         newb = f'<span class="newtag">{esc(L["rep_new"])}</span>' if is_new else ""
         reg = x.get("region", "overseas")
         return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
@@ -2056,6 +2057,7 @@ def _merge_reports(items, now_utc):
                     continue
                 k = (r.get("link", "").split("?")[0]).lower()
                 if k:
+                    r.setdefault("added", r.get("dt"))   # 과거 항목엔 최초수집시각이 없으므로 발행일로 보정
                     store[k] = r
     except Exception:
         pass
@@ -2067,7 +2069,9 @@ def _merge_reports(items, now_utc):
             continue
         store[k] = {"title": x["title"], "link": x["link"], "source": x["source"],
                     "shref": x.get("shref", ""),
-                    "dt": x["dt"].astimezone(timezone.utc).isoformat(), "region": x.get("region", "overseas")}
+                    "dt": x["dt"].astimezone(timezone.utc).isoformat(),
+                    "added": now_utc.astimezone(timezone.utc).isoformat(),   # 이번 회차에 처음 수집됨
+                    "region": x.get("region", "overseas")}
     # 기간 정리(REPORT_PERSIST_DAYS 이내) + 최신순 정렬 + 보관 상한
     floor = now_utc - timedelta(days=REPORT_PERSIST_DAYS)
     out = []
@@ -2086,9 +2090,20 @@ def _merge_reports(items, now_utc):
     out = out[:REPORT_STORE_MAX]
     with open(path, "w", encoding="utf-8") as f:
         json.dump([{k: v for k, v in r.items() if k != "_dt"} for r in out], f, ensure_ascii=False, indent=1)
-    # render용: dt를 datetime으로
+    # render용: dt·added를 datetime으로
     for r in out:
         r["dt"] = r.pop("_dt")
+        _a = r.get("added")
+        if isinstance(_a, str):
+            try:
+                _ad = datetime.fromisoformat(_a)
+                if _ad.tzinfo is None:
+                    _ad = _ad.replace(tzinfo=timezone.utc)
+                r["added"] = _ad
+            except Exception:
+                r["added"] = r["dt"]
+        else:
+            r["added"] = r.get("dt")
     return out
 
 
