@@ -44,8 +44,8 @@ Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
                 "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping",
                 "Iran nuclear talks", "Houthi Red Sea attack", "OPEC oil output", "Israel Iran strike",
-                "Hormuz tanker", "Hamas disarm Gaza"]
-Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동"]
+                "Hormuz tanker", "Hamas disarm Gaza", "Trump Truth Social Iran", "Trump Truth Social strike Middle East"]
+Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동", "트럼프 트루스소셜"]
 # 네이버 뉴스에서 '카타르'·'중동' 검색 시 노출되는 기사 포함(구글뉴스 site:로 네이버 뉴스 도메인 조준)
 Q_NAVER_KO = ["카타르", "중동"]
 NAVER_NEWS_DOMAINS = ["n.news.naver.com", "news.naver.com"]
@@ -286,6 +286,7 @@ QUICK_LINKS = {
         ("국방부", "https://www.mnd.go.kr/")],
     "🏛️ 주요국 정부(미·이스라엘·이란 등)": [
         ("美 백악관", "https://www.whitehouse.gov/"),
+        ("트럼프 Truth Social (@realDonaldTrump)", "https://truthsocial.com/@realDonaldTrump"),
         ("美 국무부", "https://www.state.gov/"),
         ("美 국방부(펜타곤)", "https://www.defense.gov/"),
         ("美 에너지부(EIA)", "https://www.energy.gov/"),
@@ -1165,8 +1166,9 @@ def gemini_issues(pool, win_label, weekly=False):
         "명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체('-했다/-이다') 금지. "
         "**문두에 날짜(예: '7/31')를 붙이지 말 것**(커버 기간이 이미 명시됨). "
         "**'(현지시간)'·'(현지시각)'·'(한국시간)' 같은 막연한 시간대 표기를 불릿·문장 맨 앞에 단독으로 붙이지 말 것**"
-        "(시점이 중요하면 막연히 '현지시간'이라 쓰지 말고 **어느 나라 시간인지와 구체적 날짜를 함께** 문장 안에 자연스럽게 녹일 것, "
-        "예: '미국 현지시각 8월 2일 트럼프가 ~ 발표함', '이란시간 8월 1일 새벽 ~'. 원문에 없는 날짜·시각은 창작 금지). "
+        "(전쟁·공습·취소·합의 등 발표·결정의 시점이 중요하면 막연히 '현지시간'이라 쓰지 말고 **행위 주체(발표·결정한 인물·기관)가 있는 지역의 시간대와 구체적 날짜를 함께** 문장 안에 자연스럽게 녹일 것 — "
+        "예: 트럼프·미국 정부 발표는 '미국시각 8월 1일 트럼프가 ~ 발표함', 이란 당국 발표는 '이란시각 8월 1일 새벽 ~'. "
+        "원문(제목·발췌)에 있는 날짜만 쓰고, 원문에 없는 날짜·시각은 창작·추정 금지). "
         "'(기사 8·21)' 같은 기사 번호 표기, "
         "【매체명 표기 원칙 — 내용 우선】 **요약 본문에는 기본적으로 매체명을 넣지 말고 검증된 사실·수치만** 밀도 있게 서술하세요(보도 매체·원문은 우측 관련기사 목록에 이미 표시됨). "
         "여러 매체가 동일하게 보도한 사실일수록 매체명은 정보가치가 없으니 **절대 나열하지 마세요**(예: '(이스라엘타임스·KBS·경향신문 등)', '~라고 조선비즈가 보도함' 금지). "
