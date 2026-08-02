@@ -1799,6 +1799,7 @@ TEMPLATE = """<!DOCTYPE html>
     }});
   }})();
 </script>
+<img src="https://hits.sh/kotradoha.github.io/qatar-media-monitor.svg" alt="" aria-hidden="true" loading="eager" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;opacity:0;pointer-events:none">
 </body>
 </html>
 """
