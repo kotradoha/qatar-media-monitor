@@ -1379,8 +1379,10 @@ def translate_gov(gov, lang):
 
 
 def render_qatar_gov(gov, lang="ko"):
-    """카타르 정부 동향 고정 박스 — 항상 표시, 동향 없으면 '금일 별도 동향 무'. 각 동향에 출처 링크(↗) 포함."""
+    """카타르 정부 동향 섹션 — '오늘 일일 요약'과 동일한 섹션 제목(왼쪽 바) + 이슈 박스와 같은 모양의 흰색 박스.
+    항상 표시, 동향 없으면 '금일 별도 동향 무'. 각 동향에 출처 링크(↗) 포함."""
     L = LANG.get(lang, LANG["ko"])
+    head = f'<div class="sumhead"><span class="bar"></span>{esc(L["gov_head"])}</div>'
     if gov:
         lis = []
         for g in gov:
@@ -1391,7 +1393,7 @@ def render_qatar_gov(gov, lang="ko"):
         body = '<ul class="govul">' + "".join(lis) + "</ul>"
     else:
         body = f'<div class="govnone">{esc(L["gov_none"])}</div>'
-    return (f'<div class="govbox"><div class="govhead">{esc(L["gov_head"])}</div>{body}</div>')
+    return head + f'<div class="govcard">{body}</div>'
 
 
 # ───────────────────── 렌더링 ─────────────────────
@@ -1743,17 +1745,19 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     _wkday = bool(weekly_inline)
     _dsep = '<div style="height:1px;background:var(--line);margin:22px 0 12px"></div>' if _wkday else ''
     _dhead = L.get("sum_head_today", L["sum_head"]) if _wkday else L["sum_head"]
+    # 카타르 정부 동향 박스 — '오늘 일일' 요약 헤더 바로 아래(오늘 브리핑의 첫 항목)로 배치해 지난주 섹션과 분리
+    _gov = render_qatar_gov(qatar_gov, lang)
     if issues:
-        summary_html = (_dsep + f'<div class="sumhead"><span class="bar"></span>{esc(_dhead)} '
+        summary_html = (_dsep + _gov + f'<div class="sumhead"><span class="bar"></span>{esc(_dhead)} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L, collapse_links=(edition == "weekly")))
     elif flat_text:
-        summary_html = (_dsep + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(_dhead if _wkday else L["sum_head_flat"])} '
+        summary_html = (_dsep + _gov + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(_dhead if _wkday else L["sum_head_flat"])} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>'
                         f'<div class="sumbody">{summary_to_html(flat_text)}</div></div>')
     else:
         diag = " · ".join(LLM_DIAG[-3:]) if LLM_DIAG else ""
         diag_html = f'<div class="pl" style="color:var(--muted);font-size:11px;margin-top:6px">{esc(L["diag"])}: {esc(diag)}</div>' if diag else ""
-        summary_html = (f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(L["sum_head_flat"])}</div>'
+        summary_html = (_gov + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(L["sum_head_flat"])}</div>'
                         f'<div class="sumbody"><div class="pl" style="color:var(--muted)">{esc(L["sum_none_body"])}</div>'
                         f'{diag_html}</div></div>')
 
@@ -1859,7 +1863,6 @@ if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0
         col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
         quick_head=esc(L["quick_head"]), quick_note=esc(L["quick_note"]),
         tlbutton=timeline_button(lang),
-        qatar_gov=render_qatar_gov(qatar_gov, lang),
         foot=esc(L["foot"]), sign=esc(L["sign"]),
         summary=summary_html,
         qatar=block(qatar, esc(L["empty_q"])),
@@ -1989,10 +1992,8 @@ TEMPLATE = """<!DOCTYPE html>
   .tlbtn-tag{{font-size:10px;font-weight:800;color:#fff;background:var(--accent);border-radius:5px;padding:1px 6px;white-space:nowrap;flex:0 0 auto}}
   .tlbtn-t{{word-break:keep-all;line-height:1.3}}
   .tlbtn-arr{{flex:0 0 auto;font-weight:700}}
-  /* ── 카타르 정부 동향 박스 ── */
-  .govbox{{margin:12px 0;padding:12px 15px;border:1px solid var(--line);border-radius:12px;
-    background:linear-gradient(180deg,rgba(242,177,52,.09),transparent),var(--panel);border-inline-start:3px solid var(--gold)}}
-  .govhead{{font-size:13.5px;font-weight:800;margin-bottom:6px}}
+  /* ── 카타르 정부 동향 섹션(제목=sumhead, 내용=흰색 이슈형 박스) ── */
+  .govcard{{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:0 0 12px}}
   .govul{{margin:0;padding-inline-start:18px;list-style:disc}}
   .govul li{{font-size:13px;line-height:1.6;margin:3px 0;color:var(--txt)}}
   .govlink{{display:inline-block;font-size:10.5px;font-weight:700;color:var(--accent);text-decoration:none;
@@ -2079,8 +2080,6 @@ TEMPLATE = """<!DOCTYPE html>
   {archive}
 
   {weekly}
-
-  {qatar_gov}
 
   {summary}
 
