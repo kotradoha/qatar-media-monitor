@@ -1475,8 +1475,9 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         d = x.get("dt")
         is_new = bool(new_since and hasattr(d, "astimezone") and d >= new_since)
         newb = f'<span class="newtag">{esc(L["rep_new"])}</span>' if is_new else ""
+        reg = x.get("region", "overseas")
         return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
-                f'<span class="tag">{esc(tagmap.get(x.get("region","overseas"),L["t_over"]))}</span>{newb}{esc(x["title"])}'
+                f'<span class="tag tag-{reg}">{esc(tagmap.get(reg,L["t_over"]))}</span>{newb}{esc(x["title"])}'
                 f'<span class="src">({esc(x["source"])} · {rep_dt(x)})</span></a>')
     rows = "".join(rep_row(x) for x in rep_list[:REPORT_SHOW_MAX])
     if rows:
@@ -1702,7 +1703,8 @@ TEMPLATE = """<!DOCTYPE html>
   .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
-  .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
+  .reprows a .tag{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);border:1px solid transparent;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
+  .reprows a .tag.tag-overseas{{background:transparent;color:var(--txt);border-color:var(--gold)}}
   .reprows a .newtag{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:#e5484d;border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle}}
   footer{{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.7}}
   footer .notice-emph{{margin-top:12px;padding:12px 14px;border-radius:10px;background:#e2eefb;border:1px solid rgba(42,120,214,0.35);color:#16305e;font-weight:600;font-size:12.5px;line-height:1.6}}
