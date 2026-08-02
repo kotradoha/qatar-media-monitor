@@ -2045,7 +2045,7 @@ TEMPLATE = """<!DOCTYPE html>
   .archsel{{display:flex;align-items:center;gap:6px 8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:wrap}}
   .archlbl{{flex:0 0 auto;white-space:nowrap}}
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
-    border-radius:8px;padding:5px 9px;flex:0 1 auto;min-width:0;max-width:max-content;
+    border-radius:8px;padding:5px 9px;flex:0 1 160px;min-width:0;max-width:none;
     text-overflow:ellipsis;white-space:nowrap;overflow:hidden}}
   .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
   h1 .edtag{{font-size:13px;font-weight:700;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px;vertical-align:middle;letter-spacing:0}}
@@ -2079,7 +2079,7 @@ TEMPLATE = """<!DOCTYPE html>
   .hnote{{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}}
   @media (max-width:520px){{h1{{font-size:16.5px}} .qchips a{{padding:6px 11px}}
     .archsel{{flex-wrap:nowrap;gap:6px}} .archlbl{{font-size:11.5px}}
-    .archsel select{{max-width:max-content;font-size:11.5px;padding:5px 7px}}
+    .archsel select{{flex:1 1 0;max-width:none;font-size:11.5px;padding:5px 7px}}
     .langrow{{justify-content:space-between;flex-wrap:wrap;gap:8px}} .lang{{flex:1 1 auto;gap:6px}} .langbtn{{flex:1;text-align:center;padding:10px 8px;font-size:14px}}}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {{
@@ -2415,9 +2415,7 @@ def _archive_label_text(meta, L):
         if not meta["no"]:
             return L["daily_demo"] + " · " + tail
         label = L["no_only"].format(n=meta["no"]) + " " + tail
-        # 주간이 함께 발행되는 일요일 오전(07:00) 회차만 '(주간 포함)' 표기
-        if meta.get("hh") == 7 and meta.get("mm") == 0 and meta["dt"].weekday() == WEEKLY_WEEKDAY:
-            label += L["wk_incl"]
+        # 주간은 별도 드롭다운에서 검색하므로 일간 라벨에 '(주간 포함)' 표기하지 않음
         return label
     tail = f"~{meta['m']:02d}/{meta['d']:02d}"
     return (L["weekly_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_weekly"] + " " + tail)
