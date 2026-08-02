@@ -1618,7 +1618,7 @@ TEMPLATE = """<!DOCTYPE html>
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
-  .ai{{font-size:10.5px;font-weight:700;color:#111;background:var(--accent);padding:1px 7px;border-radius:6px}}
+  .ai{{font-size:10.5px;font-weight:700;color:#111;background:var(--accent);padding:1px 7px;border-radius:6px;white-space:nowrap}}
   .issue{{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}}
   .issue .ihead{{display:flex;align-items:baseline;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);background:var(--panel2)}}
   .issue .ihead .num{{flex:0 0 auto;font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px}}
