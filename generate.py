@@ -412,7 +412,7 @@ LANG = {
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
   "search_count": "건 표시",
-  "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_today": "🧭 오늘 일일 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
+  "sum_head": "🧭 주요 이슈별 요약", "sum_head_today": "🧭 주요 이슈별 요약", "sum_head_flat": "🧭 주요 핵심 요약", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
   "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "qbox": "카타르 영향·피해", "links_fold": "🔗 이 이슈 관련 보도·링크 펼쳐보기",
@@ -430,7 +430,7 @@ LANG = {
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
   "tl_all": "전체", "tl_qonly": "카타르만", "tl_qex": "카타르 제외", "tl_dl": "⬇ 엑셀 다운로드", "tl_c_date": "날짜", "tl_c_cat": "구분", "tl_c_event": "사건", "tl_c_detail": "상세", "tl_cat_gen": "일반", "tl_fname": "중동전쟁_타임라인", "tl_sheet": "타임라인",
-  "gov_head": "🏛️ 전쟁 관련 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
+  "gov_head": "🏛️ 정세 관련 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
            "심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. "
@@ -462,7 +462,7 @@ LANG = {
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
                   "(full article text and past editions are not searched; open a past edition from the selector above to search it)."),
   "search_count": " shown",
-  "sum_head": "🧭 This edition — issue briefs", "sum_head_today": "🧭 Today — daily issue briefs", "sum_head_flat": "🧭 This edition — key summary", "ai": "AI summary",
+  "sum_head": "🧭 Key issue briefs", "sum_head_today": "🧭 Key issue briefs", "sum_head_flat": "🧭 Key summary", "ai": "AI summary",
   "sum_none_body": "Summary not generated this time — it will retry on the next update. The article lists below are fine.", "diag": "Diagnostics",
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "qbox": "Impact on Qatar", "links_fold": "🔗 Show related articles for this issue",
@@ -480,7 +480,7 @@ LANG = {
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
   "tl_all": "All", "tl_qonly": "Qatar only", "tl_qex": "Exclude Qatar", "tl_dl": "⬇ Download Excel", "tl_c_date": "Date", "tl_c_cat": "Category", "tl_c_event": "Event", "tl_c_detail": "Details", "tl_cat_gen": "General", "tl_fname": "MiddleEast_War_Timeline", "tl_sheet": "Timeline",
-  "gov_head": "🏛️ War-related Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
+  "gov_head": "🏛️ Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
            "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
@@ -514,7 +514,7 @@ LANG = {
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
                   "(لا يشمل البحث النص الكامل للمقالات ولا الإصدارات السابقة؛ افتح إصدارًا سابقًا من القائمة أعلاه للبحث فيه)."),
   "search_count": " ظاهر",
-  "sum_head": "🧭 هذا الإصدار — ملخص القضايا", "sum_head_today": "🧭 اليوم — ملخص القضايا اليومي", "sum_head_flat": "🧭 هذا الإصدار — الملخص الرئيسي", "ai": "ملخص آلي",
+  "sum_head": "🧭 أبرز ملخصات القضايا", "sum_head_today": "🧭 أبرز ملخصات القضايا", "sum_head_flat": "🧭 الملخص الرئيسي", "ai": "ملخص آلي",
   "sum_none_body": "لم يُنشأ الملخص هذه المرة — ستُعاد المحاولة في التحديث التالي. قوائم الأخبار أدناه سليمة.", "diag": "تشخيص",
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "qbox": "الأثر على قطر", "links_fold": "🔗 عرض الأخبار والروابط المتعلقة بهذه القضية",
@@ -532,7 +532,7 @@ LANG = {
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
   "tl_all": "الكل", "tl_qonly": "قطر فقط", "tl_qex": "استثناء قطر", "tl_dl": "⬇ تنزيل Excel", "tl_c_date": "التاريخ", "tl_c_cat": "الفئة", "tl_c_event": "الحدث", "tl_c_detail": "التفاصيل", "tl_cat_gen": "عام", "tl_fname": "timeline_alsharq_alawsat", "tl_sheet": "الجدول الزمني",
-  "gov_head": "🏛️ نشاط الحكومة القطرية المتعلق بالحرب", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
+  "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
            "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
@@ -1944,11 +1944,15 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
            weekly_from=None, qatar_gov=None):
     L = LANG.get(lang, LANG["ko"])
     # 모니터링 기간 표기: 주간+일일 동시 발행일(weekly_from 있음)은 두 줄로 (주간)/(일일) 구분
+    # (카타르시간) 표기는 볼드 밖 .tz로 분리
+    _tzsuf = f" ({L['tz']})"
+    _wl = win_label[:-len(_tzsuf)] if win_label.endswith(_tzsuf) else win_label
+    window_tz = f' <span class="tz">({esc(L["tz"])})</span>' if win_label.endswith(_tzsuf) else ''
     if weekly_from:
         _wk = L["wk_range"]
-        window_html = f'{esc(L["two_wk"])} {esc(_wk)}<br>{esc(L["two_dl"])} {esc(win_label)}'
+        window_html = f'{esc(L["two_wk"])} {esc(_wk)}<br>{esc(L["two_dl"])} {esc(_wl)}'
     else:
-        window_html = esc(win_label)
+        window_html = esc(_wl)
     home_url = home_url or SITE_BASE
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
@@ -2099,7 +2103,7 @@ if(sw){sw.innerHTML=w;}
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
         counts=L["counts"].format(q=n_qatar, me=n_mideast),
         counts_label=esc(L["counts_label"]),
-        updated=updated_str, window=window_html,
+        updated=updated_str, window=window_html, window_tz=window_tz,
         full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
         full_note=esc(L["full_note"]),
         expand=esc(L["expand"]), collapse=esc(L["collapse"]),
@@ -2150,10 +2154,10 @@ TEMPLATE = """<!DOCTYPE html>
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}}
   .sub{{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}}
-  .submeta{{color:var(--txt);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}}
+  .submeta{{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:4px 14px;flex-wrap:wrap}}
   .submeta .tz{{font-weight:400;color:var(--muted)}}
-  .submeta > span::before{{content:"• ";color:var(--accent);font-weight:700}}
   .submeta > span{{flex-basis:100%}}
+  .submeta img.emoji{{height:1.15em;width:1.15em;vertical-align:-0.18em;margin-inline-end:2px}}
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
@@ -2334,9 +2338,9 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="scopebar">🎯 {scope}{tlref}</div>
     {archive}
     <div class="submeta">
-      <span>{updated_label}: <b>{updated}</b> <span class="tz">({tz})</span></span>
-      <span>{coverage_label}: <b>{window}</b></span>
-      <span class="cnt">{counts_label}: {counts}</span>
+      <span>🕒 {updated_label}: <b>{updated}</b> <span class="tz">({tz})</span></span>
+      <span>🗓️ {coverage_label}: <b>{window}</b>{window_tz}</span>
+      <span class="cnt">🔢 {counts_label}: {counts}</span>
     </div>
   </header>
 
