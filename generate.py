@@ -428,6 +428,7 @@ LANG = {
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
+  "tl_all": "전체", "tl_qonly": "카타르만", "tl_qex": "카타르 제외", "tl_dl": "⬇ 엑셀 다운로드", "tl_c_date": "날짜", "tl_c_cat": "구분", "tl_c_event": "사건", "tl_c_detail": "상세", "tl_cat_gen": "일반", "tl_fname": "중동전쟁_타임라인", "tl_sheet": "타임라인",
   "gov_head": "🏛️ 전쟁 관련 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
@@ -476,6 +477,7 @@ LANG = {
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
+  "tl_all": "All", "tl_qonly": "Qatar only", "tl_qex": "Exclude Qatar", "tl_dl": "⬇ Download Excel", "tl_c_date": "Date", "tl_c_cat": "Category", "tl_c_event": "Event", "tl_c_detail": "Details", "tl_cat_gen": "General", "tl_fname": "MiddleEast_War_Timeline", "tl_sheet": "Timeline",
   "gov_head": "🏛️ War-related Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
@@ -526,6 +528,7 @@ LANG = {
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
+  "tl_all": "الكل", "tl_qonly": "قطر فقط", "tl_qex": "استثناء قطر", "tl_dl": "⬇ تنزيل Excel", "tl_c_date": "التاريخ", "tl_c_cat": "الفئة", "tl_c_event": "الحدث", "tl_c_detail": "التفاصيل", "tl_cat_gen": "عام", "tl_fname": "timeline_alsharq_alawsat", "tl_sheet": "الجدول الزمني",
   "gov_head": "🏛️ نشاط الحكومة القطرية المتعلق بالحرب", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
@@ -1596,6 +1599,10 @@ TIMELINE = [
    "ko": "이란 드론이 호르무즈에서 상선을 타격, 국제 대피 작전이 중단됨.",
    "en": "An Iranian drone strikes a commercial vessel in the Strait of Hormuz, halting international evacuation operations.",
    "ar": "مسيّرة إيرانية تضرب سفينة تجارية في مضيق هرمز، ما يوقف عمليات الإجلاء الدولية."},
+  {"d": "2026-06-21", "q": True,
+   "ko": "라스라판 바르잔 가스공장 시운전 중 폭발 — 2025년 12월 정비로 가동중단됐다가 이틀 전 재가동한 바르잔 가스처리시설에서 폭발해 13명 사망(인도인 12·파키스탄인 1)·66명 부상·초기 실종 18명. 에너지장관 알카비는 '사보타주·적대행위가 아닌 기술적 사고'로 규정하고 LNG 수출능력에는 영향이 없다고 밝힘.",
+   "en": "Explosion during restart at Ras Laffan's Barzan gas plant — the Barzan gas-processing facility, halted since December 2025 for maintenance and restarted two days earlier, explodes, killing 13 (12 Indians, 1 Pakistani), injuring 66 and leaving 18 initially missing. Energy Minister Al Kaabi rules it a technical accident — not sabotage or a hostile act — and says LNG export capacity is unaffected.",
+   "ar": "انفجار أثناء إعادة تشغيل مصنع برزان للغاز في رأس لفان — تعرّض مرفق معالجة الغاز في برزان، الذي كان متوقفاً منذ ديسمبر 2025 للصيانة وأُعيد تشغيله قبل يومين، لانفجار أودى بحياة 13 شخصاً (12 هندياً وباكستانياً واحداً) وأصاب 66 وترك 18 في عداد المفقودين مبدئياً. ووصفه وزير الطاقة الكعبي بأنه حادث تقني — لا تخريب ولا عمل عدائي — مؤكداً عدم تأثّر قدرة تصدير الغاز المسال."},
   {"d": "2026-06-20", "q": False,
    "ko": "이란이 레바논 휴전 위반을 주장하며 호르무즈 해협을 다시 봉쇄.",
    "en": "Iran again closes the Strait of Hormuz, alleging violations of the Lebanon ceasefire.",
@@ -1624,6 +1631,10 @@ TIMELINE = [
    "ko": "이란이 순항미사일 3발 발사, 2발 요격되고 1발이 카타르 인근 유조선에 명중 — 인명피해 없음.",
    "en": "Iran fires three cruise missiles; two are intercepted and one hits an oil tanker near Qatar, with no casualties.",
    "ar": "إيران تطلق ثلاثة صواريخ كروز؛ يُعترض اثنان ويصيب ثالث ناقلة نفط قرب قطر دون خسائر بشرية."},
+  {"d": "2026-03-25", "q": False,
+   "ko": "한국, 카타르 LNG 불가항력 영향 점검 — 산업부는 '카타르 비중이 2026년 약 14%로 낮고 대체 공급이 가능해 수급 문제는 없다'며 모니터링을 지속. 카타르는 한국의 3위 LNG 공급국(전년 716만t/총 4,777만t). 가스공사는 의무비축을 웃도는 재고를 확보했고, 정부는 석탄·원전 발전 확대와 가스발전 축소로 대응.",
+   "en": "South Korea assesses the fallout from Qatar's LNG force majeure — the Industry Ministry says supply is secure ('Qatar's share is low at ~14% in 2026 and alternatives are available') while continuing to monitor. Qatar is Korea's third-largest LNG supplier (7.16 of 47.77 million tonnes the prior year). KOGAS holds inventories above mandatory reserves, and the government leans on more coal and nuclear generation while cutting gas-fired output.",
+   "ar": "كوريا الجنوبية تقيّم تداعيات القوة القاهرة على الغاز القطري — وزارة الصناعة تقول إن الإمدادات آمنة ('حصة قطر منخفضة عند نحو 14% في 2026 وتتوفّر بدائل') مع مواصلة المراقبة. وقطر ثالث أكبر مورّد للغاز المسال لكوريا (7.16 من أصل 47.77 مليون طن في العام السابق). وتحتفظ كوغاز بمخزونات تفوق الاحتياطي الإلزامي، وتعتمد الحكومة على زيادة توليد الفحم والنووي مع خفض التوليد الغازي."},
   {"d": "2026-03-24", "q": True,
    "ko": "카타르에너지, 라스라판 피해로 LNG 장기계약에 '불가항력(force majeure)' 선언 — 14개 LNG 트레인 중 2개+GTL 1기 손상으로 수출능력 약 17%(연 1,280만t) 상실, 한국·이탈리아·벨기에·중국 4개국 수입에 영향, 연 200억 달러 손실 추정.",
    "en": "QatarEnergy declares force majeure on long-term LNG contracts after the Ras Laffan damage — with 2 of 14 LNG trains and one GTL plant hit, it loses ~17% of export capacity (12.8 mtpa) and affects buyers in South Korea, Italy, Belgium and China; estimated $20bn in lost annual revenue.",
@@ -1723,11 +1734,77 @@ def timeline_ref(lang="ko"):
 def render_timeline_page(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
     home = SITE_BASE if lang == "ko" else f"{SITE_BASE}{lang}.html"
+    # 엑셀 내보내기용 데이터(사건 텍스트를 ' — ' 기준으로 제목/상세 분리)
+    tldata = []
+    for e in TIMELINE:
+        txt = e.get(lang) or e.get("ko")
+        parts = txt.split(" — ", 1)
+        tldata.append({"iso": e["d"], "q": 1 if e.get("q") else 0,
+                       "title": parts[0].strip(), "detail": (parts[1].strip() if len(parts) > 1 else "")})
+    cfg = {
+        "data": tldata,
+        "c_date": L["tl_c_date"], "c_cat": L["tl_c_cat"], "c_event": L["tl_c_event"], "c_detail": L["tl_c_detail"],
+        "catq": L["tl_q"], "catgen": L["tl_cat_gen"],
+        "fname": L["tl_fname"], "sheet": L["tl_sheet"],
+        "widths": [13, 9, 40, 60],
+    }
+    tlscript = _TL_SCRIPT.replace("__CFG__", json.dumps(cfg, ensure_ascii=False))
     return TIMELINE_PAGE.format(
         dir=L["dir"], htmllang=L["html"], title=esc(L["tl_head"]),
         tag=esc(L["tl_tag"]), head=esc(L["tl_head"]), note=esc(L["tl_note"]),
         rows=_timeline_rows(lang), sources=_timeline_sources_html(lang),
-        back=esc(L["tl_back"]), home=esc(home))
+        back=esc(L["tl_back"]), home=esc(home),
+        f_all=esc(L["tl_all"]), f_qonly=esc(L["tl_qonly"]), f_qex=esc(L["tl_qex"]), dl=esc(L["tl_dl"]),
+        tlscript=tlscript)
+
+
+# 타임라인 필터 + 인쇄 최적화 XLSX(순수 클라이언트, 라이브러리·서버 불필요) 생성 스크립트
+_TL_SCRIPT = r"""(function(){
+var CFG=__CFG__;var cur='all';
+var rows=Array.prototype.slice.call(document.querySelectorAll('.tlwrap .tlrow'));
+function applyFilter(f){cur=f;rows.forEach(function(r){var q=r.classList.contains('q');var show=(f==='all')||(f==='q'&&q)||(f==='ex'&&!q);r.style.display=show?'':'none';});
+Array.prototype.forEach.call(document.querySelectorAll('.tlfbtn'),function(b){b.classList.toggle('on',b.getAttribute('data-f')===f);});}
+Array.prototype.forEach.call(document.querySelectorAll('.tlfbtn'),function(b){b.addEventListener('click',function(){applyFilter(b.getAttribute('data-f'));});});
+// ---- 순수 JS XLSX(무압축 ZIP) ----
+var crcT=(function(){var t=[];for(var n=0;n<256;n++){var c=n;for(var k=0;k<8;k++){c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);}t[n]=c>>>0;}return t;})();
+function crc32(b){var c=0xFFFFFFFF;for(var i=0;i<b.length;i++){c=crcT[(c^b[i])&0xFF]^(c>>>8);}return (c^0xFFFFFFFF)>>>0;}
+function SB(s){return new TextEncoder().encode(s);}
+function u16(n){return [n&0xFF,(n>>8)&0xFF];}function u32(n){return [n&0xFF,(n>>8)&0xFF,(n>>16)&0xFF,(n>>24)&0xFF];}
+function zip(files){var parts=[],cen=[],off=0;
+files.forEach(function(f){var nm=SB(f.name),crc=crc32(f.data),sz=f.data.length;
+var lh=new Uint8Array([].concat(u32(0x04034b50),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(sz),u32(sz),u16(nm.length),u16(0)));
+parts.push(lh,nm,f.data);
+cen.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(sz),u32(sz),u16(nm.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),nm);
+off+=lh.length+nm.length+f.data.length;});
+var cstart=off,csz=0;cen.forEach(function(x){csz+=x.length;});
+var end=new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(csz),u32(cstart),u16(0)));
+var all=parts.concat(cen,[end]),tot=all.reduce(function(a,x){return a+x.length;},0),out=new Uint8Array(tot),p=0;
+all.forEach(function(x){out.set(x,p);p+=x.length;});return out;}
+function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function col(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
+function cel(r,c,v,st){return '<c r="'+col(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
+function buildXlsx(headers,body){
+var sd='<row r="1">';headers.forEach(function(h,i){sd+=cel(1,i,h,'1');});sd+='</row>';
+body.forEach(function(row,ri){var r=ri+2;sd+='<row r="'+r+'">';row.forEach(function(v,ci){sd+=cel(r,ci,v,'2');});sd+='</row>';});
+var cols='<cols>';CFG.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
+var lc=col(headers.length-1),lr=body.length+1;
+var sheet='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><dimension ref="A1:'+lc+lr+'"/><sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData><pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
+var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="3"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+var sn=X(CFG.sheet).slice(0,31);
+var wb='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="'+sn+'" sheetId="1" r:id="rId1"/></sheets><definedNames><definedName name="_xlnm.Print_Titles" localSheetId="0">\''+sn+'\'!$1:$1</definedName></definedNames></workbook>';
+var wbr='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>';
+var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>';
+var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>';
+return zip([{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'xl/workbook.xml',data:SB(wb)},{name:'xl/_rels/workbook.xml.rels',data:SB(wbr)},{name:'xl/styles.xml',data:SB(styles)},{name:'xl/worksheets/sheet1.xml',data:SB(sheet)}]);}
+function dl(){var d=CFG.data.filter(function(e){return cur==='all'||(cur==='q'&&e.q)||(cur==='ex'&&!e.q);});
+var headers=[CFG.c_date,CFG.c_cat,CFG.c_event,CFG.c_detail];
+var body=d.map(function(e){return [e.iso,e.q?CFG.catq:CFG.catgen,e.title,e.detail];});
+var bytes=buildXlsx(headers,body);
+var blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+var suf=cur==='q'?'_qatar':(cur==='ex'?'_ex-qatar':'');
+var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=CFG.fname+suf+'.xlsx';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
+var b=document.getElementById('tldl');if(b)b.addEventListener('click',dl);
+})();"""
 
 
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
@@ -2214,6 +2291,13 @@ TIMELINE_PAGE = """<!DOCTYPE html>
   .tlsrc a{{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}}
   .tlsrc a:hover{{color:var(--accent)}}
   .tlsrc-n{{margin-top:5px;font-size:10px;opacity:.85}}
+  .tlbar{{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:2px 0 16px}}
+  .tlfilters{{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}}
+  .tlfbtn{{font:inherit;font-size:12px;font-weight:700;padding:6px 12px;border:0;background:transparent;color:var(--muted);cursor:pointer;border-inline-start:1px solid var(--line)}}
+  .tlfbtn:first-child{{border-inline-start:0}}
+  .tlfbtn.on{{background:var(--accent);color:#fff}}
+  .tldlbtn{{font:inherit;font-size:12px;font-weight:700;color:var(--accent);background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:6px 12px;cursor:pointer;margin-inline-start:auto;white-space:nowrap}}
+  .tldlbtn:hover{{border-color:var(--accent)}}
   @media (max-width:560px){{
     .tlwrap::before{{inset-inline-start:64px}}
     .tlrow{{grid-template-columns:54px 1fr;gap:0 16px}}
@@ -2230,6 +2314,7 @@ TIMELINE_PAGE = """<!DOCTYPE html>
     .wrap{{max-width:none;margin:0;padding:0}}
     .tlback{{display:none}}
     .tlpage-div{{border-top-color:#111}}
+    .tlbar{{display:none}}
     .tlrow{{break-inside:avoid;page-break-inside:avoid;padding-bottom:12px}}
     .tlbody{{font-size:11.5pt;line-height:1.5}}
     .tldate .tlmd{{font-size:11pt}}
@@ -2245,11 +2330,20 @@ TIMELINE_PAGE = """<!DOCTYPE html>
   <a class="tlback" href="{home}">{back}</a>
   <hr class="tlpage-div">
   <h1 class="tlpage-h"><span class="tlpage-tag">{tag}</span>{head}</h1>
+  <div class="tlbar">
+    <div class="tlfilters">
+      <button class="tlfbtn on" data-f="all">{f_all}</button>
+      <button class="tlfbtn" data-f="q">{f_qonly}</button>
+      <button class="tlfbtn" data-f="ex">{f_qex}</button>
+    </div>
+    <button class="tldlbtn" id="tldl">{dl}</button>
+  </div>
   {rows}
   {sources}
 </div>
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script>if(window.twemoji)twemoji.parse(document.body,{{folder:'svg',ext:'.svg'}});</script>
+<script>{tlscript}</script>
 </body>
 </html>
 """
