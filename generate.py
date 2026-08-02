@@ -98,6 +98,23 @@ MIDEAST_KW = ["iran", "iranian", "israel", "israeli", "gulf", "hormuz", "houthi"
               "이란", "이스라엘", "걸프", "호르무즈", "후티", "예멘", "사우디", "바레인",
               "쿠웨이트", "오만", "중동", "테헤란", "가자", "헤즈볼라", "이집트", "홍해", "수에즈"]
 
+# 핵심(중요) 토픽 키워드 — 이 중 하나라도 걸리면 '중요 기사'로 보고 소형매체라도 무조건 유지.
+# (넓게 잡아 '중요기사 누락' 위험을 피함. 매칭되면 유지되는 방향이라 오탐은 안전.)
+CORE_KW = [
+    "strike", "airstrike", "air strike", "missile", "drone", "attack", "clash", "warplane", "warship", "warfare",
+    "killed", "casualt", "wounded", "bomb", "shelling", "explosion", "blast", "ceasefire", "cease-fire", "truce",
+    "escalat", "retaliat", "offensive", "assault", "nuclear", "enrich", "uranium", "irgc", "revolutionary guard",
+    "hormuz", "strait", "red sea", "suez", "blockade", "tanker", "vessel", "naval", "shipping",
+    "crude", "brent", "opec", "lng", "oil price", "gas price", "pipeline", "energy security",
+    "sanction", "evacuat", "airspace", "no-fly", "intercept", "patriot", "ballistic", "hostage",
+    "al udeid", "al-udeid", "udeid", "doha", "qatar",
+    "공습", "미사일", "드론", "공격", "타격", "교전", "전투기", "사망", "부상", "폭발", "폭격", "폭탄", "포격",
+    "휴전", "확전", "보복", "공세", "급습", "핵시설", "핵협상", "핵프로그램", "우라늄", "농축", "혁명수비대",
+    "호르무즈", "해협", "홍해", "수에즈", "봉쇄", "유조선", "선박", "군함", "함정",
+    "원유", "브렌트", "유가", "천연가스", "가스전", "송유관", "엘엔지", "에너지 안보",
+    "제재", "대피", "영공", "요격", "탄도", "알우데이드", "인질", "도하",
+]
+
 # 취합/비정식/해외발 소스 제외(정식 매체만) — 매체명 기준(구글뉴스 링크 자체는 유지)
 BLOCK_SOURCES = ["vietnam", "nate", "네이트", "msn", "yahoo", "bing", "biztoc", "newsbreak",
                  "daum", "다음", "google news", "aggreg", "sina", "coincu", "opoyi", "the eastern herald"]
@@ -1831,6 +1848,64 @@ def _is_major(x):
     s = (x.get("source") or "").lower()
     return any(m in s for m in MAJOR_HINTS)
 
+def _build_quicklink_hints():
+    """관련 링크(QUICK_LINKS)에 등록된 매체·기관명을 소스 매칭용 힌트로 추출 — 이 목록 매체 기사는 무조건 유지."""
+    hints = set()
+    _skip = {"news", "www", "en", "english", "world", "section", "hub", "com", "co", "kr", "org", "x", "the"}
+    for _cat, links in QUICK_LINKS.items():
+        for name, url in links:
+            base = re.split(r"[—\(\|·]", name)[0].strip().lower()
+            if len(base) >= 4:                      # 짧은 약칭(ap·cnn·kbs 등)은 오탐 위험 → 제외(이미 MAJOR_HINTS로 유지됨)
+                hints.add(base)
+            m = re.search(r"https?://([^/]+)", url or "")
+            if m:
+                core = m.group(1).lower().replace("www.", "").split(".")[0]
+                if len(core) >= 4 and core not in _skip:
+                    hints.add(core)
+    return hints
+
+QUICKLINK_HINTS = _build_quicklink_hints()
+
+def _in_quicklinks(x):
+    s = (x.get("source") or "").lower()
+    return any(h in s for h in QUICKLINK_HINTS)
+
+def _is_core(x):
+    return has((x.get("title") or "") + " " + (x.get("desc") or ""), CORE_KW)
+
+_STORY_STOP = {"the","a","an","of","to","in","on","for","and","or","is","are","was","were","with",
+               "as","at","by","from","that","this","its","his","her","after","over","amid","says","say",
+               "및","the","속보","단독","종합","영상","포토","사진"}
+
+def _story_toks(title):
+    ws = re.findall(r"[a-z0-9]+|[가-힣]{2,}", (title or "").lower())
+    return set(w for w in ws if len(w) >= 2 and w not in _STORY_STOP)
+
+def _dedupe_stories(items):
+    """near-duplicate(사실상 같은 기사) 정리 — 메이저 매체 버전을 대표로 우선 유지, 원래 순서 보존."""
+    order = sorted(range(len(items)), key=lambda i: 0 if _is_major(items[i]) else 1)
+    reps, keep = [], set()
+    for i in order:
+        ts = _story_toks(items[i].get("title", ""))
+        if len(ts) < 5:            # 너무 짧은 제목은 과합침 위험 → 그대로 유지
+            keep.add(i); continue
+        dup = False
+        for kts in reps:
+            uni = len(ts | kts)
+            if uni and len(ts & kts) / uni >= 0.7:   # 70% 이상 겹치면 동일 기사로 간주(보수적)
+                dup = True; break
+        if not dup:
+            reps.append(ts); keep.add(i)
+    return [x for j, x in enumerate(items) if j in keep]
+
+def filter_minor(items):
+    """① 유지보장: 메이저 매체·관련링크 등록매체·카타르 관련·핵심 토픽·보고서는 무조건 유지.
+       ② 그 외 소형매체 주변부 단발기사는 제외. ③ near-duplicate 정리. (목록=모니터링 건수 동시 감소 → 일치 유지)"""
+    kept = [x for x in items
+            if _is_major(x) or _in_quicklinks(x) or x.get("qatar") or x.get("region") == "qatar"
+            or x.get("report") or _is_core(x)]
+    return _dedupe_stories(kept)
+
 def build_issue_pool(items):
     """사안 요약용 풀: 원산지·속보성 우선(카타르 현지 → 해외 글로벌·미국·유럽 → 이란·역내 → 국내 한국·보완).
     국내 언론이 같은 사안을 다수 전재해 풀이 국내 위주로 쏠리지 않도록 권역별 상한을 두고 1차 정보원을 앞세움."""
@@ -1936,6 +2011,8 @@ def main():
     start_q, end_q, win_slot = window_bounds(now_q)
     label_ko = f"{LANG['ko']['win_' + win_slot]} (카타르시간)"   # LLM 프롬프트·로그용(한국어)
     items = collect(start_q.astimezone(timezone.utc), now_utc)
+    _n0 = len(items); items = filter_minor(items)               # 소형매체 주변부·중복 정리(메이저·관련링크·카타르·핵심토픽·보고서는 유지)
+    print(f"[info] filter_minor: {_n0} → {len(items)} (dropped {_n0 - len(items)})")
     new_since_daily = start_q.astimezone(timezone.utc)          # 이번 회차 창(window) 시작 — 이후 발간 보고서는 '신규' 표기
     end_utc = end_q.astimezone(timezone.utc)                    # 모니터링 기간 끝(경계 시각) — 실행 시각이 아니라 07:00/15:30 경계로 고정
     new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
@@ -1965,6 +2042,7 @@ def main():
         wk_from = (now_q - timedelta(days=WEEKLY_LOOKBACK_DAYS)).strftime("%m/%d")
         wlabel_ko = f"지난주 종합 · {wk_from} ~ {now_q.strftime('%m/%d')} (카타르시간)"
         witems = collect(now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS), now_utc, when_days=WEEKLY_LOOKBACK_DAYS + 1)
+        witems = filter_minor(witems)
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
