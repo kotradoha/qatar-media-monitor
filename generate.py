@@ -375,7 +375,7 @@ LANG = {
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
   "search_count": "건 표시",
-  "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
+  "sum_head": "🧭 이번 회차 이슈별 요약", "sum_head_today": "🧭 오늘 일일 이슈별 요약", "sum_head_flat": "🧭 이번 회차 핵심 요약", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
   "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "qbox": "카타르 영향·피해", "links_fold": "🔗 이 이슈 관련 보도·링크 펼쳐보기",
@@ -387,7 +387,7 @@ LANG = {
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
   "rep_head": "중동 정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
-  "wk_head": "📅 지난주 주간 종합 리포트", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
+  "wk_head": "📅 지난주 언론동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
@@ -420,7 +420,7 @@ LANG = {
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
                   "(full article text and past editions are not searched; open a past edition from the selector above to search it)."),
   "search_count": " shown",
-  "sum_head": "🧭 This edition — issue briefs", "sum_head_flat": "🧭 This edition — key summary", "ai": "AI summary",
+  "sum_head": "🧭 This edition — issue briefs", "sum_head_today": "🧭 Today — daily issue briefs", "sum_head_flat": "🧭 This edition — key summary", "ai": "AI summary",
   "sum_none_body": "Summary not generated this time — it will retry on the next update. The article lists below are fine.", "diag": "Diagnostics",
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "qbox": "Impact on Qatar", "links_fold": "🔗 Show related articles for this issue",
@@ -432,7 +432,7 @@ LANG = {
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
   "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes, etc.)", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
-  "wk_head": "📅 Last week — weekly digest", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
+  "wk_head": "📅 Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
@@ -467,7 +467,7 @@ LANG = {
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
                   "(لا يشمل البحث النص الكامل للمقالات ولا الإصدارات السابقة؛ افتح إصدارًا سابقًا من القائمة أعلاه للبحث فيه)."),
   "search_count": " ظاهر",
-  "sum_head": "🧭 هذا الإصدار — ملخص القضايا", "sum_head_flat": "🧭 هذا الإصدار — الملخص الرئيسي", "ai": "ملخص آلي",
+  "sum_head": "🧭 هذا الإصدار — ملخص القضايا", "sum_head_today": "🧭 اليوم — ملخص القضايا اليومي", "sum_head_flat": "🧭 هذا الإصدار — الملخص الرئيسي", "ai": "ملخص آلي",
   "sum_none_body": "لم يُنشأ الملخص هذه المرة — ستُعاد المحاولة في التحديث التالي. قوائم الأخبار أدناه سليمة.", "diag": "تشخيص",
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "qbox": "الأثر على قطر", "links_fold": "🔗 عرض الأخبار والروابط المتعلقة بهذه القضية",
@@ -479,7 +479,7 @@ LANG = {
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
   "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
-  "wk_head": "📅 الأسبوع الماضي — الموجز الأسبوعي", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
+  "wk_head": "📅 الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
@@ -1438,11 +1438,15 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     def block(rows, empty):
         return "\n".join(li(x, now_utc, L) for x in rows) or f'<li class="empty">{empty}</li>'
 
+    # 주간+일일 동시 발행일(일일 페이지)에는 위 주간 섹션과 헷갈리지 않게 '오늘 일일' 파트를 구분선+전용 헤더로 분리
+    _wkday = bool(weekly_inline)
+    _dsep = '<div style="height:1px;background:var(--line);margin:22px 0 12px"></div>' if _wkday else ''
+    _dhead = L.get("sum_head_today", L["sum_head"]) if _wkday else L["sum_head"]
     if issues:
-        summary_html = (f'<div class="sumhead"><span class="bar"></span>{esc(L["sum_head"])} '
+        summary_html = (_dsep + f'<div class="sumhead"><span class="bar"></span>{esc(_dhead)} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L, collapse_links=(edition == "weekly")))
     elif flat_text:
-        summary_html = (f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(L["sum_head_flat"])} '
+        summary_html = (_dsep + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(_dhead if _wkday else L["sum_head_flat"])} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>'
                         f'<div class="sumbody">{summary_to_html(flat_text)}</div></div>')
     else:
