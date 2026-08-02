@@ -1564,6 +1564,7 @@ if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0
     weekly_html = weekly_inline or ""
 
     return TEMPLATE.format(
+        bodycls=("ed-weekly" if edition == "weekly" else ""),
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html,
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
@@ -1718,9 +1719,11 @@ TEMPLATE = """<!DOCTYPE html>
   .scopebar{{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
     border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}}
   .scopebar b{{color:var(--txt);font-weight:700}}
-  .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(242,177,52,.5);border-radius:14px;
-    background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
+  .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(77,163,255,.5);border-radius:14px;
+    background:linear-gradient(180deg,rgba(77,163,255,.08),transparent)}}
   .wsec .sumhead{{margin-top:2px}}
+  .wsec .issue .ihead .num{{background:var(--accent);color:#fff}}
+  body.ed-weekly .issue .ihead .num{{background:var(--accent);color:#fff}}
   .wsec .wmeta{{font-size:11.5px;color:var(--muted);font-weight:400;margin-inline-start:auto}}
   .wsec .wlink{{margin-top:8px;font-size:12.5px}}
   .wsec .wlink a{{color:var(--accent);text-decoration:none}}
@@ -1755,7 +1758,7 @@ TEMPLATE = """<!DOCTYPE html>
   }}
 </style>
 </head>
-<body>
+<body class="{bodycls}">
 <div class="wrap">
   {nav}
   <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}</div></div>
@@ -2111,8 +2114,8 @@ def main():
                 wbody = f'<div class="empty" style="padding:8px 2px">{esc(L["wk_none"])}</div>'
             weekly_inline = (
                 '<div class="wsec">'
-                '<div class="sumhead"><span class="bar" style="background:var(--gold)"></span>'
-                f'{esc(L["wk_head"])} <span class="ai" style="background:var(--gold)">{esc(L["weekly_no"].format(n=wno))}</span>'
+                '<div class="sumhead"><span class="bar" style="background:var(--accent)"></span>'
+                f'{esc(L["wk_head"])} <span class="ai" style="background:var(--accent)">{esc(L["weekly_no"].format(n=wno))}</span>'
                 f'<span class="wmeta">{esc(wwin)}</span></div>'
                 + wbody +
                 f'<div class="wlink"><a href="{SITE_BASE}archive/{esc(wfn)}">{esc(L["wk_open"])}</a></div>'
