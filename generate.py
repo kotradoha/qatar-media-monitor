@@ -1616,7 +1616,7 @@ TEMPLATE = """<!DOCTYPE html>
   .submeta > span::before{{content:"• ";color:var(--accent);font-weight:700}}
   .submeta .cnt{{flex-basis:100%}}
   .sub b,.submeta b{{color:var(--txt)}}
-  .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}}
+  .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
   .ai{{font-size:10.5px;font-weight:700;color:#111;background:var(--accent);padding:1px 7px;border-radius:6px}}
   .issue{{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}}
@@ -1887,6 +1887,11 @@ def _dedupe_stories(items):
     reps, keep = [], set()
     for i in order:
         ts = _story_toks(items[i].get("title", ""))
+        if _is_major(items[i]):    # 메이저 매체는 이슈 중복이라도 무조건 유지
+            keep.add(i)
+            if len(ts) >= 5:
+                reps.append(ts)    # 단, 소형매체 중복은 계속 억제하도록 대표로는 등록
+            continue
         if len(ts) < 5:            # 너무 짧은 제목은 과합침 위험 → 그대로 유지
             keep.add(i); continue
         dup = False
