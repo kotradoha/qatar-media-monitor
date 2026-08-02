@@ -2029,6 +2029,7 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="titrow"><div class="titcol"><h1>{title}</h1>{title2}</div></div>
   <header>
     <div class="sub"><span>{subtitle}</span></div>
+    {tlbutton}
     <div class="scopebar">🎯 {scope}</div>
     <div class="submeta">
       <span>{updated_label}: <b>{updated} ({tz})</b></span>
@@ -2037,13 +2038,11 @@ TEMPLATE = """<!DOCTYPE html>
     </div>
   </header>
 
-  {tlbutton}
-
   {archive}
 
-  {qatar_gov}
-
   {weekly}
+
+  {qatar_gov}
 
   {summary}
 
