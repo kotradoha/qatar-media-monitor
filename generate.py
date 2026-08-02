@@ -420,6 +420,7 @@ LANG = {
   "flag": "카타르",
   "full_summary": "전체 기사 목록 (총 {n}건)", "full_note": "(카타르·이란·해외·한국)", "expand": "펼쳐보기", "collapse": "접기",
   "col_qatar": "🇶🇦 카타르", "col_iran": "🇮🇷 이란·역내", "col_over": "🌐 해외(미국·유럽 등)", "col_korea": "🇰🇷 국내(한국)",
+  "dl_label": "다운로드", "dl_xlsx": "⬇ 엑셀", "dl_docx": "⬇ 워드", "x_s1": "이슈별 요약", "x_s2": "기사 목록", "x_no": "번호", "x_issue": "이슈", "x_sum": "요약", "x_media": "매체", "x_art": "기사 제목", "x_dt": "보도일시", "w_media": "발췌 매체", "mon_fname": "언론모니터링", "w_sumhead": "이슈별 요약",
   "empty_q": "이번 창(window)에 카타르 직접 관련 신규 기사 없음", "empty_over": "이번 창에 해외 신규 기사 없음",
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
   "rep_head": "중동 정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
@@ -469,6 +470,7 @@ LANG = {
   "flag": "Qatar",
   "full_summary": "Full article list (total {n})", "full_note": "(Qatar·Iran·Global·Korea)", "expand": "Expand", "collapse": "Collapse",
   "col_qatar": "🇶🇦 Qatar", "col_iran": "🇮🇷 Iran & regional", "col_over": "🌐 Global (US·Europe)", "col_korea": "🇰🇷 Korea",
+  "dl_label": "Download", "dl_xlsx": "⬇ Excel", "dl_docx": "⬇ Word", "x_s1": "Issue summaries", "x_s2": "Article list", "x_no": "No.", "x_issue": "Issue", "x_sum": "Summary", "x_media": "Outlet", "x_art": "Article", "x_dt": "Published", "w_media": "Cited outlets", "mon_fname": "media_monitor", "w_sumhead": "Issue summaries",
   "empty_q": "No new Qatar-related articles in this window", "empty_over": "No new global articles in this window",
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
   "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes, etc.)", "rep_badge": "Newest", "rep_new": "New this edition",
@@ -520,6 +522,7 @@ LANG = {
   "flag": "قطر",
   "full_summary": "قائمة الأخبار الكاملة (الإجمالي {n})", "full_note": "(قطر·إيران·دولي·كوريا)", "expand": "توسيع", "collapse": "طيّ",
   "col_qatar": "🇶🇦 قطر", "col_iran": "🇮🇷 إيران والإقليم", "col_over": "🌐 دولي (أمريكا·أوروبا)", "col_korea": "🇰🇷 كوريا",
+  "dl_label": "تنزيل", "dl_xlsx": "⬇ Excel", "dl_docx": "⬇ Word", "x_s1": "ملخصات القضايا", "x_s2": "قائمة المقالات", "x_no": "الرقم", "x_issue": "القضية", "x_sum": "الملخص", "x_media": "الوسيلة", "x_art": "المقال", "x_dt": "تاريخ النشر", "w_media": "الوسائل", "mon_fname": "rasd_iaalam", "w_sumhead": "ملخصات القضايا",
   "empty_q": "لا مقالات جديدة متعلقة بقطر في هذه الفترة", "empty_over": "لا مقالات دولية جديدة في هذه الفترة",
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
   "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
@@ -1807,6 +1810,135 @@ var b=document.getElementById('tldl');if(b)b.addEventListener('click',dl);
 })();"""
 
 
+# 일간/주간 모니터 엑셀(2시트)·워드 내보내기 — 페이지 DOM을 읽어 본사 보고용 문서 생성(순수 클라이언트·무료)
+_MON_SCRIPT = r"""(function(){
+var URLBASE='https://kotradoha.github.io/qatar-media-monitor/';
+var I18={
+ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 공개 언론 보도를 AI로 자동 요약·정리한 참고용 모니터링 결과입니다. 정확한 내용·수치는 각 매체 원문 링크를 확인하시기 바랍니다.',fname:'카타르_언론모니터링'},
+en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'An AI-assisted digest of public media reporting, for reference only. Please verify details and figures against the original articles.',fname:'Qatar_Media_Monitor'},
+ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'موجز بمساعدة الذكاء الاصطناعي لتقارير إعلامية عامة، للاطلاع فقط. يُرجى التحقّق من التفاصيل والأرقام من المقالات الأصلية.',fname:'rasd_iaalam_qatar'}};
+var LANG=(document.documentElement.lang||'ko'); var T=I18[LANG]||I18.ko; var RTL=(LANG==='ar');
+function txt(e){return e?(e.textContent||'').replace(/\s+/g,' ').trim():'';}
+function scrape(){
+  var title=txt(document.querySelector('h1'));
+  var sm=document.querySelectorAll('.submeta > span');
+  var updated=sm[0]?txt(sm[0]).replace(/^[^:：]*[:：]\s*/,''):'';
+  var period=sm[1]?txt(sm[1]).replace(/^[^:：]*[:：]\s*/,''):'';
+  // 회차번호(모니터링 일시에서 계산)
+  var edn='';var m=updated.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})[^0-9]*?(\d{1,2}):(\d{2})/);
+  if(document.body.classList.contains('ed-weekly')){edn=T.edW;}
+  else if(m){var y=+m[1],mo=+m[2],da=+m[3],hh=+m[4];var base=Date.UTC(2026,7,1);var cur=Date.UTC(y,mo-1,da);var days=Math.round((cur-base)/86400000);var no=days*2+(hh<12?1:2);if(no>=1)edn=T.edD.replace('{n}',no);}
+  var issues=[];
+  document.querySelectorAll('.issue').forEach(function(iss){
+    var theme=txt(iss.querySelector('.ihead h2'))||txt(iss.querySelector('.ihead'));
+    var sum=[];iss.querySelectorAll('.sumbul li').forEach(function(li){var t=txt(li);if(t)sum.push(t);});
+    var arts=[],seen={};
+    iss.querySelectorAll('a').forEach(function(a){var s=a.querySelector('.src');if(!s)return;
+      var st=txt(s);var parts=st.split(' · ');var dt='',src=st;
+      if(parts.length>=2 && /\d{1,2}\/\d{1,2}/.test(parts[parts.length-1])){dt=parts.pop().trim();src=parts.join(' · ').trim();}
+      var at=txt(a).replace(st,'').trim();
+      var key=src+'|'+at;if(seen[key])return;seen[key]=1;
+      arts.push({src:src,art:at,dt:dt});});
+    if(theme)issues.push({theme:theme,sum:sum,arts:arts});
+  });
+  return {title:title,updated:updated,period:period,edn:edn,issues:issues};
+}
+// ===== ZIP(무압축) =====
+var crcT=(function(){var t=[];for(var n=0;n<256;n++){var c=n;for(var k=0;k<8;k++){c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);}t[n]=c>>>0;}return t;})();
+function crc32(b){var c=0xFFFFFFFF;for(var i=0;i<b.length;i++){c=crcT[(c^b[i])&0xFF]^(c>>>8);}return (c^0xFFFFFFFF)>>>0;}
+function SB(s){return new TextEncoder().encode(s);}
+function u16(n){return [n&0xFF,(n>>8)&0xFF];}function u32(n){return [n&0xFF,(n>>8)&0xFF,(n>>16)&0xFF,(n>>24)&0xFF];}
+function zip(files){var parts=[],cen=[],off=0;
+files.forEach(function(f){var nm=SB(f.name),crc=crc32(f.data),sz=f.data.length;
+var lh=new Uint8Array([].concat(u32(0x04034b50),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(sz),u32(sz),u16(nm.length),u16(0)));
+parts.push(lh,nm,f.data);
+cen.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(sz),u32(sz),u16(nm.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),nm);
+off+=lh.length+nm.length+f.data.length;});
+var cstart=off,csz=0;cen.forEach(function(x){csz+=x.length;});
+var end=new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(csz),u32(cstart),u16(0)));
+var all=parts.concat(cen,[end]),tot=all.reduce(function(a,x){return a+x.length;},0),out=new Uint8Array(tot),p=0;
+all.forEach(function(x){out.set(x,p);p+=x.length;});return out;}
+function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function dl(bytes,mime,name){var blob=new Blob([bytes],{type:mime});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
+// ===== XLSX(다중 시트) =====
+function colL(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
+function cel(r,c,v,st){return '<c r="'+colL(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
+function sheetXml(sh){
+  var sd='',r=0;
+  (sh.pre||[]).forEach(function(row){r++;sd+='<row r="'+r+'">';row.cells.forEach(function(cc,i){sd+=cel(r,i,cc.v,cc.s);});sd+='</row>';});
+  var hr=r+1;sd+='<row r="'+hr+'">';sh.headers.forEach(function(h,i){sd+=cel(hr,i,h,'1');});sd+='</row>';
+  sh.rows.forEach(function(row){r=++hr;sd+='<row r="'+hr+'">';row.forEach(function(v,i){sd+=cel(hr,i,v,'2');});sd+='</row>';hr=r;});
+  (sh.post||[]).forEach(function(row){hr++;sd+='<row r="'+hr+'">';row.cells.forEach(function(cc,i){sd+=cel(hr,i,cc.v,cc.s);});sd+='</row>';});
+  var cols='<cols>';sh.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
+  var hrow=(sh.pre?sh.pre.length:0)+1;
+  var af=sh.filter?('<autoFilter ref="A'+hrow+':'+colL(sh.headers.length-1)+hr+'"/>'):'';
+  var frz='<pane ySplit="'+hrow+'" topLeftCell="A'+(hrow+1)+'" activePane="bottomLeft" state="frozen"/>';
+  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"'+(RTL?' ':'')+'><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView '+(RTL?'rightToLeft="1" ':'')+'workbookViewId="0">'+frz+'</sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData>'+af+'<pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
+}
+function buildXlsx(sheets){
+  var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="4"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font><font><sz val="9"/><color rgb="FF7A7A7A"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="5"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" applyFont="1"/><xf fontId="3" applyFont="1" applyAlignment="1"><alignment wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+  var sheetParts=[],wbSheets='',wbRels='',cts='',dn='';
+  sheets.forEach(function(sh,i){var id=i+1;var nm=X(sh.name).slice(0,31);
+    sheetParts.push({name:'xl/worksheets/sheet'+id+'.xml',data:SB(sheetXml(sh))});
+    wbSheets+='<sheet name="'+nm+'" sheetId="'+id+'" r:id="rId'+id+'"/>';
+    wbRels+='<Relationship Id="rId'+id+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet'+id+'.xml"/>';
+    cts+='<Override PartName="/xl/worksheets/sheet'+id+'.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>';
+    var hrow=(sh.pre?sh.pre.length:0)+1;dn+='<definedName name="_xlnm.Print_Titles" localSheetId="'+i+'">\''+nm+'\'!$'+hrow+':$'+hrow+'</definedName>';
+  });
+  var sid=sheets.length+1;
+  var wb='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>'+wbSheets+'</sheets><definedNames>'+dn+'</definedNames></workbook>';
+  var wbr='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'+wbRels+'<Relationship Id="rId'+sid+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>';
+  var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>'+cts+'<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>';
+  var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>';
+  var files=[{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'xl/workbook.xml',data:SB(wb)},{name:'xl/_rels/workbook.xml.rels',data:SB(wbr)},{name:'xl/styles.xml',data:SB(styles)}].concat(sheetParts);
+  return zip(files);
+}
+function exportXlsx(){
+  var D=scrape();
+  var head=D.title+(D.edn?('  ['+D.edn+']'):'');
+  var meta=T.lUpd+': '+D.updated+'    '+T.lPer+': '+D.period;
+  // Sheet1: 이슈별 요약
+  var s1rows=D.issues.map(function(e,i){return [String(i+1), e.theme, e.sum.map(function(b){return '• '+b;}).join('\n')];});
+  var sheet1={name:T.s1,headers:[T.cNo,T.cIssue,T.cSum],rows:s1rows,widths:[6,42,80],
+    pre:[{cells:[{v:head,s:'3'}]},{cells:[{v:meta,s:'4'}]},{cells:[{v:'',s:'0'}]}],
+    post:[{cells:[{v:'',s:'0'}]},{cells:[{v:T.note,s:'4'}]},{cells:[{v:T.org+'   '+URLBASE,s:'4'}]}]};
+  // Sheet2: 기사 목록(정렬용)
+  var s2rows=[];D.issues.forEach(function(e){e.arts.forEach(function(a){s2rows.push([e.theme,a.src,a.art,a.dt]);});});
+  var sheet2={name:T.s2,headers:[T.cIssue,T.cMedia,T.cArt,T.cDt],rows:s2rows,widths:[34,18,54,16],filter:true};
+  dl(buildXlsx([sheet1,sheet2]),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',T.fname+'.xlsx');
+}
+// ===== DOCX =====
+function wp(text,opt){opt=opt||{};var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+(opt.sb||opt.sa?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa?'w:after="'+opt.sa+'"':'')+'/>':'')+'</w:pPr>';
+  var rPr='<w:rPr>'+(opt.b?'<w:b/>':'')+(opt.sz?'<w:sz w:val="'+opt.sz+'"/>':'')+(opt.color?'<w:color w:val="'+opt.color+'"/>':'')+(RTL?'<w:rtl/>':'')+'</w:rPr>';
+  return '<w:p>'+pPr+'<w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r></w:p>';}
+function cellXml(w,paras){return '<w:tc><w:tcPr><w:tcW w:w="'+w+'" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:bottom w:w="60" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tcMar></w:tcPr>'+(paras||'<w:p/>')+'</w:tc>';}
+function exportDocx(){
+  var D=scrape();var LW=7600,RW=2400;
+  var body='';
+  body+=wp(D.title,{b:true,sz:32,align:'center',sa:60});
+  body+=wp((D.edn?D.edn+'   ':'')+T.lUpd+': '+D.updated+'   '+T.lPer+': '+D.period,{sz:18,color:'666666',align:'center',sa:160});
+  D.issues.forEach(function(e,i){
+    body+=wp((i+1)+'. '+e.theme,{b:true,sz:24,sb:160,sa:60});
+    var left=e.sum.map(function(b){return wp('• '+b,{sz:19,sa:40});}).join('')||'<w:p/>';
+    var mm=[];var seen={};e.arts.forEach(function(a){if(a.src&&!seen[a.src]){seen[a.src]=1;mm.push(a.src);}});
+    var right=mm.map(function(s){return wp('· '+s,{sz:17,color:'444444',sa:20});}).join('')||'<w:p/>';
+    body+='<w:tbl><w:tblPr><w:tblW w:w="10000" w:type="dxa"/>'+(RTL?'<w:bidiVisual/>':'')+'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="D0D0D0"/><w:left w:val="single" w:sz="4" w:color="D0D0D0"/><w:bottom w:val="single" w:sz="4" w:color="D0D0D0"/><w:right w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideH w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideV w:val="single" w:sz="4" w:color="D0D0D0"/></w:tblBorders><w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="'+LW+'"/><w:gridCol w:w="'+RW+'"/></w:tblGrid><w:tr>'+cellXml(LW,left)+cellXml(RW,'<w:p><w:pPr>'+(RTL?'<w:bidi/>':'')+'</w:pPr><w:r><w:rPr><w:b/><w:sz w:val="16"/><w:color w:val="888888"/>'+(RTL?'<w:rtl/>':'')+'</w:rPr><w:t xml:space="preserve">'+X(T.wMedia)+'</w:t></w:r></w:p>'+right)+'</w:tr></w:tbl>';
+    body+=wp('',{sz:8});
+  });
+  body+=wp('',{sz:10});
+  body+=wp(T.note,{sz:16,color:'777777',sb:120});
+  body+=wp(T.org+'   ·   '+URLBASE,{sz:16,color:'777777'});
+  var sect='<w:sectPr>'+(RTL?'<w:bidi/>':'')+'<w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr>';
+  var doc='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>'+body+sect+'</w:body></w:document>';
+  var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>';
+  var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>';
+  dl(zip([{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'word/document.xml',data:SB(doc)}]),'application/vnd.openxmlformats-officedocument.wordprocessingml.document',T.fname+'.docx');
+}
+var bx=document.getElementById('dlxlsx');if(bx)bx.addEventListener('click',exportXlsx);
+var bd=document.getElementById('dldocx');if(bd)bd.addEventListener('click',exportDocx);
+})();"""
+
+
 def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=None,
            reports=None, edition=None, weekly_inline=None, lang="ko", nav=None, home_url=None, new_since=None,
            weekly_from=None, qatar_gov=None):
@@ -1862,6 +1994,16 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         summary_html = (_gov + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(L["sum_head_flat"])}</div>'
                         f'<div class="sumbody"><div class="pl" style="color:var(--muted)">{esc(L["sum_none_body"])}</div>'
                         f'{diag_html}</div></div>')
+
+    # 본사 보고용 엑셀·워드 다운로드 바(이슈가 있을 때만) — '이슈 요약'과 '전체 기사 목록' 사이
+    if issues:
+        dlbar = (f'<div class="dlbar"><span class="dll">{esc(L["dl_label"])}</span>'
+                 f'<button class="dlbtn" id="dlxlsx">{esc(L["dl_xlsx"])}</button>'
+                 f'<button class="dlbtn" id="dldocx">{esc(L["dl_docx"])}</button></div>')
+        monscript = f'<script>{_MON_SCRIPT}</script>'
+    else:
+        dlbar = ""
+        monscript = ""
 
     quick = ""
     for sec_title, group_names in QUICK_SECTIONS:
@@ -1966,6 +2108,7 @@ if(sw){sw.innerHTML=w;}
         tlref=timeline_ref(lang),
         foot=esc(L["foot"]), sign=esc(L["sign"]),
         summary=summary_html,
+        dlbar=dlbar, monscript=monscript,
         qatar=block(qatar, esc(L["empty_q"])),
         me_en=block(me_ov, esc(L["empty_over"])),
         me_ir=block(me_ir, esc(L["empty_iran"])),
@@ -1997,8 +2140,9 @@ TEMPLATE = """<!DOCTYPE html>
   .sitelink{{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--accent);
     text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:var(--panel2);white-space:nowrap}}
   .sitelink:hover{{background:var(--panel);border-color:var(--accent)}}
-  .lang{{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}}
-  .langbtn{{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap}}
+  .lang{{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}}
+  .langbtn{{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap;text-align:center;box-sizing:border-box}}
+  .lang .langbtn:not(:first-child){{border-inline-start:1px solid var(--line)}}
   .langbtn.on{{background:var(--accent);color:#fff}}
   .langbtn:hover{{color:var(--txt)}}
   .langbtn.on:hover{{color:#fff}}
@@ -2006,7 +2150,8 @@ TEMPLATE = """<!DOCTYPE html>
   @keyframes p{{0%{{box-shadow:0 0 0 0 rgba(47,191,113,.5)}}70%{{box-shadow:0 0 0 8px rgba(47,191,113,0)}}100%{{box-shadow:0 0 0 0 rgba(47,191,113,0)}}}}
   h1{{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}}
   .sub{{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}}
-  .submeta{{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}}
+  .submeta{{color:var(--txt);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}}
+  .submeta .tz{{font-weight:400;color:var(--muted)}}
   .submeta > span::before{{content:"• ";color:var(--accent);font-weight:700}}
   .submeta > span{{flex-basis:100%}}
   .sub b,.submeta b{{color:var(--txt)}}
@@ -2133,6 +2278,11 @@ TEMPLATE = """<!DOCTYPE html>
   .tlref{{display:block;font-size:12.5px;color:var(--muted)}}
   .tlref a{{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45)}}
   .tlref a:hover{{text-decoration-color:var(--accent)}}
+  .dlbar{{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:2px 0 20px}}
+  .dll{{font-size:12px;font-weight:700;color:var(--muted)}}
+  .dlbtn{{font:inherit;font-size:12.5px;font-weight:700;color:var(--accent);background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:7px 14px;cursor:pointer;white-space:nowrap}}
+  .dlbtn:hover{{border-color:var(--accent)}}
+  @media print{{.dlbar{{display:none}}}}
   .tlref img.emoji{{height:1em;width:1em;vertical-align:-0.12em}}
   .wsec{{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(77,163,255,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(77,163,255,.08),transparent)}}
@@ -2184,7 +2334,7 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="scopebar">🎯 {scope}{tlref}</div>
     {archive}
     <div class="submeta">
-      <span>{updated_label}: <b>{updated} ({tz})</b></span>
+      <span>{updated_label}: <b>{updated}</b> <span class="tz">({tz})</span></span>
       <span>{coverage_label}: <b>{window}</b></span>
       <span class="cnt">{counts_label}: {counts}</span>
     </div>
@@ -2193,6 +2343,8 @@ TEMPLATE = """<!DOCTYPE html>
   {weekly}
 
   {summary}
+
+  {dlbar}
 
   <details class="fulllist foldbox">
     <summary><span class="chev">▸</span> {full_summary} <span class="hnote">{full_note}</span> <span class="exp exp-c">{expand} ▾</span><span class="exp exp-o">{collapse} ▴</span></summary>
@@ -2215,6 +2367,7 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="notice-emph">{foot}<div class="notice-sign">{sign}</div></div>
   </footer>
 </div>
+{monscript}
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script>
   // 국기 이모지가 윈도우 등에서 'QA/IR/KR' 글자로 보이는 문제 방지 → 실제 국기 이미지로 렌더

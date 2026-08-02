@@ -21,8 +21,9 @@
   .sitelink{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--accent);
     text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:var(--panel2);white-space:nowrap}
   .sitelink:hover{background:var(--panel);border-color:var(--accent)}
-  .lang{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}
-  .langbtn{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap}
+  .lang{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}
+  .langbtn{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap;text-align:center;box-sizing:border-box}
+  .lang .langbtn:not(:first-child){border-inline-start:1px solid var(--line)}
   .langbtn.on{background:var(--accent);color:#fff}
   .langbtn:hover{color:var(--txt)}
   .langbtn.on:hover{color:#fff}
@@ -30,7 +31,8 @@
   @keyframes p{0%{box-shadow:0 0 0 0 rgba(47,191,113,.5)}70%{box-shadow:0 0 0 8px rgba(47,191,113,0)}100%{box-shadow:0 0 0 0 rgba(47,191,113,0)}}
   h1{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}
   .sub{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}
-  .submeta{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}
+  .submeta{color:var(--txt);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}
+  .submeta .tz{font-weight:400;color:var(--muted)}
   .submeta > span::before{content:"• ";color:var(--accent);font-weight:700}
   .submeta > span{flex-basis:100%}
   .sub b,.submeta b{color:var(--txt)}
@@ -157,6 +159,11 @@
   .tlref{display:block;font-size:12.5px;color:var(--muted)}
   .tlref a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45)}
   .tlref a:hover{text-decoration-color:var(--accent)}
+  .dlbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:2px 0 20px}
+  .dll{font-size:12px;font-weight:700;color:var(--muted)}
+  .dlbtn{font:inherit;font-size:12.5px;font-weight:700;color:var(--accent);background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:7px 14px;cursor:pointer;white-space:nowrap}
+  .dlbtn:hover{border-color:var(--accent)}
+  @media print{.dlbar{display:none}}
   .tlref img.emoji{height:1em;width:1em;vertical-align:-0.12em}
   .wsec{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(77,163,255,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(77,163,255,.08),transparent)}
@@ -224,7 +231,7 @@ if(sd){sd.innerHTML=d;if(cur===ld||cur==="index.html"||cur===lang+".html"||cur==
 if(sw){sw.innerHTML=w;}
 }).catch(function(){});})();</script>
     <div class="submeta">
-      <span>모니터링 일시: <b>2026/08/02(일) 15:30 (카타르시간)</b></span>
+      <span>모니터링 일시: <b>2026/08/02(일) 15:30</b> <span class="tz">(카타르시간)</span></span>
       <span>모니터링 기간: <b>당일 07:00 ~ 당일 15:30 (카타르시간)</b></span>
       <span class="cnt">모니터링 건수: 카타르 <b>89</b>건 · 중동 정세 <b>378</b>건</span>
     </div>
@@ -236,6 +243,8 @@ if(sw){sw.innerHTML=w;}
 <div class="issue"><div class="ihead"><span class="num">이슈 2</span><h2>💥 이스라엘, 가자지구 공습 지속…트럼프 평화안 이후 사망자 18명</h2></div><div class="row"><div class="left"><div class="sh">핵심 요약</div><ul class="sumbul"><li>트럼프의 최신 가자 평화안(peace plan) 발표 이후에도 이스라엘군의 가자지구 공습이 지속돼 사망자가 최소 8명 추가 발생, 트럼프 평화안 이후 누적 사망자 18명으로 집계(Al Jazeera), 자발리아 난민캠프 드론 폭발로 팔레스타인인 사망·부상자 발생(QNA).</li><li>이스라엘 국방 관련 인사는 공격 중단 합의가 없다고 밝혔으며, 이스라엘군 공습으로 가자지구 여러 지역에서 사망자가 7명으로 집계(QNA)·이후 9명으로 추가 집계(Al-Monitor), 트럼프 철수 합의에도 불구 이스라엘 공습으로 거대 구덩이가 발생한 것으로 보도됨(국내).</li><li>가자지구 전체 사망자 수는 7만3356명에 달한다고 이란 국영매체(IRNA)가 집계, 팔레스타인이슬라믹지하드(PIJ)는 &#x27;평화위원회(Board of Peace)&#x27;가 제안한 가자 무장해제안에 동의한 것으로 알려짐.</li></ul></div><div class="right"><div class="grp"><div class="gh">🇶🇦 카타르 현지</div><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ19adVVFZ2hWV2R1X3djN25IMGczbkFPbXRweTlqamRJYmRPaWpIazlFYUIwNE1zZmZBVXFDbXBjRkZnWnk1d2Rhb3RwSC1XUFBudWNJdnZTdG1MY3ZOV21sdHhVQno5ZllJQ3dnR19UZ20zNTJVeFJPb2JYRms2RkxqOGVqcnVzcUpIemlUNllMT25BakRSNGJ0Z1M2SVh4Vmg3YXpn0gGrAUFVX3lxTE96V2pjZk5iM3lyOTcxV2l3TXlreTNvd2xLYm5BdDZSM0ZWWnJGek9iS2t0RlhMZlBLc2FFVzZBNjZPbktUSDkzNWVjejNpbUkxYlFUdUgxLUJrWFFkVjduam5qZDQ0M0VMYU1NMDJ1cTU5NVhoZkFsNk5CWDNrakZMNnFSVC12cTMtU2VWMEl3VDRQSmllTUlyMmpEcGFqdDBUb1duRVBsZDJBSQ?oc=5" target="_blank" rel="noopener">Israeli forces kill 8 in Gaza, toll now 18 since latest Trump peace plan<span class="src">Al Jazeera · 08/02 15:11</span></a><a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxQN1lxSlc4aHo5VXcyYlRpTkZ1VW1UdDVQOXprNVBpZ3AyUUhJbTFVeFZJVF94SjZtd3RjcU1xNklnRGVFRWlLVUFtLWJTOUZOcjQzanBrSklCTUNfQW5oMHN2OG1teW1yRThVdnBMSkxFbU4xMHFhZHIzRklZZF9yNjAzcVdhZ0hPTkcxQ3Q1Nm9YY3pSWGhxM2phZEljTUwydEV0Nk9JMHlUWGYzNklyQTFYakRxMEFhSWloRV9hLWZyWFJrMWo1TEJuRW5RMDkwMVBKaDROXzU4Zw?oc=5" target="_blank" rel="noopener">Israeli Occupation Murders Palestinian, Injures Others in Drone Explosion in Jabalia Refugee Camp<span class="src">Qatar news agency · 08/02 13:32</span></a><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQcUNMU0R4VzBmY1JUQ19kMHpiajdlTGVTaGxYUG55NWdMYlk0NVhuckwyYXNYQ1hHNVAtd0ZuWDFOU2lXM2NIZG9WWkUxaUVzVWoweGFQTHF0MFN3TVBaWFpEZ0Myb1hTT2pOMXZrZzUtTXkxcGVPZmtpcF9hQ0luakZ4aTJqRmlqOUxqVEpfclpnY3lWd1RUYWs0N3FGSkRwYXA5eUlRSm1MdlZMOWJ5NmxIcHc4dHM?oc=5" target="_blank" rel="noopener">Death Toll Rises to 7 in Israeli Strikes on Multiple Areas Across Gaza<span class="src">Qatar news agency · 08/02 12:37</span></a></div><div class="grp"><div class="gh">🇮🇷 이란·역내</div><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQQV9NdGNFdTRjcXVEeU5jNE90SUp2bXBUclFYVkF4Ym94Uy1lTmVHYzFKenpjZTNSWUQzSnpIZ3l4SHJDc2xyb09zdXpFN0QzWnZEY1FpNXZxaUtMN21LMnplRlJtTkxob3gyR0ZLTV9QWUgwZmxCVm9rSGNWOVI2dkxTS1EyMi1xVnR3QXBtZkR3OHpMalVuQmhR?oc=5" target="_blank" rel="noopener">Israel kills 8 more Palestinians in Gaza despite ceasefire<span class="src">Mehr News Agency · 08/02 14:27</span></a><a href="https://en.irna.ir/news/86226075/Death-toll-in-Gaza-rises-to-73-356" target="_blank" rel="noopener">Death toll in Gaza rises to 73,356<span class="src">IRNA · 08/02 13:59</span></a></div><div class="grp"><div class="gh">🌐 해외(미국·유럽 등)</div><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQM1o4MGFXdmZSQTY1QVhtemZNZ1FmcW01T2JMeFlZQmdBMkpCNU5fa0VLUFZSNkhNOHFUcFRUclg1aU9zamc1YzlBZjFYNlRqYUowTzhXenYxLV8wWWl6aUNmZFRLTzdNN2dLZUpfaERTejUwOE9yTGFWWmNBV2lSU0FialhNR3BZWkpJNi1FNmotTjNYU0phWndGZ0pLOUNFRjdrdG9fcGlCd2JBeDVLSE5OVVhOMkRWVnc?oc=5" target="_blank" rel="noopener">Israeli strikes kill nine in Gaza, Israeli minister says no deal to halt attacks<span class="src">Al-Monitor · 08/02 13:28</span></a><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOU0tCZU1EMGxNMDZPNTNSZkNZaFNmcUl3N01keGFEOTBBSFI0ZjF1UmVhd3FuX1RDRGNnbGJvUlZuVjYtSnFadDY2Z3RrWjlGWTBHWnMtTVZNOG9QVjJ4TTFlWXo1LTU2WmxXdEdvRnFGdjQ0ZlVnMGVWSXRtRHpweFpZMno1SFpNVkd4T1JGUklKeUlLZnJFMnJSc1psY3RqdjFRQ3I5eXpKcWU3aWFJ?oc=5" target="_blank" rel="noopener">Palestinian Islamic Jihad agrees to Gaza disarmament plan — report<span class="src">The Times of Israel · 08/02 13:26</span></a><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFA2bTBzdnRFWEZEeVBaS181ZXo3bEZoYjBWS05mTjk5aVBKdU1FV2pSdi1QMzZmS2Q5TS1XT21ZV0FqTTU4bHg2RHNOMG5hN2k1M1kwdzVSSXhUd2xP?oc=5" target="_blank" rel="noopener">Palestinian Islamic Jihad agrees to Board of Peace&#x27;s proposed Gaza disarmament deal - report<span class="src">The Jerusalem Post · 08/02 12:50</span></a></div><div class="grp"><div class="gh">🇰🇷 국내(한국)</div><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxON2dTNjlteERHRU10WW5qODdyN19QZEhBV2VqOUxMOGhRbDZBeUlBUFZhMFdLU25RSWFpTzJXaFB3Rmh3X1BlQ09HNG9ocFdYNEZhQ2dIUEE0dzRoTzNPN3k5bmI0MlpSdzhYX3QyZlIxYmpIVjliZU01bkZtd2ZyZ0p3?oc=5" target="_blank" rel="noopener">트럼프 철수 합의에도…이스라엘 공습에 ‘거대 구덩이’ 발생<span class="src">한겨레 · 08/02 13:49</span></a><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1laTZRWFIxUHRCUzNsTEtici0xb09nUXM4VF8tMTJvNmE5dTRMbl9HTFNRUlVOQlp5ZTVwMmEyNVY3UUEtLXVlbmdENVJkblROeldERw?oc=5" target="_blank" rel="noopener">트럼프 ‘주말 대공습’ 취소…이스라엘은 또 가자지구 공습<span class="src">JTBC · 08/02 13:35</span></a></div></div></div></div>
 <div class="issue"><div class="ihead"><span class="num">이슈 3</span><h2>🤝 카타르 총리, 사우디·요르단·쿠웨이트 외교장관과 잇단 통화·역내 긴장 완화 조율</h2></div><div class="row"><div class="left"><div class="sh">핵심 요약</div><ul class="sumbul"><li>카타르 내무장관이 이란 내무장관으로부터 전화를 받아 협의(The Peninsula Qatar), 카타르 총리는 사우디 외교장관과 통화해 역내 안보·안정 강화 방안을 논의(Qatar Tribune·The Peninsula Qatar).</li><li>카타르 총리는 요르단 부총리 겸 외교장관과 역내 정세 관련 통화를 진행했으며(Qatar Tribune·The Peninsula Qatar), 쿠웨이트 외교장관과도 양국 관계 및 역내 정세를 논의(The Peninsula Qatar).</li><li>쿠웨이트·요르단 외교장관은 별도로 역내 긴장 완화(de-escalation)를 위한 외교적 노력을 논의(QNA), 카타르가 미·이란 확전 우려 국면에서 걸프·역내 국가들과 다자 외교 채널을 통해 긴장 완화를 조율 중인 것으로 확인됨.</li></ul></div><div class="right"><div class="grp"><div class="gh">🇶🇦 카타르 현지</div><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNa2NmMHFGTlNZRDIxUm4zSTM1QjNJY21aalhMTWJBS0Y3U2lSUUhHX2RVQm9DT1RDT05ObjBiUU92U295MzJUSHM5THpIRm45WTlDVVdUdWo0YmFJNUdIaGcxaGNtT2JxcllMMjg0OGNSamZ1T0ZidjlQUnlNYWliZUF3Q3hkVTk2bmVUYTdySkNXMkNlamxmNnNDeEl5ci1DOEd1MEdmbXVkenpPZTJBM0haR0M?oc=5" target="_blank" rel="noopener">Minister of Interior receives phone call from Iranian counterpart<span class="src">The Peninsula Qatar · 08/02 14:03</span></a><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNT2ZxdTZCWnZuYVRMVVI0bHNkQmdkUVFPcEt6NW9nMHlSVWRtemVEazhXMEtjbjA4ZmZYVmFwVGhxdXpMVVpqLTZvTkdnSlBWYXgyeEVyT1V2VzNFa1lob1FWT09OSk9kdnhOWmZyOE1XOHlKTGRNQ0hYV0RqOWRmU3lmb2J3YjFnd0prLWhkaFFSTHFzS2tacGI2cEpPdGdfaGlYRjZ4dlJQNTZmZUFWdlJVeWp3Q1hQVVF0Rk9IYW1KNTBGdDBRZGhSS0RRS1XSAc8BQVVfeXFMTU9mcXU2Qlp2bmFUTFVSNGxzZEJnZFFRT3BLejVvZzB5UlVkbXplRGs4VzBLY24wOGZmWFZhcFRocXV6TFVaai02b05HZ0pQVmF4MnhFck9VdlczRWtZaG9RVk9PTkpPZHZ4TlpmcjhNVzh5SkxkTUNIWFdEajlkZlN5Zm9id2IxZ3dKay1oZGhRUkxxc0trWnBiNnBKT3RnX2hpWEY2eHZSUDU2ZmVBVnZSVXlqd0NYUFVRdEZPSGFtSjUwRnQwUWRoUktEUUtV?oc=5" target="_blank" rel="noopener">Prime minister, Saudi FM stress enhancing security, stability in the region<span class="src">Qatar Tribune · 08/02 13:57</span></a><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOdXdSNkEzQldkd2hUa3FqUXJncmRCNnBLbkhsNDNjRjFISEE3T2tCcnJfRi1mSFpCUU5aeS1ZanRHU2hObUZDTW1Wam9INEVLaURtMVNNcFpBeUNOLTlCWk9zTUhpM05kUWVtbmZva0N4aGZVdUdpVkl4M01UVmpKYTB1eDhnUlUycEZlMWV0YnNaQm5qTGxKandEVmpUX2dtTUsyR0NJYkxCTF9WX05zNg?oc=5" target="_blank" rel="noopener">Prime Minister holds phone call with Saudi Foreign Minister<span class="src">The Peninsula Qatar · 08/02 13:56</span></a><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdlRSZk80TzFjMWR0TzVhOEdMdk5nMFdKM0l3NllSUk1GX25IaVAwY2lBbUk2NzhxSXVJSkZKQy1MbWx0ejlyZUo5LWlEd2dsWER0TG9VRFdDRDVuaTlRMmZFWDFwcUNBNzNfeWhOM2N4VDdRSmJ5OGFQMGdCMm0zMjV3bGJUUGFDbEJSR1gzeGFwMTlXRUl4aGV5YUYydktvMk4xR2M2bnRPb1ZsZW5YSHNfWkNVODNEd0h5Vl9kaVk4aTDSAcMBQVVfeXFMTXZUUmZPNE8xYzFkdE81YThHTHZOZzBXSjNJdzZZUlJNRl9uSGlQMGNpQW1JNjc4cUl1SUpGSkMtTG1sdHo5cmVKOS1pRHdnbFhEdExvVURXQ0Q1bmk5UTJmRVgxcHFDQTczX3loTjNjeFQ3UUpieThhUDBnQjJtMzI1d2xiVFBhQ2xCUkdYM3hhcDE5V0VJeGhleWFGMnZLbzJOMUdjNm50T29WbGVuWEhzX1pDVTgzRHdIeVZfZGlZOGkw?oc=5" target="_blank" rel="noopener">Prime minister, Jordanian deputy PM discuss regional developments<span class="src">Qatar Tribune · 08/02 13:49</span></a><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxNbXlwa1NmcUtrNUJMaU9XR2RDQ0hkbzVjNVhHV05tcFZxYmwtblRZbnRfX05meFlmWFREQ3dyMENOdlo4Zy1UM29yeWt5aTM0bThsUGxmXzNZV3ZlVzFoQjQtZmVWbVFwVDlPR3dMSmdKZm1IeExFcVZPNVRjbFh1dVhwWXJPZVJ3ak1fTXNKQjhEak1IbFFuU1FWdlFYbGN4TWNNcm9Rc3pGYmNIQ2d5ZVc0MlZHcnh0YkljUXRsQQ?oc=5" target="_blank" rel="noopener">Prime Minister, Jordan Deputy Prime Minister discuss regional developments<span class="src">The Peninsula Qatar · 08/02 13:47</span></a><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRWNzd04xYXU5emlsc1FGLVZHWXlRY3VYNWJCb1ZGUzZ1NnJSQXc2VzlFa1p6cFNyN0o5V092YTBQVkhyaWduSVBYUkUzX3FQeHB2aVkwekpFZ0FsNlNlNk13LUNaaWFsc2ZaelJhd2pkNWRqZ1VwUU9kUXljU2FrQXNVOWVfa3VQTDNEMHlkbmJ2MXdKQmFlWHgwQXY4Z3VMOEtjZ1RxWVFaNnVXN25YcmNBa3hDSDRpcVFYWUROR0RHRjZYSG1oQ1kxZWlKekpWbmc?oc=5" target="_blank" rel="noopener">Prime Minister and Kuwaiti Foreign Minister discuss relations and regional developments<span class="src">The Peninsula Qatar · 08/02 13:43</span></a><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPLTRmNUM1OGZWRlQ4V0t2Z1BrVU9abFM2Z1NZQ3NCa01sZHZhS085ZUI4REtITE5EUUhEa09PWEhoTEUtcVJEby1YUk1MOFFhajVZSkFQY1N4TDFTV01wdTlGc2NKcFVIWUtqbW45R18zSURzeUpfQ3g5Y05TSjU3bVlPaWNjTjRVdHFrY0lpQmhnTGFVRWNTTFNyMDNWRWcybndSQTdleE1FS2E0MGU0ZW9zU3I1NVhDTEFHbTJydkRMV2N0b1E?oc=5" target="_blank" rel="noopener">Kuwaiti, Jordanian FMs Discuss Diplomatic Efforts to De-escalate Regional Tensions<span class="src">Qatar news agency · 08/02 12:37</span></a></div></div></div></div>
 <div class="issue"><div class="ihead"><span class="num">이슈 4</span><h2>🚢 호르무즈 해협 유조선 피격·개방 합의설 공방</h2></div><div class="row"><div class="left"><div class="sh">핵심 요약</div><ul class="sumbul"><li>호르무즈 해협 입구에서 유조선 피격 사건이 잇따라 발생, 미국이 이란 에너지 시설 공습을 준비 중이었던 것으로 전해짐(국내 보도).</li><li>이란 외무장관이 호르무즈 개방 합의를 수용했고 트럼프가 이란 공격 계획을 철회했다는 보도가 나왔으나, 이란 측 매체(Times of Israel 인용 이란 언론·Mehr News)는 해당 &#x27;호르무즈 개방 합의&#x27; 보도를 명백히 부인하며 반박.</li></ul></div><div class="right"><div class="grp"><div class="gh">🇮🇷 이란·역내</div><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOYjA5Z0FvSUxMZzNXcDhNd3hHdXZQdEtBU2I2RWJScGpMaDkyVkUyM3FyeC1ObE5kLTE0RVh3dmV1aDF1ZmRyQkM2dXBTTXdOSXR5d25RYTQzb0xiVG5kU0k3LTdOMmktMkx1SENnWV80U3NrSW9vZkYtZHAtTlRLSEI1N3NGNWlTdDQwcEJEMXowY2I5UV90d1Bkcw?oc=5" target="_blank" rel="noopener">Media reports on Iran has agreed to reopen Hormuz ‘sheer lie&#x27;<span class="src">Mehr News Agency · 08/02 14:45</span></a></div><div class="grp"><div class="gh">🌐 해외(미국·유럽 등)</div><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPN1dscHRXTUx2OHF3Y3RIekQ4WXZmaDB0RTRhT1U4aXQxZkdIUWJxYnlaYmlFXzRkUi1HTElNUVd6SVBRcWx3QVlzM29RcXZSQnRxV2l4b0t2NkNKc2tlaFlUWm1kT3dUbDNETHJrbFBrZ3VTaUZBdGhTTGJFaGFnTnY3Qkd3dnlTdVB6SUtMYVRhd0k?oc=5" target="_blank" rel="noopener">Iranian media denies deal on opening Hormuz<span class="src">The Times of Israel · 08/02 12:42</span></a></div><div class="grp"><div class="gh">🇰🇷 국내(한국)</div><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9KNGNBdXFoWFdtZ0I0MUhNLXlfMWoyZk5ucVdXcU8tN1ZHRjdNTnpVWWNxVUpLRXBXSmdwbldjREVaUTNKOUZ1VjFUUUV2dENHNk1IdHRpWl94bllacXotc2ZyeEJRa1dZaHZKQzhvYTRnQkU?oc=5" target="_blank" rel="noopener">호르무즈 입구서 유조선 피격 잇따라…미, 에너지 시설 공습 준비<span class="src">한겨레 · 08/02 14:13</span></a><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RWXRhZ3UyZU1STlIyYThxLS1icGRtRzRnaVZRR1NCcV96UmlRUnduaFh2clJLM0dQQWhuelZoY2lKSnUyb2tWN2Y1enB3SDJzN1BnOHdDeDBaZw?oc=5" target="_blank" rel="noopener">이란, 호르무즈 해협 타협안 동의설…군 &quot;최고 대비 태세&quot; 강조<span class="src">파이낸셜뉴스 · 08/02 13:28</span></a><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EaWtXc0w2WlF4dzc1VGZ2X3hWYXJMMUFaNHNuZENOalpXTkZiV2FhTVpadjh3YzlYeklwUjBXMUo4alA2S05FN0V5UXI4c0hsb3F4RGpxNVlLell5X3A5M1hORkpMdmM?oc=5" target="_blank" rel="noopener">&quot;이란 외무, 호르무즈 개방 합의 수용…트럼프, 이란 공격 계획 철회&quot;<span class="src">뉴스1 · 08/02 13:16</span></a></div></div></div></div>
+
+  <div class="dlbar"><span class="dll">다운로드</span><button class="dlbtn" id="dlxlsx">⬇ 엑셀</button><button class="dlbtn" id="dldocx">⬇ 워드</button></div>
 
   <details class="fulllist foldbox">
     <summary><span class="chev">▸</span> 전체 기사 목록 (총 467건) <span class="hnote">(카타르·이란·해외·한국)</span> <span class="exp exp-c">펼쳐보기 ▾</span><span class="exp exp-o">접기 ▴</span></summary>
@@ -749,6 +758,131 @@ if(sw){sw.innerHTML=w;}
     });
   })();
 </script>
-<img src="https://hits.sh/kotradoha.github.io/qatar-media-monitor.svg" alt="" aria-hidden="true" loading="eager" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;opacity:0;pointer-events:none">
-</body>
+<img src="https://hits.sh/kotradoha.github.io/qatar-media-monitor.svg" alt="" aria-hidden="true" loading="eager" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);opacity:0;pointer-events:none">
+<script>(function(){
+var URLBASE='https://kotradoha.github.io/qatar-media-monitor/';
+var I18={
+ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 공개 언론 보도를 AI로 자동 요약·정리한 참고용 모니터링 결과입니다. 정확한 내용·수치는 각 매체 원문 링크를 확인하시기 바랍니다.',fname:'카타르_언론모니터링'},
+en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'An AI-assisted digest of public media reporting, for reference only. Please verify details and figures against the original articles.',fname:'Qatar_Media_Monitor'},
+ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'موجز بمساعدة الذكاء الاصطناعي لتقارير إعلامية عامة، للاطلاع فقط. يُرجى التحقّق من التفاصيل والأرقام من المقالات الأصلية.',fname:'rasd_iaalam_qatar'}};
+var LANG=(document.documentElement.lang||'ko'); var T=I18[LANG]||I18.ko; var RTL=(LANG==='ar');
+function txt(e){return e?(e.textContent||'').replace(/\s+/g,' ').trim():'';}
+function scrape(){
+  var title=txt(document.querySelector('h1'));
+  var sm=document.querySelectorAll('.submeta > span');
+  var updated=sm[0]?txt(sm[0]).replace(/^[^:：]*[:：]\s*/,''):'';
+  var period=sm[1]?txt(sm[1]).replace(/^[^:：]*[:：]\s*/,''):'';
+  // 회차번호(모니터링 일시에서 계산)
+  var edn='';var m=updated.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})[^0-9]*?(\d{1,2}):(\d{2})/);
+  if(document.body.classList.contains('ed-weekly')){edn=T.edW;}
+  else if(m){var y=+m[1],mo=+m[2],da=+m[3],hh=+m[4];var base=Date.UTC(2026,7,1);var cur=Date.UTC(y,mo-1,da);var days=Math.round((cur-base)/86400000);var no=days*2+(hh<12?1:2);if(no>=1)edn=T.edD.replace('{n}',no);}
+  var issues=[];
+  document.querySelectorAll('.issue').forEach(function(iss){
+    var theme=txt(iss.querySelector('.ihead h2'))||txt(iss.querySelector('.ihead'));
+    var sum=[];iss.querySelectorAll('.sumbul li').forEach(function(li){var t=txt(li);if(t)sum.push(t);});
+    var arts=[],seen={};
+    iss.querySelectorAll('a').forEach(function(a){var s=a.querySelector('.src');if(!s)return;
+      var st=txt(s);var parts=st.split(' · ');var dt='',src=st;
+      if(parts.length>=2 && /\d{1,2}\/\d{1,2}/.test(parts[parts.length-1])){dt=parts.pop().trim();src=parts.join(' · ').trim();}
+      var at=txt(a).replace(st,'').trim();
+      var key=src+'|'+at;if(seen[key])return;seen[key]=1;
+      arts.push({src:src,art:at,dt:dt});});
+    if(theme)issues.push({theme:theme,sum:sum,arts:arts});
+  });
+  return {title:title,updated:updated,period:period,edn:edn,issues:issues};
+}
+// ===== ZIP(무압축) =====
+var crcT=(function(){var t=[];for(var n=0;n<256;n++){var c=n;for(var k=0;k<8;k++){c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);}t[n]=c>>>0;}return t;})();
+function crc32(b){var c=0xFFFFFFFF;for(var i=0;i<b.length;i++){c=crcT[(c^b[i])&0xFF]^(c>>>8);}return (c^0xFFFFFFFF)>>>0;}
+function SB(s){return new TextEncoder().encode(s);}
+function u16(n){return [n&0xFF,(n>>8)&0xFF];}function u32(n){return [n&0xFF,(n>>8)&0xFF,(n>>16)&0xFF,(n>>24)&0xFF];}
+function zip(files){var parts=[],cen=[],off=0;
+files.forEach(function(f){var nm=SB(f.name),crc=crc32(f.data),sz=f.data.length;
+var lh=new Uint8Array([].concat(u32(0x04034b50),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(sz),u32(sz),u16(nm.length),u16(0)));
+parts.push(lh,nm,f.data);
+cen.push(new Uint8Array([].concat(u32(0x02014b50),u16(20),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(sz),u32(sz),u16(nm.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off))),nm);
+off+=lh.length+nm.length+f.data.length;});
+var cstart=off,csz=0;cen.forEach(function(x){csz+=x.length;});
+var end=new Uint8Array([].concat(u32(0x06054b50),u16(0),u16(0),u16(files.length),u16(files.length),u32(csz),u32(cstart),u16(0)));
+var all=parts.concat(cen,[end]),tot=all.reduce(function(a,x){return a+x.length;},0),out=new Uint8Array(tot),p=0;
+all.forEach(function(x){out.set(x,p);p+=x.length;});return out;}
+function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function dl(bytes,mime,name){var blob=new Blob([bytes],{type:mime});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
+// ===== XLSX(다중 시트) =====
+function colL(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
+function cel(r,c,v,st){return '<c r="'+colL(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
+function sheetXml(sh){
+  var sd='',r=0;
+  (sh.pre||[]).forEach(function(row){r++;sd+='<row r="'+r+'">';row.cells.forEach(function(cc,i){sd+=cel(r,i,cc.v,cc.s);});sd+='</row>';});
+  var hr=r+1;sd+='<row r="'+hr+'">';sh.headers.forEach(function(h,i){sd+=cel(hr,i,h,'1');});sd+='</row>';
+  sh.rows.forEach(function(row){r=++hr;sd+='<row r="'+hr+'">';row.forEach(function(v,i){sd+=cel(hr,i,v,'2');});sd+='</row>';hr=r;});
+  (sh.post||[]).forEach(function(row){hr++;sd+='<row r="'+hr+'">';row.cells.forEach(function(cc,i){sd+=cel(hr,i,cc.v,cc.s);});sd+='</row>';});
+  var cols='<cols>';sh.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
+  var hrow=(sh.pre?sh.pre.length:0)+1;
+  var af=sh.filter?('<autoFilter ref="A'+hrow+':'+colL(sh.headers.length-1)+hr+'"/>'):'';
+  var frz='<pane ySplit="'+hrow+'" topLeftCell="A'+(hrow+1)+'" activePane="bottomLeft" state="frozen"/>';
+  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"'+(RTL?' ':'')+'><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView '+(RTL?'rightToLeft="1" ':'')+'workbookViewId="0">'+frz+'</sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData>'+af+'<pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
+}
+function buildXlsx(sheets){
+  var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="4"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font><font><sz val="9"/><color rgb="FF7A7A7A"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="5"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" applyFont="1"/><xf fontId="3" applyFont="1" applyAlignment="1"><alignment wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+  var sheetParts=[],wbSheets='',wbRels='',cts='',dn='';
+  sheets.forEach(function(sh,i){var id=i+1;var nm=X(sh.name).slice(0,31);
+    sheetParts.push({name:'xl/worksheets/sheet'+id+'.xml',data:SB(sheetXml(sh))});
+    wbSheets+='<sheet name="'+nm+'" sheetId="'+id+'" r:id="rId'+id+'"/>';
+    wbRels+='<Relationship Id="rId'+id+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet'+id+'.xml"/>';
+    cts+='<Override PartName="/xl/worksheets/sheet'+id+'.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>';
+    var hrow=(sh.pre?sh.pre.length:0)+1;dn+='<definedName name="_xlnm.Print_Titles" localSheetId="'+i+'">\''+nm+'\'!$'+hrow+':$'+hrow+'</definedName>';
+  });
+  var sid=sheets.length+1;
+  var wb='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>'+wbSheets+'</sheets><definedNames>'+dn+'</definedNames></workbook>';
+  var wbr='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'+wbRels+'<Relationship Id="rId'+sid+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>';
+  var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>'+cts+'<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>';
+  var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>';
+  var files=[{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'xl/workbook.xml',data:SB(wb)},{name:'xl/_rels/workbook.xml.rels',data:SB(wbr)},{name:'xl/styles.xml',data:SB(styles)}].concat(sheetParts);
+  return zip(files);
+}
+function exportXlsx(){
+  var D=scrape();
+  var head=D.title+(D.edn?('  ['+D.edn+']'):'');
+  var meta=T.lUpd+': '+D.updated+'    '+T.lPer+': '+D.period;
+  // Sheet1: 이슈별 요약
+  var s1rows=D.issues.map(function(e,i){return [String(i+1), e.theme, e.sum.map(function(b){return '• '+b;}).join('\n')];});
+  var sheet1={name:T.s1,headers:[T.cNo,T.cIssue,T.cSum],rows:s1rows,widths:[6,42,80],
+    pre:[{cells:[{v:head,s:'3'}]},{cells:[{v:meta,s:'4'}]},{cells:[{v:'',s:'0'}]}],
+    post:[{cells:[{v:'',s:'0'}]},{cells:[{v:T.note,s:'4'}]},{cells:[{v:T.org+'   '+URLBASE,s:'4'}]}]};
+  // Sheet2: 기사 목록(정렬용)
+  var s2rows=[];D.issues.forEach(function(e){e.arts.forEach(function(a){s2rows.push([e.theme,a.src,a.art,a.dt]);});});
+  var sheet2={name:T.s2,headers:[T.cIssue,T.cMedia,T.cArt,T.cDt],rows:s2rows,widths:[34,18,54,16],filter:true};
+  dl(buildXlsx([sheet1,sheet2]),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',T.fname+'.xlsx');
+}
+// ===== DOCX =====
+function wp(text,opt){opt=opt||{};var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+(opt.sb||opt.sa?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa?'w:after="'+opt.sa+'"':'')+'/>':'')+'</w:pPr>';
+  var rPr='<w:rPr>'+(opt.b?'<w:b/>':'')+(opt.sz?'<w:sz w:val="'+opt.sz+'"/>':'')+(opt.color?'<w:color w:val="'+opt.color+'"/>':'')+(RTL?'<w:rtl/>':'')+'</w:rPr>';
+  return '<w:p>'+pPr+'<w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r></w:p>';}
+function cellXml(w,paras){return '<w:tc><w:tcPr><w:tcW w:w="'+w+'" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:bottom w:w="60" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tcMar></w:tcPr>'+(paras||'<w:p/>')+'</w:tc>';}
+function exportDocx(){
+  var D=scrape();var LW=7600,RW=2400;
+  var body='';
+  body+=wp(D.title,{b:true,sz:32,align:'center',sa:60});
+  body+=wp((D.edn?D.edn+'   ':'')+T.lUpd+': '+D.updated+'   '+T.lPer+': '+D.period,{sz:18,color:'666666',align:'center',sa:160});
+  D.issues.forEach(function(e,i){
+    body+=wp((i+1)+'. '+e.theme,{b:true,sz:24,sb:160,sa:60});
+    var left=e.sum.map(function(b){return wp('• '+b,{sz:19,sa:40});}).join('')||'<w:p/>';
+    var mm=[];var seen={};e.arts.forEach(function(a){if(a.src&&!seen[a.src]){seen[a.src]=1;mm.push(a.src);}});
+    var right=mm.map(function(s){return wp('· '+s,{sz:17,color:'444444',sa:20});}).join('')||'<w:p/>';
+    body+='<w:tbl><w:tblPr><w:tblW w:w="10000" w:type="dxa"/>'+(RTL?'<w:bidiVisual/>':'')+'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="D0D0D0"/><w:left w:val="single" w:sz="4" w:color="D0D0D0"/><w:bottom w:val="single" w:sz="4" w:color="D0D0D0"/><w:right w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideH w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideV w:val="single" w:sz="4" w:color="D0D0D0"/></w:tblBorders><w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="'+LW+'"/><w:gridCol w:w="'+RW+'"/></w:tblGrid><w:tr>'+cellXml(LW,left)+cellXml(RW,'<w:p><w:pPr>'+(RTL?'<w:bidi/>':'')+'</w:pPr><w:r><w:rPr><w:b/><w:sz w:val="16"/><w:color w:val="888888"/>'+(RTL?'<w:rtl/>':'')+'</w:rPr><w:t xml:space="preserve">'+X(T.wMedia)+'</w:t></w:r></w:p>'+right)+'</w:tr></w:tbl>';
+    body+=wp('',{sz:8});
+  });
+  body+=wp('',{sz:10});
+  body+=wp(T.note,{sz:16,color:'777777',sb:120});
+  body+=wp(T.org+'   ·   '+URLBASE,{sz:16,color:'777777'});
+  var sect='<w:sectPr>'+(RTL?'<w:bidi/>':'')+'<w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr>';
+  var doc='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>'+body+sect+'</w:body></w:document>';
+  var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>';
+  var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>';
+  dl(zip([{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'word/document.xml',data:SB(doc)}]),'application/vnd.openxmlformats-officedocument.wordprocessingml.document',T.fname+'.docx');
+}
+var bx=document.getElementById('dlxlsx');if(bx)bx.addEventListener('click',exportXlsx);
+var bd=document.getElementById('dldocx');if(bd)bd.addEventListener('click',exportDocx);
+})();</script></body>
 </html>
