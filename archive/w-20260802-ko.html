@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>카타르·중동 정세 일일·주간 언론 모니터링</title>
+<title>카타르·중동 정세 일간·주간 언론 모니터링</title>
 <style>
   :root{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--green:#2fbf71;--gold:#f2b134;--note-bg:#2a1615;--crit-text:#ff6b6a}
   @media (prefers-color-scheme:light){:root{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85;--note-bg:#fbeceb;--crit-text:#b4211f}}
@@ -17,9 +17,12 @@
   .titcol{display:flex;flex-direction:column;gap:1px}
   .entitle{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:-.01em;margin-top:2px}
   .orgline{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}
-  .langrow{display:flex;justify-content:flex-end;margin-bottom:8px}
+  .langrow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+  .sitelink{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--accent);
+    text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:var(--panel2);white-space:nowrap}
+  .sitelink:hover{background:var(--panel);border-color:var(--accent)}
   .lang{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}
-  .langbtn{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none}
+  .langbtn{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap}
   .langbtn.on{background:var(--accent);color:#fff}
   .langbtn:hover{color:var(--txt)}
   .langbtn.on:hover{color:#fff}
@@ -27,11 +30,11 @@
   @keyframes p{0%{box-shadow:0 0 0 0 rgba(47,191,113,.5)}70%{box-shadow:0 0 0 8px rgba(47,191,113,0)}100%{box-shadow:0 0 0 0 rgba(47,191,113,0)}}
   h1{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}
   .sub{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}
-  .submeta{color:var(--muted);font-size:14px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}
+  .submeta{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}
   .submeta > span::before{content:"• ";color:var(--accent);font-weight:700}
-  .submeta .cnt{flex-basis:100%}
+  .submeta > span{flex-basis:100%}
   .sub b,.submeta b{color:var(--txt)}
-  .sumhead{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}
+  .sumhead{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}
   .sumhead .bar{width:3px;height:16px;background:var(--accent);border-radius:2px}
   .ai{font-size:10.5px;font-weight:700;color:var(--accent);background:transparent;border:1px solid var(--accent);padding:1px 7px;border-radius:6px;white-space:nowrap}
   .issue{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
@@ -107,6 +110,24 @@
   summary .exp-o{display:none;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}
   details[open]>summary .exp-c{display:none}
   details[open]>summary .exp-o{display:inline-block}
+  /* ── 중동 전쟁 타임라인 버튼(상단, 작게, 새 탭 링크) ── */
+  .tlbtnrow{display:flex;justify-content:center;margin:4px 0 2px}
+  .tlbtn{display:inline-flex;align-items:center;gap:7px;max-width:100%;padding:7px 13px;
+    border:1px solid var(--line);border-radius:999px;background:var(--panel2);
+    text-decoration:none;color:var(--muted);font-weight:700;font-size:12px;
+    transition:background .15s,box-shadow .15s,color .15s}
+  .tlbtn:hover{background:var(--panel);color:var(--txt);box-shadow:0 0 0 3px rgba(127,127,127,.1)}
+  .tlbtn-tag{font-size:10px;font-weight:800;color:#fff;background:var(--accent);border-radius:5px;padding:1px 6px;white-space:nowrap;flex:0 0 auto}
+  .tlbtn-t{word-break:keep-all;line-height:1.3}
+  .tlbtn-arr{flex:0 0 auto;font-weight:700}
+  /* ── 카타르 정부 동향 섹션(제목=sumhead, 내용=흰색 이슈형 박스) ── */
+  .govcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:0 0 12px}
+  .govul{margin:0;padding-inline-start:18px;list-style:disc}
+  .govul li{font-size:13px;line-height:1.6;margin:3px 0;color:var(--txt)}
+  .govlink{display:inline-block;font-size:10.5px;font-weight:700;color:var(--accent);text-decoration:none;
+    border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-inline-start:5px;white-space:nowrap;vertical-align:baseline}
+  .govlink:hover{background:var(--panel2)}
+  .govnone{font-size:12.5px;color:var(--muted)}
   .foldbox>.reprows,.foldbox>.qbody{padding:0 2px}
   ul{list-style:none;margin:0;padding:0}
   li{padding:10px 0;border-bottom:1px solid var(--line)} li:last-child{border-bottom:none}
@@ -122,7 +143,7 @@
   .qchips{display:flex;flex-wrap:wrap;gap:7px}
   .qchips a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}
   .qchips a:hover{text-decoration:underline}
-  .archsel{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:nowrap}
+  .archsel{display:flex;align-items:center;gap:6px 8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:wrap}
   .archlbl{flex:0 0 auto;white-space:nowrap}
   .archsel select{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;flex:0 1 auto;min-width:0;max-width:max-content;
@@ -132,6 +153,11 @@
   .scopebar{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
     border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}
   .scopebar b{color:var(--txt);font-weight:700}
+  .tldiv{display:block;border-top:1px dashed var(--line);margin:9px 0 8px}
+  .tlref{display:block;font-size:12.5px;color:var(--muted)}
+  .tlref a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45)}
+  .tlref a:hover{text-decoration-color:var(--accent)}
+  .tlref img.emoji{height:1em;width:1em;vertical-align:-0.12em}
   .wsec{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(77,163,255,.5);border-radius:14px;
     background:linear-gradient(180deg,rgba(77,163,255,.08),transparent)}
   .wsec .sumhead{margin-top:2px}
@@ -152,8 +178,10 @@
   footer .notice-emph{margin-top:12px;padding:12px 14px;border-radius:10px;background:#e2eefb;border:1px solid rgba(42,120,214,0.35);color:#16305e;font-weight:600;font-size:12.5px;line-height:1.6}
   footer .notice-sign{text-align:end;margin-top:10px;font-weight:400;font-size:12px;color:#16305e;opacity:.9}
   .hnote{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}
-  @media (max-width:520px){h1{font-size:16.5px} .qchips a{padding:6px 11px} .archsel select{max-width:100%}
-    .langrow{justify-content:stretch} .lang{width:100%;gap:6px} .langbtn{flex:1;text-align:center;padding:10px 8px;font-size:14px}}
+  @media (max-width:520px){h1{font-size:16.5px} .qchips a{padding:6px 11px}
+    .archsel{flex-wrap:nowrap;gap:6px} .archlbl{font-size:11.5px}
+    .archsel select{max-width:max-content;font-size:11.5px;padding:5px 7px}
+    .langrow{justify-content:space-between;flex-wrap:wrap;gap:8px} .lang{flex:1 1 auto;gap:6px} .langbtn{flex:1;text-align:center;padding:10px 8px;font-size:14px}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {
     :root{--bg:#fff;--panel:#fff;--panel2:#fbfbfd;--line:#d0d0d0;--txt:#000;--muted:#555;--accent:#1e6bd6;--gold:#b8860b;--green:#2fbf71;--note-bg:#fbeceb;--crit-text:#b4211f}
@@ -173,36 +201,34 @@
 </head>
 <body class="ed-weekly">
 <div class="wrap">
-  <div class="langrow"><div class="lang"><a class="langbtn on" href="/qatar-media-monitor/">한국어</a><a class="langbtn" href="/qatar-media-monitor/en.html">English</a><a class="langbtn" href="/qatar-media-monitor/ar.html">العربية</a></div></div>
-  <div class="titrow"><div class="titcol"><h1>카타르·중동 정세 일일·주간 언론 모니터링</h1><div class="entitle">Qatar &amp; Middle East — Daily·Weekly Media Monitor</div></div></div>
+  <div class="langrow"><div class="lang"><a class="langbtn on" href="/qatar-media-monitor/">한국어</a><a class="langbtn" href="/qatar-media-monitor/en.html">English</a><a class="langbtn" href="/qatar-media-monitor/ar.html">العربية</a></div><a class="sitelink" href="https://kotradoha.github.io/qatar-korea-flight-monitor/" target="_blank" rel="noopener">✈️ 항공 모니터링 →</a></div>
+  <div class="titrow"><div class="titcol"><h1>카타르·중동 정세 일간·주간 언론 모니터링</h1><div class="entitle">Qatar &amp; Middle East — Daily·Weekly Media Monitor</div></div></div>
   <header>
     <div class="sub"><span>매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고하실 수 있으며, 매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]</span></div>
-    <div class="scopebar">🎯 <b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, 물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리</div>
+    <div class="scopebar">🎯 <b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, 물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리<span class="tldiv"></span><span class="tlref">📌 참고: <a href="/qatar-media-monitor/timeline-ko.html" target="_blank" rel="noopener">🗓️ 중동 전쟁 타임라인 (2026) →</a></span></div>
+    <div class="archsel"><span class="archlbl">🗂️ 지난 회차 보기:</span><select id="archsel-d" aria-label="지난 회차" onchange="if(this.value)location.href=this.value"><option value="">일간</option><option value="/qatar-media-monitor/">이번 회차 (최신)</option></select><select id="archsel-w" aria-label="주간 종합" onchange="if(this.value)location.href=this.value"><option value="">주간</option></select></div><script>(function(){var LB={"latest": "이번 회차 (최신)", "daily": "지난 회차", "weekly": "주간 종합", "seld": "일간", "selw": "주간"};var B="/qatar-media-monitor/";
+var lang=document.documentElement.lang||"ko";
+var cur=(location.pathname.split("/").pop()||"index.html");
+fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){
+var sd=document.getElementById("archsel-d"),sw=document.getElementById("archsel-w");if(!m)return;
+var home=(m.home&&m.home[lang])||B;var ld=(m.latest_daily&&m.latest_daily[lang])||"";
+var xs=(m.issues||[]).filter(function(x){return x.lang===lang;});
+xs.sort(function(a,b){return a.dt<b.dt?1:(a.dt>b.dt?-1:0);});
+function e(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+var d='<option value="">'+e(LB.seld)+'</option><option value="'+e(home)+'">'+e(LB.latest)+'</option>';var w='<option value="">'+e(LB.selw)+'</option>';
+xs.forEach(function(x){if(x.kind!=="weekly"&&x.file===ld)return;
+var sel=(x.file===cur?" selected":"");
+var o='<option value="'+e(B+"archive/"+x.file)+'"'+sel+'>'+e(x.label)+'</option>';
+if(x.kind==="weekly")w+=o;else d+=o;});
+if(sd){sd.innerHTML=d;if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){sd.selectedIndex=0;}}
+if(sw){sw.innerHTML=w;}
+}).catch(function(){});})();</script>
     <div class="submeta">
       <span>모니터링 일시: <b>2026/08/02(일) 07:00 (카타르시간)</b></span>
       <span>모니터링 기간: <b>지난주 종합 · 07/26 ~ 08/02 (카타르시간)</b></span>
       <span class="cnt">모니터링 건수: 카타르 <b>783</b>건 · 중동 정세 <b>3321</b>건</span>
     </div>
   </header>
-
-  <div class="archsel"><span class="archlbl">🗂️ 지난 회차 보기:</span><select id="archsel" onchange="if(this.value)location.href=this.value"><option value="/qatar-media-monitor/">이번 회차 (최신)</option><optgroup label="지난 회차"><option value="/qatar-media-monitor/archive/d-20260801-1530-ko.html">제2호 08/01(토) 15:30</option><option value="/qatar-media-monitor/archive/d-20260801-0700-ko.html">제1호 08/01(토) 07:00</option></optgroup><optgroup label="주간 종합"><option value="/qatar-media-monitor/archive/w-20260802-ko.html">주간 제1호 · ~08/02</option></optgroup></select></div><script>(function(){var LB={"latest": "이번 회차 (최신)", "daily": "지난 회차", "weekly": "주간 종합"};var B="/qatar-media-monitor/";
-var lang=document.documentElement.lang||"ko";
-var cur=(location.pathname.split("/").pop()||"index.html");
-fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){
-var s=document.getElementById("archsel");if(!s||!m)return;
-var home=(m.home&&m.home[lang])||B;var ld=(m.latest_daily&&m.latest_daily[lang])||"";
-var xs=(m.issues||[]).filter(function(x){return x.lang===lang;});
-xs.sort(function(a,b){return a.dt<b.dt?1:(a.dt>b.dt?-1:0);});
-function e(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-var h='<option value="'+e(home)+'">'+e(LB.latest)+'</option>';var d="",w="";
-xs.forEach(function(x){if(x.kind!=="weekly"&&x.file===ld)return;
-var o='<option value="'+e(B+"archive/"+x.file)+'"'+(x.file===cur?" selected":"")+'>'+e(x.label)+'</option>';
-if(x.kind==="weekly")w+=o;else d+=o;});
-if(d)h+='<optgroup label="'+e(LB.daily)+'">'+d+'</optgroup>';
-if(w)h+='<optgroup label="'+e(LB.weekly)+'">'+w+'</optgroup>';
-s.innerHTML=h;
-if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0;}
-}).catch(function(){});})();</script>
 
   
 
