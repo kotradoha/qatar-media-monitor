@@ -1302,7 +1302,7 @@ def translate_issues(issues, lang):
 
 def gemini_qatar_gov(pool, win_label):
     """카타르 '정부' 공식 동향만 별도 경량 추출(코어 이슈 로직과 분리). 카타르 관련 기사만 대상.
-    반환: 한국어 개조식 불릿 리스트(없으면 [])."""
+    반환: [{"t": 한국어 불릿, "links": [(매체, url), ...]}] 리스트(없으면 [])."""
     qpool = [x for x in pool if x.get("qatar") or x.get("region") == "qatar"]
     if not qpool:
         return []
@@ -1318,49 +1318,77 @@ def gemini_qatar_gov(pool, win_label):
         "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
         "일반 정세·타국 발표·언론 논평은 제외하고 **카타르 정부가 실제로 한 것**만. "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 1줄, 핵심 사실·수치·주체를 담아 최대 3개. "
+        "각 항목에는 그 동향을 뒷받침하는 기사 번호(id)를 1~3개 담으세요. "
         "카타르 정부의 뚜렷한 공식 동향이 없으면 반드시 빈 배열을 반환하세요. "
-        "출력은 오직 JSON: {\"gov\":[\"\"]} (없으면 {\"gov\":[]}).\n\n"
+        "출력은 오직 JSON: {\"gov\":[{\"t\":\"불릿\",\"ids\":[0]}]} (없으면 {\"gov\":[]}).\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
     out = gemini_generate(prompt, json_mode=True)
     if not out:
         return []
     try:
         g = json.loads(out).get("gov")
-        if isinstance(g, list):
-            return [s.strip() for s in g if isinstance(s, str) and s.strip()][:3]
+        if not isinstance(g, list):
+            return []
+        res = []
+        for item in g[:3]:
+            if not isinstance(item, dict):
+                continue
+            t = (item.get("t") or "").strip()
+            if not t:
+                continue
+            links, seen = [], set()
+            for i in (item.get("ids") or [])[:6]:
+                if isinstance(i, int) and 0 <= i < len(qpool):
+                    x = qpool[i]
+                    key = x.get("link")
+                    if key and key not in seen:
+                        seen.add(key)
+                        links.append((x.get("source", ""), key))
+                if len(links) >= 3:
+                    break
+            res.append({"t": t, "links": links})
+        return res
     except Exception as ex:
         print(f"[warn] qatar_gov parse failed: {ex}")
     return []
 
 
-def translate_bullets(bullets, lang):
-    """짧은 불릿 문자열 배열을 영어/아랍어로 번역(정부 동향 박스용). 실패 시 원문 유지."""
-    if not bullets or lang == "ko":
-        return bullets
+def translate_gov(gov, lang):
+    """정부 동향 불릿(dict 리스트)의 텍스트만 영어/아랍어로 번역. 링크는 유지. 실패 시 원문."""
+    if not gov or lang == "ko":
+        return gov
     target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
     if not target:
-        return bullets
+        return gov
+    texts = [g["t"] for g in gov]
     prompt = (
         f"Translate each string in this JSON array into {target}, keeping numbers, dates and proper nouns. "
-        "Return ONLY a JSON object {\"gov\":[\"\"]} with the same number and order of items, no commentary.\n\n"
-        + json.dumps({"gov": bullets}, ensure_ascii=False))
+        "Return ONLY a JSON object {\"t\":[\"\"]} with the same number and order of items, no commentary.\n\n"
+        + json.dumps({"t": texts}, ensure_ascii=False))
     out = gemini_generate(prompt, json_mode=True)
     if not out:
-        return bullets
+        return gov
     try:
-        tr = json.loads(out).get("gov")
-        if isinstance(tr, list) and len(tr) == len(bullets):
-            return [t if isinstance(t, str) and t.strip() else o for o, t in zip(bullets, tr)]
+        tr = json.loads(out).get("t")
+        if isinstance(tr, list) and len(tr) == len(gov):
+            return [{"t": (t if isinstance(t, str) and t.strip() else o["t"]), "links": o["links"]}
+                    for o, t in zip(gov, tr)]
     except Exception as ex:
-        print(f"[warn] translate_bullets {lang} failed: {ex}")
-    return bullets
+        print(f"[warn] translate_gov {lang} failed: {ex}")
+    return gov
 
 
 def render_qatar_gov(gov, lang="ko"):
-    """카타르 정부 동향 고정 박스 — 항상 표시, 동향 없으면 '금일 별도 동향 무'."""
+    """카타르 정부 동향 고정 박스 — 항상 표시, 동향 없으면 '금일 별도 동향 무'. 각 동향에 출처 링크(↗) 포함."""
     L = LANG.get(lang, LANG["ko"])
     if gov:
-        body = "<ul class=\"govul\">" + "".join(f"<li>{esc(b)}</li>" for b in gov) + "</ul>"
+        lis = []
+        for g in gov:
+            chips = "".join(
+                f'<a class="govlink" href="{esc(u)}" target="_blank" rel="noopener">↗ {esc(s)}</a>'
+                for s, u in (g.get("links") or []) if u)
+            lis.append(f'<li>{esc(g["t"])}{(" " + chips) if chips else ""}</li>')
+        body = '<ul class="govul">' + "".join(lis) + "</ul>"
     else:
         body = f'<div class="govnone">{esc(L["gov_none"])}</div>'
     return (f'<div class="govbox"><div class="govhead">{esc(L["gov_head"])}</div>{body}</div>')
@@ -1967,6 +1995,9 @@ TEMPLATE = """<!DOCTYPE html>
   .govhead{{font-size:13.5px;font-weight:800;margin-bottom:6px}}
   .govul{{margin:0;padding-inline-start:18px;list-style:disc}}
   .govul li{{font-size:13px;line-height:1.6;margin:3px 0;color:var(--txt)}}
+  .govlink{{display:inline-block;font-size:10.5px;font-weight:700;color:var(--accent);text-decoration:none;
+    border:1px solid var(--line);border-radius:6px;padding:0 6px;margin-inline-start:5px;white-space:nowrap;vertical-align:baseline}}
+  .govlink:hover{{background:var(--panel2)}}
   .govnone{{font-size:12.5px;color:var(--muted)}}
   .foldbox>.reprows,.foldbox>.qbody{{padding:0 2px}}
   ul{{list-style:none;margin:0;padding:0}}
@@ -2450,7 +2481,7 @@ def main():
         win_label = f"{L['win_' + win_slot]} ({L['tz']})"
         issue_label = L["daily_no"].format(n=dno) if dno else L["daily_demo"]
         iss_l = translate_issues(issues, lang) if issues else None
-        gov_l = translate_bullets(gov_ko, lang)
+        gov_l = translate_gov(gov_ko, lang)
 
         cur = daily_fname(lang)
         lm = [(m, f) for (m, f) in metas if m["lang"] == lang and f != cur]
@@ -2466,7 +2497,7 @@ def main():
                            archive_list=archive_list, reports=wreports,
                            edition="weekly", lang=lang, nav=nav,
                            home_url=home_url(lang), new_since=new_since_weekly,
-                           qatar_gov=translate_bullets(gov_wk_ko, lang))
+                           qatar_gov=translate_gov(gov_wk_ko, lang))
             with open(os.path.join("archive", wfn), "w", encoding="utf-8") as fh:
                 fh.write(whtml)
             if wiss_l:
