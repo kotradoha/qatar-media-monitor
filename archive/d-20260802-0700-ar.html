@@ -22,8 +22,8 @@
     text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:var(--panel2);white-space:nowrap}
   .sitelink:hover{background:var(--panel);border-color:var(--accent)}
   .lang{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}
-  .langbtn{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap;text-align:center;box-sizing:border-box}
-  .lang .langbtn:not(:first-child){border-inline-start:1px solid var(--line)}
+  .langbtn{position:relative;font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap;text-align:center;box-sizing:border-box}
+  .lang .langbtn:not(:first-child)::before{content:"";position:absolute;inset-inline-start:-2px;top:25%;bottom:25%;width:1px;background:var(--line)}
   .langbtn.on{background:var(--accent);color:#fff}
   .langbtn:hover{color:var(--txt)}
   .langbtn.on:hover{color:#fff}
@@ -31,9 +31,8 @@
   @keyframes p{0%{box-shadow:0 0 0 0 rgba(47,191,113,.5)}70%{box-shadow:0 0 0 8px rgba(47,191,113,0)}100%{box-shadow:0 0 0 0 rgba(47,191,113,0)}}
   h1{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}
   .sub{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}
-  .submeta{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:4px 14px;flex-wrap:wrap}
+  .submeta{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:6px 26px;flex-wrap:wrap}
   .submeta .tz{font-weight:400;color:var(--muted)}
-  .submeta > span{flex-basis:100%}
   .submeta img.emoji{height:1.15em;width:1.15em;vertical-align:-0.18em;margin-inline-end:2px}
   .submeta .cnt img.emoji{filter:grayscale(.4) saturate(.6)}
   .sub b,.submeta b{color:var(--txt)}
@@ -189,7 +188,8 @@
   @media (max-width:520px){h1{font-size:16.5px} .qchips a{padding:6px 11px}
     .archsel{flex-wrap:nowrap;gap:6px} .archlbl{font-size:11.5px}
     .archsel select{flex:1 1 0;max-width:none;font-size:11.5px;padding:5px 7px}
-    .langrow{justify-content:space-between;flex-wrap:wrap;gap:8px} .lang{flex:1 1 auto;gap:6px} .langbtn{flex:1;text-align:center;padding:10px 8px;font-size:14px}}
+    .langrow{justify-content:space-between;flex-wrap:nowrap;gap:8px} .lang{flex:0 1 auto;min-width:0;gap:6px} .langbtn{min-width:0;text-align:center;padding:10px 8px;font-size:14px} .sitelink{flex:0 0 auto}
+    .submeta > span{flex-basis:100%}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {
     :root{--bg:#fff;--panel:#fff;--panel2:#fbfbfd;--line:#d0d0d0;--txt:#000;--muted:#555;--accent:#1e6bd6;--gold:#b8860b;--green:#2fbf71;--note-bg:#fbeceb;--crit-text:#b4211f}
@@ -301,9 +301,9 @@ if(sw){sw.innerHTML=w;}
 <script>(function(){
 var URLBASE='https://kotradoha.github.io/qatar-media-monitor/';
 var I18={
-ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 공개 언론 보도를 AI로 자동 요약·정리한 참고용 모니터링 결과입니다. 정확한 내용·수치는 각 매체 원문 링크를 확인하시기 바랍니다.',fname:'카타르_언론모니터링'},
-en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'An AI-assisted digest of public media reporting, for reference only. Please verify details and figures against the original articles.',fname:'Qatar_Media_Monitor'},
-ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'موجز بمساعدة الذكاء الاصطناعي لتقارير إعلامية عامة، للاطلاع فقط. يُرجى التحقّق من التفاصيل والأرقام من المقالات الأصلية.',fname:'rasd_iaalam_qatar'}};
+ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약한 참고용 모니터링 결과입니다. 뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, 심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. 수집·요약은 각 매체가 공개한 제목과 요약 발췌(스니펫)를 근거로 하며, 유료 구독·멤버십 매체의 기사 전문은 제공된 원문 링크를 통해 독자께서 해당 매체에 직접 로그인·구독하셔야 열람하실 수 있습니다. 수집된 기사는 Anthropic Claude(Sonnet 5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역하며, 전 과정은 GitHub Actions로 하루 두 번(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. 자동 수집 특성상 일부 기사·보고서가 누락될 수 있으니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다.',fname:'카타르_언론모니터링'},
+en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'This reference monitoring digest automatically collects and summarizes public media reporting and institutional materials from Qatar, Iran, other key countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports are collected by directly targeting the domains of research institutes and international organizations at home and abroad. Collection and summarization rely on the headlines and summary snippets each outlet has made public; the full text of paid-subscription or membership articles can only be viewed by logging in or subscribing directly to that outlet via the provided original links. Collected articles are automatically classified and summarized by issue and translated into English and Arabic by Anthropic Claude (Sonnet 5), and the whole process runs and publishes automatically twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. Given the nature of automated collection, some articles or reports may be missing, so please re-verify important issues against the original sources and additional searches.',fname:'Qatar_Media_Monitor'},
+ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'هذا الموجز المرجعي يجمع ويلخّص تلقائيًا التقارير الإعلامية العامة ومواد الجهات المعنية من قطر وإيران ودول رئيسية أخرى وكوريا. تُجمع الأخبار عبر استعلام موجزات Google News RSS وبحث Naver News وموجزات RSS للوسائل (مثل الجزيرة وBBC) بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ أما التقارير المعمّقة فتُجمع باستهداف نطاقات مراكز الأبحاث والمنظمات الدولية داخليًا وخارجيًا مباشرةً. يستند الجمع والتلخيص إلى العناوين ومقتطفات الملخصات التي تنشرها كل وسيلة؛ ولا يمكن الاطلاع على النص الكامل لمقالات الوسائل المدفوعة إلا بتسجيل الدخول أو الاشتراك مباشرةً لدى تلك الوسيلة عبر الروابط الأصلية المتاحة. تُصنّف المقالات المجمّعة وتُلخّص حسب القضية وتُترجم إلى الإنجليزية والعربية بواسطة Anthropic Claude (Sonnet 5)، وتُنفَّذ العملية بأكملها وتُنشر تلقائيًا مرتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. ونظرًا لطبيعة الجمع الآلي قد تغيب بعض المقالات أو التقارير، لذا يُرجى إعادة التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية.',fname:'rasd_iaalam_qatar'}};
 var LANG=(document.documentElement.lang||'ko'); var T=I18[LANG]||I18.ko; var RTL=(LANG==='ar');
 function txt(e){return e?(e.textContent||'').replace(/\s+/g,' ').trim():'';}
 function scrape(){
@@ -325,7 +325,7 @@ function scrape(){
       if(parts.length>=2 && /\d{1,2}\/\d{1,2}/.test(parts[parts.length-1])){dt=parts.pop().trim();src=parts.join(' · ').trim();}
       var at=txt(a).replace(st,'').trim();
       var key=src+'|'+at;if(seen[key])return;seen[key]=1;
-      arts.push({src:src,art:at,dt:dt});});
+      arts.push({src:src,art:at,dt:dt,url:a.getAttribute('href')||''});});
     if(theme)issues.push({theme:theme,sum:sum,arts:arts});
   });
   return {title:title,updated:updated,period:period,edn:edn,issues:issues};
@@ -347,23 +347,26 @@ var all=parts.concat(cen,[end]),tot=all.reduce(function(a,x){return a+x.length;}
 all.forEach(function(x){out.set(x,p);p+=x.length;});return out;}
 function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function dl(bytes,mime,name){var blob=new Blob([bytes],{type:mime});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
+function fnbase(D){var m=D.updated.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);var ds=m?(m[1]+('0'+m[2]).slice(-2)+('0'+m[3]).slice(-2)):'';var ed=D.edn?('_'+D.edn.replace(/\s+/g,'')):'';return T.fname+ed+(ds?'_'+ds:'');}
 // ===== XLSX(다중 시트) =====
 function colL(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
 function cel(r,c,v,st){return '<c r="'+colL(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
+function celLink(r,c,url,text,st){var f='HYPERLINK("'+String(url).replace(/"/g,'""')+'","'+String(text).replace(/"/g,'""')+'")';return '<c r="'+colL(c)+r+'" s="'+st+'"><f>'+X(f)+'</f><v>'+X(text)+'</v></c>';}
 function sheetXml(sh){
-  var sd='',r=0;
-  (sh.pre||[]).forEach(function(row){r++;sd+='<row r="'+r+'">';row.cells.forEach(function(cc,i){sd+=cel(r,i,cc.v,cc.s);});sd+='</row>';});
+  var sd='',r=0,merges=[],lastCol=colL(sh.headers.length-1);
+  (sh.pre||[]).forEach(function(row){r++;sd+='<row r="'+r+'">';row.cells.forEach(function(cc,i){sd+=cel(r,i,cc.v,cc.s);});sd+='</row>';merges.push('A'+r+':'+lastCol+r);});
   var hr=r+1;sd+='<row r="'+hr+'">';sh.headers.forEach(function(h,i){sd+=cel(hr,i,h,'1');});sd+='</row>';
-  sh.rows.forEach(function(row){r=++hr;sd+='<row r="'+hr+'">';row.forEach(function(v,i){sd+=cel(hr,i,v,'2');});sd+='</row>';hr=r;});
-  (sh.post||[]).forEach(function(row){hr++;sd+='<row r="'+hr+'">';row.cells.forEach(function(cc,i){sd+=cel(hr,i,cc.v,cc.s);});sd+='</row>';});
+  sh.rows.forEach(function(row){r=++hr;sd+='<row r="'+hr+'">';row.forEach(function(v,i){sd+=(v&&typeof v==='object'&&v.link)?celLink(hr,i,v.link,v.text,'7'):cel(hr,i,v,'2');});sd+='</row>';hr=r;});
+  (sh.post||[]).forEach(function(row){hr++;sd+='<row r="'+hr+'">';row.cells.forEach(function(cc,i){sd+=cel(hr,i,cc.v,cc.s);});sd+='</row>';merges.push('A'+hr+':'+lastCol+hr);});
   var cols='<cols>';sh.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
   var hrow=(sh.pre?sh.pre.length:0)+1;
-  var af=sh.filter?('<autoFilter ref="A'+hrow+':'+colL(sh.headers.length-1)+hr+'"/>'):'';
+  var af=sh.filter?('<autoFilter ref="A'+hrow+':'+lastCol+hr+'"/>'):'';
+  var mc=merges.length?('<mergeCells count="'+merges.length+'">'+merges.map(function(m){return '<mergeCell ref="'+m+'"/>';}).join('')+'</mergeCells>'):'';
   var frz='<pane ySplit="'+hrow+'" topLeftCell="A'+(hrow+1)+'" activePane="bottomLeft" state="frozen"/>';
-  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"'+(RTL?' ':'')+'><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView '+(RTL?'rightToLeft="1" ':'')+'workbookViewId="0">'+frz+'</sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData>'+af+'<pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
+  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"'+(RTL?' ':'')+'><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView '+(RTL?'rightToLeft="1" ':'')+'workbookViewId="0">'+frz+'</sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData>'+af+mc+'<pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
 }
 function buildXlsx(sheets){
-  var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="4"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font><font><sz val="9"/><color rgb="FF7A7A7A"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="5"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" applyFont="1"/><xf fontId="3" applyFont="1" applyAlignment="1"><alignment wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+  var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="5"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font><font><sz val="9"/><color rgb="FF7A7A7A"/><name val="Calibri"/></font><font><u/><sz val="10"/><color rgb="FF0563C1"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="8"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" applyFont="1"/><xf fontId="3" applyFont="1" applyAlignment="1"><alignment wrapText="1"/></xf><xf fontId="2" applyFont="1" applyAlignment="1"><alignment horizontal="center" wrapText="1"/></xf><xf fontId="0" applyFont="1" applyAlignment="1"><alignment horizontal="center" wrapText="1"/></xf><xf fontId="4" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
   var sheetParts=[],wbSheets='',wbRels='',cts='',dn='';
   sheets.forEach(function(sh,i){var id=i+1;var nm=X(sh.name).slice(0,31);
     sheetParts.push({name:'xl/worksheets/sheet'+id+'.xml',data:SB(sheetXml(sh))});
@@ -387,39 +390,38 @@ function exportXlsx(){
   // Sheet1: 이슈별 요약
   var s1rows=D.issues.map(function(e,i){return [String(i+1), e.theme, e.sum.map(function(b){return '• '+b;}).join('\n')];});
   var sheet1={name:T.s1,headers:[T.cNo,T.cIssue,T.cSum],rows:s1rows,widths:[6,42,80],
-    pre:[{cells:[{v:head,s:'3'}]},{cells:[{v:meta,s:'4'}]},{cells:[{v:'',s:'0'}]}],
-    post:[{cells:[{v:'',s:'0'}]},{cells:[{v:T.note,s:'4'}]},{cells:[{v:T.org+'   '+URLBASE,s:'4'}]}]};
-  // Sheet2: 기사 목록(정렬용)
-  var s2rows=[];D.issues.forEach(function(e){e.arts.forEach(function(a){s2rows.push([e.theme,a.src,a.art,a.dt]);});});
+    pre:[{cells:[{v:head,s:'5'}]},{cells:[{v:meta,s:'6'}]},{cells:[{v:'',s:'0'}]}],
+    post:[{cells:[{v:'',s:'0'}]},{cells:[{v:T.note,s:'4'}]},{cells:[{v:'- '+T.org+'   ·   '+URLBASE,s:'4'}]}]};
+  // Sheet2: 기사 목록(정렬용, 기사 제목에 원문 하이퍼링크)
+  var s2rows=[];D.issues.forEach(function(e){e.arts.forEach(function(a){s2rows.push([e.theme,a.src,(a.url?{link:a.url,text:a.art}:a.art),a.dt]);});});
   var sheet2={name:T.s2,headers:[T.cIssue,T.cMedia,T.cArt,T.cDt],rows:s2rows,widths:[34,18,54,16],filter:true};
-  dl(buildXlsx([sheet1,sheet2]),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',T.fname+'.xlsx');
+  dl(buildXlsx([sheet1,sheet2]),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',fnbase(D)+'.xlsx');
 }
 // ===== DOCX =====
-function wp(text,opt){opt=opt||{};var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+(opt.sb||opt.sa?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa?'w:after="'+opt.sa+'"':'')+'/>':'')+'</w:pPr>';
+function wp(text,opt){opt=opt||{};var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(opt.hang?'<w:ind w:left="'+opt.hang+'" w:hanging="'+opt.hang+'"/>':'')+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+(opt.sb||opt.sa?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa?'w:after="'+opt.sa+'"':'')+'/>':'')+'</w:pPr>';
   var rPr='<w:rPr>'+(opt.b?'<w:b/>':'')+(opt.sz?'<w:sz w:val="'+opt.sz+'"/>':'')+(opt.color?'<w:color w:val="'+opt.color+'"/>':'')+(RTL?'<w:rtl/>':'')+'</w:rPr>';
   return '<w:p>'+pPr+'<w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r></w:p>';}
 function cellXml(w,paras){return '<w:tc><w:tcPr><w:tcW w:w="'+w+'" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:bottom w:w="60" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tcMar></w:tcPr>'+(paras||'<w:p/>')+'</w:tc>';}
 function exportDocx(){
-  var D=scrape();var LW=7600,RW=2400;
+  var D=scrape();var LW=7000,RW=2500;
   var body='';
   body+=wp(D.title,{b:true,sz:32,align:'center',sa:60});
   body+=wp((D.edn?D.edn+'   ':'')+T.lUpd+': '+D.updated+'   '+T.lPer+': '+D.period,{sz:18,color:'666666',align:'center',sa:160});
   D.issues.forEach(function(e,i){
     body+=wp((i+1)+'. '+e.theme,{b:true,sz:24,sb:160,sa:60});
-    var left=e.sum.map(function(b){return wp('• '+b,{sz:19,sa:40});}).join('')||'<w:p/>';
+    var left=e.sum.map(function(b){return wp('• '+b,{sz:19,sa:40,align:'both',hang:230});}).join('')||'<w:p/>';
     var mm=[];var seen={};e.arts.forEach(function(a){if(a.src&&!seen[a.src]){seen[a.src]=1;mm.push(a.src);}});
     var right=mm.map(function(s){return wp('· '+s,{sz:17,color:'444444',sa:20});}).join('')||'<w:p/>';
-    body+='<w:tbl><w:tblPr><w:tblW w:w="10000" w:type="dxa"/>'+(RTL?'<w:bidiVisual/>':'')+'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="D0D0D0"/><w:left w:val="single" w:sz="4" w:color="D0D0D0"/><w:bottom w:val="single" w:sz="4" w:color="D0D0D0"/><w:right w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideH w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideV w:val="single" w:sz="4" w:color="D0D0D0"/></w:tblBorders><w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="'+LW+'"/><w:gridCol w:w="'+RW+'"/></w:tblGrid><w:tr>'+cellXml(LW,left)+cellXml(RW,'<w:p><w:pPr>'+(RTL?'<w:bidi/>':'')+'</w:pPr><w:r><w:rPr><w:b/><w:sz w:val="16"/><w:color w:val="888888"/>'+(RTL?'<w:rtl/>':'')+'</w:rPr><w:t xml:space="preserve">'+X(T.wMedia)+'</w:t></w:r></w:p>'+right)+'</w:tr></w:tbl>';
-    body+=wp('',{sz:8});
+    body+='<w:tbl><w:tblPr><w:tblW w:w="9500" w:type="dxa"/><w:tblInd w:w="0" w:type="dxa"/>'+(RTL?'<w:bidiVisual/>':'')+'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="D0D0D0"/><w:left w:val="single" w:sz="4" w:color="D0D0D0"/><w:bottom w:val="single" w:sz="4" w:color="D0D0D0"/><w:right w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideH w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideV w:val="single" w:sz="4" w:color="D0D0D0"/></w:tblBorders><w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="'+LW+'"/><w:gridCol w:w="'+RW+'"/></w:tblGrid><w:tr>'+cellXml(LW,left)+cellXml(RW,'<w:p><w:pPr>'+(RTL?'<w:bidi/>':'')+'</w:pPr><w:r><w:rPr><w:b/><w:sz w:val="16"/><w:color w:val="888888"/>'+(RTL?'<w:rtl/>':'')+'</w:rPr><w:t xml:space="preserve">'+X(T.wMedia)+'</w:t></w:r></w:p>'+right)+'</w:tr></w:tbl>';
   });
-  body+=wp('',{sz:10});
-  body+=wp(T.note,{sz:16,color:'777777',sb:120});
-  body+=wp(T.org+'   ·   '+URLBASE,{sz:16,color:'777777'});
+  body+=wp(T.note,{sz:16,color:'777777',sb:70});
+  body+=wp('- '+T.org,{sz:16,color:'777777',sb:60});
+  body+=wp('- '+URLBASE,{sz:16,color:'777777',align:'right'});
   var sect='<w:sectPr>'+(RTL?'<w:bidi/>':'')+'<w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr>';
   var doc='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>'+body+sect+'</w:body></w:document>';
   var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>';
   var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>';
-  dl(zip([{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'word/document.xml',data:SB(doc)}]),'application/vnd.openxmlformats-officedocument.wordprocessingml.document',T.fname+'.docx');
+  dl(zip([{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'word/document.xml',data:SB(doc)}]),'application/vnd.openxmlformats-officedocument.wordprocessingml.document',fnbase(D)+'.docx');
 }
 var bx=document.getElementById('dlxlsx');if(bx)bx.addEventListener('click',exportXlsx);
 var bd=document.getElementById('dldocx');if(bd)bd.addEventListener('click',exportDocx);
