@@ -53,7 +53,9 @@ Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz"
                 "Hormuz tanker", "Hamas disarm Gaza", "Trump Truth Social Iran", "Trump Truth Social strike Middle East",
                 # 아랍·GCC 국가 간 공동성명·정상회의·외교장관 회의 조준
                 "GCC summit Iran war", "Gulf Cooperation Council statement Iran", "GCC foreign ministers meeting",
-                "Arab League statement Iran Israel", "Arab summit Iran war", "GCC joint statement"]
+                "Arab League statement Iran Israel", "Arab summit Iran war", "GCC joint statement",
+                # CNN이 site:/RSS로 잘 안 잡혀 토픽 쿼리로 보강
+                "CNN Iran war", "CNN Israel Iran strike", "CNN Qatar Gulf Middle East", "CNN Hormuz oil Iran"]
 Q_MIDEAST_KO = ["중동 정세", "이란 이스라엘", "호르무즈", "걸프 긴장", "이란 미국", "가자 휴전", "국제유가 중동", "트럼프 트루스소셜",
                 # 아랍·GCC 공동성명·회의
                 "걸프협력회의 성명", "GCC 정상회의", "아랍연맹 성명", "걸프 국가 공동성명", "아랍 정상회의 이란"]
@@ -70,7 +72,7 @@ FOREIGN_MEDIA_SITES = [
     "tehrantimes.com", "presstv.ir", "irna.ir", "iranintl.com", "english.alarabiya.net",
     "tasnimnews.com", "en.mehrnews.com", "farsnews.ir",
     # 해외(미국·유럽 등)
-    "cnn.com", "reuters.com", "bbc.com", "apnews.com", "theguardian.com", "nytimes.com",
+    "cnn.com", "edition.cnn.com", "reuters.com", "bbc.com", "apnews.com", "theguardian.com", "nytimes.com",
     "bloomberg.com", "wsj.com", "ft.com", "washingtonpost.com", "economist.com",
     "axios.com", "politico.com", "cnbc.com", "al-monitor.com", "middleeasteye.net",
     "timesofisrael.com", "aa.com.tr",
@@ -1637,9 +1639,9 @@ TIMELINE = [
    "en": "An Iranian strike hits Qatar's Ras Laffan gas facility, disrupting ~17% of LNG exports (repairs estimated at 3–5 years); Qatar expels Iranian attachés within 24 hours.",
    "ar": "ضربة إيرانية تصيب منشأة الغاز في رأس لفان بقطر، معطّلةً نحو 17% من صادرات الغاز المسال (تُقدَّر الإصلاحات بـ3–5 سنوات)؛ وقطر تطرد الملحقين الإيرانيين خلال 24 ساعة."},
   {"d": "2026-03-13", "q": False,
-   "ko": "카르그섬 타격 — 이란 원유 수출의 대부분(약 90%)을 처리하는 최대 석유 수출 터미널(카르그섬)이 공습받아 이란 원유 수출·국제유가에 큰 충격.",
-   "en": "Kharg Island struck — the terminal that handles the bulk (about 90%) of Iran's crude exports is hit, dealing a major blow to Iranian oil exports and to global oil prices.",
-   "ar": "ضرب جزيرة خرج — استُهدفت المحطة التي تصدّر نحو 90% من النفط الإيراني، ما وجّه ضربة كبيرة لصادرات النفط الإيرانية ولأسعار النفط العالمية."},
+   "ko": "미국, 이란 최대 석유 수출 터미널 카르그섬 공습 — 이란 원유 수출의 대부분(약 90%)을 처리하는 카르그섬이 피격돼 이란 원유 수출·국제유가에 큰 충격(트럼프 '이란 석유경제 핵심 타격' 발표).",
+   "en": "U.S. strikes Iran's main oil-export terminal, Kharg Island — the island handling about 90% of Iran's crude exports is hit, a major blow to Iranian oil exports and global oil prices (Trump says it struck the core of Iran's oil economy).",
+   "ar": "الولايات المتحدة تضرب جزيرة خرج، المحطة الرئيسية لتصدير النفط الإيراني التي تعالج نحو 90% من صادرات الخام الإيرانية — ما وجّه ضربة كبيرة لصادرات النفط وأسعاره عالمياً (وترامب يقول إنها ضربت قلب الاقتصاد النفطي الإيراني)."},
   {"d": "2026-03-11", "q": True,
    "ko": "카타르가 밤사이 이란의 미사일·드론을 요격.",
    "en": "Qatar intercepts Iranian missiles and drones overnight.",
