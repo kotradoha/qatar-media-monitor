@@ -38,9 +38,15 @@ SUBTITLE = ("매일 오전 7:00·오후 3:30(카타르 시간) 자동 갱신 · 
 
 Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar security",
               "QatarEnergy LNG", "Qatar mediation Gaza", "Qatar Airways", "Qatar Emir diplomacy",
-              "Qatar attack strike", "Al Udeid base attack", "Qatar airspace missile drone"]
+              "Qatar attack strike", "Al Udeid base attack", "Qatar airspace missile drone",
+              # 카타르 정부의 전쟁 관련 공식 발표·성명·지침 조준
+              "Qatar foreign ministry statement Iran", "Qatar Amir statement war",
+              "Qatar condemns Iran Israel", "Qatar cabinet Iran war", "QatarEnergy statement force majeure",
+              "Qatar government advisory Iran", "Qatar MOFA Iran strike"]
 Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관",
-              "카타르 피격", "카타르 공격", "카타르 영공"]
+              "카타르 피격", "카타르 공격", "카타르 영공",
+              # 카타르 정부 공식 동향(전쟁 관련) 조준
+              "카타르 외교부 성명", "카타르 정부 성명 이란", "카타르 국왕 이란", "카타르에너지 성명", "카타르 규탄 이란"]
 Q_MIDEAST_EN = ["Middle East Iran Israel", "US Iran strikes", "Strait of Hormuz", "Gulf tensions",
                 "Iran Israel war", "Gaza ceasefire", "oil price Middle East", "Red Sea shipping",
                 "Iran nuclear talks", "Houthi Red Sea attack", "OPEC oil output", "Israel Iran strike",
@@ -1317,9 +1323,10 @@ def gemini_qatar_gov(pool, win_label):
         "**전쟁·이란 정세 관련** 공식 성명·발표·결정·조치 — 예: 전쟁 관련 중재·외교, 공습·정전·핵협상에 대한 지지/규탄/우려 성명, 자국민·교민 안전조치·여행/영공 공지, 에너지·LNG·불가항력 관련 공식 입장, 대이란 제재·추방 등. "
         "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
         "**전쟁과 무관한 의례적 외교(축전·조전·일반 정상회담 등)·일반 정세·타국 발표·언론 논평은 제외**하고, **전쟁 관련으로 카타르 정부가 실제로 한 것**만. "
-        "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 1줄, 핵심 사실·수치·주체를 담아 최대 3개. "
+        "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
+        "**아래 이슈별 언론동향과 내용이 겹쳐도 무방합니다 — 카타르 정부의 전쟁 관련 공식 발표·지침·성명·조치이면 반드시 포함**하세요(정부 공식 동향은 별도로 중요). "
         "각 항목에는 그 동향을 뒷받침하는 기사 번호(id)를 1~3개 담으세요. "
-        "카타르 정부의 뚜렷한 공식 동향이 없으면 반드시 빈 배열을 반환하세요. "
+        "단, 전쟁과 무관한 의례적 외교나 카타르 정부 활동이 아닌 것은 넣지 말고, 뚜렷한 전쟁 관련 공식 동향이 없으면 반드시 빈 배열을 반환하세요. "
         "출력은 오직 JSON: {\"gov\":[{\"t\":\"불릿\",\"ids\":[0]}]} (없으면 {\"gov\":[]}).\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
     out = gemini_generate(prompt, json_mode=True)
