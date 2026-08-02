@@ -1732,7 +1732,7 @@ def timeline_ref(lang="ko"):
     url = f"{SITE_BASE}timeline-{lang}.html"
     return (f'<span class="tldiv"></span>'
             f'<span class="tlref">📌 {esc(L["tl_tag"])}: '
-            f'<a href="{esc(url)}" target="_blank" rel="noopener">🗓️ {esc(L["tl_head"])} →</a></span>')
+            f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(L["tl_head"])} →</a></span>')
 
 def render_timeline_page(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
@@ -2158,6 +2158,7 @@ TEMPLATE = """<!DOCTYPE html>
   .submeta .tz{{font-weight:400;color:var(--muted)}}
   .submeta > span{{flex-basis:100%}}
   .submeta img.emoji{{height:1.15em;width:1.15em;vertical-align:-0.18em;margin-inline-end:2px}}
+  .submeta .cnt img.emoji{{filter:grayscale(.4) saturate(.6)}}
   .sub b,.submeta b{{color:var(--txt)}}
   .sumhead{{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}}
   .sumhead .bar{{width:3px;height:16px;background:var(--accent);border-radius:2px}}
@@ -2340,7 +2341,7 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="submeta">
       <span>🕒 {updated_label}: <b>{updated}</b> <span class="tz">({tz})</span></span>
       <span>🗓️ {coverage_label}: <b>{window}</b>{window_tz}</span>
-      <span class="cnt">🔢 {counts_label}: {counts}</span>
+      <span class="cnt">📊 {counts_label}: {counts}</span>
     </div>
   </header>
 
