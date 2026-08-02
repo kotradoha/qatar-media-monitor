@@ -414,7 +414,7 @@ LANG = {
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "공개 보도를 교차 확인해 정리했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
-  "gov_head": "🏛️ 카타르 정부 동향", "gov_none": "금일 별도 동향 무",
+  "gov_head": "🏛️ 카타르 정부 동향", "gov_none": "모니터링 기간 중 별도 동향 무",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
            "심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. "
@@ -462,7 +462,7 @@ LANG = {
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Compiled by cross-checking public reporting; please verify specific figures and wording against each outlet and primary announcements.",
-  "gov_head": "🏛️ Qatar government activity", "gov_none": "No separate government action in this update.",
+  "gov_head": "🏛️ Qatar government activity", "gov_none": "No separate government activity during this monitoring window.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
            "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
@@ -512,7 +512,7 @@ LANG = {
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "جُمِعت بالتحقّق المتقاطع من تقارير عامة؛ يُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
-  "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_none": "لا يوجد إجراء حكومي منفصل في هذا التحديث.",
+  "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_none": "لا يوجد نشاط حكومي منفصل خلال فترة الرصد هذه.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
            "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
