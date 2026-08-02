@@ -173,7 +173,7 @@
     </div>
   </header>
 
-  <div class="archsel">🗂️ 지난 회차 보기: <select id="archsel" onchange="if(this.value)location.href=this.value"><option value="/qatar-media-monitor/">이번 회차 (최신)</option><optgroup label="일일"><option value="/qatar-media-monitor/archive/d-20260801-0700-ko.html">일일 제1호 · 08/01 07:00</option></optgroup></select></div><script>(function(){var LB={"latest": "이번 회차 (최신)", "daily": "일일", "weekly": "주간 종합"};var B="/qatar-media-monitor/";
+  <div class="archsel">🗂️ 지난 회차 보기: <select id="archsel" onchange="if(this.value)location.href=this.value"><option value="/qatar-media-monitor/">이번 회차 (최신)</option><optgroup label="지난 회차"><option value="/qatar-media-monitor/archive/d-20260801-0700-ko.html">일일 제1호 · 08/01 07:00</option></optgroup></select></div><script>(function(){var LB={"latest": "이번 회차 (최신)", "daily": "지난 회차", "weekly": "주간 종합"};var B="/qatar-media-monitor/";
 var lang=document.documentElement.lang||"ko";
 var cur=(location.pathname.split("/").pop()||"index.html");
 fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){
