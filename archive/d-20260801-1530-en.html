@@ -12,14 +12,17 @@
   .wrap{max-width:1180px;margin:0 auto;padding:6px 14px 60px}
   header{position:static;background:var(--bg);
     padding:4px 0 12px;border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}
-  
-  .titrow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);padding:7px 0 8px;margin-bottom:4px}
+  .titrow{display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+    position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);padding:7px 0 8px;margin-bottom:4px}
   .titcol{display:flex;flex-direction:column;gap:1px}
   .entitle{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:-.01em;margin-top:2px}
   .orgline{font-size:12px;font-weight:600;color:var(--txt);margin-top:2px;letter-spacing:.2px}
-  .langrow{display:flex;justify-content:flex-end;margin-bottom:8px}
+  .langrow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+  .sitelink{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;color:var(--accent);
+    text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:var(--panel2);white-space:nowrap}
+  .sitelink:hover{background:var(--panel);border-color:var(--accent)}
   .lang{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}
-  .langbtn{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none}
+  .langbtn{font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap}
   .langbtn.on{background:var(--accent);color:#fff}
   .langbtn:hover{color:var(--txt)}
   .langbtn.on:hover{color:#fff}
@@ -27,18 +30,19 @@
   @keyframes p{0%{box-shadow:0 0 0 0 rgba(47,191,113,.5)}70%{box-shadow:0 0 0 8px rgba(47,191,113,0)}100%{box-shadow:0 0 0 0 rgba(47,191,113,0)}}
   h1{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}
   .sub{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}
-  .submeta{color:var(--muted);font-size:14px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}
+  .submeta{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:3px 14px;flex-wrap:wrap}
   .submeta > span::before{content:"• ";color:var(--accent);font-weight:700}
-  .submeta .cnt{flex-basis:100%}
+  .submeta > span{flex-basis:100%}
   .sub b,.submeta b{color:var(--txt)}
-  .sumhead{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px}
+  .sumhead{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}
   .sumhead .bar{width:3px;height:16px;background:var(--accent);border-radius:2px}
-  .ai{font-size:10.5px;font-weight:700;color:#111;background:var(--accent);padding:1px 7px;border-radius:6px}
+  .ai{font-size:10.5px;font-weight:700;color:var(--accent);background:transparent;border:1px solid var(--accent);padding:1px 7px;border-radius:6px;white-space:nowrap}
   .issue{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
   .issue .ihead{display:flex;align-items:baseline;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);background:var(--panel2)}
   .issue .ihead .num{flex:0 0 auto;font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px}
   .issue .ihead h2{font-size:14.5px;margin:0;line-height:1.5}
   .row{display:grid;grid-template-columns:0.78fr 1.22fr;gap:0}
+  .row.solo{grid-template-columns:1fr}
   @media (max-width:760px){.row{grid-template-columns:1fr}}
   .left{padding:13px 16px;border-inline-end:1px solid var(--line)}
   @media (max-width:760px){.left{border-inline-end:none;border-bottom:1px solid var(--line)}}
@@ -61,6 +65,14 @@
   .grp a{display:block;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600;margin:5px 0}
   .grp a:hover{color:var(--accent);text-decoration:underline}
   .grp a .src{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}
+  .linkfold{border-top:1px solid var(--line)}
+  .linkfold>summary{list-style:none;cursor:pointer;padding:9px 16px;font-size:12.5px;font-weight:700;color:var(--accent);user-select:none;display:flex;align-items:center;gap:6px}
+  .linkfold>summary::-webkit-details-marker{display:none}
+  .linkfold>summary::before{content:"▸";font-size:11px;transition:transform .15s}
+  .linkfold[open]>summary::before{content:"▾"}
+  .linkfold>summary:hover{text-decoration:underline}
+  .foldwrap{padding:2px 16px 12px;display:flex;flex-wrap:wrap;gap:0 26px}
+  .foldwrap .grp{flex:1 1 240px;min-width:220px}
   .tq{font-size:10px;font-weight:700;color:#111;background:var(--gold);border-radius:5px;padding:0 5px;margin-inline-end:4px;vertical-align:middle}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 15px;margin-bottom:14px}
   .card.sum{background:linear-gradient(180deg,rgba(77,163,255,.08),transparent),var(--panel)}
@@ -98,7 +110,17 @@
   summary .exp-o{display:none;background:var(--panel2);color:var(--muted);border:1px solid var(--line)}
   details[open]>summary .exp-c{display:none}
   details[open]>summary .exp-o{display:inline-block}
-/* ── 카타르 정부 동향 섹션(제목=sumhead, 내용=흰색 이슈형 박스) ── */
+  /* ── 중동 전쟁 타임라인 버튼(상단, 작게, 새 탭 링크) ── */
+  .tlbtnrow{display:flex;justify-content:center;margin:4px 0 2px}
+  .tlbtn{display:inline-flex;align-items:center;gap:7px;max-width:100%;padding:7px 13px;
+    border:1px solid var(--line);border-radius:999px;background:var(--panel2);
+    text-decoration:none;color:var(--muted);font-weight:700;font-size:12px;
+    transition:background .15s,box-shadow .15s,color .15s}
+  .tlbtn:hover{background:var(--panel);color:var(--txt);box-shadow:0 0 0 3px rgba(127,127,127,.1)}
+  .tlbtn-tag{font-size:10px;font-weight:800;color:#fff;background:var(--accent);border-radius:5px;padding:1px 6px;white-space:nowrap;flex:0 0 auto}
+  .tlbtn-t{word-break:keep-all;line-height:1.3}
+  .tlbtn-arr{flex:0 0 auto;font-weight:700}
+  /* ── 카타르 정부 동향 섹션(제목=sumhead, 내용=흰색 이슈형 박스) ── */
   .govcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:0 0 12px}
   .govul{margin:0;padding-inline-start:18px;list-style:disc}
   .govul li{font-size:13px;line-height:1.6;margin:3px 0;color:var(--txt)}
@@ -121,7 +143,7 @@
   .qchips{display:flex;flex-wrap:wrap;gap:7px}
   .qchips a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}
   .qchips a:hover{text-decoration:underline}
-  .archsel{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:nowrap}
+  .archsel{display:flex;align-items:center;gap:6px 8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:wrap}
   .archlbl{flex:0 0 auto;white-space:nowrap}
   .archsel select{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;flex:0 1 auto;min-width:0;max-width:max-content;
@@ -131,9 +153,16 @@
   .scopebar{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
     border:1px solid var(--line);border-radius:10px;padding:10px 13px;margin:2px 0 14px;line-height:1.55}
   .scopebar b{color:var(--txt);font-weight:700}
-  .wsec{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(242,177,52,.5);border-radius:14px;
-    background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}
+  .tldiv{display:block;border-top:1px dashed var(--line);margin:9px 0 8px}
+  .tlref{display:block;font-size:12.5px;color:var(--muted)}
+  .tlref a{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45)}
+  .tlref a:hover{text-decoration-color:var(--accent)}
+  .tlref img.emoji{height:1em;width:1em;vertical-align:-0.12em}
+  .wsec{margin:2px 0 18px;padding:12px 15px 14px;border:1px solid rgba(77,163,255,.5);border-radius:14px;
+    background:linear-gradient(180deg,rgba(77,163,255,.08),transparent)}
   .wsec .sumhead{margin-top:2px}
+  .wsec .issue .ihead .num{background:var(--accent);color:#fff}
+  body.ed-weekly .issue .ihead .num{background:var(--accent);color:#fff}
   .wsec .wmeta{font-size:11.5px;color:var(--muted);font-weight:400;margin-inline-start:auto}
   .wsec .wlink{margin-top:8px;font-size:12.5px}
   .wsec .wlink a{color:var(--accent);text-decoration:none}
@@ -149,8 +178,10 @@
   footer .notice-emph{margin-top:12px;padding:12px 14px;border-radius:10px;background:#e2eefb;border:1px solid rgba(42,120,214,0.35);color:#16305e;font-weight:600;font-size:12.5px;line-height:1.6}
   footer .notice-sign{text-align:end;margin-top:10px;font-weight:400;font-size:12px;color:#16305e;opacity:.9}
   .hnote{font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}
-  @media (max-width:520px){h1{font-size:16.5px} .qchips a{padding:6px 11px} .archsel select{max-width:100%}
-    .langrow{justify-content:stretch} .lang{width:100%;gap:6px} .langbtn{flex:1;text-align:center;padding:10px 8px;font-size:14px}}
+  @media (max-width:520px){h1{font-size:16.5px} .qchips a{padding:6px 11px}
+    .archsel{flex-wrap:nowrap;gap:6px} .archlbl{font-size:11.5px}
+    .archsel select{max-width:max-content;font-size:11.5px;padding:5px 7px}
+    .langrow{justify-content:space-between;flex-wrap:wrap;gap:8px} .lang{flex:1 1 auto;gap:6px} .langbtn{flex:1;text-align:center;padding:10px 8px;font-size:14px}}
   /* 인쇄·PDF 저장(A4) — 밝은 배경·상호작용 요소 숨김·페이지 잘림 방지 */
   @media print {
     :root{--bg:#fff;--panel:#fff;--panel2:#fbfbfd;--line:#d0d0d0;--txt:#000;--muted:#555;--accent:#1e6bd6;--gold:#b8860b;--green:#2fbf71;--note-bg:#fbeceb;--crit-text:#b4211f}
@@ -171,36 +202,34 @@
 <body>
 <div class="wrap">
   
-    <div class="langrow"><div class="lang"><a class="langbtn" href="/qatar-media-monitor/">한국어</a><a class="langbtn on" href="/qatar-media-monitor/en.html">English</a><a class="langbtn" href="/qatar-media-monitor/ar.html">العربية</a></div></div>
+    <div class="langrow"><div class="lang"><a class="langbtn" href="/qatar-media-monitor/">한국어</a><a class="langbtn on" href="/qatar-media-monitor/en.html">English</a><a class="langbtn" href="/qatar-media-monitor/ar.html">العربية</a></div><a class="sitelink" href="https://kotradoha.github.io/qatar-korea-flight-monitor/" target="_blank" rel="noopener">✈️ Flight monitor →</a></div>
     <div class="titrow"><div class="titcol"><h1>Qatar &amp; Middle East — Daily·Weekly Media Monitor</h1></div></div>
     <header>
     <div class="sub"><span>Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, other major countries&#x27; and Korean outlets is compiled into AI issue summaries with source links. A list of the latest reports from relevant institutions is also available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. [Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]</span></div>
-    <div class="scopebar">🎯 <b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), economy &amp; trade, aviation·citizens, etc.</div>
+    <div class="scopebar">🎯 <b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), economy &amp; trade, aviation·citizens, etc.<span class="tldiv"></span><span class="tlref">📌 Ref: <a href="/qatar-media-monitor/timeline-en.html" target="_blank" rel="noopener">🗓️ Middle East War Timeline (2026) →</a></span></div>
+    <div class="archsel"><span class="archlbl">🗂️ Past editions:</span><select id="archsel-d" aria-label="Daily" onchange="if(this.value)location.href=this.value"><option value="">Daily</option><option value="/qatar-media-monitor/en.html">Current edition (latest)</option></select><select id="archsel-w" aria-label="Weekly" onchange="if(this.value)location.href=this.value"><option value="">Weekly</option></select></div><script>(function(){var LB={"latest": "Current edition (latest)", "daily": "Daily", "weekly": "Weekly", "seld": "Daily", "selw": "Weekly"};var B="/qatar-media-monitor/";
+var lang=document.documentElement.lang||"ko";
+var cur=(location.pathname.split("/").pop()||"index.html");
+fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){
+var sd=document.getElementById("archsel-d"),sw=document.getElementById("archsel-w");if(!m)return;
+var home=(m.home&&m.home[lang])||B;var ld=(m.latest_daily&&m.latest_daily[lang])||"";
+var xs=(m.issues||[]).filter(function(x){return x.lang===lang;});
+xs.sort(function(a,b){return a.dt<b.dt?1:(a.dt>b.dt?-1:0);});
+function e(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+var d='<option value="">'+e(LB.seld)+'</option><option value="'+e(home)+'">'+e(LB.latest)+'</option>';var w='<option value="">'+e(LB.selw)+'</option>';
+xs.forEach(function(x){if(x.kind!=="weekly"&&x.file===ld)return;
+var sel=(x.file===cur?" selected":"");
+var o='<option value="'+e(B+"archive/"+x.file)+'"'+sel+'>'+e(x.label)+'</option>';
+if(x.kind==="weekly")w+=o;else d+=o;});
+if(sd){sd.innerHTML=d;if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){sd.selectedIndex=0;}}
+if(sw){sw.innerHTML=w;}
+}).catch(function(){});})();</script>
     <div class="submeta">
       <span>Monitored at: <b>2026/08/01(Sat) 15:30 (Qatar time)</b></span>
       <span>Monitoring period: <b>Same day 07:00 – 15:30 (Qatar time)</b></span>
       <span class="cnt">Monitored items: Qatar <b>57</b> · Middle East <b>343</b></span>
     </div>
   </header>
-
-  <div class="archsel"><span class="archlbl">🗂️ Past editions:</span><select id="archsel" onchange="if(this.value)location.href=this.value"><option value="/qatar-media-monitor/en.html">Current edition (latest)</option><optgroup label="Daily"><option value="/qatar-media-monitor/archive/d-20260801-0700-en.html">Daily No.1 · 08/01 07:00</option></optgroup></select></div><script>(function(){var LB={"latest": "Current edition (latest)", "daily": "Daily", "weekly": "Weekly"};var B="/qatar-media-monitor/";
-var lang=document.documentElement.lang||"ko";
-var cur=(location.pathname.split("/").pop()||"index.html");
-fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){
-var s=document.getElementById("archsel");if(!s||!m)return;
-var home=(m.home&&m.home[lang])||B;var ld=(m.latest_daily&&m.latest_daily[lang])||"";
-var xs=(m.issues||[]).filter(function(x){return x.lang===lang;});
-xs.sort(function(a,b){return a.dt<b.dt?1:(a.dt>b.dt?-1:0);});
-function e(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-var h='<option value="'+e(home)+'">'+e(LB.latest)+'</option>';var d="",w="";
-xs.forEach(function(x){if(x.kind!=="weekly"&&x.file===ld)return;
-var o='<option value="'+e(B+"archive/"+x.file)+'"'+(x.file===cur?" selected":"")+'>'+e(x.label)+'</option>';
-if(x.kind==="weekly")w+=o;else d+=o;});
-if(d)h+='<optgroup label="'+e(LB.daily)+'">'+d+'</optgroup>';
-if(w)h+='<optgroup label="'+e(LB.weekly)+'">'+w+'</optgroup>';
-s.innerHTML=h;
-if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0;}
-}).catch(function(){});})();</script>
 
   <div class="sumhead"><span class="bar"></span>🏛️ War-related Qatar government activity</div><div class="govcard"><div class="govnone">No separate government activity during this monitoring window.</div></div><div class="sumhead"><span class="bar"></span>🧭 This edition — issue briefs <span class="ai">AI summary</span></div><div class="issue"><div class="ihead"><span class="num">Issue 1</span><h2>⚔️ US-Iran War Escalation and Kuwait Drone Attack / Imminent US Airstrike Reports</h2></div><div class="row"><div class="left"><div class="sh">Key summary</div><ul class="sumbul"><li>Kuwait&#x27;s Ministry of Defense announced that it intercepted and destroyed hostile drones targeting its airspace (in the northern region and around Bubiyan Island), marking what is assessed as the first substantial physical threat to a Gulf state amid the escalating US-Iran conflict. Iran&#x27;s military issued a public warning to Gulf host nations, stating that &#x27;any country that shields the United States will be engulfed in the flames of war.&#x27;</li><li>President Trump hinted at approving an attack while referencing the interception of Iranian missiles (Patriot systems), and domestic reports indicated that the US was planning airstrikes on Iranian energy facilities over the weekend. In response, US embassies across the Middle East under the State Department advised citizens to &#x27;consider leaving the Middle East&#x27; and prepare to depart, heightening concerns over imminent escalation.</li><li>An explosion was reported in Kermanshah Province in western Iran, but Iranian authorities explained it as the detonation of an old artillery shell, with no separate military attack confirmed so far. Iranian media continued coverage related to an &#x27;Iran blockade,&#x27; emphasizing the country&#x27;s readiness to respond.</li></ul></div><div class="right"><div class="grp"><div class="gh">🇶🇦 Qatar (local)</div><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxOVVBwbHFKYVA4UkxLVVU4N3J4NW95X19RQ19sRkx5bHlHUzZpQVZONjQzU05XUEhCRHdnTnJLNUxXR1NLdTFkVkpvNFZSLUFvXzBfaXQwczkyYkVuUzJrYm5nMzUxbHZWaE1KYkVBMnBsdURPejJxbjFOQ1dFaUpYOVlsZHBjUVNuanJ4ZjVTMUFMN0dPOE9EQS1uTHZUblBFQXczV3ZUMU5Mel9KZ19RWThOdXdwb19jbWFtUVhuTWNkYUZJdUZJdVhR?oc=5" target="_blank" rel="noopener">Kuwaiti Ministry of Defense says hostile drones destroyed inside Kuwaiti airspace<span class="src">The Peninsula Qatar · 08/01 15:05</span></a><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPY2xIV2FJRmtvSVBKLTNiZ0hveUJFQU5hMnYxOEt2V3gwbFMzUVh3SkFaQ1JMZndnclFGcF9OTVVzU3ZQMktJTktqYlhQR2dOdkVtQkR5Z3EySVMxZFNiV2pCbWlSQ2piNC1oX3BUR01tZk9vZDJNSkk1djdfdUpxVHZIZm1mNTNaZzQtOUNsX1ZrdXhOQkxRY3JXVmIwODg4Z3pUYlRGUFVWcVg1bkZMSGltV1hkU1UtMjBUWGhxRQ?oc=5" target="_blank" rel="noopener">Kuwaiti Ministry of Defense: Hostile Drones Destroyed Inside Kuwaiti Airspace<span class="src">Qatar news agency · 08/01 14:20</span></a></div><div class="grp"><div class="gh">🇮🇷 Iran &amp; regional</div><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wa25rUTRvcnZSNlcxZk5kQjNucWhkTE1JRWFob3A5SXVRX0JKRUo2dlhrd3NXR1dkME80bEtoSnhKcjM2RnNfY2hseGxWQXRGc3dZ?oc=5" target="_blank" rel="noopener">Iran blockade - Mehr News Agency<span class="src">Mehr News Agency · 08/01 15:04</span></a><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTE16UHNQb2hUNkxQRVdTVmtKZ2lxX2NFUTgwMVZhTkNOeUlrSXRjano2dnRyUk5qMk12MnFabXJURTJfYlZ5Z2o40gFHQVVfeXFMTXpQc1BvaFQ2TFBFV1NWa0pnaXFfY0VRODAxVmFOQ055SWtJdGNqejZ2dHJSTmoyTXYycVptclRFMl9iVnlnajg?oc=5" target="_blank" rel="noopener">‘Act as America’s shield, burn in the fire of war’: Iran warns regional states<span class="src">IRNA English · 08/01 14:41</span></a></div><div class="grp"><div class="gh">🌐 Global (US·Europe)</div><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOZS0yVmtxb0pSZktBZExWbG56dmdmMWFwcG5oSTAxS0owTU5IRGFsUm5zQWhrVmE2cGMtZDhGMlVkNHFIQU8wSDN0eHY0VnB6bkFYSzZ2SWhUTnYxTFFwWFEwdXAtLTVCZlFSbVFQT0tOWTBCa0Q2c3loOWltNE9iSjBMaDZIZTRXLXZaRWZqcGlwcXd4ZlNWTlY0b3JRN0p5bi1F?oc=5" target="_blank" rel="noopener">Explosion reported in western Iran’s Kermanshah province<span class="src">Anadolu Ajansı · 08/01 14:05</span></a><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQeHJCbFN4S1d3ZTFhLV9GZlhNamp2dnFsR3JVcllwRWhVaExGYkwxVDJQOW1yNHh4OW1iVFVBUVVEZlhjLXlXRXJhUjdDRHlzMy1UbHRTbzJsYWo2Wlh4QldoLTE2Vzh3YWszcENIeXRiU1Z6dE0tZzBwQm5fUUladmFldjg4MEE4TmFZcU1KSllnRF84NnVwLWhWNUtESml0M1lWbElreEk?oc=5" target="_blank" rel="noopener">Explosion heard in western Iran’s Kermanshah province: Report<span class="src">Anadolu Ajansı · 08/01 14:05</span></a><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOT3ZJRkJRdlJGdHBaZjFxY3RzOGg1Q3FnOVktTDQ0SWJTYWxJS19jTzNDYUJDQTg5MlRyNmxqU1kxWWhmSTFZS19TdGROaXBsOXZiQnpLYjBaV1pvQU1WS1N6UktNcnBkUGxRc2FtbW81ejgtclhJMGt3c3J1TXpxR1hmVWFMQ0hqTVVTSmp2UlVpc21WWTVzSDZrMFlYMlRs?oc=5" target="_blank" rel="noopener">Kuwait Says It Downed Iranian Drones as Mideast Braces for Possible Escalation<span class="src">The New York Times · 08/01 13:54</span></a><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQLUlneW42c2VoQXdUQVpNdmhTdU1pZm5OZnJlV3ZRTjB3V1pRQ1lOcktnUHpLLVBPcm5ZOVRjbURpbXRhdGxUYjNjU2ljVnFHeFJpdFZVNzZYYW16aW0xVFdfS252dHZuNVFBTXl6S05QMVdiMUtSRjBZYUhRY2JtcFNxTl9HNjlNY2c3RmVoODk3Vm9ENHZ4dW9Qd2h6bGFCYWNXVjVESnNBRmpzVWVj?oc=5" target="_blank" rel="noopener">Kuwait downs Iranian drones targeting country’s north, Bubiyan Island<span class="src">Anadolu Ajansı · 08/01 11:44</span></a></div><div class="grp"><div class="gh">🇰🇷 Korea</div><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6NFdJejFoeW5HMW51OEVBWU1TSFpWazY5MGVhQ2tFU2k4MnhmNXlSU2RndW9adk5pYnk0V0tpZF9CWmVEZzJ2NTZyU2dNOHI5WFNQNW1wSnZ2cFZkOGxUa9IBeEFVX3lxTE80dXRaMTUxM01nTzBhWE4xZzV6V2xzamsxcl9YcXZmamFFMTdpd3ZkWTk2ZEt4VXlaUzd5dlVZNVlUZVl1eUJ1RDZaenNETW9fYkVCMHhXUjFCdUZ3bDJEZ3U2T01jZVJCWGk3RlhpQ2cxY2dLMGpaUw?oc=5" target="_blank" rel="noopener">美, 중동내 미국인에 출국 준비 권고…&quot;이란 확전 가능성&quot;<span class="src">뉴시스 · 08/01 15:26</span></a><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5IeS1ZVHNYTlM0eUlWWERxdk5sclliU09lNzVIblZrRmNfdXRjakNQOHVNalRaUVF6ZjRpSEFnVGFUZXp2TmpxVWZhLU5HRHE3cm9CVU5iQm5BQWfSAWBBVV95cUxQNzRqTG1jVG94bHNmX0FGZGVhV2VJQjJZMlpBR0QtTGJSRkxzbW5QRU0xdHppcWZibW5ITVczSnhLU1I2VmJQSHg3VkJ4eDNBSkY2SmpDMFl4MkhpcnhSNDQ?oc=5" target="_blank" rel="noopener">중동 美대사관들 &quot;사태 악화 대비 출국 준비&quot;…교민에 권고<span class="src">연합뉴스 · 08/01 15:23</span></a><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5QWmJWWXFQOGtfcm80WTVzTzJ2SEw1ZHNIbkdWeG55UElWZTFwSDlnS3p5MmRTemdZWnpzMl9Zb2xJVjJhRjBmUVA3RjlKR18tLXU5TUFxSktjakRBcmlWUmNGNmU3dw?oc=5" target="_blank" rel="noopener">“미국, 이란 에너지시설 주말에 공습계획”…전쟁 격화 가능성<span class="src">KBS 뉴스 · 08/01 15:20</span></a><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE90OWJfZlN3QnFGd0JOWFNhSVczMjNmamU0bVdDS3o2RWVQY1R5N2lFZFBjdzBXOWNHRzdHV1hkZGs3aEZwQU53WFJwQzFVQXIyS2dSbnpwNW1xQUZhMlE?oc=5" target="_blank" rel="noopener">美대사관들, 자국민에 &quot;중동 떠나는 방안 고려하라&quot;<span class="src">뉴스1 · 08/01 15:15</span></a><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBOeGtSUW5lMzhYQXJPc2t2eWxQQmN0R2Y2cHFKcVp0VVVvMWtEQVFoUjJVQkVGSnZfNE94V2hoNF9UUDBDUEZtWkF0eDd2N1VxZXlTNWNvM2pMUdIBX0FVX3lxTE11alBrQ05DbFRVb2t3STd2dVREUjR0c2dmY0dtdGZ2NzNiYTJjYWx2R29jSERxM3JEeWpjN3RoXzhKNEEtbks3cURhWVlNUUZmWUEycWk5enhKbk9ORUZ3?oc=5" target="_blank" rel="noopener">이란, 쿠웨이트 공습…“미국 방패막이 나라는 불길 속 타오르게 될 것”<span class="src">경향신문 · 08/01 15:13</span></a><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE94bmJka0Y2ZmdDMmVtOWRPdFViTDU4cWdYS1poRElGMWJySVhqRUJDWklmcmg1WVZZZkFOVHcwbFVySXFaTnBkeHVya0tZcUlWaXp2Vm1IUkdYSmtvSkp5S9IBeEFVX3lxTE1BZlU2ZnRkam41eDZBckdyWXJubExkOGZpVno5VUh1dTlXOS1SMFYtME5ZU2YzWm16ckJyVkxHMFIyNzZ0UV9ZQ3hfN0lOQV9ZZHcwR0txTlVJNC1lelNzVGE0RnJiMkVVbWZfaWg5RUltVk9DUVlaQw?oc=5" target="_blank" rel="noopener">이란군 &quot;美 방패되는 모든 국가, 전쟁의 불길 휩싸일 것&quot;<span class="src">뉴시스 · 08/01 14:54</span></a><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE80TDJqQldvR2h6MGdUVDhWWnc1MFRGOS1VbXA1NmhMZ3I1T0FOaUNtMjNPR3h4cnVNNFV2S0ZBdVZCRWNUZHhRQlVvSFdpckx0d2xkNlJEZ3hid3VPeFE?oc=5" target="_blank" rel="noopener">이란, 쿠웨이트에 공습...&quot;미국 방패막이는 불길에&quot;<span class="src">YTN · 08/01 14:26</span></a><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2S1B6VmFNZzZScXI1dkRXY191N0tacXpnenc1YmM4Zks4Z3JwWkJfSm5pVDdsQi1CLVZWUHBrWXlhblF0R1IxU3V6V2tuaXV3R1dmZHZJU0tJbnpMUHV2UWNIVUd2aGs?oc=5" target="_blank" rel="noopener">이란 서부서 폭발음…당국 &quot;노후 포탄 폭발&quot;<span class="src">뉴스1 · 08/01 14:22</span></a><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9uTFM4Q0FSaXRhZ1gxYWxWTHVEUE1mWmZwR2RpTHU1V01VMGZpSWtndTl2VXFvUGNsQi1GTU44cFRCZjZfczVDLTZhclJxOUZibHVyRQ?oc=5" target="_blank" rel="noopener">&quot;지켜보자&quot;던 트럼프, 닷새 만에 공격 승인…이란도 즉각 경고<span class="src">JTBC · 08/01 14:19</span></a><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE16UTNYUDRSekRvWkF1MG1fZnFqZ1BBd0pmOE9LUVAybWhhOWxMeDFUVElhVDBUc05DMzI0ZlRobXQwYmVsV2tMMGl6eExFNkZiMzdocFppUFZoRzQ?oc=5" target="_blank" rel="noopener">이란, 쿠웨이트에 공습…“미국 방패막이는 불길 휩싸일 것”<span class="src">KBS 뉴스 · 08/01 14:05</span></a></div></div></div></div>
 <div class="issue"><div class="ihead"><span class="num">Issue 2</span><h2>🎯 Iran Names Gulf Energy Facilities and Qatari Gas Fields as Retaliation Targets</h2></div><div class="row"><div class="left"><div class="qimpact"><div class="qh">※ Impact on Qatar</div><ul class="qbul"><li>It was reported that Qatar Gas fields were explicitly included in the list of retaliation targets disclosed by Iran (single-source report, cross-verification needed).</li></ul><div class="qlinks"><a class="qlink" href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOUl6ekkyY1BRaWxVbXRMU0FzU0ttN0FNUC1RUUt2QVAwSG9CWG1DWVVnZG5zNjVOQVdVTVhvSjVtMEhmbmQtM1ZpVlR1R1Y5NVU2aXcxVzd5RlNoeUhCWklhQTIyaEFwSk1qRXlIYzQwZjd1WllvVEU3WDRMSWxyd2JvTHVVWDJTRHJrWWw5M1RwYnZCM0d1NUtxYURmdmI4UDc1M0pmQWRoUXlxQkdqelBiZ0NuRnJxOHhwOHFGb0FIb2hrWmk0Q9IBzgFBVV95cUxPRGJRbnFDczhJRjhKaXBqZXdCQU1vN05oSW5yR2RNZ1RTdDg2M2ZaQUszOHlrczBQaElDMzdySGZOZ1RxbG1CZzFubWdTU0s5aEtEYmRLS0QwQ3VKdHk2bXJYRl94UUZxX1kwT3JYeHpHNTYwb01UWl91VUFIVFE3U08zZE5mZS1CS1JHanVfZjdGV19xbUtQTXRTZEo5cnFNOHZ4ZDdhT0xpb2Z0OVQ2LWZjaWRoZ1laTDhPb1lpM05mZzJvdWczNTJ3dFhEUQ?oc=5" target="_blank" rel="noopener" title="Saudi And UAE Oil, Qatar Gas, Israel Fields: Iran Reveals Target List If Trump Orders New Strikes"><span class="ic">↗</span>News18</a></div></div><div class="sh">Key summary</div><ul class="sumbul"><li>Reports emerged that Iran has included Saudi and UAE oil fields, Qatari gas fields, and Israeli oil fields on a list of retaliatory targets in the event of further Trump administration airstrikes, raising concerns that Qatar&#x27;s key energy assets could be directly exposed to threats in the event of escalation.</li><li>The disclosure of this list came amid reports of planned US airstrikes on Iranian energy facilities and Iran&#x27;s military warning to countries &#x27;sheltering the US,&#x27; amplifying concerns about the spillover of escalation across Gulf oil and gas producing nations.</li></ul></div><div class="right"><div class="grp"><div class="gh">🌐 Global (US·Europe)</div><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOUl6ekkyY1BRaWxVbXRMU0FzU0ttN0FNUC1RUUt2QVAwSG9CWG1DWVVnZG5zNjVOQVdVTVhvSjVtMEhmbmQtM1ZpVlR1R1Y5NVU2aXcxVzd5RlNoeUhCWklhQTIyaEFwSk1qRXlIYzQwZjd1WllvVEU3WDRMSWxyd2JvTHVVWDJTRHJrWWw5M1RwYnZCM0d1NUtxYURmdmI4UDc1M0pmQWRoUXlxQkdqelBiZ0NuRnJxOHhwOHFGb0FIb2hrWmk0Q9IBzgFBVV95cUxPRGJRbnFDczhJRjhKaXBqZXdCQU1vN05oSW5yR2RNZ1RTdDg2M2ZaQUszOHlrczBQaElDMzdySGZOZ1RxbG1CZzFubWdTU0s5aEtEYmRLS0QwQ3VKdHk2bXJYRl94UUZxX1kwT3JYeHpHNTYwb01UWl91VUFIVFE3U08zZE5mZS1CS1JHanVfZjdGV19xbUtQTXRTZEo5cnFNOHZ4ZDdhT0xpb2Z0OVQ2LWZjaWRoZ1laTDhPb1lpM05mZzJvdWczNTJ3dFhEUQ?oc=5" target="_blank" rel="noopener">Saudi And UAE Oil, Qatar Gas, Israel Fields: Iran Reveals Target List If Trump Orders New Strikes<span class="src">News18 · 08/01 14:02</span></a></div></div></div></div>
