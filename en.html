@@ -29,7 +29,7 @@
   .sub{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}
   .submeta{color:var(--muted);font-size:14px;margin-top:6px;display:flex;gap:3px 14px;flex-wrap:wrap}
   .submeta > span::before{content:"• ";color:var(--accent);font-weight:700}
-  .submeta .cnt{flex-basis:100%}
+  .submeta > span{flex-basis:100%}
   .sub b,.submeta b{color:var(--txt)}
   .sumhead{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin:6px 0 12px;flex-wrap:wrap;word-break:keep-all}
   .sumhead .bar{width:3px;height:16px;background:var(--accent);border-radius:2px}
@@ -108,7 +108,7 @@
   details[open]>summary .exp-c{display:none}
   details[open]>summary .exp-o{display:inline-block}
 /* ── 중동 전쟁 타임라인 버튼(상단, 작게, 새 탭 링크) ── */
-  .tlbtnrow{display:flex;justify-content:flex-start;margin:4px 0 2px}
+  .tlbtnrow{display:flex;justify-content:center;margin:4px 0 2px}
   .tlbtn{display:inline-flex;align-items:center;gap:7px;max-width:100%;padding:7px 13px;
     border:1px solid var(--line);border-radius:999px;background:var(--panel2);
     text-decoration:none;color:var(--muted);font-weight:700;font-size:12px;
@@ -200,7 +200,7 @@
     </div>
   </header>
 
-  <div class="tlbtnrow"><a class="tlbtn" href="/qatar-media-monitor/timeline-en.html" target="_blank" rel="noopener"><span class="tlbtn-tag">Ref</span><span class="tlbtn-t">🕰️ Middle East War Timeline (2026)</span><span class="tlbtn-arr">↗</span></a></div>
+  <div class="tlbtnrow"><a class="tlbtn" href="/qatar-media-monitor/timeline-en.html" target="_blank" rel="noopener"><span class="tlbtn-tag">Ref</span><span class="tlbtn-t">Middle East War Timeline (2026)</span><span class="tlbtn-arr">↗</span></a></div>
 
   <div class="archsel">🗂️ Past editions: <select id="archsel" onchange="if(this.value)location.href=this.value"><option value="/qatar-media-monitor/en.html">Current edition (latest)</option><optgroup label="Daily"><option value="/qatar-media-monitor/archive/d-20260801-1530-en.html">No.2 08/01(Sat) 15:30</option><option value="/qatar-media-monitor/archive/d-20260801-0700-en.html">No.1 08/01(Sat) 07:00</option></optgroup><optgroup label="Weekly"><option value="/qatar-media-monitor/archive/w-20260802-en.html">Weekly No.1 · ~08/02</option></optgroup></select></div>
 
