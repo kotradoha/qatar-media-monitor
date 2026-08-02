@@ -325,6 +325,7 @@ QUICK_LINKS = {
         ("한국가스공사(KOGAS)", "https://www.kogas.or.kr/"),
         ("한국석유공사 오피넷(유가)", "https://www.opinet.co.kr/"),
         ("KOTRA 해외시장뉴스", "https://dream.kotra.or.kr/"),
+        ("KOTRA 도하무역관", "https://www.kotra.or.kr/doha"),
         ("현대경제연구원(HRI)", "http://www.hri.co.kr/"),
         ("삼성글로벌리서치(SGR)", "https://www.samsungsgr.com/"),
         ("LG경영연구원", "https://www.lgbr.co.kr/"),
