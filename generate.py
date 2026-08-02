@@ -1387,7 +1387,7 @@ def render_issues(issues, pool, now_utc, L=None, collapse_links=False):
             # 주간: 요약을 전폭으로 보여 흐름을 직관적으로 읽게 하고, 이슈별 관련 링크는 접어두기(펼치면 표시)
             out.append(
                 head
-                + f'<div class="row"><div class="left" style="border-right:none;flex-basis:100%">{qbox}<div class="sh">{esc(L["key_sum"])}</div>{body}</div></div>'
+                + f'<div class="row solo"><div class="left" style="border-inline-end:none">{qbox}<div class="sh">{esc(L["key_sum"])}</div>{body}</div></div>'
                 + f'<details class="linkfold"><summary>{esc(L["links_fold"])}</summary><div class="foldwrap">{groups}</div></details>'
                 + '</div>')
         else:
@@ -1629,6 +1629,7 @@ TEMPLATE = """<!DOCTYPE html>
   .issue .ihead .num{{flex:0 0 auto;font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px}}
   .issue .ihead h2{{font-size:14.5px;margin:0;line-height:1.5}}
   .row{{display:grid;grid-template-columns:0.78fr 1.22fr;gap:0}}
+  .row.solo{{grid-template-columns:1fr}}
   @media (max-width:760px){{.row{{grid-template-columns:1fr}}}}
   .left{{padding:13px 16px;border-inline-end:1px solid var(--line)}}
   @media (max-width:760px){{.left{{border-inline-end:none;border-bottom:1px solid var(--line)}}}}
