@@ -140,9 +140,11 @@
   .qchips{display:flex;flex-wrap:wrap;gap:7px}
   .qchips a{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}
   .qchips a:hover{text-decoration:underline}
-  .archsel{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px}
+  .archsel{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:nowrap}
+  .archlbl{flex:0 0 auto;white-space:nowrap}
   .archsel select{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
-    border-radius:8px;padding:5px 9px;max-width:60%}
+    border-radius:8px;padding:5px 9px;flex:0 1 auto;min-width:0;max-width:max-content;
+    text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
   .issno{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}
   h1 .edtag{font-size:13px;font-weight:700;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px;vertical-align:middle;letter-spacing:0}
   .scopebar{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
@@ -202,7 +204,7 @@
     </div>
   </header>
 
-  <div class="archsel">🗂️ 지난 회차 보기: <select id="archsel" onchange="if(this.value)location.href=this.value"><option value="/qatar-media-monitor/">이번 회차 (최신)</option><optgroup label="지난 회차"><option value="/qatar-media-monitor/archive/d-20260802-0700-ko.html">제3호 08/02(일) 07:00 (주간 포함)</option><option value="/qatar-media-monitor/archive/d-20260801-1530-ko.html">제2호 08/01(토) 15:30</option><option value="/qatar-media-monitor/archive/d-20260801-0700-ko.html">제1호 08/01(토) 07:00</option></optgroup><optgroup label="주간 종합"><option value="/qatar-media-monitor/archive/w-20260802-ko.html">주간 제1호 · ~08/02</option></optgroup></select></div><script>(function(){var LB={"latest": "이번 회차 (최신)", "daily": "지난 회차", "weekly": "주간 종합"};var B="/qatar-media-monitor/";
+  <div class="archsel"><span class="archlbl">🗂️ 지난 회차 보기:</span><select id="archsel" onchange="if(this.value)location.href=this.value"><option value="/qatar-media-monitor/">이번 회차 (최신)</option><optgroup label="지난 회차"><option value="/qatar-media-monitor/archive/d-20260802-0700-ko.html">제3호 08/02(일) 07:00 (주간 포함)</option><option value="/qatar-media-monitor/archive/d-20260801-1530-ko.html">제2호 08/01(토) 15:30</option><option value="/qatar-media-monitor/archive/d-20260801-0700-ko.html">제1호 08/01(토) 07:00</option></optgroup><optgroup label="주간 종합"><option value="/qatar-media-monitor/archive/w-20260802-ko.html">주간 제1호 · ~08/02</option></optgroup></select></div><script>(function(){var LB={"latest": "이번 회차 (최신)", "daily": "지난 회차", "weekly": "주간 종합"};var B="/qatar-media-monitor/";
 var lang=document.documentElement.lang||"ko";
 var cur=(location.pathname.split("/").pop()||"index.html");
 fetch(B+"archive/manifest.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(m){

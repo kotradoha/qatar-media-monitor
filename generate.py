@@ -426,7 +426,7 @@ LANG = {
   "wk_head": "🗓️ 지난주 언론동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
-  "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "공개 보도를 교차 확인해 정리했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
+  "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
   "gov_head": "🏛️ 전쟁 관련 카타르 정부 동향", "gov_none": "모니터링 기간 중 별도 동향 무",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
@@ -474,7 +474,7 @@ LANG = {
   "wk_head": "🗓️ Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
-  "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Compiled by cross-checking public reporting; please verify specific figures and wording against each outlet and primary announcements.",
+  "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
   "gov_head": "🏛️ War-related Qatar government activity", "gov_none": "No separate government activity during this monitoring window.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
@@ -524,7 +524,7 @@ LANG = {
   "wk_head": "🗓️ الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
-  "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "جُمِعت بالتحقّق المتقاطع من تقارير عامة؛ يُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
+  "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
   "gov_head": "🏛️ نشاط الحكومة القطرية المتعلق بالحرب", "gov_none": "لا يوجد نشاط حكومي منفصل خلال فترة الرصد هذه.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
@@ -1857,7 +1857,7 @@ if(w)h+='<optgroup label="'+e(LB.weekly)+'">'+w+'</optgroup>';
 s.innerHTML=h;
 if(cur===ld||cur==="index.html"||cur===lang+".html"||cur===""){s.selectedIndex=0;}
 }).catch(function(){});})();</script>""".replace("__LB__", _albl).replace("__BASE__", SITE_BASE)
-    archive_html = (f'<div class="archsel">{esc(L["arch_view"])} '
+    archive_html = (f'<div class="archsel"><span class="archlbl">{esc(L["arch_view"])}</span>'
                     f'<select id="archsel" onchange="if(this.value)location.href=this.value">{aopts}</select></div>'
                     + _archscript)
 
@@ -2038,9 +2038,11 @@ TEMPLATE = """<!DOCTYPE html>
   .qchips{{display:flex;flex-wrap:wrap;gap:7px}}
   .qchips a{{font-size:12.5px;color:var(--accent);text-decoration:none;border:1px solid var(--line);background:var(--panel2);border-radius:8px;padding:5px 10px}}
   .qchips a:hover{{text-decoration:underline}}
-  .archsel{{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px}}
+  .archsel{{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:nowrap}}
+  .archlbl{{flex:0 0 auto;white-space:nowrap}}
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
-    border-radius:8px;padding:5px 9px;max-width:60%}}
+    border-radius:8px;padding:5px 9px;flex:0 1 auto;min-width:0;max-width:max-content;
+    text-overflow:ellipsis;white-space:nowrap;overflow:hidden}}
   .issno{{font-size:11.5px;font-weight:800;color:#111;background:var(--gold);border-radius:6px;padding:2px 9px}}
   h1 .edtag{{font-size:13px;font-weight:700;color:#111;background:var(--gold);border-radius:6px;padding:1px 8px;vertical-align:middle;letter-spacing:0}}
   .scopebar{{font-size:12.5px;color:var(--muted);background:linear-gradient(180deg,rgba(77,163,255,.07),transparent),var(--panel2);
@@ -2234,7 +2236,6 @@ TIMELINE_PAGE = """<!DOCTYPE html>
   <a class="tlback" href="{home}">{back}</a>
   <hr class="tlpage-div">
   <h1 class="tlpage-h"><span class="tlpage-tag">{tag}</span>{head}</h1>
-  <div class="tlnotehead">{note}</div>
   {rows}
   {sources}
 </div>
