@@ -216,7 +216,11 @@ def source_region(src, korean):
 DIRECT_FEEDS = [
     ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
     ("BBC Middle East", "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
+    # CNN: 전용 중동 피드(edition_meast)는 사실상 폐기 → World 피드로 확보(관련성 필터가 중동·카타르만 통과)
+    ("CNN World", "http://rss.cnn.com/rss/cnn_world.rss"),
     ("CNN Middle East", "http://rss.cnn.com/rss/edition_meast.rss"),
+    # Doha News: 인스타 중심이라 구글뉴스 색인이 약함 → 워드프레스 RSS로 직접 확보(누락 방지)
+    ("Doha News", "https://dohanews.co/feed/"),
     ("Times of Israel", "https://www.timesofisrael.com/feed/"),
     # 이란·역내 1차 정보원 — 구글뉴스가 이란 국영매체를 잘 색인하지 않으므로 직접 RSS로 확보(누락 방지)
     ("Tehran Times", "https://www.tehrantimes.com/rss"),
@@ -1613,9 +1617,12 @@ _TL_MON = {"ko": ["1월","2월","3월","4월","5월","6월","7월","8월","9월"
 TL_SOURCES = [
     ("CFR Global Conflict Tracker", "https://www.cfr.org/global-conflict-tracker"),
     ("Al Jazeera", "https://www.aljazeera.com/"),
+    ("CNN", "https://www.cnn.com/"),
     ("Reuters", "https://www.reuters.com/"),
     ("AP News", "https://apnews.com/"),
     ("CNBC", "https://www.cnbc.com/"),
+    ("The Peninsula", "https://thepeninsulaqatar.com/"),
+    ("Doha News", "https://dohanews.co/"),
     ("Fox Business", "https://www.foxbusiness.com/"),
     ("Gulf News", "https://gulfnews.com/"),
     ("AGBI (Arabian Gulf Business Insight)", "https://www.agbi.com/"),
