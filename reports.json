@@ -5,7 +5,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-08-01T03:52:25+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-08-01T03:52:25+00:00"
  },
  {
   "title": "Weekend profile: Abdul-Malik al-Houthi, the Yemeni warlord menacing Saudi Arabia",
@@ -13,7 +14,26 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-08-01T00:00:00+00:00",
+  "region": "overseas",
+  "added": "2026-08-01T00:00:00+00:00"
+ },
+ {
+  "title": "Middle East & Africa",
+  "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTGJFVWplQTc5dl9iR2E3STM2enZKSGJkZnNiNlJ1SWJNN2ZqYS1ZZ1ZMLS0tLWRQLUxyQmoxZXN2eEQtYXJxZ3pQNFlBREQwLVlpWjh5NzNzb0FDQ0RxN19KeFZiNWNpTnhlQy0tdERVb1RXSW5UdGtjdkdRU1hQZjB5RXhNeFl0UXFiRl9WWHh1bHhGWUhtTVk0T2pyN3hKbVpKb1JITHFuRTFFUnNXUmlFUQ?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-31T23:30:10+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
   "region": "overseas"
+ },
+ {
+  "title": "건설공제조합, 중동전쟁 위기 대응 3천억원 규모 특별융자",
+  "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPd0ZGWmRMcVU4eUVVUkV1NkF4cGFhc0RueVBCYUFhOE1kZWp0NEZrYmlEaS1JakZXSDJRNWNvdzZoMEV5S3hWc2h5SnRwX29senhnQk13WjVrVDh5eGVRaVk1YkZjMDkyME56ZnBwYkRLbWgzS181WjFOX1lUZWlweHpzdy16Mk9CV1YwUA?oc=5",
+  "source": "한국무역협회-KITA.NET",
+  "shref": "https://www.kita.net",
+  "dt": "2026-07-31T23:10:47+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "korea"
  },
  {
   "title": "The Middle East’s Metastasising Conflicts",
@@ -21,7 +41,8 @@
   "source": "International Crisis Group",
   "shref": "https://www.crisisgroup.org",
   "dt": "2026-07-31T22:13:36+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T22:13:36+00:00"
  },
  {
   "title": "중동전쟁으로 中企피해 1천30건…\"물류비 상승·자재 수급난\"",
@@ -29,7 +50,8 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://btsc.kita.net",
   "dt": "2026-07-31T17:04:41+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-31T17:04:41+00:00"
  },
  {
   "title": "The Iran Threat in Perspective",
@@ -37,14 +59,16 @@
   "source": "The International Institute for Strategic Studies",
   "shref": "https://www.iiss.org",
   "dt": "2026-07-31T15:45:00+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T15:45:00+00:00"
  },
  {
   "title": "The crisis in the Strait of Hormuz is a heavy blow to the deteriorating maritime order",
   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNOUw4UXJvSjN1bjNVWUtTejVaaDI1ODlPd0hYRVNQUFZtYk5JVmdQaklzNUMyazVtNElqLWhJY1lkemtBUHVQVjdPMTVvMGNyOTR2QnBwendia1JSN043aEd3OG5sZm9nUlNJU0M0LWlBbVJLNW1FdmRYWTlabXRKT0FYd21aSWtWdTR0SEJfUkx1R2VzMTRvY3VoTHFFU2lMUk1KNml1Tmh2N2JQSUZZY096dXcyMzhMVFRJWW95R2poSTgtc2wzQy1UQUF0Mjh3TGp2RTdNZHN0eVpuSU1KRFYtMWRiWEdlUjhpNDZR?oc=5",
   "source": "Atlantic Council",
   "dt": "2026-07-31T14:00:00+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T14:00:00+00:00"
  },
  {
   "title": "Video | Will Putin be the real winner in the Iran war?",
@@ -52,7 +76,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-31T13:15:43+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T13:15:43+00:00"
  },
  {
   "title": "중동전쟁으로 中企피해 1천30건…\"물류비 상승·자재 수급난\"",
@@ -60,7 +85,8 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-31T11:43:51+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-31T11:43:51+00:00"
  },
  {
   "title": "Omission accomplished: why the Iran-war cycle spins on",
@@ -68,14 +94,16 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-31T11:01:39+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T11:01:39+00:00"
  },
  {
   "title": "Is the U.S.-Iran War Expanding?",
   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSmhLQTJYSmJTVDkxX25McE5zYUhza1JnTUk4WThxR3pJbjRkVmZHOWhLRlhaMHV3aW5BOVFYT0pFeDg5WkNjWG1QUFRRZFppaUcwQ2lsV3dORGtJMnVRa1A1U19NTS0tWHdsRzl0YmdyZkdaTnB0UVVRazFzT1RaVUZn?oc=5",
   "source": "Foreign Policy",
   "dt": "2026-07-31T10:35:17+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T10:35:17+00:00"
  },
  {
   "title": "중동전쟁으로 中企피해 1천30건…\"물류비 상승·자재 수급난\"",
@@ -83,7 +111,8 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-31T10:19:04+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-31T10:19:04+00:00"
  },
  {
   "title": "World in Brief: Hamas accepts Trump proposal to disarm; Saudi Arabia plans maritime-defence alliance",
@@ -91,7 +120,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-31T09:51:34+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T09:51:34+00:00"
  },
  {
   "title": "카타르 중앙은행, 달러화 고정환율 체계 아래 기준금리 현 수준 유지",
@@ -99,7 +129,8 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-31T08:48:49+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-31T08:48:49+00:00"
  },
  {
   "title": "[이슈트렌드] 이집트, 원유 생산량 약 2년 만에 최고 수준 기록하며 정유·수출 부문 실적 개선",
@@ -107,7 +138,8 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-31T08:48:46+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-31T08:48:46+00:00"
  },
  {
   "title": "이집트, 키프로스와 가스·광물 협력 확대로 2028년 유럽 공급 기반 확보",
@@ -115,7 +147,17 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-31T08:48:46+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-31T08:48:46+00:00"
+ },
+ {
+  "title": "Middle East & Africa",
+  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa0luVTVKVUlKS1VqREpxQjdmYm8ybHJnMGQwNEVYRkZJNngxMmQyZVhXSEstQjh1MzZoblRpZkFQWDNWMVJnd1h3QlVPM2VJblBlNWlXZzJSZ2VjOG9SUUJlMENkdGVqM0F2OEZsVkl4Z1BnYkNzTTVuWkZWS28yak00RDJad2I4Wk9pZmx0dmZDa3d4UTdBLUdneGpYZTg?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-31T08:23:04+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
  },
  {
   "title": "Five months on: The Middle East War’s continued impact on Atlantic Basin LNG",
@@ -123,7 +165,8 @@
   "source": "S&P Global",
   "shref": "https://www.spglobal.com",
   "dt": "2026-07-31T05:37:30+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-31T05:37:30+00:00"
  },
  {
   "title": "World in Brief: Hamas agrees to disarm; Saudi Arabia proposes maritime-defence alliance",
@@ -131,6 +174,16 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-31T05:16:12+00:00",
+  "region": "overseas",
+  "added": "2026-07-31T05:16:12+00:00"
+ },
+ {
+  "title": "World in Brief: Hamas agrees to fully disarm; Saudi Arabia proposes maritime-defence alliance",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNc1pMVzd1SkM2cVNQbTNGN3dNNnVENjAyWEJfSnpoTHMzYW9fS1hCVjNLOHNFZDNqRm1yWTVkWHZYOUtkRllaN2R6RllWVl9EYXE4bEtuWkpXejdwMTMwb3B1eDJsaUlXeDRRTHlfNnhOVTF2ZHFtOXR4Tmh1S1htLWItdTZ1RkxwaGRxSm95U0hYaUl4MUlN?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-31T05:10:11+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
   "region": "overseas"
  },
  {
@@ -139,7 +192,8 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-31T01:50:36+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-31T01:50:36+00:00"
  },
  {
   "title": "War in the Middle East",
@@ -147,7 +201,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T20:24:02+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T20:24:02+00:00"
  },
  {
   "title": "Middle East & Africa",
@@ -155,14 +210,16 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T19:20:41+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T19:20:41+00:00"
  },
  {
   "title": "The Channels of China’s Currency Promotion in Gulf Markets",
   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSHpVcEREYVVFVEhOdF84eTREbjg4d3dPbEhCMk5DcGdxNU93SV9FTkc2dVpPNmdrM1VtMzRDQjlfVWpzVWFDVmtxa0xObW92QzhPdUdpWmZ1eWNacHFNTUN5VmEwQnhPbkhia2dObTBXUDMzWjZySldZQUlUTERva3RiWl9rMEhGa0Z3N3lCbnBMdFN6THRZUXhTOVdlNGNvakE?oc=5",
   "source": "Carnegie Endowment for International Peace",
   "dt": "2026-07-30T15:20:20+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T15:20:20+00:00"
  },
  {
   "title": "Middle East & Africa",
@@ -170,7 +227,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T15:19:10+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T15:19:10+00:00"
  },
  {
   "title": "Middle East & Africa",
@@ -178,7 +236,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T15:10:13+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T15:10:13+00:00"
  },
  {
   "title": "World in Brief: American economy falls short of expectations; Gulf war spreads",
@@ -186,7 +245,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T13:17:56+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T13:17:56+00:00"
  },
  {
   "title": "Video | Trump's gamble in Iran could backfire in America",
@@ -194,7 +254,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T13:16:30+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T13:16:30+00:00"
  },
  {
   "title": "Saudi Arabia is locked in a dangerous stand-off with the Houthis",
@@ -202,7 +263,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T13:02:21+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T13:02:21+00:00"
  },
  {
   "title": "World in Brief: America retaliates against Iran; Fed holds interest rates",
@@ -210,7 +272,8 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T12:52:25+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T12:52:25+00:00"
  },
  {
   "title": "Diplomacy stalls in the Gulf",
@@ -218,14 +281,16 @@
   "source": "The Economist",
   "shref": "https://www.economist.com",
   "dt": "2026-07-30T10:05:25+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T10:05:25+00:00"
  },
  {
   "title": "Gulf energy can bypass the Strait of Hormuz, but only with political unity",
   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYlozQWlpVmtiNFlyOTN6U3hoQlZnLS1JT2hSZ0dPdE5aNktaYzJsVmlGN0JLTHo5eDNmVGhJaGhBaHRGVE8taVhXQWM1c2ZzNnRHTmFUQXVQVUtZWGtpT0FOYy1hbGtSUF9ITFVZSWJka01taVJpSHlNR2dFa1VEOXJpMjRRSFVNWHM3cWVkVVlpVFhSanhZQkJ0bmNPMzNWVndDWkpSdFo?oc=5",
   "source": "Chatham House",
   "dt": "2026-07-30T09:45:32+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-30T09:45:32+00:00"
  },
  {
   "title": "국제통화기금, 이집트 7차 검토로 16억 달러 지급 여부 결정 논의",
@@ -233,7 +298,8 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-30T08:51:30+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-30T08:51:30+00:00"
  },
  {
   "title": "이란-파키스탄, 국경 개발 협정으로 연간 교역 3배 확대 추진",
@@ -241,7 +307,8 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-30T08:51:28+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-30T08:51:28+00:00"
  },
  {
   "title": "'홍해 통항하는 선박 보호'…사우디, 국제연합 창설 추진",
@@ -249,7 +316,8 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-30T04:16:44+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-30T04:16:44+00:00"
  },
  {
   "title": "중동전쟁 여파로 2분기 국내 항만 수출입 물동량 4.8% 감소",
@@ -257,7 +325,17 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-30T03:56:52+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-30T03:56:52+00:00"
+ },
+ {
+  "title": "World in Brief: Trump promises Iran “beating”; Fed holds interest rates",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSHBLdTFYSVZhV09nZkI5ZHBfWExOR1o2QmV1Q3Z6MEJEeEltZXhMVWJFY3hDMHpaT2xUVkVSTTFpQ2d3QTNmd0FkaHc5cEhvTElOUXNia19fZk9xR2lvMWFsTUxhS1BzSnRQaGp5cll5elpXQ09QRGZvaDAyOGsxbjZTOHBvUkZYZ1k4eVVIeHdUZXdldUsw?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-30T03:25:54+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
  },
  {
   "title": "[중앙일보] 3000번 공격 받았지만, 이란에 경제·외교 문 연다…UAE의 승부수 > 언론보도",
@@ -265,7 +343,17 @@
   "source": "아산정책연구원",
   "shref": "https://asaninst.org",
   "dt": "2026-07-30T03:02:02+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-30T03:02:02+00:00"
+ },
+ {
+  "title": "Video | Who is Israel’s surprising ally?",
+  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5TemgzWmNfMVVtU1F5R00yX2lDekNkb0tVandRdE5aSnRQeUpiTHBVdFpPTTk3X1NpcGg4bGJFUUJuMF94NERrVUxEUGl5T2tTakRodkdrd1pRNUxtVmNxSnBB?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-30T02:49:42+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
  },
  {
   "title": "국제유가, 중동 충돌 재개에 8% 급등…브렌트 종가 90달러대 | 주요뉴스 | 에너지 주요소식 | 소통",
@@ -273,7 +361,26 @@
   "source": "에너지경제연구원",
   "shref": "https://www.keei.re.kr",
   "dt": "2026-07-30T02:08:00+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-30T02:08:00+00:00"
+ },
+ {
+  "title": "Video | Can Donald Trump force a ceasefire in Gaza?",
+  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBYWlQMGJwbEtLd3o3aExRU3h2QnlaSGJtOWhnYXhzVm5HS0ItV0VLazZYVEhiZk5FaEwyQ0FBa09temw2Yk5EcW4zSEFoMjkzaEx3bkxsZVIyOEJqQ19aeWNB?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-30T01:44:46+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "Middle East - The Economist",
+  "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbXJ1VjJORENJSm1OdlZLbnhfb2xkVDlSX05IdkRDTzI2OGRVYko4blZPMWtPc29ydHVENzI4cFowdW5oOFFDUHVOZmY5ak90by1WXzBsdGRQQW5CRHRCdXNoclFIMDRMc2dBTlBEVkI3b1VnNmp1Snp0SjVmeDBfZDZoTWtBemN3WWp2SUJyS3psUQ?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-30T01:35:12+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
  },
  {
   "title": "국제유가, 중동 충돌 재개에 8% 급등…브렌트 종가 90달러대",
@@ -281,13 +388,33 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-29T23:11:13+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-29T23:11:13+00:00"
  },
  {
   "title": "How Oman and Europe can open the Strait of Hormuz for good",
   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQc1F5b3Fka2kyakhLZEZZb2pNUS1LeEdNd2pYNnNtV3lUbU41NlVPazJGMzRVV0EwYmd6RzZtSjdVQldEeE83T3RWNU9mZFNkWmNTVEp5dHc0eWtmWE5YNjdKb003RWZkMmFlWEd5Sk1FWkZzck5GNGVUbU1kUWoyYlhrQjZSUTVydEp5UHJjTFZLZkExTzRkSHB1RGRKbWQ0WTNQYg?oc=5",
   "source": "Atlantic Council",
   "dt": "2026-07-29T20:11:27+00:00",
+  "region": "overseas",
+  "added": "2026-07-29T20:11:27+00:00"
+ },
+ {
+  "title": "World in Brief: Trump promises Iran “beating”; OpenAI admits to more victims of hack",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVXY5WGJVQkVIVGRDT0NhanZHYU1BR3pvakpjUWJRX3pFd2F0ck05SkhiaVhqdEFyNUQ2YmVIYVdnRnYwZndraERZZ1k3ZXpjTTJVRG05YXg2aFhRZGlSV1hUb3dEcVFzMXFxc2JzWURHeExpMW9wT215S0o2bkhDWE5XN2psTnpqODJ6ZXNPWGFKUDlYRURZ?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-29T16:29:30+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "Oil Prices Surge as Brent Jumps Over 6% Following Houthi Tanker Attack and US-Saudi Strikes in Iraq",
+  "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbG1BOEQwY2pBM0ZBcnBQOGtPSFUyOW81SVAyTWdHMFVCSl9SOWpBRElSTjVGcW5IdzUxZTF5MUtQYlhuSjhqVkwyUXNFWUVLMF9VTVdhMlJnNktWOTQ4LWYtZ1BtTmVMb28zNENQZlFDQnZ3OE5IeXBDNV9YOHRmRmItTGhtenhtaEl3cTJ2VjVuVnBObHdOVEVEQTBYbVdGM25uQktIamE3cWpGYnFvWEM0a0V5N2NUNExUY2xtX2l6MFJBeDI0MFI3c1cxOVdFaDBLTDRCbHY5RG8ycmU0cQ?oc=5",
+  "source": "TradingKey",
+  "shref": "https://www.tradingkey.com",
+  "dt": "2026-07-29T14:22:29+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
   "region": "overseas"
  },
  {
@@ -295,7 +422,8 @@
   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVFdPTFB4dnRFVzNyN0FVWjNDbXc3VDFZMUUyU0JIejh5VEF3RFlYVXZXLVV0RkhIT2kxQ0hfbHVpNW5TcEk5SkNFZ2RFMkh4RGRPSU9zeHlfSldmSkU2MXVGbklfTkJ1eHVFQURfRVQ4dUJHOTlocjUwMW5tNTRFSjVjQm1DNGRB?oc=5",
   "source": "Council on Foreign Relations",
   "dt": "2026-07-29T07:00:00+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-29T07:00:00+00:00"
  },
  {
   "title": "트럼프의 사우디 농축 허용이 한국의 농축 도입에 미칠 영향과 시사점",
@@ -303,7 +431,8 @@
   "source": "세종연구소",
   "shref": "https://www.sejong.org",
   "dt": "2026-07-29T07:00:00+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-29T07:00:00+00:00"
  },
  {
   "title": "[이슈트렌드] 아랍에미리트 DP월드, 호르무즈 우회하는 푸자이라 항만 50년 개발 합의",
@@ -311,7 +440,8 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-29T07:00:00+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-29T07:00:00+00:00"
  },
  {
   "title": "Conflict in Yemen and the Red Sea | Global Conflict Tracker",
@@ -319,6 +449,34 @@
   "source": "Council on Foreign Relations",
   "shref": "https://www.cfr.org",
   "dt": "2026-07-29T07:00:00+00:00",
+  "region": "overseas",
+  "added": "2026-07-29T07:00:00+00:00"
+ },
+ {
+  "title": "Iran’s War With Israel and the United States | Global Conflict Tracker",
+  "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMWduRExjZXhMUjFuYjV4Zzc0LS11OHVKUEhXSlpUNUdFMm9MVGlJeFd5eGh1ZWpEWWhFNEdJX0tOVTlJbnZ5NmpBQ3dYeGNpSTBOSWtISUduak5WSHhfQUhQcHBKbVpLdG1IVi1ySWVGd05NM18yektrem1TM3ZvaV9xVjR2eC04cE9RZ3FZajNCZWFHNzBaS0hhSS02dw?oc=5",
+  "source": "Council on Foreign Relations",
+  "shref": "https://www.cfr.org",
+  "dt": "2026-07-29T07:00:00+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "Conflict With Hezbollah in Lebanon | Global Conflict Tracker",
+  "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa2dvSXpOSjlpUlZOV0hqZXV1c2M1cWVGamQ0b2ttX0d4VTVBUTV6dzRZU1VxY1lXdHpVdGt4eEU5ck56NjY0TWJpNkRMbGVLNl83aFZQMWpnSDJVbFpFMVg4WkRvdHpGdnFfWmx2ejJyV1pTdE9wRWpSY1U2M0d5SnpERkwwczZfRFE?oc=5",
+  "source": "Council on Foreign Relations",
+  "shref": "https://www.cfr.org",
+  "dt": "2026-07-29T07:00:00+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "World in Brief: America intercepts an Iranian attack; SK Hynix shares plunge",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaVFCUWVBNzY1VkxTTmxXNkNRS2lxZVJIcGtIRnNsRTlxbWtxamJXUG9aYUpXeHRaUDVIdE9YTWxRUG5fTU9JemxKLXNDLUpNajZHQ1lUdFpkTldqYWFFSVIwUDRsdDhOR2llT1ZrdmlWMk5hbFllZE5aSUF5Y3dFRDczSy10LUMzM2lwQ2FIc2p0VDV3Rjlv?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-29T05:00:07+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
   "region": "overseas"
  },
  {
@@ -327,7 +485,8 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-29T04:30:43+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-29T04:30:43+00:00"
  },
  {
   "title": "중동 불안 지속에 '유류 탄력세율 인하' 9월 말까지 연장 | 주요뉴스 | 에너지 주요소식 | 소통",
@@ -335,7 +494,26 @@
   "source": "에너지경제연구원",
   "shref": "https://www.keei.re.kr",
   "dt": "2026-07-29T01:58:00+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-29T01:58:00+00:00"
+ },
+ {
+  "title": "World in Brief: Chip stocks fall; Oman’s plan for Strait of Hormuz",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb1U0Wk96Ujg5YmhXb2xDTlFDWHlhUDFPUUh2RktvS1FRMHZiSkxvTkRoakp2eldPZ0N0YnR2N0FveEdpLW5RS0ROLTl0NDRRWmtRcWNwX01mazBtV1ZpTFZ5WEdlMTFKMFRodUdDSUJndTJ5RGZfQzl6TXFIYktpaWh4VnZvSW45VWV1S0NPcEdkTUd6Y3Iw?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-29T01:41:34+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "The Hormuz Conflict and the Limits of Renminbi Internationalization",
+  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQlBkZGZGcEc1ZXlxdTFZakl6NndJTTRyd19mVXNKbGwyR1VXWVlyTkI1UGhzd3FZcFVLWk1kLWtlRlV1X1E2cGlGaENmMzFGMXQyVnBFWWptNHdXNmlTUXZxV1JkSDRMWmZhTU0tb2hseGlBUmVnZHI1V2tJMWtraHNNbmR6MkJ0ZHAzczMwaEg4YXEyaTJxekt4dm5YSXlM?oc=5",
+  "source": "Carnegie Endowment for International Peace",
+  "shref": "https://carnegieendowment.org",
+  "dt": "2026-07-29T00:46:55+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
  },
  {
   "title": "국제유가, 미·이란 대화 낙관론에 사흘째 급락…WTI 79달러로",
@@ -343,20 +521,32 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-28T23:42:26+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-28T23:42:26+00:00"
  },
  {
   "title": "Donald Trump is stalling for time in the war with Iran",
   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdldpTUlvcTJQVzZGa2JpWW5YMVRnaGFPWGd4eks3aVFheWY5MHE1VVpNNGF0SWNCX0tsOXU4RGxEWVpHVW1qSG5uNGVERUd1Y190V1JQTTYzTlptYjRoWU94VGNjSlZHTmRYMkV4RW9MVjN4dkZ3VVFUeEhvZlViaGVWQ19CTzNETkFmNllMaU4yQ2VKTTRkQmFKbnFHVHVWNi1abW9sdk5vX0FSWDRtWUlaNzk?oc=5",
   "source": "The Economist",
   "dt": "2026-07-28T19:36:43+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-28T19:36:43+00:00"
  },
  {
   "title": "New strikes in Iran show the weakness of Donald Trump’s deal",
   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWUhNVHBLel96T2tISlJsZEZpSnJPN25lNVZHekpGQzlHdWF1NThpY2RGV3o3Wk5WMGwxU2hDZFNUQms2eUFMWHZXZTIxSkU5NUdBTUltTUFFOFZKY0stRkhXQ1ltNkhwMnllSDZsLS13VWlNU3BvRExnQmtkNi1OMklYSUJUVkJJcXZtOUh1Q0RzSTZRODdpRDVTdEw0Y0owRGVUVkFHNTFVX3lBOWl5WGVBMG5UWjQxQjdn?oc=5",
   "source": "The Economist",
   "dt": "2026-07-28T19:36:43+00:00",
+  "region": "overseas",
+  "added": "2026-07-28T19:36:43+00:00"
+ },
+ {
+  "title": "World in Brief: Tech sell-off deepens; Oman’s plan for Strait of Hormuz",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZW9HdEZhSFdIdjBGSE9vUndnckpob3U1a0VmWTlUY2M4eHUtWGhJLUQwTHRoVGpMb3Z1dUVQbmdBT2ZwWTNZOHJaM2pwbDdOMU9iVUJBQU5pNHNQZmRKa25YcTdRYVFDZzJzb3RDV0NaZDk3bjdUNTFVWDJXTlFiX09Qc181MVlPX3pKTTZURk9QOUpPbko4?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-28T18:22:19+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
   "region": "overseas"
  },
  {
@@ -364,6 +554,34 @@
   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSVBoNzVNNUgwRGZYeXdWQlZkUkw1bWZuMVpXaDNBb2ItYWsyR0o4cUdsY3ppVXFfdFdUMTIzT1JGRFVsXzdLd1RiR3AwRDVqMDl1TlZ4d0ZuWGQ5czVKdWlmcnV2Vm5NV2MwbjZmZVE2bVdsMjhTV2R2SHpSY3p0U1YwNnJPcHdheGdxcTNRbkhkX3Q3dHFJWmh0ejBoWWhNVkVIcQ?oc=5",
   "source": "Carnegie Endowment for International Peace",
   "dt": "2026-07-28T18:19:03+00:00",
+  "region": "overseas",
+  "added": "2026-07-28T18:19:03+00:00"
+ },
+ {
+  "title": "World in Brief: Oman presents plan for Strait of Hormuz; tech sell-off deepens",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSUxJekJQUnIzeVR0eWpnUlJrWHlzYnhJYlNuNklYSWJia1d6bWp4RHRRUElwQ3pmT3pKRzM3YWpTVjdyXzJYczU0eGxlZ1k2U0ZsQTNwOVQtVHpSVTJvWV9BcDdLeHV2ZXNwNW5ueXJRXzBvRnhEazRBQ1k4dW5WbEpPZ214emNyVHlwaUVRbnd1NURHX2p3?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-28T16:56:58+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "The Saudi Nuclear Deal Would Set a Dangerous New Proliferation Precedent",
+  "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxON2w1TXh2TWJYbFVOWjRDT01oSjZORzk1RVBDN3k0VmNmTDc2MGVZaVAxY2QtNXo4Y0JGb2FYTXRVNURON3poNnVXSUZtQmFiR19kdXVtUmF4cmM0Z1RNa0thTV9tUEtSUndlcWZhV3ptM0d3Mk5hTEIzR0NRbm9lMC14OWs1dWh2RDY0X0tSdVRJQ3k3UW5Kei0xZmc5WFJPZkhz?oc=5",
+  "source": "Council on Foreign Relations",
+  "shref": "https://www.cfr.org",
+  "dt": "2026-07-28T15:42:06+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "World in Brief: Trump says America and Iran are talking; tech sell-off deepens",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOb1g1c01pZGJHUWJ0VGxxNXl6aEpqWnlvNEV6SXdhNXpySVNHR0plUkMzRGQ0Qmxfa3dDMHJZS2VUT2lDZ3hWUGhBUzZ4WUlUeXVxQ2NwaG53SUUtNHpmRU5nZy1DZlAwcXh4QnRuVzB5cXFmd25mY1M2Sko1YXF5N2hUbS0yYjJkS0ZTbF9BeTJPaGRycEw4?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-28T13:05:13+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
   "region": "overseas"
  },
  {
@@ -372,7 +590,8 @@
   "source": "emerics.org",
   "shref": "https://www.emerics.org:446",
   "dt": "2026-07-28T09:20:55+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-28T09:20:55+00:00"
  },
  {
   "title": "정부, 중동리스크에 나프타 긴급 점검…\"8월까지 전년수준 이상\"",
@@ -380,7 +599,17 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-28T09:13:50+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-28T09:13:50+00:00"
+ },
+ {
+  "title": "World in Brief: Trump says America and Iran are talking; wildfires in France and Spain",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVXZiZlNkNHJFTy1nVXB4dndodEpkTWtfa3lFZ3lYTmNDTmYzeWtIZngzRlVweE5abXV6WVU5Sm9JMmE2RGVvVGFOVjdISi16allDUEk5SFNpRDZBbnIweW1DR3NmMlBuRUh3NjlhYVZXb3NVUXBORVZPTmZxQTZBcFNOSzRFcUNZYV9Bc19HbXZxUU8zck5j?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-28T05:36:38+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
  },
  {
   "title": "중동 불안 지속에 '유류 탄력세율 인하' 9월 말까지 연장",
@@ -388,14 +617,25 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-28T04:18:01+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-28T04:18:01+00:00"
  },
  {
   "title": "The Hidden Path to Regime Change in Iran",
   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA1Y1BhSmpXb0RIM1BQUnpTd2M5c01uRkFMTW80cnczTjJUOUc0WDFJWGZROVZfdnJlNkdqa0h1UU9obDhfQ1MyUUpfWm9QVER3RmkyR3M2UXY5bXh6WDhaMFljeUliV1F5YXJTQlkzNjZfX3F2?oc=5",
   "source": "Foreign Affairs",
   "dt": "2026-07-28T04:00:00+00:00",
-  "region": "overseas"
+  "region": "overseas",
+  "added": "2026-07-28T04:00:00+00:00"
+ },
+ {
+  "title": "국제 유가 3일째 하락: 중동 긴장 완화에 WTI 4% 폭락하며 80달러선 하회",
+  "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRnZNdERvRE45aVFtTW1zSGtiTldkaVl5MlRtLTFIeXdvMFF0eTlDRXdsU2l1YU02akxQU281MTdmRzExXy01X2NiXzVNUVJjSjNSNHh2VkJhb0g2ZXB5WGJGWWkzVkJyTEpReC1xaEFtQUFJUGVCU25sUjVrLUNKQVZ4Z2RNT1UwRkk4U3B0RTVBOUFzSmZMbC1VY2J0NWsxQ0dhcENhLXlPQlMwMXFvZ1ZNN0lIZGlGVGVIcGxVWXc2M1VaOTZpYTZZQ0dqVnZDQkdYSDZDZGtBYkNQMEJDSWN5WkRvaGQzd2NrcA?oc=5",
+  "source": "TradingKey",
+  "shref": "https://www.tradingkey.com",
+  "dt": "2026-07-28T03:39:00+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "korea"
  },
  {
   "title": "국제유가, 美 이란공습 중단에 급락…브렌트유 90달러 밑으로 | 주요뉴스 | 에너지 주요소식 | 소통",
@@ -403,7 +643,8 @@
   "source": "에너지경제연구원",
   "shref": "https://www.keei.re.kr",
   "dt": "2026-07-28T01:34:00+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-28T01:34:00+00:00"
  },
  {
   "title": "국제유가, 美 이란공습 중단에 급락…브렌트유 90달러 밑으로",
@@ -411,7 +652,8 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-27T23:35:45+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-27T23:35:45+00:00"
  },
  {
   "title": "중동 긴장 재고조에 국내기업 경기전망 악화…석화 업종 먹구름",
@@ -419,7 +661,44 @@
   "source": "한국무역협회-KITA.NET",
   "shref": "https://www.kita.net",
   "dt": "2026-07-27T23:30:43+00:00",
-  "region": "korea"
+  "region": "korea",
+  "added": "2026-07-27T23:30:43+00:00"
+ },
+ {
+  "title": "World in Brief: Trump says America and Iran are talking; wildfires force more than 300,000 evacuations in France and Spain",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPajZueVF2XzduNG16QmlFOXlzVWJ3V3pKd1Q5Ujk0NzYtbTI4Z0NQaF9GRXVTYU1IVU5VczVCbjBVX0huMy1BaDRoZFBFUXFTX2dvVEw1bEszYUljdm5QbVgxcmVBVTNhY0dkSzlIYVdvdG5UNDRNMTVsTWc2QmEwbU04UzZzZmtxbGoxMGx3WFJsRFRtM0tZ?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-27T16:35:44+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "World in Brief: Iran says it is not seeking peace talks; a Chinese chipmaker’s blockbuster debut",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORkVjNk1xaWFFc045b0xUWkU5SkNLUVMxdDVicU9heUlOSEhfVHk4SGpNbG16b2hGNDMxYlJTLWRRS0xuR2xWSnZsYzgtYnBiTXZFVXhtNi1DeDA1WHFwMlZMMWdadl9hRjU4SVV6eTdTNVIzRzA2U3JDNld1dDNoTUVVZDViNm9CcnVHald5cEpud3E5cXJJ?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-27T09:51:12+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "World in Brief: America’s and Iran’s weekend break; European wildfires",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa2MtLWU5OTh1c2lnaFA1Z1NvS3A3M3luWkYyU0NCLURUNTlBQW8xLVhiaFNMdmtwU1EyUU1qQ2tkTTVSZGVKMFgtekRNdW5zTldPbEo4YURCYVFYbWU4MUJLQTRBdWJzY3BrdV9JOFJiNzNFTndMRzdtUkNNUGJIZHA1cnE5Rk9oa2tNLXhBSU1uNzI0M09B?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-27T08:14:47+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "World in Brief: America’s and Iran’s weekend break; a Chinese chipmaker’s blockbuster debut",
+  "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNUR5el9sOE9HVnRZZGpITks2MU1RVW9tXzF0bnN1VUNKMWpwTXBEbi0wQmpmRHJaWmJJY1FzVk9QeWs5b3VzZ0IySWwzV2Y4VTFEMFZSME1nODhLQkhlVENtOUdfS3IwRXVlamNXYmZVVC1SU2gxcDl5a0lDV3dPNnMxQm1rY0F1Z0dJYTl0a1J5dUVNUHpz?oc=5",
+  "source": "The Economist",
+  "shref": "https://www.economist.com",
+  "dt": "2026-07-27T05:06:21+00:00",
+  "added": "2026-08-02T04:03:29.204204+00:00",
+  "region": "overseas"
  },
  {
   "title": "중동 긴장고조에 국내유가 반등 조짐…최고가격제로 '시간벌기' | 주요뉴스 | 에너지 주요소식 | 소통",
@@ -427,191 +706,7 @@
   "source": "에너지경제연구원",
   "shref": "https://www.keei.re.kr",
   "dt": "2026-07-27T01:40:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "이란 \"전쟁 이래 '휴전기간 65억달러' 등 180억달러 석유 판매\" | 주요뉴스 | 에너지 주요소식 | 소통",
-  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUzBFelBwZmF5QUhQSWdwdVVGRGlZajFUSWNpNlE5M2RYWDRtb3Y0UjZ5TjFOX1lkNGJSVWdRVHk5RDBZTFNvajFSbENoenVEdTNBbm1LNFkwbjY2ZUQ2WmpwTnpnLUNxOGZWQ3N0ZFo2RmFTUm9zWDctbWVuV2MzV1Z2UmYwcUJ4?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-27T01:39:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "후티 \"아람코 석유시설 공격\"…'중동 제2전선' 긴장 고조(종합2보) | 주요뉴스 | 에너지 주요소식 | 소통",
-  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbVpUX2o5aU42STNOOG1iS2oxei1pWk5fUGN6TkZscVlTRHhBSTJ3cndheUU5czl3NE9ZQmh3TnJ2SlNKWHF4SmRlcjJVbHpHdVl6MnR0VVdReUZkRWYyYTZVR24tTVRzQktGYUd3cmVwN0pXUG5LaW1Da3c0NVlVZjdtYV9jUDR4?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-27T01:39:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "▣ 미 정부, 이란산 석유 판매에 대한 일반허가 취소 및 해상 봉쇄 재개",
-  "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBfam11aUxPT0dBMGM3MUZqZ0gyejAxakFjcjJBRTN4NFhKbEVFN1pubXVYQ2JTNUVuQ1RXQ2J2MHp0bE9abDhERlN4VWRMSGxEM2F5czdnckVhNm4zbzFBek9MZENXTkdIUTdjNXBTNEw?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-27T01:01:54+00:00",
-  "region": "korea"
- },
- {
-  "title": "America has few good options for a “massive attack” on Iran",
-  "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRlJrQkIxS1NZR09mLVM4OE9iTjBPU0hjWEh1ZUUtcFFTdHJDbTlMR3NyUC1idUFfT0ZLeWZ3UlZCTTI2UXExbnhQZUJrVkFNNjVmRXFsSVJ4OFdmWjZtREZmZURtLWpuY3Z3bF8xOVpRRGg5THA4RHg4STJIQ080b1Z3RS1JRDduRlZyWnhKQ0ZKVDgybmlWVHZsem1WVWVON0RXcDJlVkZPZ0FqZ25KVFN3NHRKR2Z6?oc=5",
-  "source": "The Economist",
-  "dt": "2026-07-26T12:52:21+00:00",
-  "region": "overseas"
- },
- {
-  "title": "Why the United States and Iran Keep Fighting While They Negotiate",
-  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY0lmdERhOFRyWXhsNW9DWGxEaFNyYUZlaHpQZjNjUHY3LTFWd3YxQW1rS3VZcjBPYkJiQ3Q0NzJXNE1fSHVFRldtQ042bDZEb3kyc0VNRDhPRkh2ZjduSENyejZiRFN5MEVZZFMxaGxNSHpfTkZhVWxjLUdNeS02TTJ1ejI2NERURTVVRktUNXdiS2xtTFE?oc=5",
-  "source": "CSIS | Center for Strategic and International Studies",
-  "dt": "2026-07-24T20:09:04+00:00",
-  "region": "overseas"
- },
- {
-  "title": "The Houthi Red Sea blockade: Will collective maritime security be defended, or break down?",
-  "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZTVHQWRucTNhcGFGMGJvRWttU2ZoNTFEeEcwMDNiMmtWYWVGSllJa0lrMWJvSDdBb2x5SEU3YkM4Q0hldjhmTUhhZVlGSjA3V1FUUy1LNl9lMHRpR2gybl9va0w0ZUZtanRJZUkwOEZwZHdJZnh5bFRiWHppakZfZzVZWkRDcmQtTmlRZkVXZmR0NUoxSjBrM0Jmc3hpanFfejg1ajVXZGlCWmpqVXNOYVpUT1N4ajF6TXdkXw?oc=5",
-  "source": "Chatham House",
-  "dt": "2026-07-24T16:12:40+00:00",
-  "region": "overseas"
- },
- {
-  "title": "2026 중동·아프리카 플랜트 무역사절단",
-  "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQlNGc1NDZk8xTWp0V0xKeFdYeUlsTDRPeU9GY044Y3I0Rk9SY1V1bkQ1WWJ3T1dEaVZhNk82dUgwdERDRHN6UWw4QmN5VzhHX1NXZFpRaWgtM1lQZnF4WnVqbWkwdGF4REc3TXd2RXNNVS1QNVdpTjJpQVp5TXRYdHhoVHFoT2xaQW93dkJVUUFpa1F5VHhzU0RIMG0xalp2UlB0a0s0UERLZm1GZ2UzOE5QSmxQUVE?oc=5",
-  "source": "KOTRA 무역투자24",
-  "shref": "https://www.kotra.or.kr",
-  "dt": "2026-07-24T14:36:08+00:00",
-  "region": "korea"
- },
- {
-  "title": "이라크 총리, 취임 후 첫 이란 방문으로 전략 협력 강화 합의",
-  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQkJIU3p5VTR3YkhOdENhZnp1Y281djgyV1p2NnROWGZiZGVGb2FnaHpVZWJjNEJmTkVhNFM5WTYwUXlvZWtaVkN1MVBBWkNaNi1Yd01NSXEtV1dMU19FYmQtWTl4N2JkUzB0eHRmY1VKb2lDSnJ6WmViT0RTdUsxX0ZtRUxzZlhSUmlpUEVtcENqRG9xMkZPYg?oc=5",
-  "source": "emerics.org",
-  "shref": "https://www.emerics.org:446",
-  "dt": "2026-07-24T09:06:48+00:00",
-  "region": "korea"
- },
- {
-  "title": "Iran and the New Rules of Global Power",
-  "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdmIxQkhSNVE1Ml9EdWdNM25XdTUxS3pTRnNKbzJNNTVISF95MW9aRWNfWHR0amsxMnhPQWo3RHRJeTRrbFQwV3ZlbnljeXRwRThKYmhZR3YxeThlSEFSblJuNWRBTFI3Y01TeXJfeno3WG9VOC02ZVJWNUkybDZQQlN3?oc=5",
-  "source": "Foreign Affairs",
-  "dt": "2026-07-24T04:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "What We Know About the U.S.-Saudi Nuclear Deal",
-  "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOM1JQRWFldERkd085dWhNQlB4SDNNRUNfWVhnS19GRkd4UWIzVHpuajZxd1NQTnBkTEFvMHd4RFVZMVpOVEhDSDA3VU80OUJhbVN4TFpOaHZjQWR5cjJmZ3poNzN5dmtnTE5zQ1A2MkhESUNYUVlhZ012RzNLLWlxbXNmV3Nob0JkYV9PTDFsUXIyLVdvNnM5aFk3eHBFNlE?oc=5",
-  "source": "Carnegie Endowment for International Peace",
-  "dt": "2026-07-23T21:29:10+00:00",
-  "region": "overseas"
- },
- {
-  "title": "Trump Is Triggering a Middle East Nuclear Arms Race",
-  "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQX2pCMEJDTENlLWlpUG1QaVZwZ3JXcjZLeWlrdVVRbnpCV01uTWtmX0VVa0MxREJxdl9oVVQ1eWx3a1ZBTFBCUXpudUFrNjJScVRhdnAyS1VwZVR0cW1MM2JTd1I2VWZYTjVleDNzM1VVUy05cHI1M1U0b20yZktTNm41VkhGQzhicGp1TVpQMXo3Zk1NQThHbDZfaw?oc=5",
-  "source": "Foreign Policy",
-  "dt": "2026-07-23T16:19:54+00:00",
-  "region": "overseas"
- },
- {
-  "title": "The Iran Cease-Fire Was Doomed to Fail",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NSFc2WnhxRS1UZmJ0TGYxVFJVNGFhN2U4TnpCV19hQk40UFJxV3lfQ0FvZ2JwMFUtRWVaSUQtVTdDVHltbFlURWtiRDlpZFpYeFNSQi1pWUlkSGxNT0NneXVyMkM0eGVUOHEyS1pDcGdJZnZxM1E?oc=5",
-  "source": "Foreign Affairs",
-  "dt": "2026-07-22T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "The wishful thinking behind the war with Iran",
-  "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0xZ2tiSWQxZUJvT040UXl2YTU3QXpCY3RrQ1pidTRlNEQzaUkyLVFRbmJVcFN6ZkxJUUVoT2pjN0VSTWVGc2lpNUtqWEhlRnpRZ0VJZzVhbjJXNVRHVjkyS1RCZFZiRFd1RG1xWGFudnpPUTV3VEFqdA?oc=5",
-  "source": "Chatham House",
-  "dt": "2026-07-21T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "To Base or Not to Base: The Iran War Exposes Flaws of U.S. Basing in the Middle East",
-  "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYW1nbGM5c3RKWnY4Mk5kZDU1dzh4aUFCRFBLaXhBbkdZT3FWcENKUTg4UTJIUDJua01oR0ltdGZZQ2pYaFVPTTdKeHZQbzJCNmNzcnpNVUhvbFR6dUR6cHhlSFpkQjAtT05HbmpTRzJBSlJFdUkzS0VsTmtUOUdrMEk3UVcya25VQ2hrZXEySWdRMU9kUV9UcWhDSTY4c19EQ3gzTGEtUU9aSXJjLVNr?oc=5",
-  "source": "Council on Foreign Relations",
-  "dt": "2026-07-21T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "홍해 '원유 생명줄' 막히면…\"한일 등 아시아 수입국 타격\" | 주요뉴스 | 에너지 주요소식 | 소통",
-  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbG9YazFEa0k0bFY1bWtGd2lZY0FtY0ZzNEtnWnQxbHBjcWs5VlBiR0tpVERtdTVodml2Rk9oSDB3Qy1XOU9hWmRCa001clpSdjM5c1NFbUw1QnVocHYyclB4S05PaUlHczFBbTAzdTlDYndMZGNsSTdiYW0xTUFtWG9zc1ZuX3lf?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-21T04:21:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "중동 긴장 고조에 서울 휘발유·경윳값 한 달만에 다시 상승 | 주요뉴스 | 에너지 주요소식 | 소통",
-  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVWs2Z1NEcVIzWGhkbThNRGI1VzFQU21TbG5lOURPVzQ4dW51VW9HOVo4b3FaUmxtNGhySFJfNHpOS3NlZlRRdWhNdVpIdjFfY2s1NjJHUWhTclhlZTRqbHJGRWt1OVdfLVhpTkFqNTNBb05UUmpVd0tjbGd6elVmRUxqNkVfYkRB?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-21T04:20:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "Is the Iran War Entering a Dangerous New Phase?",
-  "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBvVjNiTm1HRVhyN2RXZVhaTVFXdlE3ZjM5VVljd1ZxRUFzT05LdFRQUGlCRzR5SjQzMmxlRzNXQ2xoSl96SllUdFIxMWdEZkxjOV9vWVlKcU01VUFEQWVjZlN3cVE5YXRMWFRqelFxeU9vY1FieXc?oc=5",
-  "source": "CSIS | Center for Strategic and International Studies",
-  "dt": "2026-07-20T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "Can a New Initiative Help the Gulf Region Escape the U.S.-Israel-Iran Trap?",
-  "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPaklvYUk1cWtXYU9HQTdOM0JUREFvOXpRNS1zV1J3Q1J0Q0RicTB4QlgzaDdncGVyQVNWYjRoeUZ5NVRZLWhuc1RtTmp5YkZQS0YwNFNYZDV3YS1SX1k1b1oyenQxTGoyMm1rX0s3SjFQWGNKQnlNV3ZKNGxaaFJmVllCWjFRam9GNjZ1alJ0MWhMNE5pOTdFTUxCWEpjT010alhncm5PQUdhb3ZmSnMwS1V6SXl1NU92YUg3bFU4SDVHNF9PSWc4M2s5emhXVFplWFhXb0NDTTgxcVVramFGTHJLeE10SjluTUdB?oc=5",
-  "source": "International Crisis Group",
-  "dt": "2026-07-20T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "In the Trump Gaza Plan, Diplomatic Failure is Success",
-  "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN01jVDQ0SDBLMktSdWlqcEJ1Mk9sYlNzWlYtRFNLZk42Ry11MEsxNkJtSHJtWnZFbEZBVEoyaG9DMFZVSlRzTkxmNzB4UzRJRGg3cmdMT1hVVlNQUTl4LUVBb2IzMGc5UXBmWmJPdDM3RVljSlVwTmMtZWlGZjRVMmd0WS04MHFRMGJLYXhkV21KWktNaUtHYQ?oc=5",
-  "source": "Carnegie Endowment for International Peace",
-  "dt": "2026-07-20T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "Another Hormuz? What to Know About the Houthi Threat to the Red Sea",
-  "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVGJwUm9MbzR1RUREblM3dEQxcEVsSG11NGVPN1JTczJwY1JhNlIwaDE4MVFrTWo2WWZ6RTI0SlBwNGNEV1pjWlJPZmZLUHZpd3RpWjJZWnJRdlV3akNLR2lrS0N0VlFPRWg5OHc1bVhFdWE1NUhzQW8zRVRVdW1fd1J0bWxtdGFTeVNCV1RR?oc=5",
-  "source": "Council on Foreign Relations",
-  "dt": "2026-07-20T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "국제유가, 미·이란 확전 양상에 4.5%↑…브렌트 90달러 육박 | 주요뉴스 | 에너지 주요소식 | 소통",
-  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWU5GaXpYRmNnVFBSODJaY3YyWkRPUTkzWVViV2VEZ0F5YnVobUFzd3Q5aDRwUkJpaUxvRzV3em5rR0Vza01kNGIzU2FRc0hOelJhMTNWMDdUTDIwYjMwRzN2aURCeWFVdHNTMFF1ZmRBRnV1alpldlhHUWZMWF9NODlfSkVkTjR4?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-20T00:55:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "주유소 기름값 9주째 하락…중동 긴장에 하락폭은 축소 | 주요뉴스 | 에너지 주요소식 | 소통",
-  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNk1oY01ld3lCZHN6SHdLaTdzSnBYNzBrQ3Y2OHZ6cnVrQXRqdEktc1FrVWN5RWF2R2w2dTloOVIzODdVS2pYSlJwNGhSMERnNUJ6UzI1WEpUMlR2TmZ4c2hsYTdFUXZhb0lFYVIwaFB0NWc2VmpPekdvWERPd25vbmRyRW1NaklC?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-20T00:53:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "중동 전쟁 격화…석유 최고가격제 등 비상조치 길어지나 | 주요뉴스 | 에너지 주요소식 | 소통",
-  "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX2xSMlhVVzk4eGpQQWk0am5aNHQycTN0bUEyZnJETUtfenNtT2V3UnVGc2xLNzNfdUVIckdMVTFPSVlaLXJITHBNaU4wbUp2bkQ1ZUI0WmF0X09tWnloRnlZMlJxRW1Sd1VfYlY5NlVFVGdaRzVoUmZNWGJ5Y0g2bGJvR0xHVm5w?oc=5",
-  "source": "에너지경제연구원",
-  "shref": "https://www.keei.re.kr",
-  "dt": "2026-07-20T00:52:00+00:00",
-  "region": "korea"
- },
- {
-  "title": "Yemen’s De Facto Truce at Risk: How to Prevent a Return to War",
-  "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOTRlWWVFeEtsTnQyRzFPUmNNb3AxTEhONHRmcWtndXBDRHlwMFVGYVV6TlBGT19QcURBaHpja21vLWJVS1cwc0p6SjVWUFN0TjFoNnlJYl9LcXk2WmIyOEhmcFotc0pIRFZBbFZ4VEtRVldDMTVic2l2SjVrRUtubnJvNlh6QjF1ek1Zd09iWEVPNVRQa1lNNzUwUzJyMmszNnVRUG81b2xkMFFMRE1ual9XQWI2aG1CbW1tM2tqcVBQUWZMTXdjdWpR?oc=5",
-  "source": "International Crisis Group",
-  "dt": "2026-07-17T07:00:00+00:00",
-  "region": "overseas"
- },
- {
-  "title": "London Conference 2026: A region in flux: The new geopolitics of the Middle East",
-  "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcWVoMEZlZ2djckJLY3NaVl9FNFNIREhVQkdRM21XN0pFY1U3STZmZFYxS29KS3R3aW9wM0RKOTV1SDhPT2dpekw3a0loNXhXVGl1V2ZWZ2VVdVlhTlBrU3lkM1hjUlFDR1NIV1dfUkhoM1ZxOVk2MFk2aTVQVGE4eW81aHJud3RHMjRlN2xhTUFsa1A2YTRFdklqbFRJZXQ0?oc=5",
-  "source": "Chatham House",
-  "dt": "2026-07-16T10:13:39+00:00",
-  "region": "overseas"
+  "region": "korea",
+  "added": "2026-07-27T01:40:00+00:00"
  }
 ]
