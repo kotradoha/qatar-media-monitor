@@ -68,9 +68,10 @@ QATAR_LOCAL_SITES = ["gulf-times.com", "thepeninsulaqatar.com", "dohanews.co",
                      "qatar-tribune.com", "lusailnews.qa", "qna.org.qa", "aljazeera.com"]
 # 이란·역내 + 해외(미국·유럽 등) 매체 — 전 세계 보도를 다루므로 '중동 주제'로 조준
 FOREIGN_MEDIA_SITES = [
-    # 이란·역내
-    "tehrantimes.com", "presstv.ir", "irna.ir", "iranintl.com", "english.alarabiya.net",
+    # 이란·역내(국영·안보·주요 매체 — 당사국 1차 발표 직접 수집)
+    "tehrantimes.com", "presstv.ir", "irna.ir", "en.irna.ir", "iranintl.com", "english.alarabiya.net",
     "tasnimnews.com", "en.mehrnews.com", "farsnews.ir",
+    "en.isna.ir", "nournews.ir", "iribnews.ir", "irandaily.ir", "iranpress.com", "defapress.ir",
     # 해외(미국·유럽 등)
     "cnn.com", "edition.cnn.com", "reuters.com", "bbc.com", "apnews.com", "theguardian.com", "nytimes.com",
     "bloomberg.com", "wsj.com", "ft.com", "washingtonpost.com", "economist.com",
@@ -213,9 +214,14 @@ REPORT_HINTS = [
 ]
 
 
-# 이란·역내 매체
+# 이란·역내 매체(당사국 1차·정통 보도가 '이란' 칸에서 빠지지 않도록 국영·안보·주요 매체를 폭넓게 포함)
 IRAN_SOURCES = ["tehran times", "press tv", "presstv", "irna", "mehr", "fars", "isna",
-                "al-alam", "alalam", "iran international", "iranintl", "tasnim", "kayhan"]
+                "al-alam", "alalam", "iran international", "iranintl", "tasnim", "kayhan",
+                # 군사·안보·국영 1차 소스(격추·교전·성명 등 당사국 발표가 여기서 나옴)
+                "sepah news", "sepahnews", "nour news", "nournews", "irib", "iribnews",
+                "defa press", "defapress", "iran daily", "irandaily", "ilna", "shargh",
+                "etemad", "jam-e jam", "hamshahri", "young journalists club", "yjc",
+                "khamenei", "president.ir", "iran press", "iranpress"]
 
 # 해외(미국·유럽·글로벌·역내 기타) 매체 — 제목이 한글이어도(한국어판·번역 제목) 국내가 아닌 '해외'로 분류.
 # ※ 짧고 모호한 토큰(ap, rt, dw 단독 등)은 오탐 방지를 위해 쓰지 않고, 구별되는 문자열만 사용.
