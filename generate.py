@@ -1179,6 +1179,12 @@ def gemini_issues(pool, win_label, weekly=False):
         "④물류·해상안전 ⑤경제·통상 ⑥항공·교민안전 의 순서를 가급적 따르되, 사안의 **시급성·중요성·파급효과**가 높은 사안을 "
         "그 순서보다 앞으로 유연하게 배치하세요. "
         "(예: 카타르항공 운항 차질 등 '항공·교민' 사안은 특별히 심각·시급하지 않는 한 뒤쪽에 배치.)\n"
+        "【에너지·LNG·공급망 필수 사안화(최우선)】 카타르는 세계 최대 LNG 수출국이자 한국의 핵심 LNG·에너지 공급원이므로, "
+        "다음에 관한 유의미한 기사가 하나라도 있으면 **반드시 '에너지·LNG·공급망'을 별도의 독립 사안으로 포착**하세요(군사·해상안전·확전 사안에 흡수·병합해 뭉개지 말 것): "
+        "①카타르 LNG 생산능력·수출·라스라판 등 시설·LNG 수송선(호르무즈 통항 포함)·불가항력·증산/확장 계획, "
+        "②국제유가(브렌트·WTI)·천연가스·나프타 등 에너지 가격 급변, "
+        "③이에 따른 한국 영향 — 산업통상자원부 등 정부의 수급 점검·대응, 국내 정유·석유화학·가스 등 산업·원가·수출 영향, 공급망·프로젝트 리스크. "
+        "이는 주카타르대사관·KOTRA의 핵심 관심사로, 관련 기사가 있으면 상위권 우선순위 사안으로 반드시 다루고 핵심 수치(생산능력 비중·기간, 유가 가격·변동폭, 물동량 등)를 요약에 충실히 담으세요.\n"
         "【정보원 우선순위·편향 방지】 중동 정세는 **사건 당사국 매체(카타르 현지·이란·이스라엘·걸프)와 CNN·Reuters·AP·AFP·Bloomberg·BBC·Al Jazeera·이란 국영매체(Press TV/Tasnim/Mehr/IRNA) 등 국제 1차·속보 매체가 원(原)보도처**인 경우가 대부분입니다. "
         "**미국이 어떻다·이란이 어떻다·중동에서 무슨 일이 있었다 류의 국제 현안은 그 당사국·현지·국제 통신사가 가장 먼저·정확히 보도**하며, "
         "**한국 언론(연합뉴스·YTN·KBS·MBC·SBS·조선·중앙·동아 등)은 이들 외신을 전재·인용하는 2차(전달) 매체인 경우가 많습니다.** "
@@ -1321,6 +1327,44 @@ def translate_issues(issues, lang):
     return issues
 
 
+_GOV_ACTOR_KW = ["prime minister", "pm ", " pm", "emir", "amir", "foreign minister",
+                 "minister of foreign", "interior minister", "minister of interior",
+                 "defense minister", "minister of defense", "cabinet", "mofa",
+                 "qatarenergy", "qatar energy", "gco"]
+_GOV_ACTOR_KO = ["총리", "외교장관", "외교부", "내무장관", "내무부", "에미르", "국왕",
+                 "국방장관", "국방부", "각료", "장관"]
+_GOV_WAR_KW = ["iran", "war", "strike", "ceasefire", "truce", "de-escalat", "deescalat",
+               "tension", "dialogue", "diplomacy", "mediat", "nuclear", "hormuz",
+               "escalat", "gulf security"]
+_GOV_WAR_KO = ["이란", "전쟁", "긴장", "중재", "정전", "휴전", "공습", "핵", "호르무즈",
+               "확전", "외교", "대화"]
+
+def _gov_kw_fallback(qpool):
+    """AI 추출이 빈 배열을 주더라도, 카타르 정부 인사(총리·장관·에미르 등)+전쟁/긴장 키워드가
+    뚜렷한 기사가 있으면 조용히 비우지 않도록 하는 결정론적 안전장치. 최대 3개 출처 링크를 담은
+    안내성 불릿 1개를 반환(없으면 [])."""
+    hits, seen, links = [], set(), []
+    for x in qpool:
+        t = x.get("title") or ""
+        low = t.lower()
+        actor = any(k in low for k in _GOV_ACTOR_KW) or any(k in t for k in _GOV_ACTOR_KO)
+        war = any(k in low for k in _GOV_WAR_KW) or any(k in t for k in _GOV_WAR_KO)
+        if actor and war and x.get("link"):
+            hits.append(x)
+    for x in hits:
+        k = x.get("link")
+        if k and k not in seen:
+            seen.add(k)
+            links.append((x.get("source", ""), k))
+        if len(links) >= 3:
+            break
+    if not links:
+        return []
+    return [{"t": "카타르 정부(총리·외교장관·내무부 등)의 전쟁·긴장 완화 관련 동향이 언론에 보도됨 — "
+                  "상세 내용은 우측 출처 및 하단 전체 기사 목록에서 확인 요망(자동 감지).",
+             "links": links}]
+
+
 def gemini_qatar_gov(pool, win_label):
     """카타르 '정부' 공식 동향만 별도 경량 추출(코어 이슈 로직과 분리). 카타르 관련 기사만 대상.
     반환: [{"t": 한국어 불릿, "links": [(매체, url), ...]}] 리스트(없으면 [])."""
@@ -1328,7 +1372,7 @@ def gemini_qatar_gov(pool, win_label):
     if not qpool:
         return []
     lines = []
-    for i, x in enumerate(qpool[:40]):
+    for i, x in enumerate(qpool[:80]):
         d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
         desc = (x.get("desc") or "")[:DESC_MAX]
         lines.append(f"{i}: ({x['source']}, {d}) {x['title']} :: {desc}")
@@ -1337,6 +1381,7 @@ def gemini_qatar_gov(pool, win_label):
         "대상: 카타르 국왕(에미르)·총리·외교부(MOFA)·국방부·내무부·정부커뮤니케이션실(GCO)·카타르에너지(QatarEnergy)·QNA(국영통신)의 "
         "**전쟁·이란 정세 관련** 공식 성명·발표·결정·조치 — 예: 전쟁 관련 중재·외교, 공습·정전·핵협상에 대한 지지/규탄/우려 성명, 자국민·교민 안전조치·여행/영공 공지, 에너지·LNG·불가항력 관련 공식 입장, 대이란 제재·추방 등. "
         "**카타르가 참여·서명한 GCC(걸프협력회의)·아랍연맹 공동성명이나 정상·외교장관 회의 결과도 카타르 정부의 공식 동향으로 포함**하세요(전쟁 관련일 때). "
+        "【반드시 포함해야 하는 예시】 총리·외교장관이 전쟁 당사국이나 역내국(이집트·쿠웨이트·사우디·요르단 등)에 대화·긴장완화·확전 저지를 촉구/협의하는 발언·통화·회담, 내무장관 등 각료가 이란 측 카운터파트와 갖는 통화, 에미르·GCO·MOFA의 전쟁·정세 관련 성명 — 이런 총리/장관/에미르의 전쟁·긴장완화 관련 공식 발언·통화·중재는 '의례적 외교'가 아니라 **핵심 정부 동향이므로 반드시 포함**하세요. "
         "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
         "**전쟁과 무관한 의례적 외교(축전·조전·일반 정상회담 등)·일반 정세·타국 발표·언론 논평은 제외**하고, **전쟁 관련으로 카타르 정부가 실제로 한 것**만. "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
@@ -1347,11 +1392,11 @@ def gemini_qatar_gov(pool, win_label):
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
     out = gemini_generate(prompt, json_mode=True)
     if not out:
-        return []
+        return _gov_kw_fallback(qpool)
     try:
         g = json.loads(out).get("gov")
         if not isinstance(g, list):
-            return []
+            return _gov_kw_fallback(qpool)
         res = []
         for item in g[:3]:
             if not isinstance(item, dict):
@@ -1370,10 +1415,10 @@ def gemini_qatar_gov(pool, win_label):
                 if len(links) >= 3:
                     break
             res.append({"t": t, "links": links})
-        return res
+        return res or _gov_kw_fallback(qpool)
     except Exception as ex:
         print(f"[warn] qatar_gov parse failed: {ex}")
-    return []
+    return _gov_kw_fallback(qpool)
 
 
 def translate_gov(gov, lang):
@@ -1562,6 +1607,14 @@ def _ql_key(item):
 # ── 중동 전쟁 주요 일지(타임라인) — 공신력 있는 공개 출처(CFR·Wikipedia '2026 Iranian strikes on Qatar'·Stars and Stripes 등) 기반, 최신순.
 # 새 사건이 생기면 이 리스트 맨 앞에 dict 하나만 추가하면 됨. q=True는 카타르 직접 관련.
 TIMELINE = [
+  {"d": "2026-08-03", "q": False,
+   "ko": "미·이란, 새 협상 월요일(8/4) 재개 발표 — 트럼프가 대이란 공습 취소에 이어 협상 시작을 예고하고, 이란은 '호르무즈 60일 개방' 양해각서(MoU) 이행을 미국에 촉구. 다만 이란 외무부는 이번 이해가 호르무즈 재개방 '그린라이트'는 아니라며 선을 그어 호르무즈는 여전히 폐쇄. 협상 기대에 국제유가(브렌트) 7%가량 급락해 80달러대.",
+   "en": "US and Iran to resume talks Monday (8/4) — after the cancelled strike, Trump signals negotiations will begin and Iran urges Washington to honour a '60-day Hormuz opening' MoU. Iran's foreign ministry stresses the understanding is not a 'green light' to reopen Hormuz, which stays closed; Brent crude falls ~7% into the $80s on de-escalation hopes.",
+   "ar": "استئناف المحادثات بين واشنطن وطهران الاثنين (4/8) — بعد إلغاء الضربة، يلمّح ترامب إلى بدء المفاوضات وتحثّ إيران واشنطن على احترام مذكرة تفاهم 'فتح هرمز 60 يوماً'. وتؤكد الخارجية الإيرانية أن التفاهم ليس 'ضوءاً أخضر' لإعادة فتح هرمز الذي يبقى مغلقاً؛ ويهبط خام برنت نحو 7% إلى نطاق الثمانينيات على آمال خفض التصعيد."},
+  {"d": "2026-08-03", "q": True,
+   "ko": "카타르 LNG 생산능력 타격 평가 보도 — 이란 공격 여파로 카타르 LNG 생산능력의 약 17%가 최대 5년간 상실될 수 있다는 QatarEnergy 측 평가가 전해지고, 카타르가 LNG 증산(확장) 계획을 2027년으로 연기한 것으로 보도됨(단일·2차 매체 보도, 교차확인 필요). 6월 알카비 장관의 '수출능력 영향 없음' 언급과 배치되는 부정적 전망으로, 세계 최대 LNG 수출국의 공급 차질 장기화 우려.",
+   "en": "Report: blow to Qatar's LNG capacity — Iran's attacks could wipe out about 17% of Qatar's LNG capacity for up to five years per a QatarEnergy assessment cited in reports, with Qatar said to push its LNG expansion to 2027 (single/secondary sourcing, needs cross-checking). The pessimistic outlook contrasts with Energy Minister Al Kaabi's June remark of 'no impact on export capacity,' raising fears of prolonged disruption from the world's top LNG exporter.",
+   "ar": "تقارير: ضربة لطاقة قطر من الغاز المسال — قد تُفقد هجمات إيران نحو 17% من طاقة قطر لإنتاج الغاز المسال لمدة تصل إلى خمس سنوات وفق تقدير لشركة قطر للطاقة ورد في تقارير، مع أنباء عن إرجاء قطر توسّعها في الغاز المسال إلى 2027 (مصدر واحد/ثانوي، يحتاج تحققاً). ويتناقض هذا التوقّع المتشائم مع قول الوزير الكعبي في يونيو بعدم التأثير على طاقة التصدير."},
   {"d": "2026-08-01", "q": False, "note": {"ko": "미국시각", "en": "U.S. time", "ar": "بتوقيت أمريكا"},
    "ko": "트럼프, 이란 추가 대규모 공습 전격 취소 발표 — '합의의 윤곽' 마련·이란 등의 보류 요청 수용, 호르무즈 전면 개방과 '핵 위협' 종식을 조건으로 제시.",
    "en": "Trump abruptly cancels a planned large-scale strike on Iran, citing agreed 'parameters of a deal' and Tehran's request for a pause; sets full reopening of Hormuz and ending the 'nuclear threat' as conditions.",
@@ -1814,9 +1867,9 @@ var b=document.getElementById('tldl');if(b)b.addEventListener('click',dl);
 _MON_SCRIPT = r"""(function(){
 var URLBASE='https://kotradoha.github.io/qatar-media-monitor/';
 var I18={
-ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약한 참고용 모니터링 결과입니다. 뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, 심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. 수집·요약은 각 매체가 공개한 제목과 요약 발췌(스니펫)를 근거로 하며, 유료 구독·멤버십 매체의 기사 전문은 제공된 원문 링크를 통해 독자께서 해당 매체에 직접 로그인·구독하셔야 열람하실 수 있습니다. 수집된 기사는 Anthropic Claude(Sonnet 5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역하며, 전 과정은 GitHub Actions로 하루 두 번(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. 자동 수집 특성상 일부 기사·보고서가 누락될 수 있으니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다.',fname:'카타르_언론모니터링'},
-en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'This reference monitoring digest automatically collects and summarizes public media reporting and institutional materials from Qatar, Iran, other key countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports are collected by directly targeting the domains of research institutes and international organizations at home and abroad. Collection and summarization rely on the headlines and summary snippets each outlet has made public; the full text of paid-subscription or membership articles can only be viewed by logging in or subscribing directly to that outlet via the provided original links. Collected articles are automatically classified and summarized by issue and translated into English and Arabic by Anthropic Claude (Sonnet 5), and the whole process runs and publishes automatically twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. Given the nature of automated collection, some articles or reports may be missing, so please re-verify important issues against the original sources and additional searches.',fname:'Qatar_Media_Monitor'},
-ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'هذا الموجز المرجعي يجمع ويلخّص تلقائيًا التقارير الإعلامية العامة ومواد الجهات المعنية من قطر وإيران ودول رئيسية أخرى وكوريا. تُجمع الأخبار عبر استعلام موجزات Google News RSS وبحث Naver News وموجزات RSS للوسائل (مثل الجزيرة وBBC) بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ أما التقارير المعمّقة فتُجمع باستهداف نطاقات مراكز الأبحاث والمنظمات الدولية داخليًا وخارجيًا مباشرةً. يستند الجمع والتلخيص إلى العناوين ومقتطفات الملخصات التي تنشرها كل وسيلة؛ ولا يمكن الاطلاع على النص الكامل لمقالات الوسائل المدفوعة إلا بتسجيل الدخول أو الاشتراك مباشرةً لدى تلك الوسيلة عبر الروابط الأصلية المتاحة. تُصنّف المقالات المجمّعة وتُلخّص حسب القضية وتُترجم إلى الإنجليزية والعربية بواسطة Anthropic Claude (Sonnet 5)، وتُنفَّذ العملية بأكملها وتُنشر تلقائيًا مرتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. ونظرًا لطبيعة الجمع الآلي قد تغيب بعض المقالات أو التقارير، لذا يُرجى إعادة التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية.',fname:'rasd_iaalam_qatar'}};
+ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 카타르·이란·한국 등의 공개 언론 보도와 유관기관 자료를 Google·네이버 뉴스 및 알자지라·BBC 등 매체 RSS와 연구기관 도메인에서 카타르·중동·에너지 등 키워드로 자동 수집·요약한 참고용 결과입니다. 각 매체가 공개한 제목·요약(스니펫)을 근거로 하며, 유료 매체 전문은 원문 링크를 통해 직접 로그인·구독하셔야 열람하실 수 있습니다. 수집 기사는 Anthropic Claude(Sonnet 5)가 이슈별로 분류·요약하고 영어·아랍어로 번역하며, GitHub Actions로 하루 두 번(카타르 시각 07:00·15:30) 자동 게시됩니다. 자동 수집 특성상 일부가 누락될 수 있으니 중요한 이슈는 원문으로 재확인하시기 바랍니다.',fname:'카타르_언론모니터링'},
+en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'This reference digest automatically collects and summarizes public media reporting and institutional materials from Qatar, Iran, Korea and other key countries, gathered from Google and Naver News, outlet RSS feeds (Al Jazeera, BBC, etc.) and research-institute domains using keywords such as Qatar, the Middle East and energy. It relies on the headlines and summary snippets each outlet publishes; the full text of paid outlets can only be viewed by logging in or subscribing directly via the original links. Collected articles are classified, summarized and translated into English and Arabic by Anthropic Claude (Sonnet 5), and published automatically twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. As collection is automated, some items may be missing, so please re-verify important issues against the original sources.',fname:'Qatar_Media_Monitor'},
+ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'هذا الموجز المرجعي يجمع ويلخّص تلقائيًا التقارير الإعلامية العامة ومواد الجهات المعنية من قطر وإيران وكوريا ودول رئيسية أخرى، مجمّعة من Google وNaver News وموجزات RSS للوسائل (الجزيرة، BBC، وغيرها) ونطاقات مراكز الأبحاث بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة. يستند إلى العناوين ومقتطفات الملخصات التي تنشرها كل وسيلة؛ ولا يمكن الاطلاع على النص الكامل للوسائل المدفوعة إلا بتسجيل الدخول أو الاشتراك مباشرةً عبر الروابط الأصلية. تُصنّف المقالات وتُلخّص وتُترجم إلى الإنجليزية والعربية بواسطة Anthropic Claude (Sonnet 5)، وتُنشر تلقائيًا مرتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. ونظرًا لطبيعة الجمع الآلي قد تغيب بعض العناصر، لذا يُرجى إعادة التحقق من القضايا المهمة عبر المصادر الأصلية.',fname:'rasd_iaalam_qatar'}};
 var LANG=(document.documentElement.lang||'ko'); var T=I18[LANG]||I18.ko; var RTL=(LANG==='ar');
 function txt(e){return e?(e.textContent||'').replace(/\s+/g,' ').trim():'';}
 function scrape(){
@@ -1911,25 +1964,26 @@ function exportXlsx(){
   dl(buildXlsx([sheet1,sheet2]),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',fnbase(D)+'.xlsx');
 }
 // ===== DOCX =====
-function wp(text,opt){opt=opt||{};var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(opt.hang?'<w:ind w:left="'+opt.hang+'" w:hanging="'+opt.hang+'"/>':'')+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+(opt.sb||opt.sa?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa?'w:after="'+opt.sa+'"':'')+'/>':'')+'</w:pPr>';
+function wp(text,opt){opt=opt||{};var B=opt.bul||0;var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(B?'<w:tabs><w:tab w:val="left" w:pos="'+B+'"/></w:tabs><w:ind w:left="'+B+'" w:hanging="'+B+'"/>':(opt.hang?'<w:ind w:left="'+opt.hang+'" w:hanging="'+opt.hang+'"/>':''))+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+(opt.sb||opt.sa?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa?'w:after="'+opt.sa+'"':'')+'/>':'')+'</w:pPr>';
   var rPr='<w:rPr>'+(opt.b?'<w:b/>':'')+(opt.sz?'<w:sz w:val="'+opt.sz+'"/>':'')+(opt.color?'<w:color w:val="'+opt.color+'"/>':'')+(RTL?'<w:rtl/>':'')+'</w:rPr>';
-  return '<w:p>'+pPr+'<w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r></w:p>';}
+  var runs=B?('<w:r>'+rPr+'<w:t xml:space="preserve">\u2022</w:t><w:tab/></w:r><w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r>'):('<w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r>');
+  return '<w:p>'+pPr+runs+'</w:p>';}
 function cellXml(w,paras){return '<w:tc><w:tcPr><w:tcW w:w="'+w+'" w:type="dxa"/><w:tcMar><w:top w:w="60" w:type="dxa"/><w:bottom w:w="60" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tcMar></w:tcPr>'+(paras||'<w:p/>')+'</w:tc>';}
 function exportDocx(){
-  var D=scrape();var LW=7000,RW=2500;
+  var D=scrape();var LW=7138,RW=2500;
   var body='';
   body+=wp(D.title,{b:true,sz:32,align:'center',sa:60});
   body+=wp((D.edn?D.edn+'   ':'')+T.lUpd+': '+D.updated+'   '+T.lPer+': '+D.period,{sz:18,color:'666666',align:'center',sa:160});
   D.issues.forEach(function(e,i){
     body+=wp((i+1)+'. '+e.theme,{b:true,sz:24,sb:160,sa:60});
-    var left=e.sum.map(function(b){return wp('• '+b,{sz:19,sa:40,align:'both',hang:230});}).join('')||'<w:p/>';
+    var left=e.sum.map(function(b){return wp(b,{sz:19,sa:40,align:'both',bul:180});}).join('')||'<w:p/>';
     var mm=[];var seen={};e.arts.forEach(function(a){if(a.src&&!seen[a.src]){seen[a.src]=1;mm.push(a.src);}});
     var right=mm.map(function(s){return wp('· '+s,{sz:17,color:'444444',sa:20});}).join('')||'<w:p/>';
-    body+='<w:tbl><w:tblPr><w:tblW w:w="9500" w:type="dxa"/><w:tblInd w:w="0" w:type="dxa"/>'+(RTL?'<w:bidiVisual/>':'')+'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="D0D0D0"/><w:left w:val="single" w:sz="4" w:color="D0D0D0"/><w:bottom w:val="single" w:sz="4" w:color="D0D0D0"/><w:right w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideH w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideV w:val="single" w:sz="4" w:color="D0D0D0"/></w:tblBorders><w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="'+LW+'"/><w:gridCol w:w="'+RW+'"/></w:tblGrid><w:tr>'+cellXml(LW,left)+cellXml(RW,'<w:p><w:pPr>'+(RTL?'<w:bidi/>':'')+'</w:pPr><w:r><w:rPr><w:b/><w:sz w:val="16"/><w:color w:val="888888"/>'+(RTL?'<w:rtl/>':'')+'</w:rPr><w:t xml:space="preserve">'+X(T.wMedia)+'</w:t></w:r></w:p>'+right)+'</w:tr></w:tbl>';
+    body+='<w:tbl><w:tblPr><w:tblW w:w="9638" w:type="dxa"/><w:tblInd w:w="0" w:type="dxa"/>'+(RTL?'<w:bidiVisual/>':'')+'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="D0D0D0"/><w:left w:val="single" w:sz="4" w:color="D0D0D0"/><w:bottom w:val="single" w:sz="4" w:color="D0D0D0"/><w:right w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideH w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideV w:val="single" w:sz="4" w:color="D0D0D0"/></w:tblBorders><w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="'+LW+'"/><w:gridCol w:w="'+RW+'"/></w:tblGrid><w:tr>'+cellXml(LW,left)+cellXml(RW,'<w:p><w:pPr>'+(RTL?'<w:bidi/>':'')+'</w:pPr><w:r><w:rPr><w:b/><w:sz w:val="16"/><w:color w:val="888888"/>'+(RTL?'<w:rtl/>':'')+'</w:rPr><w:t xml:space="preserve">'+X(T.wMedia)+'</w:t></w:r></w:p>'+right)+'</w:tr></w:tbl>';
   });
-  body+=wp(T.note,{sz:16,color:'777777',sb:70});
-  body+=wp('- '+T.org,{sz:16,color:'777777',sb:60});
-  body+=wp('- '+URLBASE,{sz:16,color:'777777',align:'right'});
+  body+=wp(T.note,{sz:16,color:'777777',sb:70,align:'both'});
+  body+=wp('- '+T.org,{sz:16,color:'777777',sb:60,align:'right'});
+  body+=wp('('+URLBASE+')',{sz:16,color:'777777',align:'right'});
   var sect='<w:sectPr>'+(RTL?'<w:bidi/>':'')+'<w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr>';
   var doc='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>'+body+sect+'</w:body></w:document>';
   var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>';
@@ -2149,7 +2203,7 @@ TEMPLATE = """<!DOCTYPE html>
   .lang{{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;border:1px solid var(--line);border-radius:8px;padding:2px}}
   .langbtn{{position:relative;font-size:12.5px;font-weight:600;padding:5px 12px;border:none;border-radius:6px;background:transparent;color:var(--muted);text-decoration:none;white-space:nowrap;text-align:center;box-sizing:border-box}}
   .lang .langbtn:not(:first-child)::before{{content:"";position:absolute;inset-inline-start:-2px;top:25%;bottom:25%;width:1px;background:var(--line)}}
-  .langbtn.on{{background:var(--accent);color:#fff}}
+  .langbtn.on{{background:transparent;color:#fff}}.langbtn.on::after{{content:"";position:absolute;inset:3px;background:var(--accent);border-radius:6px;z-index:-1}}
   .langbtn:hover{{color:var(--txt)}}
   .langbtn.on:hover{{color:#fff}}
   .dot{{width:10px;height:10px;border-radius:50%;background:var(--green);animation:p 2s infinite}}
@@ -2416,7 +2470,7 @@ TIMELINE_PAGE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <style>
-  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--gold:#f2b134}}
+  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--gold:#f2b134;--qmaroon:#8A1538}}
   @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85}}}}
   *{{box-sizing:border-box}}
   body{{margin:0;background:var(--bg);color:var(--txt);
@@ -2438,10 +2492,10 @@ TIMELINE_PAGE = """<!DOCTYPE html>
   .tldate .tly{{display:block;font-size:11px;color:var(--muted);font-weight:700}}
   .tldate .tlmd{{display:block;font-size:13px;font-weight:800;color:var(--txt);white-space:nowrap}}
   .tldot{{position:absolute;inset-inline-start:94px;top:4px;width:11px;height:11px;border-radius:50%;
-    background:var(--accent);border:2px solid var(--bg);z-index:1}}
+    background:var(--qmaroon);border:2px solid var(--bg);z-index:1}}
   .tlbody{{font-size:13.5px;line-height:1.6;color:var(--txt);word-break:keep-all}}
   .tlnote{{color:var(--muted);font-weight:400}}
-  .tlrow.q .tldot{{background:var(--gold);width:13px;height:13px;inset-inline-start:93px;top:3px}}
+  .tlrow.q .tldot{{background:#fff;border:2px solid var(--qmaroon);width:13px;height:13px;inset-inline-start:93px;top:3px}}
   .tlrow.q .tlbody{{font-weight:600}}
   .tlq{{display:inline-block;font-size:10px;font-weight:800;color:#111;background:var(--gold);
     border-radius:5px;padding:0 6px;margin-inline-end:6px;vertical-align:middle;white-space:nowrap}}
