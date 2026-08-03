@@ -437,6 +437,7 @@ LANG = {
            "수집·요약은 각 매체가 공개한 제목과 요약 발췌(스니펫)를 근거로 하며, 유료 구독·멤버십 매체의 기사 전문은 제공된 원문 링크를 통해 독자께서 해당 매체에 직접 로그인·구독하셔야 열람하실 수 있습니다. "
            "수집된 기사는 Anthropic Claude(Sonnet 5) AI가 이슈별로 자동 분류·요약하고 영어·아랍어로 번역하며, "
            "전 과정은 GitHub Actions로 하루 두 번(카타르 시각 07:00·15:30) 자동 실행·게시됩니다. "
+           "또한 정세 관련 카타르 정부 동향 섹션은 카타르 국왕(에미르)·총리·외교부·국방부·내무부·정부커뮤니케이션실(GCO)·카타르에너지·국영통신(QNA) 등 카타르 정부·국영기관의 전쟁·정세 관련 공식 성명·발표·조치만 별도로 선별해 정리한 항목입니다. "
            "자동 수집 특성상 일부 기사·보고서들이 누락될 수 있사오니, 중요한 이슈는 각 원문과 추가 검색을 통해 재확인하시기 바랍니다."),
   "sign": "- 주카타르대사관 Commercial Section · 도하무역관", "org": "주카타르대사관 Commercial Section · 도하무역관",
   "ago_min": "{n}분 전", "ago_hr": "{n}시간 전", "ago_day": "{n}일 전",
@@ -489,7 +490,7 @@ LANG = {
            "for subscription or paywalled outlets, the full article can be opened through the provided source link only after the reader signs in or subscribes to that outlet directly. "
            "The collected articles are automatically clustered and summarized by issue, "
            "and translated into English and Arabic, by Anthropic Claude (Sonnet 5) AI. The whole process runs and publishes automatically "
-           "twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. Owing to automated collection some articles or reports may be missed, "
+           "twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. The Qatar government activity section separately curates only official statements, announcements and actions on the war and regional situation by Qatar government and state entities — the Emir, the Prime Minister, the ministries of Foreign Affairs, Defense and Interior, the Government Communications Office (GCO), QatarEnergy and the state news agency (QNA). Owing to automated collection some articles or reports may be missed, "
            "so please re-verify important issues against the original sources and further searches."),
   "sign": "- Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha", "org": "Embassy of the Republic of Korea in Qatar, Commercial Section · KOTRA Doha",
   "ago_min": "{n}m ago", "ago_hr": "{n}h ago", "ago_day": "{n}d ago",
@@ -540,6 +541,7 @@ LANG = {
            "أمّا النص الكامل لوسائل الاشتراك المدفوع فلا يُتاح الاطلاع عليه إلا عبر رابط المصدر المرفق وبعد أن يسجّل القارئ دخوله أو يشترك في تلك الوسيلة مباشرةً. "
            "وتُصنَّف المقالات المجمّعة وتُلخَّص تلقائيًا حسب القضية وتُترجَم إلى الإنجليزية والعربية "
            "بواسطة Anthropic Claude (Sonnet 5) للذكاء الاصطناعي. وتُنفَّذ العملية بأكملها وتُنشَر تلقائيًا مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. "
+           "ويُفرد قسم نشاط الحكومة القطرية البيانات والإعلانات والإجراءات الرسمية المتعلقة بالحرب والأوضاع الإقليمية الصادرة عن حكومة قطر وجهاتها الرسمية فقط — الأمير ورئيس مجلس الوزراء ووزارات الخارجية والدفاع والداخلية ومكتب الاتصال الحكومي (GCO) وقطر للطاقة ووكالة الأنباء القطرية (قنا). "
            "ونظرًا لطبيعة الجمع التلقائي قد تُغفل بعض المقالات أو التقارير، لذا يُرجى التحقق من القضايا المهمة عبر المصادر الأصلية وعمليات بحث إضافية."),
   "sign": "- سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة", "org": "سفارة جمهورية كوريا لدى قطر، القسم التجاري · كوترا الدوحة",
   "ago_min": "منذ {n} د", "ago_hr": "منذ {n} س", "ago_day": "منذ {n} ي",
