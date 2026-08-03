@@ -156,7 +156,7 @@ REPORT_HINTS = [
     # 국책·공공 연구기관
     "대외경제정책연구원", "kiep", "emerics", "이머릭스", "신흥지역정보", "한국개발연구원", "kdi", "에너지경제연구원", "keei",
     "국제금융센터", "kcif", "산업연구원", "kiet", "국립외교원", "ifans",
-    "아산정책", "asan", "세종연구소", "sejong", "한국무역협회", "kita", "국제무역통상연구원",
+    "아산정책", "asan", "세종연구소", "sejong",
     "가스공사", "kogas", "석유공사", "knoc", "오피넷", "opinet",
     "수출입은행", "koreaexim", "무역보험공사", "ksure", "kotra", "코트라",
     # 민간·금융 연구소
@@ -670,7 +670,7 @@ _REPORT_SUBS, _REPORT_REGEXES = _build_report_matchers()
 REPORT_DOMAINS = [
     # 한국 국책·공공·민간 연구기관
     "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
-    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "asaninst.org", "sejong.org", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
     "koreaexim.go.kr", "ksure.or.kr", "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "seri.org",
     "lgbr.co.kr", "posri.re.kr", "hanaif.re.kr", "kcmi.re.kr",
     # 해외 연구기관·국제기구·에너지
@@ -693,7 +693,7 @@ def _domain_is_report(shref):
 # (기관 자체 RSS는 robots/비표준으로 확인이 어려워, 발행처 도메인을 직접 겨냥하는 방식으로 연결)
 KO_REPORT_SITE_DOMAINS = [
     "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
-    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "asaninst.org", "sejong.org", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
     "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "posri.re.kr", "kcmi.re.kr",
 ]
 
@@ -705,7 +705,23 @@ def is_report_source(src):
 
 # 심층 보고서 판별: '발행처(source 이름 또는 원발행처 도메인)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
+# 재게시 애그리게이터·뉴스 매체(원문일과 어긋나는 피드 날짜) → 보고서 섹션에서 원천 제외
+REPORT_DENY = ["kita.net", "한국무역협회", "무역협회", "tradingkey", "이슈밸리", "issuevalley"]
+# 기사 아닌 섹션 랜딩·영상 페이지 등은 보고서로 취급하지 않음
+_NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:")
+_NON_REPORT_TITLE_EXACT = {
+    "middle east & africa", "middle east and africa", "middle east - the economist",
+    "middle east", "war in the middle east", "the middle east",
+}
+
 def looks_report(title, src, shref=""):
+    # 0) 재게시 애그리게이터·뉴스 매체·비(非)기사 페이지는 원천 제외
+    _s = ((src or "") + " " + (shref or "")).lower()
+    if any(b in _s for b in REPORT_DENY):
+        return False
+    _tl = (title or "").strip().lower()
+    if _tl.startswith(_NON_REPORT_TITLE_PREFIX) or _tl in _NON_REPORT_TITLE_EXACT:
+        return False
     # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
     if not (is_report_source(src) or _domain_is_report(shref)):
         return False
@@ -2934,7 +2950,14 @@ def _merge_reports(items, now_utc):
         r2 = dict(r); r2["_dt"] = d
         out.append(r2)
     out.sort(key=lambda r: r["_dt"], reverse=True)
-    out = out[:REPORT_STORE_MAX]
+    # 동일 기사가 서로 다른 구글뉴스 링크로 중복 등재되는 것을 제목 기준으로 제거(최신 1건만 유지)
+    _seen_t, _dedup = set(), []
+    for r in out:
+        _tk = re.sub(r"\s+", "", (r.get("title") or "")).lower()[:80]
+        if _tk and _tk in _seen_t:
+            continue
+        _seen_t.add(_tk); _dedup.append(r)
+    out = _dedup[:REPORT_STORE_MAX]
     with open(path, "w", encoding="utf-8") as f:
         json.dump([{k: v for k, v in r.items() if k != "_dt"} for r in out], f, ensure_ascii=False, indent=1)
     # render용: dt·added를 datetime으로
