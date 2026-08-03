@@ -425,7 +425,7 @@ LANG = {
   "empty_iran": "이번 창에 이란·역내 매체 신규 기사 없음", "empty_korea": "이번 창에 국내 신규 기사 없음",
   "rep_head": "중동 정세 심층 분석·보고서", "rep_note": "(국내외 연구기관 등)", "rep_badge": "최신순", "rep_new": "이번 회차 신규",
   "t_qatar": "카타르", "t_iran": "이란", "t_over": "해외", "t_korea": "국내",
-  "wk_head": "🗓️ 지난주 언론동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
+  "wk_head": "🗓️ 지난주 언론동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_cta": "지난주 종합 동향 보러가기", "wk_cta_sub": "카타르 정부동향·언론동향 주간 종합", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
@@ -476,7 +476,7 @@ LANG = {
   "empty_iran": "No new Iran/regional articles in this window", "empty_korea": "No new Korean articles in this window",
   "rep_head": "Middle East — in-depth analysis & reports", "rep_note": "(Research institutes, etc.)", "rep_badge": "Newest", "rep_new": "New this edition",
   "t_qatar": "Qatar", "t_iran": "Iran", "t_over": "Global", "t_korea": "Korea",
-  "wk_head": "🗓️ Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_none": "Weekly summary not generated — will retry next update.",
+  "wk_head": "🗓️ Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_cta": "View last week's digest", "wk_cta_sub": "Weekly digest — Qatar govt & media trends", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
@@ -528,7 +528,7 @@ LANG = {
   "empty_iran": "لا مقالات إيرانية/إقليمية جديدة في هذه الفترة", "empty_korea": "لا مقالات كورية جديدة في هذه الفترة",
   "rep_head": "الشرق الأوسط — تحليلات وتقارير معمّقة", "rep_note": "(مراكز الأبحاث وغيرها)", "rep_badge": "الأحدث", "rep_new": "جديد بهذا الإصدار",
   "t_qatar": "قطر", "t_iran": "إيران", "t_over": "دولي", "t_korea": "كوريا",
-  "wk_head": "🗓️ الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
+  "wk_head": "🗓️ الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_cta": "عرض موجز الأسبوع الماضي", "wk_cta_sub": "الموجز الأسبوعي — نشاط الحكومة القطرية واتجاهات الإعلام", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
@@ -2043,17 +2043,11 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     def block(rows, empty):
         return "\n".join(li(x, now_utc, L) for x in rows) or f'<li class="empty">{empty}</li>'
 
-    # 주간+일일 동시 발행일(일일 페이지)에는 위 주간 섹션과 헷갈리지 않게 '오늘 일일' 파트를 구분선+전용 헤더로 분리
-    _wkday = bool(weekly_inline)
+    # 일일 페이지는 항상 동일한 형식(요일 무관). 주간 발행일에도 주간 내용은 끼워넣지 않고 상단 CTA 버튼(weekly_inline)만 노출.
     _isweekly = (edition == "weekly")
-    _dsep = '<div style="height:1px;background:var(--line);margin:22px 0 12px"></div>' if _wkday else ''
-    # 주간 단독 페이지: 이슈 섹션 제목을 '지난주 언론동향'으로. 일일+주간 동시발행일(일일 페이지)은 '오늘 일일' 헤더.
-    if _isweekly:
-        _dhead = L.get("sum_head_wk", L["sum_head"])
-    elif _wkday:
-        _dhead = L.get("sum_head_today", L["sum_head"])
-    else:
-        _dhead = L["sum_head"]
+    _dsep = ''
+    # 주간 단독 페이지만 이슈 섹션 제목을 '지난주 언론동향'으로. 일일 페이지는 항상 '주요 이슈별 요약'.
+    _dhead = L.get("sum_head_wk", L["sum_head"]) if _isweekly else L["sum_head"]
     # 카타르 정부 동향 박스 — 주간 단독 페이지는 '지난주 카타르 정부동향' 헤더 사용
     _gov = render_qatar_gov(qatar_gov, lang, weekly=_isweekly)
     if issues:
@@ -2371,6 +2365,10 @@ TEMPLATE = """<!DOCTYPE html>
   .wsec .wlink{{margin-top:8px;font-size:12.5px}}
   .wsec .wlink a{{color:var(--accent);text-decoration:none}}
   .wsec .wlink a:hover{{text-decoration:underline}}
+  a.wk-chip{{display:inline-block;vertical-align:middle;margin-inline-start:10px;padding:3px 12px;
+    border:1px solid var(--accent);border-radius:999px;font-size:12.5px;font-weight:700;
+    color:var(--accent);text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}}
+  a.wk-chip:hover{{background:var(--accent);color:#fff}}
   .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
@@ -2412,15 +2410,13 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="sub"><span>{subtitle}</span></div>
     <div class="scopebar">🎯 {scope}{tlref}</div>
     {archive}
-    <div class="edresult"><span class="br">〈</span>{ed_result}<span class="br">〉</span></div>
+    <div class="edresult"><span class="br">〈</span>{ed_result}<span class="br">〉</span>{weekly}</div>
     <div class="submeta">
       <span>🕒 {updated_label}: <b>{updated}</b> <span class="tz">({tz})</span></span>
       <span>🗓️ {coverage_label}: <b>{window}</b>{window_tz}</span>
       <span class="cnt">📊 {counts_label}: {counts}</span>
     </div>
   </header>
-
-  {weekly}
 
   {summary}
 
@@ -2862,29 +2858,18 @@ def main():
                            qatar_gov=translate_gov(gov_wk_ko, lang))
             with open(os.path.join("archive", wfn), "w", encoding="utf-8") as fh:
                 fh.write(whtml)
-            if wiss_l:
-                wbody = render_issues(wiss_l, wpool, now_utc, L, collapse_links=True)
-            elif wflat:
-                wbody = f'<div class="card sum"><div class="sumbody">{summary_to_html(wflat)}</div></div>'
-            else:
-                wbody = f'<div class="empty" style="padding:8px 2px">{esc(L["wk_none"])}</div>'
-            # 주간 블록(일일 페이지 내 '지난주' 섹션): 지난주 카타르 정부동향 → 지난주 언론동향 순으로 구성
-            _wgov = render_qatar_gov(translate_gov(gov_wk_ko, lang), lang, weekly=True)
+            # 일요일(주간 발행일) 일일 페이지: 주간 내용을 끼워넣지 않고, 별도 주간 HTML로 가는 CTA 버튼만 노출
+            # (일일 페이지는 다른 요일과 동일한 형식 유지. 주간 종합은 위 whtml=archive/w-....html로 별도 발행)
             weekly_inline = (
-                '<div class="wsec">'
-                + _wgov +
-                '<div class="sumhead"><span class="bar" style="background:var(--accent)"></span>'
-                f'{esc(L["wk_head"])} <span class="ai">{esc(L["weekly_no"].format(n=wno))}</span>'
-                f'<span class="wmeta">{esc(wwin)}</span></div>'
-                + wbody +
-                f'<div class="wlink"><a href="{SITE_BASE}archive/{esc(wfn)}">{esc(L["wk_open"])}</a></div>'
-                '</div>')
+                f'<a class="wk-chip" href="{SITE_BASE}archive/{esc(wfn)}" '
+                f'title="{esc(L["weekly_no"].format(n=wno))} · {esc(wwin)}">'
+                f'{esc(L["wk_cta"])} →</a>')
 
         html = render(items_win, win_label, iss_l, flat, issue_pool=pool,
                       archive_list=archive_list, reports=reports,
                       edition="daily", weekly_inline=weekly_inline,
                       lang=lang, nav=nav, home_url=home_url(lang), new_since=new_since_daily,
-                      weekly_from=(wk_from if is_weekly else None), qatar_gov=gov_l)
+                      weekly_from=None, qatar_gov=gov_l)
         with open(main_out(lang), "w", encoding="utf-8") as fh:
             fh.write(html)
         with open(os.path.join("archive", cur), "w", encoding="utf-8") as fh:
