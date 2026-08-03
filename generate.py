@@ -164,7 +164,7 @@ REPORT_HINTS = [
     # 국책·공공 연구기관
     "대외경제정책연구원", "kiep", "emerics", "이머릭스", "신흥지역정보", "한국개발연구원", "kdi", "에너지경제연구원", "keei",
     "국제금융센터", "kcif", "산업연구원", "kiet", "국립외교원", "ifans",
-    "아산정책", "asan", "세종연구소", "sejong",
+    "아산정책", "asan", "세종연구소", "sejong", "한국무역협회", "kita", "국제무역통상연구원",
     "가스공사", "kogas", "석유공사", "knoc", "오피넷", "opinet",
     "수출입은행", "koreaexim", "무역보험공사", "ksure", "kotra", "코트라",
     # 민간·금융 연구소
@@ -696,7 +696,7 @@ _REPORT_SUBS, _REPORT_REGEXES = _build_report_matchers()
 REPORT_DOMAINS = [
     # 한국 국책·공공·민간 연구기관
     "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
-    "asaninst.org", "sejong.org", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
     "koreaexim.go.kr", "ksure.or.kr", "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "seri.org",
     "lgbr.co.kr", "posri.re.kr", "hanaif.re.kr", "kcmi.re.kr",
     # 해외 연구기관·국제기구·에너지
@@ -732,7 +732,7 @@ def _domain_is_report(shref):
 # (기관 자체 RSS는 robots/비표준으로 확인이 어려워, 발행처 도메인을 직접 겨냥하는 방식으로 연결)
 KO_REPORT_SITE_DOMAINS = [
     "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
-    "asaninst.org", "sejong.org", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
     "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "posri.re.kr", "kcmi.re.kr",
 ]
 
@@ -744,8 +744,9 @@ def is_report_source(src):
 
 # 심층 보고서 판별: '발행처(source 이름 또는 원발행처 도메인)가 실제 연구기관·국제기구·컨설팅펌'인 경우만 인정.
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
-# 재게시 애그리게이터·뉴스 매체(원문일과 어긋나는 피드 날짜) → 보고서 섹션에서 원천 제외
-REPORT_DENY = ["kita.net", "한국무역협회", "무역협회", "tradingkey", "이슈밸리", "issuevalley"]
+# 재게시 뉴스 매체(원문일과 어긋나는 피드 날짜) → 보고서 섹션에서 원천 제외
+# (한국무역협회-KITA는 산업·공급망 분석 콘텐츠가 있어 사용자 요청으로 포함 유지)
+REPORT_DENY = ["tradingkey", "이슈밸리", "issuevalley"]
 # 기사 아닌 섹션 랜딩·영상·라이브·뉴스브리핑 등은 '심층 보고서'가 아니므로 제외(검증 게이트)
 _NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:", "live |", "live:")
 _NON_REPORT_TITLE_EXACT = {
