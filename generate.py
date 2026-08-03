@@ -779,6 +779,42 @@ def looks_report(title, src, shref=""):
     return True
 
 
+# 보고서 후보 AI 2차 검증 on/off (오류·미가동 시 fail-open: 아무것도 제외하지 않음)
+REPORT_AI_VERIFY = True
+
+def _ai_filter_reports(cands):
+    """보고서 후보를 AI로 2차 검증 — '단순 속보·뉴스'라고 확실한 항목의 인덱스 집합(DROP)만 반환.
+    보수적: 조금이라도 분석·전망·심층이면 유지. LLM 미가동·오류·파싱실패 시 빈 집합(전부 유지)."""
+    if not REPORT_AI_VERIFY or not cands:
+        return set()
+    try:
+        lines = "\n".join(f"{i}. [{(c.get('source') or '')[:40]}] {(c.get('title') or '')[:160]}"
+                          for i, c in enumerate(cands))
+        prompt = (
+            "아래는 '중동 정세 심층 분석·보고서' 섹션 후보 목록이다(발행처는 연구기관·국제기구·컨설팅펌·주요 분석매체). "
+            "각 항목을 (A) 기관·전문매체의 분석·전망·리포트·정책브리프·심층기사 인지, (B) 단순 속보·데일리 시황단신·헤드라인 나열 인지 판정하라. "
+            "**확실히 (B) 단순 뉴스인 항목의 번호만** 고른다. 조금이라도 분석·전망·심층 성격이면 (A)로 보고 절대 제외하지 마라(보수적 유지). "
+            "오직 JSON만 출력: {\"drop\":[번호,...]} (없으면 {\"drop\":[]}).\n\n[후보]\n" + lines
+        )
+        out = gemini_generate(prompt, True)
+        if not out:
+            return set()
+        data = json.loads(out)
+        drop = data.get("drop", []) if isinstance(data, dict) else []
+        res = set()
+        for i in drop:
+            try:
+                res.add(int(i))
+            except Exception:
+                pass
+        if res:
+            _diag(f"report ai-verify dropped {len(res)}/{len(cands)}")
+        return res
+    except Exception as ex:
+        _diag(f"report ai-verify skipped: {ex}")
+        return set()
+
+
 def collect(win_start_utc, now_utc, when_days=2):
     items, seen = [], set()
     feeds = []
@@ -1285,6 +1321,11 @@ def gemini_issues(pool, win_label, weekly=False):
         "대신 **매체를 지우고 사실만 단정적으로** 서술하세요(예: '쿠웨이트가 이란산 드론을 격추한 것으로 확인됨', '미국이 ~ 공습을 계획 중인 것으로 알려짐'). 근거 매체는 우측 링크·↗칩에 이미 있으므로 본문에 다시 넣지 마세요. "
         "매체명은 **다음 네 경우에만** 밝힙니다: ①단독·독점 보도(누가·어떻게가 사실의 일부일 때, 예: '뉴욕타임스가 위성사진으로 ~ 확인함'), ②공식 입장·성명(매체가 아니라 발표 주체를 명시, 예: '이란 외무부', '카타르 국방부(QNA)', '쿠웨이트 국방부'), ③상반·미확인 주장(출처를 밝혀야 편향·진위가 드러날 때, 예: '이란 국영매체 주장'), ④신뢰도가 사안 판단에 결정적일 때. "
         "이 경우에도 반드시 **원(原)·현지·1차 매체**를 밝히고 한국 전재 매체는 쓰지 마세요. (사건의 주체·당사자인 기관·기업·정부·인물명은 매체명이 아니므로 당연히 그대로 서술.) "
+        "【매체·기관명 원문 표기(음차 금지)】 요약에 매체·기관·인물의 고유명사를 쓸 때는 **한국어로 음차하지 말고 원문(영문·현지) 표기를 그대로** 쓰세요"
+        "(예: '세파 뉴스' X → 'Sepah News', '제루살렘포스트' X → 'Jerusalem Post', '타스님' X → 'Tasnim', 'IRGC', 'Al Jazeera', 'Reuters', 'IRNA' 등. 단 '이란 외무부'·'카타르 국방부'처럼 기관을 뜻하는 일반명은 한국어로 자연스럽게 써도 됨). "
+        "【교차확인 경고는 '단일 출처'일 때만】 '(교차확인 필요)'·'단독 보도' 같은 경고는 **그 주장이 [기사 목록]에서 오직 한 매체로만 뒷받침되고 다른 보도가 전혀 없을 때만** 붙이세요. "
+        "같은 내용을 **둘 이상의 매체(국내 전재 포함)나 현지·국제 매체가 함께 보도**했으면 이미 교차확인된 것이므로 경고를 붙이지 마세요. "
+        "또한 이미 '~라고 주장함/claims'처럼 귀속(attribution)해 서술했으면 미확인임이 문장에서 드러나므로, 다수 매체가 전한 사안에는 별도 경고를 달지 마세요. "
         "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
         "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
         "ids(그 사안 관련 기사 id 정수 배열, 최대 30개), "
@@ -1297,6 +1338,8 @@ def gemini_issues(pool, win_label, weekly=False):
         "qatar_impact_ids(qatar_impact를 뒷받침하는 기사 id 정수 배열. 반드시 ids에도 포함. 카타르 피해가 없으면 빈 배열 []).\n"
         "qatar_impact의 내용은 반드시 [기사 목록]의 기사로 뒷받침돼야 하며 그 id를 ids와 qatar_impact_ids 양쪽에 포함하세요.\n"
         "【요약↔링크 일치(필수·양방향)】 summary의 모든 문장·사실·주장·수치는 반드시 [기사 목록]의 특정 기사에 근거해야 하며, 그 근거 기사의 id를 **빠짐없이 그 사안의 ids에 포함**하세요. "
+        "**독자는 요약(좌측)에 담긴 내용을 우측 관련기사에서 '더 자세히' 눌러 원문으로 확인하려 하므로, 요약의 각 항목·주장마다 그것을 다룬 기사가 ids에 최소 1건 이상 반드시 들어가야 합니다(링크 누락 금지).** "
+        "특히 그 주장을 여러 매체가 보도했으면(예: 국내 여러 매체 + 현지·국제 매체) 그 기사들의 id를 **가능한 한 모두** ids에 넣어 독자가 여러 출처를 비교해 볼 수 있게 하세요. "
         "즉 아래 '연관 보도내역·링크'만으로 요약의 모든 내용을 검증할 수 있어야 합니다. "
         "**역으로, [기사 목록]의 어떤 기사로도 뒷받침되지 않는 내용(특정 매체가 무엇을 보도·분석했다는 서술 포함)은 요약에 절대 쓰지 말고 제외하세요.** "
         "링크로 뒷받침 못 하는 주장은 아무리 중요해 보여도 넣지 않습니다(근거 없는 서술 금지 — 정확성 최우선). "
@@ -2972,11 +3015,18 @@ def _merge_reports(items, now_utc):
                     store[k] = r
     except Exception:
         pass
+    # 이번 회차 신규 보고서 후보 수집 → AI 2차 검증(심층 분석 vs 단순 뉴스)으로 걸러 등재
+    _new = []
     for x in items:
         if not x.get("report"):
             continue
         k = x["link"].split("?")[0].lower()
         if k in store:
+            continue
+        _new.append((k, x))
+    _drop = _ai_filter_reports([{"title": x["title"], "source": x["source"]} for (_k, x) in _new])
+    for _i, (k, x) in enumerate(_new):
+        if _i in _drop:
             continue
         store[k] = {"title": x["title"], "link": x["link"], "source": x["source"],
                     "shref": x.get("shref", ""),
