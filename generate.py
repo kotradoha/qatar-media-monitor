@@ -2019,7 +2019,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     # 표시용 모니터링 일시. 특정 회차의 실제 실행이 늦어졌을 때 표기 시각만 정규 슬롯(예: 07:0X·15:3X)으로 보정하기 위한 1회성 override 지원.
     _ov = globals().get("UPDATED_TIME_OVERRIDE")
     _hhmm = _ov if _ov else now_q.strftime('%H:%M')
-    updated_str = f"{now_q.strftime('%Y/%m/%d')}({_wd[now_q.weekday()]}) {_hhmm}"
+    updated_str = f"{now_q.year}. {now_q.month}. {now_q.day}.({_wd[now_q.weekday()]}) {_hhmm}"
     if issue_pool is None:
         issue_pool = items[:POOL_FOR_ISSUES]
     # 전체 기사 목록 컬럼은 '출처 매체의 권역' 기준으로 분류(한국 매체가 카타르 현지 칸에 섞이지 않도록)
