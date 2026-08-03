@@ -412,7 +412,7 @@ LANG = {
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
   "search_count": "건 표시",
-  "sum_head": "🧭 주요 이슈별 요약", "sum_head_today": "🧭 주요 이슈별 요약", "sum_head_flat": "🧭 주요 핵심 요약", "ai": "AI 자동요약",
+  "sum_head": "🧭 주요 이슈별 요약", "sum_head_today": "🧭 주요 이슈별 요약", "sum_head_flat": "🧭 주요 핵심 요약", "sum_head_wk": "🧭 지난주 언론동향", "ai": "AI 자동요약",
   "sum_none_body": "요약 일시 미생성 — 다음 갱신에 자동 재시도됩니다. 아래 기사 목록은 정상입니다.", "diag": "진단",
   "issue": "이슈", "key_sum": "핵심 요약", "key_fig": "핵심 수치", "nomap": "관련 링크 매핑 없음",
   "qbox": "카타르 영향·피해", "links_fold": "🔗 이 이슈 관련 보도·링크 펼쳐보기",
@@ -430,7 +430,7 @@ LANG = {
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
   "tl_all": "전체", "tl_qonly": "카타르만", "tl_qex": "카타르 제외", "tl_dl": "⬇ 엑셀 다운로드", "tl_c_date": "날짜", "tl_c_cat": "구분", "tl_c_event": "사건", "tl_c_detail": "상세", "tl_cat_gen": "일반", "tl_fname": "중동전쟁_타임라인", "tl_sheet": "타임라인",
-  "gov_head": "🏛️ 정세 관련 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
+  "gov_head": "🏛️ 정세 관련 카타르 정부 동향", "gov_head_wk": "🏛️ 지난주 카타르 정부동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
            "심층 보고서는 국내외 연구기관·국제기구 등 발행처 도메인을 직접 조준해 수집합니다. "
@@ -463,7 +463,7 @@ LANG = {
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
                   "(full article text and past editions are not searched; open a past edition from the selector above to search it)."),
   "search_count": " shown",
-  "sum_head": "🧭 Key issue briefs", "sum_head_today": "🧭 Key issue briefs", "sum_head_flat": "🧭 Key summary", "ai": "AI summary",
+  "sum_head": "🧭 Key issue briefs", "sum_head_today": "🧭 Key issue briefs", "sum_head_flat": "🧭 Key summary", "sum_head_wk": "🧭 Last week — media trends", "ai": "AI summary",
   "sum_none_body": "Summary not generated this time — it will retry on the next update. The article lists below are fine.", "diag": "Diagnostics",
   "issue": "Issue", "key_sum": "Key summary", "key_fig": "Key figures", "nomap": "No linked articles mapped",
   "qbox": "Impact on Qatar", "links_fold": "🔗 Show related articles for this issue",
@@ -481,7 +481,7 @@ LANG = {
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
   "tl_all": "All", "tl_qonly": "Qatar only", "tl_qex": "Exclude Qatar", "tl_dl": "⬇ Download Excel", "tl_c_date": "Date", "tl_c_cat": "Category", "tl_c_event": "Event", "tl_c_detail": "Details", "tl_cat_gen": "General", "tl_fname": "MiddleEast_War_Timeline", "tl_sheet": "Timeline",
-  "gov_head": "🏛️ Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
+  "gov_head": "🏛️ Qatar government activity", "gov_head_wk": "🏛️ Last week — Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
            "and outlet RSS (Al Jazeera, BBC, etc.) with keywords such as Qatar, the Middle East and energy; in-depth reports "
@@ -515,7 +515,7 @@ LANG = {
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
                   "(لا يشمل البحث النص الكامل للمقالات ولا الإصدارات السابقة؛ افتح إصدارًا سابقًا من القائمة أعلاه للبحث فيه)."),
   "search_count": " ظاهر",
-  "sum_head": "🧭 أبرز ملخصات القضايا", "sum_head_today": "🧭 أبرز ملخصات القضايا", "sum_head_flat": "🧭 الملخص الرئيسي", "ai": "ملخص آلي",
+  "sum_head": "🧭 أبرز ملخصات القضايا", "sum_head_today": "🧭 أبرز ملخصات القضايا", "sum_head_flat": "🧭 الملخص الرئيسي", "sum_head_wk": "🧭 الأسبوع الماضي — اتجاهات الإعلام", "ai": "ملخص آلي",
   "sum_none_body": "لم يُنشأ الملخص هذه المرة — ستُعاد المحاولة في التحديث التالي. قوائم الأخبار أدناه سليمة.", "diag": "تشخيص",
   "issue": "قضية", "key_sum": "الملخص الرئيسي", "key_fig": "أرقام رئيسية", "nomap": "لا مقالات مرتبطة",
   "qbox": "الأثر على قطر", "links_fold": "🔗 عرض الأخبار والروابط المتعلقة بهذه القضية",
@@ -533,7 +533,7 @@ LANG = {
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
   "tl_all": "الكل", "tl_qonly": "قطر فقط", "tl_qex": "استثناء قطر", "tl_dl": "⬇ تنزيل Excel", "tl_c_date": "التاريخ", "tl_c_cat": "الفئة", "tl_c_event": "الحدث", "tl_c_detail": "التفاصيل", "tl_cat_gen": "عام", "tl_fname": "timeline_alsharq_alawsat", "tl_sheet": "الجدول الزمني",
-  "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
+  "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_head_wk": "🏛️ الأسبوع الماضي — نشاط الحكومة القطرية", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
            "بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة؛ وتُجمَع التقارير المعمّقة باستهداف نطاقات ناشري مراكز الأبحاث المحلية والدولية "
@@ -1451,11 +1451,13 @@ def translate_gov(gov, lang):
     return gov
 
 
-def render_qatar_gov(gov, lang="ko"):
+def render_qatar_gov(gov, lang="ko", weekly=False):
     """카타르 정부 동향 섹션 — '오늘 일일 요약'과 동일한 섹션 제목(왼쪽 바) + 이슈 박스와 같은 모양의 흰색 박스.
-    항상 표시, 동향 없으면 '금일 별도 동향 무'. 각 동향에 출처 링크(↗) 포함."""
+    항상 표시, 동향 없으면 '금일 별도 동향 무'. 각 동향에 출처 링크(↗) 포함.
+    weekly=True(주간 단독 페이지)면 '지난주 카타르 정부동향' 헤더 사용."""
     L = LANG.get(lang, LANG["ko"])
-    head = f'<div class="sumhead"><span class="bar"></span>{esc(L["gov_head"])}</div>'
+    _gh = L.get("gov_head_wk", L["gov_head"]) if weekly else L["gov_head"]
+    head = f'<div class="sumhead"><span class="bar"></span>{esc(_gh)}</div>'
     if gov:
         lis = []
         for g in gov:
@@ -2042,10 +2044,17 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
 
     # 주간+일일 동시 발행일(일일 페이지)에는 위 주간 섹션과 헷갈리지 않게 '오늘 일일' 파트를 구분선+전용 헤더로 분리
     _wkday = bool(weekly_inline)
+    _isweekly = (edition == "weekly")
     _dsep = '<div style="height:1px;background:var(--line);margin:22px 0 12px"></div>' if _wkday else ''
-    _dhead = L.get("sum_head_today", L["sum_head"]) if _wkday else L["sum_head"]
-    # 카타르 정부 동향 박스 — '오늘 일일' 요약 헤더 바로 아래(오늘 브리핑의 첫 항목)로 배치해 지난주 섹션과 분리
-    _gov = render_qatar_gov(qatar_gov, lang)
+    # 주간 단독 페이지: 이슈 섹션 제목을 '지난주 언론동향'으로. 일일+주간 동시발행일(일일 페이지)은 '오늘 일일' 헤더.
+    if _isweekly:
+        _dhead = L.get("sum_head_wk", L["sum_head"])
+    elif _wkday:
+        _dhead = L.get("sum_head_today", L["sum_head"])
+    else:
+        _dhead = L["sum_head"]
+    # 카타르 정부 동향 박스 — 주간 단독 페이지는 '지난주 카타르 정부동향' 헤더 사용
+    _gov = render_qatar_gov(qatar_gov, lang, weekly=_isweekly)
     if issues:
         summary_html = (_dsep + _gov + f'<div class="sumhead"><span class="bar"></span>{esc(_dhead)} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L, collapse_links=(edition == "weekly")))
