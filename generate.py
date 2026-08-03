@@ -401,7 +401,7 @@ LANG = {
   "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고하실 수 있으며, "
                "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]"),
-  "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간",
+  "updated": "모니터링 일시", "tz": "카타르시간", "coverage": "모니터링 기간", "ed_result_head": "이번 회차 모니터링 결과",
   "two_wk": "(주간)", "two_dl": "(일간)", "wk_range": "지난주 일 07:00 ~ 당일 07:00",
   "win_am": "전일 15:30 ~ 당일 07:00", "win_pm": "당일 07:00 ~ 당일 15:30", "win_pre": "전일 07:00 ~ 전일 15:30",
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건", "counts_label": "모니터링 건수",
@@ -450,7 +450,7 @@ LANG = {
                "is compiled into AI issue summaries with source links. A list of the latest reports from relevant institutions is also "
                "available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. "
                "[Commercial Section, Embassy of the Republic of Korea in Qatar · KOTRA Doha]"),
-  "updated": "Monitored at", "tz": "Qatar time", "coverage": "Monitoring period",
+  "updated": "Monitored at", "tz": "Qatar time", "coverage": "Monitoring period", "ed_result_head": "This Edition's Monitoring Results",
   "two_wk": "(Weekly)", "two_dl": "(Daily)", "wk_range": "Last Sunday 07:00 ~ today 07:00",
   "win_am": "Prev day 15:30 – same day 07:00", "win_pm": "Same day 07:00 – 15:30", "win_pre": "Prev day 07:00 – 15:30",
   "counts": "Qatar <b>{q}</b> · Middle East <b>{me}</b>", "counts_label": "Monitored items",
@@ -502,7 +502,7 @@ LANG = {
   "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني وسائر الدول الرئيسية والكوري في "
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
                "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
-  "updated": "وقت الرصد", "tz": "بتوقيت قطر", "coverage": "فترة الرصد",
+  "updated": "وقت الرصد", "tz": "بتوقيت قطر", "coverage": "فترة الرصد", "ed_result_head": "نتائج رصد هذا العدد",
   "two_wk": "(أسبوعي)", "two_dl": "(يومي)", "wk_range": "الأحد الماضي 07:00 ~ اليوم 07:00",
   "win_am": "الأمس 15:30 – اليوم 07:00", "win_pm": "اليوم 07:00 – 15:30", "win_pre": "الأمس 07:00 – 15:30",
   "counts": "قطر <b>{q}</b> · الشرق الأوسط <b>{me}</b>", "counts_label": "عدد المرصود",
@@ -2154,6 +2154,7 @@ if(sw){sw.innerHTML=w;}
         bodycls=("ed-weekly" if edition == "weekly" else ""),
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html,
+        ed_result=esc(L["ed_result_head"]),
         title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
         title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
@@ -2211,6 +2212,8 @@ TEMPLATE = """<!DOCTYPE html>
   h1{{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:0}}
   .sub{{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}}
   .submeta{{color:var(--muted);font-size:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);display:flex;gap:6px 26px;flex-wrap:wrap}}
+  .edresult{{text-align:center;font-size:15px;font-weight:800;color:var(--txt);margin:16px 0 4px;letter-spacing:.2px;word-break:keep-all}}
+  .edresult .br{{color:var(--accent);font-weight:900;margin:0 6px}}
   .submeta .tz{{font-weight:400;color:var(--muted)}}
   .submeta img.emoji{{height:1.15em;width:1.15em;vertical-align:-0.18em;margin-inline-end:2px}}
   .submeta .cnt img.emoji{{filter:grayscale(.4) saturate(.6)}}
@@ -2394,6 +2397,7 @@ TEMPLATE = """<!DOCTYPE html>
     <div class="sub"><span>{subtitle}</span></div>
     <div class="scopebar">🎯 {scope}{tlref}</div>
     {archive}
+    <div class="edresult"><span class="br">〈</span>{ed_result}<span class="br">〉</span></div>
     <div class="submeta">
       <span>🕒 {updated_label}: <b>{updated}</b> <span class="tz">({tz})</span></span>
       <span>🗓️ {coverage_label}: <b>{window}</b>{window_tz}</span>
