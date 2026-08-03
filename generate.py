@@ -93,7 +93,9 @@ Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 
                 "대외경제정책연구원 유가 전망", "에너지경제연구원 중동 정세", "KDI 국제유가",
                 "국제금융센터 중동 리스크", "한국무역협회 중동", "KOTRA 카타르", "코트라 중동 에너지",
                 "석유공사 국제유가 전망", "산업연구원 에너지 안보", "국립외교원 중동", "아산정책연구원 중동",
-                "세종연구소 중동", "자본시장연구원 유가", "삼정KPMG 에너지", "딜로이트 중동 전망"]
+                "세종연구소 중동", "자본시장연구원 유가", "삼정KPMG 에너지", "딜로이트 중동 전망",
+                "한국은행 중동 국제유가", "삼일PwC 에너지 공급망", "맥킨지 중동 에너지",
+                "BCG 공급망 리스크 중동", "커니 공급망 전망"]
 # 해외 연구기관·국제기구 리포트 수집용(영문)
 Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Middle East analysis",
                 "Crisis Group Iran Gulf", "IEA oil market report Middle East", "OPEC monthly oil report",
@@ -101,13 +103,19 @@ Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Midd
                 "Strait of Hormuz shipping analysis report", "World Bank Middle East economic outlook",
                 "Economist Intelligence Iran Gulf", "Foreign Affairs Iran Middle East",
                 "Oxford Economics oil Middle East outlook", "Middle East Council Qatar analysis",
-                "한국무역협회 중동 수출", "Doha Institute Gulf study"]
+                "Doha Institute Gulf study",
+                # 에너지 전문·걸프 싱크탱크·신용평가(추가)
+                "Baker Institute Qatar LNG energy", "Oxford Institute Energy Studies Gulf gas",
+                "GECF gas market Qatar report", "IEEFA Middle East energy crisis",
+                "AGSIW Gulf Qatar analysis", "Washington Institute Iran Gulf policy",
+                "Control Risks Middle East supply chain", "Fitch Moody's Gulf sovereign Middle East",
+                "Columbia energy policy Middle East oil", "Atlantic Council Gulf energy"]
 
 QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "hamad",
             "카타르", "도하", "알우데이드", "라스라판", "하마드"]
 MIDEAST_KW = ["iran", "iranian", "israel", "israeli", "gulf", "hormuz", "houthi", "yemen",
               "saudi", "bahrain", "kuwait", "oman", "uae", "emirates", "tehran", "gaza",
-              "lebanon", "hezbollah", "idf", "middle east", "egypt", "red sea", "suez",
+              "lebanon", "hezbollah", "idf", "middle east", "mena", "egypt", "red sea", "suez",
               "이란", "이스라엘", "걸프", "호르무즈", "후티", "예멘", "사우디", "바레인",
               "쿠웨이트", "오만", "중동", "테헤란", "가자", "헤즈볼라", "이집트", "홍해", "수에즈"]
 
@@ -182,8 +190,26 @@ REPORT_HINTS = [
     "deloitte", "딜로이트", "안진회계", "ernst & young", "ernst and young", "한영회계", "ey 한영",
     "bcg", "boston consulting", "bain & company", "베인앤컴퍼니", "accenture", "액센츄어",
     "oliver wyman", "올리버와이먼", "roland berger", "롤랜드버거",
+    "kearney", "커니", "strategy&", "strategyand", "fti consulting", "control risks", "컨트롤 리스크",
+    "verisk maplecroft", "maplecroft",
     "middle east council", "mecouncil", "gulf research", "걸프연구",
     "al jazeera centre for studies", "aljazeera centre", "doha institute", "브루킹스 도하",
+    # 에너지 전문 연구·인텔리전스
+    "baker institute", "베이커 연구소", "oxford institute for energy", "oxford energy", "옥스퍼드 에너지",
+    "ieefa", "center on global energy policy", "columbia energy", "gecf", "gas exporting countries",
+    "가스수출국포럼", "irena", "국제재생에너지", "argus media", "아거스", "icis", "energy aspects",
+    # 걸프·중동 싱크탱크(추가)
+    "arab gulf states institute", "agsiw", "washington institute", "워싱턴 근동",
+    "european council on foreign relations", "ecfr", "emirates policy", "에미리트 정책",
+    "lowy institute", "로위 연구소", "german marshall", "hudson institute", "허드슨 연구소",
+    "foundation for defense of democracies", "clingendael", "ifri", "swp berlin",
+    # 신용평가·거시
+    "moody", "무디스", "fitch ratings", "fitch solutions", "피치", "bmi research",
+    # 국제기구·기타(추가)
+    "world trade organization", "세계무역기구", "unctad", "asian development bank", "아시아개발은행",
+    "oxford business group",
+    # 한국(추가)
+    "한국은행", "bank of korea",
 ]
 
 
@@ -683,6 +709,19 @@ REPORT_DOMAINS = [
     # 글로벌 회계·컨설팅펌
     "kpmg.com", "pwc.com", "deloitte.com", "ey.com", "bcg.com", "bain.com", "mckinsey.com",
     "accenture.com", "oliverwyman.com", "rolandberger.com",
+    "kearney.com", "strategyand.pwc.com", "fticonsulting.com", "controlrisks.com", "maplecroft.com",
+    # 에너지 전문 연구·인텔리전스
+    "bakerinstitute.org", "oxfordenergy.org", "ieefa.org", "energypolicy.columbia.edu",
+    "gecf.org", "irena.org", "argusmedia.com", "icis.com", "energyaspects.com",
+    # 걸프·중동 싱크탱크
+    "agsiw.org", "washingtoninstitute.org", "ecfr.eu", "epc.ae", "grc.net", "lowyinstitute.org",
+    "swp-berlin.org", "ifri.org", "clingendael.org", "gmfus.org", "hudson.org", "fdd.org",
+    # 신용평가·거시
+    "moodys.com", "fitchratings.com", "fitchsolutions.com",
+    # 국제기구·기타
+    "wto.org", "unctad.org", "adb.org", "oxfordbusinessgroup.com",
+    # 한국(추가)
+    "bok.or.kr",
 ]
 
 def _domain_is_report(shref):
@@ -707,12 +746,18 @@ def is_report_source(src):
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
 # 재게시 애그리게이터·뉴스 매체(원문일과 어긋나는 피드 날짜) → 보고서 섹션에서 원천 제외
 REPORT_DENY = ["kita.net", "한국무역협회", "무역협회", "tradingkey", "이슈밸리", "issuevalley"]
-# 기사 아닌 섹션 랜딩·영상 페이지 등은 보고서로 취급하지 않음
-_NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:")
+# 기사 아닌 섹션 랜딩·영상·라이브·뉴스브리핑 등은 '심층 보고서'가 아니므로 제외(검증 게이트)
+_NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:", "live |", "live:")
 _NON_REPORT_TITLE_EXACT = {
     "middle east & africa", "middle east and africa", "middle east - the economist",
     "middle east", "war in the middle east", "the middle east",
 }
+# 뉴스 다이제스트·속보성 제목 패턴(연구기관 심층 보고서엔 거의 없음) → 뉴스성 나열 방지
+_NON_REPORT_TITLE_SUBSTR = (
+    "world in brief", "the world in brief", "catch up:", "catch-up:", "morning briefing",
+    "evening briefing", "daily briefing", "week ahead", "weekly roundup", "news roundup",
+    "live blog", "as it happened", "live updates", "breaking:", "what to know",
+)
 
 def looks_report(title, src, shref=""):
     # 0) 재게시 애그리게이터·뉴스 매체·비(非)기사 페이지는 원천 제외
@@ -721,6 +766,8 @@ def looks_report(title, src, shref=""):
         return False
     _tl = (title or "").strip().lower()
     if _tl.startswith(_NON_REPORT_TITLE_PREFIX) or _tl in _NON_REPORT_TITLE_EXACT:
+        return False
+    if any(p in _tl for p in _NON_REPORT_TITLE_SUBSTR):
         return False
     # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
     if not (is_report_source(src) or _domain_is_report(shref)):
