@@ -398,6 +398,7 @@ LANG = {
  "ko": {
   "dir": "ltr", "html": "ko",
   "title": "카타르·중동 정세 일간·주간 언론 모니터링", "title2": "Qatar & Middle East — Daily·Weekly Media Monitor",
+  "title_wk": "카타르·중동 정세 주간 언론 모니터링", "title2_wk": "Qatar & Middle East — Weekly Media Monitor",
   "subtitle": ("매일 두 차례(카타르 시각 07:00, 15:30), 카타르·이란·기타 주요 국가·한국 주요 언론 보도를 취합하여 "
                "이슈별 AI 요약과 원문 링크를 제공합니다. 유관기관 최신 보고서 목록도 하단에서 참고하실 수 있으며, "
                "매주 일요일에는 전 주를 종합한 주간 리포트가 함께 발행됩니다. [주카타르대사관 Commercial Section · 도하무역관]"),
@@ -446,7 +447,7 @@ LANG = {
  },
  "en": {
   "dir": "ltr", "html": "en",
-  "title": "Qatar & Middle East — Daily·Weekly Media Monitor", "title2": "",
+  "title": "Qatar & Middle East — Daily·Weekly Media Monitor", "title2": "", "title_wk": "Qatar & Middle East — Weekly Media Monitor", "title2_wk": "",
   "subtitle": ("Twice a day (07:00 and 15:30 Qatar time), major coverage from Qatari, Iranian, other major countries' and Korean outlets "
                "is compiled into AI issue summaries with source links. A list of the latest reports from relevant institutions is also "
                "available for reference lower on the page, and every Sunday a weekly report recapping the past week is published. "
@@ -499,7 +500,7 @@ LANG = {
  },
  "ar": {
   "dir": "rtl", "html": "ar",
-  "title": "رصد الإعلام اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "",
+  "title": "رصد الإعلام اليومي والأسبوعي: قطر والشرق الأوسط", "title2": "", "title_wk": "رصد الإعلام الأسبوعي: قطر والشرق الأوسط", "title2_wk": "",
   "subtitle": ("مرّتين يوميًا (07:00 و15:30 بتوقيت قطر) تُجمَّع أبرز تقارير الإعلام القطري والإيراني وسائر الدول الرئيسية والكوري في "
                "ملخصات بالذكاء الاصطناعي حسب القضية مع روابط المصادر. كما تتوفر قائمة بأحدث تقارير المؤسسات المعنية للاطلاع في أسفل الصفحة، "
                "ويصدر كل أحد تقرير أسبوعي يلخّص الأسبوع المنصرم. [القسم التجاري، سفارة جمهورية كوريا لدى قطر · كوترا الدوحة]"),
@@ -2159,18 +2160,22 @@ if(sw){sw.innerHTML=w;}
 
     weekly_html = weekly_inline or ""
 
+    # 주간 단독 페이지는 제목에서 '일간'을 빼고 '주간 언론 모니터링'만 표기
+    _isw = (edition == "weekly")
+    _title = L.get("title_wk", L["title"]) if _isw else L["title"]
+    _title2 = (L.get("title2_wk", L.get("title2", "")) if _isw else L.get("title2", ""))
     return TEMPLATE.format(
         bodycls=("ed-weekly" if edition == "weekly" else ""),
         dir=L["dir"], htmllang=L["html"], nav=nav_html,
         archive=archive_html, report=report_html, weekly=weekly_html,
         ed_result=esc(L["ed_result_head"]),
-        title=esc(L["title"]), subtitle=esc(L["subtitle"]), scope=L["scope"],
-        title2=(f'<div class="entitle">{esc(L["title2"])}</div>' if L.get("title2") else ""),
+        title=esc(_title), subtitle=esc(L["subtitle"]), scope=L["scope"],
+        title2=(f'<div class="entitle">{esc(_title2)}</div>' if _title2 else ""),
         updated_label=esc(L["updated"]), tz=esc(L["tz"]), coverage_label=esc(L["coverage"]),
-        counts=L["counts"].format(q=n_qatar, me=n_mideast),
+        counts=L["counts"].format(q=f"{n_qatar:,}", me=f"{n_mideast:,}"),
         counts_label=esc(L["counts_label"]),
         updated=updated_str, window=window_html, window_tz=window_tz,
-        full_summary=esc(L["full_summary"].format(n=len(qatar) + len(me_ov) + len(me_ir) + len(me_kr))),
+        full_summary=esc(L["full_summary"].format(n=f"{len(qatar) + len(me_ov) + len(me_ir) + len(me_kr):,}")),
         full_note=esc(L["full_note"]),
         expand=esc(L["expand"]), collapse=esc(L["collapse"]),
         col_qatar=esc(L["col_qatar"]), col_iran=esc(L["col_iran"]), col_over=esc(L["col_over"]), col_korea=esc(L["col_korea"]),
