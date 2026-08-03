@@ -2867,8 +2867,11 @@ def main():
                 wbody = f'<div class="card sum"><div class="sumbody">{summary_to_html(wflat)}</div></div>'
             else:
                 wbody = f'<div class="empty" style="padding:8px 2px">{esc(L["wk_none"])}</div>'
+            # 주간 블록(일일 페이지 내 '지난주' 섹션): 지난주 카타르 정부동향 → 지난주 언론동향 순으로 구성
+            _wgov = render_qatar_gov(translate_gov(gov_wk_ko, lang), lang, weekly=True)
             weekly_inline = (
                 '<div class="wsec">'
+                + _wgov +
                 '<div class="sumhead"><span class="bar" style="background:var(--accent)"></span>'
                 f'{esc(L["wk_head"])} <span class="ai">{esc(L["weekly_no"].format(n=wno))}</span>'
                 f'<span class="wmeta">{esc(wwin)}</span></div>'
