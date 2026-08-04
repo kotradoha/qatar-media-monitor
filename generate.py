@@ -2063,6 +2063,23 @@ TIMELINE = [
    "ko": "누계 피해현황(집계·출처별 편차) — 이란 군 사망 1,800~7,650·민간 1,701~3,636, 미군 전사 18~20·부상 624, 이스라엘 민간 28, 레바논 민간 4,328, 걸프국 43~51.",
    "en": "Cumulative toll (tallies vary by source) — Iran: 1,800–7,650 military and 1,701–3,636 civilians killed; US: 18–20 troops killed and 624 wounded; Israel: 28 civilians; Lebanon: 4,328 civilians; Gulf states: 43–51.",
    "ar": "الحصيلة التراكمية (تتفاوت حسب المصادر) — إيران: 1,800–7,650 عسكرياً و1,701–3,636 مدنياً؛ الولايات المتحدة: 18–20 جندياً و624 جريحاً؛ إسرائيل: 28 مدنياً؛ لبنان: 4,328 مدنياً؛ دول الخليج: 43–51."},
+  # ── 호르무즈·홍해 해상 주요 사건 + 중재(오만·카타르·파키스탄) 보강 ──
+  {"d": "2026-03-02", "q": False,
+   "ko": "이란 IRGC, 미·이스라엘 공습 직후 호르무즈 해협 봉쇄 — 브렌트유 100달러 시험 등 글로벌 유가 급등.",
+   "en": "Iran's IRGC blocks the Strait of Hormuz right after the US–Israel strikes — Brent crude tests $100 as global oil prices spike.",
+   "ar": "الحرس الثوري الإيراني يغلق مضيق هرمز فور الضربات الأمريكية–الإسرائيلية — وخام برنت يلامس 100 دولار مع قفزة أسعار النفط عالمياً."},
+  {"d": "2026-07-21", "q": False,
+   "ko": "오만·카타르·파키스탄 등 중재국들이 새 정전안을 추진 — 트럼프의 전면전 검토 속 외교로 확전 저지 시도.",
+   "en": "Mediators including Oman, Qatar and Pakistan push a new ceasefire proposal — a diplomatic bid to avert all-out war as Trump weighs escalation.",
+   "ar": "وسطاء منهم عُمان وقطر وباكستان يدفعون بمقترح هدنة جديد — مسعى دبلوماسي لتفادي حرب شاملة بينما يدرس ترامب التصعيد."},
+  {"d": "2026-07-22", "q": False,
+   "ko": "후티 반군, 홍해 남부에서 미사일·드론으로 상선 공격 — 바브엘만데브 통항 위협 고조.",
+   "en": "Houthi forces attack commercial vessels with missiles and drones in the southern Red Sea — raising the threat to Bab el-Mandeb shipping.",
+   "ar": "قوات الحوثي تهاجم سفناً تجارية بالصواريخ والمسيّرات جنوبي البحر الأحمر — ما يرفع التهديد للملاحة في باب المندب."},
+  {"d": "2026-07-26", "q": False,
+   "ko": "후티 위협으로 사우디의 바브엘만데브 원유 수출이 사실상 제로로 급감, 수에즈 경로로 전환 — 홍해 물류 대혼란.",
+   "en": "Houthi threats drive Saudi crude exports via Bab el-Mandeb to near zero, forcing a shift to the Suez route — major Red Sea logistics disruption.",
+   "ar": "تهديدات الحوثيين تدفع صادرات النفط السعودية عبر باب المندب إلى ما يقارب الصفر وتحوّلها إلى مسار السويس — اضطراب كبير في ملاحة البحر الأحمر."},
 ]
 
 _TL_MON = {"ko": ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]}
