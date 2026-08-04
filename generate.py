@@ -1956,7 +1956,7 @@ TL_SOURCES = [
 def _timeline_rows(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
     rows = []
-    for e in TIMELINE:
+    for e in _timeline_entries():
         y, m, d = e["d"].split("-")
         mi = int(m)
         if lang == "ko":
@@ -2027,8 +2027,9 @@ def gemini_timeline_candidates(pool, win_label):
         "【중요 수치 포함】 사상자·미사일/드론 수·유가 변동폭(%)·LNG 물량/비율·선박 수 등 핵심 수치를 팩트로 담으세요. "
         "【중복 금지】 아래 [기존 타임라인]과 같은 사건(날짜·내용)이면 절대 넣지 마세요.\n"
         f"[기존 타임라인] {exist}\n"
-        "각 후보는 한국어 개조식·명사형('-함/-됨/-임') 1문장. 카타르 직접 관련이면 q=true. confidence는 high(복수·1차 확인)/med/low(단일·미확인) 중 하나. "
-        "출력은 오직 JSON: {\"cands\":[{\"d\":\"YYYY-MM-DD\",\"ko\":\"...\",\"q\":true,\"verified\":true,\"confidence\":\"high\",\"ids\":[0,1]}]} (없으면 {\"cands\":[]}).\n\n"
+        "각 후보는 한국어(ko) 개조식·명사형('-함/-됨/-임') 1문장 + 동일 내용의 영어(en)·아랍어(ar) 번역을 함께 담으세요(3개 언어 페이지에 바로 표기됨). "
+        "가능하면 'headline — detail' 형태로 핵심 헤드라인과 상세를 ' — '로 구분(수치 포함). 카타르 직접 관련이면 q=true. confidence는 high(복수·1차 확인)/med/low(단일·미확인) 중 하나. "
+        "출력은 오직 JSON: {\"cands\":[{\"d\":\"YYYY-MM-DD\",\"ko\":\"...\",\"en\":\"...\",\"ar\":\"...\",\"q\":true,\"verified\":true,\"confidence\":\"high\",\"ids\":[0,1]}]} (없으면 {\"cands\":[]}).\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
     out = gemini_generate(prompt, json_mode=True)
     if not out:
@@ -2053,10 +2054,38 @@ def gemini_timeline_candidates(pool, win_label):
                 if u and u not in seen:
                     seen.add(u)
                     links.append((pool[i].get("source", ""), u))
-        res.append({"d": d, "ko": ko, "q": bool(c.get("q")),
-                    "verified": bool(c.get("verified")),
+        res.append({"d": d, "ko": ko,
+                    "en": _clean_bullet(c.get("en") or ""), "ar": _clean_bullet(c.get("ar") or ""),
+                    "q": bool(c.get("q")), "verified": bool(c.get("verified")),
                     "confidence": (c.get("confidence") or "med"), "links": links})
     return res
+
+
+def _load_candidates():
+    if not os.path.exists(CANDS_FILE):
+        return []
+    try:
+        c = json.load(open(CANDS_FILE, encoding="utf-8"))
+        return c if isinstance(c, list) else []
+    except Exception:
+        return []
+
+
+def _timeline_entries():
+    """확정 TIMELINE(하드코딩) + 자동 추출 후보(timeline_candidates.json)를 합쳐 날짜 내림차순 정렬(중복 제거).
+    자동 후보는 검토 없이 바로 타임라인에 반영되며, 빼야 할 항목은 후보 파일에서 제거."""
+    seen = {(e["d"], _tl_norm(e.get("ko"))) for e in TIMELINE}
+    merged = list(TIMELINE)
+    for c in _load_candidates():
+        k = (c.get("d", ""), _tl_norm(c.get("ko")))
+        if not c.get("d") or not c.get("ko") or k in seen:
+            continue
+        seen.add(k)
+        merged.append({"d": c["d"], "ko": c.get("ko", ""),
+                       "en": c.get("en") or c.get("ko", ""), "ar": c.get("ar") or c.get("ko", ""),
+                       "q": bool(c.get("q"))})
+    merged.sort(key=lambda e: e["d"], reverse=True)
+    return merged
 
 
 def merge_timeline_candidates(new_cands, run_label):
@@ -2122,9 +2151,9 @@ def _render_timeline_pending(lang):
 def render_timeline_page(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
     home = SITE_BASE if lang == "ko" else f"{SITE_BASE}{lang}.html"
-    # 엑셀 내보내기용 데이터(사건 텍스트를 ' — ' 기준으로 제목/상세 분리)
+    # 엑셀 내보내기용 데이터(사건 텍스트를 ' — ' 기준으로 제목/상세 분리) — 확정+자동후보 병합분
     tldata = []
-    for e in TIMELINE:
+    for e in _timeline_entries():
         txt = e.get(lang) or e.get("ko")
         parts = txt.split(" — ", 1)
         tldata.append({"iso": e["d"], "q": 1 if e.get("q") else 0,
@@ -2144,7 +2173,6 @@ def render_timeline_page(lang="ko"):
         dir=L["dir"], htmllang=L["html"], title=esc(L["tl_head"]),
         tag=esc(L["tl_tag"]), head=esc(L["tl_head"]), note=esc(L["tl_note"]),
         rows=_timeline_rows(lang), sources=_timeline_sources_html(lang),
-        pending=_render_timeline_pending(lang),
         back=esc(L["tl_back"]), home=esc(home),
         f_all=esc(L["tl_all"]), f_qonly=esc(L["tl_qonly"]), f_qex=esc(L["tl_qex"]), dl=esc(L["tl_dl"]),
         tlscript=tlscript)
@@ -2921,7 +2949,6 @@ TIMELINE_PAGE = """<!DOCTYPE html>
     <button class="tldlbtn" id="tldl">{dl}</button>
   </div>
   {rows}
-  {pending}
   {sources}
 </div>
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
