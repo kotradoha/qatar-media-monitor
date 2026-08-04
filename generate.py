@@ -86,6 +86,13 @@ KOREA_MEDIA_SITES = [
 ]
 MEDIA_TOPIC = "(Qatar OR Iran OR Israel OR Gaza OR Hormuz OR Gulf)"
 MEDIA_TOPIC_KO = "(카타르 OR 중동 OR 이란 OR 이스라엘 OR 호르무즈 OR 걸프 OR 가자)"
+# 네이티브 원문(아랍어=카타르 현지·중동, 페르시아어=이란 당사국) 조준 — 각 언어판이 자기 언어 1차 소스를 갖도록.
+# 구글뉴스 로케일(hl=ar/fa)로 안정적으로 수집(개별 매체 RSS 불안정 회피).
+Q_QATAR_AR = ["قطر", "قطر إيران", "الدوحة", "العديد قطر"]
+Q_MIDEAST_AR = ["إيران إسرائيل", "مضيق هرمز", "غزة", "الخليج إيران", "الشرق الأوسط"]
+Q_IRAN_FA = ["تنگه هرمز", "ایران آمریکا", "پهپاد آمریکایی", "سپاه خلیج فارس", "ایران اسرائیل"]
+AR_LOCAL_SITES = ["aljazeera.net", "al-sharq.com", "raya.com", "lusailnews.net"]   # 카타르·아랍 현지 아랍어 원문
+FA_IRAN_SITES = ["farsnews.ir", "tasnimnews.com", "irna.ir", "isna.ir", "mehrnews.com"]   # 이란 당사국 페르시아어 원문
 # 연구기관·에너지 기관의 중동·유가·카타르 분석/보고서 수집용 쿼리(뜨면 최상단 강조)
 Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 유가", "국제금융센터 중동", "KDI 중동",
                 "가스공사 카타르 LNG", "중동 정세 보고서", "중동 리스크 이슈분석", "호르무즈 해협 분석",
@@ -113,12 +120,18 @@ Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Midd
                 "Columbia energy policy Middle East oil", "Atlantic Council Gulf energy"]
 
 QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "hamad",
-            "카타르", "도하", "알우데이드", "라스라판", "하마드"]
+            "카타르", "도하", "알우데이드", "라스라판", "하마드",
+            "قطر", "الدوحة", "العديد", "دوحه"]   # 아랍어·페르시아어: 카타르/도하/알우데이드
 MIDEAST_KW = ["iran", "iranian", "israel", "israeli", "gulf", "hormuz", "houthi", "yemen",
               "saudi", "bahrain", "kuwait", "oman", "uae", "emirates", "tehran", "gaza",
               "lebanon", "hezbollah", "idf", "middle east", "mena", "egypt", "red sea", "suez",
               "이란", "이스라엘", "걸프", "호르무즈", "후티", "예멘", "사우디", "바레인",
-              "쿠웨이트", "오만", "중동", "테헤란", "가자", "헤즈볼라", "이집트", "홍해", "수에즈"]
+              "쿠웨이트", "오만", "중동", "테헤란", "가자", "헤즈볼라", "이집트", "홍해", "수에즈",
+              # 아랍어
+              "إيران", "إسرائيل", "الخليج", "هرمز", "مضيق هرمز", "الحوثي", "اليمن", "السعودية",
+              "غزة", "الشرق الأوسط", "حزب الله", "لبنان",
+              # 페르시아어
+              "ایران", "اسرائیل", "صهیونیستی", "خلیج فارس", "تنگه هرمز", "یمن", "عربستان", "غزه", "تهران"]
 
 # 핵심(중요) 토픽 키워드 — 이 중 하나라도 걸리면 '중요 기사'로 보고 소형매체라도 무조건 유지.
 # (넓게 잡아 '중요기사 누락' 위험을 피함. 매칭되면 유지되는 방향이라 오탐은 안전.)
@@ -144,7 +157,9 @@ BLOCK_SOURCES = ["vietnam", "nate", "네이트", "msn", "yahoo", "bing", "biztoc
 # 소스 '소재지' 분류 — 카타르 현지 매체(도하 소재/카타르 매체). 알자지라=도하 본사 → 카타르.
 QATAR_SOURCES = ["qatar news agency", "qna", "gulf times", "gulf-times", "the peninsula",
                  "peninsula qatar", "peninsulaqatar", "qatar tribune", "qatar-tribune",
-                 "doha news", "dohanews", "al jazeera", "aljazeera", "al-jazeera", "lusail"]
+                 "doha news", "dohanews", "al jazeera", "aljazeera", "al-jazeera", "lusail",
+                 # 아랍어 매체명 표기(구글뉴스 hl=ar 출처명 대응)
+                 "الجزيرة", "الراية", "لوسيل", "al sharq", "al-sharq", "al raya", "al-raya"]
 # 국내(한국) 매체
 KOREA_SOURCES = [
     # 통신사·방송
@@ -221,7 +236,9 @@ IRAN_SOURCES = ["tehran times", "press tv", "presstv", "irna", "mehr", "fars", "
                 "sepah news", "sepahnews", "nour news", "nournews", "irib", "iribnews",
                 "defa press", "defapress", "iran daily", "irandaily", "ilna", "shargh",
                 "etemad", "jam-e jam", "hamshahri", "young journalists club", "yjc",
-                "khamenei", "president.ir", "iran press", "iranpress"]
+                "khamenei", "president.ir", "iran press", "iranpress",
+                # 페르시아어 매체명 표기(구글뉴스 hl=fa 출처명 대응)
+                "فارس", "تسنیم", "ایرنا", "ایسنا", "پرس تی وی", "مهر نیوز"]
 
 # 해외(미국·유럽·글로벌·역내 기타) 매체 — 제목이 한글이어도(한국어판·번역 제목) 국내가 아닌 '해외'로 분류.
 # ※ 짧고 모호한 토큰(ap, rt, dw 단독 등)은 오탐 방지를 위해 쓰지 않고, 구별되는 문자열만 사용.
@@ -654,6 +671,10 @@ def gnews_url(query, lang, when_days=2):
     w = f"%20when:{int(when_days)}d"
     if lang == "ko":
         return f"https://news.google.com/rss/search?q={q}{w}&hl=ko&gl=KR&ceid=KR:ko"
+    if lang == "ar":   # 아랍어(카타르 현지·중동) 네이티브 원문
+        return f"https://news.google.com/rss/search?q={q}{w}&hl=ar&gl=QA&ceid=QA:ar"
+    if lang == "fa":   # 페르시아어(이란 당사국) 네이티브 원문
+        return f"https://news.google.com/rss/search?q={q}{w}&hl=fa&gl=IR&ceid=IR:fa"
     return f"https://news.google.com/rss/search?q={q}{w}&hl=en-US&gl=US&ceid=US:en"
 
 
@@ -876,6 +897,12 @@ def collect(win_start_utc, now_utc, when_days=2):
     for dom in KO_REPORT_SITE_DOMAINS:
         feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", REPORT_QUERY_DAYS)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
+    # 아랍어·페르시아어 네이티브 원문(카타르 현지·중동 아랍어 / 이란 당사국 페르시아어)
+    for q in Q_QATAR_AR:  feeds.append(("ar", q, gnews_url(q, "ar", when_days)))
+    for q in Q_MIDEAST_AR: feeds.append(("ar", q, gnews_url(q, "ar", when_days)))
+    for dom in AR_LOCAL_SITES: feeds.append(("ar", f"[ar]{dom}", gnews_url(f"site:{dom}", "ar", when_days)))
+    for q in Q_IRAN_FA:   feeds.append(("fa", q, gnews_url(q, "fa", when_days)))
+    for dom in FA_IRAN_SITES: feeds.append(("fa", f"[fa]{dom}", gnews_url(f"site:{dom}", "fa", when_days)))
 
     def _fetch(job):
         lang, label, url = job
@@ -1666,7 +1693,7 @@ def link_row(x):
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
 
-def render_issues(issues, pool, now_utc, L=None, collapse_links=False):
+def render_issues(issues, pool, now_utc, L=None, collapse_links=False, lang="ko"):
     L = L or LANG["ko"]
     out = []
     for n, iss in enumerate((i for i in issues if isinstance(i, dict)), 1):
@@ -1707,7 +1734,18 @@ def render_issues(issues, pool, now_utc, L=None, collapse_links=False):
                 + (f'<div class="qlinks">{qi_links}</div>' if qi_links else "")
                 + '</div>') if qi_items else ""
         arts = [pool[j] for j in ids]
-        _recent = lambda lst: sorted(lst, key=lambda a: a["dt"], reverse=True)   # 권역 그룹 내 최신 기사 순
+        # 권역 그룹 내 정렬: 현재 언어판과 같은 언어의 원문을 위로(각 판이 자기 언어 1차 소스를 먼저 보게), 그 안에서 최신순.
+        _ARABC = re.compile("[\u0600-\u06ff]")
+        def _alang(a):
+            if a.get("korean"):
+                return "ko"
+            if _ARABC.search(a.get("title") or ""):
+                return "fa" if a.get("region") == "iran" else "ar"   # 이란권=페르시아어, 그 외 아랍문자=아랍어
+            return "en"
+        _pref = lang if lang in ("ko", "en", "ar") else "en"
+        def _recent(lst):
+            by_date = sorted(lst, key=lambda a: a["dt"], reverse=True)          # 먼저 최신순
+            return sorted(by_date, key=lambda a: 0 if _alang(a) == _pref else 1)  # 안정정렬: 동일언어 우선(그 안 최신순 유지)
         q = _recent([a for a in arts if a["region"] == "qatar"])
         ir = _recent([a for a in arts if a["region"] == "iran"])
         ov = _recent([a for a in arts if a["region"] == "overseas"])
@@ -2202,7 +2240,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     _gov = render_qatar_gov(qatar_gov, lang, weekly=_isweekly)
     if issues:
         summary_html = (_dsep + _gov + f'<div class="sumhead"><span class="bar"></span>{esc(_dhead)} '
-                        f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L, collapse_links=(edition == "weekly")))
+                        f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L, collapse_links=(edition == "weekly"), lang=lang))
     elif flat_text:
         summary_html = (_dsep + _gov + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(_dhead if _wkday else L["sum_head_flat"])} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>'
