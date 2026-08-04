@@ -1927,9 +1927,9 @@ TIMELINE = [
    "en": "Iran again closes the Strait of Hormuz, alleging violations of the Lebanon ceasefire.",
    "ar": "إيران تغلق مضيق هرمز مجدداً، متّهمةً الطرف الآخر بانتهاك وقف إطلاق النار في لبنان."},
   {"d": "2026-06-17", "q": False,
-   "ko": "트럼프와 이란 대통령이 3천억 달러 규모 투자기금을 포함한 프레임워크 합의에 서명.",
-   "en": "Trump and Iran's president sign a framework agreement that includes a $300 billion investment fund.",
-   "ar": "ترامب والرئيس الإيراني يوقّعان اتفاقاً إطارياً يتضمّن صندوق استثمار بقيمة 300 مليار دولار."},
+   "ko": "파키스탄 중재 '이슬라마바드 양해각서(MoU)' 공식 서명 — 트럼프가 베르사유 G7서, 페제시키안이 테헤란서 원격 서명. 전 전선 군사작전 종료·호르무즈 60일 무료 안전통항·3천억 달러 재건기금 포함(핵 문제는 추후 과제).",
+   "en": "The Pakistan-brokered 'Islamabad Memorandum' (MoU) is signed — Trump at the Versailles G7, Pezeshkian remotely from Tehran. It ends military operations on all fronts, grants 60 days of free safe passage through Hormuz, and sets up a $300bn reconstruction fund (nuclear issues deferred).",
+   "ar": "توقيع 'مذكرة إسلام أباد' بوساطة باكستانية — ترامب في قمة G7 بفرساي وبزشكيان عن بُعد من طهران. تُنهي العمليات العسكرية على كل الجبهات، وتمنح 60 يوماً من العبور الآمن المجاني عبر هرمز، وتُنشئ صندوق إعمار بـ300 مليار دولار (المسألة النووية مؤجّلة)."},
   {"d": "2026-06-14", "q": False,
    "ko": "파키스탄 중재로 잠정 합의 — 호르무즈 재개방, 레바논 휴전, 60일 적대행위 중단 포함.",
    "en": "A Pakistan-mediated interim deal is signed: reopening Hormuz, a Lebanon ceasefire, and a 60-day halt to hostilities.",
@@ -2080,6 +2080,19 @@ TIMELINE = [
    "ko": "후티 위협으로 사우디의 바브엘만데브 원유 수출이 사실상 제로로 급감, 수에즈 경로로 전환 — 홍해 물류 대혼란.",
    "en": "Houthi threats drive Saudi crude exports via Bab el-Mandeb to near zero, forcing a shift to the Suez route — major Red Sea logistics disruption.",
    "ar": "تهديدات الحوثيين تدفع صادرات النفط السعودية عبر باب المندب إلى ما يقارب الصفر وتحوّلها إلى مسار السويس — اضطراب كبير في ملاحة البحر الأحمر."},
+  # ── 중재국(카타르·오만·파키스탄) 개별 주요 중재 활동 ──
+  {"d": "2026-03-03", "q": False,
+   "ko": "오만, 즉각 정전 촉구하며 '출구(off-ramps)는 있다'고 강조 — 개전 직후 오만의 조기 중재 시동.",
+   "en": "Oman calls for an immediate ceasefire, stressing 'off-ramps are available' — Muscat's early mediation push right after the war begins.",
+   "ar": "عُمان تدعو إلى وقف فوري لإطلاق النار مؤكّدةً أن 'مخارج متاحة' — تحرّك وساطة عُماني مبكّر فور اندلاع الحرب."},
+  {"d": "2026-04-11", "q": False,
+   "ko": "파키스탄, '이슬라마바드 회담' 주최 — 샤리프 총리 중재로 미측(JD 밴스 부통령)·이란측(갈리바프 국회의장) 대표단이 21시간·3라운드 협상했으나 합의 불발(이후 미국, 이란 항구 해군 봉쇄).",
+   "en": "Pakistan hosts the 'Islamabad Talks' — PM Sharif mediates between the US side (VP JD Vance) and Iran (Speaker Ghalibaf) over 21 hours and three rounds, but they end without a deal (the US then imposes a naval blockade of Iranian ports).",
+   "ar": "باكستان تستضيف 'محادثات إسلام أباد' — رئيس الوزراء شريف يتوسّط بين الجانب الأمريكي (نائب الرئيس جي دي فانس) وإيران (رئيس البرلمان قاليباف) على مدى 21 ساعة وثلاث جولات دون التوصّل إلى اتفاق (ثم تفرض واشنطن حصاراً بحرياً على الموانئ الإيرانية)."},
+  {"d": "2026-08-02", "q": False,
+   "ko": "이란, 오만과의 호르무즈 해협 관련 협상이 '최종 단계'라고 발표 — 오만의 해협 통항 중재 역할 부각.",
+   "en": "Iran says its negotiations with Oman over the Strait of Hormuz are 'in the final stages' — underscoring Oman's mediating role over the waterway.",
+   "ar": "إيران تعلن أن مفاوضاتها مع عُمان بشأن مضيق هرمز في 'مراحلها النهائية' — ما يبرز دور عُمان الوسيط بشأن الممر المائي."},
 ]
 
 _TL_MON = {"ko": ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]}
