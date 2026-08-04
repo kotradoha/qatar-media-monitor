@@ -1998,6 +1998,127 @@ def _tl_asof(lang="ko"):
     return f"{d.year}. {d.month}. {d.day}. 기준"
 
 
+# ───────────────────── 타임라인 자동 후보 추출(검증 게이트) ─────────────────────
+# 매 회차 파이프라인에서 '판세를 바꾼 중대사건' 후보만 뽑아 timeline_candidates.json에 적재.
+# 자동 확정이 아니라 '검토 대기' 상태로 쌓고, 사람이 확인 후 TIMELINE(하드코딩)에 확정 반영.
+CANDS_FILE = "timeline_candidates.json"
+
+
+def _tl_norm(s):
+    return re.sub(r"\s+", "", (s or "")).lower()[:24]
+
+
+def gemini_timeline_candidates(pool, win_label):
+    """이번 회차 기사에서 타임라인급 중대사건 후보를 검증 게이트로 추출. 반환 리스트(없으면 [])."""
+    if not pool:
+        return []
+    lines = []
+    for i, x in enumerate(pool[:72]):
+        d = x["dt"].astimezone(TZ).strftime("%Y-%m-%d %H:%M")
+        desc = (x.get("desc") or "")[:DESC_MAX]
+        lines.append(f"{i}: ({x['source']}, {d}) {x['title']} :: {desc}")
+    exist = "; ".join(f"{e['d']}:{_tl_norm(e.get('ko'))}" for e in TIMELINE)
+    prompt = (
+        "당신은 '중동전쟁 타임라인' 편집자입니다. 아래 [기사 목록]에서 **'전쟁의 판세를 바꾼 중대 사건'만** 타임라인 후보로 추출하세요. "
+        "포함: 개전·주요 피격(카타르 본토·에너지시설·미군기지 등)·정전/휴전/합의·확전·대형 에너지 차질(LNG·유가)·중대 인명피해·해협 봉쇄/통항 변화·주요 외교 합의 등 판세를 바꾼 사건. "
+        "제외: 일상적 논평·분석·전망·소규모 반복 기사·단순 시황·이미 타임라인에 있는 사건. "
+        "【검증 게이트】① 반드시 [기사 목록]에 근거가 있는 것만(창작 절대 금지). ② 둘 이상 매체 또는 1차·공식 소스로 확인되면 verified=true. "
+        "③ 한 매체·당사국의 미확인 '주장'이면 verified=false로 표시하고 본문을 '…라고 주장'처럼 귀속 서술. ④ 애매하면 넣지 말 것(정밀도 우선). "
+        "【중요 수치 포함】 사상자·미사일/드론 수·유가 변동폭(%)·LNG 물량/비율·선박 수 등 핵심 수치를 팩트로 담으세요. "
+        "【중복 금지】 아래 [기존 타임라인]과 같은 사건(날짜·내용)이면 절대 넣지 마세요.\n"
+        f"[기존 타임라인] {exist}\n"
+        "각 후보는 한국어 개조식·명사형('-함/-됨/-임') 1문장. 카타르 직접 관련이면 q=true. confidence는 high(복수·1차 확인)/med/low(단일·미확인) 중 하나. "
+        "출력은 오직 JSON: {\"cands\":[{\"d\":\"YYYY-MM-DD\",\"ko\":\"...\",\"q\":true,\"verified\":true,\"confidence\":\"high\",\"ids\":[0,1]}]} (없으면 {\"cands\":[]}).\n\n"
+        f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
+    out = gemini_generate(prompt, json_mode=True)
+    if not out:
+        return []
+    try:
+        cs = json.loads(out).get("cands") or []
+    except Exception as ex:
+        print(f"[warn] timeline cands parse failed: {ex}")
+        return []
+    res = []
+    for c in cs[:8]:
+        if not isinstance(c, dict):
+            continue
+        d = (c.get("d") or "").strip()[:10]
+        ko = _clean_bullet(c.get("ko") or "")
+        if not re.match(r"\d{4}-\d{2}-\d{2}$", d) or not ko:
+            continue
+        links, seen = [], set()
+        for i in (c.get("ids") or [])[:3]:
+            if isinstance(i, int) and 0 <= i < len(pool):
+                u = pool[i].get("link")
+                if u and u not in seen:
+                    seen.add(u)
+                    links.append((pool[i].get("source", ""), u))
+        res.append({"d": d, "ko": ko, "q": bool(c.get("q")),
+                    "verified": bool(c.get("verified")),
+                    "confidence": (c.get("confidence") or "med"), "links": links})
+    return res
+
+
+def merge_timeline_candidates(new_cands, run_label):
+    """새 후보를 timeline_candidates.json에 병합. 기존 TIMELINE(확정)·기존 후보와 중복 제거,
+    이미 TIMELINE에 확정된 후보는 자동 제거(pending→확정 시 목록에서 빠짐)."""
+    existing = []
+    if os.path.exists(CANDS_FILE):
+        try:
+            existing = json.load(open(CANDS_FILE, encoding="utf-8"))
+            if not isinstance(existing, list):
+                existing = []
+        except Exception:
+            existing = []
+    tl_keys = {(e["d"], _tl_norm(e.get("ko"))) for e in TIMELINE}
+    existing = [e for e in existing if (e.get("d", ""), _tl_norm(e.get("ko"))) not in tl_keys]  # 확정된 건 후보에서 제거
+    have = {(e.get("d", ""), _tl_norm(e.get("ko"))) for e in existing} | tl_keys
+    added = 0
+    for c in new_cands:
+        key = (c["d"], _tl_norm(c["ko"]))
+        if key in have:
+            continue
+        have.add(key)
+        c2 = dict(c)
+        c2["first_seen"] = run_label
+        c2["status"] = "pending"
+        existing.append(c2)
+        added += 1
+    existing.sort(key=lambda e: e.get("d", ""), reverse=True)
+    existing = existing[:80]
+    try:
+        with open(CANDS_FILE, "w", encoding="utf-8") as fh:
+            json.dump(existing, fh, ensure_ascii=False, indent=1)
+    except Exception as ex:
+        print(f"[warn] write candidates failed: {ex}")
+    print(f"[info] timeline candidates: +{added} new, {len(existing)} pending")
+    return existing
+
+
+def _render_timeline_pending(lang):
+    """검토 대기 후보 블록(국문 페이지에만 노출 — 미확정·검토용). 확정 전까지 공식 타임라인과 분리."""
+    if lang != "ko" or not os.path.exists(CANDS_FILE):
+        return ""
+    try:
+        cands = json.load(open(CANDS_FILE, encoding="utf-8"))
+    except Exception:
+        return ""
+    if not cands:
+        return ""
+    rows = ""
+    for c in cands[:40]:
+        badge = {"high": "높음", "med": "보통", "low": "낮음"}.get(c.get("confidence", "med"), "보통")
+        vflag = "검증" if c.get("verified") else "미확인 주장"
+        qb = "🇶🇦 " if c.get("q") else ""
+        chips = "".join(f'<a href="{esc(u)}" target="_blank" rel="noopener">↗ {esc(s)}</a>'
+                        for s, u in (c.get("links") or []) if u)
+        rows += (f'<li><b>{esc(c.get("d", ""))}</b> {qb}{esc(c.get("ko", ""))} '
+                 f'<span class="cbadge">신뢰 {badge}·{vflag}</span> {chips}</li>')
+    return ('<details class="tlpending"><summary>🕒 검토 대기 후보 (자동 추출·미확정 — 확인 후 타임라인 확정) · '
+            f'{len(cands)}건</summary><ul>{rows}</ul>'
+            '<div class="pnote">※ 매 회차 자동 추출된 후보이며, 검증·확정 전까지는 공식 타임라인이 아닙니다.</div></details>')
+
+
 def render_timeline_page(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
     home = SITE_BASE if lang == "ko" else f"{SITE_BASE}{lang}.html"
@@ -2023,6 +2144,7 @@ def render_timeline_page(lang="ko"):
         dir=L["dir"], htmllang=L["html"], title=esc(L["tl_head"]),
         tag=esc(L["tl_tag"]), head=esc(L["tl_head"]), note=esc(L["tl_note"]),
         rows=_timeline_rows(lang), sources=_timeline_sources_html(lang),
+        pending=_render_timeline_pending(lang),
         back=esc(L["tl_back"]), home=esc(home),
         f_all=esc(L["tl_all"]), f_qonly=esc(L["tl_qonly"]), f_qex=esc(L["tl_qex"]), dl=esc(L["tl_dl"]),
         tlscript=tlscript)
@@ -2740,6 +2862,14 @@ TIMELINE_PAGE = """<!DOCTYPE html>
   .tlsrc{{margin-top:22px;padding-top:12px;border-top:1px solid var(--line);
     font-size:10.5px;color:var(--muted);line-height:1.7}}
   .tlsrc-l{{font-weight:800}}
+  .tlpending{{margin-top:20px;border:1px dashed var(--accent);border-radius:10px;padding:8px 12px;background:var(--panel2)}}
+  .tlpending>summary{{cursor:pointer;font-weight:800;font-size:13px;color:var(--accent)}}
+  .tlpending ul{{margin:8px 0 0;padding-inline-start:18px}}
+  .tlpending li{{font-size:12.5px;margin:5px 0;line-height:1.5}}
+  .tlpending .cbadge{{display:inline-block;font-size:10.5px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:0 5px;margin-inline-start:4px}}
+  .tlpending a{{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line);margin-inline-start:5px}}
+  .tlpending a:hover{{color:var(--accent)}}
+  .tlpending .pnote{{font-size:11px;color:var(--muted);margin-top:8px}}
   .tlsrc a{{color:var(--muted);text-decoration:none;border-bottom:1px dotted var(--line)}}
   .tlsrc a:hover{{color:var(--accent)}}
   .tlsrc-n{{margin-top:5px;font-size:10px;opacity:.85}}
@@ -2791,6 +2921,7 @@ TIMELINE_PAGE = """<!DOCTYPE html>
     <button class="tldlbtn" id="tldl">{dl}</button>
   </div>
   {rows}
+  {pending}
   {sources}
 </div>
 <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
@@ -3005,6 +3136,11 @@ def main():
     slot_dt, ampm = _slot_of(now_q)
     dno = _daily_no(slot_dt)
     ymd = slot_dt.strftime('%Y%m%d')
+    # 타임라인 자동 후보 추출(검증 게이트) — 매 회차 실행, timeline_candidates.json에 적재(사람 확인 후 TIMELINE 확정).
+    try:
+        merge_timeline_candidates(gemini_timeline_candidates(pool, label_ko), f"{ymd}-{ampm}")
+    except Exception as ex:
+        print(f"[warn] timeline candidate step failed: {ex}")
     is_weekly = (ampm == "0700" and slot_dt.weekday() == WEEKLY_WEEKDAY and dno is not None)
     wno = _weekly_no(slot_dt.date()) if is_weekly else None
 
