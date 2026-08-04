@@ -1563,7 +1563,8 @@ def gemini_qatar_gov(pool, win_label):
         "대상: 카타르 국왕(에미르)·총리·부총리·외교부(MOFA)·국방부·내무부·정부커뮤니케이션실(GCO)·카타르에너지(QatarEnergy)·QNA 등 카타르 정부·국영기관, 그리고 '카타르(도하)'가 주체가 되는 중재·외교·회담·협의·성명·조치·촉구. "
         "【중요 — 공식 발표가 아니어도 포함】 꼭 카타르 정부의 '공식 성명·발표'로 국한하지 마세요. **기사 본문에 카타르 정부·지도부의 전쟁·정세 관련 활동·행보·입장·중재 노력이 언급되면, 그 기사를 보도한 매체가 카타르 국영이 아니어도(로이터·AP·알자지라·외신 등 제3자 보도라도) 반드시 포함**하세요. 핵심은 '보도 주체'가 아니라 '내용이 카타르 정부의 정세 관련 행보인가'입니다. "
         "**카타르가 참여·서명한 GCC(걸프협력회의)·아랍연맹 공동성명이나 정상·외교장관 회의 결과도 포함**하세요(정세 관련일 때). "
-        "【반드시 포함해야 하는 예시】 (1) 카타르가 미·이란 합의(MOU) 이행을 위해 걸프국들의 공동 조율·중재를 촉구하거나 조율하는 행보, (2) 총리·외교장관이 당사국·역내국(이집트·쿠웨이트·사우디·요르단 등)에 대화·긴장완화·확전 저지를 촉구/협의하는 발언·통화·회담, (3) 내무장관 등 각료가 이란 측 카운터파트와 갖는 통화, (4) 에미르·GCO·MOFA의 정세 관련 성명 — 이런 카타르 주체의 정세 관련 행보는 '의례적 외교'가 아니라 **핵심 정부 동향이므로 반드시 포함**하세요. "
+        "【반드시 포함해야 하는 예시】 (1) 카타르가 미·이란 합의(MOU) 이행을 위해 걸프국들의 공동 조율·중재를 촉구하거나 조율하는 행보, (2) 총리·외교장관이 당사국·역내국(이집트·쿠웨이트·사우디·요르단 등)에 대화·긴장완화·확전 저지를 촉구/협의하는 발언·통화·회담, (3) 내무장관 등 각료가 이란 측 카운터파트와 갖는 통화, (4) 에미르·GCO·MOFA의 정세 관련 성명, (5) **카타르의 가자 정전·인질·구호 중재 외교**(하마스-이스라엘 중재국으로서 이스라엘에 대한 압박 촉구·정전 준수 재확인·합의 진전 시사 등)도 반드시 포함 — 이런 카타르 주체의 정세 관련 행보는 '의례적 외교'가 아니라 **핵심 정부 동향이므로 반드시 포함**하세요. "
+        "【이슈와의 정합성】 아래에서 만들 '이슈별 요약'에 카타르 정부·지도부의 행보(중재·촉구·규탄·통화·성명 등)가 등장하면, 그 사안은 **반드시 이 정부 동향 섹션에도 포함**하세요(이슈에는 있는데 정부 동향에서 빠지는 일이 없어야 함). "
         "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
         "제외 대상: **카타르 정부·지도부가 주체·당사자가 아닌, 순전히 타국만의 동향(카타르와 무관)**, 중동 정세·전쟁과 무관한 카타르 정부 활동(타 대륙 산불·재난 구조대 파견, 환경·스포츠·문화·조세·일반 행정 등), 단순 축전·조전 — 이 섹션은 오직 '중동 정세(전쟁·역내 안보)' 관련 카타르 정부 동향만 담습니다. "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
@@ -1601,6 +1602,55 @@ def gemini_qatar_gov(pool, win_label):
     except Exception as ex:
         print(f"[warn] qatar_gov parse failed: {ex}")
     return _gov_kw_fallback(qpool)
+
+
+# 이슈에 카타르 정부 관련 내용이 있으면 '정부 동향'에도 반드시 잡히도록 하는 결정론적 보완(누락 방지)
+_GOV_QA_ACTOR = ["카타르", "도하", "에미르", "국왕", "총리", "부총리", "외교장관", "외무장관",
+                 "내무장관", "국방장관", "카타르에너지", "gco", "mofa", "qna", "카타르통신"]
+_GOV_QA_ACTION = ["중재", "촉구", "규탄", "통화", "회담", "협의", "성명", "조율", "환영", "발표",
+                  "항의", "요청", "지지", "재확인", "밝힘", "논의", "제안", "시사", "경고", "비판", "합의"]
+
+
+def _gov_safety_net(issues, gov, pool):
+    """이슈 요약에 '카타르 정부·지도부'의 행보(중재·촉구·규탄·통화·성명 등)가 있으면,
+    AI 정부동향 추출이 놓쳤더라도 그 문장을 정부동향에 반드시 반영. 이미 담긴 내용은 건너뜀."""
+    if not issues:
+        return gov or []
+    gov = list(gov or [])
+
+    def _norm(s):
+        return re.sub(r"\s+", "", (s or "")).lower()
+
+    gov_norm = _norm(" ".join(g.get("t", "") for g in gov))
+    for iss in issues:
+        if not isinstance(iss, dict):
+            continue
+        cand = None
+        for s in (list(iss.get("summary") or []) + [iss.get("theme", "")]):
+            if ("카타르" in s or "도하" in s) and any(a in s.lower() for a in _GOV_QA_ACTOR) \
+                    and any(v in s for v in _GOV_QA_ACTION):
+                cand = s
+                break
+        if not cand:
+            continue
+        b = _clean_bullet(cand)
+        if not b or _norm(b)[:18] in gov_norm:      # 이미 정부동향에 있으면 skip
+            continue
+        links, seen = [], set()
+        for j in (iss.get("ids") or [])[:8]:
+            if isinstance(j, int) and 0 <= j < len(pool):
+                u = pool[j].get("link")
+                src = pool[j].get("source", "")
+                qatari = any(k in (src or "").lower() for k in
+                             ["qatar", "aljazeera", "peninsula", "gulf times", "qna", "tribune", "lusail", "doha"])
+                if u and u not in seen and (qatari or not links):
+                    seen.add(u)
+                    links.append((src, u))
+            if len(links) >= 2:
+                break
+        gov.append({"t": b, "links": links})
+        gov_norm += _norm(b)
+    return gov[:6]
 
 
 def translate_gov(gov, lang):
@@ -3157,6 +3207,7 @@ def main():
     pool = build_issue_pool(items_win)
     issues = gemini_issues(pool, label_ko)
     gov_ko = gemini_qatar_gov(pool, label_ko)
+    gov_ko = _gov_safety_net(issues, gov_ko, pool)   # 이슈에 잡힌 카타르 정부 행보는 정부동향에도 반드시 반영
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
     os.makedirs("archive", exist_ok=True)
@@ -3188,6 +3239,7 @@ def main():
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
         gov_wk_ko = gemini_qatar_gov(wpool, wlabel_ko)
+        gov_wk_ko = _gov_safety_net(wissues, gov_wk_ko, wpool)
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
         witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
