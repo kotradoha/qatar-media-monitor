@@ -2341,7 +2341,7 @@ var all=parts.concat(cen,[end]),tot=all.reduce(function(a,x){return a+x.length;}
 all.forEach(function(x){out.set(x,p);p+=x.length;});return out;}
 function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function dl(bytes,mime,name){var blob=new Blob([bytes],{type:mime});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
-function fnbase(D){var m=D.updated.match(/(\d{4})[.\/]\s*(\d{1,2})[.\/]\s*(\d{1,2})/);var ds=m?(m[1]+('0'+m[2]).slice(-2)+('0'+m[3]).slice(-2)):'';var ed=D.edn?('_'+D.edn.replace(/\s+/g,'')):'';return T.fname+ed+(ds?'_'+ds:'');}
+function fnbase(D){var m=D.updated.match(/(\d{4})[.\/]\s*(\d{1,2})[.\/]\s*(\d{1,2})/);var ds=m?(m[1]+('0'+m[2]).slice(-2)+('0'+m[3]).slice(-2)):'';var tm=D.updated.match(/(\d{1,2}):(\d{2})/);var slot=tm?('_'+('0'+tm[1]).slice(-2)+tm[2]):'';var ed=D.edn?('_'+D.edn.replace(/\s+/g,'')):'';return T.fname+ed+(ds?'_'+ds+slot:'');}
 // ===== XLSX(다중 시트) =====
 function colL(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
 function cel(r,c,v,st){return '<c r="'+colL(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
