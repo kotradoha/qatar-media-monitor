@@ -1983,34 +1983,22 @@ TIMELINE = [
    "en": "An Iranian missile hits Al Udeid Air Base; no casualties are reported.",
    "ar": "صاروخ إيراني يصيب قاعدة العديد الجوية دون تسجيل خسائر بشرية."},
   {"d": "2026-03-02", "q": True,
-   "ko": "이란이 하마드국제공항을 재차 겨냥(요격), 카타르 F-15가 Su-24 폭격기 2대를 격추(첫 공대공 전과), 드론이 라스라판·메사이드 산업지구를 타격.",
-   "en": "Iran again targets Hamad International Airport (intercepted); Qatari F-15s down two Su-24 bombers (first air-to-air kills), while drones hit the Ras Laffan and Mesaieed industrial areas.",
-   "ar": "إيران تستهدف مطار حمد الدولي مجدداً (تم اعتراضه)؛ ومقاتلات F-15 القطرية تسقط قاذفتي Su-24 (أول إسقاط جوي)، بينما تضرب مسيّرات منطقتي رأس لفان ومسيعيد الصناعيتين."},
+   "ko": "이란이 하마드국제공항을 재차 겨냥(요격), 카타르 F-15가 Su-24 폭격기 2대를 격추(첫 공대공 전과), 드론이 라스라판·메사이드 산업지구를 타격 — 이날까지 카타르 내 부상자 누계 21명(대부분 요격 파편).",
+   "en": "Iran again targets Hamad International Airport (intercepted); Qatari F-15s down two Su-24 bombers (first air-to-air kills), while drones hit the Ras Laffan and Mesaieed industrial areas — cumulative injuries in Qatar reach 21 by this day (mostly from interception shrapnel).",
+   "ar": "إيران تستهدف مطار حمد الدولي مجدداً (تم اعتراضه)؛ ومقاتلات F-15 القطرية تسقط قاذفتي Su-24 (أول إسقاط جوي)، بينما تضرب مسيّرات منطقتي رأس لفان ومسيعيد الصناعيتين — وترتفع الإصابات التراكمية في قطر إلى 21 بحلول هذا اليوم (معظمها من شظايا الاعتراض)."},
   {"d": "2026-02-28", "q": True,
    "ko": "이란 보복 개시 — 카타르에 미사일 66발(대부분 요격, 16명 부상)과 하마드공항 겨냥으로 영공 폐쇄; 알우데이드·바레인 5함대·쿠웨이트 미군기지와 이스라엘도 동시 타격.",
    "en": "Iran's retaliation begins — 66 missiles at Qatar (mostly intercepted, 16 injured) and a strike aimed at Hamad Airport close Qatari airspace; Al Udeid, the Fifth Fleet in Bahrain, U.S. bases in Kuwait, and Israel are hit simultaneously.",
    "ar": "بدء الرد الإيراني — 66 صاروخاً على قطر (اعتُرض معظمها وأُصيب 16) واستهداف مطار حمد يغلقان الأجواء القطرية؛ وتُضرب في الوقت نفسه العديد والأسطول الخامس في البحرين وقواعد أمريكية في الكويت وإسرائيل."},
   {"d": "2026-02-28", "q": False,
-   "ko": "미국·이스라엘이 이란 핵·군사시설을 동시 기습 공습(하메네이 사망 보도) — 중동 전쟁 발발.",
-   "en": "The U.S. and Israel launch simultaneous surprise strikes on Iran's nuclear and military sites (Khamenei reported killed) — the Middle East war breaks out.",
-   "ar": "الولايات المتحدة وإسرائيل تشنّان ضربات مفاجئة متزامنة على مواقع إيران النووية والعسكرية (أنباء عن مقتل خامنئي) — اندلاع حرب الشرق الأوسط."},
+   "ko": "미국·이스라엘이 이란 핵·군사시설을 동시 기습 공습(하메네이 사망 보도), 개전일 이란 고위지휘관 48명 이상 피살 — 중동 전쟁 발발.",
+   "en": "The U.S. and Israel launch simultaneous surprise strikes on Iran's nuclear and military sites (Khamenei reported killed), with 48+ senior Iranian commanders killed on the opening day — the Middle East war breaks out.",
+   "ar": "الولايات المتحدة وإسرائيل تشنّان ضربات مفاجئة متزامنة على مواقع إيران النووية والعسكرية (أنباء عن مقتل خامنئي)، مع مقتل أكثر من 48 قائداً إيرانياً كبيراً في يوم اندلاع الحرب — اندلاع حرب الشرق الأوسط."},
   # ── 2026-02-28~08-04 종합 재정비: 추가 중대사건 + 주체별 피해현황(출처별 편차 병기, 최신 보도 수치) ──
   {"d": "2026-03-01", "q": False,
    "ko": "미군의 이란 미납(Minab) 초등학교 오폭으로 어린이 등 160~175명 사망 보도 — 개전 초 대규모 민간피해 논란.",
    "en": "A US strike hits an elementary school in Minab, Iran, reportedly killing 160–175 people including children — a major early-war civilian-casualty controversy.",
    "ar": "غارة أمريكية تصيب مدرسة ابتدائية في ميناب بإيران، ويُفاد بمقتل 160–175 شخصاً بينهم أطفال — جدل كبير حول ضحايا مدنيين في بداية الحرب."},
-  {"d": "2026-03-02", "q": True,
-   "ko": "카타르 내 전쟁 관련 부상자 누계 21명으로 증가(개전~3/2, 대부분 낙하 파편).",
-   "en": "Cumulative war-related injuries in Qatar rise to 21 (Feb 28–Mar 2), mostly from falling shrapnel.",
-   "ar": "ارتفاع إجمالي الإصابات المرتبطة بالحرب في قطر إلى 21 (28 فبراير–2 مارس)، معظمها من شظايا متساقطة."},
-  {"d": "2026-03-05", "q": False,
-   "ko": "개전 초 피해 집계 — 미군 전사 13명(3월 초 기준), 이란 개전일 고위지휘관 48명+ 피살, 이란인 최대 320만명 피란.",
-   "en": "Early-war toll — 13 US troops killed by early March, 48+ senior Iranian commanders killed on the opening day, and up to 3.2 million Iranians displaced.",
-   "ar": "حصيلة مبكرة — مقتل 13 جندياً أمريكياً بحلول أوائل مارس، وأكثر من 48 قائداً إيرانياً كبيراً يوم اندلاع الحرب، ونزوح ما يصل إلى 3.2 مليون إيراني."},
-  {"d": "2026-03-08", "q": False,
-   "ko": "이란 민간인 사망 1,701명 집계(HRANA) — 테헤란 주거지·병원 피해로 민간 희생 급증.",
-   "en": "Iranian civilian deaths reach 1,701 (HRANA tally) as strikes on Tehran residential areas and hospitals drive a sharp rise.",
-   "ar": "ارتفاع قتلى المدنيين الإيرانيين إلى 1,701 (إحصاء HRANA) مع تصاعد الضحايا جرّاء استهداف أحياء سكنية ومستشفيات في طهران."},
   {"d": "2026-03-21", "q": False,
    "ko": "이란, 장거리 탄도미사일로 인도양 디에고가르시아 미·영 기지 공격 시도 — 전선의 지리적 확대.",
    "en": "Iran attempts a long-range ballistic-missile strike on the US–UK base at Diego Garcia in the Indian Ocean — widening the war's geography.",
@@ -2023,10 +2011,6 @@ TIMELINE = [
    "ko": "이란, 쿠웨이트·바레인·요르단 등 미군 주둔국을 다발 타격 — 걸프 해상안보가 전쟁의 핵심 쟁점으로 부상.",
    "en": "Iran strikes multiple US-hosting states (Kuwait, Bahrain, Jordan) — Gulf maritime security becomes a central issue of the war.",
    "ar": "إيران تضرب عدة دول تستضيف قوات أمريكية (الكويت، البحرين، الأردن) — وأمن الملاحة الخليجي يصبح قضية محورية في الحرب."},
-  {"d": "2026-04-12", "q": False,
-   "ko": "이란 법의학당국, 전쟁 사망자(군·민간 합계) 3,375명 확인 — 누계 인명피해 공식 집계.",
-   "en": "Iran's forensic authority confirms 3,375 total war dead (military and civilian) — an official cumulative toll.",
-   "ar": "الطب الشرعي الإيراني يؤكّد 3,375 قتيلاً في الحرب (عسكريين ومدنيين) — حصيلة تراكمية رسمية."},
   {"d": "2026-06-06", "q": False,
    "ko": "미·이란 협상 교착 — 240억 달러 규모 이란 동결자산 문제로 평화협상 난항(레자이).",
    "en": "US–Iran talks deadlock over $24 billion in frozen Iranian assets (Rezaei).",
@@ -2055,14 +2039,6 @@ TIMELINE = [
    "ko": "요르단에서 미군 2명 전사·1명 실종 — 7월 재확전기 미군 인명피해.",
    "en": "Two US servicemembers are killed and one goes missing in Jordan — US losses during the July re-escalation.",
    "ar": "مقتل جنديين أمريكيين وفقدان ثالث في الأردن — خسائر أمريكية خلال تصعيد يوليو."},
-  {"d": "2026-07-19", "q": False,
-   "ko": "레바논 보건부, 3/2 이후 사망 4,328명·부상 12,229명 집계 — 이번 전쟁 최대 민간 피해 범주.",
-   "en": "Lebanon's health ministry reports 4,328 killed and 12,229 wounded since March 2 — the war's largest single civilian-casualty category.",
-   "ar": "وزارة الصحة اللبنانية تُحصي 4,328 قتيلاً و12,229 جريحاً منذ 2 مارس — أكبر فئة ضحايا مدنيين في الحرب."},
-  {"d": "2026-07-30", "q": False,
-   "ko": "누계 피해현황(집계·출처별 편차) — 이란 군 사망 1,800~7,650·민간 1,701~3,636, 미군 전사 18~20·부상 624, 이스라엘 민간 28, 레바논 민간 4,328, 걸프국 43~51.",
-   "en": "Cumulative toll (tallies vary by source) — Iran: 1,800–7,650 military and 1,701–3,636 civilians killed; US: 18–20 troops killed and 624 wounded; Israel: 28 civilians; Lebanon: 4,328 civilians; Gulf states: 43–51.",
-   "ar": "الحصيلة التراكمية (تتفاوت حسب المصادر) — إيران: 1,800–7,650 عسكرياً و1,701–3,636 مدنياً؛ الولايات المتحدة: 18–20 جندياً و624 جريحاً؛ إسرائيل: 28 مدنياً؛ لبنان: 4,328 مدنياً؛ دول الخليج: 43–51."},
   # ── 호르무즈·홍해 해상 주요 사건 + 중재(오만·카타르·파키스탄) 보강 ──
   {"d": "2026-03-02", "q": False,
    "ko": "이란 IRGC, 미·이스라엘 공습 직후 호르무즈 해협 봉쇄 — 브렌트유 100달러 시험 등 글로벌 유가 급등.",
@@ -2186,9 +2162,8 @@ def gemini_timeline_candidates(pool, win_label):
         "제외: 일상적 논평·분석·전망·소규모 반복 기사·단순 시황·이미 타임라인에 있는 사건. "
         "【검증 게이트】① 반드시 [기사 목록]에 근거가 있는 것만(창작 절대 금지). ② 둘 이상 매체 또는 1차·공식 소스로 확인되면 verified=true. "
         "③ 한 매체·당사국의 미확인 '주장'이면 verified=false로 표시하고 본문을 '…라고 주장'처럼 귀속 서술. ④ 애매하면 넣지 말 것(정밀도 우선). "
-        "【주체별 피해·손실 현황(추이 기록)】 카타르·미군·이란·이스라엘·기타국 각각에 대해 사상자·부상자, 파손 시설·함정·항공기, 에너지 차질 물량·%, 피격·회항 선박 수 등을 담으세요. "
-        "**수치가 새로 발표되거나 유의미하게 상향된 각 시점**을 그 날짜·그 시점 보도치와 함께 개별 사건으로 담아, 피해 추이의 '갱신 지점'들을 시계열로 기록하세요(예: 카타르 사상자가 단계적으로 늘며 발표된 각 시점 — 최종치 하나만 남기지 말 것). "
-        "출처가 집계한 누계치는 그대로 인용하고 **여러 보도를 직접 합산하지 마세요**(이중집계 방지). 유가 변동폭(%)·미사일/드론 수 등 핵심 수치도 팩트로 포함. "
+        "【피해 수치는 '사건'과 함께 — 단순 집계 스냅샷 금지】 타임라인은 **핵심 사건이 발생한 시점**만 기록합니다. 카타르·미군·이란·이스라엘·기타국의 사상자·시설·함정·항공기·에너지 차질 등 피해 수치는 **그 피해를 낸 실제 사건 항목 안에 함께** 담으세요(예: '○○ 피격으로 △△명 사망'). "
+        "**사건 없이 단순히 누계·집계·현황만 발표된 것은 타임라인에 넣지 마세요**(예: 'X일 기준 사망 누계 N명 집계' 같은 스냅샷·집계 발표는 제외). 수치는 그 사건 시점의 최신 보도치를 쓰되, 출처가 집계한 누계치는 그대로 인용하고 **여러 보도를 직접 합산하지 마세요**(이중집계 방지). 유가 변동폭(%)·미사일/드론 수 등 핵심 수치도 사건과 함께 포함. "
         "【빈도】 매 회차 루틴이 아니라, 특정 중대사건 이후 유의미한 진전·수치 갱신이 있을 때만 추가하세요. 이미 타임라인에 있는 피해·수치와 사실상 동일하면 재등록 금지, 수치가 유의미하게 바뀐 경우에만 새 항목. "
         "【중복 금지】 아래 [기존 타임라인]과 같은 사건(날짜·내용)이면 절대 넣지 마세요.\n"
         f"[기존 타임라인] {exist}\n"
