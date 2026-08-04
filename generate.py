@@ -1862,6 +1862,18 @@ def _ql_key(item):
 #  ④ 날짜는 공개 1차 보도로 교차확인해 실제 발생일 기준으로 기입(±1일 차이 시 1차 보도일 우선).
 #  ⑤ 중요 수치 포함 — 사상자·부상자 수, 미사일/드론 수, 국제유가 가격·변동폭(%), LNG 물량·비율·손실액, 통항·피격 선박 수 등 핵심 수치를 팩트로 담을 것.
 TIMELINE = [
+  {"d": "2026-08-04", "q": False,
+   "ko": "오만 Al Khasab 인근 호르무즈 해협에서 화물선(탱커)이 미상 발사체(unknown projectile)에 피격(UKMTO 확인) — 미·이란 전쟁 이후 중동 유조선 통항 위험이 최고 수준으로 상승.",
+   "en": "A cargo tanker was hit by an unknown projectile in the Strait of Hormuz near Oman's Al Khasab (confirmed by UKMTO) — tanker-shipping risk in the Middle East reaches its highest level since the war began.",
+   "ar": "أُصيبت ناقلة شحن بقذيفة مجهولة في مضيق هرمز قرب خصب العُمانية (بتأكيد UKMTO) — ارتفاع خطر ملاحة الناقلات في الشرق الأوسط إلى أعلى مستوياته منذ بدء الحرب."},
+  {"d": "2026-08-03", "q": False,
+   "ko": "이란 IRGC가 호르무즈 해협 상공에서 미군 MQ-9 리퍼 드론을 격추했다고 주장 — 복수 이란 매체(Press TV·Fars·Mehr 등) 보도, 미국 측은 확인하지 않음.",
+   "en": "Iran's IRGC claims it shot down a US MQ-9 Reaper drone over the Strait of Hormuz — reported by multiple Iranian outlets (Press TV, Fars, Mehr); Washington has not confirmed it.",
+   "ar": "زعم الحرس الثوري الإيراني إسقاط طائرة أمريكية مسيّرة من طراز MQ-9 ريبر فوق مضيق هرمز — بحسب عدة وسائل إيرانية (برس تي في، فارس، مهر)؛ ولم تؤكّد واشنطن ذلك."},
+  {"d": "2026-08-03", "q": False,
+   "ko": "이란과 오만이 호르무즈 해협 내 임시 단일 왕복 통행로 신설을 협의(이란 외무부 대변인 바카에이) — 진입은 이란측, 진출은 오만측 경유 방식의 타협안 거론, 해협 통항 관리 방식 변화 모색.",
+   "en": "Iran and Oman discuss a temporary single round-trip corridor through the Strait of Hormuz (per Iran's FM spokesman Baqaei) — a compromise routing entry via Iran and exit via Oman, signalling a shift in how the strait is managed.",
+   "ar": "تبحث إيران وعُمان إنشاء ممر مؤقت أحادي (ذهاباً وإياباً) عبر مضيق هرمز (بحسب المتحدث باسم الخارجية الإيرانية بقائي) — تسوية بالدخول عبر إيران والخروج عبر عُمان، في مؤشر على تغيّر إدارة المضيق."},
   {"d": "2026-08-03", "q": False,
    "ko": "미·이란, 새 협상 월요일(8/4) 재개 발표 — 트럼프가 대이란 공습 취소에 이어 협상 시작을 예고하고, 이란은 '호르무즈 60일 개방' 양해각서(MoU) 이행을 미국에 촉구. 다만 이란 외무부는 이번 이해가 호르무즈 재개방 '그린라이트'는 아니라며 선을 그어 호르무즈는 여전히 폐쇄. 협상 기대에 국제유가(브렌트) 7%가량 급락해 80달러대.",
    "en": "US and Iran to resume talks Monday (8/4) — after the cancelled strike, Trump signals negotiations will begin and Iran urges Washington to honour a '60-day Hormuz opening' MoU. Iran's foreign ministry stresses the understanding is not a 'green light' to reopen Hormuz, which stays closed; Brent crude falls ~7% into the $80s on de-escalation hopes.",
