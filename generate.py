@@ -1759,15 +1759,17 @@ def _ql_key(item):
 
 # ── 중동 전쟁 주요 일지(타임라인) — 공신력 있는 공개 출처(CFR·Wikipedia '2026 Iranian strikes on Qatar'·Stars and Stripes 등) 기반, 최신순.
 # 새 사건이 생기면 이 리스트 맨 앞에 dict 하나만 추가하면 됨. q=True는 카타르 직접 관련.
+# 【정비 원칙(엄수)】
+#  ① 검증된 '실제 사건(팩트)'만 — 미확인·단일/2차 매체의 추정·관측·재보도성 기사는 넣지 말 것.
+#  ② 중복 금지 — 기존 사건의 후속 재보도는 새 항목으로 만들지 말 것(같은 17%·불가항력 등을 날짜만 바꿔 다시 넣지 않음).
+#  ③ 누락 금지 — 개전·주요 피격·정전/합의·에너지 대형 차질 등 '판세를 바꾼 중대 사건'은 빠짐없이 포함.
+#  ④ 날짜는 공개 1차 보도로 교차확인해 실제 발생일 기준으로 기입(±1일 차이 시 1차 보도일 우선).
+#  ⑤ 중요 수치 포함 — 사상자·부상자 수, 미사일/드론 수, 국제유가 가격·변동폭(%), LNG 물량·비율·손실액, 통항·피격 선박 수 등 핵심 수치를 팩트로 담을 것.
 TIMELINE = [
   {"d": "2026-08-03", "q": False,
    "ko": "미·이란, 새 협상 월요일(8/4) 재개 발표 — 트럼프가 대이란 공습 취소에 이어 협상 시작을 예고하고, 이란은 '호르무즈 60일 개방' 양해각서(MoU) 이행을 미국에 촉구. 다만 이란 외무부는 이번 이해가 호르무즈 재개방 '그린라이트'는 아니라며 선을 그어 호르무즈는 여전히 폐쇄. 협상 기대에 국제유가(브렌트) 7%가량 급락해 80달러대.",
    "en": "US and Iran to resume talks Monday (8/4) — after the cancelled strike, Trump signals negotiations will begin and Iran urges Washington to honour a '60-day Hormuz opening' MoU. Iran's foreign ministry stresses the understanding is not a 'green light' to reopen Hormuz, which stays closed; Brent crude falls ~7% into the $80s on de-escalation hopes.",
    "ar": "استئناف المحادثات بين واشنطن وطهران الاثنين (4/8) — بعد إلغاء الضربة، يلمّح ترامب إلى بدء المفاوضات وتحثّ إيران واشنطن على احترام مذكرة تفاهم 'فتح هرمز 60 يوماً'. وتؤكد الخارجية الإيرانية أن التفاهم ليس 'ضوءاً أخضر' لإعادة فتح هرمز الذي يبقى مغلقاً؛ ويهبط خام برنت نحو 7% إلى نطاق الثمانينيات على آمال خفض التصعيد."},
-  {"d": "2026-08-03", "q": True,
-   "ko": "카타르 LNG 생산능력 타격 평가 보도 — 이란 공격 여파로 카타르 LNG 생산능력의 약 17%가 최대 5년간 상실될 수 있다는 QatarEnergy 측 평가가 전해지고, 카타르가 LNG 증산(확장) 계획을 2027년으로 연기한 것으로 보도됨(단일·2차 매체 보도, 교차확인 필요). 6월 알카비 장관의 '수출능력 영향 없음' 언급과 배치되는 부정적 전망으로, 세계 최대 LNG 수출국의 공급 차질 장기화 우려.",
-   "en": "Report: blow to Qatar's LNG capacity — Iran's attacks could wipe out about 17% of Qatar's LNG capacity for up to five years per a QatarEnergy assessment cited in reports, with Qatar said to push its LNG expansion to 2027 (single/secondary sourcing, needs cross-checking). The pessimistic outlook contrasts with Energy Minister Al Kaabi's June remark of 'no impact on export capacity,' raising fears of prolonged disruption from the world's top LNG exporter.",
-   "ar": "تقارير: ضربة لطاقة قطر من الغاز المسال — قد تُفقد هجمات إيران نحو 17% من طاقة قطر لإنتاج الغاز المسال لمدة تصل إلى خمس سنوات وفق تقدير لشركة قطر للطاقة ورد في تقارير، مع أنباء عن إرجاء قطر توسّعها في الغاز المسال إلى 2027 (مصدر واحد/ثانوي، يحتاج تحققاً). ويتناقض هذا التوقّع المتشائم مع قول الوزير الكعبي في يونيو بعدم التأثير على طاقة التصدير."},
   {"d": "2026-08-01", "q": False, "note": {"ko": "미국시각", "en": "U.S. time", "ar": "بتوقيت أمريكا"},
    "ko": "트럼프, 이란 추가 대규모 공습 전격 취소 발표 — '합의의 윤곽' 마련·이란 등의 보류 요청 수용, 호르무즈 전면 개방과 '핵 위협' 종식을 조건으로 제시.",
    "en": "Trump abruptly cancels a planned large-scale strike on Iran, citing agreed 'parameters of a deal' and Tehran's request for a pause; sets full reopening of Hormuz and ending the 'nuclear threat' as conditions.",
