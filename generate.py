@@ -1395,6 +1395,8 @@ def gemini_issues(pool, win_label, weekly=False):
         "(예: MQ-9 격추 주장을 Sepah News·Press TV·Fars·Mehr 등 여러 곳이 보도했다면 'IRGC(Sepah News)가'처럼 한 곳만 지목하지 말고 'IRGC가 … 주장함'으로 쓸 것). 매체별 링크는 우측 관련기사 ids로 제공하세요. "
         "예: ['이란 IRGC가 미군 호위 유조선 2척을 호르무즈서 타격해 승조원 3명 사망 주장, 이에 국제유가(브렌트)가 약 3% 올라 배럴당 90달러대에 진입함.', "
         "'튀르키예가 호르무즈 우회 육상 물류로를 3년 내 완공 목표로 검토 중이며, 한국 정부도 해협 안정 기여방안을 복수로 검토 중이나 미국의 구체 요청은 아직 없음.']), "
+        "【현지어 소스는 영어 미커버 보완용】 관련기사(ids) 선정 시 우선순위는 영어·국제(및 국내 전재) 매체. 아랍어·페르시아어 등 현지어 기사는 같은 사안을 영어권이 이미 다뤘다면 굳이 넣지 마세요(중복 회피). "
+        "다만 현지 매체에서 중요하게 다뤄지는 정세·정부동향인데 영어로 번역·보도되지 않아 누락될 위험이 있으면 반드시 그 현지어 원문을 ids에 포함하세요 — 현지어는 '영어가 놓친 것'을 메우는 누락 방지 안전장치입니다. "
         "ids(그 사안 관련 기사 id 정수 배열, 최대 30개), "
         "qatar_impact(선택. 이 사안 안에 카타르 본토·시설·영공·해역·인원의 직접 피격·피해가 포함될 때만, 그 카타르 피해 상세를 담는 한국어 서술 배열 1~3개 — 명사형 종결어미, 무엇·어디·언제·피해규모·현재 상태 구체 명시. 카타르 직접 피해가 없으면 빈 배열 []. "
         "**qatar_impact 본문에는 매체명·기사번호를 넣지 말 것**(근거 출처는 아래 qatar_impact_ids로 제공되어 화면에 ↗ 링크로 표시됨). "
@@ -1557,18 +1559,17 @@ def gemini_qatar_gov(pool, win_label):
         desc = (x.get("desc") or "")[:DESC_MAX]
         lines.append(f"{i}: ({x['source']}, {d}) {x['title']} :: {desc}")
     prompt = (
-        "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]에서 **전쟁(미·이스라엘-이란 전쟁)과 직접 관련된 카타르 '정부'의 공식 동향**만 뽑아 한국어로 정리하세요. "
-        "대상: 카타르 국왕(에미르)·총리·외교부(MOFA)·국방부·내무부·정부커뮤니케이션실(GCO)·카타르에너지(QatarEnergy)·QNA(국영통신)의 "
-        "**전쟁·이란 정세 관련** 공식 성명·발표·결정·조치 — 예: 전쟁 관련 중재·외교, 공습·정전·핵협상에 대한 지지/규탄/우려 성명, 자국민·교민 안전조치·여행/영공 공지, 에너지·LNG·불가항력 관련 공식 입장, 대이란 제재·추방 등. "
-        "**카타르가 참여·서명한 GCC(걸프협력회의)·아랍연맹 공동성명이나 정상·외교장관 회의 결과도 카타르 정부의 공식 동향으로 포함**하세요(전쟁 관련일 때). "
-        "【반드시 포함해야 하는 예시】 총리·외교장관이 전쟁 당사국이나 역내국(이집트·쿠웨이트·사우디·요르단 등)에 대화·긴장완화·확전 저지를 촉구/협의하는 발언·통화·회담, 내무장관 등 각료가 이란 측 카운터파트와 갖는 통화, 에미르·GCO·MOFA의 전쟁·정세 관련 성명 — 이런 총리/장관/에미르의 전쟁·긴장완화 관련 공식 발언·통화·중재는 '의례적 외교'가 아니라 **핵심 정부 동향이므로 반드시 포함**하세요. "
+        "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]에서 **중동 정세(미·이스라엘-이란 전쟁·역내 안보)와 관련된 '카타르 정부·지도부'의 동향**을 뽑아 한국어로 정리하세요. "
+        "대상: 카타르 국왕(에미르)·총리·부총리·외교부(MOFA)·국방부·내무부·정부커뮤니케이션실(GCO)·카타르에너지(QatarEnergy)·QNA 등 카타르 정부·국영기관, 그리고 '카타르(도하)'가 주체가 되는 중재·외교·회담·협의·성명·조치·촉구. "
+        "【중요 — 공식 발표가 아니어도 포함】 꼭 카타르 정부의 '공식 성명·발표'로 국한하지 마세요. **기사 본문에 카타르 정부·지도부의 전쟁·정세 관련 활동·행보·입장·중재 노력이 언급되면, 그 기사를 보도한 매체가 카타르 국영이 아니어도(로이터·AP·알자지라·외신 등 제3자 보도라도) 반드시 포함**하세요. 핵심은 '보도 주체'가 아니라 '내용이 카타르 정부의 정세 관련 행보인가'입니다. "
+        "**카타르가 참여·서명한 GCC(걸프협력회의)·아랍연맹 공동성명이나 정상·외교장관 회의 결과도 포함**하세요(정세 관련일 때). "
+        "【반드시 포함해야 하는 예시】 (1) 카타르가 미·이란 합의(MOU) 이행을 위해 걸프국들의 공동 조율·중재를 촉구하거나 조율하는 행보, (2) 총리·외교장관이 당사국·역내국(이집트·쿠웨이트·사우디·요르단 등)에 대화·긴장완화·확전 저지를 촉구/협의하는 발언·통화·회담, (3) 내무장관 등 각료가 이란 측 카운터파트와 갖는 통화, (4) 에미르·GCO·MOFA의 정세 관련 성명 — 이런 카타르 주체의 정세 관련 행보는 '의례적 외교'가 아니라 **핵심 정부 동향이므로 반드시 포함**하세요. "
         "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
-        "**전쟁과 무관한 의례적 외교(축전·조전·일반 정상회담 등)·일반 정세·타국 발표·언론 논평은 제외**하고, **전쟁 관련으로 카타르 정부가 실제로 한 것**만. "
-        "**또한 중동 정세·전쟁과 무관한 카타르 정부 활동(예: 타 대륙 산불·재난 구조대 파견, 환경·스포츠·문화·조세·일반 행정 등)은 정부 활동이라도 제외** — 이 섹션은 오직 '중동 정세(전쟁·역내 안보)' 관련만 담습니다. "
+        "제외 대상: **카타르 정부·지도부가 주체·당사자가 아닌, 순전히 타국만의 동향(카타르와 무관)**, 중동 정세·전쟁과 무관한 카타르 정부 활동(타 대륙 산불·재난 구조대 파견, 환경·스포츠·문화·조세·일반 행정 등), 단순 축전·조전 — 이 섹션은 오직 '중동 정세(전쟁·역내 안보)' 관련 카타르 정부 동향만 담습니다. "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
-        "**아래 이슈별 언론동향과 내용이 겹쳐도 무방합니다 — 카타르 정부의 전쟁 관련 공식 발표·지침·성명·조치이면 반드시 포함**하세요(정부 공식 동향은 별도로 중요). "
+        "**아래 이슈별 언론동향과 내용이 겹쳐도 무방합니다 — 카타르 정부의 정세 관련 행보이면 반드시 포함**하세요(정부 동향은 별도로 중요). "
         "각 항목에는 그 동향을 뒷받침하는 기사 번호(id)를 1~3개 담으세요. "
-        "단, 전쟁과 무관한 의례적 외교나 카타르 정부 활동이 아닌 것은 넣지 말고, 뚜렷한 전쟁 관련 공식 동향이 없으면 반드시 빈 배열을 반환하세요. "
+        "카타르 정부·지도부가 주체인 정세 관련 동향이 [기사 목록]에 전혀 없을 때만 빈 배열을 반환하세요. "
         "출력은 오직 JSON: {\"gov\":[{\"t\":\"불릿\",\"ids\":[0]}]} (없으면 {\"gov\":[]}).\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
     out = gemini_generate(prompt, json_mode=True)
@@ -1746,6 +1747,10 @@ def render_issues(issues, pool, now_utc, L=None, collapse_links=False, lang="ko"
         def _recent(lst):
             by_date = sorted(lst, key=lambda a: a["dt"], reverse=True)          # 먼저 최신순
             return sorted(by_date, key=lambda a: 0 if _alang(a) == _pref else 1)  # 안정정렬: 동일언어 우선(그 안 최신순 유지)
+        # 현지어(아랍어·페르시아어) 링크는 '영어 미커버 누락 방지' 안전장치 — 같은 이슈를 영어·국제(또는 국내)매체가 이미 커버하면 중복이므로 제외하고,
+        # 영어권이 다루지 않은 이슈일 때만 현지어 원문을 남겨 크로스체크·누락 방지. 우선순위=영어.
+        if any(_alang(a) in ("en", "ko") for a in arts):
+            arts = [a for a in arts if _alang(a) not in ("ar", "fa")]
         q = _recent([a for a in arts if a["region"] == "qatar"])
         ir = _recent([a for a in arts if a["region"] == "iran"])
         ov = _recent([a for a in arts if a["region"] == "overseas"])
@@ -1983,6 +1988,16 @@ def timeline_ref(lang="ko"):
             f'<span class="tlref">📌 {esc(L["tl_tag"])}: '
             f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(L["tl_head"])} →</a></span>')
 
+def _tl_asof(lang="ko"):
+    """타임라인 '오늘(다운로드 시점) 기준' 표기 — 누적 자료임을 제목에 명시."""
+    d = datetime.now(TZ)
+    if lang == "en":
+        return f"as of {d.year}-{d.month:02d}-{d.day:02d}"
+    if lang == "ar":
+        return f"حتى {d.year}-{d.month:02d}-{d.day:02d}"
+    return f"{d.year}. {d.month}. {d.day}. 기준"
+
+
 def render_timeline_page(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
     home = SITE_BASE if lang == "ko" else f"{SITE_BASE}{lang}.html"
@@ -1998,6 +2013,9 @@ def render_timeline_page(lang="ko"):
         "c_date": L["tl_c_date"], "c_cat": L["tl_c_cat"], "c_event": L["tl_c_event"], "c_detail": L["tl_c_detail"],
         "catq": L["tl_q"], "catgen": L["tl_cat_gen"],
         "fname": L["tl_fname"], "sheet": L["tl_sheet"],
+        # 타임라인은 2026.2.28. 발발 이후 누적 자료 → 제목에 '다운로드 시점(오늘) 기준' 표기
+        "head": L["tl_head"] + " · " + _tl_asof(lang),
+        "date": datetime.now(TZ).strftime("%Y%m%d"),   # 다운로드 파일명 날짜 접미사(_YYYYMMDD)
         "widths": [13, 9, 40, 60],
     }
     tlscript = _TL_SCRIPT.replace("__CFG__", json.dumps(cfg, ensure_ascii=False))
@@ -2036,14 +2054,16 @@ function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&l
 function col(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
 function cel(r,c,v,st){return '<c r="'+col(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
 function buildXlsx(headers,body){
-var sd='<row r="1">';headers.forEach(function(h,i){sd+=cel(1,i,h,'1');});sd+='</row>';
-body.forEach(function(row,ri){var r=ri+2;sd+='<row r="'+r+'">';row.forEach(function(v,ci){sd+=cel(r,ci,v,'2');});sd+='</row>';});
+var lc=col(headers.length-1);
+var sd='<row r="1" ht="24" customHeight="1">'+cel(1,0,CFG.head,'3')+'</row>';   // 최상단 제목 행(중동 전쟁 타임라인)
+sd+='<row r="2">';headers.forEach(function(h,i){sd+=cel(2,i,h,'1');});sd+='</row>';
+body.forEach(function(row,ri){var r=ri+3;sd+='<row r="'+r+'">';row.forEach(function(v,ci){sd+=cel(r,ci,v,'2');});sd+='</row>';});
 var cols='<cols>';CFG.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
-var lc=col(headers.length-1),lr=body.length+1;
-var sheet='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><dimension ref="A1:'+lc+lr+'"/><sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData><pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
-var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="3"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+var lr=body.length+2;
+var sheet='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><dimension ref="A1:'+lc+lr+'"/><sheetViews><sheetView workbookViewId="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData><autoFilter ref="A2:'+lc+lr+'"/><mergeCells count="1"><mergeCell ref="A1:'+lc+'1"/></mergeCells><pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
+var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="3"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="4"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" xfId="0" applyFont="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
 var sn=X(CFG.sheet).slice(0,31);
-var wb='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="'+sn+'" sheetId="1" r:id="rId1"/></sheets><definedNames><definedName name="_xlnm.Print_Titles" localSheetId="0">\''+sn+'\'!$1:$1</definedName></definedNames></workbook>';
+var wb='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="'+sn+'" sheetId="1" r:id="rId1"/></sheets><definedNames><definedName name="_xlnm.Print_Titles" localSheetId="0">\''+sn+'\'!$2:$2</definedName></definedNames></workbook>';
 var wbr='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>';
 var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>';
 var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>';
@@ -2054,7 +2074,7 @@ var body=d.map(function(e){return [e.iso,e.q?CFG.catq:CFG.catgen,e.title,e.detai
 var bytes=buildXlsx(headers,body);
 var blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
 var suf=cur==='q'?'_qatar':(cur==='ex'?'_ex-qatar':'');
-var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=CFG.fname+suf+'.xlsx';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
+var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=CFG.fname+suf+(CFG.date?'_'+CFG.date:'')+'.xlsx';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
 var b=document.getElementById('tldl');if(b)b.addEventListener('click',dl);
 })();"""
 
@@ -2109,29 +2129,40 @@ var all=parts.concat(cen,[end]),tot=all.reduce(function(a,x){return a+x.length;}
 all.forEach(function(x){out.set(x,p);p+=x.length;});return out;}
 function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function dl(bytes,mime,name){var blob=new Blob([bytes],{type:mime});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},1500);}
-function fnbase(D){var m=D.updated.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);var ds=m?(m[1]+('0'+m[2]).slice(-2)+('0'+m[3]).slice(-2)):'';var ed=D.edn?('_'+D.edn.replace(/\s+/g,'')):'';return T.fname+ed+(ds?'_'+ds:'');}
+function fnbase(D){var m=D.updated.match(/(\d{4})[.\/]\s*(\d{1,2})[.\/]\s*(\d{1,2})/);var ds=m?(m[1]+('0'+m[2]).slice(-2)+('0'+m[3]).slice(-2)):'';var ed=D.edn?('_'+D.edn.replace(/\s+/g,'')):'';return T.fname+ed+(ds?'_'+ds:'');}
 // ===== XLSX(다중 시트) =====
 function colL(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
 function cel(r,c,v,st){return '<c r="'+colL(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
-function celLink(r,c,url,text,st){var f='HYPERLINK("'+String(url).replace(/"/g,'""')+'","'+String(text).replace(/"/g,'""')+'")';return '<c r="'+colL(c)+r+'" s="'+st+'"><f>'+X(f)+'</f><v>'+X(text)+'</v></c>';}
+function celNum(r,c,v,st){return '<c r="'+colL(c)+r+'" s="'+st+'"><v>'+v+'</v></c>';}   // 실수치(연번) — 텍스트 아님(초록 삼각형 경고 제거)
 function sheetXml(sh){
-  var sd='',r=0,merges=[],lastCol=colL(sh.headers.length-1);
-  (sh.pre||[]).forEach(function(row){r++;sd+='<row r="'+r+'">';row.cells.forEach(function(cc,i){sd+=cel(r,i,cc.v,cc.s);});sd+='</row>';merges.push('A'+r+':'+lastCol+r);});
+  var sd='',r=0,merges=[],lastCol=colL(sh.headers.length-1),hyper=[];
+  (sh.pre||[]).forEach(function(row){r++;sd+='<row r="'+r+'"'+(row.ht?' ht="'+row.ht+'" customHeight="1"':'')+'>';row.cells.forEach(function(cc,i){sd+=cel(r,i,cc.v,cc.s);});sd+='</row>';merges.push('A'+r+':'+lastCol+r);});
   var hr=r+1;sd+='<row r="'+hr+'">';sh.headers.forEach(function(h,i){sd+=cel(hr,i,h,'1');});sd+='</row>';
-  sh.rows.forEach(function(row){r=++hr;sd+='<row r="'+hr+'">';row.forEach(function(v,i){sd+=(v&&typeof v==='object'&&v.link)?celLink(hr,i,v.link,v.text,'7'):cel(hr,i,v,'2');});sd+='</row>';hr=r;});
+  sh.rows.forEach(function(row){r=++hr;sd+='<row r="'+hr+'">';row.forEach(function(v,i){
+    if(v&&typeof v==='object'&&v.link){hyper.push({ref:colL(i)+hr,url:v.link});sd+=cel(hr,i,v.text,'7');}   // 긴 URL도 HYPERLINK() 255자 제한 없이 워크시트 관계로 링크(#VALUE! 방지)
+    else if(v&&typeof v==='object'&&v.num!=null){sd+=celNum(hr,i,v.num,'8');}                                 // 연번=실수치·가운데정렬
+    else {sd+=cel(hr,i,v,'2');}
+  });sd+='</row>';hr=r;});
   (sh.post||[]).forEach(function(row){hr++;sd+='<row r="'+hr+'">';row.cells.forEach(function(cc,i){sd+=cel(hr,i,cc.v,cc.s);});sd+='</row>';merges.push('A'+hr+':'+lastCol+hr);});
   var cols='<cols>';sh.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
   var hrow=(sh.pre?sh.pre.length:0)+1;
   var af=sh.filter?('<autoFilter ref="A'+hrow+':'+lastCol+hr+'"/>'):'';
   var mc=merges.length?('<mergeCells count="'+merges.length+'">'+merges.map(function(m){return '<mergeCell ref="'+m+'"/>';}).join('')+'</mergeCells>'):'';
   var frz='<pane ySplit="'+hrow+'" topLeftCell="A'+(hrow+1)+'" activePane="bottomLeft" state="frozen"/>';
-  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"'+(RTL?' ':'')+'><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView '+(RTL?'rightToLeft="1" ':'')+'workbookViewId="0">'+frz+'</sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData>'+af+mc+'<pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
+  var hl='';sh._rels='';
+  if(hyper.length){
+    hl='<hyperlinks>'+hyper.map(function(h,k){return '<hyperlink ref="'+h.ref+'" r:id="rId'+(k+1)+'"/>';}).join('')+'</hyperlinks>';
+    sh._rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'+hyper.map(function(h,k){return '<Relationship Id="rId'+(k+1)+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="'+X(h.url)+'" TargetMode="External"/>';}).join('')+'</Relationships>';
+  }
+  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"'+(RTL?' ':'')+'><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView '+(RTL?'rightToLeft="1" ':'')+'workbookViewId="0">'+frz+'</sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData>'+af+mc+hl+'<pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
 }
 function buildXlsx(sheets){
-  var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="5"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font><font><sz val="9"/><color rgb="FF7A7A7A"/><name val="Calibri"/></font><font><u/><sz val="10"/><color rgb="FF0563C1"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="8"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" applyFont="1"/><xf fontId="3" applyFont="1" applyAlignment="1"><alignment wrapText="1"/></xf><xf fontId="2" applyFont="1" applyAlignment="1"><alignment horizontal="center" wrapText="1"/></xf><xf fontId="0" applyFont="1" applyAlignment="1"><alignment horizontal="center" wrapText="1"/></xf><xf fontId="4" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+  var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="5"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font><font><sz val="9"/><color rgb="FF7A7A7A"/><name val="Calibri"/></font><font><u/><sz val="10"/><color rgb="FF0563C1"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="9"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" applyFont="1"/><xf fontId="3" applyFont="1" applyAlignment="1"><alignment wrapText="1"/></xf><xf fontId="2" applyFont="1" applyAlignment="1"><alignment horizontal="center" wrapText="1"/></xf><xf fontId="0" applyFont="1" applyAlignment="1"><alignment horizontal="center" wrapText="1"/></xf><xf fontId="4" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
   var sheetParts=[],wbSheets='',wbRels='',cts='',dn='';
   sheets.forEach(function(sh,i){var id=i+1;var nm=X(sh.name).slice(0,31);
-    sheetParts.push({name:'xl/worksheets/sheet'+id+'.xml',data:SB(sheetXml(sh))});
+    var _sx=sheetXml(sh);
+    sheetParts.push({name:'xl/worksheets/sheet'+id+'.xml',data:SB(_sx)});
+    if(sh._rels){sheetParts.push({name:'xl/worksheets/_rels/sheet'+id+'.xml.rels',data:SB(sh._rels)});}
     wbSheets+='<sheet name="'+nm+'" sheetId="'+id+'" r:id="rId'+id+'"/>';
     wbRels+='<Relationship Id="rId'+id+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet'+id+'.xml"/>';
     cts+='<Override PartName="/xl/worksheets/sheet'+id+'.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>';
@@ -2150,17 +2181,19 @@ function exportXlsx(){
   var head=D.title+(D.edn?('  ['+D.edn+']'):'');
   var meta=T.lUpd+': '+D.updated+'    '+T.lPer+': '+D.period;
   // Sheet1: 이슈별 요약
-  var s1rows=D.issues.map(function(e,i){return [String(i+1), e.theme, e.sum.map(function(b){return '• '+b;}).join('\n')];});
+  var s1rows=D.issues.map(function(e,i){return [{num:i+1}, e.theme, e.sum.map(function(b){return '• '+b;}).join('\n')];});
   var sheet1={name:T.s1,headers:[T.cNo,T.cIssue,T.cSum],rows:s1rows,widths:[6,42,80],
-    pre:[{cells:[{v:head,s:'5'}]},{cells:[{v:meta,s:'6'}]},{cells:[{v:'',s:'0'}]}],
+    pre:[{cells:[{v:head,s:'5'}],ht:24},{cells:[{v:meta,s:'6'}]},{cells:[{v:'',s:'0'}]}],
     post:[{cells:[{v:'',s:'0'}]},{cells:[{v:T.note,s:'4'}]},{cells:[{v:'- '+T.org+'   ·   '+URLBASE,s:'4'}]}]};
   // Sheet2: 기사 목록(정렬용, 기사 제목에 원문 하이퍼링크)
   var s2rows=[];D.issues.forEach(function(e){e.arts.forEach(function(a){s2rows.push([e.theme,a.src,(a.url?{link:a.url,text:a.art}:a.art),a.dt]);});});
-  var sheet2={name:T.s2,headers:[T.cIssue,T.cMedia,T.cArt,T.cDt],rows:s2rows,widths:[34,18,54,16],filter:true};
+  var head2=head+' — '+T.s2;   // 기사목록 시트에도 동일 제목(+‘—기사목록’)·모니터링 기간 헤드
+  var sheet2={name:T.s2,headers:[T.cIssue,T.cMedia,T.cArt,T.cDt],rows:s2rows,widths:[34,18,54,16],filter:true,
+    pre:[{cells:[{v:head2,s:'5'}],ht:24},{cells:[{v:meta,s:'6'}]},{cells:[{v:'',s:'0'}]}]};
   dl(buildXlsx([sheet1,sheet2]),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',fnbase(D)+'.xlsx');
 }
 // ===== DOCX =====
-function wp(text,opt){opt=opt||{};var B=opt.bul||0;var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(B?'<w:tabs><w:tab w:val="left" w:pos="'+B+'"/></w:tabs><w:ind w:left="'+B+'" w:hanging="'+B+'"/>':(opt.hang?'<w:ind w:left="'+opt.hang+'" w:hanging="'+opt.hang+'"/>':''))+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+(opt.sb||opt.sa?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa?'w:after="'+opt.sa+'"':'')+'/>':'')+'</w:pPr>';
+function wp(text,opt){opt=opt||{};var B=opt.bul||0;var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(B?'<w:tabs><w:tab w:val="left" w:pos="'+B+'"/></w:tabs><w:ind w:left="'+B+'" w:hanging="'+B+'"/>':(opt.hang?'<w:ind w:left="'+opt.hang+'" w:hanging="'+opt.hang+'"/>':''))+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+((opt.sb||opt.sa!=null||opt.line)?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa!=null?'w:after="'+opt.sa+'" ':'')+(opt.line?'w:line="'+opt.line+'" w:lineRule="auto" ':'')+'/>':'')+'</w:pPr>';
   var rPr='<w:rPr>'+(opt.b?'<w:b/>':'')+(opt.sz?'<w:sz w:val="'+opt.sz+'"/>':'')+(opt.color?'<w:color w:val="'+opt.color+'"/>':'')+(RTL?'<w:rtl/>':'')+'</w:rPr>';
   var runs=B?('<w:r>'+rPr+'<w:t xml:space="preserve">\u2022</w:t><w:tab/></w:r><w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r>'):('<w:r>'+rPr+'<w:t xml:space="preserve">'+X(text)+'</w:t></w:r>');
   return '<w:p>'+pPr+runs+'</w:p>';}
@@ -2172,14 +2205,12 @@ function exportDocx(){
   body+=wp((D.edn?D.edn+'   ':'')+T.lUpd+': '+D.updated+'   '+T.lPer+': '+D.period,{sz:18,color:'666666',align:'center',sa:160});
   D.issues.forEach(function(e,i){
     body+=wp((i+1)+'. '+e.theme,{b:true,sz:24,sb:160,sa:60});
-    var left=e.sum.map(function(b){return wp(b,{sz:19,sa:40,align:'both',bul:180});}).join('')||'<w:p/>';
-    var mm=[];var seen={};e.arts.forEach(function(a){if(a.src&&!seen[a.src]){seen[a.src]=1;mm.push(a.src);}});
-    var right=mm.map(function(s){return wp('· '+s,{sz:17,color:'444444',sa:20});}).join('')||'<w:p/>';
-    body+='<w:tbl><w:tblPr><w:tblW w:w="9638" w:type="dxa"/><w:tblInd w:w="0" w:type="dxa"/>'+(RTL?'<w:bidiVisual/>':'')+'<w:tblBorders><w:top w:val="single" w:sz="4" w:color="D0D0D0"/><w:left w:val="single" w:sz="4" w:color="D0D0D0"/><w:bottom w:val="single" w:sz="4" w:color="D0D0D0"/><w:right w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideH w:val="single" w:sz="4" w:color="D0D0D0"/><w:insideV w:val="single" w:sz="4" w:color="D0D0D0"/></w:tblBorders><w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="'+LW+'"/><w:gridCol w:w="'+RW+'"/></w:tblGrid><w:tr>'+cellXml(LW,left)+cellXml(RW,'<w:p><w:pPr>'+(RTL?'<w:bidi/>':'')+'</w:pPr><w:r><w:rPr><w:b/><w:sz w:val="16"/><w:color w:val="888888"/>'+(RTL?'<w:rtl/>':'')+'</w:rPr><w:t xml:space="preserve">'+X(T.wMedia)+'</w:t></w:r></w:p>'+right)+'</w:tr></w:tbl>';
+    // 워드 버전은 우측 '발췌 매체' 열을 제거하고 요약만 단일 열(전폭)로 표시(HTML은 2열 유지).
+    body+=e.sum.map(function(b){return wp(b,{sz:19,sa:40,align:'both',bul:180});}).join('')||'<w:p/>';
   });
   body+=wp(T.note,{sz:16,color:'777777',sb:70,align:'both'});
-  body+=wp('- '+T.org,{sz:16,color:'777777',sb:60,align:'right'});
-  body+=wp('('+URLBASE+')',{sz:16,color:'777777',align:'right'});
+  body+=wp('- '+T.org,{sz:16,color:'777777',sb:40,sa:0,line:240,align:'right'});
+  body+=wp('('+URLBASE+')',{sz:16,color:'777777',sb:0,sa:0,line:240,align:'right'});
   var sect='<w:sectPr>'+(RTL?'<w:bidi/>':'')+'<w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr>';
   var doc='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>'+body+sect+'</w:body></w:document>';
   var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>';
