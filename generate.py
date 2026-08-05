@@ -1326,6 +1326,10 @@ def gemini_issues(pool, win_label, weekly=False):
         "②카타르가 공격·공습을 당하거나 카타르의 안보·영공·경제·에너지·항공·교민 안전이 직접 영향받거나, "
         "③사안이 중동 무력충돌·에너지·물류·경제 등 정세의 실질 전개일 때 포함하세요. "
         "'카타르 매체에 실렸다'는 사실만으로는 관련성이 생기지 않습니다 — 카타르의 역할도 없고 정세·에너지·경제 함의도 없는 기사는 제외하세요.\n"
+        "【중동·역내 밖 사건은 제외(중요)】 이 브리핑은 '중동·역내(카타르·이란·이스라엘·미국-이란 전쟁·걸프·레바논·홍해·호르무즈)' 정세만 다룹니다. "
+        "**중동·역내와 지리적·주제적으로 무관한 타 지역 사건은 '드론·보안·폭발·항공' 등 키워드가 걸려도 절대 사안으로 뽑지 마세요** — "
+        "예: 유럽·독일 등의 공항 보안사고·드론 소동, 우크라이나 전쟁, 타 대륙의 사건사고 등은 카타르나 중동 정세와 직접 연결되지 않으면 제외합니다. "
+        "(요약에 '카타르 관련 직접 피해·연관 없음'이라고 적게 될 정도의 기사라면 애초에 사안이 아니므로 넣지 마세요.)\n"
         "관련성이 약한 기사는 억지로 사안으로 묶지 말고 제외하고, 애매하면 사안 수를 줄이세요 — 수량보다 정확도·논리성 우선.\n"
         "다만 카타르 국익·안보·에너지·물류·외교·정세에 유의미한 **중요 기사는 누락 없이 반드시 사안으로 포착**하고 그 핵심 내용을 요약에 충실히 반영하세요(사소·주변적 기사만 제외).\n"
         "'사안(issue)'별로 묶으세요. 개수는 그날 내용에 맞게 유연하게(보통 3~7개, 많으면 8개 이상, 정말 조용하면 1~2개). "
@@ -2286,6 +2290,67 @@ def _render_timeline_pending(lang):
     return ('<details class="tlpending"><summary>🕒 검토 대기 후보 (자동 추출·미확정 — 확인 후 타임라인 확정) · '
             f'{len(cands)}건</summary><ul>{rows}</ul>'
             '<div class="pnote">※ 매 회차 자동 추출된 후보이며, 검증·확정 전까지는 공식 타임라인이 아닙니다.</div></details>')
+
+
+# ───────────────────── 주요국 피해현황 대시보드(타임라인 상단) ─────────────────────
+CAS_HEAD = {"ko": "🛑 중동 전쟁 주요국 피해현황",
+            "en": "🛑 Middle East War — Casualty Status by Major Party",
+            "ar": "🛑 حصيلة الخسائر لدى الأطراف الرئيسية في حرب الشرق الأوسط"}
+CAS_ASOF = {"ko": "2026년 7월 말 기준 · 출처별 편차",
+            "en": "as of late July 2026 · figures vary by source",
+            "ar": "حتى أواخر يوليو 2026 · تتفاوت الأرقام حسب المصدر"}
+CAS_NOTE = {"ko": "※ 분쟁 특성상 수치는 출처마다 크게 달라 저~고 범위로 병기하며, 각 항목의 출처를 카드 하단에 표기함.",
+            "en": "※ In active conflict, figures vary widely by source; low–high ranges are shown, with each card's source noted below it.",
+            "ar": "※ في النزاعات النشطة تتفاوت الأرقام كثيراً حسب المصدر؛ تُعرض نطاقات دنيا–عليا مع ذكر مصدر كل بطاقة أسفلها."}
+CAS_SRC = {"ko": "출처", "en": "Source", "ar": "المصدر"}
+CAS_CARDS = [
+    {"actor": {"ko": "🇮🇷 이란", "en": "🇮🇷 Iran", "ar": "🇮🇷 إيران"},
+     "stats": {"ko": ["사망 — 군 1,800~7,650 · 민간 1,701~3,636", "고위지휘관 48~52명 피살", "부상 4,200~15,000"],
+               "en": ["Killed — 1,800–7,650 mil. · 1,701–3,636 civ.", "48–52 senior commanders killed", "4,200–15,000 wounded"],
+               "ar": ["قتلى — 1,800–7,650 عسكري · 1,701–3,636 مدني", "مقتل 48–52 قائداً كبيراً", "4,200–15,000 جريح"]},
+     "src": ("Al Jazeera live tracker", "https://www.aljazeera.com/news/2026/4/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker")},
+    {"actor": {"ko": "🇮🇱 이스라엘", "en": "🇮🇱 Israel", "ar": "🇮🇱 إسرائيل"},
+     "stats": {"ko": ["민간 사망 28"], "en": ["28 civilians killed"], "ar": ["28 مدنياً قتيلاً"]},
+     "src": ("militaryspend.org", "https://militaryspend.org/iran-war-casualties")},
+    {"actor": {"ko": "🇺🇸 미국(군)", "en": "🇺🇸 United States (military)", "ar": "🇺🇸 الولايات المتحدة (عسكري)"},
+     "stats": {"ko": ["전사 18~20 · 부상 624", "실종 0~1"],
+               "en": ["18–20 troops killed · 624 wounded", "0–1 missing"],
+               "ar": ["18–20 جندياً قتيلاً · 624 جريحاً", "0–1 مفقود"]},
+     "src": ("CFR Global Conflict Tracker", "https://www.cfr.org/global-conflict-tracker/conflict/confrontation-between-united-states-and-iran")},
+    {"actor": {"ko": "🇱🇧 레바논", "en": "🇱🇧 Lebanon", "ar": "🇱🇧 لبنان"},
+     "stats": {"ko": ["민간 사망 4,328 · 부상 12,229 (3/2 이후)", "헤즈볼라 전사 1,000~2,500"],
+               "en": ["4,328 civilians killed · 12,229 wounded (since Mar 2)", "1,000–2,500 Hezbollah fighters killed"],
+               "ar": ["4,328 مدنياً قتيلاً · 12,229 جريحاً (منذ 2 مارس)", "1,000–2,500 من مقاتلي حزب الله"]},
+     "src": ("Lebanon MoH · militaryspend", "https://militaryspend.org/iran-war-casualties")},
+    {"actor": {"ko": "🇶🇦 카타르", "en": "🇶🇦 Qatar", "ar": "🇶🇦 قطر"},
+     "stats": {"ko": ["사망 21 (헬기 7 · 라스라판 폭발 13+ · 민간 1)", "부상 103+ · 피격 미사일 66발(2/28)", "LNG 수출 약 17% 차질(복구 3~5년)"],
+               "en": ["21 killed (helicopter 7 · Ras Laffan blast 13+ · civilian 1)", "103+ injured · 66 missiles fired (Feb 28)", "~17% of LNG exports disrupted (3–5 yrs)"],
+               "ar": ["21 قتيلاً (مروحية 7 · انفجار رأس لفان 13+ · مدني 1)", "103+ جريح · 66 صاروخاً (28 فبراير)", "تعطّل ~17% من صادرات الغاز (3–5 سنوات)"]},
+     "src": ("Wikipedia: 2026 Iranian strikes on Qatar", "https://en.wikipedia.org/wiki/2026_Iranian_strikes_on_Qatar")},
+    {"actor": {"ko": "🌐 전체 · 걸프국", "en": "🌐 Overall · Gulf states", "ar": "🌐 الإجمالي · دول الخليج"},
+     "stats": {"ko": ["전체 사망(추정) 8,976~18,310", "걸프국 합계 43~51(카타르 포함)", "제3국민 10~45"],
+               "en": ["Total killed (est.) 8,976–18,310", "Gulf states 43–51 (incl. Qatar)", "Third-country nationals 10–45"],
+               "ar": ["إجمالي القتلى (تقديري) 8,976–18,310", "دول الخليج 43–51 (مع قطر)", "رعايا دول أخرى 10–45"]},
+     "src": ("militaryspend.org", "https://militaryspend.org/iran-war-casualties")},
+]
+
+
+def _render_casualty_dashboard(lang="ko"):
+    head = CAS_HEAD.get(lang, CAS_HEAD["ko"])
+    asof = CAS_ASOF.get(lang, CAS_ASOF["ko"])
+    note = CAS_NOTE.get(lang, CAS_NOTE["ko"])
+    slbl = CAS_SRC.get(lang, CAS_SRC["ko"])
+    cards = ""
+    for c in CAS_CARDS:
+        actor = c["actor"].get(lang, c["actor"]["ko"])
+        lis = "".join(f"<li>{esc(x)}</li>" for x in c["stats"].get(lang, c["stats"]["ko"]))
+        sname, surl = c["src"]
+        cards += (f'<div class="cascard"><div class="ca">{esc(actor)}</div><ul>{lis}</ul>'
+                  f'<div class="csrc">{esc(slbl)}: <a href="{esc(surl)}" target="_blank" rel="noopener">{esc(sname)}</a></div></div>')
+    return (f'<div class="casdash"><div class="casdash-h">{esc(head)} '
+            f'<span class="casdash-asof">({esc(asof)})</span></div>'
+            f'<div class="casdash-note">{esc(note)}</div>'
+            f'<div class="casgrid">{cards}</div></div>')
 
 
 def render_timeline_page(lang="ko"):
