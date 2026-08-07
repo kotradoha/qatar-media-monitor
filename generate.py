@@ -663,7 +663,7 @@ REPORT_FLOOR_DATE = datetime(2026, 2, 28, tzinfo=timezone.utc)
 REPORT_QUERY_DAYS = 120       # 보고서 수집 쿼리 조회 기간(Google News when:Nd)
 # 심층 리포트는 매 회차 갈아치우지 않고 '쭈욱 누적'(persist_days 이내). 섹션은 누적분 전체를 노출(폴드 기본 접힘).
 # 당 회차 새로 유입된 것만 '이번 회차 신규' 표시.
-REPORT_STORE_MAX = 400        # reports.json 보관 최대 개수(2월말~ 누적 — 400건이라도 ~180KB로 용량 부담 없음)
+REPORT_STORE_MAX = 600        # reports.json 보관 최대 개수(개전 2월말~ 전 기간 누적 — 600건이라도 ~260KB로 용량 부담 없음)
 REPORT_PER_SOURCE_MAX = 12    # 발행처 편중 완화 — 한 소스가 목록을 독점하지 않도록 보관 시 소스별 최신 N건
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
