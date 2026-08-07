@@ -651,12 +651,14 @@ FLIGHT_URL = "https://kotradoha.github.io/qatar-korea-flight-monitor/"   # 자�
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
 WEEKLY_LOOKBACK_DAYS = 7      # 주간 리포트 커버 기간(일)
-REPORT_PERSIST_DAYS = 120     # 좋은 보고서는 약 6월경부터 최근까지 누적 유지(일)
+REPORT_PERSIST_DAYS = 180     # (참고용) 롤링 유지 기간 — 실제 하한은 아래 REPORT_FLOOR_DATE 우선
+# 중동전쟁 개전일(2026-02-28) 이후 발간 보고서는 계속 누적 보관 — 이 날짜를 하한으로 고정.
+REPORT_FLOOR_DATE = datetime(2026, 2, 28, tzinfo=timezone.utc)
 REPORT_QUERY_DAYS = 120       # 보고서 수집 쿼리 조회 기간(Google News when:Nd)
 # 심층 리포트는 매 회차 갈아치우지 않고 '쭈욱 누적'(persist_days 이내). 섹션은 누적분 전체를 노출(폴드 기본 접힘).
 # 당 회차 새로 유입된 것만 '이번 회차 신규' 표시.
-REPORT_STORE_MAX = 250        # reports.json 보관 최대 개수(누적 — 250건이라도 ~100KB로 용량 부담 없음)
-REPORT_PER_SOURCE_MAX = 8     # 발행처 편중 완화 — 한 소스가 목록을 독점하지 않도록 보관 시 소스별 최신 N건
+REPORT_STORE_MAX = 400        # reports.json 보관 최대 개수(2월말~ 누적 — 400건이라도 ~180KB로 용량 부담 없음)
+REPORT_PER_SOURCE_MAX = 12    # 발행처 편중 완화 — 한 소스가 목록을 독점하지 않도록 보관 시 소스별 최신 N건
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
@@ -805,10 +807,10 @@ def _domain_is_report(shref):
 # ※ INSTITUTION_BOARDS로 '각 사이트 직접수집'하는 기관은 여기서 제외 — 구글뉴스 site:는 그 기관들의
 #   뉴스게시판·입찰공고까지 끌어와 노이즈가 되므로, 직접수집이 안 되는 기관만 구글뉴스로 보강한다.
 KO_REPORT_SITE_DOMAINS = [
-    "emerics.org", "asaninst.org", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
-    "kotra.or.kr", "samsungsgr.com", "posri.re.kr",
+    "emerics.org", "asaninst.org", "kotra.or.kr", "samsungsgr.com", "posri.re.kr",
     # 컨설팅·경영硏 중 JS 전용이라 직접 파싱이 안 되는 곳은 구글뉴스 site:로 보강(리포트만 필터 통과)
     "lgbr.co.kr", "kpmg.com", "pwc.com", "ey.com",
+    # ※ kogas·knoc·opinet(가스공사·석유공사·유가정보)은 입찰공고·시세 위주라 보고서 소스에서 제외
 ]
 
 def is_report_source(src):
@@ -823,7 +825,7 @@ def is_report_source(src):
 # (한국무역협회-KITA는 산업·공급망 분석 콘텐츠가 있어 사용자 요청으로 포함 유지)
 REPORT_DENY = ["tradingkey", "이슈밸리", "issuevalley",
                # 통신사 속보를 재게시하는 채널(연구기관 자체 분석이 아님) — 사용자 요청으로 보고서 섹션에서 제외
-               "데일리머니", "theconnectmoney", "connectmoney", "kita.net", "한국무역협회"]
+               "데일리머니", "theconnectmoney", "connectmoney"]
 # 기사 아닌 섹션 랜딩·영상·라이브·뉴스브리핑 등은 '심층 보고서'가 아니므로 제외(검증 게이트)
 _NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:", "live |", "live:",
                             "▣", "【", "[입찰", "[공고", "(사업취소)", "[모집", "[채용")
@@ -888,6 +890,10 @@ def looks_report(title, src, shref=""):
     _s = ((src or "") + " " + (shref or "")).lower()
     if any(b in _s for b in REPORT_DENY):
         return False
+    # KITA: 무역뉴스 재게시(www.kita.net·한국무역협회-KITA.NET)는 제외하되,
+    #       국제무역통상연구원(iit)·소부장 공급망센터의 '보고서'는 허용(사용자 요청).
+    if "kita.net" in _s and not ("iit.kita.net" in _s or "국제무역통상연구원" in _s or "공급망" in _s):
+        return False
     _tl = (title or "").strip().lower()
     if _tl.startswith(_NON_REPORT_TITLE_PREFIX) or _tl in _NON_REPORT_TITLE_EXACT:
         return False
@@ -895,6 +901,16 @@ def looks_report(title, src, shref=""):
         return False
     # 한국어 통신사 시황단신·속보 헤드라인(연구기관 심층 분석·보고서가 아님)
     if _looks_ko_wire_news(title):
+        return False
+    # 물품 구매·입찰 공고(예: '… (20세트)', '… 10개') — 보고서가 아님
+    if re.search(r"\(\s*\d+\s*(?:세트|개|대|식|매|건|ea)\s*\)", (title or ""), re.I):
+        return False
+    # 기관이 언론 기고·방송출연을 재게시한 항목([중앙일보]…, [Arirang TV]…)은 자체 보고서가 아님
+    if re.match(r"^\s*\[[^\]]*(?:tv|일보|신문|뉴스|방송|헤럴드|타임스|times|post|journal|아리랑|arirang)", _tl):
+        return False
+    # EMERiCs: 분석성 콘텐츠([이슈트렌드]·[이슈인포그래픽]·[전문가오피니언] 등)만 인정, 단순 국가뉴스 브리핑은 제외
+    if "emerics" in _s and not any(k in title for k in
+            ("[이슈트렌드]", "[이슈인포그래픽]", "[전문가오피니언]", "[이슈분석]", "[동향세미나]", "[전문가칼럼]", "[이슈인사이트]")):
         return False
     # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
     if not (is_report_source(src) or _domain_is_report(shref)):
@@ -952,7 +968,7 @@ def _ai_filter_reports(cands):
 # ※ KOTRA(dream.kotra.or.kr)·EIEC 해외자료 등 완전 JS 렌더 페이지는 직접 파싱 불가 →
 #   기존 구글뉴스 site: 경로로 계속 수집(looks_report 통과분만 등재).
 _INST_UA = "Mozilla/5.0 (compatible; MediaMonitor/1.0; +https://github.com)"
-INSTITUTION_RECENT_DAYS = 45      # 기관 직접수집: 이 기간 이내 발간물만 신규 유입(오래된 게시물 역주입 방지)
+INSTITUTION_RECENT_DAYS = 180     # 기관 직접수집: 유지기간과 동일하게 넉넉히(연구기관 게시판은 회차당 소스별 상한으로 홍수 방지)
 INSTITUTION_PER_SOURCE_MAX = 6    # 기관 직접수집: 한 소스가 목록을 독점하지 않도록 회차당 최신 N건만
 
 INSTITUTION_BOARDS = [
@@ -1032,6 +1048,43 @@ def _inst_date(s):
     except Exception:
         return None
 
+_MONTH_NAMES = {"january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
+                "july": 7, "august": 8, "september": 9, "october": 10, "november": 11, "december": 12,
+                "jan": 1, "feb": 2, "mar": 3, "apr": 4, "jun": 6, "jul": 7, "aug": 8, "sep": 9,
+                "sept": 9, "oct": 10, "nov": 11, "dec": 12}
+def _parse_any_date(s):
+    s = (s or "").strip()
+    m = re.search(r"(20\d\d)[.\-/](\d{1,2})[.\-/](\d{1,2})", s)          # 2026-05-29 / 2026.05.29
+    if m:
+        try: return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), 12, tzinfo=timezone.utc)
+        except Exception: pass
+    m = re.search(r"(\d{1,2})\s+([A-Za-z]{3,9})\.?\s+(20\d\d)", s)        # 29 May 2026
+    if m and m.group(2).lower() in _MONTH_NAMES:
+        try: return datetime(int(m.group(3)), _MONTH_NAMES[m.group(2).lower()], int(m.group(1)), 12, tzinfo=timezone.utc)
+        except Exception: pass
+    m = re.search(r"([A-Za-z]{3,9})\.?\s+(\d{1,2}),?\s+(20\d\d)", s)      # May 29, 2026
+    if m and m.group(1).lower() in _MONTH_NAMES:
+        try: return datetime(int(m.group(3)), _MONTH_NAMES[m.group(1).lower()], int(m.group(2)), 12, tzinfo=timezone.utc)
+        except Exception: pass
+    return None
+
+def _detail_date(url):
+    """목록에 발간일이 없는 사이트(딜로이트 등)는 상세 페이지의 JSON-LD·메타에서 발간일을 보강."""
+    try:
+        h = _inst_http_get(url)
+    except Exception:
+        return None
+    for pat in (r'"datePublished"\s*:\s*"([^"]+)"',
+                r'(?:og:published_time|article:published_time)"[^>]+content="([^"]+)"',
+                r'content="([^"]+)"[^>]+(?:property|name)="(?:article:published_time|og:published_time)"',
+                r'(?:발간일|게시일|작성일)[^0-9]{0,10}(20\d\d[.\-/]\d{1,2}[.\-/]\d{1,2})'):
+        m = re.search(pat, h, re.I)
+        if m:
+            dt = _parse_any_date(m.group(1))
+            if dt:
+                return dt
+    return None
+
 def _clean_row_title(raw):
     return html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw or ""))).strip()
 
@@ -1103,7 +1156,7 @@ _INST_DIGEST_RE = re.compile(r"^\s*\[?\d{1,2}\.\d{1,2}(\.\d{1,4})?\]?\s")
 
 def fetch_institution_reports(now_utc):
     """INSTITUTION_BOARDS·INSTITUTION_ARTICLES를 병렬로 받아 중동·에너지 주제 보고서만 item으로 반환."""
-    floor = now_utc - timedelta(days=INSTITUTION_RECENT_DAYS)
+    floor = min(REPORT_FLOOR_DATE, now_utc - timedelta(days=INSTITUTION_RECENT_DAYS))  # 개전일(2/28) 이후 전부 허용
     def _topic_ok(t):
         return _report_topic_ok(t)
     def _mk(t, lk, dt, name, region, base):
@@ -1122,10 +1175,14 @@ def fetch_institution_reports(now_utc):
                     rows.append((clean_title((e.get("title") or "").strip()),
                                  (e.get("link") or "").strip(), entry_time(e)))
             elif typ == "html":
+                do = cfg.get("date_optional", False)
+                _dc = 0
                 for t, u, ds in _parse_html_list(_inst_http_get(cfg["url"]), base,
-                                                 href_has=cfg.get("href_has"),
-                                                 date_optional=cfg.get("date_optional", False)):
-                    rows.append((t, u, _inst_date(ds)))
+                                                 href_has=cfg.get("href_has"), date_optional=do):
+                    dt = _inst_date(ds)
+                    if dt is None and do and _report_topic_ok(t) and _dc < 10:
+                        dt = _detail_date(u); _dc += 1     # 목록에 날짜 없는 사이트: 상세페이지에서 발간일 보강(주제통과분만)
+                    rows.append((t, u, dt))
             else:
                 for t, u, ds in _parse_es_list(_inst_http_get(cfg["url"]), base):
                     rows.append((t, u, _inst_date(ds)))
@@ -3830,8 +3887,8 @@ def _merge_reports(items, now_utc):
                     "dt": x["dt"].astimezone(timezone.utc).isoformat(),
                     "added": now_utc.astimezone(timezone.utc).isoformat(),   # 이번 회차에 처음 수집됨
                     "region": x.get("region", "overseas")}
-    # 기간 정리(REPORT_PERSIST_DAYS 이내) + 최신순 정렬 + 보관 상한
-    floor = now_utc - timedelta(days=REPORT_PERSIST_DAYS)
+    # 기간 정리(개전일 2/28 이후만 누적) + 발행일 정렬 + 보관 상한
+    floor = min(REPORT_FLOOR_DATE, now_utc - timedelta(days=REPORT_PERSIST_DAYS))
     out = []
     for r in store.values():
         try:
