@@ -17,6 +17,7 @@ import json
 import html
 import time
 import socket
+import ssl
 import calendar
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -132,6 +133,16 @@ MIDEAST_KW = ["iran", "iranian", "israel", "israeli", "gulf", "hormuz", "houthi"
               "غزة", "الشرق الأوسط", "حزب الله", "لبنان",
               # 페르시아어
               "ایران", "اسرائیل", "صهیونیستی", "خلیج فارس", "تنگه هرمز", "یمن", "عربستان", "غزه", "تهران"]
+
+# 화석에너지·유가 관련(중동 정세 '에너지·유가·LNG' 부문) — 연구기관 발간물이 중동을 직접 언급 안 해도
+# 유가·원유·LNG 등 에너지시장 분석이면 보고서 섹션 취지에 부합하므로 주제 통과에 포함.
+# (재생에너지·원전·SMR 등 중동 무관 에너지는 제외하려 화석연료·유가 어휘로 한정)
+ENERGY_KW = ["crude", "brent", "wti", "opec", "lng", "petroleum", "oil price", "oil demand",
+             "oil market", "gas market", "natural gas", "pipeline", "refinery", "refining", "shale",
+             "energy security", "energy market",
+             "원유", "브렌트", "두바이유", "유가", "석유", "정유", "천연가스", "가스전", "가스시장",
+             "송유관", "엘엔지", "셰일", "에너지 안보", "에너지시장", "에너지 시장",
+             "석유수요", "원유수요", "석유 수요", "원유 수요", "석유공급", "원유공급"]
 
 # 핵심(중요) 토픽 키워드 — 이 중 하나라도 걸리면 '중요 기사'로 보고 소형매체라도 무조건 유지.
 # (넓게 잡아 '중요기사 누락' 위험을 피함. 매칭되면 유지되는 방향이라 오탐은 안전.)
@@ -372,6 +383,7 @@ QUICK_LINKS = {
         ("UN 안전보장이사회", "https://www.un.org/securitycouncil/")],
     "📑 국내 연구기관": [("대외경제정책연구원(KIEP)", "https://www.kiep.go.kr/"),
         ("신흥지역정보 종합지식포털(EMERiCs)", "https://www.emerics.org:446/index.do"),
+        ("KDI 경제교육·정보센터(EIEC)", "https://eiec.kdi.re.kr/"),
         ("KDI 한국개발연구원", "https://www.kdi.re.kr/"),
         ("에너지경제연구원(KEEI)", "https://www.keei.re.kr/"),
         ("국제금융센터(KCIF)", "https://www.kcif.or.kr/"),
@@ -641,8 +653,11 @@ WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…�
 WEEKLY_LOOKBACK_DAYS = 7      # 주간 리포트 커버 기간(일)
 REPORT_PERSIST_DAYS = 120     # 좋은 보고서는 약 6월경부터 최근까지 누적 유지(일)
 REPORT_QUERY_DAYS = 120       # 보고서 수집 쿼리 조회 기간(Google News when:Nd)
-REPORT_SHOW_MAX = 15          # 보고서 섹션 표시 최대 개수(최신 순)
-REPORT_STORE_MAX = 80         # reports.json 보관 최대 개수
+# 심층 리포트는 매 회차 갈아치우지 않고 '쭈욱 누적'(persist_days 이내) — 당 회차 새로 유입된 것만 '이번 회차 신규' 표시.
+REPORT_SHOW_KO = 15           # 보고서 섹션 '국내 연구기관' 묶음 표시 상한(최신순)
+REPORT_SHOW_OV = 18           # 보고서 섹션 '해외 연구기관' 묶음 표시 상한(최신순)
+REPORT_STORE_MAX = 250        # reports.json 보관 최대 개수(누적 — 250건이라도 ~100KB로 용량 부담 없음)
+REPORT_PER_SOURCE_MAX = 8     # 발행처 편중 완화 — 한 소스가 목록을 독점하지 않도록 보관 시 소스별 최신 N건
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
@@ -789,9 +804,11 @@ def _domain_is_report(shref):
 # 한국 기관 '자체 발간물' 직접 포착용 — 각 기관 도메인을 구글뉴스 site: 로 조준 수집.
 # (기관 자체 RSS는 robots/비표준으로 확인이 어려워, 발행처 도메인을 직접 겨냥하는 방식으로 연결)
 KO_REPORT_SITE_DOMAINS = [
-    "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
+    "kiep.go.kr", "emerics.org", "kdi.re.kr", "eiec.kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
     "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
     "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "posri.re.kr", "kcmi.re.kr",
+    # 컨설팅·경영硏 중 JS 전용이라 직접 파싱이 안 되는 곳은 구글뉴스 site:로 보강(리포트만 필터 통과)
+    "lgbr.co.kr", "kpmg.com", "pwc.com", "ey.com",
 ]
 
 def is_report_source(src):
@@ -810,13 +827,55 @@ _NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:
 _NON_REPORT_TITLE_EXACT = {
     "middle east & africa", "middle east and africa", "middle east - the economist",
     "middle east", "war in the middle east", "the middle east",
+    "iran - the economist", "iran", "israel - the economist", "israel",
+    "gaza - the economist", "saudi arabia - the economist",
 }
 # 뉴스 다이제스트·속보성 제목 패턴(연구기관 심층 보고서엔 거의 없음) → 뉴스성 나열 방지
 _NON_REPORT_TITLE_SUBSTR = (
     "world in brief", "the world in brief", "catch up:", "catch-up:", "morning briefing",
     "evening briefing", "daily briefing", "week ahead", "weekly roundup", "news roundup",
     "live blog", "as it happened", "live updates", "breaking:", "what to know",
+    # 한국 기관 사이트가 통신사 속보를 그대로 퍼온 '단편 뉴스'(KEEI 소통>에너지 주요소식 게시판 등)
+    "주요뉴스", "에너지 주요소식",
 )
+
+# 한국어 통신사 속보·시황단신 헤드라인 형태(연구기관 '분석·보고서'가 아님) → 보고서 섹션에서 원천 배제.
+# 시황단신은 대개 '국제유가/환율/뉴욕증시/코스피, …' 로 시작하거나 '(종합)'으로 끝남.
+_KO_WIRE_PREFIXES = ("국제유가", "환율", "뉴욕증시", "코스피", "코스닥", "원/달러", "뉴욕유가", "국제금값", "원유선물")
+def _mostly_arabic(s):
+    """제목이 사실상 아랍(페르시아)어 문자로 이뤄졌는지 — 한국·영어 페이지에서 제외 판정용."""
+    letters = [c for c in (s or "") if c.isalpha()]
+    if not letters:
+        return False
+    ar = sum(1 for c in letters if 0x0600 <= ord(c) <= 0x06FF or 0x0750 <= ord(c) <= 0x077F
+             or 0xFB50 <= ord(c) <= 0xFDFF or 0xFE70 <= ord(c) <= 0xFEFF)
+    return ar >= max(3, len(letters) * 0.5)
+
+def _looks_ko_wire_news(title):
+    t = (title or "").strip()
+    if not t:
+        return False
+    # '국제유가, …' '환율, …' 처럼 지표명 뒤 쉼표로 시작하는 시황단신(쉼표 앞 토막이 지표명)
+    if "," in t:
+        head = t.split(",", 1)[0].replace(" ", "")
+        if head in _KO_WIRE_PREFIXES:
+            return True
+    # 연합뉴스 등 '(종합)'·'(종합2보)' 속보 마감표기
+    if re.search(r"\(종합\d*\)\s*$", t):
+        return True
+    return False
+
+# 보고서 주제 판정 — 짧은 한글 지명(도하·가자·오만)은 '주도하다/유도하다/돌아가자/오만하다' 등에
+# 부분일치하는 오탐이 잦아, 이 세 개만 한글 음절 경계 검사로 처리(영문 doha/gaza/oman은 그대로 부분일치).
+_AMBIG_KO = ("도하", "가자", "오만")
+_AMBIG_RE = re.compile(r"(?<![가-힣])(?:도하|가자|오만)")
+def _report_topic_ok(title):
+    s = (title or "") + " "
+    q = [k for k in QATAR_KW if k not in _AMBIG_KO]
+    me = [k for k in MIDEAST_KW if k not in _AMBIG_KO]
+    if has(s, q) or has(s, me) or has(s, ENERGY_KW):
+        return True
+    return bool(_AMBIG_RE.search(title or ""))
 
 def looks_report(title, src, shref=""):
     # 0) 재게시 애그리게이터·뉴스 매체·비(非)기사 페이지는 원천 제외
@@ -828,11 +887,15 @@ def looks_report(title, src, shref=""):
         return False
     if any(p in _tl for p in _NON_REPORT_TITLE_SUBSTR):
         return False
+    # 한국어 통신사 시황단신·속보 헤드라인(연구기관 심층 분석·보고서가 아님)
+    if _looks_ko_wire_news(title):
+        return False
     # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
     if not (is_report_source(src) or _domain_is_report(shref)):
         return False
-    # 2) 중동·카타르 주제와 연관되어야 함
-    if not (has(title + " ", QATAR_KW) or has(title + " ", MIDEAST_KW)):
+    # 2) 중동·카타르 주제(또는 유가·원유·LNG 등 에너지시장)와 연관되어야 함
+    #    — 발행처가 이미 연구기관/국제기구로 한정되므로 에너지 주제 추가는 뉴스 유입 위험 없음.
+    if not _report_topic_ok(title):
         return False
     return True
 
@@ -871,6 +934,234 @@ def _ai_filter_reports(cands):
     except Exception as ex:
         _diag(f"report ai-verify skipped: {ex}")
         return set()
+
+
+# ══════════════════ 유관기관·연구소 '자체 사이트' 직접 수집(구글뉴스 미의존) ══════════════════
+# 링크모음의 국내외 연구기관·컨설팅펌은 심층 보고서가 구글뉴스에 잘 색인되지 않아(뉴스 게시판만 잡힘)
+# 각 기관의 발간물 게시판/피드를 직접 받아 중동·에너지 주제만 걸러 등재한다.
+#   type="es"   : eGovframe board.es/gallery.es 리스트(act=view 링크 + 발행일)
+#   type="html" : 기타 기관 게시판(범용 파서: 링크 텍스트+같은 행 날짜, 날짜 없는 행은 제외)
+#   type="rss"  : 표준 RSS/Atom 피드(feedparser)
+# base 도메인은 REPORT_DOMAINS에 있어야 재적재 시 looks_report(도메인 판별)를 통과함.
+# ※ KOTRA(dream.kotra.or.kr)·EIEC 해외자료 등 완전 JS 렌더 페이지는 직접 파싱 불가 →
+#   기존 구글뉴스 site: 경로로 계속 수집(looks_report 통과분만 등재).
+_INST_UA = "Mozilla/5.0 (compatible; MediaMonitor/1.0; +https://github.com)"
+INSTITUTION_RECENT_DAYS = 45      # 기관 직접수집: 이 기간 이내 발간물만 신규 유입(오래된 게시물 역주입 방지)
+INSTITUTION_PER_SOURCE_MAX = 6    # 기관 직접수집: 한 소스가 목록을 독점하지 않도록 회차당 최신 N건만
+
+INSTITUTION_BOARDS = [
+    # ── 국내: eGov '.es' 발간물 게시판(직접 파싱 신뢰도 높음) ──
+    {"name": "에너지경제연구원(KEEI)", "region": "korea", "type": "es",
+     "url": "https://www.keei.re.kr/board.es?mid=a10103020000&bid=0014", "base": "https://www.keei.re.kr"},   # 세계에너지시장 인사이트
+    {"name": "에너지경제연구원(KEEI)", "region": "korea", "type": "es",
+     "url": "https://www.keei.re.kr/board.es?bid=0001&cg_code=C03&mid=a10101040000", "base": "https://www.keei.re.kr"},  # 이슈리포트
+    {"name": "대외경제정책연구원(KIEP)", "region": "korea", "type": "es",
+     "url": "https://www.kiep.go.kr/gallery.es?mid=a10102040000&bid=0005", "base": "https://www.kiep.go.kr"},   # 기초·현안자료
+    {"name": "대외경제정책연구원(KIEP)", "region": "korea", "type": "es",
+     "url": "https://www.kiep.go.kr/gallery.es?mid=a10102020000&bid=0003", "base": "https://www.kiep.go.kr"},   # 오늘의 세계경제
+    # ── 국내: 기타 발간물 게시판(범용 HTML 파서, 날짜 필수) ──
+    {"name": "국제금융센터(KCIF)", "region": "korea", "type": "html",
+     "url": "https://www.kcif.or.kr/analysis/analysisList", "base": "https://www.kcif.or.kr"},
+    {"name": "KDI 한국개발연구원", "region": "korea", "type": "html",
+     "url": "https://www.kdi.re.kr/research/reportList", "base": "https://www.kdi.re.kr"},
+    {"name": "KDI 경제교육·정보센터(EIEC)", "region": "korea", "type": "html",
+     "url": "https://eiec.kdi.re.kr/policy/domesticList.do", "base": "https://eiec.kdi.re.kr"},
+    {"name": "산업연구원(KIET)", "region": "korea", "type": "html",
+     "url": "https://www.kiet.re.kr/research/reportList", "base": "https://www.kiet.re.kr"},
+    {"name": "자본시장연구원(KCMI)", "region": "korea", "type": "html",
+     "url": "https://www.kcmi.re.kr/report/report_list", "base": "https://www.kcmi.re.kr"},
+    {"name": "세종연구소", "region": "korea", "type": "html",
+     "url": "https://www.sejong.org/web/boad/1/egolist.php?bd=1", "base": "https://www.sejong.org"},
+    {"name": "현대경제연구원(HRI)", "region": "korea", "type": "html",
+     "url": "https://www.hri.co.kr/kor/report", "base": "https://www.hri.co.kr", "href_has": "/report/view/"},
+    {"name": "딜로이트 안진", "region": "korea", "type": "html",
+     "url": "https://www.deloitte.com/kr/ko/our-thinking/deloitte-insights.html",
+     "base": "https://www.deloitte.com", "href_has": "/kr/ko/", "date_optional": True},
+    # ── 해외: 싱크탱크·에너지 인텔리전스 RSS(중동·에너지 항목만 주제필터 통과) ──
+    {"name": "Atlantic Council", "region": "overseas", "type": "rss",
+     "url": "https://www.atlanticcouncil.org/category/blogs/menasource/feed/", "base": "https://www.atlanticcouncil.org"},
+    {"name": "ECFR", "region": "overseas", "type": "rss",
+     "url": "https://ecfr.eu/feed/", "base": "https://ecfr.eu"},
+    {"name": "International Crisis Group", "region": "overseas", "type": "rss",
+     "url": "https://www.crisisgroup.org/rss.xml", "base": "https://www.crisisgroup.org"},
+    {"name": "Oxford Institute for Energy Studies", "region": "overseas", "type": "rss",
+     "url": "https://www.oxfordenergy.org/publications/feed/", "base": "https://www.oxfordenergy.org"},
+    {"name": "US EIA", "region": "overseas", "type": "rss",
+     "url": "https://www.eia.gov/rss/todayinenergy.xml", "base": "https://www.eia.gov"},
+    {"name": "Chatham House", "region": "overseas", "type": "rss",
+     "url": "https://www.chathamhouse.org/path/whatsnew.xml", "base": "https://www.chathamhouse.org"},
+    {"name": "Foreign Affairs", "region": "overseas", "type": "rss",
+     "url": "https://www.foreignaffairs.com/rss.xml", "base": "https://www.foreignaffairs.com"},
+    {"name": "Foreign Policy", "region": "overseas", "type": "rss",
+     "url": "https://foreignpolicy.com/feed/", "base": "https://foreignpolicy.com"},
+    {"name": "Al Jazeera Centre for Studies", "region": "overseas", "type": "rss",
+     "url": "https://studies.aljazeera.net/en/rss.xml", "base": "https://studies.aljazeera.net"},   # 영문판(한국 독자용)
+]
+
+# 리스트가 아닌 '단건'으로 반드시 등재할 핵심 보고서(게시판이 JS/세션 리다이렉트로 직접 수집이 안 되는 경우).
+INSTITUTION_ARTICLES = [
+    {"name": "국립외교원 외교안보연구소(IFANS)", "region": "korea",
+     "title": "봉쇄 이후의 호르무즈 해협: 항로 관리와 통항비용의 국제법",
+     "url": "https://www.ifans.go.kr/knda/ifans/kor/pblct/PblctView.do?pblctDtaSn=14829&menuCl=P07&clCode=P07&koreanEngSe=KOR",
+     "base": "https://www.ifans.go.kr", "date": "2026-08-04"},
+]
+
+def _inst_http_get(url):
+    """기관 사이트 직접 GET(일부 정부 사이트 인증서 이슈 대비 검증 완화). utf-8→euc-kr 폴백."""
+    ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE
+    req = urllib.request.Request(url, headers={"User-Agent": _INST_UA})
+    with urllib.request.urlopen(req, timeout=FEED_TIMEOUT, context=ctx) as r:
+        raw = r.read()
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        return raw.decode("euc-kr", "replace")
+
+def _inst_date(s):
+    m = re.search(r"(20\d\d)[.\-/](\d{1,2})[.\-/](\d{1,2})", s or "")
+    if not m:
+        return None
+    try:
+        return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), 12, tzinfo=timezone.utc)
+    except Exception:
+        return None
+
+def _clean_row_title(raw):
+    return html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw or ""))).strip()
+
+def _parse_es_list(html_text, base):
+    """eGov 게시판 리스트에서 (제목, 원문URL, 발행일문자열) 목록 추출.
+    항목을 <li>(없으면 <tr>) 블록 단위로 나눠 act=view 링크·제목과 같은 블록의 날짜를 짝지음."""
+    out, seen = [], set()
+    blocks = re.split(r"(?i)<li\b", html_text)
+    if len(blocks) < 3:
+        blocks = re.split(r"(?i)<tr\b", html_text)
+    for b in blocks:
+        m = re.search(r'href="([^"]*act=view[^"]*)"[^>]*>(.*?)</a>', b, re.S | re.I)
+        if not m:
+            continue
+        title = _clean_row_title(m.group(2))
+        if len(title) < 6 or title in ("다음", "이전", "목록"):
+            continue
+        dm = re.search(r"20\d\d[.\-/]\d{1,2}[.\-/]\d{1,2}", b)
+        href = m.group(1)
+        url = href if href.startswith("http") else base.rstrip("/") + "/" + href.lstrip("/")
+        if url.lower() in seen:
+            continue
+        seen.add(url.lower())
+        out.append((title, url, dm.group(0) if dm else ""))
+    return out
+
+# 앞머리 분류 꼬리표만 제거([경제주평]·[현안과 과제] 등) — 단, 숫자가 든 대괄호([8.7]·[24-24])는
+# 데일리 시황 다이제스트 식별자이므로 보존(뒤의 _INST_DIGEST_RE 필터가 걸러내도록).
+_TITLE_PREFIX_RE = re.compile(r"^\s*(연구보고서|보고서|리포트|이슈리포트)?\s*(경제|산업|금융|경영|국제)?\s*\[[^\]0-9]{1,24}\]\s*")
+def _attr(attrs, name):
+    m = re.search(name + r'\s*=\s*"([^"]*)"', attrs or "", re.I)
+    return html.unescape(m.group(1)).strip() if m else ""
+
+def _parse_html_list(html_text, base, href_has=None, date_optional=False):
+    """범용 게시판 파서 — 각 <a> 앵커에서 상세링크·제목·발행일(앵커 주변 구간)을 추출.
+    제목은 aria-label > 내부 <img alt> > 정리한 링크텍스트 순으로 취득(사이트별 마크업 차이 흡수).
+    href_has: 해당 문자열이 들어간 상세링크만(예: '/report/view/'). date_optional: 목록에 날짜가 없는 사이트 허용."""
+    out, seen = [], set()
+    for m in re.finditer(r"<a\b([^>]*)>(.*?)</a>", html_text, re.S | re.I):
+        attrs, inner = m.group(1), m.group(2)
+        href = _attr(attrs, "href")
+        if not href:
+            continue
+        if href_has:
+            if href_has not in href:
+                continue
+        elif not re.search(r"\d", href):                     # href 지정 없으면 숫자 id 있는 상세링크만
+            continue
+        title = _attr(attrs, "aria-label")
+        if not title:
+            am = re.search(r'<img[^>]+alt="([^"]+)"', inner, re.I)
+            title = html.unescape(am.group(1)).strip() if am else _clean_row_title(inner)
+        title = _TITLE_PREFIX_RE.sub("", title).strip()
+        if len(title) < 10 or title in ("다음", "이전", "목록", "more", "자세히", "바로가기"):
+            continue
+        s = max(0, m.start() - 150); e = min(len(html_text), m.end() + 260)
+        dm = re.search(r"20\d\d[.\-/]\d{1,2}[.\-/]\d{1,2}", html_text[s:e])
+        if not dm and not date_optional:                     # 날짜 없는 행은 내비·목차로 보고 제외
+            continue
+        url = href if href.startswith("http") else base.rstrip("/") + "/" + href.lstrip("/")
+        if url.lower() in seen:
+            continue
+        seen.add(url.lower())
+        out.append((title, url, dm.group(0) if dm else ""))
+    return out
+
+# 기관 자체 일일 뉴스브리핑·시황 다이제스트(예: '[8.7] …')는 심층 보고서가 아니므로 제외
+_INST_DIGEST_RE = re.compile(r"^\s*\[?\d{1,2}\.\d{1,2}(\.\d{1,4})?\]?\s")
+
+def fetch_institution_reports(now_utc):
+    """INSTITUTION_BOARDS·INSTITUTION_ARTICLES를 병렬로 받아 중동·에너지 주제 보고서만 item으로 반환."""
+    floor = now_utc - timedelta(days=INSTITUTION_RECENT_DAYS)
+    def _topic_ok(t):
+        return _report_topic_ok(t)
+    def _mk(t, lk, dt, name, region, base):
+        return {"title": t, "link": lk, "source": name, "dt": dt,
+                "qatar": has(t + " ", QATAR_KW), "desc": "", "korean": bool(HANGUL_RE.search(t)),
+                "shref": base, "report": True, "region": region}
+    def _one(cfg):
+        res = []
+        try:
+            typ = cfg.get("type", "es"); base = cfg.get("base", ""); name = cfg["name"]
+            region = cfg.get("region", "overseas")
+            rows = []
+            if typ == "rss":
+                d = feedparser.parse(cfg["url"], agent=_INST_UA)
+                for e in (d.entries or [])[:40]:
+                    rows.append((clean_title((e.get("title") or "").strip()),
+                                 (e.get("link") or "").strip(), entry_time(e)))
+            elif typ == "html":
+                for t, u, ds in _parse_html_list(_inst_http_get(cfg["url"]), base,
+                                                 href_has=cfg.get("href_has"),
+                                                 date_optional=cfg.get("date_optional", False)):
+                    rows.append((t, u, _inst_date(ds)))
+            else:
+                for t, u, ds in _parse_es_list(_inst_http_get(cfg["url"]), base):
+                    rows.append((t, u, _inst_date(ds)))
+            for t, lk, dt in rows:
+                if not t or not lk.lower().startswith(("http://", "https://")):
+                    continue
+                if not _topic_ok(t) or _looks_ko_wire_news(t) or _INST_DIGEST_RE.match(t):
+                    continue
+                if dt is None:
+                    dt = now_utc                       # 날짜 미확인(주로 rss 일부) → 이번 회차 시각
+                if dt < floor or dt > now_utc + timedelta(days=1):
+                    continue
+                res.append(_mk(t, lk, dt, name, region, base))
+        except Exception as ex:
+            print(f"[warn] institution fetch failed {cfg.get('name')}: {ex}")
+        res.sort(key=lambda r: r["dt"], reverse=True)     # 소스별 최신순 정렬 후 상한 적용
+        return res[:INSTITUTION_PER_SOURCE_MAX]
+    out = []
+    if INSTITUTION_BOARDS:
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            for r in ex.map(_one, INSTITUTION_BOARDS):
+                out.extend(r)
+    # 단건 필수 보고서(게시판 직접수집 불가분) 등재
+    for a in INSTITUTION_ARTICLES:
+        dt = _inst_date(a.get("date")) or now_utc
+        if dt >= floor:
+            out.append(_mk(a["title"], a["url"], dt, a["name"], a.get("region", "overseas"), a.get("base", "")))
+    return out
+
+
+def _report_key(link):
+    """보고서 중복제거 키.
+    - 구글뉴스 RSS: 경로(article id)가 식별자, 쿼리(oc=)는 노이즈 → 경로만.
+    - eGov·기관 게시판(.es/.do 등): 글 식별자가 쿼리스트링(list_no·pblctDtaSn 등)에 있어
+      '?' 앞만 쓰면 서로 다른 글이 한 키로 뭉개짐 → 전체 URL을 키로 사용."""
+    l = (link or "").lower()
+    base = l.split("?")[0]
+    if "news.google" in l or "/rss/articles/" in l:
+        return base
+    if "?" in l and re.search(r"(list_no|pblctdtasn|pnttsn|dataidx|nttid|bid=|mid=|idx=|seq=|sn=|no=)", l):
+        return l
+    return base
 
 
 def collect(win_start_utc, now_utc, when_days=2):
@@ -962,6 +1253,14 @@ def collect(win_start_utc, now_utc, when_days=2):
             items.append({"title": title, "link": link, "source": src, "dt": dt,
                           "qatar": is_qatar, "desc": desc, "korean": kor, "shref": shref,
                           "report": report, "region": source_region(src, kor)})
+    # ── 유관기관·연구소 자체 사이트 직접 수집분 병합(구글뉴스 미의존) — list_no 보존 키로 중복 제거 ──
+    for it in fetch_institution_reports(now_utc):
+        rk = _report_key(it["link"])
+        tkey = "".join(it["title"].lower().split())[:60]
+        if rk in seen or tkey in seen:
+            continue
+        seen.add(rk); seen.add(tkey)
+        items.append(it)
     items.sort(key=lambda x: x["dt"], reverse=True)
     return items
 
@@ -2628,7 +2927,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         summary_html = (_dsep + _gov + f'<div class="sumhead"><span class="bar"></span>{esc(_dhead)} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>' + render_issues(issues, issue_pool, now_utc, L, collapse_links=(edition == "weekly"), lang=lang))
     elif flat_text:
-        summary_html = (_dsep + _gov + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(_dhead if _wkday else L["sum_head_flat"])} '
+        summary_html = (_dsep + _gov + f'<div class="card sum"><div class="sumhead"><span class="bar"></span>{esc(_dhead if _isweekly else L["sum_head_flat"])} '
                         f'<span class="ai">{esc(L["ai"])}</span></div>'
                         f'<div class="sumbody">{summary_to_html(flat_text)}</div></div>')
     else:
@@ -2663,27 +2962,42 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
 
     # 분석·보고서 — main()에서 누적·정렬해 넘겨준 목록(최신순). 없으면 이번 창의 report 항목으로 폴백.
     rep_list = reports if reports is not None else [x for x in items if x.get("report")]
-    tagmap = {"qatar": L["t_qatar"], "iran": L["t_iran"], "overseas": L["t_over"], "korea": L["t_korea"]}
+    # 한국·영어 페이지에는 아랍어 제목 보고서 제외(대부분 한국 독자가 아랍어에 익숙지 않음) — 아랍어 페이지에는 그대로 노출
+    if lang != "ar":
+        rep_list = [x for x in rep_list if not _mostly_arabic(x.get("title", ""))]
     def rep_dt(x):
         d = x.get("dt")
         return d.astimezone(TZ).strftime("%m/%d") if hasattr(d, "astimezone") else str(d or "")[:10]
     def rep_row(x):
-        # '이번 회차 신규'는 발행일이 아니라 '이번 회차에 처음 목록에 들어온 시각(added)' 기준
+        # '이번 회차 신규'는 발행일이 아니라 '이번 회차에 처음 목록에 들어온 시각(added)' 기준 —
+        # 리스트는 누적되고, 당 회차 창(new_since) 이후 새로 유입된 항목만 뱃지 표시.
+        # 국내/해외는 폴드로 이미 구분되므로 행별 지역 태그는 생략(중복 제거).
         _a = x.get("added") or x.get("dt")
         is_new = bool(new_since and hasattr(_a, "astimezone") and _a >= new_since)
         newb = f'<span class="newtag">{esc(L["rep_new"])}</span>' if is_new else ""
-        reg = x.get("region", "overseas")
         return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
-                f'<span class="tag tag-{reg}">{esc(tagmap.get(reg,L["t_over"]))}</span>{newb}{esc(x["title"])}'
+                f'{newb}{esc(x["title"])}'
                 f'<span class="src">({esc(x["source"])} · {rep_dt(x)})</span></a>')
-    rows = "".join(rep_row(x) for x in rep_list[:REPORT_SHOW_MAX])
-    if rows:
-        report_html = ('<details class="foldbox reportfold">'
-                       '<summary><span class="chev">▸</span>'
-                       f'{esc(L["rep_head"])}<span class="hnote">{esc(L["rep_note"])}</span>'
-                       f'<span class="exp exp-c">{esc(L["expand"])} ▾</span>'
-                       f'<span class="exp exp-o">{esc(L["collapse"])} ▴</span></summary>'
-                       f'<div class="reprows">{rows}</div></details>')
+    # 국내 연구기관 / 해외 연구기관 — 각각 별도 '열기' 폴드로 분리(각 최신순·각 상한, 누적 총건수 표시)
+    ko_rep = [x for x in rep_list if x.get("region") == "korea"]
+    ov_rep = [x for x in rep_list if x.get("region") != "korea"]
+    def _rep_fold(label_ko, xs, cap):
+        if not xs:
+            return ""
+        lbl = label_ko if lang == "ko" else QGROUP_I18N.get(label_ko, {}).get(lang, label_ko)
+        body = "".join(rep_row(x) for x in xs[:cap])
+        return ('<details class="foldbox reportfold">'
+                '<summary><span class="chev">▸</span>'
+                f'{esc(lbl)}<span class="hnote">({len(xs)})</span>'
+                f'<span class="exp exp-c">{esc(L["expand"])} ▾</span>'
+                f'<span class="exp exp-o">{esc(L["collapse"])} ▴</span></summary>'
+                f'<div class="reprows">{body}</div></details>')
+    ko_fold = _rep_fold("📑 국내 연구기관", ko_rep, REPORT_SHOW_KO)
+    ov_fold = _rep_fold("🌐 해외 연구기관", ov_rep, REPORT_SHOW_OV)
+    if ko_fold or ov_fold:
+        report_html = (f'<div class="rephead">{esc(L["rep_head"])}'
+                       f'<span class="hnote">{esc(L["rep_note"])}</span></div>'
+                       f'{ko_fold}{ov_fold}')
     else:
         report_html = ""
 
@@ -2864,7 +3178,7 @@ TEMPLATE = """<!DOCTYPE html>
   img.emoji{{height:1em;width:1em;margin:0 .06em 0 .05em;vertical-align:-0.12em}}
   /* 접이식 박스(전체목록·보고서·바로가기) — 동일한 회색 스타일·기본 접힘 */
   details.foldbox{{margin:14px 0}}
-  details.reportfold{{margin-top:20px}}
+  details.reportfold{{margin-top:8px}}
   .foldbox>summary{{cursor:pointer;list-style:none;user-select:none;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
     font-size:14px;font-weight:800;color:var(--txt);letter-spacing:.2px;
     padding:13px 16px;border:1px solid var(--line);border-radius:12px;
@@ -2948,6 +3262,8 @@ TEMPLATE = """<!DOCTYPE html>
     color:var(--accent);text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}}
   a.wk-chip:hover{{background:var(--accent);color:#fff}}
   .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
+  .rephead{{margin:20px 0 8px;font-size:15px;font-weight:800;color:var(--txt)}}
+  .rephead .hnote{{font-size:12px;font-weight:400;color:var(--muted);margin-inline-start:6px}}
   .reprows a{{display:block;color:var(--txt);text-decoration:none;font-size:13.5px;font-weight:700;margin:7px 0}}
   .reprows a:hover{{color:var(--accent);text-decoration:underline}}
   .reprows a .src{{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:1px}}
@@ -3490,7 +3806,7 @@ def _merge_reports(items, now_utc):
                 # 과거 느슨한 기준으로 저장된 뉴스성 항목은 재검증해 정리(발행처가 연구기관/컨설팅펌인 것만 유지)
                 if not looks_report(r.get("title", ""), r.get("source", ""), r.get("shref", "")):
                     continue
-                k = (r.get("link", "").split("?")[0]).lower()
+                k = _report_key(r.get("link", ""))
                 if k:
                     r.setdefault("added", r.get("dt"))   # 과거 항목엔 최초수집시각이 없으므로 발행일로 보정
                     store[k] = r
@@ -3501,7 +3817,7 @@ def _merge_reports(items, now_utc):
     for x in items:
         if not x.get("report"):
             continue
-        k = x["link"].split("?")[0].lower()
+        k = _report_key(x["link"])
         if k in store:
             continue
         _new.append((k, x))
@@ -3536,7 +3852,15 @@ def _merge_reports(items, now_utc):
         if _tk and _tk in _seen_t:
             continue
         _seen_t.add(_tk); _dedup.append(r)
-    out = _dedup[:REPORT_STORE_MAX]
+    # 발행처 편중 완화 — 소스별 최신 REPORT_PER_SOURCE_MAX건만 유지(최신순 순서는 보존)
+    _sc, _capped = {}, []
+    for r in _dedup:
+        s = r.get("source", "?")
+        _sc[s] = _sc.get(s, 0) + 1
+        if _sc[s] > REPORT_PER_SOURCE_MAX:
+            continue
+        _capped.append(r)
+    out = _capped[:REPORT_STORE_MAX]
     with open(path, "w", encoding="utf-8") as f:
         json.dump([{k: v for k, v in r.items() if k != "_dt"} for r in out], f, ensure_ascii=False, indent=1)
     # render용: dt·added를 datetime으로
