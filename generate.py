@@ -20,6 +20,7 @@ import socket
 import ssl
 import calendar
 import urllib.request
+from urllib.parse import urljoin
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 
@@ -826,6 +827,11 @@ def is_report_source(src):
 REPORT_DENY = ["tradingkey", "이슈밸리", "issuevalley",
                # 통신사 속보를 재게시하는 채널(연구기관 자체 분석이 아님) — 사용자 요청으로 보고서 섹션에서 제외
                "데일리머니", "theconnectmoney", "connectmoney"]
+# 이 섹션은 '중동 정세·이란 전쟁과 그 영향(에너지·산업·공급망·경제)' 심층분석 전용.
+# 중동 국가명이 들어가도 조세·비자·행정·스포츠 등 정세와 무관한 주제는 제목 키워드로 원천 배제(오탑재 방지).
+REPORT_EXCLUDE = ("최저한세", "농축 도입", "취업 비자", "취업비자", "비자에 범죄", "범죄경력증명",
+                  "월드컵", "관광객", "축구", "기업 규정 준수", "규정 준수 이력", "등록 서비스",
+                  "이력 조회 서비스")
 # 기사 아닌 섹션 랜딩·영상·라이브·뉴스브리핑 등은 '심층 보고서'가 아니므로 제외(검증 게이트)
 _NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:", "live |", "live:",
                             "▣", "【", "[입찰", "[공고", "(사업취소)", "[모집", "[채용")
@@ -895,6 +901,9 @@ def looks_report(title, src, shref=""):
     if "kita.net" in _s and not ("iit.kita.net" in _s or "국제무역통상연구원" in _s or "공급망" in _s):
         return False
     _tl = (title or "").strip().lower()
+    # 중동 정세와 무관한 조세·비자·행정·스포츠 주제(중동 국가명만 걸린 오탑재) 제외
+    if any(x in (title or "") for x in REPORT_EXCLUDE):
+        return False
     if _tl.startswith(_NON_REPORT_TITLE_PREFIX) or _tl in _NON_REPORT_TITLE_EXACT:
         return False
     if any(p in _tl for p in _NON_REPORT_TITLE_SUBSTR):
@@ -935,8 +944,12 @@ def _ai_filter_reports(cands):
                           for i, c in enumerate(cands))
         prompt = (
             "아래는 '중동 정세 심층 분석·보고서' 섹션 후보 목록이다(발행처는 연구기관·국제기구·컨설팅펌·주요 분석매체). "
-            "각 항목을 (A) 기관·전문매체의 분석·전망·리포트·정책브리프·심층기사 인지, (B) 단순 속보·데일리 시황단신·헤드라인 나열 인지 판정하라. "
-            "**확실히 (B) 단순 뉴스인 항목의 번호만** 고른다. 조금이라도 분석·전망·심층 성격이면 (A)로 보고 절대 제외하지 마라(보수적 유지). "
+            "이 섹션의 주제 범위는 **중동 정세·이란 전쟁, 그리고 그 여파(에너지·유가·원유·LNG, 산업·공급망, 경제·통상 충격, 지정학·안보)**로 한정된다. "
+            "각 항목에 대해 다음 중 하나라도 해당하면 DROP 하라: "
+            "(B) 단순 속보·데일리 시황단신·헤드라인 나열 등 분석이 아닌 뉴스, 또는 "
+            "(C) 주제 무관 — 중동 국가명이 들어가도 조세·비자·행정서비스·중앙은행 일상공지·스포츠·관광 등 "
+            "'중동 정세/이란 전쟁/그 산업·공급망·에너지 여파'와 실질적 관련이 없는 항목. "
+            "분석·전망·심층이면서 주제 범위에 관련되면 절대 DROP 하지 마라(보수적 유지). "
             "오직 JSON만 출력: {\"drop\":[번호,...]} (없으면 {\"drop\":[]}).\n\n[후보]\n" + lines
         )
         out = gemini_generate(prompt, True)
@@ -986,8 +999,7 @@ INSTITUTION_BOARDS = [
      "url": "https://www.kcif.or.kr/analysis/analysisList", "base": "https://www.kcif.or.kr"},
     {"name": "KDI 한국개발연구원", "region": "korea", "type": "html",
      "url": "https://www.kdi.re.kr/research/reportList", "base": "https://www.kdi.re.kr"},
-    {"name": "KDI 경제교육·정보센터(EIEC)", "region": "korea", "type": "html",
-     "url": "https://eiec.kdi.re.kr/policy/domesticList.do", "base": "https://eiec.kdi.re.kr"},
+    # (EIEC domesticList는 목록 행에 제목+출처+날짜가 뒤섞여 제목이 지저분해 직접수집 제외 — 바로가기 칩은 유지)
     {"name": "산업연구원(KIET)", "region": "korea", "type": "html",
      "url": "https://www.kiet.re.kr/research/reportList", "base": "https://www.kiet.re.kr"},
     {"name": "자본시장연구원(KCMI)", "region": "korea", "type": "html",
@@ -1098,7 +1110,7 @@ def _detail_date(url):
 def _clean_row_title(raw):
     return html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", raw or ""))).strip()
 
-def _parse_es_list(html_text, base):
+def _parse_es_list(html_text, page_url):
     """eGov 게시판 리스트에서 (제목, 원문URL, 발행일문자열) 목록 추출.
     항목을 <li>(없으면 <tr>) 블록 단위로 나눠 act=view 링크·제목과 같은 블록의 날짜를 짝지음."""
     out, seen = [], set()
@@ -1113,8 +1125,7 @@ def _parse_es_list(html_text, base):
         if len(title) < 6 or title in ("다음", "이전", "목록"):
             continue
         dm = re.search(r"20\d\d[.\-/]\d{1,2}[.\-/]\d{1,2}", b)
-        href = m.group(1)
-        url = href if href.startswith("http") else base.rstrip("/") + "/" + href.lstrip("/")
+        url = urljoin(page_url, m.group(1))     # 상대링크(./ , 쿼리)도 목록 페이지 기준으로 정확히 해석
         if url.lower() in seen:
             continue
         seen.add(url.lower())
@@ -1128,7 +1139,7 @@ def _attr(attrs, name):
     m = re.search(name + r'\s*=\s*"([^"]*)"', attrs or "", re.I)
     return html.unescape(m.group(1)).strip() if m else ""
 
-def _parse_html_list(html_text, base, href_has=None, date_optional=False):
+def _parse_html_list(html_text, page_url, href_has=None, date_optional=False):
     """범용 게시판 파서 — 각 <a> 앵커에서 상세링크·제목·발행일(앵커 주변 구간)을 추출.
     제목은 aria-label > 내부 <img alt> > 정리한 링크텍스트 순으로 취득(사이트별 마크업 차이 흡수).
     href_has: 해당 문자열이 들어간 상세링크만(예: '/report/view/'). date_optional: 목록에 날짜가 없는 사이트 허용."""
@@ -1154,7 +1165,7 @@ def _parse_html_list(html_text, base, href_has=None, date_optional=False):
         dm = re.search(r"20\d\d[.\-/]\d{1,2}[.\-/]\d{1,2}", html_text[s:e])
         if not dm and not date_optional:                     # 날짜 없는 행은 내비·목차로 보고 제외
             continue
-        url = href if href.startswith("http") else base.rstrip("/") + "/" + href.lstrip("/")
+        url = urljoin(page_url, href)                         # 상대링크(./reportView 등)를 목록 URL 기준으로 정확히 해석
         if url.lower() in seen:
             continue
         seen.add(url.lower())
@@ -1213,14 +1224,14 @@ def fetch_institution_reports(now_utc):
             elif typ == "html":
                 do = cfg.get("date_optional", False)
                 _dc = 0
-                for t, u, ds in _parse_html_list(_inst_http_get(cfg["url"]), base,
+                for t, u, ds in _parse_html_list(_inst_http_get(cfg["url"]), cfg["url"],
                                                  href_has=cfg.get("href_has"), date_optional=do):
                     dt = _inst_date(ds)
                     if dt is None and do and _report_topic_ok(t) and _dc < 10:
                         dt = _detail_date(u); _dc += 1     # 목록에 날짜 없는 사이트: 상세페이지에서 발간일 보강(주제통과분만)
                     rows.append((t, u, dt))
             else:
-                for t, u, ds in _parse_es_list(_inst_http_get(cfg["url"]), base):
+                for t, u, ds in _parse_es_list(_inst_http_get(cfg["url"]), cfg["url"]):
                     rows.append((t, u, _inst_date(ds)))
             for t, lk, dt in rows:
                 if not t or not lk.lower().startswith(("http://", "https://")):
