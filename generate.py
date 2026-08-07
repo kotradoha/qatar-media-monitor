@@ -1292,11 +1292,13 @@ def collect(win_start_utc, now_utc, when_days=2):
     for q in Q_NAVER_KO:
         for dom in NAVER_NEWS_DOMAINS:
             feeds.append(("ko", f"[naver]{q}", gnews_url(f"{q} site:{dom}", "ko", when_days)))
-    for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko", REPORT_QUERY_DAYS)))
-    for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en", REPORT_QUERY_DAYS)))
+    # 보고서 조회기간: 개전일(REPORT_FLOOR_DATE)까지 닿도록 동적 확장 — 기존 120일 고정이라 개전(2/28) 이전이 안 잡혔음.
+    report_days = min(400, max(REPORT_QUERY_DAYS, (now_utc - REPORT_FLOOR_DATE).days + 7))
+    for q in Q_REPORTS_KO: feeds.append(("ko", q, gnews_url(q, "ko", report_days)))
+    for q in Q_REPORTS_EN: feeds.append(("en", q, gnews_url(q, "en", report_days)))
     # 한국 기관 자체 발간물: 기관 도메인을 site: 로 직접 조준(중동·유가·카타르 주제만 통과)
     for dom in KO_REPORT_SITE_DOMAINS:
-        feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", REPORT_QUERY_DAYS)))
+        feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", report_days)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
     # 아랍어·페르시아어 네이티브 원문(카타르 현지·중동 아랍어 / 이란 당사국 페르시아어)
     for q in Q_QATAR_AR:  feeds.append(("ar", q, gnews_url(q, "ar", when_days)))
