@@ -653,9 +653,8 @@ WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…�
 WEEKLY_LOOKBACK_DAYS = 7      # 주간 리포트 커버 기간(일)
 REPORT_PERSIST_DAYS = 120     # 좋은 보고서는 약 6월경부터 최근까지 누적 유지(일)
 REPORT_QUERY_DAYS = 120       # 보고서 수집 쿼리 조회 기간(Google News when:Nd)
-# 심층 리포트는 매 회차 갈아치우지 않고 '쭈욱 누적'(persist_days 이내) — 당 회차 새로 유입된 것만 '이번 회차 신규' 표시.
-REPORT_SHOW_KO = 15           # 보고서 섹션 '국내 연구기관' 묶음 표시 상한(최신순)
-REPORT_SHOW_OV = 18           # 보고서 섹션 '해외 연구기관' 묶음 표시 상한(최신순)
+# 심층 리포트는 매 회차 갈아치우지 않고 '쭈욱 누적'(persist_days 이내). 섹션은 누적분 전체를 노출(폴드 기본 접힘).
+# 당 회차 새로 유입된 것만 '이번 회차 신규' 표시.
 REPORT_STORE_MAX = 250        # reports.json 보관 최대 개수(누적 — 250건이라도 ~100KB로 용량 부담 없음)
 REPORT_PER_SOURCE_MAX = 8     # 발행처 편중 완화 — 한 소스가 목록을 독점하지 않도록 보관 시 소스별 최신 N건
 BOUNDARY_AM = (7, 0)
@@ -2978,28 +2977,22 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
                 f'{newb}{esc(x["title"])}'
                 f'<span class="src">({esc(x["source"])} · {rep_dt(x)})</span></a>')
-    # 국내 연구기관 / 해외 연구기관 — 각각 별도 '열기' 폴드로 분리(각 최신순·각 상한, 누적 총건수 표시)
+    # 한국 / 해외 — 각각 별도 '열기' 폴드. 제목은 각 버튼 안에 넣고(별도 헤딩 없음), 누적분 전체를 표시(폴드 기본 접힘).
     ko_rep = [x for x in rep_list if x.get("region") == "korea"]
     ov_rep = [x for x in rep_list if x.get("region") != "korea"]
-    def _rep_fold(label_ko, xs, cap):
+    _sfx = {"ko": ("한국", "해외"), "en": ("Korea", "Overseas"),
+            "ar": ("كوريا", "دولي")}.get(lang, ("Korea", "Overseas"))
+    def _rep_fold(suffix, xs):
         if not xs:
             return ""
-        lbl = label_ko if lang == "ko" else QGROUP_I18N.get(label_ko, {}).get(lang, label_ko)
-        body = "".join(rep_row(x) for x in xs[:cap])
+        body = "".join(rep_row(x) for x in xs)     # 상한 없이 누적분 전부 노출
         return ('<details class="foldbox reportfold">'
                 '<summary><span class="chev">▸</span>'
-                f'{esc(lbl)}<span class="hnote">({len(xs)})</span>'
+                f'{esc(L["rep_head"])} - {esc(suffix)}<span class="hnote">({len(xs)})</span>'
                 f'<span class="exp exp-c">{esc(L["expand"])} ▾</span>'
                 f'<span class="exp exp-o">{esc(L["collapse"])} ▴</span></summary>'
                 f'<div class="reprows">{body}</div></details>')
-    ko_fold = _rep_fold("📑 국내 연구기관", ko_rep, REPORT_SHOW_KO)
-    ov_fold = _rep_fold("🌐 해외 연구기관", ov_rep, REPORT_SHOW_OV)
-    if ko_fold or ov_fold:
-        report_html = (f'<div class="rephead">{esc(L["rep_head"])}'
-                       f'<span class="hnote">{esc(L["rep_note"])}</span></div>'
-                       f'{ko_fold}{ov_fold}')
-    else:
-        report_html = ""
+    report_html = _rep_fold(_sfx[0], ko_rep) + _rep_fold(_sfx[1], ov_rep)
 
     # 지난 회차 콤보박스 — 해당 언어 아카이브(일간/주간 optgroup 구분, 최신순)
     opts_daily, opts_weekly = "", ""
