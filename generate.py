@@ -663,8 +663,8 @@ REPORT_FLOOR_DATE = datetime(2026, 2, 28, tzinfo=timezone.utc)
 REPORT_QUERY_DAYS = 120       # 보고서 수집 쿼리 조회 기간(Google News when:Nd)
 # 심층 리포트는 매 회차 갈아치우지 않고 '쭈욱 누적'(persist_days 이내). 섹션은 누적분 전체를 노출(폴드 기본 접힘).
 # 당 회차 새로 유입된 것만 '이번 회차 신규' 표시.
-REPORT_STORE_MAX = 600        # reports.json 보관 최대 개수(개전 2월말~ 전 기간 누적 — 600건이라도 ~260KB로 용량 부담 없음)
-REPORT_PER_SOURCE_MAX = 12    # 발행처 편중 완화 — 한 소스가 목록을 독점하지 않도록 보관 시 소스별 최신 N건
+# reports.json 총 보관 개수 상한은 두지 않음(사용자 요청) — 하한 REPORT_FLOOR_DATE(2/28) 이후 발행분은 전부 누적.
+REPORT_PER_SOURCE_MAX = 60    # 발행처 편중 완화(단일 피드 폭주만 방지) — 사실상 상한 없이 개전 이후 전부 누적
 BOUNDARY_AM = (7, 0)
 BOUNDARY_PM = (15, 30)
 TZ = timezone(timedelta(hours=3))          # Asia/Qatar (UTC+3)
@@ -987,7 +987,7 @@ def _ai_filter_reports(cands):
 #   기존 구글뉴스 site: 경로로 계속 수집(looks_report 통과분만 등재).
 _INST_UA = "Mozilla/5.0 (compatible; MediaMonitor/1.0; +https://github.com)"
 INSTITUTION_RECENT_DAYS = 180     # 기관 직접수집: 유지기간과 동일하게 넉넉히(연구기관 게시판은 회차당 소스별 상한으로 홍수 방지)
-INSTITUTION_PER_SOURCE_MAX = 6    # 기관 직접수집: 한 소스가 목록을 독점하지 않도록 회차당 최신 N건만
+INSTITUTION_PER_SOURCE_MAX = 15   # 기관 직접수집: 회차당 소스별 상한(게시판 목록에 보이는 중동관련 발간물은 최대한 수용)
 
 INSTITUTION_BOARDS = [
     # ── 국내: eGov '.es' 발간물 게시판(직접 파싱 신뢰도 높음) ──
@@ -1205,7 +1205,7 @@ _INST_DIGEST_RE = re.compile(r"^\s*\[?\d{1,2}\.\d{1,2}(\.\d{1,4})?\]?\s")
 
 def fetch_institution_reports(now_utc):
     """INSTITUTION_BOARDS·INSTITUTION_ARTICLES를 병렬로 받아 중동·에너지 주제 보고서만 item으로 반환."""
-    floor = min(REPORT_FLOOR_DATE, now_utc - timedelta(days=INSTITUTION_RECENT_DAYS))  # 개전일(2/28) 이후 전부 허용
+    floor = REPORT_FLOOR_DATE           # 개전일(2/28) 이후 발행분만, 상한 없이 전부 허용
     def _topic_ok(t):
         return _report_topic_ok(t)
     def _mk(t, lk, dt, name, region, base):
@@ -3941,8 +3941,8 @@ def _merge_reports(items, now_utc):
                     "dt": x["dt"].astimezone(timezone.utc).isoformat(),
                     "added": now_utc.astimezone(timezone.utc).isoformat(),   # 이번 회차에 처음 수집됨
                     "region": x.get("region", "overseas")}
-    # 기간 정리(개전일 2/28 이후만 누적) + 발행일 정렬 + 보관 상한
-    floor = min(REPORT_FLOOR_DATE, now_utc - timedelta(days=REPORT_PERSIST_DAYS))
+    # 기간 정리(개전일 2/28 이후만 누적, 총 개수 상한 없음) + 발행일 정렬
+    floor = REPORT_FLOOR_DATE
     out = []
     for r in store.values():
         try:
@@ -3971,7 +3971,7 @@ def _merge_reports(items, now_utc):
         if _sc[s] > REPORT_PER_SOURCE_MAX:
             continue
         _capped.append(r)
-    out = _capped[:REPORT_STORE_MAX]
+    out = _capped     # 총 보관 개수 상한 없음 — 하한(2/28) 이후 발행분 전부 누적
     with open(path, "w", encoding="utf-8") as f:
         json.dump([{k: v for k, v in r.items() if k != "_dt"} for r in out], f, ensure_ascii=False, indent=1)
     # render용: dt·added를 datetime으로
