@@ -193,7 +193,7 @@ REPORT_HINTS = [
     "대외경제정책연구원", "kiep", "emerics", "이머릭스", "신흥지역정보", "한국개발연구원", "kdi", "에너지경제연구원", "keei",
     "국제금융센터", "kcif", "산업연구원", "kiet", "국립외교원", "ifans",
     "아산정책", "asan", "세종연구소", "sejong", "한국무역협회", "kita", "국제무역통상연구원",
-    "가스공사", "kogas", "석유공사", "knoc", "오피넷", "opinet",
+    # (가스공사·석유공사·오피넷은 공기업/시세 사이트라 '분석 발행처'가 아님 → 보고서 판정에서 제외)
     "수출입은행", "koreaexim", "무역보험공사", "ksure", "kotra", "코트라",
     # 민간·금융 연구소
     "현대경제연구원", "hri", "삼성글로벌리서치", "삼성경제연구소", "seri",
@@ -776,7 +776,7 @@ _REPORT_SUBS, _REPORT_REGEXES = _build_report_matchers()
 REPORT_DOMAINS = [
     # 한국 국책·공공·민간 연구기관
     "kiep.go.kr", "emerics.org", "kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
-    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "asaninst.org", "sejong.org", "kita.net",
     "koreaexim.go.kr", "ksure.or.kr", "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "seri.org",
     "lgbr.co.kr", "posri.re.kr", "hanaif.re.kr", "kcmi.re.kr",
     # 해외 연구기관·국제기구·에너지
