@@ -999,6 +999,16 @@ INSTITUTION_BOARDS = [
     {"name": "딜로이트 안진", "region": "korea", "type": "html",
      "url": "https://www.deloitte.com/kr/ko/our-thinking/deloitte-insights.html",
      "base": "https://www.deloitte.com", "href_has": "/kr/ko/", "date_optional": True},
+    # 무역협회 국제무역통상연구원(IIT) — 무역뉴스는 제외하고 '보고서'만(트레이드 브리프·포커스) + 소부장 공급망센터
+    {"name": "무역협회 국제무역통상연구원(IIT)", "region": "korea", "type": "kita",
+     "url": "https://www.kita.net/researchTrade/report/tradeBrief/tradeBriefList.do",
+     "base": "https://www.kita.net", "detail": "/researchTrade/report/tradeBrief/tradeBriefDetail.do"},
+    {"name": "무역협회 국제무역통상연구원(IIT)", "region": "korea", "type": "kita",
+     "url": "https://www.kita.net/researchTrade/report/tradeFocus/tradeFocusList.do",
+     "base": "https://www.kita.net", "detail": "/researchTrade/report/tradeFocus/tradeFocusDetail.do"},
+    {"name": "무역협회 소부장·공급망분석센터", "region": "korea", "type": "kita",
+     "url": "https://www.kita.net/researchTrade/globalSupplyChain/globalSupplyChainList.do",
+     "base": "https://www.kita.net", "detail": "/researchTrade/globalSupplyChain/globalSupplyChainDetail.do"},
     # ── 해외: 싱크탱크·에너지 인텔리전스 RSS(중동·에너지 항목만 주제필터 통과) ──
     {"name": "Atlantic Council", "region": "overseas", "type": "rss",
      "url": "https://www.atlanticcouncil.org/category/blogs/menasource/feed/", "base": "https://www.atlanticcouncil.org"},
@@ -1151,6 +1161,29 @@ def _parse_html_list(html_text, base, href_has=None, date_optional=False):
         out.append((title, url, dm.group(0) if dm else ""))
     return out
 
+def _parse_kita_list(html_text, base, detail_path):
+    """KITA(무역협회) 보고서 리스트 전용 — 상세링크가 href가 아니라 onclick=goDetailPage('id')이므로.
+    제목=앵커 title 속성, 발행일='등록일 YYYY.MM.DD' 또는 제목 앞 '[YYYY.MM.DD]', 상세=GET ?no=id."""
+    out, seen = [], set()
+    matches = list(re.finditer(r"goDetailPage\('(\d+)'[^)]*\)[^>]*title=\"([^\"]+)\"", html_text))
+    for idx, m in enumerate(matches):
+        rid = m.group(1)
+        if rid in seen:
+            continue
+        title = _clean_row_title(m.group(2))
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else m.end() + 2500   # 다음 행 제목 전까지가 이 행
+        dm = re.search(r"등록일</i>\s*(20\d\d\.\d{1,2}\.\d{1,2})", html_text[m.end():end])
+        ds = dm.group(1) if dm else ""
+        if not ds:
+            dm2 = re.search(r"\[(20\d\d\.\d{1,2}\.\d{1,2})\]", title)
+            ds = dm2.group(1) if dm2 else ""
+        title = re.sub(r"^\[20\d\d\.\d{1,2}\.\d{1,2}\]\s*", "", title).strip()   # 소부장 제목 앞 날짜꼬리표 제거
+        if len(title) < 8:
+            continue
+        seen.add(rid)
+        out.append((title, base.rstrip("/") + detail_path + "?no=" + rid, ds))
+    return out
+
 # 기관 자체 일일 뉴스브리핑·시황 다이제스트(예: '[8.7] …')는 심층 보고서가 아니므로 제외
 _INST_DIGEST_RE = re.compile(r"^\s*\[?\d{1,2}\.\d{1,2}(\.\d{1,4})?\]?\s")
 
@@ -1174,6 +1207,9 @@ def fetch_institution_reports(now_utc):
                 for e in (d.entries or [])[:40]:
                     rows.append((clean_title((e.get("title") or "").strip()),
                                  (e.get("link") or "").strip(), entry_time(e)))
+            elif typ == "kita":
+                for t, u, ds in _parse_kita_list(_inst_http_get(cfg["url"]), base, cfg["detail"]):
+                    rows.append((t, u, _inst_date(ds)))
             elif typ == "html":
                 do = cfg.get("date_optional", False)
                 _dc = 0
