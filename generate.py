@@ -802,10 +802,11 @@ def _domain_is_report(shref):
 
 # 한국 기관 '자체 발간물' 직접 포착용 — 각 기관 도메인을 구글뉴스 site: 로 조준 수집.
 # (기관 자체 RSS는 robots/비표준으로 확인이 어려워, 발행처 도메인을 직접 겨냥하는 방식으로 연결)
+# ※ INSTITUTION_BOARDS로 '각 사이트 직접수집'하는 기관은 여기서 제외 — 구글뉴스 site:는 그 기관들의
+#   뉴스게시판·입찰공고까지 끌어와 노이즈가 되므로, 직접수집이 안 되는 기관만 구글뉴스로 보강한다.
 KO_REPORT_SITE_DOMAINS = [
-    "kiep.go.kr", "emerics.org", "kdi.re.kr", "eiec.kdi.re.kr", "keei.re.kr", "kcif.or.kr", "kiet.re.kr", "ifans.go.kr",
-    "asaninst.org", "sejong.org", "kita.net", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
-    "kotra.or.kr", "hri.co.kr", "samsungsgr.com", "posri.re.kr", "kcmi.re.kr",
+    "emerics.org", "asaninst.org", "kogas.or.kr", "knoc.or.kr", "opinet.co.kr",
+    "kotra.or.kr", "samsungsgr.com", "posri.re.kr",
     # 컨설팅·경영硏 중 JS 전용이라 직접 파싱이 안 되는 곳은 구글뉴스 site:로 보강(리포트만 필터 통과)
     "lgbr.co.kr", "kpmg.com", "pwc.com", "ey.com",
 ]
@@ -820,9 +821,12 @@ def is_report_source(src):
 # 뉴스 매체가 보고서를 인용·소개한 기사(제목에 기관명이 들어가도)는 제외 → 뉴스성 나열 방지.
 # 재게시 뉴스 매체(원문일과 어긋나는 피드 날짜) → 보고서 섹션에서 원천 제외
 # (한국무역협회-KITA는 산업·공급망 분석 콘텐츠가 있어 사용자 요청으로 포함 유지)
-REPORT_DENY = ["tradingkey", "이슈밸리", "issuevalley"]
+REPORT_DENY = ["tradingkey", "이슈밸리", "issuevalley",
+               # 통신사 속보를 재게시하는 채널(연구기관 자체 분석이 아님) — 사용자 요청으로 보고서 섹션에서 제외
+               "데일리머니", "theconnectmoney", "connectmoney", "kita.net", "한국무역협회"]
 # 기사 아닌 섹션 랜딩·영상·라이브·뉴스브리핑 등은 '심층 보고서'가 아니므로 제외(검증 게이트)
-_NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:", "live |", "live:")
+_NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:", "live |", "live:",
+                            "▣", "【", "[입찰", "[공고", "(사업취소)", "[모집", "[채용")
 _NON_REPORT_TITLE_EXACT = {
     "middle east & africa", "middle east and africa", "middle east - the economist",
     "middle east", "war in the middle east", "the middle east",
@@ -836,6 +840,9 @@ _NON_REPORT_TITLE_SUBSTR = (
     "live blog", "as it happened", "live updates", "breaking:", "what to know",
     # 한국 기관 사이트가 통신사 속보를 그대로 퍼온 '단편 뉴스'(KEEI 소통>에너지 주요소식 게시판 등)
     "주요뉴스", "에너지 주요소식",
+    # 보고서가 아닌 행사·공고·입찰·모집(KOTRA 무역투자24 사업안내 등)
+    "입찰공고", "무역사절단", "수요포럼", "판촉전", "설명회", "상담회", "전시회",
+    "참가기업 모집", "참가업체 모집", "참가 기업 모집", "참가신청", "바이어 상담",
 )
 
 # 한국어 통신사 속보·시황단신 헤드라인 형태(연구기관 '분석·보고서'가 아님) → 보고서 섹션에서 원천 배제.
