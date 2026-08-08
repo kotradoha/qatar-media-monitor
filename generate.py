@@ -2166,9 +2166,18 @@ def _summary_bullets(summary):
     return [c for c in (_clean_bullet(x) for x in items) if c]
 
 
-def link_row(x):
+# 아랍/페르시아어(아랍문자) 감지 — 소스는 ASCII만 쓰도록 chr()로 문자범위를 구성(보이지 않는 경계문자 방지).
+_LOCAL_SCRIPT = re.compile("[%s-%s%s-%s]" % (chr(0x0600), chr(0x06FF), chr(0x0750), chr(0x077F)))
+def link_row(x, lang="ko"):
     d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")   # 게재 시각까지 표기(모니터링 기간 내 최신순 확인용)
-    return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}'
+    title = x.get("title") or ""
+    # 한국·영어 페이지에서 아랍/페르시아어 원문 제목은 그대로 두면 읽기 어렵다 —
+    #   제목 대신 '[현지어 원문] 출처'로 표기해 링크(출처 확인)는 살리되 아랍어 노출은 없앤다(아랍어 페이지는 원문 유지).
+    if lang != "ar" and _LOCAL_SCRIPT.search(title):
+        tag = {"ko": "[현지어 원문]", "en": "[original-language]"}.get(lang, "[original-language]")
+        return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(tag)} {esc(x["source"])}'
+                f'<span class="src">· {d}</span></a>')
+    return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(title)}'
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
 
 
@@ -2234,10 +2243,10 @@ def render_issues(issues, pool, now_utc, L=None, collapse_links=False, lang="ko"
         ov = _recent([a for a in arts if a["region"] == "overseas"])
         kr = _recent([a for a in arts if a["region"] == "korea"])
         groups = ""
-        if q:  groups += f'<div class="grp"><div class="gh">{esc(L["g_qatar"])}</div>' + "".join(link_row(a) for a in q) + '</div>'
-        if ir: groups += f'<div class="grp"><div class="gh">{esc(L["g_iran"])}</div>' + "".join(link_row(a) for a in ir) + '</div>'
-        if ov: groups += f'<div class="grp"><div class="gh">{esc(L["g_over"])}</div>' + "".join(link_row(a) for a in ov) + '</div>'
-        if kr: groups += f'<div class="grp"><div class="gh">{esc(L["g_korea"])}</div>' + "".join(link_row(a) for a in kr) + '</div>'
+        if q:  groups += f'<div class="grp"><div class="gh">{esc(L["g_qatar"])}</div>' + "".join(link_row(a, lang) for a in q) + '</div>'
+        if ir: groups += f'<div class="grp"><div class="gh">{esc(L["g_iran"])}</div>' + "".join(link_row(a, lang) for a in ir) + '</div>'
+        if ov: groups += f'<div class="grp"><div class="gh">{esc(L["g_over"])}</div>' + "".join(link_row(a, lang) for a in ov) + '</div>'
+        if kr: groups += f'<div class="grp"><div class="gh">{esc(L["g_korea"])}</div>' + "".join(link_row(a, lang) for a in kr) + '</div>'
         if not groups:
             groups = f'<div class="grp"><div class="gh" style="color:var(--muted)">{esc(L["nomap"])}</div></div>'
         head = f'<div class="issue"><div class="ihead"><span class="num">{esc(L["issue"])} {n}</span><h2>{theme}</h2></div>'
@@ -3932,6 +3941,8 @@ def _merge_reports(items, now_utc):
     except Exception:
         pass
     # 이번 회차 신규 보고서 후보 수집 → AI 2차 검증(심층 분석 vs 단순 뉴스)으로 걸러 등재
+    # 같은 기사가 다른 구글뉴스 URL로 재수집되면 '신규'로 다시 잡혀 배지가 재부착되므로, 제목으로도 중복 차단.
+    _existing_titles = {re.sub(r"\s+", "", (r.get("title") or "")).lower()[:80] for r in store.values()}
     _new = []
     for x in items:
         if not x.get("report"):
@@ -3939,6 +3950,10 @@ def _merge_reports(items, now_utc):
         k = _report_key(x["link"])
         if k in store:
             continue
+        _tk = re.sub(r"\s+", "", (x.get("title") or "")).lower()[:80]
+        if _tk and _tk in _existing_titles:   # 이미 있는 제목(다른 URL 재수집) → 신규 재등재 안 함(배지 재부착 방지)
+            continue
+        _existing_titles.add(_tk)
         _new.append((k, x))
     _drop = _ai_filter_reports([{"title": x["title"], "source": x["source"]} for (_k, x) in _new])
     for _i, (k, x) in enumerate(_new):
