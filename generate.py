@@ -2149,8 +2149,10 @@ def li(x, now_utc, L=None, lang="ko"):
     #   아랍어 본문 설명(desc)도 함께 감춰 아랍어 노출을 없앤다. 아랍어 페이지는 원문 그대로.
     if lang != "ar" and _LOCAL_SCRIPT.search(title):
         tag = {"ko": "[현지어 원문]", "en": "[original-language]"}.get(lang, "[original-language]")
-        return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(tag)} {esc(x["source"])}</a>'
-                f'<div class="meta">({meta})</div></li>')
+        src = _src_label(x, lang)
+        meta_n = " · ".join([esc(src), d, ago(x["dt"], now_utc, L)])
+        return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(tag)} {esc(src)}</a>'
+                f'<div class="meta">({meta_n})</div></li>')
     desc = f'<div class="dsc">{esc(x["desc"])}</div>' if x["desc"] else ""
     return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(title)}</a>'
             f'{desc}<div class="meta">({meta})</div></li>')
@@ -2176,6 +2178,20 @@ def _summary_bullets(summary):
 
 # 아랍/페르시아어(아랍문자) 감지 — 소스는 ASCII만 쓰도록 chr()로 문자범위를 구성(보이지 않는 경계문자 방지).
 _LOCAL_SCRIPT = re.compile("[%s-%s%s-%s]" % (chr(0x0600), chr(0x06FF), chr(0x0750), chr(0x077F)))
+
+
+def _src_label(x, lang="ko"):
+    """중립 라벨에 쓸 '출처' 표기 — 출처명이 아랍문자면 홈페이지(shref) 도메인(라틴)으로 대체,
+    그것도 없으면 '현지 매체'로. (중립 라벨/메타에 아랍어가 다시 새는 것을 막는다.)"""
+    src = (x.get("source") or "").strip()
+    if src and not _LOCAL_SCRIPT.search(src):
+        return src
+    m = re.search(r"https?://(?:www\.)?([^/]+)", x.get("shref") or "")
+    if m and not _LOCAL_SCRIPT.search(m.group(1)):
+        return m.group(1)
+    return {"ko": "현지 매체", "en": "local outlet", "ar": src or "مصدر"}.get(lang, "local outlet")
+
+
 def link_row(x, lang="ko"):
     d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")   # 게재 시각까지 표기(모니터링 기간 내 최신순 확인용)
     title = x.get("title") or ""
@@ -2183,7 +2199,7 @@ def link_row(x, lang="ko"):
     #   제목 대신 '[현지어 원문] 출처'로 표기해 링크(출처 확인)는 살리되 아랍어 노출은 없앤다(아랍어 페이지는 원문 유지).
     if lang != "ar" and _LOCAL_SCRIPT.search(title):
         tag = {"ko": "[현지어 원문]", "en": "[original-language]"}.get(lang, "[original-language]")
-        return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(tag)} {esc(x["source"])}'
+        return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(tag)} {esc(_src_label(x, lang))}'
                 f'<span class="src">· {d}</span></a>')
     return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(title)}'
             f'<span class="src">{esc(x["source"])} · {d}</span></a>')
