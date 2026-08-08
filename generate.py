@@ -127,6 +127,7 @@ QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "ham
 MIDEAST_KW = ["iran", "iranian", "israel", "israeli", "gulf", "hormuz", "houthi", "yemen",
               "saudi", "bahrain", "kuwait", "oman", "uae", "emirates", "tehran", "gaza",
               "lebanon", "hezbollah", "idf", "middle east", "mena", "egypt", "red sea", "suez",
+              "palestine", "palestinian", "lebanese",
               "이란", "이스라엘", "걸프", "호르무즈", "후티", "예멘", "사우디", "바레인",
               "쿠웨이트", "오만", "중동", "테헤란", "가자", "헤즈볼라", "이집트", "홍해", "수에즈",
               # 아랍어
@@ -896,13 +897,21 @@ def _looks_ko_wire_news(title):
 # 부분일치하는 오탐이 잦아, 이 세 개만 한글 음절 경계 검사로 처리(영문 doha/gaza/oman은 그대로 부분일치).
 _AMBIG_KO = ("도하", "가자", "오만")
 _AMBIG_RE = re.compile(r"(?<![가-힣])(?:도하|가자|오만)")
+# 다른 영어 단어에 내포되기 쉬운 짧은 키워드(Gulfstream⊃gulf·menace⊃mena·midfielder⊃idf)는 앞뒤 경계로만.
+_KW_EXACT = {"gulf", "mena", "idf"}
+
+
 def _kw_matcher(kws):
-    r"""관련성 키워드 매칭 정규식 — 영문 영숫자는 단어경계(\b: oman⊂woman·iran⊂Miranda·gulf⊂Gulfstream 방지),
+    r"""관련성 키워드 매칭 정규식 — 영문 영숫자는 앞 단어경계 + 접미 허용(\b…\w*: Kuwaiti·Iranian·Israelis 포함,
+    앞 경계로 woman⊃oman·Miranda⊃iran 차단), 단 _KW_EXACT(gulf·mena·idf)는 앞뒤 경계로 Gulfstream·menace 오탐 차단.
     한글 모호어(도하·가자·오만)는 앞 음절경계(주도하다·돌아가자·오만하다 방지), 그 외(공백·기호·아랍/페르시아어)는 부분일치."""
     pats = []
     for k in kws:
         if re.fullmatch(r"[a-z0-9]+", k):
-            pats.append(r"\b" + re.escape(k) + r"\b")
+            if k in _KW_EXACT:
+                pats.append(r"\b" + re.escape(k) + r"\b")
+            else:
+                pats.append(r"\b" + re.escape(k) + r"\w*")
         elif k in _AMBIG_KO:
             pats.append(r"(?<![가-힣])" + re.escape(k))
         else:
@@ -1376,7 +1385,9 @@ def collect(win_start_utc, now_utc, when_days=2):
             # 관련성 판정용 텍스트: 요약 끝에 붙는 매체명(src)을 제거해 'The Peninsula Qatar'·'Qatar News Agency'
             #   같은 매체명 속 지명(Qatar/Doha)에 의한 오탐을 막는다(카타르 종합지의 국제·스포츠 잡뉴스 유입 차단).
             #   키워드는 단어경계로 매칭(oman⊂woman 등 방지). 표시용 desc/text는 원본 유지.
-            rel = title + " " + (re.sub(re.escape(src), " ", desc, flags=re.I) if src else desc)
+            rel = title + " " + desc
+            if src:
+                rel = re.sub(re.escape(src), " ", rel, flags=re.I)   # 제목·요약 모두에서 매체명 제거(제목에 '| Gulf Times' 등 잔존 대응)
             is_qatar = bool(QATAR_RE.search(rel))
             report = looks_report(title, src, shref)
             if not is_qatar and not MIDEAST_RE.search(rel) and not report:
