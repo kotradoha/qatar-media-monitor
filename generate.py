@@ -896,6 +896,24 @@ def _looks_ko_wire_news(title):
 # 부분일치하는 오탐이 잦아, 이 세 개만 한글 음절 경계 검사로 처리(영문 doha/gaza/oman은 그대로 부분일치).
 _AMBIG_KO = ("도하", "가자", "오만")
 _AMBIG_RE = re.compile(r"(?<![가-힣])(?:도하|가자|오만)")
+def _kw_matcher(kws):
+    r"""관련성 키워드 매칭 정규식 — 영문 영숫자는 단어경계(\b: oman⊂woman·iran⊂Miranda·gulf⊂Gulfstream 방지),
+    한글 모호어(도하·가자·오만)는 앞 음절경계(주도하다·돌아가자·오만하다 방지), 그 외(공백·기호·아랍/페르시아어)는 부분일치."""
+    pats = []
+    for k in kws:
+        if re.fullmatch(r"[a-z0-9]+", k):
+            pats.append(r"\b" + re.escape(k) + r"\b")
+        elif k in _AMBIG_KO:
+            pats.append(r"(?<![가-힣])" + re.escape(k))
+        else:
+            pats.append(re.escape(k))
+    return re.compile("|".join(pats), re.I)
+
+
+QATAR_RE = _kw_matcher(QATAR_KW)
+MIDEAST_RE = _kw_matcher(MIDEAST_KW)
+
+
 def _report_topic_ok(title):
     s = (title or "") + " "
     q = [k for k in QATAR_KW if k not in _AMBIG_KO]
@@ -1355,10 +1373,13 @@ def collect(win_start_utc, now_utc, when_days=2):
             elif sd is not None:
                 shref = getattr(sd, "href", "") or ""
             desc = clean_desc(e.get("summary", ""))
-            text = title + " " + desc
-            is_qatar = has(text, QATAR_KW)
+            # 관련성 판정용 텍스트: 요약 끝에 붙는 매체명(src)을 제거해 'The Peninsula Qatar'·'Qatar News Agency'
+            #   같은 매체명 속 지명(Qatar/Doha)에 의한 오탐을 막는다(카타르 종합지의 국제·스포츠 잡뉴스 유입 차단).
+            #   키워드는 단어경계로 매칭(oman⊂woman 등 방지). 표시용 desc/text는 원본 유지.
+            rel = title + " " + (re.sub(re.escape(src), " ", desc, flags=re.I) if src else desc)
+            is_qatar = bool(QATAR_RE.search(rel))
             report = looks_report(title, src, shref)
-            if not is_qatar and not has(text, MIDEAST_KW) and not report:
+            if not is_qatar and not MIDEAST_RE.search(rel) and not report:
                 continue
             dt = entry_time(e)
             if dt is None or dt > now_utc + timedelta(minutes=5):
