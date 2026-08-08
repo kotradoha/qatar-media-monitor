@@ -2139,12 +2139,20 @@ def esc(s):
     return html.escape(s or "", quote=True)
 
 
-def li(x, now_utc, L=None):
+def li(x, now_utc, L=None, lang="ko"):
     L = L or LANG["ko"]
     d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
     meta = " · ".join([esc(x["source"]), d, ago(x["dt"], now_utc, L)])
+    title = x.get("title") or ""
+    # 한국·영어 페이지: 아랍/페르시아어 원문 기사는 제목 대신 '[현지어 원문] 출처'로 표시한다.
+    #   ★ 목록에서 '삭제'하지 않으므로 전체 목록 총계(=상단 모니터링 건수)는 그대로 유지된다.
+    #   아랍어 본문 설명(desc)도 함께 감춰 아랍어 노출을 없앤다. 아랍어 페이지는 원문 그대로.
+    if lang != "ar" and _LOCAL_SCRIPT.search(title):
+        tag = {"ko": "[현지어 원문]", "en": "[original-language]"}.get(lang, "[original-language]")
+        return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(tag)} {esc(x["source"])}</a>'
+                f'<div class="meta">({meta})</div></li>')
     desc = f'<div class="dsc">{esc(x["desc"])}</div>' if x["desc"] else ""
-    return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}</a>'
+    return (f'<li><a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(title)}</a>'
             f'{desc}<div class="meta">({meta})</div></li>')
 
 
@@ -3048,7 +3056,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     n_mideast = len(items) - n_qatar
 
     def block(rows, empty):
-        return "\n".join(li(x, now_utc, L) for x in rows) or f'<li class="empty">{empty}</li>'
+        return "\n".join(li(x, now_utc, L, lang) for x in rows) or f'<li class="empty">{empty}</li>'
 
     # 일일 페이지는 항상 동일한 형식(요일 무관). 주간 발행일에도 주간 내용은 끼워넣지 않고 상단 CTA 버튼(weekly_inline)만 노출.
     _isweekly = (edition == "weekly")
