@@ -2192,6 +2192,34 @@ def _src_label(x, lang="ko"):
     return {"ko": "현지 매체", "en": "local outlet", "ar": src or "مصدر"}.get(lang, "local outlet")
 
 
+def _alang(a):
+    """기사의 1차 언어 추정 — korean 표시면 ko, 제목이 아랍문자면 ar(이란권은 fa), 그 외 en."""
+    if a.get("korean"):
+        return "ko"
+    if _LOCAL_SCRIPT.search(a.get("title") or ""):
+        return "fa" if a.get("region") == "iran" else "ar"   # 이란권=페르시아어, 그 외 아랍문자=아랍어
+    return "en"
+
+
+def _kept_local_links(issues, pool):
+    """이슈 요약에서 '영어·국내에 밀리지 않고 살아남은' 현지어(ar/fa) 기사의 link 집합을 돌려준다.
+    ※ 판정 기준은 render_issues()의 arts 현지어 dedup과 반드시 동일하게 유지할 것.
+      (영어·한국어가 같은 사안을 커버하면 그 현지어는 제외, 현지어 단독 사안만 남긴다.)"""
+    keep = set()
+    for iss in (issues or []):
+        if not isinstance(iss, dict):
+            continue
+        raw = iss.get("ids")
+        ids = [j for j in (raw if isinstance(raw, list) else []) if isinstance(j, int) and 0 <= j < len(pool)]
+        arts = [pool[j] for j in ids]
+        if any(_alang(a) in ("en", "ko") for a in arts):
+            arts = [a for a in arts if _alang(a) not in ("ar", "fa")]
+        for a in arts:
+            if _alang(a) in ("ar", "fa"):
+                keep.add(a.get("link"))
+    return keep
+
+
 def link_row(x, lang="ko"):
     d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")   # 게재 시각까지 표기(모니터링 기간 내 최신순 확인용)
     title = x.get("title") or ""
@@ -2247,13 +2275,7 @@ def render_issues(issues, pool, now_utc, L=None, collapse_links=False, lang="ko"
                 + '</div>') if qi_items else ""
         arts = [pool[j] for j in ids]
         # 권역 그룹 내 정렬: 현재 언어판과 같은 언어의 원문을 위로(각 판이 자기 언어 1차 소스를 먼저 보게), 그 안에서 최신순.
-        _ARABC = re.compile("[\u0600-\u06ff]")
-        def _alang(a):
-            if a.get("korean"):
-                return "ko"
-            if _ARABC.search(a.get("title") or ""):
-                return "fa" if a.get("region") == "iran" else "ar"   # 이란권=페르시아어, 그 외 아랍문자=아랍어
-            return "en"
+        # 언어 판정은 모듈 레벨 _alang() 공유 — 전체 기사 목록 dedup(_kept_local_links)과 동일 기준.
         _pref = lang if lang in ("ko", "en", "ar") else "en"
         def _recent(lst):
             by_date = sorted(lst, key=lambda a: a["dt"], reverse=True)          # 먼저 최신순
@@ -3061,6 +3083,12 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
     updated_str = f"{now_q.year}. {now_q.month}. {now_q.day}.({_wd[now_q.weekday()]}) {_hhmm}"
     if issue_pool is None:
         issue_pool = items[:POOL_FOR_ISSUES]
+    # 전체 기사 목록의 현지어(아랍/페르시아어) 정리 — 한국·영어판에 한함(아랍어판은 원문 전량 유지).
+    #   이슈 요약과 동일 기준: 같은 사안을 영어·국내 매체가 이미 커버한 현지어 기사는 목록에서 제외,
+    #   영어권이 다루지 않은 현지어 단독 사안만 남긴다. 목록에서 빠지면 상단 건수도 함께 줄어 일치가 유지된다.
+    if lang != "ar" and issues:
+        _keep_ll = _kept_local_links(issues, issue_pool)
+        items = [x for x in items if _alang(x) not in ("ar", "fa") or x.get("link") in _keep_ll]
     # 전체 기사 목록 컬럼은 '출처 매체의 권역' 기준으로 분류(한국 매체가 카타르 현지 칸에 섞이지 않도록)
     # 전체 목록은 권역별 상한 없이 전량 노출 → 목록 총계가 상단 '모니터링 건수' 합계와 정확히 일치(4개 권역이 items를 빠짐없이 분할).
     qatar = [x for x in items if x["region"] == "qatar"]
