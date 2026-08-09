@@ -306,6 +306,10 @@ DIRECT_FEEDS = [
     ("Mehr News", "https://en.mehrnews.com/rss"),
     ("IRNA", "https://en.irna.ir/rss"),
     ("Middle East Eye", "https://www.middleeasteye.net/rss"),
+    # 국내 주요 매체 '국제' 섹션 직접 RSS — 구글뉴스 site: 색인·키워드 의존을 넘어 중동·전쟁 보도를
+    #   누락 없이 확보(관련성 필터가 중동·카타르만 통과, 제목 dedup으로 구글뉴스 중복 제거).
+    ("연합뉴스", "https://www.yna.co.kr/rss/international.xml"),
+    ("매일경제", "https://www.mk.co.kr/rss/30300018/"),
 ]
 
 QUICK_LINKS = {
