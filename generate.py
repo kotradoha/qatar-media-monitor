@@ -4249,6 +4249,44 @@ def _write_all_editions(metas):
         fh.write(html_doc)
 
 
+def _load_run_history():
+    """최근 발행 회차들의 수집량 이력(급감 발행 방어용). 없으면 []."""
+    try:
+        with open("state.json", encoding="utf-8") as fh:
+            d = json.load(fh)
+        h = d.get("history")
+        return [int(x) for x in h if isinstance(x, (int, float))] if isinstance(h, list) else []
+    except Exception:
+        return []
+
+
+def _save_run_history(count, now_utc):
+    """이번 회차 수집량을 이력에 추가(최근 15회 유지) + 마지막 실행 기록."""
+    try:
+        try:
+            with open("state.json", encoding="utf-8") as fh:
+                d = json.load(fh)
+        except Exception:
+            d = {}
+        h = [int(x) for x in (d.get("history") or []) if isinstance(x, (int, float))]
+        h.append(int(count))
+        d["history"] = h[-15:]
+        d["last_items"] = int(count)
+        d["last_run_utc"] = now_utc.strftime("%Y-%m-%d %H:%M UTC")
+        with open("state.json", "w", encoding="utf-8") as fh:
+            json.dump(d, fh, ensure_ascii=False, indent=1)
+    except Exception as ex:
+        print(f"[warn] state.json save failed: {ex}")
+
+
+def _median(nums):
+    s = sorted(nums)
+    n = len(s)
+    if n == 0:
+        return 0
+    return s[n // 2] if n % 2 else (s[n // 2 - 1] + s[n // 2]) / 2
+
+
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
@@ -4273,6 +4311,17 @@ def main():
     items = collect(start_q.astimezone(timezone.utc), now_utc)
     _n0 = len(items); items = filter_minor(items)               # 소형매체 주변부·중복 정리(메이저·관련링크·카타르·핵심토픽·보고서는 유지)
     print(f"[info] filter_minor: {_n0} → {len(items)} (dropped {_n0 - len(items)})")
+    # 급감 발행 방어(M2): 이번 수집량이 최근 발행 회차 중앙값의 50% 미만이면 발행 보류
+    #   (피드 장애로 '빈 브리핑'이 정상 브리핑을 덮어쓰는 것 방지). FORCE_PUBLISH=1이면 우회.
+    #   이력 3회 미만이면 미적용(부트스트랩). 보류 시 파일을 쓰지 않고 비정상 종료 → 워크플로가 커밋 안 함(기존 페이지 유지)+실패 알림.
+    _force_publish = os.environ.get("FORCE_PUBLISH", "0") == "1"
+    _hist = _load_run_history()
+    if len(_hist) >= 3 and not _force_publish:
+        _med = _median(_hist)
+        if _med and _n0 < 0.5 * _med:
+            raise SystemExit(
+                f"[HOLD] 수집 급감으로 발행 보류: 이번 회차 {_n0}건 < 최근 {len(_hist)}회 중앙값 {_med:.0f}건의 50%. "
+                f"기존 페이지 유지. 피드 장애 가능성 — 확인 후 정상이면 수동 실행에서 FORCE_PUBLISH를 켜 강제 발행하세요.")
     new_since_daily = start_q.astimezone(timezone.utc)          # 이번 회차 창(window) 시작 — 이후 발간 보고서는 '신규' 표기
     end_utc = end_q.astimezone(timezone.utc)                    # 모니터링 기간 끝(경계 시각) — 실행 시각이 아니라 07:00/15:30 경계로 고정
     new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
@@ -4428,6 +4477,8 @@ def main():
     for r in reports:
         rep_srcs[r.get("source", "?")] = rep_srcs.get(r.get("source", "?"), 0) + 1
     print("report sources:", sorted(rep_srcs.items(), key=lambda kv: -kv[1]))
+    # 발행 성공 회차만 이력에 기록(급감 방어 기준값). 보류·실패 회차는 기록하지 않아 중앙값이 정상치를 유지.
+    _save_run_history(_n0, now_utc)
 
 
 def _merge_reports(items, now_utc):
