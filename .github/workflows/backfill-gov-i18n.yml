@@ -46,7 +46,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           BRANCH="${GITHUB_REF_NAME}"
-          git add -A
+          git add -A -- '*.html'          # HTML만 스테이징(__pycache__ 등 산출물 커밋 방지)
           if git diff --staged --quiet; then
             echo "No changes."
           else
