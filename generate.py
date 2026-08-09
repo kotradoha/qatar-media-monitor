@@ -505,7 +505,7 @@ LANG = {
   "counts": "카타르 <b>{q}</b>건 · 중동 정세 <b>{me}</b>건", "counts_label": "모니터링 건수",
   "scope": ("<b>모니터링 부문</b> — 카타르와 관련된 중동 정세를 전쟁·군사, 외교·중재, 에너지·유가·LNG, "
             "물류·해상안전(호르무즈·홍해), 경제·통상, 항공·교민 등 위주로 정리"),
-  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "지난 회차", "arch_weekly": "주간 종합", "sel_d": "일간", "sel_w": "주간", "sister": "✈️ 항공 모니터링",
+  "arch_view": "🗂️ 지난 회차 보기:", "arch_latest": "이번 회차 (최신)", "arch_daily": "지난 회차", "arch_weekly": "주간 종합", "arch_all": "전체 회차", "sel_d": "일간", "sel_w": "주간", "sister": "✈️ 항공 모니터링",
   "search_ph": "키워드로 요약·기사·매체 필터 (예: LNG, 호르무즈, 유가)",
   "search_hint": ("※ 이 페이지에 표시된 <b>뉴스 제목·요약문·매체명</b>에서 검색어가 보이는 항목만 남기는 방식입니다"
                   "(기사 원문 전체나 지난 회차는 검색 대상이 아니며, 지난 회차는 위 콤보박스로 열어 검색)."),
@@ -557,7 +557,7 @@ LANG = {
   "scope": ("<b>Coverage focus</b> — Qatar-related Middle East developments in war &amp; military, "
             "diplomacy &amp; mediation, energy·oil·LNG, logistics &amp; maritime security (Hormuz/Red Sea), "
             "economy &amp; trade, aviation·citizens, etc."),
-  "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly", "sel_d": "Daily", "sel_w": "Weekly", "sister": "✈️ Flight monitor",
+  "arch_view": "🗂️ Past editions:", "arch_latest": "Current edition (latest)", "arch_daily": "Daily", "arch_weekly": "Weekly", "arch_all": "All editions", "sel_d": "Daily", "sel_w": "Weekly", "sister": "✈️ Flight monitor",
   "search_ph": "Filter summaries · articles · outlets (e.g. LNG, Hormuz, oil)",
   "search_hint": ("※ Filters items on this page whose <b>headline, summary or outlet name</b> contains your keyword "
                   "(full article text and past editions are not searched; open a past edition from the selector above to search it)."),
@@ -611,7 +611,7 @@ LANG = {
   "scope": ("<b>مجالات الرصد</b> — تطورات الشرق الأوسط المتعلقة بقطر في الحرب والعسكر، "
             "الدبلوماسية والوساطة، الطاقة والنفط وLNG، اللوجستيات والأمن البحري (هرمز/البحر الأحمر)، "
             "الاقتصاد والتجارة، والطيران والمواطنين، إلخ."),
-  "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي", "sel_d": "يومي", "sel_w": "أسبوعي", "sister": "✈️ رصد الطيران",
+  "arch_view": "🗂️ الإصدارات السابقة:", "arch_latest": "الإصدار الحالي (الأحدث)", "arch_daily": "يومي", "arch_weekly": "أسبوعي", "arch_all": "كل الإصدارات", "sel_d": "يومي", "sel_w": "أسبوعي", "sister": "✈️ رصد الطيران",
   "search_ph": "تصفية الملخصات · الأخبار · المصادر (مثال: LNG، هرمز، النفط)",
   "search_hint": ("※ تُظهر فقط العناصر التي تحتوي كلمتك في <b>العنوان أو الملخص أو اسم المصدر</b> على هذه الصفحة "
                   "(لا يشمل البحث النص الكامل للمقالات ولا الإصدارات السابقة؛ افتح إصدارًا سابقًا من القائمة أعلاه للبحث فيه)."),
@@ -656,6 +656,7 @@ LANG = {
 MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 72          # 사안 분류에 넘길 기사 수(Sonnet 5 대용량 컨텍스트 — 원산지 고루 반영·중요 기사 누락 방지)
 DESC_MAX = 220                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이
+ARCHIVE_MANIFEST_DAYS = 60    # 드롭다운(매니페스트)에 노출할 최근 회차 기간(일). 그 이전은 '전체 회차' 페이지로만(파일은 전부 보존·삭제 없음)
 SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
 FLIGHT_URL = "https://kotradoha.github.io/qatar-korea-flight-monitor/"   # 자매 사이트(항공 모니터링)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
@@ -3372,7 +3373,9 @@ if(sw){sw.innerHTML=w;}
     _wsel = (f'<select id="archsel-w" aria-label="{esc(L["arch_weekly"])}" onchange="if(this.value)location.href=this.value">'
              f'<option value="">{esc(L["sel_w"])}</option>{opts_weekly}</select>')
     archive_html = (f'<div class="archsel"><span class="archlbl">{esc(L["arch_view"])}</span>'
-                    f'{_dsel}{_wsel}</div>' + _archscript)
+                    f'{_dsel}{_wsel}'
+                    f'<a class="archall" href="{esc(SITE_BASE)}archive/all.html">{esc(L.get("arch_all", "전체 회차"))} →</a>'
+                    f'</div>' + _archscript)
 
     # 언어 전환 버튼
     nav = nav or {l: home_url for l in LANGS}
@@ -3568,6 +3571,8 @@ TEMPLATE = """<!DOCTYPE html>
   .qchips a:hover{{text-decoration:underline}}
   .archsel{{display:flex;align-items:center;gap:6px 8px;font-size:12.5px;color:var(--muted);margin:2px 0 12px;flex-wrap:wrap}}
   .archlbl{{flex:0 0 auto;white-space:nowrap}}
+  .archall{{flex:0 0 auto;white-space:nowrap;color:var(--muted);text-decoration:none}}
+  .archall:hover{{text-decoration:underline}}
   .archsel select{{font-size:12.5px;color:var(--txt);background:var(--panel2);border:1px solid var(--line);
     border-radius:8px;padding:5px 9px;flex:0 1 160px;min-width:0;max-width:none;
     text-overflow:ellipsis;white-space:nowrap;overflow:hidden}}
@@ -4208,6 +4213,42 @@ def verify_gov(gov, pool):
     return out
 
 
+def _write_all_editions(metas):
+    """전체 회차 색인 페이지(archive/all.html) — 매니페스트(최근 ARCHIVE_MANIFEST_DAYS일)에서 빠진
+    과거 회차까지 모두 링크로 열람. 파일은 삭제·이동 없이 전부 보존되며 여기서 언제든 접근 가능.
+    서버 생성·무JS(정적 링크)로 견고. 매 회차 덮어쓰기(고정 파일명, 누적 안 됨)."""
+    by_lang = {}
+    for (m, f) in metas:
+        by_lang.setdefault(m["lang"], []).append((m, f))
+    secs = []
+    for lang in LANGS:
+        L = LANG[lang]
+        items = sorted(by_lang.get(lang, []), key=lambda mf: mf[0]["dt"], reverse=True)
+        if not items:
+            continue
+        rows = "".join(
+            f'<li><a href="{esc(SITE_BASE)}archive/{esc(f)}">{esc(_archive_label_text(m, L))}</a></li>'
+            for (m, f) in items)
+        secs.append(f'<section><h2>{esc(LANG_NAME.get(lang, lang))}</h2><ul>{rows}</ul></section>')
+    html_doc = (
+        "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\">"
+        "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">"
+        "<title>전체 회차 · Qatar Media Monitor</title>"
+        "<style>body{font-family:system-ui,'Malgun Gothic',sans-serif;max-width:820px;margin:24px auto;"
+        "padding:0 16px;color:#1a1a1a;line-height:1.5}h1{font-size:20px;margin:.2em 0}"
+        "h2{font-size:15px;margin:22px 0 8px;color:#8a1c1c}ul{list-style:none;padding:0;margin:0}"
+        "li{padding:5px 0;border-bottom:1px solid #eee}a{color:#0b57d0;text-decoration:none}"
+        "a:hover{text-decoration:underline}.back{display:inline-block;margin-bottom:12px;font-size:13px}"
+        ".note{color:#666;font-size:13px;margin:.3em 0 1em}</style></head><body>"
+        f'<a class="back" href="{esc(SITE_BASE)}">← 모니터로 돌아가기</a>'
+        "<h1>전체 회차 · All editions</h1>"
+        "<p class=\"note\">최근 60일 회차는 각 페이지 상단 드롭다운에서, 그 이전 회차는 아래 목록에서 열람하세요. "
+        "모든 회차 파일은 영구 보존됩니다.</p>"
+        + "".join(secs) + "</body></html>")
+    with open(os.path.join("archive", "all.html"), "w", encoding="utf-8") as fh:
+        fh.write(html_doc)
+
+
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
@@ -4311,18 +4352,23 @@ def main():
     # 정식 호수(제N호)가 매겨진 회차만 콤보박스에 노출 — 정식 발행(제1호) 이전의 '시범' 스냅샷은 목록에서 제외
     metas = [(m, f) for f in files for m in [_archive_meta(f)] if m and m.get("no") is not None]
 
-    # 회차 이동 콤보박스용 매니페스트 — 모든 페이지가 이 파일을 불러와 '전체 회차'를 동적 구성(어느 페이지·어느 날짜로든 자유 이동)
+    # 회차 이동 콤보박스용 매니페스트 — 각 페이지가 이 파일을 불러와 드롭다운을 동적 구성.
+    #   매니페스트에는 '최근 ARCHIVE_MANIFEST_DAYS일'만 담아 파일 크기·첫 로딩을 가볍게 유지.
+    #   그 이전 회차의 파일은 삭제·이동하지 않고 그대로 보존하며, '전체 회차' 페이지(archive/all.html)에서 열람.
+    _recent_cut = now_utc - timedelta(days=ARCHIVE_MANIFEST_DAYS)
+    metas_recent = [(m, f) for (m, f) in metas if m["dt"] >= _recent_cut]
     _manifest = {
         "home": {l: home_url(l) for l in LANGS},
         "latest_daily": {l: daily_fname(l) for l in LANGS},
         "issues": [
             {"lang": m["lang"], "kind": m["kind"], "no": m["no"],
              "dt": m["dt"].isoformat(), "label": _archive_label_text(m, LANG[m["lang"]]), "file": f}
-            for (m, f) in metas
+            for (m, f) in metas_recent
         ],
     }
     with open("archive/manifest.json", "w", encoding="utf-8") as _mf:
         json.dump(_manifest, _mf, ensure_ascii=False)
+    _write_all_editions(metas)   # 전체 회차 색인(과거분 포함) — 파일은 전부 보존
 
     nav = {l: home_url(l) for l in LANGS}
     for lang in LANGS:
@@ -4333,7 +4379,8 @@ def main():
         gov_l = translate_gov(gov_ko, lang)
 
         cur = daily_fname(lang)
-        lm = [(m, f) for (m, f) in metas if m["lang"] == lang and f != cur]
+        # 드롭다운(무JS 폴백 포함)에는 최근 ARCHIVE_MANIFEST_DAYS일만 — 그 이전은 '전체 회차' 페이지로.
+        lm = [(m, f) for (m, f) in metas if m["lang"] == lang and f != cur and m["dt"] >= _recent_cut]
         lm.sort(key=lambda mf: mf[0]["dt"], reverse=True)
         archive_list = [(m["kind"], _archive_label_text(m, L), f) for (m, f) in lm]
 
