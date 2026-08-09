@@ -3395,7 +3395,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <style>
-  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--green:#2fbf71;--gold:#f2b134;--note-bg:#2a1615;--crit-text:#ff6b6a;--wkcta:#c0392b;--wkcta-h:#a02b1e}}
+  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--green:#2fbf71;--gold:#f2b134;--note-bg:#2a1615;--crit-text:#ff6b6a}}
   @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85;--note-bg:#fbeceb;--crit-text:#b4211f}}}}
   *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--txt);line-height:1.5;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}}
@@ -3566,11 +3566,11 @@ TEMPLATE = """<!DOCTYPE html>
   .wsec .wlink{{margin-top:8px;font-size:12.5px}}
   .wsec .wlink a{{color:var(--accent);text-decoration:none}}
   .wsec .wlink a:hover{{text-decoration:underline}}
-  a.wk-chip{{display:inline-block;vertical-align:middle;margin-inline-start:10px;padding:5px 15px;
-    border:1px solid var(--wkcta);border-radius:999px;font-size:12.5px;font-weight:800;
-    background:var(--wkcta);color:#fff;text-decoration:none;white-space:nowrap;
-    box-shadow:0 1px 5px rgba(192,57,43,.35);transition:background .15s,box-shadow .15s}}
-  a.wk-chip:hover{{background:var(--wkcta-h);box-shadow:0 2px 8px rgba(192,57,43,.5)}}
+  a.wk-chip{{display:inline-block;vertical-align:middle;margin-inline-start:10px;padding:4px 13px;
+    border:1px solid var(--crit-text);border-radius:999px;font-size:12.5px;font-weight:700;
+    background:var(--note-bg);color:var(--crit-text);text-decoration:none;white-space:nowrap;
+    transition:background .15s,color .15s}}
+  a.wk-chip:hover{{background:var(--crit-text);color:var(--bg)}}
   .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .rephead{{margin:20px 0 8px;font-size:15px;font-weight:800;color:var(--txt)}}
   .rephead .hnote{{font-size:12px;font-weight:400;color:var(--muted);margin-inline-start:6px}}
