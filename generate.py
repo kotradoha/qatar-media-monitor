@@ -1740,6 +1740,47 @@ def gemini_generate(prompt, json_mode):
     return None
 
 
+def gemini_offtopic_links(items, win_label):
+    """전체 기사 목록 AI 주제 필터 — '카타르 국익 관점의 중동 정세'와 무관한 기사의 link 집합을 반환.
+    제목만 배치로 판정(요약 생성 아님 → 가벼움). 실패·무키·파싱오류 시 빈 집합(안전: 필터만 건너뛰고 발행은 그대로).
+    엔진은 gemini_generate 라우팅(Claude 우선)을 그대로 사용."""
+    if not items:
+        return set()
+    off = set()
+    CHUNK = 250
+    for s in range(0, len(items), CHUNK):
+        chunk = items[s:s + CHUNK]
+        try:
+            lines = [f"{i}\t({x.get('source', '')}) {(x.get('title') or '')[:150]}" for i, x in enumerate(chunk)]
+            prompt = (
+                "당신은 주카타르대사관 상황실의 기사 분류 담당입니다. 아래 [기사 목록](번호<TAB>(매체) 제목)에서 "
+                "'카타르의 국익·안보·경제에 유의미한 중동 정세'와 무관한 기사만 골라내세요.\n"
+                "【관련=유지】이스라엘·이란·미국 전쟁/충돌, 호르무즈 해협, 가자·팔레스타인, 걸프·역내 안보, "
+                "카타르의 중재·외교, 후티·예멘·홍해, 에너지·유가·LNG(정세 영향), 역내 군사·외교·제재·핵협상, "
+                "사우디·UAE·튀르키예 등 역내국 안보·외교, 카타르 정부의 정세 관련 동향.\n"
+                "【무관=제거】스포츠, 문화·예술·연예, 과학·의학·기술 연구, 날씨, 광고·판촉·관광·생활정보, "
+                "언론인 예찬 등 순수 국내 선전, 중동과 지리적으로 무관한 타지역 사건(우크라이나·미국 국내정치·경제, "
+                "유럽·아시아·아프리카·중남미 등 — 단 중동 정세와 직접 연관되는 맥락이면 유지).\n"
+                "**애매하면 반드시 '유지'로 하세요(오제거 방지). 외교·경제협력·군사·제재·핵·에너지는 유지 쪽으로.**\n"
+                '무관으로 판정한 기사 번호만 JSON으로 답하세요. 형식: {"offtopic":[번호,...]} (무관 없으면 {"offtopic":[]}).\n\n'
+                "[기사 목록]\n" + "\n".join(lines)
+            )
+            resp = gemini_generate(prompt, True)
+            if not resp:
+                continue
+            data = json.loads(_extract_json(resp))
+            idxs = data.get("offtopic", []) if isinstance(data, dict) else []
+            for i in idxs:
+                if isinstance(i, int) and 0 <= i < len(chunk):
+                    off.add(chunk[i]["link"])
+        except Exception as e:
+            try:
+                LLM_DIAG.append(f"offtopic filter skip: {e}")
+            except Exception:
+                pass
+    return off
+
+
 def gemini_issues(pool, win_label, weekly=False):
     if not pool:
         return None
@@ -3887,6 +3928,11 @@ def main():
     new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
     # 전체 기사 목록/사안 풀에는 '모니터링 기간(경계~경계)' 내 기사만 사용(누적 보고서는 별도 섹션에서만 노출)
     items_win = [x for x in items if new_since_daily <= x["dt"] <= end_utc]
+    # 전체 기사 목록·이슈풀에서 '중동 정세 무관' 기사를 AI로 제거(실패 시 스킵 → 발행은 그대로).
+    _off = gemini_offtopic_links(items_win, label_ko)
+    if _off:
+        _no = len(items_win); items_win = [x for x in items_win if x.get("link") not in _off]
+        print(f"[info] offtopic filter(daily): {_no} → {len(items_win)} (dropped {_no - len(items_win)})")
     pool = build_issue_pool(items_win)
     issues = gemini_issues(pool, label_ko)
     gov_ko = gemini_qatar_gov(pool, label_ko)
@@ -3919,6 +3965,10 @@ def main():
         wlabel_ko = f"지난주 종합 · {wk_from} ~ {now_q.strftime('%m/%d')} (카타르시간)"
         witems = collect(now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS), now_utc, when_days=WEEKLY_LOOKBACK_DAYS + 1)
         witems = filter_minor(witems)
+        _woff = gemini_offtopic_links(witems, wlabel_ko)   # 주간도 동일 AI 주제 필터(실패 시 스킵)
+        if _woff:
+            _wno = len(witems); witems = [x for x in witems if x.get("link") not in _woff]
+            print(f"[info] offtopic filter(weekly): {_wno} → {len(witems)} (dropped {_wno - len(witems)})")
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
         gov_wk_ko = gemini_qatar_gov(wpool, wlabel_ko)
