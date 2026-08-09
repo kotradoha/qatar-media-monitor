@@ -2104,6 +2104,14 @@ def _gov_kw_fallback(qpool):
     return _gov_ai_from_hits(hits)
 
 
+def _qatar_gov_pool(items):
+    """정부 동향 추출 전용 풀 — 카타르 관련 기사 전량(메이저 매체 우선 정렬).
+    이슈풀(build_issue_pool)의 카타르 22개 상한이나 offtopic 주제필터를 거치지 않은 원본을 넘겨
+    정부 동향이 상한·오제거로 누락되지 않게 한다. gemini_qatar_gov가 내부에서 앞 80개까지 사용."""
+    qat = [x for x in items if x.get("qatar") or x.get("region") == "qatar"]
+    return [x for x in qat if _is_major(x)] + [x for x in qat if not _is_major(x)]
+
+
 def gemini_qatar_gov(pool, win_label):
     """카타르 '정부' 공식 동향만 별도 경량 추출(코어 이슈 로직과 분리). 카타르 관련 기사만 대상.
     반환: [{"t": 한국어 불릿, "links": [(매체, url), ...]}] 리스트(없으면 [])."""
@@ -4208,6 +4216,10 @@ def main():
     new_since_weekly = now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS)
     # 전체 기사 목록/사안 풀에는 '모니터링 기간(경계~경계)' 내 기사만 사용(누적 보고서는 별도 섹션에서만 노출)
     items_win = [x for x in items if new_since_daily <= x["dt"] <= end_utc]
+    # 정부 동향 전용 풀: offtopic 주제필터·이슈풀 22개 컷 '이전'의 카타르 기사 전량(메이저 우선).
+    #   제목만 보는 offtopic 필터가 카타르 정부 기사를 오제거하거나 이슈풀 상한에 밀려도,
+    #   정부 동향 추출은 항상 원본 카타르 기사를 보게 됨(정부 동향 누락 방지의 근본 처리).
+    gov_pool = _qatar_gov_pool(items_win)
     # 전체 기사 목록·이슈풀에서 '중동 정세 무관' 기사를 AI로 제거(실패 시 스킵 → 발행은 그대로).
     _off = gemini_offtopic_links(items_win, label_ko)
     if _off:
@@ -4215,12 +4227,12 @@ def main():
         print(f"[info] offtopic filter(daily): {_no} → {len(items_win)} (dropped {_no - len(items_win)})")
     pool = build_issue_pool(items_win)
     issues = gemini_issues(pool, label_ko)
-    gov_ko = gemini_qatar_gov(pool, label_ko)
+    gov_ko = gemini_qatar_gov(gov_pool or pool, label_ko)
     gov_ko = _gov_safety_net(issues, gov_ko, pool)   # 이슈에 잡힌 카타르 정부 행보는 정부동향에도 반드시 반영
     # ── 팩트 정합성 검증(A/B/C): 근거 없는 문장 제거·정부동향 링크 재바인딩. 실패해도 발행은 그대로 ──
     try:
         issues = verify_issues(issues, pool)
-        gov_ko = verify_gov(gov_ko, pool)
+        gov_ko = verify_gov(gov_ko, (gov_pool or []) + pool)   # gov 링크가 gov_pool·pool 어느 쪽이든 검증되도록 합집합
     except Exception as ex:
         print(f"[warn] fact-verification skipped(daily): {ex}")
     flat = None if issues else gemini_flat(pool, label_ko)
@@ -4251,17 +4263,18 @@ def main():
         wlabel_ko = f"지난주 종합 · {wk_from} ~ {now_q.strftime('%m/%d')} (카타르시간)"
         witems = collect(now_utc - timedelta(days=WEEKLY_LOOKBACK_DAYS), now_utc, when_days=WEEKLY_LOOKBACK_DAYS + 1)
         witems = filter_minor(witems)
+        gov_wk_pool = _qatar_gov_pool(witems)              # 정부 동향 전용: offtopic 필터 이전 카타르 기사 전량
         _woff = gemini_offtopic_links(witems, wlabel_ko)   # 주간도 동일 AI 주제 필터(실패 시 스킵)
         if _woff:
             _wno = len(witems); witems = [x for x in witems if x.get("link") not in _woff]
             print(f"[info] offtopic filter(weekly): {_wno} → {len(witems)} (dropped {_wno - len(witems)})")
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
-        gov_wk_ko = gemini_qatar_gov(wpool, wlabel_ko)
+        gov_wk_ko = gemini_qatar_gov(gov_wk_pool or wpool, wlabel_ko)
         gov_wk_ko = _gov_safety_net(wissues, gov_wk_ko, wpool)
         try:
             wissues = verify_issues(wissues, wpool)
-            gov_wk_ko = verify_gov(gov_wk_ko, wpool)
+            gov_wk_ko = verify_gov(gov_wk_ko, (gov_wk_pool or []) + wpool)
         except Exception as ex:
             print(f"[warn] fact-verification skipped(weekly): {ex}")
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
