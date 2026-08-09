@@ -2132,7 +2132,10 @@ def gemini_qatar_gov(pool, win_label):
         "【이슈와의 정합성】 아래에서 만들 '이슈별 요약'에 카타르 정부·지도부의 행보(중재·촉구·규탄·통화·성명 등)가 등장하면, 그 사안은 **반드시 이 정부 동향 섹션에도 포함**하세요(이슈에는 있는데 정부 동향에서 빠지는 일이 없어야 함). "
         "【엄격】 반드시 [기사 목록]에 근거가 있는 것만. 원문에 없는 내용·추정 창작 절대 금지. "
         "제외 대상: **카타르 정부·지도부가 주체·당사자가 아닌, 순전히 타국만의 동향(카타르와 무관)**, 중동 정세·전쟁과 무관한 카타르 정부 활동(타 대륙 산불·재난 구조대 파견, 환경·스포츠·문화·조세·일반 행정 등), 단순 축전·조전 — 이 섹션은 오직 '중동 정세(전쟁·역내 안보)' 관련 카타르 정부 동향만 담습니다. "
+        "**【중동 밖 중재는 제외(중요)】 카타르가 주도·중재해도 그 대상이 중동·역내(카타르·이란·이스라엘·미국-이란 전쟁·걸프·레바논·홍해·호르무즈·가자·예멘) 밖이면 이 섹션에서 제외하세요 — 예: DR콩고·수단·아프리카·중남미·아프가니스탄 등 역외 분쟁 중재·평화프로세스·수감자 석방은 카타르의 성과여도 '중동 정세'가 아니므로 넣지 마세요.** "
+        "**【다수 중 하나면 제외】 카타르가 다수 서명국·환영국 중 하나에 불과하고 카타르 고유의 구체적 행위(카타르가 주도·발의·소집하거나 카타르 당국이 직접 취한 조치·성명)가 없으면 별도 불릿으로 만들지 마세요 — 예: '…등 다수국이 환영/규탄', 카타르 전(前)직 인사의 개인 논평은 정부 동향이 아닙니다.** "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
+        "**【카타르를 주어로 앞세울 것】 각 항목은 카타르 정부·지도부(에미르·총리·외교장관·각료·MOFA·GCO·QatarEnergy 등)의 행위를 문장 맨 앞 주어로 서술하세요 — 타국·국제기구(사우디·튀르키예·유엔 안보리 등)나 사건 배경이 앞서고 카타르의 행위가 문장 끝에 곁다리로 묻히면 안 됩니다(그런 경우 카타르 행위를 주어로 문장을 다시 구성).** "
         "**아래 이슈별 언론동향과 내용이 겹쳐도 무방합니다 — 카타르 정부의 정세 관련 행보이면 반드시 포함**하세요(정부 동향은 별도로 중요). "
         "각 항목에는 그 동향을 뒷받침하는 기사 번호(id)를 1~3개 담으세요. "
         "카타르 정부·지도부가 주체인 정세 관련 동향이 [기사 목록]에 전혀 없을 때만 빈 배열을 반환하세요. "
@@ -2192,10 +2195,20 @@ def _gov_safety_net(issues, gov, pool):
             continue
         cand = None
         for s in (list(iss.get("summary") or []) + [iss.get("theme", "")]):
-            if ("카타르" in s or "도하" in s) and any(a in s.lower() for a in _GOV_QA_ACTOR) \
-                    and any(v in s for v in _GOV_QA_ACTION):
-                cand = s
-                break
+            if not (("카타르" in s or "도하" in s) and any(a in s.lower() for a in _GOV_QA_ACTOR)
+                    and any(v in s for v in _GOV_QA_ACTION)):
+                continue
+            # (a) 중동 밖 사안(아프리카·역외 분쟁 등)은 정부 동향에서 제외 — 중동 정세 관련만.
+            if any(o in s for o in ("콩고", "아프리카", "수단", "중남미", "아프가니스탄")) \
+                    and not any(m in s for m in ("이란", "이스라엘", "가자", "호르무즈", "걸프",
+                                                 "레바논", "예멘", "홍해", "사우디", "이집트")):
+                continue
+            # (b) 카타르 행위가 문장 꼬리에만 등장하는 희석형(타국·배경이 앞서고 카타르가 뒤로 밀린 문장)은 제외.
+            qpos = min([s.find(k) for k in ("카타르", "도하") if k in s] or [0])
+            if qpos > len(s) * 0.6:
+                continue
+            cand = s
+            break
         if not cand:
             continue
         b = _clean_bullet(cand)
@@ -2230,16 +2243,18 @@ def translate_gov(gov, lang):
         f"Translate each string in this JSON array into {target}, keeping numbers, dates and proper nouns. "
         "Return ONLY a JSON object {\"t\":[\"\"]} with the same number and order of items, no commentary.\n\n"
         + json.dumps({"t": texts}, ensure_ascii=False))
-    out = gemini_generate(prompt, json_mode=True)
-    if not out:
-        return gov
-    try:
-        tr = json.loads(out).get("t")
-        if isinstance(tr, list) and len(tr) == len(gov):
-            return [{"t": (t if isinstance(t, str) and t.strip() else o["t"]), "links": o["links"]}
-                    for o, t in zip(gov, tr)]
-    except Exception as ex:
-        print(f"[warn] translate_gov {lang} failed: {ex}")
+    # 번역 실패 시 원문(한국어) 잔존을 막기 위해 _extract_json(코드펜스 제거) 적용 + 1회 재시도.
+    for _attempt in range(2):
+        out = gemini_generate(prompt, json_mode=True)
+        if not out:
+            continue
+        try:
+            tr = json.loads(_extract_json(out)).get("t")
+            if isinstance(tr, list) and len(tr) == len(gov):
+                return [{"t": (t if isinstance(t, str) and t.strip() else o["t"]), "links": o["links"]}
+                        for o, t in zip(gov, tr)]
+        except Exception as ex:
+            print(f"[warn] translate_gov {lang} failed (attempt {_attempt+1}/2): {ex}")
     return gov
 
 
