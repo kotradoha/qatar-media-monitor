@@ -2025,30 +2025,89 @@ _GOV_WAR_KW = ["iran", "war", "strike", "ceasefire", "truce", "de-escalat", "dee
 _GOV_WAR_KO = ["이란", "전쟁", "긴장", "중재", "정전", "휴전", "공습", "핵", "호르무즈",
                "확전", "외교", "대화"]
 
+def _gov_ai_from_hits(hits):
+    """키워드로 걸러낸 '카타르 정부+정세' 기사들만 따로 AI에 넘겨, 구체적 동향 불릿을 뽑는 2차 요약.
+    1차 strict 추출이 빈 배열을 준 회차에도 '무슨 동향인지'를 실제 내용으로 채우기 위함(안내문 방지).
+    반환: [{"t": 한국어 불릿, "links": [(매체, url), ...]}] (실패·무내용 시 [])."""
+    if not hits:
+        return []
+    lines = []
+    for i, x in enumerate(hits[:24]):
+        d = x["dt"].astimezone(TZ).strftime("%m/%d %H:%M")
+        desc = (x.get("desc") or "")[:DESC_MAX]
+        lines.append(f"{i}: ({x.get('source', '')}, {d}) {x.get('title', '')} :: {desc}")
+    prompt = (
+        "당신은 주카타르대사관 상황실 분석관입니다. 아래 [기사 목록]은 '카타르 정부·지도부'와 "
+        "중동 정세(전쟁·역내 안보)가 함께 걸린 기사만 추린 것입니다. "
+        "각 사안을 한국어 정부보고서식 개조식(명사형 종결 '-함/-음/-됨/-임')으로, **무슨 동향인지 구체적으로** "
+        "(누가·무엇을·언제·핵심 내용·수치·배경·함의) 1~2문장으로 정리하세요. "
+        "'상세는 링크/하단 목록 참조' 같은 **안내문은 절대 금지** — 동향 내용 자체를 서술하세요. "
+        "카타르 정부·지도부가 주체인 행보(중재·촉구·규탄·통화·회담·성명·조치)를 우선하되, "
+        "카타르가 대상·당사자로 연루된 정세 동향도 사실대로 담으세요. "
+        "같은 사안은 하나로 묶고 최대 4개. 반드시 [기사 목록]에 근거가 있는 것만 쓰고 원문에 없는 내용 창작 금지. "
+        "각 항목에 근거 기사 번호(id) 1~3개를 담으세요. "
+        "출력은 오직 JSON: {\"gov\":[{\"t\":\"불릿\",\"ids\":[0]}]} (쓸 내용이 전혀 없으면 {\"gov\":[]}).\n\n"
+        "[기사 목록]\n" + "\n".join(lines))
+    out = gemini_generate(prompt, json_mode=True)
+    if not out:
+        return []
+    try:
+        g = json.loads(out).get("gov")
+        if not isinstance(g, list):
+            return []
+        res = []
+        for item in g[:4]:
+            if not isinstance(item, dict):
+                continue
+            t = _clean_bullet(item.get("t") or "")
+            if not t:
+                continue
+            links, seen = [], set()
+            for i in (item.get("ids") or [])[:6]:
+                if isinstance(i, int) and 0 <= i < len(hits):
+                    key = hits[i].get("link")
+                    if key and key not in seen:
+                        seen.add(key)
+                        links.append((hits[i].get("source", ""), key))
+                if len(links) >= 3:
+                    break
+            res.append({"t": t, "links": links})
+        return res
+    except Exception as ex:
+        print(f"[warn] gov ai-from-hits parse failed: {ex}")
+        return []
+
+
 def _gov_kw_fallback(qpool):
-    """AI 추출이 빈 배열을 주더라도, 카타르 정부 인사(총리·장관·에미르 등)+전쟁/긴장 키워드가
-    뚜렷한 기사가 있으면 조용히 비우지 않도록 하는 결정론적 안전장치. 최대 3개 출처 링크를 담은
-    안내성 불릿 1개를 반환(없으면 [])."""
-    hits, seen, links = [], set(), []
+    """1차 정부동향 AI 추출이 빈 배열을 준 회차라도, 카타르 정부 인사(총리·장관·에미르 등)+전쟁/긴장
+    키워드가 뚜렷한 기사가 있으면 동향을 비우지 않는 안전장치.
+    ① 검출된 기사만 2차 AI 요약해 '동향 내용 자체'를 채우고(정상 경로),
+    ② AI가 전부 실패하면 실제 기사 헤드라인을 개별 불릿으로 나열한다.
+    (과거의 '…확인 요망(자동 감지)' 식 안내문은 폐기 — 무슨 동향인지 알 수 없다는 사용자 지적 반영.)"""
+    hits, seen = [], set()
     for x in qpool:
         t = x.get("title") or ""
         low = t.lower()
         actor = any(k in low for k in _GOV_ACTOR_KW) or any(k in t for k in _GOV_ACTOR_KO)
         war = any(k in low for k in _GOV_WAR_KW) or any(k in t for k in _GOV_WAR_KO)
-        if actor and war and x.get("link"):
-            hits.append(x)
-    for x in hits:
         k = x.get("link")
-        if k and k not in seen:
+        if actor and war and k and k not in seen:
             seen.add(k)
-            links.append((x.get("source", ""), k))
-        if len(links) >= 3:
-            break
-    if not links:
+            hits.append(x)
+    if not hits:
         return []
-    return [{"t": "카타르 정부(총리·외교장관·내무부 등)의 전쟁·긴장 완화 관련 동향이 언론에 보도됨 — "
-                  "상세 내용은 우측 출처 및 하단 전체 기사 목록에서 확인 요망(자동 감지).",
-             "links": links}]
+    # ① 검출 기사만 넘겨 구체적 동향을 2차 AI 요약(정상 경로).
+    ai = _gov_ai_from_hits(hits)
+    if ai:
+        return ai
+    # ② AI 전부 실패 시: 실제 헤드라인을 개별 불릿으로(내용 자체를 노출 — 안내문 대체).
+    res = []
+    for x in hits[:4]:
+        head = _clean_bullet(x.get("title") or "")
+        if not head:
+            continue
+        res.append({"t": head, "links": [(x.get("source", ""), x.get("link"))]})
+    return res
 
 
 def gemini_qatar_gov(pool, win_label):
@@ -3342,7 +3401,7 @@ TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
 <style>
-  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--green:#2fbf71;--gold:#f2b134;--note-bg:#2a1615;--crit-text:#ff6b6a}}
+  :root{{--bg:#0b1220;--panel:#131c2e;--panel2:#0f1729;--line:#243149;--txt:#e6edf7;--muted:#93a1b8;--accent:#4da3ff;--green:#2fbf71;--gold:#f2b134;--note-bg:#2a1615;--crit-text:#ff6b6a;--wkcta:#c0392b;--wkcta-h:#a02b1e}}
   @media (prefers-color-scheme:light){{:root{{--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f9;--line:#dbe2ee;--txt:#14213a;--muted:#5a6b85;--note-bg:#fbeceb;--crit-text:#b4211f}}}}
   *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--txt);line-height:1.5;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}}
@@ -3513,10 +3572,11 @@ TEMPLATE = """<!DOCTYPE html>
   .wsec .wlink{{margin-top:8px;font-size:12.5px}}
   .wsec .wlink a{{color:var(--accent);text-decoration:none}}
   .wsec .wlink a:hover{{text-decoration:underline}}
-  a.wk-chip{{display:inline-block;vertical-align:middle;margin-inline-start:10px;padding:3px 12px;
-    border:1px solid var(--accent);border-radius:999px;font-size:12.5px;font-weight:700;
-    color:var(--accent);text-decoration:none;white-space:nowrap;transition:background .15s,color .15s}}
-  a.wk-chip:hover{{background:var(--accent);color:#fff}}
+  a.wk-chip{{display:inline-block;vertical-align:middle;margin-inline-start:10px;padding:5px 15px;
+    border:1px solid var(--wkcta);border-radius:999px;font-size:12.5px;font-weight:800;
+    background:var(--wkcta);color:#fff;text-decoration:none;white-space:nowrap;
+    box-shadow:0 1px 5px rgba(192,57,43,.35);transition:background .15s,box-shadow .15s}}
+  a.wk-chip:hover{{background:var(--wkcta-h);box-shadow:0 2px 8px rgba(192,57,43,.5)}}
   .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .rephead{{margin:20px 0 8px;font-size:15px;font-weight:800;color:var(--txt)}}
   .rephead .hnote{{font-size:12px;font-weight:400;color:var(--muted);margin-inline-start:6px}}
