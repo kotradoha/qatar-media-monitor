@@ -2138,10 +2138,10 @@ def gemini_qatar_gov(pool, win_label):
         if not isinstance(g, list):
             return _gov_kw_fallback(qpool)
         res = []
-        for item in g[:3]:
+        for item in g[:4]:                                # 프롬프트 '최대 4개'와 일치
             if not isinstance(item, dict):
                 continue
-            t = (item.get("t") or "").strip()
+            t = _clean_bullet(item.get("t") or "")        # 폴백·안전망 경로와 동일하게 정제('(기사 N)'·문두 날짜 제거)
             if not t:
                 continue
             links, seen = [], set()
@@ -2165,7 +2165,11 @@ def gemini_qatar_gov(pool, win_label):
 _GOV_QA_ACTOR = ["카타르", "도하", "에미르", "국왕", "총리", "부총리", "외교장관", "외무장관",
                  "내무장관", "국방장관", "카타르에너지", "gco", "mofa", "qna", "카타르통신"]
 _GOV_QA_ACTION = ["중재", "촉구", "규탄", "통화", "회담", "협의", "성명", "조율", "환영", "발표",
-                  "항의", "요청", "지지", "재확인", "밝힘", "논의", "제안", "시사", "경고", "비판", "합의"]
+                  "항의", "요청", "지지", "재확인", "밝힘", "논의", "제안", "시사", "경고", "비판", "합의",
+                  # 재현율 보강: 외교 동사 외 카타르 정부의 실제 행보를 나타내는 표현 확대(안전망이 놓치던 사안 포함)
+                  "압박", "요구", "주선", "중개", "파병", "파견", "대피", "후송", "개최", "주최",
+                  "방문", "회동", "접견", "서명", "타결", "성사", "중단", "반대", "우려", "표명",
+                  "지원", "승인", "결정", "촉진"]
 
 
 def _gov_safety_net(issues, gov, pool):
@@ -2178,7 +2182,24 @@ def _gov_safety_net(issues, gov, pool):
     def _norm(s):
         return re.sub(r"\s+", "", (s or "")).lower()
 
-    gov_norm = _norm(" ".join(g.get("t", "") for g in gov))
+    def _words(s):                                  # 중복 판정용 내용어 집합(2자 이상 한글·영숫자)
+        return {w for w in re.findall(r"[가-힣A-Za-z0-9]+", (s or "").lower()) if len(w) >= 2}
+
+    gov_texts = [g.get("t", "") for g in gov]
+    gov_norm = _norm(" ".join(gov_texts))
+
+    def _is_dup(cand):                              # 앞부분 일치 또는 내용어 60%↑ 겹치면 중복으로 간주
+        if _norm(cand)[:16] in gov_norm:
+            return True
+        cw = _words(cand)
+        if not cw:
+            return False
+        for t in gov_texts:
+            tw = _words(t)
+            if tw and len(cw & tw) / len(cw) >= 0.6:
+                return True
+        return False
+
     for iss in issues:
         if not isinstance(iss, dict):
             continue
@@ -2191,7 +2212,7 @@ def _gov_safety_net(issues, gov, pool):
         if not cand:
             continue
         b = _clean_bullet(cand)
-        if not b or _norm(b)[:18] in gov_norm:      # 이미 정부동향에 있으면 skip
+        if not b or _is_dup(b):                     # 이미 정부동향에 있으면(유사 포함) skip
             continue
         links, seen = [], set()
         for j in (iss.get("ids") or [])[:8]:
@@ -2206,6 +2227,7 @@ def _gov_safety_net(issues, gov, pool):
             if len(links) >= 2:
                 break
         gov.append({"t": b, "links": links})
+        gov_texts.append(b)
         gov_norm += _norm(b)
     return gov[:6]
 
@@ -4216,13 +4238,18 @@ def main():
     pool = build_issue_pool(items_win)
     issues = gemini_issues(pool, label_ko)
     gov_ko = gemini_qatar_gov(pool, label_ko)
-    gov_ko = _gov_safety_net(issues, gov_ko, pool)   # 이슈에 잡힌 카타르 정부 행보는 정부동향에도 반드시 반영
     # ── 팩트 정합성 검증(A/B/C): 근거 없는 문장 제거·정부동향 링크 재바인딩. 실패해도 발행은 그대로 ──
+    # 이슈를 먼저 검증한 뒤, '검증 통과 문장'만으로 정부동향 안전망을 채운다
+    #  → 근거 없어 제거될 이슈 문장이 정부동향으로 새는 것을 방지(순서: 이슈검증 → 안전망 → 정부동향검증).
     try:
         issues = verify_issues(issues, pool)
+    except Exception as ex:
+        print(f"[warn] issue fact-verification skipped(daily): {ex}")
+    gov_ko = _gov_safety_net(issues, gov_ko, pool)   # 이슈(검증 후)에 잡힌 카타르 정부 행보는 정부동향에도 반드시 반영
+    try:
         gov_ko = verify_gov(gov_ko, pool)
     except Exception as ex:
-        print(f"[warn] fact-verification skipped(daily): {ex}")
+        print(f"[warn] gov fact-verification skipped(daily): {ex}")
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
     os.makedirs("archive", exist_ok=True)
@@ -4258,12 +4285,16 @@ def main():
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
         gov_wk_ko = gemini_qatar_gov(wpool, wlabel_ko)
-        gov_wk_ko = _gov_safety_net(wissues, gov_wk_ko, wpool)
+        # 일일과 동일한 순서(이슈검증 → 안전망 → 정부동향검증)로 근거 없는 문장의 정부동향 유입 차단
         try:
             wissues = verify_issues(wissues, wpool)
+        except Exception as ex:
+            print(f"[warn] issue fact-verification skipped(weekly): {ex}")
+        gov_wk_ko = _gov_safety_net(wissues, gov_wk_ko, wpool)
+        try:
             gov_wk_ko = verify_gov(gov_wk_ko, wpool)
         except Exception as ex:
-            print(f"[warn] fact-verification skipped(weekly): {ex}")
+            print(f"[warn] gov fact-verification skipped(weekly): {ex}")
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
         witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
