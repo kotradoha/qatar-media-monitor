@@ -3568,9 +3568,9 @@ TEMPLATE = """<!DOCTYPE html>
   .wsec .wlink a:hover{{text-decoration:underline}}
   a.wk-chip{{display:inline-block;vertical-align:middle;margin-inline-start:10px;padding:4px 13px;
     border:1px solid var(--crit-text);border-radius:999px;font-size:12.5px;font-weight:700;
-    background:var(--note-bg);color:var(--crit-text);text-decoration:none;white-space:nowrap;
+    background:var(--panel);color:var(--crit-text);text-decoration:none;white-space:nowrap;
     transition:background .15s,color .15s}}
-  a.wk-chip:hover{{background:var(--crit-text);color:var(--bg)}}
+  a.wk-chip:hover{{background:var(--crit-text);color:var(--panel)}}
   .card.report{{border-color:rgba(242,177,52,.5);background:linear-gradient(180deg,rgba(242,177,52,.08),transparent)}}
   .rephead{{margin:20px 0 8px;font-size:15px;font-weight:800;color:var(--txt)}}
   .rephead .hnote{{font-size:12px;font-weight:400;color:var(--muted);margin-inline-start:6px}}
