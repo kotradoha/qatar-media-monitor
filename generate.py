@@ -3956,6 +3956,224 @@ def _archive_label_text(meta, L):
     return (L["weekly_no"].format(n=meta["no"]) + " · " + tail) if meta["no"] else (L["arch_weekly"] + " " + tail)
 
 
+# ════════════════════════════════════════════════════════════════════════
+# 팩트 정합성 검증 레이어
+#   A) 생성된 요약·정부동향 불릿을 '그 불릿이 인용한 근거 기사'와 대조(AI 검증)
+#      → 근거에 없는 문장·절 제거/교정(무근거 창작·과장 차단)
+#   B) 정부동향 불릿의 링크를 '실제로 그 주장을 뒷받침하는 기사'로 재바인딩
+#      (요약≠링크 불일치 제거). 뒷받침 기사가 없으면 그 불릿은 버림.
+#   C) 근거 확대: 스니펫(desc)만으론 얇으므로 인용 기사 원문 본문을 best-effort fetch.
+#      구글뉴스 래퍼는 리다이렉트/원문URL 추출 시도, 실패 시 스니펫으로 폴백.
+#   모든 단계는 실패해도 빌드가 죽지 않도록 방어적(예외 시 원본 유지).
+# ════════════════════════════════════════════════════════════════════════
+FULLTEXT_MAX = 2400          # 근거로 쓸 원문 본문 최대 길이(자)
+FETCH_TIMEOUT = 10           # 개별 기사 fetch 타임아웃(초)
+VERIFY_SRC_LIMIT = 6         # 불릿당 검증에 넣는 근거 기사 최대 수
+FULLTEXT_BUDGET = 28         # 회차당 원문 fetch 총 상한(초과분은 스니펫만 사용 → 회차 시간 폭주 방지)
+_FULLTEXT_CACHE = {}
+_FULLTEXT_FETCHES = [0]      # 회차당 실제 fetch 횟수 카운터(리스트로 가변 유지)
+_SCRIPT_STYLE_RE = re.compile(r"<(script|style|noscript)[^>]*>.*?</\1>", re.S | re.I)
+
+
+def _http_get(url, timeout=FETCH_TIMEOUT):
+    import urllib.request
+    import gzip
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (compatible; MideastMediaMonitor/1.0)",
+        "Accept-Language": "en,ar,ko;q=0.8"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        raw = r.read(1_500_000)                      # 1.5MB 상한(대형 페이지 방지)
+        if (r.headers.get("Content-Encoding") or "").lower() == "gzip":
+            try:
+                raw = gzip.decompress(raw)
+            except Exception:
+                pass
+        enc = "utf-8"
+        m = re.search(r"charset=([\w-]+)", r.headers.get("Content-Type", "") or "")
+        if m:
+            enc = m.group(1)
+        return raw.decode(enc, "replace"), r.geturl()
+
+
+def _resolve_article_url(x):
+    """기사 실제 URL 반환. 구글뉴스 래퍼면 원문 URL 추출 시도. 불가하면 None."""
+    link = x.get("link") or ""
+    hm = re.search(r"https?://([^/]+)", link)
+    host = hm.group(1).lower() if hm else ""
+    if not host:
+        return None
+    if "news.google.com" not in host:
+        return link                                   # 직접 링크 → 그대로 fetch
+    try:
+        html_, final = _http_get(link)
+        if "news.google.com" not in (final or ""):
+            return final                              # 리다이렉트로 실제 기사 도달
+        for pat in (r'data-n-au="(https?://[^"]+)"',
+                    r'rel="noopener"[^>]*href="(https?://(?!news\.google\.com)[^"]+)"',
+                    r'<a[^>]+href="(https?://(?!news\.google\.com)[^"]+)"'):
+            mm = re.search(pat, html_)
+            if mm:
+                return mm.group(1)
+    except Exception as ex:
+        _diag(f"[verify] url resolve fail: {ex}")
+    return None
+
+
+def _fulltext(x):
+    """근거용 기사 본문(best-effort). 실패 시 ''. 링크 기준 캐시 + 회차 예산 상한."""
+    link = x.get("link") or ""
+    if link in _FULLTEXT_CACHE:
+        return _FULLTEXT_CACHE[link]
+    if _FULLTEXT_FETCHES[0] >= FULLTEXT_BUDGET:       # 예산 소진 → 스니펫만 사용
+        return ""
+    _FULLTEXT_FETCHES[0] += 1
+    text = ""
+    try:
+        url = _resolve_article_url(x)
+        if url:
+            html_, _ = _http_get(url)
+            html_ = _SCRIPT_STYLE_RE.sub(" ", html_)
+            html_ = re.sub(r"<[^>]+>", " ", html_)
+            text = re.sub(r"\s+", " ", html_).strip()[:FULLTEXT_MAX]
+    except Exception as ex:
+        _diag(f"[verify] fulltext fail: {ex}")
+    _FULLTEXT_CACHE[link] = text
+    return text
+
+
+def _src_block(pool, ids, use_fulltext=True, limit=VERIFY_SRC_LIMIT):
+    """검증에 넣을 근거 기사 블록 문자열과 실제 사용된 id 목록."""
+    lines, used = [], []
+    for i in ids[:limit]:
+        if not (isinstance(i, int) and 0 <= i < len(pool)):
+            continue
+        x = pool[i]
+        g = (x.get("desc") or "")[:DESC_MAX]
+        if use_fulltext:
+            ft = _fulltext(x)
+            if ft:
+                g = (g + " || 본문: " + ft)[:FULLTEXT_MAX]
+        used.append(i)
+        lines.append(f"[{i}] ({x.get('source', '')}) {x.get('title', '')} :: {g}")
+    return "\n".join(lines), used
+
+
+def _verify_bullets(bullets, src_text):
+    """불릿들을 근거 기사(src_text)로 검증.
+    반환: bullets와 같은 순서·길이의 [{"text": 교정문 or None(=제거), "support_ids": [...]}] (실패 시 None)."""
+    if not bullets or not src_text.strip():
+        return None
+    prompt = (
+        "당신은 주카타르대사관 상황실의 사실검증 편집자입니다. 아래 [근거 기사]만을 사용해 [불릿]들의 사실성을 엄격히 검증하세요.\n"
+        "각 불릿 판정(verdict):\n"
+        "- supported: 불릿의 핵심 주장(행위주체·행위·수치·지명·날짜)이 근거 기사로 뒷받침됨.\n"
+        "- partial: 대체로 맞지만 근거 기사에 '없는' 절·행위주체·수치가 섞임 → 그 부분만 제거한 교정문(fixed)을 제시.\n"
+        "- unsupported: 근거 기사에 전혀 없거나 근거와 모순됨 → 제거 대상.\n"
+        "【판정 원칙】 근거 기사에 '전혀 없거나 모순되는' 내용만 문제삼으세요. 근거에 방향이 일치하면 세부 수치가 조금 적어도 supported로 두세요(과잉삭제 금지). "
+        "특히 근거에 등장하지 않는 **새 행위주체가 어떤 행위를 했다는 서술(예: 근거에 없는 국가가 '환영·규탄·합의')**이나 **지어낸 수치·날짜**는 partial(그 절 제거) 또는 unsupported로 처리하세요. "
+        "교정문은 한국어 개조식·명사형 종결('-함/-음/-됨/-임') 유지, 원문에 없는 새 사실 추가 절대 금지.\n"
+        "각 불릿에 support_ids(그 주장을 실제로 뒷받침하는 근거 기사 id 정수 배열)도 반환하세요(없으면 []).\n"
+        "출력은 오직 JSON: {\"results\":[{\"verdict\":\"supported|partial|unsupported\",\"fixed\":\"교정문\",\"support_ids\":[0]}]} — [불릿]과 **같은 순서·개수**.\n\n"
+        "[불릿]\n" + "\n".join(f"{k}: {b}" for k, b in enumerate(bullets)) +
+        "\n\n[근거 기사]\n" + src_text)
+    out = gemini_generate(prompt, json_mode=True)
+    if not out:
+        return None
+    try:
+        res = json.loads(out).get("results")
+        if not isinstance(res, list) or len(res) != len(bullets):
+            _diag("[verify] result length mismatch; skip")
+            return None
+        fixed = []
+        for b, r in zip(bullets, res):
+            if not isinstance(r, dict):
+                fixed.append({"text": b, "support_ids": []})
+                continue
+            v = (r.get("verdict") or "").strip().lower()
+            sids = [i for i in (r.get("support_ids") or []) if isinstance(i, int)]
+            if v == "unsupported":
+                fixed.append({"text": None, "support_ids": sids})
+            elif v == "partial":
+                fixed.append({"text": _clean_bullet(r.get("fixed") or "") or b, "support_ids": sids})
+            else:
+                fixed.append({"text": b, "support_ids": sids})
+        return fixed
+    except Exception as ex:
+        _diag(f"[verify] parse fail: {ex}")
+        return None
+
+
+def verify_issues(issues, pool):
+    """각 이슈 summary 문장을 그 이슈 인용 기사로 검증 — 무근거 문장 제거·교정. 실패/전멸 시 원본 유지."""
+    if not issues:
+        return issues
+    out, changed = [], 0
+    for iss in issues:
+        if not isinstance(iss, dict):
+            continue
+        sums = [s for s in (iss.get("summary") or []) if isinstance(s, str) and s.strip()]
+        ids = [i for i in (iss.get("ids") or []) if isinstance(i, int)]
+        if not (sums and ids):
+            out.append(iss)
+            continue
+        src, _u = _src_block(pool, ids)
+        v = _verify_bullets(sums, src)
+        if not v:
+            out.append(iss)
+            continue
+        newsum = [r["text"] for r in v if r.get("text")]
+        if len(newsum) != len(sums):
+            changed += 1
+        if newsum:
+            out.append({**iss, "summary": newsum})
+        # summary가 전부 무근거로 제거되면 그 이슈는 신뢰 근거가 없으므로 통째 제외
+    if not out:
+        return issues                                 # 전멸 방지(안전)
+    if changed:
+        print(f"[info] verify_issues: {changed} issue(s) had unsupported lines trimmed/removed")
+    return out
+
+
+def verify_gov(gov, pool):
+    """정부동향 불릿을 '현재 붙은 링크의 기사'로 검증 — 무근거면 제거, 통과분은 링크를 근거 기사로 재바인딩(B)."""
+    if not gov:
+        return gov
+    url2id = {}
+    for i, x in enumerate(pool):
+        u = x.get("link")
+        if u and u not in url2id:
+            url2id[u] = i
+    out, dropped = [], 0
+    for g in gov:
+        if not isinstance(g, dict) or not g.get("t"):
+            continue
+        ids = [url2id[u] for (_s, u) in (g.get("links") or []) if u in url2id]
+        if not ids:
+            out.append(g)                             # 역추적할 근거 기사가 없으면 검증 불가 → 원본 유지
+            continue
+        src, _u = _src_block(pool, ids)
+        v = _verify_bullets([g["t"]], src)
+        if not v:
+            out.append(g)
+            continue
+        r = v[0]
+        if not r.get("text"):
+            dropped += 1
+            continue                                  # unsupported → 제거
+        sids = r.get("support_ids") or ids
+        newlinks, seen = [], set()
+        for i in sids:
+            if isinstance(i, int) and 0 <= i < len(pool):
+                u = pool[i].get("link")
+                if u and u not in seen:
+                    seen.add(u)
+                    newlinks.append((pool[i].get("source", ""), u))
+        out.append({"t": r["text"], "links": newlinks or g.get("links")})
+    if dropped:
+        print(f"[info] verify_gov: dropped {dropped} unsupported gov bullet(s)")
+    return out
+
+
 def main():
     now_utc = datetime.now(timezone.utc)
     now_q = now_utc.astimezone(TZ)
@@ -3994,6 +4212,12 @@ def main():
     issues = gemini_issues(pool, label_ko)
     gov_ko = gemini_qatar_gov(pool, label_ko)
     gov_ko = _gov_safety_net(issues, gov_ko, pool)   # 이슈에 잡힌 카타르 정부 행보는 정부동향에도 반드시 반영
+    # ── 팩트 정합성 검증(A/B/C): 근거 없는 문장 제거·정부동향 링크 재바인딩. 실패해도 발행은 그대로 ──
+    try:
+        issues = verify_issues(issues, pool)
+        gov_ko = verify_gov(gov_ko, pool)
+    except Exception as ex:
+        print(f"[warn] fact-verification skipped(daily): {ex}")
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
     os.makedirs("archive", exist_ok=True)
@@ -4030,6 +4254,11 @@ def main():
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
         gov_wk_ko = gemini_qatar_gov(wpool, wlabel_ko)
         gov_wk_ko = _gov_safety_net(wissues, gov_wk_ko, wpool)
+        try:
+            wissues = verify_issues(wissues, wpool)
+            gov_wk_ko = verify_gov(gov_wk_ko, wpool)
+        except Exception as ex:
+            print(f"[warn] fact-verification skipped(weekly): {ex}")
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
         witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
