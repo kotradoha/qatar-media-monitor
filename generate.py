@@ -4058,49 +4058,54 @@ def _src_block(pool, ids, use_fulltext=True, limit=VERIFY_SRC_LIMIT):
     return "\n".join(lines), used
 
 
-def _verify_bullets(bullets, src_text):
-    """불릿들을 근거 기사(src_text)로 검증.
-    반환: bullets와 같은 순서·길이의 [{"text": 교정문 or None(=제거), "support_ids": [...]}] (실패 시 None)."""
-    if not bullets or not src_text.strip():
-        return None
+def _verify_one(bullet, src_text):
+    """단일 불릿을 근거 기사로 검증. 반환 {"text": 교정문 or None(=제거), "support_ids":[...]} (실패 시 None).
+    불릿 1개씩 검증해 '결과 개수 불일치'를 원천 차단(정렬 보장)."""
     prompt = (
-        "당신은 주카타르대사관 상황실의 사실검증 편집자입니다. 아래 [근거 기사]만을 사용해 [불릿]들의 사실성을 엄격히 검증하세요.\n"
-        "각 불릿 판정(verdict):\n"
+        "당신은 주카타르대사관 상황실의 사실검증 편집자입니다. 아래 [근거 기사]만을 사용해 [불릿]의 사실성을 엄격히 검증하세요.\n"
+        "판정(verdict):\n"
         "- supported: 불릿의 핵심 주장(행위주체·행위·수치·지명·날짜)이 근거 기사로 뒷받침됨.\n"
-        "- partial: 대체로 맞지만 근거 기사에 '없는' 절·행위주체·수치가 섞임 → 그 부분만 제거한 교정문(fixed)을 제시.\n"
+        "- partial: 대체로 맞지만 근거 기사에 '없는' 절·행위주체·수치가 섞임 → 그 부분만 제거한 교정문(fixed) 제시.\n"
         "- unsupported: 근거 기사에 전혀 없거나 근거와 모순됨 → 제거 대상.\n"
         "【판정 원칙】 근거 기사에 '전혀 없거나 모순되는' 내용만 문제삼으세요. 근거에 방향이 일치하면 세부 수치가 조금 적어도 supported로 두세요(과잉삭제 금지). "
         "특히 근거에 등장하지 않는 **새 행위주체가 어떤 행위를 했다는 서술(예: 근거에 없는 국가가 '환영·규탄·합의')**이나 **지어낸 수치·날짜**는 partial(그 절 제거) 또는 unsupported로 처리하세요. "
         "교정문은 한국어 개조식·명사형 종결('-함/-음/-됨/-임') 유지, 원문에 없는 새 사실 추가 절대 금지.\n"
-        "각 불릿에 support_ids(그 주장을 실제로 뒷받침하는 근거 기사 id 정수 배열)도 반환하세요(없으면 []).\n"
-        "출력은 오직 JSON: {\"results\":[{\"verdict\":\"supported|partial|unsupported\",\"fixed\":\"교정문\",\"support_ids\":[0]}]} — [불릿]과 **같은 순서·개수**.\n\n"
-        "[불릿]\n" + "\n".join(f"{k}: {b}" for k, b in enumerate(bullets)) +
-        "\n\n[근거 기사]\n" + src_text)
+        "support_ids(그 주장을 실제로 뒷받침하는 근거 기사 id 정수 배열)도 반환(없으면 []).\n"
+        "출력은 오직 JSON: {\"verdict\":\"supported|partial|unsupported\",\"fixed\":\"교정문(partial일 때, 아니면 원문)\",\"support_ids\":[0]}\n\n"
+        "[불릿]\n" + str(bullet) + "\n\n[근거 기사]\n" + src_text)
     out = gemini_generate(prompt, json_mode=True)
     if not out:
         return None
     try:
-        res = json.loads(out).get("results")
-        if not isinstance(res, list) or len(res) != len(bullets):
-            _diag("[verify] result length mismatch; skip")
+        d = json.loads(out)
+        if not isinstance(d, dict):
             return None
-        fixed = []
-        for b, r in zip(bullets, res):
-            if not isinstance(r, dict):
-                fixed.append({"text": b, "support_ids": []})
-                continue
-            v = (r.get("verdict") or "").strip().lower()
-            sids = [i for i in (r.get("support_ids") or []) if isinstance(i, int)]
-            if v == "unsupported":
-                fixed.append({"text": None, "support_ids": sids})
-            elif v == "partial":
-                fixed.append({"text": _clean_bullet(r.get("fixed") or "") or b, "support_ids": sids})
-            else:
-                fixed.append({"text": b, "support_ids": sids})
-        return fixed
+        v = (d.get("verdict") or "").strip().lower()
+        sids = [i for i in (d.get("support_ids") or []) if isinstance(i, int)]
+        if v == "unsupported":
+            return {"text": None, "support_ids": sids}
+        if v == "partial":
+            return {"text": _clean_bullet(d.get("fixed") or "") or bullet, "support_ids": sids}
+        return {"text": bullet, "support_ids": sids}
     except Exception as ex:
         _diag(f"[verify] parse fail: {ex}")
         return None
+
+
+def _verify_bullets(bullets, src_text):
+    """불릿들을 1개씩 검증해 bullets와 같은 순서·길이로 반환.
+    [{"text": 교정문 or None(=제거), "support_ids": [...]}]. 전부 검증 실패면 None(→ 호출부에서 원본 유지)."""
+    if not bullets or not src_text.strip():
+        return None
+    out, any_ok = [], False
+    for b in bullets:
+        r = _verify_one(b, src_text)
+        if r is None:
+            out.append({"text": b, "support_ids": []})   # 이 불릿만 검증 실패 → 원문 유지(안전)
+        else:
+            any_ok = True
+            out.append(r)
+    return out if any_ok else None
 
 
 def verify_issues(issues, pool):
