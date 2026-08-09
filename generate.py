@@ -2232,29 +2232,57 @@ def _gov_safety_net(issues, gov, pool):
     return gov[:6]
 
 
-def translate_gov(gov, lang):
-    """정부 동향 불릿(dict 리스트)의 텍스트만 영어/아랍어로 번역. 링크는 유지. 실패 시 원문."""
-    if not gov or lang == "ko":
-        return gov
-    target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
-    if not target:
-        return gov
-    texts = [g["t"] for g in gov]
+def _gov_translate_batch(texts, target):
+    """texts를 target 언어로 배치 번역. 성공 시 같은 길이 리스트(항목별 실패는 None),
+    호출·파싱 실패·개수 불일치 시 None(→ 호출부가 항목별 재시도로 전환)."""
     prompt = (
         f"Translate each string in this JSON array into {target}, keeping numbers, dates and proper nouns. "
         "Return ONLY a JSON object {\"t\":[\"\"]} with the same number and order of items, no commentary.\n\n"
         + json.dumps({"t": texts}, ensure_ascii=False))
     out = gemini_generate(prompt, json_mode=True)
     if not out:
-        return gov
+        return None
     try:
         tr = json.loads(out).get("t")
-        if isinstance(tr, list) and len(tr) == len(gov):
-            return [{"t": (t if isinstance(t, str) and t.strip() else o["t"]), "links": o["links"]}
-                    for o, t in zip(gov, tr)]
+        if isinstance(tr, list) and len(tr) == len(texts):
+            return [t if isinstance(t, str) and t.strip() else None for t in tr]
     except Exception as ex:
-        print(f"[warn] translate_gov {lang} failed: {ex}")
-    return gov
+        print(f"[warn] translate_gov batch parse failed: {ex}")
+    return None
+
+
+def _gov_translate_one(text, target):
+    """단일 문자열 번역(개수 불일치 원천 차단). 실패 시 None."""
+    prompt = (
+        f"Translate the following text into {target}, keeping numbers, dates and proper nouns. "
+        "Return ONLY the translated text — no commentary, labels, or surrounding quotes.\n\n" + text)
+    out = gemini_generate(prompt, json_mode=False)
+    if out:
+        out = out.strip().strip('"').strip()
+    return out or None
+
+
+def translate_gov(gov, lang):
+    """정부 동향 불릿(dict 리스트)의 텍스트만 영어/아랍어로 번역. 링크는 유지.
+    배치 1회 실패가 전량 한국어로 폴백되던 문제를 방지 — 배치가 놓친 항목만 항목별로
+    재시도하고, 그래도 실패한 항목만 원문(한국어) 유지(로그로 잔존 표시)."""
+    if not gov or lang == "ko":
+        return gov
+    target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
+    if not target:
+        return gov
+    texts = [g["t"] for g in gov]
+    res = _gov_translate_batch(texts, target)
+    if res is None:
+        res = [None] * len(texts)
+    # 배치가 실패했거나 일부 항목이 빈 경우, 해당 항목만 단건 번역으로 재시도
+    for i, t in enumerate(res):
+        if not t:
+            res[i] = _gov_translate_one(texts[i], target)
+    n_fail = sum(1 for t in res if not t)
+    if n_fail:
+        print(f"[warn] translate_gov {lang}: {n_fail}/{len(texts)} item(s) fell back to source(ko)")
+    return [{"t": (t if t else o["t"]), "links": o["links"]} for o, t in zip(gov, res)]
 
 
 def render_qatar_gov(gov, lang="ko", weekly=False):
