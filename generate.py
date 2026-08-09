@@ -1502,12 +1502,14 @@ def anthropic_call(model, prompt, json_mode):
     msgs = [{"role": "user", "content": prompt}]
     payload = {"model": model, "max_tokens": 16000, "messages": msgs}
     if json_mode:
+        # 스키마를 특정 키("issues")로 고정하면, 다른 최상위 키를 기대하는 호출
+        #  (translate_gov→"t", gemini_qatar_gov→"gov", offtopic→"offtopic", 보고서필터→"drop" 등)이
+        #  전부 {"issues":…}만 받아 조용히 파싱 실패 → 원문 유지되는 버그가 있었다.
+        #  → 프롬프트가 지정한 형식을 그대로 담도록 범용 object 스키마로 강제(키 고정 제거).
         payload["tools"] = [{
             "name": "emit_result",
-            "description": "지시된 형식의 결과 JSON을 그대로 반환한다.",
-            "input_schema": {"type": "object",
-                             "properties": {"issues": {"type": "array", "items": {"type": "object"}}},
-                             "required": ["issues"]},
+            "description": "프롬프트가 지시한 형식의 결과 JSON 객체를 그대로 반환한다.",
+            "input_schema": {"type": "object", "additionalProperties": True},
         }]
         payload["tool_choice"] = {"type": "tool", "name": "emit_result"}
     body = json.dumps(payload).encode("utf-8")
