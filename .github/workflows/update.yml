@@ -54,14 +54,19 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 실행된 브랜치(스케줄·repository_dispatch=main, 수동 실행=그 브랜치). detached HEAD에서도 정확.
+          # 예전엔 'origin main' 하드코딩 + bare 'git push'라, 비-main 브랜치에서 돌리면
+          # (수동 실행 시 detached HEAD) rebase 충돌·'not currently on a branch'로 항상 실패했다.
+          BRANCH="${GITHUB_REF_NAME}"
           git add -A
           if git diff --staged --quiet; then
             echo "No changes."
           else
             git commit -m "auto: update $(date -u '+%Y-%m-%d %H:%M UTC')"
             for i in 1 2 3 4 5; do
-              git pull --rebase --autostash origin main || true
-              if git push; then echo "pushed on try $i"; exit 0; fi
+              # 항상 '실행된 그 브랜치' 최신 위에 다시 얹고, 그 브랜치로 명시적으로 push.
+              git pull --rebase --autostash origin "$BRANCH" || true
+              if git push origin "HEAD:$BRANCH"; then echo "pushed on try $i ($BRANCH)"; exit 0; fi
               echo "[warn] push rejected, retry $i"; sleep $((5 * i))
             done
             echo "[error] push failed after 5 tries"; exit 1
