@@ -1,0 +1,60 @@
+name: Backfill gov trends i18n
+
+# 과거 아카이브의 '정부 동향' en/ar 한국어 잔존분을 사이트 정규 번역 함수(generate.translate_gov)로
+# 소급 번역한다. 수동 실행 전용. 기본은 dry-run(무엇을 바꿀지 로그만); apply 체크 시에만 실제 반영.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "실제 반영(체크 해제 시 dry-run — 변경 없이 목록만)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  models: read              # GitHub Models(내장 토큰 번역) 호출 권한
+
+concurrency:
+  group: update-monitor     # 정규 갱신 워크플로와 동시 실행 방지(같은 그룹)
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install feedparser
+
+      - name: Backfill gov translations
+        env:
+          GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # 1순위: GitHub Models(키 발급 불필요)
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # 2순위(선택)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 3순위(선택)
+        run: python backfill_gov_i18n.py ${{ inputs.apply && '--apply' || '' }}
+
+      - name: Commit & push if changed
+        if: ${{ inputs.apply }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          BRANCH="${GITHUB_REF_NAME}"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: 정부 동향 en/ar 소급 번역 백필(자동 파이프라인)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase --autostash origin "$BRANCH" || true
+              if git push origin "HEAD:$BRANCH"; then echo "pushed on try $i ($BRANCH)"; exit 0; fi
+              echo "[warn] push rejected, retry $i"; sleep $((5 * i))
+            done
+            echo "[error] push failed after 5 tries"; exit 1
+          fi
