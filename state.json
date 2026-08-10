@@ -1,6 +1,6 @@
 {
- "last_items": 1701,
- "last_run_utc": "2026-08-10 04:00 UTC",
+ "last_items": 1407,
+ "last_run_utc": "2026-08-10 12:30 UTC",
  "feeds": {
   "feeds": 91,
   "ok": 85,
@@ -9,6 +9,7 @@
   "items": 570
  },
  "history": [
-  1701
+  1701,
+  1407
  ]
 }
