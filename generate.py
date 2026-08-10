@@ -2073,13 +2073,13 @@ def _gov_ai_from_hits(hits):
             if not t:
                 continue
             links, seen = [], set()
-            for i in (item.get("ids") or [])[:6]:
+            for i in (item.get("ids") or [])[:8]:
                 if isinstance(i, int) and 0 <= i < len(hits):
                     key = hits[i].get("link")
                     if key and key not in seen:
                         seen.add(key)
                         links.append((hits[i].get("source", ""), key))
-                if len(links) >= 3:
+                if len(links) >= 5:
                     break
             res.append({"t": t, "links": links})
         return res
@@ -2147,8 +2147,9 @@ def gemini_qatar_gov(pool, win_label):
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
         "**【카타르를 주어로 앞세울 것】 각 항목은 카타르 정부·지도부(에미르·총리·외교장관·각료·MOFA·GCO·QatarEnergy 등)의 행위를 문장 맨 앞 주어로 서술하세요 — 타국·국제기구(사우디·튀르키예·유엔 안보리 등)나 사건 배경이 앞서고 카타르의 행위가 문장 끝에 곁다리로 묻히면 안 됩니다(그런 경우 카타르 행위를 주어로 문장을 다시 구성).** "
         "**아래 이슈별 언론동향과 내용이 겹쳐도 무방합니다 — 카타르 정부의 정세 관련 행보이면 반드시 포함**하세요(정부 동향은 별도로 중요). "
-        "각 항목에는 그 동향을 뒷받침하는 기사 번호(id)를 1~3개 담으세요. "
-        "**【ids는 그 카타르 행위를 '직접' 보도한 기사만】 ids에는 그 불릿의 카타르 정부 행위를 직접 다룬 기사만 넣으세요 — 같은 국면의 배경·다른 측면 기사(예: 그 사건을 촉발한 타국 협정·공격 기사)나, 관련은 있으나 그 카타르 행위 자체를 보도하지 않은 기사는 절대 넣지 마세요(무관한 링크가 붙는 원인). 직접 보도 기사가 하나뿐이면 id 1개만 넣으세요.** "
+        "각 항목에는 그 동향을 보도한 기사 id를 **카타르 현지·1차 매체를 우선해 빠짐없이(최대 5개)** 담으세요. "
+        "**【ids는 그 카타르 행위를 '직접' 보도한 기사만, 단 빠짐없이】 ids에는 그 불릿의 카타르 정부 행위를 직접 다룬 기사만 넣으세요 — 같은 국면의 배경·다른 측면 기사(예: 그 사건을 촉발한 타국 협정·공격 기사)나, 관련은 있으나 그 카타르 행위 자체를 보도하지 않은 기사는 절대 넣지 마세요(무관한 링크가 붙는 원인). "
+        "**단, 같은 카타르 정부 동향을 여러 매체가 보도했으면(카타르 현지·아랍·국제) 그 기사 id들을 카타르 현지·1차 매체를 우선해 '모두' 넣으세요 — 직접 보도한 관련 기사를 하나만 남기고 빠뜨리지 말 것(독자가 여러 출처를 비교할 수 있게).** 정말 한 매체만 보도했을 때만 id 1개입니다.** "
         "카타르 정부·지도부가 주체인 정세 관련 동향이 [기사 목록]에 전혀 없을 때만 빈 배열을 반환하세요. "
         "출력은 오직 JSON: {\"gov\":[{\"t\":\"불릿\",\"ids\":[0]}]} (없으면 {\"gov\":[]}).\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
@@ -2167,14 +2168,14 @@ def gemini_qatar_gov(pool, win_label):
             if not t:
                 continue
             links, seen = [], set()
-            for i in (item.get("ids") or [])[:6]:
+            for i in (item.get("ids") or [])[:8]:
                 if isinstance(i, int) and 0 <= i < len(qpool):
                     x = qpool[i]
                     key = x.get("link")
                     if key and key not in seen:
                         seen.add(key)
                         links.append((x.get("source", ""), key))
-                if len(links) >= 3:
+                if len(links) >= 5:
                     break
             res.append({"t": t, "links": links})
         return res or _gov_kw_fallback(qpool)
@@ -4204,6 +4205,13 @@ def verify_gov(gov, pool):
             dropped += 1
             continue                                  # unsupported → 제거
         sids = r.get("support_ids") or ids
+        # 검증 통과(supported/partial) 시, 원래 붙어 있던 '카타르 현지·1차 매체' 근거는 유지 —
+        #   원문 fetch 실패 등으로 검증기 support_ids에서 누락돼 카타르 1차 출처가 떨어지는 것 방지.
+        _QSRC = ("qatar", "aljazeera", "peninsula", "gulf times", "qna", "tribune", "lusail", "doha")
+        _qat_ids = [i for i in ids if isinstance(i, int) and 0 <= i < len(pool)
+                    and (pool[i].get("region") == "qatar"
+                         or any(k in (pool[i].get("source", "") or "").lower() for k in _QSRC))]
+        sids = list(dict.fromkeys(list(sids) + _qat_ids))[:5]
         newlinks, seen = [], set()
         for i in sids:
             if isinstance(i, int) and 0 <= i < len(pool):
