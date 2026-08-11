@@ -44,7 +44,13 @@ Q_QATAR_EN = ["Qatar Iran", "Qatar Doha", "Al Udeid", "Ras Laffan Qatar", "Qatar
               # 카타르 정부의 전쟁 관련 공식 발표·성명·지침 조준
               "Qatar foreign ministry statement Iran", "Qatar Amir statement war",
               "Qatar condemns Iran Israel", "Qatar cabinet Iran war", "QatarEnergy statement force majeure",
-              "Qatar government advisory Iran", "Qatar MOFA Iran strike"]
+              "Qatar government advisory Iran", "Qatar MOFA Iran strike",
+              # 카타르 정부 '직접 동향' 영문 커버리지 강화 — 이란 전쟁에 국한하지 않고 정세 관련 외교·중재·성명 전 범위 조준
+              #   (아랍어 QNA만 잡히고 영문판이 누락되던 문제 보완: 통신사·QNA English·Gulf Times 등 영문 보도 확보)
+              "Qatar Prime Minister statement", "Qatar Foreign Minister statement", "Qatar Emir call phone",
+              "Qatar mediation Gaza ceasefire", "Qatar hostage prisoner mediation", "Qatar condemns Israel",
+              "Qatar welcomes ceasefire", "Qatar calls for de-escalation", "Qatar foreign ministry Gaza statement",
+              "Qatar Amir Doha diplomacy talks", "Qatar QNA official statement", "Qatar GCC Arab League joint statement"]
 Q_QATAR_KO = ["카타르", "카타르 이란", "카타르 도하", "알우데이드", "카타르 미사일", "카타르 정세", "카타르 교민", "카타르 대사관",
               "카타르 피격", "카타르 공격", "카타르 영공",
               # 카타르 정부 공식 동향(전쟁 관련) 조준
@@ -68,6 +74,14 @@ NAVER_NEWS_DOMAINS = ["n.news.naver.com", "news.naver.com"]
 # 카타르 현지: Qatar/Middle East 주제와 무관하게도 현지 보도를 폭넓게 확보(관련성 필터가 비관련 제거) → 바로 site:
 QATAR_LOCAL_SITES = ["gulf-times.com", "thepeninsulaqatar.com", "dohanews.co",
                      "qatar-tribune.com", "lusailnews.qa", "qna.org.qa", "aljazeera.com"]
+# 카타르 정부 '직접 동향' 영문 커버리지 전용 — 현지 영문 1차매체를 '정부 주체·행위' 키워드로 직접 조준.
+#   바로 위 QATAR_LOCAL_SITES의 bare site: 쿼리는 결과 상한(약 100건)에 스포츠·경제 잡뉴스가 섞여 정부 성명이 밀릴 수 있어,
+#   정부 성명·중재·통화·회담 영문 기사가 창(window) 안에서 확실히 잡히도록 별도 조준 쿼리를 추가한다.
+QATAR_GOV_EN_SITES = ["qna.org.qa", "gulf-times.com", "thepeninsulaqatar.com", "qatar-tribune.com"]
+# 기존 MEDIA_TOPIC와 동일하게 괄호+OR '단일 토큰' 방식(큰따옴표 미사용 → gnews_url 공백치환에도 URL 안전).
+# minister/ministry = 총리·외교장관·외교부, diwan = 아미리 디완(에미르실) 커버.
+QATAR_GOV_QUERY_EN = ("(Amir OR Emir OR minister OR ministry OR MOFA OR diwan OR mediation OR "
+                      "statement OR condemns OR welcomes OR ceasefire OR Gaza OR Iran)")
 # 이란·역내 + 해외(미국·유럽 등) 매체 — 전 세계 보도를 다루므로 '중동 주제'로 조준
 FOREIGN_MEDIA_SITES = [
     # 이란·역내(국영·안보·주요 매체 — 당사국 1차 발표 직접 수집)
@@ -1329,6 +1343,9 @@ def collect(win_start_utc, now_utc, when_days=2):
     # 링크모음의 전 언론매체를 매 회차 site: 조준으로 직접 모니터링(카타르 현지=폭넓게, 해외·역내=중동주제, 국내=국문 중동주제)
     for dom in QATAR_LOCAL_SITES:
         feeds.append(("en", f"[qa]{dom}", gnews_url(f"site:{dom}", "en", when_days)))
+    # 카타르 정부 동향 영문판 확실 확보 — 현지 영문 1차매체(QNA/Gulf Times/Peninsula/Tribune)를 정부 키워드로 조준
+    for dom in QATAR_GOV_EN_SITES:
+        feeds.append(("en", f"[qagov]{dom}", gnews_url(f"site:{dom} {QATAR_GOV_QUERY_EN}", "en", when_days)))
     for dom in FOREIGN_MEDIA_SITES:
         feeds.append(("en", f"[m]{dom}", gnews_url(f"site:{dom} {MEDIA_TOPIC}", "en", when_days)))
     for dom in KOREA_MEDIA_SITES:
@@ -2144,12 +2161,14 @@ def gemini_qatar_gov(pool, win_label):
         "제외 대상: **카타르 정부·지도부가 주체·당사자가 아닌, 순전히 타국만의 동향(카타르와 무관)**, 중동 정세·전쟁과 무관한 카타르 정부 활동(타 대륙 산불·재난 구조대 파견, 환경·스포츠·문화·조세·일반 행정 등), 단순 축전·조전 — 이 섹션은 오직 '중동 정세(전쟁·역내 안보)' 관련 카타르 정부 동향만 담습니다. "
         "**【중동 밖 중재는 제외(중요)】 카타르가 주도·중재해도 그 대상이 중동·역내(카타르·이란·이스라엘·미국-이란 전쟁·걸프·레바논·홍해·호르무즈·가자·예멘) 밖이면 이 섹션에서 제외하세요 — 예: DR콩고·수단·아프리카·중남미·아프가니스탄 등 역외 분쟁 중재·평화프로세스·수감자 석방은 카타르의 성과여도 '중동 정세'가 아니므로 넣지 마세요.** "
         "**【능동적 공동행동은 포함, 곁다리 언급은 제외】 카타르 정부가 중동 정세 사안에서 여러 국가와 함께 능동적으로 취한 공동행동(공동성명 서명·공동 규탄·공동 중재·정상/외교장관 공동회의 등)은 카타르의 행위이므로 반드시 포함하세요(예: '카타르 등 8개국이 이스라엘의 가자 위반을 규탄하는 공동성명 발표'는 포함). 다만 카타르가 능동적 주체가 아니라 타국 주도 사건에 곁다리로 언급되거나(예: 타국 간 협정을 '…등 다수국이 환영', 카타르 전(前)직 인사의 개인 논평), 카타르의 실제 행위 없이 이름만 나열된 경우는 별도 불릿으로 만들지 마세요.** "
+        "**【기구 수장 개인 성명 제외(중요)】 아랍연맹(사무총장 아불 게이트 등)·GCC·OIC·유엔 등 국제·역내 기구 '수장(사무총장·대변인 등) 개인의 성명·규탄·발언'은, 카타르가 그 기구의 회원국이라는 이유만으로 '카타르 정부 동향'이 되지 않습니다 — 카타르 정부·지도부의 구체적 행위가 그 기사에 함께 명시되지 않는 한 별도 불릿으로 만들지 마세요('아랍연맹이 …규탄'처럼 카타르를 괄호로 끼워 넣어 카타르 동향인 것처럼 서술 금지). 회원국들이 함께 채택·서명한 '공동성명·정상회의 결의'에 카타르가 실제 참여한 경우만 포함 대상입니다.** "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
         "**【카타르를 주어로 앞세울 것】 각 항목은 카타르 정부·지도부(에미르·총리·외교장관·각료·MOFA·GCO·QatarEnergy 등)의 행위를 문장 맨 앞 주어로 서술하세요 — 타국·국제기구(사우디·튀르키예·유엔 안보리 등)나 사건 배경이 앞서고 카타르의 행위가 문장 끝에 곁다리로 묻히면 안 됩니다(그런 경우 카타르 행위를 주어로 문장을 다시 구성).** "
         "**아래 이슈별 언론동향과 내용이 겹쳐도 무방합니다 — 카타르 정부의 정세 관련 행보이면 반드시 포함**하세요(정부 동향은 별도로 중요). "
         "각 항목에는 그 동향을 보도한 기사 id를 **카타르 현지·1차 매체를 우선해 빠짐없이(최대 5개)** 담으세요. "
         "**【ids는 그 카타르 행위를 '직접' 보도한 기사만, 단 빠짐없이】 ids에는 그 불릿의 카타르 정부 행위를 직접 다룬 기사만 넣으세요 — 같은 국면의 배경·다른 측면 기사(예: 그 사건을 촉발한 타국 협정·공격 기사)나, 관련은 있으나 그 카타르 행위 자체를 보도하지 않은 기사는 절대 넣지 마세요(무관한 링크가 붙는 원인). "
         "**단, 같은 카타르 정부 동향을 여러 매체가 보도했으면(카타르 현지·아랍·국제) 그 기사 id들을 카타르 현지·1차 매체를 우선해 '모두' 넣으세요 — 직접 보도한 관련 기사를 하나만 남기고 빠뜨리지 말 것(독자가 여러 출처를 비교할 수 있게).** 정말 한 매체만 보도했을 때만 id 1개입니다.** "
+        "**【영문 링크 반드시 병기(중요)】 같은 카타르 정부 동향을 아랍어 기사(QNA 아랍어·العرب 등)와 영문 기사(QNA English·Gulf Times·The Peninsula·Qatar Tribune·Al Jazeera·Reuters·AP·Anadolu 등)가 함께 보도했으면, 아랍어 id만 넣지 말고 그 영문 기사 id도 반드시 함께 넣으세요 — 이 페이지는 영문·아랍어 판으로도 제공되므로 아랍어를 못 읽는 독자가 원문을 확인할 영문 출처가 최소 1개는 있어야 합니다. 영문판이 [기사 목록]에 있으면 절대 빠뜨리지 마세요.** "
         "카타르 정부·지도부가 주체인 정세 관련 동향이 [기사 목록]에 전혀 없을 때만 빈 배열을 반환하세요. "
         "출력은 오직 JSON: {\"gov\":[{\"t\":\"불릿\",\"ids\":[0]}]} (없으면 {\"gov\":[]}).\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines))
