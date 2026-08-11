@@ -4244,6 +4244,54 @@ def verify_gov(gov, pool):
     return out
 
 
+def _dedup_gov(gov):
+    """정부 동향 불릿 중 '같은 사안'을 여러 개로 쪼갠 중복을 결정론적으로 병합(누락 없이 하나로).
+    판정: (a) 두 불릿의 링크 URL 교집합 비율이 높거나(작은 쪽의 60%↑ — 부분집합 포함),
+          (b) 불릿 본문이 거의 동일(유사도 0.85↑)하면 같은 사안으로 본다.
+    병합: 링크가 더 많은(=더 완결된) 불릿의 본문을 남기고, 나머지의 고유 링크만 합쳐(최대 5) 흡수.
+    (예: '오만-이란 호르무즈 협상 진전' 사안이 두 불릿으로 갈릴 때 하나로 합침 — 08-11 15:30 #1=#4 재발 방지.)"""
+    import difflib
+    items = [g for g in (gov or []) if isinstance(g, dict) and g.get("t")]
+    if len(items) < 2:
+        return gov
+
+    def norm_url(u):
+        return (u or "").split("?")[0].strip().lower()
+
+    def norm_txt(t):
+        return re.sub(r"[^0-9a-z가-힣]+", "", (t or "").lower())
+
+    def urls_of(g):
+        return {norm_url(u) for (_s, u) in (g.get("links") or []) if u}
+
+    kept = []
+    for g in items:
+        gu, gt = urls_of(g), norm_txt(g["t"])
+        merged = False
+        for k in kept:
+            ku = urls_of(k)
+            link_ov = (len(gu & ku) / min(len(gu), len(ku))) if (gu and ku) else 0.0
+            txt_sim = difflib.SequenceMatcher(None, norm_txt(k["t"]), gt).ratio()
+            if link_ov >= 0.6 or txt_sim >= 0.85:
+                base, other = (k, g) if len(k.get("links") or []) >= len(g.get("links") or []) else (g, k)
+                links, seen = [], set()
+                for (s, u) in (base.get("links") or []) + (other.get("links") or []):
+                    nu = norm_url(u)
+                    if u and nu not in seen:
+                        seen.add(nu)
+                        links.append((s, u))
+                    if len(links) >= 5:
+                        break
+                k["t"], k["links"] = base["t"], links
+                merged = True
+                break
+        if not merged:
+            kept.append(dict(g))
+    if len(kept) < len(items):
+        print(f"[info] dedup_gov: merged {len(items) - len(kept)} duplicate gov bullet(s)")
+    return kept
+
+
 def _write_all_editions(metas):
     """전체 회차 색인 페이지(archive/all.html) — 매니페스트(최근 ARCHIVE_MANIFEST_DAYS일)에서 빠진
     과거 회차까지 모두 링크로 열람. 파일은 삭제·이동 없이 전부 보존되며 여기서 언제든 접근 가능.
@@ -4377,6 +4425,7 @@ def main():
         gov_ko = verify_gov(gov_ko, (gov_pool or []) + pool)   # gov 링크가 gov_pool·pool 어느 쪽이든 검증되도록 합집합
     except Exception as ex:
         print(f"[warn] fact-verification skipped(daily): {ex}")
+    gov_ko = _dedup_gov(gov_ko)   # 같은 사안이 여러 불릿으로 갈린 중복 병합(검증 후 최종 정리)
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
     os.makedirs("archive", exist_ok=True)
@@ -4419,6 +4468,7 @@ def main():
             gov_wk_ko = verify_gov(gov_wk_ko, (gov_wk_pool or []) + wpool)
         except Exception as ex:
             print(f"[warn] fact-verification skipped(weekly): {ex}")
+        gov_wk_ko = _dedup_gov(gov_wk_ko)   # 주간 정부 동향도 동일 사안 중복 병합
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
         witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
