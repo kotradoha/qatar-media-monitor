@@ -2791,6 +2791,21 @@ TL_LINKS = {
     ("2026-03-18", "가스시설을 타격"): ("머니투데이", "https://www.mt.co.kr/world/2026/03/24/2026032423475066614"),
     ("2026-03-02", "F-15"): ("Air Data News", "https://www.airdatanews.com/qatar-confirms-f-15qa-fighters-shot-down-iranian-su-24-bombers/"),
     ("2026-02-28", "이란 보복 개시"): ("뉴스1", "https://www.news1.kr/world/middleeast-africa/6098581"),
+    # ── 2차 보강(WebSearch 교차확인, 국문 우선) ──
+    ("2026-08-04", "Al Khasab"): ("헤럴드경제", "https://biz.heraldcorp.com/article/10830039"),
+    ("2026-08-03", "MQ-9"): ("한국일보", "https://www.hankookilbo.com/news/article/A2026080319580005383"),
+    ("2026-08-03", "새 협상 월요일"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202608031017395284"),
+    ("2026-07-08", "바레인·쿠웨이트"): ("워싱턴포스트", "https://www.washingtonpost.com/world/2026/07/08/trump-declares-ceasefire-with-iran-has-ended/"),
+    ("2026-06-17", "이슬라마바드 양해각서"): ("뉴스핌", "https://www.newspim.com/news/view/20260618001146"),
+    ("2026-06-14", "잠정 합의"): ("이투데이", "https://www.etoday.co.kr/news/view/2593353"),
+    ("2026-06-08", "상호 군사작전 종료"): ("경향신문", "https://www.khan.co.kr/article/202606082103001/"),
+    ("2026-06-07", "이스라엘 북부"): ("헤럴드경제", "https://biz.heraldcorp.com/article/10765539"),
+    ("2026-03-22", "헬기 추락"): ("Daily Sabah", "https://www.dailysabah.com/world/mid-east/erdogan-mourns-after-qatar-chopper-crash-kills-7-including-3-turks"),
+    ("2026-03-19", "헬륨"): ("이데일리", "https://marketin.edaily.co.kr/News/ReadE?newsId=01889286645388240"),
+    ("2026-03-13", "카르그섬"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/3/14/us-attacks-military-sites-on-irans-kharg-island-home-to-vast-oil-facility"),
+    ("2026-03-03", "알우데이드"): ("Stars and Stripes", "https://www.stripes.com/theaters/middle_east/2026-03-04/air-base-qatar-missile-20946551.html"),
+    ("2026-03-02", "호르무즈 해협 봉쇄"): ("경향신문", "https://www.khan.co.kr/article/202603011702001"),
+    ("2026-03-01", "초등학교"): ("한국일보", "https://www.hankookilbo.com/news/article/A2026031115530001932"),
 }
 
 
