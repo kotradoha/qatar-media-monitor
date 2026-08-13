@@ -2779,7 +2779,6 @@ def _is_korean_link(name, url):
 # 사건별 '가장 정통한' 대표 기사(수기 확정 · 국문 우선). 키=(날짜, 본문 내 고유 substring).
 # WebSearch로 사건별 정통 기사를 교차확인해 확정. 자동 추출 링크(불투명/라이브블로그)보다 우선 적용.
 TL_LINKS = {
-    ("2026-08-13", "미측 장악"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202608130703172272"),
     ("2026-07-30", "이집트 최초 피격"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202607300211207230"),
     ("2026-07-27", "13일 연속"): ("뉴스1", "https://www.news1.kr/world/usa-canada/6239002"),
     ("2026-07-13", "20% 통행료"): ("MBC 뉴스", "https://imnews.imbc.com/replay/2026/nwtoday/article/6837176_37012.html"),
@@ -2787,6 +2786,7 @@ TL_LINKS = {
     ("2026-07-01", "중재국과 각각 회동"): ("뉴스핌", "https://www.newspim.com/news/view/20260701001464"),
     ("2026-06-28", "첫 사망자"): ("헤럴드경제", "https://biz.heraldcorp.com/article/10790765"),
     ("2026-06-21", "바르잔"): ("뉴시스", "https://www.newsis.com/view/NISX20260622_0003679088"),
+    ("2026-04-07", "2주간의 휴전"): ("cpbc", "https://news.cpbc.co.kr/article/1171972"),
     ("2026-03-24", "불가항력"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts"),
     ("2026-03-18", "가스시설을 타격"): ("머니투데이", "https://www.mt.co.kr/world/2026/03/24/2026032423475066614"),
     ("2026-03-02", "F-15"): ("Air Data News", "https://www.airdatanews.com/qatar-confirms-f-15qa-fighters-shot-down-iranian-su-24-bombers/"),
