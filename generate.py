@@ -2759,24 +2759,73 @@ TL_SOURCES = [
     ("Wikipedia — 2026 Iran war / Iranian strikes on Qatar", "https://en.wikipedia.org/wiki/2026_Iranian_strikes_on_Qatar"),
 ]
 
+# 국문 기사 판별 힌트(대표 링크 선정: 국문 우선) — 소스명·URL에 한글 또는 국내 매체 도메인.
+_KO_LINK_HINTS = ("yna.co.kr", "yonhap", "뉴시스", "newsis", "뉴스1", "news1", "donga", "chosun",
+                  "joongang", "hani.co.kr", "khan.co.kr", "mk.co.kr", "hankyung", "ytn", "imbc",
+                  "mbc", "sbs.co.kr", "kbs", "jtbc", "chosunbiz", "biz.chosun", "sedaily", "edaily",
+                  "fnnews", "mt.co.kr", "머니투데이", "파이낸셜", "연합", "조선", "중앙", "동아",
+                  "문화일보", "한겨레", "경향", "서울경제", "이데일리", "naver", ".co.kr")
+
+
+def _is_korean_link(name, url):
+    s = f"{name or ''} {url or ''}"
+    if re.search(r"[가-힣]", s):
+        return True
+    low = s.lower()
+    return any(h in low for h in _KO_LINK_HINTS)
+
+
+def _pick_tl_link(e, lang="ko"):
+    """엔트리의 대표 기사 링크 (name, url). 국문 페이지는 국문 기사 우선, 그 외는 영문 우선. 없으면 None."""
+    lk = e.get("link")
+    if isinstance(lk, str) and lk.startswith("http"):
+        return ("", lk)
+    if isinstance(lk, (list, tuple)) and len(lk) == 2 and str(lk[1]).startswith("http"):
+        return (lk[0], lk[1])
+    good = [(x[0], x[1]) for x in (e.get("links") or [])
+            if isinstance(x, (list, tuple)) and len(x) == 2 and isinstance(x[1], str) and x[1].startswith("http")]
+    if not good:
+        return None
+    ko = [g for g in good if _is_korean_link(*g)]
+    non = [g for g in good if not _is_korean_link(*g)]
+    order = (ko or non) if lang == "ko" else (non or ko)
+    return order[0]
+
+
 def _timeline_rows(lang="ko"):
     L = LANG.get(lang, LANG["ko"])
-    rows = []
+    # 날짜별 그룹화 — 같은 날짜는 날짜·점(dot)을 한 번만, 그 아래 해당 사건들을 나열.
+    groups = []
     for e in _timeline_entries():
-        y, m, d = e["d"].split("-")
-        mi = int(m)
-        if lang == "ko":
-            datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi}월 {int(d)}일</span>'
+        if groups and groups[-1][0] == e["d"]:
+            groups[-1][1].append(e)
         else:
-            datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi:02d}/{int(d):02d}</span>'
-        note = e.get("note", {}).get(lang, "") if e.get("note") else ""
-        note_html = f' <span class="tlnote">({esc(note)})</span>' if note else ""
-        qcls = " q" if e.get("q") else ""
-        qbadge = f'<span class="tlq">{esc(L["tl_q"])}</span>' if e.get("q") else ""
+            groups.append((e["d"], [e]))
+    rows = []
+    for d, items in groups:
+        y, m, dd = d.split("-")
+        mi, di = int(m), int(dd)
+        if lang == "ko":
+            datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi}월 {di}일</span>'
+        else:
+            datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi:02d}/{di:02d}</span>'
+        dotcls = " q" if any(it.get("q") for it in items) else ""
+        item_html = []
+        for e in items:
+            note = e.get("note", {}).get(lang, "") if e.get("note") else ""
+            note_html = f' <span class="tlnote">({esc(note)})</span>' if note else ""
+            qbadge = f'<span class="tlq">{esc(L["tl_q"])}</span>' if e.get("q") else ""
+            lk = _pick_tl_link(e, lang)
+            link_html = (f'<a class="tllink" href="{esc(lk[1])}" target="_blank" rel="noopener" '
+                         f'title="{esc(lk[0] or L["tl_head"])}">↗</a>') if lk else ""
+            item_html.append(
+                f'<div class="tlitem{" q" if e.get("q") else ""}">'
+                f'<span class="tltext">{qbadge}{esc(e.get(lang) or e.get("ko"))}{note_html}</span>'
+                f'{link_html}</div>')
         rows.append(
-            f'<div class="tlrow{qcls}"><div class="tldot"></div>'
+            f'<div class="tlrow"><div class="tldot{dotcls}"></div>'
             f'<div class="tldate">{datestr}</div>'
-            f'<div class="tlbody">{qbadge}{esc(e.get(lang) or e.get("ko"))}{note_html}</div></div>')
+            f'<div class="tlbody">{"".join(item_html)}</div></div>')
     return '<div class="tlwrap">' + "".join(rows) + '</div>'
 
 def _timeline_sources_html(lang="ko"):
@@ -2892,7 +2941,7 @@ def _timeline_entries():
         seen.add(k)
         merged.append({"d": c["d"], "ko": c.get("ko", ""),
                        "en": c.get("en") or c.get("ko", ""), "ar": c.get("ar") or c.get("ko", ""),
-                       "q": bool(c.get("q"))})
+                       "q": bool(c.get("q")), "links": c.get("links") or []})
     merged.sort(key=lambda e: e["d"], reverse=True)
     return merged
 
@@ -3052,7 +3101,10 @@ def render_timeline_page(lang="ko"):
 _TL_SCRIPT = r"""(function(){
 var CFG=__CFG__;var cur='all';
 var rows=Array.prototype.slice.call(document.querySelectorAll('.tlwrap .tlrow'));
-function applyFilter(f){cur=f;rows.forEach(function(r){var q=r.classList.contains('q');var show=(f==='all')||(f==='q'&&q)||(f==='ex'&&!q);r.style.display=show?'':'none';});
+function applyFilter(f){cur=f;rows.forEach(function(r){
+var items=r.querySelectorAll('.tlitem');var vis=0;
+Array.prototype.forEach.call(items,function(it){var q=it.classList.contains('q');var show=(f==='all')||(f==='q'&&q)||(f==='ex'&&!q);it.style.display=show?'':'none';if(show)vis++;});
+r.style.display=vis?'':'none';});
 Array.prototype.forEach.call(document.querySelectorAll('.tlfbtn'),function(b){b.classList.toggle('on',b.getAttribute('data-f')===f);});}
 Array.prototype.forEach.call(document.querySelectorAll('.tlfbtn'),function(b){b.addEventListener('click',function(){applyFilter(b.getAttribute('data-f'));});});
 // ---- 순수 JS XLSX(무압축 ZIP) ----
@@ -3773,10 +3825,15 @@ TIMELINE_PAGE = """<!DOCTYPE html>
   .tldate .tlmd{{display:block;font-size:13px;font-weight:800;color:var(--txt);white-space:nowrap}}
   .tldot{{position:absolute;inset-inline-start:94px;top:4px;width:11px;height:11px;border-radius:50%;
     background:#6b7280;border:2px solid var(--bg);z-index:1}}
-  .tlbody{{font-size:13.5px;line-height:1.6;color:var(--txt);word-break:keep-all}}
+  .tlbody{{display:flex;flex-direction:column;gap:11px;font-size:13.5px;line-height:1.6;color:var(--txt);word-break:keep-all}}
+  .tlitem{{display:flex;align-items:flex-start;gap:10px}}
+  .tltext{{flex:1 1 auto}}
+  .tlitem.q .tltext{{font-weight:600}}
+  .tllink{{flex:none;margin-top:1px;font-size:14px;line-height:1.3;text-decoration:none;color:var(--muted);
+    border:1px solid var(--line);border-radius:6px;padding:0 6px;transition:color .12s,border-color .12s}}
+  .tllink:hover{{color:var(--gold);border-color:var(--gold)}}
   .tlnote{{color:var(--muted);font-weight:400}}
-  .tlrow.q .tldot{{background:#fff;border:2px solid var(--qmaroon);width:13px;height:13px;inset-inline-start:93px;top:3px}}
-  .tlrow.q .tlbody{{font-weight:600}}
+  .tldot.q{{background:#fff;border:2px solid var(--qmaroon);width:13px;height:13px;inset-inline-start:93px;top:3px}}
   .tlq{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:var(--qmaroon);
     border-radius:5px;padding:0 6px;margin-inline-start:6px;margin-inline-end:6px;vertical-align:middle;white-space:nowrap}}
   .tlsrc{{margin-top:22px;padding-top:12px;border-top:1px solid var(--line);
@@ -3805,7 +3862,7 @@ TIMELINE_PAGE = """<!DOCTYPE html>
     .tlrow{{grid-template-columns:54px 1fr;gap:0 16px}}
     .tldate .tlmd{{font-size:12px}}
     .tldot{{inset-inline-start:59px}}
-    .tlrow.q .tldot{{inset-inline-start:58px}}
+    .tldot.q{{inset-inline-start:58px}}
     .tlpage-h{{font-size:17px}}
   }}
   /* A4 인쇄 최적화 */
