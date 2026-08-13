@@ -4295,6 +4295,41 @@ def _dedup_gov(gov):
     return kept
 
 
+# 정부 동향 위생 검사용 토큰 — AI가 프롬프트 규칙을 놓쳐도 결정론적으로 방어.
+_GOV_SANE_ACTOR = ["카타르", "도하", "에미르", "아미르", "국왕", "총리", "부총리", "외교", "내무", "국방",
+                   "mofa", "qna", "카타르통신", "카타르에너지", "qatarenergy", "gco", "아미리", "amiri", "qatar", "doha"]
+_GOV_SANE_ACTION = ["촉구", "규탄", "성명", "발표", "중재", "통화", "회담", "협의", "환영", "비판", "항의",
+                    "요청", "지지", "재확인", "밝힘", "밝혔", "논의", "제안", "경고", "합의", "서명", "선언",
+                    "조율", "표명", "전달", "요구", "제기", "면담", "접견", "방문", "참석", "주재", "condemn",
+                    "call", "urge", "welcome", "mediat", "statement", "meet", "sign", "announce"]
+# 구체적 행위 없이 이런 추측·전망·해설로 '끝나는' 문장은 정부 '동향'이 아님.
+_GOV_SANE_SPECUL = ["수 있음", "수 있다", "수 있을", "가능성", "전망됨", "전망이", "전망된다", "해석됨", "해석된다",
+                    "우려됨", "우려된다", "보인다", "예상됨", "예상된다", "것으로 분석", "요인으로 작용", "여파", "함의를 지"]
+
+
+def _gov_sanity_filter(gov):
+    """정부 동향 불릿의 결정론적 위생 검사(AI 프롬프트 규칙 미준수 방어).
+    제거 대상: (a) 카타르 정부 주체(카타르·도하·에미르·총리·외교부·QNA 등)가 문장에 전혀 없는 불릿,
+              (b) 구체적 정부 행위(촉구·규탄·성명·중재·통화·회담 등)가 없이 추측·전망·여파 해설로만 이뤄진 불릿.
+    (예: '이 사태는 …요인으로 작용할 수 있음'처럼 주체·행위 없는 파편/전망 문장 차단.)"""
+    if not gov:
+        return gov
+    out, dropped = [], 0
+    for g in gov:
+        t = (g.get("t") or "") if isinstance(g, dict) else ""
+        low = t.lower()
+        has_actor = any(k in low for k in _GOV_SANE_ACTOR)
+        has_action = any(v in low for v in _GOV_SANE_ACTION)
+        specul_only = any(p in t for p in _GOV_SANE_SPECUL) and not has_action
+        if not t.strip() or not has_actor or specul_only:
+            dropped += 1
+            continue
+        out.append(g)
+    if dropped:
+        print(f"[info] gov_sanity: dropped {dropped} bullet(s) w/o Qatar actor or w/ speculation-only")
+    return out
+
+
 def _write_all_editions(metas):
     """전체 회차 색인 페이지(archive/all.html) — 매니페스트(최근 ARCHIVE_MANIFEST_DAYS일)에서 빠진
     과거 회차까지 모두 링크로 열람. 파일은 삭제·이동 없이 전부 보존되며 여기서 언제든 접근 가능.
@@ -4429,6 +4464,7 @@ def main():
     except Exception as ex:
         print(f"[warn] fact-verification skipped(daily): {ex}")
     gov_ko = _dedup_gov(gov_ko)   # 같은 사안이 여러 불릿으로 갈린 중복 병합(검증 후 최종 정리)
+    gov_ko = _gov_sanity_filter(gov_ko)   # 카타르 주체·행위 없는 추측/파편 불릿 결정론적 제거
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
     os.makedirs("archive", exist_ok=True)
@@ -4472,6 +4508,7 @@ def main():
         except Exception as ex:
             print(f"[warn] fact-verification skipped(weekly): {ex}")
         gov_wk_ko = _dedup_gov(gov_wk_ko)   # 주간 정부 동향도 동일 사안 중복 병합
+        gov_wk_ko = _gov_sanity_filter(gov_wk_ko)   # 주간도 주체·행위 없는 추측/파편 불릿 제거
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
         witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
