@@ -2816,6 +2816,11 @@ TL_LINKS = {
     ("2026-06-20", "다시 봉쇄"): ("한국일보", "https://www.hankookilbo.com/news/article/A2026062022180001066"),
     ("2026-06-18", "봉쇄 해제"): ("NPR", "https://www.npr.org/2026/06/18/nx-s1-5863517/trump-iran-deal-blockade-strait-hormuz"),
     ("2026-02-28", "동시 기습"): ("문화일보", "https://www.munhwa.com/article/11571348"),
+    ("2026-07-21", "새 정전안"): ("서울경제", "https://www.sedaily.com/article/20075097"),
+    ("2026-06-28", "존재하지 않을 것"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202606281305113628"),
+    ("2026-06-11", "폐쇄 발표"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202606110818087737"),
+    ("2026-03-25", "영향 점검"): ("에너지경제", "https://edata.ekn.kr/article/view/ekn202603250003"),
+    ("2026-03-21", "디에고가르시아"): ("다음뉴스", "https://v.daum.net/v/20260322170202511"),
 }
 
 
