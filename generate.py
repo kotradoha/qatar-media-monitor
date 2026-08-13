@@ -2739,6 +2739,15 @@ TIMELINE = [
    "ko": "이란, 오만과의 호르무즈 해협 관련 협상이 '최종 단계'라고 발표 — 오만의 해협 통항 중재 역할 부각.",
    "en": "Iran says its negotiations with Oman over the Strait of Hormuz are 'in the final stages' — underscoring Oman's mediating role over the waterway.",
    "ar": "إيران تعلن أن مفاوضاتها مع عُمان بشأن مضيق هرمز في 'مراحلها النهائية' — ما يبرز دور عُمان الوسيط بشأن الممر المائي."},
+  # ── 검증 보강(4~6월 공백): 걸프국 첫 참전·카타르 막후 동향 ──
+  {"d": "2026-05-12", "q": False,
+   "ko": "UAE의 이란 비밀 공습 드러남 — 월스트리트저널 보도로 UAE가 '2주 휴전' 발표일(4/8) 이란 라반섬 정유시설을 타격한 사실이 확인됨(걸프국의 첫 직접 참전). 이란은 UAE·쿠웨이트에 미사일·드론으로 보복.",
+   "en": "UAE's covert strikes on Iran come to light — a Wall Street Journal report confirms the UAE hit Iran's Lavan Island refinery on the day the 'two-week ceasefire' was announced (April 8), marking a Gulf state's first direct entry into the war; Iran had retaliated against the UAE and Kuwait with missiles and drones.",
+   "ar": "الكشف عن ضربات إماراتية سرّية على إيران — تقرير لصحيفة وول ستريت جورنال يؤكّد أن الإمارات ضربت مصفاة جزيرة لافان الإيرانية يوم إعلان 'هدنة الأسبوعين' (8 أبريل)، في أول دخول مباشر لدولة خليجية إلى الحرب؛ وكانت إيران قد ردّت على الإمارات والكويت بالصواريخ والمسيّرات."},
+  {"d": "2026-06-13", "q": True,
+   "ko": "카타르, 라스라판 보호 위해 이란과 '비밀 거래' 의혹 — 워싱턴포스트는 카타르가 개전 직후 이란에 '라스라판 LNG 시설을 공격하지 않으면 자체적으로 가스 생산을 중단하겠다'고 제안했다고 보도(카타르는 전면 부인). 라스라판은 세계 LNG의 약 1/5을 차지.",
+   "en": "Qatar's alleged secret deal with Iran to protect Ras Laffan — the Washington Post reports Qatar offered, right after the war began, to halt its own gas output if Iran spared the Ras Laffan LNG complex (Qatar flatly denies it). Ras Laffan supplies about one-fifth of the world's LNG.",
+   "ar": "اتفاق سرّي مزعوم بين قطر وإيران لحماية رأس لفان — 'واشنطن بوست' تفيد بأن قطر عرضت، فور اندلاع الحرب، وقف إنتاجها من الغاز إذا امتنعت إيران عن ضرب مجمّع رأس لفان للغاز المسال (قطر تنفي ذلك تماماً). ويوفّر رأس لفان نحو خُمس إنتاج الغاز المسال في العالم."},
 ]
 
 _TL_MON = {"ko": ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"]}
@@ -2851,6 +2860,8 @@ TL_LINKS = {
     ("2026-08-10", "모카"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/8/10/houthis-renew-missile-and-drone-attacks-on-yemens-port-of-al-makha"),
     ("2026-08-09", "은밀 출국"): ("워싱턴포스트", "https://www.washingtonpost.com/national-security/2026/08/10/trump-flew-secrecy-amid-iran-threat-air-force-one-became-decoy/"),
     ("2026-08-01", "공습 전격 취소"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202608021138195895"),
+    ("2026-05-12", "라반섬"): ("아시아경제", "https://www.asiae.co.kr/article/2026051209495889912"),
+    ("2026-06-13", "비밀 거래"): ("뉴스1", "https://www.news1.kr/world/middleeast-africa/6196368"),
 }
 
 
