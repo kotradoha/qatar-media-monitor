@@ -74,7 +74,7 @@ jobs:
           else
             # 배포 2차 검증(QA)이 정부 동향 이상물을 제거했으면 커밋 메시지에 표시(알림 겸 기록).
             QA=""
-            if [ -f qa_last.json ]; then QA=" [QA: 정부동향 이상물 자동정리]"; fi
+            if [ -f qa_last.json ]; then QA=" [QA: 정부동향·이슈 이상물 자동정리]"; fi
             git commit -m "auto: update $(date -u '+%Y-%m-%d %H:%M UTC')$QA"
             for i in 1 2 3 4 5; do
               # 항상 '실행된 그 브랜치' 최신 위에 다시 얹고, 그 브랜치로 명시적으로 push.

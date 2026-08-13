@@ -218,33 +218,125 @@ def _issue_ai_flags(issues):
         return None
 
 
+def _split_issues(htmltext):
+    """HTML을 (prefix, [issue블록 내용...], suffix)로 분리. 실패 시 None(→ 미수정)."""
+    marker = '<div class="issue">'
+    i0 = htmltext.find(marker)
+    if i0 < 0:
+        return None
+    prefix = htmltext[:i0]
+    blocks = htmltext[i0:].split(marker)[1:]  # 각 원소 = 이슈 하나의 내용(마지막엔 이후 섹션이 붙어있음)
+    if not blocks:
+        return None
+    m = re.search(r"</div></div></div></div>", blocks[-1])
+    if not m:
+        return None
+    suffix = blocks[-1][m.end():]
+    blocks[-1] = blocks[-1][: m.end()]
+    return prefix, blocks, suffix
+
+
+def _renumber_block(block, newn):
+    """블록 내 '<span class="num">이슈/Issue/قضية N</span>'의 번호를 newn으로(라벨은 보존)."""
+    return re.sub(
+        r'(<span class="num">)(\D*?)\s*\d+(\s*</span>)',
+        lambda mm: f"{mm.group(1)}{mm.group(2).strip()} {newn}{mm.group(3)}",
+        block,
+        count=1,
+    )
+
+
+def _remove_issues_from_file(path, remove_idxs):
+    """remove_idxs = 제거할 '원본 0-based 인덱스' 집합. 제거 후 남은 이슈를 1..k로 재번호."""
+    if not os.path.exists(path):
+        return False
+    s = open(path, encoding="utf-8").read()
+    sp = _split_issues(s)
+    if not sp:
+        return False
+    prefix, blocks, suffix = sp
+    kept = [_renumber_block(b, k + 1) for k, b in enumerate(b for i, b in enumerate(blocks) if i not in remove_idxs)]
+    new = prefix + "".join('<div class="issue">' + b for b in kept) + suffix
+    open(path, "w", encoding="utf-8").write(new)
+    return True
+
+
 def _review_issues():
-    """주요 이슈 검증 — 탐지·알림 전용(자동 삭제하지 않음. 핵심 콘텐츠 오삭제 방지)."""
+    """주요 이슈 검증 — 이상물 자동 제거 + 재번호(안전장치: 파싱실패/과반제거 시 미수정·알림만)."""
     try:
         live = open("index.html", encoding="utf-8").read()
     except FileNotFoundError:
         return
     issues = _extract_issues(live)
-    if not issues:
+    if len(issues) < 1:
         return
-    found = {}  # n -> reason
-    for n, reason in _issue_det_flags(issues):
-        found.setdefault(n, f"[규칙] {reason}")
+
+    remove = {}  # 0-based idx -> reason
+    by_idx = {it["n"] - 1: it for it in issues}
+
+    # (1) 링크 없음
+    for it in issues:
+        if not it["urls"]:
+            remove[it["n"] - 1] = "링크 없음(관련 보도 0건)"
+    # (2) 중복 — 주제 유사 기준. 덜 완전한(링크 적은) 쪽 제거.
+    for i in range(len(issues)):
+        for j in range(i + 1, len(issues)):
+            a, b = issues[i], issues[j]
+            sim = difflib.SequenceMatcher(None, re.sub(r"\W", "", a["theme"]), re.sub(r"\W", "", b["theme"])).ratio()
+            ov = (len(a["urls"] & b["urls"]) / min(len(a["urls"]), len(b["urls"]))) if (a["urls"] and b["urls"]) else 0
+            if sim >= 0.7 or (ov >= 0.8 and sim >= 0.5):
+                drop = j if len(b["urls"]) <= len(a["urls"]) else i
+                keep = i if drop == j else j
+                remove.setdefault(drop, f"이슈 #{keep+1}와 중복(주제유사 {sim:.0%})")
+    # (3) AI 비평 — 오프토픽·과거 재탕(보수적)
     ai = _issue_ai_flags(issues)
     if ai:
-        theme_by_n = {it["n"]: it["theme"] for it in issues}
         for item in ai:
-            if isinstance(item, dict) and isinstance(item.get("id"), int) and item["id"] in theme_by_n:
-                found.setdefault(item["id"], f"[AI] {(item.get('reason') or '오프토픽/재탕 의심').strip()}")
-    if not found:
+            if isinstance(item, dict) and isinstance(item.get("id"), int):
+                idx = item["id"] - 1
+                if idx in by_idx:
+                    remove.setdefault(idx, f"[AI] {(item.get('reason') or '오프토픽/재탕').strip()}")
+
+    if not remove:
         print(f"[qa] 주요 이슈 {len(issues)}건 모두 정상 — 이상 없음")
-        _summary(f"✅ 주요 이슈 {len(issues)}건 정상 (이상 없음)")
+        _summary(f"✅ 주요 이슈 {len(issues)}건 정상 (제거 없음)")
         return
-    theme_by_n = {it["n"]: it["theme"] for it in issues}
-    report = [f"- 이슈 #{n} «{theme_by_n.get(n, '')[:40]}»  ·  {found[n]}" for n in sorted(found)]
-    msg = f"⚠️ 주요 이슈 이상 의심 {len(found)}건(자동 삭제 안 함 — 사람 확인 권장):\n" + "\n".join(report)
+
+    report = [f"- 이슈 #{i+1} «{by_idx[i]['theme'][:40]}»  ·  {remove[i]}" for i in sorted(remove)]
+
+    # 안전장치: 과반 이상 제거는 오탐 가능성이 높음 → 자동 제거 중단하고 알림만.
+    if len(remove) > len(issues) // 2:
+        msg = (f"⚠️ 주요 이슈 이상 의심 {len(remove)}/{len(issues)}건 — 과반이라 자동 제거 보류(사람 확인 권장):\n"
+               + "\n".join(report))
+        print("[qa] " + msg)
+        _summary(msg)
+        return
+
+    targets = LIVE_FILES + _newest_archive_triplet()
+    done = 0
+    for f in targets:
+        if _remove_issues_from_file(f, set(remove)):
+            done += 1
+    msg = f"🧹 주요 이슈 QA — {len(remove)}/{len(issues)}건 자동 제거·재번호({done}개 파일):\n" + "\n".join(report)
     print("[qa] " + msg)
     _summary(msg)
+    _mark_qa(removed=report)
+
+
+def _mark_qa(removed=None):
+    """QA가 무언가 제거했음을 qa_last.json에 누적 기록(커밋 메시지 [QA] 표기·알림용)."""
+    data = {"removed": [], "run_id": os.environ.get("GITHUB_RUN_ID", "")}
+    try:
+        if os.path.exists("qa_last.json"):
+            data = json.load(open("qa_last.json", encoding="utf-8"))
+    except Exception:
+        pass
+    if removed:
+        data.setdefault("removed", []).extend(removed)
+    try:
+        json.dump(data, open("qa_last.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception:
+        pass
 
 
 def _summary(text):
@@ -307,15 +399,7 @@ def _review_gov():
     msg = f"🧹 정부 동향 QA — {len(flagged)}/{len(bullets)}건 자동 제거:\n" + "\n".join(report)
     print("[qa] " + msg)
     _summary(msg)
-    try:
-        json.dump(
-            {"removed": report, "run_id": os.environ.get("GITHUB_RUN_ID", "")},
-            open("qa_last.json", "w", encoding="utf-8"),
-            ensure_ascii=False,
-            indent=1,
-        )
-    except Exception:
-        pass
+    _mark_qa(removed=report)
 
 
 def main():
