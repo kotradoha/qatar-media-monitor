@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 .cache/
+qa_last.json
