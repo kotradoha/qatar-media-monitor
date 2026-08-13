@@ -2548,6 +2548,7 @@ TIMELINE = [
    "en": "US and Iran to resume talks Monday (8/4) — after the cancelled strike, Trump signals negotiations will begin and Iran urges Washington to honour a '60-day Hormuz opening' MoU. Iran's foreign ministry stresses the understanding is not a 'green light' to reopen Hormuz, which stays closed; Brent crude falls ~7% into the $80s on de-escalation hopes.",
    "ar": "استئناف المحادثات بين واشنطن وطهران الاثنين (4/8) — بعد إلغاء الضربة، يلمّح ترامب إلى بدء المفاوضات وتحثّ إيران واشنطن على احترام مذكرة تفاهم 'فتح هرمز 60 يوماً'. وتؤكد الخارجية الإيرانية أن التفاهم ليس 'ضوءاً أخضر' لإعادة فتح هرمز الذي يبقى مغلقاً؛ ويهبط خام برنت نحو 7% إلى نطاق الثمانينيات على آمال خفض التصعيد."},
   {"d": "2026-08-01", "q": False, "note": {"ko": "미국시각", "en": "U.S. time", "ar": "بتوقيت أمريكا"},
+   "link": ["KBS 뉴스", "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BbGxRRXpIR042WEkydUs2b2pZRko4MUpURjc3SDZTRFhUTXBFOW5DNEhMQjlqdzdNQWE4elA4MEoxMF85dzB3dnhRTlZVRGxMWXl1bFpycHloWEU?oc=5"],
    "ko": "트럼프, 이란 추가 대규모 공습 전격 취소 발표 — '합의의 윤곽' 마련·이란 등의 보류 요청 수용, 호르무즈 전면 개방과 '핵 위협' 종식을 조건으로 제시.",
    "en": "Trump abruptly cancels a planned large-scale strike on Iran, citing agreed 'parameters of a deal' and Tehran's request for a pause; sets full reopening of Hormuz and ending the 'nuclear threat' as conditions.",
    "ar": "ترامب يلغي فجأة ضربة واسعة مخطّطة على إيران، مشيراً إلى 'معالم اتفاق' وطلب طهران وقفاً؛ ويشترط إعادة فتح هرمز بالكامل وإنهاء 'التهديد النووي'."},
