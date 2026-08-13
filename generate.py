@@ -2776,6 +2776,14 @@ def _is_korean_link(name, url):
     return any(h in low for h in _KO_LINK_HINTS)
 
 
+def _is_direct_url(url):
+    """직접 기사 URL 여부 — 구글뉴스 RSS 리다이렉트가 아니고 255자 이하.
+    (엑셀은 하이퍼링크 대상이 255자를 넘으면 데스크톱에서 '복구 필요'로 링크를 제거함.
+     구글뉴스 리다이렉트 URL은 340~980자로 이 한도를 넘고, 클릭 시 원문으로 바로 열리지도 않음.)"""
+    return (isinstance(url, str) and url.startswith("http")
+            and "news.google.com" not in url and len(url) <= 255)
+
+
 # 사건별 '가장 정통한' 대표 기사(수기 확정 · 국문 우선). 키=(날짜, 본문 내 고유 substring).
 # WebSearch로 사건별 정통 기사를 교차확인해 확정. 자동 추출 링크(불투명/라이브블로그)보다 우선 적용.
 TL_LINKS = {
@@ -2831,6 +2839,18 @@ TL_LINKS = {
     ("2026-03-25", "다발 타격"): ("Jerusalem Post", "https://www.jpost.com/middle-east/iran-news/article-902870"),
     ("2026-03-23", "5일간 유예"): ("Stars and Stripes", "https://www.stripes.com/theaters/middle_east/2026-03-23/trump-power-plant-strikes-deadline-21157633.html"),
     ("2026-03-03", "off-ramps"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/3/3/oman-calls-for-immediate-ceasefire-says-off-ramps"),
+    # ── 8월 자동수집분(candidates) 직접 원문 교체(구글뉴스 리다이렉트 URL은 340~980자로 엑셀 255자
+    #     한도 초과·데스크톱 손상 유발 → WebSearch 교차확인한 안정적 직접 링크로 확정. 국문 우선). ──
+    ("2026-08-13", "기름 유출"): ("경향신문", "https://www.khan.co.kr/article/202608131545001/"),
+    ("2026-08-13", "59척"): ("ANI News", "https://www.aninews.in/news/world/us/us-forces-redirected-59-vessels-to-ensure-iran-blockade-centcom20260813022108/"),
+    ("2026-08-12", "테하마"): ("경향신문", "https://www.khan.co.kr/article/202608122043025/"),
+    ("2026-08-12", "국제에너지기구"): ("Business Standard", "https://www.business-standard.com/world-news/iea-slashes-2026-supply-forecast-as-hormuz-reopening-remains-elusive-126081201584_1.html"),
+    ("2026-08-11", "최종단계 진전"): ("Middle East Monitor", "https://www.middleeastmonitor.com/20260811-qatar-says-iran-oman-hormuz-talks-reached-advanced-stage-urges-reopening/"),
+    ("2026-08-11", "50년간"): ("경향신문", "https://www.khan.co.kr/article/202608112053015/"),
+    ("2026-08-10", "메카 협정"): ("경향신문", "https://www.khan.co.kr/article/202608092045005/"),
+    ("2026-08-10", "모카"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/8/10/houthis-renew-missile-and-drone-attacks-on-yemens-port-of-al-makha"),
+    ("2026-08-09", "은밀 출국"): ("워싱턴포스트", "https://www.washingtonpost.com/national-security/2026/08/10/trump-flew-secrecy-amid-iran-threat-air-force-one-became-decoy/"),
+    ("2026-08-01", "공습 전격 취소"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202608021138195895"),
 }
 
 
@@ -2850,8 +2870,12 @@ def _pick_tl_link(e, lang="ko"):
             if isinstance(x, (list, tuple)) and len(x) == 2 and isinstance(x[1], str) and x[1].startswith("http")]
     if not good:
         return None
-    ko = [g for g in good if _is_korean_link(*g)]
-    non = [g for g in good if not _is_korean_link(*g)]
+    # 직접 기사 URL(구글뉴스 RSS 리다이렉트 아님·255자 이하)을 우선 — 엑셀 하이퍼링크 255자 제한 회피 및
+    #   불투명·불안정한 구글뉴스 리다이렉트 대신 안정적인 원문 링크 사용(가능할 때). 없으면 기존 목록 사용.
+    direct = [g for g in good if _is_direct_url(g[1])]
+    pool = direct or good
+    ko = [g for g in pool if _is_korean_link(*g)]
+    non = [g for g in pool if not _is_korean_link(*g)]
     order = (ko or non) if lang == "ko" else (non or ko)
     return order[0]
 
@@ -3196,7 +3220,13 @@ var lc=col(headers.length-1);
 var hyper=[];   // 워크시트 관계 기반 하이퍼링크(HYPERLINK() 255자 제한이 없어 긴 구글뉴스 URL도 #VALUE! 없이 클릭 이동)
 var sd='<row r="1" ht="24" customHeight="1">'+cel(1,0,CFG.head,'3')+'</row>';   // 최상단 제목 행(중동 전쟁 타임라인)
 sd+='<row r="2">';headers.forEach(function(h,i){sd+=cel(2,i,h,'1');});sd+='</row>';
-body.forEach(function(row,ri){var r=ri+3;sd+='<row r="'+r+'">';row.forEach(function(v,ci){if(v&&typeof v==='object'&&v.link){hyper.push({ref:col(ci)+r,url:v.link});sd+=cel(r,ci,CFG.go,'4');}else{sd+=cel(r,ci,v,'2');}});sd+='</row>';});
+body.forEach(function(row,ri){var r=ri+3;sd+='<row r="'+r+'">';row.forEach(function(v,ci){
+  // 데스크톱 엑셀은 하이퍼링크 대상이 255자를 넘으면 '복구 필요'로 파일을 손상 처리 → 링크 제거.
+  //   255자 이하만 관계형 하이퍼링크로 걸고, 초과분은 안전하게 빈 셀로(웹 페이지의 ↗ 링크는 그대로 동작).
+  if(v&&typeof v==='object'&&v.link&&v.link.length<=255){hyper.push({ref:col(ci)+r,url:v.link});sd+=cel(r,ci,CFG.go,'4');}
+  else if(v&&typeof v==='object'&&v.link){sd+=cel(r,ci,'','2');}
+  else{sd+=cel(r,ci,v,'2');}
+});sd+='</row>';});
 var cols='<cols>';CFG.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
 var lr=body.length+2;
 var hl=hyper.length?('<hyperlinks>'+hyper.map(function(h,k){return '<hyperlink ref="'+h.ref+'" r:id="rId'+(k+1)+'"/>';}).join('')+'</hyperlinks>'):'';
