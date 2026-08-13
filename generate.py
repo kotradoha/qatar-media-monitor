@@ -2821,6 +2821,16 @@ TL_LINKS = {
     ("2026-06-11", "폐쇄 발표"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202606110818087737"),
     ("2026-03-25", "영향 점검"): ("에너지경제", "https://edata.ekn.kr/article/view/ekn202603250003"),
     ("2026-03-21", "디에고가르시아"): ("다음뉴스", "https://v.daum.net/v/20260322170202511"),
+    # ── 잔여분 영문 보강(국문 미확보) ──
+    ("2026-08-03", "단일 왕복"): ("globalsecurity", "https://www.globalsecurity.org/wmd/library/news/iran/2026/08/iran-260803-irna05.htm"),
+    ("2026-08-02", "최종 단계"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/8/2/iran-says-negotiations-with-oman-over-strait-of-hormuz-in-final-stages"),
+    ("2026-07-28", "사우디의 참전"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/7/29/saudi-arabia-us-carry-out-strikes-on-iran-backed-groups-in-iraq"),
+    ("2026-07-22", "홍해 남부"): ("CNBC", "https://www.cnbc.com/2026/07/22/houthis-red-sea-bab-el-mandeb-saudi-oil-iran.html"),
+    ("2026-06-25", "국제 대피"): ("CNN", "https://www.cnn.com/2026/06/25/middleeast/un-pauses-hormuz-evacuation-after-us-says-iran-behind-attack-intl-latam"),
+    ("2026-05-03", "프로젝트 프리덤"): ("CNN", "https://www.cnn.com/2026/05/04/middleeast/project-freedom-hormuz-guide-ships-intl-hnk-ml"),
+    ("2026-03-25", "다발 타격"): ("Jerusalem Post", "https://www.jpost.com/middle-east/iran-news/article-902870"),
+    ("2026-03-23", "5일간 유예"): ("Stars and Stripes", "https://www.stripes.com/theaters/middle_east/2026-03-23/trump-power-plant-strikes-deadline-21157633.html"),
+    ("2026-03-03", "off-ramps"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/3/3/oman-calls-for-immediate-ceasefire-says-off-ramps"),
 }
 
 
