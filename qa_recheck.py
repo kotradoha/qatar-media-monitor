@@ -157,6 +157,96 @@ def _remove_from_file(path, remove_url_sets):
     open(path, "w", encoding="utf-8").write(s[: m.start()] + new + s[m.end():])
 
 
+import difflib
+
+
+def _extract_issues(htmltext):
+    """주요 이슈 블록 — {n, theme, urls}. theme/urls는 블록 종료 마커 이전만 취해 안전하게 스코프."""
+    out = []
+    parts = re.split(r'<div class="issue">', htmltext)[1:]
+    for idx, p in enumerate(parts):
+        hm = re.search(r"<h2>(.*?)</h2>", p, re.S)
+        theme = re.sub(r"<[^>]+>", "", _html.unescape(hm.group(1))).strip() if hm else ""
+        body = p.split("</div></div></div></div>")[0]
+        urls = {u.split("?")[0] for u in re.findall(r'href="(https?://[^"]+)"', body)}
+        out.append({"n": idx + 1, "theme": theme, "urls": urls})
+    return out
+
+
+def _issue_det_flags(issues):
+    """결정론 탐지 — 링크 없음 / 중복(주제 유사도 기준. 이슈는 원문 공유가 정상이라 링크겹침만으론 판정 안 함)."""
+    flags = []
+    for it in issues:
+        if not it["urls"]:
+            flags.append((it["n"], "링크 없음(관련 보도 0건)"))
+    for i in range(len(issues)):
+        for j in range(i + 1, len(issues)):
+            a, b = issues[i], issues[j]
+            sim = difflib.SequenceMatcher(None, re.sub(r"\W", "", a["theme"]), re.sub(r"\W", "", b["theme"])).ratio()
+            ov = (len(a["urls"] & b["urls"]) / min(len(a["urls"]), len(b["urls"]))) if (a["urls"] and b["urls"]) else 0
+            if sim >= 0.7 or (ov >= 0.8 and sim >= 0.5):
+                flags.append((a["n"], f"이슈 #{b['n']}와 중복 의심(주제유사 {sim:.0%}, 링크겹침 {ov:.0%})"))
+    return flags
+
+
+def _issue_ai_flags(issues):
+    """AI 비평(이슈) — 오프토픽·과거 재탕 의심만 보수적으로. 실패 시 None."""
+    if not issues:
+        return []
+    lines = [f"{it['n']}: {it['theme']}" for it in issues]
+    prompt = (
+        "당신은 '카타르·중동 정세 뉴스 모니터링'의 '주요 이슈' 섹션 QA 심사관입니다. 각 이슈는 "
+        "'이번 기간의 중동 정세(미·이스라엘-이란 전쟁·역내 안보)·카타르·에너지(유가·LNG·호르무즈)·해운 리스크'와 "
+        "관련된 '현재 진행형' 사안이어야 합니다.\n"
+        "아래 [이슈 제목] 각각을 검사해, 다음 중 하나에 '확실히' 해당하는 것만 고르세요(애매하면 절대 고르지 마세요):\n"
+        "1) 오프토픽 — 중동 정세·카타르·에너지·해운과 무관(예: 타 지역 스포츠·연예·일반 경제).\n"
+        "2) 과거 재탕 — 이번 기간의 새 국면이 아니라 수개월 전 종료된 사건을 다시 소개하는 회고성.\n"
+        "정상(현재 진행 중인 중동/카타르/에너지 사안)이면 절대 고르지 마세요. 핵심 콘텐츠이므로 과도한 지목 금지.\n"
+        '출력은 오직 JSON: {"flag":[{"id":정수,"reason":"짧은 사유"}]} (해당 없으면 {"flag":[]}).\n\n'
+        "[이슈 제목]\n" + "\n".join(lines)
+    )
+    try:
+        out = G.gemini_generate(prompt, json_mode=True)
+    except Exception:
+        return None
+    if not out:
+        return None
+    try:
+        data = json.loads(G._extract_json(out))
+        return data.get("flag") if isinstance(data.get("flag"), list) else []
+    except Exception:
+        return None
+
+
+def _review_issues():
+    """주요 이슈 검증 — 탐지·알림 전용(자동 삭제하지 않음. 핵심 콘텐츠 오삭제 방지)."""
+    try:
+        live = open("index.html", encoding="utf-8").read()
+    except FileNotFoundError:
+        return
+    issues = _extract_issues(live)
+    if not issues:
+        return
+    found = {}  # n -> reason
+    for n, reason in _issue_det_flags(issues):
+        found.setdefault(n, f"[규칙] {reason}")
+    ai = _issue_ai_flags(issues)
+    if ai:
+        theme_by_n = {it["n"]: it["theme"] for it in issues}
+        for item in ai:
+            if isinstance(item, dict) and isinstance(item.get("id"), int) and item["id"] in theme_by_n:
+                found.setdefault(item["id"], f"[AI] {(item.get('reason') or '오프토픽/재탕 의심').strip()}")
+    if not found:
+        print(f"[qa] 주요 이슈 {len(issues)}건 모두 정상 — 이상 없음")
+        _summary(f"✅ 주요 이슈 {len(issues)}건 정상 (이상 없음)")
+        return
+    theme_by_n = {it["n"]: it["theme"] for it in issues}
+    report = [f"- 이슈 #{n} «{theme_by_n.get(n, '')[:40]}»  ·  {found[n]}" for n in sorted(found)]
+    msg = f"⚠️ 주요 이슈 이상 의심 {len(found)}건(자동 삭제 안 함 — 사람 확인 권장):\n" + "\n".join(report)
+    print("[qa] " + msg)
+    _summary(msg)
+
+
 def _summary(text):
     p = os.environ.get("GITHUB_STEP_SUMMARY")
     if p:
@@ -167,7 +257,7 @@ def _summary(text):
             pass
 
 
-def main():
+def _review_gov():
     try:
         live = open("index.html", encoding="utf-8").read()
     except FileNotFoundError:
@@ -226,6 +316,18 @@ def main():
         )
     except Exception:
         pass
+
+
+def main():
+    # 정부 동향(자동 제거)과 주요 이슈(탐지·알림)를 각각 독립 실행 — 한쪽 예외가 다른 쪽을 막지 않도록.
+    try:
+        _review_gov()
+    except Exception as ex:
+        print(f"[qa] 정부 동향 검증 예외(스킵): {ex}")
+    try:
+        _review_issues()
+    except Exception as ex:
+        print(f"[qa] 주요 이슈 검증 예외(스킵): {ex}")
 
 
 if __name__ == "__main__":
