@@ -2776,8 +2776,31 @@ def _is_korean_link(name, url):
     return any(h in low for h in _KO_LINK_HINTS)
 
 
+# 사건별 '가장 정통한' 대표 기사(수기 확정 · 국문 우선). 키=(날짜, 본문 내 고유 substring).
+# WebSearch로 사건별 정통 기사를 교차확인해 확정. 자동 추출 링크(불투명/라이브블로그)보다 우선 적용.
+TL_LINKS = {
+    ("2026-08-13", "미측 장악"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202608130703172272"),
+    ("2026-07-30", "이집트 최초 피격"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202607300211207230"),
+    ("2026-07-27", "13일 연속"): ("뉴스1", "https://www.news1.kr/world/usa-canada/6239002"),
+    ("2026-07-13", "20% 통행료"): ("MBC 뉴스", "https://imnews.imbc.com/replay/2026/nwtoday/article/6837176_37012.html"),
+    ("2026-07-12", "아버지 아미르"): ("경향신문", "https://www.khan.co.kr/article/202607122307001/"),
+    ("2026-07-01", "중재국과 각각 회동"): ("뉴스핌", "https://www.newspim.com/news/view/20260701001464"),
+    ("2026-06-28", "첫 사망자"): ("헤럴드경제", "https://biz.heraldcorp.com/article/10790765"),
+    ("2026-06-21", "바르잔"): ("뉴시스", "https://www.newsis.com/view/NISX20260622_0003679088"),
+    ("2026-03-24", "불가항력"): ("Al Jazeera", "https://www.aljazeera.com/news/2026/3/24/qatarenergy-declares-force-majeure-on-some-lng-contracts"),
+    ("2026-03-18", "가스시설을 타격"): ("머니투데이", "https://www.mt.co.kr/world/2026/03/24/2026032423475066614"),
+    ("2026-03-02", "F-15"): ("Air Data News", "https://www.airdatanews.com/qatar-confirms-f-15qa-fighters-shot-down-iranian-su-24-bombers/"),
+    ("2026-02-28", "이란 보복 개시"): ("뉴스1", "https://www.news1.kr/world/middleeast-africa/6098581"),
+}
+
+
 def _pick_tl_link(e, lang="ko"):
-    """엔트리의 대표 기사 링크 (name, url). 국문 페이지는 국문 기사 우선, 그 외는 영문 우선. 없으면 None."""
+    """엔트리의 대표 기사 링크 (name, url). 수기 확정(TL_LINKS) 우선, 그다음 엔트리 link/links.
+    국문 페이지는 국문 기사 우선, 그 외는 영문 우선. 없으면 None."""
+    d, ko = e.get("d", ""), e.get("ko", "")
+    for (kd, sub), v in TL_LINKS.items():
+        if kd == d and sub in ko:
+            return (v[0], v[1])
     lk = e.get("link")
     if isinstance(lk, str) and lk.startswith("http"):
         return ("", lk)
@@ -2810,7 +2833,6 @@ def _timeline_rows(lang="ko"):
             datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi}월 {di}일</span>'
         else:
             datestr = f'<span class="tly">{y}</span><span class="tlmd">{mi:02d}/{di:02d}</span>'
-        dotcls = " q" if any(it.get("q") for it in items) else ""
         item_html = []
         for e in items:
             note = e.get("note", {}).get(lang, "") if e.get("note") else ""
@@ -2824,7 +2846,7 @@ def _timeline_rows(lang="ko"):
                 f'<span class="tltext">{qbadge}{esc(e.get(lang) or e.get("ko"))}{note_html}</span>'
                 f'{link_html}</div>')
         rows.append(
-            f'<div class="tlrow"><div class="tldot{dotcls}"></div>'
+            f'<div class="tlrow"><div class="tldot"></div>'
             f'<div class="tldate">{datestr}</div>'
             f'<div class="tlbody">{"".join(item_html)}</div></div>')
     return '<div class="tlwrap">' + "".join(rows) + '</div>'
@@ -3834,7 +3856,6 @@ TIMELINE_PAGE = """<!DOCTYPE html>
     border:1px solid var(--line);border-radius:6px;padding:0 6px;transition:color .12s,border-color .12s}}
   .tllink:hover{{color:var(--gold);border-color:var(--gold)}}
   .tlnote{{color:var(--muted);font-weight:400}}
-  .tldot.q{{background:#fff;border:2px solid var(--qmaroon);width:13px;height:13px;inset-inline-start:93px;top:3px}}
   .tlq{{display:inline-block;font-size:10px;font-weight:800;color:#fff;background:var(--qmaroon);
     border-radius:5px;padding:0 6px;margin-inline-start:6px;margin-inline-end:6px;vertical-align:middle;white-space:nowrap}}
   .tlsrc{{margin-top:22px;padding-top:12px;border-top:1px solid var(--line);
@@ -3863,7 +3884,6 @@ TIMELINE_PAGE = """<!DOCTYPE html>
     .tlrow{{grid-template-columns:54px 1fr;gap:0 16px}}
     .tldate .tlmd{{font-size:12px}}
     .tldot{{inset-inline-start:59px}}
-    .tldot.q{{inset-inline-start:58px}}
     .tlpage-h{{font-size:17px}}
   }}
   /* A4 인쇄 최적화 */
