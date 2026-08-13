@@ -545,7 +545,7 @@ LANG = {
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
-  "tl_all": "전체", "tl_qonly": "카타르만", "tl_qex": "카타르 제외", "tl_dl": "⬇ 엑셀 다운로드", "tl_c_date": "날짜", "tl_c_cat": "구분", "tl_c_event": "사건", "tl_c_detail": "상세", "tl_cat_gen": "일반", "tl_fname": "중동전쟁_타임라인", "tl_sheet": "타임라인",
+  "tl_all": "전체", "tl_qonly": "카타르만", "tl_qex": "카타르 제외", "tl_dl": "⬇ 엑셀 다운로드", "tl_c_date": "날짜", "tl_c_cat": "구분", "tl_c_event": "사건", "tl_c_detail": "상세", "tl_c_link": "관련 기사", "tl_link_go": "바로가기", "tl_cat_gen": "일반", "tl_fname": "중동전쟁_타임라인", "tl_sheet": "타임라인",
   "gov_head": "🏛️ 정세 관련 카타르 정부 동향", "gov_head_wk": "🏛️ 지난주 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
   "foot": ("본 페이지는 카타르·이란·기타 주요 국가 및 한국의 공개 언론 보도와 유관기관 자료를 자동으로 수집·요약합니다. "
            "뉴스는 Google 뉴스 RSS 피드와 네이버 뉴스 검색, 알자지라·BBC 등 매체 RSS를 카타르·중동·에너지 등 키워드로 조회해 모으고, "
@@ -597,7 +597,7 @@ LANG = {
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
-  "tl_all": "All", "tl_qonly": "Qatar only", "tl_qex": "Exclude Qatar", "tl_dl": "⬇ Download Excel", "tl_c_date": "Date", "tl_c_cat": "Category", "tl_c_event": "Event", "tl_c_detail": "Details", "tl_cat_gen": "General", "tl_fname": "MiddleEast_War_Timeline", "tl_sheet": "Timeline",
+  "tl_all": "All", "tl_qonly": "Qatar only", "tl_qex": "Exclude Qatar", "tl_dl": "⬇ Download Excel", "tl_c_date": "Date", "tl_c_cat": "Category", "tl_c_event": "Event", "tl_c_detail": "Details", "tl_c_link": "Article", "tl_link_go": "Open", "tl_cat_gen": "General", "tl_fname": "MiddleEast_War_Timeline", "tl_sheet": "Timeline",
   "gov_head": "🏛️ Qatar government activity", "gov_head_wk": "🏛️ Last week — Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
   "foot": ("This page automatically collects and summarizes public news coverage and material from relevant institutions "
            "across Qatar, Iran, other major countries and Korea. News is gathered by querying Google News RSS feeds, Naver News search, "
@@ -651,7 +651,7 @@ LANG = {
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
-  "tl_all": "الكل", "tl_qonly": "قطر فقط", "tl_qex": "استثناء قطر", "tl_dl": "⬇ تنزيل Excel", "tl_c_date": "التاريخ", "tl_c_cat": "الفئة", "tl_c_event": "الحدث", "tl_c_detail": "التفاصيل", "tl_cat_gen": "عام", "tl_fname": "timeline_alsharq_alawsat", "tl_sheet": "الجدول الزمني",
+  "tl_all": "الكل", "tl_qonly": "قطر فقط", "tl_qex": "استثناء قطر", "tl_dl": "⬇ تنزيل Excel", "tl_c_date": "التاريخ", "tl_c_cat": "الفئة", "tl_c_event": "الحدث", "tl_c_detail": "التفاصيل", "tl_c_link": "المقال", "tl_link_go": "فتح", "tl_cat_gen": "عام", "tl_fname": "timeline_alsharq_alawsat", "tl_sheet": "الجدول الزمني",
   "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_head_wk": "🏛️ الأسبوع الماضي — نشاط الحكومة القطرية", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
   "foot": ("تجمّع هذه الصفحة وتلخّص تلقائيًا التغطيات الإعلامية العامة ومواد الجهات المعنية في قطر وإيران وسائر الدول الرئيسية وكوريا. "
            "تُجمَع الأخبار عبر استعلام خلاصات Google News RSS وبحث أخبار Naver وخلاصات RSS لوسائل الإعلام (الجزيرة وBBC وغيرها) "
@@ -3138,17 +3138,20 @@ def render_timeline_page(lang="ko"):
     for e in _timeline_entries():
         txt = e.get(lang) or e.get("ko")
         parts = txt.split(" — ", 1)
+        lk = _pick_tl_link(e, lang)
         tldata.append({"iso": e["d"], "q": 1 if e.get("q") else 0,
-                       "title": parts[0].strip(), "detail": (parts[1].strip() if len(parts) > 1 else "")})
+                       "title": parts[0].strip(), "detail": (parts[1].strip() if len(parts) > 1 else ""),
+                       "link": (lk[1] if lk else "")})
     cfg = {
         "data": tldata,
         "c_date": L["tl_c_date"], "c_cat": L["tl_c_cat"], "c_event": L["tl_c_event"], "c_detail": L["tl_c_detail"],
+        "c_link": L["tl_c_link"], "go": L["tl_link_go"],
         "catq": L["tl_q"], "catgen": L["tl_cat_gen"],
         "fname": L["tl_fname"], "sheet": L["tl_sheet"],
         # 타임라인은 2026.2.28. 발발 이후 누적 자료 → 제목에 '다운로드 시점(오늘) 기준' 표기
         "head": L["tl_head"] + " · " + _tl_asof(lang),
         "date": datetime.now(TZ).strftime("%Y%m%d"),   # 다운로드 파일명 날짜 접미사(_YYYYMMDD)
-        "widths": [13, 9, 40, 60],
+        "widths": [13, 9, 39, 54, 11],
     }
     tlscript = _TL_SCRIPT.replace("__CFG__", json.dumps(cfg, ensure_ascii=False))
     return TIMELINE_PAGE.format(
@@ -3188,15 +3191,17 @@ all.forEach(function(x){out.set(x,p);p+=x.length;});return out;}
 function X(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function col(c){var s='';c++;while(c>0){var m=(c-1)%26;s=String.fromCharCode(65+m)+s;c=Math.floor((c-1)/26);}return s;}
 function cel(r,c,v,st){return '<c r="'+col(c)+r+'" t="inlineStr" s="'+st+'"><is><t xml:space="preserve">'+X(v)+'</t></is></c>';}
+// 하이퍼링크 셀 — HYPERLINK 수식으로 '바로가기' 버튼처럼(URL 원문 대신 짧은 텍스트, 클릭 시 기사로 이동)
+function celLink(r,c,url,text,st){return '<c r="'+col(c)+r+'" t="str" s="'+st+'"><f>HYPERLINK(&quot;'+X(url)+'&quot;,&quot;'+X(text)+'&quot;)</f><v>'+X(text)+'</v></c>';}
 function buildXlsx(headers,body){
 var lc=col(headers.length-1);
 var sd='<row r="1" ht="24" customHeight="1">'+cel(1,0,CFG.head,'3')+'</row>';   // 최상단 제목 행(중동 전쟁 타임라인)
 sd+='<row r="2">';headers.forEach(function(h,i){sd+=cel(2,i,h,'1');});sd+='</row>';
-body.forEach(function(row,ri){var r=ri+3;sd+='<row r="'+r+'">';row.forEach(function(v,ci){sd+=cel(r,ci,v,'2');});sd+='</row>';});
+body.forEach(function(row,ri){var r=ri+3;sd+='<row r="'+r+'">';row.forEach(function(v,ci){if(v&&typeof v==='object'&&v.link){sd+=celLink(r,ci,v.link,CFG.go,'4');}else{sd+=cel(r,ci,v,'2');}});sd+='</row>';});
 var cols='<cols>';CFG.widths.forEach(function(w,i){cols+='<col min="'+(i+1)+'" max="'+(i+1)+'" width="'+w+'" customWidth="1"/>';});cols+='</cols>';
 var lr=body.length+2;
 var sheet='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><dimension ref="A1:'+lc+lr+'"/><sheetViews><sheetView workbookViewId="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><sheetFormatPr defaultRowHeight="15"/>'+cols+'<sheetData>'+sd+'</sheetData><autoFilter ref="A2:'+lc+lr+'"/><mergeCells count="1"><mergeCell ref="A1:'+lc+'1"/></mergeCells><pageMargins left="0.5" right="0.5" top="0.6" bottom="0.6" header="0.3" footer="0.3"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/></worksheet>';
-var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="3"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="4"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" xfId="0" applyFont="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
+var styles='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="4"><font><sz val="10"/><name val="Calibri"/></font><font><b/><sz val="10"/><color rgb="FFFFFFFF"/><name val="Calibri"/></font><font><b/><sz val="14"/><name val="Calibri"/></font><font><u/><color rgb="FF0563C1"/><sz val="10"/><name val="Calibri"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2F4A6E"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFBFBFBF"/></left><right style="thin"><color rgb="FFBFBFBF"/></right><top style="thin"><color rgb="FFBFBFBF"/></top><bottom style="thin"><color rgb="FFBFBFBF"/></bottom></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="5"><xf xfId="0"/><xf fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf fontId="2" xfId="0" applyFont="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf fontId="3" fillId="0" borderId="1" xfId="0" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>';
 var sn=X(CFG.sheet).slice(0,31);
 var wb='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="'+sn+'" sheetId="1" r:id="rId1"/></sheets><definedNames><definedName name="_xlnm.Print_Titles" localSheetId="0">\''+sn+'\'!$2:$2</definedName></definedNames></workbook>';
 var wbr='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>';
@@ -3204,8 +3209,8 @@ var ct='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="htt
 var rels='<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>';
 return zip([{name:'[Content_Types].xml',data:SB(ct)},{name:'_rels/.rels',data:SB(rels)},{name:'xl/workbook.xml',data:SB(wb)},{name:'xl/_rels/workbook.xml.rels',data:SB(wbr)},{name:'xl/styles.xml',data:SB(styles)},{name:'xl/worksheets/sheet1.xml',data:SB(sheet)}]);}
 function dl(){var d=CFG.data.filter(function(e){return cur==='all'||(cur==='q'&&e.q)||(cur==='ex'&&!e.q);});
-var headers=[CFG.c_date,CFG.c_cat,CFG.c_event,CFG.c_detail];
-var body=d.map(function(e){return [e.iso,e.q?CFG.catq:CFG.catgen,e.title,e.detail];});
+var headers=[CFG.c_date,CFG.c_cat,CFG.c_event,CFG.c_detail,CFG.c_link];
+var body=d.map(function(e){return [e.iso,e.q?CFG.catq:CFG.catgen,e.title,e.detail,e.link?{link:e.link}:''];});
 var bytes=buildXlsx(headers,body);
 var blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
 var suf=cur==='q'?'_qatar':(cur==='ex'?'_ex-qatar':'');
