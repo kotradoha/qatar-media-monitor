@@ -2806,6 +2806,16 @@ TL_LINKS = {
     ("2026-03-03", "알우데이드"): ("Stars and Stripes", "https://www.stripes.com/theaters/middle_east/2026-03-04/air-base-qatar-missile-20946551.html"),
     ("2026-03-02", "호르무즈 해협 봉쇄"): ("경향신문", "https://www.khan.co.kr/article/202603011702001"),
     ("2026-03-01", "초등학교"): ("한국일보", "https://www.hankookilbo.com/news/article/A2026031115530001932"),
+    ("2026-07-01", "4개월째"): ("YTN", "https://www.ytn.co.kr/_ln/0104_202607230722171862"),
+    ("2026-06-06", "240억"): ("오마이뉴스", "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003241034"),
+    ("2026-04-11", "이슬라마바드 회담"): ("뉴시스", "https://www.newsis.com/view/NISX20260412_0003587397"),
+    ("2026-04-01", "순항미사일"): ("헤럴드경제", "https://biz.heraldcorp.com/article/10801417"),
+    ("2026-03-11", "밤사이"): ("블록미디어", "https://www.blockmedia.co.kr/archives/1055789"),
+    ("2026-07-26", "바브엘만데브 원유"): ("아주경제", "https://www.ajunews.com/view/20260727133426254"),
+    ("2026-07-18", "요르단"): ("파이낸셜뉴스", "https://www.fnnews.com/news/202607190628144791"),
+    ("2026-06-20", "다시 봉쇄"): ("한국일보", "https://www.hankookilbo.com/news/article/A2026062022180001066"),
+    ("2026-06-18", "봉쇄 해제"): ("NPR", "https://www.npr.org/2026/06/18/nx-s1-5863517/trump-iran-deal-blockade-strait-hormuz"),
+    ("2026-02-28", "동시 기습"): ("문화일보", "https://www.munhwa.com/article/11571348"),
 }
 
 
