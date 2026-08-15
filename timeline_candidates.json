@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-08-15",
+  "ko": "트럼프, 호르무즈해협 '미국 영토' 선언 방침 발표 — 이란 즉각 반발 '허황된 망상'이라며 강력 반박, 대이란 고강도 경제제재도 예고",
+  "en": "Trump announces plan to declare Strait of Hormuz US 'territory' — Iran immediately rejects claim as 'delusional fantasy', Trump also vows harsh new economic sanctions on Iran",
+  "ar": "ترامب يعلن نيته إعلان مضيق هرمز 'أرضا أمريكية' — إيران ترد فورا بوصف الادعاء بأنه 'وهم' وترامب يتوعد بعقوبات اقتصادية قاسية جديدة على إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOcVB5dGNMR1YxSjJOalozOFVGZEZKVHdJX00wSTNRd1BWSUp6b0ZkQUxFZTlVSkFJNGpzSkNOQmN6TTJiQ1Y3Zmw0RTJKVzg4YUtVNmkyMDdXVEhXazYyTkJXSVEyTDR5amNmdkQwN20tNEdTOGUzdnZoV0Vjel8xZ3RheGxYYXJRNU5CdWhzazNOVVVORnRfTkhUeTVXeHlaTHhCcTZtT3BvaXlwWVJyS2xRRVpOVVFMTjJwUtIBwgFBVV95cUxON1dNdkU4Y1lYWHpaWC1Md1FFN2ZIZm1kTXdpM2FLN3EycTJKaGVsWkZmY0wwX21Wd3FtbzNtdmdjSkM0b3FlSDd5dUw5eEFndUdId1RPMGVRcnUtS2pqNnhONVZ6cHFUMi1hT05mcFVERFk4c2JybjdJTTMyc1IzLVV4SDZzS1hyZjZuaHBNWkFNbG9GR1lfZkdBTjV0U1NGMEs2REpKUGJweGtSN3g1cS1kNm1kY2k1S29ETGwySGNZUQ?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/8/15/iran-war-live-trump-vows-to-make-hormuz-us-territory-pretty-soon?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxQN3VTcXZFMVAzTFpCQlBnMkgtUGhUUVZwX1RBc1dWSmE5VjdVMGtaOHRjZ2p1WVVJblBrc1NTS1h4M2NsSlp0S2JFdE0tdG1jclJvaDUyYjItYjRJdG8ydXVxYmNJUTB1Mms2MnBtbUxFX1gxRHpJZk45MjJZcnFzdFpXTVZJUF95aDA1N01iWnAzOVcxaVBaMGw1dnVkNTVS0gGmAUFVX3lxTE5MMUR6ME9RMmxiak9JbXNhYmJGYlo0MmptbVhpa2ZaWERsTWpvczB4dk9YVS1sVTl3RUM2U2J0TE5ua2F5eFREQXEwTVJZTkY2ZkhRVENadUtOMlR6eXNHWUUyalRZVE1oRDlsdTJuZFdEWGQ0b1BrdGdpbWxjWF9kWlpmWjRheHQ1dW8xU3JuMWwxYS1uQ1IwTVlHblZYMTBESncxZEE?oc=5"
+   ]
+  ],
+  "first_seen": "20260815-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-14",
   "ko": "UAE, 호르무즈해협서 아드녹(ADNOC) 선박 2척 피격 발표 — 부상자 없음, 이란은 관여 부인하며 해협 통제권 강조",
   "en": "UAE says two ADNOC vessels attacked in Strait of Hormuz — no injuries reported; Iran denies involvement, asserts control of strait",
@@ -193,6 +218,73 @@
    ]
   ],
   "first_seen": "20260814-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-14",
+  "ko": "이란 IRGC, 호르무즈 상공서 미군 MQ-9 리퍼 드론 격추 재발 — 호르무즈해협 상공서 이란 방공부대가 미군 무인기 격추했다고 발표(이란측 주장)",
+  "en": "Iran's IRGC shoots down US MQ-9 Reaper drone over Hormozgan again — Iranian air defense claims downing of US drone over Strait of Hormuz",
+  "ar": "الحرس الثوري الإيراني يسقط طائرة أمريكية مسيّرة من طراز MQ-9 فوق هرمزجان مجددا — إعلان إيراني بإسقاط طائرة أمريكية بدون طيار فوق مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/246956/IRGC-shoots-down-US-MQ-9-drone-over-Hormozgan"
+   ]
+  ],
+  "first_seen": "20260815-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-14",
+  "ko": "UAE ADNOC 유조선, 호르무즈해협 통과 중 피격 — 사우디·UAE 강력 규탄, 후티 '사우디 함정·용병 겨냥' 주장 속 긴장 고조",
+  "en": "UAE ADNOC tanker attacked while transiting Strait of Hormuz — Saudi Arabia condemns strike as tensions escalate amid Houthi claims of targeting Saudi vessels",
+  "ar": "هجوم على ناقلة تابعة لأدنوك الإماراتية أثناء عبورها مضيق هرمز — السعودية تدين الهجوم بشدة وسط تصاعد التوتر وادعاءات حوثية باستهداف سفن سعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-condemns-attack-uae-tankers-hormuz"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVTFuRVhHeWl1X2RXS0d4eWt2UjdyMkpGdFdqbTVtNTM1clp6NEtxUUZGbjJFY3NxT3g4QjQzRlhBZ3BMdEhfOWtEaS1LUE5LX2Q5RXpySTdIT1hVaFduSUVNcnRqaUtpQ0wxcFI3cC1GTHhJVzFCbmhsdEE2ZHJUTWd3dmhXYlg1a293RTFMQXVudnZLcF8ydS1fUW14R0t0QXppbWtTQzJIR3BrblhN?oc=5"
+   ],
+   [
+    "reuters.com",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbEFoM0Z1VnBsRUlGMUtsU3pXUWd6WUVvVW84ak5jbVpIZ25ld1VfR3RITUJ4MEx1ZTRJaGdXSDRadGVRNThPMzFlOVNsNWo4QzV2eTMzVmoxb1RDSE5QNXZkQ1d3bl9oSk85SUFxNEgxU1N6ME9UWHJ6dENMZmk1LWhacTJreTc4VlgtaGRxaFVQbFltR2UwMVN3Z1V3WUJLeHdDNy0wU0NldXRLaVA0NVY5WTZLQ1NOQjJQQWFHSjMtMk9icXc?oc=5"
+   ]
+  ],
+  "first_seen": "20260815-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-14",
+  "ko": "예멘 알마카 항구 후티 탄도미사일 공격으로 최소 4명 사망 — 정부군 지역 겨냥 6발 발사, 예멘정부-후티 휴전 균열 심화",
+  "en": "Houthi ballistic missile attack on al-Makha port kills at least four — six missiles fired at Yemen government-held port, eroding truce with Houthis",
+  "ar": "هجوم صاروخي حوثي على ميناء المخا يقتل أربعة على الأقل — إطلاق ستة صواريخ باليستية على الميناء الخاضع للحكومة اليمنية وسط تصدع الهدنة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/8/14/houthi-attack-on-port-kills-four-eroding-truce-with-yemens-government?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTVBOTXhzdU1DUmFZVk9lVmFiYXZUZndyUlRuQzA5TGRfNm9NRUg1eGtzZEc3TzZsVlloQTFMVWxBMVFsUlJWOUx3M2xENVp0c0xDYTgwYnhlU3llY1hfMjBKVm10cU1JYlJxYXZNQWoyaGR6Q3JFSDZ0OXhBVlcwNmwtOUtla2t1dGhwOGhEUFl2clZKQjM2TFF1SHZSNEE0QTRKTkJwYXZpVHkydUHSAbMBQVVfeXFMTWFYbkV5dmRyZUFsaHF6UUxfTlM0c3J1dGZoNDQ3ZTlxTFVJMnJsblZFVFBjUEJkSEt1TDJJTEhVVVotX19ZQWtKdlh0TURJWVZSNEJSempWX3VYU0FiSXdld1hsY2JRaElMM2pEdUVEZnVPTFpsalIxbVE1UlcyTFpLeFJRUW4wd0lZbjlESWFjY0dfaHBENjAzQjloUWQwQ3hrRXZpYWdValk1TnRUajhpSkk?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-says-houthi-attack-al-mokha-killed-four-civilians"
+   ]
+  ],
+  "first_seen": "20260815-0700",
   "status": "pending"
  },
  {
