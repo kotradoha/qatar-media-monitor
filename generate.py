@@ -4247,6 +4247,85 @@ def _resolve_article_url(x):
     return None
 
 
+# ── 표시용 링크 원문 승격 ─────────────────────────────────────────────
+# 정부동향 등 화면 링크는 구글뉴스 RSS 래퍼(news.google.com/rss/articles/…)로 붙는다.
+#   라벨(BBC 등)은 맞지만 클릭 시 구글뉴스를 거친다 → 실제 원문 URL로 승격(가능한 것만).
+#   해석은 네트워크가 필요 → 실제 발행 실행(GitHub Actions)에서만 동작, 실패 시 원본 유지(안전).
+#   회차 간 유지되는 커밋 캐시(gnews_urls.json)와 회차 예산으로 지연을 억제.
+_GNEWS_URL_CACHE = None
+_GNEWS_RESOLVE_BUDGET = [40]        # 회차당 실제 네트워크 해석 상한(지연 폭주 방지)
+
+
+def _load_gnews_cache():
+    global _GNEWS_URL_CACHE
+    if _GNEWS_URL_CACHE is None:
+        try:
+            with open("gnews_urls.json", encoding="utf-8") as fh:
+                d = json.load(fh)
+            _GNEWS_URL_CACHE = d if isinstance(d, dict) else {}
+        except Exception:
+            _GNEWS_URL_CACHE = {}
+    return _GNEWS_URL_CACHE
+
+
+def _save_gnews_cache():
+    if _GNEWS_URL_CACHE is None:
+        return
+    try:
+        with open("gnews_urls.json", "w", encoding="utf-8") as fh:
+            json.dump(_GNEWS_URL_CACHE, fh, ensure_ascii=False, indent=0)
+    except Exception as ex:
+        print(f"[warn] gnews_urls.json save failed: {ex}")
+
+
+def _resolve_display_url(url):
+    """구글뉴스 래퍼 URL → 실제 원문 URL. 실패 시 원본 반환(브라우저에선 리다이렉트로 동작)."""
+    if not url or ("news.google.com" not in url and "/rss/articles/" not in url):
+        return url
+    cache = _load_gnews_cache()
+    if url in cache:                       # 성공(원문)·실패("") 모두 캐시 → 재시도 안 함
+        return cache[url] or url
+    if _GNEWS_RESOLVE_BUDGET[0] <= 0:
+        return url
+    _GNEWS_RESOLVE_BUDGET[0] -= 1
+    real = None
+    try:
+        real = _resolve_article_url({"link": url})
+    except Exception as ex:
+        _diag(f"[gov] url resolve fail: {ex}")
+    if real and real.startswith("http") and "news.google.com" not in real:
+        cache[url] = real
+        return real
+    cache[url] = ""                        # 해석 실패 기록(다음 회차 재시도 방지) → 원본 사용
+    return url
+
+
+def _resolve_gov_links(gov):
+    """정부동향 각 불릿의 관련보도 링크를 실제 원문 URL로 승격(가능한 것만). 그 외는 원본 유지."""
+    if not gov:
+        return gov
+    changed = 0
+    for g in gov:
+        if not isinstance(g, dict) or not g.get("links"):
+            continue
+        nl = []
+        for pair in g["links"]:
+            try:
+                s, u = pair[0], pair[1]
+            except Exception:
+                nl.append(pair)
+                continue
+            ru = _resolve_display_url(u)
+            if ru != u:
+                changed += 1
+            nl.append([s, ru])
+        g["links"] = nl
+    if changed:
+        print(f"[info] gov links resolved to source URLs: {changed}")
+    _save_gnews_cache()
+    return gov
+
+
 def _fulltext(x):
     """근거용 기사 본문(best-effort). 실패 시 ''. 링크 기준 캐시 + 회차 예산 상한."""
     link = x.get("link") or ""
@@ -4632,6 +4711,7 @@ def main():
         print(f"[warn] fact-verification skipped(daily): {ex}")
     gov_ko = _dedup_gov(gov_ko)   # 같은 사안이 여러 불릿으로 갈린 중복 병합(검증 후 최종 정리)
     gov_ko = _gov_sanity_filter(gov_ko)   # 카타르 주체·행위 없는 추측/파편 불릿 결정론적 제거
+    gov_ko = _resolve_gov_links(gov_ko)   # 관련보도 링크를 구글뉴스 래퍼 → 실제 원문 URL로 승격(가능한 것만)
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
     os.makedirs("archive", exist_ok=True)
@@ -4676,6 +4756,7 @@ def main():
             print(f"[warn] fact-verification skipped(weekly): {ex}")
         gov_wk_ko = _dedup_gov(gov_wk_ko)   # 주간 정부 동향도 동일 사안 중복 병합
         gov_wk_ko = _gov_sanity_filter(gov_wk_ko)   # 주간도 주체·행위 없는 추측/파편 불릿 제거
+        gov_wk_ko = _resolve_gov_links(gov_wk_ko)   # 주간 정부동향 링크도 실제 원문 URL로 승격
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)
         witems_win = [x for x in witems if x["dt"] >= new_since_weekly]
