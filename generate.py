@@ -119,7 +119,11 @@ Q_REPORTS_KO = ["대외경제정책연구원 중동", "에너지경제연구원 
                 "석유공사 국제유가 전망", "산업연구원 에너지 안보", "국립외교원 중동", "아산정책연구원 중동",
                 "세종연구소 중동", "자본시장연구원 유가", "삼정KPMG 에너지", "딜로이트 중동 전망",
                 "한국은행 중동 국제유가", "삼일PwC 에너지 공급망", "맥킨지 중동 에너지",
-                "BCG 공급망 리스크 중동", "커니 공급망 전망"]
+                "BCG 공급망 리스크 중동", "커니 공급망 전망",
+                # 필수 보강(안보·해운·금융·경제 — 정세와 그 경제·물류 여파)
+                "한국해양수산개발원 호르무즈 해운", "KMI 중동 물류", "한국국방연구원 중동 이란",
+                "KIDA 호르무즈", "국가안보전략연구원 중동", "INSS 이란", "한국금융연구원 국제유가",
+                "한국경제연구원 중동 리스크", "포스코경영연구원 유가 공급망"]
 # 해외 연구기관·국제기구 리포트 수집용(영문)
 Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Middle East analysis",
                 "Crisis Group Iran Gulf", "IEA oil market report Middle East", "OPEC monthly oil report",
@@ -133,7 +137,17 @@ Q_REPORTS_EN = ["IISS Middle East report", "Chatham House Gulf Iran", "CSIS Midd
                 "GECF gas market Qatar report", "IEEFA Middle East energy crisis",
                 "AGSIW Gulf Qatar analysis", "Washington Institute Iran Gulf policy",
                 "Control Risks Middle East supply chain", "Fitch Moody's Gulf sovereign Middle East",
-                "Columbia energy policy Middle East oil", "Atlantic Council Gulf energy"]
+                "Columbia energy policy Middle East oil", "Atlantic Council Gulf energy",
+                # 필수 보강 — 이 전쟁의 핵심 분석처(안보·이란·걸프·해운·에너지흐름)
+                "Institute for the Study of War Iran update", "ISW Iran campaign assessment",
+                "Quincy Institute Iran Gulf", "Responsible Statecraft Iran",
+                "CNAS Iran Middle East security", "Belfer Center Iran nuclear Gulf",
+                "Gulf International Forum Qatar Iran", "TRENDS Research Abu Dhabi Gulf",
+                "Rasanah Iranian studies Gulf", "Soufan Center Iran Middle East",
+                "Institute of International Finance Gulf Middle East", "Bourse Bazaar Iran economy",
+                "Kpler Hormuz crude oil flows", "Vortexa tanker Strait of Hormuz",
+                "Energy Intelligence Gulf oil", "Amwaj media Iran Gulf analysis",
+                "RAND Iran Gulf report", "Stratfor RANE Middle East"]
 
 QATAR_KW = ["qatar", "doha", "al udeid", "al-udeid", "udeid", "ras laffan", "hamad",
             "카타르", "도하", "알우데이드", "라스라판", "하마드",
@@ -256,6 +270,17 @@ REPORT_HINTS = [
     "oxford business group",
     # 한국(추가)
     "한국은행", "bank of korea",
+    # ── 필수 보강: 한국 안보·해운·금융·경제 ──
+    "한국해양수산개발원", "kmi", "한국국방연구원", "kida", "국가안보전략연구원", "inss",
+    "한국금융연구원", "kif", "한국경제연구원", "keri",
+    # ── 필수 보강: 글로벌 안보·이란·걸프·해운/에너지흐름 인텔리전스 ──
+    "institute for the study of war", "understanding war", "isw",
+    "quincy institute", "responsible statecraft",
+    "center for a new american security", "cnas", "belfer", "belfer center",
+    "gulf international forum", "gulfif", "trends research", "trendsresearch",
+    "rasanah", "soufan", "soufan center",
+    "institute of international finance", "bourse & bazaar", "bourse and bazaar",
+    "kpler", "vortexa", "energy intelligence", "amwaj",
 ]
 
 
@@ -825,6 +850,16 @@ REPORT_DOMAINS = [
     "wto.org", "unctad.org", "adb.org", "oxfordbusinessgroup.com",
     # 한국(추가)
     "bok.or.kr",
+    # ── 필수 보강: 한국 안보·해운·금융·경제 ──
+    "kmi.re.kr", "kida.re.kr", "inss.re.kr", "kif.re.kr", "keri.org",
+    # ── 필수 보강: 글로벌 안보·이란·걸프·해운/에너지흐름 ──
+    "understandingwar.org", "quincyinst.org", "responsiblestatecraft.org",
+    "cnas.org", "belfercenter.org", "gulfif.org", "trendsresearch.org",
+    "rasanah-iiis.org", "thesoufancenter.org", "iif.com",
+    "kpler.com", "vortexa.com", "energyintel.com", "bourseandbazaar.org", "amwaj.media",
+    # 기존 힌트에 도메인 누락분 보강
+    "rand.org", "stratfor.com", "merics.org", "ispionline.it",
+    "capitaleconomics.com", "geopoliticalfutures.com",
 ]
 
 def _domain_is_report(shref):
