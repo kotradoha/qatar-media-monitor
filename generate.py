@@ -3267,9 +3267,9 @@ var b=document.getElementById('tldl');if(b)b.addEventListener('click',dl);
 _MON_SCRIPT = r"""(function(){
 var URLBASE='https://kotradoha.github.io/qatar-media-monitor/';
 var I18={
-ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 카타르·이란·한국 등의 공개 언론 보도와 유관기관 자료를 Google·네이버 뉴스 및 알자지라·BBC 등 매체 RSS와 연구기관 도메인에서 카타르·중동·에너지 등 키워드로 자동 수집·요약한 참고용 결과입니다. 각 매체가 공개한 제목·요약(스니펫)을 근거로 하며, 유료 매체 전문은 원문 링크를 통해 직접 로그인·구독하셔야 열람하실 수 있습니다. 수집 기사는 Anthropic Claude(Sonnet 5)가 이슈별로 분류·요약하고 영어·아랍어로 번역하며, GitHub Actions로 하루 두 번(카타르 시각 07:00·15:30) 자동 게시됩니다. 자동 수집 특성상 일부가 누락될 수 있으니 중요한 이슈는 원문으로 재확인하시기 바랍니다.',fname:'카타르_언론모니터링'},
-en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'This reference digest automatically collects and summarizes public media reporting and institutional materials from Qatar, Iran, Korea and other key countries, gathered from Google and Naver News, outlet RSS feeds (Al Jazeera, BBC, etc.) and research-institute domains using keywords such as Qatar, the Middle East and energy. It relies on the headlines and summary snippets each outlet publishes; the full text of paid outlets can only be viewed by logging in or subscribing directly via the original links. Collected articles are classified, summarized and translated into English and Arabic by Anthropic Claude (Sonnet 5), and published automatically twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. As collection is automated, some items may be missing, so please re-verify important issues against the original sources.',fname:'Qatar_Media_Monitor'},
-ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'هذا الموجز المرجعي يجمع ويلخّص تلقائيًا التقارير الإعلامية العامة ومواد الجهات المعنية من قطر وإيران وكوريا ودول رئيسية أخرى، مجمّعة من Google وNaver News وموجزات RSS للوسائل (الجزيرة، BBC، وغيرها) ونطاقات مراكز الأبحاث بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة. يستند إلى العناوين ومقتطفات الملخصات التي تنشرها كل وسيلة؛ ولا يمكن الاطلاع على النص الكامل للوسائل المدفوعة إلا بتسجيل الدخول أو الاشتراك مباشرةً عبر الروابط الأصلية. تُصنّف المقالات وتُلخّص وتُترجم إلى الإنجليزية والعربية بواسطة Anthropic Claude (Sonnet 5)، وتُنشر تلقائيًا مرتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. ونظرًا لطبيعة الجمع الآلي قد تغيب بعض العناصر، لذا يُرجى إعادة التحقق من القضايا المهمة عبر المصادر الأصلية.',fname:'rasd_iaalam_qatar'}};
+ko:{s1:'이슈별 요약',s2:'기사 목록',cNo:'번호',cIssue:'이슈',cSum:'요약',cMedia:'매체',cArt:'기사 제목',cDt:'보도일시',wMedia:'발췌 매체',edD:'일간 제{n}호',edW:'주간 종합',lPer:'모니터링 기간',lUpd:'모니터링 일시',org:'주카타르대사관 Commercial Section · KOTRA 도하무역관',note:'본 자료는 카타르·이란·한국 등의 공개 언론 보도와 유관기관 자료를 Google·네이버 뉴스 및 알자지라·BBC 등 매체 RSS와 연구기관 도메인에서 카타르·중동·에너지 등 키워드로 자동 수집·요약한 참고용 결과입니다. 각 매체가 공개한 제목·요약(스니펫)을 근거로 하며, 유료 매체 전문은 원문 링크를 통해 직접 로그인·구독하셔야 열람하실 수 있습니다. 수집 기사는 Anthropic Claude(Sonnet 5)가 이슈별로 분류·요약하고 영어·아랍어로 번역하며, GitHub Actions로 하루 두 번(카타르 시각 07:00·15:30) 자동 게시됩니다. 자동 수집 특성상 일부가 누락될 수 있으니 중요한 이슈는 원문으로 재확인하시기 바랍니다.',gHead:'카타르 정부 동향',gDev:'정부 동향',gRep:'관련 보도',gGo:'바로가기',fname:'카타르_언론모니터링'},
+en:{s1:'Issue summaries',s2:'Article list',cNo:'No.',cIssue:'Issue',cSum:'Summary',cMedia:'Outlet',cArt:'Article',cDt:'Published',wMedia:'Cited outlets',edD:'Daily No.{n}',edW:'Weekly review',lPer:'Coverage',lUpd:'Compiled',org:'Embassy of the ROK in Qatar, Commercial Section · KOTRA Doha',note:'This reference digest automatically collects and summarizes public media reporting and institutional materials from Qatar, Iran, Korea and other key countries, gathered from Google and Naver News, outlet RSS feeds (Al Jazeera, BBC, etc.) and research-institute domains using keywords such as Qatar, the Middle East and energy. It relies on the headlines and summary snippets each outlet publishes; the full text of paid outlets can only be viewed by logging in or subscribing directly via the original links. Collected articles are classified, summarized and translated into English and Arabic by Anthropic Claude (Sonnet 5), and published automatically twice a day (07:00 and 15:30 Qatar time) via GitHub Actions. As collection is automated, some items may be missing, so please re-verify important issues against the original sources.',gHead:'Qatar Government Developments',gDev:'Development',gRep:'Source',gGo:'Open',fname:'Qatar_Media_Monitor'},
+ar:{s1:'ملخصات القضايا',s2:'قائمة المقالات',cNo:'الرقم',cIssue:'القضية',cSum:'الملخص',cMedia:'الوسيلة',cArt:'المقال',cDt:'تاريخ النشر',wMedia:'الوسائل',edD:'العدد اليومي {n}',edW:'المراجعة الأسبوعية',lPer:'فترة الرصد',lUpd:'وقت الرصد',org:'سفارة جمهورية كوريا لدى قطر · القسم التجاري · كوترا الدوحة',note:'هذا الموجز المرجعي يجمع ويلخّص تلقائيًا التقارير الإعلامية العامة ومواد الجهات المعنية من قطر وإيران وكوريا ودول رئيسية أخرى، مجمّعة من Google وNaver News وموجزات RSS للوسائل (الجزيرة، BBC، وغيرها) ونطاقات مراكز الأبحاث بكلمات مفتاحية مثل قطر والشرق الأوسط والطاقة. يستند إلى العناوين ومقتطفات الملخصات التي تنشرها كل وسيلة؛ ولا يمكن الاطلاع على النص الكامل للوسائل المدفوعة إلا بتسجيل الدخول أو الاشتراك مباشرةً عبر الروابط الأصلية. تُصنّف المقالات وتُلخّص وتُترجم إلى الإنجليزية والعربية بواسطة Anthropic Claude (Sonnet 5)، وتُنشر تلقائيًا مرتين يوميًا (07:00 و15:30 بتوقيت قطر) عبر GitHub Actions. ونظرًا لطبيعة الجمع الآلي قد تغيب بعض العناصر، لذا يُرجى إعادة التحقق من القضايا المهمة عبر المصادر الأصلية.',gHead:'التطورات الحكومية القطرية',gDev:'التطور',gRep:'المصدر',gGo:'فتح',fname:'rasd_iaalam_qatar'}};
 var LANG=(document.documentElement.lang||'ko'); var T=I18[LANG]||I18.ko; var RTL=(LANG==='ar');
 function txt(e){return e?(e.textContent||'').replace(/\s+/g,' ').trim():'';}
 function scrape(){
@@ -3294,7 +3294,21 @@ function scrape(){
       arts.push({src:src,art:at,dt:dt,url:a.getAttribute('href')||''});});
     if(theme)issues.push({theme:theme,sum:sum,arts:arts});
   });
-  return {title:title,updated:updated,period:period,edn:edn,issues:issues};
+  // 카타르 정부 동향(이슈 위 섹션) — 동향 문장 + 관련보도(매체·URL). 없으면 빈 배열.
+  var gov=[];
+  document.querySelectorAll('.govcard .govul li').forEach(function(li){
+    var links=[];
+    li.querySelectorAll('a.govlink').forEach(function(a){
+      var nm=txt(a).replace(/^↗\s*/,'').trim();
+      var u=a.getAttribute('href')||'';
+      if(u)links.push({src:nm,url:u});
+    });
+    var clone=li.cloneNode(true);
+    Array.prototype.forEach.call(clone.querySelectorAll('a.govlink'),function(a){a.parentNode.removeChild(a);});
+    var t=txt(clone);
+    if(t)gov.push({t:t,links:links});
+  });
+  return {title:title,updated:updated,period:period,edn:edn,issues:issues,gov:gov};
 }
 // ===== ZIP(무압축) =====
 var crcT=(function(){var t=[];for(var n=0;n<256;n++){var c=n;for(var k=0;k<8;k++){c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);}t[n]=c>>>0;}return t;})();
@@ -3323,7 +3337,10 @@ function sheetXml(sh){
   (sh.pre||[]).forEach(function(row){r++;sd+='<row r="'+r+'"'+(row.ht?' ht="'+row.ht+'" customHeight="1"':'')+'>';row.cells.forEach(function(cc,i){sd+=cel(r,i,cc.v,cc.s);});sd+='</row>';merges.push('A'+r+':'+lastCol+r);});
   var hr=r+1;sd+='<row r="'+hr+'">';sh.headers.forEach(function(h,i){sd+=cel(hr,i,h,'1');});sd+='</row>';
   sh.rows.forEach(function(row){r=++hr;sd+='<row r="'+hr+'">';row.forEach(function(v,i){
-    if(v&&typeof v==='object'&&v.link){hyper.push({ref:colL(i)+hr,url:v.link});sd+=cel(hr,i,v.text,'7');}   // 긴 URL도 HYPERLINK() 255자 제한 없이 워크시트 관계로 링크(#VALUE! 방지)
+    // 데스크톱 엑셀은 하이퍼링크 대상이 255자를 넘으면 '복구 필요'로 파일을 손상 처리 → 링크 제거.
+    //   255자 이하만 관계형 하이퍼링크로 걸고, 초과분(긴 구글뉴스 URL 등)은 링크 없이 텍스트만 표시(안전).
+    if(v&&typeof v==='object'&&v.link&&v.link.length<=255){hyper.push({ref:colL(i)+hr,url:v.link});sd+=cel(hr,i,v.text,'7');}
+    else if(v&&typeof v==='object'&&v.link){sd+=cel(hr,i,v.text,'2');}
     else if(v&&typeof v==='object'&&v.num!=null){sd+=celNum(hr,i,v.num,'8');}                                 // 연번=실수치·가운데정렬
     else {sd+=cel(hr,i,v,'2');}
   });sd+='</row>';hr=r;});
@@ -3374,7 +3391,22 @@ function exportXlsx(){
   var head2=head+' — '+T.s2;   // 기사목록 시트에도 동일 제목(+‘—기사목록’)·모니터링 기간 헤드
   var sheet2={name:T.s2,headers:[T.cIssue,T.cMedia,T.cArt,T.cDt],rows:s2rows,widths:[34,18,54,16],filter:true,
     pre:[{cells:[{v:head2,s:'5'}],ht:24},{cells:[{v:meta,s:'6'}]},{cells:[{v:'',s:'0'}]}]};
-  dl(buildXlsx([sheet1,sheet2]),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',fnbase(D)+'.xlsx');
+  var sheets=[];
+  // Sheet0: 카타르 정부 동향(있을 때만, 이슈 앞) — 동향 한 줄당 관련보도 링크를 각 행에 클릭 가능하게.
+  if(D.gov&&D.gov.length){
+    var g0=[];
+    D.gov.forEach(function(e,gi){
+      var ls=e.links||[];
+      if(ls.length){ls.forEach(function(l,li){
+        g0.push([ li===0?{num:gi+1}:'', li===0?e.t:'', (l.url?{link:l.url,text:(l.src||T.gGo)}:(l.src||'')) ]);
+      });}
+      else{g0.push([{num:gi+1}, e.t, '']);}
+    });
+    sheets.push({name:T.gHead,headers:[T.cNo,T.gDev,T.gRep],rows:g0,widths:[6,82,22],
+      pre:[{cells:[{v:head+' — '+T.gHead,s:'5'}],ht:24},{cells:[{v:meta,s:'6'}]},{cells:[{v:'',s:'0'}]}]});
+  }
+  sheets.push(sheet1);sheets.push(sheet2);
+  dl(buildXlsx(sheets),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',fnbase(D)+'.xlsx');
 }
 // ===== DOCX =====
 function wp(text,opt){opt=opt||{};var B=opt.bul||0;var pPr='<w:pPr>'+(RTL?'<w:bidi/>':'')+(B?'<w:tabs><w:tab w:val="left" w:pos="'+B+'"/></w:tabs><w:ind w:left="'+B+'" w:hanging="'+B+'"/>':(opt.hang?'<w:ind w:left="'+opt.hang+'" w:hanging="'+opt.hang+'"/>':''))+(opt.align?'<w:jc w:val="'+opt.align+'"/>':'')+((opt.sb||opt.sa!=null||opt.line)?'<w:spacing '+(opt.sb?'w:before="'+opt.sb+'" ':'')+(opt.sa!=null?'w:after="'+opt.sa+'" ':'')+(opt.line?'w:line="'+opt.line+'" w:lineRule="auto" ':'')+'/>':'')+'</w:pPr>';
@@ -3387,6 +3419,14 @@ function exportDocx(){
   var body='';
   body+=wp(D.title,{b:true,sz:32,align:'center',sa:60});
   body+=wp((D.edn?D.edn+'   ':'')+T.lUpd+': '+D.updated+'   '+T.lPer+': '+D.period,{sz:18,color:'666666',align:'center',sa:160});
+  // 카타르 정부 동향(이슈 앞) — 동향 문장 + 관련 매체명(괄호). 있을 때만.
+  if(D.gov&&D.gov.length){
+    body+=wp(T.gHead,{b:true,sz:24,sb:160,sa:60});
+    D.gov.forEach(function(e){
+      var srcs=(e.links||[]).map(function(l){return l.src;}).filter(Boolean).join(', ');
+      body+=wp(e.t+(srcs?'  ('+srcs+')':''),{sz:19,sa:40,align:'both',bul:180});
+    });
+  }
   D.issues.forEach(function(e,i){
     body+=wp((i+1)+'. '+e.theme,{b:true,sz:24,sb:160,sa:60});
     // 워드 버전은 우측 '발췌 매체' 열을 제거하고 요약만 단일 열(전폭)로 표시(HTML은 2열 유지).
@@ -4253,7 +4293,9 @@ def _resolve_article_url(x):
 #   해석은 네트워크가 필요 → 실제 발행 실행(GitHub Actions)에서만 동작, 실패 시 원본 유지(안전).
 #   회차 간 유지되는 커밋 캐시(gnews_urls.json)와 회차 예산으로 지연을 억제.
 _GNEWS_URL_CACHE = None
-_GNEWS_RESOLVE_BUDGET = [40]        # 회차당 실제 네트워크 해석 상한(지연 폭주 방지)
+_GNEWS_RESOLVE_BUDGET = [220]       # 회차당 실제 네트워크 해석 건수 상한(정부동향·이슈·기사목록 공용)
+_GNEWS_TIME_BUDGET = 150.0         # 회차당 URL 해석 벽시계 상한(초) — 이 시간 넘으면 이후는 원본 유지
+_GNEWS_T0 = [None]
 
 
 def _load_gnews_cache():
@@ -4286,6 +4328,11 @@ def _resolve_display_url(url):
     if url in cache:                       # 성공(원문)·실패("") 모두 캐시 → 재시도 안 함
         return cache[url] or url
     if _GNEWS_RESOLVE_BUDGET[0] <= 0:
+        return url
+    now = time.time()                      # 벽시계 예산 초과 시 이후는 해석 생략(원본 유지 → 작업시간 폭주 방지)
+    if _GNEWS_T0[0] is None:
+        _GNEWS_T0[0] = now
+    elif now - _GNEWS_T0[0] > _GNEWS_TIME_BUDGET:
         return url
     _GNEWS_RESOLVE_BUDGET[0] -= 1
     real = None
@@ -4324,6 +4371,28 @@ def _resolve_gov_links(gov):
         print(f"[info] gov links resolved to source URLs: {changed}")
     _save_gnews_cache()
     return gov
+
+
+def _resolve_items_links(items):
+    """표시 대상 기사(이슈 관련보도·전체 기사목록)의 link를 실제 원문 URL로 승격(가능한 것만).
+    각 item.link를 제자리 갱신 → 이슈 박스·기사목록·엑셀/워드 내보내기 모두 동일하게 반영.
+    예산(건수·시간)·캐시로 작업시간 억제, 실패 시 원본 유지(리다이렉트로 정상 동작)."""
+    if not items:
+        return items
+    changed = 0
+    for x in items:
+        u = x.get("link") or ""
+        if "news.google.com" not in u and "/rss/articles/" not in u:
+            continue
+        ru = _resolve_display_url(u)
+        if ru != u:
+            x["link"] = ru
+            changed += 1
+    if changed:
+        print(f"[info] article links resolved to source URLs: {changed} "
+              f"(budget left {_GNEWS_RESOLVE_BUDGET[0]})")
+    _save_gnews_cache()
+    return items
 
 
 def _fulltext(x):
@@ -4699,6 +4768,7 @@ def main():
     if _off:
         _no = len(items_win); items_win = [x for x in items_win if x.get("link") not in _off]
         print(f"[info] offtopic filter(daily): {_no} → {len(items_win)} (dropped {_no - len(items_win)})")
+    items_win = _resolve_items_links(items_win)   # 이슈 관련보도·기사목록 링크를 실제 원문 URL로 승격(예산·캐시 내)
     pool = build_issue_pool(items_win)
     issues = gemini_issues(pool, label_ko)
     gov_ko = gemini_qatar_gov(gov_pool or pool, label_ko)
@@ -4745,6 +4815,7 @@ def main():
         if _woff:
             _wno = len(witems); witems = [x for x in witems if x.get("link") not in _woff]
             print(f"[info] offtopic filter(weekly): {_wno} → {len(witems)} (dropped {_wno - len(witems)})")
+        witems = _resolve_items_links(witems)   # 주간 이슈·기사목록 링크도 실제 원문 URL로 승격(공용 예산 내)
         wpool = build_issue_pool(witems)
         wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
         gov_wk_ko = gemini_qatar_gov(gov_wk_pool or wpool, wlabel_ko)
