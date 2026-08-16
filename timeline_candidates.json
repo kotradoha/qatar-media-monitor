@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-08-17",
+  "ko": "미·이란 60일 휴전 시한 만료 예정 — 호르무즈 통항 분쟁 속 종전 협상 교착 지속",
+  "en": "US-Iran 60-day ceasefire set to expire — talks remain deadlocked amid Hormuz transit dispute",
+  "ar": "وقف إطلاق النار الأمريكي-الإيراني لمدة 60 يوماً على وشك الانتهاء وسط تعثر المفاوضات وخلاف حول مضيق هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOEc1Wk14N3FUVDlvRFBYVVBhUUNNZFF1eGhBbnduMDRWSTc0QmdmZjZVNk84R3l2azEtWEd3ZVdocmVCZVR2d1pNTW84elBhd1Uxak9jLUlQSWdHUWxQTWNQX2JCTzhPUHVsSmFEVFJpd2JFMW1kd1B6UHpYUWs2TVkxczBnM3pNdDdHWEFIN2VqSUUwUGxWUHd3eUhCd19RQmtBQ1pULVNYUktw?oc=5"
+   ],
+   [
+    "조선일보",
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYlBMX1g3eVNVVllqMnhxMjRNT0x5cmxUenhXeU5NdUpBSVIxUHZiTG0tYlE4c2RLLXhfYTh2OGFjYlAzQld2X3BrWkdtejJENVk0RDR0MDhfTEo1cFhmRkRNajJ2Q0FraWdwTjRfUEE5YVRFNmpheWFiSTFuZ1BkSm5EaFM?oc=5"
+   ],
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ080NFcyekJKenotQzVZaE9aV3R0aXo4ajIxQkptOFdZbllOLVNLc25IaGRDZ0NfSXpXMmVEM3hLSDd2eXNtY3pfMnB0Q2llc0toNlJsWWVPNzdNekZjRTQ4VWRVYWpxZ2dfTnBWSVpTb252dEF6QndVUmVaU1RVN1pn?oc=5"
+   ]
+  ],
+  "first_seen": "20260816-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-16",
   "ko": "이란과 오만, 호르무즈 해협 안전 확보를 위한 '이정표적 협정' 체결 — 다만 완전 재개방은 미국 조치에 달려있다고 보도됨",
   "en": "Iran and Oman strike landmark deal to secure Strait of Hormuz, but full reopening still hinges on US actions",
@@ -18,6 +43,56 @@
    ]
   ],
   "first_seen": "20260816-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-16",
+  "ko": "이란, 카타르에 폭격 임무 중 실종된 조종사 3명이 카타르에 억류돼 있다고 주장 — 카타르는 억류 부인, 이란은 사실조사단 카타르 입국 허용 요구",
+  "en": "Iran claims 3 pilots missing from a bombing run are held prisoner in Qatar — Qatar denies detention, Iran demands access for Air Force fact-finding team",
+  "ar": "إيران تزعم أن 3 طيارين مفقودين خلال مهمة قصف محتجزون في قطر — قطر تنفي الاحتجاز وإيران تطالب بدخول فريق تقصي الحقائق",
+  "q": true,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "BBC",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE40blYzUFFqQV9ua2c3ZU82eVVmandiMU5SR1haNGxRdWdweEJrOFAwQ2ZhLUhvd1ZMck5nRExYRUhYVG5KUXV0NTVvTVpIWnRoRDdKTjlrNjZVQ1Yt0gFiQVVfeXFMTWNRWl9nVnEydXAyMThNaGpxYjl1VDFwQnItZFVCenlOQmxsSHdNdnNrS1B0MDlGMkM4MzdzY08zSGF1VHJ3cTlIYVBuekh1X2RUNUx6b2w3YVlnWVB2dVhJbHc?oc=5"
+   ],
+   [
+    "iranpress.com",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOa2hzX2s1UWhvWWxoYzdwRXVoZlhsY19LRGh6ZE5NVEpqM0xSbkhJYXZ3QlRfMXY1VGdSQ0x2c3lGekxxVDRnYm1uMXZOSkFJS21kbXNMb00zaU1TQkMzSlhPRlpmU3E0WHlMWWo5cXlHTmFTQUpVYW9uLWNqeDgzSS1DdTA1M2otNDM0WkozQ25BMUN1dzQ4NE1oLTNzcDJidktyelpZcGVnX1g3YXc?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRUtLNEdDbkQxTWtlR1o5NHFQWkg3NkI2ZzBzeWZ5bWJsX2k0Ymh1UTEzRlpjTkFYRjQ5R3gtN084LWVoNGFZeXpIaTgwYTl6WnlNSGY0bnpyS1NablA1Y3dWSHJUTThrYzVzUmpVUW9IbGk1X095eDVISEEzaG45Y3N6bS1Db3gzc3RKN012TGVJR2w2aW1oTjhudE0waDRfX0wyajcwdGNCQ1JObzh3U2Z1TWNBdzR3RU9lRVQ0ekRHWHNQb2k0?oc=5"
+   ]
+  ],
+  "first_seen": "20260816-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-16",
+  "ko": "이스라엘, 레바논 남부 공습 — 휴전 이후 최다인 11명 사망·19명 부상 발생, 카츠 국방장관 '헤즈볼라 대가 치를 것' 경고",
+  "en": "Israel strikes south Lebanon killing 11 and wounding 19, the deadliest toll since the ceasefire — Defense Minister Katz vows to 'settle scores' with Hezbollah",
+  "ar": "إسرائيل تقصف جنوب لبنان وتقتل 11 وتصيب 19، الأعلى منذ وقف إطلاق النار — وزير الدفاع كاتس يتوعد بتصفية الحسابات مع حزب الله",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLUVUczVTVUEySmItajd1Ri1ubzBYTTZXRERDUFNiWVBwdjYxRnh3YkltVEE1a1prREI1ZEJIei04X2JMZW1FUEhoWjE1UWpJOGR6OHFRWUcwbHZHdHVCeEJSZjJXZzltX2ZPQVhvc3hkSWgzdV9IX2NvRTNMZmJ2VGVvTjZ0YUZHSDA1a3VLWkVuRFlBdXFXZFlfSVB4SUx2UWJTTEVGaUMxeFNzYUgzRXpERS1VQjFhY1Rj0gHAAUFVX3lxTE5Ea1RTQl96U3dpS25JcFowWUd0b0pES0duNUw1ZUEzdFM5Y1BIcEdEdHE1elpBalZnRWpfTXgwVTZkWC05bEtJLTVMUURnR01feUo4eEE0ZUR6WFZrMGdVWkY1MTYyMERQMDNvZ3ZYSUR6aG5uNkQ3ekxGWFh1ZmVtMHRBTzNkbDhvV2M1cV9kN2hSZGZjNDRJWjVmc1FWcXdmZnRSaGo0TTNlZGlCaXJ1bEVvMThQUDQ3NWMwajhVUg?oc=5"
+   ],
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMlJJTEJSVnNFeWx1Z0JVOVpHV28xMVNQbExFN2MxZnhYSzVkNmYyZ0w2ZkpvLTVqbWNWQ1E4WndZTk01N1hsTjNDeUNVODJxX2pQNjVMUzEzM2lMVlM2VmZGX1JpQmZRUDJzWHczaGQwWmxxT1BvYlJGVlZPOFBueW15bnIyU29WSzE4elJneVdtZFRzNDFiYWo0c3RiR2xEM0U0QUxqcENUOWN1V0dtcHB3Mjd1Z2x2YU5wcNIBwgFBVV95cUxNb0JwTFRMZ0pSMWFfN2hyamkweHNsRl9TYnpGY0VROUQzeHNycklWU25TRVJoaDJMY1RlYzJ3V21wRFdPbkM1NDdJSzBDbWpteEtjOGN3NEJ1MXZDQ01tSlVjOFhtN1JkbUNYekxLOTk5UU1BdHV0UDlJODNtaUp6OXlyWEV3WW9jRUlGOW1uREFIVVFQX0xYbTI4YnZhMGd6STJHY0RXeF92SXZpRzJZb1RJdlFSS2xRSVQ3d0RWcVNYdw?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRTFEQ0xuMU1rWFRBYjROeFk3cExzZUhVNklkQk02QS04eG9yaWVMbllWcXRzYzh3eWx2OXZMM0M2RTRjYzlWOGxvZjV3UmtkUDV1VGNFWk5EbVhNcDVsUnV0TjdOZDhTdmc2ZGw5SkJ5aUtWNEowbmRWUi1oQnAtVWNNVkEzNUxqQUNjZ0RxdVFNckdEMWlMdnNGdDBhakpIN3pMdjl5b0tmQnpIYTdvSGJkeDNPd1Q0ZU4wV0lR?oc=5"
+   ]
+  ],
+  "first_seen": "20260816-1530",
   "status": "pending"
  },
  {
