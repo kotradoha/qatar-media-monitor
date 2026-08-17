@@ -369,6 +369,14 @@ DIRECT_FEEDS = [
     ("경향신문", "https://www.khan.co.kr/rss/rssdata/kh_world.xml"),
     ("동아일보", "https://rss.donga.com/international.xml"),
     ("SBS 뉴스", "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=08"),
+    # 국내 주요지 직접 RSS 추가 보강(래퍼→원문 전환율 향상 · 커버리지 손실 없음 · 무해 스킵)
+    ("조선일보", "https://www.chosun.com/arc/outboundfeeds/rss/category/international/?outputType=xml"),
+    ("한국경제", "https://www.hankyung.com/feed/international"),
+    ("서울신문", "https://www.seoul.co.kr/xml/rss/rss_international.xml"),
+    ("국민일보", "https://www.kmib.co.kr/rss/data/kmibRssInter.xml"),
+    ("세계일보", "https://www.segye.com/Articles/RSSList/segye_international.xml"),
+    ("한국일보", "https://www.hankookilbo.com/rss/International"),
+    ("뉴시스", "https://www.newsis.com/RSS/international.xml"),
 ]
 
 QUICK_LINKS = {
