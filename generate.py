@@ -4348,6 +4348,45 @@ def _resolve_article_url(x):
 #   라벨(BBC 등)은 맞지만 클릭 시 구글뉴스를 거친다 → 실제 원문 URL로 승격(가능한 것만).
 #   해석은 네트워크가 필요 → 실제 발행 실행(GitHub Actions)에서만 동작, 실패 시 원본 유지(안전).
 #   회차 간 유지되는 커밋 캐시(gnews_urls.json)와 회차 예산으로 지연을 억제.
+
+
+def _gnews_decode(gurl, timeout=10):
+    """구글뉴스 RSS 래퍼(news.google.com/rss/articles/CBMi…)를 실제 원문 URL로 디코딩.
+    신식 불투명 포맷은 base64에 URL이 없어 → 기사 페이지에서 서명·타임스탬프를 받아
+    구글 batchexecute API로 원문 URL을 해석한다. 실패 시 None(호출측이 원본 유지)."""
+    import urllib.request
+    import urllib.parse
+    m = re.search(r"/articles/([^?/]+)", gurl or "")
+    if not m:
+        return None
+    art = m.group(1)
+    # 1) 기사 페이지에서 서명(data-n-a-sg)·타임스탬프(data-n-a-ts) 취득
+    html_, _ = _http_get("https://news.google.com/rss/articles/" + art, timeout=timeout)
+    sg = re.search(r'data-n-a-sg="([^"]+)"', html_)
+    ts = re.search(r'data-n-a-ts="([^"]+)"', html_)
+    if not (sg and ts):
+        return None
+    # 2) batchexecute 로 원문 URL 요청(내부 protobuf 배열은 구글 규격 고정값)
+    inner = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,'
+             'null,null,null,0,1],"X","X",1,[1,1,null,1,1,1,1,0,1,0,1],1,1,null,0,0,null,0],'
+             '"%s",%s,"%s"]') % (art, ts.group(1), sg.group(1))
+    freq = json.dumps([[["Fbv4je", inner, None, "generic"]]])
+    body = ("f.req=" + urllib.parse.quote(freq)).encode()
+    req = urllib.request.Request(
+        "https://news.google.com/_/DotsSplashUi/data/batchexecute",
+        data=body,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; MideastMediaMonitor/1.0)",
+                 "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        resp = r.read().decode("utf-8", "ignore")
+    mm = re.search(r'garturlres\\",\\"(.*?)\\"', resp)
+    if not mm:
+        return None
+    u = (mm.group(1).replace("\\/", "/").replace("\\u0026", "&")
+         .replace("\\u003d", "=").replace("\\u003f", "?"))
+    return u if u.startswith("http") and "news.google" not in u else None
+
+
 _GNEWS_URL_CACHE = None
 _GNEWS_RESOLVE_BUDGET = [220]       # 회차당 실제 네트워크 해석 건수 상한(정부동향·이슈·기사목록 공용)
 _GNEWS_TIME_BUDGET = 150.0         # 회차당 URL 해석 벽시계 상한(초) — 이 시간 넘으면 이후는 원본 유지
@@ -4393,7 +4432,8 @@ def _resolve_display_url(url):
     _GNEWS_RESOLVE_BUDGET[0] -= 1
     real = None
     try:
-        real = _resolve_article_url({"link": url})
+        # 신식 구글뉴스 래퍼는 batchexecute 디코딩이 정공법(리다이렉트/정규식 추출은 실패) → 우선 시도.
+        real = _gnews_decode(url) or _resolve_article_url({"link": url})
     except Exception as ex:
         _diag(f"[gov] url resolve fail: {ex}")
     if real and real.startswith("http") and "news.google.com" not in real:
