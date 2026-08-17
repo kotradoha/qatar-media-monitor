@@ -882,6 +882,18 @@ KO_REPORT_SITE_DOMAINS = [
     "lgbr.co.kr", "kpmg.com", "pwc.com", "ey.com",
     # 가스공사·석유공사: 수급계획·시장분석 등 발간물 포착(사내 행정·행사·입찰 뉴스는 제목필터로 제외). 오피넷=순수 시세라 제외
     "kogas.or.kr", "knoc.or.kr",
+    # 필수 보강(안보·해운·금융·경제) — site: 직접 조준
+    "kmi.re.kr", "kida.re.kr", "inss.re.kr", "kif.re.kr", "keri.org",
+]
+
+# 해외 심층보고서 기관 '자체 발간물' 직접 포착용 — INSTITUTION_BOARDS(직접 RSS)에 없는 곳을 구글뉴스 site:로 조준.
+#   (이미 reports.json에 풍부히 들어오는 기존 대형 싱크탱크는 키워드 쿼리로 충분 → 여기엔 '신규 핵심 기관'만 넣어
+#    누락 없이 확보. 바 site: 결과는 하단 주제·보고서 필터가 중동·에너지만 통과.)
+EN_REPORT_SITE_DOMAINS = [
+    "understandingwar.org", "quincyinst.org", "responsiblestatecraft.org",
+    "cnas.org", "belfercenter.org", "gulfif.org", "trendsresearch.org",
+    "rasanah-iiis.org", "thesoufancenter.org", "iif.com",
+    "kpler.com", "vortexa.com", "energyintel.com", "bourseandbazaar.org", "amwaj.media",
 ]
 
 def is_report_source(src):
@@ -1402,6 +1414,9 @@ def collect(win_start_utc, now_utc, when_days=2):
     # 한국 기관 자체 발간물: 기관 도메인을 site: 로 직접 조준(중동·유가·카타르 주제만 통과)
     for dom in KO_REPORT_SITE_DOMAINS:
         feeds.append(("ko", f"[site]{dom}", gnews_url(f"site:{dom}", "ko", report_days)))
+    # 해외 신규 핵심 보고서 기관: 도메인 site: 직접 조준(하단 주제·보고서 필터가 중동·에너지만 통과)
+    for dom in EN_REPORT_SITE_DOMAINS:
+        feeds.append(("en", f"[rsite]{dom}", gnews_url(f"site:{dom}", "en", report_days)))
     for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
     # 아랍어·페르시아어 네이티브 원문(카타르 현지·중동 아랍어 / 이란 당사국 페르시아어)
     for q in Q_QATAR_AR:  feeds.append(("ar", q, gnews_url(q, "ar", when_days)))
