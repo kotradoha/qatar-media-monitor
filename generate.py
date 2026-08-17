@@ -93,12 +93,18 @@ FOREIGN_MEDIA_SITES = [
     "bloomberg.com", "wsj.com", "ft.com", "washingtonpost.com", "economist.com",
     "axios.com", "politico.com", "cnbc.com", "al-monitor.com", "middleeasteye.net",
     "timesofisrael.com", "aa.com.tr",
+    # 필수 보강 — 걸프 영문 정론지·역내·유럽·전문(분류엔 있으나 수집 조준이 빠져 있던 곳)
+    "thenationalnews.com", "arabnews.com", "gulfnews.com", "khaleejtimes.com",
+    "middleeastmonitor.com", "jpost.com", "france24.com", "dw.com", "npr.org", "amwaj.media",
 ]
 # 국내(한국) 종합·방송·경제지 — 국문 '중동 주제'로 조준
 KOREA_MEDIA_SITES = [
     "yna.co.kr", "ytn.co.kr", "kbs.co.kr", "imbc.com", "sbs.co.kr", "jtbc.co.kr", "nocutnews.co.kr",
     "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "khan.co.kr",
     "mk.co.kr", "hankyung.com", "fnnews.com", "sedaily.com", "edaily.co.kr",
+    # 필수 보강 — 중동·전쟁 보도가 잦은 국내 통신·종합·경제지(관련 링크 국문 커버리지 강화)
+    "newsis.com", "news1.kr", "hankookilbo.com", "heraldcorp.com", "mt.co.kr",
+    "ajunews.com", "etoday.co.kr", "ohmynews.com", "seoul.co.kr",
 ]
 MEDIA_TOPIC = "(Qatar OR Iran OR Israel OR Gaza OR Hormuz OR Gulf)"
 MEDIA_TOPIC_KO = "(카타르 OR 중동 OR 이란 OR 이스라엘 OR 호르무즈 OR 걸프 OR 가자)"
