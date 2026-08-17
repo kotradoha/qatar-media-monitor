@@ -4391,6 +4391,11 @@ _GNEWS_URL_CACHE = None
 _GNEWS_RESOLVE_BUDGET = [220]       # 회차당 실제 네트워크 해석 건수 상한(정부동향·이슈·기사목록 공용)
 _GNEWS_TIME_BUDGET = 150.0         # 회차당 URL 해석 벽시계 상한(초) — 이 시간 넘으면 이후는 원본 유지
 _GNEWS_T0 = [None]
+# 구글뉴스 래퍼 원문 승격 기본 OFF — 신식 불투명 포맷은 리다이렉트·batchexecute 두 방식 모두
+#   프로덕션에서 0% 성공(구글 consent-wall/규격/레이트리밋 추정). 샌드박스는 구글 접속 차단이라
+#   현장 디버깅이 불가 → 회차마다 220건 헛시도로 시간만 소모하므로 비활성화(래퍼는 브라우저에서
+#   리다이렉트로 정상 동작). 향후 디버깅 시 RESOLVE_GNEWS=1 로 켜서 실험 가능.
+_GNEWS_ENABLED = os.environ.get("RESOLVE_GNEWS", "0") == "1"
 
 
 def _load_gnews_cache():
@@ -4417,6 +4422,8 @@ def _save_gnews_cache():
 
 def _resolve_display_url(url):
     """구글뉴스 래퍼 URL → 실제 원문 URL. 실패 시 원본 반환(브라우저에선 리다이렉트로 동작)."""
+    if not _GNEWS_ENABLED:                 # 기본 비활성(위 주석 참고) → 원본 그대로
+        return url
     if not url or ("news.google.com" not in url and "/rss/articles/" not in url):
         return url
     cache = _load_gnews_cache()
