@@ -355,6 +355,20 @@ DIRECT_FEEDS = [
     #   누락 없이 확보(관련성 필터가 중동·카타르만 통과, 제목 dedup으로 구글뉴스 중복 제거).
     ("연합뉴스", "https://www.yna.co.kr/rss/international.xml"),
     ("매일경제", "https://www.mk.co.kr/rss/30300018/"),
+    # ── 직접 RSS 확장 — 주요 매체 원문 URL을 '직접' 확보(구글뉴스 래퍼 대체). 위에서 맨 앞 처리되어
+    #   dedup에서 원문 URL이 우선 채택됨. 잘못된 엔드포인트는 feedparser가 조용히 스킵(무해).
+    ("The Guardian", "https://www.theguardian.com/world/middleeast/rss"),
+    ("NPR", "https://feeds.npr.org/1004/rss.xml"),
+    ("France 24", "https://www.france24.com/en/middle-east/rss"),
+    ("DW", "https://rss.dw.com/rdf/rss-en-all"),
+    ("Arab News", "https://www.arabnews.com/rss.xml"),
+    ("Middle East Monitor", "https://www.middleeastmonitor.com/feed/"),
+    ("The Jerusalem Post", "https://www.jpost.com/rss/rssfeedsmiddleeast.aspx"),
+    ("The New Arab", "https://www.newarab.com/rss"),
+    ("한겨레", "https://www.hani.co.kr/rss/international/"),
+    ("경향신문", "https://www.khan.co.kr/rss/rssdata/kh_world.xml"),
+    ("동아일보", "https://rss.donga.com/international.xml"),
+    ("SBS 뉴스", "https://news.sbs.co.kr/news/SectionRssFeed.do?sectionId=08"),
 ]
 
 QUICK_LINKS = {
@@ -1389,6 +1403,9 @@ def _report_key(link):
 def collect(win_start_utc, now_utc, when_days=2):
     items, seen = [], set()
     feeds = []
+    # 직접 RSS 피드를 '맨 앞'에 둔다 — 제목 기준 dedup은 '먼저 본 것'이 이기므로(first-seen-wins),
+    #   직접피드(원문 URL)를 구글뉴스 쿼리(래퍼 URL)보다 먼저 처리해 같은 기사면 원문 URL이 살아남게 함.
+    for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
     for q in Q_QATAR_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
     for q in Q_QATAR_KO: feeds.append(("ko", q, gnews_url(q, "ko", when_days)))
     for q in Q_MIDEAST_EN: feeds.append(("en", q, gnews_url(q, "en", when_days)))
@@ -1417,7 +1434,7 @@ def collect(win_start_utc, now_utc, when_days=2):
     # 해외 신규 핵심 보고서 기관: 도메인 site: 직접 조준(하단 주제·보고서 필터가 중동·에너지만 통과)
     for dom in EN_REPORT_SITE_DOMAINS:
         feeds.append(("en", f"[rsite]{dom}", gnews_url(f"site:{dom}", "en", report_days)))
-    for name, url in DIRECT_FEEDS: feeds.append(("en", name, url))
+    # (DIRECT_FEEDS는 맨 앞에서 이미 추가됨 — 원문 URL이 dedup에서 우선)
     # 아랍어·페르시아어 네이티브 원문(카타르 현지·중동 아랍어 / 이란 당사국 페르시아어)
     for q in Q_QATAR_AR:  feeds.append(("ar", q, gnews_url(q, "ar", when_days)))
     for q in Q_MIDEAST_AR: feeds.append(("ar", q, gnews_url(q, "ar", when_days)))
