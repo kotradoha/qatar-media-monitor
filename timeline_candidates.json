@@ -167,6 +167,52 @@
   "status": "pending"
  },
  {
+  "d": "2026-08-17",
+  "ko": "미·이란 종전 양해각서(MOU) 60일 기한 만료 — 이란 강경파는 확전 준비 시사, 대통령은 MOU 옹호하며 이행 촉구",
+  "en": "US-Iran ceasefire MoU's 60-day term expires — Iranian hardliners signal escalation preparations while president defends the deal",
+  "ar": "انتهاء مهلة الستين يوماً لمذكرة التفاهم الأمريكية الإيرانية لوقف الحرب — المتشددون الإيرانيون يلمحون إلى الاستعداد للتصعيد بينما يدافع الرئيس عن الاتفاق",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "머니투데이",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE02ZU01WW1WR3BJeHZJb2V6Ti1UdnBFd01uWmtIQnZycXN5Sk53Wk1MT1FKQ2NzaXRubUNDTTVBZnhoTURXS1oyTlRBcXZuTlNXN0xCeDJZQk9DcGVhRk96a01FNDNQdWc00gFuQVVfeXFMUGpXUUVLVGFsTnJHQmV0dzZOUDYtaVRDR1VtM01ZdXdyVnNFcEtEUkFCd3FLVDBrOEJBUExiaTU0OHhsbi1GMzhRcTFFMEE3Q2YzZUlkcVR5TFlWN2NYbFlEMFl3TEVXZHZ5cklJbGc?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20260817037100009"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE04S3A3eW54aG82TW1ZR3p4MVI5em95MzJ1a0dvSnlWWERmZENMa1lUUjZfMjlJNmQxTG9ZcTlNY0VTVEVpX0d1QmM4T2V5eVlMWTgzaHhqbmxaVERrb2JXN3hB0gFnQVVfeXFMTzVJbWxXWk9mSmx6V29ZY3ZGaXhTTHctQUpteXZhTTMtamZDRlM4X3V1eW9MRUx0LWVyUFFwRG9melFEUFg2bnVrVzZFSHJkb3NxbnJhSWV6T3hmUF9fOXl0MDJsMF9fWQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260817-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-17",
+  "ko": "이란군 총사령관, 미군 생포·사살에 3만달러 포상금 공개 제시 — 여성 동반 생포 시 2배 지급 발표",
+  "en": "Iranian armed forces chief publicly offers $30,000 bounty for capturing/killing US troops, doubled if accompanied by a woman",
+  "ar": "القائد العام للقوات الإيرانية يعرض علناً مكافأة 30 ألف دولار لأسر أو قتل جنود أمريكيين، تتضاعف في حال اصطحاب امرأة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBSakpRM1FlLXg2d0JIajlPM1RkcVJkTDA4VWx3MXZrdjZlUzl2WHJMdnNJYXRVVmVMY01hT0EtakhlZHdvd2hHYUdUOUVISVpiWnZRZkYyOS1RdG1fREZMbk5R0gFnQVVfeXFMUGExMWZPaEpRSXZ2cVZyWFdCSHN4R2NXRFNMOTZmYWZLQVMzckNpTVh1ZmI1NWJ0cUtQby12b2Jsa2lqWEtjelJWd2hMaWI2ZmstWFJmaWo5aFNQQWZPZU5qWi1PLXRRYw?oc=5"
+   ],
+   [
+    "BBC",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9adWJSWTlJdURpVXNqbFhNb3VRZGhOUE4zVktTZWRBYm5fRnV6MHNUVmpGNERlRV9Ramk1cmZhNEI4bnhfSmhxZ2RkT1pEMXNpbGlNbWVhN3VSdzNf0gFiQVVfeXFMUGZxa0pfMDluX0lFS0hkakV6STFVQ05aX0V1ZjZuNkhWLVhNUi1QazR1QlhSZzNFbTMtby1YRElPMUNjQnF3dVA2REUyY2ZUWFRIb1Z4enFQa21BbU1EU2hOZkE?oc=5"
+   ]
+  ],
+  "first_seen": "20260817-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-16",
   "ko": "이란과 오만, 호르무즈 해협 안전 확보를 위한 '이정표적 협정' 체결 — 다만 완전 재개방은 미국 조치에 달려있다고 보도됨",
   "en": "Iran and Oman strike landmark deal to secure Strait of Hormuz, but full reopening still hinges on US actions",
@@ -320,6 +366,31 @@
    [
     "Middle East Eye",
     "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQWTVFd1B1aVlLZGFjbnJxZzA2Sm9RWEw2Wk9udTg2QjNFNjJwckpTdlNpay1hQXFmbE5WVlVjb0tYek02ekR4U2dqRUxmaURqblhGbUZmSFdJeHA1NEd0QTY0aUlJSmNsNmxrVDFEMzZKOHNQVGdlNWRhSU5XdFloTi1uLTIxcDB5OWtxcGJWWERpWWNHQzdES3lfUDd3UlUxaE1aNWlaME42MncxSkRvTVl2TVBzWVFnQ0hXcXJKOWxyWFY0Si1wWklOZHlVekx2anA1YWZra0FqN042WHhwUVVBWjJZUVpkdkRCS3RUSGNvbW9WOXVITjJ6cw?oc=5"
+   ]
+  ],
+  "first_seen": "20260817-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-16",
+  "ko": "호르무즈 해협 통항 급감 — 유조선 공격 이후 토요일 5척·일요일 0척 통과로 사실상 통항 중단",
+  "en": "Hormuz Strait transit collapses — after tanker attacks, only 5 vessels passed Saturday and 0 on Sunday, effectively halting transit",
+  "ar": "تراجع حاد في عبور مضيق هرمز — بعد هجمات الناقلات، مرت 5 سفن فقط يوم السبت و0 يوم الأحد، ما يعني توقفاً فعلياً للعبور",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/shipping-through-hormuz-strait-slows-after-tanker-attacks"
+   ],
+   [
+    "CNBC TV18",
+    "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZC1aa3BBXzZXemxKRUhCZ2RUbXBqb0lPQzE5TGt3R1BDNFdDZF9mbEpWSGd4Vk1sSnp6aF9RY3pWMkRTYzhnZWFkMVZQdWw3REx5YjJqSlAwelFkX2lFbzAzcDdSdkxFT29GU0xyYnpGUVBLNklVYUlfQlNibHJZVTl0eE5JVjdSem16eWFscGR6YWhrTUN3UHFkZ0Q2Y3UyQ3cxejhja0hZTkJheU4xdkZ5MEFRMS13TG9hV0FFRzRBVVpVZnNvZ1BZU1FUYWRfUzdlQmY3TlNZbnpDYjFJTFQycjNJb2hN0gHoAUFVX3lxTFBkLVprcEFfNld6bEpFSEJnZFRtcGpvSU9DMTlMa3dHUEM0V0NkX2ZsSlZIZ3hWTWxKenpoX1FjelYyRFNjOGdlYWQxVlB1bDdETHliMmpKUDB6UWRfaUVvMDNwN1J2TEVPb0ZTTHJiekZRUEs2SVVhSV9CU2JscllVOXR4TklWN1J6bXp5YWxwZHphaGtNQ3dQcWRnRDZjdTJDdzF6OGNrSFlOQmF5TjF2RnkwQVExLXdMb2FXQUVHNEFVWlVmc29nUFlTUVRhZF9TN2VCZjdOU1luekNiMUlMVDJyM0lvaE0?oc=5"
+   ],
+   [
+    "edaily.co.kr",
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeUFvd1Z6dTRPa2tERmQ5ZVpndENDLXZKV01ya3hnYUlSNHFOT3VYQUQzMF9ONnY4LW9DZzlsMkVjaUE0NENFaU83ZEF4WTQxVFotSlMtVktiN2xLeVJXandSSTZ2UW1NcWgyV0lsRE1yQzJBUWZfX3ZITnI3YVBGaQ?oc=5"
    ]
   ],
   "first_seen": "20260817-0700",
