@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-08-18",
+  "ko": "호르무즈 해협에서 정체불명 발사체에 선박 피격 — UKMTO, 선체 손상·선원 사상자 보고",
+  "en": "Vessel struck by unidentified projectile in Strait of Hormuz — UKMTO reports hull damage and crew casualty",
+  "ar": "سفينة تتعرض لإصابة بمقذوف مجهول في مضيق هرمز — مكتب عمليات التجارة البحرية البريطاني يبلغ عن أضرار في الهيكل وإصابات بين الطاقم",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSXFSdEhQRG81cjNLYjVDblhHR0h0NU5Vb3pTWkNuT1pfN3RrZTBzV25OckpEVkFGMXFGZGpsRk1QSWNBZXZsejJaRF90Y0FXOFFGLUpmc1dKdFF5V2QweUpDZVpUX3A5eG1DTlRaVVRBeGZGSE5YZDN3Tk0xSFpYVER0dTBfVFdpVEtDOEdCeWNzNzcxLTVaMWNRNk0tNnFGaTBubHhTYzBaZnRFVnFnY1FtWQ?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/damage-crew-casualty-reported-onboard-vessel-hit-hormuz-strait-ukmto"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247053/Vessel-struck-by-projectile-while-transiting-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20260818-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-17",
   "ko": "미·이란 60일 휴전 시한 만료 예정 — 호르무즈 통항 분쟁 속 종전 협상 교착 지속",
   "en": "US-Iran 60-day ceasefire set to expire — talks remain deadlocked amid Hormuz transit dispute",
@@ -344,6 +369,56 @@
    ]
   ],
   "first_seen": "20260817-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-17",
+  "ko": "미·이란 60일 종전 양해각서(MOU) 시한 만료·연장 무산 — 트럼프 '연장 없다' 선언, 이란 항복 요구·오만 폭격 위협 병행",
+  "en": "US-Iran 60-day truce MoU expires without extension — Trump declares 'no extension', demands Iran's surrender and threatens to bomb Oman",
+  "ar": "انتهاء مذكرة التفاهم الأمريكية الإيرانية لوقف الحرب لمدة 60 يوماً دون تمديد — ترامب يعلن 'لا تمديد' ويطالب إيران بالاستسلام ويهدد بقصف عمان",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2JUWXl1andyRnYtampVbHFSUVdRSDQ1RnFSMXBNZlRGS2JVM1kzeDd4OG80Rl85eVc4MTRjQVd0QTM1VVFtWGdsdmZjYTJEMzFNNnc1S05MUG01NDJBWjR1VVlaRFB1eEt6dzVqc0N2YTJzNENMTGs4eFBuYmU5aGM5TzBBX1ZPdWNhcW85c3dSQUxmazdaY3FUYzhGdU9STHBZaXJaOWtJQ05LblHSAbMBQVVfeXFMTXdYTVhDMG5xc0YwUnhwb0REMGc4a0RLdElYWXBmNm5MWThxRUNtek11T0VBSE5Jb1Y2UEdhRzQyNFZ4SDZrdW1NSGZHOGpFMFJjVm8ycVBfeWZPZWVyWDhOVFRPeF91MURyMjF4V2FsMTdkTUdpVXVDTVNzVFAxNll4QjVEOUc3NW02UU1HRFFOTlo2elFzYjJtMXNHaXJOMzlqdXp3OU1UQVdFSmNtSWotaU0?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/8/18/iran-war-live-trump-rejects-mou-extension-as-us-claims-control-of-hormuz?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/8/17/trump-says-iran-will-not-make-the-deal-he-believes-is-necessary?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20260818-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-17",
+  "ko": "트럼프, 미국이 호르무즈 해협 완전 장악했다고 주장하며 오만에 방해시 폭격 경고 — 민주당 '오만 전쟁권한 결의' 추진 예고",
+  "en": "Trump claims US has 'full control' of Strait of Hormuz, warns Oman it could be bombed if it obstructs — Democrats to push Oman war-powers resolution",
+  "ar": "ترامب يزعم سيطرة أمريكا الكاملة على مضيق هرمز ويحذر عمان من قصفها إذا أعاقت الجهود — الديمقراطيون يستعدون لدفع قرار صلاحيات الحرب بشأن عمان",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiigRBVV95cUxNU3BBeWhEMGVSRUdrQ0RUQ3BxcDRjQ0FxVGxSMVNXUHN5WERrMU5tYm5GUUNfUUZmV0JJNTc5UE5vcFA4aDNVMFJ6ZDJpaVc5c0IzREItSEY1U0JROTBOWm9nYUI5RzduZzdNNER1WjJWNG1fZ1lwZktobVI2MnJGRUs2NkNYTC1tZ19pelRudzhOSUNQc083bU5lT1JfZEJndzAyTThockNrNi1aS2dWbFlPWUpYbUN6blRGZHotaG9Ic1FoRlFFS3I3Q3RsRmczandZNTZQa0RBTEdOS2paWHpreEg4NEdwejdaWlNuOUFGSmsxbE9IV2QzWXFNYXN4NFJLUjM0dzZ3N1duS3htQkdVdFdzbFZVSDNKcTlNcFhWaFU0WUYzdVM0eUtHRDRmNHlqWUVzazdOMkZ3NzNPQmxYanBOTGtxV1EyUlNoSkNmYjF0RWV0Y3FqMk5HMnpCczVTeHRCUG83UEdRazNfOTRPMktDSTN5RE0xME9lNjJxV211cGxTd2JqYTRqVlVEX3Q4YjE5ZU1sUUxxQVVkRWE1OTl6anlSbF9XTmFHTzhSUnRHUmxWTnFEM1ZJTGRMcDVvVFI4c3YyNUhvd3BycFFBWHNCWkl0eXZ0VTZ6bzNidzZNWGtXMEthTkpwbU5PZFp0VndfOS0yY0xLYW9kMVZVTURUbm5WUWc?oc=5"
+   ],
+   [
+    "CNN",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdExMdzcwYmstWUV4S3RIWDlnZTNnWEFrb0J2UjBYdElTNTlqSGd3eGFZaTZLd3ZGWmE1aUwxcVBvc2ZrbzlHUERXRF8xdkYycjBMaTVRQ0lSQWVBSEszUmRyYkg2a1VuUkJOdG5JMTNaZVVCaktJVUc5VlJxRzFFNk5iUDlOcDZKSDFuLXVwQXJsM0l3VXZ6MWlaZFo1WXJ5VmdkMEZCcw?oc=5"
+   ],
+   [
+    "Axios",
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeXRMeFNsX0l3YTRZQ2hTZkpGWTdZWkMteXF5MEdaTHpSVHNxdHlCQ1NJdDV6OVlUYlFRY3daZENKSHFIUU1PcGRFbU84dU9WMTJzX3NfSUczYzlwUDEwSEJYZUZmaDBoLTZzMmdCcUREekRFb0M2bUM0cXEzRExkdVhCY3g?oc=5"
+   ]
+  ],
+  "first_seen": "20260818-0700",
   "status": "pending"
  },
  {
