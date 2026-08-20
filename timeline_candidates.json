@@ -1,5 +1,26 @@
 [
  {
+  "d": "2026-08-20",
+  "ko": "이란전 미군 누적 부상자 757명·사망자 18명으로 집계—USS 링컨함 열악한 근무여건도 부각",
+  "en": "US military casualties in Iran war reach cumulative 757 wounded, 18 dead — reports also highlight dire conditions aboard USS Lincoln",
+  "ar": "إصابات الجيش الأمريكي في حرب إيران تصل إلى 757 جريحا و18 قتيلا تراكميا — تقارير تسلط الضوء أيضا على ظروف قاسية على متن يو إس إس لينكولن",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DOXV6Z2JKd2tyQ3BBRDBaNk5iU0Z6UjlzWWxDWDhwa1g2Z3pXd19oUFpWOXhqY29sN0lzVGo3VUIybkhkeTFGdUFzckFnNzFvcmx1eERhSmo4UQ?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/8/19/uss-lincoln-woes-highlight-us-navy-limits-in-prolonged-iran-war-experts?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20260820-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-19",
   "ko": "UAE, 이란과 모든 금융거래·교역 무기한 중단 발표 — 이란발 미사일 공격 주장 이후 조치",
   "en": "UAE announces indefinite suspension of all financial transactions and trade with Iran, following alleged Iranian missile attack",
@@ -89,6 +110,102 @@
    ]
   ],
   "first_seen": "20260819-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-19",
+  "ko": "UAE, 이란 미사일 발사 이후 이란과의 교역·금융거래 중단 선언—트럼프 압박에 따른 조치",
+  "en": "UAE announces suspension of trade and financial transactions with Iran following missile launch — move reportedly under pressure from Trump",
+  "ar": "الإمارات تعلن تعليق التجارة والمعاملات المالية مع إيران بعد إطلاق صاروخي — بضغط من ترامب بحسب التقارير",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVnA2MnprdC01ZXZreGxyR1pZYl9rTnVReTZ0S2ZiZ3FMcGtabktucW5nT011Vm9aZnNZbHBpX0FkenktVXJnWkluOGJYaThYMHJPcXlwN2F2T3J0dXBaX1VyVXRQU2pESWtEZmo4eDRPTzg5U1JuSmZOLWJuNjFwLXZ5NUJzMk5nb1l0ZWNVOTAzSk9hWnhSZ1J2UGlWRVNBYjJkaHJpbEYyQkdtR1VEYg?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBtWEkwS3RCcXBzNU5URC1zTEF1aDBSRWlLTksyWGU5MkZkdVJHOGtzYWNkYmdVX2FCdC1Rb1pfd2RydUg3dFBFQUx6dm9Zakl0M1FhQkVYYzdiVVJCcGJtVDRR0gFnQVVfeXFMT1d6RnBKek5MQ1JDZzZSZVpxcHlZZmpRS2o3NUYzWlBKM0RZNm1ZV2dPZXZIS24tekRBT1ZIV1U3VE9kTUV6eklIUTI3bVpheW4wSEFOdlB1eThsc2tCdHhjZkhHVUxJQQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260820-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-19",
+  "ko": "트럼프, 이란에 대한 '가장 강력한 경제작전' 선언—이란과 거래하는 제3국에도 2차 제재 경고",
+  "en": "Trump declares 'most crushing economic operation ever' against Iran, warns third countries trading with Tehran of secondary sanctions",
+  "ar": "ترامب يعلن 'العملية الاقتصادية الأشد سحقا' ضد إيران ويحذر الدول الثالثة المتعاملة مع طهران من عقوبات ثانوية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/8/19/trump-announces-most-crushing-economic-operation-ever-against-iran?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/8/20/iran-war-live-trump-announces-most-crushing-iran-sanctions?traffic_source=rss"
+   ],
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPS1ZUS2ZBLURHazBqNlpYS1dVYVJGbFExYlJNUTFzdVl0ZzQ4MFlfckg5Y1MwT0FJRkJ1NHJjNDZsdzN5MmR6XzBHeDVwMG5uZWw2NF9Wd2hUbUN3QjlDYW1oZmNCdDBFVGFQMGtUcGF6MlQtdUUyTkVvSGRReEJvMkFZSWNweTdEMUlsSVJpRlRDcVlTS240dzlPTERqYXlPLURXTnB3MA?oc=5"
+   ]
+  ],
+  "first_seen": "20260820-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-19",
+  "ko": "이스라엘군, 가자지구 5세 소녀 힌드 라잡 총격 사망 인정하고 수사 착수—유족은 자체수사 거부하고 국제 독립조사 요구",
+  "en": "Israeli military admits soldiers killed 5-year-old Hind Rajab in Gaza, opens investigation — family rejects army probe, demands independent international inquiry",
+  "ar": "الجيش الإسرائيلي يعترف بمقتل الطفلة هند رجب البالغة 5 أعوام في غزة ويفتح تحقيقا — العائلة ترفض التحقيق العسكري وتطالب بتحقيق دولي مستقل",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "aljazeera.com",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPelZzSnJWNDJZd0p5a294RWVSWTdnZ1pHdExKZ1V1OHR5NDg1Rk53a1ZoMllacXNPVFhfamtzYWlDTGp1dHV2NFZrb2hnT1FYeXpFaGJ5S09zN0UydzlXR0pmeFFzYXZ6di00Y2NkbEtrdjJYZ2x0ZVFGLU9SS3lkSk1rclNPZDNsX0JEdDE0RnpLVG40dE1ELXlNNzdVX2Jxc0RIRkpkdTJfd2htbThxT3FIb3PSAboBQVVfeXFMTW5OSVdFQUViZzVtUG5oY29lcEJhbE1tcHpvNlgxNllHUW5KWEl1VnVzR2N2TTZkd3NoR0w5c0U3R3JVNnVnR0M5RE5tZGpXdGVobHE1Szc3RUJfSExXUXVZcnRRcG5CQkZ4RXhpYTRsQ21yY1ZTaVd6WXBLVWF5ZkV1QlBBSVZubnZlWUJQZTM3RjEzSjRydjRVWjFnYnR1a0gxRHg5al9XNGY2VHRIVzZTTzdpWVdMOW1n?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/8/19/israel-orders-inquiry-into-killing-of-6-year-old-hind-rajab-in-gaza?traffic_source=rss"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYW1Cb0ZXbDJGaVhqdE9nR1RER1dXdW05eFc5T1RwQi1lNWVNbTYtWXBCY3Z6TWExaWEtcFhhcW5Tamp2VmE2cnVfUUhndkRNb3FPRHJJeTM4c244TUh3djNvcWs4RmJLWDdFZGY2c05vRzBLSG93UjNldWVzUktUYmlZRVdpQ1FlcWlFeG1KbWF5bENyTEVJaDczSU9jNnpLN1RMV0pjYVBBcFZ5cTZSZThlZ2rSAbQBQVVfeXFMT2FtQm9GV2wyRmlYanRPZ0dUREdXV3VtOXhXOU9UcEItZTVlTW02LVlwQmN2ek1hMWlhLXBYYXFuU2pqdlZhNnJ1X1FIZ3ZETW9xT0RySXkzOHNuOE1Id3Yzb3FrOEZiS1g3RWRmNnNOb0cwS0hvd1IzZXVlc1JLVGJpWUVXaUNRZXFpRXhtSm1heWxDckxFSWg3M0lPYzZ6SzdUTFdKY2FQQXBWeXE2UmU4ZWdq?oc=5"
+   ]
+  ],
+  "first_seen": "20260820-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-19",
+  "ko": "이스라엘, 호주 구호활동가 조미 프랑콤 사망 오폭사건 기소하지 않기로 결정—호주 정부 '격분' 반응",
+  "en": "Israel decides not to prosecute over airstrike that killed Australian aid worker Zomi Frankcom — Australia reacts with 'outrage'",
+  "ar": "إسرائيل تقرر عدم الملاحقة القضائية بشأن غارة قتلت عاملة الإغاثة الأسترالية زومي فرانكوم — أستراليا ترد بـ'الغضب'",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxNclNtT2RrRl92dVVDNXMyajZydm43aE1zcldGQUozOTdhVjZDbEF6N3JPemk1Qk16bzRfMVh6dksxUDcyV3MxVWJkTFZqTXN6Q3JUZUxsdy1rTmRNdkxlbjI2bE5lRDJGRG9UdVdVRGgxRDlvUTd6cnZvdlBoR05WNGtrWmVtcGxpSWJVR2F1dHptbk5ScFhScFp3Rzc1V2EwOG9vN21XRklrSXVQ?oc=5"
+   ],
+   [
+    "BBC",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9QTGozRi1mQmNVMVdiV2ZrOWNLYkx1d3duZEtodUV2b080WWZYRklFMVhocTFsZUpHNE1mamttUnpYZVYya0hoa2Y4TU5fRXBVN0Z5WC13dzZUUQ?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20260820097600084"
+   ]
+  ],
+  "first_seen": "20260820-0700",
   "status": "pending"
  },
  {
