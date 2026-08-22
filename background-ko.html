@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>중동 전쟁 배경 및 추이</title>
+<style>
+  
+  /* 사이트 공통 팔레트(모니터·타임라인 페이지와 동일) */
+  :root{
+    --bg:#0b1220;--panel-s:#131c2e;--panel2-s:#0f1729;--line-s:#243149;
+    --txt:#e6edf7;--muted:#93a1b8;--accent:#6b7280;--gold:#f2b134;--qmaroon:#8A1538;
+    --ground:var(--bg); --panel:var(--panel-s); --panel-2:var(--panel2-s);
+    --ink:var(--txt); --ink-2:#b7c3d6; --ink-3:var(--muted);
+    --rule:var(--line-s); --rule-soft:#1b2740;
+    --brass:#f2b134; --brass-soft:#241d0c;
+    --sea:#66c2cc; --sea-soft:#0d2429;
+    --alarm:#ef8f78; --alarm-soft:#2b1410;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 28px -14px rgba(0,0,0,.6);
+  }
+  @media (prefers-color-scheme:light){
+    :root{
+      --bg:#f4f6fb;--panel-s:#fff;--panel2-s:#eef2f9;--line-s:#dbe2ee;
+      --txt:#14213a;--muted:#5a6b85;--accent:#4b5563;
+      --ink-2:#3f5170; --rule-soft:#e7ecf5;
+      --brass:#8a6318; --brass-soft:#f6efdd;
+      --sea:#1f5c63; --sea-soft:#e2eef0;
+      --alarm:#94301f; --alarm-soft:#f7e6e1;
+      --shadow:0 1px 2px rgba(20,26,29,.06), 0 8px 24px -12px rgba(20,26,29,.16);
+    }
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Malgun Gothic",sans-serif;
+    font-weight:400; line-height:1.78; letter-spacing:-.005em;
+    margin:0; padding:0 16px 64px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;}
+
+  .masthead{padding:14px 0 26px;border-bottom:2px solid var(--ink);display:flex;flex-direction:column;gap:18px;}
+  .stamp{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+    display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;
+  }
+  .stamp b{color:var(--brass);font-weight:600;}
+  h1{font-family:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;font-weight:800;font-size:clamp(26px,5vw,42px);
+     line-height:1.16;letter-spacing:-.02em;margin:0;text-wrap:balance;}
+  .dek{font-size:clamp(16px,2.2vw,18.5px);color:var(--ink-2);max-width:62ch;margin:0;font-weight:300;}
+
+  .part{
+    margin-top:88px;padding:26px 0 0;border-top:2px solid var(--ink);
+    display:flex;flex-direction:column;gap:6px;
+  }
+  .part .pn{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.2em;color:var(--brass);font-weight:600;}
+  .part h2{font-family:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;font-weight:700;font-size:clamp(27px,4.4vw,38px);
+           line-height:1.24;letter-spacing:-.02em;margin:0;text-wrap:balance;}
+  .part p{color:var(--ink-2);max-width:64ch;margin:6px 0 0;}
+
+  section{padding-top:46px;scroll-margin-top:16px;}
+  .eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.18em;
+           text-transform:uppercase;color:var(--brass);font-weight:600;margin:0 0 10px;}
+  h3{font-family:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;font-weight:700;font-size:clamp(21px,3vw,26px);
+     line-height:1.34;letter-spacing:-.015em;margin:0 0 10px;text-wrap:balance;}
+  h4{font-size:17px;font-weight:600;line-height:1.5;margin:30px 0 8px;letter-spacing:-.01em;color:var(--ink);}
+  h4:first-of-type{margin-top:4px;}
+  h5{font-size:14.5px;font-weight:600;margin:22px 0 6px;color:var(--sea);letter-spacing:-.005em;}
+  p{margin:0 0 14px;max-width:68ch;}
+  .lede{color:var(--ink-2);max-width:66ch;margin:0 0 20px;}
+  a{color:inherit;text-decoration-color:var(--rule);text-underline-offset:3px;}
+  a:hover{text-decoration-color:var(--brass);}
+  a:focus-visible,summary:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px;}
+  strong{font-weight:600;}
+  ul,ol{margin:0 0 14px;padding-left:1.15em;max-width:68ch;}
+  li{margin-bottom:8px;}
+  li::marker{color:var(--ink-3);}
+  .num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;}
+  .q{color:var(--ink-2);font-style:normal;}
+
+  .toc{background:var(--panel);border:1px solid var(--rule);padding:24px 26px;margin:34px 0 0;box-shadow:var(--shadow);}
+  .toc h4{margin:0 0 14px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;
+          letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);}
+  .toc h4.sub{margin:20px 0 8px;color:var(--brass);}
+  .toc ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2px 26px;max-width:none;}
+  .toc li{margin:0;border-bottom:1px solid var(--rule-soft);}
+  .toc a{display:flex;gap:10px;padding:8px 0;text-decoration:none;font-size:14.5px;align-items:baseline;}
+  .toc a:hover{color:var(--brass);}
+  .toc .k{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;color:var(--brass);min-width:26px;}
+
+  .board{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--alarm);
+         box-shadow:var(--shadow);padding:24px 26px;margin:32px 0 0;display:flex;flex-direction:column;gap:12px;}
+  .board .stamp b{color:var(--alarm);}
+  .board p{margin:0;max-width:70ch;}
+
+  .grid-figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:1px;
+             background:var(--rule);border:1px solid var(--rule);margin:24px 0 0;}
+  .fig{background:var(--panel);padding:17px 19px;display:flex;flex-direction:column;gap:4px;}
+  .fig .v{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;
+          font-size:25px;font-weight:600;line-height:1.1;}
+  .fig .k{font-size:12.5px;color:var(--ink-3);line-height:1.45;}
+  .fig.hot .v{color:var(--alarm);} .fig.sea .v{color:var(--sea);} .fig.br .v{color:var(--brass);}
+
+  .tl{margin:22px 0 0;border-top:1px solid var(--rule);}
+  .ev{display:grid;grid-template-columns:104px 1fr;gap:0 20px;padding:14px 0;border-bottom:1px solid var(--rule-soft);}
+  .ev .d{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;
+         font-size:12.5px;font-weight:500;color:var(--brass);padding-top:4px;}
+  .ev .t{margin:0;max-width:62ch;}
+  .ev.key{background:var(--brass-soft);margin:0 -14px;padding-left:14px;padding-right:14px;}
+  @media (max-width:600px){.ev{grid-template-columns:1fr;gap:3px;}}
+
+  .tablewrap{overflow-x:auto;margin:20px 0 0;border:1px solid var(--rule);background:var(--panel);}
+  table{border-collapse:collapse;width:100%;min-width:540px;font-size:14px;}
+  th,td{text-align:left;padding:10px 15px;border-bottom:1px solid var(--rule-soft);vertical-align:top;line-height:1.6;}
+  thead th{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+           color:var(--ink-3);font-weight:600;background:var(--panel-2);border-bottom:1px solid var(--rule);}
+  tbody tr:last-child td{border-bottom:none;}
+  td.n,th.n{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums;white-space:nowrap;}
+  caption{caption-side:bottom;text-align:left;padding:9px 15px;font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--rule-soft);}
+
+  .note{background:var(--sea-soft);border:1px solid var(--rule);border-left:3px solid var(--sea);
+        padding:18px 22px;margin:22px 0 0;}
+  .note p:last-child{margin-bottom:0;}
+  .note ul:last-child,.note ol:last-child{margin-bottom:0;}
+  .note .lbl{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+             color:var(--sea);font-weight:600;display:block;margin-bottom:7px;}
+  .caution{background:var(--alarm-soft);border-left-color:var(--alarm);}
+  .caution .lbl{color:var(--alarm);}
+  .quiet{background:var(--panel-2);border-left-color:var(--brass);}
+  .quiet .lbl{color:var(--brass);}
+
+  .gloss{margin:20px 0 0;border-top:1px solid var(--rule);}
+  details{border-bottom:1px solid var(--rule-soft);}
+  summary{cursor:pointer;padding:12px 0;font-weight:500;font-size:15.5px;list-style:none;
+          display:flex;justify-content:space-between;gap:16px;align-items:baseline;}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";color:var(--brass);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;}
+  details[open] summary::after{content:"–";}
+  details p,details ul{padding:0 0 14px;margin:0;color:var(--ink-2);font-size:14.5px;max-width:66ch;}
+  details ul{padding-left:1.15em;}
+
+  .src{font-size:13.5px;color:var(--ink-2);}
+  .src ul{padding-left:1.1em;} .src li{margin-bottom:6px;}
+  footer{margin-top:70px;padding-top:20px;border-top:1px solid var(--rule);
+         font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+         color:var(--ink-3);display:flex;flex-wrap:wrap;gap:8px 20px;}
+
+  /* ── 상단 되돌아가기 / 출처 고지 ── */
+  .bgback{display:inline-block;font-size:12.5px;font-weight:700;color:#4da3ff;text-decoration:none;margin:14px 0 6px}
+  .bgback:hover{text-decoration:underline}
+  /* 타임라인 페이지와 동일한 상단 포맷 */
+  .bgpage-div{border:0;border-top:2px solid var(--rule);margin:6px 0 14px}
+  h1.bgpage-h{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 8px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Malgun Gothic",sans-serif;
+    font-size:20px;font-weight:800;line-height:1.3;letter-spacing:-.01em;word-break:keep-all}
+  .bgpage-tag{font-size:12px;font-weight:800;color:#fff;background:#64748b;border-radius:7px;
+    padding:2px 9px;white-space:nowrap}
+  .bgnotehead{font-size:12px;color:var(--ink-3);line-height:1.55;margin:0 2px 4px}
+  @media (max-width:560px){h1.bgpage-h{font-size:17px}}
+  .bgsrc{margin:14px 0 0;padding:0}
+  .bgsrc .ai{font-size:12px;line-height:1.75;color:var(--ink-3);font-weight:400;margin:0;max-width:none}
+  @media print{.bgback{display:none}}
+  .bglive{margin:26px 0 0;border-top:1px solid var(--rule-soft);padding-top:6px}
+  .bglive>summary{cursor:pointer;list-style:none;padding:6px 0;font-size:10.5px;color:var(--ink-3);
+    opacity:.5;font-weight:400;letter-spacing:.02em;display:flex;justify-content:space-between;gap:12px}
+  .bglive>summary::-webkit-details-marker{display:none}
+  .bglive>summary::after{content:"+";font-family:ui-monospace,monospace}
+  .bglive[open]>summary{opacity:.85;margin-bottom:8px}
+  .bglive[open]>summary::after{content:"–"}
+  .bglive ul{margin:0;padding-left:0;list-style:none;max-width:none}
+  .bglive li{display:grid;grid-template-columns:74px 1fr;gap:0 14px;margin:0;padding:6px 0;
+    border-bottom:1px solid var(--rule-soft);font-size:12px;line-height:1.6;color:var(--ink-2)}
+  .bglive li:last-child{border-bottom:0}
+  .bglive .ld{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;
+    font-weight:600;color:var(--ink-3);padding-top:2px;white-space:nowrap}
+  .bglive .lmore{display:inline-block;margin-top:8px;font-size:11.5px;color:var(--ink-3);text-decoration:none;
+    border-bottom:1px dotted var(--rule)}
+  .bglive .lmore:hover{color:var(--brass)}
+  .bglive .lnote{font-size:10.5px;color:var(--ink-3);opacity:.8;margin:8px 0 0;max-width:none}
+  @media (max-width:600px){.bglive li{grid-template-columns:1fr;gap:2px}}
+  @media print{.bglive{display:none}}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <a class="bgback" href="/qatar-media-monitor/">← 모니터로 돌아가기</a>
+
+  <hr class="bgpage-div">
+  <h1 class="bgpage-h"><span class="bgpage-tag">배경</span>중동 전쟁 배경 및 추이</h1>
+  <div class="bgnotehead">1901년 석유 이권에서 시작된 125년의 배경부터 2026년 8월 현재까지 · 역사 · 군사 · 외교 · 정치 · 경제 · 본문 기준일 2026. 8. 21.</div>
+
+<div class="bgsrc"><p class="ai">※ IAEA·IEA·IMF·세계은행·UN 안전보장이사회·IMO·미국 EIA 등 국제기구 공개자료, 영국 하원도서관·미국 의회조사국(CRS) 조사보고서, CFR·International Crisis Group·Chatham House·Brookings·Arms Control Association·ISIS 등 연구기관 분석, 로이터·AP·알자지라·NPR·PBS·FT 등 언론 보도, KIEP·KDI·자본시장연구원·에너지경제연구원·한국해양전략연구소 등 국내 기관 자료, 그리고 위키백과를 참고해 AI가 요약·정리한 자료인 점 참고해주시기 바랍니다. 진행 중인 사안이라 수치는 잠정치이며, 당사국 발표는 서로 다를 수 있습니다.</p></div>
+
+
+
+  <nav class="toc">
+    <h4>목차</h4>
+    <ol>
+      <li><a href="#now"><span class="k">00</span><span>지금 상황 · 3분 요약</span></a></li>
+    </ol>
+    <h4 class="sub">Part Ⅰ — 배경: 125년의 지층</h4>
+    <ol>
+      <li><a href="#h1"><span class="k">Ⅰ-1</span><span>석유와 주권 1901–1953</span></a></li>
+      <li><a href="#h2"><span class="k">Ⅰ-2</span><span>팔레비 체제와 혁명 1953–1979</span></a></li>
+      <li><a href="#h3"><span class="k">Ⅰ-3</span><span>이슬람공화국이라는 기계</span></a></li>
+      <li><a href="#h4"><span class="k">Ⅰ-4</span><span>8년 전쟁이 만든 전략문화</span></a></li>
+      <li><a href="#h5"><span class="k">Ⅰ-5</span><span>이스라엘–이란: 동맹에서 전쟁까지</span></a></li>
+      <li><a href="#h6"><span class="k">Ⅰ-6</span><span>저항의 축, 건설과 붕괴</span></a></li>
+      <li><a href="#h7"><span class="k">Ⅰ-7</span><span>핵: 기술과 외교의 70년</span></a></li>
+      <li><a href="#h8"><span class="k">Ⅰ-8</span><span>제재와 이란 경제</span></a></li>
+      <li><a href="#h9"><span class="k">Ⅰ-9</span><span>사회: 이미 떠난 사람들</span></a></li>
+      <li><a href="#h10"><span class="k">Ⅰ-10</span><span>오일쇼크의 역사와 호르무즈</span></a></li>
+      <li><a href="#h11"><span class="k">Ⅰ-11</span><span>한국과 중동·이란의 60년</span></a></li>
+      <li><a href="#h12"><span class="k">Ⅰ-12</span><span>문턱이 사라진 3년, 그리고 왜 2026년 2월</span></a></li>
+    </ol>
+    <h4 class="sub">Part Ⅱ–XI — 전쟁과 그 이후</h4>
+    <ol>
+      <li><a href="#p2"><span class="k">Ⅱ</span><span>개전 — 타결 하루 전의 기습</span></a></li>
+      <li><a href="#p3"><span class="k">Ⅲ</span><span>6개월의 전쟁 경과</span></a></li>
+      <li><a href="#p4"><span class="k">Ⅳ</span><span>군사 — 전력·소모·피해</span></a></li>
+      <li><a href="#p5"><span class="k">Ⅴ</span><span>외교 — 협상과 중재, 국제법</span></a></li>
+      <li><a href="#p6"><span class="k">Ⅵ</span><span>정치 — 이란·미국·이스라엘·역내</span></a></li>
+      <li><a href="#p7"><span class="k">Ⅶ</span><span>경제 — 유가·해운·세계경제</span></a></li>
+      <li><a href="#p8"><span class="k">Ⅷ</span><span>한국에 닿는 것들</span></a></li>
+      <li><a href="#p9"><span class="k">Ⅸ</span><span>쟁점과 시나리오</span></a></li>
+      <li><a href="#p10"><span class="k">Ⅹ</span><span>용어사전 · 인물사전</span></a></li>
+      <li><a href="#p11"><span class="k">XI</span><span>엇갈리는 숫자들 · 출처</span></a></li>
+    </ol>
+  </nav>
+
+  <section id="now">
+    <p class="eyebrow">00 · 지금 상황</p>
+    <h3>한눈에 보기</h3>
+    <p class="lede">본격 교전은 7월 말 이후 멎었습니다. 그러나 전쟁이 끝난 것은 아닙니다. 지금은 <strong>총성이 잦아든 봉쇄전</strong>이고, 협상 시한은 나흘 전 성과 없이 끝났습니다.</p>
+
+    <div class="board">
+      <div class="stamp"><b>2026년 8월 21일 시점의 스냅샷</b> <span style="color:var(--ink-3)">— 이후 전개는 타임라인 참조</span></div>
+      <p>6월 17일 베르사유궁에서 서명된 <strong>이슬라마바드 각서</strong>(60일 시한부 합의)가 <strong>8월 17일 만료</strong>됐습니다. 이란은 연장을 거부했고, 트럼프 대통령은 "백기를 들라"며 중재국인 오만까지 폭격 위협을 했습니다. 8월 19일에는 <strong>'경제 D-데이'</strong>라는 이름의 초강력 제재 캠페인을 예고했고, 같은 날 <strong>UAE가 이란과의 모든 무역·금융 거래를 무기한 중단</strong>했습니다. 이란 영토에 대한 공습은 7월 29일 이후 <strong>3주 넘게 중단</strong>돼 있고, 이란의 미사일·드론 발사도 사실상 0입니다. 대신 <strong>이중 봉쇄</strong>(미 해군의 이란 항구 봉쇄 + 이란의 호르무즈 봉쇄)와 상선 공격이 전쟁을 대신하고 있으며, 레바논 남부만이 유일하게 총격이 오가는 전선입니다.</p>
+    </div>
+
+    <div class="grid-figs">
+      <div class="fig hot"><span class="v">2.28</span><span class="k">개전 — 미 Epic Fury<br>+ 이스라엘 Roaring Lion</span></div>
+      <div class="fig hot"><span class="v">참수</span><span class="k">개전 당일 최고지도자<br>알리 하메네이 사망</span></div>
+      <div class="fig sea"><span class="v">8~15</span><span class="k">호르무즈 하루 통항 척수<br>(전쟁 전 120~140척)</span></div>
+      <div class="fig sea"><span class="v">$95</span><span class="k">브렌트유(8/20, IEA·EIA 기준)<br>개전 전 $72 대비 +32%</span></div>
+      <div class="fig br"><span class="v">$118</span><span class="k">1분기말 브렌트 — 1988년 이후<br>최대 분기 상승폭(EIA)</span></div>
+      <div class="fig"><span class="v">3.0%</span><span class="k">IMF 2026 세계 성장률<br>(7월 하향)</span></div>
+      <div class="fig"><span class="v">400</span><span class="k">IEA 사상 최대 공동방출<br>(백만 배럴, 3/11)</span></div>
+      <div class="fig"><span class="v">70.7%</span><span class="k">한국 원유 수입 중<br>중동 비중</span></div>
+    </div>
+
+    <div class="note caution">
+      <span class="lbl">이 문서를 읽는 법</span>
+      <p>진행 중인 전쟁이라 <strong>거의 모든 숫자에 당사자별 편차</strong>가 있습니다. 이란군 전사자는 미·이스라엘 주장(6,000명 이상)과 이란·독립단체 집계(1,221~3,636명)가 2~5배 차이 나고, 미국의 전비는 공식 375억 달러와 독립 추정 1,000억 달러 이상이 3배 차이입니다. 아래에서는 <strong>가능한 한 "누가 주장한 숫자인지"를 병기</strong>했고, 한쪽만 주장하고 검증되지 않은 내용은 따로 표시했습니다. 마지막 장에 <strong>엇갈리는 숫자 목록</strong>을 따로 모아 두었습니다.</p>
+    </div>
+
+    <h4>3분 요약</h4>
+    <ol>
+      <li><strong>왜 일어났나.</strong> 1979년 혁명 이후의 구조적 적대 위에, 2018년 핵합의 파기로 외교가 막히고, 2023~2025년 사이 '저항의 축'이 무너지면서 이란의 억지력이 사라졌습니다. 여기에 2025년 12월 시작된 대규모 반정부 시위가 "지금이면 정권이 흔들린다"는 계산을 워싱턴과 예루살렘에 심어줬습니다.</li>
+      <li><strong>어떻게 시작됐나.</strong> 2026년 2월 오만·제네바에서 이란이 "농축 우라늄 재고 제로 + IAEA 전면 검증"을 제안하며 타결이 임박했는데, 그 이틀 뒤인 2월 28일 새벽 미국과 이스라엘이 기습했습니다. 첫날 최고지도자가 제거됐습니다.</li>
+      <li><strong>어떻게 전개됐나.</strong> 이란은 열흘 만에 미사일 발사율이 90% 넘게 떨어졌지만, <strong>호르무즈 해협을 닫는 비대칭 카드</strong>로 버텼습니다. 세계 원유의 5분의 1이 지나는 통로가 막히면서 전쟁은 군사 문제에서 세계 경제 문제로 바뀌었습니다.</li>
+      <li><strong>지금 무엇이 막혀 있나.</strong> ① 해협 주권 ② 미 해군 봉쇄 ③ 전쟁 배상금 ④ 제재 해제 순서 ⑤ 농축 권리 ⑥ 레바논 — 이 여섯이 얽혀 어느 하나도 먼저 풀 수 없는 구조입니다.</li>
+      <li><strong>한국에는 왜 중요한가.</strong> 원유의 70.7%, LNG의 20.4%, 나프타의 34.4%가 중동산입니다. 3월 카타르 LNG 설비 피격 때 불가항력 통보를 받은 4개국 중 하나였고, 8월에는 이란 작전 지원을 거부한 대가로 한미 연합훈련이 축소되는 상황까지 왔습니다.</li>
+    </ol>
+  </section>
+
+  <div class="part" id="p1">
+    <span class="pn">PART Ⅰ</span>
+    <h2>배경 — 125년의 지층</h2>
+    <p>이 전쟁은 2026년에 갑자기 생기지 않았습니다. 열두 개의 지층이 쌓여 있고, 각 지층에서 안전핀이 하나씩 빠졌습니다. 이 파트가 이 문서에서 가장 긴 이유는, <strong>2026년에 일어난 거의 모든 일이 여기에 원본이 있기 때문</strong>입니다.</p>
+  </div>
+  <section id="h1">
+    <p class="eyebrow">Ⅰ-1 · 1901–1953</p>
+    <h3>석유와 주권 — 모든 이란 위기에는 석유 조항이 있다</h3>
+    <p class="lede">1901년에 서명된 계약서 한 장이 이란 현대사의 모든 갈등을 만들어냈습니다. 이란인이 외국을 볼 때의 기본 감정 — <strong>"우리 것을 남이 가져간다"</strong> — 은 여기서 시작됐습니다.</p>
+
+    <h4>다르시 이권과 영국의 석유</h4>
+    <ul>
+      <li><span class="num">1901</span>년 영국인 <strong>윌리엄 녹스 다르시</strong>가 페르시아 대부분의 지역에 대한 60년 석유 이권을 얻습니다. 대가는 현금 <span class="num">2만</span> 파운드, 주식 <span class="num">2만</span> 파운드, 그리고 <strong>장래 순이익의 16%</strong>였습니다.</li>
+      <li><span class="num">1908</span>년 5월 26일 <strong>마스제드솔레이만</strong>에서 중동 최초의 상업적 유전이 발견됩니다. 1909년 <strong>앵글로-페르시안 석유회사(APOC)</strong>가 설립되고, <span class="num">1914</span>년 해군장관 <strong>처칠</strong>이 영국 정부를 대신해 <strong>51% 지분</strong>을 사들입니다. 이란의 석유는 그 순간부터 영국 해군의 연료가 됐습니다.</li>
+      <li>핵심 분쟁은 "순이익의 16%"라는 문구였습니다. APOC의 회계를 이란이 볼 수 없었고, 영국 정부가 APOC에서 걷은 <strong>세금이 이란이 받은 로열티보다 많은</strong> 구조였기 때문입니다.</li>
+    </ul>
+
+    <h4>입헌혁명 — 오늘날 헌법수호위원회의 조상</h4>
+    <p><span class="num">1905</span>년 설탕 상인 두 명이 가격 문제로 태형을 당한 사건에서 시작된 <strong>입헌혁명</strong>은 1906년 이란 최초의 <strong>의회(마즐리스)</strong>와 헌법을 낳았습니다. 그런데 <span class="num">1907</span>년 10월의 <strong>보충 기본법</strong>은 12신도 시아파를 국교로 정하고, <strong>성직자 5인으로 구성된 위원회가 모든 법률이 샤리아에 부합하는지 심사</strong>하도록 했습니다. 오늘날 이란 정치를 실질적으로 통제하는 <strong>헌법수호위원회의 직계 조상</strong>이 이때 만들어졌습니다.</p>
+    <p>같은 해 <strong>영러협상</strong>이 이란의 참여 없이 이란을 북부(러시아)·남부(영국)·중립지대로 분할했고, 1908년에는 러시아인 장교가 지휘하는 코사크 여단이 의회를 포격했습니다. 1911년 러시아의 최후통첩으로 의회는 해산되고 혁명은 끝납니다. <strong>"강대국이 우리 머리 위에서 우리를 나눈다"</strong>는 경험이 이때 각인됐습니다.</p>
+
+    <h4>레자 샤 — 근대화와 반발의 원형</h4>
+    <p><span class="num">1921</span>년 쿠데타로 등장한 코사크 여단 지휘관 <strong>레자 칸</strong>은 1925년 카자르 왕조를 폐하고 <strong>팔레비 왕조</strong>를 엽니다. 그가 한 일은 근대화 그 자체였습니다 — 종단철도(1927~38), 테헤란대학(1934), 세속 민법과 법원, 징병제, 그리고 <span class="num">1935</span>년부터 국호를 '페르시아'에서 <strong>'이란'</strong>으로 부르게 한 것.</p>
+    <p>그러나 <span class="num">1936</span>년 1월 <strong>차도르 강제 해제령(카슈페 헤자브)</strong>은 경찰이 거리에서 여성의 차도르를 찢는 방식으로 집행됐고, 1935년 마슈하드 <strong>고하르샤드 모스크</strong>의 성직자 시위는 유혈 진압됐습니다. <strong>세속적 근대화와 종교적 반발이라는 이란 현대사의 진자운동</strong>이 여기서 시작됩니다. 1979년 혁명의 정서적 연료 중 상당 부분이 이 시기의 기억입니다.</p>
+    <p>레자 샤는 1932년 다르시 이권을 취소했지만, 1933년의 새 협정은 조건을 조금 개선하는 대신 <strong>이권 기한을 1993년까지 연장</strong>해 이란에서는 오히려 패배로 받아들여졌습니다. <span class="num">1941</span>년 영국과 소련이 이란을 침공(독일 기술자 문제와 소련 지원 통로 확보)했고, 그는 퇴위해 남아공에서 사망합니다.</p>
+
+    <h4>모사데크와 1953년 — 반미의 창세기</h4>
+    <div class="tl">
+      <div class="ev"><div class="d">1951.03</div><p class="t">의회가 <b>석유 국유화</b>를 사실상 만장일치로 의결. 4월 <b>모하마드 모사데크</b>가 총리에 오르고 <b>이란국영석유공사(NIOC)</b>가 설립됨.</p></div>
+      <div class="ev"><div class="d">1951.10</div><p class="t">영국이 세계 최대 정유소 <b>아바단</b>에서 철수하고 <b>영국 해군이 이란산 석유의 세계 금수를 집행</b>. 이란의 석유 수입은 1951~53년 사실상 0으로 붕괴.</p></div>
+      <div class="ev"><div class="d">1952.07</div><p class="t">영국이 <b>국제사법재판소와 유엔 안보리에서 모두 패소</b>. 트루먼 행정부는 쿠데타 참여를 거부.</p></div>
+      <div class="ev key"><div class="d">1953.08.19</div><p class="t">아이젠하워 취임 후 미국이 입장을 바꿔 <b>CIA의 TPAJAX 작전 / MI6의 Boot 작전</b> 실행. 커밋 루스벨트가 현장을 지휘하고, 돈으로 동원한 군중과 <b>파즐롤라 자헤디</b> 장군의 부대가 테헤란을 장악. 사망자는 <b>200~300명</b>(일부 추정 800명 — 논쟁적).</p></div>
+      <div class="ev"><div class="d">1954</div><p class="t"><b>컨소시엄 협정</b>: BP(구 AIOC) 40%, 미국 메이저 5개사 40%, 셸 14%, 프랑스 CFP 6%. 영국 독점은 끝났지만 <b>이란의 통제권도 함께 끝났습니다</b>.</p></div>
+      <div class="ev"><div class="d">2013.08.19</div><p class="t">미국 국가안보문서보관소가 CIA 내부 기록을 공개 — 쿠데타가 <b>"CIA의 지휘 하에" "최고위층에서 구상되고 승인된 미국 외교정책 행위"</b>였음을 처음으로 공식 인정.</p></div>
+    </div>
+
+    <div class="note">
+      <span class="lbl">왜 이게 결정적인가</span>
+      <p>이란력으로 <strong>'28 모르다드'</strong>라 불리는 이 사건은 <strong>이란 반미주의의 창세기</strong>입니다. 이전까지 미국은 이란인에게 영국·러시아와 달리 제국주의 전력이 없는 우호적 제3자였습니다. 1953년 이후 미국은 <strong>독재의 보증인</strong>이 됐습니다. 이슬람공화국은 지금도 이 사건을 반복 인용하고, 1979년 미 대사관 점거의 직접적 동기 역시 "미국이 또 1953년을 되풀이할 것"이라는 공포였습니다.</p>
+    </div>
+  </section>
+
+  <section id="h2">
+    <p class="eyebrow">Ⅰ-2 · 1953–1979</p>
+    <h3>팔레비 체제와 혁명 — 석유가 만든 붕괴</h3>
+
+    <h4>사바크(SAVAK)</h4>
+    <p><span class="num">1957</span>년 CIA의 지원으로 창설되고 1960년부터 모사드가 훈련에 참여한 비밀경찰입니다. 규모는 조직 자체 주장 2,000명 미만, 역사학자 추정 <strong>4,000~6,000명</strong>의 상근 인력에 방대한 정보원망이 붙는 구조였습니다(혁명 후 제기된 1만 5,000명설은 검증되지 않음). 전기고문·태형·구타 등이 기록으로 남아 있고, 국제앰네스티는 1976년 이란의 인권 기록을 세계 최악 수준으로 평가했습니다. <strong>사바크가 한 진짜 일은 세속 야권을 절멸시킨 것</strong>이었습니다 — 민족전선(자유주의), 투데당(공산), 페다이·MEK(게릴라)가 모두 파괴됐고, <strong>모스크만이 국가가 완전히 통제할 수 없는 유일한 공간으로 남았습니다</strong>. 이것이 1979년에 왜 성직자가 혁명을 가져갔는지를 설명합니다.</p>
+
+    <h4>백색혁명 — 성공이 만든 실패</h4>
+    <ul>
+      <li><span class="num">1963</span>년 1월 시작된 6개항(뒤에 19개항) 개혁: 토지개혁, 산림 국유화, 국영기업 매각, 노동자 이익공유, <strong>여성 참정권</strong>, <strong>문맹퇴치군단</strong>.</li>
+      <li>성과는 실재했습니다 — 약 <strong>250만 가구</strong>에 토지가 재분배됐고, 소작농의 90% 가까이가 서류상 지주가 됐으며(인구의 약 40%에 영향), 문해율은 <strong>26% → 42%</strong>로 올랐습니다.</li>
+      <li>그러나 배분된 땅은 대부분 자립 불가능한 크기였고 신용·관개 지원이 부족했습니다. 결과는 <strong>농촌 사회질서의 파괴와 대규모 도시 이주</strong> — 남부 테헤란의 빈민가가 팽창했고, <strong>이들이 1979년 혁명의 보병이 됩니다</strong>.</li>
+      <li>성직자에게는 삼중의 타격이었습니다. 토지개혁이 <strong>종교기부재산(와크프)</strong>을 잠식했고, 여성 참정권과 비무슬림의 공직 진출은 반이슬람으로 규정됐으며, 세속 법원이 성직자의 사법 역할을 빼앗았습니다.</li>
+      <li><span class="num">1963</span>년 6월 <strong>호메이니</strong>가 아슈라 설교에서 샤와 이스라엘을 공격했다 체포되고 사흘간 폭동이 일어납니다(사망자: 정부 90~200명, 호메이니 주장 1만 5,000명 — <strong>신뢰할 수 없는 수치</strong>). <span class="num">1964</span>년 미군 주둔군의 <strong>치외법권(카피튤레이션) 법</strong>을 비난한 뒤 추방돼, 1965년부터 13년간 이라크 <strong>나자프</strong>에 머무릅니다.</li>
+    </ul>
+
+    <h4>1973년 오일붐 — 돈이 체제를 무너뜨린 방식</h4>
+    <p>1973년 오일쇼크로 이란의 석유 수입은 <span class="num">1972</span>년 약 24억 달러에서 <span class="num">1974~75</span>년 <strong>178억 달러</strong>로 3년 만에 약 7배 늘었습니다. 샤는 단계적 집행을 거부하고 전부 쏟아부었습니다. 결과는 교과서적인 <strong>네덜란드병</strong>이었습니다.</p>
+    <ul>
+      <li>수입 병목 — 호람샤르 항구에 배가 몇 달씩 대기하고 화물이 썩음</li>
+      <li>1975~77년 <strong>인플레이션 15~25%</strong>, 부동산·건설 버블</li>
+      <li>군비 폭증 — 이란은 미국 무기의 최대 단일 구매국이 됨(1972~77년 100억 달러 이상 발주)</li>
+      <li>농촌 붕괴와 식량 수입 증가, 그리고 눈에 보이는 극단적 불평등</li>
+      <li>유가가 꺾이자 시행한 <strong>반폭리 단속</strong>으로 수천 명의 상인이 체포돼, 체제의 마지막 비(非)국가 사회 기반인 <strong>바자르마저 등을 돌림</strong></li>
+    </ul>
+    <p>여기에 상징적 실책이 겹칩니다. <span class="num">1971</span>년 <strong>페르세폴리스에서 열린 페르시아 제국 2,500주년 기념식</strong>은 파리 막심에서 음식을 공수하고 메르세데스 600을 250대 동원한 행사였습니다(비용은 정부 발표 1,700만 달러부터 BBC 주장 1억 2,000만 달러까지 <strong>편차가 극심</strong>). 호메이니는 나자프에서 이를 "악마의 축제"라 불렀습니다. <span class="num">1976</span>년에는 이슬람력을 폐지하고 <strong>키루스 대왕 기원의 제국력</strong>을 도입해(1355년이 2535년이 됨) 신앙인들을 격분시켰습니다. <span class="num">1975</span>년에는 정당을 없애고 단일 <strong>라스타키즈당</strong>을 만들어 "가입하든지 나라를 떠나라"고 했습니다 — <strong>합법적 불만 표출 경로를 스스로 전부 폐쇄</strong>한 것입니다.</p>
+
+    <h4>혁명 — 40일 주기라는 기계</h4>
+    <div class="tl">
+      <div class="ev"><div class="d">1978.01.07</div><p class="t">관영지 <i>에텔라아트</i>가 호메이니를 영국 첩자로 몰아붙이는 기고문을 게재. 이틀 뒤 <b>곰(Qom) 시위</b>에서 신학생들이 사살됨.</p></div>
+      <div class="ev key"><div class="d">1978.02.18</div><p class="t"><b>타브리즈 봉기</b> — 곰 희생자의 40일 추도(체헬롬)에서 시작. 이후 <b>희생 → 40일 추도 → 새 희생</b>이라는 <b>시아 애도 주기가 혁명의 동력 장치</b>가 됩니다. 야즈드·이스파한·시라즈·마슈하드·테헤란으로 확산.</p></div>
+      <div class="ev"><div class="d">1978.08.19</div><p class="t">아바단 <b>렉스 극장 화재로 422명 사망</b>. 당시엔 사바크의 소행으로 널리 믿어졌고(혁명 후 재판은 이슬람주의 방화범으로 결론), 9·11 이전 세계 최악의 테러였습니다.</p></div>
+      <div class="ev key"><div class="d">1978.09.08</div><p class="t"><b>검은 금요일</b> — 계엄 선포 당일 테헤란 잘레 광장에서 군이 발포. 사망자는 정부 86~89명, 야권은 수천 명 주장(<b>편차 극심</b>). 실제 숫자와 무관하게 <b>타협의 가능성이 이날 끝났습니다</b>.</p></div>
+      <div class="ev"><div class="d">1978.10.06</div><p class="t">샤의 요청으로 이라크에서 추방된 호메이니가 <b>파리 근교 노플르샤토</b>에 도착. 역설적으로 <b>국제 언론 접근과 테헤란 직통 전화</b>를 얻어 영향력이 폭증.</p></div>
+      <div class="ev"><div class="d">1978.10–12</div><p class="t"><b>석유 노동자 총파업</b>으로 12월에는 수출이 0이 됨 — 국가 재정의 치명타.</p></div>
+      <div class="ev"><div class="d">1978.12.10–11</div><p class="t">아슈라 행진. 전국에서 <b>600만~900만 명</b>(인구의 10% 이상) 추정 — 야권·언론 추산.</p></div>
+      <div class="ev key"><div class="d">1979.01.16</div><p class="t"><b>샤가 "휴가"를 떠남.</b> 다시 돌아오지 못하고 1980년 카이로에서 사망.</p></div>
+      <div class="ev key"><div class="d">1979.02.01</div><p class="t"><b>호메이니 귀국.</b> 귀국 소감을 묻자 <b>"히치(아무것도 아니다)"</b>라고 답한 것으로 유명. 2월 11일 군 최고회의가 중립을 선언하며 국가가 붕괴.</p></div>
+      <div class="ev"><div class="d">1979.03.30</div><p class="t"><b>국민투표</b>: "이슬람공화국 — 찬성인가 반대인가" 단일 문항. <b>98.2% 찬성</b>. '민주공화국' 같은 대안은 투표지에 없었습니다.</p></div>
+      <div class="ev"><div class="d">1979.12</div><p class="t">헌법 국민투표 통과. 세속 초안에는 <b>벨라야테 파키가 없었으나</b>, 성직자 다수의 제헌의회가 이를 삽입했습니다.</p></div>
+    </div>
+    <p style="margin-top:16px">혁명 사망자에 대해 이슬람공화국은 공식적으로 <strong>6만 명의 순교자</strong>를 주장하지만, 학술 연구는 1978~79년 전 기간에 걸쳐 <strong>2,000~3,000명</strong>으로 추정합니다. 현대사에서 공식 수치와 학계 추정의 격차가 가장 큰 사례 중 하나입니다.</p>
+
+    <h4>벨라야테 파키 — 감춰졌던 강령</h4>
+    <p>호메이니가 1970년 나자프 강의에서 정식화한 <strong>'법학자 통치'</strong>는 <strong>1,000년 넘게 이어진 시아파 주류의 정적주의와의 단절</strong>이었습니다. 주류 견해는 <strong>12대 이맘의 은폐(가이바)</strong> 기간 중의 모든 정부는 정당성이 없으며 성직자는 통치가 아니라 지도를 해야 한다는 것이었습니다. 정작 호메이니 자신도 1943년 저작에서는 "정부가 법학자의 손에 있어야 한다고 말하지 않는다"고 썼습니다.</p>
+    <p>중요한 것은 <strong>그가 혁명 기간 내내 이 강령을 감췄다는 사실</strong>입니다. 파리에서 그는 서방 기자들에게 성직자는 공직을 맡지 않을 것이며 자신은 곰으로 돌아가겠다고 말했습니다. 그리고 <strong>거의 모든 대아야톨라가 벨라야테 파키를 거부했습니다</strong> — 나자프의 호에이, 곰의 샤리아트마다리(1982년 마르자 지위를 박탈당하고 가택연금이라는 전례 없는 처분을 받음), 골파예가니, 그리고 훗날의 몬타제리. <strong>나자프의 시스타니는 지금도 정적주의를 유지합니다.</strong> 즉 이란의 체제는 시아파 주류가 승인한 적 없는 예외입니다.</p>
+
+    <h4>혁명의 인수와 인질사태</h4>
+    <ul>
+      <li><strong>자유주의자 제거</strong>: 바자르간 임시정부는 혁명위원회·혁명재판소(1979년에만 수백 명을 처형한 '교수형 판사' 할할리)·신설 <strong>IRGC(1979.5.5 창설)</strong>를 통제하지 못했고, 대사관 점거 이틀 뒤 사퇴했습니다.</li>
+      <li><strong>좌파 제거</strong>: 1980년 4월 <strong>문화혁명</strong>으로 대학이 약 3년간 폐쇄되고 교수·학생 수만 명이 숙청됐습니다.</li>
+      <li><strong>민족주의자 제거</strong>: 첫 대통령 <strong>바니사드르</strong>(1980년 75.6% 득표)는 1981년 6월 탄핵돼 파리로 망명했습니다.</li>
+      <li><strong>1981~82년의 테러와 반테러</strong>: MEK의 IRP 본부 폭탄으로 <strong>베헤슈티 대법원장 등 70여 명</strong>이, 8월에는 <strong>대통령과 총리가 동시에</strong> 폭사했습니다. 국가의 보복은 압도적이었습니다 — 국제앰네스티는 <strong>1981년 한 해에만 2,946건의 처형</strong>을 기록했습니다. <strong>알리 하메네이</strong>는 1981년 암살 미수로 오른팔이 영구 마비된 뒤 대통령이 됐습니다.</li>
+      <li><strong>1988년 감옥 학살</strong>: MEK의 침공작전 직후 호메이니의 파트와로 수감자들이 대량 처형됐습니다. 테헤란 '죽음의 위원회'에는 훗날 대통령이 되는 <strong>에브라힘 라이시</strong>가 포함돼 있었습니다("테헤란의 도살자"라는 별명의 근거). 사망자는 몬타제리 회고록 <strong>2,800~3,800명</strong>, HRW·앰네스티 <strong>2,800~5,000명</strong>, MEK 주장 3만 명(입증되지 않음). <strong>이를 비판한 몬타제리가 1989년 3월 후계자 지위에서 해임되면서, 3개월 뒤 호메이니 사망 시 후계 공백이 발생합니다.</strong></li>
+    </ul>
+    <p><strong>인질사태</strong>는 1979년 11월 4일 시작돼 <strong>444일</strong>간 52명이 억류된 끝에 1981년 1월 20일 레이건 취임 몇 분 뒤 종료됐습니다. 방아쇠는 <strong>샤의 암 치료를 위한 미국 입국 허용</strong>이었고, 이란인들은 이를 "또 한 번의 1953년"의 전주로 읽었습니다. 호메이니는 사후에 이를 승인하며 <strong>"제1혁명보다 큰 제2혁명"</strong>이라 불렀고, 실제로 이를 지렛대 삼아 자유주의자를 몰아내고 12월 헌법을 통과시켰습니다. <span class="num">1980</span>년 4월 미국은 <strong>단교</strong>했고 — 스위스가 미국 이익대표부를, 파키스탄이 이란 이익대표부를 맡는 구조가 <strong>46년째 그대로</strong>입니다.</p>
+  </section>
+
+  <section id="h3">
+    <p class="eyebrow">Ⅰ-3 · 체제</p>
+    <h3>이슬람공화국이라는 기계 — 어떻게 작동하고, 왜 멈췄나</h3>
+    <p class="lede">이란은 <strong>선출 기구와 비선출 기구의 이중 구조</strong>입니다. 모든 선출 기구는 <strong>투표 전에 비선출 기구가 후보를 거르고</strong>, <strong>투표 후에 또 다른 비선출 기구가 결과를 뒤집을 수 있습니다</strong>. 이 구조를 알면 "이란에 선거가 있는데 왜 아무것도 안 바뀌나"라는 질문이 풀립니다.</p>
+
+    <h4>최고지도자의 권한 (헌법 110조)</h4>
+    <ol>
+      <li>체제의 <strong>일반 정책</strong> 결정과 그 이행 감독</li>
+      <li><strong>국민투표</strong> 실시권</li>
+      <li>전군 <strong>통수권</strong>, <strong>선전포고와 강화</strong>, 동원령</li>
+      <li><strong>임면권</strong> — 헌법수호위원회 성직자 6인, 사법부 수장, 국영방송(IRIB) 사장, IRGC 총사령관, 정규군 총장, 합참의장, 각 군 사령관</li>
+      <li>삼권 간 <strong>분쟁 조정</strong>, 국정조정위를 통한 난제 해결</li>
+      <li><strong>대통령 당선 인준(탄피즈)</strong> — 최고지도자가 서명해야 대통령이 됩니다</li>
+      <li><strong>대통령 해임권</strong>(대법원 판결 또는 의회 불신임 후)</li>
+      <li>사면·감형</li>
+    </ol>
+    <p>헌법 밖의 실질 권력은 더 큽니다 — 전국 도시의 <strong>금요예배 인도자</strong> 임명(전국 정치 네트워크), <strong>보냐드</strong> 통제, 모든 부처·대학·IRGC 부대·주정부에 배치된 <strong>최고지도자 대리인</strong>. 국가와 준국가 부문을 통틀어 <strong>약 2,000명</strong>의 직접 임명직이 있는 것으로 추정됩니다.</p>
+
+    <h4>기구별 요약</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>기구</th><th>구성</th><th>실제 기능</th></tr></thead>
+        <tbody>
+          <tr><td><strong>전문가회의</strong><br><span class="q">Assembly of Experts</span></td><td>성직자 88명, 8년 임기, 직선</td><td><strong>최고지도자를 선출·해임</strong>. 그러나 모든 후보를 헌법수호위원회가 심사하고, 그 위원회의 절반을 최고지도자가 임명합니다 — <strong>지도자를 뽑는 기구를 지도자가 고르는 닫힌 고리</strong>. 실질적 감독을 행사한 적이 없습니다. 2024년 3월 선거에서는 <strong>24년 경력의 로하니가 자격 박탈</strong>됐습니다</td></tr>
+          <tr><td><strong>헌법수호위원회</strong><br><span class="q">Guardian Council</span></td><td>성직자 6인(지도자 임명) + 법률가 6인(사법부 수장 지명, 의회 인준)</td><td>① 모든 법률의 <strong>이슬람·헌법 적합성 심사</strong>(고문금지법, CEDAW 가입, FATF 협약, 언론자유법 등을 부결) ② <strong>선거 감독</strong>. 1991년 스스로 "감독은 <strong>승인적 감독(네자라테 에스테스바비)</strong>"이라 해석해, <strong>이유를 밝히지 않고 후보를 거부하고 결과를 무효화할 권한</strong>을 가졌습니다. <strong>1989년 이후 이란 헌정에서 가장 중요한 단 하나의 조작</strong>입니다</td></tr>
+          <tr><td><strong>국정조정위원회</strong><br><span class="q">Expediency Council</span></td><td>40여 명, 전원 지도자 임명</td><td>의회와 헌법수호위의 교착을 <strong>'체제의 이익(마슬라하트)'</strong>을 근거로 중재. 1988년 호메이니의 명령으로 창설</td></tr>
+          <tr><td><strong>국가안보최고회의(SNSC)</strong></td><td>대통령이 의장, 삼부 수장·총참모장·최고지도자 대리인 2명·외교/내무/정보장관·IRGC와 정규군 사령관</td><td><strong>핵·전쟁·강화의 실제 결정 무대</strong>. 단 <strong>모든 결정은 최고지도자의 재가를 요합니다</strong>. 내각이 아니라 여기가 진짜 정부입니다</td></tr>
+          <tr><td><strong>의회(마즐리스)</strong></td><td>290석, 4년, 소수종교 5석 배정</td><td>예산·탄핵·조약 비준. 그러나 모든 법안이 거부될 수 있고 모든 후보가 사전 심사됩니다</td></tr>
+          <tr><td><strong>대통령</strong></td><td>4년, 연임 1회</td><td>행정 수반이지만 <strong>군·사법·방송·IRGC 경제에 권한이 없습니다</strong>. 총리직은 1989년 개헌으로 폐지</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note quiet">
+      <span class="lbl">역대 대통령은 모두 체제에 부서졌다</span>
+      <p>바니사드르는 탄핵·망명(1981), 하타미의 개혁 입법은 전부 거부, <strong>강경파였던 아마디네자드조차</strong> 2011년 최고지도자와 충돌해 측근이 숙청됐고, 로하니는 핵합의가 파기된 뒤 2024년 전문가회의 후보 자격까지 박탈당했습니다. <strong>대통령직은 국민의 위임이 무력화되는 장소</strong>입니다.</p>
+    </div>
+
+    <h4>IRGC의 경제 제국과 보냐드</h4>
+    <ul>
+      <li><strong>하탐 알안비아 건설본부(GHORB)</strong> — 1990년 전후 복구 사업에서 출발한 IRGC의 엔지니어링 대기업. <strong>812개 이상의 등록 회사</strong>, 약 2만 5,000명. 사우스파르스 가스전 13·14·15/16·22~24 단계, 테헤란 지하철 7호선, 댐·파이프라인·항만. <span class="num">2009</span>년에는 조작된 민영화로 <strong>이란통신공사(TCI) 지분 51%를 약 78억 달러</strong>에 인수해 국가 통신망을 장악했습니다.</li>
+      <li><strong>보냐드(재단)</strong> — 팔레비 시대 몰수 재산으로 세워진 준국가 재단으로 <strong>최고지도자에게만 책임을 지고, 면세이며, 공적 감사를 받지 않습니다</strong>. 모스타자판 재단(피억압자 재단), 마슈하드 이맘 레자 성지의 아스탄에 코드스, 순교자·상이군인 재단, 이맘 호메이니 구호위원회 등. 로이터는 2013년 <strong>세타드(EIKO)</strong>의 자산을 <strong>약 950억 달러</strong>로 추산했습니다.</li>
+      <li><strong>주의 — 가장 남용되는 통계</strong>: IRGC가 이란 경제에서 차지하는 비중은 <strong>3분의 1부터 80%까지</strong> 주장이 갈리며, 높은 수치는 대부분 야권 계열 출처입니다. <strong>검증 가능한 숫자는 존재하지 않습니다.</strong> 방어 가능한 서술은 "IRGC 계열이 에너지·건설·통신의 최대 사업자이며 수의계약을 대량으로 받아왔다"는 정도입니다.</li>
+    </ul>
+
+    <h4>투표율 — 체제가 무너지는 소리</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>선거</th><th class="n">투표율</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>1997 대선 (하타미)</td><td class="n">약 80%</td><td>득표 약 70%, 2,000만 표 — 체제의 정통성이 가장 높았던 순간</td></tr>
+          <tr><td>2009 대선</td><td class="n">약 85% (공식)</td><td>결과 자체가 부정 논란</td></tr>
+          <tr><td>2013 대선 (로하니)</td><td class="n">72.7%</td><td>핵합의로 이어짐</td></tr>
+          <tr><td>2017 대선 (로하니 재선)</td><td class="n">73%</td><td></td></tr>
+          <tr><td>2020 총선</td><td class="n">42.6%</td><td>당시 기준 1979년 이후 최저</td></tr>
+          <tr><td>2021 대선 (라이시)</td><td class="n">48.8%</td><td><strong>무효·백지표 약 380만(13%)</strong> — 역대 최대 규모의 항의 투표</td></tr>
+          <tr><td>2024 총선</td><td class="n">약 41%</td><td>신기록</td></tr>
+          <tr><td><strong>2024 대선 1차</strong></td><td class="n"><strong>39.9%</strong></td><td><strong>이슬람공화국 역사상 최저 대선 투표율</strong></td></tr>
+          <tr><td>2024 대선 결선 (페제시키안)</td><td class="n">49.7%</td><td>페제시키안 54.8% 대 잘릴리 45.2%</td></tr>
+        </tbody>
+      </table>
+      <caption>이 체제는 <strong>참여를 통해 작동하도록 설계</strong>돼 있습니다. 선거로 불만을 흡수하는 것이 이 기계의 핵심 기능인데, <strong>10년 만에 참여 유권자의 절반을 잃었습니다</strong>. 보이콧이 야권의 지배적 전략이 됐고, 부풀릴 유인이 있는 정부 자신의 통계가 그 붕괴를 기록하고 있습니다.</caption>
+    </div>
+
+    <h4>1989년 승계 — 2026년을 이해하는 열쇠</h4>
+    <div class="note caution">
+      <span class="lbl">이 문서에서 가장 중요한 선례</span>
+      <p>1989년 6월 호메이니가 사망했을 때, <strong>알리 하메네이는 마르자(모방의 원천)가 아니라 한 단계 낮은 호자톨레슬람</strong>이었습니다. 당시 헌법은 최고지도자에게 <strong>마르자 자격을 요구</strong>했습니다. 그럼에도 라프산자니가 조율해 전문가회의가 그를 <strong>'임시' 지도자로 선출</strong>했고(74명 중 60표), <strong>같은 해 7월 28일 개헌 국민투표로 마르자 요건 자체를 삭제</strong>한 뒤 8월에 재확인했습니다. 1994년에는 곰의 신학교 교수회가 그를 마르자로 '선언'했지만, 몬타제리·시스타니 등 다수의 대아야톨라는 끝내 인정하지 않았습니다.</p>
+      <p><strong>여기서 확립된 원리</strong>: 최고지도자의 자격 요건은 구속력 있는 제약이 아니라, <strong>지배 연합이 원하는 후보를 앉히기 위해 제거할 수 있는 장애물</strong>이라는 것. 2026년 3월 <strong>모즈타바 하메네이</strong>가 아버지보다도 낮은 종교적 자격으로 온라인 표결을 통해 선출될 수 있었던 것은, <strong>1989년에 이미 요건이 삭제돼 있었기 때문</strong>입니다. 37년 전의 편법이 오늘의 세습을 가능하게 했습니다.</p>
+    </div>
+
+    <h4>파벌 지도</h4>
+    <ul>
+      <li><strong>원칙주의자(보수)</strong> — 최고지도자 지지, 경제적으로는 국가주의·포퓰리즘, 대서방 강경. 전통 우파(전투적 성직자협회)와 안보·기술관료 우파(<strong>갈리바프</strong> 국회의장, 전 IRGC 공군사령관·테헤란 시장)를 포함합니다.</li>
+      <li><strong>파이다리 전선</strong> — 초강경 극점. 2011년 <strong>메스바 야즈디</strong> 추종자들이 창설했고, 대중적 정통성은 무의미하다는 무제약 성직자 절대주의와 <strong>마흐디주의(종말론)</strong>를 이념으로 삼습니다. 의석이 <strong>2020년 8석에서 2024년 79석(27%)</strong>으로 폭증했고, <strong>모즈타바 하메네이가 이 세력의 후원자로 보도돼 왔습니다</strong> — 지금은 최고지도자 본인이 그 파벌 출신인 셈입니다.</li>
+      <li><strong>개혁파</strong> — 하타미 계열. 심각하게 약화됐고, 참여하면 체제에 이용되고 보이콧하면 소멸하는 딜레마에 갇혀 있습니다.</li>
+      <li><strong>기술관료·중도</strong> — 라프산자니–로하니–자리프–라리자니 공간. 제재 해제와 시장 정상화를 <strong>체제 생존의 조건</strong>으로 주장하다 반복적으로 숙청됐습니다.</li>
+      <li><strong>그리고 진짜 축</strong> — 2020년대, 특히 2025~26년 전쟁을 거치며 실제 대립축은 성직자 파벌이 아니라 <strong>성직자 대 안보 실세(securocrats)</strong>가 됐습니다. 이란은 <strong>성직자 외피를 쓴 군사·안보 국가</strong>로 이행 중이고, 2026년 8월의 지휘부 개편이 그 속도를 높였습니다.</li>
+    </ul>
+  </section>
+
+  <section id="h4">
+    <p class="eyebrow">Ⅰ-4 · 1980–1988</p>
+    <h3>8년 전쟁이 만든 다섯 개의 교리</h3>
+    <p class="lede">2026년에 이란이 쓴 모든 수단 — 미사일, 대리세력, 자력 생산, 순교 동원, 국제기구 불신 — 은 전부 <strong>이 전쟁에서 만들어졌습니다</strong>. 이 장이 Part Ⅰ에서 가장 하중을 많이 받는 부분입니다.</p>
+
+    <h4>원인과 경과</h4>
+    <p>직접적 쟁점은 <strong>샤트알아랍 수로</strong>였습니다. 1975년 <strong>알제 협정</strong>으로 국경이 수로 중앙선으로 옮겨졌는데, 사담 후세인은 <span class="num">1980</span>년 9월 17일 이 협정을 공개적으로 찢고 닷새 뒤 침공했습니다. 배경에는 호메이니가 이라크 시아파 다수에게 혁명 수출을 호소한 것에 대한 공포, 그리고 캠프데이비드로 고립된 이집트를 대신해 아랍 지도국이 되려는 사담의 야심이 있었습니다.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시기</th><th>사건</th><th>결과</th></tr></thead>
+        <tbody>
+          <tr><td>1980.9–10</td><td>호람샤르 전투</td><td>이라크 점령. 이란은 이 도시를 '피의 도시(후닌샤르)'라 부름. 양측 약 7,000명씩 전사</td></tr>
+          <tr><td>1982.4–5</td><td>베이트 알모카다스 작전</td><td>호람샤르 탈환. 이라크 포로 1만 9,000명. <strong>이 시점에 사담이 휴전을 제안했으나 호메이니가 거부하고 이라크 영토로 진격 — 전쟁이 6년 더 길어진 분기점</strong></td></tr>
+          <tr><td>1986.2–3</td><td><strong>새벽 8호 작전 / 파오 반도</strong></td><td>이란 최대의 승리. 이라크의 유일한 걸프 해안을 상륙 점령</td></tr>
+          <tr><td>1987.1–4</td><td><strong>카르발라-5 작전 (바스라 공방)</strong></td><td>전쟁 최대 전투이자 이란의 마지막 대공세. <strong>이란 사상자 4만~6만 5,000명</strong>. 이후 지원병 모집이 붕괴</td></tr>
+          <tr><td>1988.4</td><td>이라크의 파오 재탈환</td><td><strong>약 35시간 만에 화학무기를 대량 사용해</strong> 회복. 이후 이란 전선 붕괴</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>도시 전쟁 — 미사일 교리가 태어난 곳</h4>
+    <p>1984~88년 다섯 차례에 걸친 <strong>'도시들의 전쟁'</strong>에서 이라크는 스커드와 개량형 <strong>알후세인</strong> 미사일로 이란 도시를 직접 때렸습니다. <span class="num">1988</span>년 1~2월의 마지막 캠페인에서 이라크는 <strong>탄도미사일 533발</strong>을 발사해 414발을 명중시켰고, <strong>민간인 2,312명이 사망</strong>했습니다. <strong>테헤란만 52일 동안 118발</strong>을 맞았고 <strong>매일 밤 약 100만 명이 도시를 빠져나갔습니다</strong>.</p>
+    <p><strong>이란에게는 대응 수단이 전혀 없었습니다.</strong> 이 무력감이 오늘날 중동 최대 규모의 탄도미사일 전력을 만든 원체험입니다. 2024년과 2026년에 이스라엘 도시로 날아간 미사일들은 <strong>1988년 테헤란에 떨어진 알후세인의 교리적 후손</strong>입니다.</p>
+
+    <h4>화학무기와 국제사회의 침묵</h4>
+    <ul>
+      <li>이라크는 1983년 10월부터 겨자가스·타분·사린을 체계적으로 사용해 <strong>10만 발 이상의 화학탄</strong>을 소모했습니다. <strong>이란 측 화학무기 피해자는 10만 명 이상</strong>이고, 수십 년이 지난 지금도 <strong>7만 명 이상이 치료를 받고 있습니다</strong>.</li>
+      <li><span class="num">1987</span>년 6월 <strong>사르다슈트</strong>에서는 인구 1만 2,000명의 도시에 겨자가스가 투하돼 <strong>130명 사망, 8,000명 부상</strong>. 이란은 이를 히로시마 이후 최초로 화학무기가 도시에 사용된 사례라 부릅니다. <span class="num">1988</span>년 3월 <strong>할랍자</strong>에서는 쿠르드 민간인 <strong>3,200~5,000명</strong>이 사망했습니다.</li>
+      <li><strong>결정적인 것은 국제사회의 반응입니다.</strong> 유엔 안보리는 1984~85년 성명에서 이라크를 지목하지 않았고, <strong>1986년 결의 582호는 가해자를 특정하지 않은 채 사용만 규탄</strong>했습니다. 1986~88년 사이 이라크를 명시한 결의는 하나도 없습니다. 나아가 기밀 해제 문서는 <strong>미국이 이라크의 화학무기 사용을 알면서도 표적 정보를 계속 제공했음</strong>을 보여줍니다.</li>
+    </ul>
+
+    <h4>탱커전쟁과 빈센스호</h4>
+    <p>1981년부터 시작돼 1984년 격화된 <strong>탱커전쟁</strong>에서 로이즈 집계 기준 <strong>상선 546척이 피해</strong>를 입고 <strong>민간 선원 약 430명이 사망</strong>했습니다(이라크 283회, 이란 168회 공격). 미국은 쿠웨이트 유조선을 성조기로 재기국해 호위하는 <strong>Earnest Will</strong>(1987.7~1988.9, 2차대전 이후 최대 호송작전)과, 이란 해군을 타격한 <strong>Praying Mantis</strong>(1988.4.18, 2차대전 이후 미 해군 최대 수상전)로 개입했습니다.</p>
+    <p>그리고 <span class="num">1988</span>년 7월 3일, 순양함 <strong>USS Vincennes</strong>가 반다르아바스–두바이 정기편 <strong>이란항공 655편</strong>을 격추해 <strong>290명 전원</strong>이 사망했습니다(어린이 66명 포함). 미국은 공식 사과하지 않았고 1996년 <strong>1억 3,180만 달러</strong>로 합의했습니다. 함장은 격추를 언급하지 않은 표창장과 함께 <strong>훈장을 받았습니다</strong>. 테헤란은 이를 <strong>"미국이 참전하겠다는 신호"</strong>로 읽었고, 2주 뒤 호메이니가 휴전 결의를 수락합니다.</p>
+    <p>1988년 7월 17일 유엔 결의 598호를 수락하며 호메이니가 남긴 말은 지금도 인용됩니다 — <strong>"이 결정을 내리는 것은 독배를 마시는 것보다 더 치명적이다. (…) 순교로 떠난 이들은 행복하도다. 아직 살아남은 나는 불행하도다."</strong> 8년의 전쟁은 <strong>영토 변경도 배상도 없이</strong>, 1975년 알제 협정의 조건으로 되돌아가며 끝났습니다.</p>
+
+    <h4>총 피해와, 남은 다섯 교리</h4>
+    <p>총 사망자는 약 <strong>50만 명</strong>으로 추정되며(이란 공식 전사자 12만 3,220~16만 명, 부상 32만~50만 명), 경제적 비용은 <strong>이란 약 6,270억 달러, 이라크 약 5,610억 달러</strong>였습니다. 걸프 국가들은 이라크에 <strong>370억~600억 달러</strong>를 빌려줬습니다 — 이란이 걸프 아랍국을 신뢰하지 않는 또 하나의 이유입니다.</p>
+    <div class="note">
+      <span class="lbl">2026년으로 이어지는 다섯 교리</span>
+      <ol>
+        <li><strong>미사일이 공군의 대체재다.</strong> 알후세인에 대응할 수단이 없었던 경험 → 역내 최대 미사일 전력</li>
+        <li><strong>자력 생산(코드카파이).</strong> 전면 무기 금수 하에서 싸운 경험 → 국산 방산, 그리고 훗날 국산 <strong>농축</strong></li>
+        <li><strong>순교와 전방 방어.</strong> 바시지 동원 문화의 제도화, 그리고 "남의 땅에서 싸운다"는 논리 → <strong>대리세력망</strong></li>
+        <li><strong>국제기구에 대한 구조적 불신.</strong> 안보리가 화학무기 사용국을 지목조차 하지 않았다는 사실은, 오늘날 IAEA·안보리의 요구에 대한 이란의 표준 답변입니다 — <strong>"국제법은 우리를 지켜준 적이 없다."</strong> 2025년 스냅백 제재를 이란이 법적으로 부정하는 근거도 이 정서 위에 있습니다</li>
+        <li><strong>억지력은 스스로 만들어야 한다.</strong> 어떤 외부 보증인도 개입하지 않았다는 경험 → <strong>에너지원이 아니라 보험으로서의 농축</strong></li>
+      </ol>
+    </div>
+  </section>
+  <section id="h5">
+    <p class="eyebrow">Ⅰ-5 · 1948–2025</p>
+    <h3>이스라엘–이란 — 동맹이었다가 원수가 된 나라</h3>
+    <p class="lede">지금은 상상하기 어렵지만, <strong>이란은 한때 이스라엘의 최대 원유 공급국이자 정보 동맹이었습니다</strong>. 이 관계가 어떻게 뒤집혔는지를 알면 2026년의 적대가 종교적 숙명이 아니라 <strong>냉전과 지역 질서가 만든 산물</strong>임이 보입니다.</p>
+
+    <h4>샤 시대의 동맹 (1948–1979)</h4>
+    <ul>
+      <li>이란은 <span class="num">1948</span>년 터키에 이어 <strong>두 번째 무슬림 다수국으로 이스라엘을 사실상 승인</strong>했습니다.</li>
+      <li>벤구리온의 <strong>'주변부 동맹(alliance of the periphery)'</strong> 독트린 — 아랍 세계를 둘러싼 비아랍 국가들과 손잡는다는 전략. <span class="num">1958</span>년 <strong>트라이던트 협정</strong>으로 모사드·터키 MİT·이란 사바크의 3자 정보 협력이 제도화됐고, 바트당 이라크와 시리아를 겨냥했습니다. 모사드와 사바크는 이라크의 쿠르드 반군(바르자니)을 함께 지원하기도 했습니다.</li>
+      <li><strong>석유</strong>: 1967년 전쟁으로 수에즈가 닫힌 뒤 이란은 이스라엘의 주요 원유 공급국이 됐고, 공동 소유의 <strong>에일라트–아슈켈론 파이프라인</strong>이 그 통로였습니다.</li>
+      <li>1977~79년에는 <strong>'플라워 프로젝트'</strong>라는 이름으로 <strong>지대지 미사일 공동 개발</strong>까지 진행됐습니다.</li>
+    </ul>
+
+    <h4>단절, 그러나 1980년대의 이중성</h4>
+    <p><span class="num">1979</span>년 호메이니는 이스라엘을 <strong>'작은 사탄'</strong>으로 규정하고 테헤란의 이스라엘 대사관 건물을 PLO에 넘겼습니다. 그러나 <strong>실제 행동은 수사와 달랐습니다</strong>. 이스라엘은 이란-이라크 전쟁 내내 이란에 무기를 팔았습니다 — <span class="num">1981</span>년 <strong>'조개껍데기 작전'</strong>으로 약 7,500만 달러어치, 1981~83년 총 <strong>약 5억 달러</strong>, 그리고 이란에 100여 명의 이스라엘 기술 고문이 체류했습니다.</p>
+    <p>정점은 <strong>이란-콘트라</strong>(1985~86)였습니다. 이스라엘을 통로로 미국이 이란에 TOW 대전차미사일과 호크 방공미사일을 넘기고, 그 대금으로 니카라과 콘트라 반군을 지원한 사건입니다. 1986년 5월 매크팔레인 전 국가안보보좌관이 비밀리에 테헤란까지 갔다가 실패했고, 그해 11월 레바논 잡지가 폭로하며 미국 정치를 뒤흔들었습니다. <strong>이스라엘의 논리는 여전히 주변부 독트린이었습니다 — 가까운 적은 이라크였고, 이란은 지렛대였습니다.</strong></p>
+
+    <h4>1990년대에 왜 뒤집혔나 — 네 가지 요인</h4>
+    <ol>
+      <li><strong>1991년 이라크의 패배</strong>로 두 나라가 공유하던 적이 사라졌습니다.</li>
+      <li><strong>소련 붕괴</strong>로 냉전 논리가 소멸하고, 이란만이 유일한 역내 수정주의 세력으로 남았습니다.</li>
+      <li><strong>1993년 오슬로 협정</strong> — 이스라엘에는 미국의 전략적 관심을 붙들어둘 새로운 위협 서사가 필요했고, 이란은 오슬로 거부 진영의 지도자를 자임하며 하마스·이슬라믹 지하드를 지원하기 시작했습니다.</li>
+      <li><strong>헤즈볼라의 성장과 이란 핵 프로그램</strong>이 위협을 수사에서 실체로 바꿨습니다.</li>
+    </ol>
+    <p>이 전환기에 부에노스아이레스에서 두 차례의 폭탄 테러가 있었습니다 — <span class="num">1992</span>년 이스라엘 대사관(29명 사망), <span class="num">1994</span>년 <strong>유대인 커뮤니티센터 AMIA(85명 사망)</strong>. 아르헨티나 검찰은 2006년 <strong>이란이 지시하고 헤즈볼라가 실행</strong>했다고 공식 기소했고, 2007년 인터폴 적색수배 대상에는 훗날 이란 국방장관이 되는 <strong>아마드 바히디</strong>가 포함됐습니다. <strong>2026년 8월 IRGC 총사령관이 된 바로 그 인물입니다.</strong></p>
+
+    <h4>그림자 전쟁 (2010–2021)</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시기</th><th>사건</th><th>의미</th></tr></thead>
+        <tbody>
+          <tr><td>2009–10</td><td><strong>스턱스넷</strong> — 미·이스라엘 합작(Olympic Games). 나탄즈의 <strong>IR-1 원심분리기 약 1,000기</strong>를 회전수 조작으로 파괴</td><td>국가 간 사이버 물리 공격의 첫 사례</td></tr>
+          <tr><td>2010–2012</td><td>핵과학자 연쇄 암살 — 알리 모하마디(2010.1), 샤흐리아리(2010.11), 레자이네자드(2011.7), 아마디 로샨(2012.1)</td><td>모사드 소행으로 추정</td></tr>
+          <tr><td>2012.09.27</td><td>네타냐후의 <strong>유엔 총회 '폭탄 그림'</strong> — 만화 폭탄에 붉은 선을 긋고 농축 단계에서 저지해야 한다고 주장</td><td>이란 핵 문제를 대중적 이미지로 각인시킨 사건</td></tr>
+          <tr><td>2013.01–</td><td><strong>시리아 '전쟁들 사이의 전쟁'</strong> 개시. 2018년 한 해에만 약 2,000발 투하, 2018년 4월 이후 1,140명 사망</td><td>이란의 시리아 거점화를 저지하는 장기 소모전</td></tr>
+          <tr><td>2018.01.31</td><td><strong>모사드의 테헤란 핵문서고 탈취</strong> — 약 6시간 반 만에 문서 5만 쪽과 CD 183장 반출. 4월 30일 네타냐후가 공개, <strong>8일 뒤 트럼프가 핵합의를 탈퇴</strong></td><td>탈퇴의 정치적 무대 장치</td></tr>
+          <tr><td>2019–2021</td><td>해상 그림자전 — 푸자이라 앞 유조선 사보타주(2019.5), 오만만 피격(2019.6), 이란 함정 <strong>사비즈</strong> 흡착기뢰 피격(2021.4), 이스라엘 운영 <strong>머서 스트리트</strong> 피격(2021.7)</td><td><strong>2026년 상선 공격전의 예행연습</strong></td></tr>
+          <tr><td>2020.11.27</td><td><strong>모센 파크리자데 암살</strong> — 원격조종 기관총. 이란 핵 프로그램의 총괄자("이란의 오펜하이머")</td><td>이란 의회가 20% 농축 의무화 법을 통과시키는 계기</td></tr>
+          <tr><td>2021.04.11</td><td>나탄즈 전력계통 사보타주 — 프로그램을 9개월~2년 지연시킨 것으로 평가</td><td>직후 이란은 <strong>60% 농축</strong>을 시작</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>그림자에서 정면으로 (2024–2025)</h4>
+    <ul>
+      <li><strong>2024.4.1</strong> 이스라엘이 다마스쿠스 이란 영사관 부속건물을 폭격해 IRGC 장성 <strong>모하마드 레자 자헤디</strong> 등 8명 사망.</li>
+      <li><strong>2024.4.13~14 '진실한 약속'</strong> — 이란이 드론 약 170기, 순항미사일 30여 발, 탄도미사일 120여 발로 <strong>사상 최초의 이스라엘 본토 직접 공격</strong>. 미·영·프·요르단이 함께 요격해 약 99%를 격추. <strong>방어 비용 약 10억 달러 대 공격 비용 8,000만~1억 달러</strong>라는 비대칭이 드러난 순간이기도 합니다.</li>
+      <li><strong>2024.10.1</strong> 하니야(7월 테헤란에서 암살)와 나스랄라의 죽음에 대한 보복으로 탄도미사일 약 180발. 10월 26일 이스라엘의 반격으로 <strong>이란 방공망이 파괴</strong>됩니다.</li>
+      <li><strong>2025.6.13~24 이른바 '12일 전쟁'</strong>(언론·통칭이며 각국 의회 브리핑은 이 명칭을 쓰지 않습니다) — 이스라엘의 <strong>Rising Lion</strong>(전투기 200대 이상, 100여 표적에 330발 이상)으로 개전 수 시간 내 <strong>IRGC 총사령관 살라미, 총참모장 바게리, 항공우주군 사령관 하지자데</strong>와 핵과학자 9~10명이 제거됐습니다. 6월 22일 미국이 <strong>Midnight Hammer</strong>로 가담해 <strong>B-2 7대가 GBU-57 벙커버스터 14발</strong>을 포르도·나탄즈에, 잠수함이 토마호크 20여 발을 이스파한에 투하했습니다. 이란은 <strong>탄도미사일 550발 이상과 드론 1,000기 이상</strong>으로 반격하고 카타르 알우데이드 기지를 때린 뒤 6월 24일 휴전했습니다. 사망자는 이란 1,060~1,190명, 이스라엘 32~33명.</li>
+    </ul>
+    <p><strong>2026년 전쟁을 이해하는 데 12일 전쟁이 결정적인 이유</strong>는 두 가지입니다. 첫째, <strong>미국이 이란 본토 핵시설을 직접 때려도 세계가 무너지지 않는다</strong>는 선례를 만들었습니다. 둘째, 이란의 <strong>미사일 발사대 3분의 2와 방공망 대부분이 이때 이미 파괴됐습니다</strong>. 2026년 2월의 이란은 8개월 전보다 훨씬 벌거벗은 상태였습니다.</p>
+  </section>
+
+  <section id="h6">
+    <p class="eyebrow">Ⅰ-6 · 1982–2024</p>
+    <h3>저항의 축 — 건설에 40년, 붕괴에 14개월</h3>
+    <p class="lede">이란의 억지 전략은 국경 밖에 완충지대를 만드는 것이었습니다. 이 네트워크가 어떻게 지어졌고, 왜 2024년에 무너졌는지가 <strong>2026년 침공 결정의 전제</strong>입니다.</p>
+
+    <h4>헤즈볼라 — 가장 성공한 투자</h4>
+    <ul>
+      <li><span class="num">1982</span>년 이스라엘의 레바논 침공 직후, 이란이 <strong>IRGC 교관 약 1,500명</strong>을 베카 계곡에 파견해 창설했습니다.</li>
+      <li><span class="num">1983</span>년 <strong>4월 베이루트 미 대사관 폭탄(63명 사망, CIA 베이루트 지부 대부분 사망)</strong>과 <strong>10월 해병대 막사 폭탄(미군 241명·프랑스군 58명 사망)</strong>. 레이건은 4개월 뒤 철군을 지시했습니다 — <strong>비대칭 공격이 초강대국을 물러나게 한다</strong>는 교훈이 여기서 만들어졌습니다.</li>
+      <li><span class="num">2000</span>년 이스라엘의 남레바논 철수는 헤즈볼라의 건국 신화가 됐고, <span class="num">2006</span>년 34일 전쟁에서는 <strong>로켓 약 4,000발</strong>을 쏘며 살아남았습니다.</li>
+      <li><span class="num">2013</span>년 시리아 내전 개입(쿠사이르 전투)으로 '저항 조직'에서 <strong>지역 원정군</strong>으로 성격이 바뀌었고, 동시에 수니 아랍 세계의 지지를 잃었습니다.</li>
+      <li>무기고는 2006년 약 1만 4,000발에서 <strong>2023년 15만 발 이상</strong>으로 늘었고, 이란의 지원은 <strong>연 약 7억 달러</strong>(2018년 미 재무부 추정)로 추산됐습니다.</li>
+      <li><strong>그리고 2024년에 붕괴</strong>: 9월 17~18일 <strong>무선호출기·무전기 동시 폭발</strong>로 42명 사망·3,500~4,000명 부상(전투원 약 1,500명 전력 상실), 9월 27일 <strong>나스랄라 사망</strong>(32년 재임), 10월 지상 침공, 11월 27일 휴전. <strong>이란이 40년간 쌓은 최대 자산이 두 달 만에 무력화됐습니다.</strong></li>
+    </ul>
+
+    <h4>이라크 — 미국이 이란에 넘겨준 나라</h4>
+    <p><strong>2003년 미국의 이라크 침공은 현대사에서 이란에 대한 가장 큰 단일 권력 이전</strong>이었습니다. 이란을 봉쇄하던 수니 바트당 국가가 사라지고, 1980년대에 <strong>이란에 망명해 있던</strong> 시아파 정당들이 집권했기 때문입니다. SCIRI는 1982년 테헤란에서 창설됐고 그 민병대 <strong>바드르 군단은 이란-이라크 전쟁에서 이란 편에서 싸웠습니다</strong>. 다와당은 1980년대에 이란에 피신했고 말리키·아바디 두 총리를 배출했습니다.</p>
+    <p>이란이 공급한 <strong>EFP(성형관통탄)</strong>는 미군에 수백 명의 사망자를 냈고(미 추산 2003~11년 603명), <span class="num">2014</span>년 시스타니의 반ISIS 파트와로 창설된 <strong>인민동원군(PMF)</strong>은 2016년 12월 <strong>법률로 정규 무장력에 편입</strong>됐습니다. 명목상 총리 지휘를 받지만, 친이란 핵심 조직들은 이란 최고지도자에게 충성을 서약합니다. 이 네트워크의 설계자가 <strong>가셈 솔레이마니</strong>였고, 그는 <span class="num">2020</span>년 1월 3일 바그다드 공항에서 PMF 부의장 알무한디스와 함께 제거됐습니다.</p>
+
+    <h4>시리아 — 가장 오래된 동맹, 가장 큰 상실</h4>
+    <p>시리아는 <span class="num">1979</span>년 2월 <strong>이슬람공화국을 최초로 승인한 아랍 국가</strong>이자 이란-이라크 전쟁에서 이란 편에 선 유일한 아랍국이었습니다. 그 대가로 이란은 1980년대 내내 무상·할인 원유를 공급했습니다. 이 동맹이 <strong>테헤란–바그다드–다마스쿠스–베이루트 육상 회랑</strong>의 뼈대였습니다.</p>
+    <p>2011년 내전에서 이란은 IRGC와 헤즈볼라에 더해 아프간 <strong>파테미윤</strong>·파키스탄 <strong>자이나비윤</strong> 여단까지 동원해 <strong>친아사드 시아 전투원 8만 명 이상</strong>을 모았고, 지출은 <strong>300억~500억 달러</strong>로 추정됩니다(논쟁적). <strong>그리고 2024년 12월 8일 다마스쿠스가 함락됐습니다.</strong> 아사드는 모스크바로 망명하고 이란 대사관은 약탈당했습니다.</p>
+    <div class="note caution">
+      <span class="lbl">2026년의 구조적 전제</span>
+      <p><strong>아사드 정권의 붕괴가 이 전쟁의 진짜 분기점입니다.</strong> 육상 보급로가 끊기면서 헤즈볼라는 2025~26년에 재무장할 수 없었고, 이란은 이스라엘 북부에 대한 억지력을 영구히 잃었습니다. 2026년 2월에 미국과 이스라엘이 이란 본토를 때릴 수 있다고 판단한 계산의 절반은 여기서 나옵니다.</p>
+    </div>
+
+    <h4>후티 — 유일하게 강해진 축</h4>
+    <p>1990년대의 이념적 유대(후티 형제가 곰에서 수학)에서 시작해, <span class="num">2014</span>년 사나 장악 이후 지원이 공공연해졌습니다. <span class="num">2015</span>년 3월 사우디 주도 9개국 연합의 개입은 <strong>2014~2021년 총 37만 7,000명 이상의 사망</strong>(약 60%가 기아·질병 등 간접 원인, UNDP)이라는 인도적 재앙을 낳았지만 후티를 무너뜨리지는 못했습니다.</p>
+    <p>결정적 사건은 <span class="num">2019</span>년 9월 14일 <strong>아브카이크·쿠라이스 타격</strong>이었습니다. 드론 18기와 순항미사일 7발이 세계 최대 원유 처리시설을 때려 사우디 생산이 <strong>980만 → 410만 배럴</strong>로 반토막 났고, 브렌트유는 1990년 이후 최대의 일간 상승을 기록했습니다. <strong>그런데 미국은 군사적으로 보복하지 않았습니다.</strong> 걸프 수도들은 이를 <strong>"미국의 안보 보장은 조건부"</strong>라는 증거로 읽었고, 이것이 사우디의 헤징과 2023년 베이징 합의로 이어집니다. 2026년 걸프 국가들이 피격당하면서도 참전하지 않은 태도의 뿌리도 여기 있습니다.</p>
+    <p>2023년 11월부터의 <strong>홍해 캠페인</strong>은 100회 이상의 공격, 선박 4척 침몰, 선원 15명 이상 사망, 2024년 세계 경제에 약 <strong>2,000억 달러</strong>의 비용을 발생시켰습니다. <strong>2026년 3월 참전한 후티는, 저항의 축에서 유일하게 온전한 — 오히려 강화된 — 구성원이었습니다.</strong></p>
+
+    <h4>사우디–이란 라이벌리와 걸프의 계산</h4>
+    <div class="tl">
+      <div class="ev"><div class="d">1979</div><p class="t">혁명이 사우디 왕정의 종교적 정통성을 직접 공격. 같은 해 11월 <b>메카 대사원 점거 사건</b>(약 270명 사망) 이후 사우디는 종교경찰과 울라마의 권한을 강화하며 수십 년간 보수화.</p></div>
+      <div class="ev"><div class="d">1987.07</div><p class="t">메카에서 이란 순례객 시위가 충돌로 번져 <b>약 400명 사망</b>. 1988년 사우디가 단교.</p></div>
+      <div class="ev key"><div class="d">2016.01</div><p class="t">사우디가 시아 성직자 <b>님르 알님르</b>를 처형 → 테헤란의 사우디 대사관 방화 → <b>단교</b>. 바레인·수단도 단교.</p></div>
+      <div class="ev"><div class="d">2020.09</div><p class="t"><b>아브라함 협정</b> — UAE·바레인이 이스라엘과 수교(모로코·수단 추가). 이란 포위망의 정치적 완성으로 읽혔습니다.</p></div>
+      <div class="ev key"><div class="d">2023.03.10</div><p class="t"><b>중국 중재 사우디–이란 관계 정상화.</b> 2개월 내 대사 교환, 1998년 협력협정과 2001년 안보협정 복원. <b>그러나 핵 문제, 이스라엘 수교, 예멘 해법은 전혀 다루지 않았습니다</b> — 본질은 아브카이크 이후의 <b>리스크 관리</b>였습니다.</p></div>
+      <div class="ev"><div class="d">2023.10.07</div><p class="t">하마스의 기습으로 <b>사우디–이스라엘 수교 협상이 중단</b>. 리야드는 이후 팔레스타인 국가 수립 경로를 조건으로 걸었습니다.</p></div>
+      <div class="ev"><div class="d">2026</div><p class="t">전쟁으로 <b>베이징 데탕트는 사실상 소멸</b>. 걸프 6개국은 전원 피격당하고도 공식 중립을 유지했지만, 사우디는 미군의 자국 영토 작전을 허용하고 UAE는 8월에 이란과의 거래를 전면 중단했습니다.</p></div>
+    </div>
+
+    <h4>미국–이란 외교의 놓친 순간들</h4>
+    <p>이 관계에는 <strong>합의가 가능했던 순간들이 몇 번 있었고, 매번 놓쳤습니다</strong>. 2026년 2월의 기습도 그 목록의 마지막 항목입니다.</p>
+    <ul>
+      <li><strong>1995</strong> — 라프산자니가 미국 <strong>코노코</strong>에 10억 달러 규모 유전 개발권을 주는 의도적 개방 신호를 보냈으나, 클린턴 행정부는 며칠 만에 <strong>행정명령으로 이를 무효화</strong>했습니다.</li>
+      <li><strong>1998</strong> — 하타미의 <strong>'문명 간 대화'</strong> CNN 인터뷰. 올브라이트가 화답했고 2000년에는 <strong>미국이 1953년 쿠데타에서의 역할을 처음 인정</strong>했습니다.</li>
+      <li><strong>2001</strong> — 아프가니스탄에서의 실질적 협력. 본 회의에서 이란이 북부동맹을 설득해 카르자이 정부 출범을 가능케 했습니다. <strong>7주 뒤 부시의 '악의 축' 연설</strong>이 이 흐름을 끝냈고, 이란 개혁파를 결정적으로 약화시켰습니다.</li>
+      <li><strong>2003</strong> — 스위스 대사를 통해 전달된 이른바 <strong>'그랜드 바겐' 팩스</strong>. 핵 투명성, 알카에다 문제, 하마스 지원 중단, 헤즈볼라의 정당화, 두 국가 해법 수용을 제재 해제·안전보장과 맞바꾸자는 제안이었습니다. 부시 행정부는 <strong>답하지 않았고</strong> 전달한 스위스를 문책했습니다(최고지도자의 승인 여부는 지금도 논쟁 중).</li>
+      <li><strong>2013.9.27</strong> — <strong>로하니–오바마 통화 15분</strong>. 1979년 이후 첫 정상급 직접 접촉.</li>
+      <li><strong>2015</strong> — JCPOA 타결. <strong>2018</strong> — 미국 탈퇴.</li>
+      <li><strong>2021~22</strong> — 빈 회담 8라운드가 IRGC 테러조직 지정 문제와 이행 순서에서 결렬.</li>
+      <li><strong>2023.9</strong> — 수감자 교환과 <strong>한국에 묶여 있던 60억 달러</strong>의 카타르 이전(아래 Ⅰ-11 참조).</li>
+      <li><strong>2025~26</strong> — 무스카트 협상, 그리고 <strong>타결 직전의 기습</strong>.</li>
+    </ul>
+  </section>
+
+  <section id="h7">
+    <p class="eyebrow">Ⅰ-7 · 1957–2026</p>
+    <h3>핵 — 미국이 시작해 준 프로그램</h3>
+    <p class="lede">이란 핵 프로그램은 <strong>미국의 선물로 시작됐습니다.</strong> 1957년 아이젠하워의 '평화를 위한 원자력' 협정, 1967년 미국이 준 테헤란 연구로가 출발점입니다.</p>
+
+    <h4>기원 (1957–2002)</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th class="n">연도</th><th>사건</th></tr></thead>
+        <tbody>
+          <tr><td class="n">1957</td><td>미–이란 민수 원자력 협정(아이젠하워 '평화를 위한 원자력')</td></tr>
+          <tr><td class="n">1967</td><td>미국이 제공한 <strong>테헤란 연구로</strong> 가동 — 초기 연료는 <strong>93% 고농축 우라늄</strong></td></tr>
+          <tr><td class="n">1970</td><td><strong>NPT 발효</strong>. 이란은 원(原)서명국 62개국 중 하나</td></tr>
+          <tr><td class="n">1974</td><td>샤가 원자력청(AEOI)을 세우고 <strong>20년 내 23,000MW(원전 23기)</strong> 목표 선언. 프랑스 <strong>유로디프</strong> 농축 컨소시엄에 <strong>약 10억 달러</strong> 출자</td></tr>
+          <tr><td class="n">1975</td><td>독일 <strong>지멘스</strong>와 부셰르 원전 2기 계약. 이 시기 샤의 핵무기 의도는 지금도 논쟁적</td></tr>
+          <tr><td class="n">1987 · 1994–96</td><td>파키스탄 <strong>A.Q. 칸 네트워크</strong>로부터 <strong>P-1 원심분리기 약 500기와 P-2 설계도</strong> 입수</td></tr>
+          <tr><td class="n">1991</td><td>중국이 <strong>UF6 1,000kg</strong> 등을 비밀리에 공급(2003년까지 IAEA에 미신고)</td></tr>
+          <tr><td class="n">1995</td><td>러시아가 부셰르 완공 계약 — 독일이 지은 건물 안에 러시아형 원자로를 끼워 넣는 방식</td></tr>
+          <tr><td class="n">1999–2003</td><td><strong>AMAD 계획</strong> — 파크리자데 주도로 <strong>2004년까지 핵무기 5기</strong> 제작을 목표한 프로그램</td></tr>
+          <tr><td class="n">2002.08.14</td><td>야권단체 NCRI가 <strong>나탄즈 농축시설과 아라크 중수로</strong>를 폭로 — 위기의 시작</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>시설 지도</h4>
+    <ul>
+      <li><strong>나탄즈</strong> — 주력 지하 농축시설. 2025년 6월 기준 지하에 원심분리기 약 <strong>1만 8,000기</strong>. 지상의 파일럿 시설(PFEP)에서 20%·60% 농축을 수행했습니다.</li>
+      <li><strong>포르도</strong> — 곰 인근 산 속에 은밀히 지어져 <span class="num">2009</span>년 폭로. <strong>암반 80~90m 아래</strong>, 약 3,000기 규모. 2021년 20%, 2022년 11월부터 60% 농축.</li>
+      <li><strong>이스파한 UCF</strong> — 옐로케이크를 <strong>UF6</strong>로 전환하는 시설. 그리고 결정적으로, <strong>고농축 우라늄 재고 대부분이 보관된 것으로 추정되는 터널 단지</strong>가 여기 있습니다.</li>
+      <li><strong>아라크(콘답) 중수로</strong> — 가동됐다면 연간 <strong>플루토늄 약 9kg</strong>(핵무기 1~2기분)을 생산했을 40MW 원자로. 연료가 장전된 적은 없습니다.</li>
+      <li><strong>부셰르 원전</strong> — 러시아가 연료를 공급하고 <strong>사용후핵연료를 전량 회수</strong>합니다. 즉 <strong>국내 농축을 정당화할 연료주기상의 필요가 없습니다</strong> — 이란 주장에 대한 가장 강력한 반론입니다.</li>
+      <li><strong>피카액스 마운틴(쿠에 콜랑 가즈 라)</strong> — 나탄즈 남쪽의 신규 지하 단지. <strong>2.7㎢, 깊이 80~100m 이상으로 포르도보다 깊어 재래식 벙커버스터가 닿지 않을 가능성</strong>. <strong>IAEA는 한 번도 들어가 본 적이 없고</strong>, 2025년에도 2026년에도 타격되지 않았습니다.</li>
+      <li><strong>파르친·라비잔·투르쿠자바드·바라민</strong> — 무기화 의혹 또는 미신고 활동 관련 장소들. <strong>투르쿠자바드와 바라민 문제는 지금도 미해결</strong>입니다.</li>
+    </ul>
+
+    <h4>일반 독자를 위한 기술 세 가지</h4>
+    <div class="note">
+      <span class="lbl">이것만 알면 뉴스가 읽힙니다</span>
+      <ol>
+        <li><strong>왜 60%가 위험한가.</strong> 천연 우라늄의 U-235는 0.711%이고 무기급은 90% 이상입니다. 그런데 <strong>분리작업량(SWU)은 앞쪽에 몰려 있습니다</strong> — 천연에서 20%까지 가는 데 전체 작업의 약 <strong>90%</strong>가, 60%까지 가면 <strong>98~99%</strong>가 소모됩니다. 즉 <strong>60% 재고를 가진 나라는 에너지 관점에서 이미 거의 무기급</strong>이고, 60% 농축에는 <strong>민간 용도가 전혀 없습니다</strong>.</li>
+        <li><strong>원심분리기 세대.</strong> IR-1이 연 0.8~1 SWU라면 IR-6는 <strong>6~10배</strong>입니다. 같은 대수를 유지해도 기종만 바꾸면 돌파 시간이 무너집니다. 2025년 초 처음으로 <strong>신형이 IR-1의 생산량을 추월</strong>했습니다.</li>
+        <li><strong>돌파 시간(breakout).</strong> 무기 1기분(IAEA 기준 U-235 25kg)을 만드는 데 걸리는 시간이며, <strong>의도가 아니라 능력의 지표</strong>입니다. JCPOA 하에서 <strong>약 12개월</strong> → 2022~23년 <strong>약 12일</strong> → 2024년 말에는 <strong>2주 안에 5~6기분</strong>. 2026년 현재는 <strong>계산 자체가 불가능</strong>합니다 — 시설이 파괴되고 사찰이 없어 재고 위치를 아무도 모르기 때문입니다.</li>
+      </ol>
+    </div>
+
+    <h4>재고 추이</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시점</th><th class="n">60% 농축</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>2023.02</td><td class="n">87.5 kg</td><td></td></tr>
+          <tr><td>2024.11</td><td class="n">182 kg</td><td>20% 840kg, 5% 2,595kg 별도</td></tr>
+          <tr><td>2025.05.17</td><td class="n">408.6 kg</td><td><strong>IAEA의 마지막 완전 검증</strong></td></tr>
+          <tr><td>2025.06.13</td><td class="n">440.9 kg</td><td>공격 시점 추정치(ISIS). 408 vs 441의 차이는 기준일과 계산 방식 차이이지 모순이 아님</td></tr>
+          <tr><td>2026.08</td><td>불명</td><td><strong>IAEA는 2025년 6월 이후 "재고의 규모·구성·소재에 대해 어떤 정보도 제공할 수 없다"</strong>고 밝혔습니다</td></tr>
+        </tbody>
+      </table>
+      <caption>408~441kg의 60% 재고는 추가 농축 시 <strong>핵무기 10~11기분</strong>에 해당합니다. 보관처는 이스파한 터널에 60~65%, 나머지가 포르도·나탄즈로 추정됩니다(전부 ISIS 추정).</caption>
+    </div>
+
+    <h4>무기화 증거를 둘러싼 기록</h4>
+    <ul>
+      <li><strong>AMAD 계획(1999~2003)</strong> — 파크리자데 주도로 <strong>10kt급 탄두 5기</strong>를 샤하브-3 재진입체에 통합하려던 프로그램. 2003년 말 중단됐고 인력의 약 70%가 <strong>SPND</strong>로 이관됐습니다.</li>
+      <li><strong>2007년 미국 NIE</strong> — <strong>"높은 확신"</strong>으로 이란이 <strong>2003년 가을 핵무기 프로그램을 중단</strong>했다고 판단. 정치적으로 폭발적이었습니다.</li>
+      <li><strong>IAEA 2011년 보고서</strong> — 기폭장치, 다지점 기폭, 유체역학 실험, 중성자원, 재진입체 통합 등 <strong>12개 우려 영역</strong>을 공개.</li>
+      <li><strong>IAEA 2015년 최종평가</strong> — 2003년 이전에 <strong>"핵폭발장치 개발과 관련된 일련의 활동"</strong>이 조직적으로 있었고 일부는 2009년까지 이어졌으나, <strong>2009년 이후 무기활동이나 핵물질 전용의 신뢰할 만한 징후는 없다</strong>고 결론. 이사회는 이 파일을 종결했고 이것이 JCPOA 이행의 정치적 전제였습니다.</li>
+      <li><strong>2025년 6월 12일</strong> — IAEA 이사회가 <strong>약 20년 만에 처음으로 이란의 안전조치 불이행</strong>을 인정. <strong>이스라엘은 그 다음 날 공격했습니다.</strong></li>
+      <li><strong>2025년 11월</strong> — IAEA가 이란 핵물질에 대한 <strong>"인지의 연속성을 상실했다"</strong>고 공식 선언.</li>
+    </ul>
+
+    <h4>파트와, 그리고 NPT</h4>
+    <p>이란의 공식 입장은 하메네이의 <strong>핵무기 금지 파트와</strong>(2003년 구두 언급, 2005년 IAEA에서 공식 원용)와 <strong>NPT 4조의 '양도할 수 없는 권리'</strong>입니다. 반론은 두 가지입니다 — 파트와의 <strong>인증된 문서 원본이 제시된 적이 없고</strong>, 파트와는 본질적으로 <strong>상황에 따라 변경 가능</strong>하다는 것. 실제로 2025년 2월에는 IRGC 지휘관들이 파트와 철회를 요구했다는 보도가 있었고, 3월에는 라리자니가 <strong>"공격받으면 이란은 핵무기를 만들 것"</strong>이라고 말했습니다.</p>
+    <p><strong>2026년 8월 현재의 상태를 한 문장으로 말하면</strong>: 이란은 <strong>여전히 NPT 당사국이지만, IAEA 검증은 2025년 6~7월 이후 사실상, 2026년 2월 28일 이후로는 전면 중단</strong>돼 있습니다. <strong>법적으로는 회원국, 실질적으로는 미검증 국가</strong>라는 최악의 회색지대입니다.</p>
+  </section>
+
+  <section id="h8">
+    <p class="eyebrow">Ⅰ-8 · 1979–2026</p>
+    <h3>제재와 이란 경제 — 40년의 압박이 만든 것</h3>
+    <p class="lede">먼저 개념 하나. <strong>1차 제재</strong>는 미국인·미국 기업을 구속하는 국내 규제입니다. <strong>2차(세컨더리) 제재</strong>는 외국인을 구속하는데, 그 방식이 특이합니다 — 외국의 행위를 금지하는 게 아니라 <strong>"이란과 거래하면 미국 금융시스템 접근을 잃는다"</strong>고 위협하는 것입니다. 달러 결제망이 세계 무역의 기반이기 때문에, <strong>미국은 국제적 합의 없이도 전 세계에 제재를 집행할 수 있습니다.</strong></p>
+
+    <h4>제재의 지층</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th class="n">시점</th><th>조치</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td class="n">1984</td><td>테러지원국 지정</td><td>무기 판매·원조 금지, 이중용도 수출 제한, 국제금융기구 대출 반대 의무</td></tr>
+          <tr><td class="n">1995</td><td>행정명령 12957·12959</td><td>에너지 투자 금지에 이어 <strong>포괄적 무역·투자 금지</strong></td></tr>
+          <tr><td class="n">1996</td><td><strong>ILSA</strong> (이란·리비아 제재법)</td><td>최초의 본격 <strong>역외 적용</strong> — 이란 에너지에 연 2,000만 달러 이상 투자하는 제3국 기업 제재</td></tr>
+          <tr><td class="n">2010</td><td><strong>CISADA</strong></td><td>지정 이란 은행과 거래하는 <strong>외국 은행의 미국 코레스 계좌를 차단</strong></td></tr>
+          <tr><td class="n">2011.12</td><td><strong>NDAA §1245</strong></td><td><strong>이란 중앙은행과 거래하는 모든 외국 은행에 2차 제재.</strong> 실제로 석유 판매를 무너뜨린 조항. 6개월마다 구매량을 약 18% 줄이면 예외를 주는 <strong>SRE</strong> 제도 포함</td></tr>
+          <tr><td class="n">2012</td><td>EU 금수 + <strong>SWIFT 차단</strong></td><td>7월 원유 금수와 함께 <strong>EU의 보험·재보험 금지</strong>가 세계 유조선 보험의 약 95%를 마비시켰습니다 — 금수보다 이쪽이 더 효과적이었다는 평가. 3월 SWIFT는 이란 은행들을 <strong>사상 처음으로 접속 차단</strong></td></tr>
+          <tr><td class="n">2016.01</td><td>JCPOA 이행일</td><td>미국은 <strong>2차 제재만 유예</strong>했고 <strong>1차 금수는 해제한 적이 없습니다</strong></td></tr>
+          <tr><td class="n">2018.05</td><td>탈퇴와 최대압박</td><td>11월까지 석유·해운·금융·중앙은행 제재 전면 복원. 2019년 4월 <strong>IRGC를 외국 테러조직(FTO)으로 지정</strong> — 국가 정규군의 일부를 이렇게 지정한 최초 사례</td></tr>
+          <tr><td class="n">2025.09.28</td><td><strong>유엔 스냅백</strong></td><td>결의 1696·1737·1747·1803·1835·1929가 <strong>전부 부활</strong>. EU·영국도 9월 29일 자체 제재 재도입</td></tr>
+          <tr><td class="n">2026.08.19</td><td>'경제 D-데이'</td><td>이란과 거래하는 <strong>모든 국가</strong>에 대한 2차 제재·관세 위협</td></tr>
+        </tbody>
+      </table>
+      <caption>식량·의약품은 명목상 제재 대상이 아니지만, 중앙은행이 대테러 권한으로 지정되고 은행들이 <strong>디리스킹</strong>에 나서면서 실무적으로는 통로가 거의 막혔습니다. 유럽이 만든 인도적 결제 채널 <strong>INSTEX</strong>는 사실상 아무것도 처리하지 못하고 2023년 해산했습니다.</caption>
+    </div>
+
+    <h4>숫자로 본 40년</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>지표</th><th>추이</th></tr></thead>
+        <tbody>
+          <tr><td><strong>원유 수출</strong><br>(백만 배럴/일)</td><td>2011년 <strong>2.6</strong> → 2013년 1.3 → 2018년 <strong>2.45</strong>(탈퇴 직전) → <strong>2020년 0.42</strong>(최대압박+코로나) → 2023년 1.42 → 2025년 <strong>1.6~1.74</strong>(스냅백에도 물량은 줄지 않음) → <strong>2026년 5월 0.30 미만</strong>(전쟁·봉쇄)</td></tr>
+          <tr><td><strong>중국 의존</strong></td><td>이란 원유 수출 중 중국 비중 <strong>26%(2018) → 90~93%(2023~26)</strong>. 대부분 미국 금융 노출이 없는 산둥의 <strong>'찻주전자' 소형 정유사</strong>가 사들이며, 결제는 위안화</td></tr>
+          <tr><td><strong>할인폭</strong></td><td>브렌트 대비 배럴당 약 2달러(2018) → 8~10달러(2024~25) → <strong>12~15달러(2026)</strong></td></tr>
+          <tr><td><strong>성장률</strong></td><td>1979~2020년 연평균 <strong>약 1.9%</strong>(혁명 전은 9.1%). 2016년 JCPOA 직후 <strong>약 +12.5%</strong> 급반등 → 2018년 이후 재수축 → <strong>2026년 −5.4%(IMF) ~ −6.1%</strong></td></tr>
+          <tr><td><strong>물가</strong></td><td>수년째 40% 이상. <strong>2026년 6월 88.6%</strong>(통계청, 전년 동월비). 식품은 <strong>105%</strong>까지. 식용유 +219%, 빵·곡물 +140%, 육류 +135%</td></tr>
+          <tr><td><strong>리알 환율</strong><br>(달러당, 시장)</td><td>혁명 전 <strong>70</strong> → 2015년 3만 2,000 → 2018년 4만 2,000(공식 고정) → 2024년 말 61만 5,000 → <strong>2025년 3월 100만 돌파(세계에서 가치가 가장 낮은 통화)</strong> → <strong>2026년 6월 190만</strong>. 10년간 구매력 <strong>98% 이상 상실</strong></td></tr>
+          <tr><td><strong>고용</strong></td><td>공식 실업률 7.6%로 낮아 보이지만, <strong>경제활동참가율이 39.7%</strong>에 불과합니다. 청년(15~24) 실업 21.2%, <strong>청년 여성 34.9%</strong>. 낮은 실업률은 건강한 노동시장이 아니라 <strong>구직 포기의 결과</strong>입니다</td></tr>
+          <tr><td><strong>빈곤</strong></td><td>세계은행 하루 8.3달러 기준 <strong>36.0%(약 3,270만 명)</strong>. 2026년 <strong>38.8%</strong> 전망, UNDP는 전쟁으로 350~410만 명이 추가돼 <strong>41%</strong>에 이를 것으로 모델링. 최저임금은 기본 생계비의 <strong>약 37%</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>제재가 실제로 만든 것 — 다중환율이라는 지대</h4>
+    <div class="note caution">
+      <span class="lbl">이 부분이 이란 경제의 핵심 병리입니다</span>
+      <p>이란에는 최소 세 개, 많게는 여덟 개의 환율이 동시에 존재합니다. <strong>공식 우대환율 42,000리알</strong>(의약품·밀·육류 등 필수재 수입용, 2018년 고정), 수출기업이 외화를 의무 매각하는 <strong>니마(NIMA) 환율</strong>, 그리고 <strong>시장환율(약 190만 리알)</strong>.</p>
+      <p>42,000과 1,900,000의 격차는 <strong>약 45배</strong>입니다. 이 차액은 <strong>수입 허가를 가진 사람에게 통째로 돌아가는 지대(rent)</strong>입니다. 즉 <strong>제재는 국민에게는 고통을, 허가를 쥔 소수에게는 막대한 부를 만들어냈습니다.</strong> 환율 단일화는 모든 경제학자가 권고하지만 소비자물가를 즉시 폭등시키기 때문에 정치적으로 거의 불가능합니다.</p>
+      <p>같은 논리가 제재 회피 경제 전반에 적용됩니다. 그림자 선단 운영자, 환전 네트워크, IRGC 계열 중개인들이 스프레드를 가져갑니다. <strong>2013년 바박 잔자니</strong>는 송금해야 할 석유대금 <strong>27억 달러</strong>를 횡령한 혐의로 체포됐습니다. <strong>"제재가 강경 안보 세력을 약화시킨 게 아니라 오히려 그들에게 권력을 몰아줬다"</strong>는 주장의 가장 강력한 근거입니다.</p>
+    </div>
+
+    <h4>보조금, 그리고 2019년 11월이 남긴 공포</h4>
+    <p>이란의 에너지 보조금은 석유제품 <strong>연 약 520억 달러</strong>, 전력 <strong>약 300억 달러</strong>로 세계 최대 수준입니다. 휘발유가 너무 싸서 <strong>연간 약 15억 리터가 밀수</strong>됩니다. <span class="num">2019</span>년 11월 15일 정부가 야밤에 휘발유 값을 <strong>50~200% 인상</strong>하자 몇 시간 만에 전국 폭동이 일어났고, 정부는 <strong>11월 16~23일 전면 인터넷 차단</strong>으로 대응했습니다. 사망자는 <strong>이란 정부 230명, 앰네스티 최소 304명, 로이터 약 1,500명</strong>으로 갈립니다. <strong>이후 모든 이란 정부가 연료 가격에 손대지 못하는 이유</strong>이며, 2025~26년 재정 위기에도 마찬가지였습니다.</p>
+
+    <h4>자원 부국의 에너지 부족</h4>
+    <p>이란은 <strong>세계 2위 가스 매장량, 4위 원유 매장량</strong>을 갖고도 만성적인 에너지 부족에 시달립니다. 겨울 가스 부족 하루 <strong>2억 5,000만~3억㎥</strong>, 2024년 여름 전력 부족 <strong>1만 4,000MW</strong>, 2025년 초에는 <strong>600개 발전소 중 80곳이 정지</strong>했습니다. 원인은 보조금이 만든 낭비, 화력 발전 효율 33%, 송전 손실 13%, <strong>연간 180억㎥의 가스 소각(플레어링)</strong>, 그리고 투자 부족입니다. 결과는 2024년 12월~2025년 2월의 전국 휴교·휴업, <strong>산업의 약 50% 가동 중단</strong>이었습니다. 여기에 <strong>습지의 80%가 말라붙은 물 위기</strong>가 겹쳐, 세계은행은 이제 제재와 나란히 물·에너지 부족을 성장 저해 요인으로 꼽습니다.</p>
+
+    <h4>이란이 기댄 관계들</h4>
+    <ul>
+      <li><strong>중국</strong> — 없어서는 안 될 파트너. 원유의 80~93%를 사가며, <span class="num">2021</span>년 3월 <strong>25년 포괄협력협정</strong>을 맺었습니다. 널리 인용되는 <strong>"4,000억 달러"</strong>는 한 업계지 보도에서 나온 수치로 <strong>양국 정부가 확인한 적이 없고, 실제 투자는 그 근처에도 못 갔습니다</strong>.</li>
+      <li><strong>러시아</strong> — 2025년 1월 <strong>20년 포괄전략동반자조약</strong>. 그러나 <strong>상호방위조항이 없습니다</strong> — 침략국을 돕지 않겠다는 수준이며, 실제로 러시아는 2025년에도 2026년에도 이란을 돕지 않았습니다. 교역도 연 40~50억 달러에 불과합니다.</li>
+      <li><strong>UAE</strong> — <strong>40년간 이란의 하드커런시·중계무역·비공식 금융 창구</strong>였습니다. 이란 수입의 약 30%(2024년 210억 달러), 걸프 교역의 90%가 이곳을 지났습니다. <strong>2026년 8월 19일 UAE가 이를 전면 차단한 것이, 미국 제재가 40년간 하지 못한 일을 한 번에 해낸 사건</strong>입니다.</li>
+      <li><strong>SCO(2023)·BRICS(2024) 가입</strong> — 실질적 제재 완화는 없었습니다. 결정적 제약은 <strong>민간 은행의 달러 노출 리스크</strong>이고, 어떤 다자기구 가입도 그것을 해결해 주지 않기 때문입니다.</li>
+    </ul>
+  </section>
+  <section id="h9">
+    <p class="eyebrow">Ⅰ-9 · 사회</p>
+    <h3>이미 떠난 사람들 — 인구·여성·두뇌유출·소수민족</h3>
+    <p class="lede">이란 정치를 볼 때 가장 자주 놓치는 것이 사회 지표입니다. <strong>이 나라의 인구는 이미 정권과 다른 방향으로 움직였습니다.</strong></p>
+
+    <h4>인구 — 폭발했다가 급정지했다</h4>
+    <ul>
+      <li>1976년 약 <span class="num">3,370만</span> → 1979년 약 <span class="num">3,700만</span> → 2025년 약 <span class="num">9,200만</span>. <strong>이슬람공화국 첫 40년 동안 인구가 두 배 이상 늘었습니다.</strong></li>
+      <li>전쟁기 국가가 장려한 <strong>혁명 후 베이비붐</strong>(1979~88)으로 인구 증가율이 연 <strong>3.9~4.0%</strong>에 달했습니다 — 인류사에서 손꼽히는 수치입니다. 이 세대가 1997년 하타미 지지, 1999년과 2009년 시위, 그리고 대학 수요 폭발을 만든 <strong>'청년 팽창(youth bulge)'</strong>입니다.</li>
+      <li><strong>그리고 현대사에서 가장 급격한 출산율 붕괴가 이어졌습니다.</strong> 합계출산율이 1980년대 초 <strong>6.5~7.0</strong>에서 2000년 <strong>2.0</strong>, 2021년 <strong>1.6~1.7</strong>로 떨어졌습니다(현재 1.4~1.5 추정). 1989~2006년의 국가 가족계획 프로그램은 세계적 성공 사례였는데, 2012년 최고지도자가 출산 장려로 방향을 틀고 2021년 <strong>'젊은 인구법'</strong>으로 피임·낙태를 제한했지만 <strong>출산율은 움직이지 않았습니다</strong>.</li>
+      <li>지금 증가율은 연 <strong>0.7~1.2%</strong>, 중위연령 <strong>32~33세</strong>이며, <strong>2040년대에는 고령사회</strong>가 됩니다. 연금 재원은 없습니다. <strong>청년 팽창은 이미 지나갔고, 이는 앞으로의 시위 양상이 달라진다는 뜻입니다.</strong></li>
+    </ul>
+
+    <h4>여성 — 이 체제의 핵심 모순</h4>
+    <div class="grid-figs">
+      <div class="fig sea"><span class="v">88%</span><span class="k">여성 문해율<br>(1966년 17.4%에서)</span></div>
+      <div class="fig sea"><span class="v">58%</span><span class="k">국공립대 재학생 중 여성 비율<br>(1991년 28%에서)</span></div>
+      <div class="fig hot"><span class="v">14~18%</span><span class="k">여성 경제활동참가율<br>— 교육 수준 대비 세계 최저 수준</span></div>
+      <div class="fig"><span class="v">1.6</span><span class="k">합계출산율<br>(1980년대 초 6.5~7.0)</span></div>
+    </div>
+    <p style="margin-top:18px">이란은 <strong>중동에서 가장 교육 수준이 높은 여성 인구를 만들어낸 뒤, 법으로 그것을 묶어두었습니다</strong>. 히잡, 불평등한 상속과 증언 능력, 결혼·여행에서의 후견인 제도, 대통령직과 사법부 최고위직 배제. 의학과 기초과학에서 여성 비율이 70%에 이르는 나라에서 여성 취업률이 15% 안팎이라는 것 — <strong>이 격차가 '여성, 생명, 자유'의 엔진</strong>입니다.</p>
+
+    <h4>두뇌유출</h4>
+    <p>해외 이란인은 <strong>400만~500만 명</strong>으로 추정되며 30% 이상이 미국에 있습니다. 미국 내 이란계 이민자의 <strong>약 60%가 학사 이상, 30% 이상이 석·박사</strong>로 미국에서 가장 학력이 높은 이민 집단 중 하나입니다. 2020년 초 해외 대학에 재학 중인 이란 출신 학생은 <strong>약 13만 명</strong>으로 역대 최고였고, <strong>2007~2012년 이란 출신 발명가의 특허 중 96%가 해외 거주자</strong>가 출원한 것이었습니다. 2024년에는 고등교육부 장관이 <strong>대학교수의 약 25%를 이민으로 잃었다</strong>고 인정했습니다. 비용 추정치는 연 500억 달러(세계은행)라는 숫자가 자주 인용되지만 <strong>대략적이고 논쟁적인 추정</strong>입니다 — 참고로 2019년 이란의 석유 수출액은 200억 달러 미만이었습니다.</p>
+
+    <h4>민족과 종파 — 억압은 수니 주변부에 집중된다</h4>
+    <p>이란 인구조사는 민족을 묻지 않기 때문에 모든 수치가 추정입니다. 대략 <strong>페르시아 61~65%, 아제르바이잔 튀르크 14~16%, 쿠르드 7~10%, 루르 6%, 아랍 2~3%, 발루치 2%</strong>. 종파는 <strong>시아 90~94%, 수니 5~9%</strong>입니다.</p>
+    <ul>
+      <li><strong>아제리는 엘리트 수준에서 완전히 통합돼 있습니다</strong> — 하메네이 부자, 무사비, 페제시키안이 모두 아제리계입니다. 불만은 언어·문화적인 것이지 분리주의가 아닙니다.</li>
+      <li><strong>실제로 극심하게 억압받는 곳은 수니 주변부</strong>입니다 — <strong>쿠르드</strong>(처형률이 매우 높고 코말라·PJAK·KDPI 무장조직 존재), <strong>발루치</strong>(시스탄-발루체스탄은 이란 최빈 주이며, 2022년 9월 30일 자헤단의 <strong>'피의 금요일'</strong>에 90명 이상이 사망), <strong>아흐와지 아랍</strong>(후제스탄 — 이란 석유의 대부분을 생산하면서 물 위기와 오염을 겪음). <strong>2022년 시위 사망자의 절반 가까이가 쿠르디스탄과 시스탄-발루체스탄에서 나왔습니다.</strong></li>
+      <li><strong>바하이(약 30만 명)</strong>는 헌법상 어떤 조항으로도 인정되지 않으며 대학 진학과 공직이 금지되고 재산 몰수와 투옥의 대상입니다. 반면 <strong>유대인(약 9,000명)</strong>은 무슬림 중동에서 가장 큰 유대인 공동체로 의회 지정석 1석을 갖습니다.</li>
+    </ul>
+
+    <h4>곰과 나자프 — 시아 세계는 이란 체제를 승인하지 않았다</h4>
+    <p><strong>곰</strong>은 1922년 하에리 야즈디가 재건했고, 1961년까지 <strong>보루제르디</strong>라는 시아 세계 유일의 최고 마르자가 있던 곳입니다. 그의 정적주의가 호메이니를 억눌렀고, 그가 죽은 뒤에야 호메이니가 전면에 나섰습니다. 오늘날 곰에는 4만 명 이상의 신학생이 있지만, <strong>1980년 이후 신학교 운영위원회를 통해 국가 감독 아래 놓였고 재정도 국가·보냐드를 통해 흐릅니다</strong> — 독립성이 훼손된 지점입니다.</p>
+    <p><strong>나자프</strong>는 11세기부터의 더 오래되고 권위 있는 중심이며, <strong>시스타니</strong>(1930년생)가 시아 세계에서 가장 많은 추종자를 가진 마르자입니다. 그는 <strong>정적주의자</strong>로, 성직자는 조언하고 지키되 통치하지 않는다는 입장입니다. 2004년 직접선거 요구, 2014년 반ISIS 파트와처럼 <strong>실존적 위기 때만 결정적으로 개입하고 상설 직위는 갖지 않는</strong> 모델입니다.</p>
+    <p><strong>구조적 함의</strong>: 나자프는 벨라야테 파키의 살아 있는 반대 모델이며, <strong>시아 법학의 주류는 이란의 체제를 한 번도 받아들인 적이 없습니다</strong>. 90대 중반인 시스타니의 후계 문제는 시아 세계의 또 다른 거대한 승계 질문입니다.</p>
+
+    <h4>시위의 진화 — 요구가 어떻게 바뀌었나</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시기</th><th>계기</th><th>주도층</th><th>요구</th><th>피해</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1999.07</strong><br>18 티르</td><td>개혁지 <i>살람</i> 폐간과 기숙사 습격</td><td>학생·도시 중산층</td><td>체제 <strong>내</strong> 개혁</td><td>공식 1명, 주장 17명 이상, 체포 1,200~1,500명. <strong>IRGC 지휘관 24명(솔레이마니 포함)이 하타미에게 사실상 쿠데타를 경고하는 서한</strong></td></tr>
+          <tr><td><strong>2009.06</strong><br>녹색운동</td><td>부정선거</td><td>도시 중산층·개혁파</td><td>"내 표는 어디 있나" — 개혁</td><td>공식 36명, 야권 72명 이상, 체포 4,000명 이상. 무사비·카루비는 <strong>14년째 재판 없는 가택연금</strong></td></tr>
+          <tr><td><strong>2017.12–2018.01</strong></td><td>식품·연료 가격</td><td><strong>소도시·노동계급 — 정권의 옛 지지 기반</strong></td><td>"독재자에게 죽음을", <strong>"가자도 레바논도 아니다, 내 목숨은 이란을 위해"</strong></td><td>21~25명 사망, 체포 3,700~4,900명, 체포자의 90%가 25세 미만</td></tr>
+          <tr><td><strong>2019.11</strong><br>아반 98</td><td>야밤의 휘발유값 50~200% 인상</td><td>도시 빈민·지방</td><td>정권 타도</td><td><strong>이란 정부 230명 / 앰네스티 304명 이상 / 로이터 약 1,500명</strong>. 체포 7,000명 이상. <strong>사상 최대 규모의 전국 인터넷 차단(정상치의 5~7%로 5~6일)</strong></td></tr>
+          <tr><td><strong>2022.09–2023</strong><br>마흐사 아미니</td><td>22세 쿠르드 여성이 히잡 단속 중 사망</td><td><strong>여성·Z세대·학생·소수민족 — 계층을 가로지름</strong></td><td><strong>"여성, 생명, 자유" — 체제 자체의 종식</strong></td><td>551명 이상 사망(미성년 68명 포함), 체포 약 1만 9,262명, 134개 도시·132개 대학. 시위자 7명 처형</td></tr>
+        </tbody>
+      </table>
+      <caption>세 가지 흐름을 보세요. ① 요구가 <strong>체제 개혁 → 체제 거부</strong>로 옮겨갔고 ② 주도층이 <strong>도시 중산층 → 지방 빈곤층 → 전 계층</strong>으로 넓어졌으며 ③ 진압이 <strong>곤봉과 체포 → 실탄과 전국 인터넷 차단</strong>으로 격화됐습니다. 그리고 <strong>여성이 지지층에서 전위로 이동</strong>했고, 히잡이라는 체제의 상징적 근거가 매일의 대중적 불복종 대상이 됐습니다.</caption>
+    </div>
+    <p>실제로 2023~24년의 강경한 '히잡·정결법'은 반복 연기 끝에 <strong>2024년 12월 페제시키안 정부에서 시행이 보류</strong>됐습니다 — <strong>더 이상 집행이 불가능하다는 사실상의 인정</strong>이었습니다.</p>
+  </section>
+
+  <section id="h10">
+    <p class="eyebrow">Ⅰ-10 · 1973–2025</p>
+    <h3>오일쇼크의 역사와, 호르무즈라는 급소</h3>
+    <p class="lede">2026년의 유가 충격이 얼마나 큰지 판단하려면 비교 기준이 필요합니다. 그리고 <strong>"이란이 해협을 완전히 닫는 것은 자해"</strong>라는 오랜 통념이 왜 있었고 왜 깨졌는지도.</p>
+
+    <h4>오일쇼크 계보</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>사건</th><th>가격 경로</th><th>거시 결과</th></tr></thead>
+        <tbody>
+          <tr><td><strong>1973 아랍 석유 금수</strong><br>(1973.10~1974.3)</td><td>배럴당 <strong>$2.90 → $11.65</strong>, 약 4배</td><td>미국 스태그플레이션, 주유 대기줄과 배급. <strong>이 충격에 대응해 1974년 IEA가 창설</strong>되고 회원국에 <strong>순수입 90일분 비축 의무</strong>가 부과됨</td></tr>
+          <tr><td><strong>1979 이란혁명</strong><br>(1979~1981)</td><td><strong>$15.85 → $39.50</strong>(현물 최고 $50). <strong>실질 기준으로는 2026년 달러 약 $160</strong> — 2008년 전까지 사상 최고</td><td>이란 생산 <strong>하루 480만 배럴</strong> 감소(세계 생산의 약 7%). 미국 인플레 <strong>14.8%(1980)</strong>, 볼커의 20% 금리, 이중 침체</td></tr>
+          <tr><td><strong>1986 가격 붕괴</strong></td><td>1980년 $35+ → <strong>1986년 $10 미만</strong>(일시 $7)</td><td>1985년 9월 사우디가 <strong>스윙 프로듀서 역할을 포기</strong>. 소련이 연 200억 달러를 잃으며 붕괴의 한 요인이 됨</td></tr>
+          <tr><td><strong>1990 걸프전</strong></td><td><strong>$17 → $46</strong>(10월 정점)</td><td>이라크+쿠웨이트 <strong>하루 430만 배럴</strong> 소실. <strong>IEA 1차 공동행동</strong>과 미국 SPR 최초 방출</td></tr>
+          <tr><td><strong>2008 정점</strong></td><td>$28(2003) → <strong>브렌트 $147.50(2008.7.11)</strong>, 2026년 달러로 약 $210 — <strong>사상 최고 실질가</strong> → 12월 −78%</td><td>중국 수요가 만든 수요주도형 상승. 금융위기로 붕괴</td></tr>
+          <tr><td><strong>2014–16 셰일 충격</strong></td><td><strong>$115 → $26.21</strong>, −75%</td><td>2014년 11월 OPEC이 감산을 거부하며 점유율 방어. 미국이 2018년 세계 1위 산유국이 됨</td></tr>
+          <tr><td><strong>2020 코로나</strong></td><td><strong>WTI 근월물 −$37.63</strong>(2020.4.20)</td><td>수요 붕괴와 저장 한계가 겹친 사상 초유의 마이너스 유가</td></tr>
+          <tr><td><strong>2022 우크라이나</strong></td><td>$75 → <strong>$130.5</strong>, 8월까지 정상화</td><td>미국 SPR <strong>1억 8,000만 배럴</strong> 방출 + IEA 공동행동 2회</td></tr>
+          <tr><td><strong>2026 호르무즈</strong><br><span class="q">(진행 중)</span></td><td>브렌트 $72(2.27) → <strong>$126(4.30)</strong>, <strong>두바이유 $166(3.19)</strong> → $94(8.21)</td><td><strong>IEA "석유시장 역사상 최대 공급 차질"</strong>. 사상 최대 4억 배럴 공동방출</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>호르무즈 — 숫자로 보는 급소</h4>
+    <ul>
+      <li>최협부 폭은 자료에 따라 <strong>21~29해리</strong>로 다르지만, 실제 <strong>항로는 각 방향 2해리</strong>에 불과하며 이란·오만 영해 안에 있습니다.</li>
+      <li>통과 물량(EIA): 2022년 하루 <strong>2,190만 배럴</strong> → 2024년 2,070만 → 2025년 상반기 2,090만 → <strong>2026년 2분기 490만</strong>.</li>
+      <li>세계 석유 소비의 약 20%, 해상 원유 교역의 약 25%, 그리고 <strong>세계 LNG 교역의 20% 이상</strong>. <strong>카타르 LNG의 93%, UAE LNG의 96%</strong>가 이곳을 지나며 <strong>LNG에는 우회로가 존재하지 않습니다</strong>.</li>
+      <li>목적지 기준(2025년 1분기 원유): <strong>중국 37.7%, 인도 14.7%, 한국 12.0%, 일본 10.9%</strong> — 이 넷이 <strong>약 75%</strong>. 아시아 전체가 89.2%인 반면 미국은 2.5%, 유럽은 3.8%입니다. <strong>이것이 미국과 아시아의 이해가 갈리는 구조적 이유</strong>입니다.</li>
+      <li>우회 파이프라인은 사우디 <strong>동서관(여유 300~500만 배럴)</strong>과 UAE <strong>ADCOP(약 150만)</strong>가 사실상 전부로, 합쳐도 평시 통과량의 <strong>30% 미만</strong>입니다. <strong>이라크(남부)·쿠웨이트·카타르·바레인은 대체로가 아예 없습니다.</strong></li>
+      <li>법적으로 이란은 <strong>유엔해양법협약 비준국이 아니며</strong>, 국제해협의 <strong>통과통항권</strong>이 아니라 더 제한적인 무해통항만 인정한다는 입장이고 외국 군함에는 사전 협의를 요구한다고 주장해 왔습니다.</li>
+    </ul>
+
+    <h4>"완전 봉쇄는 자해"라는 통념 — 그리고 이란이 찾아낸 제3의 길</h4>
+    <p>2025년까지 전문가들의 표준 견해는 이랬습니다. ① 이란 원유의 <strong>약 90%를 중국이 사가는데</strong> 봉쇄는 그 유일한 고객을 때린다 ② <strong>이란 자신의 수출로도 호르무즈뿐</strong>(자스크 우회선은 사실상 비가동) ③ 걸프 아랍국들에 참전 명분을 준다 ④ 5함대와 1988년 Praying Mantis의 전례 ⑤ 루비오 국무장관의 표현으로 <strong>"경제적 자살"</strong>.</p>
+    <p><strong>2026년에 이란이 한 일은 이 통념을 우회한 것입니다.</strong> 완전히 닫는 대신 <strong>선별 통과 + 통행료</strong> 체제(PGSA)를 만들어, 중국·러시아·인도 등 우호국 선박은 통과시키고 나머지에는 척당 100만~200만 달러를 받았습니다. <strong>봉쇄를 자해가 아니라 수입원이자 협상 카드로 바꾼 것</strong>이고, 이것이 이 전쟁이 6개월째 끝나지 않는 기술적 이유입니다.</p>
+
+    <h4>참고 — 과거의 폐쇄 위협들</h4>
+    <p><span class="num">1951</span>년 영국 해군의 아바단 봉쇄, <span class="num">1980~88</span>년 탱커전쟁(그럼에도 <strong>통항 선박의 98% 이상은 방해받지 않았고 해협이 실제로 닫힌 적은 없었습니다</strong>), <span class="num">2011~12</span>년 EU 금수에 대한 위협("물 마시기보다 쉽다"), <span class="num">2018~19</span>년 로하니의 경고와 유조선 피격, <span class="num">2019</span>년 아브카이크, 그리고 <span class="num">2025</span>년 6월 <strong>이란 의회의 폐쇄 결의안 가결</strong>(최종 결정권은 SNSC에 있어 실행되지 않음). <strong>수십 년간 위협만 반복되던 카드가 2026년에 처음으로 실제로 쓰였습니다.</strong></p>
+
+    <h4>에너지 안보의 국제 제도</h4>
+    <p>IEA는 1974년 창설 이후 <strong>공동행동(collective action)을 여섯 번</strong> 발동했습니다 — 1991년 걸프전, 2005년 카트리나, 2011년 리비아, 2022년 우크라이나(2회), 그리고 <strong>2026년 3월 11일 사상 최대 규모인 4억 배럴</strong>. 국가별 전략비축(2025년 말 기준)은 <strong>중국 약 14억 배럴, 미국 SPR 4억 1,300만, 일본 정부분 2억 6,300만, 한국 7,900만</strong> 배럴 수준입니다.</p>
+  </section>
+
+  <section id="h11">
+    <p class="eyebrow">Ⅰ-11 · 1962–2023</p>
+    <h3>한국과 중동·이란 — 60년의 얽힘</h3>
+    <p class="lede">한국은 이 지역과 <strong>세 번 깊게 얽혔습니다</strong> — 1970년대 건설 붐으로 오일머니를 되받았고, 2010년대에 제재의 대가를 치렀으며, 2026년에 다시 청구서를 받고 있습니다.</p>
+
+    <h4>1970년대 — 오일쇼크를 건설 수출로 되받다</h4>
+    <ul>
+      <li><span class="num">1973</span>년 6월 <strong>삼환기업</strong>이 사우디 카이바르–알울라 고속도로(175km)를 수주하며 시작됐습니다. 성지순례 기간 공기 단축을 위해 사막에 횃불 수천 개를 켜고 야간작업한 일화가 파이살 국왕에게 전해져 <strong>6,500만 달러</strong>를 추가 수주했다는 이야기가 유명합니다.</li>
+      <li><span class="num">1976</span>년 2월 <strong>현대건설의 사우디 주베일 산업항</strong> 수주액은 <strong>9억 3,000만 달러</strong>로, 당시 한국 정부 연간 예산의 약 4분의 1에 해당했습니다. 연인원 약 250만 명이 투입됐습니다.</li>
+      <li>해외건설 수주액은 1965~73년 누계 4억 2,300만 달러에서 <strong>1974~81년 346억 6,000만 달러</strong>로 폭증했고, 그중 <strong>94%가 중동</strong>이었습니다. 같은 기간 해외건설 수주액은 <strong>총 수출액의 절반에 육박</strong>했고, 파견 근로자는 <strong>1979년 10만 명을 넘어 1981~83년 연 15만 명 이상</strong>이었습니다. <span class="num">1981</span>년 한국은 <strong>해외건설 수주 세계 2위</strong>였습니다.</li>
+      <li><strong>의미</strong>: 오일쇼크로 산유국에 쌓인 돈을 건설 수출로 되받아 <strong>유가 부담과 경상수지 적자를 상쇄</strong>한 것이 한국이 1차 오일쇼크를 상대적으로 빨리 넘긴 핵심 통로였습니다.</li>
+    </ul>
+    <p>그럼에도 충격은 컸습니다. 1차 쇼크로 성장률은 1973년 14.8%에서 1975년 7%대로 떨어지고 <strong>1975년 소비자물가는 24.7%</strong> 올랐습니다. 2차 쇼크는 더 심해서 <strong>1980년 마이너스 성장</strong>(개편 국민계정 기준 −1.6%, 구 계정 −5.2% 등 자료마다 다름), <strong>도매물가 +38.9%</strong>, 경상수지 적자 53억 달러를 기록했고, 1979년 3월부터 1981년 11월까지 국내 유가를 <strong>7차례, 누적 337%</strong> 올렸습니다.</p>
+
+    <h4>테헤란로와 서울로 — 그리고 동결자금</h4>
+    <div class="tl">
+      <div class="ev"><div class="d">1962.10</div><p class="t">한국–이란 수교. 1967년 주테헤란 대사관 개설.</p></div>
+      <div class="ev"><div class="d">1977</div><p class="t"><b>서울–테헤란 자매결연.</b> 서울에 <b>테헤란로</b>, 테헤란에 <b>서울로</b>가 생깁니다. 두 나라 관계의 상징으로 지금도 남아 있습니다.</p></div>
+      <div class="ev"><div class="d">2011</div><p class="t">양국 교역이 <b>174억 달러</b>로 정점. 이란은 한국의 21위 수출대상국이었습니다.</p></div>
+      <div class="ev key"><div class="d">2010</div><p class="t">미국의 세컨더리 제재로 달러 결제가 막히자, <b>우리은행·IBK기업은행에 이란 중앙은행 명의의 원화 계좌</b>를 열어 우회 결제 구조를 만듭니다. 한국이 원유 대금을 원화로 넣고 이란이 그 돈으로 한국 제품을 사가는 사실상의 바터 방식이었습니다. 같은 해 정부는 <b>멜라트은행 서울지점에 영업정지</b> 처분을 내립니다.</p></div>
+      <div class="ev"><div class="d">2016</div><p class="t">제재 해제 후 박근혜 대통령이 한국 정상 최초로 이란을 국빈방문, 30개 프로젝트 <b>약 456억 달러</b> 규모의 MOU가 체결됩니다. 그러나 2018년 미국의 제재 복원으로 대부분 무산됩니다.</p></div>
+      <div class="ev key"><div class="d">2019.05</div><p class="t">미국의 한시적 예외(SRE)가 종료되면서 원화 계좌의 <b>약 70억 달러가 동결</b>됩니다. 이란 중앙은행 총재는 한국이 식량·의약품 구매까지 막는다고 공개 비난했습니다.</p></div>
+      <div class="ev key"><div class="d">2021.01.04</div><p class="t"><b>한국케미호 나포.</b> 이란 혁명수비대가 화학운반선을 억류하고 <b>해양환경 규제 위반</b>을 명분으로 내세웠지만, 실질적 배경은 동결자금이라는 것이 지배적 해석이었습니다. 선원 20명(한국인 5명), <b>95일 만인 4월 9일 석방</b>. 청해부대 최영함이 인근으로 급파됐습니다.</p></div>
+      <div class="ev"><div class="d">2021.10</div><p class="t">이란이 <b>한국산 가전 수입 금지</b>를 발표하고 국영방송의 K-드라마 방영 중단을 위협합니다. 「대장금」이 90% 시청률을 기록하던 나라의 대한국 감정이 <b>"대미 추종국"</b> 이미지로 급전한 시기입니다.</p></div>
+      <div class="ev key"><div class="d">2023.09</div><p class="t">미국인 5명과의 수감자 교환과 연계해 동결자금 중 <b>약 65억 달러</b>가 <b>한국 → 스위스 중앙은행 → 독일 분데스방크 → 카타르</b> 경로로 이전됩니다(5억 달러는 한국 기업 채권 변제용으로 잔류). 환리스크가 최대 난관이었는데 <b>카타르가 최대 1억 달러의 환손실을 흡수하겠다</b>고 해 성사됐습니다. 다만 <b>"이란에 돈을 돌려줬다"는 서술은 부정확합니다</b> — 용도가 인도적 구매로 제한됐고, 10월 7일 하마스 기습 이후 접근이 다시 묶였습니다.</p></div>
+      <div class="ev"><div class="d">2026.06</div><p class="t">이 카타르 계좌의 자금이 스위스에서 열린 미–이란 협상의 <b>핵심 의제로 재부상</b>합니다. 이란은 여전히 한국을 상대로 반환 소송을 제기해 둔 상태입니다.</p></div>
+    </div>
+
+    <h4>2020년 청해부대 선례 — 지금 논쟁의 뿌리</h4>
+    <p><span class="num">2020</span>년 1월 21일 정부는 미국 주도 <strong>국제해양안보구상(IMSC)에는 불참</strong>하되 <strong>청해부대의 작전구역을 독자적으로 확대</strong>하기로 결정했습니다. 아덴만 1,130km에서 <strong>약 3,960km로 3.5배 넓혀 호르무즈까지 포함</strong>시키고, IMSC에는 연락장교 2명만 보냈습니다. 명분은 "우리 국민과 선박 보호"였고, <strong>국회 동의 없이</strong> 시행됐습니다.</p>
+    <p>이 절충안이 <strong>2026년 파병 논쟁을 복잡하게 만든 선례</strong>입니다. 다국적군 참여는 참전이므로 국회 동의가 필요하지만 기존 작전의 확대라면 불필요하다는 해석이 맞서고, 정부의 2026년 4월 유권해석("상선 호위는 동의 불요, 홍해 우회로 확보 시에는 필요")도 이 틀 위에 서 있습니다.</p>
+
+    <h4>구조는 얼마나 바뀌었나</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>지표</th><th>과거</th><th>현재</th></tr></thead>
+        <tbody>
+          <tr><td>원유 수입 중 중동 비중</td><td class="n">82.3% (2015) · 85.2% (2016 정점)</td><td class="n">59.8%(2021 최저) → <strong>약 70%(2025)</strong></td></tr>
+          <tr><td>LNG 중 중동 비중</td><td class="n">약 50% (10년 전)</td><td class="n"><strong>19.7~20.4%</strong> (호주 32.8%, 카타르 15.3%, 미국 9.2%)</td></tr>
+          <tr><td>해외건설에서 중동 비중</td><td class="n">94% (1974~81)</td><td class="n"><strong>25.1%</strong> (2025년, 119억 달러 / 총 472.7억 달러)</td></tr>
+          <tr><td>석유 비축</td><td>—</td><td class="n"><strong>정부+민간 200일분 이상, IEA 기준 세계 6위</strong></td></tr>
+        </tbody>
+      </table>
+      <caption>즉 한국은 <strong>건설 의존은 크게 줄였고 LNG는 다변화했지만, 원유의 중동 의존은 오히려 되돌아왔습니다</strong>. 이유는 Ⅷ장에서 다룹니다 — 수송비와 국내 정유설비 구조 때문입니다.</caption>
+    </div>
+  </section>
+
+  <section id="h12">
+    <p class="eyebrow">Ⅰ-12 · 2022–2026</p>
+    <h3>문턱이 사라진 3년, 그리고 왜 하필 2026년 2월이었나</h3>
+    <div class="tl">
+      <div class="ev"><div class="d">2022.09</div><p class="t"><b>마흐사 아미니 사망</b>과 '여성, 생명, 자유'. 정권의 사회적 기반이 얇아진 결정적 신호. 같은 해 9월 <b>빈 핵협상이 최종 결렬</b>됩니다.</p></div>
+      <div class="ev"><div class="d">2023.03</div><p class="t">중국 중재 <b>사우디–이란 관계 정상화</b>. 데탕트 국면이 열리는 듯했습니다.</p></div>
+      <div class="ev key"><div class="d">2023.10.07</div><p class="t">하마스의 기습('알아크사 홍수'). 이스라엘 측 약 1,200명 사망, 251명 납치. <b>지역 전면 확전의 출발점</b>이며, 사우디–이스라엘 수교 협상도 여기서 멈춥니다.</p></div>
+      <div class="ev key"><div class="d">2024.04 · 10</div><p class="t">이란과 이스라엘의 <b>사상 첫 직접 미사일 교환</b> 두 차례. 10월 반격으로 <b>이란 방공망이 파괴</b>돼 영공이 열립니다.</p></div>
+      <div class="ev key"><div class="d">2024.09–11</div><p class="t">호출기 폭발, <b>나스랄라 제거</b>, 지상 침공, 11월 휴전. <b>40년간 쌓은 헤즈볼라가 두 달 만에 무력화</b>.</p></div>
+      <div class="ev key"><div class="d">2024.12.08</div><p class="t"><b>아사드 정권 붕괴.</b> 이란의 육상 보급로가 끊기고 '저항의 축'이 사실상 해체됩니다.</p></div>
+      <div class="ev key"><div class="d">2025.06.13–24</div><p class="t"><b>12일 전쟁.</b> 이스라엘 Rising Lion + 미국 Midnight Hammer. <b>미국이 이란 본토 핵시설을 직접 때려도 세계가 무너지지 않는다</b>는 선례가 만들어집니다. 발사대의 3분의 2와 방공망 대부분이 이때 소실됩니다.</p></div>
+      <div class="ev"><div class="d">2025.09.28</div><p class="t"><b>유엔 스냅백 제재 복원.</b> E3가 8월 28일 발동한 30일 시한이 만료되며 자동 복원(9월 26~27일 러시아·중국의 연장 결의안은 부결). E3의 발동 권한 자체가 10월 18일 만료 예정이었으므로 <b>마지막 기회를 쓴 것</b>이었습니다. 10월 18일 이란은 JCPOA 종료를 선언합니다.</p></div>
+      <div class="ev key"><div class="d">2025.12.28–</div><p class="t">테헤란 대바자르 철시로 시작된 <b>이란 최대 규모 반정부 시위</b>. 리알 폭락과 42% 인플레가 방아쇠였고, 31개 주 200개 이상 도시로 번져 1월 8~9일 <b>전국 약 500만 명</b>이 참여한 것으로 추정됩니다. 전면 인터넷 차단과 실탄 진압이 뒤따랐습니다.</p></div>
+      <div class="ev"><div class="d">2026.01</div><p class="t">EU가 <b>IRGC를 테러조직으로 지정</b>. 미국은 항모전단 2개와 수백 대의 항공기를 중동에 전개 — <b>2003년 이라크 침공 이래 최대 규모</b>.</p></div>
+    </div>
+
+    <div class="note caution">
+      <span class="lbl">시위 사망자 — 반드시 병기해야 할 숫자</span>
+      <p>2025~26년 시위의 사망자는 <strong>이 문서에서 편차가 가장 큰 수치</strong>입니다. 이란 정부 <span class="num">3,117</span>명, 이란인권기구 <span class="num">3,428</span>명, HRANA 확인 <span class="num">7,015</span>명(2월 5일 기준), 일부 서방 보도는 1월 8~9일 이틀에만 <span class="num">3만~3만 6,500</span>명, 국제 추정 범위는 <span class="num">12,000~43,000</span>명입니다. <strong>1월 8일부터의 전면 인터넷 차단으로 독립 검증이 사실상 불가능</strong>하며, 높은 쪽 숫자는 검증되지 않은 추정으로 다루는 것이 안전합니다.</p>
+    </div>
+
+    <h4>왜 2026년 2월이었나 — 여섯 조건이 한꺼번에 갖춰졌다</h4>
+    <ol>
+      <li><strong>억지력 소멸</strong> — 헤즈볼라 궤멸(2024.9~11), 아사드 붕괴(2024.12), 하마스 소진으로 <strong>이란이 반격할 대리 전선이 사라졌습니다</strong>. 40년의 투자가 14개월에 무너졌습니다.</li>
+      <li><strong>방공망 붕괴</strong> — 2024년 10월과 2025년 6월 두 차례 타격으로 S-300 등 핵심 자산과 <strong>미사일 발사대의 3분의 2</strong>가 이미 없었습니다.</li>
+      <li><strong>선례 확보</strong> — 2025년 6월 미국이 이란 본토 핵시설을 직접 때렸고, 확전으로 이어지지 않았습니다. <strong>정치적 임계값이 이미 낮아져 있었습니다.</strong></li>
+      <li><strong>외교 경로 폐쇄</strong> — 2025년 9월 스냅백 복원으로 제재 완화라는 유인 카드가 소진됐고, 10월 이란은 JCPOA 종료를 선언했습니다. <strong>협상으로 얻을 것이 서로 없어진 상태</strong>였습니다.</li>
+      <li><strong>정권 취약성</strong> — 2025년 말 500만 명 규모의 시위와 유혈 진압, 88%의 인플레이션, 리알 폭락. <strong>"지금이면 무너질 수 있다"</strong>는 계산이 워싱턴과 예루살렘에 자리 잡았습니다.</li>
+      <li><strong>그리고 검증의 공백</strong> — 2025년 7월 이후 IAEA가 사실상 들어가지 못하면서, <strong>"이란이 무엇을 하고 있는지 아무도 모른다"</strong>는 상태가 공격의 명분과 공포를 동시에 키웠습니다.</li>
+    </ol>
+
+    <div class="note quiet">
+      <span class="lbl">Part Ⅰ의 결론 — 여섯 개의 관통선</span>
+      <ol>
+        <li><strong>석유와 주권</strong>이 1901년부터 지금까지의 관통선입니다. 다르시 이권 → 국유화 → 1953년 쿠데타 → 지대국가 → 제재 → 호르무즈. <strong>이란의 모든 정치 위기에는 석유 조항이 있습니다.</strong></li>
+        <li><strong>외세 개입이 체제의 정통성 서사입니다.</strong> 1907·1941·1953·1980(사담)·2018·2025~26. 이것이 정권을 정당화하지는 않지만, <strong>정권을 혐오하는 민족주의 이란인조차 외침에는 저항하는 이유</strong>를 설명하며, 외부 압박이 왜 한 번도 그 지지자들이 예측한 정치 변화를 만들어내지 못했는지도 설명합니다.</li>
+        <li><strong>이 체제의 천재성이자 함정</strong>: 공화정의 형식(선거·의회·대통령)에 성직자 거부권을 접붙여 <strong>반대를 흡수해 무력화하는 기계</strong>를 만들었습니다. 25년간 작동했습니다. 투표율이 80%에서 40%로 무너진 것은 <strong>그 기계가 고장났다는 뜻</strong>입니다 — 참여를 전제로 설계된 장치이기 때문입니다.</li>
+        <li><strong>최고지도자의 자격은 법이 아니라 정치입니다.</strong> 1989년에 하메네이를 앉히려고 마르자 요건을 삭제했고, 2026년에는 그 삭제를 이용해 그의 아들을 온라인 표결로, 폭격 아래서, IRGC의 압력 속에, 고인의 유언에 반해 앉혔습니다.</li>
+        <li><strong>성직자가 안보 실세에 밀려났습니다.</strong> IRGC의 경제 제국, 1999년 하타미에게 보낸 협박 서한, 2009년의 역할, 2026년 전문가회의에 대한 압력, 그리고 지금 페제시키안 위에 선 바히디·레자이 — 모두 한 방향을 가리킵니다. <strong>이슬람공화국은 성직자 외피를 쓴 군사·안보 국가가 되어가고 있습니다.</strong></li>
+        <li><strong>사회는 이미 떠났습니다.</strong> 출산율 1.6, 법적으로 묶인 고학력 여성, 해외로 나간 학위자, '여성 생명 자유', 공공연한 히잡 불복종, 40%의 투표율. <strong>국가의 자기 서사를 더 이상 받아들이지 않는 인구</strong>가, 그것을 대체할 조직을 갖지 못한 상태 — 그것이 2026년 이란의 실제 조건입니다.</li>
+      </ol>
+    </div>
+  </section>
+  <div class="part" id="p2">
+    <span class="pn">PART Ⅱ</span>
+    <h2>개전 — 타결 하루 전의 기습</h2>
+    <p>이 전쟁에서 가장 논쟁적인 것은 전쟁의 방식이 아니라 <strong>시점</strong>입니다. 공격은 협상이 깨져서가 아니라, 협상이 거의 타결되던 순간에 시작됐습니다.</p>
+  </div>
+
+  <section id="buildup">
+    <p class="eyebrow">2026년 1–2월</p>
+    <h3>증강과 협상이 동시에 진행됐다</h3>
+    <div class="tl">
+      <div class="ev"><div class="d">1월</div><p class="t">미국이 중동에 병력을 대규모 전개. 항모전단 2개(<b>USS Abraham Lincoln</b> 1월 26일 도착, <b>USS Gerald R. Ford</b> 2월 13일 출항)와 수백 대의 항공기. 규모는 <b>2003년 이라크 침공 이래 최대</b>.</p></div>
+      <div class="ev"><div class="d">1월 말</div><p class="t">EU가 <b>혁명수비대(IRGC)를 테러조직으로 지정</b>. 미국은 라리자니 등 보안 당국자 5명 제재.</p></div>
+      <div class="ev"><div class="d">2.02</div><p class="t">페제시키안 대통령이 미국과의 핵협상 재개를 지시.</p></div>
+      <div class="ev"><div class="d">2.06</div><p class="t"><b>오만 무스카트 간접 협상 개시.</b> 미국 측 스티브 위트코프 특사·재러드 쿠슈너, 그리고 이례적으로 <b>브래드 쿠퍼 중부사령관</b>이 동석 — 협상과 무력 위협을 동시에 얹는 신호. 이란 측 아락치 외교장관. 중재는 오만 외교장관 바드르 알부사이디.</p></div>
+      <div class="ev"><div class="d">2.11</div><p class="t">네타냐후 총리가 트럼프 대통령과 회동해 군사행동을 압박.</p></div>
+      <div class="ev"><div class="d">2.17 · 2.20</div><p class="t">하메네이가 트럼프의 조건을 공개 거부 → 트럼프가 <b>10일 최후통첩</b>.</p></div>
+      <div class="ev"><div class="d">2.24–27</div><p class="t">F-22 12대가 이스라엘 오브다 기지에, 공중급유기 14대가 벤구리온 공항에 전개. 바레인의 5함대 사령부는 인원을 100명 미만으로 감축.</p></div>
+      <div class="ev key"><div class="d">2.25–26</div><p class="t">아락치가 "역사적 합의가 손에 잡힌다"고 발언. 제네바 3차 협상에서 <b>오만 측은 이란이 '농축 우라늄 재고 제로 + 전면 IAEA 검증'을 제안했다</b>고 설명. 알부사이디: "가장 중요한 성과는 이란이 핵무기용 물질을 결코 갖지 않기로 한 것." <b>단, 월스트리트저널은 미국이 포르도·나탄즈·이스파한의 물리적 파괴와 농축 우라늄 전량 인도를 요구했다고 보도</b> — 두 설명이 충돌.</p></div>
+      <div class="ev"><div class="d">2.27</div><p class="t">각국 대사관 철수. 알부사이디는 마지막 중재를 위해 워싱턴으로 향함.</p></div>
+      <div class="ev key"><div class="d">2.27 15:38 EST</div><p class="t">트럼프 대통령이 <b>에어포스원 기내에서 Operation Epic Fury 실행을 명령</b>.</p></div>
+      <div class="ev key"><div class="d">2.28</div><p class="t">현지시간 오전 9시 45분(EST 새벽 1시 15분) <b>개전</b>. 라마단 기간이었고, 예정돼 있던 빈 협상은 취소됐습니다.</p></div>
+    </div>
+  </section>
+
+  <section id="casus">
+    <p class="eyebrow">쟁점</p>
+    <h3>이란은 정말 핵무기에 근접해 있었나</h3>
+    <p class="lede">이것이 전쟁의 명분(casus belli)이고, 동시에 <strong>가장 심하게 반박된 주장</strong>입니다. 반박의 상당 부분이 미국 정부 내부에서 나왔다는 점이 특징입니다.</p>
+
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>주장</th><th>주체</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>개전 명분</td><td>미 행정부·이스라엘</td><td>이란의 핵무장이 임박했으며 2월의 양보는 시간벌기였다. 유엔 안보리에서 월츠 대사: "이란은 핵무기를 가질 수 없다. 이것은 정치의 문제가 아니다."</td></tr>
+          <tr><td><strong>반박 ①</strong></td><td>툴시 개버드 국가정보국장</td><td><strong>3월 18일 의회 증언</strong> — 2025년 6월 작전 이후 "이란의 농축 프로그램은 소멸됐으며, 이후 재건 시도가 없었다". 공개 구두 증언에서는 이 대목을 생략했고, 워너 상원의원의 추궁에도 부인하지 않음. 트럼프 대통령은 이 평가를 공개적으로 부정.</td></tr>
+          <tr><td><strong>반박 ②</strong></td><td>IAEA</td><td>무기화(weaponization)의 증거를 발견하지 못했다는 입장을 유지. 미국·이스라엘이 3월 3일 파괴했다고 발표한 '민 자다이(Min Zadai) 지하 핵무기 시설'은 <strong>독립적으로 확인된 바 없음</strong>.</td></tr>
+          <tr><td><strong>반박 ③</strong></td><td>오만 외교장관</td><td>"협상이 비생산적이었다"는 미국 측 설명을 정면 부인. 미국이 "자국 외교정책의 통제력을 잃었다"고 비판.</td></tr>
+          <tr><td><strong>반박 ④</strong></td><td>영국 국가안보보좌관</td><td>이란의 협상 태도가 즉각적인 군사행동을 정당화하지 않는다고 평가한 것으로 보도됨.</td></tr>
+        </tbody>
+      </table>
+      <caption>전문가들의 다수 견해는 이란이 '핵무장'이 아니라 <strong>핵 헤징(nuclear hedging)</strong> — 언제든 만들 수 있는 상태를 유지하되 만들지는 않는 전략 — 상태였다는 것입니다.</caption>
+    </div>
+
+    <div class="note quiet">
+      <span class="lbl">논리의 내부 모순</span>
+      <p>트럼프 행정부의 두 주장은 서로 충돌합니다. ① 2025년 6월 작전으로 이란 핵 프로그램을 "완전히 파괴했다" ② 2026년 2월 이란의 핵무장이 임박해 선제공격이 불가피했다. 둘 다 참일 수는 없습니다. 이 모순이 미국 내 여론과 의회에서 전쟁 지지가 무너진 핵심 이유이며, 이란이 <strong>전쟁 배상</strong>을 요구하는 법적 근거이기도 합니다.</p>
+    </div>
+  </section>
+
+  <div class="part" id="p3">
+    <span class="pn">PART Ⅲ</span>
+    <h2>6개월의 전쟁 — 상세 경과</h2>
+    <p>전쟁은 네 국면을 거쳤습니다. ① 2~3월의 참수·초토화, ② 3월의 지역 확산, ③ 4~6월의 봉쇄와 실패한 협상, ④ 7~8월의 재확전과 교착.</p>
+  </div>
+
+  <section id="ph1">
+    <p class="eyebrow">국면 1 · 2월 말–3월 초</p>
+    <h3>참수 작전과 첫 72시간</h3>
+    <div class="tl">
+      <div class="ev key"><div class="d">2.28</div><p class="t"><b>최고지도자 알리 하메네이 사망.</b> 테헤란의 거주·벙커 복합시설에 이스라엘 항공기가 정밀유도탄 약 30발과 '블랙 스패로' 공중발사 탄도미사일을 투하. 표적 정보는 CIA가 수개월에 걸쳐 축적한 것으로 보도됨. 딸·손녀·사위·며느리도 함께 사망. 이란은 하루 동안 부인하다 3월 1일 확인, 40일 애도 선포.</p></div>
+      <div class="ev"><div class="d">2.28</div><p class="t"><b>이스라엘 공군 사상 최대 규모 출격</b> — 전투기 약 200대가 24시간 동안 500개 표적에 1,200발 이상 투하. 미군은 순항미사일과 B-1·B-2·B-52로 탄도미사일 인프라를 타격.</p></div>
+      <div class="ev"><div class="d">2.28</div><p class="t">사이버 공격으로 이란 인터넷이 <b>60시간 이상 정상치의 1~4% 수준</b>으로 차단. 500만 다운로드를 기록한 기도시간 앱(BadeSaba)이 해킹돼 이탈 권유 메시지가 송출됨.</p></div>
+      <div class="ev"><div class="d">2.28</div><p class="t">이란의 첫 반격 <b>True Promise IV</b>. 이스라엘 측 추산 첫날 탄도미사일 약 170발. 텔아비브·하이파·베르셰바와 함께 <b>카타르 알우데이드, 쿠웨이트 알리 알살렘, UAE 알다프라, 바레인 5함대 사령부</b> 등 걸프 전역의 미군 기지 타격.</p></div>
+      <div class="ev"><div class="d">3.01</div><p class="t"><b>베이트셰메시</b>에서 미사일이 방공망을 뚫고 회당·대피소를 직격, <b>9명 사망 65명 부상</b>. 국제앰네스티는 국제인도법 위반 가능성을 제기.</p></div>
+      <div class="ev"><div class="d">2.28</div><p class="t">이란 남부 <b>미나브의 여학교</b> 피격. 이란 측은 <b>180명(일부 보도 80~160명) 사망</b>을 주장 — <b>이란 측 발표로만 존재하는 수치</b>이나, 국제법률가위원회(ICJ)가 이 사건을 명시하며 유엔헌장 위반을 지적.</p></div>
+      <div class="ev"><div class="d">3.01</div><p class="t"><b>임시 지도자 평의회</b> 구성(헌법 111조): 아라피 헌법수호위원, 모흐세니 에제이 사법부 수장, 페제시키안 대통령.</p></div>
+      <div class="ev"><div class="d">3.02</div><p class="t">쿠웨이트 미 대사관 피격 후 무기한 폐쇄. 두바이 총영사관 드론 피격, 리야드 대사관 드론 피격·폐쇄. <b>키프로스 영국 공군기지 RAF 아크로티리</b>에도 드론 공격. 카타르가 이란 Su-24 2대 격추 — 전쟁 첫 유인기 격추.</p></div>
+      <div class="ev"><div class="d">3.02</div><p class="t"><b>쿠웨이트 F/A-18의 오인 사격으로 미 F-15E 3대 격추</b>(승무원 6명 전원 탈출). 이란이 자신의 전과라 주장했으나 미군이 아군 오사로 정정.</p></div>
+    </div>
+
+    <div class="note caution">
+      <span class="lbl">참수 작전의 결과 — 정권은 무너지지 않았다</span>
+      <p>미국·이스라엘의 목표에는 사실상 정권 교체가 포함돼 있었고 최고지도자까지 제거됐지만, 체제는 붕괴하지 않았습니다. 오히려 외침 국면에서 시위 동력이 일시적으로 결집으로 흡수됐고, 열흘 만에 승계가 마무리됐습니다. <strong>참수 전략의 효과에 대한 실증 사례</strong>로 앞으로 오래 논쟁될 대목입니다.</p>
+    </div>
+  </section>
+
+  <section id="ph2">
+    <p class="eyebrow">국면 2 · 3월</p>
+    <h3>확산 — 승계, 레바논, 바다, 에너지</h3>
+
+    <h4>승계와 지도부 제거전</h4>
+    <div class="tl">
+      <div class="ev key"><div class="d">3월 초</div><p class="t">전문가회의(88명)가 <b>모즈타바 하메네이</b>를 새 최고지도자로 선출(선출일은 보도에 따라 3월 3일과 3월 9일로 엇갈립니다). 다섯 차례 대면 회의 실패 후 <b>온라인 표결</b>로 진행됐고, 표를 던진 뒤 개표가 끝나기 전에 <b>전문가회의 곰 사무실이 공습</b>당했습니다. 8명이 "혁명수비대의 압력"을 이유로 보이콧 선언.</p></div>
+      <div class="ev"><div class="d">3.01–04.06</div><p class="t">이란 지도부 연쇄 제거: 모하마드 파크푸르(IRGC 총사령관), 알리 샴하니, <b>알리 라리자니</b>(3.17, 온라인 표결의 위헌성을 문제 삼던 중), 골람레자 솔레이마니(바시지 사령관), 에스마일 카티브 정보장관(3.18), <b>알리레자 탄시리</b>(IRGC 해군 사령관, 호르무즈 봉쇄 총괄).</p></div>
+    </div>
+
+    <h4>레바논 전선</h4>
+    <div class="tl">
+      <div class="ev"><div class="d">3.02–03</div><p class="t">헤즈볼라가 하메네이 사망에 대한 보복으로 로켓 공격 재개. 이스라엘은 이를 "공식적인 선전포고"로 규정하고 베이루트 남부(다히예)와 남부 70여 곳 타격.</p></div>
+      <div class="ev key"><div class="d">3.16</div><p class="t"><b>이스라엘 지상 침공.</b> 최종적으로 5개 사단(36·91·98·146·162)이 투입돼 점령지는 청색선 이북 <b>5~10km 폭의 완충지대</b>(이스라엘군 명칭 '옐로 라인')로, 영국 하원도서관은 면적 대신 이 폭으로 기술합니다(위키백과가 제시하는 570~600㎢ 수치는 공식 출처로 확인되지 않습니다). 카츠 국방장관은 3월 24일 "국경 마을을 철거하고 <b>리타니강까지 영구 점령</b>하겠다"고 선언.</p></div>
+      <div class="ev"><div class="d">3–5월</div><p class="t">빈트 즈베일, 키암(시가전과 조직적 철거), 하다타 전투. 5월 중순 이스라엘군이 <b>리타니강을 도하</b>해 일주일간 작전, 5월 말 <b>보포르 성채</b> 점령.</p></div>
+      <div class="ev"><div class="d">현재</div><p class="t">사망 <b>4,175명 이상</b>(영국 하원도서관, 6월 22일 기준), 실향민 <b>약 120만 명(인구의 18%)</b>(유엔). 자흐라니강 이남 약 2,000㎢에 대피령. 39개 이상 마을의 기반시설 파괴, 일부는 완전 철거.</p></div>
+    </div>
+
+    <h4>해상 — 걸프에서 인도양까지</h4>
+    <div class="tl">
+      <div class="ev key"><div class="d">3.04</div><p class="t"><b>USS Charlotte(SSN-766)가 이란 호위함 IRIS Dena를 격침.</b> 스리랑카 갈레 남방 19~40해리. 이 함정은 인도 다국적 훈련(MILAN)에서 귀환 중이어서 <b>탄약을 싣고 있지 않았습니다</b>. 사망자는 104명 또는 87명(출처 상이). <b>포클랜드 전쟁 이후 잠수함에 의한 첫 격침</b>이자 미 잠수함으로는 2차대전 이후 처음. 전쟁 중 법적으로 가장 논쟁적인 단일 사건.</p></div>
+      <div class="ev"><div class="d">3.06</div><p class="t">이란 보급함 <b>IRIS Bushehr</b>가 승조원 208명과 함께 스리랑카 해군에 <b>억류(내부억류)</b> — 2차대전 이후 중립국의 첫 군함 억류 사례.</p></div>
+      <div class="ev"><div class="d">2.28–3월</div><p class="t">이란 해군 궤멸. 확인된 손실만 <b>13척</b>(구축함 자마란, 사한드, 사발란, 유일 가동 잠수함 <b>IRIS Fateh</b>, 드론모함 IRIS Shahid Bagheri, 킬로급·가디르급 등). 미 중부사령부는 3월 19일까지 <b>130척</b>, 이후 집계에서는 <b>155척 격침·손상</b>을 주장 — 차이는 계류 중이던 소형 고속정 수백 척의 포함 여부.</p></div>
+      <div class="ev key"><div class="d">3.10–27</div><p class="t">이란의 <b>기뢰 부설</b> 시작. 3월 27일 IRGC가 <b>호르무즈 해협 폐쇄를 공식 선언</b>(미국·이스라엘 및 동맹국 항구 왕래 선박 대상). <b>선원 약 2만 명, 선박 약 2,000척</b>이 걸프 내부에 고립. 크루즈선 6척(승객 1만 5,000명)도 갇혔습니다.</p></div>
+      <div class="ev"><div class="d">3.21</div><p class="t">이란이 <b>디에고 가르시아</b>(미·영 인도양 기지)를 향해 미사일을 발사했다고 미국이 주장, 1발은 비행 중 파괴되고 1발은 SM-3로 요격. <b>이란은 부인하며 이스라엘의 위장작전이라 주장</b> — 미사일이 실제로 접근했다는 증거는 공개되지 않았습니다.</p></div>
+    </div>
+
+    <h4>에너지 전쟁</h4>
+    <div class="tl">
+      <div class="ev"><div class="d">3.02–08</div><p class="t">이란이 사우디 <b>아람코 라스타누라</b>(3.2, 3.4), 샤이바 유전, 바레인 <b>BAPCO</b> 단일 정유소(3.10 불가항력), 쿠웨이트 KPC(3.7 불가항력), UAE <b>ADNOC 루와이스 정유소</b>(3.11) 등 걸프 에너지 시설을 연쇄 타격. 3월 4일 이라크 전국 전력망 마비.</p></div>
+      <div class="ev"><div class="d">3.06–08</div><p class="t">이스라엘이 테헤란 인근 유류 저장시설 타격 — '불의 강'과 검은 산성비. 3월 14일 <b>카르그섬</b>(이란 원유 수출의 90%)의 군사 표적 90여 곳을 타격했으나 <b>수출 터미널은 의도적으로 남겨둠</b>.</p></div>
+      <div class="ev key"><div class="d">3.18–19</div><p class="t"><b>에너지 전쟁의 분수령.</b> 이스라엘이 세계 최대 가스전 <b>사우스파르스</b>를 타격 → 이란이 카타르 <b>라스라판 LNG 단지의 4·6호 트레인</b>을 파괴. 카타르 LNG 수출능력의 <b>17%(연 1,280만 톤)</b>가 사라졌고, <b>한국·중국·이탈리아·벨기에</b>에 불가항력이 선언됐습니다. 이란은 다음날 하이파의 <b>BAZAN 정유소</b>도 타격.</p></div>
+      <div class="ev"><div class="d">3.21 · 3.27</div><p class="t">미국이 <b>나탄즈에 벙커버스터</b> 투하, 이란은 디모나 인근을 겨냥해 보복(78명 부상). 3월 27일 <b>아라크 중수 단지</b>와 아르다칸 옐로케이크 공장 손상.</p></div>
+      <div class="ev"><div class="d">3.28</div><p class="t"><b>예멘 후티 공식 참전.</b> 이스라엘로 탄도미사일 발사. 홍해·바브엘만데브가 두 번째 위험구역으로 편입.</p></div>
+      <div class="ev"><div class="d">3.31</div><p class="t">중국·파키스탄이 공동 <b>5개항 평화안</b> 제시 — 즉각 휴전, 인도적 접근, 호르무즈 정상 통항 회복. 아프리카연합이 지지.</p></div>
+    </div>
+  </section>
+
+  <section id="ph3">
+    <p class="eyebrow">국면 3 · 4–6월</p>
+    <h3>봉쇄와 두 번의 실패한 합의</h3>
+    <div class="tl">
+      <div class="ev"><div class="d">4.05–07</div><p class="t">파키스탄이 45일 2단계 휴전안 제시, 이란은 거부하고 <b>10개항</b>을 역제안. 트럼프의 최후통첩: "오늘 밤 하나의 문명 전체가 사라지고 다시는 돌아오지 못할 것."</p></div>
+      <div class="ev key"><div class="d">4.08</div><p class="t"><b>파키스탄 중재 2주 휴전 성립.</b> 골자는 적대행위 중단, 호르무즈 재개방, 핵 제한, 조건부 제재 완화, 동결자산 일부 해제. 중국이 이란 설득에 결정적 역할.</p></div>
+      <div class="ev key"><div class="d">4.08</div><p class="t">그러나 <b>몇 시간 뒤 이스라엘이 'Eternal Darkness' 작전</b>으로 레바논 100여 곳을 10분 만에 타격, <b>357명 사망</b>. 파키스탄·이란은 휴전이 레바논을 포함한다고, 미국·이스라엘은 포함하지 않는다고 주장 — <b>합의문의 결함이 즉시 드러난 순간</b>.</p></div>
+      <div class="ev"><div class="d">4.11–12</div><p class="t"><b>이슬라마바드 회담</b> — 21시간, 3라운드(간접 1·직접 2). 미국 측 밴스 부통령·위트코프·쿠슈너 등 약 300명, 이란 측 갈리바프 국회의장·아락치 등 약 70명. 두 가지 쟁점(핵·해협 지위)만 남기고 결렬. 아락치는 "각서 서명 직전이었다"고, 밴스는 "이란이 핵 야망을 포기하지 않았다"고 설명.</p></div>
+      <div class="ev key"><div class="d">4.13</div><p class="t"><b>미국이 이란 항구 해상봉쇄 선언</b>(오전 10시 ET). 이란의 해협 봉쇄와 겹치면서 <b>'이중 봉쇄'</b> 성립. 이란은 "전쟁 행위이자 해적질"이라 규정. 중국은 "무책임하고 위험하다", 러시아는 "경제적 지진"을 경고했고, <b>영국·프랑스·스페인·호주·EU는 지지를 거부</b>했습니다.</p></div>
+      <div class="ev"><div class="d">4.16</div><p class="t">미국 중재로 <b>이스라엘–레바논 휴전</b>(10일, 연장 가능). 이후 3주·45일 연장을 거쳐 6월 1일 상호 이해로 이어짐. 이스라엘군은 계속 주둔.</p></div>
+      <div class="ev"><div class="d">4.17–18</div><p class="t">이란이 해협 재개방 선언 → 유가 11% 급락 → <b>미국이 봉쇄를 풀지 않자 하루 만에 재봉쇄</b>. 이후 4개월간 반복되는 패턴의 원형.</p></div>
+      <div class="ev"><div class="d">4.19–5.22</div><p class="t">미 해군의 봉쇄 집행: 이란 화물선 <b>Touska</b>를 USS Spruance의 5인치 함포로 기관실을 파괴해 나포(4.19), 5월 22일까지 <b>94척 차단·회항</b>. 이란은 그리스 선박 Epaminondas와 MSC Francesca를 나포로 응수.</p></div>
+      <div class="ev"><div class="d">4.28–29</div><p class="t"><b>UAE가 59년 만에 OPEC·OPEC+ 탈퇴를 발표</b>(5월 1일 발효). 역대 최대 산유국의 탈퇴이자 사우디와의 결별 신호.</p></div>
+      <div class="ev"><div class="d">4.30</div><p class="t">브렌트유 장중 <b>126달러</b>(4년 최고). 두바이유는 이미 3월 19일 <b>사상 최고 166달러</b>를 기록.</p></div>
+      <div class="ev"><div class="d">5.04–06</div><p class="t">미국이 걸프에 갇힌 선박을 빼내기 위한 <b>Project Freedom</b> 호송 작전 개시 → "큰 진전이 있다"며 48시간 내 중단.</p></div>
+      <div class="ev"><div class="d">5.25–29</div><p class="t">이란이 인터넷 차단 해제(5.25). 미국이 <b>봉쇄 해제</b>(5.29).</p></div>
+      <div class="ev"><div class="d">6.07–09</div><p class="t">미사일 교전 일시 재개.</p></div>
+      <div class="ev key"><div class="d">6.14–17</div><p class="t"><b>이슬라마바드 각서 체결.</b> 6월 14일 대표 전자서명, 6월 17일 트럼프 대통령이 <b>베르사유궁</b>에서(G7 만찬 중), 페제시키안 대통령이 테헤란에서 원격 서명. 60일 협상 시한 설정. 전면전은 여기서 멈춥니다.</p></div>
+    </div>
+  </section>
+
+  <section id="ph4">
+    <p class="eyebrow">국면 4 · 6월 말–8월</p>
+    <h3>붕괴, 재확전, 그리고 교착</h3>
+    <div class="tl">
+      <div class="ev"><div class="d">6.18–24</div><p class="t">미국이 봉쇄를 풀고 이란이 해협을 열었으나, 이란이 <b>척당 100만 달러가 넘는 통행료</b>를 부과하면서 통항은 하루 4~15척에 그침. 트럼프는 "영구 무료 통항"이라 했고 이란은 "서비스 요금"이라 맞섰습니다.</p></div>
+      <div class="ev"><div class="d">6.25–27</div><p class="t">이란 드론이 상선 Ever Lovely를 공격 → 미국 보복 타격 → 이란 재보복.</p></div>
+      <div class="ev key"><div class="d">7.07–08</div><p class="t"><b>합의 붕괴.</b> 이란이 해협에서 상선 3척(카타르 LNG선 Al Rekayat 화재, 사우디 유조선 Wedyan 등)을 타격 → 미국이 <b>이란 원유 수출 면허를 취소</b> → 트럼프가 합의를 "시간 낭비"로 선언하고 대규모 공습 재개. 이란 남부 <b>80~90개 표적</b>, IRGC 고속정 60여 척 파괴.</p></div>
+      <div class="ev"><div class="d">7.12–18</div><p class="t">이란이 해협 폐쇄 재선언. 미국은 사흘간 <b>300개 표적</b> 타격, 7월 16일에는 90분간의 집중 공습(반다르아바스, 세만, 케슘, 차바하르 등). 이란은 쿠웨이트·바레인·<b>요르단 아즈라크 기지</b>에 케이바르 셰칸 미사일로 반격. 8일간 8차례 공습으로 다리 6개, 전력, <b>담수화 설비</b>까지 표적이 확대 — 이란은 민간 기반시설 고의 타격이라 비판. 사망 50명 이상, 부상 500명 이상.</p></div>
+      <div class="ev"><div class="d">7.14</div><p class="t">미 해군 봉쇄 재개.</p></div>
+      <div class="ev"><div class="d">7.20</div><p class="t"><b>후티가 사우디 기항 선박에 대한 해상봉쇄 선언</b>. 바브엘만데브 통항이 하루 41척에서 29척으로 급감.</p></div>
+      <div class="ev key"><div class="d">7.29</div><p class="t">트럼프가 "이제 우리 차례"라고 밝힌 뒤 중부사령부가 공습 "완료"를 선언. <b>이후 8월 20일까지 21일 연속 이란 영토 공습 없음</b>, 이란의 발사도 사실상 0. 현재의 소강 국면이 시작.</p></div>
+      <div class="ev"><div class="d">8.05</div><p class="t">이란이 오만과 <b>해협 항로 좌표에 합의</b>했다고 발표. 입항은 이란 영해의 북측 항로, 출항은 오만 영해의 남측 항로, 초기 60일 무료 뒤 서비스 요금 부과 구조.</p></div>
+      <div class="ev"><div class="d">8.10–14</div><p class="t">모즈타바가 <b>안보 지도부를 교체</b> — 모흐센 레자이를 국가안보최고회의 사무총장에, 아마드 바히디를 IRGC 총사령관에 임명. 레자이는 6월 해협 합의에 <b>공개 반대</b>했던 인물. 이후 이란은 해협 개방 조건에 <b>레바논·가자 전쟁 종식</b>까지 추가.</p></div>
+      <div class="ev"><div class="d">8.11–14</div><p class="t">미군이 봉쇄 돌파를 시도한 파나마 선적 컨테이너선 <b>Vela Nova</b>를 헬파이어로 무력화. 후티가 바브엘만데브에서 상선 <b>Tihamah</b>를 공격해 6명 사망(구조대 2명 포함). ADNOC 관련 선박 3척이 48시간 내 연쇄 피격, UAE는 "해적질이자 경제적 강압"이라 비난.</p></div>
+      <div class="ev"><div class="d">8.15</div><p class="t">레바논 남부에서 6월 휴전 이후 최다 사망(11명, 안사르에서 7명). 헤즈볼라가 예고한 보복은 아직 실행되지 않은 상태.</p></div>
+      <div class="ev key"><div class="d">8.16–17</div><p class="t"><b>60일 시한 만료.</b> 협상은 시작조차 못 했습니다. 트럼프는 이란에 "백기 투항"을 요구하고 중재국 <b>오만에 대한 폭격을 위협</b>. 같은 날 <b>한미 연합훈련 대폭 축소</b>를 지시하며 한국의 이란 작전 지원 거부를 이유 중 하나로 거론.</p></div>
+      <div class="ev key"><div class="d">8.19</div><p class="t">트럼프가 <b>'경제 D-데이'</b>를 선언 — 원유 밀수, 스와프 라인, 현금 운반, 환전소를 겨냥한 사상 최강 제재 예고. 같은 날 <b>UAE가 이란과의 모든 무역·금융 거래를 무기한 중단</b>. 두바이는 중국·튀르키예를 앞서는 이란 최대 교역 창구(연 280억 달러, 이란 수입의 약 3분의 1)여서 파급이 큽니다.</p></div>
+    </div>
+
+    <div class="note">
+      <span class="lbl">지금의 소강은 무엇인가</span>
+      <p>3주 넘게 이어지는 공습 중단은 <strong>합의의 결과가 아닙니다</strong>. 미국은 군사 공격에서 경제 봉쇄로 압박 수단을 옮겼고, 이란은 미사일 재고를 아끼며 해협이라는 마지막 지렛대에 집중하고 있습니다. 분석가들은 이 소강이 레바논·이라크·예멘 전선의 확전을 억누르는 <strong>'하중을 지탱하는(load-bearing)' 상태</strong>라고 표현합니다. 무너지면 여러 전선이 동시에 열립니다.</p>
+    </div>
+  </section>
+  <div class="part" id="p4">
+    <span class="pn">PART Ⅳ</span>
+    <h2>군사 — 무엇이 어떻게 싸웠나</h2>
+    <p>이 전쟁의 군사적 요체는 하나입니다. <strong>재래식 전력에서는 완전한 비대칭</strong>이었고, 그래서 이란은 재래식으로 싸우기를 포기하고 <strong>바다를 인질로 잡았습니다</strong>.</p>
+  </div>
+
+  <section id="oob">
+    <p class="eyebrow">전력</p>
+    <h3>양측이 동원한 것</h3>
+
+    <h4>미국</h4>
+    <ul>
+      <li><strong>항모전단</strong> — USS Abraham Lincoln(1.26 도착, <span class="num">240일</span> 넘게 연속 배치돼 승조원 정신건강 문제가 공개적으로 거론됨), USS Gerald R. Ford, USS George H. W. Bush(3.7 추가 투입). 교대를 위해 USS George Washington이 8월 13일 싱가포르 해협을 통과 — <strong>서태평양에 전진배치 항모가 없는 상태</strong>가 됐습니다.</li>
+      <li><strong>항공</strong> — B-1·B-2·B-52 폭격기, F-22·F-35·F-15E·F-16·F/A-18, A-10, EA-18G 전자전기, U-2·RC-135 정찰기, MQ-9. 지상에는 패트리엇·THAAD·HIMARS.</li>
+      <li><strong>기지</strong> — 알우데이드(카타르), 알리 알살렘·캠프 뷰링(쿠웨이트), 알다프라(UAE), 바레인 5함대, 프린스 술탄(사우디), 무와파크 살티/아즈라크(요르단), 에르빌(이라크), 오브다·벤구리온(이스라엘), 아크로티리(키프로스), 페어포드(영국), 람슈타인(독일), <strong>디에고 가르시아</strong>, 그리고 8월에는 <strong>불가리아 베즈메르 기지</strong>까지.</li>
+      <li>봉쇄 개시 시 <strong>1만 명 이상, 군함 12척 이상</strong>. 7월 재개 시점의 상시 규모는 <strong>병력 1만 5,000명 이상, 항공기·함정 200기 이상</strong>.</li>
+    </ul>
+
+    <h4>이스라엘</h4>
+    <ul>
+      <li>F-35I '아디르', F-15(블랙 스패로 공중발사 탄도미사일 운용), 헤르메스 900/450·헤론·에이탄 무인기.</li>
+      <li>레바논에 <strong>5개 사단</strong>(36·91·98·146·162). 개전 첫날 예비역 2만 명 추가 소집(기존 5만 명 위에).</li>
+      <li>방공은 애로우·데이비드 슬링·아이언돔 3층. 경보 시간은 약 90초, 탐지에서 탄착까지 약 10분.</li>
+    </ul>
+
+    <h4>이란</h4>
+    <ul>
+      <li><strong>이원 구조</strong> — 정규군 아르테시(약 35만)와 <strong>혁명수비대 IRGC</strong>(약 19만)가 병립. 전략 미사일과 연안 해군은 IRGC가, 원양 해군과 재래식 공군은 아르테시가 담당. 바시지 민병대는 상시 9만, 동원 시 100만.</li>
+      <li><strong>탄도미사일</strong> — 개전 시점 약 <strong>2,000발</strong> 추정(2025년 6월 전쟁 후 1,500발로 줄었다 재건). 샤하브-3/에마드, 세질-2, 케이바르 셰칸, 호람샤흐르-4, 파테-110/졸파가르. 다만 <strong>발사대의 3분의 2는 이미 2025년에 파괴</strong>된 상태였습니다.</li>
+      <li><strong>드론</strong> — 샤헤드-136이 주력, 모하제르-6, 아바빌-3.</li>
+      <li><strong>방공</strong> — 러시아제 S-300PMU-2, 국산 바바르-373, 호르다드-15, 테헤란 주변의 중국제 HQ-9B. <strong>3월 14일 시점에 약 90% 무력화</strong>로 평가됐고, 이 평가는 이후 공식 갱신되지 않았습니다.</li>
+      <li><strong>공군</strong> — 전투 가능 항공기 약 250대이나 대부분 F-14·F-4·F-5·MiG-29 등 노후 기종. 사실상 전쟁에 기여하지 못했습니다.</li>
+    </ul>
+
+    <h4>주요 작전명</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>작전명</th><th>주체</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Epic Fury</strong> (장대한 분노)</td><td>미 중부사령부</td><td>주력 항공·해상 작전. 2월 27일 명령, 2월 28일 개시, 5월 5일 재선포</td></tr>
+          <tr><td><strong>Roaring Lion</strong> (포효하는 사자)</td><td>이스라엘</td><td>개전 타격 패키지와 참수 작전</td></tr>
+          <tr><td><strong>True Promise IV</strong> (진실한 약속 4)</td><td>이란</td><td>보복 미사일 캠페인. 이란은 이 전쟁을 '라마단 전쟁'이라 부름</td></tr>
+          <tr><td><strong>Eternal Darkness</strong></td><td>이스라엘</td><td>4월 8일 레바논 100여 표적 10분 타격, 357명 사망</td></tr>
+          <tr><td><strong>Project Freedom</strong></td><td>미국</td><td>5월 4~6일 해협 고립 선박 호송, 48시간 만에 중단</td></tr>
+          <tr><td><strong>Aspides</strong> (확대)</td><td>EU</td><td>상선 호송</td></tr>
+          <tr><td><strong>Urja Suraksha</strong></td><td>인도</td><td>군함 5척 이상으로 화물선 20척 이상 호송</td></tr>
+          <tr><td><strong>Economic D-Day</strong></td><td>미국</td><td>8월 19일 예고된 제재 캠페인 — 군사작전이 아닌 경제전</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="attrition">
+    <p class="eyebrow">소모</p>
+    <h3>열흘 만에 무너진 발사율</h3>
+    <p class="lede">이 전쟁의 군사적 결론을 한 표로 보여주는 데이터입니다. 이란은 첫날 이후 <strong>재래식 반격 능력을 사실상 상실</strong>했습니다.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시점</th><th class="n">탄도미사일</th><th class="n">드론</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>2.28 (1일차)</td><td class="n">약 480발</td><td class="n">약 720대</td><td>이 중 이스라엘 방향은 약 170발</td></tr>
+          <tr><td>3.10 (10일차)</td><td class="n">하루 40발</td><td class="n">하루 60대</td><td><strong>−90~92%</strong> (미 중부사령관 쿠퍼 제독)</td></tr>
+          <tr><td>3월 말</td><td class="n">하루 10~15발</td><td>—</td><td>대이스라엘 기준</td></tr>
+          <tr><td>6월</td><td class="n">−86%</td><td class="n">−83%</td><td>1일차 대비 (중부사령부)</td></tr>
+          <tr><td>8월</td><td class="n">사실상 0</td><td class="n">사실상 0</td><td>8월 12일까지 13일 연속 0, 19~20일도 0</td></tr>
+        </tbody>
+      </table>
+      <caption>원인은 세 가지로 분석됩니다 — ① 발사대의 최대 4분의 3 파괴 ② 장기전 대비 재고 아끼기 ③ 지휘통제 참수. 3월 10일 IRGC 지휘관은 "탄두 1,000kg 이상 미사일만 쏘고 있다"고 밝혔는데, 이는 재고 관리의 방증입니다.</caption>
+    </div>
+
+    <h4>타격 규모</h4>
+    <ul>
+      <li>미 중부사령부 누적 표적: 3월 4일 약 2,000개 → 3월 16일 <strong>7,000개 이상(출격 6,500회)</strong> → 3월 19일 <strong>8,000개 이상(함정 130척 포함)</strong> → 3월 28일 <strong>11,000개 이상</strong> → 7월 재개 후 추가 <strong>300개 이상</strong>.</li>
+      <li>사건 단위로 세는 ACLED 집계로는 <strong>미·이스라엘 3,582건 대 이란 2,049건</strong>.</li>
+      <li>대이스라엘 누적 미사일은 개전 40일간 약 <strong>650발</strong>이며, <strong>절반 이상이 확산탄 탄두</strong>였습니다.</li>
+    </ul>
+  </section>
+
+  <section id="nukesites">
+    <p class="eyebrow">핵시설</p>
+    <h3>무엇이 얼마나 파괴됐나</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시설</th><th>피해 평가</th><th>현재 상태</th></tr></thead>
+        <tbody>
+          <tr><td><strong>나탄즈</strong> (농축)</td><td>약 <strong>75% 손상, 원심분리기 6,000기 이상 파괴</strong></td><td>3월 1~2일, 3일 타격 후 3월 21일 벙커버스터. IAEA는 방사능 유출은 없다고 확인</td></tr>
+          <tr><td><strong>포르도</strong> (지하 농축)</td><td>약 <strong>30% 손상, 핵심 시설은 온전할 가능성</strong></td><td>산 속 깊이 있어 완전 파괴 실패</td></tr>
+          <tr><td><strong>이스파한</strong></td><td>60% 농축 재고 상당량이 <strong>잔해 아래 매몰된 것으로 추정</strong></td><td>물질 자체는 소멸되지 않음</td></tr>
+          <tr><td><strong>아라크</strong> (중수)</td><td>3월 27일 손상</td><td>아르다칸 옐로케이크 공장도 같은 날 손상</td></tr>
+          <tr><td><strong>부셰르</strong> (원전)</td><td>직접 타격 없음</td><td>12km 밖 공항 피격으로 로사톰이 신규 호기 공사 중단·인력 철수</td></tr>
+          <tr><td><strong>'피카액스 마운틴'</strong></td><td><strong>한 번도 타격되지 않음</strong></td><td>지하 100m 이상. 원심분리기 수천 기가 이곳으로 옮겨졌다는 보도</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note caution">
+      <span class="lbl">핵 문제의 현재</span>
+      <p>IAEA는 <strong>2025년 6~7월부터 검증 접근이 사실상 끊겼고, 2026년 2월 28일 이후로는 전면 중단</strong>됐다고됐다고 밝혔습니다. 현재 평가는 "농축이 재개되지는 않았다"이지만, <strong>검증이 불가능한 상태</strong>입니다. 국내에 남아 있는 것으로 추정되는 재고는 <strong>20% 농축 184.1kg, 60% 농축 440.9kg</strong>. 60% 농축 재고는 추가 농축 시 핵무기 약 10기분의 분열물질에 해당한다는 것이 일반적 평가입니다.</p>
+      <p>즉 전쟁의 순 효과는 <strong>"시설은 부쉈지만 물질과 지식은 남았고, 감시는 사라졌다"</strong>입니다. 비확산 전문가들이 가장 우려하는 결과입니다.</p>
+    </div>
+  </section>
+
+  <section id="losses">
+    <p class="eyebrow">손실</p>
+    <h3>항공기·함정, 그리고 사람</h3>
+
+    <h4>항공기</h4>
+    <ul>
+      <li><strong>미국</strong>: 8월 20일 기준 <strong>46대 이상</strong>(다른 추적 사이트는 65대). 대부분 무인기(MQ-9 리퍼 약 47대, MQ-4C 트리톤 2대). 유인기 손실은 F-15E 3대(3.2 쿠웨이트 오인사격), KC-135 1대(3.12 이라크 상공 공중충돌, 6명 사망), F-15E 1대·A-10 1대(4.3 격추, 승무원 전원 구조), AH-64 1대(6.8). 지상에서는 3월 27일 프린스 술탄 기지 피격으로 KC-135·KC-46·E-3 조기경보기가 파괴·손상되고 29명 부상.</li>
+      <li><strong>이란</strong>: 45~51대. 대부분 타브리즈·시라즈·이스파한·메흐라바드 등지에서 <strong>지상에서 파괴</strong>. 공중전 손실은 카타르가 격추한 Su-24 2대와, <strong>3월 4일 이스라엘 F-35I가 테헤란 상공에서 격추한 Yak-130</strong> — F-35의 사상 첫 유인기 격추이자 이스라엘 공군의 1985년 이후 첫 격추.</li>
+      <li><strong>이스라엘</strong>: 21~30대, 사실상 전부 무인기.</li>
+    </ul>
+
+    <h4>사상자 — 출처별 대조</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>대상</th><th>미·이스라엘 발표</th><th>이란·독립 집계</th></tr></thead>
+        <tbody>
+          <tr><td>이란 군인 사망</td><td class="n">6,000명 이상 (부상 약 15,000)</td><td class="n">1,221명 (HRANA)</td></tr>
+          <tr><td>이란 전체 사망</td><td>—</td><td class="n">3,468명(이란 정부) ~ 3,636명(HRANA: 민간 1,701 · 군인 1,221 · 미분류 714)</td></tr>
+          <tr><td>이란 해군 함정</td><td class="n">130~155척 격침·손상</td><td class="n">확인된 함명 기준 13척</td></tr>
+          <tr><td>미군</td><td class="n">전사 15~18명, 부상 440~687명 (집계 시점별 상이)</td><td>이란 주장은 훨씬 높으나 검증 불가</td></tr>
+          <tr><td>이스라엘</td><td class="n">군인 18~32명 · 민간 28명 사망, 부상 8,524명</td><td class="n">알자지라 8월 12일 집계 60명 이상</td></tr>
+          <tr><td>레바논</td><td class="n">헤즈볼라 대원 1,000명 이상</td><td class="n">4,300명 이상 사망, 12,000명 이상 부상</td></tr>
+          <tr><td>이라크</td><td>—</td><td class="n">4월 휴전까지 119명 이상 사망, 384명 이상 부상</td></tr>
+          <tr><td>선원</td><td>—</td><td class="n">국제해사기구(IMO): 폭력 사건 65건, 선원 사망 17명 (8월 11일 기준)</td></tr>
+          <tr><td>어린이</td><td colspan="2">유니세프(3월 12일): 역내에서 <strong>1,100명 이상</strong>의 어린이 사망 또는 부상 — 이란 200명 사망, 레바논 91명, 이스라엘 4명, 쿠웨이트 1명</td></tr>
+        </tbody>
+      </table>
+      <caption>이란적신월사는 학교 65곳·의료시설 32곳을 포함해 민간시설 1만 곳 이상이 파괴됐다고 밝혔습니다. 유네스코·블루실드는 골레스탄 궁전, 체헬 소툰, 알리 카푸 등 이란 문화유산과, 이란 미사일 잔해로 인한 예루살렘 성묘교회·유대인 지구의 피해를 함께 기록했습니다.</caption>
+    </div>
+
+    <div class="note quiet">
+      <span class="lbl">기억할 것</span>
+      <p>영문 위키백과의 해당 문서조차 <strong>"미국·이스라엘·이란 세 당사자 모두가 실제 피해와 전과를 은폐했다"</strong>고 명시합니다. 어떤 숫자든 단독으로 인용하기보다 범위와 출처를 함께 다루는 편이 안전합니다.</p>
+    </div>
+  </section>
+
+  <div class="part" id="p5">
+    <span class="pn">PART Ⅴ</span>
+    <h2>외교 — 왜 6개월간 합의가 안 되나</h2>
+    <p>이 전쟁의 외교에서 가장 특이한 것은, 미국의 전통 동맹이 아니라 <strong>파키스탄·오만·중국이 중재를 주도</strong>했고, 유엔은 거부권으로 마비됐다는 점입니다.</p>
+  </div>
+
+  <section id="talks">
+    <p class="eyebrow">협상</p>
+    <h3>테이블에 올라온 안들</h3>
+
+    <h4>미국의 15개항 (3월 25일, 파키스탄 경유 전달)</h4>
+    <p>핵 프로그램 종식, 미사일 제한, 호르무즈 재개방, 무장세력 지원 중단, <strong>단계적</strong> 제재 완화.</p>
+
+    <h4>이란의 10개항 (4월 8일, 국가안보최고회의)</h4>
+    <ol>
+      <li>호르무즈 재개방 — 단 <strong>"이란 군의 조율 하에"</strong></li>
+      <li>해협 안전통항 프로토콜 수립</li>
+      <li><strong>저항의 축 전체</strong>에 대한 전쟁 종식</li>
+      <li>미군의 역내 기지·전개지 <strong>전면 철수</strong></li>
+      <li>이란에 대한 <strong>전면 배상</strong></li>
+      <li>1차 제재 해제</li>
+      <li>2차(세컨더리) 제재 해제</li>
+      <li>유엔 안보리 대이란 결의 전부 종료</li>
+      <li>IAEA 이사회 결의 전부 종료</li>
+      <li>해외 동결자산·재산 전면 반환</li>
+    </ol>
+    <p>이후 5월 초 이란은 <strong>14개항</strong>으로 확장해, NPT 당사국으로서의 <strong>농축 권리 보장</strong>과 해협 관리를 위한 <strong>새 메커니즘</strong>을 추가했습니다. 반대로 트럼프 대통령의 5월 조건은 <strong>농축우라늄 400kg 인도, 가동 핵시설 1곳만 허용, 동결자산 25% 미반환, 배상 거부</strong>였습니다. 두 목록은 거의 모든 항목에서 정반대입니다.</p>
+
+    <h4>이슬라마바드 각서 14개항 (6월 17일)</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th class="n">조</th><th>내용</th><th>실제로 어떻게 됐나</th></tr></thead>
+        <tbody>
+          <tr><td class="n">1</td><td><strong>레바논 포함 모든 전선</strong>의 군사행동 즉시 중단</td><td>이스라엘은 당사자가 아니어서 구속되지 않음 → 레바논 작전 계속</td></tr>
+          <tr><td class="n">2</td><td>주권·영토보전 상호 존중, 내정 불간섭</td><td>—</td></tr>
+          <tr><td class="n">3</td><td>최대 <strong>60일</strong> 내 최종 합의 도출(합의 시 연장)</td><td><strong>8월 17일 만료. 협상은 시작조차 못 함</strong></td></tr>
+          <tr><td class="n">4</td><td>미국은 즉시 봉쇄 해제 착수, <strong>30일 내 완전 해제</strong></td><td>6월 18일 해제 → 7월 14일 재개</td></tr>
+          <tr><td class="n">5</td><td>이란은 <strong>60일간 무료</strong> 상업 통항 허용</td><td><strong>치명적 조항.</strong> "60일간만 무료"라는 문구를 이란은 "그 후에는 요금을 받을 권리가 있다"로 해석. 항로 승인 주체(이란인가 오만인가)도 미정</td></tr>
+          <tr><td class="n">6</td><td><strong>최소 3,000억 달러</strong> 재건·개발 기금</td><td>재원 미지정. 밴스 부통령은 걸프 자금이라 했으나 트럼프가 부인, 걸프는 거부</td></tr>
+          <tr><td class="n">7</td><td>미국은 협의된 일정에 따라 제재 종료</td><td>7월 7일 원유 면허 취소로 붕괴</td></tr>
+          <tr><td class="n">8</td><td>이란은 핵무기 미보유 재확인, <strong>농축우라늄 희석(downblending)</strong> 합의</td><td>농축 수준·재고 처리는 <strong>전부 유예</strong></td></tr>
+          <tr><td class="n">9–13</td><td>협상 중 신규 군사행동 금지, 원유 수출 면허, 동결자산 접근, 이행 감시 기구</td><td>—</td></tr>
+          <tr><td class="n">14</td><td>최종 합의는 <strong>유엔 안보리 결의</strong>로 구속력 부여</td><td>미도달</td></tr>
+        </tbody>
+      </table>
+      <caption>미 국무부 이란담당 대행을 지낸 조이 후드의 평가: 이 각서는 "실패할 수밖에 없었다. 이란에게 호르무즈 해협에 대한 주권을 인정받았다고 해석할 여지를 줬기 때문이다."</caption>
+    </div>
+  </section>
+
+  <section id="mediators">
+    <p class="eyebrow">중재</p>
+    <h3>누가 다리를 놓고 있나</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>행위자</th><th>역할</th><th>동기와 비용</th></tr></thead>
+        <tbody>
+          <tr><td><strong>파키스탄</strong></td><td>주 중재국. 4월 휴전과 6월 각서를 성사시킨 실질적 주역. 아심 무니르 육군참모총장(사실상 최고 실권자)의 트럼프·밴스 직통 채널이 핵심. 샤리프 총리, 다르 외교장관</td><td>이란과 900km 국경, 사우디와의 방위협정. 대가는 큼 — <strong>카라치 미 영사관 앞 충돌로 최소 9명 사망</strong>, 시아파(인구의 15~20%) 반발. 이란은 4월 이후 "공정성 결여"를 이유로 2차 회담을 거부</td></tr>
+          <tr><td><strong>오만</strong></td><td>전통적 미·이란 통로. 2월 협상 주관, 현재 <strong>유일하게 살아 있는 실무 채널</strong>(해협 항로 협상)</td><td>미국을 공개 비판("이건 당신들의 전쟁이 아니다")한 유일한 걸프국. 그 대가로 8월 트럼프의 <strong>폭격 위협 대상</strong>이 됨</td></tr>
+          <tr><td><strong>카타르</strong></td><td>주도적 중재는 의도적으로 사양하고 파키스탄을 후원. 위트코프·쿠슈너와의 병행 채널 유지</td><td>피해 당사자 — LNG 수출능력 17% 상실, 5년간 영향, 2026년 GDP 전망 <strong>−8.6%</strong>. "해협을 인질로 삼는 협박"을 이란에 공개 경고</td></tr>
+          <tr><td><strong>중국</strong></td><td>중립 표방하되 친이란. 3월 31일 파키스탄과 5개항 평화안. 4월 휴전 수용을 이란에 설득한 결정적 행위자</td><td>이란 수출 원유의 <strong>80% 이상</strong> 흡수. 이중용도 부품·레이더·위성정보 제공 의혹. 안보리에서 이란 규탄 표결 기권, 4월 7일 결의안에는 거부권</td></tr>
+          <tr><td><strong>러시아</strong></td><td>중재보다는 안보리 방어막. 미 함정·항공기 실시간 정보 제공, 드론 공급 의혹</td><td>우크라이나 전쟁으로 여력 제한. 대신 <strong>유가 급등의 최대 수혜자</strong> — 4월 석유세수가 두 배(약 90억 달러)로 증가, IMF는 러시아 성장률을 0.8%→1.1%로 상향</td></tr>
+          <tr><td><strong>튀르키예</strong></td><td>피단 외교장관의 셔틀 외교, 3월 29일 사우디·이집트·파키스탄과 4자 회동</td><td>양쪽 모두 비판(미·이스라엘의 주권 침해 + 이란의 걸프 공격). <strong>미군 전투작전에 영공 폐쇄</strong>. 32% 인플레와 쿠르드 문제가 제약</td></tr>
+          <tr><td><strong>유엔</strong></td><td>구테흐스 사무총장이 양측 모두를 국제법 위반으로 규탄. <strong>독자적 중재 트랙은 만들어지지 않음</strong></td><td>안보리가 거부권으로 마비돼 중재가 이슬라마바드·무스카트·도하로 외주됨</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="un">
+    <p class="eyebrow">유엔</p>
+    <h3>안보리는 왜 아무것도 못 했나</h3>
+    <div class="tl">
+      <div class="ev"><div class="d">2.28</div><p class="t">긴급 안보리. 미국은 <b>헌장 51조 자위권</b>과 비확산 필요성을 근거로 제시. 이란은 "헌장 위반이자 전쟁범죄"라 규탄. 러시아·중국은 선제공격의 합법성 자체를 문제 삼았고, 유럽 이사국들은 이란의 보복을 규탄하는 데 집중.</p></div>
+      <div class="ev key"><div class="d">3.11</div><p class="t"><b>결의 2817 채택 (13–0, 중·러 기권).</b> 바레인 발의로 이란의 걸프 7개국 공격과 해협 상선 공격을 규탄. <b>공동제안국 135개국</b>으로 안보리 결의 사상 최다. 중·러의 기권 사유는 "2월 28일의 미·이스라엘 공격이 빠졌다"는 것.</p></div>
+      <div class="ev key"><div class="d">4.07</div><p class="t"><b>거부권 행사.</b> 걸프 6개국이 공동 발의한 항행 안전 결의안이 <b>찬성 11, 반대 2(중국·러시아), 기권 2(콜롬비아·파키스탄)</b>로 부결. 러시아: "이란만을 긴장의 유일한 원인으로 그렸다". 중국: "무단 군사작전에 정당성의 외피를 씌울 위험."</p></div>
+      <div class="ev"><div class="d">4.16</div><p class="t">유엔 총회 본회의(2022년 '거부권 이니셔티브'에 따라 거부권 행사국이 10일 내 설명해야 하는 절차). <b>결의는 채택되지 않음.</b> 글로벌 사우스 대표단은 비료 부족, 보험료, 경기침체 위험을 집중 제기.</p></div>
+      <div class="ev"><div class="d">3.02 이후</div><p class="t">IAEA는 러시아 요청으로 긴급 이사회를 열어 핵시설 공격에 "깊은 우려"를 표명. 이란은 <b>IAEA 협력을 중단</b>했고, 그로시 사무총장과 이란은 6월 각서의 사찰 조항 해석을 두고 공개적으로 충돌했습니다(그로시 "사찰은 당연히 이뤄진다" vs 가리바바디 부장관 "최종 합의 틀 안에서만 검토").</p></div>
+    </div>
+  </section>
+
+  <section id="reactions">
+    <p class="eyebrow">국제 반응</p>
+    <h3>동맹은 어디까지 따라갔나</h3>
+    <ul>
+      <li><strong>영국</strong> — 이란의 보복은 규탄하고 방어 목적의 기지 사용을 허용했으며 3월 20일에는 해협 인근 미사일 시설 타격에도 기지를 제공. 그러나 <strong>봉쇄는 거부</strong>. 스타머 총리: "우리는 봉쇄를 지지하지 않는다. 어떤 압력이 있어도 이 전쟁에 끌려들어가지 않겠다."</li>
+      <li><strong>프랑스</strong> — 3월 5일 기지 사용 허용, 지중해에 항모 전개. 봉쇄는 거부하고 대신 <strong>적대행위 종료 후의 다국적 항행 회복 임무</strong>를 제안. 협상 테이블 참여를 원했으나 배제됐고, 대신 베르사유궁을 각서 서명 무대로 제공했습니다.</li>
+      <li><strong>독일</strong> — 초기 공격에는 지지, 이란 보복 규탄. 영국과 함께 <strong>NATO의 호르무즈 개입에 반대</strong>(3월 16일).</li>
+      <li><strong>NATO</strong> — <strong>가장 상징적인 거부.</strong> 트럼프가 4월 10일 "며칠 내 해협을 열라"고 최후통첩했지만, 13일 봉쇄 개시 후 영국·프랑스가 명시적으로 거부했습니다. 동맹국들이 내건 조건은 ① 적대행위의 항구적 종료 ② 자국 선박 보호를 보장하는 구속력 있는 합의 ③ 봉쇄가 아닌 외교를 통한 회복. 뤼터 사무총장이 제안한 NATO 역할은 백악관이 거절했습니다.</li>
+      <li><strong>GCC 6개국</strong> — 전원 피격당했으면서도 <strong>공식 중립을 유지하고 공격 작전에는 참여하지 않았습니다</strong>. 사우디는 "비열한 이란의 공격"을 규탄하면서 미군의 자국 영토 사용을 허용, UAE는 테헤란 대사관 폐쇄와 OPEC 탈퇴에 이어 8월 19일 전면 거래 중단. 4월 28일 제다 GCC 정상회의의 결론은 "해협은 반드시 열려야 하며, 어떤 합의든 영구적 장치여야 한다" — <strong>오만을 제외한 전원이 '완전한 무조건 재개방'을 요구</strong>하고 있고, 이는 이란의 통행료 구상과 정면으로 충돌합니다.</li>
+      <li><strong>인도</strong> — 공식 중립. 모디 총리는 "주권에 대한 공격"을 이란을 명시하지 않고 규탄했고, 하메네이 사망에는 논평하지 않았습니다. 이란에 의료지원단을 보내는 한편 네팔·부탄·스리랑카·방글라데시에 연료를 대량 공급했으며, 5월에는 국민에게 금 구매 자제와 재택근무를 요청했습니다. 파키스탄이 중재 주역이 된 것은 인도 외교에 뼈아픈 대목으로 평가됩니다.</li>
+      <li><strong>일본</strong> — 다카이치 총리: "이란의 핵무기 개발은 결코 용인될 수 없다." 3월 16일부터 <strong>비축유 8,000만 배럴(15일분)</strong> 방출. 다만 4월 초까지도 미·이스라엘의 공격이 국제법 위반인지에 대해서는 답을 피했습니다.</li>
+      <li><strong>글로벌 사우스</strong> — 대체로 비동맹. 아프리카연합은 중국·파키스탄 평화안을 지지했고, 총회 논의에서는 규범 문제보다 <strong>비료·보험료·경기침체</strong>라는 경제 의제를 앞세웠습니다.</li>
+    </ul>
+  </section>
+
+  <section id="law">
+    <p class="eyebrow">국제법</p>
+    <h3>세 개의 법적 쟁점</h3>
+
+    <h4>1. 공격 자체의 합법성</h4>
+    <p>미국은 <strong>헌장 51조 자위권</strong>(임박한 위협에 대한 선제)을, 이스라엘은 실존적 위협을 근거로 들었습니다. 반대편은 무력 사용을 금지한 <strong>헌장 2조 4항</strong> 위반이며, 무력 공격이 없었고 안보리 승인도 없었다고 봅니다. <strong>국제법률가위원회(ICJ, 국제사법재판소와는 다른 기구)</strong>는 공격이 헌장과 국제법을 위반했다는 성명을 냈고, 국제앰네스티 사무총장은 전쟁범죄에 해당할 수 있는 행위를 지적했습니다.</p>
+
+    <h4>2. 두 개의 봉쇄</h4>
+    <ul>
+      <li><strong>이란의 해협 봉쇄</strong> — 유엔해양법협약(UNCLOS) 3부의 <strong>통과통항권</strong> 위반이라는 것이 다수 견해입니다. 영해 12해리는 인정되지만, 통과통항을 허가나 요금에 종속시킬 수 없습니다. 기뢰 부설은 헤이그 제8협약 위반입니다. <strong>싱가포르 등 해협 국가들이 통행료에 강하게 반대</strong>하는 이유는 말라카·지브롤터·덴마크 해협에 미칠 선례 때문입니다.</li>
+      <li><strong>미국의 항구 봉쇄</strong> — 평시에 타국 항구를 봉쇄하는 것 자체가 전쟁 행위이며, 안보리 승인이나 유효한 자위권 없이는 위법이라는 것이 이란·러시아·중국의 주장입니다. 미국은 4월 7일 결의안이 거부권으로 부결되면서 <strong>안보리의 법적 엄호를 확보하지 못했습니다</strong>.</li>
+    </ul>
+
+    <h4>3. 배상 소송이라는 제3전선</h4>
+    <p>이란은 국제사법재판소 제소 대신 <strong>국내 소송과 ICC 회부, 보편관할권</strong> 전략을 택했습니다. 사법부 산하 조직이 전문가 약 1만 9,000명을 동원해 테헤란에서만 5만 건의 감정의견을 축적했고, 미나브 학교 사건은 2,000쪽 분량으로 정리됐습니다. <strong>400만 명 이상의 이란인이 집단 손해배상 소송 위임장을 제출</strong>했습니다. 나아가 이란은 영공·연료·착륙을 제공한 국가들까지 '책임의 연쇄'로 묶고, <strong>법원의 집행영장을 근거로 걸프에서 선박 4척을 나포</strong>했습니다.</p>
+    <p>이 소송 캠페인은 단순한 선전이 아니라 <strong>'배상금' 요구의 법적 실체</strong>이며, 그래서 협상에서 쉽게 포기할 수 없는 항목이 됐습니다.</p>
+  </section>
+  <div class="part" id="p6">
+    <span class="pn">PART Ⅵ</span>
+    <h2>정치 — 네 개의 국내 정치가 전쟁을 붙잡고 있다</h2>
+    <p>협상이 안 되는 이유의 절반은 국제적이지 않습니다. 테헤란, 워싱턴, 예루살렘, 그리고 역내 수도들의 <strong>국내 정치가 각각 양보를 불가능하게 만들고 있습니다</strong>.</p>
+  </div>
+
+  <section id="iran-pol">
+    <p class="eyebrow">이란</p>
+    <h3>정권은 살아남았지만, 다른 정권이 됐다</h3>
+
+    <h4>세습 승계와 정통성 문제</h4>
+    <p>모즈타바 하메네이(1969년생)는 <strong>호자톨레슬람</strong> 등급으로, 벨라야테 파키(법학자 통치) 체제가 요구하는 아야톨라·무즈타히드 자격에 미치지 못한다는 지적이 많습니다. 선출 과정도 취약했습니다.</p>
+    <ul>
+      <li>대면 회의가 다섯 차례 실패한 뒤 <strong>온라인 표결</strong>로 진행 — 참석자들은 "부자연스러운 분위기"와 축약된 토론을 증언</li>
+      <li>표를 던진 뒤 개표 전에 <strong>전문가회의 곰 사무실이 공습</strong>당함(테헤란 건물은 이미 폭격됨)</li>
+      <li>8명이 "혁명수비대 지휘관들의 강한 압력"을 이유로 <strong>보이콧</strong> 선언</li>
+      <li>득표 자체가 논쟁적 — 회의체는 <strong>"만장일치"</strong>라 발표했으나, 뉴욕타임스는 88명 중 59명(29표는 개혁 성향 후보), 블룸버그·이란인터내셔널은 <strong>투표용지가 50~59장만 회수됐다</strong>고 보도</li>
+      <li>제출된 하메네이의 유언장에 <strong>"대면 선출을 원하며 아들이나 가족의 승계에 반대한다"</strong>는 내용이 있었다는 증언 — 독립 검증은 되지 않았습니다</li>
+      <li>온라인 표결의 위헌성을 제기하며 발표를 지연시킨 <strong>알리 라리자니는 3월 17일 이스라엘에 의해 제거</strong>됐습니다</li>
+    </ul>
+    <p>루엘 게렉트와 레이 타케이는 이를 <strong>"혁명의 마지막 평등주의 기둥의 붕괴"</strong>로 표현했습니다. 옥상에서는 "모즈타바에게 죽음을"이라는 구호가 나왔습니다.</p>
+
+    <h4>8월의 권력 재편 — 이 문서에서 가장 중요한 구조적 사실</h4>
+    <p>8월 10일 모즈타바는 안보 지휘부를 대거 교체했습니다.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>직위</th><th>신임</th><th>의미</th></tr></thead>
+        <tbody>
+          <tr><td>국가안보최고회의 사무총장</td><td><strong>모흐센 레자이</strong> (1981–97 IRGC 총사령관)</td><td><strong>6월 호르무즈 합의에 공개 반대했던 인물.</strong> 임명 직후 해협 개방 조건에 레바논·가자 전쟁 종식을 추가</td></tr>
+          <tr><td>IRGC 총사령관</td><td><strong>아마드 바히디</strong></td><td>강경파. ISW 평가로는 양보보다 확전을 선호</td></tr>
+          <tr><td>군 총참모장</td><td>알리 압돌라히</td><td>총참모부를 하탐 알안비아 중앙본부와 <strong>통합</strong> — 지휘 일원화</td></tr>
+          <tr><td>바시지 사령관</td><td>호세인 타에브</td><td>2009년 녹색운동 진압 관련 인물</td></tr>
+        </tbody>
+      </table>
+      <caption>분석가들은 이를 강화가 아니라 <strong>인재 고갈의 신호</strong>로 읽습니다. INSS의 베니 삽티: "다른 사람이 없는 것이다." FDD는 "체제 원로들의 의자 뺏기"라고 표현했습니다.</caption>
+    </div>
+    <p>실무적 함의는 분명합니다. <strong>협상파(페제시키안 대통령, 아락치 외교장관)는 더 약해졌고, 결정권은 IRGC 쪽으로 넘어갔습니다.</strong> 안드레아스 크리그의 표현으로는 "혁명수비대가 민간 대통령직을 주변화했다"입니다.</p>
+
+    <h4>페제시키안 대통령의 위치</h4>
+    <p>개혁 성향으로 2024년 당선된 그는 2월 시위 진압을 사과하고 3월에는 이웃국 공격을 사과했지만 <strong>공격은 계속됐습니다</strong> — IRGC를 구속할 힘이 없다는 증거입니다. 6월 각서에 서명한 당사자이면서, 정작 협상을 이끈 것은 갈리바프 국회의장이었는데도 모즈타바는 <strong>공개적으로 페제시키안에게만 책임을 물었습니다</strong>. 알자지라의 분석은 그가 실패한 합의의 <strong>'회로차단기'</strong> 역할을 하고 있다는 것입니다. 6월 초 사임설이 돌았으나 국영 매체는 "낭설"로 일축했고, 독립 확인은 되지 않았습니다.</p>
+
+    <h4>사회 — 시위, 처형, 인터넷</h4>
+    <ul>
+      <li><strong>시위</strong>는 1월 21일 진압됐다고 정부가 선언했으나, <strong>2월 21일부터 대학 중심의 2차 국면</strong>이 시작돼 알자흐라·쿠르디스탄·샤리프·샤히드 베헤슈티 등으로 번졌습니다. 구호는 "군주제도 최고지도자도 필요 없다 — 평등과 자유". 다만 1월에 비하면 강도는 훨씬 낮습니다.</li>
+      <li><strong>처형</strong> — 압도라흐만 보루만드 센터 집계로 <strong>1월 1일 이후 최소 916명</strong>(8월 12일 기준). 유엔 인권최고대표 튀르크는 3월 19일 이후 국가안보 혐의 처형 56명(시위 관련 27명), <strong>100명 이상이 추가 위험</strong>에 있으며, 12명이 <strong>단 3시간의 비공개 재판</strong>으로 사형을 선고받았다고 밝혔습니다. 체포는 <strong>2만 2,000명 이상</strong>.</li>
+      <li><strong>인터넷</strong> — 1월 8일 시작된 차단은 4월 21일 시점에 <strong>53일 연속으로 역사상 최장 전국 단절</strong> 기록을 세웠고, 2월 28일 전쟁과 함께 2차 차단이 겹쳤습니다. 이란은 스타링크 연결 약 4만 건을 차단했다고 밝혔고, 개인의 스타링크 사용에 최고 사형까지 규정했습니다. 국가 인트라넷('병영 인터넷')으로의 전환이 진행 중입니다. 비용은 <strong>하루 3,570만 달러(간접 포함 7,000~8,000만 달러), 4월 중순까지 누적 18억 달러</strong>, 온라인 판매 80% 감소.</li>
+      <li><strong>야권</strong>은 분열돼 있습니다. 레자 팔라비는 가장 가시적인 인물이지만(3월 CPAC 연설), 트럼프조차 "좋은 사람이지만 국내 지지가 있는지 의문"이라며 거리를 뒀고, 조지타운 연합은 그의 리더십 문제로 해체됐습니다. MEK/NCRI는 별도로 임시정부 수립을 선언하며 팔라비를 "가짜 야권"이라 공격합니다. <strong>야권의 최대 약점은 정권이 아니라 야권 내부의 적대</strong>입니다.</li>
+    </ul>
+
+    <h4>경제 — 붕괴에 가까운 지표</h4>
+    <div class="grid-figs">
+      <div class="fig hot"><span class="v">88.6%</span><span class="k">소비자물가 상승률<br>(이란 통계청, 6월 기준 전년비)</span></div>
+      <div class="fig hot"><span class="v">−6.1%</span><span class="k">2026년 GDP 전망<br>(IMF, 1월 +1.1%에서 하향)</span></div>
+      <div class="fig hot"><span class="v">190만</span><span class="k">리알 환율 최저치<br>(달러당, 개전 전 135만)</span></div>
+      <div class="fig"><span class="v">37%</span><span class="k">최저임금이 기본 생계비를<br>충당하는 비율</span></div>
+    </div>
+    <p style="margin-top:16px">육류·가금류 약 +178%, 유제품·계란 +152%, 빵·곡물 +139%. 재무장관 베선트조차 제재가 "달러 부족을 만들어" 통화 폭락을 촉발했음을 인정했습니다. 카르그섬 수출 터미널은 8월 1일 위성사진에서 <strong>세 곳 모두 비어 있었습니다</strong>.</p>
+  </section>
+
+  <section id="us-pol">
+    <p class="eyebrow">미국</p>
+    <h3>중간선거라는 시계</h3>
+
+    <h4>여론 — 전쟁 지지가 무너졌다</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>조사</th><th>결과</th></tr></thead>
+        <tbody>
+          <tr><td><strong>퀴니피액 (7.29)</strong></td><td>대이란 군사행동 <strong>지지 34% / 반대 60%</strong>. 지상군 투입 19/74. <strong>"싸울 가치가 없다" 66%</strong>. "미국이 이기고 있지 않다" 54%. "1년 이상 갈 것" 55%. <strong>트럼프 지지율 32% — 역대 최저</strong>. 일반 선거 대결 민주당 +7(48–41)</td></tr>
+          <tr><td><strong>로이터/입소스</strong></td><td>공습 지지 35%. <strong>"트럼프가 목표를 명확히 설명하지 못했다" 69%</strong>. 휘발유값 악화 예상 58%</td></tr>
+          <tr><td><strong>퓨리서치 (3.25)</strong></td><td>"미국인들은 대체로 반대"</td></tr>
+          <tr><td><strong>밀리터리타임스/입소스 (7.31)</strong></td><td>"미국인 3명 중 1명만 이 전쟁을 지지"</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>반전 운동</h4>
+    <p>개전 당일 14개 이상 도시에서 시위가 시작됐고, <strong>3월 28일 'No Kings' 시위</strong>는 주최 측 추산 3,300개 이상 장소에서 <strong>800~900만 명</strong>이 참여해 미국 역사상 최대 규모 단일 시위로 불렸습니다(뉴욕 35만, 보스턴 18만). 4월에는 <strong>재향군인 62명 이상이 하원 캐넌 빌딩을 점거</strong>하다 체포됐고, 상원 청문회에서는 전직 해병이 항의하다 퇴장 과정에서 <strong>상원의원의 팔이 부러지는</strong> 일도 있었습니다.</p>
+
+    <h4>의회 — 전쟁권한 결의</h4>
+    <ul>
+      <li><strong>하원</strong> — 6월 자야팔 결의안 통과(공화당 4명 이탈: 매시, 피츠패트릭, 배럿, 데이비슨), 7월 23일 <strong>H.Con.Res.89를 214–208로</strong> 재통과.</li>
+      <li><strong>상원</strong> — 6월 말 <strong>사상 처음으로 전쟁권한 결의 통과</strong>(콜린스 등 공화당 4명 찬성). 7월 23일 유사 동의안은 <strong>49–47로 부결</strong>(공화당은 콜린스만 찬성).</li>
+      <li>다만 <strong>양원 공동결의(concurrent resolution)는 대통령에게 이송되지 않아 법적 구속력이 없습니다</strong>. 트럼프는 "시기가 나쁘고 무의미하다"고 일축했고, 행정부의 법적 입장은 ① 미군은 이란과 '적대행위' 중이 아니며 ② 전쟁권한법 자체가 위헌이라는 것입니다.</li>
+    </ul>
+
+    <h4>비용</h4>
+    <p>국방부 공식 집계는 3월 19일 <span class="num">180억</span> → 4월 <span class="num">250억</span> → 7월 21일 <strong><span class="num">375억</span> 달러</strong>입니다. 같은 날 헤그세스 장관과 케인 합참의장은 상원 세출위에 <strong>671억 달러 추가 예산</strong>(그중 무기·탄약 210억)을 요청했습니다. <strong>독립 추정치는 하루 10억 달러, 7월 중순까지 1,000억 달러 이상</strong>으로, 공식치와 약 3배 차이가 납니다. CSIS 분석에 따르면 876억 달러 추경 중 <strong>실제 이란 전비는 약 3분의 1(292억 달러)</strong>이고 나머지는 무관한 항목(농업 111억 등)입니다. FY2027 국방예산 요구는 <strong>1조 5,000억 달러</strong>로 전년 대비 44% 증가입니다.</p>
+
+    <h4>인물</h4>
+    <ul>
+      <li><strong>JD 밴스 부통령</strong> — 개입 회의론자로 출마했다가 전쟁의 세일즈맨이 됐습니다. 파키스탄 채널 협상을 주도했고, 8월 15일에는 전쟁이 "새로운 경제 국면"에 들어섰다고 밝혔습니다. 2028년 행보에 부담이 됐다는 평가가 지배적입니다.</li>
+      <li><strong>위트코프 특사·쿠슈너</strong> — 협상 트랙 담당. 이란은 7월 이들이 협상에서 사익을 취한다고 공개 비난했습니다(이란 측 주장, 입증되지 않음). 군축협회는 4월에 미국 협상팀이 "진지한 핵협상에 준비돼 있지 않다"고 평가했습니다.</li>
+      <li><strong>루비오 국무장관</strong> — 이란 정책에서 <strong>눈에 띄게 밀려났습니다</strong>("Marco는 어디에?").</li>
+      <li><strong>헤그세스 국방(전쟁)장관</strong> — 가장 손상된 각료. 4월 2일 전쟁 중에 육군참모총장을 경질했고, 공화당 내에서도 신뢰를 잃었습니다(틸리스 상원의원: "일관성이 없고 거대한 불안 콤플렉스가 있다").</li>
+      <li><strong>베선트 재무장관</strong> — 8월 현재 압박의 주역. "역사상 가장 강력한 제재"로 "이 정권을 붕괴시키겠다"고 밝혔습니다.</li>
+      <li><strong>조 켄트 국가대테러센터 국장</strong> — <strong>3월 17일 사임</strong>. 11회 파병 경력의 육군 출신인 그는 "양심상 이 전쟁을 지지할 수 없다", "이스라엘이 트럼프를 오도하기 위한 압박 캠페인을 벌였다", "이란은 미국 안보에 즉각적 위협이 아니었다"고 밝혔습니다. 이 전쟁의 대표적 내부 이탈입니다.</li>
+    </ul>
+
+    <h4>MAGA 내부 분열</h4>
+    <p>스티브 배넌은 "지지가 새 나갈 것"이라며 중간선거 전 장기전을 경고했고, 터커 칼슨은 친이스라엘 정통론을 공격하며 테드 크루즈와 충돌했습니다. 트럼프도 밴스도 CPAC에서 연설하지 않았습니다. 공화당 상원의원들의 공개 불만도 이어집니다 — 카피토("지상군은 원치 않는다"), 케네디("이란에 대한 혼란이 크다"), 코닌("대통령이 목표를 더 분명히 했으면 한다").</p>
+  </section>
+
+  <section id="israel-pol">
+    <p class="eyebrow">이스라엘</p>
+    <h3>10월 27일 총선이 모든 것을 결정한다</h3>
+    <ul>
+      <li><strong>7월 17일 크네세트 해산, 10월 27일 총선.</strong> 직접적 계기는 초정통파(하레디) 징집 문제였습니다.</li>
+      <li><strong>여론은 네타냐후에 불리합니다.</strong> 채널12(8월 초): 야권 56석 대 네타냐후 진영 50석, <strong>"완전한 승리는 결코 오지 않을 것" 62%</strong>. 라자르 조사(8월 12~13일): 전 참모총장 <strong>가디 아이젠코트의 신당 '야샤르'가 리쿠드를 앞서고</strong>, 총리 적합도에서 아이젠코트가 네타냐후를 49–38로 리드. 다만 어느 진영도 61석에 이르지 못합니다.</li>
+      <li><strong>결정적인 점 — 야권도 전쟁에 반대하지 않습니다.</strong> 비판의 초점은 전쟁의 <strong>수행 방식과 외교적 결과</strong>이지 전쟁 자체가 아닙니다. 즉 총선 결과와 무관하게 레바논 정책이 급변할 가능성은 낮습니다.</li>
+      <li><strong>레바논 철수는 선거에 치명적입니다.</strong> 워싱턴포스트(6월 8일)는 이스라엘 국내 여론이 오히려 미국의 압력에 저항하고 계속 싸울 것을 요구하고 있다고 전했습니다. <strong>네타냐후의 선거 논리와 트럼프의 외교 논리가 정면 충돌합니다</strong> — 이것이 각서 1조가 작동하지 않는 진짜 이유입니다.</li>
+      <li><strong>워싱턴과의 균열이 공개화됐습니다.</strong> 트럼프는 네타냐후를 향해 비속어를 썼다고 보도됐고, 시리아·레바논 철군을 압박했습니다. 이스라엘은 <strong>이슬라마바드 각서를 거부</strong>했고 "끔찍한 합의"라고 평가했습니다. 8월 9일에는 네타냐후가 <strong>트럼프의 가자 15개항 로드맵을 공개 거부</strong>하며 "가짜가 아닌 진짜 무장해제"가 선행돼야 한다고 못박았습니다.</li>
+      <li>인질 문제는 동력을 잃었습니다 — 마지막 인질 란 그빌리의 유해가 1월 26일 수습되면서, 이스라엘의 시위 에너지는 인질에서 <strong>네타냐후 개인과 10월 7일 국가조사위</strong>로 옮겨갔습니다.</li>
+    </ul>
+  </section>
+
+  <section id="region-pol">
+    <p class="eyebrow">역내</p>
+    <h3>주변국들이 치르고 있는 대가</h3>
+    <div class="gloss">
+      <details><summary>걸프 6개국 — 원치 않은 전쟁의 최전선</summary>
+        <ul>
+          <li><strong>사우디</strong>: 2023년 베이징 중재로 복원했던 이란과의 데탕트가 사실상 소멸. 라스타누라 정유소 등이 피격됐고, 이제 <strong>미군의 자국 영토 작전을 허용</strong>합니다. 분석가들은 "수십 년 갈 원한이 남는 탈(脫)데탕트 시기"로 봅니다.</li>
+          <li><strong>UAE</strong>: 가장 많이 맞았습니다 — 탄도미사일 수백 발, 드론 1,700기 이상, 두바이 국제공항과 제벨알리 항구까지. 8월 19일 이란과의 <strong>전면 거래 중단</strong>은 대이란 압박에서 미국 제재보다 실효적일 수 있습니다.</li>
+          <li><strong>카타르</strong>: LNG 능력 17% 상실, 2026년 GDP −8.6% 전망(작년 10월 대비 −14.7%p 수정). 중재 채널은 유지하되 주도는 사양.</li>
+          <li><strong>쿠웨이트</strong>: 알리 알살렘 기지, 캠프 뷰링, 국제공항, 미나 알아흐마디 정유소 피격. 헤즈볼라 연계 혐의 체포로 시아파 소수자 긴장이 재점화.</li>
+          <li><strong>바레인</strong>: <strong>정치적으로 가장 취약</strong>합니다. 5함대 사령부가 피격됐고, 2월 28일 이후 최소 41명(다른 집계로는 160명 이상)이 "이란 동조" 혐의로 구금됐습니다. 3월에는 32세 남성이 구금 중 사망(가족은 고문 흔적을 주장, 당국은 심장마비 발표).</li>
+          <li><strong>오만</strong>: 피해가 가장 적고, <strong>미국을 공개 비판한 유일한 GCC 국가</strong>. 지금은 트럼프의 폭격 위협 대상.</li>
+          <li><strong>공통 스트레스</strong>: 피해 촬영 등을 이유로 UAE 375명, 카타르 313명이 체포됐고, <strong>민간인 사망자 23명 중 21명이 비시민(이주노동자)</strong>이었습니다. 카팔라 제도의 문제와 함께, "미국의 안보 보장에 의존하는 것의 비용"에 대한 근본적 회의가 확산되고 있습니다.</li>
+        </ul>
+      </details>
+      <details><summary>이라크 — 전장에서 가장 취약한 국가</summary>
+        <ul>
+          <li>수다니 총리가 밀려나고, <strong>정부 경험이 없는 43세 사업가 알리 알자이디</strong>가 5월 14일 총리로 승인됐습니다. <strong>23개 부처 중 14개만 채워졌고 국방·내무 등 주권 부처는 공석</strong>입니다.</li>
+          <li>'이라크 이슬람 저항군'은 미군·역내 표적에 약 <strong>400회</strong> 공격을 가했고, 바그다드 미 대사관도 최소 4차례 피격됐습니다. 미국은 안보 협력 중단, 군사 지원 보류, <strong>5억 달러 규모의 원유대금 달러 인도 보류</strong>로 압박했습니다.</li>
+          <li>경제 피해가 가장 큽니다 — 호르무즈 봉쇄로 <strong>주요 3개 유전의 생산이 70% 감소</strong>(430만→130만 b/d), 수출은 케이한 경유 30만 b/d로 붕괴. <strong>IMF는 2026년 GDP −6.8%</strong>를 전망합니다.</li>
+          <li>민병대 무장해제 시한은 <strong>9월 30일</strong>입니다. 아사이브 알알하크 등 일부는 6월부터 무기를 넘기기 시작했지만, 카타이브 헤즈볼라와 누자바는 거부했습니다.</li>
+        </ul>
+      </details>
+      <details><summary>레바논 — 민주주의가 정지됐다</summary>
+        <ul>
+          <li>아운 대통령(전 육군사령관)과 살람 총리는 이스라엘의 요구와 헤즈볼라 사이에 갇혀 있습니다. 아운의 입장은 <strong>"이스라엘 철수와 연계된 무장해제"</strong>이고, 헤즈볼라(카셈 사무총장)는 <strong>무조건 철수가 먼저</strong>라며 어떤 일정표도 거부합니다.</li>
+          <li><strong>3월 9일 의회가 76–41로 자신의 임기를 2년 연장</strong>해 5월 총선을 취소했습니다. 헤즈볼라 블록이 전원 찬성했고, 이는 <strong>이 의회가 다음 대통령까지 뽑는다</strong>는 뜻입니다. 헤즈볼라로서는 큰 전략적 이득이었습니다.</li>
+          <li>레바논군은 미국 중재 3자 틀에 따라 배치돼야 하지만 <strong>세 개 마을에만 전개</strong>된 상태입니다.</li>
+        </ul>
+      </details>
+      <details><summary>시리아 — 아사드 이후의 중립</summary>
+        <ul>
+          <li>알샤라 대통령은 "시리아는 이 분쟁 바깥에 머문다"며 공식 중립을 지켰고, 헤즈볼라를 겨냥하라는 미국의 압박과 이스라엘과의 타격 조율 요구를 모두 거절했습니다.</li>
+          <li>다만 실질적으로는 기울었습니다 — 3월 4일 헤즈볼라에 대해 레바논 국경을 봉쇄했고, 헤즈볼라 세포조직을 체포했습니다(헤즈볼라는 부인). 헤즈볼라는 이에 다마스쿠스에서 20km 떨어진 시리아군 진지를 포격했습니다.</li>
+          <li>사우디·카타르·이집트·튀르키예가 이 중립을 지지하며 워싱턴에 알샤라 압박 완화를 요청했습니다. 미국은 4월 16일 카스라크 기지에서 철수했습니다.</li>
+        </ul>
+      </details>
+      <details><summary>튀르키예 · 요르단 · 이집트 · 예멘 · 아프가니스탄</summary>
+        <ul>
+          <li><strong>튀르키예</strong>: 양쪽 모두 비판하며 <strong>미군 전투작전에 영공을 닫았습니다</strong>(NATO 회원국이면서). 이란 미사일이 세 차례 터키 영공에 진입했고, 3월 4일 하타이 상공의 요격은 미 구축함 오스카 오스틴의 SM-3가 수행했습니다. 국내 부담은 32% 인플레와, 이스라엘이 이란 쿠르드 세력 무장을 부추긴다는 보도가 오잘란 평화 프로세스를 위협한다는 점입니다.</li>
+          <li><strong>요르단</strong>: 개전 첫날 49발, 첫 주 119발을 요격했습니다. 6월에는 무와파크 살티·아즈라크 기지가 직접 피격됐습니다. 미·영·프와 방공을 통합 운용 중입니다.</li>
+          <li><strong>이집트</strong>: 중재하면서 대가를 치릅니다. <strong>수에즈 운하 수입이 38% 감소</strong>(시시 대통령은 100억 달러 손실이라 밝힘), 파운드화는 달러당 48에서 55로 하락, 전력 배급까지 시행 중입니다. 걸프의 자금에 크게 의존하는 상황에서 UAE는 이집트의 "빈말"을 공개 비판했습니다.</li>
+          <li><strong>예멘 후티</strong>: 3월 28일 참전 이후 홍해를 실질적으로 통제하는 유일한 축으로 남았습니다. 7월 20일 <strong>사우디 기항 선박 봉쇄</strong>를 선언했고, 8월에도 상선 공격과 아람코 지잔 정유소 드론 공격을 이어갔습니다.</li>
+          <li><strong>아프가니스탄</strong>: 탈레반 당국자가 이란의 걸프 공격을 "부당하다"고 평가하며 거리를 뒀습니다. 인도적으로는 심각합니다 — 8월까지 <strong>이란에서 42만 6,700명이 아프간으로 이동했고 약 82%가 강제추방</strong>이며, 귀환자의 88%가 부채, 65%가 식량 불안 상태입니다.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="gaza">
+    <p class="eyebrow">가자 트랙</p>
+    <h3>동시에 진행 중인 또 하나의 전선</h3>
+    <p class="lede">중동에는 지금 <strong>이란 전선, 레바논 전선, 가자 전선</strong>이 동시에 존재합니다. 그리고 이란 전쟁은 가자 협상에서 <strong>외부 압력을 제거</strong>해 현상 고착을 도왔습니다(채텀하우스 평가).</p>
+    <ul>
+      <li>2025년 10월 휴전의 <strong>1단계는 인질 문제로 완료</strong>(1월 26일 마지막 유해 수습)됐지만 <strong>2단계는 시작되지 않았습니다</strong>. 이스라엘은 가자의 약 60%를 통제하며 통제구역을 11%가량 더 확대했습니다.</li>
+      <li><strong>'평화위원회(Board of Peace)'</strong> — 트럼프 대통령이 의장, 니콜라이 믈라데노프가 사무총장, 토니 블레어가 참여하는 20여 개국 기구입니다. 2월 20일 워싱턴 첫 회의에서 <strong>재건 자금 50억 달러</strong>가 서약됐고, 이탈리아가 경찰 훈련, 인도네시아가 안정화 병력을 약속했습니다. 믈라데노프의 무장해제 계획은 <strong>8개월 다단계</strong>(중화기 90일 내 제거, 터널 파괴, 251일 내 이스라엘 철수 완료)입니다.</li>
+      <li><strong>8월의 교착</strong> — 쿠슈너가 8월 15일 카이로에서 하마스 지도자 칼릴 알하이야를, 8월 17일 예루살렘에서 네타냐후를 만났습니다. 결과는 <strong>"하마스가 먼저 무장해제하고 그 뒤 이스라엘군이 철수한다"</strong>는 이스라엘 쪽으로의 기울기와, 무장해제를 <strong>미군 장성이 감독</strong>한다는 구상이었습니다.</li>
+      <li><strong>남은 쟁점은 순서</strong>입니다. 하마스는 공격 중단과 철수가 선행돼야 한다며 중화기 포기를 <strong>팔레스타인 국가 수립</strong>과 연계했고, 이스라엘 정부는 이를 전면 거부합니다. 사우디·UAE·요르단·파키스탄·인도네시아는 이스라엘이 "평화 노력을 방해하는 책임"을 진다고 공동 성명을 냈습니다.</li>
+      <li><strong>정치 시계</strong> — 10월 27일 총선과 10월 7일 기념일을 앞두고 벤그비르가 스모트리치를 규합해 휴전을 저지하고 있고, 야권은 휴전안 통과를 위한 '안전망'을 제안했지만 네타냐후는 받지 않았습니다. 하레츠의 해석("선거까지 시간을 끌고 있다")이 8월 교착에 대한 가장 설득력 있는 설명입니다.</li>
+    </ul>
+  </section>
+
+  <div class="part" id="p7">
+    <span class="pn">PART Ⅶ</span>
+    <h2>경제 — 1970년대 이후 최대의 공급 충격</h2>
+    <p>군사적으로 이란은 졌습니다. 그러나 <strong>경제적으로는 세계 전체를 인질로 잡는 데 성공했습니다</strong>. 그것이 이 전쟁이 6개월째 끝나지 않는 이유입니다.</p>
+  </div>
+
+  <section id="oil">
+    <p class="eyebrow">유가</p>
+    <h3>가격 경로 — 단일 숫자로 말하면 오독된다</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시점</th><th class="n">브렌트</th><th class="n">WTI</th><th>사건</th></tr></thead>
+        <tbody>
+          <tr><td>2.27 (개전 전)</td><td class="n">$72.48</td><td class="n">$67.02</td><td>미 휘발유 갤런당 $2.98</td></tr>
+          <tr><td>3.06 (주간)</td><td class="n">$92.69 (+28%)</td><td class="n">$90.90 (+35%)</td><td><strong>WTI 선물 도입(1983) 이후 최대 주간 상승</strong></td></tr>
+          <tr><td>3.08</td><td class="n">$100 돌파</td><td>—</td><td>4년 만의 세 자릿수</td></tr>
+          <tr><td><strong>3.19</strong></td><td>—</td><td>—</td><td><strong>두바이유 사상 최고 $166</strong> — 아시아 정유사에 실제로 중요한 지표</td></tr>
+          <tr><td>4.08</td><td class="n">$94.75 (−13%)</td><td class="n">$94.43 (−16%)</td><td>휴전. <strong>2020년 4월 이후 최대 일간 낙폭</strong></td></tr>
+          <tr><td><strong>4.30</strong></td><td class="n">$126 장중</td><td class="n">$105.07</td><td><strong>4년 최고</strong></td></tr>
+          <tr><td>6.24</td><td class="n">$73.74</td><td class="n">$69.63</td><td>각서 이후 — 사실상 전쟁 전 수준 회복</td></tr>
+          <tr><td>7.23</td><td class="n">$105</td><td>—</td><td>재확전. <strong>7월 한 달 변동폭 40달러</strong> (IEA: "이례적으로 넓다")</td></tr>
+          <tr><td><strong>8.21</strong></td><td class="n">$93.98</td><td>—</td><td><strong>전년 대비 +38.8%</strong></td></tr>
+        </tbody>
+      </table>
+      <caption>기관별 전망도 갈립니다 — EIA는 2026년 평균 $87 후 2027년 $69, 세계은행은 기준 $86·확전 시 $115, IMF는 $89.</caption>
+    </div>
+
+    <h4>공급 손실</h4>
+    <ul>
+      <li>추정 방식에 따라 <strong>하루 1,000만~1,400만 배럴</strong>이 사라졌습니다(세계은행·IMF 1,000만, Kpler 1,100만 오프라인, ECB·브뤼겔 평균 1,400만 = 세계 공급의 14%). 참고로 2022년 우크라이나 충격은 100만 배럴이었습니다.</li>
+      <li>걸프 수출은 3월 15일까지 <strong>2,500만 → 1,000만 배럴</strong>로 약 60% 감소. 사우디는 20% 감산(1,000만→800만), 이라크 주요 유전은 70% 감소.</li>
+      <li>우회 파이프라인 총합은 하루 약 <strong>900만 배럴</strong>로, 평시 호르무즈 통과량 2,000만 배럴을 대체하지 못합니다. <strong>LNG는 사실상 우회로가 없습니다.</strong></li>
+      <li>미국은 4월에 <strong>일산 1,393만 배럴</strong>이라는 사상 최고를 기록하며 일부를 메웠습니다.</li>
+    </ul>
+
+    <h4>OPEC의 무력화와 UAE의 이탈</h4>
+    <p>OPEC+는 3월과 4월, 7월에 소폭 증산을 결정했지만 분석가들은 쿼터가 "사실상 무의미하다"고 평가합니다 — 실제 공급을 결정하는 것은 할당량이 아니라 호르무즈이기 때문입니다. 그 와중에 <strong>UAE가 4월 28~29일 59년 만에 OPEC·OPEC+ 탈퇴를 발표</strong>(5월 1일 발효)했습니다. 역대 탈퇴국 중 최대 산유국이며, 워싱턴과의 정렬이자 리야드와의 결별로 해석됩니다.</p>
+
+    <h4>전략비축유 — 사상 최대 방출</h4>
+    <p>3월 11일 IEA 긴급이사회에서 32개 회원국이 <strong>4억 배럴</strong>(실제 서약 4억 1,190만) 공동방출에 만장일치로 합의했습니다. 2022년의 1억 8,000만 배럴을 압도하는 <strong>IEA 역사상 최대 규모</strong>입니다. 미국은 3월분 1억 7,200만에 더해 5월 5,330만을 추가했고, 일본은 8,000만 배럴(15일분)을 풀었습니다. 그 결과 미국 SPR은 <strong>2억 9,340만 배럴로 1982년 12월 이후 44년 만의 최저</strong>가 됐습니다. 중국과 인도는 IEA 비회원이라 불참했습니다.</p>
+
+    <h4>정제마진과 소매유가 — 지금 가장 아픈 지점</h4>
+    <ul>
+      <li>중동 정제능력(하루 960만 배럴)의 <strong>20% 이상</strong>이 마비됐고, 8월 기준 역내 정유소 가동 중단이 하루 220만 배럴에 달합니다.</li>
+      <li><strong>미국 디젤 크랙이 8월 17일 배럴당 $102.20으로 사상 최고</strong>, 유럽 디젤 프리미엄도 8월 18일 약 $95로 사상 최고를 기록했습니다.</li>
+      <li>미국 소매가(8월 13일): 휘발유 갤런당 <strong>$4.03</strong>, 디젤 <strong>$5.40</strong>. 전년 대비 각각 +$0.83, +$1.70. <strong>8월 12일 이후에 휘발유가 4달러를 넘은 해는 한 번도 없었습니다.</strong> 전국 평균이 4달러 이상인 날이 이미 103일입니다.</li>
+      <li>후티의 공격으로 아람코 <strong>지잔 정유소</strong>가 7월 24일 이후 디젤을 한 척도 선적하지 못하고 있는데, 이곳은 4월 이후 EU·영국 디젤 수입의 6~8%를 담당하던 곳입니다.</li>
+    </ul>
+  </section>
+
+  <section id="lng">
+    <p class="eyebrow">가스</p>
+    <h3>카타르 — 5년짜리 손실</h3>
+    <ul>
+      <li>3월 2일 생산 중단, 3월 4일 <strong>카타르에너지 불가항력 선언</strong>. 3월 18~19일 라스라판 <strong>4·6호 트레인</strong> 파괴.</li>
+      <li>피해는 <strong>연 1,280만 톤, 수출능력의 17%</strong>. 남측 단지 능력이 36 → 24 mtpa로 <strong>영구 감소</strong>. 알카비 장관은 연간 약 <strong>200억 달러</strong> 수익 손실이라고 밝혔습니다.</li>
+      <li>복구는 <strong>3~5년</strong>. 가스터빈 리드타임만 2~4년이고 자격 있는 제조사가 전 세계에 세 곳뿐입니다.</li>
+      <li>불가항력 통보 대상은 <strong>중국·한국·이탈리아·벨기에</strong>. 셸과 토탈에너지는 자사 고객에게 연쇄 불가항력을 선언했고, 이 불가항력은 <strong>9월까지 연장</strong>돼 현재도 유효합니다.</li>
+      <li>호르무즈 폐쇄로 <strong>세계 LNG 교역의 약 20%</strong>가 사라졌고, <strong>3월 1일부터 4월 24일까지 적재 LNG선이 해협을 단 한 척도 통과하지 못했습니다</strong>. 카타르는 세계 2위에서 3위 수출국으로 밀렸습니다.</li>
+      <li>가격: 유럽 TTF는 전쟁 전 €28~40/MWh에서 3월 초 €60 이상으로 뛰었고, 아시아 JKM은 4월 넷째 주에만 <strong>+51%</strong>($16.02/MMBtu). 다만 미국 헨리허브는 오히려 −9%로, 미국은 이 충격에서 절연됐습니다.</li>
+      <li>부수 피해: <strong>세계 헬륨 생산의 약 3분의 1</strong>이 영향을 받아 4월부터 배급이 시작됐습니다.</li>
+    </ul>
+    <div class="note">
+      <span class="lbl">유럽이 2022년보다 덜 아팠던 이유</span>
+      <p>ECB 분석에 따르면 ① 개전 시점에 원유가 <strong>하루 250만 배럴 공급 과잉</strong> 상태였고(2022년은 100만 배럴 부족) ② IEA가 4억 배럴을 풀었으며 ③ 아시아가 가스에서 석탄으로 전환해 수요가 줄었고 ④ JKM–TTF 스프레드가 양(+)으로 돌아 화물이 아시아로 흘러 유럽과의 입찰 전쟁이 벌어지지 않았습니다. 과거 탄력성이 시사한 가스 가격 상승은 81%였지만 실제는 53%였습니다.</p>
+    </div>
+  </section>
+
+  <section id="shipping">
+    <p class="eyebrow">해운</p>
+    <h3>바다에서 벌어진 일</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>지표</th><th>전쟁 전</th><th>현재 (8월)</th></tr></thead>
+        <tbody>
+          <tr><td>호르무즈 통항</td><td class="n">하루 120~140척</td><td class="n">하루 8~15척</td></tr>
+          <tr><td>호르무즈 원유 통과량</td><td class="n">하루 2,000만 배럴</td><td class="n">하루 700만~900만 배럴</td></tr>
+          <tr><td>전쟁위험 보험료(선체가 대비)</td><td class="n">0.125%</td><td class="n">7.5~10% — <strong>60~80배</strong></td></tr>
+          <tr><td>1억 달러 유조선 1항차 보험료</td><td class="n">약 25만 달러</td><td class="n">약 2,100만 달러 (27만 DWT 기준)</td></tr>
+          <tr><td>걸프→중국 원유 운임</td><td class="n">톤당 $18.91 (5년 평균)</td><td class="n">$77.96 (7월), 3월 최고 $140</td></tr>
+          <tr><td>VLCC 용선료</td><td class="n">하루 4.5만 달러</td><td class="n">하루 18만 달러, 일부 40만 달러 이상 보고</td></tr>
+          <tr><td>바브엘만데브 통항</td><td class="n">하루 약 40척</td><td class="n">하루 11~29척</td></tr>
+        </tbody>
+      </table>
+      <caption>희망봉 우회 시 유조선 기준 <strong>15~20일</strong>이 추가됩니다. 전 세계 선체 전쟁위험 인수 능력 자체가 25~30억 달러에 불과해, 보험 시장의 수용력이 물리적 한계에 닿아 있습니다.</caption>
+    </div>
+
+    <h4>선원들</h4>
+    <p>4월 21일 기준 <strong>선박 약 2,000척과 선원 약 2만 명</strong>이 걸프 안에 갇혔고, 크루즈선 6척(승객 1만 5,000명)은 4월 18일의 짧은 개방 창을 통해 빠져나왔습니다. 7월에도 <strong>선박 약 500척에 선원 약 6,000명</strong>이 남아 있었습니다. 국제해사기구 집계로 폭력 사건 <strong>65건 이상, 선원 사망 17명</strong>. 도미네게스 사무총장의 표현은 <strong>"통과하는 선박이 있다 해도 극히 드물다"</strong>입니다.</p>
+
+    <h4>이란의 통행료 제도 — 봉쇄를 수입원으로</h4>
+    <p>5월 18일 이란은 <strong>'페르시아만 해협관리청(PGSA)'</strong>을 출범시켰습니다. 선주가 소유·보험·승무원 명부·화물·항로를 이메일로 제출하고, PGSA가 승인하고 <strong>대금이 지급돼야 통항 허가가 발급</strong>됩니다. 보고된 가격은 <strong>1항차 200만 달러</strong> 또는 <strong>배럴당 1달러</strong>이며, 결제는 <strong>위안화 또는 암호화폐</strong>입니다. 통과가 허용된 국가는 중국·러시아·인도·이라크·파키스탄·튀르키예·말레이시아·태국·필리핀 등으로 선별됩니다.</p>
+    <p>여기에 법적 함정이 있습니다. <strong>미 재무부 해외자산통제국(OFAC)은 이란 연계 주체에 대한 통항료 지급이 금지 거래에 해당할 수 있다고 경고</strong>했습니다. 즉 비미국 선사·용선주·보험사도 세컨더리 제재에 노출됩니다. 포브스는 이를 호르무즈가 <strong>"요금과 허가의 체제"</strong>로 바뀌는 것이라 표현했고, 트럼프 대통령조차 통행료 아이디어를 "아름다운 것이고 세계의 규칙을 바꿀 수 있다"고 언급한 바 있습니다.</p>
+  </section>
+
+  <section id="macro">
+    <p class="eyebrow">세계경제</p>
+    <h3>성장률, 물가, 그리고 중앙은행의 방향 전환</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>기관</th><th>시점</th><th class="n">2026 세계성장</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>IMF WEO</td><td>4.14</td><td class="n">3.1%</td><td>1월 대비 −0.2%p</td></tr>
+          <tr><td>OECD</td><td>3.26</td><td class="n">2.9%</td><td>G20 물가 4.0%로 +1.2%p</td></tr>
+          <tr><td>세계은행</td><td>4–6월</td><td class="n">개도국 3.6%</td><td>−0.4%p, 개도국 물가 5.1%</td></tr>
+          <tr><td><strong>IMF 수정</strong></td><td><strong>7.08</strong></td><td class="n"><strong>3.0%</strong></td><td>2027년 3.4%</td></tr>
+        </tbody>
+      </table>
+      <caption>주요국 2026년(IMF 7월): 미국 2.3%, 유로존 0.9%, 일본 0.6%, 중국 4.6%, 인도 6.4%, <strong>중동·북아프리카 0.7%(−1.2%p)</strong>. 세계 물가는 2025년 4.1% → 2026년 4.7%로 <strong>디스인플레이션이 멈췄습니다</strong>.</caption>
+    </div>
+    <div class="note caution">
+      <span class="lbl">IMF 전망의 전제가 이미 틀렸다</span>
+      <p>IMF의 7월 기준선은 <strong>"호르무즈가 7월 중순부터 재개방되고 2027년 3월까지 전쟁 전 상태로 복귀한다"</strong>는 가정 위에 서 있습니다. 이 가정은 이미 무너졌습니다. 따라서 현재의 공식 전망치는 <strong>낙관 쪽으로 치우쳐 있을 가능성</strong>이 높습니다.</p>
+    </div>
+
+    <h4>중앙은행 — 인하에서 인상으로</h4>
+    <ul>
+      <li><strong>연준</strong>(케빈 워시 의장)은 6월과 7월 연속 동결(3.50~3.75%)했지만 <strong>7월 회의에서 3명이 인상 소수의견</strong>을 냈고, 9월 <strong>인상</strong> 확률이 72%까지 올랐습니다. <strong>2026년 가장 상징적인 매크로 사실은, 유가 충격이 연준의 다음 수를 '인하'에서 '인상'으로 뒤집었다는 것</strong>입니다.</li>
+      <li><strong>ECB</strong>는 6월 11일 <strong>이번 사이클 첫 인상</strong>(25bp, 2.25%)을 단행했습니다. 물가 3.2%에 성장은 부진한 전형적 스태그플레이션 딜레마입니다.</li>
+      <li><strong>일본은행</strong>은 4월 동결하며 물가 전망을 상향했고, <strong>10년물 국채 금리가 27년 만의 최고</strong>를 기록했습니다.</li>
+      <li><strong>한국은행</strong>은 7월 <strong>2.50% → 2.75%로 인상</strong>했습니다(3년 6개월 만의 긴축 전환).</li>
+    </ul>
+
+    <h4>시장 — 금이 아니라 채권이 말한다</h4>
+    <ul>
+      <li><strong>주식은 놀랍도록 견고했습니다.</strong> 나스닥이 3월 26일 조정에 들어갔지만 AI 설비투자 사이클이 지정학 충격을 상쇄했고, 에너지 섹터가 최대 수혜였습니다.</li>
+      <li><strong>채권이 진짜 신호입니다.</strong> 8월 17일 <strong>미 30년물 국채 금리가 5.31%로 2007년 6월 이후 최고</strong>를 기록했습니다. 3월에는 주식과 채권이 <strong>동반 하락</strong>했는데, 이는 성장 쇼크가 아니라 <strong>인플레이션 쇼크</strong>라는 뜻입니다.</li>
+      <li><strong>금은 전쟁의 승자가 아니었습니다.</strong> 사상 최고치 $5,608은 <strong>전쟁 전인 1월</strong>에 나왔고, 3월에는 마진콜과 실질금리 급등으로 오히려 급락했습니다. 8월 21일 $4,581(연초 대비 +35.8%).</li>
+    </ul>
+
+    <h4>가장 큰 시한폭탄 — 비료와 식량</h4>
+    <p>걸프는 세계 <strong>요소(urea) 수출의 36%, 암모니아의 29%, DAP의 26%, 국제 거래 유황의 약 50%</strong>를 담당합니다. 세계 비료의 약 3분의 1이 호르무즈를 지납니다. 요소 가격은 3월 말까지 <strong>+50%</strong>, 세계은행은 2026년 비료 <strong>+31%</strong>, 요소 <strong>+60%</strong>를 전망하며 <strong>구매 여력이 2022년 이후 최악</strong>이라고 평가합니다.</p>
+    <p>IFPRI가 지적하는 진짜 위험은 <strong>2차 효과</strong>입니다. 비료값이 오르고 곡물값이 약하면 농민은 시비량을 줄이고, 그 결과 <strong>2026~27년 수확이 줄어 한 계절 늦게 식량 가격 충격</strong>이 옵니다. 즉 <strong>식량 위기는 지나간 것이 아니라 앞에 있습니다.</strong></p>
+    <p>세계 곳곳에서 이미 배급이 시작됐습니다 — 필리핀은 3월 24일 첫 국가 에너지 비상사태를 선포했고, <strong>슬로베니아는 EU 최초로 연료를 배급제</strong>로 전환(개인 하루 50리터), 방글라데시는 대학 조기 폐쇄와 상업시설 오후 8시 폐점, 미얀마는 격일 운행제, 네팔은 LPG 판매 절반 축소를 시행했습니다. Rystad의 분석으로는 <strong>세계 인구의 70% 이상이 IEA 기준(90일) 비축이 없는 나라에 삽니다</strong>.</p>
+
+    <h4>승자와 패자</h4>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>구분</th><th>국가</th><th class="n">2026 GDP</th><th>핵심</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="3">승자</td><td><strong>러시아</strong></td><td class="n">1.1% (↑)</td><td>4월 석유세수 두 배(90억 달러), 우랄 할인폭 축소. "푸틴에게 온 경제적 선물"(채텀하우스). 단 우크라이나의 정유소 타격으로 제품 생산은 훼손</td></tr>
+          <tr><td><strong>미국 셰일·정유</strong></td><td>—</td><td>4월 일산 1,393만 배럴 사상 최고, 정제마진 사상 최고. 반면 미국 가계는 7월 22일까지 <strong>720억 달러</strong>(가구당 약 549달러)를 연료비로 더 지출</td></tr>
+          <tr><td><strong>사우디·오만</strong></td><td class="n">3.1% / 3.5%</td><td>사우디는 2분기 GDP −4.8%(3년 만의 역성장)에도 <strong>석유 수입 +22%</strong>로 재정적자는 오히려 축소. 오만은 재정·경상수지 모두 개선</td></tr>
+          <tr><td rowspan="5">패자</td><td><strong>카타르</strong></td><td class="n">−8.6%</td><td>전년 전망 대비 <strong>−14.7%p</strong>. 단일 최대 피해 경제</td></tr>
+          <tr><td><strong>이라크</strong></td><td class="n">−6.8%</td><td>생산 70% 감소, 수출 경로 붕괴</td></tr>
+          <tr><td><strong>이란</strong></td><td class="n">−6.1%</td><td>물가 68.9%(공식 88.6%), 리알 폭락, 수출 터미널 정지</td></tr>
+          <tr><td><strong>유럽</strong></td><td class="n">0.9%</td><td>가스 수입 부담 약 1,000억 유로 증가, 저성장 속 금리 인상. 영국이 "최악의 타격을 받은 주요 경제"로 분석됨</td></tr>
+          <tr><td><strong>일본</strong></td><td class="n">0.6%</td><td>원유의 <strong>94.2%</strong>가 중동산. 비축유 8,000만 배럴 방출, 무역적자 확대</td></tr>
+          <tr><td>중립~선방</td><td><strong>중국</strong></td><td class="n">4.6% (↑)</td><td>14억 배럴 비축(약 4개월), 할인 원유, EV 보급으로 완충. 다만 소매 휘발유 +39%, LNG +42%, <strong>2022년 9월 이후 첫 PPI 상승</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <div class="part" id="p8">
+    <span class="pn">PART Ⅷ</span>
+    <h2>한국 — 여섯 갈래로 닿아 있다</h2>
+    <p>총량 지표만 보면 한국 경제는 사상 최고 실적을 내고 있습니다. 그러나 그건 AI 반도체가 전쟁 손실을 덮었기 때문이고, <strong>내부는 심하게 갈렸습니다</strong>. 그리고 8월에는 안보 청구서까지 도착했습니다.</p>
+  </div>
+
+  <section id="kr-energy">
+    <p class="eyebrow">① 에너지</p>
+    <h3>구조적으로 가장 노출된 나라 중 하나</h3>
+    <div class="grid-figs">
+      <div class="fig br"><span class="v">70.7%</span><span class="k">원유 수입 중 중동 비중<br>(사우디 33.6% · UAE 11.4% · 이라크 10.4%)</span></div>
+      <div class="fig br"><span class="v">34.4%</span><span class="k">나프타 중동 비중<br>(석유화학의 기초 원료)</span></div>
+      <div class="fig sea"><span class="v">27%</span><span class="k">아시아 LNG 수입 중<br>호르무즈 경유 비중</span></div>
+      <div class="fig hot"><span class="v">9일분</span><span class="k">방출 시점 LNG 비축<br>(원유는 208일분)</span></div>
+    </div>
+    <p style="margin-top:18px">한국의 중동 원유 의존도는 2015년 82.3%에서 2021년 59.8%까지 떨어졌다가 <strong>2023년 이후 다시 70% 전후로 되돌아왔습니다</strong>. 이유는 세 가지입니다. ① 수송비가 배럴당 <span class="num">1.12</span>달러 저렴하고 ② 국내 정유설비가 중질·고황유 처리에 최적화된 고도화 설비 중심이며 ③ 중국·인도가 러시아산으로 옮겨가면서 중동유의 가용성이 늘었기 때문입니다. <strong>편의가 아니라 설비 구조에서 온 의존</strong>이라, 단기에 바꾸기 어렵습니다.</p>
+
+    <h4>실제로 무슨 일이 있었나</h4>
+    <ul>
+      <li><strong>3월 24일 카타르에너지가 한국·중국·이탈리아·벨기에에 장기공급계약 불가항력을 선언</strong>했습니다. 복구에는 3~5년, 연 200억 달러 수익 손실이라는 것이 카타르 측 설명입니다.</li>
+      <li>한국은 IEA 사상 최대 공동방출(4억 배럴)에 참여해 <strong>2,246만 배럴(전체의 5.6%)</strong>을 분담했습니다. 2022년 우크라이나 전쟁 때(1,165만 배럴)의 약 두 배입니다.</li>
+      <li>석유공사가 해외생산 원유를 추가 도입하고 우선구매권 물량 4,080만 배럴을 확보했으며, UAE에서 <strong>긴급 600만 배럴</strong>을 별도로 들여왔습니다.</li>
+      <li>전력 쪽에서는 <strong>원전 가동률을 60%대 후반에서 80%로 올리고</strong> 석탄발전 상한제약을 해제했습니다.</li>
+      <li>6월부터는 정부 비축유 추가 방출 없이 <strong>민간 보유분 우선 방출</strong>로 방향을 틀었습니다.</li>
+      <li>7월 13일 이란의 해협 재봉쇄 직후 산업통상부가 긴급 수급 점검회의를 열고 <strong>"7~8월 도입 물량은 전년 대비 100% 이상 확보"</strong>라고 밝혔습니다.</li>
+    </ul>
+
+    <h4>요금 — 가정은 막고 산업은 열었다</h4>
+    <p>발전용 천연가스 요금은 3월 GJ당 13,731원에서 <strong>8월 22,726원으로 5개월간 약 39% 상승</strong>했습니다. 정부는 <strong>가정용 가스요금은 동결</strong>하고 산업·발전용에만 원가를 반영하는 이원 구조를 택했습니다. 전기요금은 연료비조정단가 상한(±5원)에 묶여 도매가를 반영하지 못했고, 그 결과 <strong>한국전력이 6월 초 내부 재무위험관리를 3단계(경계)로 격상</strong>했습니다. 기후에너지환경부는 요금 인상 대신 <strong>하반기 LNG 관세 면제와 발전용 LNG 개별소비세 15% 인하</strong>를 추진하고 있습니다.</p>
+  </section>
+
+  <section id="kr-macro">
+    <p class="eyebrow">② 거시경제</p>
+    <h3>총량은 최고, 내부는 양극화</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>지표</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td><strong>성장률 전망</strong></td><td>한국은행 2월 <span class="num">2.0%</span> → KDI 5월 <span class="num">2.5%</span>(두바이유 91달러 전제) → 자본시장연구원 하반기 <span class="num">2.9%</span>. <strong>전쟁에도 전망이 오히려 상향됐는데, 이는 AI 반도체 효과입니다</strong></td></tr>
+          <tr><td><strong>물가</strong></td><td>5월 3.1% → 6월 3.2% → <strong>7월 2.8%</strong>(3개월 만에 2%대). 7월 품목별로는 <strong>경유 +21.5%, 등유 +20.5%, 휘발유 +12.6%</strong></td></tr>
+          <tr><td><strong>환율</strong></td><td>4월 1,450원대 → <strong>5월 15일 1,500.8원 돌파 후 24거래일 연속 1,500원대</strong>, 6월 19일 야간 1,540원 → <strong>8월 현재 1,400원 하향 돌파</strong>. 수출기업 환전 수요가 방어</td></tr>
+          <tr><td><strong>기준금리</strong></td><td><strong>7월 2.50% → 2.75% 인상</strong> — 3년 6개월 만의 긴축 전환. 8월은 동결 전망이나 'Close Call'</td></tr>
+          <tr><td><strong>무역</strong></td><td>7월 수출 <strong>988.9억 달러(+62.8%)</strong>, 무역흑자 <strong>303.2억 달러</strong>. 반도체만 <strong>410억 달러(+178.8%)</strong>로 수출의 40%. 1~7월 누적 흑자 <strong>1,680억 달러</strong>, 14개월 연속 월간 최대 경신</td></tr>
+        </tbody>
+      </table>
+      <caption>즉 <strong>"전쟁 리스크를 반도체가 커버한 해"</strong>입니다. "전쟁이 한국 경제를 무너뜨렸다"는 서술은 사실과 다르고, 동시에 "별 영향 없었다"는 서술도 사실과 다릅니다.</caption>
+    </div>
+
+    <h4>KIEP의 시나리오 — 현재 위치</h4>
+    <ul>
+      <li><strong>① 조기 종전</strong> — 2분기 배럴당 85달러</li>
+      <li><strong>② 봉쇄 장기화</strong> — 93달러 → 2027년 4분기 117달러 <strong>← 실제 경로는 여기에 가장 가깝습니다</strong></li>
+      <li><strong>③ 에너지 시설 대규모 파괴</strong> — 129달러 → 174달러(전쟁 전 대비 +176%)</li>
+    </ul>
+    <p>GVAR 모형 기준 한국의 물가 반응은 1 표준편차 충격당 <span class="num">+0.12</span>%p 후 2~3분기 내 수렴으로 추정됩니다. 다만 연구진 자신이 이 추정을 <strong>보수적 하한</strong>이라고 명시했습니다.</p>
+  </section>
+
+  <section id="kr-industry">
+    <p class="eyebrow">③ 산업</p>
+    <h3>업종별로 정반대의 한 해</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>업종</th><th>방향</th><th>구체적 수치</th></tr></thead>
+        <tbody>
+          <tr><td><strong>정유·석유화학</strong></td><td>상반기 특수 → 하반기 역풍</td><td>1분기 SK에너지 영업이익 <strong>1조 2,832억원</strong>(재고이익 약 7,800억), S-OIL 1조 2,311억, GS칼텍스 <strong>+1,310%</strong>. 롯데케미칼은 10개 분기 만에 흑자전환. 그러나 3분기부터 <strong>역래깅 효과 + 중국발 공급과잉</strong>으로 "보릿고개" 우려</td></tr>
+          <tr><td><strong>조선</strong></td><td>수혜</td><td>LNG 운송 재편과 톤마일 증가로 LNG선·탱커 발주 랠리. 5월 중순 <strong>나흘 만에 2.6조원</strong> 수주</td></tr>
+          <tr><td><strong>해운</strong></td><td>운임 급등</td><td>SCFI 7월 중순 <strong>3,184.82</strong>(2024년 홍해 대란 고점에 근접). 호르무즈·홍해 동시 봉쇄로 희망봉 우회 시 왕복 2~3주 추가</td></tr>
+          <tr><td><strong>반도체</strong></td><td>압도적 호황</td><td>7월 수출 410억 달러(+178.8%). 부정 요인은 <strong>납기 확보를 위한 항공운송 전환 비용</strong>이지만 AI 사이클이 이를 압도</td></tr>
+          <tr><td><strong>항공</strong></td><td>직격탄</td><td>국제선 유류할증료 5월 <strong>33단계(최고)</strong> → 8월 14단계 → <strong>9월 21단계로 재급등</strong>. 대한항공 뉴욕 편도 유류할증료 <strong>35만 4,000원</strong>(전월 대비 +36.6%). 항공유가 영업비용의 약 30%. LCC는 영업손실</td></tr>
+          <tr><td><strong>자동차</strong></td><td>직격탄</td><td>3~4월 중동 수출 <strong>2만 449대로 전년 동기 대비 −44.2%</strong>. 4월 단월 9,639대로 15개월 만에 1만 대 붕괴. 현대차는 물류·판매 차질로 <strong>2,470억원 규모의 마이너스 물량</strong> 발생</td></tr>
+          <tr><td><strong>건설·EPC</strong></td><td>최대 피해</td><td>1~5월 <strong>중동 수주 5억 6,000만 달러 — 전년 동기 대비 −90%</strong>. 해외수주 내 중동 비중이 60.4%(전년 1분기)에서 14.6%로 추락. 다만 종전 시 원전·재건·파이프라인을 합쳐 <strong>1,400억 달러</strong> 규모의 파이프라인이 대기</td></tr>
+          <tr><td><strong>중소 수출기업</strong></td><td>취약</td><td>중동 진출 기업 <strong>1만 4,000여 개</strong>(전체 수출기업의 14%). KOTRA가 <strong>긴급 수출바우처 80억원</strong>(기업당 최대 1.5억, 3일 패스트트랙) 가동. 애로상담 분석: 물류 28%, 결제 15%, 대체항로 12%, <strong>바이어 연락두절·계약취소 7%</strong>. 페르시아만 <strong>24개 주요 항만 중 정상 운항은 9개</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="kr-prices">
+    <p class="eyebrow">④ 생활물가</p>
+    <h3>가격상한제라는 초강수</h3>
+    <ul>
+      <li><strong>3월 13일 석유 최고가격제(가격상한제)가 처음 시행</strong>됐습니다 — 휘발유 1,724원, 경유 1,713원(정유사 공급가 기준, 주유소 마진 약 100원 별도).</li>
+      <li>2차에서 각 210원 인상, 3~6차 3개월 동결을 거쳐 <strong>7차(6월 27일 적용) 150원 인하</strong>: 휘발유 1,784원, 경유 1,773원, 등유 1,380원.</li>
+      <li><strong>3월 27일부터 유류세 추가 인하</strong> — 리터당 휘발유 65원, 경유 87원.</li>
+      <li>6월 26일 기준 전국 평균은 <strong>휘발유 2,005.8원, 경유 1,996.7원</strong>이었고, 상한 인하로 1,800원대로 유도됐습니다.</li>
+    </ul>
+  </section>
+
+  <section id="kr-security">
+    <p class="eyebrow">⑤ 외교·안보</p>
+    <h3>8월, 청구서가 도착했다</h3>
+    <p class="lede">이 전쟁이 한국에 남긴 가장 직접적인 흔적은 유가가 아니라 <strong>동맹의 청구서</strong>입니다.</p>
+
+    <h4>파병·지원 요청과 거부</h4>
+    <div class="tl">
+      <div class="ev"><div class="d">3월 중순</div><p class="t">미국의 공식 파병 요청 가능성이 보도되기 시작. 최대 쟁점은 <b>국회 동의 필요 여부</b>.</p></div>
+      <div class="ev"><div class="d">4월</div><p class="t">정부 첫 유권해석 — "상선 호위는 국회 동의 불요, 홍해 우회로 확보 시에는 필요".</p></div>
+      <div class="ev key"><div class="d">5.11</div><p class="t"><b>펜타곤 한미 국방장관회담에서 헤그세스 장관이 안규백 국방장관에게 'Epic Fury' 참여를 요청.</b> 안 장관은 다음날 워싱턴 특파원 간담회에서 "참여 확대를 깊게 논의한 바는 없다", "국제사회의 책임 있는 일원으로서 <b>단계적 기여 방안을 검토</b>"라고 밝힘.</p></div>
+      <div class="ev"><div class="d">5.13</div><p class="t">안 장관: <b>"호르무즈해협 파병은 국회 문턱을 넘어야 한다."</b> 검토 옵션은 청해부대의 호르무즈 투입, <b>소해함(기뢰제거) 파견</b> 등.</p></div>
+      <div class="ev"><div class="d">6.15</div><p class="t">국방부 정례브리핑: <b>"전력 파견 여부나 종류와 관련해 현재 결정된 바 없다."</b></p></div>
+      <div class="ev key"><div class="d">8.16</div><p class="t"><b>한미 정상 통화에서 이재명 대통령이 이란 작전 지원 요청을 거부.</b> 트럼프 대통령은 다음날 백악관에서 "이 대통령이 <b>'No, thanks'</b>라고 했다. 미국은 3만 9,000명 병력으로 북한으로부터 한국을 지키는데 왜 한국은 이란 작전을 돕지 않느냐"고 공개 언급.</p></div>
+    </div>
+
+    <h4>한미 연합훈련 축소 — 무슨 일이 있었나</h4>
+    <ul>
+      <li><strong>8월 16일(현지) 트럼프 대통령이 SNS로 헤그세스 장관에게 "한미 연합군사훈련을 대폭 축소하라"고 긴급 지시</strong>했습니다. 공식적으로 내세운 명분은 <strong>"김정은과의 매우 좋은 관계"</strong>였습니다.</li>
+      <li>그 결과 <strong>UFS(을지 자유의 방패) 2026이 8월 17~27일(11일)에서 8월 17~21일(5일)로 단축</strong>됐습니다. 후반부 '반격 작전'은 실시되지 않았고, 야외기동훈련 14건 중 대부분이 취소되거나 시뮬레이션으로 전환됐습니다.</li>
+      <li>미 국방부는 "필수적인 대비태세와 훈련 목표는 유지되며 어떤 차질도 없을 것"이라고 밝혔습니다.</li>
+      <li><strong>배경은 복합적입니다.</strong> ① 대북 유화 신호 ② <strong>한국의 이란전 비협조에 대한 압박</strong> ③ 대미 투자 3,500억 달러 중 2,000억 달러가 미확정인 상황(일본은 5,500억 중 6개 사업 확정) ④ 6월 개인정보보호위의 쿠팡 과징금 6,247억원. <strong>이란 문제만이 원인이라고 단정하기는 어렵습니다</strong>.</li>
+    </ul>
+
+    <h5>국내 반응</h5>
+    <ul>
+      <li><strong>대통령실</strong>은 로키로 대응했습니다 — "한미 양국은 확고한 연합방위태세 유지와 연합연습에 대해 긴밀히 조율해 왔고, 앞으로도 구체 사항을 공조해 나갈 것."</li>
+      <li><strong>더불어민주당</strong> 홍기원 외통위 여당 간사: "공식 채널을 통하지 않은 점은 이례적"이나 "한미동맹은 굉장히 좋은 상태". 다만 <strong>핵 협상에서 한국이 배제될 우려</strong>를 제기했습니다.</li>
+      <li><strong>국민의힘</strong>: "이미 시작된 훈련이 지시 한마디에 조정되는 것은 가볍게 볼 일이 아니다", "한미동맹 신뢰가 경제·통상 문제와 맞물려 총체적으로 흔들린다". 안철수 의원은 <strong>"호르무즈 파병으로 한미동맹을 재건축하자"</strong>고 주장했습니다.</li>
+      <li><strong>미 의회에서도 초당적 반발</strong>이 나왔습니다 — 잭 리드 상원의원(민주) "어리석고 즉흥적인 결정", 톰 틸리스(공화) "북한군 수천 명을 풀어줘 러시아를 지원하게 만드는 것". 미 언론은 "한국이 최근의 희생양"이라고 보도했습니다.</li>
+    </ul>
+
+    <h4>교민과 그 밖의 마찰</h4>
+    <ul>
+      <li><strong>3월 5일 18시부로 이란 전역에 여행경보 4단계(여행금지)</strong>가 발령됐습니다. 무허가 방문·체류 시 여권법 처벌 대상입니다.</li>
+      <li>KOTRA는 UAE·오만·카타르·사우디·쿠웨이트 5개국의 해외공동물류센터를 대피·물류 거점으로 활용했습니다.</li>
+      <li><strong>4월 10일 이재명 대통령이 X에 이스라엘군 관련 영상을 공유하며 비판</strong>하자 이스라엘 외무부가 "용납할 수 없다"고 항의했고, 외교부가 "의도가 잘못 이해됐다"며 수습에 나섰습니다.</li>
+    </ul>
+
+    <h4>해군·해양전략 차원의 교훈</h4>
+    <p>한국해양전략연구소는 이번 사태의 함의로 <strong>① 에너지 공급처 다변화 ② 전략비축유의 신속 활용 체계 ③ 해군력 강화와 국제 해양안보작전 참여 확대 ④ 드론 스웜 방어와 기뢰 탐지·부설 능력 확충</strong>을 제시했습니다. 특히 <strong>드론 방어와 소해 능력</strong>은 북한 위협과 직결되는 항목으로, 중동에서 얻은 교훈이 한반도로 되돌아오는 지점입니다.</p>
+  </section>
+
+  <section id="kr-opinion">
+    <p class="eyebrow">⑥ 여론</p>
+    <h3>한국인은 이 전쟁을 어떻게 보고 있나</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>문항</th><th class="n">결과</th></tr></thead>
+        <tbody>
+          <tr><td>이 전쟁에 관심이 있다</td><td class="n">86%</td></tr>
+          <tr><td>한국 경제에 영향이 있다</td><td class="n">92% (매우 큼 57%)</td></tr>
+          <tr><td>전쟁 발발의 책임 — 미국</td><td class="n">87% (매우 큼 56%)</td></tr>
+          <tr><td>전쟁 발발의 책임 — 이스라엘</td><td class="n">84%</td></tr>
+          <tr><td>전쟁 발발의 책임 — 이란</td><td class="n">83%</td></tr>
+          <tr><td>올해 안에 끝날 것</td><td class="n">71%</td></tr>
+          <tr><td><strong>정부가 미국을 지지해야</strong></td><td class="n"><strong>38%</strong></td></tr>
+          <tr><td><strong>중립을 유지해야</strong></td><td class="n"><strong>36%</strong></td></tr>
+        </tbody>
+      </table>
+      <caption>한국리서치, 2026년 3월 13~16일, 전국 18세 이상 1,000명, 표본오차 ±3.1%p. 주목할 점은 <strong>세 당사자 모두에게 8할 넘는 책임을 묻는 균형적 인식</strong>과, <strong>미국 지지와 중립 유지가 거의 반반</strong>이라는 것입니다. 8월 정부가 지원을 거부한 배경에는 이런 여론 지형도 있습니다.</caption>
+    </div>
+  </section>
+
+  <div class="part" id="p9">
+    <span class="pn">PART Ⅸ</span>
+    <h2>쟁점과 시나리오</h2>
+    <p>예측이 아니라, <strong>뉴스를 볼 때 무엇을 확인해야 하는지</strong>의 지도입니다.</p>
+  </div>
+
+  <section id="deadlock">
+    <p class="eyebrow">교착</p>
+    <h3>여덟 개의 매듭</h3>
+    <ol>
+      <li><strong>호르무즈 주권 — 가장 깊은 매듭.</strong> 이란 가리바바디 부장관: "호르무즈는 과거에도 이란의 것이었고, 지금도, 앞으로도 이란 영토다." 미국은 어느 당사자도 항로를 통제해서는 안 된다는 입장입니다. 이란에게 통행료는 재건 재원이자 <strong>영구적 억지 지렛대</strong>이고, 바로 그래서 미국도 걸프도 양보할 수 없습니다.</li>
+      <li><strong>미 해군 봉쇄.</strong> 이란은 이것부터 풀라 하고, 미국은 공습을 멈춘 지금 <strong>유일하게 남은 지렛대</strong>라 봅니다. 어느 쪽이 먼저 푸느냐가 실질적 승패입니다.</li>
+      <li><strong>배상금과 3,000억 달러 기금.</strong> 이란은 배상을 요구하고, 트럼프는 오히려 <strong>이란이 배상하라</strong>고 요구합니다. 각서 6조의 기금은 재원이 지정되지 않았고 걸프는 "침략에 보상하는 셈"이라며 거부하고 있습니다. 이란의 400만 명 집단소송이 이 요구를 제도화했습니다.</li>
+      <li><strong>제재의 범위와 순서.</strong> 이란은 1·2차 제재의 즉각 전면 해제를, 미국은 검증된 이행에 연동한 단계적 완화를 주장합니다. 7월 7일 원유 면허 취소가 순서에 대한 신뢰를 파괴했습니다.</li>
+      <li><strong>농축과 검증.</strong> 미국은 "농축 제로"와 60% 재고 인도를, 이란은 NPT 당사국의 권리를 주장합니다. IAEA는 2월 28일 이후 들어가지 못하고 있어, <strong>합의문을 쓰기도 팔기도 어려운 상태</strong>입니다.</li>
+      <li><strong>레바논.</strong> 각서는 "레바논 포함"이라 썼지만 <strong>이스라엘은 당사자가 아닙니다</strong>. 10월 27일 총선까지 이스라엘의 철수 유인은 사실상 없습니다.</li>
+      <li><strong>중재자의 정당성.</strong> 파키스탄은 이란과 이스라엘 양쪽에서 불신받고, 오만은 이란의 신뢰를 얻었지만 미국의 폭격 위협을 받고, 카타르는 주도를 사양하고, 튀르키예는 이스라엘과의 관계로 막혔고, 유엔은 거부권으로 마비됐습니다. <strong>지금 양측이 모두 받아들이는 무대가 없습니다.</strong></li>
+      <li><strong>양쪽의 국내 정치.</strong> 트럼프는 "서두르지 않는다"며 항복을 요구하고, 이란의 협상파는 최고지도자가 살해된 전쟁 뒤에 해협과 농축을 양보할 수 없습니다. <strong>미 중간선거와 이스라엘 총선이 양보의 시간표를 지배합니다.</strong></li>
+    </ol>
+  </section>
+
+  <section id="scenarios">
+    <p class="eyebrow">시나리오</p>
+    <h3>네 갈래</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>시나리오</th><th>경로</th><th>경제적 결과</th></tr></thead>
+        <tbody>
+          <tr><td><strong>A. 부분 타결</strong><br>(해협만 분리)</td><td>오만 모델(말라카식 자발적 이용료)로 항행을 먼저 풀고, 핵·제재는 분리해 뒤로 미룸. 크라이시스그룹이 권고하는 <strong>단계적 접근</strong> — 식량·비료 등 필수품 호송부터</td><td>브렌트 <span class="num">$85~90</span>대 안착. 시설 피해 때문에 <strong>전쟁 전 가격($63)으로는 돌아가지 않음</strong></td></tr>
+          <tr><td><strong>B. 동결 분쟁</strong><br>(현상 유지) <span class="q">— 현재 궤도</span></td><td>공습은 없고 이중 봉쇄만 지속. 경제전(제재·UAE 거래 중단)이 군사작전을 대체. 협상은 간헐적으로 재개되나 타결 없음</td><td>브렌트 <span class="num">$90~120</span> 사이 널뛰기. KIEP 시나리오 ②(2027년 4분기 $117)에 해당. 세계 성장률 3% 내외에서 정체</td></tr>
+          <tr><td><strong>C. 재확전</strong></td><td>방아쇠는 셋 — ① 상선 피격으로 <strong>미군 사망자</strong> 발생 ② 헤즈볼라의 8월 15일 보복 실행 ③ 후티의 홍해 공격 확대. 이란 신임 지휘부(레자이·바히디)는 양보보다 확전 성향</td><td>KIEP 시나리오 ③에 근접, 브렌트 <span class="num">$130~174</span>. 유럽·일본·한국은 스태그플레이션 국면</td></tr>
+          <tr><td><strong>D. 정권 붕괴</strong></td><td>경제 붕괴(물가 88%, 리알 폭락, UAE 거래 중단)가 3차 시위로 이어지는 경로. 다만 야권이 분열돼 있고 IRGC가 지휘부를 장악해 <strong>확률은 낮게 평가</strong>됨</td><td>단기 극심한 혼란, 장기 불확실. 이라크·시리아형 공백 위험</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>체크리스트 — 이 지표들을 보세요</h4>
+    <ul>
+      <li><strong>호르무즈 일일 통항 척수</strong> — 8~15척에서 30척 이상으로 올라가면 실질적 완화의 첫 신호</li>
+      <li><strong>VLCC와 LNG선의 통과 여부</strong> — 8월 중순 이후 대형선은 한 척도 지나가지 않았습니다. 이것이 재개되는지가 소형선 통항보다 중요합니다</li>
+      <li><strong>전쟁위험 보험료</strong> — 선체가 대비 7.5~10%가 3% 아래로 내려오는지</li>
+      <li><strong>IAEA 사찰관의 이란 재입국</strong> — 핵 합의 가능성의 리트머스</li>
+      <li><strong>이란의 미사일 발사 재개</strong> — 3주 넘게 0인 상태가 깨지는 순간</li>
+      <li><strong>헤즈볼라의 보복 실행 여부</strong> — 8월 15일 이후 미실행 상태가 언제까지 가는지</li>
+      <li><strong>이라크 민병대 무장해제 9월 30일 시한</strong></li>
+      <li><strong>미 중간선거</strong>와 <strong>이스라엘 10월 27일 총선</strong> — 양보의 정치적 창은 그 이후에 열립니다</li>
+      <li><strong>UAE의 거래 중단 효과</strong> — 이란 수입의 3분의 1을 차지하던 통로가 막힌 결과가 몇 주 뒤 물가와 시위로 나타날지</li>
+    </ul>
+  </section>
+  <div class="part" id="p10">
+    <span class="pn">PART Ⅹ</span>
+    <h2>용어사전과 인물사전</h2>
+    <p>기사에 자주 나오지만 설명 없이 지나가는 것들.</p>
+  </div>
+
+  <section id="glossary">
+    <p class="eyebrow">용어</p>
+    <h3>알아두면 기사가 읽히는 말들</h3>
+    <div class="gloss">
+      <details><summary>호르무즈 해협</summary><p>페르시아만과 오만만을 잇는 유일한 출구. 최협부 약 33km, 실제 항로 폭은 <strong>3~9km</strong>에 불과합니다. 평시 하루 약 2,000만 배럴의 원유(세계 해상 원유의 20~30%)와 세계 LNG의 상당량이 통과하며, <strong>아시아 LNG 수입의 27%</strong>가 여기를 지납니다. 이란이 북안 전체를 끼고 있어 고속정·기뢰·드론만으로도 통항을 위협할 수 있고, 반대로 이란 자신의 수출도 같은 통로에 묶여 있어 "완전 봉쇄는 자해"라는 것이 오랜 통념이었습니다. 2026년은 그 통념이 깨진 해입니다 — 이란은 <strong>완전 봉쇄 대신 선별 통과와 통행료</strong>라는 제3의 길을 찾았습니다.</p></details>
+      <details><summary>통과통항권 (Transit Passage)</summary><p>유엔해양법협약 3부가 규정한 권리로, 국제항행에 이용되는 해협에서는 연안국 영해라 해도 선박·항공기의 계속적·신속한 통항이 보장됩니다. 무해통항권보다 강한 권리이며, <strong>연안국이 허가나 요금을 조건으로 걸 수 없습니다</strong>. 이란의 통행료 제도가 위법이라는 주장의 근거이자, 싱가포르 등 해협 국가들이 강하게 반대하는 이유(말라카·지브롤터·덴마크 해협에 선례가 됨)입니다.</p></details>
+      <details><summary>저항의 축 (Axis of Resistance)</summary><p>이란이 후원하는 무장세력 네트워크. 용어는 2002년 부시의 '악의 축'에 대한 대응으로 등장했고, 2003년 이라크전 이후 실체화됐습니다. 헤즈볼라(레바논), 하마스·이슬라믹 지하드(팔레스타인), 후티(예멘), 시아파 민병대(이라크), 그리고 국가로는 시리아. <strong>2024년에 시리아가 소멸하고 헤즈볼라가 궤멸하면서 사실상 해체 수순</strong>에 들어갔고, 이것이 2026년 침공의 전제 조건이 됐습니다.</p></details>
+      <details><summary>IRGC (이슬람혁명수비대) · 아르테시 · 바시지 · 쿠드스군</summary><p>이란은 <strong>이중 군사 구조</strong>입니다. <strong>아르테시</strong>는 국가를 지키는 정규군(약 35만), <strong>IRGC</strong>는 체제를 지키는 혁명군(약 19만)으로 별도의 육·해·공군과 전략 미사일군을 보유합니다. <strong>쿠드스군</strong>은 IRGC의 해외 작전 조직(솔레이마니가 이끌던 곳), <strong>바시지</strong>는 민병대(상시 9만, 동원 시 100만)로 시위 진압의 주력입니다. IRGC는 군사만이 아니라 건설·에너지·통신에 걸친 거대 경제 이권도 쥐고 있어, <strong>실질적으로 국가 안의 국가</strong>입니다. 2026년 8월의 지휘부 개편으로 IRGC의 정치적 우위가 더 굳어졌습니다.</p></details>
+      <details><summary>벨라야테 파키 (법학자 통치)와 전문가회의</summary><p>호메이니가 정립한 이란 신정 체제의 원리로, 최고 이슬람 법학자가 국가의 최종 권위를 가진다는 이론입니다. 이를 위해 최고지도자는 원칙적으로 <strong>아야톨라·무즈타히드</strong> 수준의 종교적 자격을 갖춰야 합니다. 선출은 국민이 뽑은 성직자 88명으로 구성된 <strong>전문가회의</strong>가 담당합니다. 2026년 3월 모즈타바 하메네이가 <strong>호자톨레슬람</strong>(한 단계 낮은 등급)으로 온라인 표결을 통해 선출된 것이 정통성 시비의 핵심입니다.</p></details>
+      <details><summary>JCPOA와 스냅백</summary><p>2015년 이란 핵합의. 농축도 3.67% 제한, 재고 300kg, 원심분리기 5,060기, 포르도 농축 중단 등을 대가로 제재를 해제했습니다. 2018년 미국 탈퇴로 사실상 붕괴했고, <strong>스냅백</strong>은 위반 시 해제됐던 유엔 제재를 자동 복원하는 장치입니다. 영·프·독이 2025년 8월 28일 발동해 <strong>9월 27일 제재가 복원</strong>됐습니다. E3의 발동 권한 자체가 2025년 10월 18일 만료 예정이었으므로, <strong>마지막 기회를 쓴 셈</strong>이었습니다.</p></details>
+      <details><summary>농축도 — 3.67%, 20%, 60%, 90%</summary><p>천연 우라늄의 U-235 비율은 0.7%입니다. 원전 연료는 3~5%, 연구로용은 20%, <strong>무기급은 90% 이상</strong>입니다. 중요한 것은 <strong>분리작업량(SWU)의 비선형성</strong>입니다 — 0.7%에서 20%까지 가는 데 전체 작업량의 90%가 들고, 60%에서 90%까지는 나머지의 일부에 불과합니다. 즉 <strong>60% 농축 재고를 가진 나라는 기술적으로는 문턱을 거의 다 넘은 상태</strong>이며, 이것이 이란의 440.9kg짜리 60% 재고가 협상의 핵심인 이유입니다.</p></details>
+      <details><summary>핵 헤징 (Nuclear Hedging)</summary><p>핵무기를 실제로 만들지는 않되, 마음먹으면 짧은 시간에 만들 수 있는 능력과 물질을 유지하는 전략. 일본·한국 등에도 쓰이는 개념입니다. IAEA와 다수 전문가는 이란의 상태를 <strong>무기화가 아니라 헤징</strong>으로 평가했고, 이것이 개전 명분을 둘러싼 논쟁의 핵심입니다.</p></details>
+      <details><summary>벙커버스터 (GBU-57 MOP)와 B-2</summary><p>지하 깊이 매설된 시설을 관통하는 초대형 폭탄. GBU-57은 약 13.6톤으로, <strong>운반할 수 있는 항공기가 미 공군의 B-2 스텔스 폭격기뿐</strong>입니다. 이란의 핵시설이 산 속에 있기 때문에 <strong>이스라엘 단독으로는 물리적으로 불가능하고 미국의 직접 개입이 필수</strong>라는 구조가 여기서 나옵니다. 2025년 6월 Midnight Hammer 작전에서 B-2 7대가 14발을 투하했고, 2026년에도 다시 사용됐습니다.</p></details>
+      <details><summary>참수 작전 (Decapitation Strike)</summary><p>적의 지휘부를 물리적으로 제거해 조직을 마비시키는 작전. 2026년 2월 28일 최고지도자 알리 하메네이가 제거된 것이 대표적입니다. 효과에 대한 평가는 갈립니다 — 이란의 미사일 발사율이 급락한 데는 지휘통제 붕괴가 기여했지만, <strong>정권 자체는 열흘 만에 승계를 마쳤고 무너지지 않았습니다</strong>.</p></details>
+      <details><summary>불가항력 (Force Majeure)</summary><p>전쟁·재해로 계약 이행이 불가능해졌음을 선언해 책임을 면하는 조항. 2026년 3월 카타르가 LNG 공급에 이를 선언하면서 한국을 포함한 4개국이 즉시 대체 물량 확보에 나서야 했고, 셸·토탈에너지는 자사 고객에게 <strong>연쇄 불가항력</strong>을 선언했습니다. 이라크·쿠웨이트·바레인·UAE도 원유에 선언했습니다.</p></details>
+      <details><summary>이중 봉쇄 (Dual Blockade)</summary><p>미 해군이 이란 항구를 봉쇄하고, 이란은 호르무즈를 봉쇄해 서로를 옭아맨 상태. 4월 13일 성립됐고, 5월 29일 해제됐다가 7월 14일 재개됐습니다. <strong>어느 쪽도 먼저 풀면 지렛대를 잃기 때문에</strong> 교착이 길어집니다.</p></details>
+      <details><summary>PGSA (페르시아만 해협관리청)</summary><p>2026년 5월 18일 이란이 만든 통항 관리 기구. 선주가 소유·보험·승무원·화물·항로 정보를 제출하고 승인과 <strong>대금 지급 후에야 통항 허가</strong>가 나옵니다. 1항차 200만 달러 또는 배럴당 1달러, 결제는 위안화나 암호화폐. 미 재무부는 이 지급이 <strong>제재 위반</strong>이 될 수 있다고 경고해, 선사·용선주·보험사가 법적 함정에 놓였습니다.</p></details>
+      <details><summary>역래깅 효과 (Negative Lagging)</summary><p>정유사가 원유를 구매한 시점과 제품을 판매하는 시점 사이의 시차 때문에, <strong>유가가 오를 때는 재고이익, 내릴 때는 재고손실</strong>이 발생하는 현상. 한국 정유사가 2026년 상반기에 사상 최대 이익을, 하반기에 급격한 마진 악화를 겪는 이유입니다.</p></details>
+      <details><summary>SCFI · WCI · 전쟁위험 보험료</summary><p><strong>SCFI</strong>는 상하이 컨테이너 운임지수, <strong>WCI</strong>는 드류리 세계 컨테이너 지수로 해상 운임의 대표 지표입니다. <strong>전쟁위험 보험료(War Risk Premium)</strong>는 선체 가액 대비 %로 매겨지며, 평시 0.125%에서 2026년 7월 <strong>7.5~10%</strong>로 뛰었습니다. 1억 달러짜리 유조선 한 척이 한 번 지나가는 데 보험료만 750만~1,000만 달러가 든다는 뜻입니다.</p></details>
+      <details><summary>12일 전쟁 (2025년 6월)</summary><p>2025년 6월 13일 이스라엘의 <strong>Rising Lion</strong> 작전으로 시작돼 6월 24일 휴전한 전쟁. 개전 수 시간 내 이란 장성 30명과 핵과학자 다수가 제거됐고, 6월 22일 미국이 <strong>Midnight Hammer</strong>로 가담해 B-2 7대가 GBU-57 14발을 포르도·나탄즈에, 잠수함이 토마호크 20여 발을 이스파한에 투하했습니다. <strong>2026년 전쟁의 예행연습이자 선례</strong>였습니다.</p></details>
+      <details><summary>'경제 D-데이'</summary><p>2026년 8월 19일 트럼프 대통령이 예고한 제재 캠페인. 원유 밀수, 스와프 라인, 현금 운반, 환전소를 겨냥하며 <strong>제3국에도 "엄청난 결과"</strong>가 있을 것이라고 밝혔습니다. 같은 날 UAE의 대이란 거래 전면 중단이 겹치면서, 전쟁의 무대가 <strong>군사에서 금융으로 옮겨간 것</strong>을 상징합니다.</p></details>
+    </div>
+  </section>
+
+  <section id="who">
+    <p class="eyebrow">인물</p>
+    <h3>기억해 둘 이름들</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>이름</th><th>직위</th><th>역할</th></tr></thead>
+        <tbody>
+          <tr><td colspan="3" style="background:var(--panel-2);font-weight:600;font-size:13px;">이란</td></tr>
+          <tr><td><strong>모즈타바 하메네이</strong></td><td>최고지도자 (3월 취임)</td><td>선대의 아들. 세습·자격·절차 모두 논란. 아버지보다 강경하다는 평가. 8월 안보 지휘부를 전면 교체</td></tr>
+          <tr><td><strong>마수드 페제시키안</strong></td><td>대통령</td><td>개혁 성향. 이슬라마바드 각서 서명 당사자이자 실패의 책임을 홀로 진 '회로차단기'</td></tr>
+          <tr><td><strong>압바스 아락치</strong></td><td>외교장관</td><td>협상의 얼굴. "역사적 합의가 손에 잡힌다"(2월) → "협상 재개를 결정하지 않았다"(8월)</td></tr>
+          <tr><td><strong>모하마드 바게르 갈리바프</strong></td><td>국회의장</td><td>실제로 대미 협상을 이끈 인물. 기술관료·경제 진영을 대표</td></tr>
+          <tr><td><strong>모흐센 레자이</strong></td><td>국가안보최고회의 사무총장 (8월)</td><td>전 IRGC 총사령관. <strong>6월 해협 합의에 공개 반대</strong>했던 강경파</td></tr>
+          <tr><td><strong>아마드 바히디</strong></td><td>IRGC 총사령관 (8월)</td><td>확전 성향으로 평가됨</td></tr>
+          <tr><td><strong>알리 라리자니</strong></td><td>전 국가안보최고회의 수장</td><td>온라인 승계 표결의 위헌성을 제기하다 3월 17일 제거됨</td></tr>
+          <tr><td>레자 팔라비 / 마리암 라자비</td><td>야권</td><td>왕정 복고파와 MEK/NCRI. <strong>서로 적대적</strong>이라는 것이 야권의 최대 약점</td></tr>
+          <tr><td colspan="3" style="background:var(--panel-2);font-weight:600;font-size:13px;">미국</td></tr>
+          <tr><td><strong>JD 밴스</strong></td><td>부통령</td><td>개입 회의론자에서 전쟁의 대변인으로. 파키스탄 채널 협상 주도</td></tr>
+          <tr><td><strong>스티브 위트코프 · 재러드 쿠슈너</strong></td><td>특사</td><td>이란·가자 두 트랙을 동시에 담당. 8월 가자 셔틀 외교의 주역</td></tr>
+          <tr><td><strong>피트 헤그세스</strong></td><td>국방(전쟁)장관</td><td>공화당 내에서도 신뢰를 잃은 각료. 5월 한국에 Epic Fury 참여를 요청</td></tr>
+          <tr><td><strong>스콧 베선트</strong></td><td>재무장관</td><td>8월 현재 압박의 주역. "역사상 가장 강력한 제재"</td></tr>
+          <tr><td><strong>툴시 개버드</strong></td><td>국가정보국장</td><td>3월 18일 증언에서 <strong>"이란은 농축 재건을 시도하지 않았다"</strong>고 밝혀 개전 명분을 흔듦</td></tr>
+          <tr><td><strong>조 켄트</strong></td><td>전 국가대테러센터 국장</td><td><strong>3월 17일 사임</strong>. "양심상 지지할 수 없다"</td></tr>
+          <tr><td><strong>브래드 쿠퍼</strong></td><td>중부사령관</td><td>2월 협상 테이블에 동석했고, 이후 작전을 지휘</td></tr>
+          <tr><td colspan="3" style="background:var(--panel-2);font-weight:600;font-size:13px;">이스라엘 · 중재국</td></tr>
+          <tr><td><strong>베냐민 네타냐후</strong></td><td>총리</td><td>10월 27일 총선을 앞두고 여론조사에서 열세. 각서와 가자 로드맵을 모두 거부</td></tr>
+          <tr><td><strong>이스라엘 카츠</strong></td><td>국방장관</td><td>"리타니강까지 영구 점령" 선언. 지지율 부정 평가 57%</td></tr>
+          <tr><td><strong>가디 아이젠코트</strong></td><td>야당 '야샤르' 대표</td><td>전 참모총장. 총리 적합도에서 네타냐후를 49–38로 리드</td></tr>
+          <tr><td><strong>아심 무니르</strong></td><td>파키스탄 육군참모총장</td><td>사실상의 최고 실권자이자 <strong>이 전쟁의 결정적 중재자</strong>. 4월 휴전과 6월 각서를 성사</td></tr>
+          <tr><td><strong>바드르 알부사이디</strong></td><td>오만 외교장관</td><td>2월 협상 주관, 현재 해협 실무 협상 담당. 미국을 공개 비판</td></tr>
+          <tr><td><strong>라파엘 그로시</strong></td><td>IAEA 사무총장</td><td>사찰 복귀를 두고 이란과 공개 충돌 중</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="part" id="p11">
+    <span class="pn">PART XI</span>
+    <h2>엇갈리는 숫자들, 그리고 출처</h2>
+    <p>이 문서에서 <strong>단독 인용을 피해야 할 항목</strong>들을 따로 모았습니다.</p>
+  </div>
+
+  <section id="disputed">
+    <p class="eyebrow">검증 메모</p>
+    <h3>출처가 충돌하는 것들</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>항목</th><th>낮은 쪽</th><th>높은 쪽</th><th>메모</th></tr></thead>
+        <tbody>
+          <tr><td>이란 사망자</td><td class="n">3,468 (이란) / 3,636 (HRANA)</td><td class="n">군인만 6,000+ (미·이스라엘)</td><td>거의 2:1</td></tr>
+          <tr><td>2025–26 시위 사망자</td><td class="n">3,117 (이란 정부)</td><td class="n">43,000 (일부 국제 추정)</td><td><strong>10배 이상.</strong> 인터넷 차단으로 검증 불가</td></tr>
+          <tr><td>이란 해군 손실</td><td class="n">13척 (확인된 함명)</td><td class="n">155척 (미 발표)</td><td>계류 소형정 포함 여부의 차이</td></tr>
+          <tr><td>미국 전비</td><td class="n">375억 달러 (국방부 공식)</td><td class="n">1,000억 달러+ (독립 추정)</td><td>약 3배</td></tr>
+          <tr><td>이란 경제 피해</td><td class="n">2,700억 달러</td><td class="n">1조 달러</td><td>약 4배. 독립 평가가 없음</td></tr>
+          <tr><td>공급 손실</td><td class="n">하루 1,000만 배럴</td><td class="n">하루 1,400만 배럴</td><td>'오프라인 생산'과 '묶인 수출'의 정의 차이</td></tr>
+          <tr><td>모즈타바 득표</td><td class="n">투표용지 50~59장 회수</td><td>"만장일치"</td><td>NYT는 88명 중 59표</td></tr>
+          <tr><td>IRIS Dena 사망자</td><td class="n">87명</td><td class="n">104명</td><td>승조원 총원도 약 140명설</td></tr>
+          <tr><td>미군 항공기 손실</td><td class="n">46대 이상</td><td class="n">65대</td><td>추적 주체별 상이</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>한쪽만 주장하고 검증되지 않은 것들</h4>
+    <ul>
+      <li><strong>미나브 여학교 사망자 180명</strong> — 이란 측 발표. 다만 사건 자체는 국제법률가위원회가 인용</li>
+      <li><strong>'민 자다이' 지하 핵무기 시설 파괴</strong> — 미·이스라엘 주장. IAEA는 무기화 증거를 찾지 못했다는 입장</li>
+      <li><strong>디에고 가르시아 공격</strong> — 미국은 있었다고, 이란은 이스라엘의 위장작전이라고 주장. 미사일이 접근했다는 증거는 미공개</li>
+      <li><strong>USS Abraham Lincoln 피격</strong>(이란 주장) — 미국 부인</li>
+      <li><strong>바레인·쿠웨이트 내 미군 85개 시설 타격</strong>(이란 주장, 7월) — 확인되지 않음</li>
+      <li><strong>카타르의 대이란 보복 타격</strong> — 이스라엘 언론 보도, 도하 전면 부인</li>
+      <li><strong>PJAK의 이란 지상 공세</strong> — 미·이스라엘 당국자는 확인, PJAK과 쿠르드자치정부는 부인</li>
+      <li><strong>하메네이 유언장의 아들 승계 반대</strong> — 회의 참석자 증언, 독립 검증 없음</li>
+      <li><strong>페제시키안 사임설</strong>(6월) — 이란 국영매체 부인</li>
+      <li><strong>쿠슈너·위트코프의 사익 추구</strong> — 이란 측 주장, 입증되지 않음</li>
+      <li><strong>시위 진압 중 화학무기 사용</strong> — 근거가 부족한 주장</li>
+    </ul>
+
+    <div class="note quiet">
+      <span class="lbl">방법론에 대한 정직한 고백</span>
+      <p>이 문서는 2026년 8월 21일까지 공개된 자료를 기반으로 작성됐습니다. 위키백과의 여러 문서, 알자지라·NPR·PBS·로이터 등의 보도, IMF·IEA·세계은행·IAEA·유엔의 1차 문서, 크라이시스그룹·채텀하우스·브루킹스·CSIS·카네기 등의 분석, 그리고 KIEP·KDI·에너지경제연구원·자본시장연구원·삼일PwC·한국해양전략연구소 등 국내 기관 보고서를 교차 확인했습니다. CNN·NBC·블룸버그·하레츠 등 일부 매체는 기술적으로 직접 확인할 수 없어 <strong>병행 보도로 대체</strong>했습니다.</p>
+      <p><strong>진행 중인 사안입니다.</strong> 특히 8월 17일 시한 만료 이후의 국면은 며칠 단위로 바뀔 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section id="sources">
+    <p class="eyebrow">출처</p>
+    <h3>주요 참고 자료</h3>
+    <div class="src">
+      <h5>역사 · 배경 (Part Ⅰ)</h5>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/1953_Iranian_coup_d%27%C3%A9tat">1953 Iranian coup d'état</a> · <a href="https://en.wikipedia.org/wiki/Iranian_Revolution">Iranian Revolution</a> · <a href="https://en.wikipedia.org/wiki/White_Revolution">White Revolution</a> · <a href="https://en.wikipedia.org/wiki/SAVAK">SAVAK</a> · <a href="https://en.wikipedia.org/wiki/Iran_hostage_crisis">Iran hostage crisis</a> · <a href="https://en.wikipedia.org/wiki/Guardianship_of_the_Islamic_Jurist">Guardianship of the Islamic Jurist</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Iran%E2%80%93Iraq_War">Iran–Iraq War</a> · <a href="https://en.wikipedia.org/wiki/War_of_the_Cities">War of the Cities</a> · <a href="https://en.wikipedia.org/wiki/Halabja_massacre">Halabja massacre</a> · <a href="https://en.wikipedia.org/wiki/Tanker_War">Tanker War</a> · <a href="https://en.wikipedia.org/wiki/Iran_Air_Flight_655">Iran Air Flight 655</a> · <a href="https://thebulletin.org/2024/07/iraq-once-devasted-iran-with-chemical-weapons-as-the-world-stood-by-governments-still-struggle-to-respond-to-chemical-warfare/">Bulletin of the Atomic Scientists — 화학무기와 국제사회의 침묵</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Iran%E2%80%93Israel_relations">Iran–Israel relations</a> · <a href="https://en.wikipedia.org/wiki/Alliance_of_the_periphery">Alliance of the periphery</a> · <a href="https://en.wikipedia.org/wiki/AMIA_bombing">AMIA bombing</a> · <a href="https://en.wikipedia.org/wiki/Stuxnet">Stuxnet</a> · <a href="https://iranprimer.usip.org/blog/2020/dec/02/part-5-assassinations-iran-nuclear-scientists">USIP Iran Primer — 핵과학자 암살</a> · <a href="https://en.wikipedia.org/wiki/Twelve-Day_War">Twelve-Day War (2025)</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Hezbollah">Hezbollah</a> · <a href="https://en.wikipedia.org/wiki/1983_Beirut_barracks_bombings">1983 Beirut barracks bombings</a> · <a href="https://en.wikipedia.org/wiki/Popular_Mobilization_Forces">Popular Mobilization Forces</a> · <a href="https://en.wikipedia.org/wiki/Iran%E2%80%93Syria_relations">Iran–Syria relations</a> · <a href="https://en.wikipedia.org/wiki/Abqaiq%E2%80%93Khurais_attack">Abqaiq–Khurais attack</a> · <a href="https://www.crisisgroup.org/qna/middle-east-north-africa-saudi-arabia-iran-china/how-beijing-helped-riyadh-and-tehran-reach-detente">크라이시스그룹 — 베이징 중재</a></li>
+        <li><a href="https://www.armscontrol.org/factsheets/timeline-nuclear-diplomacy-iran-1967-2023">군축협회 — 이란 핵외교 연표</a> · <a href="https://www.armscontrol.org/factsheets/status-irans-nuclear-program-1">군축협회 — 핵 프로그램 현황</a> · <a href="https://www.iranwatch.org/our-publications/weapon-program-background-report/history-irans-nuclear-program">Iran Watch — 핵 프로그램의 역사</a> · <a href="https://www.iranwatch.org/our-publications/weapon-program-background-report/irans-centrifuges-models-status">Iran Watch — 원심분리기 세대</a> · <a href="https://www.iaea.org/sites/default/files/documents/gov-2015-68.pdf">IAEA 2015 최종평가 (PDF)</a> · <a href="https://isis-online.org/isis-reports/analysis-of-iaea-iran-verification-and-monitoring-and-npt-safeguards-reports-june-2026">ISIS — 2026년 6월 IAEA 보고서 분석</a></li>
+        <li><a href="https://www.everycrsreport.com/files/20191115_RS20871_84b40bd275f6ce5988354065f35bb900c1b17c9c.pdf">미 의회조사국 — 이란 제재(PDF)</a> · <a href="https://www.atlanticcouncil.org/blogs/iransource/irans-economy-and-the-burden-of-multiple-exchange-rates/">애틀랜틱카운슬 — 다중환율의 부담</a> · <a href="https://www.worldbank.org/ext/en/country/iran">세계은행 이란 국가페이지</a> · <a href="https://www.undp.org/sites/g/files/zskgke326/files/2026-03/undp-rbap-military-escalation-impact-iran-report-iran-updated-as-of-31_0.pdf">UNDP — 전쟁의 이란 경제·인간개발 영향(PDF)</a> · <a href="https://en.wikipedia.org/wiki/Iranian_energy_crisis">Iranian energy crisis</a></li>
+        <li><a href="https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints">EIA — 세계 석유 수송 요충지</a> · <a href="https://www.iea.org/about/oil-security-and-emergency-response/strait-of-hormuz">IEA — 호르무즈 해협</a> · <a href="https://www.federalreservehistory.org/essays/oil-shock-of-1973-74">연준 — 1973~74 오일쇼크</a> · <a href="https://www.brookings.edu/articles/what-irans-1979-revolution-meant-for-us-and-global-oil-markets/">브루킹스 — 1979년 혁명과 석유시장</a> · <a href="https://www.chathamhouse.org/2026/04/strait-hormuz-shipping-and-law">채텀하우스 — 호르무즈, 해운, 그리고 법</a></li>
+        <li><a href="https://encykorea.aks.ac.kr/Article/E0080953">한국민족문화대백과 — 중동 건설붐</a> · <a href="https://encykorea.aks.ac.kr/Article/E0068181">한국민족문화대백과 — 석유파동</a> · <a href="https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EC%9D%B4%EB%9E%80_%EA%B4%80%EA%B3%84">위키백과 — 대한민국·이란 관계</a> · <a href="https://ko.wikipedia.org/wiki/2021%EB%85%84_%ED%95%9C%EA%B5%AD%EC%BC%80%EB%AF%B8%ED%98%B8_%EB%82%98%ED%8F%AC_%EC%82%AC%EA%B1%B4">위키백과 — 한국케미호 나포</a> · <a href="https://www.washingtoninstitute.org/policy-analysis/iran-hostage-deal-clarifying-6-billion-transfer">워싱턴연구소 — 60억 달러 이전의 실제 내용</a> · <a href="https://www.ytn.co.kr/_ln/0101_202001211705371743">YTN — 2020년 청해부대 작전구역 확대</a></li>
+      </ul>
+      <h5>전쟁 경과 · 군사</h5>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/2026_Iran_war">2026 Iran war</a> · <a href="https://en.wikipedia.org/wiki/Timeline_of_the_2026_Iran_war">Timeline of the 2026 Iran war</a> · <a href="https://en.wikipedia.org/wiki/Prelude_to_the_2026_Iran_war">Prelude</a> · <a href="https://en.wikipedia.org/wiki/Assassination_of_Ali_Khamenei">Assassination of Ali Khamenei</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis">2026 Strait of Hormuz crisis</a> · <a href="https://en.wikipedia.org/wiki/2026_United_States_naval_blockade_of_Iran">US naval blockade of Iran</a> · <a href="https://en.wikipedia.org/wiki/Israeli_occupation_of_Southern_Lebanon_(2026)">Israeli occupation of Southern Lebanon (2026)</a> · <a href="https://en.wikipedia.org/wiki/List_of_ships_attacked_during_the_2026_Iran_war">List of ships attacked</a></li>
+        <li><a href="https://media.defense.gov/2026/Mar/16/2003899496/-1/-1/1/OPERATION-EPIC-FURY-FACT-SHEET.PDF">미 국방부 — Operation Epic Fury Fact Sheet</a> · <a href="https://www.globalsecurity.org/military/ops/iran-war-update.htm">GlobalSecurity 전황 업데이트</a> · <a href="https://acleddata.com/iran-crisis-live">ACLED Iran Crisis Live</a> · <a href="https://www.criticalthreats.org/analysis/iran-update-special-report-august-17-2026">ISW/Critical Threats (8/17)</a></li>
+      </ul>
+      <h5>외교 · 협상</h5>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Islamabad_Memorandum">Islamabad Memorandum</a> · <a href="https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire">2026 Iran war ceasefire</a> · <a href="https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_2817">UNSC Resolution 2817</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart">알자지라 — 각서는 왜 무너졌나</a> · <a href="https://www.aljazeera.com/news/2026/8/18/why-has-trump-threatened-to-bomb-oman-for-a-second-time">알자지라 — 트럼프의 오만 위협</a> · <a href="https://www.aljazeera.com/news/2026/8/19/uae-trade-embargo-could-shut-irans-key-economic-escape-route-heres-why">알자지라 — UAE 거래 중단</a> · <a href="https://www.aljazeera.com/news/2026/5/3/whats-irans-14-point-proposal-to-end-the-war-and-will-trump-accept-it">알자지라 — 이란의 14개항</a></li>
+        <li><a href="https://news.un.org/en/story/2026/04/1167261">유엔 뉴스 — 호르무즈 결의 거부권</a> · <a href="https://press.un.org/en/2026/sc16315.doc.htm">유엔 — 결의 2817</a> · <a href="https://www.icj.org/iran-united-states-israel-unlawful-attacks-must-cease/">국제법률가위원회 성명</a></li>
+        <li><a href="https://www.crisisgroup.org/qna/global/iran-israelpalestine-united-states/fragile-ceasefire-under-threat-what-future-strait-hormuz">크라이시스그룹 — 해협의 미래</a> · <a href="https://www.cfr.org/articles/how-pakistan-became-the-iran-wars-unlikely-peace-negotiator">CFR — 파키스탄은 어떻게 중재자가 됐나</a> · <a href="https://www.chathamhouse.org/2026/07/wishful-thinking-behind-war-iran">채텀하우스 — 전쟁의 희망적 관측</a></li>
+      </ul>
+      <h5>정치</h5>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/2026_Iranian_supreme_leader_election">2026 Iranian supreme leader election</a> · <a href="https://en.wikipedia.org/wiki/2025%E2%80%932026_Iranian_protests">2025–2026 Iranian protests</a> · <a href="https://en.wikipedia.org/wiki/2026_Internet_blackout_in_Iran">2026 Internet blackout in Iran</a> · <a href="https://en.wikipedia.org/wiki/March_2026_No_Kings_protests">March 2026 No Kings protests</a></li>
+        <li><a href="https://poll.qu.edu/poll-release?releaseid=3964">퀴니피액 여론조사 (7/29)</a> · <a href="https://www.npr.org/2026/03/17/nx-s1-5750426/joe-kent-counterterrorism-official-resigns-trump">NPR — 조 켄트 사임</a> · <a href="https://www.aljazeera.com/news/2026/3/18/us-intel-chief-gabbard-says-iran-was-not-rebuilding-enrichment-prior-to-war">알자지라 — 개버드 증언</a> · <a href="https://time.com/article/2026/07/23/war-powers-resolution-iran-trump-senate-house-republicans/">TIME — 전쟁권한 결의</a></li>
+        <li><a href="https://news.un.org/en/story/2026/08/1168081">유엔 — 이란 내 처형 급증</a> · <a href="https://www.aljazeera.com/news/2026/8/10/iran-hierarchy-consolidation-as-irgc-veteran-tapped-for-key-security-role">알자지라 — 8월 안보 지휘부 개편</a> · <a href="https://carnegieendowment.org/emissary/2026/04/iran-war-stress-test-gulf-states">카네기 — 걸프 국가 스트레스 테스트</a> · <a href="https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks">NPR — 쿠슈너 가자 셔틀</a></li>
+      </ul>
+      <h5>경제</h5>
+      <ul>
+        <li><a href="https://www.imf.org/-/media/files/publications/weo/2026/update/july/english/text.pdf">IMF 세계경제전망 7월 수정</a> · <a href="https://www.imf.org/-/media/files/publications/reo/mcd-cca/2026/english/text.pdf">IMF 중동·중앙아 지역전망</a> · <a href="https://www.iea.org/reports/oil-market-report-august-2026">IEA 석유시장보고서 8월</a> · <a href="https://www.iea.org/news/iea-member-countries-to-carry-out-largest-ever-oil-stock-release-amid-market-disruptions-from-middle-east-conflict">IEA — 사상 최대 비축유 방출</a></li>
+        <li><a href="https://www.worldbank.org/en/news/press-release/2026/04/28/commodity-markets-outlook-april-2026-press-release">세계은행 원자재시장전망</a> · <a href="https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260727~1212bdb8f9.en.html">ECB 블로그 — 왜 충격이 작았나</a> · <a href="https://www.bruegel.org/analysis/how-europe-should-respond-iran-gas-shock-and-how-it-shouldnt">브뤼겔 — 유럽의 가스 대응</a></li>
+        <li><a href="https://www.aljazeera.com/economy/2026/7/23/how-shipping-insurance-rates-are-rising-as-hormuz-bab-al-mandeb-shut-down">알자지라 — 해운 보험료</a> · <a href="https://www.imo.org/en/mediacentre/pressbriefings/pages/no-safe-transit-through-hormuz-imo-secretary-general.aspx">IMO — 안전한 통항은 없다</a> · <a href="https://www.forbes.com/sites/guneyyildiz/2026/07/28/hormuz-is-becoming-a-fee-and-permission-regime/">포브스 — 요금과 허가의 체제</a></li>
+        <li><a href="https://www.csis.org/analysis/chokepoint-how-war-iran-threatens-global-food-security">CSIS — 식량안보</a> · <a href="https://www.ifpri.org/blog/the-iran-wars-impacts-on-global-fertilizer-markets-and-food-production/">IFPRI — 비료시장</a> · <a href="https://www.brookings.edu/articles/from-chokepoint-to-crisis-the-strait-of-hormuz-and-global-oil-markets/">브루킹스 — 병목에서 위기로</a></li>
+      </ul>
+      <h5>한국</h5>
+      <ul>
+        <li><a href="https://www.kiep.go.kr/galleryDownload.es?bid=0003&list_no=12327&seq=1">KIEP — 미·이란 전쟁에 따른 유가 충격의 주요국 파급효과</a> · <a href="https://www.kiep.go.kr/galleryDownload.es?bid=0004&list_no=12320&seq=1">KIEP — 우리나라의 중동산 원유 의존 배경과 과제</a></li>
+        <li><a href="https://www.keei.re.kr/boardDownload.es?bid=0014&list_no=127165&seq=1">에너지경제연구원 — 호르무즈 해협의 석유·가스 수송 현황</a> · <a href="https://www.kdi.re.kr/research/reportView?pub_no=19180">KDI 경제전망 2026 상반기</a> · <a href="https://www.kcmi.re.kr/publications/pub_detail_view?syear=2026&zcd=002001016&zno=1920&cno=6791">자본시장연구원 하반기 전망</a></li>
+        <li><a href="https://www.pwc.com/kr/ko/insights/issue-brief/samilpwc_us-iran-conflict-economic-impact.pdf">삼일PwC — 한국 경제·산업 영향 점검</a> · <a href="https://kims.or.kr/issubrief/kims-periscope/peri421/">한국해양전략연구소 — 호르무즈 봉쇄의 전략적 함의</a> · <a href="https://hrcopinion.co.kr/archives/35894">한국리서치 — 한국인의 인식 조사</a></li>
+        <li><a href="https://www.etnews.com/20260325000056">전자신문 — 카타르 LNG 불가항력</a> · <a href="https://www.fnnews.com/news/202607131025521621">파이낸셜뉴스 — 정부 석유 수급 긴급 점검</a> · <a href="https://www.fnnews.com/news/202605131826192953">파이낸셜뉴스 — 호르무즈 파병과 국회 동의</a> · <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=274991">Businesskorea — 연합훈련 축소 지시</a> · <a href="https://thehill.com/homenews/administration/6033853-trump-south-korea-military-exercises-iran/">The Hill — 훈련 축소와 이란</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>작성 <span class="num">2026.08.21</span></span>
+    <span>진행 중인 사안 — 수치는 변동됩니다</span>
+    <span>사상자·피해액은 당사자별 주장 병기</span>
+    <span>검증되지 않은 주장은 별도 표기</span>
+  </footer>
+<details class="bglive"><summary><span>최근 국면 — 타임라인 최신 항목 (자동 갱신)</span><span>갱신 2026. 8. 22. 09:59 (도하 기준)</span></summary><ul><li><span class="ld">2026.8.21.</span><span>미 항공모함, 중동 해역서 철수 — 장기 배치 피로 누적으로 전력 재배치</span></li><li><span class="ld">2026.8.21.</span><span>美, 카타르에 KC-46A 급유기 최대 4대(45억 달러 규모) 판매 승인 — 카타르 공군 공중급유 능력 확대 목적</span></li><li><span class="ld">2026.8.21.</span><span>美 재무장관, 이란에 '역대 최강' 제재 24일 발표 예고 — 트럼프 '경제적 디데이' 선언, 동맹·중국 동참 압박</span></li><li><span class="ld">2026.8.21.</span><span>이란, 美 제재 강화에 '괴멸적' 보복 위협 — 군 수뇌부 '오판 시 혁명적·파괴적 대응' 경고</span></li><li><span class="ld">2026.8.21.</span><span>호르무즈해협 통항 선박 한 자릿수로 급감·1,500척 이상 대기 — 이란 원유는 中수출 위해 가격 인상</span></li><li><span class="ld">2026.8.21.</span><span>UAE, 이란과의 무역 중단 — 테헤란의 핵심 대외무역 통로 차단</span></li><li><span class="ld">2026.8.21.</span><span>미군 이란전쟁 부상자 750명 이상 — 워싱턴포스트 보도, 이란전쟁 중 미군 복무자 750명 이상 부상 확인</span></li><li><span class="ld">2026.8.21.</span><span>레바논 사망자 4348명으로 집계 — 레바논 보건부, 3/2 이후 이스라엘 공격 사망 4348명·부상 1만2300명 이상 발표</span></li></ul><a class="lmore" href="/qatar-media-monitor/timeline-ko.html" target="_blank" rel="noopener">전체 타임라인 보기 →</a><p class="lnote">※ 이 목록은 모니터링 갱신 때마다(1일 2회) 타임라인과 함께 자동으로 다시 씁니다. 위 배경 서술은 고정 문서이며, 정세가 크게 바뀌면 별도로 개정합니다.</p></details>
+
+
+</div>
+
+</body>
+</html>

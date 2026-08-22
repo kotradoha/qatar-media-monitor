@@ -597,6 +597,7 @@ LANG = {
   "wk_head": "🗓️ 지난주 언론 동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_cta": "지난주 종합 동향 보러가기", "wk_cta_sub": "카타르 정부동향·언론동향 주간 종합", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
+  "bg_tag": "배경", "bg_head": "중동 전쟁 배경 및 추이", "tl_link": "2026 중동 전쟁 타임라인",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
   "tl_all": "전체", "tl_qonly": "카타르만", "tl_qex": "카타르 제외", "tl_dl": "⬇ 엑셀 다운로드", "tl_c_date": "날짜", "tl_c_cat": "구분", "tl_c_event": "사건", "tl_c_detail": "상세", "tl_c_link": "관련 기사", "tl_link_go": "바로가기", "tl_cat_gen": "일반", "tl_fname": "중동전쟁_타임라인", "tl_sheet": "타임라인",
   "gov_head": "🏛️ 정세 관련 카타르 정부 동향", "gov_head_wk": "🏛️ 지난주 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
@@ -649,6 +650,7 @@ LANG = {
   "wk_head": "🗓️ Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_cta": "View last week's digest", "wk_cta_sub": "Weekly digest — Qatar govt & media trends", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
+  "bg_tag": "Background", "bg_head": "War Background \u0026 Trajectory (Korean)", "tl_link": "Middle East War Timeline (2026)",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
   "tl_all": "All", "tl_qonly": "Qatar only", "tl_qex": "Exclude Qatar", "tl_dl": "⬇ Download Excel", "tl_c_date": "Date", "tl_c_cat": "Category", "tl_c_event": "Event", "tl_c_detail": "Details", "tl_c_link": "Article", "tl_link_go": "Open", "tl_cat_gen": "General", "tl_fname": "MiddleEast_War_Timeline", "tl_sheet": "Timeline",
   "gov_head": "🏛️ Qatar government activity", "gov_head_wk": "🏛️ Last week — Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
@@ -703,6 +705,7 @@ LANG = {
   "wk_head": "🗓️ الأسبوع الماضي — اتجاهات الإعلام", "wk_open": "افتح التقرير الأسبوعي كصفحة مستقلة →", "wk_cta": "عرض موجز الأسبوع الماضي", "wk_cta_sub": "الموجز الأسبوعي — نشاط الحكومة القطرية واتجاهات الإعلام", "wk_none": "لم يُنشأ الموجز الأسبوعي — ستُعاد المحاولة في التحديث التالي.",
   "quick_head": "روابط الإعلام والحكومة والمؤسسات", "quick_note": "(مرتّبة أبجديًا)",
   "tl_head": "الجدول الزمني لحرب الشرق الأوسط (2026)", "tl_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026 · الأحدث أولاً · جُمِعت بالتحقّق المتقاطع من تقارير عامة موثوقة، وتُحدَّث مع كل حدث جديد", "tl_q": "قطر",
+  "bg_tag": "خلفية", "bg_head": "خلفية الحرب ومسارها (بالكورية)", "tl_link": "الجدول الزمني لحرب الشرق الأوسط (2026)",
   "tl_tag": "مرجع", "tl_back": "← العودة إلى الراصد", "tl_src_label": "المصادر", "tl_src_note": "أبرز الأحداث منذ اندلاع الحرب في 28 فبراير 2026، الأحدث أولاً، وتُحدَّث مع كل حدث جديد. جُمِعت بالتحقّق المتقاطع من المصادر العامة الموثوقة أعلاه؛ ويُرجى التحقّق من الأرقام والصياغة الدقيقة لدى كل مصدر والإعلانات الأولية.",
   "tl_all": "الكل", "tl_qonly": "قطر فقط", "tl_qex": "استثناء قطر", "tl_dl": "⬇ تنزيل Excel", "tl_c_date": "التاريخ", "tl_c_cat": "الفئة", "tl_c_event": "الحدث", "tl_c_detail": "التفاصيل", "tl_c_link": "المقال", "tl_link_go": "فتح", "tl_cat_gen": "عام", "tl_fname": "timeline_alsharq_alawsat", "tl_sheet": "الجدول الزمني",
   "gov_head": "🏛️ نشاط الحكومة القطرية", "gov_head_wk": "🏛️ الأسبوع الماضي — نشاط الحكومة القطرية", "gov_none": "لا توجد مستجدات تُذكر خلال فترة الرصد هذه.",
@@ -728,7 +731,12 @@ MAX_PER_SECTION = 60
 POOL_FOR_ISSUES = 72          # 사안 분류에 넘길 기사 수(Sonnet 5 대용량 컨텍스트 — 원산지 고루 반영·중요 기사 누락 방지)
 DESC_MAX = 220                # 각 기사 desc를 프롬프트에 넣을 때 최대 길이
 ARCHIVE_MANIFEST_DAYS = 60    # 드롭다운(매니페스트)에 노출할 최근 회차 기간(일). 그 이전은 '전체 회차' 페이지로만(파일은 전부 보존·삭제 없음)
-SITE_BASE = "/qatar-media-monitor/"   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
+SITE_BASE = "/qatar-media-monitor/"
+try:                       # 중동 전쟁 배경 페이지(background-ko.html) 생성 모듈
+    import background as _bg
+except Exception as _e:    # 모듈이 없어도 나머지 파이프라인은 정상 동작
+    _bg = None
+    print(f"[warn] background module unavailable: {_e}")   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
 FLIGHT_URL = "https://kotradoha.github.io/qatar-korea-flight-monitor/"   # 자매 사이트(항공 모니터링)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
@@ -3018,9 +3026,13 @@ def timeline_ref(lang="ko"):
     # 별도 버튼 대신 '모니터링 부문' 박스 안에 참고 링크로 삽입 (본문과 동일 크기, 언어버튼 색)
     L = LANG.get(lang, LANG["ko"])
     url = f"{SITE_BASE}timeline-{lang}.html"
+    bgurl = f"{SITE_BASE}background-ko.html"
     return (f'<span class="tldiv"></span>'
             f'<span class="tlref">📌 {esc(L["tl_tag"])}: '
-            f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(L["tl_head"])} →</a></span>')
+            f'<a class="tlchip" href="{esc(url)}" target="_blank" rel="noopener">'
+            f'{esc(L["tl_link"])}<span class="arr">→</span></a>'
+            f'<a class="tlchip" href="{esc(bgurl)}" target="_blank" rel="noopener">'
+            f'{esc(L["bg_head"])}<span class="arr">→</span></a></span>')
 
 def _tl_asof(lang="ko"):
     """타임라인 '오늘(다운로드 시점) 기준' 표기 — 누적 자료임을 제목에 명시."""
@@ -3897,6 +3909,19 @@ TEMPLATE = """<!DOCTYPE html>
   .tlref{{display:block;font-size:12.5px;color:var(--muted)}}
   .tlref a{{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45)}}
   .tlref a:hover{{text-decoration-color:var(--accent)}}
+  /* 참고 링크 — 버튼형 칩(항공 모니터링 링크와 동일한 색) */
+  .tlref a.tlchip,.tlchip{{display:inline-flex;align-items:center;gap:7px;margin:5px 7px 0 0;padding:4px 11px;
+    border:1px solid var(--line);border-radius:8px;background:var(--panel2);
+    color:var(--accent);font-size:11.5px;font-weight:700;text-decoration:none;vertical-align:middle;
+    white-space:nowrap;transition:background .15s,border-color .15s}}
+  .tlref a.tlchip:hover,.tlchip:hover{{background:var(--panel);border-color:var(--accent);
+    color:var(--accent);text-decoration:none}}
+  .tlref a.tlchip .arr,.tlchip .arr{{color:var(--accent);font-weight:800}}
+  /* 모바일 — 버튼 두 개를 한 줄에 하나씩 */
+  @media (max-width:560px){{
+    .tlref a.tlchip,.tlchip{{display:flex;width:100%;justify-content:space-between;
+      margin:6px 0 0;padding:7px 12px;font-size:12px;white-space:normal}}
+  }}
   .dlbar{{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:2px 0 20px}}
   .dll{{font-size:12px;font-weight:700;color:var(--muted)}}
   .dlbtn{{font:inherit;font-size:12.5px;font-weight:700;color:var(--accent);background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:7px 14px;cursor:pointer;white-space:nowrap}}
@@ -5037,6 +5062,19 @@ def main():
         # 중동 전쟁 타임라인 독립 페이지(새 탭으로 열림)
         with open(f"timeline-{lang}.html", "w", encoding="utf-8") as fh:
             fh.write(render_timeline_page(lang))
+        # 중동 전쟁 배경 및 추이(배경 분석) 페이지 — 국문 1종, 하단 '최근 국면' 블록만 매 회차 자동 갱신
+        if lang == "ko" and _bg is not None:
+            try:
+                _now = datetime.now(TZ)
+                with open("background-ko.html", "w", encoding="utf-8") as fh:
+                    fh.write(_bg.render_background_page(
+                        entries=_timeline_entries(),
+                        home=SITE_BASE,
+                        timeline_url=f"{SITE_BASE}timeline-ko.html",
+                        now_str=f"갱신 {_now.year}. {_now.month}. {_now.day}. {_now.hour:02d}:{_now.minute:02d} (도하 기준)"))
+                print("[info] background-ko.html generated")
+            except Exception as ex:
+                print(f"[warn] background page failed: {ex}")
 
     mode = "issues" if issues else ("flat" if flat else "none")
     print(f"generated ko/en/ar · dno={dno} · window={label_ko} · items={len(items)} · summary={mode} · "
