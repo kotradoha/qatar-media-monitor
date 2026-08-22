@@ -130,6 +130,78 @@
   "status": "pending"
  },
  {
+  "d": "2026-08-21",
+  "ko": "미군 이란전쟁 부상자 750명 이상 — 워싱턴포스트 보도, 이란전쟁 중 미군 복무자 750명 이상 부상 확인",
+  "en": "Over 750 US service members wounded in Iran war — Washington Post reports more than 750 US troops wounded during Iran conflict",
+  "ar": "أكثر من 750 من أفراد الخدمة الأمريكية أصيبوا في حرب إيران — واشنطن بوست تفيد بإصابة أكثر من 750 جنديًا أمريكيًا خلال النزاع مع إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNHQ3Zm9lU2xoYlZiSmN0bVlWZ08wMFNVa1A5ZDU5d2w5VjJCQXY0bnoxLW1FS1dxVnZsSHZzeVRyYmRiQldQUkxRNkxDSy05cy1pR1ZVbFQtd0FCMVpVSkNTdENBbV8xd0tjVHhTSE9fYXFWVElhejA2UFZJU2tXaV9sUDdWNWt3MFdtY1V0T3BFRUtkV0NCR3hqOERrcUYxVmw5NkhYUnFZaE1UMFYw?oc=5"
+   ]
+  ],
+  "first_seen": "20260822-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-21",
+  "ko": "레바논 사망자 4348명으로 집계 — 레바논 보건부, 3/2 이후 이스라엘 공격 사망 4348명·부상 1만2300명 이상 발표",
+  "en": "Lebanon death toll rises to 4,348 — Lebanese Health Ministry says Israeli attacks since March 2 killed 4,348 and wounded over 12,300",
+  "ar": "ارتفاع حصيلة قتلى لبنان إلى 4348 — وزارة الصحة اللبنانية تعلن مقتل 4348 وإصابة أكثر من 12300 جراء الهجمات الإسرائيلية منذ 2 مارس",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-death-toll-rises-4"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247138/At-least-4-348-killed-by-Israeli-regime-in-Lebanon"
+   ]
+  ],
+  "first_seen": "20260822-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-21",
+  "ko": "미 중부사령부, 이란 해상봉쇄 관련 상선 68척 우회·3척 무력화·2척 나포 발표",
+  "en": "US Centcom says 68 vessels redirected, 3 disabled, 2 boarded so far under Iran naval blockade enforcement",
+  "ar": "القيادة المركزية الأمريكية: تحويل مسار 68 سفينة وتعطيل 3 وصعود 2 أخريين في إطار فرض الحصار البحري على إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-68-vessels-redirected-so-far-iran-naval-blockade"
+   ]
+  ],
+  "first_seen": "20260822-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-21",
+  "ko": "사우디 얀부항 유조선 통항량 후티 봉쇄 이후 3분의 1 이상 감소",
+  "en": "Tanker traffic at Saudi Arabia's Yanbu port falls by more than a third since Houthi blockade announcement",
+  "ar": "حركة الناقلات في ميناء ينبع السعودي تنخفض بأكثر من الثلث منذ إعلان الحوثيين الحصار",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/tanker-traffic-saudi-arabias-yanbu-port-falls-third-report-says"
+   ]
+  ],
+  "first_seen": "20260822-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-20",
   "ko": "이란전 미군 누적 부상자 757명·사망자 18명으로 집계—USS 링컨함 열악한 근무여건도 부각",
   "en": "US military casualties in Iran war reach cumulative 757 wounded, 18 dead — reports also highlight dire conditions aboard USS Lincoln",
@@ -1773,94 +1845,6 @@
    ]
   ],
   "first_seen": "20260814-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-14",
-  "ko": "이란, 호르무즈 해협 '통제권' 공식화 선언 — 트럼프 주장 반박",
-  "en": "Iran formalizes claim of control over Strait of Hormuz, rejects Trump's claims",
-  "ar": "إيران تعلن رسمياً سيطرتها على مضيق هرمز وترفض ادعاءات ترامب",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMW9qSFRrMzg3d2JTQUp5cTVDVkR1alZvVVpDeFRNbTJaTE1ZdjRDYnFrLUVxY2FEcTNIVGtVZ3RHZkxTbFphb1BDMW4zZVQ2eUZvc2dETFZlS2daT3BVOFE3dGpFV2VsTEttMk1tQlY5ZTFScmFhMzk2bmNoZ05sQjRkOFlZMnVWb2diX2ZtdjBPUkFXbTdmRHVjTWEtUDU5QU9nZWd6TnB4MFI0MUoxZ2FWZFJHSjjSAbwBQVVfeXFMUEN4cFR6T3RMRUxVMUVXMWpqNU1sTXlzamt1RXBUeUx5R1oyR1k2ZGswTWJJemVSZjZMUlN4NzBMR0daNnlSSVEzUWkyck5vVFU3ZlRNek9obXJ1VHY2RFNHWV9PMHVMcmEyZUxWcGtSek5LOXU0dEJVdzFVa2wwWk84QXlhQmNZS3VzOHZiVFIwZHdvNUY2RGRwdVFJbmlQYmtWZVhEVk9MRHVPajZOaDBRQUN0VGdsQ21RbEU?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcDIwMTFqZDZ3bHNQZ2Q2MFpZX2ItZWtKWUp4YUxzbjhEdTNweDRhSFJMT043NmYycmlGVm4zaTVSZDVxS3NzTU1Rb3ZuYlUzajc4YWVLSzV4SzFZaTVpYnFSbHU2emJKSWxuOVFGcmk2bEdTR2ZlQkFraXlRaHBOUkVDNjBPVzNPUFRmNjdBbC16RkREY25zY2Nya2lKd003VlI0U1JFZDlEaDFFNTJTV3FCNngxUUE?oc=5"
-   ]
-  ],
-  "first_seen": "20260814-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-14",
-  "ko": "이란 IRGC, 호르무즈 상공서 미군 MQ-9 리퍼 드론 격추 재발 — 호르무즈해협 상공서 이란 방공부대가 미군 무인기 격추했다고 발표(이란측 주장)",
-  "en": "Iran's IRGC shoots down US MQ-9 Reaper drone over Hormozgan again — Iranian air defense claims downing of US drone over Strait of Hormuz",
-  "ar": "الحرس الثوري الإيراني يسقط طائرة أمريكية مسيّرة من طراز MQ-9 فوق هرمزجان مجددا — إعلان إيراني بإسقاط طائرة أمريكية بدون طيار فوق مضيق هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/246956/IRGC-shoots-down-US-MQ-9-drone-over-Hormozgan"
-   ]
-  ],
-  "first_seen": "20260815-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-14",
-  "ko": "UAE ADNOC 유조선, 호르무즈해협 통과 중 피격 — 사우디·UAE 강력 규탄, 후티 '사우디 함정·용병 겨냥' 주장 속 긴장 고조",
-  "en": "UAE ADNOC tanker attacked while transiting Strait of Hormuz — Saudi Arabia condemns strike as tensions escalate amid Houthi claims of targeting Saudi vessels",
-  "ar": "هجوم على ناقلة تابعة لأدنوك الإماراتية أثناء عبورها مضيق هرمز — السعودية تدين الهجوم بشدة وسط تصاعد التوتر وادعاءات حوثية باستهداف سفن سعودية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-condemns-attack-uae-tankers-hormuz"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVTFuRVhHeWl1X2RXS0d4eWt2UjdyMkpGdFdqbTVtNTM1clp6NEtxUUZGbjJFY3NxT3g4QjQzRlhBZ3BMdEhfOWtEaS1LUE5LX2Q5RXpySTdIT1hVaFduSUVNcnRqaUtpQ0wxcFI3cC1GTHhJVzFCbmhsdEE2ZHJUTWd3dmhXYlg1a293RTFMQXVudnZLcF8ydS1fUW14R0t0QXppbWtTQzJIR3BrblhN?oc=5"
-   ],
-   [
-    "reuters.com",
-    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbEFoM0Z1VnBsRUlGMUtsU3pXUWd6WUVvVW84ak5jbVpIZ25ld1VfR3RITUJ4MEx1ZTRJaGdXSDRadGVRNThPMzFlOVNsNWo4QzV2eTMzVmoxb1RDSE5QNXZkQ1d3bl9oSk85SUFxNEgxU1N6ME9UWHJ6dENMZmk1LWhacTJreTc4VlgtaGRxaFVQbFltR2UwMVN3Z1V3WUJLeHdDNy0wU0NldXRLaVA0NVY5WTZLQ1NOQjJQQWFHSjMtMk9icXc?oc=5"
-   ]
-  ],
-  "first_seen": "20260815-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-14",
-  "ko": "예멘 알마카 항구 후티 탄도미사일 공격으로 최소 4명 사망 — 정부군 지역 겨냥 6발 발사, 예멘정부-후티 휴전 균열 심화",
-  "en": "Houthi ballistic missile attack on al-Makha port kills at least four — six missiles fired at Yemen government-held port, eroding truce with Houthis",
-  "ar": "هجوم صاروخي حوثي على ميناء المخا يقتل أربعة على الأقل — إطلاق ستة صواريخ باليستية على الميناء الخاضع للحكومة اليمنية وسط تصدع الهدنة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/8/14/houthi-attack-on-port-kills-four-eroding-truce-with-yemens-government?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTVBOTXhzdU1DUmFZVk9lVmFiYXZUZndyUlRuQzA5TGRfNm9NRUg1eGtzZEc3TzZsVlloQTFMVWxBMVFsUlJWOUx3M2xENVp0c0xDYTgwYnhlU3llY1hfMjBKVm10cU1JYlJxYXZNQWoyaGR6Q3JFSDZ0OXhBVlcwNmwtOUtla2t1dGhwOGhEUFl2clZKQjM2TFF1SHZSNEE0QTRKTkJwYXZpVHkydUHSAbMBQVVfeXFMTWFYbkV5dmRyZUFsaHF6UUxfTlM0c3J1dGZoNDQ3ZTlxTFVJMnJsblZFVFBjUEJkSEt1TDJJTEhVVVotX19ZQWtKdlh0TURJWVZSNEJSempWX3VYU0FiSXdld1hsY2JRaElMM2pEdUVEZnVPTFpsalIxbVE1UlcyTFpLeFJRUW4wd0lZbjlESWFjY0dfaHBENjAzQjloUWQwQ3hrRXZpYWdValk1TnRUajhpSkk?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-says-houthi-attack-al-mokha-killed-four-civilians"
-   ]
-  ],
-  "first_seen": "20260815-0700",
   "status": "pending"
  }
 ]
