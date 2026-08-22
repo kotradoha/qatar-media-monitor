@@ -6,6 +6,10 @@
 """
 
 BG_TITLE = '중동 전쟁 배경 및 추이'
+# 본문 서술의 기준일. 본문을 개정하면 이 값만 고치면 헤더 표기(기준일·'…까지'·햇수)가 함께 바뀐다.
+# 본문은 고정 문서이므로 이 값을 실제 개정 없이 앞당기면 안 된다.
+BG_ASOF = (2026, 8, 21)
+
 BG_BACK = {'ko': '← 모니터로 돌아가기', 'en': '← Back to the monitor', 'ar': '← العودة إلى الراصد'}
 
 BG_CSS = """
@@ -194,7 +198,7 @@ BG_BODY = """
 
   <hr class="bgpage-div">
   <h1 class="bgpage-h"><span class="bgpage-tag">참고</span>중동 전쟁 배경 및 추이</h1>
-  <div class="bgnotehead">지금의 전쟁은 어느 날 갑자기 시작된 일이 아닙니다. 1901년 석유 이권 계약 한 장에서 비롯된 125년의 흐름을 역사·군사·외교·정치·경제 다섯 갈래로 짚어, 2026년 8월 오늘까지 이어서 정리했습니다.<span class="bgnotedate">본문 기준일 2026. 8. 21.</span></div>
+  <div class="bgnotehead">지금의 전쟁은 어느 날 갑자기 시작된 일이 아닙니다. 1901년 석유 이권 계약 한 장에서 비롯된 __SPAN__년의 흐름을 역사·군사·외교·정치·경제 다섯 갈래로 짚어 __ASOF_YM__까지 정리했습니다.<span class="bgnotedate">본문 기준일 __ASOF__ · 이후 상황은 맨 아래 '최근 국면'에서 갱신됩니다.</span></div>
 
 <div class="bgsrc"><p class="ai">※ IAEA·IEA·IMF·세계은행·UN 안전보장이사회·IMO·미국 EIA 등 국제기구 공개자료, 영국 하원도서관·미국 의회조사국(CRS) 조사보고서, CFR·International Crisis Group·Chatham House·Brookings·Arms Control Association·ISIS 등 연구기관 분석, 로이터·AP·알자지라·NPR·PBS·FT 등 언론 보도, KIEP·KDI·자본시장연구원·에너지경제연구원·한국해양전략연구소 등 국내 기관 자료, 그리고 위키백과를 참고해 AI가 요약·정리한 자료인 점 참고해주시기 바랍니다. 진행 중인 사안이라 수치는 잠정치이며, 당사국 발표는 서로 다를 수 있습니다.</p></div>
 
@@ -2064,8 +2068,12 @@ def render_background_page(entries=None, home="/qatar-media-monitor/", timeline_
     entries: generate.py의 _timeline_entries() 결과(최신순). 없으면 자동 갱신 블록을 비운다.
     """
     live = _live_block(entries or [], timeline_url, now_str, max_events)
+    _y, _m, _d = BG_ASOF
     body = (BG_BODY.replace("__HOME__", home)
                    .replace("__BACK__", BG_BACK["ko"])
+                   .replace("__SPAN__", str(_y - 1901))
+                   .replace("__ASOF_YM__", "%d년 %d월" % (_y, _m))
+                   .replace("__ASOF__", "%d. %d. %d." % (_y, _m, _d))
                    .replace("__LIVE__", live))
     return (BG_TPL.replace("__TITLE__", BG_TITLE)
                   .replace("__CSS__", BG_CSS)
