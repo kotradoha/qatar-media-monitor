@@ -183,6 +183,15 @@ ENERGY_KW = ["crude", "brent", "wti", "opec", "lng", "petroleum", "oil price", "
              "에너지 수급", "가스 수급", "원유 수급", "석유 수급", "천연가스 수급", "lng 수급",
              "수급계획", "수급 계획", "수급전망", "수급 전망", "에너지 전망", "에너지 정책"]
 
+# 유가·에너지'시장' 분석을 시사하는 좁은 어휘 — 공기업(가스공사·석유공사·KOTRA 등)의 국내 운영·조달·PR
+# 공지와 구분하기 위한 게이트. 사업 주체 소스에는 일반 에너지어(lng·천연가스 등)만으론 보고서로 인정하지
+# 않고, 카타르·중동 관련성 '또는' 아래 시장분석 어휘가 있을 때만 인정한다. (바로 'oil price/원유시장' 등)
+ENERGY_ANALYSIS_KW = ["국제유가", "유가", "원유", "브렌트", "두바이유", "석유수요", "원유수요",
+                      "석유 수요", "원유 수요", "석유공급", "원유공급", "석유시장", "원유시장",
+                      "crude", "brent", "wti", "opec", "oil price", "oil demand", "oil market",
+                      "gas market", "에너지 안보", "energy security", "에너지시장", "에너지 시장",
+                      "energy market"]
+
 # 핵심(중요) 토픽 키워드 — 이 중 하나라도 걸리면 '중요 기사'로 보고 소형매체라도 무조건 유지.
 # (넓게 잡아 '중요기사 누락' 위험을 피함. 매칭되면 유지되는 방향이라 오탐은 안전.)
 CORE_KW = [
@@ -944,6 +953,19 @@ REPORT_DENY = ["tradingkey", "이슈밸리", "issuevalley",
 REPORT_EXCLUDE = ("최저한세", "농축 도입", "취업 비자", "취업비자", "비자에 범죄", "범죄경력증명",
                   "월드컵", "관광객", "축구", "기업 규정 준수", "규정 준수 이력", "등록 서비스",
                   "이력 조회 서비스")
+
+# 보고서 발행처 중 '사업 주체'(순수 분석기관이 아니라 국내 운영·조달·PR 공지도 함께 쏟아내는 공기업·수출지원기관).
+# 이들에는 강한 제목 게이트를 적용 — 카타르·중동 관련성 또는 시장분석 어휘가 있을 때만 보고서로 인정.
+_OPERATIONAL_REPORT_SRC = ("가스공사", "kogas", "석유공사", "knoc", "kotra", "무역투자24", "무역관")
+# 중동 국가명이 들어가도 '정세·전쟁·에너지시장'이 아니면 보고서 아님(디지털·AI·관광·스포츠·문화 등 주제).
+# 단, 정세·안보·에너지 신호가 함께 있으면 유지(아래 _REPORT_ONTOPIC_SIGNAL로 예외).
+_REPORT_OFFTOPIC_THEME = ("ai 활용", "ai 도입", "인공지능", "디지털 전환", "디지털전환", "스마트시티",
+                          "스타트업", "관광", "여행", "스포츠", "월드컵", "올림픽", "문화유산", "미술",
+                          "엔터테인먼트", "부동산", "박람회", "전시회", "패션", "요리", "축제", "게임")
+_REPORT_ONTOPIC_SIGNAL = ["전쟁", "war", "안보", "security", "국방", "military", "군사", "제재",
+                          "sanction", "외교", "diplom", "중재", "mediat", "분쟁", "conflict",
+                          "공격", "attack", "미사일", "missile", "핵", "nuclear", "봉쇄", "호르무즈",
+                          "hormuz", "정세", "지정학", "geopolit", "공급망", "supply chain"]
 # 기사 아닌 섹션 랜딩·영상·라이브·뉴스브리핑 등은 '심층 보고서'가 아니므로 제외(검증 게이트)
 _NON_REPORT_TITLE_PREFIX = ("video |", "watch |", "podcast |", "watch:", "video:", "live |", "live:",
                             "▣", "【", "[입찰", "[공고", "(사업취소)", "[모집", "[채용")
@@ -967,6 +989,9 @@ _NON_REPORT_TITLE_SUBSTR = (
     "감사업무", "업무협약", "협약 체결", "협약식", "양해각서 체결", "mou 체결",
     "인사 발령", "임원 인사", "정기인사", "채용 공고", "신규 채용", "신입 채용",
     "준공식", "기공식", "착공식", "간담회 개최", "취임", "이·취임", "위촉", "표창", "봉사활동", "창립기념",
+    # 공기업 조달·물품·시설 공지 및 국가정보 포털(보고서 아님) — 가스공사 입찰/구매/책자, KOTRA 무역투자24 등
+    "무역투자24", "지정장소", "책자제작", "책자 제작", "재공고", "물품구매", "물품 구매",
+    "구매규격", "구매 규격", "규격서", "시방서", "納品", "납품",
 )
 
 # 한국어 통신사 속보·시황단신 헤드라인 형태(연구기관 '분석·보고서'가 아님) → 보고서 섹션에서 원천 배제.
@@ -1025,13 +1050,24 @@ QATAR_RE = _kw_matcher(QATAR_KW)
 MIDEAST_RE = _kw_matcher(MIDEAST_KW)
 
 
-def _report_topic_ok(title):
-    s = (title or "") + " "
+def _is_operational_report_src(src, shref=""):
+    """발행처가 '사업 주체'(가스공사·석유공사·KOTRA 등)인지 — 강한 제목 게이트 적용 대상."""
+    s = ((src or "") + " " + (shref or "")).lower()
+    return any(h in s for h in _OPERATIONAL_REPORT_SRC)
+
+def _report_topic_ok(title, operational=False):
+    # '석유화학'(석유화학 산업)에서 '석유' 부분일치로 유가 주제 오탐되는 것 차단
+    # (중동 석유화학은 국가명으로 별도 통과하므로 여기서 마스킹해도 누락 없음).
+    base = (title or "").replace("석유화학", "")
+    s = base + " "
     q = [k for k in QATAR_KW if k not in _AMBIG_KO]
     me = [k for k in MIDEAST_KW if k not in _AMBIG_KO]
-    if has(s, q) or has(s, me) or has(s, ENERGY_KW):
-        return True
-    return bool(_AMBIG_RE.search(title or ""))
+    geo = has(s, q) or has(s, me) or bool(_AMBIG_RE.search(base))
+    if operational:
+        # 사업 주체: 카타르·중동 관련성 '또는' 시장분석 어휘가 있을 때만 인정
+        #  → lng·천연가스 같은 일반 에너지어만 든 국내 운영·조달·PR 공지는 배제.
+        return geo or has(s, ENERGY_ANALYSIS_KW)
+    return geo or has(s, ENERGY_KW)
 
 def looks_report(title, src, shref=""):
     # 0) 재게시 애그리게이터·뉴스 매체·비(非)기사 페이지는 원천 제외
@@ -1063,12 +1099,18 @@ def looks_report(title, src, shref=""):
     if "emerics" in _s and not any(k in title for k in
             ("[이슈트렌드]", "[이슈인포그래픽]", "[전문가오피니언]", "[이슈분석]", "[동향세미나]", "[전문가칼럼]", "[이슈인사이트]")):
         return False
+    # 국가명만 걸린 정세-무관 주제(AI·디지털 전환·관광·스포츠·문화 등)는 제외 —
+    # 단, 정세·안보·에너지시장 신호가 함께 있으면 유지(오차단 방지).
+    if any(x in _tl for x in _REPORT_OFFTOPIC_THEME) and not (
+            has(title, _REPORT_ONTOPIC_SIGNAL) or has(title, ENERGY_ANALYSIS_KW)):
+        return False
     # 1) 발행처(이름 또는 도메인)가 연구기관/국제기구/컨설팅펌이어야 함(뉴스 매체는 원천 배제)
     if not (is_report_source(src) or _domain_is_report(shref)):
         return False
-    # 2) 중동·카타르 주제(또는 유가·원유·LNG 등 에너지시장)와 연관되어야 함
-    #    — 발행처가 이미 연구기관/국제기구로 한정되므로 에너지 주제 추가는 뉴스 유입 위험 없음.
-    if not _report_topic_ok(title):
+    # 2) 중동·카타르 주제(또는 유가·원유·LNG 등 에너지시장)와 연관되어야 함.
+    #    '사업 주체'(가스공사·석유공사·KOTRA 등)에는 강한 게이트 — 카타르·중동 관련성 또는 시장분석
+    #    어휘가 있을 때만 인정(국내 운영·조달·PR 공지 배제). 순수 연구기관은 종전 기준(에너지 포함) 유지.
+    if not _report_topic_ok(title, operational=_is_operational_report_src(src, shref)):
         return False
     return True
 
@@ -1088,9 +1130,11 @@ def _ai_filter_reports(cands):
             "아래는 '중동 정세 심층 분석·보고서' 섹션 후보 목록이다(발행처는 연구기관·국제기구·컨설팅펌·주요 분석매체). "
             "이 섹션의 주제 범위는 **중동 정세·이란 전쟁, 그리고 그 여파(에너지·유가·원유·LNG, 산업·공급망, 경제·통상 충격, 지정학·안보)**로 한정된다. "
             "각 항목에 대해 다음 중 하나라도 해당하면 DROP 하라: "
+            "(A) 공기업·수출지원기관의 국내 운영·조달·행정·PR 공지(예: 가스공사·석유공사의 설비·물품 구매·입찰·"
+            "지정장소·책자제작·인프라 확충 홍보, KOTRA 무역투자24 국가정보 포털 페이지 등) — 분석 보고서가 아님, 또는 "
             "(B) 단순 속보·데일리 시황단신·헤드라인 나열 등 분석이 아닌 뉴스, 또는 "
-            "(C) 주제 무관 — 중동 국가명이 들어가도 조세·비자·행정서비스·중앙은행 일상공지·스포츠·관광 등 "
-            "'중동 정세/이란 전쟁/그 산업·공급망·에너지 여파'와 실질적 관련이 없는 항목. "
+            "(C) 주제 무관 — 중동 국가명이 들어가도 조세·비자·행정서비스·중앙은행 일상공지·스포츠·관광·"
+            "AI/디지털 전환·문화·엔터테인먼트 등 '중동 정세/이란 전쟁/그 산업·공급망·에너지 여파'와 실질적 관련이 없는 항목. "
             "분석·전망·심층이면서 주제 범위에 관련되면 절대 DROP 하지 마라(보수적 유지). "
             "오직 JSON만 출력: {\"drop\":[번호,...]} (없으면 {\"drop\":[]}).\n\n[후보]\n" + lines
         )
@@ -5109,6 +5153,9 @@ def _merge_reports(items, now_utc):
     _new = []
     for x in items:
         if not x.get("report"):
+            continue
+        # 기관 직접수집 등 report=True로만 들어온 항목도 통합 게이트로 재검증(첫 회차 노출까지 차단)
+        if not looks_report(x.get("title", ""), x.get("source", ""), x.get("shref", "")):
             continue
         k = _report_key(x["link"])
         if k in store:
