@@ -2030,6 +2030,7 @@ def gemini_issues(pool, win_label, weekly=False):
         "하나의 하위 사건·현상에 대한 원인·경과·결과·예상효과 등 서로 연관된 내용은 **한 항목으로 묶고**, 성격이 다른 내용은 항목을 나눠 구분. "
         "각 항목은 정부보고서식 개조식으로, 핵심 사실과 함께 **구체적 수치·규모·주체**(사상자·미사일/드론 수, 국제유가 가격·변동폭, 통항·피격 선박 수, 봉쇄·휴전 기간, 계약·금액·물동량, 지명·기관명 등)를 "
         "문장 안에 충실히 담아 **이 요약만으로 내부 보고가 될 수준**으로 작성. "
+        + _SELFCONTAINED_RULE +
         "특히 원문(제목·발췌)에 등장하는 **날짜·기간·시각, 금액·비율·증감폭, 인원·수량, 지명·기관·인물명** 등 구체 팩트는 "
         "요약이라도 가능한 한 빠짐없이 반영해 최대한 상세하게 쓸 것(단, 원문에 없는 수치·사실은 절대 창작·추정하지 말 것). "
         "명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝내고 서술체('-했다/-이다') 금지. "
@@ -2123,6 +2124,7 @@ def gemini_flat(pool, win_label):
         "■ 핵심 요약: (불릿 3~6개)\n■ 핵심 수치: (사상자·미사일·유가·호르무즈 비중 등 불릿; 없으면 '특이 수치 없음')\n"
         "■ 카타르 관련: (불릿 2~4개, 없으면 '해당 기간 카타르 직접 특이사항 없음')\n■ 중동 정세 주요: (불릿 3~6개)\n"
         "모든 불릿은 정부보고서식 '개조식·했음체'로, 명사형 종결어미 '-함/-음/-됨/-임/-없음'으로 끝낼 것(서술체 '-했다/-이다' 금지). "
+        + _SELFCONTAINED_RULE +
         "제목·발췌에 없는 사실은 창작 금지. '- '로 시작. 마크다운 헤더(#) 금지. "
         "'(현지시간)'·'(한국시간)' 등 시간대 표기를 불릿 맨 앞에 단독으로 붙이지 말 것(필요하면 해당 시각 뒤 괄호로 녹일 것).\n"
         "【매체명 — 내용 우선】 불릿에는 **기본적으로 매체명을 넣지 말고 사실·수치만** 쓰세요. 여러 매체가 동일 보도한 사실은 매체명 나열 금지"
@@ -2182,6 +2184,29 @@ _GOV_WAR_KW = ["iran", "war", "strike", "ceasefire", "truce", "de-escalat", "dee
 _GOV_WAR_KO = ["이란", "전쟁", "긴장", "중재", "정전", "휴전", "공습", "핵", "호르무즈",
                "확전", "외교", "대화"]
 
+# 요약 불릿 자기완결성 규칙(모든 요약 프롬프트 공통) — 앞 맥락을 전제하는 지시어로 시작 금지.
+_SELFCONTAINED_RULE = (
+    "【자기완결성】 각 불릿은 그 자체만 읽어도 무슨 사안인지 이해되게 쓰세요. "
+    "'이번 로드맵은/이 협정은/해당 계획은/동 사안은/이는/그것은' 처럼 앞 맥락(독자가 이미 안다고 전제하는 지시어)"
+    "으로 시작하지 말고, **주체·대상·핵심 사건을 불릿 안에 명시**하세요"
+    "(예: '이번 로드맵은 카타르가 아프리카 분쟁 중재를 확대하는 사례임'(X) → "
+    "'카타르가 ○○ 로드맵에 서명하며 아프리카 분쟁 중재 역할을 확대함'(O)). "
+)
+
+# 중동 밖(역외) 사안 판별 — 정부동향 결과에도 결정론적으로 적용(프롬프트만으론 새는 아프리카·역외 중재 차단).
+_GOV_OFFREGION_KW = ("콩고", "수단", "아프리카", "중남미", "아프가니스탄", "우크라이나", "베네수엘라", "벨라루스")
+_GOV_MIDEAST_KW = ("이란", "이스라엘", "가자", "호르무즈", "걸프", "레바논", "예멘", "홍해",
+                   "사우디", "이집트", "시리아", "요르단", "쿠웨이트", "바레인", "uae", "튀르키예", "미국")
+
+
+def _gov_is_offregion(s):
+    """불릿 내용이 중동 밖(아프리카·역외) 사안인지 — 역외 지명이 있고 중동 정세 지명이 전혀 없으면 True(정부동향 제외).
+    ('카타르'는 모든 불릿에 있으므로 중동 판정에서 제외)."""
+    sl = (s or "").lower()
+    if not any(o in sl for o in _GOV_OFFREGION_KW):
+        return False
+    return not any(m in sl for m in _GOV_MIDEAST_KW)
+
 def _gov_ai_from_hits(hits):
     """키워드로 걸러낸 '카타르 정부+정세' 기사들만 따로 AI에 넘겨, 구체적 동향 불릿을 뽑는 2차 요약.
     1차 strict 추출이 빈 배열을 준 회차에도 '무슨 동향인지'를 실제 내용으로 채우기 위함(안내문 방지).
@@ -2199,6 +2224,7 @@ def _gov_ai_from_hits(hits):
         "각 사안을 한국어 정부보고서식 개조식(명사형 종결 '-함/-음/-됨/-임')으로, **무슨 동향인지 구체적으로** "
         "(누가·무엇을·언제·핵심 내용·수치·배경·함의) 1~2문장으로 정리하세요. "
         "'상세는 링크/하단 목록 참조' 같은 **안내문은 절대 금지** — 동향 내용 자체를 서술하세요. "
+        + _SELFCONTAINED_RULE +
         "카타르 정부·지도부가 주체인 행보(중재·촉구·규탄·통화·회담·성명·조치)를 우선하되, "
         "카타르가 대상·당사자로 연루된 정세 동향도 사실대로 담으세요. "
         "【제외】카타르 정부·지도부가 주체도 당사자도 아닌 기사(예: 쿠웨이트·UAE·사우디 등 타국 정부만의 동향을 "
@@ -2220,7 +2246,7 @@ def _gov_ai_from_hits(hits):
             if not isinstance(item, dict):
                 continue
             t = _clean_bullet(item.get("t") or "")
-            if not t:
+            if not t or _gov_is_offregion(t):             # 중동 밖(아프리카·역외) 사안 제외
                 continue
             links, seen = [], set()
             for i in (item.get("ids") or [])[:8]:
@@ -2299,6 +2325,7 @@ def gemini_qatar_gov(pool, win_label):
         "**【능동적 공동행동은 포함, 곁다리 언급은 제외】 카타르 정부가 중동 정세 사안에서 여러 국가와 함께 능동적으로 취한 공동행동(공동성명 서명·공동 규탄·공동 중재·정상/외교장관 공동회의 등)은 카타르의 행위이므로 반드시 포함하세요(예: '카타르 등 8개국이 이스라엘의 가자 위반을 규탄하는 공동성명 발표'는 포함). 다만 카타르가 능동적 주체가 아니라 타국 주도 사건에 곁다리로 언급되거나(예: 타국 간 협정을 '…등 다수국이 환영', 카타르 전(前)직 인사의 개인 논평), 카타르의 실제 행위 없이 이름만 나열된 경우는 별도 불릿으로 만들지 마세요.** "
         "**【기구 수장 개인 성명 제외(중요)】 아랍연맹(사무총장 아불 게이트 등)·GCC·OIC·유엔 등 국제·역내 기구 '수장(사무총장·대변인 등) 개인의 성명·규탄·발언'은, 카타르가 그 기구의 회원국이라는 이유만으로 '카타르 정부 동향'이 되지 않습니다 — 카타르 정부·지도부의 구체적 행위가 그 기사에 함께 명시되지 않는 한 별도 불릿으로 만들지 마세요('아랍연맹이 …규탄'처럼 카타르를 괄호로 끼워 넣어 카타르 동향인 것처럼 서술 금지). 회원국들이 함께 채택·서명한 '공동성명·정상회의 결의'에 카타르가 실제 참여한 경우만 포함 대상입니다.** "
         "각 항목은 정부보고서식 개조식·명사형 종결('-함/-음/-됨/-임')로 쓰되, 내용이 있으면 **1~2문장으로 자세히**(누가·무엇을·언제·핵심 내용·수치·배경·함의) 담고 최대 4개. "
+        + _SELFCONTAINED_RULE +
         "**【카타르를 주어로 앞세울 것】 각 항목은 카타르 정부·지도부(에미르·총리·외교장관·각료·MOFA·GCO·QatarEnergy 등)의 행위를 문장 맨 앞 주어로 서술하세요 — 타국·국제기구(사우디·튀르키예·유엔 안보리 등)나 사건 배경이 앞서고 카타르의 행위가 문장 끝에 곁다리로 묻히면 안 됩니다(그런 경우 카타르 행위를 주어로 문장을 다시 구성).** "
         "**아래 이슈별 언론동향과 내용이 겹쳐도 무방합니다 — 카타르 정부의 정세 관련 행보이면 반드시 포함**하세요(정부 동향은 별도로 중요). "
         "각 항목에는 그 동향을 보도한 기사 id를 **카타르 현지·1차 매체를 우선해 빠짐없이(최대 5개)** 담으세요. "
@@ -2316,11 +2343,11 @@ def gemini_qatar_gov(pool, win_label):
         if not isinstance(g, list):
             return _gov_kw_fallback(qpool)
         res = []
-        for item in g[:3]:
+        for item in g[:4]:                                # 프롬프트 '최대 4개'와 일치
             if not isinstance(item, dict):
                 continue
-            t = (item.get("t") or "").strip()
-            if not t:
+            t = _clean_bullet(item.get("t") or "")        # '(기사 N)'·문두 날짜 등 찌꺼기 정제
+            if not t or _gov_is_offregion(t):             # 중동 밖(아프리카·역외) 사안은 정부동향에서 제외
                 continue
             links, seen = [], set()
             for i in (item.get("ids") or [])[:8]:
@@ -2398,31 +2425,57 @@ def _gov_safety_net(issues, gov, pool):
     return gov[:6]
 
 
-def translate_gov(gov, lang):
-    """정부 동향 불릿(dict 리스트)의 텍스트만 영어/아랍어로 번역. 링크는 유지. 실패 시 원문."""
-    if not gov or lang == "ko":
-        return gov
-    target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
-    if not target:
-        return gov
-    texts = [g["t"] for g in gov]
+def _gov_translate_batch(texts, target):
+    """texts를 target 언어로 배치 번역. 성공 시 같은 길이 리스트(항목별 실패는 None),
+    호출·파싱 실패·개수 불일치 시 None(→ 호출부가 항목별 재시도로 전환)."""
     prompt = (
         f"Translate each string in this JSON array into {target}, keeping numbers, dates and proper nouns. "
         "Return ONLY a JSON object {\"t\":[\"\"]} with the same number and order of items, no commentary.\n\n"
         + json.dumps({"t": texts}, ensure_ascii=False))
-    # 번역 실패 시 원문(한국어) 잔존을 막기 위해 _extract_json(코드펜스 제거) 적용 + 1회 재시도.
     for _attempt in range(2):
         out = gemini_generate(prompt, json_mode=True)
         if not out:
             continue
         try:
             tr = json.loads(_extract_json(out)).get("t")
-            if isinstance(tr, list) and len(tr) == len(gov):
-                return [{"t": (t if isinstance(t, str) and t.strip() else o["t"]), "links": o["links"]}
-                        for o, t in zip(gov, tr)]
+            if isinstance(tr, list) and len(tr) == len(texts):
+                return [t if isinstance(t, str) and t.strip() else None for t in tr]
         except Exception as ex:
-            print(f"[warn] translate_gov {lang} failed (attempt {_attempt+1}/2): {ex}")
-    return gov
+            print(f"[warn] translate_gov batch failed (attempt {_attempt+1}/2): {ex}")
+    return None
+
+
+def _gov_translate_one(text, target):
+    """단일 문자열 번역(개수 불일치 원천 차단). 실패 시 None."""
+    prompt = (
+        f"Translate the following text into {target}, keeping numbers, dates and proper nouns. "
+        "Return ONLY the translated text — no commentary, labels, or surrounding quotes.\n\n" + text)
+    out = gemini_generate(prompt, json_mode=False)
+    if out:
+        out = out.strip().strip('"').strip()
+    return out or None
+
+
+def translate_gov(gov, lang):
+    """정부 동향 불릿(dict 리스트)의 텍스트만 영어/아랍어로 번역. 링크는 유지.
+    배치 1회 실패가 전량 한국어로 폴백되던 문제를 방지 — 배치가 놓친 항목만 항목별로
+    재시도하고, 그래도 실패한 항목만 원문 유지(로그로 잔존 표시)."""
+    if not gov or lang == "ko":
+        return gov
+    target = {"en": "English", "ar": "Arabic (Modern Standard Arabic)"}.get(lang)
+    if not target:
+        return gov
+    texts = [g["t"] for g in gov]
+    res = _gov_translate_batch(texts, target)
+    if res is None:
+        res = [None] * len(texts)
+    for i, t in enumerate(res):
+        if not t:
+            res[i] = _gov_translate_one(texts[i], target)
+    n_fail = sum(1 for t in res if not t)
+    if n_fail:
+        print(f"[warn] translate_gov {lang}: {n_fail}/{len(texts)} item(s) fell back to source(ko)")
+    return [{"t": (t if t else o["t"]), "links": o["links"]} for o, t in zip(gov, res)]
 
 
 def render_qatar_gov(gov, lang="ko", weekly=False):
