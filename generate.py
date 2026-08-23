@@ -659,7 +659,7 @@ LANG = {
   "wk_head": "🗓️ Last week — media trends", "wk_open": "Open the weekly report as a standalone page →", "wk_cta": "View last week's digest", "wk_cta_sub": "Weekly digest — Qatar govt & media trends", "wk_none": "Weekly summary not generated — will retry next update.",
   "quick_head": "Media · Government · Institutions — links", "quick_note": "(sorted alphabetically)",
   "tl_head": "Middle East War Timeline (2026)", "tl_note": "Key events since the Feb 28, 2026 outbreak · newest first · cross-checked against credible public reporting, updated as events occur", "tl_q": "Qatar",
-  "bg_tag": "Background", "bg_head": "War Background \u0026 Trajectory (Korean)", "bg_link": "Background", "tl_link": "Timeline (2026)",
+  "bg_tag": "Background", "bg_head": "War Background \u0026 Trajectory (Korean)", "bg_link": "Background", "tl_pre": "War ", "tl_link": "Timeline (2026)",
   "tl_tag": "Ref", "tl_back": "← Back to the monitor", "tl_src_label": "Sources", "tl_src_note": "Key events since the Feb 28, 2026 outbreak, newest first, updated as new events occur. Compiled by cross-checking the credible public sources above; please verify specific figures and wording against each outlet and primary announcements.",
   "tl_all": "All", "tl_qonly": "Qatar only", "tl_qex": "Exclude Qatar", "tl_dl": "⬇ Download Excel", "tl_c_date": "Date", "tl_c_cat": "Category", "tl_c_event": "Event", "tl_c_detail": "Details", "tl_c_link": "Article", "tl_link_go": "Open", "tl_cat_gen": "General", "tl_fname": "MiddleEast_War_Timeline", "tl_sheet": "Timeline",
   "gov_head": "🏛️ Qatar government activity", "gov_head_wk": "🏛️ Last week — Qatar government activity", "gov_none": "No notable developments during this monitoring window.",
