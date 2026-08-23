@@ -745,7 +745,21 @@ try:                       # 중동 전쟁 배경 페이지(background-ko.html) 
     import background as _bg
 except Exception as _e:    # 모듈이 없어도 나머지 파이프라인은 정상 동작
     _bg = None
-    print(f"[warn] background module unavailable: {_e}")   # GitHub Pages 프로젝트 경로(콤보박스 링크 기준)
+    print(f"[warn] background module unavailable: {_e}")
+
+# 배경 페이지 en/ar 자동 번역기(라인 단위·국문 해시 캐시) — 한 번 생성해 재사용. LLM은 gemini_generate 주입.
+_BG_TRANSLATOR = None
+def _bg_translator():
+    global _BG_TRANSLATOR
+    if _BG_TRANSLATOR is None:
+        try:
+            import background_i18n as _bgi
+            _BG_TRANSLATOR = _bgi.make_translator(gemini_generate)
+        except Exception as ex:
+            print(f"[warn] background i18n translator unavailable: {ex}")
+            _BG_TRANSLATOR = False
+    return _BG_TRANSLATOR or None
+
 FLIGHT_URL = "https://kotradoha.github.io/qatar-korea-flight-monitor/"   # 자매 사이트(항공 모니터링)
 ISSUE_BASE = (2026, 8, 1)     # 제1호 기준일(오전 7시 회차 = 일간 제1호)
 WEEKLY_WEEKDAY = 6            # 주간 종합 리포트 생성 요일(월=0…일=6 → 일요일 오전 회차)
@@ -3123,7 +3137,7 @@ def timeline_ref(lang="ko"):
     # 별도 버튼 대신 '모니터링 부문' 박스 안에 참고 링크로 삽입 (본문과 동일 크기, 언어버튼 색)
     L = LANG.get(lang, LANG["ko"])
     url = f"{SITE_BASE}timeline-{lang}.html"
-    bgurl = f"{SITE_BASE}background-ko.html"
+    bgurl = f"{SITE_BASE}background-{lang}.html"
     return (f'<span class="tldiv"></span>'
             f'<span class="tlref">📌 {esc(L["tl_tag"])}: '
             f'{esc(L.get("tl_pre", ""))}'          # 링크 아닌 일반 텍스트 접두(예: '2026 중동 전쟁 ')
@@ -5156,19 +5170,27 @@ def main():
         # 중동 전쟁 타임라인 독립 페이지(새 탭으로 열림)
         with open(f"timeline-{lang}.html", "w", encoding="utf-8") as fh:
             fh.write(render_timeline_page(lang))
-        # 중동 전쟁 배경 및 추이(배경 분석) 페이지 — 국문 1종, 하단 '최근 국면' 블록만 매 회차 자동 갱신
-        if lang == "ko" and _bg is not None:
+        # 중동 전쟁 배경 및 추이(배경 분석) 페이지 — ko는 국문, en/ar는 라인 단위 자동 번역(국문 해시 캐시).
+        # 번역 실패/LLM 미가동 시 해당 라인은 국문 유지(링크·구조는 정상). 실패해도 나머지 발행은 그대로.
+        if _bg is not None:
             try:
                 _now = datetime.now(TZ)
-                with open("background-ko.html", "w", encoding="utf-8") as fh:
+                _nstr = {
+                    "ko": f"갱신 {_now.year}. {_now.month}. {_now.day}. {_now.hour:02d}:{_now.minute:02d} (도하 기준)",
+                    "en": f"Updated {_now.year}-{_now.month:02d}-{_now.day:02d} {_now.hour:02d}:{_now.minute:02d} (Doha)",
+                    "ar": f"آخر تحديث {_now.year}-{_now.month:02d}-{_now.day:02d} {_now.hour:02d}:{_now.minute:02d} (بتوقيت الدوحة)",
+                }.get(lang, "")
+                with open(f"background-{lang}.html", "w", encoding="utf-8") as fh:
                     fh.write(_bg.render_background_page(
                         entries=_timeline_entries(),
                         home=SITE_BASE,
-                        timeline_url=f"{SITE_BASE}timeline-ko.html",
-                        now_str=f"갱신 {_now.year}. {_now.month}. {_now.day}. {_now.hour:02d}:{_now.minute:02d} (도하 기준)"))
-                print("[info] background-ko.html generated")
+                        timeline_url=f"{SITE_BASE}timeline-{lang}.html",
+                        now_str=_nstr,
+                        lang=lang,
+                        translate=(_bg_translator() if lang != "ko" else None)))
+                print(f"[info] background-{lang}.html generated")
             except Exception as ex:
-                print(f"[warn] background page failed: {ex}")
+                print(f"[warn] background page({lang}) failed: {ex}")
 
     mode = "issues" if issues else ("flat" if flat else "none")
     print(f"generated ko/en/ar · dno={dno} · window={label_ko} · items={len(items)} · summary={mode} · "
