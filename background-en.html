@@ -1,34 +1,10 @@
-# -*- coding: utf-8 -*-
-"""중동 전쟁 배경 및 추이 — 배경 분석 페이지(background-ko.html) 생성 모듈.
-
-· 본문(BG_BODY)은 고정 서술이며, 상단  자리에 매 회차 자동 갱신 블록이 주입된다.
-· 자동 갱신 블록은 generate.py의 타임라인 엔트리를 그대로 받아 렌더한다(추가 API 호출 없음).
-"""
-
-BG_TITLE = '중동 전쟁 배경 및 추이'
-# 본문 서술의 기준일. 본문을 개정하면 이 값만 고치면 헤더 표기(기준일·'…까지'·햇수)가 함께 바뀐다.
-# 본문은 고정 문서이므로 이 값을 실제 개정 없이 앞당기면 안 된다.
-BG_ASOF = (2026, 8, 21)
-
-BG_BACK = {'ko': '← 모니터로 돌아가기', 'en': '← Back to the monitor', 'ar': '← العودة إلى الراصد'}
-
-# 언어별 <title>(번역 페이지용) — '(국문)' 표기가 없는 정식 제목
-BG_TITLE_I18N = {
-    'ko': BG_TITLE,
-    'en': 'Middle East War — Background & Trajectory',
-    'ar': 'حرب الشرق الأوسط — الخلفية والمسار',
-}
-# 최하단 '최근 국면' 블록의 고정 문구(라인 번역 대상이 아니라 사전 정의)
-BG_LIVE_I18N = {
-    'ko': {'sum': '최근 국면 — 타임라인 최신 항목 (자동 갱신)', 'more': '전체 타임라인 보기 →',
-           'note': '※ 이 목록은 모니터링 갱신 때마다(1일 2회) 타임라인과 함께 자동으로 다시 씁니다. 위 배경 서술은 고정 문서이며, 정세가 크게 바뀌면 별도로 개정합니다.'},
-    'en': {'sum': 'Latest developments — newest timeline entries (auto-updated)', 'more': 'See the full timeline →',
-           'note': '※ This list is rewritten automatically at every monitoring update (twice a day) together with the timeline. The background text above is a fixed document, revised separately when the situation changes substantially.'},
-    'ar': {'sum': 'أحدث التطورات — أحدث بنود الجدول الزمني (تحديث تلقائي)', 'more': 'عرض الجدول الزمني الكامل →',
-           'note': '※ تُعاد كتابة هذه القائمة تلقائياً مع كل تحديث للرصد (مرتين يومياً) إلى جانب الجدول الزمني. أما النص الخلفي أعلاه فهو وثيقة ثابتة تُنقّح على حدة عند تغيّر الأوضاع جوهرياً.'},
-}
-
-BG_CSS = """
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Middle East War — Background & Trajectory</title>
+<style>
   
   /* 사이트 공통 팔레트(모니터·타임라인 페이지와 동일) */
   :root{
@@ -206,16 +182,17 @@ BG_CSS = """
   .bglive .lnote{font-size:10.5px;color:var(--ink-3);opacity:.8;margin:8px 0 0;max-width:none}
   @media (max-width:600px){.bglive li{grid-template-columns:1fr;gap:2px}}
   @media print{.bglive{display:none}}
-"""
+</style>
+</head>
+<body>
 
-BG_BODY = """
 
 <div class="wrap">
-  <a class="bgback" href="__HOME__">__BACK__</a>
+  <a class="bgback" href="/qatar-media-monitor/">← Back to the monitor</a>
 
   <hr class="bgpage-div">
   <h1 class="bgpage-h"><span class="bgpage-tag">참고</span><span class="bgpage-t">중동 전쟁 배경 및 추이</span></h1>
-  <div class="bgnotehead">지금의 전쟁은 어느 날 갑자기 시작된 일이 아닙니다. 1901년 석유 이권 계약 한 장에서 비롯된 __SPAN__년의 흐름을 역사·군사·외교·정치·경제 다섯 갈래로 짚어 정리했습니다.<span class="bgnotedate">본문 기준일 __ASOF__ · 이후 상황은 맨 아래 '최근 국면'에서 갱신됩니다.</span></div>
+  <div class="bgnotehead">지금의 전쟁은 어느 날 갑자기 시작된 일이 아닙니다. 1901년 석유 이권 계약 한 장에서 비롯된 125년의 흐름을 역사·군사·외교·정치·경제 다섯 갈래로 짚어 정리했습니다.<span class="bgnotedate">본문 기준일 2026. 8. 21. · 이후 상황은 맨 아래 '최근 국면'에서 갱신됩니다.</span></div>
 
 <div class="bgsrc"><p class="ai">※ IAEA·IEA·IMF·세계은행·UN 안전보장이사회·IMO·미국 EIA 등 국제기구 공개자료, 영국 하원도서관·미국 의회조사국(CRS) 조사보고서, CFR·International Crisis Group·Chatham House·Brookings·Arms Control Association·ISIS 등 연구기관 분석, 로이터·AP·알자지라·NPR·PBS·FT 등 언론 보도, KIEP·KDI·자본시장연구원·에너지경제연구원·한국환경연구원(KEI)·한국해양전략연구소 등 국내 기관 자료, 그리고 위키백과를 참고해 AI가 요약·정리한 자료인 점 참고해주시기 바랍니다. 진행 중인 사안이라 수치는 잠정치이며, 당사국 발표는 서로 다를 수 있습니다.</p></div>
 
@@ -2120,69 +2097,10 @@ BG_BODY = """
     <span>사상자·피해액은 당사자별 주장 병기</span>
     <span>검증되지 않은 주장은 별도 표기</span>
   </footer>
-__LIVE__
+
 
 
 </div>
-"""
 
-BG_TPL = '<!DOCTYPE html>\n<html lang="ko" dir="ltr">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>__TITLE__</title>\n<style>__CSS__</style>\n</head>\n<body>\n__BODY__\n</body>\n</html>\n'
-
-
-def render_background_page(entries=None, home="/qatar-media-monitor/", timeline_url="", now_str="",
-                           max_events=8, lang="ko", translate=None):
-    """배경 페이지 HTML 생성.
-    entries: generate.py의 _timeline_entries() 결과(최신순). 없으면 자동 갱신 블록을 비운다.
-    lang: 'ko'|'en'|'ar'. lang!='ko'이고 translate(콜러블)가 주어지면 본문을 라인 단위로 번역.
-      translate(lines, lang) -> 같은 길이의 리스트(번역 실패 라인은 국문 유지). 실패 시 국문 폴백.
-    """
-    L = lang if lang in ("ko", "en", "ar") else "ko"
-    live = _live_block(entries or [], timeline_url, now_str, max_events, L)
-    _y, _m, _d = BG_ASOF
-    body = (BG_BODY.replace("__HOME__", home)
-                   .replace("__BACK__", BG_BACK.get(L, BG_BACK["ko"]))
-                   .replace("__SPAN__", str(_y - 1901))
-                   .replace("__ASOF_YM__", "%d년 %d월" % (_y, _m))
-                   .replace("__ASOF__", "%d. %d. %d." % (_y, _m, _d))
-                   .replace("__LIVE__", live))
-    if L != "ko" and translate is not None:
-        try:
-            body = "\n".join(translate(body.split("\n"), L))
-        except Exception as ex:
-            print(f"[warn] background translate({L}) failed, ko fallback: {ex}")
-    _dir = "rtl" if L == "ar" else "ltr"
-    tpl = BG_TPL.replace('lang="ko" dir="ltr"', 'lang="%s" dir="%s"' % (L, _dir))
-    return (tpl.replace("__TITLE__", BG_TITLE_I18N.get(L, BG_TITLE))
-               .replace("__CSS__", BG_CSS)
-               .replace("__BODY__", body))
-
-
-def _esc(s):
-    return (str(s).replace("&", "&amp;").replace("<", "&lt;")
-            .replace(">", "&gt;").replace('"', "&quot;"))
-
-
-def _live_block(entries, timeline_url, now_str, max_events, lang="ko"):
-    """페이지 최하단의 접힌 갱신 기록 블록(기본 닫힘 · 매 회차 자동으로 다시 씀).
-    lang별로 라벨·항목 텍스트를 target 언어로 구성(본문 라인 번역 대상에서 제외되도록)."""
-    lab = BG_LIVE_I18N.get(lang, BG_LIVE_I18N["ko"])
-    rows = []
-    for e in entries[:max_events]:
-        try:
-            y, m, d = e["d"].split("-")
-            ds = "%s.%d.%d." % (y, int(m), int(d))
-        except Exception:
-            ds = _esc(e.get("d", ""))
-        txt = e.get(lang) or e.get("en") or e.get("ko") or ""
-        if not txt:
-            continue
-        rows.append('<li><span class="ld">%s</span><span>%s</span></li>' % (ds, _esc(txt)))
-    if not rows:
-        return ""
-    more = ('<a class="lmore" href="%s" target="_blank" rel="noopener">%s</a>'
-            % (_esc(timeline_url), lab["more"])) if timeline_url else ""
-    return ('<details class="bglive"><summary>'
-            '<span>%s</span><span>%s</span></summary>'
-            '<ul>%s</ul>%s'
-            '<p class="lnote">%s</p>'
-            '</details>') % (lab["sum"], _esc(now_str), "".join(rows), more, lab["note"])
+</body>
+</html>
