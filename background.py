@@ -167,8 +167,7 @@ BG_CSS = """
   .bgnotehead{font-family:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;font-size:clamp(15px,1.9vw,17.5px);line-height:1.78;color:var(--ink-2);margin:4px 2px 8px;max-width:62em;word-break:keep-all}
   .bgnotedate{display:block;margin-top:7px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR","Malgun Gothic",sans-serif;font-size:11.5px;color:var(--ink-3);letter-spacing:.2px}
   .bgpage-t{word-break:keep-all}
-  @media (max-width:560px){h1.bgpage-h{font-size:17px;gap:5px 9px}
-    .bgpage-t{flex:0 0 100%}}
+  @media (max-width:560px){h1.bgpage-h{font-size:17px;gap:5px 9px}}
   .bgsrc{margin:14px 0 0;padding:0}
   .bgsrc .ai{font-size:12px;line-height:1.75;color:var(--ink-3);font-weight:400;margin:0;max-width:none}
   @media print{.bgback{display:none}}

@@ -606,7 +606,7 @@ LANG = {
   "wk_head": "🗓️ 지난주 언론 동향", "wk_open": "주간 리포트 단독 페이지로 열기 →", "wk_cta": "지난주 종합 동향 보러가기", "wk_cta_sub": "카타르 정부동향·언론동향 주간 종합", "wk_none": "주간 요약 미생성 — 다음 갱신에 재시도됩니다.",
   "quick_head": "언론매체·정부·기관 링크모음", "quick_note": "(가나다·알파벳순)",
   "tl_head": "중동 전쟁 타임라인 (2026)", "tl_note": "2026. 2. 28. 발발 이후 주요 사건 · 최신순 · 공신력 있는 공개 보도를 교차 확인해 정리, 새 사건마다 갱신", "tl_q": "카타르",
-  "bg_tag": "배경", "bg_head": "중동 전쟁 배경 및 추이", "bg_link": "배경·추이", "tl_link": "2026 중동 전쟁 타임라인",
+  "bg_tag": "배경", "bg_head": "중동 전쟁 배경 및 추이", "bg_link": "배경·추이", "tl_pre": "2026 중동 전쟁 ", "tl_link": "타임라인",
   "tl_tag": "참고", "tl_back": "← 모니터로 돌아가기", "tl_src_label": "출처", "tl_src_note": "2026. 2. 28. 발발 이후 주요 사건을 최신순으로 정리하며, 새 사건이 생길 때마다 갱신합니다. 위 공신력 있는 공개 출처를 교차 확인해 작성했으며, 세부 수치·표현은 각 매체·1차 발표 확인을 권장합니다.",
   "tl_all": "전체", "tl_qonly": "카타르만", "tl_qex": "카타르 제외", "tl_dl": "⬇ 엑셀 다운로드", "tl_c_date": "날짜", "tl_c_cat": "구분", "tl_c_event": "사건", "tl_c_detail": "상세", "tl_c_link": "관련 기사", "tl_link_go": "바로가기", "tl_cat_gen": "일반", "tl_fname": "중동전쟁_타임라인", "tl_sheet": "타임라인",
   "gov_head": "🏛️ 정세 관련 카타르 정부 동향", "gov_head_wk": "🏛️ 지난주 카타르 정부 동향", "gov_none": "이번 모니터링 기간 중 특이사항 없음",
@@ -3126,6 +3126,7 @@ def timeline_ref(lang="ko"):
     bgurl = f"{SITE_BASE}background-ko.html"
     return (f'<span class="tldiv"></span>'
             f'<span class="tlref">📌 {esc(L["tl_tag"])}: '
+            f'{esc(L.get("tl_pre", ""))}'          # 링크 아닌 일반 텍스트 접두(예: '2026 중동 전쟁 ')
             f'<a class="tlchip" href="{esc(url)}" target="_blank" rel="noopener">'
             f'{esc(L["tl_link"])}<span class="arr">→</span></a>'
             f'<a class="tlchip" href="{esc(bgurl)}" target="_blank" rel="noopener">'
