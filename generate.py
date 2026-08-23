@@ -4006,18 +4006,14 @@ TEMPLATE = """<!DOCTYPE html>
   .tlref{{display:block;font-size:12.5px;color:var(--muted)}}
   .tlref a{{color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45)}}
   .tlref a:hover{{text-decoration-color:var(--accent)}}
-  /* 참고 링크 — 버튼형 칩(항공 모니터링 링크와 동일한 색) */
-  .tlref a.tlchip,.tlchip{{display:inline-flex;align-items:center;gap:7px;margin:5px 7px 0 0;padding:4px 11px;
-    border:1px solid var(--line);border-radius:8px;background:var(--panel2);
-    color:var(--accent);font-size:11.5px;font-weight:700;text-decoration:none;vertical-align:middle;
-    white-space:nowrap;transition:background .15s,border-color .15s}}
-  .tlref a.tlchip:hover,.tlchip:hover{{background:var(--panel);border-color:var(--accent);
-    color:var(--accent);text-decoration:none}}
-  .tlref a.tlchip .arr,.tlchip .arr{{color:var(--accent);font-weight:800}}
-  /* 모바일 — 버튼 두 개를 한 줄에 하나씩 */
+  /* 참고 링크 — 밑줄 텍스트 링크(버튼형 대신 면적 최소화) */
+  .tlref a.tlchip,.tlchip{{display:inline;margin:0 12px 0 0;padding:0;border:0;background:none;border-radius:0;
+    color:var(--accent);font-size:12.5px;font-weight:600;text-decoration:underline;
+    text-underline-offset:3px;text-decoration-color:rgba(77,163,255,.45);white-space:nowrap}}
+  .tlref a.tlchip:hover,.tlchip:hover{{background:none;text-decoration:underline;text-decoration-color:var(--accent)}}
+  .tlref a.tlchip .arr,.tlchip .arr{{color:var(--accent);font-weight:700}}
   @media (max-width:560px){{
-    .tlref a.tlchip,.tlchip{{display:flex;width:100%;justify-content:space-between;
-      margin:6px 0 0;padding:7px 12px;font-size:12px;white-space:normal}}
+    .tlref a.tlchip,.tlchip{{display:inline;width:auto;margin:0 12px 0 0;padding:0;font-size:12.5px;white-space:normal}}
   }}
   .dlbar{{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:2px 0 20px}}
   .dll{{font-size:12px;font-weight:700;color:var(--muted)}}
