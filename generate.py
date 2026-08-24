@@ -1083,6 +1083,29 @@ def _report_topic_ok(title, operational=False):
         return geo or has(s, ENERGY_ANALYSIS_KW)
     return geo or has(s, ENERGY_KW)
 
+def _report_display_href(x):
+    """보고서 행의 실제 클릭 href.
+
+    보고서 목록은 회차마다 누적(수백~천 단위)되는데, 링크의 대부분이 구글뉴스 RSS 래퍼
+    (news.google.com/rss/articles/CBMi…, 불투명 포맷)다. 이 래퍼는 시간이 지나면
+    리다이렉트가 깨져 클릭 시 '연결 안 됨'이 되고, batchexecute 디코딩도 프로덕션에서
+    사실상 실패한다(위 _GNEWS 주석 참고). 따라서:
+      · 연구기관 게시판 등 '실제 원문 URL'이면 그대로 사용(가장 정확),
+      · 구글뉴스 래퍼면 제목(+출처)으로 만든 구글 검색 URL로 대체 → 원문에 안정적으로 도달.
+    검색 URL은 브라우저 표준 검색이라 래퍼처럼 만료·차단되지 않는다."""
+    link = (x.get("link") or "").strip()
+    if link and "news.google.com" not in link and "/rss/articles/" not in link:
+        return link
+    import urllib.parse as _up
+    q = (x.get("title") or "").strip()
+    src = (x.get("source") or "").strip()
+    if src and src.lower() not in q.lower():
+        q = (q + " " + src).strip()
+    if q:
+        return "https://www.google.com/search?q=" + _up.quote_plus(q)
+    return x.get("shref") or link
+
+
 def looks_report(title, src, shref=""):
     # 0) 재게시 애그리게이터·뉴스 매체·비(非)기사 페이지는 원천 제외
     _s = ((src or "") + " " + (shref or "")).lower()
@@ -3782,7 +3805,7 @@ def render(items, win_label, issues, flat_text, issue_pool=None, archive_list=No
         _a = x.get("added") or x.get("dt")
         is_new = bool(new_since and hasattr(_a, "astimezone") and _a >= new_since)
         newb = f'<span class="newtag">{esc(L["rep_new"])}</span>' if is_new else ""
-        return (f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">'
+        return (f'<a href="{esc(_report_display_href(x))}" target="_blank" rel="noopener">'
                 f'{newb}{esc(x["title"])}'
                 f'<span class="src">({esc(x["source"])} · {rep_dt(x)})</span></a>')
     # 한국 / 해외 — 각각 별도 '열기' 폴드. 제목은 각 버튼 안에 넣고(별도 헤딩 없음), 누적분 전체를 표시(폴드 기본 접힘).
