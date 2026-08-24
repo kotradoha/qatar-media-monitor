@@ -2104,23 +2104,45 @@ def gemini_issues(pool, win_label, weekly=False):
         "{\"issues\":[{\"theme\":\"\",\"summary\":[\"\",\"\"],\"qatar_impact\":[],\"qatar_impact_ids\":[],\"ids\":[0,1]}]}\n\n"
         f"[커버기간] {win_label}\n[기사 목록]\n" + "\n".join(lines)
     )
-    # 이슈 생성은 품질 핵심이므로, 빈 결과/파싱 실패 시 flat 폴백 대신 최대 3회 재시도(간헐적 토큰초과·빈배열 방지)
-    for attempt in range(3):
+    # 이슈 생성은 품질 핵심이므로, 빈 결과/파싱 실패 시 flat 폴백 대신 최대 4회 재시도(백오프로 간헐적 한도초과 회복)
+    for attempt in range(4):
         out = gemini_generate(prompt, json_mode=True)
-        if not out:
-            _diag(f"[warn] issues empty response, retry {attempt+1}/3")
-            continue
-        try:
-            data = json.loads(out)
-            issues = data.get("issues") if isinstance(data, dict) else None
-            if issues and isinstance(issues, list):
-                # LLM이 문자열/비정상 원소를 섞어 반환해도 빌드가 죽지 않도록 dict 원소만 채택
-                issues = [x for x in issues if isinstance(x, dict) and (x.get("theme") or x.get("summary"))]
-                if issues:
-                    return issues
-            _diag(f"[warn] issues parsed but empty, retry {attempt+1}/3")
-        except Exception as ex:
-            _diag(f"[warn] issues json parse failed: {ex}, retry {attempt+1}/3")
+        if out:
+            try:
+                data = json.loads(out)
+                issues = data.get("issues") if isinstance(data, dict) else None
+                if issues and isinstance(issues, list):
+                    # LLM이 문자열/비정상 원소를 섞어 반환해도 빌드가 죽지 않도록 dict 원소만 채택
+                    issues = [x for x in issues if isinstance(x, dict) and (x.get("theme") or x.get("summary"))]
+                    if issues:
+                        return issues
+                _diag(f"[warn] issues parsed but empty, retry {attempt+1}/4")
+            except Exception as ex:
+                _diag(f"[warn] issues json parse failed: {ex}, retry {attempt+1}/4")
+        else:
+            _diag(f"[warn] issues empty response, retry {attempt+1}/4")
+        if attempt < 3:
+            time.sleep(6 * (attempt + 1))     # 6·12·18s 백오프 — 간헐적 429/한도초과 회복 대기
+    return None
+
+
+ISSUE_MIN_POOL = 8   # 이만큼 기사가 있으면 이슈가 나오는 게 정상 — 빈 결과면 생성 실패로 보고 재생성
+
+def _issues_with_selfcheck(pool, win_label, weekly=False):
+    """자가검증: 기사 풀이 충분한데 gemini_issues가 빈 결과를 주면(간헐적 LLM 실패로 flat 폴백되는 상황)
+    백오프 후 재생성. 풀이 원래 작으면(정상적으로 이슈 없음) 그대로 둔다. 최종 실패 시에만 None(→flat).
+    → '이슈가 안 나뉘고 링크도 없는' 열화 발행을 구조적으로 예방."""
+    issues = gemini_issues(pool, win_label, weekly=weekly)
+    if issues or len(pool) < ISSUE_MIN_POOL:
+        return issues
+    for delay in (20, 45):
+        print(f"[selfcheck] issues empty despite {len(pool)}-article pool → retry after {delay}s")
+        time.sleep(delay)
+        issues = gemini_issues(pool, win_label, weekly=weekly)
+        if issues:
+            print(f"[selfcheck] issues recovered on retry ({len(issues)} issues)")
+            return issues
+    print(f"[ALARM] issues generation failed after self-check retries (pool={len(pool)}) → flat fallback")
     return None
 
 
@@ -5035,7 +5057,7 @@ def main():
         print(f"[info] offtopic filter(daily): {_no} → {len(items_win)} (dropped {_no - len(items_win)})")
     items_win = _resolve_items_links(items_win)   # 이슈 관련보도·기사목록 링크를 실제 원문 URL로 승격(예산·캐시 내)
     pool = build_issue_pool(items_win)
-    issues = gemini_issues(pool, label_ko)
+    issues = _issues_with_selfcheck(pool, label_ko)
     gov_ko = gemini_qatar_gov(gov_pool or pool, label_ko)
     gov_ko = _gov_safety_net(issues, gov_ko, pool)   # 이슈에 잡힌 카타르 정부 행보는 정부동향에도 반드시 반영
     # ── 팩트 정합성 검증(A/B/C): 근거 없는 문장 제거·정부동향 링크 재바인딩. 실패해도 발행은 그대로 ──
@@ -5082,7 +5104,7 @@ def main():
             print(f"[info] offtopic filter(weekly): {_wno} → {len(witems)} (dropped {_wno - len(witems)})")
         witems = _resolve_items_links(witems)   # 주간 이슈·기사목록 링크도 실제 원문 URL로 승격(공용 예산 내)
         wpool = build_issue_pool(witems)
-        wissues = gemini_issues(wpool, wlabel_ko, weekly=True)
+        wissues = _issues_with_selfcheck(wpool, wlabel_ko, weekly=True)
         gov_wk_ko = gemini_qatar_gov(gov_wk_pool or wpool, wlabel_ko)
         gov_wk_ko = _gov_safety_net(wissues, gov_wk_ko, wpool)
         try:
