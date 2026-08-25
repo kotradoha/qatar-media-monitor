@@ -1,5 +1,26 @@
 [
  {
+  "d": "2026-08-25",
+  "ko": "오만 인근 호르무즈해협서 유조선 피격 — 정체불명 발사체에 피격, 인명피해 없이 손상만 발생(UKMTO)",
+  "en": "Oil tanker struck by projectile in Strait of Hormuz off Oman — hit by unidentified projectile, causing damage but no casualties, UKMTO says",
+  "ar": "ناقلة نفط تتعرض لإطلاق نار قرب مضيق هرمز قبالة عمان — أصابها جسم مقذوف مجهول الهوية مما تسبب في أضرار دون إصابات، بحسب هيئة عمليات التجارة البحرية البريطانية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "© Punit Paranjpe, AFP",
+    "https://www.france24.com/en/middle-east/20260825-mideast-live-oil-tanker-struck-by-projectile-in-strait-of-hormuz-off-oman"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS0FDMFh0ZWhuVmxnRFBHS2RVQV80VXRTR2dkTExxcVZqYkgxdUltbXlUNXJYbVhiNDZCS0RReGVNbWhsNTgtTmFTQXdKZE1ONXVFdEh5aUhTTkJiamt6OUtyaVdDbHNhWV9hZk5RSV9KajM0WHFKTjlKdzJyNlczbVVQMHVHRWNuTlNKeFZQU1NSTi1POWkyTHIyalpHd01laWFXLWprd1JYc1VNVlZDZWQ0ejRSTWdzQkpkWTdsWjMtQQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260825-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-24",
   "ko": "파키스탄군 총사령관 아심 무니르, 미·이란 협상 교착 속 테헤란 방문 예정 — 협상 돌파구 모색",
   "en": "Pakistan's army chief Asim Munir to visit Tehran amid stalled US-Iran talks, seeking breakthrough",
@@ -252,6 +273,56 @@
    ]
   ],
   "first_seen": "20260824-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-24",
+  "ko": "미국, 이란 제3국 거래 전면 제재 '경제고립 작전' 개시 — 재무장관 베센트, 이란 관련 60개 단체 제재하며 '경제적 D-데이' 선언, 트럼프 '이란 완전 붕괴' 발언",
+  "en": "US launches 'Operation Economic Outcast' against Iran — Treasury Secretary Bessent sanctions 60 Iran-linked entities, declares 'economic D-Day'; Trump says Iran will 'completely collapse'",
+  "ar": "الولايات المتحدة تطلق 'عملية النبذ الاقتصادي' ضد إيران — وزير الخزانة بيسنت يفرض عقوبات على 60 كيانا مرتبطا بإيران ويعلن 'يوم D الاقتصادي'؛ ترامب يقول إن إيران 'ستنهار تماما'",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMi1ANBVV95cUxPamwwSDVWZWxabzdfZW56bHd5cmgxTWJkYzdMamRDeDJCV2FHRzNsWUNVZHBLMFJUdjRzam9mcHN5MlhpN0l2eVBIMTJMVmhXR1BOOE5LLTI3Mi1ZNm1vNDMyazRTZll4WG92TFlseTRzaWw5YmZpZXJlRmIwbXh0azNGcXZGMjNlOC1Qcm5Ed0tQd18xZ1J5b1BXWXhkTi1JdGliWFFkaU83VVZzWEc2c19GTlFEdWVqNEFQOFE3T0NidGRkNWhBcTNydi14NFFNdkVPdWctZkpoV2VnTU05Vlo5QXZscXJHRGJGc21ESVhfQnlZRWVtR0tJNUtmQTNHbXkwclE5WlRwV0VoR0s0WjVTMUplWmpvMXFBamJJQk1KX1RtOXpBXzdXSEFaTjNueUlMZVRrOS11NEhGSThNUW5hMmxTZWY0X1R0TlVteHVWakdQc1JFSDZzd1ZCTmtHMzlMbUF3LVZJcEdHb3FCV3k3RExnbnEzWFBnOFdRbzA5blZKLWxydThtVXdGa0c4cWprdEh5bG14c2VZQlllTjNLZHhaTVhIZTFpQkZUcXZLVUg5MmRod1MtRDZsWEduS1ZCSUZfUEVJTkc5ZG4xTG9jcE8?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTDItaE5iRG1ER0hvN21qaXotaHJuVk9sTDc2OVBXX1hwaEZqbDMxdmJvdGRkYjFLMUVLbE9KeVpTTWI1NkxET094Mlk3M29nNGVYemhXVnVUb192bkw4aDk2YUhubFoxckhHSF9fY2JIVXV6UFhpdk1iTHB3S3JsNjBQWU9rMTUybGxObFVBdXI1THdjQ1l4V2Vn0gGaAUFVX3lxTE1MMi1oTmJEbURHSG83bWppei1ocm5WT2xMNzY5UFdfWHBoRmpsMzF2Ym90ZGRiMUsxRUtsT0p5WlNNYjU2TERPT3gyWTczb2c0ZVh6aFdWdVRvX3ZuTDhoOTZhSG5sWjFySEdIX19jYkhVdXpQWGl2TWJMcHdLcmw2MFBZT2sxNTJsbE5sVUF1cjVMd2NDWXhXZWc?oc=5"
+   ],
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQY0M2VG1Temp3NGRVcGx4VGduWmxTNHZVOVVOZW04d0xNTDlBUVpPdDdyeFk1NDVIaUM2MUlfQ1lrSmpkdUE4cXRMVGQ5TnhDc2tBdl80OEQxeDc5T3Y2NFBYTWlTZFE3dU9ET0RTYnBKaEo0YjMzZURuQ29WbS1BV2xQc3A1WnJxRDg3cl85a1cycUo4WWFlNVphSHZINlBJOXfSAaIBQVVfeXFMUGNDNlRtU3pqdzRkVXBseFRnblpsUzR2VTlVTmVtOHdMTUw5QVFaT3Q3cnhZNTQ1SGlDNjFJX0NZa0pqZHVBOHF0TFRkOU54Q3NrQXZfNDhEMXg3OU92NjRQWE1pU2RRN3VPRE9EU2JwSmhKNGIzM2VEbkNvVm0tQVdsUHNwNVpycUQ4N3JfOWtXMnFKOFlhZTVaYUh2SDZQSTl3?oc=5"
+   ]
+  ],
+  "first_seen": "20260825-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-24",
+  "ko": "호르무즈해협 통항, 3개월래 최저치로 급감 — 하루 상선 통과 단 1척으로 위축, 로이터·Kpler 데이터 확인",
+  "en": "Hormuz Strait ship transits fall to 3-month low — only one commodity vessel transited Monday, per Reuters and Kpler data",
+  "ar": "حركة السفن عبر مضيق هرمز تنخفض إلى أدنى مستوى في 3 أشهر — سفينة بضائع واحدة فقط عبرت يوم الاثنين وفقا لبيانات رويترز وكبلر",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2VURrY0VEOWx3c0xzSXN5MF9TaVZMZEVHMDR5ci1iOWR5S2xxMkVScWFUREdtRXJxejBIUEwxWlEteHBQaGZ1cDBIWVJhd0pnbHBTLUFoZU1IZU1DcHVwQW4yb3ItdjZ0OVVVOEFHWkdhbWgtazdGLWE3a3VXRXM?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/commodity-vessel-transits-through-hormuz-strait-drop-three-month-low"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247214/Strait-of-Hormuz-ship-traffic-drops-to-single-vessel"
+   ]
+  ],
+  "first_seen": "20260825-0700",
   "status": "pending"
  },
  {
@@ -1766,77 +1837,6 @@
    ]
   ],
   "first_seen": "20260818-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-16",
-  "ko": "이란과 오만, 호르무즈 해협 안전 확보를 위한 '이정표적 협정' 체결 — 다만 완전 재개방은 미국 조치에 달려있다고 보도됨",
-  "en": "Iran and Oman strike landmark deal to secure Strait of Hormuz, but full reopening still hinges on US actions",
-  "ar": "إيران وعُمان تبرمان اتفاقا تاريخيا لتأمين مضيق هرمز، لكن إعادة الفتح الكامل تعتمد على إجراءات أمريكية",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "News18",
-    "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZFphLVFLMW1EN1d4bWU4NUVoVlcwWFNjbE9XOHhOeWN1UVkzNnk5LXE2NDhIUURtSmdJRHBPcElFTlpiZnEtb0hmbkdLTkZjcVRDOFRWd0pOenFXMU1teVZjZENEYnp6dTB4ZXg3SnNEa216VXV1dnhydkpqV1ZveGs1OFo2cno4Z0c5WG5tb2prakx5TE1OYkxDaWxBaTc5M01ZV1c4SW5ySVQwZVlkek15SmRET1JsbFhKUDFyY0tRV3RmaWpqZ1FNdl9JMjBRUXZzUFd4VmxTd21wZFNKbk00MEXSAeoBQVVfeXFMT3dibWhleVpVS1o4ckRYLWZqRzZQSkFjUnEtcTNJbmNqQVExRUpWQ21PNTAyaEZZc3NUbnJWeEd5YVUtd2FDS0xna0VjOW51dkRiZC12akZmSXpHR0tYaWRLLUVsYlJidnZ3bjdvQk9DTjA0ZEtEYTMxQlNRcUxpTkdwY04xbDMySWxXRVJRSXZ3Y3dmckY5ajl1NGR3elg0Wk40VjZwbVhHa1VDNnk0SHdPbjB6RWxDLXhQTXh2OVFXb0JKQjY2THZwaDM4cnpOS21YNmgxWjdic1ZUQzJCNC1vTFFLUU9QREd3?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOaG05c3Y0Yjl1LUNyaTllV0JPVUdsZW5RMU5ONlJranFGTklVcExpV2VkaEtjS2RVeXA3dld2OFVKbEczanZOZGlza3FtbXRIT2tCUjl2Nm5rZU16dnFvZmlBRHhuLUpXNDB1bUtTeEhaZlBnQjEwV0lXTmR6Wi0xY2JaT3dUb2F4YUZRcWZXSXBUeW1najF3UXpFT0J1eGZZbmtzc294a244QTVXblhKNUlRdEpWNjRRVVE0ZldCQjc3MHNUd0NkamtTNjR0TlNuOHYtemo4QnByME84RkNWc3pFdmpzbWlweVZ2WUNiZlBrZlk?oc=5"
-   ]
-  ],
-  "first_seen": "20260816-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-16",
-  "ko": "이란, 카타르에 폭격 임무 중 실종된 조종사 3명이 카타르에 억류돼 있다고 주장 — 카타르는 억류 부인, 이란은 사실조사단 카타르 입국 허용 요구",
-  "en": "Iran claims 3 pilots missing from a bombing run are held prisoner in Qatar — Qatar denies detention, Iran demands access for Air Force fact-finding team",
-  "ar": "إيران تزعم أن 3 طيارين مفقودين خلال مهمة قصف محتجزون في قطر — قطر تنفي الاحتجاز وإيران تطالب بدخول فريق تقصي الحقائق",
-  "q": true,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "BBC",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE40blYzUFFqQV9ua2c3ZU82eVVmandiMU5SR1haNGxRdWdweEJrOFAwQ2ZhLUhvd1ZMck5nRExYRUhYVG5KUXV0NTVvTVpIWnRoRDdKTjlrNjZVQ1Yt0gFiQVVfeXFMTWNRWl9nVnEydXAyMThNaGpxYjl1VDFwQnItZFVCenlOQmxsSHdNdnNrS1B0MDlGMkM4MzdzY08zSGF1VHJ3cTlIYVBuekh1X2RUNUx6b2w3YVlnWVB2dVhJbHc?oc=5"
-   ],
-   [
-    "iranpress.com",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOa2hzX2s1UWhvWWxoYzdwRXVoZlhsY19LRGh6ZE5NVEpqM0xSbkhJYXZ3QlRfMXY1VGdSQ0x2c3lGekxxVDRnYm1uMXZOSkFJS21kbXNMb00zaU1TQkMzSlhPRlpmU3E0WHlMWWo5cXlHTmFTQUpVYW9uLWNqeDgzSS1DdTA1M2otNDM0WkozQ25BMUN1dzQ4NE1oLTNzcDJidktyelpZcGVnX1g3YXc?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRUtLNEdDbkQxTWtlR1o5NHFQWkg3NkI2ZzBzeWZ5bWJsX2k0Ymh1UTEzRlpjTkFYRjQ5R3gtN084LWVoNGFZeXpIaTgwYTl6WnlNSGY0bnpyS1NablA1Y3dWSHJUTThrYzVzUmpVUW9IbGk1X095eDVISEEzaG45Y3N6bS1Db3gzc3RKN012TGVJR2w2aW1oTjhudE0waDRfX0wyajcwdGNCQ1JObzh3U2Z1TWNBdzR3RU9lRVQ0ekRHWHNQb2k0?oc=5"
-   ]
-  ],
-  "first_seen": "20260816-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-16",
-  "ko": "이스라엘, 레바논 남부 공습 — 휴전 이후 최다인 11명 사망·19명 부상 발생, 카츠 국방장관 '헤즈볼라 대가 치를 것' 경고",
-  "en": "Israel strikes south Lebanon killing 11 and wounding 19, the deadliest toll since the ceasefire — Defense Minister Katz vows to 'settle scores' with Hezbollah",
-  "ar": "إسرائيل تقصف جنوب لبنان وتقتل 11 وتصيب 19، الأعلى منذ وقف إطلاق النار — وزير الدفاع كاتس يتوعد بتصفية الحسابات مع حزب الله",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLUVUczVTVUEySmItajd1Ri1ubzBYTTZXRERDUFNiWVBwdjYxRnh3YkltVEE1a1prREI1ZEJIei04X2JMZW1FUEhoWjE1UWpJOGR6OHFRWUcwbHZHdHVCeEJSZjJXZzltX2ZPQVhvc3hkSWgzdV9IX2NvRTNMZmJ2VGVvTjZ0YUZHSDA1a3VLWkVuRFlBdXFXZFlfSVB4SUx2UWJTTEVGaUMxeFNzYUgzRXpERS1VQjFhY1Rj0gHAAUFVX3lxTE5Ea1RTQl96U3dpS25JcFowWUd0b0pES0duNUw1ZUEzdFM5Y1BIcEdEdHE1elpBalZnRWpfTXgwVTZkWC05bEtJLTVMUURnR01feUo4eEE0ZUR6WFZrMGdVWkY1MTYyMERQMDNvZ3ZYSUR6aG5uNkQ3ekxGWFh1ZmVtMHRBTzNkbDhvV2M1cV9kN2hSZGZjNDRJWjVmc1FWcXdmZnRSaGo0TTNlZGlCaXJ1bEVvMThQUDQ3NWMwajhVUg?oc=5"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMlJJTEJSVnNFeWx1Z0JVOVpHV28xMVNQbExFN2MxZnhYSzVkNmYyZ0w2ZkpvLTVqbWNWQ1E4WndZTk01N1hsTjNDeUNVODJxX2pQNjVMUzEzM2lMVlM2VmZGX1JpQmZRUDJzWHczaGQwWmxxT1BvYlJGVlZPOFBueW15bnIyU29WSzE4elJneVdtZFRzNDFiYWo0c3RiR2xEM0U0QUxqcENUOWN1V0dtcHB3Mjd1Z2x2YU5wcNIBwgFBVV95cUxNb0JwTFRMZ0pSMWFfN2hyamkweHNsRl9TYnpGY0VROUQzeHNycklWU25TRVJoaDJMY1RlYzJ3V21wRFdPbkM1NDdJSzBDbWpteEtjOGN3NEJ1MXZDQ01tSlVjOFhtN1JkbUNYekxLOTk5UU1BdHV0UDlJODNtaUp6OXlyWEV3WW9jRUlGOW1uREFIVVFQX0xYbTI4YnZhMGd6STJHY0RXeF92SXZpRzJZb1RJdlFSS2xRSVQ3d0RWcVNYdw?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRTFEQ0xuMU1rWFRBYjROeFk3cExzZUhVNklkQk02QS04eG9yaWVMbllWcXRzYzh3eWx2OXZMM0M2RTRjYzlWOGxvZjV3UmtkUDV1VGNFWk5EbVhNcDVsUnV0TjdOZDhTdmc2ZGw5SkJ5aUtWNEowbmRWUi1oQnAtVWNNVkEzNUxqQUNjZ0RxdVFNckdEMWlMdnNGdDBhakpIN3pMdjl5b0tmQnpIYTdvSGJkeDNPd1Q0ZU4wV0lR?oc=5"
-   ]
-  ],
-  "first_seen": "20260816-1530",
   "status": "pending"
  }
 ]
