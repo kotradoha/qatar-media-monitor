@@ -331,6 +331,56 @@
   "status": "pending"
  },
  {
+  "d": "2026-08-25",
+  "ko": "미, 이란 대응전략 '폭격→경제제재' 전환 — 루비오 국무장관이 동맹국들에 군사행동 대신 대이란 경제적 고립작전(제재) 추진 설명, 미 재무부는 24일 '이란 경제적 왕따 작전' 발표",
+  "en": "US shifts Iran strategy from strikes to sanctions — Secretary Rubio tells allies US will avoid military action for now, Treasury announced 'Operation Economic Outcast' on Aug 24",
+  "ar": "واشنطن تحول استراتيجيتها تجاه إيران من الضربات إلى العقوبات — روبيو يخبر الحلفاء بتجنب العمل العسكري حالياً بعد إعلان الخزانة الأمريكية 'عملية النفي الاقتصادي' في 24 أغسطس",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUEFCNS05dTBvZlVlWXBnWVFlelFfOUEwNjAyenV1QU54OS1rLWU3MGQzRURjbGw1RUdPZDlNT2E5S2VDQlc4d3Q1SFI4ZkxBOTZXbDlOYlZGM25ULTJYbTEySGFNRXktVVBJbEFkTDVCUEQ0SjdNMEVjMDNYbVZSZ0tqZDNsVHZFaVRJMWJlZGl6a21FSnB6R09YczdPbVJxVVZhQV96azhlcHNXbEJkTHc1QTQzU2oyTHpRLTc0R0g?oc=5"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxQenNxdGFhQzI0cHhPV0dBeUpNX0l5dC04R0ZiekFPUmZVNUNqd3lkV0w4TnRMUDNBUW9YVE5PNDFvZTdXRXNMMXpkenppMVBuM0lzNk9RcXVaZkVQU0hMX3hETTVPWHR4bVVFQ1RTZkdwQVpfamt4WFlzOEsxWVRyUXBtYWxqd2pxZHFnWFBxZmNxd00?oc=5"
+   ],
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86246107/Ghalibaf-reacts-to-US-Treasury-secretary-s-Rhetoric-It-was"
+   ]
+  ],
+  "first_seen": "20260826-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-25",
+  "ko": "이란-오만, 호르무즈해협 임시 왕복항로 '7마일 폭' 구체화 및 재개방 조건 제시 — 이란은 요구사항 충족 시 해협 재개방 약속",
+  "en": "Iran-Oman detail interim Hormuz corridor at 7 miles wide, Iran ties full reopening to demands being met",
+  "ar": "إيران وعمان تحددان تفاصيل الممر المؤقت في مضيق هرمز بعرض 7 أميال، وتشترط إيران إعادة الفتح الكامل بتلبية مطالبها",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUFZYaThIb2VDbTI0RzJldjRaRnpGanJSbmJac0plNl9JWUs0a1FxbHZlWlBJM3pnSWFDLXNnV3gzY0V2T0ppd01obGtkQkRTc2F0cFJsTVBHeVprSTBJWVNFVGdkc2xHaFlVdEQ4NFBkMVJxaGd3WjE4UzhiNXlDT3p4VmJ2WklBMzlpVGYyU2N0NG5WMWYzS3NNLWRFMzc3YjU4Zm5xOF8?oc=5"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVjdZMHZKVTJWN1JSaENsNjVKazFHbkZSenpYaEpuSldvUHVDc2pTM1QxZGlSV1hIWlRtTVpiWFhZWXNJQ2EzdDhWLUs4eEJ6RnNnazI1bEJWVDc0enBnU3E4Z2VSaG84UmI3WnVCODhmLXV0WEREVW9qZXI4bFVOTE9B?oc=5"
+   ],
+   [
+    "문화일보",
+    "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9tTGZPcllRUnNBbl9NTGRzOElBdXJ4TkRfYV9Dc0ViRjQ2UVNzbEFEWFo5dVl4VFN1WkF3ZXFjbGM2SE9HdGhLb2MzTjg5WXdu?oc=5"
+   ]
+  ],
+  "first_seen": "20260826-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-24",
   "ko": "파키스탄군 총사령관 아심 무니르, 미·이란 협상 교착 속 테헤란 방문 예정 — 협상 돌파구 모색",
   "en": "Pakistan's army chief Asim Munir to visit Tehran amid stalled US-Iran talks, seeking breakthrough",
@@ -1775,56 +1825,6 @@
    ]
   ],
   "first_seen": "20260819-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-17",
-  "ko": "미·이란 60일 휴전 시한 만료 예정 — 호르무즈 통항 분쟁 속 종전 협상 교착 지속",
-  "en": "US-Iran 60-day ceasefire set to expire — talks remain deadlocked amid Hormuz transit dispute",
-  "ar": "وقف إطلاق النار الأمريكي-الإيراني لمدة 60 يوماً على وشك الانتهاء وسط تعثر المفاوضات وخلاف حول مضيق هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOEc1Wk14N3FUVDlvRFBYVVBhUUNNZFF1eGhBbnduMDRWSTc0QmdmZjZVNk84R3l2azEtWEd3ZVdocmVCZVR2d1pNTW84elBhd1Uxak9jLUlQSWdHUWxQTWNQX2JCTzhPUHVsSmFEVFJpd2JFMW1kd1B6UHpYUWs2TVkxczBnM3pNdDdHWEFIN2VqSUUwUGxWUHd3eUhCd19RQmtBQ1pULVNYUktw?oc=5"
-   ],
-   [
-    "조선일보",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYlBMX1g3eVNVVllqMnhxMjRNT0x5cmxUenhXeU5NdUpBSVIxUHZiTG0tYlE4c2RLLXhfYTh2OGFjYlAzQld2X3BrWkdtejJENVk0RDR0MDhfTEo1cFhmRkRNajJ2Q0FraWdwTjRfUEE5YVRFNmpheWFiSTFuZ1BkSm5EaFM?oc=5"
-   ],
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ080NFcyekJKenotQzVZaE9aV3R0aXo4ajIxQkptOFdZbllOLVNLc25IaGRDZ0NfSXpXMmVEM3hLSDd2eXNtY3pfMnB0Q2llc0toNlJsWWVPNzdNekZjRTQ4VWRVYWpxZ2dfTnBWSVpTb252dEF6QndVUmVaU1RVN1pn?oc=5"
-   ]
-  ],
-  "first_seen": "20260816-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-17",
-  "ko": "호르무즈해협 통항 사실상 마비 — 토요일 5척, 일요일 0척 통과에 그쳐(에디일리 보도)",
-  "en": "Hormuz Strait transit near-halted — only 5 vessels passed Saturday, 0 on Sunday",
-  "ar": "شبه توقف كامل للملاحة في مضيق هرمز — 5 سفن فقط يوم السبت وصفر يوم الأحد",
-  "q": true,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "edaily.co.kr",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeUFvd1Z6dTRPa2tERmQ5ZVpndENDLXZKV01ya3hnYUlSNHFOT3VYQUQzMF9ONnY4LW9DZzlsMkVjaUE0NENFaU83ZEF4WTQxVFotSlMtVktiN2xLeVJXandSSTZ2UW1NcWgyV0lsRE1yQzJBUWZfX3ZITnI3YVBGaQ?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQc2I2Qm1UQUVIcl93dVI3U0hCREJ0M1RqLVhGUHJ4d05IZEc1LWNQX21XdWlxc1hFWEhMZU45WGdjMUFaQ196OXNRTEgzV2ZCbWxuaWpMUXNSTWlhRC1tRUJ6M0hidWdWUnBuOGRCdFhqSXNyV1ZSaGZlUm1qUjBidTZkeVRkbVZ5WkR4N194ZlZ4eklYUXpwdGw0QzlJZ1dndm94enpfVmZHWkxQVXJfTGlER3liVTZSeW1kOVNac1hnMTM0dmlJNXVnQ3QtMkI0NWg0UXR4d040MFBHTHk4VzYwczdacUVpVi12VndBZ01pbF9Z?oc=5"
-   ],
-   [
-    "CNBC TV18",
-    "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZC1aa3BBXzZXemxKRUhCZ2RUbXBqb0lPQzE5TGt3R1BDNFdDZF9mbEpWSGd4Vk1sSnp6aF9RY3pWMkRTYzhnZWFkMVZQdWw3REx5YjJqSlAwelFkX2lFbzAzcDdSdkxFT29GU0xyYnpGUVBLNklVYUlfQlNibHJZVTl0eE5JVjdSem16eWFscGR6YWhrTUN3UHFkZ0Q2Y3UyQ3cxejhja0hZTkJheU4xdkZ5MEFRMS13TG9hV0FFRzRBVVpVZnNvZ1BZU1FUYWRfUzdlQmY3TlNZbnpDYjFJTFQycjNJb2hN0gHoAUFVX3lxTFBkLVprcEFfNld6bEpFSEJnZFRtcGpvSU9DMTlMa3dHUEM0V0NkX2ZsSlZIZ3hWTWxKenpoX1FjelYyRFNjOGdlYWQxVlB1bDdETHliMmpKUDB6UWRfaUVvMDNwN1J2TEVPb0ZTTHJiekZRUEs2SVVhSV9CU2JscllVOXR4TklWN1J6bXp5YWxwZHphaGtNQ3dQcWRnRDZjdTJDdzF6OGNrSFlOQmF5TjF2RnkwQVExLXdMb2FXQUVHNEFVWlVmc29nUFlTUVRhZF9TN2VCZjdOU1luekNiMUlMVDJyM0lvaE0?oc=5"
-   ]
-  ],
-  "first_seen": "20260817-0700",
   "status": "pending"
  }
 ]
