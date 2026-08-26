@@ -1283,7 +1283,7 @@ INSTITUTION_ARTICLES = [
     # 링크는 연구보고서 목록 페이지(항상 유효)로 연결 — 게시판 자동수집(아래 BOARDS)이 정상화되면 원문 PDF로 승격.
     {"name": "The Al-Attiyah Foundation", "region": "overseas",
      "title": "Strait but Narrow: The Energy and Economic Impact of the Hormuz Crisis",
-     "url": "https://www.abhafoundation.org/reports-rr",
+     "url": "https://bit.ly/4gqTIXw",   # 재단이 게시한 이 보고서 전용 단축링크(원문 PDF로 연결). 목록 페이지가 아닌 보고서 직접 연결.
      "base": "https://www.abhafoundation.org", "date": "2026-08-26"},
 ]
 
