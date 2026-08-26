@@ -903,6 +903,7 @@ REPORT_DOMAINS = [
     # 걸프·중동 싱크탱크
     "agsiw.org", "washingtoninstitute.org", "ecfr.eu", "epc.ae", "grc.net", "lowyinstitute.org",
     "swp-berlin.org", "ifri.org", "clingendael.org", "gmfus.org", "hudson.org", "fdd.org",
+    "abhafoundation.org",   # 카타르 알아티야 재단(에너지·지속가능성 싱크탱크)
     # 신용평가·거시
     "moodys.com", "fitchratings.com", "fitchsolutions.com",
     # 국제기구·기타
