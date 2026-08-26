@@ -25,6 +25,52 @@
   "status": "pending"
  },
  {
+  "d": "2026-08-26",
+  "ko": "네타냐후, '이란과 합의 불가' 강경 발언 — 트럼프에 대이란 봉쇄 강화 촉구, 호르무즈 잠정합의 이후 이스라엘 강경모드 전환",
+  "en": "Netanyahu says 'no deal with barbaric Iran,' urges Trump to tighten blockade — Israel hardens stance following Iran-Oman Hormuz interim agreement",
+  "ar": "نتنياهو: 'لا اتفاق مع إيران البربرية' ويحث ترامب على تشديد الحصار — تشدد الموقف الإسرائيلي عقب الاتفاق المؤقت بين إيران وعُمان بشأن هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "연합뉴스TV",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByY1E3c0k2d0FJSFhWMTJhWUdUZENoZjBSRV80OHFhSjlZTXU4ZmJYM3RhdGZrVGRkVThhOHlubll2TUZKRUU1N0tPUTFxN3NUR0ktSkxuTzVoM0hLaWRhYUhySHlGYjQ?oc=5"
+   ],
+   [
+    "머니투데이",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JT01DWGJqZWdmTklMT1VVcGxQMnA1WVFMMGhDT3loTlZuRnRfS0N3UFlaRDdoNk1sZlNtRFpfQWJjRXVkbVRoUHc5ZkNIajZKd240UjNCZmlxaHhtOGV6UFJUM2JMckJq0gFuQVVfeXFMUHY3MlZHTXNMTHRrQU1GTkpTdlE3X1NzQkdHTl9FeGwtS3JzOWJYbUJPWUwwcU9vUUVTX2ExemZ1UUpBSXNUVWpkYVFBWG5rckJPNGFyR0hXZm90Q2hfcGM5Y0tDZk5ycllLcUpXQmc?oc=5"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96QjNNdzV1MnFWUnphVUZJb0k1cGNLNjczZW02XzJJTWd0eWExTUlvUWVISl90ckNITmd0eVZmWUJBRGYxZGRkbk8wdzRyUXJDdjY0LXhQcm8zaDZDMWc?oc=5"
+   ]
+  ],
+  "first_seen": "20260826-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-26",
+  "ko": "이란군, '전쟁 중 파손된 무기체계 재건 완료' 발표 — 군사교리를 방어에서 공세로 전환한다고 선언",
+  "en": "Iranian military declares reconstruction of war-damaged weapons systems complete — announces shift in military doctrine from defensive to offensive posture",
+  "ar": "الجيش الإيراني يعلن اكتمال إعادة بناء أنظمة الأسلحة المتضررة خلال الحرب — ويعلن تحول العقيدة العسكرية من الدفاع إلى الهجوم",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBS0lHaExsYVZmck0ycDNrT2N2WmJzazRkV0lCajNqRFAyWGF2ZEFJdll6TDBoQUdXVjFKZk04ak1zd1BuOGRJU0N3Z0NHY2pyenVIdVpkcXBuVDY0Q0RIU21HNkhfTFl0TlNYcFNDbGJyQVhF0gF0QVVfeXFMTmJEeTFBZnhNV25ZS1pDMU10R1RCQ1RmWkoyalRueDVIb1l2a1Q3dnRwRDZSWVZpMnBIM1FJYmFmQWthejNzRHk2WWt6dW5vQ19OemN4anZlb2pHWUpZV3kzazdKbUZXY0JXdkRyZXlfZFluS2o?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20260826180500079"
+   ]
+  ],
+  "first_seen": "20260826-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-25",
   "ko": "오만 인근 호르무즈해협서 유조선 피격 — 정체불명 발사체에 피격, 인명피해 없이 손상만 발생(UKMTO)",
   "en": "Oil tanker struck by projectile in Strait of Hormuz off Oman — hit by unidentified projectile, causing damage but no casualties, UKMTO says",
@@ -378,6 +424,31 @@
    ]
   ],
   "first_seen": "20260826-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-25",
+  "ko": "이란·오만, 호르무즈 해협 수익 분배 및 임시 항로 합의 — IRGC 발표, 13km 폭 이란 영해 통과 항로·공동 기뢰제거 단계적 추진, 즉각 개방은 아니라고 단서",
+  "en": "Iran and Oman reach agreement on Hormuz Strait revenue-sharing and temporary route — IRGC announces 13km-wide corridor through Iranian waters with phased joint mine-clearing, but Iran says full reopening is not immediate",
+  "ar": "إيران وعُمان تتوصلان لاتفاق حول تقاسم إيرادات مضيق هرمز وممر مؤقت — الحرس الثوري يعلن ممرًا بعرض 13 كم عبر المياه الإيرانية مع إزالة الألغام المشتركة تدريجيًا، لكن إيران تقول إن إعادة الفتح الكامل ليست فورية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know?traffic_source=rss"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxPT29nb09ZMEJWQVF5ZmhscmZhYjJjSFRJaGZhbVQ0enRUYlItbXQta1BwS3dFa080YTN5ZWU2VUNDQXdZdXpPRWVPRmhQQ2RYMXdVUGdxbUpFNFFlU1F2WERIYmVFRGZoRUk2QTVVeGlsc1lLamI4QVpJbGtqSnJHcS1LbUFZaExtSTJUNGVRU28wd0dsQUNUR2dSNEN5WGtFNllGeVd6clVpVk50NWdpc0M5RzRnVC12STBJME1TaXpVWmdUU2Rr?oc=5"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxONWpkclBlbFhhVGx1UzU0SVoyckxTVjE1Q3RlX0MxYnZjVFJPRmJjR09GSEl0Qk5aN1Q2elJDd2pIZ01Fam9zakd4VC15aWUySkJvQ0toR0xpVXVmV1NsbFhYclBYUGJrMEJaQ29fajcwenJhQmtaS2VtNmVLeUhfN1FHdlFEcFV1NExhTWpzM0loWlJLeG9iV3lxc3h6LXRxMmRtQjNFc1I2alI4TDgxT3NjN0R5cVFYczRRa3hpYw?oc=5"
+   ]
+  ],
+  "first_seen": "20260826-1530",
   "status": "pending"
  },
  {
@@ -1747,81 +1818,6 @@
    [
     "The Peninsula Qatar",
     "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNaDAzX2RpNjA3elAxamNhQTlzUERjUkZ0MUYwWTkyYVhkNG4zMVNxcmgxb1Q2R3ZQdkJ1NkY5aDNnUVlnTU5tU1lhNUREallfMUNsYUJDV2QzV2VUaFR5RVV6TGN5dnk1eWxoN0lIOUMxbHpWbFdtNmFfdzR3U0ZpT2M3OUx4QUVwbjZVYTVPb0xFMnlwUTE3VWk1a0Vsa21fVGdDbS14OWJ0OGxtQjJBVFpHS2dwSWppTEJFVlhLX3c3Slh4UWFqTmwtSFJ0V3NGdXpRWDVNeE51S1lCSUtCYUY1ajhIcFpkTHc?oc=5"
-   ]
-  ],
-  "first_seen": "20260819-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-18",
-  "ko": "이스라엘, 시리아 아부 알두후르 공군기지 공습 — 시리아 '국제사회 의지에 반하는 행위'라며 반발, 튀르키예·UAE 등도 이스라엘 주장 반박",
-  "en": "Israel strikes Syria's Abu al-Duhur air base — Syria condemns as defiance of 'international will'; Turkey, UAE reject Israeli allegations",
-  "ar": "إسرائيل تقصف قاعدة أبو الظهور الجوية في سوريا — دمشق تندد بالهجوم وتركيا والإمارات ترفضان الادعاءات الإسرائيلية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTWFCUTc0LVpkd21oaEJYRFNyUUFOREtzZG9aQjVRTW9jSjhkMjJGMGFNUkhxY2dsWlpvNkc0NDM5NHhPRUR0NmwwRnQyQ1h3VkE5YUFyUjRZOFJsX2d1dDlsc0s3RVpnc00tbkh1UTNta2w4RUg5RWtZNVl4Q3V2Y25IMXFYaTJIQ2NyWjIxUHZLaXZXWGJnTHQxS0o5Ynp5WUVscjVCSXd2X1dpRVg0MUZpWWtkcVXSAbwBQVVfeXFMTm5fckd6eHo0SjJlQzB6UjN3T1dYWDFnWFlXdWU2cG1QUHFSU1BodVJIX0xDTEZUd3VndE5ndGZNMzJIR3F6bmhKZEFoTWtLaVVyaVoydi11bEVkVkp6QXJOOW40c1Rya2U1MTVNZEdWX29fckttalFaSTRmUjhMWks1LWZpVF9aRjN2RE9XRUl1d2U2aE50WUU1MFRBbngyTGZjVXBoYUg4YnNxcTdrUmF3NC1XSW9MUWE1UDU?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/report-syria-denies-security-agreement-israel-after-strike-airbase"
-   ],
-   [
-    "© George OURFALIAN, AFP",
-    "https://www.france24.com/en/middle-east/20260819-middle-east-live-turkey-rejects-israeli-claims-after-strike-on-syria-air-base"
-   ]
-  ],
-  "first_seen": "20260819-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-18",
-  "ko": "가자시티 이스라엘 드론 공격으로 6명 사망·10명 부상 — IDF는 하마스 지휘관 회동 타격이라고 주장",
-  "en": "Israeli drone strike on Gaza City kills six, wounds ten — IDF claims it hit a meeting of Hamas commanders",
-  "ar": "غارة إسرائيلية بطائرة مسيرة على مدينة غزة تقتل ستة وتصيب عشرة — الجيش الإسرائيلي يزعم استهداف اجتماع لقادة حماس",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/8/18/israeli-strike-reported-to-kill-at-least-six-in-gaza-city?traffic_source=rss"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbkg5SktYV2hkY1VDNEszYVdqcEZ5dTU2YTJGcVh0NWQ5VEdvZnZFUjFZdXpPVTBDb1R4cGFtRkFNb1VoUmRHSG40SXUtMUZRVnBWM2JKQ3ZKb05CdTN6MXgtVFJqX3VPN3RZaXFxV3BEYnpoUm5waUFPSnQwTjV6N0VkRDJuaFV3ZzhNSkRQX3ZyeXdCV2NEQ0VtRnIyRG15RTRubHhUa2ZERXpTN1E?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxORzVEQlQyUmY5aVlYbktzREV3aFRTMkNwNG1SOU1UTktUNkw4Q2N0RGsyZHVuazhQb0VVSnB1OFBoTk9SdlFSR3FROTB3TFI0ejVUczk1N1pKVlRQYkhBN3g5cWdCNnNaTFI2SDV0dXpLbXVKMld3blVvY29fb2tKbFBNM1JmTVJrQ2dNRjVvTWZmam1ZS0VoaXpjaWl1Nk82U0kyY0U5dGRoWDZnb3NHZUpkZ9IBuAFBVV95cUxOVGJpNWN5aTJSRnRNQnJsdDlRcnprb0FIeW9xRWpEZ3d0bFBEcmxyTHBPS3FLWHp5MzJ3RHlHbUlLa1hrQUdNVUVwejB0VFZWN2VldjcwaUljN1BZd0dKWldFWlZxN2I5SUlUdl9DdGQ5R0dPU3RKR3RRYTlGSlYxZGRIZGFIQ3AzQTc2UldjLVQ1WXpveGF0Y05KVTRRWkdwZ0w2dUJmTzZxd2lIcGlVM3RLTGN5dkdI?oc=5"
-   ]
-  ],
-  "first_seen": "20260819-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-18",
-  "ko": "호르무즈 해협 선박 80%가 오만 항로 이용 — 이란의 해협 통제력 약화 지적(케이플러 자료 인용 CNN 보도)",
-  "en": "Over 80% of Hormuz-transiting ships now use Oman route — report cites weakened Iranian control of strait",
-  "ar": "أكثر من 80% من السفن العابرة لمضيق هرمز تستخدم مسار عمان — تقرير يشير إلى تراجع سيطرة إيران على المضيق",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "arabic.cnn.com",
-    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbHZkYjQtQTA2c2xiSzFmNTd4OWJXUWstRVlFZGExelQ5SDlObnNvVWc0d29xYnhudDVWdGc0THZCMTZ6QURxbWFvV2NDSUpCVjJrV2ZKUDQ4Q2xRclUzMjRCMXNHMURuN3RKbXVNWl9RUGxnVF9CVHI2MkZ0NWNKaUtiUnZYcVFPWVJUU1k4OU9WeEpLaWlud05Kb1h4TjNwSWfSAawBQVVfeXFMUDVkUEFtQTYtemhYcVJYRzBuTU9LTG1VcmhrWWhraEFCQnNrYU5UWklhV2V3Z2lEeGVYdllBeVBOZ2JabjY2bzBYYnhSWXlfYXZ5Vk5FVEk4blphQm52ZHhDWnJfeS15SDVYMVJ6QUFvYzhRVFdtVGxlYXhvcWp2SGFhYlpGZTZ5cG1iNVFKbzBjaGs3Z1h4ckNpMXhhazMzdHRFOTJXbURNd1BLZw?oc=5"
-   ],
-   [
-    "문화일보",
-    "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAyWURXTlFMODB2dlhpdWNLTnRIZ1laTWlsUGF5bG9UZGZfZ3R3dkRkdS1kdUdTLXNGWUM5R0syMjlHbnNQT0pEbXVEY1o4SFlf?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260819_0003753746"
    ]
   ],
   "first_seen": "20260819-0700",
