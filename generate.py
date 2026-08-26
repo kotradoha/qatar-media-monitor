@@ -1263,6 +1263,12 @@ INSTITUTION_BOARDS = [
      "url": "https://foreignpolicy.com/feed/", "base": "https://foreignpolicy.com"},
     {"name": "Al Jazeera Centre for Studies", "region": "overseas", "type": "rss",
      "url": "https://studies.aljazeera.net/en/rss.xml", "base": "https://studies.aljazeera.net"},   # 영문판(한국 독자용)
+    # 카타르 알아티야 재단 연구보고서 게시판 직접수집 — 구글뉴스 미색인 기관이라 자체 페이지에서 포착.
+    #   보고서 원문은 media-uploads/reports/*.pdf 로 게시 → 해당 링크만 수집(제목 주제필터가 에너지·중동만 통과).
+    #   샌드박스는 외부접속 차단이라 실제 파싱은 GitHub Actions에서 검증됨. 실패 시 예외처리로 조용히 스킵.
+    {"name": "The Al-Attiyah Foundation", "region": "overseas", "type": "html",
+     "url": "https://www.abhafoundation.org/reports-rr", "base": "https://www.abhafoundation.org",
+     "href_has": "media-uploads/reports", "date_optional": True},
 ]
 
 # 리스트가 아닌 '단건'으로 반드시 등재할 핵심 보고서(게시판이 JS/세션 리다이렉트로 직접 수집이 안 되는 경우).
@@ -1271,6 +1277,13 @@ INSTITUTION_ARTICLES = [
      "title": "봉쇄 이후의 호르무즈 해협: 항로 관리와 통항비용의 국제법",
      "url": "https://www.ifans.go.kr/knda/ifans/kor/pblct/PblctView.do?pblctDtaSn=14829&menuCl=P07&clCode=P07&koreanEngSe=KOR",
      "base": "https://www.ifans.go.kr", "date": "2026-08-04"},
+    # 카타르 알아티야 재단(에너지·지속가능성 싱크탱크) 특별보고서 — 자체 사이트·링크드인에만 게시돼
+    # 구글뉴스/검색에 색인되지 않아 키워드·site: 수집에서 누락. 핵심 주제(호르무즈·에너지·경제)라 단건 고정.
+    # 링크는 연구보고서 목록 페이지(항상 유효)로 연결 — 게시판 자동수집(아래 BOARDS)이 정상화되면 원문 PDF로 승격.
+    {"name": "The Al-Attiyah Foundation", "region": "overseas",
+     "title": "Strait but Narrow: The Energy and Economic Impact of the Hormuz Crisis",
+     "url": "https://www.abhafoundation.org/reports-rr",
+     "base": "https://www.abhafoundation.org", "date": "2026-08-26"},
 ]
 
 def _inst_http_get(url):
