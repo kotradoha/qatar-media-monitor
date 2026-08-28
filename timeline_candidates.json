@@ -1,5 +1,47 @@
 [
  {
+  "d": "2026-08-28",
+  "ko": "미국, 이란 대상 신규 경제제재 '오퍼레이션 이코노믹 아웃캐스트' 개시 — 이란은 국제법 위반·국가테러라며 강력 반발",
+  "en": "US launches new economic sanctions 'Operation Economic Outcast' against Iran — Iran condemns it as a violation of international law and 'state terrorism'",
+  "ar": "الولايات المتحدة تطلق عقوبات اقتصادية جديدة على إيران باسم 'عملية النبذ الاقتصادي' — إيران تدين ذلك بوصفه انتهاكاً للقانون الدولي و'إرهاب دولة'",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxObXFRb1lKMmtqeGEwUHJKSUFDYkozam5Fc19tUVVvOVZWaXNMUXVQX3kwWU1GZDJDSDBza0tGcVlBZ3JuQzFFODdncHlfS3FCXzR0RW15Y25YM0puMW5MbjF3N094TDU0dC0yZk5vaEMwWmVUQzZDTVNaQXM1bFZrcTVCNVg5MVF5LTVhN0RXNFQ1czNKQTVCakxUY3A2OF9xYTNHcnNOS0FIMlJ4Yy1KYg?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-foreign-ministry-condemns-us-sanctions-state-terrorism"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVUQ5M05tTmVDTlpuamtLVDV4eFluR1lranNJVUc3OF9BN0libUN4bHVEMjFEYWxwaDhLWk5pT2dlN25ORGFLalkya0VOS25wcUswdnBOT2xtVG5UaHlQUmZjMjJfX0xKcVlwTy1oWjBYajI3NGlncEJNVTlxbGlpTVF1ek5pZGU3LTFEZTRSenVnbmpBcUlfYi1uRE0yakFMb3h0UG9ZeGxoZXR1S3BNMkpuM3NYZFpXc0lCM0k4RDU?oc=5"
+   ]
+  ],
+  "first_seen": "20260828-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-28",
+  "ko": "이라크 쿠르디스탄 소재 UAE 총영사관 피격 — 카타르, 공격을 강력 규탄",
+  "en": "UAE consulate-general in Iraqi Kurdistan attacked — Qatar strongly condemns the attack",
+  "ar": "استهداف القنصلية العامة الإماراتية في إقليم كردستان العراق — قطر تدين الهجوم بشدة",
+  "q": true,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnA5TnlQUzRENGNWVTRCZ3JhM2ZrVGsxM1RDZmRVR3F5UWxhVFpQRzVEc2FKTTFyanlsQ3gtMGpXTEtKbnNOeEM2bUU5RzVkOVFlcldvcll2QS13S1VEMGNjeG1zd21BOS10QUVYVlF6cW83LXFqTmtxNjRQdnR2eVBGNEJ3MWE5S2pqVmd0ZG9BRk8xUWc3X2ZMTER1VDRLRWliSHFja2Y4bXNYcF91QnlYdENzR1kxbEJMSF83WjduY0ZlMGFIVQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260828-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-27",
   "ko": "호르무즈 해협서 유조선 미상 발사체 피격 — 영국 해사기구(UKMTO) 확인, 승선원 안전",
   "en": "Tanker hit by unknown projectile in Strait of Hormuz — UKMTO confirms, crew reported safe",
@@ -1752,48 +1794,6 @@
    [
     "reuters.com",
     "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdzR1UDJHQ1pYM2Y2dzJ4Wmo3d3VCNFBEbDZQamtaSm5wdF9uWUdwRzdNa0ZtTFdzaUppUkdtelNyaDV0ZnU4aWY1aUlBLWhNdzN2VmhvZzJNdk8zM3gwSXZvc0p6Zld0UHhRQ0RjY2NTekZOekZnMEhwWlo1OXc2Mk1KZ0ZkZHF4WFR5NVRMejB2eDQxdXJJR0VocU5QVmRHbHFTZXlJNWRfdE43Sko3cXlYalB2VmFWSFczb044NlZEU21vOTNHOHpB?oc=5"
-   ]
-  ],
-  "first_seen": "20260819-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-19",
-  "ko": "이스라엘, 시리아 아부 두후르 공군기지 공습 — 튀르키예 대표단 방문 수시간 뒤 발생, 아랍연맹·미국·유엔 비판",
-  "en": "Israel strikes Syria's Abu al-Duhur airbase hours after Turkish delegation visit — condemned by Arab League, US and UN",
-  "ar": "إسرائيل تقصف قاعدة أبو الظهور الجوية بسوريا بعد ساعات من زيارة وفد تركي — إدانة من جامعة الدول العربية والولايات المتحدة والأمم المتحدة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUHd4cDF3MUIxSHlvMjVyd2RFS1JRUlJnMkZEeF9XRGVLdEFWdnFhZlF3Ny1FeGJ1bDRReWotZGlickV5NTRuVzJkeE4xNVNmYUx0cjYwX2lmbDZZRC1hYW14SnJzaXd5RE1jeHFzVFNPWEllQjVwTFVTcFhiSWdWbjl6OG9YYndNLTZBRXhlSTd4TTV2RFVmUTMzZ25FdXRxemc0TXRmRW9iRS1sd3NpX2Ria3d2QQ?oc=5"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPd1dLdkJjaUVkWHJzMWxuT09QSmw4T3p2dG9MbDk3YTVCS1lPM0JwWmVyVlIzekxVeWprUEttT2FyODBsb0xmckVnRFM2MDFIMmYzVkVINTdYRkRJaVRoakRyNk9NcGNHQTA4cFVCb2o2cGo4dFl1THBuU3VDcGRTZzRFaHdYWXc2a0FFbU5LVlNVdWNvdzRwaFgzQzJkUHdBVUhzelBpUHhlNzBJbGZn0gG0AUFVX3lxTFBhR0hWdTlSME1ZLWs4c1hIaXUzLVdUblVoaWV3ZmZJQ01CbFowVjlSZWZNZXllZTdYbFlVTW9JeklkUlZ4TERHOEF6V3l1YWF6RjFNVEhLdWRoU3dIUFJnbVJ2YTN2RUxBN29RUjBCQTluNmVDVllodnlLR2dwSmRYdUtldUlCel9WMkYzQnExN0tnV0pmcXVsUUltbWlxb29GYV83aWVXdlN2NmxabnQxNklIaw?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdmVHYm5GcmpKYWdmNmRnTFJoZ0J5TnNLT3A2QTBYVnRjVno5d0h3QnpCTjh3RnE4ck5HYzdIM01xNW43TWw0TTVzNF9UOTRjRmIyOUVmRWozWEpiMjA5dy1uaHViYUNuVkduVGtETTUzU2hwaFlaMjRuZ1ZDLXl0eWtmaXJnZHNmdGtST2ozVV8yWUJ4OVNDZFZZQWk0b1B5R01vdUk5VU1JVHFwd0RhTzJBZ0JwOEVIaHAxTnd6cF9pWklFcm9wbmgzTlNsTEhSSG03dkk3aGhqZUcxZHhSb1lqbEtmSXZwWHh1OFNSMmIwT2s?oc=5"
-   ]
-  ],
-  "first_seen": "20260819-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-19",
-  "ko": "이스라엘, 카타르에 대한 무기 수출 중단 및 기존 계약 취소 결정",
-  "en": "Israel decides to halt arms exports to Qatar and cancel existing deals and contracts",
-  "ar": "إسرائيل تقرر وقف صادرات الأسلحة إلى قطر وإلغاء صفقات وعقود قائمة",
-  "q": true,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "expresstv.ma",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Wd0RmMkU4WXc0WFFxaF9LdXh3cEhPVkFmeXUtSTFzLVNQZF9USUUtZkZmS3pHaEFVWFRGU0dBUmpaSGJzekVyci1Lem1PMHMya1ZlU19wLTNNRDQ?oc=5"
    ]
   ],
   "first_seen": "20260819-1530",
