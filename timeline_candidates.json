@@ -1,5 +1,56 @@
 [
  {
+  "d": "2026-08-29",
+  "ko": "미 중부사령부, 해상봉쇄 집행 위해 상선 82척 항로변경·3척 무력화·2척 나포 발표",
+  "en": "US Centcom says it redirected 82 commercial vessels, disabled three and boarded two to enforce naval blockade of Iran",
+  "ar": "القيادة المركزية الأمريكية تعلن تحويل مسار 82 سفينة تجارية وتعطيل ثلاث سفن واحتجاز اثنتين لفرض الحصار البحري على إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-us-forces-redirect-82-vessels-enforce-naval-blockade"
+   ]
+  ],
+  "first_seen": "20260829-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-29",
+  "ko": "UKMTO, 호르무즈 해협 상선 통항 분쟁 전 대비 약 90% 감소 확인 — 북부 우회항로 선호 증가",
+  "en": "UKMTO confirms commercial shipping through Hormuz down about 90% from pre-conflict levels, as operators favor northern route",
+  "ar": "مكتب عمليات التجارة البحرية البريطاني يؤكد انخفاض الشحن التجاري عبر مضيق هرمز بنحو 90% عن مستويات ما قبل النزاع، مع تفضيل المشغلين للطريق الشمالي",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/commercial-shipping-through-hormuz-significantly-reduced-ukmto-says"
+   ]
+  ],
+  "first_seen": "20260829-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-29",
+  "ko": "유엔 해사기구, 걸프해역 발이 묶인 선박 400척에 달한다고 발표 — 이란-미 전쟁 여파 지속",
+  "en": "UN maritime agency says 400 ships now stranded in the Gulf amid ongoing Iran-US war fallout",
+  "ar": "الوكالة البحرية للأمم المتحدة تعلن أن 400 سفينة عالقة في الخليج وسط تداعيات الحرب الإيرانية الأمريكية المستمرة",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeTdESVFTRnJFeldMZWFmOG9JcFdVbVdTc1paWVoyQzE0SmZGbGRnelRsM21PN2hPZjh1VURjRTRxR1cxbTZTczQ2ZEs5ZXIzcFFCckRXU2E2eGdocG1WeXIxSWp3YV9tRGRJZFo3UnROVVU4OGd4R01hOVUyYVFXaS1iSWJMSHIxNEl2d3g2ZEFyUVNKajRmUU84RWRaZXF1NC1oTkVwSmdfVUlXZlhjS2RMSk8ya1JHVTNvaQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260829-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-28",
   "ko": "미국, 이란 대상 신규 경제제재 '오퍼레이션 이코노믹 아웃캐스트' 개시 — 이란은 국제법 위반·국가테러라며 강력 반발",
   "en": "US launches new economic sanctions 'Operation Economic Outcast' against Iran — Iran condemns it as a violation of international law and 'state terrorism'",
@@ -39,6 +90,52 @@
    ]
   ],
   "first_seen": "20260828-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-28",
+  "ko": "카타르에너지, LNG 불가항력 파키스탄·방글라데시·이탈리아로 확대 — 호르무즈 통항 제약 지속에 아시아·유럽 구매자에 카고 취소 통보",
+  "en": "QatarEnergy expands LNG force majeure to Pakistan, Bangladesh and Italy — cargo cancellations to continue amid severe Hormuz shipping restrictions",
+  "ar": "قطر للطاقة توسع القوة القاهرة للغاز المسال لتشمل باكستان وبنغلاديش وإيطاليا — استمرار إلغاء الشحنات مع استمرار القيود الشديدة على الملاحة في مضيق هرمز",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Doha News",
+    "https://dohanews.co/qatarenergy-extends-lng-force-majeure-to-pakistan-bangladesh-and-italy/"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGdXSEJxeEtGbnA4SWdCRkkyMFM4VFhkS0hHT1F5cGw3TGg1LXZneGR4Z2JBRzNjdldsUlZNMlp5T1I4RDBRLWJoUlptMms4MXVzVmhLOXJndHI3U2E0OTcwTXprQmFRSkRYMzFxRzMzZExybFVWcTBlZGduN18zZmVJcWxnR3QzcU9iclR3b3g5OUdBZ0twWlJnUnZkbGVyN2hvNFVHRWZjYW9jMmtxbUtIVlotOC10UjVfWkln?oc=5"
+   ]
+  ],
+  "first_seen": "20260829-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-28",
+  "ko": "이란 IRGC, 호르무즈 해협 '완전하고 결정적인 통제' 선언 — 이란과 조율 없는 모든 선박 통항 봉쇄 발표, 美 대응 봉쇄 지속",
+  "en": "Iran's IRGC declares 'complete and decisive control' of Strait of Hormuz — announces closure to all vessels without coordination with Iran, as US maintains counter-blockade",
+  "ar": "الحرس الثوري الإيراني يعلن 'السيطرة الكاملة والحاسمة' على مضيق هرمز — يعلن إغلاقه أمام جميع السفن دون تنسيق مع إيران، بينما تواصل الولايات المتحدة حصارها المضاد",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/8/29/iran-war-live-irgc-asserts-strait-control-us-enforces-blockade?traffic_source=rss"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247292/IRGC-has-full-control-over-Strait-of-Hormuz-Statement"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTFB3NkJhNUV0c1RpTFpPcG9GZG9EQmdmby1CNmdLMkVEUjMyYnpQWE9JbjJFVURWVk1LVkx6V0p1blMyT2dVZ21xMHlzU3FSOWxxTERlRzRWdkNxTjJET0ZlSzB1N0VYcU5uMjNOaThfMGZGVk9WaWpwQw?oc=5"
+   ]
+  ],
+  "first_seen": "20260829-0700",
   "status": "pending"
  },
  {
@@ -1688,115 +1785,6 @@
    ]
   ],
   "first_seen": "20260821-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-20",
-  "ko": "호르무즈 해협 통항 급감 — 협상 교착·피격 위험 속 상선 통과 일일 7척으로 한 자릿수 유지",
-  "en": "Hormuz Strait shipping traffic plunges — daily vessel crossings hover in single digits at just 7, amid stalled US-Iran talks and security risks",
-  "ar": "تراجع حاد في حركة الشحن عبر مضيق هرمز — عبور السفن اليومي يقتصر على 7 سفن فقط وسط تعثر المحادثات الأمريكية الإيرانية والمخاطر الأمنية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "© Atta Kenare, AFP",
-    "https://www.france24.com/en/middle-east/20260821-middle-east-live-hormuz-shipping-traffic-falls-as-iran-us-talks-stall"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTFBlMWlpYlBVZmxmN3BmZksyNVg3bk5LSVB3elpWd3dEQTYzNGoyQXZDa1JFUElPNWxiT1pZaVQyeTdVSk4zLXpHaGNxMzZNVnYwTmVnZHJObktlclRKeVA2dU5yN012ekdFVGtZYlBRcXJ0S0hhaDE2YnZqOThDeE0?oc=5"
-   ],
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxPTWxIbElScnVJRkZLSnNCRmdGT1RGcy01T1hVV1lmQkowT2xtblczVDFrVHRPNm1NMnhNUFl6OVZzNFEyVTdFT0pKdW5PRmR3bmo2YllyeHFuNEk0cHJPRlE0dElhNmd5MmlNNHJqS2pjcVZEZXVpX29ubnNud3JrMzJia0hTWWhQazNtMWg1Q182RU5Fcjd3aHZBandRdw?oc=5"
-   ]
-  ],
-  "first_seen": "20260821-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-20",
-  "ko": "미군, 이란 전쟁 부상자 757명으로 집계 — 펜타곤 발표, 사상자 수치 신빙성 논란 확산",
-  "en": "Pentagon reports 757 US troops wounded in Iran war — casualty figures under growing scrutiny",
-  "ar": "البنتاغون يعلن إصابة 757 جنديا أمريكيا في الحرب على إيران — تساؤلات متزايدة حول دقة أرقام الضحايا",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZDduZjN0R1UxcFNnXy02ZlVIWi1WWmwyUGhTM1pkS2ZFY0NmN1FLdTVWeVJvMDhMVWk5X2duWmI0dUJWSHpBbW9QNXVMNHBjY0lwQVpqOTYwSGNMdXVORXBYOWRyOE04RE45R0dnZXh6SlJ6RTV4aFQwbWJKV0xqRTdWSkpsblNmU3hza3A0STBxQVZueEg2eV8xTXpRU1dlU21wQzNZd1haZi1DSFNFVFNjMmtGOWZid3NZVmZR?oc=5"
-   ]
-  ],
-  "first_seen": "20260821-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-20",
-  "ko": "예멘 후티, 사우디 아람코 정유시설·나즈란 공항 드론 공격 주장 — 예멘군 대변인 발표",
-  "en": "Yemen's Houthis claim drone attack on Saudi Aramco refinery and Najran airport — announced by Yemeni military spokesperson",
-  "ar": "الحوثيون في اليمن يعلنون هجوما بطائرات مسيّرة على مصفاة أرامكو السعودية ومطار نجران — بحسب بيان المتحدث العسكري اليمني",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86241130/Yemen-reports-drone-attack-on-Aramco-refinery-in-Saudi-Arabia"
-   ]
-  ],
-  "first_seen": "20260821-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-19",
-  "ko": "UAE, 이란과 모든 금융거래·교역 무기한 중단 발표 — 이란발 미사일 공격 주장 이후 조치",
-  "en": "UAE announces indefinite suspension of all financial transactions and trade with Iran, following alleged Iranian missile attack",
-  "ar": "الإمارات تعلن تعليق جميع المعاملات المالية والتبادل التجاري مع إيران إلى أجل غير مسمى بعد ادعاء هجوم صاروخي إيراني",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/8/19/uae-imposes-indefinite-trade-embargo-on-iran-over-alleged-missile-attacks?traffic_source=rss"
-   ],
-   [
-    "qna.org.qa",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQVBRa2FSdk5kQmdJbUl2cllPd3pkdUZWNU05cEVYX0Q4bW1vb3J5SnFJWEpTX2ZuNWEtZzJQclZiTmFxSGJfU0JLd0FiX1ZCa1pBUTFCcjRVOUljb2ZWYmxBY3laQ3ZPa1BGNWdxRWd0T0w3bnNRalRHd0w0X051dnF5aGdlaWpXbW1vazd4WmNRSkFqb3pvUWQ2TTBsb0RzSi1BMWlIMGRKSlNoTTR5YVJnbUdIa1VqbHVsVw?oc=5"
-   ],
-   [
-    "CNBC TV18",
-    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSmpBdlR3TnF6Yld0RGVaVXg2STdMYWU0TVVpVG90blpuMmxXQWg5bGxScnlaT0RQQURFOGxLWnl3c21CSG5pSXVvWHRoQWpYaEc3Q2h2X1FLZTNxNkhOazA2TU43N0N2M0RNd0o0WWozckY1dUdBTTlsc3BaTUwyLXdNc3gyR3dqRkJORkdDUmNYX0d3WEEteVlLOVRmUnlGRWdUT3Q0WFFHdEo5NTZudnQwLVNXU216ZlZ2X05OeWZVd3NTUS1lMkdoVFVQYXh3WU5TXzhtUU7SAd4BQVVfeXFMUFgxakRNelMtV3hMbVlqR3RLODlCX1ZpSzdRUGgxOGVjdzdvQXgteW0wNDRHQ1RVYWh5cVEza3lNZ25wSHJoMzBISHNrckVHbzB3bWVkY0tOM2hiRG1xaTRCcUhaTnNTNHNIRFdTbFo5Z2FnME1wdzRXVi1Cdm5RVkNDbjJSUy1qOEt0V2twYU1yU0NqVmxxSjIxTVJsUERBSDBqcTFFVldkbUU2eUJEclZlVkljT3BSMTZTQzA0ZnNZV3JoVU5aSE1LSEJuMk9uZmNCMlYwblZvVnk2a2FB?oc=5"
-   ]
-  ],
-  "first_seen": "20260819-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-19",
-  "ko": "UAE, 미사일 위협 받았다며 이란과 전면 무역 중단 발표 — 수주 만에 처음 전국 대피경보 발령, 탄도미사일 발사 추정",
-  "en": "UAE halts all trade with Iran after claiming missile threat — first nationwide evacuation alert in weeks, believed triggered by ballistic missile launch",
-  "ar": "الإمارات تعلق كل التجارة مع إيران بعد ادعاء استهدافها بصواريخ — أول تحذير إخلاء وطني منذ أسابيع يُعتقد أنه بسبب إطلاق صاروخ باليستي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMXB0NE1iT0VHYjBVUWhtWWZZTmJYRzJtVHBUeXlVb2JST0FmdGoxc3lXZUtieTdIanNrUW1KcVVyblRvZFMxdFZ3RHMzcEFEMkVpcUxzRnpMYXVoRHZoanBXcHhPc0Q5TGlBZFlJMUJSYU5ENHM5UU9QOTdsQ1RyNVJST0hXZnE0ajd0NWstYUY5X0lpR0x3UTM4azBScnJJQ3A5dUdVTnFEa1NZZ29YXzBCQlNnZE1tYjVmd2Jucnd1aE9pZmhjdUtPWQ?oc=5"
-   ],
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdUZ1VTQwc19sM05jY2RnOV9rXzlzc2d4RnJ2RVVDWXdkakxCaEREdm9xaDJsZjhkYnRpUUFpdnVDRVpzTWlSU3BCVDlwRnhmUXktdmd5S1JNZUJkdnJvZS1zZU9DS0RBOVZoeDRLUUp3VmR3WWpxb3BoNFN1ZEYzWGw4RnNRdk5aYV9HRVNlTXJkUjVaQnpWcVBvOHNlLWl3?oc=5"
-   ],
-   [
-    "reuters.com",
-    "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdzR1UDJHQ1pYM2Y2dzJ4Wmo3d3VCNFBEbDZQamtaSm5wdF9uWUdwRzdNa0ZtTFdzaUppUkdtelNyaDV0ZnU4aWY1aUlBLWhNdzN2VmhvZzJNdk8zM3gwSXZvc0p6Zld0UHhRQ0RjY2NTekZOekZnMEhwWlo1OXc2Mk1KZ0ZkZHF4WFR5NVRMejB2eDQxdXJJR0VocU5QVmRHbHFTZXlJNWRfdE43Sko3cXlYalB2VmFWSFczb044NlZEU21vOTNHOHpB?oc=5"
-   ]
-  ],
-  "first_seen": "20260819-1530",
   "status": "pending"
  }
 ]
