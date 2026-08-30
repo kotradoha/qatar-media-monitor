@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-08-30",
+  "ko": "호메이니(하메네이), '걸프 국가 단결' 촉구 서한 발송 — 이란 최고지도자가 걸프 통치자들에게 '진짜 적'에 맞서 단결하라는 서한 전달, 호르무즈 긴장·외교 교착 지속 속 발표",
+  "en": "Khamenei sends letter urging Gulf unity — Iran's Supreme Leader urges Gulf rulers to confront the 'real enemy' as Hormuz tensions and diplomatic stalemate persist",
+  "ar": "خامنئي يرسل رسالة تدعو لوحدة الخليج — المرشد الأعلى الإيراني يحث حكام الخليج على مواجهة 'العدو الحقيقي' وسط استمرار توتر هرمز وجمود دبلوماسي",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/8/30/irans-khamenei-calls-for-gulf-unity-as-hormuz-tensions-persist?traffic_source=rss"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTDhtblJ1TEhZZGpCTjZQVUNEc0lHMmoxXzJYVmoxUzh5V0I2MFVWMTl4SnBGTHN6bjFTd3VmNGh4ek5MdzIxdVI5OV9WNjZ1ZEhnQUFPNXVUWldFaDNDY0ZPX1JwQW4yQXJnaE9SMmRIbWU5bVlYOVE1QnhkVTAwcmRHNjZacUVGRkp3Q2pPczlOT01iLU9MUmRjN0dEN1hTTXdNUmtvUjc2aVZjS2tXZE5ES2IyV2l3WVVKdW00Zw?oc=5"
+   ],
+   [
+    "조선일보",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxOR3Jmb3Q5LUhORnh1V2tqVjJTZExKVHRZZjhjVnVPdEVhUHFMZ2g5VVlPUUZ5SW5zcW01Y0pYYl80TVZ0V0dUMFRrWTA0NEx1N2FDREgzWmU5UDlvbEx3MlB0ZnRacG1PSzF0TXJoQWltektaZXh4MnZpUFZlUzhHU3c1ZVZBQ1RsZlBwYjE4a3poX1lCejNOenZibXNWZw?oc=5"
+   ]
+  ],
+  "first_seen": "20260830-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-29",
   "ko": "미 중부사령부, 해상봉쇄 집행 위해 상선 82척 항로변경·3척 무력화·2척 나포 발표",
   "en": "US Centcom says it redirected 82 commercial vessels, disabled three and boarded two to enforce naval blockade of Iran",
@@ -114,6 +139,23 @@
   "status": "pending"
  },
  {
+  "d": "2026-08-29",
+  "ko": "이란 적신월사, 전쟁 중 잔해서 7250명 이상 생존 구조 발표 — 3차 전쟁(이란-이스라엘-미국) 기간 구조작업 누적 성과 공개",
+  "en": "Iranian Red Crescent reports over 7,250 pulled alive from rubble during the war — cumulative rescue tally disclosed for the third imposed war",
+  "ar": "الهلال الأحمر الإيراني يعلن إنقاذ أكثر من 7250 شخصا أحياء من تحت الأنقاض خلال الحرب — كشف عن الحصيلة التراكمية لعمليات الإنقاذ خلال الحرب الثالثة المفروضة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247320/More-than-7-250-pulled-alive-from-rubble-during-Iran-war"
+   ]
+  ],
+  "first_seen": "20260830-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-28",
   "ko": "미국, 이란 대상 신규 경제제재 '오퍼레이션 이코노믹 아웃캐스트' 개시 — 이란은 국제법 위반·국가테러라며 강력 반발",
   "en": "US launches new economic sanctions 'Operation Economic Outcast' against Iran — Iran condemns it as a violation of international law and 'state terrorism'",
@@ -199,6 +241,23 @@
    ]
   ],
   "first_seen": "20260829-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-28",
+  "ko": "미군 중부사령부, 호르무즈 해협 기뢰 완전 제거 발표 — 잠수부 투입해 해협 중앙 기뢰 전량 제거했다고 발표했으나 이란은 '거짓'이라며 반박",
+  "en": "US CENTCOM announces complete removal of Hormuz Strait mines — divers cleared all mines from the strait's center, but Iran denies US claims of controlling the strait as 'lies'",
+  "ar": "القيادة المركزية الأمريكية تعلن إزالة كاملة لألغام مضيق هرمز — أرسلت الغواصين لإزالة جميع الألغام من وسط المضيق، لكن إيران تنفي ادعاءات السيطرة الأمريكية ووصفتها بـ'الكذب'",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "서울신문",
+    "https://www.seoul.co.kr/news/newsView.php?id=20260830500093"
+   ]
+  ],
+  "first_seen": "20260830-1530",
   "status": "pending"
  },
  {
@@ -1726,61 +1785,6 @@
    ]
   ],
   "first_seen": "20260822-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-21",
-  "ko": "미 중부사령부, 이란 해상봉쇄 관련 상선 68척 우회·3척 무력화·2척 나포 발표",
-  "en": "US Centcom says 68 vessels redirected, 3 disabled, 2 boarded so far under Iran naval blockade enforcement",
-  "ar": "القيادة المركزية الأمريكية: تحويل مسار 68 سفينة وتعطيل 3 وصعود 2 أخريين في إطار فرض الحصار البحري على إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-68-vessels-redirected-so-far-iran-naval-blockade"
-   ]
-  ],
-  "first_seen": "20260822-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-21",
-  "ko": "사우디 얀부항 유조선 통항량 후티 봉쇄 이후 3분의 1 이상 감소",
-  "en": "Tanker traffic at Saudi Arabia's Yanbu port falls by more than a third since Houthi blockade announcement",
-  "ar": "حركة الناقلات في ميناء ينبع السعودي تنخفض بأكثر من الثلث منذ إعلان الحوثيين الحصار",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/tanker-traffic-saudi-arabias-yanbu-port-falls-third-report-says"
-   ]
-  ],
-  "first_seen": "20260822-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-20",
-  "ko": "이란전 미군 누적 부상자 757명·사망자 18명으로 집계—USS 링컨함 열악한 근무여건도 부각",
-  "en": "US military casualties in Iran war reach cumulative 757 wounded, 18 dead — reports also highlight dire conditions aboard USS Lincoln",
-  "ar": "إصابات الجيش الأمريكي في حرب إيران تصل إلى 757 جريحا و18 قتيلا تراكميا — تقارير تسلط الضوء أيضا على ظروف قاسية على متن يو إس إس لينكولن",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "파이낸셜뉴스",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DOXV6Z2JKd2tyQ3BBRDBaNk5iU0Z6UjlzWWxDWDhwa1g2Z3pXd19oUFpWOXhqY29sN0lzVGo3VUIybkhkeTFGdUFzckFnNzFvcmx1eERhSmo4UQ?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/8/19/uss-lincoln-woes-highlight-us-navy-limits-in-prolonged-iran-war-experts?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20260820-0700",
   "status": "pending"
  }
 ]
