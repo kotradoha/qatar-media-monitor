@@ -4886,6 +4886,117 @@ def verify_gov(gov, pool):
     return out
 
 
+# ── 정부 동향 관련보도: '영문 출처 최소 1개' 보장 ────────────────────────────────
+# 이 페이지는 국문·영문·아랍어 3개 판으로 나가는데, 정부 동향 불릿에 아랍어 매체 링크만 붙으면
+# 영문판 독자는 원문을 확인할 길이 없다(생명선 #4 '관련 기사 링크'). gemini_qatar_gov 프롬프트에
+# '영문 병기' 지시가 이미 있지만 AI가 아랍어 id만 고르는 사례가 반복돼(08-29 15:30, 08-31 15:30)
+# 지시만으로는 못 막는다 → 생성·검증이 끝난 뒤 결정론적으로 점검하고, 부족하면 '같은 사안'을
+# 보도한 영문 기사만 골라(고르기 + 근거검증 2단) 보강한다. 확신이 없으면 아무것도 붙이지 않는다.
+_GOV_EN_PREF = ("qatar news agency", "qna", "gulf times", "peninsula", "qatar tribune", "doha news",
+                "al jazeera", "aljazeera", "lusail", "reuters", "ap news", "apnews", "afp",
+                "anadolu", "al arabiya", "the national", "middle east eye", "bloomberg", "bbc", "cnn")
+_GOV_EN_QKW = ("qatar", "qatari", "doha", "emir", "qatarenergy", "qna", "al udeid", "tamim",
+               "sheikh mohammed bin abdulrahman")
+_LETTER_RE = re.compile(r"[^\W\d_]", re.UNICODE)
+_LATIN_RE = re.compile(r"[A-Za-z]")
+
+
+def _is_latin_source(name):
+    """매체명이 라틴문자(영문) 표기인가 — 영문판 독자가 읽을 수 있는 출처인지의 판정 기준.
+    'Gulf Times'·'Anadolu Ajansı'·'cbs19.tv' → True / 'وزارة الخارجية القطرية'·'연합뉴스' → False."""
+    s = name or ""
+    lat = len(_LATIN_RE.findall(s))
+    return lat >= 3 and lat >= (len(_LETTER_RE.findall(s)) - lat)
+
+
+def _gov_en_candidates(pool, exclude_urls, limit=28):
+    """영문 보강 후보 — 라틴문자 매체 + 카타르 관련 기사. 카타르 현지·주요 영문 매체 우선."""
+    cands, seen = [], set(exclude_urls or ())
+    for i, x in enumerate(pool):
+        u = x.get("link")
+        if not u or u in seen:
+            continue
+        src = x.get("source") or ""
+        if not _is_latin_source(src):
+            continue
+        blob = f"{src} {x.get('title', '')} {x.get('desc', '')}".lower()
+        # 카타르 관련성: 수집 단계가 이미 매긴 플래그(qatar/region) 또는 본문 키워드 중 하나면 후보.
+        #   (제목에 'Qatar'가 없어도 카타르 기사로 분류된 건이 빠지지 않게 — 후보 누락 방지)
+        if not (x.get("qatar") or x.get("region") == "qatar"
+                or any(k in blob for k in _GOV_EN_QKW)):
+            continue
+        seen.add(u)
+        cands.append((0 if any(p in src.lower() for p in _GOV_EN_PREF) else 1, i, x))
+    cands.sort(key=lambda t: (t[0], t[1]))
+    return [x for _p, _i, x in cands[:limit]]
+
+
+def _gov_pick_en(bullet, cands):
+    """[영문 후보]에서 그 불릿과 '같은 사안'을 직접 보도한 기사 id(최대 2)를 고름. 애매하면 []."""
+    lines = [f"{n}: ({x.get('source', '')}) {x.get('title', '')} :: {(x.get('desc') or '')[:DESC_MAX]}"
+             for n, x in enumerate(cands)]
+    prompt = (
+        "당신은 주카타르대사관 상황실의 자료 편집자입니다. 아래 [정부 동향]과 **정확히 같은 사안"
+        "(같은 카타르 정부 행위)**을 직접 보도한 영문 기사만 [영문 기사 목록]에서 고르세요.\n"
+        "【엄격】 같은 국면·배경이지만 그 '카타르 정부 행위' 자체를 보도하지 않은 기사(그 사건을 촉발한 "
+        "타국의 공격·성명, 다른 나라·기구의 규탄, 배경 해설, 관련 시황 기사 등)는 절대 고르지 마세요. "
+        "조금이라도 확신이 없으면 고르지 마세요 — 무관한 링크가 붙는 것이 링크가 없는 것보다 훨씬 나쁩니다.\n"
+        "최대 2개. 해당 기사가 없으면 빈 배열.\n"
+        "출력은 오직 JSON: {\"ids\":[0]}\n\n"
+        "[정부 동향]\n" + str(bullet) + "\n\n[영문 기사 목록]\n" + "\n".join(lines))
+    out = gemini_generate(prompt, json_mode=True)
+    if not out:
+        return []
+    try:
+        ids = json.loads(out).get("ids")
+    except Exception as ex:
+        _diag(f"[gov-en] pick parse fail: {ex}")
+        return []
+    if not isinstance(ids, list):
+        return []
+    picked = []
+    for n in ids:
+        if isinstance(n, int) and 0 <= n < len(cands) and n not in picked:
+            picked.append(n)
+        if len(picked) >= 2:
+            break
+    return picked
+
+
+def _gov_ensure_en_link(gov, pool):
+    """정부 동향 각 불릿에 영문 출처가 하나도 없으면(아랍어 등 비라틴 매체만) 영문 기사를 보강.
+    2단 안전장치: (1) 같은 사안만 고르는 엄격 선별 → (2) 기존 검증기(_verify_bullets)로 근거 재확인.
+    둘 중 하나라도 실패·불확실하면 아무것도 붙이지 않는다(fail-open은 '누락' 방향으로만)."""
+    if not gov:
+        return gov
+    added, still = 0, []
+    for g in gov:
+        if not isinstance(g, dict) or not g.get("t"):
+            continue
+        links = [p for p in (g.get("links") or []) if p and len(p) > 1]
+        if any(_is_latin_source(p[0]) for p in links):
+            continue                                   # 이미 영문 출처 있음
+        cands = _gov_en_candidates(pool, {p[1] for p in links})
+        ids = _gov_pick_en(g["t"], cands) if cands else []
+        ok = []
+        if ids:
+            src, used = _src_block(cands, ids, use_fulltext=False, limit=2)
+            v = _verify_bullets([g["t"]], src) if src else None
+            sup = set(v[0].get("support_ids") or []) if v else set()
+            ok = [i for i in used if i in sup]          # 검증기가 실제 근거로 인정한 것만
+        ok = ok[:max(1, 6 - len(links))]               # 칩이 과도하게 길어지지 않게 총 6개까지
+        if ok:
+            g["links"] = list(links) + [(cands[i].get("source", ""), cands[i].get("link")) for i in ok]
+            added += len(ok)
+        else:
+            still.append((g["t"] or "")[:70])
+    if added:
+        print(f"[info] gov EN-link backfill: added {added} English source link(s)")
+    for t in still:
+        print(f"[warn] gov bullet has no English source link (Arabic/non-Latin only): {t}")
+    return gov
+
+
 def _dedup_gov(gov):
     """정부 동향 불릿 중 '같은 사안'을 여러 개로 쪼갠 중복을 결정론적으로 병합(누락 없이 하나로).
     판정: (a) 두 불릿의 링크 URL 교집합 비율이 높거나(작은 쪽의 60%↑ — 부분집합 포함),
@@ -5105,6 +5216,10 @@ def main():
         print(f"[warn] fact-verification skipped(daily): {ex}")
     gov_ko = _dedup_gov(gov_ko)   # 같은 사안이 여러 불릿으로 갈린 중복 병합(검증 후 최종 정리)
     gov_ko = _gov_sanity_filter(gov_ko)   # 카타르 주체·행위 없는 추측/파편 불릿 결정론적 제거
+    try:                                  # 아랍어 매체 링크만 붙은 불릿에 영문 출처 보강(영문판 독자용)
+        gov_ko = _gov_ensure_en_link(gov_ko, (gov_pool or []) + pool)
+    except Exception as ex:
+        print(f"[warn] gov EN-link backfill skipped(daily): {ex}")
     gov_ko = _resolve_gov_links(gov_ko)   # 관련보도 링크를 구글뉴스 래퍼 → 실제 원문 URL로 승격(가능한 것만)
     flat = None if issues else gemini_flat(pool, label_ko)
     reports = _merge_reports(items, now_utc)
@@ -5151,6 +5266,10 @@ def main():
             print(f"[warn] fact-verification skipped(weekly): {ex}")
         gov_wk_ko = _dedup_gov(gov_wk_ko)   # 주간 정부 동향도 동일 사안 중복 병합
         gov_wk_ko = _gov_sanity_filter(gov_wk_ko)   # 주간도 주체·행위 없는 추측/파편 불릿 제거
+        try:                                        # 주간도 동일 — 영문 출처 없는 불릿에 영문 링크 보강
+            gov_wk_ko = _gov_ensure_en_link(gov_wk_ko, (gov_wk_pool or []) + wpool)
+        except Exception as ex:
+            print(f"[warn] gov EN-link backfill skipped(weekly): {ex}")
         gov_wk_ko = _resolve_gov_links(gov_wk_ko)   # 주간 정부동향 링크도 실제 원문 URL로 승격
         wflat = None if wissues else gemini_flat(wpool, wlabel_ko)
         wreports = _merge_reports(witems, now_utc)

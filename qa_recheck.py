@@ -68,6 +68,11 @@ def _bullet_urls(li_html):
     return {u.split("?")[0] for u in re.findall(r'href="([^"]+)"', li_html)}
 
 
+def _bullet_sources(li_html):
+    """정부 동향 <li> 하나에 붙은 관련보도 매체명 목록(링크 칩의 '↗ 매체명')."""
+    return [_html.unescape(s) for s in re.findall(r'<a class="govlink"[^>]*>↗ (.*?)</a>', li_html)]
+
+
 def _bullet_text(li_html):
     no_links = re.sub(r'<a class="govlink".*?</a>', "", li_html, flags=re.S)
     return re.sub(r"<[^>]+>", "", _html.unescape(no_links)).strip()
@@ -79,7 +84,7 @@ def _extract_gov_bullets(htmltext):
         return []
     out = []
     for li in re.findall(r"<li>.*?</li>", m.group(1), re.S):
-        out.append({"text": _bullet_text(li), "urls": _bullet_urls(li)})
+        out.append({"text": _bullet_text(li), "urls": _bullet_urls(li), "srcs": _bullet_sources(li)})
     return out
 
 
@@ -402,12 +407,40 @@ def _review_gov():
     _mark_qa(removed=report)
 
 
+def _review_gov_links():
+    """정부 동향 관련보도의 '언어' 점검 — 아랍어(비라틴) 매체 링크만 붙은 불릿을 탐지해 알림.
+    이 페이지는 영문판으로도 나가므로 아랍어 링크만 있으면 영문 독자가 원문을 확인할 수 없다.
+    generate.py가 생성 단계에서 영문 출처를 보강하지만(_gov_ensure_en_link), 풀에 영문 보도가
+    아예 없으면 보강이 불가능하다 → 그런 회차를 놓치지 않게 여기서 별도로 드러낸다.
+    **제거하지 않는다** — 영문 링크 부재는 '틀린 내용'이 아니라 '누락'이므로 알림만(fail-safe 원칙)."""
+    try:
+        live = open("index.html", encoding="utf-8").read()
+    except FileNotFoundError:
+        return
+    bullets = _extract_gov_bullets(live)
+    if not bullets:
+        return
+    bad = [b for b in bullets if b["srcs"] and not any(G._is_latin_source(s) for s in b["srcs"])]
+    if not bad:
+        print(f"[qa] 정부 동향 링크 언어 점검 — {len(bullets)}건 모두 영문 출처 보유")
+        return
+    report = [f"- {b['text'][:80]}  ·  출처: {', '.join(b['srcs'])}" for b in bad]
+    msg = (f"⚠️ 정부 동향 {len(bad)}/{len(bullets)}건에 영문 출처 링크가 없음"
+           f"(아랍어 등 비라틴 매체만) — 영문판 독자가 원문 확인 불가:\n" + "\n".join(report))
+    print("[qa] " + msg)
+    _summary(msg)
+
+
 def main():
     # 정부 동향(자동 제거)과 주요 이슈(탐지·알림)를 각각 독립 실행 — 한쪽 예외가 다른 쪽을 막지 않도록.
     try:
         _review_gov()
     except Exception as ex:
         print(f"[qa] 정부 동향 검증 예외(스킵): {ex}")
+    try:
+        _review_gov_links()
+    except Exception as ex:
+        print(f"[qa] 정부 동향 링크 언어 점검 예외(스킵): {ex}")
     try:
         _review_issues()
     except Exception as ex:
