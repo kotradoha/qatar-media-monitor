@@ -1,5 +1,23 @@
 [
  {
+  "title": "주간 이슈(8.31) : 미국 고용지표, 중동 상황, G20 재무, 연준인사 발언에 주목",
+  "link": "https://www.kcif.or.kr/annual/reportView?rpt_no=37458&mn=001003&pe=003002&skey=&sval=&pg=1&pp=10",
+  "source": "국제금융센터(KCIF)",
+  "shref": "https://www.kcif.or.kr",
+  "dt": "2026-08-31T12:00:00+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
+  "region": "korea"
+ },
+ {
+  "title": "New US strikes on Iran may restart war Trump wants to freeze",
+  "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3S295LVNTMTFMUU9pN3RmSHg0T2psRVhNbWVUa245a3YtQlZXVVBfdHBNa1pXT3QyZEE2RFpqNkZ2WmhNQjhUc0NiWVBBRE9DZ2VtdXVjRDB4VU83S1VWRlRTQl92TDZoLWc0cw?oc=5",
+  "source": "Responsible Statecraft",
+  "shref": "https://responsiblestatecraft.org",
+  "dt": "2026-08-30T22:37:08+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
+  "region": "overseas"
+ },
+ {
   "title": "US Interior's New Gas, Oil and LNG Investments Not So New",
   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE02eUgyYUdicURjTWh4UjA2VHYzQkZ5eFFKSDNxZzUtbDFxeE9PaExyRVZTQW9VcFA5eGJfZDRhWDI5eWU1d0ViMFNWZDRlX29IaUd2aTJpeXNtaGZQNHV1WDN0MHM2ZzFGSTlHRkJVc3pxZw?oc=5",
   "source": "Energy Intelligence",
@@ -288,6 +306,15 @@
   "region": "overseas"
  },
  {
+  "title": "TotalEnergies Exits Arctic LNG 2, Retains Novatek Stake",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtcllFOGc4bjJxY0pEWEVrZ0p1dFYwTGNTQnVfYXFIR0drV1Z0SzVBX0g2dDNZbTlmWmNTM2xXS3hNNXllVU94SjN6QlRTQVMzejh1aTgxM3pfcXk0YnhHU1pMM2FjekxpeVJ2YzJ2WURSQQ?oc=5",
+  "source": "Energy Intelligence",
+  "shref": "https://www.energyintel.com",
+  "dt": "2026-08-27T18:30:22+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
+  "region": "overseas"
+ },
+ {
   "title": "Iran, Gaza, Trump and Netanyahu: Understanding the Middle East’s crises",
   "link": "https://www.chathamhouse.org/2026/08/iran-gaza-trump-netanyahu-understanding-middle-easts-crises-independent-thinking-podcast",
   "source": "Chatham House",
@@ -429,6 +456,15 @@
   "shref": "https://www.cnas.org",
   "dt": "2026-08-26T18:41:40+00:00",
   "added": "2026-08-27T04:00:28.868721+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "Egypt Plans to Double Oil, Gas Output by 2030",
+  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBiX0s1Y05BeEVzMGlyQzEtZHBLNVJldnFaXzItZzU0SlYyQ3lLVXRnY0JaZVhIUHVldHVfRkg0TEJzYlYwelVzLWtNX0FWelVHNXliaDc2Z2xiU18waEVObmZBbnhaazRDN1pmRFU1WHpEdw?oc=5",
+  "source": "Energy Intelligence",
+  "shref": "https://www.energyintel.com",
+  "dt": "2026-08-26T17:30:29+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
   "region": "overseas"
  },
  {
@@ -1899,15 +1935,6 @@
   "region": "overseas"
  },
  {
-  "title": "China Saves $3B by Tapping Inventories During Hormuz Crisis",
-  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE16N2JoU280OXFkM1YzMmhFUEhZbFRTNVVpR3F5emI3TXFiNTJndmpGcHNUblB2YXRrOVd2SkR5R0tJMXBfZ2tmSUd3emhMYnZlQmhaTW1uWVd1T0tRbXBBUi1MaFhFRFVUcTluWWstRnAzUQ?oc=5",
-  "source": "Energy Intelligence",
-  "shref": "https://www.energyintel.com",
-  "dt": "2026-08-14T19:33:52+00:00",
-  "added": "2026-08-17T04:14:46.926718+00:00",
-  "region": "overseas"
- },
- {
   "title": "Can the ‘Trump Route’ in the South Caucasus succeed without Iran’s buy-in?",
   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSEhVSzhiM2dTR1NJNHVPN2RsNGpJeC1obDdXX2U2M1BDdHdJdEhycy1xdE8zQXRrSEM5R2toY3ptTzJZM1U4V2hEdkxzOTBIcENUOVZqQW93UDlibE5YQ0dVQVJSLWtiLXJIUTZsd2xfTjEwTFhrUTJOVm5NOUxfRzR5aEQ4NTFQUWhhNGtwV21zdWdHbkYtMVcweUFiRUlPSHNj?oc=5",
   "source": "Amwaj.media",
@@ -1923,15 +1950,6 @@
   "shref": "https://foreignpolicy.com",
   "dt": "2026-08-14T16:25:28+00:00",
   "added": "2026-08-15T04:00:26.819455+00:00",
-  "region": "overseas"
- },
- {
-  "title": "Saudi Arabia Turns to Hormuz Shuttles Amid Red Sea Threats",
-  "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9pWlh2LUtlLW9kT0RhbkRhdHJQLVJsQVR0dUlDQ1pUZ3ZGZzVrQmo2OFNmZ2VQNldOTEVnZk9URGgyUnVDMlVmOF9PMGtSVG9tWWRUWElKc0REOHd3cEZoYTFmTlRxRkVrYldmRG9xdld6Zw?oc=5",
-  "source": "Energy Intelligence",
-  "shref": "https://www.energyintel.com",
-  "dt": "2026-08-14T16:12:20+00:00",
-  "added": "2026-08-17T12:30:24.958815+00:00",
   "region": "overseas"
  },
  {
@@ -3438,6 +3456,15 @@
   "region": "overseas"
  },
  {
+  "title": "Iran Update Special Report, August 1, 2026 | ISW",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaEZCcHdyeGQ4VkZ5Ykx2VnBZMTRNM003bkxMelBWZ1p3UlRqUU84WHZCRDlIdFdNdXgtNzhHOWV6dTAxU0xjMnphV0VPYmljRE9MWVEtV0hmaGduS2V3SS04dGxIdnYwZ2NTbUtlbG1yUWhYZ2xnRlcyYkh3QmRUZUlLWFFBNHZuckt5RDJvWDVMc080LXc?oc=5",
+  "source": "Institute for the Study of War",
+  "shref": "https://understandingwar.org",
+  "dt": "2026-08-01T07:00:00+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
+  "region": "overseas"
+ },
+ {
   "title": "The Middle East’s Metastasising Conflicts",
   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNR3VDdVBPbTBuZEFkVGJiYldENXZFMTdHYUhBRUc4cnlEM0lXeEYwUmZPbUlfSmIxVDRINHlVUFdlUVNLYTFWejF4NExVeWdLcGF3Ulp3dVduWVRjczBKY2R0aEF0YUFRemp0LXRuOVJWLUc2V2FFNTVDZnZtOWxUb0tJcDUtMUxOSXRYd3cxZFUxWFFiTjdHcWVBRko1cjdLOU8zRmZDYkV6cXR4VDlXU3FGbEEyMG1t?oc=5",
   "source": "International Crisis Group",
@@ -3954,6 +3981,15 @@
   "shref": "https://understandingwar.org",
   "dt": "2026-07-27T07:00:00+00:00",
   "added": "2026-08-17T12:30:24.958815+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "Give Peace A Chance? U.S. Reaching a Strategic Dead End against Iran",
+  "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tUG5rNnlDQjR1MV90bU11OHAxRjVIUVBzdUM3RWlCd2RIb1pvU1liUDh6ZHNwWk03NFAzaWZYYWl5OHV6QUdfSURQbmRqRTlBUWJZcUpaR3FTbGs5NVZhNlRR?oc=5",
+  "source": "The Soufan Center",
+  "shref": "https://thesoufancenter.org",
+  "dt": "2026-07-27T07:00:00+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
   "region": "overseas"
  },
  {
@@ -5937,6 +5973,15 @@
   "region": "overseas"
  },
  {
+  "title": "Iran Update Special Report, June 19, 2026 | ISW",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORGVlQ2NNYnlYdno1TlVxTXZxbkQycHdOV3V2OUJJWUYyQkpwQ0RJZWZxaWNmZEJRY1hlVnlxd3pYRHB3TjRNN1ItemptWFFVVVM3VmdFNnh3VGVEWUJXV3I4VDUtb3hJRTRIMzJ0bG5lU2twYTZ2VURIZkUzaEN3NG11TXVCYVpoVTVWUU42azlPeFZR?oc=5",
+  "source": "Institute for the Study of War",
+  "shref": "https://understandingwar.org",
+  "dt": "2026-06-19T07:00:00+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
+  "region": "overseas"
+ },
+ {
   "title": "Trump’s Iran Deal Reopens the Strait. Much Remains to Be Done.",
   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcTJTNDRKb2dtUE5HdjJCa1VMMC1BdlNIZXRwMFloN3d4YzVNdnFPcEs1LVJEMTF3WV80Wk5WdVVqRnZOMV9Ed3VvQ2RmcXpJWkczOHN5Y0RBZWtiS1FQaWQ1Qy1GU0JtalhkY3QyNnI5T3pFcVlyZHJmSlVTRDNSekloSHFrT2duSjVibGRrUExVUQ?oc=5",
   "source": "cfr.org",
@@ -6573,6 +6618,15 @@
   "shref": "https://gulfif.org",
   "dt": "2026-06-10T07:00:00+00:00",
   "added": "2026-08-17T04:00:28.434381+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "Iran Update Special Report, June 10, 2026",
+  "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdExaeFVDZzJyNVFlVEJIVVFaX3VOZjBBMUxMTXlpdnpma3JKLUxRVVY0a3ZTRDdMQW5QSXBjckozOTd1dGl0UWltS21RckNkSXNZR2FjbDZ5Njc4S3A2czhzclo3N3NDUlpPRjAtdWE2OWRyOTg4bzE1cG0zRXNyWktVa2h3LTFPclltd05QUXMwdjVf?oc=5",
+  "source": "Institute for the Study of War",
+  "shref": "https://understandingwar.org",
+  "dt": "2026-06-10T07:00:00+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
   "region": "overseas"
  },
  {
@@ -10797,6 +10851,15 @@
   "region": "overseas"
  },
  {
+  "title": "Do the math: How much Trump's Iran war will cost you at the pump",
+  "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBUamlwWTJMa3NOU3N5N3AycEhSektXU0RMMEcxcHRWYjdfTjA4NG1QNk9rN2tGY1hrQXlMeExNeFVMTkc1QUQyVDJCWl9SdVl2UVhTNnpDdTBpNGdON2VPYzJRbi0?oc=5",
+  "source": "Responsible Statecraft",
+  "shref": "https://responsiblestatecraft.org",
+  "dt": "2026-04-07T07:00:00+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
+  "region": "overseas"
+ },
+ {
   "title": "중동 지정학 리스크 확대에 따른 산업 공급망 핵심 품목 영향 분석",
   "link": "https://www.kita.net/researchTrade/report/tradeBrief/tradeBriefDetail.do?no=2951",
   "source": "무역협회 국제무역통상연구원(IIT)",
@@ -11550,6 +11613,15 @@
   "shref": "https://www.economist.com",
   "dt": "2026-03-29T07:00:00+00:00",
   "added": "2026-08-22T04:00:28.378088+00:00",
+  "region": "overseas"
+ },
+ {
+  "title": "Iran Update Special Report, March 29, 2026",
+  "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUnNHdDBRMk4ta1EtaHFycjVxMkFZSXJfWXZqUXNSRFNRMENad29ISEpXNVJtX0NsM0luaVBjOVp0M2dPcFFNNWREZkpaR3Z4b3c2d2ZLRkpkY3dxSFJDVkdMSnFKR2t2Um9BamxQeVFSaFE1cVp6ZG1jWWlwQVpKRzl0WGRxMWZpSUk1WXY1TDA1WF9mdnc?oc=5",
+  "source": "Institute for the Study of War",
+  "shref": "https://understandingwar.org",
+  "dt": "2026-03-29T07:00:00+00:00",
+  "added": "2026-08-31T04:00:25.476741+00:00",
   "region": "overseas"
  },
  {
@@ -13119,15 +13191,6 @@
   "region": "overseas"
  },
  {
-  "title": "Lebanon Wracked by Spillover from the Iran War",
-  "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ydW9KcHhLWV9fYjJraVBpcDJKaVk0WEphMlJPdDYzRjA2UlFpcHNVY0QyeXRNOTBOMTg3Sjh2SnBmSnE2NWNlcU0xRzI1dWcyN21PUVJQc2t6bEpVOHBMZzh0bw?oc=5",
-  "source": "The Soufan Center",
-  "shref": "https://thesoufancenter.org",
-  "dt": "2026-03-12T07:00:00+00:00",
-  "added": "2026-08-17T04:14:46.926718+00:00",
-  "region": "overseas"
- },
- {
   "title": "The Iran war's early lessons",
   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5xcGh3VGRGcjRCUkRydVMwclRVel9CWWJIZVpzSVk3THFOVElUcGp3bll2aEFGMzN6ZC1EU2hleTVMTGxoRUpYbmRsRl9xbkhMY0poVlYzWHV4VlBiNDA2Qg?oc=5",
   "source": "Responsible Statecraft",
@@ -13389,15 +13452,6 @@
   "region": "overseas"
  },
  {
-  "title": "Is the US goading Arab states to join war against Iran?",
-  "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yTFRoaG9KNG44eTV5Zmh5c3NrallRYnFqcFJOMjByQXI1UEdqTkx2bkVtS3V2b0FqZnNGZk5TaHYtRGZBOEIyd18yM19OdnViU1ljRUNwQTNKeW40YmEwUQ?oc=5",
-  "source": "Responsible Statecraft",
-  "shref": "https://responsiblestatecraft.org",
-  "dt": "2026-03-09T07:00:00+00:00",
-  "added": "2026-08-17T04:39:17.925191+00:00",
-  "region": "overseas"
- },
- {
   "title": "Trump Mulls Using Special Forces to Seize Iran's Uranium",
   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRkZEOHduQnJrNjdkSTFlbV81V2hxTnNmR2tLbG9IQ1U2enJNaFFpOTlzSWR4V3p2X0ItTUxqV3BjTGExUGRGbEszMGJKRlBqdEFaU0IwZ2V5LW9aOEFBSFlSTVdadFI0akFjM3dCNWN3bnNhWUFGMGlseDFfRXhjSHJZcFRSell3WnBWemhnN0dpdFRxUHh3aFZhYw?oc=5",
   "source": "Center for a New American Security | CNAS",
@@ -13575,15 +13629,6 @@
   "shref": "https://www.cnas.org",
   "dt": "2026-03-06T08:00:00+00:00",
   "added": "2026-08-17T04:14:46.926718+00:00",
-  "region": "overseas"
- },
- {
-  "title": "After sinking Iranian ship, did the US Navy commit a war crime?",
-  "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB4TV9kVmdSQzN6R0lCTW1tSm1WNEswaU9mX3laOVBRYjRnV09hc085TDJtMngydlZvMnd6M0ZjMVV4V09rR0hxcXVrdGFEQUtIc0R5eVJfNE9LT2l2UkUzdDR4eG9NMEhKSC1YaXhiRQ?oc=5",
-  "source": "Responsible Statecraft",
-  "shref": "https://responsiblestatecraft.org",
-  "dt": "2026-03-06T08:00:00+00:00",
-  "added": "2026-08-17T04:39:17.925191+00:00",
   "region": "overseas"
  },
  {

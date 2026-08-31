@@ -25,6 +25,73 @@
   "status": "pending"
  },
  {
+  "d": "2026-08-30",
+  "ko": "미국, 약 한달 만에 이란 라라크섬 IRGC 로켓 발사대 2곳 공습—호르무즈 해협 기뢰부설 등 '임박한 위협' 명분",
+  "en": "US strikes two IRGC rocket launchers on Iran's Larak Island — first US military action in nearly a month, citing 'imminent threat' of sea mines in Strait of Hormuz",
+  "ar": "الولايات المتحدة تقصف منصتي إطلاق صواريخ لحرس الثورة الإيراني في جزيرة لارك — أول عملية عسكرية أمريكية منذ نحو شهر بذريعة 'تهديد وشيك' بالألغام البحرية في مضيق هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVGpkelhtWHpKQXVxRDdydU9CekxJS2FnYzFHcklqek5leUhjLUMwdGlJN2dIYzlrbG12UGY2QTNjd2ZMeW1IckUwYi14R0xabVpreXI4LUhLYnc3cHFWbG5ZWnp4bXJTdVdqWVRsbEJFNzFkcW41U3FEU3UycTVFcVlvUVZRVktJanBMWGl0d3otT2RLdnB0ZXUxR0xHMXM5?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/us-accuses-iran-posing-imminent-threat-hormuz-strait"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb2JpRHFuQ2xrR0xDTEhWbkxobGJxRktFR1RQMThiY3hvZzdNb24wWmdFUUZSVzVwS3k3akFpbEk5Mzg0ak9Vem9TVDE3Ti1naEFIR1JDWXloaDJWb1NrZ2FRRkYxaXAwdnZYb1FVOEhpYlluNmZES01oMWJRVUExYWdSZEk1dVdIY1VHYTFDaGw5M081NXNSaHgxeHpKMTdkaW9HOVYxdHR4SXB0MV9EQQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260831-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-30",
+  "ko": "이란 IRGC, 라라크섬 공습에 대한 보복으로 요르단 내 미군기지 2곳에 미사일·드론 결합공격 감행",
+  "en": "Iran's IRGC launches combined missile-and-drone strikes on two US airbases in Jordan in retaliation for the Larak Island attack",
+  "ar": "حرس الثورة الإيراني يشن هجوماً مشتركاً بالصواريخ والمسيّرات على قاعدتين أمريكيتين في الأردن رداً على قصف جزيرة لارك",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/8/31/iran-targets-jordan-after-first-us-attack-in-a-month?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/8/31/iran-war-live-irgc-attacks-us-bases-in-jordan-after-us-bombs-larak-island?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/8/30/us-strikes-irans-lark-island-in-first-attack-in-weeks?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20260831-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-30",
+  "ko": "IRGC, 라라크섬 미군 공습으로 이란군인·민간인 다수 사상 발생했다고 주장하며 보복 예고",
+  "en": "IRGC claims several Iranian military personnel and civilians were killed or wounded in US strike on Larak Island, vows retaliation",
+  "ar": "حرس الثورة يزعم مقتل وإصابة عدد من العسكريين والمدنيين الإيرانيين في القصف الأمريكي على جزيرة لارك، ويتوعد بالرد",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86250409/IRGC-vows-response-to-US-attack-on-Larak-Island"
+   ]
+  ],
+  "first_seen": "20260831-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-29",
   "ko": "미 중부사령부, 해상봉쇄 집행 위해 상선 82척 항로변경·3척 무력화·2척 나포 발표",
   "en": "US Centcom says it redirected 82 commercial vessels, disabled three and boarded two to enforce naval blockade of Iran",
@@ -1730,61 +1797,6 @@
    ]
   ],
   "first_seen": "20260821-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-21",
-  "ko": "UAE, 이란과의 무역 중단 — 테헤란의 핵심 대외무역 통로 차단",
-  "en": "UAE suspends trade with Iran, cutting off a key foreign trade channel for Tehran",
-  "ar": "الإمارات تعلّق التجارة مع إيران، ما يقطع قناة تجارة خارجية رئيسية لطهران",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1od3c2SzBlQnk0ZVk4QkJkZXNmaVhqNEIzU2RRSWU4Ni1tREppUTdNM0ZFUWtfeGVtX1QtYVpwTXhUZ2F5aWJ4TmxEMGJJT3kxTlcwdnI4OTROaU0?oc=5"
-   ]
-  ],
-  "first_seen": "20260821-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-21",
-  "ko": "미군 이란전쟁 부상자 750명 이상 — 워싱턴포스트 보도, 이란전쟁 중 미군 복무자 750명 이상 부상 확인",
-  "en": "Over 750 US service members wounded in Iran war — Washington Post reports more than 750 US troops wounded during Iran conflict",
-  "ar": "أكثر من 750 من أفراد الخدمة الأمريكية أصيبوا في حرب إيران — واشنطن بوست تفيد بإصابة أكثر من 750 جنديًا أمريكيًا خلال النزاع مع إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNHQ3Zm9lU2xoYlZiSmN0bVlWZ08wMFNVa1A5ZDU5d2w5VjJCQXY0bnoxLW1FS1dxVnZsSHZzeVRyYmRiQldQUkxRNkxDSy05cy1pR1ZVbFQtd0FCMVpVSkNTdENBbV8xd0tjVHhTSE9fYXFWVElhejA2UFZJU2tXaV9sUDdWNWt3MFdtY1V0T3BFRUtkV0NCR3hqOERrcUYxVmw5NkhYUnFZaE1UMFYw?oc=5"
-   ]
-  ],
-  "first_seen": "20260822-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-21",
-  "ko": "레바논 사망자 4348명으로 집계 — 레바논 보건부, 3/2 이후 이스라엘 공격 사망 4348명·부상 1만2300명 이상 발표",
-  "en": "Lebanon death toll rises to 4,348 — Lebanese Health Ministry says Israeli attacks since March 2 killed 4,348 and wounded over 12,300",
-  "ar": "ارتفاع حصيلة قتلى لبنان إلى 4348 — وزارة الصحة اللبنانية تعلن مقتل 4348 وإصابة أكثر من 12300 جراء الهجمات الإسرائيلية منذ 2 مارس",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/lebanon-death-toll-rises-4"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247138/At-least-4-348-killed-by-Israeli-regime-in-Lebanon"
-   ]
-  ],
-  "first_seen": "20260822-0700",
   "status": "pending"
  }
 ]
