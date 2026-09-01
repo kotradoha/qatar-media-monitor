@@ -1,5 +1,55 @@
 [
  {
+  "d": "2026-09-01",
+  "ko": "호르무즈 해협서 사우디·한국 유조선 미상 발사체 3발 피격 — 미·이란 재충돌 여파로 긴장 고조, 영국 해사무역기구(UKMTO) 확인",
+  "en": "Saudi and South Korean oil tankers hit by 3 projectiles near Strait of Hormuz — UKMTO confirms amid renewed US-Iran hostilities",
+  "ar": "استهداف ناقلتي نفط سعودية وكورية جنوبية بـ3 مقذوفات قرب مضيق هرمز — تؤكد هيئة التجارة البحرية البريطانية وسط تجدد الاشتباكات بين واشنطن وطهران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Financial Times",
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZDZrSXpaNXpfajl5QlBndGx6a191amlOZEZINmlJYkVSMDBOUzNFNnA2cGhJaTRPVjVfVV92dUpFN0ZhYkVaZWNHSUpsTXU3YjdoNXd6RnJkZVdERXRVV3djOHdtR2JrUi1JN1ZXaW83UU1UNHduWlRfQ0diX3hudWFORzg?oc=5"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUVJoOVNTYk5oVkNKNkk1MEhTOXNUQjNOSk11dG5PNkM1aUVOa2prazIwbG9vd2F0cGs2OTNoeTdPdXkydlhLOTJHX2loRmdodFdLMjVLZnZiTmVrQ3BjXzg3RFFnZUFNcWJGVWkzVXBPdzBuWE1FaUE4V2lUaHNyaTFmZEs1VmZnd21zaXZiS3dBeVliYVg1ZGVOeVFSQjc4aTBQVUZOSW1UQWJKWjdEcEpya0c?oc=5"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMifkFVX3lxTE1FUVFQaTlqQUpZNU1yTWFhT0s5R0pvdHI2a3NpSXlrNkZJWFdTWV9JZHdQOVVDNlhLV0FVVzBRWUpNVTRxRTlMblh2SWNwZkZKMDdYYVRWYmc2QUVZNDBnOFlXSFhPS2NGX2tiVVlabjZaOG92amZ0NDNISFotZw?oc=5"
+   ]
+  ],
+  "first_seen": "20260901-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-01",
+  "ko": "이란 대통령 페제시키안, 미국이 6월 종전 양해각서(MOU) 이행하면 즉각 상응 조치 취하겠다고 SCO 정상회의서 발언 — 외교 재개 시사",
+  "en": "Iran's President Pezeshkian says Iran will reciprocate immediately if US complies with June ceasefire MOU — signals diplomatic reopening at SCO summit",
+  "ar": "الرئيس الإيراني بزشكيان يقول إن إيران ستستجيب فوراً إذا التزمت الولايات المتحدة بمذكرة التفاهم الموقعة في يونيو — إشارة لإعادة فتح القنوات الدبلوماسية في قمة منظمة شنغهاي",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/news/trump-ignores-generals-he-threatens-hit-iran-hard"
+   ],
+   [
+    "한국경제",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE82Y2t1SEh5Vy0xSjU5YlZMWTRNQnlHcTNNd2o0R2JWTzJJMjJMeGJKNklpVV9nOE1XTWZ6Q0dMT2FjbGtUb3BNSnlBUkxnM2tUMmZFTXQ4cHhEUQ?oc=5"
+   ],
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rZl9XcnJZeUNnY09GY1RJQi13UmFock9Qa25FRzQ1aW5yVXFFZk5OZmsyVHlCOHVRQVpZOGZDMEROU192OXVFLS1SaHVOdnVMbDg0cDRuZURfZw?oc=5"
+   ]
+  ],
+  "first_seen": "20260901-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-31",
   "ko": "한 달간 소강 끝나고 미·이란 공격 재개 — 미군이 호르무즈 라라크섬 기뢰장착 로켓발사대 2곳 공습, 이란 반격으로 미 함정 향해 미사일 공격 및 요르단 미 공군기지서 폭발 발생, 이란 측 2명 사망",
   "en": "Month-long lull ends as US and Iran trade attacks — US strikes two mine-equipped rocket launcher sites on Iran's Larak Island in Hormuz; Iran retaliates with missiles targeting a US warship and an explosion at a US airbase in Jordan; Iranian state media report 2 killed",
@@ -1755,48 +1805,6 @@
    ]
   ],
   "first_seen": "20260822-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-22",
-  "ko": "호르무즈해협 통항량 급감 — 주말간 통과 선박 20척 미만으로 집계(Kpler)",
-  "en": "Hormuz transit collapses — fewer than 20 ships crossed the strait over the weekend, per Kpler data",
-  "ar": "انهيار حركة العبور في مضيق هرمز — أقل من 20 سفينة عبرت المضيق خلال عطلة نهاية الأسبوع وفق بيانات كبلر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/less-20-ships-transit-strait-hormuz-over-weekend"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNY1h3dlV1YVdBS2h2c0pLMjJQd1piUFM1QXRKTzAzc3FCdTJ4UVpzd19yN3dHTmhvcnA1b2R0andOeW50clNqRnRsbjF1dE8ydW9LTHlNZW1JWHJ6UnAyM05lNEwxdGpyNmhvTUR5d0pFTXI4czVwTmh3azBQaDlPQmhkS1BZbGZ6WWtmNzFTQ2NIdy10UnBCaTl0RXBDczJtWUdNUHRlRkY5MmZzVlp4Y3VpZmp0YzJIWm15NjM5SkpEcVpTVTdfdzB1amJTVWNSdkpBZFAtNkN5bVVaSlJWaVlCUjBZTVdEZHphTzhuZVpnbEhZRE03XzZKSlBVenVWYmlycDJubklMXzQ?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTE05WklzX01NdWhTZmtlNnNnREd2dnVaNzd0X3dZTkh2RUZEMmxEamtaZkVDZmMwTklDUTlkbHpjcENVSTBHaUNvbnhVYkxIX1p2Tm9qSTMxcS1TSVo3ZDEzTkNmanhyX0MxdXI4S1o5UHZVaXFJM1pRa040OXotUTg?oc=5"
-   ]
-  ],
-  "first_seen": "20260824-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-21",
-  "ko": "미 항공모함, 중동 해역서 철수 — 장기 배치 피로 누적으로 전력 재배치",
-  "en": "Weary US aircraft carrier withdraws from Middle East — redeployed after prolonged deployment fatigue",
-  "ar": "حاملة طائرات أمريكية منهكة تغادر الشرق الأوسط — إعادة انتشار بعد فترة انتشار طويلة",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMikwFBVV95cUxOM0hsRWltSEdKalplVFVtLUxJNENGMHZNYUpXU2dHWjA1QnFpTEpYZHQ4c3otTjFISlZvaEdsN2ZldmdmSkd6WWcya2JELVp3b2kydF9FVkt2TUt4VVQtSmUyTGlycTZUUjNKVFcxTW9hWm9zaHd6VXlELXYzc2dZUmp6bGFiMVBCWXhGbVJxaWlhd1E?oc=5"
-   ]
-  ],
-  "first_seen": "20260821-0700",
   "status": "pending"
  }
 ]
