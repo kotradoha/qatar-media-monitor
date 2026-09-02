@@ -71,6 +71,102 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-02",
+  "ko": "미군, 이란 남부 시리크 결혼식장 오폭 — 최소 5명 사망·68명 부상, 이란 '전쟁범죄'로 규정",
+  "en": "US bombing hits wedding hall in Iran's Sirik — at least 5 killed, 68 injured, Iran calls it a 'war crime'",
+  "ar": "القصف الأمريكي يضرب قاعة زفاف في سيريك جنوب إيران — مقتل 5 أشخاص على الأقل وإصابة 68، وتصف إيران الهجوم بـ'جريمة حرب'",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/sep/02/iran-us-missile-blast-wedding"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/9/2/what-do-we-know-about-the-fatal-us-bombing-of-a-wedding-in-irans-sirik?traffic_source=rss"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247411/US-crime-at-a-wedding-party-in-Sirik-sign-of-moral-decline"
+   ]
+  ],
+  "first_seen": "20260902-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-02",
+  "ko": "이란, 결혼식장 폭격 보복으로 요르단·바레인·쿠웨이트·이라크 내 미군기지 공격 — 쿠웨이트 주거단지 화재, 바레인 요격 성공",
+  "en": "Iran retaliates for wedding hall bombing with attacks on US bases in Jordan, Bahrain, Kuwait, Iraq — fire at Kuwait residential complex, Bahrain intercepts attacks",
+  "ar": "إيران ترد على قصف قاعة الزفاف بهجمات على قواعد أمريكية في الأردن والبحرين والكويت والعراق — حريق في مجمع سكني بالكويت، والبحرين تعترض الهجمات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOLU9GMXFNRTc0d05MeVZXTlJTTFQ0aW5jSWw1MEpkWTlrbG5LM2QzT2RnT1U5cVc4Q09fVWxqTlVvZ1I5NlNTMVQ1NVVCUmFCbkozei1ucEhwclRRT0llQjhmdE5HZFIxOVlVUkJ3aGRMU1dLWkxOWlVnUzFXSzUzektZcko4b19GQXh6Z2hRYlhNSmhmUUZsbld5OExoNG5ZVzZnMzRvSGRZNnlxUVRIZWZkMnpXTDRmOWVrRFBjLUR2SlJvWXpkWTNUblI3LXk1YnNRQlExd195N2doOXRFR3IyTEZJSmE4MDlmeE1qaWQ3bkNjRzFQetIB_gFBVV95cUxPcHVlR0c5NDNkT3FMcEF5eGhtd1JaVUxpSnNTT0RxWFlRX05yV05aaV9fcFVKNUVwOGFxN2U1MnhnSU9BNmNXLXc1eFgyVDl2VnRmOGxCTFp2RnY4VExhT3FxTm9wbzVFMkFpZndvT2J0dGdzeFNkYjRQbFlHc0JlSUxLdjdhLUEwdVlwZ2sweHR1WVdROXdOX3BSSUR1SU5yeXZJY0lMcVItdDFjZzhCOE1WZ1pvcU1lRG0yb3JvQ2l3Qy1DSzAtMWlneXdpWHNkSno5Q2NiZnlZUkVVVEY1Vlc0cTRpYkRqWXAwYkRfblJUTmduY1doQmRsZGRfZw?oc=5"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSTQ5RWEwemszN1g0ZGdybDJrd0d4MW9sTk43M05welQ3WGZmeWgycERkU0NFck5vMDc4eXBjbmdQSzc0OTNodV9tMXhpTFg1WF9SR2JXOXp3aEVGVjBHSUlwVFR5QWpVdnJodmNfV1FmdEZBeDlhUHNJZVZPeHliVlBQU3hZTXJhNGgzNGZoNURLUWtqOW53OUF2TTJpSEpsNGVBTDVyOUI?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/news/iran-strikes-us-bases-across-region-after-american-attack-kills-18-including-children"
+   ]
+  ],
+  "first_seen": "20260902-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-02",
+  "ko": "카타르 내각, 이란의 요르단·바레인·쿠웨이트 공격을 '위험한 확전'으로 규정하며 강력 규탄",
+  "en": "Qatar's Cabinet strongly condemns Iran's attacks on Jordan, Bahrain, Kuwait as 'dangerous escalation'",
+  "ar": "مجلس الوزراء القطري يدين بشدة هجمات إيران على الأردن والبحرين والكويت ويصفها بـ'تصعيد خطير'",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQeHZMTUw0WnhYUklCdFpnU3ktZktfUDMwbzJwYTZ2UEc4cHRCT3l2aGl2X0tCRG1qenhSUEFDQnp0Ry1TUkdrdmRTOGFHOHNWdm8wRE9pZE44LS1jeGxBaFd6SThVWHVkZU5sUXhHeE4ySzhvcnVPVEhuYzFfd0xacHoybnc3R2U0Q3FVejdYT1IyUEQtZEppUWRCNnRoY0lOMUhWS0NFSWRVNGdJMDhYOU54dzZ3bnBOa0RkaGlmTktDVWpWU3c5VlhsY0loR3FwNUF3UWwtalFTM1R0NTR3clRUSzl1LTEyR2dOZ1BoRjE2eGwtT2dyX2hmRzJIZmwxbGRnR29XR1FZQUgwMkhyODUtSktoRUowbXpJYlhTekVTSGE1TVVsU1AwdHBZU08wQXZKdGZ1VnFCd25EeVlBTWtTZWowNDBrMDJHaGlGM0I1cDZ1dzRHUWZYdDFNeEw0Q2ZhaE1nUnpVWFNRNTZQZ2ZORV9sUWs?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMixwRBVV95cUxNTjNzRjFwUk9KeU9yZkk5dmxENm5ha09rTmhKeGFqN2JndEQ1S1VGVklianRjMGk0Rng2ekVMZDUtTHk4NkJRVnJRQm54QzlXaE1GSTIzNUw5VTM3WGotMVFpSDI2Rk5feFJuaUdYV1BFNklhV0lqNjVsY1lPTkJJRDJRRU54eEdWcFdWMkJBS0stOEdRU3Nzem9GV2NBdUd5VFlCZ1lqNFRTMFpzLXBHOFlUcS02Z0FsWmVibWdZVkRUNWx0c3dScHBtUFVtLUp0dEFuZUJORGJVVUlrTEZGUFR0akp3Z0M4cVVLMkRrNlBvdFNPSC1UWnowOW5uaFhnd2VqVjkzWEp2elp0Ykt4b3hxX3BlRzIxaUlzcHp1VE1RRHQyWFdZY1dFQk5hcWZXb1luMklnZVFVNUpmR2h6X2wzdFhfNVkweF9BRHlEMHVCUktJbUpHNDBVcWpNOXZ0NkVDbUY3Mkg4Y3NaLWlScWxTSl9uUTZSLXlUWTBna1Z0RGFWTzY3WlFCRWtmd1ozLXd6LUJyVG1rYnN3UjlFdkxNMGVnVnlNMmhsZDNNZEdCa040cGFGazJaeHVsVjdpTFdlMGtUWVBIT0pQXzNsbmxQMnN5NmVjTk1HUGtCRzlIRXphcnUtVy1aQjVtSW9qN2tiV244QXZreFotbUFkdFgtQUN2czc4Z3ZVMHpGU25vUWthY3JDNk11Wm5JajdJSmMyeVNXLThKa3lrWkE4T3J2bk10ZHpvbGJFVXV6TEtKRUxleTBB?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMzN3Um1pTDE5ZHNoY090UW9ZODAwYmQ2Sko4Z2RONUFfOEk1Ymd5MkJYUXVPVEk2djZLMWhNV2xXdkYxanBEcE85ckNrV2NKckdvbDBjS3NVOG5SN2xlXzlzTURLTzh1eWJYYjA0ZGR1dDdhUzVPVkU5T3M1Z29fSGtWYlFweVc3Q1pSYkVwblBENkxwYlRfc1JwVmVGaFlCenBKdmlxbjdxUG16aXhGaXZUMm1vZw?oc=5"
+   ]
+  ],
+  "first_seen": "20260902-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-02",
+  "ko": "미 에너지장관, 호르무즈 해협 하루 원유 통항량 1700만 배럴 이상 유지 발표 — 공습 재개에도 통항 지속",
+  "en": "US Energy Secretary says over 17 million barrels of oil transited Hormuz Monday — transit continues despite renewed strikes",
+  "ar": "وزير الطاقة الأمريكي يعلن مرور أكثر من 17 مليون برميل نفط عبر هرمز يوم الاثنين — استمرار العبور رغم تجدد الضربات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOR2czWERkNnQ0cnZvdjB4WFBiY2pYcHJCeUxPZjRzNFA5UDNZUVRERFpMMTByVlRpdzdvdmdFZ3ZxSmdLcnREendmdWFsaVZNSENWdGYweDJNaThuQV85ZDBqOEdYM1BmdjRyRUtmUHdwU3cydkxsNXJ2eXB2VGJyTjBOdHIxV01qd1RoSzNzTEg3WTl0cE8yQUhmaWZzTE5jc3cxQllBdmg3dVNiT1owY09rNU5DaFp2d1A0Tmk1b0tvVFZKWUlUQ1ZPWHhOcUREUzhCUVduVEM?oc=5"
+   ],
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUUwtV0h5MmswU1oxM2hYa2RNajQtaF9pQ3lEdlBDOWk5dHp2MG1VcVBpZFo2LWh6aENSREtsTDQwREhSejNLV2dKZnU0dzdLOUU5VjdjX3hidnU4OWl2bWZMd29VZUwteUpDZU04MEhiNHdfRS1NdHQtZDVYYzVpRkFjbW9KU2QtdUkyWm1YU1d6aXFJRGwxamRBM3pHb1FIOVFOV0hqdkN3TjFpWUh0aElxTzBRRENJa0h1SlZ5VzY0VW1EbWctLVVPdUNhMU9LM3BVYWVISzJGMEFBVVHSAeMBQVVfeXFMUGtrejFHdVByeXdWNXNWSTRBa1d4Zmo5NHM2d0txbi0xcno0eXpJNEF0T2djT05HRC10dGpBSjVsemNQTFh1UkhLZzJ3TlJ0cGdCR0tiNWQ3Ym9TdmVmbjNLRnoydFNMSWJGYUR3UUhZLW5BTlpXdzNXaFVjRElRTWhYWjh5VE9CSXRBN0pnZHFoZjhYaVVQVXlMS1paTHpGNnQ1emtqNWJYMVhmbU5tdGdPc2FLOVhVNWxkV2JrYkxnMzN2X0FxMy1FalZVQTdFTzJ6ZGZSWGxWVjN6WHA3eUNJVFU?oc=5"
+   ]
+  ],
+  "first_seen": "20260902-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-01",
   "ko": "호르무즈 해협서 사우디·한국 유조선 미상 발사체 3발 피격 — 미·이란 재충돌 여파로 긴장 고조, 영국 해사무역기구(UKMTO) 확인",
   "en": "Saudi and South Korean oil tankers hit by 3 projectiles near Strait of Hormuz — UKMTO confirms amid renewed US-Iran hostilities",
@@ -238,6 +334,31 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-01",
+  "ko": "미국, 이란 정부 소유 유조선 공격 — 호르무즈 기뢰부설 저지 명분, 이란 군사시설 동시 타격으로 공습 재개",
+  "en": "US strikes Iranian government-owned tanker — cites Hormuz mine-laying prevention, simultaneously hits Iranian military facilities resuming strikes",
+  "ar": "الولايات المتحدة تهاجم ناقلة نفط إيرانية حكومية — بذريعة منع زرع الألغام في هرمز، مع ضرب منشآت عسكرية إيرانية في استئناف للضربات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "동아일보",
+    "https://www.donga.com/news/Inter/article/all/20260902/134589842/1"
+   ],
+   [
+    "경향신문",
+    "https://www.khan.co.kr/article/202609022059015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+   ],
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE13ZzI1V0t2UHk4b2dRaGJhc3ZnaFg0WkQzMWtLOWVvcGx5aWpaTmtfcElqNmxLWDFicTcyMjRxQU1rYnNpU25VelNkU2tkbmE5UzZFbmJJRk81M1hDcmJ2MWxWOGNXdHgwNkxneGppWl9IU3M?oc=5"
+   ]
+  ],
+  "first_seen": "20260902-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-08-31",
   "ko": "한 달간 소강 끝나고 미·이란 공격 재개 — 미군이 호르무즈 라라크섬 기뢰장착 로켓발사대 2곳 공습, 이란 반격으로 미 함정 향해 미사일 공격 및 요르단 미 공군기지서 폭발 발생, 이란 측 2명 사망",
   "en": "Month-long lull ends as US and Iran trade attacks — US strikes two mine-equipped rocket launcher sites on Iran's Larak Island in Hormuz; Iran retaliates with missiles targeting a US warship and an explosion at a US airbase in Jordan; Iranian state media report 2 killed",
@@ -331,6 +452,31 @@
    ]
   ],
   "first_seen": "20260831-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-08-31",
+  "ko": "사우디 유조선 시드르호, 호르무즈 해협서 피격 — 필리핀 선원 2명 사망",
+  "en": "Saudi tanker Sedr struck in Strait of Hormuz — 2 Filipino crew members killed",
+  "ar": "استهداف الناقلة السعودية سدر في مضيق هرمز — مقتل بحارين فلبينيين اثنين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "CNN Arabic",
+    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRXdVdEY0TGRaeDBDVk0yNTBZLVYyMmVnWnZIdjRnVlBsZTJjS2JqQ3RLTnFCa0czb0t2LWpEQkwyNWRXT29sSEFqemJfcU5teElJZFpLSjc0MGM0enhTdk5JcnNQaUEwUzFGdzFESXUtUENBMm1CVXVYY004T1pNZzdiaTl4Y01pVkR2My12S3pSaUh0emFVU1lUeWV2ZncyRU9rcVJrNndUWnVhZ2JuYVpTd0NyNG1oZG9icTRzUUFGU2FSLTIwLTlxejd4MEVHcFBxMVVXTnFBc00?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-accuses-iran-attacking-saudi-tanker-strait-hormuz"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260902_0003773902"
+   ]
+  ],
+  "first_seen": "20260902-1530",
   "status": "pending"
  },
  {
@@ -1667,140 +1813,6 @@
    ]
   ],
   "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "미 신규 대이란 제재 우려로 이란 리알화 사상 최저치 폭락—중앙은행 '일시적' 진화",
-  "en": "Iran's rial hits new record low ahead of anticipated US sanctions — central bank calls it 'temporary'",
-  "ar": "الريال الإيراني يسجل أدنى مستوى قياسي قبل العقوبات الأمريكية المرتقبة — البنك المركزي يصفها بأنها 'مؤقتة'",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Bloomberg",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT3NLZHRfWUUzUFdiU0FlM0VsWFRval9WZ2xsYlBMbEFkSkg3ZEpCRUhhR1QtQ3dmZlRpWHNoUnI5eVYxdEs3X3lNLWE1bVJfdF9oQXdpcmFXNjBmWWltYlJYQWFpRVVCQnNyS0FaUXQwT3VjMGVhRzFoU1NzUzh0bnY0bzJhbWJLWWc3Z05lNmZOaFRDRmJMSHNsRDMzYmJ4bW9IeFZlUTdTVkpacE0zNFVIMmoyQQ?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNX3poeUFuYXRpZ0tnVWZxaVhOS3U5TjBoREVlNFlCVXFNaFZsTmxDd01Ubm1xNkdsX191S0dsRDBSbU1GZTlObmNFd3hZMHpGcjJwOS1LQ01TQnBxZmhlRkR30gFnQVVfeXFMUFFLeHB1eU16TE0tMjU3bU1KNHFzSFRPWXJTWDVCRldjX0dCQUlfcGZTbGltZDV4dkFMOEdGRkR2Vk5OeEYyMGZKZEg5VFpCdmxieWJRNlV3VnVkRFo0X3Qzd09TTWp0cw?oc=5"
-   ]
-  ],
-  "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "미국, 이란 전쟁 이유로 한국과의 연합 해병대훈련 취소—대이란 압박 국면 속 한미 군사일정 축소",
-  "en": "US cancels upcoming joint marine exercises with South Korea over Iran war, amid broader scaling-back of drills",
-  "ar": "الولايات المتحدة تلغي التدريبات البحرية المشتركة مع كوريا الجنوبية بسبب الحرب مع إيران، وسط تقليص أوسع للتدريبات",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/8/24/south-korea-says-us-cancelled-upcoming-joint-marine-exercises-over-iran-war?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "미국, 이란 제3국 거래 전면 제재 '경제고립 작전' 개시 — 재무장관 베센트, 이란 관련 60개 단체 제재하며 '경제적 D-데이' 선언, 트럼프 '이란 완전 붕괴' 발언",
-  "en": "US launches 'Operation Economic Outcast' against Iran — Treasury Secretary Bessent sanctions 60 Iran-linked entities, declares 'economic D-Day'; Trump says Iran will 'completely collapse'",
-  "ar": "الولايات المتحدة تطلق 'عملية النبذ الاقتصادي' ضد إيران — وزير الخزانة بيسنت يفرض عقوبات على 60 كيانا مرتبطا بإيران ويعلن 'يوم D الاقتصادي'؛ ترامب يقول إن إيران 'ستنهار تماما'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMi1ANBVV95cUxPamwwSDVWZWxabzdfZW56bHd5cmgxTWJkYzdMamRDeDJCV2FHRzNsWUNVZHBLMFJUdjRzam9mcHN5MlhpN0l2eVBIMTJMVmhXR1BOOE5LLTI3Mi1ZNm1vNDMyazRTZll4WG92TFlseTRzaWw5YmZpZXJlRmIwbXh0azNGcXZGMjNlOC1Qcm5Ed0tQd18xZ1J5b1BXWXhkTi1JdGliWFFkaU83VVZzWEc2c19GTlFEdWVqNEFQOFE3T0NidGRkNWhBcTNydi14NFFNdkVPdWctZkpoV2VnTU05Vlo5QXZscXJHRGJGc21ESVhfQnlZRWVtR0tJNUtmQTNHbXkwclE5WlRwV0VoR0s0WjVTMUplWmpvMXFBamJJQk1KX1RtOXpBXzdXSEFaTjNueUlMZVRrOS11NEhGSThNUW5hMmxTZWY0X1R0TlVteHVWakdQc1JFSDZzd1ZCTmtHMzlMbUF3LVZJcEdHb3FCV3k3RExnbnEzWFBnOFdRbzA5blZKLWxydThtVXdGa0c4cWprdEh5bG14c2VZQlllTjNLZHhaTVhIZTFpQkZUcXZLVUg5MmRod1MtRDZsWEduS1ZCSUZfUEVJTkc5ZG4xTG9jcE8?oc=5"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTDItaE5iRG1ER0hvN21qaXotaHJuVk9sTDc2OVBXX1hwaEZqbDMxdmJvdGRkYjFLMUVLbE9KeVpTTWI1NkxET094Mlk3M29nNGVYemhXVnVUb192bkw4aDk2YUhubFoxckhHSF9fY2JIVXV6UFhpdk1iTHB3S3JsNjBQWU9rMTUybGxObFVBdXI1THdjQ1l4V2Vn0gGaAUFVX3lxTE1MMi1oTmJEbURHSG83bWppei1ocm5WT2xMNzY5UFdfWHBoRmpsMzF2Ym90ZGRiMUsxRUtsT0p5WlNNYjU2TERPT3gyWTczb2c0ZVh6aFdWdVRvX3ZuTDhoOTZhSG5sWjFySEdIX19jYkhVdXpQWGl2TWJMcHdLcmw2MFBZT2sxNTJsbE5sVUF1cjVMd2NDWXhXZWc?oc=5"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQY0M2VG1Temp3NGRVcGx4VGduWmxTNHZVOVVOZW04d0xNTDlBUVpPdDdyeFk1NDVIaUM2MUlfQ1lrSmpkdUE4cXRMVGQ5TnhDc2tBdl80OEQxeDc5T3Y2NFBYTWlTZFE3dU9ET0RTYnBKaEo0YjMzZURuQ29WbS1BV2xQc3A1WnJxRDg3cl85a1cycUo4WWFlNVphSHZINlBJOXfSAaIBQVVfeXFMUGNDNlRtU3pqdzRkVXBseFRnblpsUzR2VTlVTmVtOHdMTUw5QVFaT3Q3cnhZNTQ1SGlDNjFJX0NZa0pqZHVBOHF0TFRkOU54Q3NrQXZfNDhEMXg3OU92NjRQWE1pU2RRN3VPRE9EU2JwSmhKNGIzM2VEbkNvVm0tQVdsUHNwNVpycUQ4N3JfOWtXMnFKOFlhZTVaYUh2SDZQSTl3?oc=5"
-   ]
-  ],
-  "first_seen": "20260825-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "호르무즈해협 통항, 3개월래 최저치로 급감 — 하루 상선 통과 단 1척으로 위축, 로이터·Kpler 데이터 확인",
-  "en": "Hormuz Strait ship transits fall to 3-month low — only one commodity vessel transited Monday, per Reuters and Kpler data",
-  "ar": "حركة السفن عبر مضيق هرمز تنخفض إلى أدنى مستوى في 3 أشهر — سفينة بضائع واحدة فقط عبرت يوم الاثنين وفقا لبيانات رويترز وكبلر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2VURrY0VEOWx3c0xzSXN5MF9TaVZMZEVHMDR5ci1iOWR5S2xxMkVScWFUREdtRXJxejBIUEwxWlEteHBQaGZ1cDBIWVJhd0pnbHBTLUFoZU1IZU1DcHVwQW4yb3ItdjZ0OVVVOEFHWkdhbWgtazdGLWE3a3VXRXM?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/commodity-vessel-transits-through-hormuz-strait-drop-three-month-low"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247214/Strait-of-Hormuz-ship-traffic-drops-to-single-vessel"
-   ]
-  ],
-  "first_seen": "20260825-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "미국, 이란 고립 위한 '경제적 왕따 작전' 발표—2차 제재로 제3국 대상 확대",
-  "en": "US launches 'Operation Economic Outcast' against Iran — secondary sanctions expanded to target third countries",
-  "ar": "الولايات المتحدة تطلق 'عملية النبذ الاقتصادي' ضد إيران — توسيع العقوبات الثانوية لتستهدف دولاً ثالثة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTE4xYzV1OHFrN0pNdGo3V1VSMExkc2pvc1NhbHpJdE1HdzFsQ3h1M2lMU1JzeGotX212N1VRTVNHcVJibEVmbDJvbjNjdGdLdnZFbnNjSEhRUEt0Z2U1cWp1WGlUYTZkSWVZclM1SzhXZlFjSW1r?oc=5"
-   ],
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxQR1RoOTQzZVZWbWpFNzNSa2NKOUlSRHI3M0dxUFU0QjloTm50a2JaUDNnV0ltY3VXR0QtU1d4SjluUTlZT1oxVE9lSEYwNm5raEs5YnVJOHZ2NGhnTW5sdFZyaXZzWS1HdmVfVmZnMTVqQU5ncVhCZXFqZ2xrSXRvbm9HWUl3Zl9kTDZfY05ZVkFqNng4QUFVUFptZnJZeGNyZ1BUTG9SekZJLVFWZWJkZVZCMElmM2s?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdnUxR0wzRVpFeVhJU2tsTkp5U0lpNzRnY2d1VjVfRm5CNHRZUlpYR09ETGoxTXFKNEZBU1BxNy02Q0c0YWhHM2pJcU92MTBxdEdXUEVJU3l4dTVuaUJvak1FLTdhXzEwMmxxUXdLMjViRjBDRDNKSUR0VC1TbUh5bUFMQmZpRUhkYTNlUnZpNHE5aW9Ld0d2bmRVUnVTeXJlaXlCb2Y3QVFpdnhoaVZaMi1PYk4wV1c4blE?oc=5"
-   ]
-  ],
-  "first_seen": "20260825-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-23",
-  "ko": "이란발 사이버공격으로 영국 소재 소형 발전소 4일간 가동 중단 — 영국의 미군기지 사용 허용 이후 확전 양상 보도",
-  "en": "Iranian cyberattack shuts down small UK power plant for four days — reported as escalation following UK allowing US use of British bases",
-  "ar": "هجوم سيبراني إيراني يوقف محطة طاقة بريطانية صغيرة لمدة أربعة أيام — تصعيد بعد سماح بريطانيا لواشنطن باستخدام قواعدها",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/news/iranian-cyber-attack-shuts-down-uk-power-plant-four-days"
-   ],
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQnBUcS0zZUl2QWczcnpTMXNuXy1ILUpSVjYwOERCWXR2XzVvYW04QXd4TVY2VVRaeXBaN1ZXbTFXRFp3RWRJOFBmLTJudllud3dBSl9RcERqbnR1dTZYU09JV2xvcDRmWThIUlgtOTRsQ3VRdEF4aFQ4c2h4MEpQazNMVzdZLVN3YnBqbVVsTnVKVkVSMXFBMjBpNGRibm9oQjdaRHI2WdIBrAFBVV95cUxNZy11ZUJUWVFzQWt6V3pZX2loS0k0OGt3QlRJWWV5VVFucGZkTThHYXkyZ2hSeHQycmYtTHhySzg5QXRkN0tyaUhzUFU0VEhJUHR5amZrX1RqWkJPLU9wVk85UHBFNmFVRVE5X1B2OWNqcHhUc3k1NkFLd1pLSmxQMEt4OFZkY2IzZlBPQ1pjWEc1OTZLUXYyOXpoNDVaeENBbmZHTldQUGRsM3Y0?oc=5"
-   ]
-  ],
-  "first_seen": "20260823-1530",
   "status": "pending"
  }
 ]
