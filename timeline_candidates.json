@@ -167,6 +167,123 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-02",
+  "ko": "이란, 미국 결혼식 오폭 후 웨딩파티 등 공격 재개—사망자 18명·부상 142명으로 집계(이란 보건부)",
+  "en": "Renewed US strikes on Iran, including on a wedding party, raise death toll to 18 killed and 142 wounded (Iran health ministry)",
+  "ar": "تجدد الضربات الأمريكية على إيران، بما فيها حفل زفاف، ترفع الحصيلة إلى 18 قتيلاً و142 جريحًا (وزارة الصحة الإيرانية)",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/9/3/trump-threatens-more-strikes-as-death-toll-in-iran-rises-to-19?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/9/3/iran-war-live-trump-says-renewed-us-iran-clashes-will-not-last-too?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/us-attacks-iran-leave-18-killed-142-wounded-health-official-says"
+   ]
+  ],
+  "first_seen": "20260903-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-02",
+  "ko": "이란, 호르무즈해협서 사우디 유조선 '시드르(Sidr)' 공격—UAE·사우디·쿠웨이트·카타르·이슬람권 등 잇단 규탄 성명",
+  "en": "Iran attacks Saudi tanker Sidr in Strait of Hormuz — UAE, Saudi Arabia, Kuwait, Qatar and Muslim World League condemn attack",
+  "ar": "إيران تهاجم ناقلة النفط السعودية 'سدر' في مضيق هرمز — الإمارات والسعودية والكويت وقطر ورابطة العالم الإسلامي تدين الهجوم",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNXlzVEpPTDNWNU1obkgtb2VHTjlzcU1ZVXF2Q3c2Q2RhYXBPWXdtXzFLaHFuVVB1c0phRGo4LXB1c3RyN2pDNDdIWTJFaVNYa0RtYVRqVUlpQlZkM2hPUHhZMndESVR2VTFjTlBLZ0VpN0lhWmFma3N6UlNwQ1NLdlZ2OVBlOHdDMmRPc0w3MW8zZU5saldHaWZIMnhGRF9GaW5tYmNiRQ?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxQU1NObXVaeTJEaVZJUFJpVjJUaGU5d3VGTC0xcHBvWWgxeWJGeDNBaFd6eFR1WUNnaEpwaEUxUllYdVN4VnJ5M2dxWnVZbGp3b1VNRC1ZZnpsUXJfTDQzdjE4QlQxZkc5eHdVeWNpUjRqd2lzQjlMUXNIZUt6RXB4MEtDVDUySWgyamlneVI1RVpSNUNkR3l6VGF2b2Z2V0c5a1NISUZrSQ?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLWNZNEl1T053MU40MzNHT1cxYjdxQmxrTnk0LVZxSS05QjBXbW14VHBaNzNCT04xMHdNOENSQUdsM0xVVWp4eFBSN0tGUklDa0ZNLXhWNDMyVmVSZDlOdUFFZl9STm43dF85aS1mMkFGNWZSOFlZUzdBdHp0X0w5RzVPNlBBazItU2h4OUpZZXNGbXNsdUZ6UmlWZVhHenVUOWN5ekNaRTVlVFk0VzR6d1doSdIBuAFBVV95cUxNaDR3dzN5TlY0ZHdjckxjandwejNzcXZsNFBvUEttUXpGSHhwMFJOaEpELVEzS0gyV2pOWW12YzlnZm1YOFNIaURlWlZBYnFrQWhPblhMTXlmMWFmQi1jZ1FERV9PWkVhaVk2Wk5lVVRPZXJqNGpSNWdPc0NySFBmT0Y3ZnYtUFlIWm5raXZrbzM4UHhEWlVXUGNZWW9kWm9qWkFjX1UyVjBxMHhtVWtRUTE5QTFXR2ZR?oc=5"
+   ]
+  ],
+  "first_seen": "20260903-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-02",
+  "ko": "이란, 바레인·쿠웨이트·요르단·이라크 쿠르디스탄 등 미군 동맹국 동시 공격 재개—쿠웨이트 미군기지서 연기 기둥 관측",
+  "en": "Iran renews simultaneous attacks on US allies Bahrain, Kuwait, Jordan and Iraq's Kurdistan — smoke seen over US base in Kuwait",
+  "ar": "إيران تجدد هجمات متزامنة على حلفاء أمريكا البحرين والكويت والأردن وكردستان العراق — دخان يتصاعد فوق قاعدة أمريكية في الكويت",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdFhzcy1IS1h6MzRnbEo2bHBQMUlaSVUtQUZ2VnYybEJEQ2FhVkxzTzlLY2VLMkhESG5CczRMTGprOW1hTHdmY015ZTRuaDRSQXI1OGVVSUE5ZS00S2x0MDlOak9VcVJiekhDLVFTUGp0bF9uM2tkQzBzbVRvR0ExMUdMR2hoQTBadlQxSExicWFaUF80N3dIVFFxVWJoaUFNTnZLSkNrVTY3a0N0aVE0bmZ2bjRsbl9tdFJ3?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcVFOSC0zSHlwUTlFWDFRbFZkMVBvUVN5ZzVEY1FXSXFwVmY2R1lnU3h2T0JzTU11TUREVnRQc3NpSUI2N0pPX3A1a1N3dTB5VG5ZbHFrUmVYaWdlbzZLYXgwdWUtOU0waVc1Rks3akxBNE5qZzVIRkZWd1k3SlRUbUJ1TkJxdVBJSVFLWGNNNEFfZDVpdkx4ZXRCenZTQWlCaXZDcTd1MGVaXzRwQWY0TjdYQkhqcmM5NGJZd2Z3?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fVDZueklmYTA0cV9iS2YwSmM3c2V0VUdZRGlpRGRPamhRRlB3S0pIUGo0UEkyanFnS2dwcWtmeHdCSUx5cmFUMUUyV3BqOVgtNG0zUGktV3dMZnJmVVJVZi1UWnFkNzdVT2c?oc=5"
+   ]
+  ],
+  "first_seen": "20260903-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-02",
+  "ko": "이란 IRGC, 호르무즈해협에 기뢰 추가 부설 주장—유조선 2척 기뢰 접촉으로 항행불능",
+  "en": "Iran's IRGC claims new mines laid in Strait of Hormuz — two oil tankers disabled after hitting sea mines",
+  "ar": "الحرس الثوري الإيراني يزعم زرع ألغام بحرية جديدة في مضيق هرمز — تعطل ناقلتي نفط بعد اصطدامهما بألغام بحرية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbnZuUzhDTnJ6bWRuM1Q0T0tpNXJXQzBrczR6X05yQXROSnBxWFdSV3RzT2xPV3JpckxoOVpleXp1YTgxemtSY1BVb0dEVmQ4ZUlpU2RoMVNTejZYRFIyUnRPZ05vOC1aUHQtSlNYTDhNSXoxZG81T0RDaE9QVUVYbnVuNTh5U1RaX0pRejZlelBSVnBaRmJkbDN4SkV4MmVzZjhxVmdfMA?oc=5"
+   ],
+   [
+    "Tehran Times",
+    "https://www.tehrantimes.com/news/529633/IRGC-Two-oil-tankers-disabled-after-hitting-sea-mines"
+   ]
+  ],
+  "first_seen": "20260903-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-02",
+  "ko": "이스라엘 네타냐후 총리, 이란 정권 전복 추진 공개 발언—확전 우려 고조",
+  "en": "Israeli PM Netanyahu says Israel working to overthrow Iran's government, raising escalation fears",
+  "ar": "رئيس الوزراء الإسرائيلي نتنياهو يقول إن إسرائيل تعمل على إسقاط الحكومة الإيرانية، ما يثير مخاوف من التصعيد",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/2/israeli-pm-says-israel-is-working-to-overthrow-irans-government?traffic_source=rss"
+   ],
+   [
+    "News18",
+    "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPN0JtRWgyaS1YVWQwNEx3SGNSQkdGRVh5NHhwV2cya2ZWSTE1bkI0R2VQaExRYVVlUS1qVThVdzJOcjNBUU10U0d3X1dnSzhaWUl2Y0c0bk5GQ1QzdzBDNEg1eXk3Q0xCc000OG84ekw0NDJDV3hId1FBSXI0TEJjOGhYUzY5S1lrQ0xtaGZvN0JVLV9tYlk1NE52UzluMFlaUGFDMnFBbXcwRmFJdU9mem1tSGhiWXh1dTJZRmZsUGwzQV9KLXV4OHo1SHFsUFVYN0J3d0dqcmE5R3ZaMWtaeHlOZnhGZ9IB6wFBVV95cUxQXzdIb2FuYXFxNWVJMFNwckFZa1VsSmYzSVlHYUVTV2d6dHdTQXRJYnlNOXhOc2Vhc2F4V1NYeGg0dVNJR2NoTndPQUVuNVJicVdiQWlWNjlzMEVXYlJNRV8ydkdyTzNRcml1MTA3WnpXM0FhcDlYYkZwMUtqbVJnTkhWRE1mdmxaenEwMGhiNFRpYzFRSDIzc1RJeUJJQ1BQdDRkbjdqcVdqc29MbkF6QzhqeUhFUnpLZWlGNXpVUklyVWlKZjlWdERPcGxVMDVlaVA2SDhtX2JZcTBFLUxZclJxeGZ1LWtCc1dF?oc=5"
+   ]
+  ],
+  "first_seen": "20260903-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-01",
   "ko": "호르무즈 해협서 사우디·한국 유조선 미상 발사체 3발 피격 — 미·이란 재충돌 여파로 긴장 고조, 영국 해사무역기구(UKMTO) 확인",
   "en": "Saudi and South Korean oil tankers hit by 3 projectiles near Strait of Hormuz — UKMTO confirms amid renewed US-Iran hostilities",
@@ -1685,131 +1802,6 @@
    [
     "Reuters",
     "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPR1A3TzVlaW92SHFPcHNmUjdQZ1hIYi0xZWNCdGVpcmY4VmZBUHNneElLRnE5dDFwZXRRX1FfcHFkMDlFMm5kdGh2aldsWnllaGZSVWJ2SFhzUVRRU3FyNzJNeWJfb3lrQnhqQ2g0d1c0ZUo0dllmTkd4QzAwWTNZV05sNlc2M3c5c3d5Zi1hTF90N0ltX25sUUk4T0RURUE3akZuX2VrMEFGcXFIMV9FRFU5VWI2UE4wREV3?oc=5"
-   ]
-  ],
-  "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "미 재무장관 베선트, '경제적 디데이' 대이란 사상 최대규모 금융제재 25일 발표 예고",
-  "en": "US Treasury Secretary Bessent to unveil 'economic D-Day' — largest-ever single-country sanctions package against Iran on Aug 25",
-  "ar": "وزير الخزانة الأمريكي بيسنت يعلن عن كشف عقوبات اقتصادية 'يوم الحسم' غير مسبوقة ضد إيران في 25 أغسطس",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "NPR",
-    "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNRGFJSzI4R2hjX3VLYTJWdWhRV3NzVDMwOTRWakcybFdhVHBlQXhib0k5ckFaSkxTaEZUcGktQk1HYWhXMGhzdTJnWlRjcnFwZjM0b1gyMDRxOVlvWmtxWkNqcGlCcm9OcEthdGlnSUhvU1YtejZwa2ZOd3JFXzhSajlQZGRKdHYyVXVidHZFbkZRQnFNSzRUbnRxV0lKMGhmNzNDbUw1ekpJcjdvTEx6OWhQQm1qWG14ZkI1ZzVoSjBSVW1WZjJoY0NpV2hOek81QTV3UnhJQ0J2a3BjWmcyY0QtVUdHS0M1VG5La0dlSW1sclBxaDVxWHZ3?oc=5"
-   ],
-   [
-    "NPR",
-    "https://www.npr.org/2026/08/24/g-s1-139736/up-first-newsletter-iran-economic-pressures-canada-tariffs-trump-visa-ban"
-   ],
-   [
-    "CNN",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYnFCLUs2dlhHZnBoVkUzTjYybERIQjJnLU5hLWFNNmFUaHZ4VTV1VlRDcmNXYUx4QlBZaGZ1OXlaMHZlNThiMmt0cFg3VlFuUVpIR1c4UFB0czRNM3U3X0syYzcySU1qVkwyNXhSQ1RNTUZnRXhxUXB1R3pIdFE3ZnQ2REhmU3BSRFR3N2V3WHkzeXcyaHN2SkNYcjRBQU9GVzIwbmtoUHFUUWc?oc=5"
-   ]
-  ],
-  "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "이란 리알화, 미 제재 발표 앞두고 달러당 200만 리알까지 폭락 — 역대 최저치 경신",
-  "en": "Iranian rial plunges to record low of 2 million rial per dollar ahead of new US sanctions",
-  "ar": "الريال الإيراني ينهار إلى أدنى مستوى قياسي عند 2 مليون ريال للدولار قبيل العقوبات الأمريكية الجديدة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ZdUsxM1l4TlVweUtOX0lQVFY4MlVHRlFlSFJTWkRSb2NNZS1PS2NfTkp1cUVpVm1wZ1BOR0xYYU16RDJTNkN0OF9pVkwwU2pHWlVRendwT1hVd2dZTnc?oc=5"
-   ],
-   [
-    "머니투데이",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0wbWV6MXc1NW94ak9kRy1CQ1lZcEpuNS15NU1pQU4zUFJOcGJLR1hlQThteTQ1NUs0cExZalZ4RDJaRzRCUk91cU1QenM4MG5MeHVPU3hadjNaVHdyNFA2QjZSSTd6YlZp0gFuQVVfeXFMTm92OGdzeXFobFV4ZENwWkpnU0dCUGt5QmlNbE1TaEc0OUFGSnVueXotZVFveXluLUVTUnVwNTlXaUpjMHluOFJPLTkyMkpmaml1V1R1VDc4VWN2cHBUYWo3UXMzSGJ6VWZWRXBKMUE?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260824_0003760657"
-   ]
-  ],
-  "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "이란, 미 제재에 '지진급' 보복 위협하며 협력국에도 경고",
-  "en": "Iran threatens 'seismic' retaliation against new US sanctions and warns countries against cooperating with Washington",
-  "ar": "إيران تهدد برد 'زلزالي' على العقوبات الأمريكية الجديدة وتحذر الدول من التعاون مع واشنطن",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "NPR",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb0ZvcEtlMWV2aXBOMXNxbFl3aGhtRk9HMkJfSTFrREw1SmIxLTBhTkFacXNXVnI0aTB6eDRTcVdfcG45djdYS182VDZKeHZibWJ6OGhhbGZJTlFzOXBkLWdEanBiUklnT2R4NGJZTWx2cWk3anhKT1NJN0E2a2FDR2pucl9HY19uYlk1Z2U1NTBXdEZQenlCdTUzXzNGVmdvUVM0OHdCR0Y0aVJITlZPeHlPdUZSdFU?oc=5"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWkdHaWlUVTA1Z3ZfejBZbDc3R1pJRkg5T01zalhSdUFyWmpZdkkyeUp5Y0FSeEM5dUxsa0xPS3dVYXN2WEt6NG83MUpZQWs2WUFRSHlGNlhKclBnN01kUjJGM25UdENPMGJ4S0xVV3hkZ2t1dFpvbkZrbTB1ZUdpY001R1FQeGF1NVdnWjUzLTFhM3lpakpMcmFVU2xicUE1eFdWcXVLbmN6UXl2Uzc1MlhmRmptSXNy0gG-AUFVX3lxTFB1TkJRNTVFZzhKZDliWGhvU1JtOXN6WVhsYWlMa2llRHI0TGZld0JXREVZdElPS0JCdDd3TWx4VVZTSEs2UGlTa0FhdHZzY1lzSktULU1JX0lpT1luek1GRnFSQWhBa01HZUpsdW9rbEp3NHp1OXhrRGJLQlpDUEw2VWpiTm52YjNxdGN4T1ZpamRkbDdtQkVFdllIS0lsRUZjOUQ4eFl5U3JWbkdMQ3BFVnE4WUZDd3JtQzNvbUE?oc=5"
-   ],
-   [
-    "The Guardian",
-    "https://www.theguardian.com/world/2026/aug/24/iran-vows-retaliate-countries-cooperate-fresh-us-sanctions"
-   ]
-  ],
-  "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "미국, 대이란 '경제적 D-데이' 초강경 제재 예고—베선트 재무장관 8/25 새벽(한국시간) 발표 예정, 적국 대상 사상 최대 규모 단일 제재로 거론",
-  "en": "US signals 'economic D-Day' sanctions on Iran — Treasury Sec. Bessent to unveil details early Aug 25 (KST), billed as largest-ever single-country sanctions package",
-  "ar": "الولايات المتحدة تلوّح بعقوبات 'يوم الحساب الاقتصادي' على إيران — وزير الخزانة بيسنت يعلن التفاصيل فجر 25 أغسطس (بتوقيت كوريا)، ووصفت بأنها أكبر حزمة عقوبات أحادية على دولة واحدة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/8/24/us-threatens-toughest-sanctions-yet-against-iran-what-we-know?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUVZFT0QzeHhsdVV3NzUtWURkN3VCR3pYT2dzeXNET1pyU3pfQzFCeEpBVnM1UjZjbkViMW9RTV9MWEYweGl2NEJBMzMtNTdtREVpLVQwTDNVd3hGZExndVBTd1B1a3VUQUFrN2VyYVRobVVZZmpHVGh6ZE5pdjc5d2ZOMTZkTGVaT1drcGE2b00yU2ZpWGQ3VHdfSUxveTEzUW16UUtwOC1PS2PSAbABQVVfeXFMT3lRWkVkN3hIQWJLYXFDUmpDVVpUV1JGR3R4WHlSZlRCWGJycDVWaTc5ZmNwVmN1Nzkzbk96S1hyWlBwU0xWM0N3VU4ydGJNMHRkblJTSVB4WERBMnRJWUgxSUxJRjB3SlNsV1VhX1ZDVi1MUFo2SGpkdF9OM1pEVjZqei00RVhKRVkyYTFBa3RQOVI0SXFrdTVFamwtRENiSi1uU2Jhci12aFVrUHNYNkg?oc=5"
-   ],
-   [
-    "NPR",
-    "https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran"
-   ]
-  ],
-  "first_seen": "20260824-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-24",
-  "ko": "이란, 미 신규 제재에 '지진과 같은' 강력 보복 경고—협력국에도 대응 시사",
-  "en": "Iran warns of 'seismic' retaliation against new US sanctions, threatens countries that cooperate",
-  "ar": "إيران تحذر من رد 'زلزالي' على العقوبات الأمريكية الجديدة وتهدد الدول المتعاونة معها",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWkdHaWlUVTA1Z3ZfejBZbDc3R1pJRkg5T01zalhSdUFyWmpZdkkyeUp5Y0FSeEM5dUxsa0xPS3dVYXN2WEt6NG83MUpZQWs2WUFRSHlGNlhKclBnN01kUjJGM25UdENPMGJ4S0xVV3hkZ2t1dFpvbkZrbTB1ZUdpY001R1FQeGF1NVdnWjUzLTFhM3lpakpMcmFVU2xicUE1eFdWcXVLbmN6UXl2Uzc1MlhmRmptSXNy0gG-AUFVX3lxTFB1TkJRNTVFZzhKZDliWGhvU1JtOXN6WVhsYWlMa2llRHI0TGZld0JXREVZdElPS0JCdDd3TWx4VVZTSEs2UGlTa0FhdHZzY1lzSktULU1JX0lpT1luek1GRnFSQWhBa01HZUpsdW9rbEp3NHp1OXhrRGJLQlpDUEw2VWpiTm52YjNxdGN4T1ZpamRkbDdtQkVFdllIS0lsRUZjOUQ4eFl5U3JWbkdMQ3BFVnE4WUZDd3JtQzNvbUE?oc=5"
-   ],
-   [
-    "The Guardian",
-    "https://www.theguardian.com/world/2026/aug/24/iran-vows-retaliate-countries-cooperate-fresh-us-sanctions"
-   ],
-   [
-    "BNN Bloomberg",
-    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPckNKRnA3S1FmQ2hMWV9FTWtjQnBqMWlFamQ0a1EwRW1GNGp2VE5scnF3UXc5dWw4TGJlOThhNW56MmxyYm45MmxJZjUyc25aNF9qSXk5cG5jWVM3VVBwQzl3dVBsZnJxWkJNRndNZm05c01EZ2ctMElCRzlqTEJ1eUVWLW9feEJCZ0RfSWp3LTJEajFxN2dxTGdxcmR1Und1V2FJUnhmSHk1Z3pMb29VbFkxTlFfbHB1SGxfV0RxUW51YXF5M1lYNUpqRVhrbWRhUTF5UmtRakd6bTA?oc=5"
    ]
   ],
   "first_seen": "20260824-1530",
