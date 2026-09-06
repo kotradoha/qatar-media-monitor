@@ -1,5 +1,68 @@
 [
  {
+  "d": "2026-09-06",
+  "ko": "이란 유조선 M/T Kylo, 오만만에서 침몰 — 미 중부사령부 확인",
+  "en": "Iranian oil tanker M/T Kylo sinks in Gulf of Oman — confirmed by US Centcom",
+  "ar": "غرق ناقلة النفط الإيرانية إم تي كايلو في خليج عمان — تؤكده القيادة المركزية الأمريكية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-iranian-oil-tanker-has-gulf-oman"
+   ]
+  ],
+  "first_seen": "20260906-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-06",
+  "ko": "이란 IRGC, 호르무즈 해협 진입 시도 미군 무인수상정(USV) 공격 주장",
+  "en": "Iran's IRGC claims it struck a US unmanned surface vessel attempting to enter the Strait of Hormuz",
+  "ar": "الحرس الثوري الإيراني يزعم أنه ضرب مركبة سطحية أمريكية بدون طيار حاولت دخول مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVW4wM3NOTDFQbmFIbVFnU0wxWmlWSG5YRG1DYUlEa0NiWFk0QmdtSENVOFE3XzNSamVQU01yLUpoVWVDNUlsRTRWdERPLVhObEM3TGprOWo3WlVkRGxJUzcyVXBtU0dFbmM0dTFKdFhydzZRRnlnTTV3OWVIcDlCekZTQ3RaZjhVUlFVcl9oUzFBanV1aGVpTldYTjFzYzJwZTZwRVNBejJOUGxyVzA3Ri1DdFV2Zw?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-american-unmanned-surface-vessel-struck-hormuz"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247469/IRGC-attacks-US-unmanned-vessel-near-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20260906-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-06",
+  "ko": "UKMTO, 아라비아만·오만만서 다수 선박 대상 '무력화 사격' 피해 보고",
+  "en": "UKMTO reports several vessels subjected to 'disabling fire' in Arabian Gulf and Gulf of Oman",
+  "ar": "مكتب عمليات التجارة البحرية البريطاني يبلغ عن تعرض عدة سفن لإطلاق نار 'معطل' في الخليج العربي وخليج عمان",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-several-vessels-subjected-disabling-fire-arabian-gulf-gulf"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQc1hXR2o4Smo3UnZmTTJmM2V4bldFYkpPekNpM2NhUGozMnVKcWZWOHNyUDdmSm5YR2dWT3FRd0FHWnM1Nlc2c3pxSk1XNVdlM1VNb0VyOVRpRG9vMnMyenFVbFVNdERKVEpyeVAtQ0poemwzNTdkYkF4VENfUzhVd1pkQ2djaldJdUZFVThZVktLdXd3anlpZlBCVWpuMi1lTUw1TFA1anU1YWVEeEhIdTI1Q05zOVJqcUNnZkRTc1JxdU82RVRUSw?oc=5"
+   ]
+  ],
+  "first_seen": "20260906-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-05",
   "ko": "美, 이란 카르그섬 인근서 유조선 공격 — 이란 국영매체·타스님, 미군이 카르그섬 인근 이란 유조선 타격했다고 주장, 폭발음 보고됨",
   "en": "US reportedly strikes Iranian oil tanker near Kharg Island — Iranian state media/Tasnim claim US missiles hit Iranian tanker, blasts heard",
@@ -85,6 +148,73 @@
    ]
   ],
   "first_seen": "20260905-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-05",
+  "ko": "미군, 이란 '그림자 함대' 유조선 3척 타격 — 지역 대리세력 지원 혐의로 미군이 이란 석유 유조선 3척 공격",
+  "en": "US military strikes 3 Iranian 'shadow fleet' oil tankers — attacks tankers accused of supporting regional proxies",
+  "ar": "الجيش الأمريكي يضرب 3 ناقلات نفط إيرانية من 'الأسطول الخفي' — بتهمة دعم وكلاء إقليميين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcXFDN0J2QWlHVXRUSU1oaXQwSlBIR0ZrNUNDYndxMjZVMWVTdHVqd2Q2emwzZ2k1Z0JXLWN0bEZtLTVNYXBaZWxDRjZ0TF9WQlBYY0Z1NGJDWXo0dVk3ZjJBRHpseDFTM29nR29wc2N0dU03YzBiZlJ5LUxXcjVha2Z0TEQtQ3NYeHZvY2ZNYkwyX0RTenBuUXA1QjVORndPVGFOWV81WdIBrAFBVV95cUxNbW95UnRlVGF5dS12RG44T1lQLWIyTDU1cC04NWE0SXozcm0yVjhlNGRhTEZwaW91ckZncEl2QWF0bTlvSGpHOHJqQ3lKTDVvYVZ4T0lwbHZnMUNIU25wTUZzZzNvd0U1THJtVzZqSXZvVmN4dlRHaDR2ZWxwc016cHNsSHc1Nkx4Nmw4XzJoMGVFMDNGU1dscnA1LWZRRkFMTmI1bUYxWHRqMkZR?oc=5"
+   ],
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxPWnZvRzl0M0lzaHdFSy1DNC1kX3dVaWxCa2ZrVDcweG9ZNVVBbkh3ZTNJVGctZGplRmdXX1cxOG5xOXRmUmpSUi1TdHZMY1E5REE4MFR1dXMwUS1PMW96TDJLcVVOTlJCb1ZvMDVCUHlUNVlnSXFfWFR1ZGJSSU5rVUVncnNnVU9XSG1HNTlYbkUxaVQ1N1VaMDVhQ2lzUdIBngFBVV95cUxPWnZvRzl0M0lzaHdFSy1DNC1kX3dVaWxCa2ZrVDcweG9ZNVVBbkh3ZTNJVGctZGplRmdXX1cxOG5xOXRmUmpSUi1TdHZMY1E5REE4MFR1dXMwUS1PMW96TDJLcVVOTlJCb1ZvMDVCUHlUNVlnSXFfWFR1ZGJSSU5rVUVncnNnVU9XSG1HNTlYbkUxaVQ1N1VaMDVhQ2lzUQ?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOeXUyT3djU2gxZUJQcWxaN3ZwMGRzU1VJSmhsNWVzYmpXTmtnR2dFYnpXN3BUa3hmUkhLVG9FSnZMdXJ5NmRqanBGLS1oS3VQcWJ3SndiT1lsS3hkb3VJUGFzbWQ5UmVDUjJweTBYdkN4X2JFWHNMUVRxLVdQWS1jTVJub014WFRRdG02M0gyNXRna2FDRE42OEFPRWtuTmx1S3Z0bEg2VU5SMFlpd1k4ZWVrMDJDUWZF?oc=5"
+   ]
+  ],
+  "first_seen": "20260906-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-05",
+  "ko": "이란 IRGC, 미 항모·구축함에 탄도미사일 발사 및 상선 다수 공격으로 맞대응 — 미 유조선 타격 보복 주장",
+  "en": "Iran's IRGC fires ballistic missiles at US carrier and destroyer, attacks multiple merchant vessels — claimed retaliation for US tanker strikes",
+  "ar": "الحرس الثوري الإيراني يطلق صواريخ باليستية على حاملة طائرات ومدمرة أمريكية ويهاجم عدة سفن تجارية — ردا مزعوما على ضرب الناقلات الأمريكية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/9/6/iran-war-live-irgc-claims-new-attacks-on-us-warships-over-naval-blockade?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-us-aircraft-carrier-destroyer-forced-flee-after-missile"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxPb0tBUUJvc3JmSlVaZjlQamlPYkliS1I5blZjZXp6M013d1R2dVcwdW81S2RoWHdrTFd0aENRNE01SG9KNlRjWFdFbWF6eWZYQlNVbjdzbTZnNTRCQUQwMG12ekFhM1BvaHpfTzZucFkyVXNnTUpOLU14Tk1pUkpxYVJHWlc1U2VKSkxkTVNhSDNUU21IRDk3SFp5a2w1YzZWOEtsT1lwb2VxbVBDUC0wQUoyczFYRDdLNUphUnBRMA?oc=5"
+   ]
+  ],
+  "first_seen": "20260906-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-05",
+  "ko": "미국 전쟁부, 이란전 무기부족 보도 유출자 색출 위해 합참 50명 거짓말탐지기 조사 실시",
+  "en": "US War Department subjects 50 Joint Chiefs staff to polygraph tests to find source of leak on weapons shortage reports amid Iran war",
+  "ar": "وزارة الحرب الأمريكية تخضع 50 من موظفي هيئة الأركان المشتركة لاختبار كشف الكذب لتحديد مصدر تسريب تقارير نقص الأسلحة خلال حرب إيران",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "매일경제",
+    "https://www.mk.co.kr/news/world/12145268"
+   ]
+  ],
+  "first_seen": "20260906-0700",
   "status": "pending"
  },
  {
@@ -1675,140 +1805,6 @@
    ]
   ],
   "first_seen": "20260828-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-27",
-  "ko": "이라크, 개전 이후 처음으로 호르무즈 해협 우회 원유 수출 노선 제공 — 해협 리스크 회피 움직임 본격화",
-  "en": "Iraq offers oil export route bypassing Strait of Hormuz for first time since war began — signals shift away from strait dependency",
-  "ar": "العراق يعرض لأول مرة منذ بدء الحرب مسارا لتصدير النفط خارج مضيق هرمز، في مؤشر على تراجع الاعتماد على المضيق",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxPd3JMLVJzb3llLUVweHNJWDlCN3VWaWFVWC0zTlhQdDloZTNfRFA1WS0wRG5RU1IxWXU5eDNZOGNBZ1QxQTd3VU9hSG5ncTVsRndmaFVLcHZZLVhOZGUwb3p4Q0N4NGJlSTRDNEdrNVFhbjItcENfdjc0WU1lNWFyeUlQOHNHU1YxZTNHVVVPU3kyVkV3SGptUENJZFkyYndiZmpubkVlLXNZNW91YXo1Z3Vn?oc=5"
-   ]
-  ],
-  "first_seen": "20260828-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-26",
-  "ko": "이란-오만 호르무즈 임시 항로, 폭 7해리로 확정 발표 — 이란 측, 오만과의 호르무즈해협 관련 협상서 임시 왕복 통행로를 7마일(약 11km) 폭으로 설정한다고 공식화",
-  "en": "Iran announces temporary Hormuz transit corridor with Oman will be 7 miles wide, formalizing the interim arrangement",
-  "ar": "إيران تعلن أن الممر الملاحي المؤقت مع عمان في مضيق هرمز سيكون بعرض 7 أميال",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUFZYaThIb2VDbTI0RzJldjRaRnpGanJSbmJac0plNl9JWUs0a1FxbHZlWlBJM3pnSWFDLXNnV3gzY0V2T0ppd01obGtkQkRTc2F0cFJsTVBHeVprSTBJWVNFVGdkc2xHaFlVdEQ4NFBkMVJxaGd3WjE4UzhiNXlDT3p4VmJ2WklBMzlpVGYyU2N0NG5WMWYzS3NNLWRFMzc3YjU4Zm5xOF8?oc=5"
-   ],
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2ZVY3Y2dXJDajgxb0R0RDNXVTQwWXFQLTltbDJVWUpaanVwZ0lHSzRzQ0VIekg0NkFNZG5UVHVCX0ZOWV9lWThtbnhyV3pSWUxmeEZqR1BTU1YtR2paS0hhajBWQ0tVdHU5Njg5aklzUG1xNDNsaU5VYkJNZlZIbzVXVmZyMmkyYVRBclRKZ1k0dnFrSXJMNzJfVkpfOWhTRTZIOTgwWDRPalBlM1R4LXZFWlU?oc=5"
-   ],
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVjdZMHZKVTJWN1JSaENsNjVKazFHbkZSenpYaEpuSldvUHVDc2pTM1QxZGlSV1hIWlRtTVpiWFhZWXNJQ2EzdDhWLUs4eEJ6RnNnazI1bEJWVDc0enBnU3E4Z2VSaG84UmI3WnVCODhmLXV0WEREVW9qZXI4bFVOTE9B?oc=5"
-   ]
-  ],
-  "first_seen": "20260826-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-26",
-  "ko": "네타냐후, '이란과 합의 불가' 강경 발언 — 트럼프에 대이란 봉쇄 강화 촉구, 호르무즈 잠정합의 이후 이스라엘 강경모드 전환",
-  "en": "Netanyahu says 'no deal with barbaric Iran,' urges Trump to tighten blockade — Israel hardens stance following Iran-Oman Hormuz interim agreement",
-  "ar": "نتنياهو: 'لا اتفاق مع إيران البربرية' ويحث ترامب على تشديد الحصار — تشدد الموقف الإسرائيلي عقب الاتفاق المؤقت بين إيران وعُمان بشأن هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "연합뉴스TV",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByY1E3c0k2d0FJSFhWMTJhWUdUZENoZjBSRV80OHFhSjlZTXU4ZmJYM3RhdGZrVGRkVThhOHlubll2TUZKRUU1N0tPUTFxN3NUR0ktSkxuTzVoM0hLaWRhYUhySHlGYjQ?oc=5"
-   ],
-   [
-    "머니투데이",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1JT01DWGJqZWdmTklMT1VVcGxQMnA1WVFMMGhDT3loTlZuRnRfS0N3UFlaRDdoNk1sZlNtRFpfQWJjRXVkbVRoUHc5ZkNIajZKd240UjNCZmlxaHhtOGV6UFJUM2JMckJq0gFuQVVfeXFMUHY3MlZHTXNMTHRrQU1GTkpTdlE3X1NzQkdHTl9FeGwtS3JzOWJYbUJPWUwwcU9vUUVTX2ExemZ1UUpBSXNUVWpkYVFBWG5rckJPNGFyR0hXZm90Q2hfcGM5Y0tDZk5ycllLcUpXQmc?oc=5"
-   ],
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE96QjNNdzV1MnFWUnphVUZJb0k1cGNLNjczZW02XzJJTWd0eWExTUlvUWVISl90ckNITmd0eVZmWUJBRGYxZGRkbk8wdzRyUXJDdjY0LXhQcm8zaDZDMWc?oc=5"
-   ]
-  ],
-  "first_seen": "20260826-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-26",
-  "ko": "이란군, '전쟁 중 파손된 무기체계 재건 완료' 발표 — 군사교리를 방어에서 공세로 전환한다고 선언",
-  "en": "Iranian military declares reconstruction of war-damaged weapons systems complete — announces shift in military doctrine from defensive to offensive posture",
-  "ar": "الجيش الإيراني يعلن اكتمال إعادة بناء أنظمة الأسلحة المتضررة خلال الحرب — ويعلن تحول العقيدة العسكرية من الدفاع إلى الهجوم",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBS0lHaExsYVZmck0ycDNrT2N2WmJzazRkV0lCajNqRFAyWGF2ZEFJdll6TDBoQUdXVjFKZk04ak1zd1BuOGRJU0N3Z0NHY2pyenVIdVpkcXBuVDY0Q0RIU21HNkhfTFl0TlNYcFNDbGJyQVhF0gF0QVVfeXFMTmJEeTFBZnhNV25ZS1pDMU10R1RCQ1RmWkoyalRueDVIb1l2a1Q3dnRwRDZSWVZpMnBIM1FJYmFmQWthejNzRHk2WWt6dW5vQ19OemN4anZlb2pHWUpZV3kzazdKbUZXY0JXdkRyZXlfZFluS2o?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20260826180500079"
-   ]
-  ],
-  "first_seen": "20260826-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-26",
-  "ko": "이란, 오만과 호르무즈 관련 합의 추진 중 미군함 통항 금지 경고 — '조건부 개방' 방침",
-  "en": "Iran warns of banning military ships from Hormuz under potential deal with Oman — 'conditional reopening' stance",
-  "ar": "إيران تحذر من حظر مرور السفن العسكرية في هرمز في إطار اتفاق محتمل مع عُمان — موقف 'إعادة فتح مشروطة'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNURuNk0wT05tY0NDV05DTENVbXpmdEtqbmVzNGVpenRfSk1CMUJHUFVEZTlPMnVhLUdOUFZfdmgtd216RmF0SDJOWE9lNldfQlJpTmNTMTlGUjBnNmtzbkFwVjhWcjhrTVp3YVRCSjdRRXlyTTlUUThHMjd6SjR0V2RwcGV0NlBXdEJCekRtd1I3b3RNSWI0Mng3SmFsVThMcEppZjNVUjVpa0lOVVhjZU8zRGhXakJVTjNLWlRlQlh3Nkd0azdlUlNwMmhhZEpYVldWWXNHZ1dHcWNO?oc=5"
-   ],
-   [
-    "BBC",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA3VUdQbnA1b2twQjVNb1o1bk1KQmxMbGhUTVJrb0V3RnVsbjZDU1lsWkk0ZktMUW5zRTN6aEtaelczV1phYnhIb3lWaHZuV1pPQ2pGenFSQlJhdnBo0gFiQVVfeXFMTVA2azFyYWtaYnFjZVctRDV2czEtcU1CdmlMOFVTWW1YSjJjbFZ3NWtxY01LTHpfWmE3c0xiMkNBU1hkdXRhNzdjdnQ2dHlVTmt5eHY4cG0xejAzQ2lmNXFZLWc?oc=5"
-   ],
-   [
-    "노컷뉴스",
-    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Ec1QyQTEwNFUyZm5JQ3ZfUjFhUzF6UjdmZUlIQWtOLVVtMGVwendadUFhWDJxb3g1cnVqQnRsOEx6NlphNy0yZTdZUTJpZGhGN2c?oc=5"
-   ]
-  ],
-  "first_seen": "20260827-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-25",
-  "ko": "오만 인근 호르무즈해협서 유조선 피격 — 정체불명 발사체에 피격, 인명피해 없이 손상만 발생(UKMTO)",
-  "en": "Oil tanker struck by projectile in Strait of Hormuz off Oman — hit by unidentified projectile, causing damage but no casualties, UKMTO says",
-  "ar": "ناقلة نفط تتعرض لإطلاق نار قرب مضيق هرمز قبالة عمان — أصابها جسم مقذوف مجهول الهوية مما تسبب في أضرار دون إصابات، بحسب هيئة عمليات التجارة البحرية البريطانية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "© Punit Paranjpe, AFP",
-    "https://www.france24.com/en/middle-east/20260825-mideast-live-oil-tanker-struck-by-projectile-in-strait-of-hormuz-off-oman"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS0FDMFh0ZWhuVmxnRFBHS2RVQV80VXRTR2dkTExxcVZqYkgxdUltbXlUNXJYbVhiNDZCS0RReGVNbWhsNTgtTmFTQXdKZE1ONXVFdEh5aUhTTkJiamt6OUtyaVdDbHNhWV9hZk5RSV9KajM0WHFKTjlKdzJyNlczbVVQMHVHRWNuTlNKeFZQU1NSTi1POWkyTHIyalpHd01laWFXLWprd1JYc1VNVlZDZWQ0ejRSTWdzQkpkWTdsWjMtQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260825-0700",
   "status": "pending"
  }
 ]
