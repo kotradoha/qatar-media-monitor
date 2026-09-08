@@ -67,6 +67,148 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-08",
+  "ko": "후티, 사우디 4개 도시 기습 공격 — 지잔 아람코 석유시설·공군기지 등 피격, 73명 부상, 중동전쟁 확전 국면 진입",
+  "en": "Houthis attack four Saudi cities — strikes hit Aramco oil facilities in Jizan and an air base, 73 wounded, marking a significant expansion of the Middle East war",
+  "ar": "الحوثيون يهاجمون أربع مدن سعودية — استهداف منشآت أرامكو النفطية في جيزان وقاعدة جوية، إصابة 73 شخصاً، في تصعيد كبير للحرب في الشرق الأوسط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/9/8/saudi-houthi-fighting-in-yemen-escalates-what-happened-and-whats-next?traffic_source=rss"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNT2RnNWprQ01ScjN2Q05RSHRWdmRqVzh2U01LUVVPVmhiRDVYNER3anQxQlNWV24wS3RZR2ZqS1FxNnFKWFRqSmlYbnQwSFk1eU5Cbnh1SVpxbTZCWUwtelFqbFV6LTNLVHZZbGRaYTVucy1VT1JwNDZPM3gydkZRU2VCWHFoVnpTVU9ILXlfRHpKMnBsT3RJOUlkejRzT1FJa25YekFnMVl6dUJnbERxeXo1UnpOZTVaQ281aFJrbjFEWmN3T2c?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/sep/08/houthi-strike-saudi-arabia-oil-facilities-middle-east-war-iran"
+   ]
+  ],
+  "first_seen": "20260908-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-08",
+  "ko": "후티 공격 여파로 유가 급등 — 배럴당 100달러 근접, 골드만삭스 호르무즈 유류제품 통항량 전쟁 전 대비 35%로 급감 집계",
+  "en": "Oil prices surge near $100/barrel after Houthi attacks — Goldman Sachs reports oil product flows through Hormuz down to 35% of pre-war levels",
+  "ar": "أسعار النفط ترتفع قرب 100 دولار للبرميل بعد هجمات الحوثيين — غولدمان ساكس يفيد بانخفاض تدفقات منتجات النفط عبر هرمز إلى 35% من مستويات ما قبل الحرب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMid0FVX3lxTE54N3UzSlJaTHRYV1g3cTYtWFctbWtEdGU5eWVBTWlEa0drQkxabDU2VTRtTGJ5OHA1QndlRzB4QS11cWNCcmE0UThzSUNDSVZFQUlYWmtieklycEpOUDVuV0NFREZOaGNFRVZkT05obUljbDV1ZnlJ?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lMlBVekUwMkFMY0hXZG5WMjBrVXd6S0hXa1lXRjdSaGo0LXozWUFQVlZNQkxJXzEyWDBDa3QwRnp4TV9vUGxxem4yemJiQllqamV5cE8wT2xvbzhnYnMwRzhGazU1bUZlWHZCa1NVZURBd0U2aGtPRHI1SldfRkU?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNTBHazRJMEhoZks2V2o5M2loY0UtV3pnUjMweXB6cXZuVjQtYmhTWV9oSnF0cDhRZGVybzBuNk9fYWRJU1diemp5VDFxZWdHYy16a0ctWG9ob0JfMUZqRTIwRnoyeHhxckI4NFZCVmM1MGVRaDFPeWh0MVFKTXYyVURKSWdJZGJ5ZWZWYzdHanhyQTBNTGYyRWF6bXVWSDRZdXdYN0pWdURYU0p6Z1lkVzlRWlF4UEIyY1E?oc=5"
+   ]
+  ],
+  "first_seen": "20260908-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-08",
+  "ko": "호르무즈 해협에서 유조선 2척 야간 피격 — 심야 통항 중 공격받아",
+  "en": "Two tankers attacked during a midnight transit through the Strait of Hormuz",
+  "ar": "مهاجمة ناقلتين خلال عبور منتصف الليل عبر مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU216RVctUnZQZ1dYaGNlcC1VU0VITlNZNHRhWE5HcUo3ZDZLaFBpNHQwdWNBVS10c2R6ekV6QzlQR0RkYWdoTFhCdGE1TnpZaUs0VHJuOE52WXZlU1pxT2RsX181Z05Kd0ljY08yME55b2pDQkt5SEZoWEV2R2FaN1BkNWxTOWdoYzdNNC1VQ296SHpxUnFxRHBnZHh3dTQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260908-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-08",
+  "ko": "미국, 이란 표적에 새 공습 단행 — 종전 협상 교착 속 확전 신호",
+  "en": "U.S. launches new strikes on Iranian targets amid stalled ceasefire talks, signaling further escalation",
+  "ar": "الولايات المتحدة تشن ضربات جديدة على أهداف إيرانية وسط تعثر محادثات الهدنة، في إشارة إلى مزيد من التصعيد",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQy1GakNJZ3lEekgxci1pRGpWS1hwbWNGTHpybV9IZXZiRDVDVDQ3RDNIYlpKNjhnS3Q1WGRsNmZEZmtLTHVsSEhKbzFaUDU3dkFkV0pfWkd6d0lrTnhXcVo1LTBMTFVnOHBfYUF1dWJtQUJub3NYakVXbENpOE1QWkJUd2tmRDdvNmltVEE5cTBXQQ?oc=5"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdlpGQ3FlMzUyZHVhZ0l3YnllVExLSV9ocF9TTzNVT0JlbEVCZldKX2U5dlZtSjVXSEN1NkMxVThhUjRQbGV2ZGpGb0FoMUtGMVZEemxsVGw0U3I3bFM5WnpCTFdvTTc2cnhsOHhXaHQ5eG54Q1pKMlA5b2xwVDZiZ3ZNQW1XNV9ESlhuZVNja1hPZU5pRDgzY2JDaGtodGtFV2NZMXZuWU5fS2VYZ3c?oc=5"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaUJEWHF6c3VYN1B1S3JNOWVXYlVrak9kSkFPaHdmdnZyUE1Fc3RSajFQaHRtSFc5SEY3RE5QUTdHWUZ5U1RVTnJsTm84bWFjVmZsa2tLUXVLdnhCcWV1djVkUXlaQVBwV2RKdzRDNHJtbTdGbjVzZHowS3JPVDBaOGo3c0lXbDFocTlNT2Y4cXNQMjZhTEUzTVRvVERmLTdWZUE?oc=5"
+   ]
+  ],
+  "first_seen": "20260908-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-08",
+  "ko": "카타르, 중국과 함께 미·이란 종전협상 재개 중재 착수 — 왕이 외교부장 '포성은 해법이 아니다' 발언",
+  "en": "Qatar and China launch joint mediation to resume US-Iran ceasefire talks — Wang Yi says 'gunfire is not the solution'",
+  "ar": "قطر والصين تطلقان وساطة مشتركة لاستئناف محادثات وقف إطلاق النار بين الولايات المتحدة وإيران — وانغ يي يقول إن 'صوت المدافع ليس حلاً'",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "news.kbs.co.kr",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5yeERUZzB6ZDA5MmJVOWppTjAxYUU5eVJOZ3JoTGstNDlyN1BkRjlHeXVYY1FaZ1owZktzcldUdkZNSlZHMHFBVUQxNXluTS1QYmR3MnFBMk1WaVU?oc=5"
+   ],
+   [
+    "매일경제",
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE40cEJrdTRSRUFCOHg5cWtNUnBMVGp3Vnl1VUdKQUxHYksxV1RCTUFwQTlKa0hyUDlCSVJqRjdDbThacTJPcHZTdjdPbmp3cXM?oc=5"
+   ],
+   [
+    "mk.co.kr",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5EQnhTczVibXY1NF9yYmNlcmpvRFR5NWRoMm5QMkhydEFBdjFLVFJNdDBiWk9qSUs1NXVYYW1NQXU2V181S2YzaUt5SU4zYjVUNWc?oc=5"
+   ]
+  ],
+  "first_seen": "20260908-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-08",
+  "ko": "영국, 이란 제재 확대 법안 공포 — 금융·무역·해운 전방위 압박 강화",
+  "en": "UK publishes legislation expanding sanctions on Iran, tightening financial, trade and shipping restrictions",
+  "ar": "المملكة المتحدة تنشر تشريعاً لتوسيع العقوبات على إيران، وتشديد القيود المالية والتجارية والملاحية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYWVZeE9oVXoyTHdoX1JZTFRPb0FUaWptbS1jd2RCbk1aTXdqanlfaVJUSnFSMEYzeG5TTzZ0LXVORGdPbENyQWZWTnRxN1c0RjFTalBrejIyMVNFUjQ3RXNuaFp3YjJCSnMxdThXVkE5cVV0MjA4OUgxVkpOZDk0TnFpdGdyamg3WnBKVHV3SjluTXluQVpF?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/uk-publishes-legislation-expanded-sanctions-iran"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hSmF4NzNDdEd0dDdhUl9kRXhWRFdRemNUTmxLQkx5NDRmTzBVVWlwbG1ZQlhYcFdsWldjMFI1c2diMkdBWm9ycjZBLTRMY1pfSTBZ0gFYQVVfeXFMTWJIRmpCWm5yWEtpNERSUGtKRUU0M082ZkxSbXgzQ3k0VGJOdzVBVmpJYWJSTHFNcEg1UUVmSS1xMzZlY2VPWmIzemRDV0o3c09nd0ZHOVNkbA?oc=5"
+   ]
+  ],
+  "first_seen": "20260908-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-07",
   "ko": "이란, 호르무즈해협 인근 '금지구역(통제구역)' 수일 내 선포 예고 — IRGC 경고에 유조선 3척 항로 변경·회항",
   "en": "Iran to declare 'prohibited/restricted zone' near Strait of Hormuz within days — three tankers reroute after IRGC warning",
@@ -1703,120 +1845,6 @@
    ]
   ],
   "first_seen": "20260829-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-29",
-  "ko": "UKMTO, 호르무즈 해협 상선 통항 분쟁 전 대비 약 90% 감소 확인 — 북부 우회항로 선호 증가",
-  "en": "UKMTO confirms commercial shipping through Hormuz down about 90% from pre-conflict levels, as operators favor northern route",
-  "ar": "مكتب عمليات التجارة البحرية البريطاني يؤكد انخفاض الشحن التجاري عبر مضيق هرمز بنحو 90% عن مستويات ما قبل النزاع، مع تفضيل المشغلين للطريق الشمالي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/commercial-shipping-through-hormuz-significantly-reduced-ukmto-says"
-   ]
-  ],
-  "first_seen": "20260829-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-29",
-  "ko": "유엔 해사기구, 걸프해역 발이 묶인 선박 400척에 달한다고 발표 — 이란-미 전쟁 여파 지속",
-  "en": "UN maritime agency says 400 ships now stranded in the Gulf amid ongoing Iran-US war fallout",
-  "ar": "الوكالة البحرية للأمم المتحدة تعلن أن 400 سفينة عالقة في الخليج وسط تداعيات الحرب الإيرانية الأمريكية المستمرة",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeTdESVFTRnJFeldMZWFmOG9JcFdVbVdTc1paWVoyQzE0SmZGbGRnelRsM21PN2hPZjh1VURjRTRxR1cxbTZTczQ2ZEs5ZXIzcFFCckRXU2E2eGdocG1WeXIxSWp3YV9tRGRJZFo3UnROVVU4OGd4R01hOVUyYVFXaS1iSWJMSHIxNEl2d3g2ZEFyUVNKajRmUU84RWRaZXF1NC1oTkVwSmdfVUlXZlhjS2RMSk8ya1JHVTNvaQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260829-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-08-29",
-  "ko": "IMO, 호르무즈해협에 선원 6,000명 발이 묶인 상태라고 발표 — 美·이란 갈등으로 항행 차질 지속",
-  "en": "IMO reports 6,000 seafarers stranded in the Strait of Hormuz due to ongoing US-Iran conflict",
-  "ar": "المنظمة البحرية الدولية: 6 آلاف بحار عالقين في مضيق هرمز بسبب النزاع الأمريكي الإيراني المستمر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdFhDRVFBa2YteWJpNkpfNlBkaG5CUTFlcy1HVkRBaWFhdHlxVEhnT2lZSk1tVElTQS0yc0Z0U3Fsclk4YW96bnlDdUxDV196eFlBelFwLVp0Rjdrel9YUndZTVJ0cUJZV1BwRE9haDlOUFcxYVNkb0VnLV84THc3d1NpMF96WHFjcFFVQ1YwOXRWTm54eHl4dVpMUXM3enB3V3Q3aUNRRS15ekt1QlRval9GVE1sZF92aVFsWmdBX2xYZmptUGpZSNIBzgFBVV95cUxQXzNIaFBpcTdtVXBib3hzRmJpSmh5OVdNYlNrem1wYU90cEY2ZEx1enVoZXUzZFdzak9PdHRsY3ppTlVwank0MHItdHpmQ3dTa0pwMFo0eFloNmtyTWhGRWo3ME13NS1vRGhZS0prU1k1LV9HTlpjNTJFNS0tbHgxajdiS2hOblg2MkxwY19INTZwd1dzN2o5dUhlSDY1eXRXTlVJa1pIYlp4SEJEalBqa09SS1NSMFdPdEgzdFpoekR3aEJ2U0xmcWtKWC01dw?oc=5"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZlJNRzg4VTRHQlRfUVhkX3Nad3IwdEFIcHVpZHdIVG9zbmVFdFpEVGpjRXJjaGJjNFJub25lZGFQZkxGT29hLUZacF82YXhhVndRYVNOUmR1R215SHkzam5Ja0JEbnlxdG1LaVdEekRRakk5ZzRyaUw3d1FPS0RJbERYamk1TW54NkpOUnlfbGw0ZlZfZVF4bGZfWWZCbUNWZmZjSnR0R1Zoa1loM0c1UnBlbWZGTmFtczZobDMxRlhPV3U4TkHSAcsBQVVfeXFMTWd4Ni1qN3czWmViUXhSRkVkV0hwSUJRNWFwWTdzSll4UU4wa3J1SXpxWWtjSGNqN1RtVXBfWGwxa25DRndidEdyTm1hUWpzdWVSMGYtTjQyRlQ4bDBvcGhEaHVUekFTamdvdFBGMFpROVM1X2d1NkgzTmtjU0tTaXU0M3JCVWxiRXQ0Y3JpcEZRMXlWNzdRRUI0d1Fhd0F5TGtjX2xqTldwcWVjYmlmeDBVR2RVVXBYMERqMHJzbkdUQzV3dFNFZENCWGM?oc=5"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMitAVBVV95cUxOU05vTTh5SkFabzNZR0lnMGI1V0JNSHhZdDlNQVpkMGdWZGtJUlJTZ2E4ekhvcnp4VENnZ0xJVGVwYmZyUThDZTBmYUowbk1JVC1qdkMwZ0plWWRIWTRFbmFVcW1oYi1lZy1WcjFOOElQX3FLbUZ6RmxvaUk0Sy15eU9EWVZDYUtoc2JpYm1QdEkwbTJ0bDNKWjJYdndrTi0tRi1kVzFiM0ZwaU5PZUk5cUt4MmdBWDd2UkVVLWtZTXAxRjhFWExIcXd3d1k1b29xYW1YNnRfMVd0TGJndjVOV3dVUVdoNkVWRmhEZjBpSTZVN1R0cER4TjIxVEFPRHA4c2pvRWlZSVRYUE9Gc1VWRVE1X0dKd0ZHUG5uYklsbXVMdFpWLUM1YThmcU9yVUdCWVFuZlV6eXdQWmVpYzR6dC02S0l6R3NLRk9PR2YzVXhEZVhWREpDcUtnU0JNQ2Q2T1FzeXlOTWxtdEo1SXZ1NFk5REZkR1ZKM3pRcnhtRTJNb0hZdDdyTHdSQVZ5STlJM2R0dVcxbFJLUFFvcGFLM1hPeS1NanBvaWdGYjE1ak9ndl85b3lVdjhHMldPVUZyY2d3TWZlUXRlSmpzejBMU0dQcm5OTDdPRFdPVWIyM3VaZ2RyNnV1OENPa1dmZ3FSd3VrTHQ1N2RYeVdWY0hrZXVueThzR0lXUDh6MlpfLWNVeE5hQ3padW9YYUtnR1hDUjJneVhoS21nOFQza3BBMDlsbEx3UFU4eElhRHZBT2hqc0RvTXltTmVUZmtDSXdKdEIxU29fMjlnNnRlZ0F4Z292eG9rSW1NVDMtUzgzYmdIREZFNkNNbEM3SHA2ckJoaUNKZkhacDdhVm5GcmJfR3FLZFNKZVlmMDFRc1BzbG9vd2V2cG10VXA4YXdyYjN4LW01eQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260829-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-29",
-  "ko": "CENTCOM, 이란 봉쇄 집행 위해 선박 82척 항로변경·3척 무력화시켰다고 발표",
-  "en": "CENTCOM says 82 vessels redirected and three disabled to enforce US blockade on Iran",
-  "ar": "القيادة المركزية الأمريكية: تحويل مسار 82 سفينة وتعطيل 3 سفن لتطبيق الحصار على إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOc1YzdDZ3VFJieDZHWERZNDJGa1VnUF9zTFQtcTNaby02YmN0WWI0OF9FZkV2c0JVR2N2T0p1VEVZc0lFclNnczVrZnpoSTJtWEs5bE9WSG9HcVp5M1B3cHI4eUloVjN6SDMyRGJDTTNiV1MtelBjN3BjMW1XbnZsMVdwaWc2bmJTQ29XWk1DUFJpR2RTbXlrVjZjVzRvazZ2WkpjVm9zRGZzQXhxbi11Z2RrM0hFSWh3aWhHaHFIOA?oc=5"
-   ]
-  ],
-  "first_seen": "20260829-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-29",
-  "ko": "이란, 오만과 호르무즈 통항로 합의했으나 재개방은 美 이행 조건부라고 발표 — 페제시키안 대통령 확인",
-  "en": "Iran says it agreed with Oman on a Hormuz passage route, but links full reopening to US fulfilling commitments — confirmed by President Pezeshkian",
-  "ar": "إيران تعلن اتفاقها مع عمان على ممر عبور في هرمز، وتربط إعادة الفتح الكامل بوفاء واشنطن بالتزاماتها",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQW5uQWh6ZmF1MlljM2RjNzJkVE43bHp0OFVIdEJqRG1oVzVFRUZweThOZTRaUlhnRUtkM2VKYTMyd1NZYjcxcktKdGlMZjRZU3FfcEp5SEJlUUNwb19MLThXRE43eUZ3MW92X09VMWxvUjI1dC1KUWFuOFNvWHJ2cGt3WFZlLWhWem8zU2ZQeWw1X1FJaFpYV0Eydm9ncWpJNDNCUU9zZ3B1UW9mdGFtOEktVlZGeGlzZmVGVzBab0l0LUlDZVBpX2sxVVVMUy1xckRsSnpR?oc=5"
-   ],
-   [
-    "Armenpress",
-    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lSUFkbmtFdzlfWTVDa1MxSTJoRi1NWnp2dWMyaG8tdU13YVZqQ3RVak5JdkxrdnZzVHZPbHpISXNZbmdYWjl5bTlWcWN4aWk3dGfSAVdBVV95cUxNYmNHYVVjVzBuN1hOMkJlSnhwdkk2a1dHODNqWTNrOHpDaHo2RGtkeGF4Y0c1SnBLSEdkUDAyWTVaNlRqNG1BcEhQd0I5TmlxbFJxZGYzcW8?oc=5"
-   ]
-  ],
-  "first_seen": "20260829-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-08-29",
-  "ko": "이란 적신월사, 전쟁 중 잔해서 7250명 이상 생존 구조 발표 — 3차 전쟁(이란-이스라엘-미국) 기간 구조작업 누적 성과 공개",
-  "en": "Iranian Red Crescent reports over 7,250 pulled alive from rubble during the war — cumulative rescue tally disclosed for the third imposed war",
-  "ar": "الهلال الأحمر الإيراني يعلن إنقاذ أكثر من 7250 شخصا أحياء من تحت الأنقاض خلال الحرب — كشف عن الحصيلة التراكمية لعمليات الإنقاذ خلال الحرب الثالثة المفروضة",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247320/More-than-7-250-pulled-alive-from-rubble-during-Iran-war"
-   ]
-  ],
-  "first_seen": "20260830-1530",
   "status": "pending"
  }
 ]
