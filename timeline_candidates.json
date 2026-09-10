@@ -200,6 +200,81 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-09",
+  "ko": "이란-미국, 유조선 상호 공격으로 최대 확전 물결 — 브렌트유 100달러 돌파, 미국이 이란 유조선 파괴",
+  "en": "Iran-US mutual tanker attacks mark biggest escalation wave — Brent crude breaks $100 as US destroys Iranian oil tankers",
+  "ar": "هجمات متبادلة على ناقلات النفط بين إيران وأمريكا في أكبر موجة تصعيد — يتجاوز خام برنت 100 دولار بعد تدمير أمريكا ناقلات نفط إيرانية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/oil-prices-breach-100-iran-us-attacks-escalate"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdGg1NEo3VVRGTDl0eEFZVkVVWjVUTGtmVC1haUp5c2kzb1NYcXMzNFlVZk9rQl92VTNFREZuSDlBTEhYQ19Lci1ZV2tCTk1tLVRDMEcydzk4ZEZOY3dEMUhhSlU5eXdOVnBLQWRxUlk1bXl3QjNQWklTYm9jdVZ6NHB6V0FkamhIUFJJYjhsMVk5XzlOWnZfbm1IVTVmR05TYmc?oc=5"
+   ],
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdzJzWHViZGNLaXE4RzlYOW1ma2VGNGkxR1BzN1ZuZGV4bkJQRENqbWxXenM1NDN0d0wyLTBXeTk5bGc4enFCM0RBbzJJdmNqV2IxZFFkNDhtd0Uzb1Y0U1hveDVLY0hfMlpWVndXUzA1MURONnZDVDhicDRLUy1zb0t6ZUx6aktNOTFvY1VzQ1ZFbjlyZ0HSAZYBQVVfeXFMUHcyc1h1YmRjS2lxOEc5WDltZmtlRjRpMUdQczdWbmRleG5CUERDam1sV3pzNTQzdHdMMi0wV3k5OWxnOHpxQjNEQW8ySXZjaldiMWRRZDQ4bXdFM29WNFNYb3g1S2NIXzJaVlZ3V1MwNTFETjZ2Q1Q4YnA0S1Mtc29LemVMempLTTkxb2NVc0NWRW45cmdB?oc=5"
+   ]
+  ],
+  "first_seen": "20260910-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-09",
+  "ko": "이란, 요르단 알아즈라크 무와파크 살티 공군기지에 미사일 다수 발사 — 미군 항공기 여러 대 손상",
+  "en": "Iran fires wave of missiles at Jordan's Muwaffaq Salti Air Base near Al-Azraq — several US aircraft damaged",
+  "ar": "إيران تطلق وابلا من الصواريخ على قاعدة الملك المؤفق الجوية قرب الأزرق في الأردن — تضرر عدة طائرات أمريكية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYXl5NEhWdWhSUHJZanQ3LU5Jd0dyWHhUN1RYVVROUHFWcnV2WjEwNzl3VWtjX0cxanNGanNUV1NEZGZTeXYwNDh6T0tIT0hQYkVsTzZGNzA0SWlONVZWOEZwRmY1OWdGUmZLMmkyNWt2Uk5fQnFNWVF2ZlBXcmdfdmowSG9fUWJBWFE1MHU1bXdwYUpsb0EwSEVkSjEtYWFvRWpwd2lvdUpZZWdXOWNlRm5wRVV5N1plM1RUMGpXc1BwWTEwcWYyaDZ6emk?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-strikes-jordan-base-damaged-several-us-aircraft-cbs-reporter"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZWpIN09XTWRqVXhVYlVTejNObWNTTzFNY2NESGNRX2M3OEZjOHhVeWZyZE9YTUliYjI3cS0xLVpybGREeDVUbXl2Z1EtNWxRMEtObFFKV1RLMUgzaWczeGs0a0ZuMHE1S0hHMWdWVGhVSGtuTERObGhGeWhKcXYwbDhmTU00ZUh0X1FmcGFjM2xLVjZHcXdYdkFZenhSMnhmckFsUWoxNmRSWnUwRDVxdUJaREswZ3E5d1QzOUJrd0cwQQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260910-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-09",
+  "ko": "IAEA 이사회, 이란을 유엔안전보장이사회에 회부하는 대이란 결의안 채택 — 20년 만의 '핵 비협조' 회부",
+  "en": "IAEA board refers Iran to UN Security Council over nuclear 'non-compliance', first in two decades",
+  "ar": "مجلس محافظي الوكالة الدولية للطاقة الذرية يحيل إيران إلى مجلس الأمن الدولي بشأن 'عدم الامتثال' النووي، الأولى منذ عقدين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZlRYMEs3WFQxZTYwOGNaTXZRbkcyaTJ1MGlQbUFGNzFaRTB5NVFEbmZBemM3TTJDZnllRnphWHNYTm5EcW5LVkFydHdyZWFUcm1nOWVJZFV1Qi1jOUstVUpRYUNPZlhXckR0V19KN0xkLXBpUW1zUkF0NmF0RWk1NlVtSnFvX09yOEE3WXZEcW5veDZJWWFuMzJkQUo3SEFvWVo1emV1c0hfdjRGZFFJVUFsVnk4eDdROXJhd2Y2MGM1Z9IBxwFBVV95cUxOZmZRZGxKcW5wRHAwcWdtMWN4QnNFSHBvVHBiVlRfek9NcjdnZ2hCY0NnX3ozTFhvZG9WZ2xYVzROZVk5SS01a0QzZTFjWFBwbk1sZmwxSkdtZERUdlZidFZxZlFTeEdKcDBwNGsteEU1TkpTT0xrNkc1cktHWlRkM01FeWd2eHR4am9hNUk3X0ZmNnA1Qll3THNVTWZOS3VpQVZ6TGZpRXRBNVgwVVpvVTdqc2dzc09pRXZrUDJDVDRvRHBTRzRV?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247607/IAEA-BoG-adopts-West-drafted-anti-Iran-resolution"
+   ],
+   [
+    "Mehr News Agency",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMmkyMDhOYW4zc1NzS0xWQ2wyVUZrUklLQ2w2LVJPaHRIRDhIZDFqaFRsSTEwdU9lN3BmZnVyZVZ0M1EzenRlS29MSGxIbXhMbVh0aGxSR01rUGxmVUFlMkVwX3ZQc1kwSGIwUzZlNUdUWUVNZ0tsWmszVEZkOUU5VlZPWHN4RW1xTGszdVY5TUFaeEtPQkMw?oc=5"
+   ]
+  ],
+  "first_seen": "20260910-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-08",
   "ko": "카타르 LNG 운반선, 7월 이후 처음으로 호르무즈 해협 통과 성공",
   "en": "Qatari LNG carrier transits Strait of Hormuz for first time since July",
@@ -1794,81 +1869,6 @@
    ]
   ],
   "first_seen": "20260903-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-01",
-  "ko": "호르무즈 해협서 사우디·한국 유조선 미상 발사체 3발 피격 — 미·이란 재충돌 여파로 긴장 고조, 영국 해사무역기구(UKMTO) 확인",
-  "en": "Saudi and South Korean oil tankers hit by 3 projectiles near Strait of Hormuz — UKMTO confirms amid renewed US-Iran hostilities",
-  "ar": "استهداف ناقلتي نفط سعودية وكورية جنوبية بـ3 مقذوفات قرب مضيق هرمز — تؤكد هيئة التجارة البحرية البريطانية وسط تجدد الاشتباكات بين واشنطن وطهران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZDZrSXpaNXpfajl5QlBndGx6a191amlOZEZINmlJYkVSMDBOUzNFNnA2cGhJaTRPVjVfVV92dUpFN0ZhYkVaZWNHSUpsTXU3YjdoNXd6RnJkZVdERXRVV3djOHdtR2JrUi1JN1ZXaW83UU1UNHduWlRfQ0diX3hudWFORzg?oc=5"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUVJoOVNTYk5oVkNKNkk1MEhTOXNUQjNOSk11dG5PNkM1aUVOa2prazIwbG9vd2F0cGs2OTNoeTdPdXkydlhLOTJHX2loRmdodFdLMjVLZnZiTmVrQ3BjXzg3RFFnZUFNcWJGVWkzVXBPdzBuWE1FaUE4V2lUaHNyaTFmZEs1VmZnd21zaXZiS3dBeVliYVg1ZGVOeVFSQjc4aTBQVUZOSW1UQWJKWjdEcEpya0c?oc=5"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMifkFVX3lxTE1FUVFQaTlqQUpZNU1yTWFhT0s5R0pvdHI2a3NpSXlrNkZJWFdTWV9JZHdQOVVDNlhLV0FVVzBRWUpNVTRxRTlMblh2SWNwZkZKMDdYYVRWYmc2QUVZNDBnOFlXSFhPS2NGX2tiVVlabjZaOG92amZ0NDNISFotZw?oc=5"
-   ]
-  ],
-  "first_seen": "20260901-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-01",
-  "ko": "이란 대통령 페제시키안, 미국이 6월 종전 양해각서(MOU) 이행하면 즉각 상응 조치 취하겠다고 SCO 정상회의서 발언 — 외교 재개 시사",
-  "en": "Iran's President Pezeshkian says Iran will reciprocate immediately if US complies with June ceasefire MOU — signals diplomatic reopening at SCO summit",
-  "ar": "الرئيس الإيراني بزشكيان يقول إن إيران ستستجيب فوراً إذا التزمت الولايات المتحدة بمذكرة التفاهم الموقعة في يونيو — إشارة لإعادة فتح القنوات الدبلوماسية في قمة منظمة شنغهاي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/news/trump-ignores-generals-he-threatens-hit-iran-hard"
-   ],
-   [
-    "한국경제",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE82Y2t1SEh5Vy0xSjU5YlZMWTRNQnlHcTNNd2o0R2JWTzJJMjJMeGJKNklpVV9nOE1XTWZ6Q0dMT2FjbGtUb3BNSnlBUkxnM2tUMmZFTXQ4cHhEUQ?oc=5"
-   ],
-   [
-    "파이낸셜뉴스",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rZl9XcnJZeUNnY09GY1RJQi13UmFock9Qa25FRzQ1aW5yVXFFZk5OZmsyVHlCOHVRQVpZOGZDMEROU192OXVFLS1SaHVOdnVMbDg0cDRuZURfZw?oc=5"
-   ]
-  ],
-  "first_seen": "20260901-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-01",
-  "ko": "미국, 이란에 대규모 신규 공습 개시—2일 만에 재확전, 트럼프 '추가 보복' 경고",
-  "en": "US launches large new strikes on Iran—war resumes after two-day lull, Trump warns of further retaliation",
-  "ar": "الولايات المتحدة تشن ضربات جديدة واسعة على إيران — تجدد الحرب بعد يومين من الهدوء، وترامب يحذر من مزيد من الانتقام",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR2dGVjMwWDUwVV94ZkhoOHJDM2Q3dEZKcDRFZmxiNUVPMGtudkp6VExfSGhfMldpVjZPTDNObUJMb0Y0TGdVVFJ3b3lDVTVCeU10blBJNEZ4dkNVcmM0dElYTjBNMWFWRlIyTkZ4dzUxeFByT3NqbEdyLXZtV2pWdTRRaFhrbExWbW16c9IBkgFBVV95cUxNaFNBLVpFOU80Wkc0YVRKNzFUR2Z6V2xWeFZ5eUxlNXZWNXpRdl9VS0xaQmx4aTBxZ0t5ckdlcUJsSkNhSG83bm1lSUxnTk81dVV4YmsxWmxaZDJJQ0pldkZZUndGQmhVeTJpazlydlNOcXU2Y2E3c0lrbEVCT0pZaE00aGtxcHpJV1k0QnB2dzlhdw?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/2/us-launches-new-strikes-on-iran-denies-its-bases-hit-in-jordan?traffic_source=rss"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMiigFBVV95cUxQU0c0RTVFRG9JUFF6VW40RTU4Y0VTOExmM3lzY1V5NDFmYzRQR2FOUWowVGdlWE5TdEtCSkdnLVZzY3JHS2luZkdYenB2a1F0WklTMFhVbEZreU9zb1hPcDFoYkVMT3pGUnU4d3hUWVRfb1owZ19DLTBtaGdvU2Rqa2hqZUdDQTllaFHSAY8BQVVfeXFMUFdYN1BRTFVvLWNqWjAwaktpNy1GVFZPd1BPUF9xVzNGUmR4MVluRXJsZEh3OF84bjZGWEJZMWItSHltdEpYTHNGZ2I1dHNrQ2xrTGdYbTBwck5lMkZRcTlXVG1MWW5rVGc4ZUk3X1p5ZFhVUnAwWkpuS1kza2VYQl9ValRlT25MNktwRl9qU0k?oc=5"
-   ]
-  ],
-  "first_seen": "20260902-0700",
   "status": "pending"
  }
 ]
