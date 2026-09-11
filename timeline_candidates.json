@@ -1,5 +1,72 @@
 [
  {
+  "d": "2026-09-11",
+  "ko": "이란 IRGC, 호르무즈해협 인근에서 미군 무인수상함(sail drone) 격파 주장 — UKMTO는 오만 인근 선박 2척 피격 확인",
+  "en": "Iran's IRGC claims to have destroyed a US unmanned surface vessel near Hormuz Strait — UKMTO confirms two ships hit off Oman",
+  "ar": "الحرس الثوري الإيراني يزعم تدمير زورق أمريكي غير مأهول قرب مضيق هرمز — 'يوكمتو' يؤكد إصابة سفينتين قبالة عمان",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/9/11/iran-war-live-irgc-attacks-us-unmanned-vessel-in-hormuz-two-ships-hit?traffic_source=rss"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247633/VIDEO-Watch-how-Iran-destroyed-US-unmanned-vessel-in-Hormuz"
+   ]
+  ],
+  "first_seen": "20260911-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-11",
+  "ko": "호르무즈해협 통항 선박 수 한 자릿수로 급감 — 목요일 7척, 전일 11척, 10일 평균 15척 대비 대폭 감소",
+  "en": "Hormuz shipping traffic falls to single digits — 7 vessels Thursday, down from 11 previous day and 10-day average of 15",
+  "ar": "حركة الشحن في مضيق هرمز تنخفض إلى رقم أحادي — 7 سفن يوم الخميس مقارنة بـ11 في اليوم السابق ومتوسط 15 خلال 10 أيام",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/hormuz-vessel-transits-drop-single-digit"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUXNiYVFqaWhNQW1zamxmTm9HMEtQSFZhUDAzX3pEVzk2NnJleHYwNDFXT1YyeWRUS3ZGOHhIbmRGd0NoNVVIenZhUTVrWnd6VzdFbWs2RnVKTi16Zk94TDkzRU9qcDhuY0UtU293SDAwUVk5Wm40UVpzWEFFZm1JZUxuOE5fUkg1Q2VfeEdOX2hNeEVsRjdCTWZXS1lRdGVsZm1sa2RQUC1GYjNG?oc=5"
+   ]
+  ],
+  "first_seen": "20260911-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-11",
+  "ko": "브렌트유 배럴당 108달러 돌파 — 중동 긴장 고조로 유가 급등",
+  "en": "Brent crude surpasses $108 a barrel amid escalating Middle East tensions",
+  "ar": "خام برنت يتجاوز 108 دولارات للبرميل وسط تصاعد التوترات في الشرق الأوسط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "News18",
+    "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOa2xvTGx5YlhneUctZE9EUm9ZWGhOZWkzd1ZnTTFlN2MtMFVWVllYSmhZNGFLSlR0SWtWUGFmSG5WT1hiYjlaVVIzaGVKallmM3NPT1g2aE1PN1dPanh5TEpHTE1SM25HUFk1SzJOVnhBNkJGWnU3RzloYVlVdlZJZk9MT2YxU3g0S3FRc0JTcmJNNTlLc09kLXNlY2hEaFp2cXJfMXRuYjJUMjgtWXdPZnFXNkliOXo3XzZGN1R1LVhwTmlEalhORVk4ckpnNnl3R0d4VkJWamxnd0FxaHZGOFZ6d9IB6AFBVV95cUxPeDAzQmlsZjVadF9TSHZaLTE5YkFLejUtUDlld1hmc0JMUWNPZ3lXY3V2OXJTbmthQTJQblZKSC1xc3hZVHpFd29pSk50aTRQbnVBNG9SeU11bTE1MXR1QjhWb1Z6TkJYaFVWNnJaSGJ5LUI4SENndy1McGNRM3E3ckItSXM1dmlZQktSbnJGN19zd193VUNGLXlRSk90VGZYV2xYT2E3bTJtdVRMSXRWcGdWa3JzZzVsdXNsWDNtdmUzWTNwRGpIdHVuUzJ2OEdveFUzS1NOZnpBUWpKRThkT3N4N1BQUEpn?oc=5"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZkEyUGtlSV9HcnppUFB3TWI4UVFZNlVFN1EyVFdyUFMzUE1RdnR5aUdPVmJEMW1jVm9FMzY4SEFVN1NFYjFzWE9SaTlIcGpkSnFDdFFWV0NwMEtuNG5oRXRzUU1sOFdxTDNCUHkwNzZTRWhEYVFSRXBhUU51dVd0X2hjNS1kMldvU3lKSGFqSDFuMDJBMGdjY1ZKLW5ia1UyVWxUT2JPUnFhT29JYjh5M0c3TElwbGM?oc=5"
+   ]
+  ],
+  "first_seen": "20260911-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-10",
   "ko": "후티, 예멘 홍해 요충 모카항 점령 — 바브엘만데브 해협 장악 임박, 사우디 대응 압박 고조",
   "en": "Houthis seize Yemen's Red Sea port of Mocha — advance toward full control of Bab al-Mandeb strait, raising pressure on Saudi Arabia",
@@ -89,6 +156,90 @@
    ]
   ],
   "first_seen": "20260910-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-10",
+  "ko": "후티 반군, 홍해 요충 항구도시 모카 점령 — 바브엘만데브 해협 봉쇄 위기 고조로 호르무즈 봉쇄와 겹친 '이중 병목' 우려 확산",
+  "en": "Houthi rebels seize strategic Red Sea port city of Mocha — heightening risk of Bab el-Mandeb Strait blockade, raising fears of a 'double chokepoint' alongside Hormuz",
+  "ar": "الحوثيون يسيطرون على مدينة المخا الساحلية الاستراتيجية في البحر الأحمر — تصاعد مخاطر إغلاق مضيق باب المندب وسط مخاوف من 'اختناق مزدوج' مع هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSzhZS2ZzX3N1YkI2WHEyaVZPVHJzaW1MV0lpenJnak5PQ2NtOVRVaHJ4cDVlT2p3bzNCUjRYRUxWaGk0eTQwRWFoN2E0ZUNidVp1UWVCSlRsMjVMLVBoS0lnUktRTjdCMjZadXNqc0JFZjh6dElfVWJCejVJWkdlZmRFTE9xZUMtM0l3Q1R0QVIyQ0Z5SXlWWtIBngFBVV95cUxNX1RJeHVscmJ6SV9VY0dNS2ZhRV9HaHI1Szg4SC1MZ2dCQl9RM2lNYTlQZjVZTFFtLXlsYzZTeUFZSWRuOXgzdHVPbXlLNWRHSkdIVXNOWFMwLVdrYWdUX09uai1tSlh6eUxVTXVQdDNjdjhmWU93TmJGdVBkT1RjdGVHa1EwbnVuWWE4N0NJazcxMWVpS2tHRl9ORjJoQQ?oc=5"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMi1lNm91a2VNZ2pET3pySXpRdExjT01OZ2dTbmxRblk4ME5ZZko0aElVbFdrV1gyY2VWcmJPUkREbWZBdGNJYmZyQmIwOVVJWmdyT3J1cHhhTzNCTFlTZzN5UEk1bE5DVVl5bDhaVkh6Q0xDcEtkVWM5SEtGb05XcUc3dGh6dUZEOWQ3czNqWndFelg3ZEJtSXZlcXNPalFCSF9LbWtR?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWUYwT2ZBY29SQkhnbTRHTnIxTXVTWndGampQSVo0VlpHUkdDb0lGTkZOMXB0TFVxcEFFcVpWcUZ5RHNEd3NuZTk0ZnZBaFBWU1ZrN3hGNEdHVGtjWkJ5WF9xMU5tUnJlQWl1U1RGWVZuMkhFbjdvRHEtTmw1a2FmRVJ2d2phMTM3V0hLY3poSF9tME54RkZnand2VUV4TW50YnhueDlnc2p6UUp0VEE?oc=5"
+   ]
+  ],
+  "first_seen": "20260911-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-10",
+  "ko": "미 해군장관 대행, 이란 공격으로 바레인 해군지원기지(NSA 바레인)가 '쑥대밭' 됐다고 인정 — 해당 기지 복귀 계획 없다고 밝힘",
+  "en": "US acting Navy Secretary admits Iran's attack 'demolished' Naval Support Activity Bahrain — says Navy has no plans to return to the base",
+  "ar": "وزير البحرية الأمريكي بالوكالة يعترف بأن الهجوم الإيراني 'دمر' قاعدة الدعم البحري الأمريكية في البحرين — يقول إن البحرية لا تخطط للعودة إلى القاعدة",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "news.sbs.co.kr",
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZXJENmgtenpSbnRqV0J6cGR0Q3gzWFp2N2tqVmVVSk5HYUcydU5CRXRSaEk4ZWhKcmg5QkZiSENPUFE2RHZrREhQVUJTcTRMa2MyV1c4cXVqZGpnbVlFWWlBaF9URFdxSmJsNzQ0MmZESWE1UzdKYWdPWmdubWtDMkJqRkREa2s?oc=5"
+   ],
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9zaUFJVHVBN25YQWVqUW5hLS1lU1QxSjdwenFRMWZDQUhVUjVKNkV0T0dvZTB1eVhXWVdyT1N5Q291SlZQZTRmd3Y5ODZNRGRVQlBfenBRNmFIZjA?oc=5"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260911_0003785761"
+   ]
+  ],
+  "first_seen": "20260911-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-10",
+  "ko": "요르단 무와파크 살티 공군기지, 이란 공습으로 미군 항공기 다수 파손 — 미 당국자 확인",
+  "en": "Iranian strikes damage multiple US aircraft at Jordan's Muwaffaq Salti Air Base — confirmed by US official",
+  "ar": "ضربات إيرانية تلحق أضراراً بعدة طائرات أمريكية في قاعدة الملك مؤقف الصلطي الجوية بالأردن — يؤكدها مسؤول أمريكي",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-strikes-damaged-multiple-aircraft-jordan-base-report-says"
+   ]
+  ],
+  "first_seen": "20260911-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-10",
+  "ko": "레바논 공격 사망자 8,950명·부상 30,642명으로 집계(카타르통신) — 확전 이후 누계",
+  "en": "Lebanon aggression death toll rises to 8,950, with 30,642 injured, Qatar News Agency reports",
+  "ar": "حصيلة العدوان على لبنان ترتفع إلى 8,950 قتيلاً و30,642 مصاباً وفق وكالة الأنباء القطرية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQUlwZXNPLTJ0ZzlaYkJYODBBUUQyaTJTMXBXSHZvVlhVcE5yUVBJcFJuTWZlR1ZKM0ZMam9sZVJsd2N6YXN3VGZ1SEtGeVVyS3RUUVZLT1BGSHVMc0xQalhLbXlPUk5xUkoyY21XZjNDYlhhOHhqZVZMeGVaU2lVT1RVaUZvZWx5eWNtZDFsRXVEMmU5TzF5MjkybjJqV0FPZUc2c2NDQQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260911-0700",
   "status": "pending"
  },
  {
@@ -1702,173 +1853,6 @@
    ]
   ],
   "first_seen": "20260902-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-02",
-  "ko": "페루, 중동 긴장 고조 속 이란과 단교 발표",
-  "en": "Peru severs diplomatic ties with Iran amid escalating Middle East tensions",
-  "ar": "بيرو تقطع العلاقات الدبلوماسية مع إيران وسط تصاعد التوترات في الشرق الأوسط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/peru-severs-diplomatic-ties-iran"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxQY1dxUmtYSUVaS0NUaXVMeFpKWFZwbUYtZnQwSkJ6ZXpia0Nva2xtSWlpZGw3YnBOejNxYS1rNWJqVTRTdEthekxOSHRFSk8tVk00SnJzSUt1djVjYXAzMWV1YUZzQ1AtQTAtVWc0T0FrTW5TdTJLejllZ3YyVzhUeEV3NGZGRGpHSHl5ZlhqTFZoUHNrN0kwdmhR?oc=5"
-   ]
-  ],
-  "first_seen": "20260902-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-02",
-  "ko": "미·이란 재확전에 국제유가 급등—브렌트유 2%↑, WTI 90달러대 근접",
-  "en": "Oil prices surge as US-Iran conflict resumes—Brent up over 2%, WTI approaches $90",
-  "ar": "أسعار النفط ترتفع بشدة مع تجدد النزاع بين أمريكا وإيران — برنت يرتفع أكثر من 2% وخام غرب تكساس يقترب من 90 دولاراً",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLTRkVWlBVVJQeFBDbXB5UzFkd05qc05KVXhja1h2cC1aMUZxOTRGQTY4a0ZHeWpiSzl0UE50MjRTTjFVREhMUGJhd29Ka21tTTlISE9yd3pSSHFESEtVOTBzb2c0dEVFakx5eEJLamxsMUJxZ0NOSTBpNll2a2Z5eVBncmR6S3MtSW1ITE9hN01KbUljNlcwNlB3aw?oc=5"
-   ],
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MNDNOWTJyVFdGTFVLaVJUaWcwcE1tQWpUMjl0WE9VUlVva1NmMHlkcU95S1Z6ckdlUldDZ2tFQVRQQXV0dmU2UkF5bnZTV1ZOVjBaaFNCalFOWF9TM18ybVVrUWUtWmxybGdxeFhsZ9IBdEFVX3lxTFBoSDZuZHAxQl85dmU2Q2NCZC1KNFNBLXJOQTBJbVppdFhmRVVCd3R0eFpKN0JucUhraEtvelZkU3Q0YnM3cHgxN1NJRWg2T042WFkwN1M1MEdYMmh4X2RmcVBGbmhtMHZTZnhyV3RhZFBpOFVw?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiX0FVX3lxTE12X0RQNzNlUmNkMWpUZ3hVbVdJZkx0Y2cxQVM0RG9HVWRHM1BZUVBxd1J0bFhleGV4X2J6SHNRZi1pMFZPV0lXc0cycmJ5LVViaFA3MUtQM3BRQWVvUUJZ0gFkQVVfeXFMUEM0TWRSZlUxTm94QlpfUTVteHkta0ZJVHZqWER1RUI4VG9ibW4teld5cWRJNjN5dVhxQ3lLTHpSS3NoTlJ2bjBkS1lmbzAwZHVPU2R2MEtSYUxyZHc5bUVGZVFnSA?oc=5"
-   ]
-  ],
-  "first_seen": "20260902-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-02",
-  "ko": "미군, 이란 남부 시리크 결혼식장 오폭 — 최소 5명 사망·68명 부상, 이란 '전쟁범죄'로 규정",
-  "en": "US bombing hits wedding hall in Iran's Sirik — at least 5 killed, 68 injured, Iran calls it a 'war crime'",
-  "ar": "القصف الأمريكي يضرب قاعة زفاف في سيريك جنوب إيران — مقتل 5 أشخاص على الأقل وإصابة 68، وتصف إيران الهجوم بـ'جريمة حرب'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Guardian",
-    "https://www.theguardian.com/world/2026/sep/02/iran-us-missile-blast-wedding"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/2/what-do-we-know-about-the-fatal-us-bombing-of-a-wedding-in-irans-sirik?traffic_source=rss"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247411/US-crime-at-a-wedding-party-in-Sirik-sign-of-moral-decline"
-   ]
-  ],
-  "first_seen": "20260902-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-02",
-  "ko": "이란, 결혼식장 폭격 보복으로 요르단·바레인·쿠웨이트·이라크 내 미군기지 공격 — 쿠웨이트 주거단지 화재, 바레인 요격 성공",
-  "en": "Iran retaliates for wedding hall bombing with attacks on US bases in Jordan, Bahrain, Kuwait, Iraq — fire at Kuwait residential complex, Bahrain intercepts attacks",
-  "ar": "إيران ترد على قصف قاعة الزفاف بهجمات على قواعد أمريكية في الأردن والبحرين والكويت والعراق — حريق في مجمع سكني بالكويت، والبحرين تعترض الهجمات",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOLU9GMXFNRTc0d05MeVZXTlJTTFQ0aW5jSWw1MEpkWTlrbG5LM2QzT2RnT1U5cVc4Q09fVWxqTlVvZ1I5NlNTMVQ1NVVCUmFCbkozei1ucEhwclRRT0llQjhmdE5HZFIxOVlVUkJ3aGRMU1dLWkxOWlVnUzFXSzUzektZcko4b19GQXh6Z2hRYlhNSmhmUUZsbld5OExoNG5ZVzZnMzRvSGRZNnlxUVRIZWZkMnpXTDRmOWVrRFBjLUR2SlJvWXpkWTNUblI3LXk1YnNRQlExd195N2doOXRFR3IyTEZJSmE4MDlmeE1qaWQ3bkNjRzFQetIB_gFBVV95cUxPcHVlR0c5NDNkT3FMcEF5eGhtd1JaVUxpSnNTT0RxWFlRX05yV05aaV9fcFVKNUVwOGFxN2U1MnhnSU9BNmNXLXc1eFgyVDl2VnRmOGxCTFp2RnY4VExhT3FxTm9wbzVFMkFpZndvT2J0dGdzeFNkYjRQbFlHc0JlSUxLdjdhLUEwdVlwZ2sweHR1WVdROXdOX3BSSUR1SU5yeXZJY0lMcVItdDFjZzhCOE1WZ1pvcU1lRG0yb3JvQ2l3Qy1DSzAtMWlneXdpWHNkSno5Q2NiZnlZUkVVVEY1Vlc0cTRpYkRqWXAwYkRfblJUTmduY1doQmRsZGRfZw?oc=5"
-   ],
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSTQ5RWEwemszN1g0ZGdybDJrd0d4MW9sTk43M05welQ3WGZmeWgycERkU0NFck5vMDc4eXBjbmdQSzc0OTNodV9tMXhpTFg1WF9SR2JXOXp3aEVGVjBHSUlwVFR5QWpVdnJodmNfV1FmdEZBeDlhUHNJZVZPeHliVlBQU3hZTXJhNGgzNGZoNURLUWtqOW53OUF2TTJpSEpsNGVBTDVyOUI?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/news/iran-strikes-us-bases-across-region-after-american-attack-kills-18-including-children"
-   ]
-  ],
-  "first_seen": "20260902-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-02",
-  "ko": "카타르 내각, 이란의 요르단·바레인·쿠웨이트 공격을 '위험한 확전'으로 규정하며 강력 규탄",
-  "en": "Qatar's Cabinet strongly condemns Iran's attacks on Jordan, Bahrain, Kuwait as 'dangerous escalation'",
-  "ar": "مجلس الوزراء القطري يدين بشدة هجمات إيران على الأردن والبحرين والكويت ويصفها بـ'تصعيد خطير'",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMi9wJBVV95cUxQeHZMTUw0WnhYUklCdFpnU3ktZktfUDMwbzJwYTZ2UEc4cHRCT3l2aGl2X0tCRG1qenhSUEFDQnp0Ry1TUkdrdmRTOGFHOHNWdm8wRE9pZE44LS1jeGxBaFd6SThVWHVkZU5sUXhHeE4ySzhvcnVPVEhuYzFfd0xacHoybnc3R2U0Q3FVejdYT1IyUEQtZEppUWRCNnRoY0lOMUhWS0NFSWRVNGdJMDhYOU54dzZ3bnBOa0RkaGlmTktDVWpWU3c5VlhsY0loR3FwNUF3UWwtalFTM1R0NTR3clRUSzl1LTEyR2dOZ1BoRjE2eGwtT2dyX2hmRzJIZmwxbGRnR29XR1FZQUgwMkhyODUtSktoRUowbXpJYlhTekVTSGE1TVVsU1AwdHBZU08wQXZKdGZ1VnFCd25EeVlBTWtTZWowNDBrMDJHaGlGM0I1cDZ1dzRHUWZYdDFNeEw0Q2ZhaE1nUnpVWFNRNTZQZ2ZORV9sUWs?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMixwRBVV95cUxNTjNzRjFwUk9KeU9yZkk5dmxENm5ha09rTmhKeGFqN2JndEQ1S1VGVklianRjMGk0Rng2ekVMZDUtTHk4NkJRVnJRQm54QzlXaE1GSTIzNUw5VTM3WGotMVFpSDI2Rk5feFJuaUdYV1BFNklhV0lqNjVsY1lPTkJJRDJRRU54eEdWcFdWMkJBS0stOEdRU3Nzem9GV2NBdUd5VFlCZ1lqNFRTMFpzLXBHOFlUcS02Z0FsWmVibWdZVkRUNWx0c3dScHBtUFVtLUp0dEFuZUJORGJVVUlrTEZGUFR0akp3Z0M4cVVLMkRrNlBvdFNPSC1UWnowOW5uaFhnd2VqVjkzWEp2elp0Ykt4b3hxX3BlRzIxaUlzcHp1VE1RRHQyWFdZY1dFQk5hcWZXb1luMklnZVFVNUpmR2h6X2wzdFhfNVkweF9BRHlEMHVCUktJbUpHNDBVcWpNOXZ0NkVDbUY3Mkg4Y3NaLWlScWxTSl9uUTZSLXlUWTBna1Z0RGFWTzY3WlFCRWtmd1ozLXd6LUJyVG1rYnN3UjlFdkxNMGVnVnlNMmhsZDNNZEdCa040cGFGazJaeHVsVjdpTFdlMGtUWVBIT0pQXzNsbmxQMnN5NmVjTk1HUGtCRzlIRXphcnUtVy1aQjVtSW9qN2tiV244QXZreFotbUFkdFgtQUN2czc4Z3ZVMHpGU25vUWthY3JDNk11Wm5JajdJSmMyeVNXLThKa3lrWkE4T3J2bk10ZHpvbGJFVXV6TEtKRUxleTBB?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMzN3Um1pTDE5ZHNoY090UW9ZODAwYmQ2Sko4Z2RONUFfOEk1Ymd5MkJYUXVPVEk2djZLMWhNV2xXdkYxanBEcE85ckNrV2NKckdvbDBjS3NVOG5SN2xlXzlzTURLTzh1eWJYYjA0ZGR1dDdhUzVPVkU5T3M1Z29fSGtWYlFweVc3Q1pSYkVwblBENkxwYlRfc1JwVmVGaFlCenBKdmlxbjdxUG16aXhGaXZUMm1vZw?oc=5"
-   ]
-  ],
-  "first_seen": "20260902-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-02",
-  "ko": "미 에너지장관, 호르무즈 해협 하루 원유 통항량 1700만 배럴 이상 유지 발표 — 공습 재개에도 통항 지속",
-  "en": "US Energy Secretary says over 17 million barrels of oil transited Hormuz Monday — transit continues despite renewed strikes",
-  "ar": "وزير الطاقة الأمريكي يعلن مرور أكثر من 17 مليون برميل نفط عبر هرمز يوم الاثنين — استمرار العبور رغم تجدد الضربات",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOR2czWERkNnQ0cnZvdjB4WFBiY2pYcHJCeUxPZjRzNFA5UDNZUVRERFpMMTByVlRpdzdvdmdFZ3ZxSmdLcnREendmdWFsaVZNSENWdGYweDJNaThuQV85ZDBqOEdYM1BmdjRyRUtmUHdwU3cydkxsNXJ2eXB2VGJyTjBOdHIxV01qd1RoSzNzTEg3WTl0cE8yQUhmaWZzTE5jc3cxQllBdmg3dVNiT1owY09rNU5DaFp2d1A0Tmk1b0tvVFZKWUlUQ1ZPWHhOcUREUzhCUVduVEM?oc=5"
-   ],
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUUwtV0h5MmswU1oxM2hYa2RNajQtaF9pQ3lEdlBDOWk5dHp2MG1VcVBpZFo2LWh6aENSREtsTDQwREhSejNLV2dKZnU0dzdLOUU5VjdjX3hidnU4OWl2bWZMd29VZUwteUpDZU04MEhiNHdfRS1NdHQtZDVYYzVpRkFjbW9KU2QtdUkyWm1YU1d6aXFJRGwxamRBM3pHb1FIOVFOV0hqdkN3TjFpWUh0aElxTzBRRENJa0h1SlZ5VzY0VW1EbWctLVVPdUNhMU9LM3BVYWVISzJGMEFBVVHSAeMBQVVfeXFMUGtrejFHdVByeXdWNXNWSTRBa1d4Zmo5NHM2d0txbi0xcno0eXpJNEF0T2djT05HRC10dGpBSjVsemNQTFh1UkhLZzJ3TlJ0cGdCR0tiNWQ3Ym9TdmVmbjNLRnoydFNMSWJGYUR3UUhZLW5BTlpXdzNXaFVjRElRTWhYWjh5VE9CSXRBN0pnZHFoZjhYaVVQVXlMS1paTHpGNnQ1emtqNWJYMVhmbU5tdGdPc2FLOVhVNWxkV2JrYkxnMzN2X0FxMy1FalZVQTdFTzJ6ZGZSWGxWVjN6WHA3eUNJVFU?oc=5"
-   ]
-  ],
-  "first_seen": "20260902-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-02",
-  "ko": "이란, 미국 결혼식 오폭 후 웨딩파티 등 공격 재개—사망자 18명·부상 142명으로 집계(이란 보건부)",
-  "en": "Renewed US strikes on Iran, including on a wedding party, raise death toll to 18 killed and 142 wounded (Iran health ministry)",
-  "ar": "تجدد الضربات الأمريكية على إيران، بما فيها حفل زفاف، ترفع الحصيلة إلى 18 قتيلاً و142 جريحًا (وزارة الصحة الإيرانية)",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/3/trump-threatens-more-strikes-as-death-toll-in-iran-rises-to-19?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/9/3/iran-war-live-trump-says-renewed-us-iran-clashes-will-not-last-too?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/us-attacks-iran-leave-18-killed-142-wounded-health-official-says"
-   ]
-  ],
-  "first_seen": "20260903-0700",
   "status": "pending"
  }
 ]
