@@ -1,5 +1,26 @@
 [
  {
+  "d": "2026-09-14",
+  "ko": "사우디 동서 송유관 드론 피격 손상 확인 — 위성사진으로 피해 규모 드러나, 세계 원유 공급량 4% 차질 우려",
+  "en": "Satellite images confirm damage to Saudi east-west pipeline from drone strike — up to 4% of global oil supply at risk",
+  "ar": "صور الأقمار الصناعية تؤكد أضرار خط الأنابيب السعودي شرق-غرب جراء هجوم بطائرة مسيّرة — تهديد بفقدان 4% من إمدادات النفط العالمية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/sep/14/saudi-pipeline-drone-attack-houthis-global-oil-supply-prices"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/four-percent-global-oil-supply-risk-due-saudi-pipeline-outage"
+   ]
+  ],
+  "first_seen": "20260914-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-13",
   "ko": "예멘 후티 반군, 홍해 요충지 마윤섬(바브엘만데브 해협) 장악 — 홍해 전략 요충지 통제권 확대",
   "en": "Yemen's Houthis seize strategic Mayun Island in Red Sea — consolidating control over Bab al-Mandeb Strait",
@@ -260,6 +281,56 @@
    ]
   ],
   "first_seen": "20260913-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-13",
+  "ko": "이란 화물선 호르무즈서 피격 — 이란-걸프 호르무즈 정례 회의 무기한 연기됨(오만 살랄라 예정 회의)",
+  "en": "Iranian cargo ship struck in Hormuz — Iran-Gulf states' Strait of Hormuz meeting in Salalah, Oman postponed",
+  "ar": "استهداف سفينة شحن إيرانية في هرمز — تأجيل اجتماع دول الخليج وإيران بشأن مضيق هرمز في صلالة بعمان",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/9/14/iran-war-live-oman-says-hormuz-talks-with-iran-gulf-states-postponed?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/9/13/tehran-and-muscat-delay-talks-citing-regional-consensus-need?traffic_source=rss"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaDNDdzJFekZfbkh6WTRSYVJEUXpsRGZpQW9zMUpDc1ZMRUJWckVZXzR2VGRnTXJaamRfU1hRY0FXek0xVVdaZm5Xd2hMWWFhVmgxWEhLTnRKZHJieG03NkpHUzBxWDZITjR6UWhHVWpldkMzOGdtb05jZHlhY3FYVUJUTGdrNDdrelE1ZFF3SjlkMzl6dDBxcG9TNWltOUVa?oc=5"
+   ]
+  ],
+  "first_seen": "20260914-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-13",
+  "ko": "쿠슈너, '도하 타격 이후 이스라엘 국제적 고립' 이용해 가자 휴전 성사시켰다고 밝힘",
+  "en": "Kushner says US leveraged Israel's 'global isolation' after Doha strike to secure Gaza ceasefire deal",
+  "ar": "كوشنر: الولايات المتحدة استغلت 'عزلة إسرائيل الدولية' بعد ضربة الدوحة لتأمين اتفاق وقف إطلاق النار في غزة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ2p0R0FPY3FHZ1JWNGJaQVRBTmxnT2hyR3BvdWVTNnZ0aVVkQVY3RFJGSkZFT2s3cVFaR2hUYTV5R3lQVzZBZmtfMUdXMUhBUFdnXzg5TW00QXB5U0ZQUUwtSlZzMTVrb3I4UHF0aGxrODBxSzRaeERmZWZKMFRhQnUzaEw3NEdWTENBaUVYMjJFTVkxOURGMl9GOE5rS3dER3pPeGdWNDJRVjhmNHU2eVU3QmNRSi1h?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/us-used-israels-global-isolation-caused-doha-strike-push-gaza-deal"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxOV19wS1REVkdjc1Z6TWhFaFIwQ0dTYUtWTnh2RWI5bGpCVDlJT2V0VWE2WlF1dktRUmNManJ1ZXNBdlFIZk05X0s4eEdUU2FCclROa2NWdmlYaVZsdXFQWU9KQzNiS2R3bDJNaDZ1Q0VaeldOanNHZEJlMDV0OTc2SklaMVEybkZQck5LdkdxZ2w1UTFNZnNSUmFQTUk5OXUtenNqYWhzNmpEdS0zdWs1cNIBtgFBVV95cUxOREpaVzBwUlo2MlVyVndvT19oZWZWUUg5ZWR0a3ZLY3lvWk5idUU0SFhYbll4dWN3YjY5d3hjNk9aZ1BIZElIVkd4TTZMeVNhSWxtcHhhSURRYzN1MTluYkxRSGp0Tk5SMEMwNnA1eXhnNklqbEhyd0p6bi1rZHRRQkY1Y2picDJ6VDdXZHZwamhFSHBTUUJrWnl6b0p4REFlUUd2di1xVWdyTVhZNGVzSDhrZWFYUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260914-0700",
   "status": "pending"
  },
  {
@@ -1806,65 +1877,6 @@
    ]
   ],
   "first_seen": "20260906-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-06",
-  "ko": "미군, 대이란 해상봉쇄에 F-35 투입—상선 92척 항로 변경",
-  "en": "US deploys F-35s in naval blockade against Iran — 92 merchant ships reroute",
-  "ar": "الجيش الأمريكي ينشر مقاتلات F-35 في الحصار البحري ضد إيران — 92 سفينة تجارية تغير مسارها",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20260906049800079"
-   ]
-  ],
-  "first_seen": "20260906-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-06",
-  "ko": "이란 협상단장 갈리바프, '비례적 대응 끝—美에 더 빠르고 고통스러운 타격' 경고",
-  "en": "Iran's chief negotiator Ghalibaf warns 'proportional response phase over—faster, more painful strikes on US to come'",
-  "ar": "رئيس الوفد التفاوضي الإيراني قاليباف يحذر: 'انتهت مرحلة الرد المتناسب—ضربات أسرع وأشد إيلاماً لأمريكا قادمة'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20260906043700079"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcmxoazlrU0JybDFMWW0tbjliVTFreG9wNjd3X3pKc2JTWkU1UlZjZnFZZFVkV1loVzZ3T0FhcGJkZXVRTVBtYlExX3RVMDlDMHZOM1Y4a2t5U1VOZE9QN05jU2ZTODQ3aE5aWU5ZaEotODA1QmlaUzVjbW9mZGozNy1UWTF2MVJMTkprcnVlcWM0ZzBGdE94Q1ZKcnBDcXhvWFExOHlwaDNPZ0U0RmNFM1E5d3ZoNWN6WWtPX2lGTQ?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5MZ2VhUElGdDRiNWlrZWFTdFRWdUxyQVd5YjQ0T3EyMFFmZVQ0azlEMW9pcWp6cDVRN1R5NXlWdkg1NnZEeFg1SnB0SW0wTlR6OU9IcnAzSlN6XzlQbU1IMTdB0gFnQVVfeXFMUEhKYUs2R0Q4eTY4VWNzWXQxUUpOcENfb1hIOVdFTXVfM19idTJmbTJ3a1QwNE5OOVBMQ2MwTVR2Z3YxbEY3dnhCSC1LVzFITGxnUXdoM1lNYk1pZHNzUlByT3NnTjUycw?oc=5"
-   ]
-  ],
-  "first_seen": "20260906-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-06",
-  "ko": "서부 이란서 유조차 폭발—11명 사망·7명 부상",
-  "en": "Fuel tanker explosion in west Iran kills 11, injures 7",
-  "ar": "انفجار شاحنة وقود في غرب إيران يقتل 11 ويصيب 7",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeFNIczlzeDJEbnNEaXJSTVk2YzJBZ1JhUWI1NmJiOUpuM19qN2dtX3h1VTJubl9NdVFkLWNieUhDQ3h6ZzNnTHlNRlRQMkxHR3h0LVV3T2hxUGpXaFBqRVRCa1E4eXJua1lUQjhvSWFfTWg0eHdneFVja3dGWS1NRV9ZT1VYTmhOSk5TajJzS21rMW8wOWVUUFhTRHJoOE5KaWdoUG1fbzJCdVNUcjUwbVhLenVxLXdWSDVTdFNUeldCQ1E?oc=5"
-   ]
-  ],
-  "first_seen": "20260906-1530",
   "status": "pending"
  }
 ]
