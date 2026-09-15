@@ -50,6 +50,103 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-15",
+  "ko": "후티, 사우디에 공습 감행·다수 사상자 발생 주장 — 사우디는 '단호한' 대응 천명, 유가 급등",
+  "en": "Houthis report deadly Saudi airstrikes with casualties claimed — Saudi Arabia vows 'firm' response, Brent crude rises",
+  "ar": "الحوثيون يبلغون عن ضربات جوية سعودية مميتة مع ادعاء وقوع ضحايا — السعودية تتعهد برد 'حازم'، وارتفاع أسعار خام برنت",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdC1ocFpNc3FkSkVheVZMQy1QdmtEbXhBS2JrNENyT3RPSk1KS2F3M1RCaUtxanZockZEZlZ4bS13cGhXckFXOS1EUC1YR2lXanp0WnJ2N0oybU54R2lZTTBkWDVVdFdoOVppNk1FX1lpZzE3MEpiQlR2LVBJaV83NGZBRG43V1JLeFl1ak9IM3RNdDhFNGZZTmw4SXpZRUVjeDdXMUpxcGFLaGxrR05IZmJqNGjSAboBQVVfeXFMTUcyLTU3b09ZREl1bHFJWllRSWRUb1lHTzBhOXltcE05Q3dXZ01fZWRNd2xGM3kyYXhnRy1FY09XSUtaSmpkMjRqMnc4X0FuZ2JxNFhPVUlFdW9iMzRfeTE3RjR3c1E4NUVwSnV0RFFCekNGc2NXVzJ6TDlHYjhXRHRGdjFDazhTMXQtNXFNNmc5amtkN2o0aVZwdmdnUTctTVh6YUNobzE0cTQtd0E5cld5ckZPalRncXZn?oc=5"
+   ],
+   [
+    "nytimes.com",
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUGREXzcyeWRfNzBlYzhVQVlPa0hYNGVxdnFIUHdSMmFOSXprT3ZoY3llLW5VcVZLNl9EUW83LUhmdnBKVEFoYjdHVWU4bFc2SWFiSnBUS2c0OFdjeHFEMHljMG5BMXZRV1F3THo0WVlzV2tjTTFWdDRNY3NRMWJ0cXNXMHV4bG42bGQzdnh1NTVPd3g0WFE?oc=5"
+   ],
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxOanhkNUFaMmJxaERhS1cySE92R1pvTUk4a0ZlRG1hUkFJVDY2NHpRUHc0aENPM1FfWFZNWHl4RzdzeGtCWmxrOV80a1k1M2UxeDB2NlR2WTJuR0s0bFM0eWpqVUJlX1REMkVlSWVWeFJDdDA5ZmJfVE90NUxYUl9ja3JhWnhDLWFnSkppNHhYTExQb0VqazhPa1NUS2tqQWlBX1E?oc=5"
+   ]
+  ],
+  "first_seen": "20260915-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-15",
+  "ko": "오만 근해서 유조선 'EL GAIA' 피격·화재로 예인 — 승조원 2명 실종",
+  "en": "Oil tanker 'EL GAIA' attacked off Oman's coast, towed after fire — two crew members missing",
+  "ar": "ناقلة النفط 'EL GAIA' تتعرض لهجوم قبالة سواحل عمان وتُسحب بعد اندلاع حريق — فقدان اثنين من الطاقم",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/oman-tows-oil-tanker-attacked-its-coast-two-crew-missing"
+   ]
+  ],
+  "first_seen": "20260915-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-15",
+  "ko": "유엔 안보리, 바브엘만데브 해협 긴장 고조에 긴급회의 소집",
+  "en": "UN Security Council convenes emergency meeting over Bab el-Mandeb Strait tensions",
+  "ar": "مجلس الأمن الدولي يعقد اجتماعاً طارئاً بشأن التوترات في مضيق باب المندب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "경향신문",
+    "https://www.khan.co.kr/article/202609152120001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+   ]
+  ],
+  "first_seen": "20260915-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-15",
+  "ko": "이라크, 호르무즈해협 폐쇄 이후 대체로로 시리아 경유 원유 수출 개시",
+  "en": "Iraq begins exporting oil through Syria as alternative route following Strait of Hormuz closure",
+  "ar": "العراق يبدأ تصدير النفط عبر سوريا كطريق بديل بعد إغلاق مضيق هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOLUJ6aHZxS2lQT0NjZF9MMm9Ua0lDM3JBY3lDZmJxdzZvcWV5TmxudDNlVmhwLVh2Z2hGZ2F2bWdwTU16NFJNdG1QZVNDTldUNmRDTjRiaW5PcnlCM0dsN2d2ZXoxWEp0dVN4VUg4OTlFMU1Ra0RMdlZ5SmdJVEVaXzNSeDZTTE9PcF9tOGo2TGVGZ0xxaEoxMXdBM0pIcF9OWmNxeWw4c3BUWGdMaUNfTHBEampubUtxYlRGY0RqWGpZb2pNVTNLZDlnTmJyc3ROT19jcHJqaw?oc=5"
+   ]
+  ],
+  "first_seen": "20260915-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-15",
+  "ko": "이란 안보수장, 트럼프의 협상 제안 거부 — '조건 충족 전까지 협상 없다'며 석유·해협 판도 변화 주장",
+  "en": "Iran's security chief rejects Trump's talks proposal until 'conditions' are met, claims oil and strait landscape has changed",
+  "ar": "رئيس الأمن الإيراني يرفض عرض ترامب للمفاوضات حتى تتحقق 'الشروط'، ويدّعي تغيّر خريطة النفط والمضيق",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSC1ISVZMWm5kTGg3eTVKTDBPc1lJeXVuVmlMWFhzYnhHVjhCM3o2cmFuWldiYjU4SVJlR09ZMWVTWmN6VzBiMDV5WmlpVWdBRkI3aUdBWkNKc2lXSjh6ejVieHk5ZWRBNkZpY2V1YTZOZC1zZXZ1RGgxb1FPUkp2QXBDY0QtOTUxMjZjRkdVT1RucTZLV2hMRDNmeTBWZzBLRVViRURENmFZT0pOV3RKcFlReElsOHBp0gG-AUFVX3lxTE15a2RyZ0FJb3R1eXpKclFQSE9jM3N4TWVZQjl1ZTRuS2xLVU1VR2F6MlZJcWc4N0c3YU1xVGRwMDFEOUppNEhwUDJBbll4NzdOazBFdW1MUDBsclk0SjEyYUVBR2lCbG9MMW9rRGswS3ZfWjlSbkhZS2I3b2l4cS1HbU9oTE5sblF4UXJDcnd6UVM4VmRrUkhQNk9MRkdHbGRHZjlsVHhqczd0N1dRVHpOTVVOaGl5bS1YRzh0T1E?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1vbGFWdkQzUU1hSjE4QWFfT19STV90VXdUZVNqT2ZBd0JNMUJTemJ3Mk00czBXLTJkWnJMdzN6X3RUbDNhX2dEYkgwdjNhRHp0R2hyY2Y2TWl2WlBsd3B1UEYxTGt6VmPSAWdBVV95cUxNb2xhVnZEM1FNYUoxOEFhX09fUk1fdFV3VGVTak9mQXdCTTFCU3pidzJNNHMwVy0yZFpyTHczel90VGwzYV9nRGJIMHYzYUR6dEdocmNmNk1pdlpQbHdwdVBGMUxrelZj?oc=5"
+   ]
+  ],
+  "first_seen": "20260915-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-14",
   "ko": "사우디 동서 송유관 드론 피격 손상 확인 — 위성사진으로 피해 규모 드러나, 세계 원유 공급량 4% 차질 우려",
   "en": "Satellite images confirm damage to Saudi east-west pipeline from drone strike — up to 4% of global oil supply at risk",
@@ -235,6 +332,52 @@
    ]
   ],
   "first_seen": "20260915-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-14",
+  "ko": "美 국방부 감찰관, '에픽 퓨리 작전' 보고서 공개 — 이란전쟁으로 미군 항공기 수십 대·건물 수백 채 손실, 전쟁비용 약 45조원(탄약 재고 부족 최초 공식 인정)",
+  "en": "Pentagon Inspector General releases 'Operation Epic Fury' report — reveals dozens of US aircraft and hundreds of buildings lost, war cost ~$34B, first official admission of munitions shortage",
+  "ar": "يكشف المفتش العام للبنتاغون تقرير 'عملية إيبيك فيوري' — خسارة عشرات الطائرات ومئات المباني الأمريكية، تكلفة الحرب نحو 34 مليار دولار، وأول اعتراف رسمي بنقص الذخيرة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/features/2026/9/15/dozens-of-aircraft-hundreds-of-buildings-us-loss-to-iran-attacks-revealed?traffic_source=rss"
+   ],
+   [
+    "동아일보",
+    "https://www.donga.com/news/Inter/article/all/20260915/134671608/1"
+   ]
+  ],
+  "first_seen": "20260915-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-14",
+  "ko": "후티 반군, 사우디 성지 메카 인근까지 위협 — 사우디 최초로 메카 경보시스템 가동",
+  "en": "Houthi threat reaches near Saudi holy city Mecca — Saudi Arabia activates Mecca warning system for the first time",
+  "ar": "تهديد الحوثيين يصل بالقرب من مكة المكرمة — السعودية تفعّل نظام الإنذار في مكة لأول مرة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2RnOHZNQjlLM1dLd1Q4RmZKZnlIc2s1dGx5TGV2NjhhbmxzTlpQaUduRHpOQlZObC1VXzhWWmFmaGtwREFPMURZREp2WDhYNjhjS0xmQ21EbnZUb2RaVEtWR1psRVVVMEh2ZjVRTkFJaUc1UXBLVFVjaXpibjQ4T1lHZ2U0TE5aQTJhWGhtSDcxRWNNcHNfQUR5SXhKdE9Bc2hkTlItR3EzVktVWjlCT0dIOA?oc=5"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFSzF2dnM2N0hGRGpkTURBOHp6MDZZWERqLWk5c0FiTzBVQWhsZ1pYT1doNm85T0ppNndTMjRac1c5Mi0tLVBCOTZzSVkwVzg2ZmNZTEg1ZUtMR0JacS1WT0s1YkIySzlJU1FTLVo2dTJaWS1X0gF0QVVfeXFMTXZZdHNpX3Z6c0VKNWt0UkNySkhRRUM5MHUwb1lwZHJsU0FNa3pLbnR0WWxPQlRwQVpEaExOdXgwZTdSMm5QVVJPeHVZZzk5WmxRTVo5Wkt2U1NhQms1eWNmakdxaDJRZFkwNkUxVGQ5RWd1UFY?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NNW5rVUZrOVN5Vm1FMmlaMXdBeE5rczc0LXQ3V0RMZnJyaFZKb0lBVkV3VUdJUkZfZTlybC0wNW5vV1pLRl9HTFRNTkZHbGNpSUI3aWp5N0habzTSAWBBVV95cUxPZXdJcHAtazdWNmFJQjN5WTh6V09FZUMyeERHMkhKS21SVGZXRm5IY3h0bXl6MThvU29fV2xYNS1UUWVmSmRpdm5RVkFKTktSVUJMaDlabUc0MmVmQUE5MFU?oc=5"
+   ]
+  ],
+  "first_seen": "20260915-1530",
   "status": "pending"
  },
  {
@@ -548,6 +691,31 @@
    ]
   ],
   "first_seen": "20260914-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-13",
+  "ko": "사우디 동서 송유관 피격으로 가동 중단 — 사우디 원유 수출로 축소, 미국은 개입 거리두기",
+  "en": "Saudi East-West pipeline shut down after attack — Saudi oil export routes narrowed, US distances itself from involvement",
+  "ar": "توقف خط أنابيب النفط الشرقي-الغربي السعودي بعد الهجوم — تقلص طرق تصدير النفط السعودي، وتباعد أمريكي عن التدخل",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeEN3YzdjWkhyRkJwMDFpYTZTTzhvV1NpOTQwcUNTbngyMUZiOTI4QV9LNkgyQUhlUjFaSUxxcmMta2d5WEliaHlmWmFTUmFTekkwVG9tb29odnhkZ3BVWDdFZTFLQlRaVzJ1RlFYLS04Wmx5VXFkVnJRdDV0UzVXSnR5VFFldlRpM2pZNUJwbWI2dDZZOGsxeXl2Wl9VUDJtd3hYNVhpWVAxZDcwNmZJcUxXWWRtcmFBNHBKUFNmSWY3bk9vbnRkc9IB0AFBVV95cUxNcjBQVjhTcHNTcjdzQjlLcmVvZHVVQWo4ZWg2Q3lGbEwzS0xxODJncHJsYmZCbWFDTHZuRXBuMVlTd3J4RHBic3VudmpDQlJXM3ctX1BDZ245RjM2X05iU1V6VUJ2Njd0ZzQ5UXRXaUU2MWRwRVZSMTBjbzE3aUU5TXRxbV9vc1A4WE8zeklFMC1OdUZLX2FvclFCSm1nQmtTbUpfUkZITFJSeEYwa1FFRWtwQ256NHRMbVplVm5LNEx5dlpQdVBPcHBWT0N3Ny1t?oc=5"
+   ],
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55d2VGRnpycjJYRkFLY0pnUk5NdDAxOFBCeC15eFhraGFTaHZyd2FSMmR2M1ZxQlJyMTlCOEd2MWZyczA4V25PWlRMN0FHYnc5S01FbUx2ZUZzVjQ?oc=5"
+   ],
+   [
+    "서울신문",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaHFzZ0N1Rm01QWhkMThfcHRvUTdvRnF5bVJhZ2lHSTRnZEprNWo4MzN3d0Q3RzIyQTFUSmNSMnhCNWYwem5ZWUxlSkJxSC1BX1E4RHk4b002VkFNeTJndEd3eTM4SFBxTWFPa1FjSXJyN3pTTVRlZGNPZVZBdHowdXlxM2xteFZBZHo0NlJJbw?oc=5"
+   ]
+  ],
+  "first_seen": "20260915-1530",
   "status": "pending"
  },
  {
@@ -1693,202 +1861,6 @@
    ]
   ],
   "first_seen": "20260909-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-08",
-  "ko": "이란, 美 유조선 공습에 요르단·바레인 미군기지 미사일 20발 보복 타격 — 알아즈라크·무와파크 살티 공군기지, 프린스 하산 기지 등 겨냥",
-  "en": "Iran retaliates with ~20 missiles on US bases in Jordan and Bahrain — targets Muwaffaq Salti airbase, Prince Hassan base, al-Azraq F-35/F-16/F-15 hangars",
-  "ar": "إيران ترد بنحو 20 صاروخًا على قواعد أمريكية في الأردن والبحرين — استهداف قاعدة الملك مؤقف الصلطي وقاعدة الأمير حسن ومستودعات الأزرق",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/9/jordanian-air-defences-intercept-iranian-missile-barrage?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/9/us-destroys-five-iranian-tankers-iran-retaliates-with-attacks-on-jordan-base?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/watch-footage-shows-iranian-missiles-targeting-base-jordan"
-   ]
-  ],
-  "first_seen": "20260909-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-08",
-  "ko": "IRGC, 美 구축함 DDG-119·DDG-53 등 미군 함정 및 유조선·선박 다수 공격 주장 — 페르시아만 내 미군 함정 2척·유조선 8척·선박 10척 타격했다고 발표",
-  "en": "IRGC claims strikes on US destroyers DDG-119/DDG-53, plus 2 US vessels, 8 tankers, 10 ships in Persian Gulf",
-  "ar": "حرس الثورة يعلن استهداف مدمرتين أمريكيتين وسفينتين أمريكيتين و8 ناقلات و10 سفن في الخليج الفارسي",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-it-struck-us-combat-destroyers"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-attacks-oil-tankers-ships-and-us-vessels"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247572/IRGC-attacks-two-US-vessels-8-tankers-10-ships"
-   ]
-  ],
-  "first_seen": "20260909-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-08",
-  "ko": "이란, 요르단 상공서 자국 탄도미사일 요격 장면 확인 — 요르단 방공망이 이란 미사일 다수 요격",
-  "en": "Jordanian air defenses intercept barrage of Iranian ballistic missiles over Jordan",
-  "ar": "الدفاعات الجوية الأردنية تعترض وابلاً من الصواريخ الباليستية الإيرانية فوق الأردن",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/9/jordanian-air-defences-intercept-iranian-missile-barrage?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/watch-footage-shows-iranian-missiles-targeting-base-jordan"
-   ]
-  ],
-  "first_seen": "20260909-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-08",
-  "ko": "국제유가 배럴당 100달러 육박 — 美·이란 유조선 상호공격 여파로 급등, 亞증시 위축",
-  "en": "Oil heads toward $100/barrel as US-Iran tanker attacks escalate, Asian stocks weaken",
-  "ar": "النفط يقترب من 100 دولار للبرميل مع تصاعد هجمات الناقلات بين واشنطن وطهران وتراجع الأسهم الآسيوية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/9/9/iran-war-live-us-hits-iranian-tankers-irgc-attacks-us-base-in-jordan?traffic_source=rss"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV3luYTZkUFBsUEhrV1ByVUg5eTcwT0c4ODVwXzJZTHNvVzlhR1hwNVpLSzJ5MmVCT3VqV2wzMTdXb0ZZM00wY194Z3VCV2R2TUNxcGpVNVJrSk9JSS1XMllpQ0hrbEtFTFhaazN6NzFEaGxELW1NUnFFUFVvR1NjWkRrbw?oc=5"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdlpGQ3FlMzUyZHVhZ0l3YnllVExLSV9ocF9TTzNVT0JlbEVCZldKX2U5dlZtSjVXSEN1NkMxVThhUjRQbGV2ZGpGb0FoMUtGMVZEemxsVGw0U3I3bFM5WnpCTFdvTTc2cnhsOHhXaHQ5eG54Q1pKMlA5b2xwVDZiZ3ZNQW1XNV9ESlhuZVNja1hPZU5pRDgzY2JDaGtodGtFV2NZMXZuWU5fS2VYZ3c?oc=5"
-   ]
-  ],
-  "first_seen": "20260909-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-08",
-  "ko": "英·佛 등 12개국, 이스라엘 불법 정착촌 상품 제재·수입금지 발표 — 이스라엘, 동예루살렘 英영사관 폐쇄로 맞대응",
-  "en": "UK, France and 10 other states impose sanctions/ban on goods from illegal Israeli settlements; Israel retaliates by closing UK consulate in East Jerusalem",
-  "ar": "بريطانيا وفرنسا و10 دول أخرى تفرض عقوبات وحظرًا على سلع المستوطنات الإسرائيلية غير الشرعية؛ إسرائيل ترد بإغلاق القنصلية البريطانية في القدس الشرقية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZDhrVndDUUVBOExobjNzSHRfM0VJa1Jhd21fUlBBb0xWX0NSMXpxS0RndGxfLUNyWTNOU0RITGtQNDAzQjg5YXEwWldPY2FzSGhSMzhKX3NSY243cVFNQ3N5cmRXX1J4NXVUNVlUN0h1UFBoT1FPaHhmcEZ0MkZvV2Y0UUZwTGtRRkVPRjN0TDV4SGxYdWNWS1BnWUZCTWtPT3dkNUlvc1XSAa4BQVVfeXFMUDF5ZEtOeWRSdFlORWU2UUhVTl84c1JESlNyVEZEVU9mUERNeVpyaXBBR3pkcWhEelVRR3JBWUtsTFNNQXhZY0Z1bzdyQ3pCdVJFNW9ta3daWUtwYjhBMERNN1RUZHoyQ3lvdWs1VDZwbUVNRkFPSzEzWDJ0WUVZRHVLVVd3Rk5Ec0d4dmJPVWswdjZKWjJTb3duOEtqNUJiWTFKYTBNSjhLX1VkS29n?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMimAFBVV95cUxNckVaZzMwTGstY192LThVZnM0VHdzeTBGaVB5RTNLUTZoaWxySlYwbF9lTDQ2LUQxNjZXMXB4bEVBSzlvMU8wSVpPNzJyaTMxbTY5Z0U2NE5QR3FNcW1BczlFWTUySGVvTE5YQWpEamVQeG43V05tR3ZXelNoMWZnbTh0dk9EZDFFVzVfWDFXLThHRFN5Wjl2cdIBngFBVV95cUxQX0IxUzc4YnJneU8ySFNVeDhoZXJzZXFRd05pUHRwZS1nekNaSEY4RjF4YVVrV3cyRDFmWUw4dG5ubEkxNkdpdVJYUThqN3FwVjdBVWxnakt5a3dVR3NKMDNWbG5LdWpBSDVUMkZPOWZzd05ROXlXangxaGd0R1YwWjBicXV6TXBSSUJhVElmb1hkbkJYZUZQTkJIN2FBQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260909-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-08",
-  "ko": "카타르, 사태 장기화 시 '산업 재앙' 경고 — 카타르, 후티의 사우디 공격 규탄 및 역내 교착 장기화 우려 표명",
-  "en": "Qatar warns of 'industrial catastrophe' if crisis continues, condemns Houthi attacks on Saudi Arabia, warns against prolonged regional stalemate",
-  "ar": "قطر تحذر من 'كارثة صناعية' إذا استمرت الأزمة، وتدين هجمات الحوثيين على السعودية وتحذر من استمرار الجمود الإقليمي",
-  "q": true,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMzF5ZzhuLU1ZdVk3dkhBbk9DYmJ4Um4ybkNLbkk2ZlVQTFowV3RkSG5vdDZOSWJlM1ltNkNNUE1EbGFjSkdnRWIzalBFd2EzcTVCdGVMRUR1Z05OMHNvdFp4YncwQ2Z5b3VBRTN1YzBLWGhfRi1GUXdxa3VnZkVjTUYwTl9xTGtrQ2t4Qlc1OGxaUk93RDJXYmE1eEtOWFRWSG5ZN2QyTHNBQmxBbGt5bjU1UHRGak9xVVgtNTBWUFNsTlRmckdOUWRKRG4wa05G?oc=5"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN3ZiTjE0LVFwZmVBeDJnR3lVNFNGWWZVNTdXeHJ1QnpaU0dXMFhXZ25xbldpM0ZxMkJ1RlBOdjd3SHFNRXNHY3U3dk5OaHdfT0h4UzVqR2MtWVNuaUhBdzBuV202ZHZDLUo1MkVTZGhnVC1xeFhtbWJoUkR1c0RSSFRFcUxENDY1aHFTdHVKa2wxdTlyMU1OZFJjVDR1RWpWUXfSAacBQVVfeXFMUGdFOUNOLXNXWmUyUGhNZGZNTmZTME1qN2w2QkVqckJ1ZndlWlZMd3V4Q1doaktBcmc1aDV2dHp1Q2dDTHIySE16MHRtUHMyWnFPS3JjRUo5eEt3NEkzVkZSZFU1eGZ1aW1zdjV4d0VtenFsS3ZWQ0xMckZxczd0R3NzekJNSDFzU1FDeEtFekJXREF1anJNaDF3LUxpekhwTUxsaTQ3LXc?oc=5"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMinAFBVV95cUxOc1VYRnFFOGZuVmNxbGU3TkZRRDlJSnhPSFY0bGlQVXQ1NHZBQ2dMbGxRV0FpM3BnM1o5eVRtbHc2SWV2N3lqelk4QWRYaVJvR25HRkl1WXc4UHFEbWtVeWRUM0plOWU0UWxXSmVMZFRnQ1NBdkhwdmhmZENRczg4YUxVR3l0THBOLUZtN2J4WURxRHRIZnlVdFVULU_SAaIBQVVfeXFMTzlJUk14Y1dLc096Z2MzcmtROG9rek1Kd0w4TkJNQ2FwLTJKWFVVN2FHQ2tXazY4TWFiME52TmZQa1IzQkludHpSMU5nMHJBMmNHQWZCTHc1eDNBVG5xRUJ5UDlLejZFb3E0eWpBVVNPMDQ1U01kSlNrV01jNGlUelhOdTJwbEVlX3NBSEpBYUpjWThJUENmVnYwVnc0VUFPZ3l3?oc=5"
-   ]
-  ],
-  "first_seen": "20260909-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-07",
-  "ko": "이란, 호르무즈해협 인근 '금지구역(통제구역)' 수일 내 선포 예고 — IRGC 경고에 유조선 3척 항로 변경·회항",
-  "en": "Iran to declare 'prohibited/restricted zone' near Strait of Hormuz within days — three tankers reroute after IRGC warning",
-  "ar": "إيران تعلن عن منطقة محظورة قرب مضيق هرمز خلال أيام — تغيير مسار 3 ناقلات بعد تحذير الحرس الثوري",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/7/aje-onl-nf_iran-to-announce-restricted-zone-around-hormuz-060926?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/9/7/iran-war-live-tehran-to-announce-new-hormuz-shipping-route-in-coming-days?traffic_source=rss"
-   ],
-   [
-    "News18",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRUhhTDhwWjh4RHE0bzdHTkt6cDFpbXVpcUpxYmlqZTM0ZEtqTFN0c05Pb3VuWU9JSzlKMzJWS2RRcHRzS0xmSXk2SWdPSjVkN1ZUSE9QU3QtbWVXLTUtQk44ZEdGdlhtZWJmV1FpN09xSGRhZFNZZmIzcEswdG5OV3JhMy1FTTlmOE1MMGlkZzJTbXVSd0dfVGJDdFlxM3FFYTl5MXVpWmpZYW1EbnkxeWljYjhlZ0JTUEhJRzlUZVJjdw?oc=5"
-   ]
-  ],
-  "first_seen": "20260907-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-07",
-  "ko": "사우디 아람코 석유시설 재피격 — 브렌트유 7주 만에 최고치·100달러 근접, 피해 규모 파악 중",
-  "en": "Saudi Aramco oil facilities hit again in new strikes — Brent crude hits 7-week high nearing $100, damage assessment underway",
-  "ar": "استهداف منشآت أرامكو السعودية النفطية مجدداً — خام برنت يسجل أعلى مستوى في 7 أسابيع قرب 100 دولار، وتقييم الأضرار جارٍ",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcUtqbi1WYjBsamlxV0ZVZHdONEswWkp6bHo5NWx0bVIzMHd6R3pWcGlJZTVsNFlOMUcyd0hGY3FtV0VLMTluSzBla2lsZEJaZ2VEdGVILTZBV1JGYUFMc0Q2YktCb1ctSHNxblpkcEctZlhGVksyWURDRTk4em1najZMdk0?oc=5"
-   ],
-   [
-    "머니투데이",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYRjlMMF9tdG5jLTl4LVdTVVFSNXo4RG91QldvbGFHc0NzTDNZQTRnUHVpUXlIQjRZaXBETW5zVV9hRTBidmpxWGRJQXlPZ09oQXVmRFZHNGRLNXJ2SWVRdlJvMDU3d0lJ0gFuQVVfeXFMUGxPSDJ4N0IyOGZMSjFJNDlDeFl3ODZQS3RaOU5yNEtoTjZaVGRjRk1SZDU2SVVFUnd1VGZIbjVXYjlMSzJMdWNVZFdGX0Vxd2ViX0VhQUtnSDdFQkdJbC1Va1ktWnBwZDlUR0xVQWc?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE94RlhNWG5BQ1RUMHREanItbHZxRFNpY0xhUU9rMndOc2NCZTF1X0tpV0tueFZhcWZGWUxZYlNZeXJ6R3o3di16VG1DZGdRT1pOMUdObTc0aDlLS2FOdll4d2NR0gFnQVVfeXFMTzBidW9KUkVZMXk2Qy1hZ2tKUFowUUVJVEJGajBEVDY4WEVsUmxmTmw0V3o4djZzeE1NQXJqbHhkZlpCZl9CWTVaZTUyVC1iZHpUOTFESDBGaGVWcFlydnlZNW43M1BaTQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260907-1530",
   "status": "pending"
  }
 ]
