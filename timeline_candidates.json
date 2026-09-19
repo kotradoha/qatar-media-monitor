@@ -151,6 +151,56 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-19",
+  "ko": "후티, 사우디 수도 리야드 첫 공습 시도 — 리야드공항 인근 화염·연기, 공습경보 발령 후 30분만에 해제",
+  "en": "Houthis attempt first-ever strike on Riyadh — sirens sound and fire/smoke seen near Riyadh airport, all-clear given after ~30 minutes",
+  "ar": "الحوثيون يحاولون أول هجوم على الرياض — دخان وألسنة لهب قرب مطار الرياض وصفارات إنذار ثم رفع التحذير بعد نحو 30 دقيقة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "الجزيرة نت",
+    "https://news.google.com/rss/articles/CBMi0gJBVV95cUxONHhQMHNQeE9oTGRQVXRzajF5ZDNNXzVKcl9HOUZiUnFqOE1XSE4yeUlhUXVTZFhpZEFneTd0SGdVcnJ1dnlWQW5kOExDRWlJWWxxQlZNdFdGcHFaa3hva3ItLVJ5enBRV1NjaDRidTRPaFRncGZiQ242Sk5lanoyMmVjVVZJS0J2SnRwcnhlLVhITnM0cGNPcXlzZS1xaThMdUxyWWpQTElBVHg1dlF5QW1ZZWFpNEpLSFB6Nmlwemhfa04zTjhKTUdCbDMwcUlxYzhXTDgtUGZHU2NlTmtBM3RrWVRzWHNxN21TV0JGTmNBT0dSbzdJMkp3Yzg3SWVyeUhYamphVDhRNmQ0Uk92VFh2REdZdGNpZk5KV2xkMGJaVnNnV0U0emQ5M2pNeDJWMGlubmNXNFBDSlRlQnVDQ2FSaHNCalJNTEFQVTYxUUVtQQ?oc=5"
+   ],
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdVRUUmw0MDZNSVNnVHFqeHlEbnl5dmg5UlFmc01iOXZfVUpqN18yUFFWQml5S1BMU3lTZjZwWjNPRU5mTG5JdnE3emd1RTVrNlBMU1NuOHQ4SDVnOHZMZmZUZFNiX2EtZElkdTV5cHlFTU43eFlyVGJlTkxQLUNKdk1CQ1R1dmRWaXFyaU4xeXBjY0NsR3NzeDRiQ2tBODkybFJEbWdoaEd4eVE0MnlXTFgtX2o?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247871/Sirens-go-off-in-Riyadh-amid-Yemeni-retaliatory-attacks"
+   ]
+  ],
+  "first_seen": "20260919-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-19",
+  "ko": "미 국방부, 이란전쟁 누적 지출 451억달러(약 62조원) 의회 보고 — 기지 수리비 별도",
+  "en": "US Defense Dept reports $45.1B (~62 trillion won) cumulative Iran war spending to Congress, excluding base repair costs",
+  "ar": "وزارة الدفاع الأمريكية تبلغ الكونغرس بإنفاق تراكمي 45.1 مليار دولار على حرب إيران دون تكاليف إصلاح القواعد",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "조선일보",
+    "https://www.chosun.com/international/international_general/2026/09/19/MI4TEMZSGFRDCYTCGQ3TGMBWHA/"
+   ],
+   [
+    "Chosunbiz",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxQblFSTU51SVFQTkFtYUExQnNIeU01NGpkUE9TR3VER000aVdLZGctZGowMEEwV08tSlEyNUpGY3BCSmZNMldvWnNDV1Vwa294VUJlcHcybHF2LUF0YnU2ek5OV2FCZ1liM0xiS3ZsY2tpbHBzdUdab0c2Wjh2RTBFMmZ4bER0My1zbmRhMDRmNFV0U2tLMlhWNTB5Rlk3Z9IBsgFBVV95cUxNRWdNVHI5bGkxb09IMERsZEVfRGxfeXVmQ2RqSE9EZ2N3eUZGcmN2WUZucUgyNk1oN3lidGxaQnBKb1BpaTJlSVU0c2Q5dmQ0N05RMzh2VFR0ZXU2Y1Z4LXpGUGVjdFZ5Mi1iS0t4ZVQyaUprc3pRaWdzV2F0X09Ja0lpR2ozdXFvMHJtWktGNE9GRlI5a0JJZGFTdTBfMm1XbTVzVEZBOHA0c0RMT3FqNVZn?oc=5"
+   ],
+   [
+    "marketin.edaily.co.kr",
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE45YUpmOFJBcWxNU29zWkF0djJoSTRpY0stbzZRQWc2dm5WMHd0c294YnR5LWxuUlJpNExWNGRwd2NZU1Z5MHpqXzNJZ0hNRmFySkpibzZGSXBfYmZTLWdEM25xSTEwYlpmVm11cS12aFhrd1k?oc=5"
+   ]
+  ],
+  "first_seen": "20260919-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-18",
   "ko": "유엔 조사단, 미군의 이란 초등학교·스포츠센터 공습이 전쟁범죄에 해당한다고 판단 — 어린이 포함 다수 민간인 사망, 백악관은 조사결과 부인",
   "en": "UN probe finds US strike on Iranian school and sports centre likely a war crime — killed children and civilians, White House rejects findings",
@@ -1771,52 +1821,6 @@
    ]
   ],
   "first_seen": "20260913-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-11",
-  "ko": "이란 IRGC, 호르무즈해협 인근에서 미군 무인수상함(sail drone) 격파 주장 — UKMTO는 오만 인근 선박 2척 피격 확인",
-  "en": "Iran's IRGC claims to have destroyed a US unmanned surface vessel near Hormuz Strait — UKMTO confirms two ships hit off Oman",
-  "ar": "الحرس الثوري الإيراني يزعم تدمير زورق أمريكي غير مأهول قرب مضيق هرمز — 'يوكمتو' يؤكد إصابة سفينتين قبالة عمان",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/11/iran-claims-to-have-captured-a-us-sail-drone-near-hormuz-strait?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/9/11/iran-war-live-irgc-attacks-us-unmanned-vessel-in-hormuz-two-ships-hit?traffic_source=rss"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247633/VIDEO-Watch-how-Iran-destroyed-US-unmanned-vessel-in-Hormuz"
-   ]
-  ],
-  "first_seen": "20260911-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-11",
-  "ko": "호르무즈해협 통항 선박 수 한 자릿수로 급감 — 목요일 7척, 전일 11척, 10일 평균 15척 대비 대폭 감소",
-  "en": "Hormuz shipping traffic falls to single digits — 7 vessels Thursday, down from 11 previous day and 10-day average of 15",
-  "ar": "حركة الشحن في مضيق هرمز تنخفض إلى رقم أحادي — 7 سفن يوم الخميس مقارنة بـ11 في اليوم السابق ومتوسط 15 خلال 10 أيام",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/hormuz-vessel-transits-drop-single-digit"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUXNiYVFqaWhNQW1zamxmTm9HMEtQSFZhUDAzX3pEVzk2NnJleHYwNDFXT1YyeWRUS3ZGOHhIbmRGd0NoNVVIenZhUTVrWnd6VzdFbWs2RnVKTi16Zk94TDkzRU9qcDhuY0UtU293SDAwUVk5Wm40UVpzWEFFZm1JZUxuOE5fUkg1Q2VfeEdOX2hNeEVsRjdCTWZXS1lRdGVsZm1sa2RQUC1GYjNG?oc=5"
-   ]
-  ],
-  "first_seen": "20260911-0700",
   "status": "pending"
  }
 ]
