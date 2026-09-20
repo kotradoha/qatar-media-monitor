@@ -201,6 +201,81 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-19",
+  "ko": "후티, 리야드 공항 인근 유류저장고 공습 — 미사일·드론 공격 주장, 화재·항공편 결항 발생, 사우디는 요격 발표(2026년 7월 확전 이후 첫 리야드 공습 경보)",
+  "en": "Houthis strike fuel depot near Riyadh airport — claimed missile/drone attack causes fire and flight delays; Saudi coalition says missile intercepted (first Riyadh air raid alert since July escalation)",
+  "ar": "الحوثيون يستهدفون خزان وقود قرب مطار الرياض — ادعاء هجوم بصواريخ ومسيّرات تسبب في حريق وتأخير رحلات، والتحالف السعودي يعلن اعتراض صاروخ (أول إنذار جوي في الرياض منذ تصعيد يوليو)",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/sep/19/saudi-arabia-riyadh-airport"
+   ],
+   [
+    "BBC Middle East",
+    "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss"
+   ],
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTXVoak5jQWh2Y3ZRV05LaEdyQ0hNS0xPbF9URW4zam5LbFlFR1BMWjAxNEptclUxQVhWUi1CY1JuU1FCMjJCNGFNSWpHUTRDa3lIY2xrS1Zxa1VycUl1UkxkS0FhSXExSlJKd3Fibkx1OEtCeHBIeUlMM3hoY2J6cTk4RG9ZMmY3eF9aWjQyYjJuUjJPeDJ5cjJEbELSAaIBQVVfeXFMUGNRR1UxcHc4X1h0WTdVb1RmbDlnUXAtZk95bkJDMXpaQjVDOWF5bGxCZENvVndLMnEwQVRSTE9GcVlRSmFiV1V2amNKV1BNeGpFMERiMEFRaGdhTmU2c2FWM09RVUNVQ1kzajF2OF9EeUFPQlFONDZIMU1jeUpYa2d2WXRKQXp0bVJGZlRScDZ4dXZEdGVuR3A5R0QtYTFKbjJn?oc=5"
+   ]
+  ],
+  "first_seen": "20260920-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-19",
+  "ko": "미 중부사령관, 호르무즈 통항 성과 발표 — 지난 2개월간 원유 10억 배럴 통과 지원, 이란산 원유 통과는 '0'이라 주장; 이란군은 '조작'이라며 즉각 반박",
+  "en": "US CENTCOM commander claims Hormuz transit success — says US facilitated passage of 1 billion barrels of crude over past two months, with 'zero' Iranian oil passing; Iran's military spokesman immediately calls claim fabricated",
+  "ar": "قائد القيادة المركزية الأمريكية يعلن نجاح عبور مضيق هرمز — يقول إن الولايات المتحدة سهّلت مرور مليار برميل من النفط خلال شهرين، مع 'صفر' نفط إيراني عابر؛ المتحدث العسكري الإيراني يصف الادعاء فوراً بالمُلفّق",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNR1l3X3RrNm9wUEhCWTgzcGZJOUt5TlBtUkJnNWJQM1Vpc1lSMUdFOHNQVUlYT3BVVjY0bGJrZlZaMlM2VUM5VXIyWkNlbnpGcWdYUko2VFdNYjlNbVF4bXJjQ2V4UGRUWWo1UFlSRnExaFlhNjJpTkdhazJTRkxpZzl2d1pzMmZCSmprTzJybEt2d29jX3ozbEdhVWJVeEhVRFFOT1ZVS0ZsMThSSGp4T193Z0c3TnpPSGtRV2c0bzhVSmctallZazZ5TWU2clBURHl3LUo4clBTaWJVLXc?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-disputes-us-oil-claim-approves-new-rule-hormuz-data-cables"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247886/Iran-military-spox-dismisses-CENTCOM-cmdr-claim-on-Hormuz"
+   ]
+  ],
+  "first_seen": "20260920-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-19",
+  "ko": "이란, 대미 종전 7개 조건 카타르 통해 전달 — 전선 전면 종식·美 해상봉쇄 해제 등 요구, 트럼프 답변 대기 중이며 불응 시 '결정적 전쟁' 경고",
+  "en": "Iran sends seven conditions for war's end to US via Qatar — demands include ending fighting on all fronts and lifting US naval blockade; Tehran awaits Trump's response, warns of 'decisive war' if rejected",
+  "ar": "إيران ترسل سبعة شروط لإنهاء الحرب إلى الولايات المتحدة عبر قطر — تشمل المطالب إنهاء القتال على جميع الجبهات ورفع الحصار البحري الأمريكي؛ طهران تنتظر رد ترامب وتحذر من 'حرب حاسمة' في حال الرفض",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/9/20/iran-war-live-tehran-calls-for-end-to-war-lifting-of-us-naval-blockade?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/9/19/iran-says-conditions-to-re-engage-in-talks-end-war-sent-to-us-via-qatar?traffic_source=rss"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260920_0003796849"
+   ]
+  ],
+  "first_seen": "20260920-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-18",
   "ko": "유엔 조사단, 미군의 이란 초등학교·스포츠센터 공습이 전쟁범죄에 해당한다고 판단 — 어린이 포함 다수 민간인 사망, 백악관은 조사결과 부인",
   "en": "UN probe finds US strike on Iranian school and sports centre likely a war crime — killed children and civilians, White House rejects findings",
@@ -1750,77 +1825,6 @@
    ]
   ],
   "first_seen": "20260912-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-12",
-  "ko": "오만·쿠웨이트·이집트, 사우디 송유관 피격 규탄 공동성명 발표 — GCC 국가들 잇단 규탄 성명으로 확전 우려 고조",
-  "en": "Oman, Kuwait, Egypt issue statements condemning Saudi pipeline attack — series of GCC condemnations amid escalation fears",
-  "ar": "عمان والكويت ومصر تصدر بيانات تدين استهداف خط الأنابيب السعودي — سلسلة إدانات خليجية وسط مخاوف من التصعيد",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSXRvM0ZZUkhYeXpGZkl3S3NRT19yTTRCQ0pkTGtGZFU4UFpzXzExX21RMjRuaUNfTUUzalpZRmY0UUF3R09BVWVOVUJxWXZGREtadUVSWFBra1kxbHdJektNMVE1WXBocWFJdHd5cVcxX2ZySGJtbVZHWnJ6VHRRamh2alJ0RzZVdGdOYWNNUlRBOXJGRXUzQW5NRzE1b2t2UHJqMzFvc9IBpwFBVV95cUxPSXRvM0ZZUkhYeXpGZkl3S3NRT19yTTRCQ0pkTGtGZFU4UFpzXzExX21RMjRuaUNfTUUzalpZRmY0UUF3R09BVWVOVUJxWXZGREtadUVSWFBra1kxbHdJektNMVE1WXBocWFJdHd5cVcxX2ZySGJtbVZHWnJ6VHRRamh2alJ0RzZVdGdOYWNNUlRBOXJGRXUzQW5NRzE1b2t2UHJqMzFvcw?oc=5"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdVBIdkZNRFQ0aDNOeW9LLUJaN2RqeUM4bXBKVDExYzA5Z2VRbVNraUkydEwzMHJmUjhqdXM5M2ZCbWVMbDNaZEowZlI5d2haUE1OWG03eXlZTlpOWXRZdk9haVFmcXRtMEZxTmdtZkxXa2gwYXJpRlpoV1hsMTJNd0k5WHNsTkpza3RvVWRUWHh0dEpOb2c1NkI1TlF4WmZ0OE03WlJOd1RjUdIBqgFBVV95cUxQdVBIdkZNRFQ0aDNOeW9LLUJaN2RqeUM4bXBKVDExYzA5Z2VRbVNraUkydEwzMHJmUjhqdXM5M2ZCbWVMbDNaZEowZlI5d2haUE1OWG03eXlZTlpOWXRZdk9haVFmcXRtMEZxTmdtZkxXa2gwYXJpRlpoV1hsMTJNd0k5WHNsTkpza3RvVWRUWHh0dEpOb2c1NkI1TlF4WmZ0OE03WlJOd1RjUQ?oc=5"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRmNSdkhqeVpmWVdfYmFYUGgxQkdmOWVGWTRRNVVqa3JkdHJZX0JOT040cFBaZ0kxVlFMLVpJOHRFUDdfd0hlNGhMNUdlb09GWjUzMU84ZzR1bFcwM0FNRkp2cmhQLWJiYXlrSHNrSmJNc1Y1SGtadDVQdWh2THMta3hkUHlHMXJ0V2ROYVcxSXkyOWoyUGdGLW5CWnNpckk?oc=5"
-   ]
-  ],
-  "first_seen": "20260912-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-12",
-  "ko": "BRICS 정상회의, 중동 확전 자제·팔레스타인 강제이주 반대 공동선언 만장일치 채택 — 시진핑 '평화 중재자 역할' 강조",
-  "en": "BRICS summit unanimously adopts joint declaration urging restraint on Middle East escalation and opposing forced displacement of Palestinians — Xi Jinping stresses peacemaker role",
-  "ar": "قمة بريكس تعتمد بالإجماع إعلاناً مشتركاً يدعو لضبط النفس في تصعيد الشرق الأوسط ويعارض التهجير القسري للفلسطينيين — شي جين بينغ يؤكد دور الوساطة للسلام",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPZ0JieF9qLW1raEYtbEc1ZnVsNTJMVzBQTGo1bWF1dk43V2NCSEFrVjlRV0o2bk9oMmhiNzdPWW9FaTdJMXptNk9VbEV4VGViMGEtVWtBZVd3RWlzTGJod1dfLUYyVnpyalBDUVZOV0tHSFEtZFVCd1E4REhoWEo1SHlBYzRYVFk1WHFaVUhWUnBodnRWV1FIQ21qNVF6LWZ5eEhJT24zamtLTnRaRFJPVW1TY2prZ0hUazBONUV0VmhpQUNXSnI0NWFUSkExbVZkdU9lNEJqUnI0eWZpdXZsbExfWm9NQTRic2o5MDBqMkxwdWhVQVE?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb2hwaW9IeTRsWlZUMXI0TnRSYUhSM0ZNZVRXUHpQM0NKMHJIMlhJaFZZUUJYRE5PbEpvSjg4bDFxT0FVQUp1X0hHSUhOcXJjOFZpaDY3RmRMeFpFT0VaZVlQWG12ZlZJQ3BjdF9MMVJXYUxHV0xwQjVJWGstZWpJYWxlM2pmMzBCdFc5d1NCeE5IWENOUC1Id1ZfZGJDMkMwckY5Y082T2NLOEk?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20260912049400104"
-   ]
-  ],
-  "first_seen": "20260912-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-12",
-  "ko": "바레인, 이란 제안 호르무즈 협상 불참 선언 — GCC 내 대응 균열",
-  "en": "Bahrain announces it will not attend Iran-proposed Hormuz meeting in Oman — signaling rift within GCC response",
-  "ar": "البحرين تعلن عدم مشاركتها في اجتماع هرمز الذي اقترحته إيران في عمان — ما يشير إلى انقسام داخل استجابة دول مجلس التعاون",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/12/bahrain-says-it-will-not-participate-in-irans-proposed-hormuz-meeting?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-wont-attend-meeting-hormuz-oman"
-   ]
-  ],
-  "first_seen": "20260913-0700",
   "status": "pending"
  }
 ]
