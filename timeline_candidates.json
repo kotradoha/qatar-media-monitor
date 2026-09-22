@@ -84,6 +84,136 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-21",
+  "ko": "사우디, 예멘 홍해 항구 모카 공습 — 최소 6명 사망, 후티 공세 확대 속 교전 격화",
+  "en": "Saudi airstrikes hit Yemen's Red Sea port of Mokha, killing at least six as Houthi offensive escalates",
+  "ar": "غارات سعودية على ميناء المخا اليمني على البحر الأحمر تقتل ستة أشخاص على الأقل وسط تصاعد هجوم الحوثيين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "© Houthi Military Media, Reuters",
+    "https://www.france24.com/en/middle-east/20260922-middle-east-live-yemen-fighting-escalates-as-trump-heads-to-un"
+   ]
+  ],
+  "first_seen": "20260922-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-21",
+  "ko": "후티 반군, 바브엘만데브 해협 통제권 장악 — 사우디 홍해 원유 수출 사실상 중단, 아람코 물량 호르무즈로 재전환(최근 2주 하루 240만배럴)",
+  "en": "Houthis consolidate control of Bab al-Mandab strait, halting Saudi Red Sea oil exports; Aramco shifts ~2.4 million bpd back through Hormuz over past two weeks",
+  "ar": "يسيطر الحوثيون على مضيق باب المندب ما يوقف صادرات النفط السعودية عبر البحر الأحمر، وتعيد أرامكو توجيه نحو 2.4 مليون برميل يوميا عبر مضيق هرمز خلال الأسبوعين الماضيين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Guardian",
+    "https://www.theguardian.com/news/audio/2026/sep/22/houthis-shock-advance-what-it-means-for-world-podcast"
+   ],
+   [
+    "Tehran Times",
+    "https://www.tehrantimes.com/news/530263/Ansarallah-consolidates-Red-Sea-control-as-Trump-rejects-MBS"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260922_0003800075"
+   ]
+  ],
+  "first_seen": "20260922-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-21",
+  "ko": "영국, 사우디 전투기에 대공 지원(공중급유) 승인 — 후티 대응 위해 한시적 군사지원 제공",
+  "en": "UK approves time-limited military support (aerial refueling) to Saudi jets to counter Houthi attacks",
+  "ar": "بريطانيا توافق على دعم عسكري محدود المدة (تزويد جوي بالوقود) لطائرات سعودية لمواجهة هجمات الحوثيين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Guardian",
+    "https://www.theguardian.com/politics/2026/sep/21/uk-to-give-support-to-saudi-jets-in-attempt-to-counter-houthi-fighters"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsQVV0cXVRMWVlNy1NRHAtS0x6bEpFUGpiZlB2blREaGxab0VTc0R2LTBzdWFhSmdXa0tjb3hEWjhxVmVaQk5SM1RRM0p1QXJfbEVVQzN5YXZZRi1D?oc=5"
+   ]
+  ],
+  "first_seen": "20260922-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-21",
+  "ko": "미 재무장관, 이란 항공사 전면 운항중단(23일부) 발표 — 대이란 제재 강화 일환",
+  "en": "US Treasury Secretary Bessent announces all Iranian airlines to be shut down from Wednesday as part of intensified sanctions",
+  "ar": "وزير الخزانة الأمريكي بيسنت يعلن إيقاف جميع شركات الطيران الإيرانية اعتبارا من الأربعاء ضمن تشديد العقوبات على إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMibkFVX3lxTE56cTJuZUVZVG1nNHo0SVU2eGgxQzNqbF9aWWhycHVZZmJNTDE5UkJSV3YzVDFVb042YTFOc08xd0M4cUo2MjFtakxyZVUxQ3drNnFKb182cU1JSGhtQ05vd2NTaDhHTXMyYktKcEdR0gFzQVVfeXFMUGpLbzc2YkZoQWFzOUFNRVNqejU0SF9lY3Rfa0lFNlFIUzR5ZUdrRE9VUDBjWllFSkU5YndMMU5kM2RCbDQ5UmVVR0NLSGtuY2ZvZWk1VXBBSVBDRWlTNHlwcjdEWUVycXd1QWVxLWtIV1RCTQ?oc=5"
+   ],
+   [
+    "Amwaj.media",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc2lZdjRRY3c4OXJwUXNBRXZhcUZxaFJUZzhlaXJYTjI0OTBxWVRWQ3lxVE1Ramw1MW5EU2lVVGczaHgwc1dtanY4cWNYLTJJY2VaNWtka05EQzJqcGNpSlpTUEVRdlVYMl8zdDNRWlczSkRfVVVXb09XTy1XVFNKYm1UZGgtckItOUdnSEJhVWxDWTZBbldIZmhaTE9VZXBCZlR5d1MxdUNFdw?oc=5"
+   ]
+  ],
+  "first_seen": "20260922-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-21",
+  "ko": "미 정부, 걸프 에너지시설 재건기금 100억달러 조성 제안 — 이란전으로 파괴된 역내 송유관·정유시설 복구 목적",
+  "en": "US administration proposes $10bn fund to rebuild Gulf energy infrastructure damaged by the Iran war, reducing Hormuz dependence",
+  "ar": "الإدارة الأمريكية تقترح صندوقا بقيمة 10 مليارات دولار لإعادة إعمار البنية التحتية للطاقة الخليجية المتضررة من حرب إيران",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260922_0003799976"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdGszMmdZWW9pTjZ0X3JKcl9NNW9RNVdIN3dzX0hiV2xFam05R19NTngzaTV5TXo2ZC1IOVNaVkRreDBpY0paYnB2WVpOOGc4UDZsZ25TZF9QT2RkS3cwMENPd0xrMGF2ZWZoYkVwSEh0V0RQcGFZZXlFLV9wVVJkaWhPMlpjMUZ2Q1p6aTJ6LVBOanRJZDhB?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQzdFZjM2QWJJQ0xUUE1Tb2llS3dpWkd3QU9lZWk1QjVCenN4VlE2RnVyUnVFRjhNd29mbWxVVVJDWWlCVnFDbFRfY1NldDQzOTg5UEN1UF9oWVZMS0FSeTZLT1NxZU5DN0lYbzgwNVktTjhrMGFtaUp0T3FsWjVQT1JsZFhQSmV2NU1Kd3hpVjdPdFhTbG8yaWFNV1RfeXNLQ1lvU2tkRmJzSnMtN2kzR2d6NDUtUzUwWDRRWkRQYURQMzl0Q0pLRS0tWVE?oc=5"
+   ]
+  ],
+  "first_seen": "20260922-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-21",
+  "ko": "G7 외무장관, 이란에 후티 지원 중단 촉구 공동성명 발표 — 사우디 원유수송 위협·역내 긴장 고조 비판",
+  "en": "G7 foreign ministers issue joint statement urging Iran to stop arming Houthis, citing threats to Saudi oil shipments and regional tensions",
+  "ar": "وزراء خارجية مجموعة السبع يصدرون بيانا مشتركا يدعون فيه إيران لوقف تسليح الحوثيين مشيرين إلى تهديد صادرات النفط السعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxORGtkM0ZFUjI1RkZlMUNza2ZEbzJnWE1UUVVjN0N5c1BPbG1lZWMtaVFHTXQwRkNpVUhvaDVNOF9uTlUyRE9PSjVxYjU4Vmc0aDdOZ2RRbm9TZG4tT084VmRIeUx4S0RiR1ZhcUpPYTU2Q2I5UVM3LWNIaENiTXBDRjkzYUI3UzlZM2loU0dIY2pHczlMSDhNX1YwSQ?oc=5"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260922_0003800144"
+   ]
+  ],
+  "first_seen": "20260922-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-20",
   "ko": "후티 반군, 사우디 수도 리야드 첫 탄도미사일 공습 — 요격됐으나 공항 인근 검은 연기 목격, 시장 급락",
   "en": "Houthi rebels launch first ballistic missile strike on Riyadh — intercepted but black smoke seen near airport, Gulf markets plunge",
@@ -1659,152 +1789,6 @@
    ]
   ],
   "first_seen": "20260913-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-13",
-  "ko": "사우디 동서 송유관 피격 — 이라크 마이산주에서 발사된 드론 공격으로 확인, 이라크가 대이란 국경통로 3곳 폐쇄",
-  "en": "Saudi East-West oil pipeline struck by drones launched from Iraq's Maysan province — Iraq shuts three border crossings to Iran amid probe",
-  "ar": "استهداف خط أنابيب النفط شرق-غرب السعودي بطائرات مسيّرة أُطلقت من محافظة ميسان العراقية — العراق يغلق ثلاثة معابر حدودية مع إيران أثناء التحقيق",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/13/iraq-seizes-drone-launching-platform-used-for-targeting-saudi-oil-pipeline?traffic_source=rss"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMzlwcDVIUVAxWUctQXJ5NG1kb1RNR2Q4RHBORl9sSm8tLTRoMjloMldMRFVJWC1EQVY3aVl5MjVkYldHT0xKd3NBeDNxZjJhQWNiNEJaa1dWTG80U3ZJanp2NDRDeVQ4VDBHYlRlMjRRTlpaUHU2SkVDbVFsMHgteUZOeGs0SzFvUDJabGRvb3JzNDFFMVNCTnQwZktNN3NyRF9nZjBiSUZoVk5mSERv0gG0AUFVX3lxTE9yS0ZLRmdrWFZiQUFPTWlmUjhEMUh3aXkwVXNlNVdqTkRNUXowOW1lZEZ1Z2xXalgySXNQa2xmZmNlb0lDLXpJVEFjbkpUdGV3eG9fTjhEMlZMUlpicnJrWmVOSWs3ZXQzU0liMm1VSkpRRnV5TlBGRlhvRm1FWk5nMzBSNGFqTXl4bURsaUJja2gxWUs4LW85WWdGX2pzTVZBSW03dS1SbE9mU0pIY19taktJNw?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSEVTcUVKTUpBQnAwT0wzS3EwYlhlQ1VEZzhiaUEyc0czQ1NIOWRXVWZoVDIxQXV0Y1ZFWnc1ZXFhdERrMGVhZS1ER3JsWG5nOG0zM195SzBsTmNJSWlDNlJVNW9kTDFvVURkOVdFUDVpLUVGYnhqR2tHaTVjNkFibzJ4emhjbWoyTnNiZVN2Y256ZElLODBTOHVaVDluMlFTNEdZallKVnNXVlhxVml3Ykt30gG3AUFVX3lxTE9wdDJScDJXV3F4bFV0STZfd3NhcTAxYmdxQ2ZrazlvUGZlYmN0WnNpYmdXMm9VTmc5N3d6bkVRa1l0WDVUTjJGR3g0WHJ3R2pNMXV3XzBtTDd0LVNGUlZfNTZmZ216dThzWURDcm1iU05DaFlVdVEwMlhMZFA5d0twQTRJNklkVU9qNzNXc0dtRi03SHN0RDhhUHBNZmVtTjN4Ul9YTnktOHF6eGdMUDI1QW9GQWVsSQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260913-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-13",
-  "ko": "후티, 사우디 자잔·샤루라 군기지 공격 — 미사일·드론 공격으로 2명 부상, 모스크 파손, 48시간 내 129회 공습 주고받음",
-  "en": "Houthis attack Saudi Jazan region and Sharurah base with missiles and drones — two wounded, mosque damaged, 129 strikes traded within 48 hours",
-  "ar": "الحوثيون يهاجمون منطقة جازان وقاعدة شرورة السعودية بالصواريخ والمسيرات — إصابة شخصين وتضرر مسجد، وتبادل 129 ضربة خلال 48 ساعة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/13/houthi-projectile-wounds-two-damages-mosque-in-jazan-region-saudi-says?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/9/13/iran-war-live-saudi-arabia-and-houthis-trade-strikes-over-bab-al-mandeb?traffic_source=rss"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMlBoUGMzV2RWdjFoZkdRdkkwcUdFSGxJTVJCQkRUa2t1cVFib19zRE5YYzBkT3hiLUlDNXRsS0pEdHVpVVRscVFMYnNIcDNlWWJjMkwwVFVGNTNia2pJd2t0NmpHWnZqVHFPbUJ5YUFXczhxUjFPWkZwNmxWUnZUX0Z1Y0U0cGxXX2toZXBKcTkzbFVaX1dUM0U4bXRPUlZWbkcyRXNqSHJ1SW9GNUl4N3FWNjZHU2tiYmJ0aTJHeVV6MUZfUEpZ?oc=5"
-   ]
-  ],
-  "first_seen": "20260913-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-13",
-  "ko": "호르무즈 해협서 정체불명 발사체에 상선 피격 — 영국 해양당국(UKMTO) 확인",
-  "en": "Vessel struck by unidentified projectile while transiting Strait of Hormuz — confirmed by UK maritime authority UKMTO",
-  "ar": "سفينة تصاب بمقذوف مجهول أثناء عبورها مضيق هرمز — تؤكد ذلك هيئة الملاحة البحرية البريطانية UKMTO",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSFYtMnF5T0Z1am5IT0lvTFFIUmtrU3RKNXhLX1g0MTJ5YjA1TG5NN2NNMjdYOFJ6X2RJMjVBUjJfQThhNzkxZnMwY01VOFo5dUk5UFUyUlIxb1FOdk4wV19qOHNobFlidldSWEsxMHJEN2xLV2xRczJaYkR1aUNXaG5oTENNS2UtSDlTSTBSa1NCdVZsTVhwbTh3aEJzMFFSSXB2T1VkUHc4SENsOHN1QVkzOFZpU1ZwZzJNLTRPY0h2ckE?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/vessel-transiting-hormuz-struck-projectile-ukmto-says"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQd1g4YkxVb0FGUENONG9PQUJrZVV6dmhiZkRVdDZuNzFjRU9GVWhodzZVdWllS0JrTUhHNWpraFlTWk5ra3pNZFdkQXF5Rko1OE5obFo1UzlBTlZfNGRZUF9DbmdsQnczZVJMclMxQ0diaGFMUmJHbzQ3UHdlUWlrdWVsYVVXOGJKUm1aWE5RWGxXdVZWNWthQ3pkUU5ZU0R2YURSa1dXQ1J6NHNncGFSaFEtVHc5YW5Vb0E?oc=5"
-   ]
-  ],
-  "first_seen": "20260913-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-13",
-  "ko": "미 중부사령부, 대이란 해상봉쇄 60일간 상선 100척 항로 변경·무단통과 0척 발표",
-  "en": "US Centcom says 100 commercial ships redirected during 60 days of naval blockade against Iran, zero unauthorized transits",
-  "ar": "القيادة المركزية الأمريكية تعلن تحويل مسار 100 سفينة تجارية خلال 60 يومًا من الحصار البحري ضد إيران، مع صفر عبور غير مصرح به",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-us-forces-redirected-100-ships-during-ongoing-blockade"
-   ],
-   [
-    "metroseoul.co.kr",
-    "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YN2EtSUhBX1FGdC1nU3VSV01wY2x5eDFqQjZJZ0lwQlZvWWNqNHQ2b3otdWd0ZDFGbDZGM1h0TG5KamY4TXJKNHc1Vy1WT21DQ0NBcnVhUllnRUZxM1I0cQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260913-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-13",
-  "ko": "호르무즈 해협서 이란 상선 피격 — 1명 사망·3명 부상, 선박 화재 발생 및 승조원 대피",
-  "en": "Iranian commercial vessel struck near Strait of Hormuz — 1 killed, 3 wounded, ship catches fire and crew evacuated",
-  "ar": "استهداف سفينة تجارية إيرانية قرب مضيق هرمز - مقتل شخص وإصابة 3 آخرين واندلاع حريق وإجلاء الطاقم",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "الجزيرة نت",
-    "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPWURUN3JHM2hkZWV3bEp6SEVaSHpSZXlTbmprTm1tMjJsa056WTFDa1dTMVBaNkFwcXlDY2hQem5PWVctei1XSC1EYWVmSEJDeFpzaGpyUU12NkpYMFRLbldoN2xtdmdYTDRSQzRHdzNIS0sxVjJ4YzhMVXJYQTNUU0pGVWZJRVExLUxFd1g3SWVOaWxkdkhDZHJnM2s0cEg4LVMzTmt3bHl5bkVndm9QT0szREdxTkxuU2tfUjR6U2ctWmZkUEZlaDExbDgtaUxnLXkyT3RXX3BPV28tQW5zcFpzMXNYUHhXS2JHUE1OcWZqVXJxenlxWXVpMU9qcVBTODlmeUFETGJaZDNfeVVtN0theC1jM0dubUh3Nl9jMXQzUHNhcllQWmo3ZjRxbHQ1amVZa1VNb3JJVTgwZGhiMU9NQjJPU093UDBZQUpCLXFJdldT0gHaAkFVX3lxTFA0aUhEbDliUnBMR3ZxQlEwN2g5b3RjNi1CVEhJWEJoeE9Ra0ZMUG1lMFdObHM2NUk4NUpCU0F4aEE5dzBXa3ZOcTdnRVhveTdtYko3TWkyWEh0YVJMSjQxa2hOUE5wcnlJNDFqOHRNUmdsMFRKVzVONllfdmxpYkRqTzJ6QTNUUjZ0cXQ2OGNoa3RnZVVPci1rSUFlM3dyMUpEMkpMQVlQNkFxV0p6ZmVXNjZHQTM5eTJNRlZQODZvbzIxV2h5UlNyX2NZVU5PanZwZ2VQYUNxWVlGOTZHclpzUzBWVEx1dE43ZmxiSTgtUkhDX24wWlVEcXBFOTI0NGwwcU42X1hBX3BGdE0tUWNlekdPOWVvdTltN2tDck9MRUk3Rk5BTGhHY0ZDRzlKaGFZREQyakVnRWpjUFlxWk9nWXIwSG4yX0NwWVhIZXNZUUlrdnA2V0VoVkE?oc=5"
-   ],
-   [
-    "apnews.com",
-    "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMG04XzJlaFg3N0hjVGVucURCODFNSFJKYkdZaHY0aWZxMWJCXzlPY1pGOUNrWHRhWkc3NnJXQms3X1ZxaHBxOTBHTUZVNUFWWXBJV0hLcG9PaEg0Nm9VaTQxbVNfallyV0ZhVzlfMGpqaWMwLTV2ZmYwRGZYNm9EUzFLMnMzZkREbzRlR1JqR0tBd1Fs?oc=5"
-   ],
-   [
-    "apnews.com",
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcjNIT1RidThMRGRHRnBoLTVUM2RPd2dtdm81a1N6cW9SNlB2SFlnaXhYMU5LTVluWnc2TlZfcXlmX2JBM21MdWFVQjl4YTF1WUhJeXBYdWxHSm5tRWtWbzEtQnE2aVdpWXFib0FaRFJycmdmc3RBOTk3V2pRWnVJQkdsWDAwSkJzOFMzcjRDSWIzdDhMU0FqWkxUOVVKNVBUSzRNVzRVUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260913-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-13",
-  "ko": "사우디아라비아 동서 송유관, 이라크발 드론 공격으로 폐쇄 — 홍해 우회 수출로 폐쇄 시 세계 원유공급 최대 4% 손실 위협",
-  "en": "Saudi East-West pipeline shut after drone attack from Iraq — closure threatens up to 4% loss of global oil supply",
-  "ar": "إغلاق خط أنابيب النفط السعودي الشرقي-الغربي بعد هجوم بطائرة مسيرة من العراق - يهدد بفقدان 4% من الإمدادات النفطية العالمية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabian-pipeline-outage-threatens-global-oil-supply"
-   ],
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202609132047025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ],
-   [
-    "news.jtbc.co.kr",
-    "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5JejZsUHlFZXhNb1NFM1ZkMmdMYW9tc3g1OW1maXVsZXhWb3Z6NVlnSDU5NG12Y1hjUFVsRTdBekNjY1lZNlJlR21RQ1YzRldEOWVjTw?oc=5"
-   ]
-  ],
-  "first_seen": "20260913-1530",
   "status": "pending"
  }
 ]
