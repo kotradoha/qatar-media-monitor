@@ -1,5 +1,22 @@
 [
  {
+  "d": "2026-09-23",
+  "ko": "리야드서 강력한 폭발 발생, 사우디 수도 국제공항 운항 일시 중단",
+  "en": "Powerful explosions rock Riyadh, international airport operations suspended",
+  "ar": "انفجارات قوية تهز الرياض وتعليق عمليات المطار الدولي في العاصمة السعودية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/247990/Powerful-explosions-rock-Riyadh"
+   ]
+  ],
+  "first_seen": "20260923-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-22",
   "ko": "사우디, 드론 피격으로 가동 중단됐던 동서 송유관 재가동 시작 — 원유 수출 정상화 전망, 유가 브렌트유 배럴당 100달러 아래로 하락",
   "en": "Saudi Arabia restarts drone-damaged East-West oil pipeline — signals return to normal crude exports, Brent falls below $100/barrel",
@@ -47,6 +64,90 @@
    ]
   ],
   "first_seen": "20260922-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-22",
+  "ko": "트럼프, UN총회 연설서 '합의 불발 시 이란 절멸' 위협 — 美·이란 대표단 뉴욕서 3시간 회동은 '매우 좋았다' 평가",
+  "en": "Trump warns at UNGA he may 'annihilate' Iran if no deal, but calls 3-hour US-Iran meeting in NY 'very good'",
+  "ar": "ترامب يهدد في الأمم المتحدة بـ'إبادة' إيران في حال عدم التوصل لاتفاق، ويصف اجتماع واشنطن وطهران لمدة 3 ساعات في نيويورك بأنه 'جيد جداً'",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-us-iran-meeting-at-un-was-very?traffic_source=rss"
+   ],
+   [
+    "bbc.com",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wcGxFSFMyYWFpZG5Ydng4VXRMTHIzbUdxdWhuQjhqLVYzSmVKVDlFSHpKbXVnYVVkSXNxeUlrZE5JVjUtT2xTMjhBVlViM2VfNnZTWnpZbmdTWnZuelHSAWNBVV95cUxQc1BYWWtjLS1zYTZSb1FNY1VxUmVWUWVCSVBmTVQtM1RzV1czNGJqdDVqTVB3S3F1eDUtXzZubENWUVpCV0JBSnE0czZzY1FxblRGRVpqLVpMS1ZVbDRrSFBpS2s?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeG94eldoMEVmeW5Relh3V0U5S29XbERMeXhRTktZOC1XalhLMVU0R3JFVzI1X2N2WHBwWVJRbl9JVE5IS3dCb2o3S3hQQmVQaXpMYjE5R2JyZEF2SmZfaDZYakxRR29jdGxpOTVlOXpzTlZiZVN6Q2xmUHYxVndMS1Z0NVJ5OWt6b3duX013RTJRZFBITXlKNWdHRmJaNVlPNU9SOVNtN0FnN0k?oc=5"
+   ]
+  ],
+  "first_seen": "20260923-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-22",
+  "ko": "사우디 국왕, 후티의 메카 공습을 '테러' 규탄 — 후티는 메카 공격 부인",
+  "en": "Saudi King Salman condemns Houthi strike on Mecca as 'terrorist' act, Houthis deny attacking Mecca",
+  "ar": "الملك سلمان يدين استهداف الحوثيين لمكة المكرمة بوصفه عملاً 'إرهابياً'، فيما ينفي الحوثيون استهداف مكة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/9/22/saudi-king-slams-heinous-targeting-of-mecca-by-terrorist-houthis?traffic_source=rss"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260923_0003801651"
+   ]
+  ],
+  "first_seen": "20260923-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-22",
+  "ko": "미·아랍, 호르무즈 우회 에너지 수송로 건설에 100억 달러 공동기금 추진",
+  "en": "US and Arab states pursue $10bn joint fund to build energy transport routes bypassing Strait of Hormuz",
+  "ar": "الولايات المتحدة ودول عربية تسعى لصندوق مشترك بـ10 مليارات دولار لإنشاء طرق نقل طاقة تتجاوز مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260923_0003801439"
+   ]
+  ],
+  "first_seen": "20260923-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-22",
+  "ko": "사우디 라스타누라 터미널, 개전 이후 최대 선적일 기록 — 초대형원유운반선 6척 적재",
+  "en": "Saudi Ras Tanura terminal records busiest loading day since war began, with six VLCCs loaded",
+  "ar": "محطة رأس تنورة السعودية تسجل أكثر أيام التحميل ازدحاماً منذ بدء الحرب، مع تحميل ست ناقلات نفط عملاقة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/kpler-saudi-terminals-busiest-loading-day-points-changing-vessel"
+   ],
+   [
+    "매일경제",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ZVWpvQnJTcWN1aGt6UUtCVkhmY3JpSldiUVdka3gwMWJ3VWZ4djN2SGw3QUZpZWNrWUZkMmNyQ0Y4cHdGV1JKbm41ck5OUFEycFE?oc=5"
+   ]
+  ],
+  "first_seen": "20260923-0700",
   "status": "pending"
  },
  {
@@ -1684,119 +1785,6 @@
    ]
   ],
   "first_seen": "20260914-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-14",
-  "ko": "사우디 동서 송유관 드론 피격으로 가동 중단 — 사우디, 대체 수송로로 호르무즈 해협 통항 확대 추진, 국제유가 급등(디젤 배럴당 105달러대)",
-  "en": "Saudi East-West pipeline halted after drone attack — Saudi Arabia seeks to boost Hormuz Strait transits as alternative route, oil prices surge to $105/barrel range",
-  "ar": "توقف خط الأنابيب الشرقي الغربي السعودي بعد هجوم بطائرة مسيرة — السعودية تسعى لزيادة عبور مضيق هرمز كطريق بديل، وارتفاع أسعار النفط إلى نحو 105 دولار للبرميل",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVHNuM0VMWURObkZsbmoxMTgyVTAzQzE2enlSSHF4YWJ3TFZIektOa1pIelFpT09rY0cwZGg0eVJnaWlDZ0xSZG1LSFZqYnpidU50Sm9YYWt5Slg2VDA1OV9iekY0dnR5WWFkbmw1cE1pSU0yb19NTUc2bDZoYVhpMFpOTWFQZUNLLUNNVkhSbUlwb2lVTGlxYU41Uk00c28xME9UVVBsOTFUNnAzSUFvWU5idlZZOG80X3FkZFZUdmlYWWFL?oc=5"
-   ],
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202609151137001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE82aGFpa2Q4dUxyS1VmUnp0RGVNRDJiTXE0ekR5S3lMVGViM1NZT2NXQ29NN1lkcHk1WWRQTXctRGEyZ1lzZVd0cTEyam9saUlQVWFqX1pzVnl1RklpVlp4LTY3eVlaNUdxSHJ2VVpsalg0YXZ6ZWN3U9IBeEFVX3lxTE5PQUt1YS1xVGd0ajVpbXNzZzg2Vmo1dGdkNnhtdTkydnlVWnVnWlpIakFXZTdVMHA3TVlJYV9RZkEzZGJmU0JNTHcwYTZ2eUZaMlRPRWlRZFZObEx4SkxMOEJ6T0ZLeWI4eTVFSTI4bTg3YXFVVGFXbg?oc=5"
-   ]
-  ],
-  "first_seen": "20260915-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-14",
-  "ko": "후티 반군, 사우디 나즈란·남부 지역 미사일·드론 공격 — 민간인 13명 부상, 사우디 민방위 비상경보 발령 후 위험 해제 발표",
-  "en": "Houthi missile/drone attacks on Najran and southern Saudi Arabia wound 13 civilians — Saudi Civil Defense issues emergency alerts, later declares danger passed",
-  "ar": "هجمات الحوثيين بالصواريخ والمسيرات على نجران وجنوب السعودية تصيب 13 مدنياً — الدفاع المدني السعودي يصدر تحذيرات طوارئ ثم يعلن زوال الخطر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "© Mohammed Huwais, AFP",
-    "https://www.france24.com/en/middle-east/20260915-middle-east-live-houthi-attacks-wound-13-civilians-in-southern-saudi-arabia"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUk9NZHpXVWRCcW5NTU52OXZtcTlEcEhoNjkwcmVxX3N2Y0JfbVFpdjBrYzJLTklSTmtDemVuU1p2Q2xKWTZ4NncxdjF1aEZpNlo1LU1GWEZWRFdTT2JxcnBfSmhWTFFkeTZRWFh1ZnVxQ3NEdVNIN2pDT3pLWGpLS25ZUXNmZldTMlNERldQcVRsMGQtWW5QTzFmNlpTMEY2WUowNVNPY0RnQQ?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabias-civil-defence-issues-emergency-alerts-across-several"
-   ]
-  ],
-  "first_seen": "20260915-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-14",
-  "ko": "이란·걸프 아랍국 간 오만 회담 연기 — 이란전 관련 돌파구 기대 후퇴",
-  "en": "Iran-Gulf Arab states talks in Oman postponed — hopes for breakthrough on Iran war set back",
-  "ar": "تأجيل محادثات إيران ودول الخليج العربية في عمان — تراجع الآمال في تحقيق اختراق بشأن حرب إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/14/why-talks-in-oman-between-iran-and-gulf-arab-states-were-postponed?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20260915-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-14",
-  "ko": "美 국방부 감찰관, '에픽 퓨리 작전' 보고서 공개 — 이란전쟁으로 미군 항공기 수십 대·건물 수백 채 손실, 전쟁비용 약 45조원(탄약 재고 부족 최초 공식 인정)",
-  "en": "Pentagon Inspector General releases 'Operation Epic Fury' report — reveals dozens of US aircraft and hundreds of buildings lost, war cost ~$34B, first official admission of munitions shortage",
-  "ar": "يكشف المفتش العام للبنتاغون تقرير 'عملية إيبيك فيوري' — خسارة عشرات الطائرات ومئات المباني الأمريكية، تكلفة الحرب نحو 34 مليار دولار، وأول اعتراف رسمي بنقص الذخيرة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/features/2026/9/15/dozens-of-aircraft-hundreds-of-buildings-us-loss-to-iran-attacks-revealed?traffic_source=rss"
-   ],
-   [
-    "동아일보",
-    "https://www.donga.com/news/Inter/article/all/20260915/134671608/1"
-   ]
-  ],
-  "first_seen": "20260915-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-14",
-  "ko": "후티 반군, 사우디 성지 메카 인근까지 위협 — 사우디 최초로 메카 경보시스템 가동",
-  "en": "Houthi threat reaches near Saudi holy city Mecca — Saudi Arabia activates Mecca warning system for the first time",
-  "ar": "تهديد الحوثيين يصل بالقرب من مكة المكرمة — السعودية تفعّل نظام الإنذار في مكة لأول مرة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc2RnOHZNQjlLM1dLd1Q4RmZKZnlIc2s1dGx5TGV2NjhhbmxzTlpQaUduRHpOQlZObC1VXzhWWmFmaGtwREFPMURZREp2WDhYNjhjS0xmQ21EbnZUb2RaVEtWR1psRVVVMEh2ZjVRTkFJaUc1UXBLVFVjaXpibjQ4T1lHZ2U0TE5aQTJhWGhtSDcxRWNNcHNfQUR5SXhKdE9Bc2hkTlItR3EzVktVWjlCT0dIOA?oc=5"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFSzF2dnM2N0hGRGpkTURBOHp6MDZZWERqLWk5c0FiTzBVQWhsZ1pYT1doNm85T0ppNndTMjRac1c5Mi0tLVBCOTZzSVkwVzg2ZmNZTEg1ZUtMR0JacS1WT0s1YkIySzlJU1FTLVo2dTJaWS1X0gF0QVVfeXFMTXZZdHNpX3Z6c0VKNWt0UkNySkhRRUM5MHUwb1lwZHJsU0FNa3pLbnR0WWxPQlRwQVpEaExOdXgwZTdSMm5QVVJPeHVZZzk5WmxRTVo5Wkt2U1NhQms1eWNmakdxaDJRZFkwNkUxVGQ5RWd1UFY?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NNW5rVUZrOVN5Vm1FMmlaMXdBeE5rczc0LXQ3V0RMZnJyaFZKb0lBVkV3VUdJUkZfZTlybC0wNW5vV1pLRl9HTFRNTkZHbGNpSUI3aWp5N0habzTSAWBBVV95cUxPZXdJcHAtazdWNmFJQjN5WTh6V09FZUMyeERHMkhKS21SVGZXRm5IY3h0bXl6MThvU29fV2xYNS1UUWVmSmRpdm5RVkFKTktSVUJMaDlabUc0MmVmQUE5MFU?oc=5"
-   ]
-  ],
-  "first_seen": "20260915-1530",
   "status": "pending"
  }
 ]
