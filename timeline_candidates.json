@@ -25,6 +25,119 @@
   "status": "pending"
  },
  {
+  "d": "2026-09-27",
+  "ko": "미군 마린 8명 부상 — 호르무즈해협서 이란 미사일 공격으로 미 해병 8명 부상, 그간 미공개 상태였다고 보도됨",
+  "en": "8 US Marines injured — Report reveals 8 US Marines were wounded in an undisclosed Iranian missile attack on a ship in the Strait of Hormuz",
+  "ar": "إصابة 8 من مشاة البحرية الأمريكية — تقرير يكشف إصابة 8 من مشاة البحرية الأمريكية في هجوم صاروخي إيراني غير معلن سابقاً على سفينة في مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd2FueFRqdlF5RkVVdmVlbGNMLTJia1BhZG16N2xxalo1WFFWRTgwd0REaU96dHNTVTZxZzJnQV9hSlVXb3BEOU1FU09lZXJLMXpVM2otNXNTazhFUEdPZGNlRXBvTG9wS3JrOWtYODlDR3MyejNfekV4X1FnczdKaWVvQ3BMck4ydmhKVjJjbnUzbWEyTGtzcUJieWltRTNsQmRRSUo0d1haNVBKM00zTA?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB1OV9LTC1WODJFLTZndEZveUhQM05PRHFyLVFBM29WWlNHNGdDNWlNVXE4UW5oYXNOLU42U0t0NGtxTl9PQ2RaZzFPb01qaTNsd01jbHNKaE80SlM4YTI0?oc=5"
+   ]
+  ],
+  "first_seen": "20260928-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-27",
+  "ko": "트럼프, 이란의 호르무즈 재개방 종전안 거부 — 유가 WTI 1.53%·브렌트 1.8% 급등, 이번주 이란과 추가협상 예상 언급",
+  "en": "Trump rejects Iran's Hormuz reopening peace proposal — Oil jumps (WTI +1.53%, Brent +1.8%), says expects further talks with Iran this week",
+  "ar": "ترامب يرفض مقترح إيران لإعادة فتح هرمز — ارتفاع أسعار النفط (خام غرب تكساس +1.53%، برنت +1.8%)، ويتوقع محادثات جديدة مع إيران هذا الأسبوع",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/9/28/iran-war-live-tehran-warns-its-fully-prepared-for-war-amid-hormuz-tensions?traffic_source=rss"
+   ],
+   [
+    "동아일보",
+    "https://www.donga.com/news/Inter/article/all/20260928/134740827/1"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260928_0003805146"
+   ]
+  ],
+  "first_seen": "20260928-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-27",
+  "ko": "이란, 미 뉴욕 추가협상 계획 부인 — 카타르 등 중재국 통해 입장 전달했다고 밝힘",
+  "en": "Iran denies plans for new US talks in New York — says it conveyed its position through mediators including Qatar",
+  "ar": "إيران تنفي وجود خطط لمحادثات جديدة مع الولايات المتحدة في نيويورك — تقول إنها أبلغت موقفها عبر وسطاء من بينهم قطر",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260928_0003804711"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE00cmJwRkluSDhvdmFOblpVVXZZVlgyY0NuNUZiSm5OTVZ1MzI5Ni0xNXo2U3E4Tm5zLXRiQlpZVDNzRkFCQllYTXZXWVBlbWFmeHp5RHdKMXc5bHR4QXfSAV5BVV95cUxNNHJicEZJbkg4b3ZhTm5aVVV2WVZYMmNDbjVGYkpuTk1WdTMyOTYtMTV6NlNxOE5ucy10YkJaWVQzc0ZBQkJZWE12V1lQZW1hZnh6eUR3SjF3OWx0eEF3?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248133/No-plan-for-Iran-delegation-to-hold-talks-with-US-in-New-York"
+   ]
+  ],
+  "first_seen": "20260928-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-27",
+  "ko": "영국 내 '미군 이란공습 거점' 기지서 폭발물 테러 미수 적발 — 5명 테러 혐의로 체포, 배후에 이란 연계 의혹 제기됨",
+  "en": "Bomb plot foiled at UK base used to strike Iran — 5 arrested on terrorism charges, Iranian link suspected",
+  "ar": "إحباط مخطط تفجير في قاعدة بريطانية استُخدمت لضرب إيران — اعتقال 5 أشخاص بتهم إرهابية، مع شبهات بارتباط إيراني",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSUVQdGdQNkExS2gtaXRtcVNzbVp0WXBCei1zZDZXMGpsOUJ3Z0N4eEdvelZUM1ZBRXl6VHpnZWdpWlBsT0lVemdGNy1TdmYzT1RDNVRoNE1PWDdjb3VrV3VaaTlweExWQ1VJdng2Q3B5dGlJQ3BJc21oaEd5ME5ZMWszRlRIOUU0MFU4VjB4YVJqRENy0gGaAUFVX3lxTE5ncmdzQmpQMllQc0lzTk1RUVpRWkoyNFVlaTNWT2p6WDFXWHpuS05zc2g4SU9BQmt1eUt4Q1RXRWxSNFNDbk1BVGFPUW1IUF9SNkc2WWwyQ2NzaFdDUGFDc0JRcUliYlU4aUZUY2V1R3c5X1YxTldyNTlfOUZlN3EwTjhwbHBkR2U0WjYxa1NzaUxjWC16Sk95eVE?oc=5"
+   ],
+   [
+    "문화일보",
+    "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KeTNUTVJrWHFXczlDdVJDM29GN2RtcTFvdFhleTdMb3h1UjFXeVYzUnBfMFFKWHVmeFd4Tk44V2xUZUNseFZJOFZDamtmamNj?oc=5"
+   ],
+   [
+    "seoul.co.kr",
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZEg5UmFQc2hFZ2lNOWpHWEZBVUhsMHBqYjg0ZFVfcFp1YnJRanBSaDFOeHJTcmJzZ3pxSzlpLUVPc0FrQXVnLVlwa1pPZnY5aDhIeW1WcVNCUTlaLU42ZmxxMGl4WlladU5mU2lqaVVENXdMWWxsM2NFSEdNQVRiaQ?oc=5"
+   ]
+  ],
+  "first_seen": "20260928-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-27",
+  "ko": "미 재무장관, 2주 내 이란의 대중국 원유수출 사실상 중단 전망 — 미 해상봉쇄로 신규 수출 차질",
+  "en": "US Treasury Secretary predicts Iran's oil exports to China will effectively end within two weeks — due to US naval blockade disrupting new exports",
+  "ar": "وزير الخزانة الأمريكي يتوقع توقف صادرات النفط الإيرانية إلى الصين فعلياً خلال أسبوعين — بسبب الحصار البحري الأمريكي",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20260928_0003804966"
+   ]
+  ],
+  "first_seen": "20260928-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-26",
   "ko": "이란, 유엔총회서 '7일 내 호르무즈 재개방' 평화안 제시—최고지도자 하메네이 승인, 미국은 회의적·거부 기류",
   "en": "Iran presents 7-day Strait of Hormuz reopening peace plan at UNGA — approved by Supreme Leader Khamenei, but Trump reportedly skeptical and rejects it",
@@ -1668,123 +1781,6 @@
    ]
   ],
   "first_seen": "20260917-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-17",
-  "ko": "이란, 스웨덴과 외교 갈등 확대 — 스웨덴의 이란 외교관 추방에 맞대응, 테헤란 주재 스웨덴 외교관에 48시간 내 출국 명령",
-  "en": "Iran escalates diplomatic row with Sweden — orders Swedish diplomat in Tehran to leave within 48 hours in retaliation for Stockholm's earlier expulsion",
-  "ar": "إيران تصعّد الخلاف الدبلوماسي مع السويد — تأمر دبلوماسياً سويدياً في طهران بمغادرة البلاد خلال 48 ساعة رداً على طرد ستوكهولم دبلوماسياً إيرانياً",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxNclFsc09MLWhlNGl3b016Z0Y4YmpTVVZiSUx2YWNmQTRxQWxIX0ZxM1EzRFdTRV9PbDQ1SWE4eVdPcUZvYVJvWnNCN3ZTTDlYSnJER25yc3hUdUxaOWk4Y1AzWDVhZTYwd1JCbG55UnZreE11MHlzU0d3LU94NEdueXoyVWJUWVRNWlJEaU1SaWdITjd2VnZNeGNDd3ZsOUZpOXVhOW5WREZLWmpTZ1BxVk52UHh1ZmtDWHc?oc=5"
-   ],
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86266666/Tehran-orders-Swedish-diplomat-to-leave-Iran-within-48-hours"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBLODdYaGFWMUJ0bXdLX09EelVsUFVUVG00UnlaekpwZUQ3M2dKQkFBT3hHRWF1RGtHWS1uYWNHUVJ1ZG9DV0IyVURTUnpybkhJTE1R0gFYQVVfeXFMUFpacTIzdnB5b1d3Ukh1N1NtZnBLNnlqM1cydVQzV2w5amJIcmlHUmJMR2tNandDc0ZmVnNBaHRGRWstT290Y2VPcFVEdHRxRW5yaWZWQmVTRA?oc=5"
-   ]
-  ],
-  "first_seen": "20260917-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-17",
-  "ko": "이란, 호르무즈해협서 토고 국적 유조선 공격 — IRGC 해군이 '불법 통항 시도'라며 타격, 이란측 주장",
-  "en": "Iran attacks Togo-flagged tanker in Strait of Hormuz — IRGC Navy says it struck vessel for 'illegal transit attempt', per Iranian claim",
-  "ar": "إيران تهاجم ناقلة ترفع علم توغو في مضيق هرمز — البحرية التابعة للحرس الثوري تقول إنها ضربت السفينة بسبب 'محاولة عبور غير قانونية'، وفق الادعاء الإيراني",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSi1abzhIYlluaDBLZmJDM2pPWWRHNTBUTF9sMXJYdzBXZW1SWmN0NE1zZDRtVUdPbEk2Wmlqb1V0aEo1M1RSZVo0RW1sRlUtSURubkl5ZExCUTdfc1lCREdZcW1NVlFBOGd0UFFqQTFZaWx1TnZLS1p5aFBmaWdZdHJWYVJEeWMxZHNtSVoxV1BjRDNXRzVsUXlyYzJYcVdfSWo0MnhuMA?oc=5"
-   ],
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZ3lzRk1SWkI1aVhvMGE0S1l2blkyTnp1U1BNNGFNaUhCVlQ2ekpPeHI3LUlLQzAtenZad3o1clFxVnh3U05tdWdfeUc5RG9IV3lnV0xjSTZ1SzVaY3BSR0w3TjNtekotVUpDVmQ4RGljRUJSVElSTWMyUDFzelhfdTBzX0l5NmpyazlVWkttLVpoYjJiV1BMcGVwTzlIdE45aXdFbFNBOXJFcmxDQ1lkcG44SVNTRU1KRGxHR2xqcWtkT0JRb0h2VWpwTFpCcE92WDd1aA?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/9/18/iran-war-live-trump-weighs-big-decision-on-iran-tanker-hit-in-hormuz?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20260918-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-17",
-  "ko": "사우디-후티 공방으로 5명 사망 — 후티, 사우디 타이프주 등 공격 지속, 오만·쿠웨이트·카타르가 공동 규탄",
-  "en": "5 killed as Saudi Arabia, Houthis trade attacks — Houthis continue strikes on Saudi Taif governorate, Oman, Kuwait, Qatar jointly condemn",
-  "ar": "مقتل 5 أشخاص في تبادل هجمات بين السعودية والحوثيين — الحوثيون يواصلون استهداف منطقة الطائف السعودية، وعُمان والكويت وقطر تدين الهجمات بشكل مشترك",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxPV3pvTmFWQ0RPVWxMUGFzcEQ5LWk1a0JNOXh1aHpFdjNiTi04MXN1ZkVha2k2bHpuVGdUY3JxTjhZT1pYSWs5Y3BEM2lXSk1vS1djSHg0RWxVUnl5N1F4cFNiUDBpUFBVU2RyRlVKSmh3aTVOOWNvOThFRTVyblRBbzJwTm1DMnNvTmp2SzVXcjJCNVJoczVMWmFRRW1ZUkV0b29j0gGoAUFVX3lxTE9QTHNKNkl0bzkyeVJJX19BYmV5LUdxbnFxR3REUGFLcmlxc3Q0c2dvQ2JJWk5wc0JrQnJGbml2QU55MzRvcWtCSU9KM0FPald0dkFFN29YTUx1ODRSdVBHcU5hS3NyUUFzeE5pTU1hbHpMWXVnaGNVVDJJal9xOFYwamV1ekh4VXBnWUJlOVFmVTdLeFhQSU91akFZOUhMaVpLbVl1c29PZA?oc=5"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOM2Z0QjhPS1hJTHl2VzdsVlNUT3RlUDVISHFmTFNJSDBiUzlfcmktaC02UmF0UWl4V2xjdzJTR1JfNTFvWnNZMXJNajVXRExSRjA3dS1kdENneUcyN3JDR0FPWEM2VWl6WXFHQnBIUWRFVFNzWXhadVZlZEtFWUNMVkI0QWNveGZ0TXlqODlhb0N1Mjl1X25senMxNEpKcjBVaGdZTVd0eUFleXlzUG5qd0MzZ01sajJ3Y3pQSw?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdGZlZVQ0S2pvTzdHUHFzVVdRLTBZTVFjcDh4Mm56ZEppUFNEN3pvN3QtME9RVFZmTWhmZUE2RVZhZWRJTzFpdGNqN3FfemVzUnJ4WU1mMm95V1ZRZ0JzRTJVS3BpNWtlUXdGcml3RFllOGxkY3U5STlyeV9seTdac3VoZGd3ZlN4d0V4dFhmODF1dmswTVBmTmhhaUlNb25XSVVibVpIcjRTNGdF?oc=5"
-   ]
-  ],
-  "first_seen": "20260918-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-17",
-  "ko": "미, 사우디에 F-35 전투기 최대 48대 판매 승인 — 이스라엘 반대 속 의회 승인 대기",
-  "en": "US approves sale of up to 48 F-35 jets to Saudi Arabia — awaits Congress approval amid Israeli opposition",
-  "ar": "الولايات المتحدة توافق على بيع ما يصل إلى 48 مقاتلة إف-35 للسعودية — بانتظار موافقة الكونغرس وسط معارضة إسرائيلية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/17/trump-administration-approves-sale-of-f-35-jets-to-saudi-arabia?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/us-says-it-will-sell-48-f-35s-saudi-arabia"
-   ],
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSGtpbGNKbDdhNmlyS0xqY0JjbHhiNFZnaGV1THAwYVRycUZZYUE3SS1WZkVnWm0yMjhhanlPby1zbU05OEt6RTN0WjhFbHNQai0zZlEzby1DOXBHYmVYZlJDYWVPaW9xUlB4VDlvZGJOcEp6SXRqSXdRTkRtNnR4RzJTS1o?oc=5"
-   ]
-  ],
-  "first_seen": "20260918-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-17",
-  "ko": "이란, 미군 MQ-9 드론 케슘섬 인근서 격추 — IRGC 발표",
-  "en": "Iran shoots down US MQ-9 drone near Qeshm Island — IRGC announcement",
-  "ar": "إيران تسقط طائرة أمريكية بدون طيار من طراز إم كيو-9 قرب جزيرة قشم — بحسب إعلان الحرس الثوري",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247839/IRGC-destroys-US-MQ-9-drone-near-Qeshm-Island"
-   ]
-  ],
-  "first_seen": "20260918-0700",
   "status": "pending"
  }
 ]
