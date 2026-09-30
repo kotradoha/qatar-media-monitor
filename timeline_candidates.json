@@ -1,5 +1,80 @@
 [
  {
+  "d": "2026-09-30",
+  "ko": "미군, 이라크 철수 완료 — 친이란 무장세력 환호 속 이란 쪽으로 힘의 균형 이동",
+  "en": "US completes troop withdrawal from Iraq — power balance shifts toward Iran as pro-Iran militias cheer",
+  "ar": "القوات الأمريكية تكمل انسحابها من العراق — ميليشيات موالية لإيران تحتفل مع تحول ميزان القوى لصالح إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa3pxVVVPOVd2UmNNZ3NhcVhvMFJTVzFkdE5KbGhVSjRicUtCTGZ2T2d5MHFBcFR0SVUtMnNfUEs3aGJURGxSSWwxOWlGdEVCbUhoQ2lwSDZ1Y3hSZmQ5eWlrVkhsdWM5SU9OTUxHdWlnRzJSSGVkWU1wNUxZVF8xUVVSYUwtME9pSkVkSEp2SnZiM1VTcnRSaTAyQWE5WDk5?oc=5"
+   ],
+   [
+    "NPR",
+    "https://www.npr.org/2026/09/30/g-s1-145604/up-first-newsletter-iraq-us-troops-scotus-deportations-trump-ai"
+   ],
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhbF9aR0lZTFdzQlJpeEFqbXVvbVkwbHV4WWVUZ1UyTU9ZUkNXMjlMcXlXOUt1OXZ0MUY4ZFdJTll6SmRjNzlkTmZxcERKX2pHZnFIUWFnWXZicGs?oc=5"
+   ]
+  ],
+  "first_seen": "20260930-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-30",
+  "ko": "이란, 호르무즈 재개방 '7일 계획'에 대한 미국의 공식 답변 수령 — 도하서 중재국 통해 전달, 이행 순서 두고 이견 지속",
+  "en": "Iran receives official US response to its '7-day plan' for reopening Hormuz — delivered via mediators in Doha, dispute over implementation sequence continues",
+  "ar": "إيران تتلقى ردا رسميا من الولايات المتحدة على 'خطة السبعة أيام' لإعادة فتح هرمز — تم تسليمه عبر وسطاء في الدوحة، والخلاف مستمر حول ترتيب التنفيذ",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "경향신문",
+    "https://www.khan.co.kr/article/202609301930001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa0ZnME5PM2tFOXBTRG9ibkxwMG5Pd1AtTmY4V0ZCU3I4Z0tsam1mcjdNWDVTQ3Jwa0d5YUg3YTdvcXkzNTFSdy1FbktYWHJFazAxRGlMaGozVXNxcXpFZm9GUGpXazBTSVpFdjdzQUNoaDZYMmVvWGUtckxtTjVRQzN5Y3M0bnczVkVnbVMtek9ONGZJ?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR2hTZHg3aFBHZnJsWE56aHhkcXdubk5JOFFvRmhzb3lWQjFrd3NVbmJDOVk4SjBTSE4tSm1pbXJVUVFGSWxKdUMwV1JhcE83TVVhWC12ZkNBZThNaGRrLXNSZE9jUWEtbWxPV3hnRDlHcFBmaldvdjNHYUxyM3NiYS1iX3BjZVZYN0hfbWdMN0Y5SDJkVHhPOHh3?oc=5"
+   ]
+  ],
+  "first_seen": "20260930-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-30",
+  "ko": "두바이발 텔아비브행 플라이두바이 여객기 조종석 내 흉기 다툼으로 피랍 신호 발신, 사우디에 비상착륙",
+  "en": "Flydubai flight from Dubai to Tel Aviv sends hijack alert after cockpit knife fight, makes emergency landing in Saudi Arabia",
+  "ar": "طائرة فلاي دبي المتجهة من دبي إلى تل أبيب ترسل إشارة اختطاف بعد شجار بالسكاكين في قمرة القيادة وتهبط اضطراريا في السعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/30/flydubai-flight-to-israel-diverted-after-attack-on-pilot?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/30/flydubai-flight-to-israel-diverted-to-saudi-arabia-after-emergency-alert-2?traffic_source=rss"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/live/2026/sep/30/dubai-israel-saudi-arabia-flydubai-flight-diversion-pilots-fight-latest-news-updates"
+   ]
+  ],
+  "first_seen": "20260930-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-29",
   "ko": "호르무즈 해협서 선박 피격 화재 발생 — 해양당국 확인, 오만 등 걸프국은 호르무즈 우회 위해 석유저장 확대 추진",
   "en": "Ship struck in Hormuz Strait sparking fire — maritime agency confirms; Gulf states including Oman boost oil storage to bypass Hormuz",
@@ -1727,65 +1802,6 @@
    [
     "The Washington Post",
     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYk51QUpzSHBoWFR4UjJDZjhsbUNqck1YU2RndG93S2tzZjBMS2RqTWFKRURWenlzYzFpTGJYV2k4STFQZjNCbjhHaE5kUnZfeUlMNmhtblBBYzRzV1B0SHREbGk3R2JqbDVKSTJRMWduU2dTZzZ6Qkh0XzV3OUEyWWVldnJrTW00bDk0ZU5VbzBzVS1GSTJIVnpXLU00eVhuLUJ4V2llajVJdlJoN2EwXzhtTkwycklCS3dnNkRMd056Qm5Bd0N2MndkU0FBaTlRZEE?oc=5"
-   ]
-  ],
-  "first_seen": "20260919-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-19",
-  "ko": "美 중부사령부, 이란전쟁 비용 최소 436억 달러로 집계 발표",
-  "en": "US CENTCOM says Iran war cost now at least $43.6 billion",
-  "ar": "القيادة المركزية الأمريكية: تكلفة الحرب على إيران بلغت 43.6 مليار دولار على الأقل",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUG16UHBsYk50eWRFT2N1UFlyU3dqT1p4eGVEYUFuMUVBUlB3cm15UlY2d3pJVC1Pd0F4aDlOTWFHZ1oyQ1A5Q0pGRk9zWWo2XzRDTXZKb1ZxcVNQQkVOZnhGdzlVUG5PNy15TGJGNHplVXpaWTgxVHA3Ny1qZzIycXpqWHhPcFI4NWVGSS05bm9obzU3VjlJb21LXzVmRDNsTWFkZ19SRFdiQmladlZUNWdNdzBrSnYxVWdIb2VrSWc?oc=5"
-   ]
-  ],
-  "first_seen": "20260919-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-19",
-  "ko": "쿠웨이트 주둔 美 기지 이란 공격 피해 사진 공개 — 美 매체 MeidasNews, '파괴' 현장 이미지 최초 공개",
-  "en": "US outlet releases images showing damage at US base in Kuwait from Iranian strikes",
-  "ar": "وسيلة إعلامية أمريكية تنشر صورا توثق دمار قاعدة أمريكية في الكويت جراء ضربات إيرانية",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/us-news-outlet-releases-images-destruction-us-base-kuwait"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVWo2cGZKYUZIczZ2Q3BueTlwYXBrNnRlaDktajY2ZDhFZ3RjelZJcE45LW9sSnFKV0pyZ0dkZTJmczF5czg3a1pzQUpvMlRkb1IyNi0xeUxRd3Nvb1VpSk9kcFVOTUUtX1ByWXBDZlhsamEzRWprdFhCbTU0U0gtM2g2YVpEVmRVMjNHZlY3am1relNEUjBvQXFNQXJSS2xlZFg1R2Z1cWZTQ2xOS1p1UXFSZU1UUjFZ?oc=5"
-   ]
-  ],
-  "first_seen": "20260919-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-19",
-  "ko": "사우디, 유럽 정유사 대상 10월 원유 공급 취소·아람코 유럽向 원유 공급 중단 — 중동 전쟁발 에너지 차질 확대",
-  "en": "Saudi Arabia cancels October crude allocations to European refiners; Aramco halts European crude supplies amid key route disruption",
-  "ar": "السعودية تلغي شحنات نفطية لمصافي أوروبية في أكتوبر وأرامكو توقف الإمدادات الأوروبية وسط اضطراب طريق رئيسي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-cancels-oil-shipments-european-refineries"
-   ],
-   [
-    "presstv.ir",
-    "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQWxXQjBTc0JmUUhPZ29MdUNBYmVMUnpaT2d1bTFiTU0xQ3BuWVI2a3FHWTNFMDJuMGFZLWtlTk5XZWdOM2RLa0ctWk5uYVVUNS0xMlJ1SWhKTFYybG1weW13UVVPdVR3cFY4S0tmM016OWRtcnd2NUxTNHFQMlo5ZkxRR0I5QmxHQmVvWm1ZcWZPQlVPTXc?oc=5"
    ]
   ],
   "first_seen": "20260919-0700",
