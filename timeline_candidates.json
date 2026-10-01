@@ -1,5 +1,55 @@
 [
  {
+  "d": "2026-10-01",
+  "ko": "미국, 뉴욕 주재 이란 유엔대표단에 조기 출국 명령 — 루비오 국무장관이 미·이란 협상 교착 속 아라그치 대표단에 뉴욕 즉시 철수 지시",
+  "en": "US orders Iranian UN delegation to leave New York early — Secretary Rubio directs Araghchi's delegation to depart amid stalled US-Iran talks",
+  "ar": "الولايات المتحدة تأمر الوفد الإيراني لدى الأمم المتحدة بمغادرة نيويورك مبكرا — روبيو يوجه وفد عراقجي بالمغادرة وسط تعثر المحادثات الأمريكية-الإيرانية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Axios",
+    "https://news.google.com/rss/articles/CBMiekFVX3lxTE9kajk0N19pM0RMdzJhTjdBaTFYbm91cFdWanAzRnVoS0JVRDlwNmFseTZ1bEpfZXNWdjRsWFVaVzRfbUhqdzhmVlhSc1Vsb2NRQWh2WFVnUmZKSXRic2lnWXY5dk1aWkZTX2VMelVxYk9NeXBXb1ZwYUd3?oc=5"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeWVvUDdCNmlZVnNUdzRnOF9VR2VqekVrd1R4aW9Jc3hvOHBHY19qNC1OVnpFa252WHpvX2lHRjFfbjNDanQzRVBXZV81ejVmcmpTTVNMWGdpaF9RSngwV1d6alY1YkhFZUl0THAxc2pZZXBEcThscGhPS2RwbTNSVmh6V0Q3aVlDNWZLR19MSlppOHM3Zml3dl85anNPM3l5Q1E?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTy0tRHY2amY5Y2xyam5xNGFxMjlmYjI0ZnBYX184SmdFbGt1TERhb1RUZG5kSU1tTl8xbjhua25mTGVKMFA3RU9iQXlySTBmb2dSaHV2Q1ZFb3hQbnVwY2s2WDFjay12RVNFaXZLS3hNWWRtUDVvOFdCaU5HQU5MTWI0c0hmaUdKc2tDYnJaUVdMOGhmTTNqYUxGUmd3Qno1cUFDbA?oc=5"
+   ]
+  ],
+  "first_seen": "20261001-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-01",
+  "ko": "영국, 이란이 RAF 공군기지 의혹 사건 연루 가능성 제기 — 이란은 '잘못 짚었다'며 강력 부인",
+  "en": "UK says Iran may be linked to alleged RAF airbase plot — Iran dismisses claim as 'barking up the wrong tree'",
+  "ar": "بريطانيا تقول إن إيران قد تكون متورطة في حادثة مزعومة بقاعدة RAF الجوية — إيران تنفي بشدة وتصف الاتهام بأنه في الاتجاه الخاطئ",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/1/uk-says-iran-may-be-linked-to-alleged-airbase-plot-drawing-angry-denial?traffic_source=rss"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxORHNsVHNHd1Y3MVJQZlE5WGpIWnA1amJxbTc3MmdfM3gyU2xVT3Jsa2FXT2hlMjZoWHI0YzZtZEVtNkUyaWNjVzVWdUhNQ2hXa3RvWDRBeHpiS0Z1eXpZWlZpb3NyM1BpakdEVlNlRDJEYTd1NGlPYlhWLW1QdHBUTmMzWXAyMGk4X0pwX28zRXNmaElKc1c0WmV0aFhHeV9mcUxkRHZEbUNjeWdfR1ZFcmR2MDJDa2dMdzRRWUV3cw?oc=5"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMigwFBVV95cUxOR00waWRaVXlCTDYtRTZlaG5FRHJQcm8xNVFrcWJvYlo0M3JvY1Z1VzcydVllTkxOM0JYNnE1OFJRb2JxVkFPZTJ4LXpFN0hOVXRaeHVrdHNQWXJEVjMxLTBfQkxNaVVFdzhianNxengyMTJJUlItNFFVWk93MnpfV0pWUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261001-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-30",
   "ko": "미군, 이라크 철수 완료 — 친이란 무장세력 환호 속 이란 쪽으로 힘의 균형 이동",
   "en": "US completes troop withdrawal from Iraq — power balance shifts toward Iran as pro-Iran militias cheer",
@@ -72,6 +122,31 @@
    ]
   ],
   "first_seen": "20260930-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-30",
+  "ko": "UAE-이스라엘 플라이두바이 두바이→텔아비브 여객기 조종실 흉기 피습·추락 시도 — 오만 국적 부기장이 인도인 기장 흉기 공격 후 사우디로 비상착륙, 승객·승무원이 제압하며 추락 저지, 네타냐후 '아브라함 협정 겨냥 테러'로 규정",
+  "en": "FlyDubai Dubai–Tel Aviv flight cockpit stabbing/crash attempt — Omani co-pilot stabs Indian captain, plane diverted to Saudi Arabia, passengers/crew subdue attacker preventing crash; Netanyahu calls it attack targeting Abraham Accords",
+  "ar": "محاولة تحطيم طائرة فلاي دبي من دبي إلى تل أبيب بعد طعن في قمرة القيادة — طيار مساعد عماني يطعن القبطان الهندي، تحويل الطائرة إلى السعودية، إحباط الركاب والطاقم للمحاولة؛ نتنياهو يصفها بهجوم يستهدف اتفاقيات أبراهام",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSUVoWWFZd2hfb29WZ0tCQV83bTRCdFI5TTVLbWh4bHdxcWRxTTY5N2gxN0I4ZkN5TUp4YVpaVGMtSTRjTGRTMkV5cHVLeEl4a19lWXNBdzZVeXVnMGNCanJWdTRSNjVDUzRtSndzQ2ZBV3JsdlBXNkRlVGd5WXRaU2UweXFIVG1DVWpWby1sekV4Y1FBTDZtS1Z5aFVXSE9venYxdTRn?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/oct/01/hero-pilot-stabbed-flydubai-plane-flight-israel"
+   ],
+   [
+    "BBC Middle East",
+    "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss"
+   ]
+  ],
+  "first_seen": "20261001-0700",
   "status": "pending"
  },
  {
@@ -1734,77 +1809,6 @@
    ]
   ],
   "first_seen": "20260920-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-20",
-  "ko": "이란, 카타르 통해 미국에 종전 조건 전달 — 미-이란 외교 재가동",
-  "en": "Iran conveys war-ending conditions to US via Qatar — diplomacy reactivated ahead of US-China summit",
-  "ar": "إيران تنقل شروطها لإنهاء الحرب إلى الولايات المتحدة عبر قطر — إعادة تفعيل الدبلوماسية",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Doha News",
-    "https://dohanews.co/iran-says-qatar-conveyed-its-terms-for-ending-u-s-war-to-washington/"
-   ],
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSWZXc1lNVjNqSG8wRXRNMGU4ZjVXT2E0MmZCWE1objZmUlpYZlBpUEZsbDJEV0FLVjgyZTU1OWJfaGlRckJ3a1FlbzRlc2djMWdYbkQ1SmVINVRpdnc1MlIyRHdOTjhfZ1p5d3pVNVhtZENJVlB5ako0VWZ2Rnp0Zl93?oc=5"
-   ]
-  ],
-  "first_seen": "20260920-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-20",
-  "ko": "이란군, 미국의 대이란 공습 재개 계획 인지 발표 — 공격 시 미군기지·주변국 보복 위협",
-  "en": "Iran's military says it has been informed US plans to resume strikes, threatens bases and supporting countries",
-  "ar": "القيادة العسكرية الإيرانية تعلن علمها بخطط أمريكية لاستئناف الضربات وتهدد بالرد على القواعد والدول الداعمة",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRmYyNXltNVFfdzRTaEF4ZnRxZ05aLWxKRHhaMUxfb29iM3B5VXdLTUttMGJJOXpiXzRyQzdONzVvaUpoS2ZudERvTFZ5bE1PMzl6b2EtSTRZeTduV1ROU3RzRng0NVpTcHFoNV8tUkN3YzgyMjFrc3owbUlSQ1R3MDFua3NVTWk5YXkyWWZLdVhJZWVMcFpsV2lCSkNzdUJEZDZoU2xTUW85a21kSlBHa1hzeVFYVUtrOTQwd05R?oc=5"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTFBBaUlNNHExT0F4eVR4OVRya3drdHBiOGZDVnVHT1FZazYtSHhwcVgwclltaDF0WWZxbTEyMjdxeHktbDBEbVNURDZrVlhaTFJKUVV3c25uREE1ek11QTlXMVJ2MjVvRGh0ZGc?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/247912/Any-attack-on-Iran-to-trigger-sustained-painful-strikes"
-   ]
-  ],
-  "first_seen": "20260920-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-19",
-  "ko": "美 국방부, 이란전쟁 미군 전사자 축소 발표 의혹 — WP, 국방부 공식 발표(18명)보다 최소 4명 더 사망 보도, 국방장관은 '거짓'이라 반박",
-  "en": "Pentagon accused of undercounting US troop deaths in Iran war — WaPo reports at least 4 more deaths than Pentagon's official count of 18; defense secretary calls report a 'lie'",
-  "ar": "اتهام البنتاغون بالتقليل من عدد القتلى الأمريكيين في حرب إيران — واشنطن بوست تفيد بمقتل 4 جنود إضافيين على الأقل عن الرقم الرسمي البالغ 18، ووزير الدفاع يصف التقرير بـ'الكذبة'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/19/report-more-us-troops-have-died-in-iran-war-than-pentagon-says?traffic_source=rss"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMigAJBVV95cUxPQW5pcFprN2NGMWk0RVFPbTVFSk5WSE1YcHlOdkc1TzY5R2N4VzZtV0Y3eHRLRzJIbXR5ZWdNSWJrdGRUTkZIMS1zMzA3MWptTkw4VXowUXd3aUhpQUpqaDctdFJQc21ORXdmNGJZSVppSWt2c0NnRVRlaE9iNWkzOTU2RVpBYW1mMW83RmZ4Z3dWQkxaVkNDTEhUWk90ejd1NDdHQ3JVcUU0YktpT19GRDlzazZUdnNYaEQyRFVRNlU0Y1B3WnhSQzNoclh5TTNXNGgwREJxVktmTEtWbHFvYjNVVVc0d181cFFpSEZybDZWMkwydEVGTFV1UGJKOWlR?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQYk51QUpzSHBoWFR4UjJDZjhsbUNqck1YU2RndG93S2tzZjBMS2RqTWFKRURWenlzYzFpTGJYV2k4STFQZjNCbjhHaE5kUnZfeUlMNmhtblBBYzRzV1B0SHREbGk3R2JqbDVKSTJRMWduU2dTZzZ6Qkh0XzV3OUEyWWVldnJrTW00bDk0ZU5VbzBzVS1GSTJIVnpXLU00eVhuLUJ4V2llajVJdlJoN2EwXzhtTkwycklCS3dnNkRMd056Qm5Bd0N2MndkU0FBaTlRZEE?oc=5"
-   ]
-  ],
-  "first_seen": "20260919-0700",
   "status": "pending"
  }
 ]
