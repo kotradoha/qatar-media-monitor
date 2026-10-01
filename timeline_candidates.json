@@ -50,6 +50,40 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-01",
+  "ko": "이란, 한 달도 안 돼 두 번째 미군 수중드론 포획 발표 — IRGC, 호르무즈해협 개방 시도 저지 주장",
+  "en": "Iran announces capture of second US underwater drone in under a month — IRGC claims move foils attempt to open Strait of Hormuz",
+  "ar": "إيران تعلن احتجاز ثاني طائرة مسيّرة تحت الماء أمريكية في أقل من شهر — الحرس الثوري يزعم أن ذلك يحبط محاولة فتح مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Tehran Times",
+    "https://www.tehrantimes.com/news/530620/Iran-captures-second-US-underwater-drone"
+   ]
+  ],
+  "first_seen": "20261001-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-01",
+  "ko": "테헤란 국제공항 항공편 42% 급감 — 미국의 이란 항공사 제재 여파",
+  "en": "Tehran international airport flights plunge 42% amid US sanctions on Iranian airlines",
+  "ar": "انخفاض رحلات مطار طهران الدولي بنسبة 42% وسط العقوبات الأمريكية على شركات الطيران الإيرانية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE81OFB4eE9fa2Z2MG5nd0VoZDhjTzhTV0xtbUpXRURRUk43NlJzUmFQWGFlNlRqeEpIeW5GcEJiTUFzck9YNElTd0dDNHZ4bHZEcFM1eElGTkxGSldSWnNBbmJ30gFnQVVfeXFMT2ZrMUM5YTlQVXh4VlJSMF9scEJQb0I4REJZSTBrVWFrbFhKbTVhMTVVVmw5SjRoUXlHSmUtc1A0bnJCQXdtSlBHaS1sT2xoYUlNNTJGbmY2ZjFrTXgyZl9zb2RaRTJpNA?oc=5"
+   ]
+  ],
+  "first_seen": "20261001-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-09-30",
   "ko": "미군, 이라크 철수 완료 — 친이란 무장세력 환호 속 이란 쪽으로 힘의 균형 이동",
   "en": "US completes troop withdrawal from Iraq — power balance shifts toward Iran as pro-Iran militias cheer",
@@ -147,6 +181,52 @@
    ]
   ],
   "first_seen": "20261001-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-30",
+  "ko": "플라이두바이 두바이-텔아비브행 여객기, 오만국적 부기장이 인도인 기장 흉기로 공격·추락 시도 — 승객 174명(이스라엘국적 166명 포함) 탑승, 사우디 비상착륙으로 참사 모면, 전원 생존",
+  "en": "Flydubai Dubai-Tel Aviv flight: Omani co-pilot stabs Indian captain and attempts to crash plane — 174 aboard (incl. 166 Israeli nationals), emergency landing in Saudi Arabia averts disaster, all survive",
+  "ar": "طائرة فلاي دبي من دبي إلى تل أبيب: الطيار المساعد العماني يطعن القبطان الهندي ويحاول تحطيم الطائرة — 174 راكباً على متنها (منهم 166 إسرائيلياً)، هبوط طارئ في السعودية يتجنب الكارثة، نجا جميع من كان على متنها",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdlBIQTBLa3lMaHU0V1pOV2YzVnFTa2Rzal9BNGJqZDZiQl9GWkxfWE1GVzFEQkhRVnNjZlFGLVFQTERWUEFFVmpUcVd3dnNUVlpUYWlDR0NMRUF2UmdBUExQbDF2RWlKdl9CYXE4R1plMjVrNy1IT3A1SDNlWTllTlV5NWUtcFFZ?oc=5"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOTlDVnRPM016ZnBHZEIyRk9FVHpVSDlFYmNHRWxnUndFNzNmMnMtdUFCSlBSQmdNRWluYjlYUTVScVMyWHZPUUdRYjkxajREZkFIRVhfUVlmOVVlMURUNmRZbjhIdzRNVnNhTkVOeWYyWTVkSjhtZU00cFdkeHdVel8zZWxfR0ljM2tYeHREUmt0b0cteFJ4RkhmUVBJdkJCZ0JKLWEzRWNJYXIwckxn?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQT1RDU0l3eU5nTnBlVmRsYkpBYTdSTEVRRE1WRk1qbVZYT0MxVzVMSWJMbHk3OElRU1M5RHlGXzV6UWFSdVJiU0cydV9qMlZvSE9mV0ZCcEZSVzJyVGx4X2x2SFJYTUw4N2lialRSOFoxSElUSHVMQ3RHZHZBamNQU21WdWJhbmJHUG9mXzFPbGpfbDRkUzBMYlVOODBPMUc1TTZzSHJYc0d5ME5Ud1NGQjR3d0xSUzdz?oc=5"
+   ]
+  ],
+  "first_seen": "20261001-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-30",
+  "ko": "美 해상봉쇄 여파로 이란, 9월 유조선 원유 선적 '제로'(0건) 기록 — 블룸버그 집계",
+  "en": "Iran records 'zero' crude loadings on tankers in September amid US naval blockade — per Bloomberg data",
+  "ar": "إيران تسجل 'صفر' شحنات نفط خام على ناقلات في سبتمبر وسط الحصار البحري الأمريكي — وفق بيانات بلومبرغ",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxNGN1MGNKUjBzWnpGQlc4ajFld09RRGJheWh2YksxWXpkQ09WRlBmcW9UQUZ0ek1XamVjVURmUTUtRUFfY0J2TWI4Zmc1VXhxSEV4QUJRWUdqTTg?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261001192400079"
+   ]
+  ],
+  "first_seen": "20261001-1530",
   "status": "pending"
  },
  {
@@ -1713,102 +1793,6 @@
    ]
   ],
   "first_seen": "20260922-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-21",
-  "ko": "G7 외무장관, 이란에 후티 지원 중단 촉구 공동성명 발표 — 사우디 원유수송 위협·역내 긴장 고조 비판",
-  "en": "G7 foreign ministers issue joint statement urging Iran to stop arming Houthis, citing threats to Saudi oil shipments and regional tensions",
-  "ar": "وزراء خارجية مجموعة السبع يصدرون بيانا مشتركا يدعون فيه إيران لوقف تسليح الحوثيين مشيرين إلى تهديد صادرات النفط السعودية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMimwFBVV95cUxORGtkM0ZFUjI1RkZlMUNza2ZEbzJnWE1UUVVjN0N5c1BPbG1lZWMtaVFHTXQwRkNpVUhvaDVNOF9uTlUyRE9PSjVxYjU4Vmc0aDdOZ2RRbm9TZG4tT084VmRIeUx4S0RiR1ZhcUpPYTU2Q2I5UVM3LWNIaENiTXBDRjkzYUI3UzlZM2loU0dIY2pHczlMSDhNX1YwSQ?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260922_0003800144"
-   ]
-  ],
-  "first_seen": "20260922-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-20",
-  "ko": "후티 반군, 사우디 수도 리야드 첫 탄도미사일 공습 — 요격됐으나 공항 인근 검은 연기 목격, 시장 급락",
-  "en": "Houthi rebels launch first ballistic missile strike on Riyadh — intercepted but black smoke seen near airport, Gulf markets plunge",
-  "ar": "الحوثيون يشنون أول هجوم صاروخي باليستي على الرياض — تم اعتراضه لكن شوهد دخان أسود قرب المطار وانهارت الأسواق الخليجية",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaFRmYktSYmFGRVRhRF9lMVBha2RQR1B4dHI2TkRvT1cxOFh3TVB3UXNvVjNfa3UxRGRQSjNiQ1MtYVBqMW9VNXNsTnpRa2JaYlpDWi10U3NwazZDRjJLbVEzYVRzdVdrTnA3LWFVWjlPVTlXbDhSdkJZRUVvZk1MVTdUMk5qZm9rbV9sT3BfeGlFU3FrbG4yTWVxcm90OFRpNC1Pc2pqcHJTYXUwQWdIWV9rU2wtQdIBuwFBVV95cUxPaU9oejdNQ3B1R0FZRS1sQ1FpTmlkNHJ0RFZyOUh5QXNHbzdheGgxeDNOV0dxT3VmR1ZFRDJobTZZV1VXVndOc3Nmb096dlpqMG01RWUzcVhxWDZKX3BkT0dVT3YyYUlPUXpveUYyMEtIU3dSTlVvVEhkZFVUdWNUemlBTVc0OUxJLXh5RHlQSmt3dE8tcTZOSWFFYnl3ZUJIM0x4cTlsMkJwM3NKRkt4WjZ2TmpXVjFoVHRJ?oc=5"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcXdwS3JEQUdHWlZMUFFybFNub05ZUWM4RW14ank0MnNNTk1icng4d1RlV0gxSDg5aHdFUnBzbjNjNVFkSktVbThRdTIyeUJreWNXdm9GcTBORlQ3LU04Nzg5aEdQamZLeFJkcUhuUWNYNXlFVF9FM3ZQWkpoQ1l0NE4teml3UF9QRWxnRVF3WHJValF0MW12VGxuQTZSbF9BNGRvZkJ0ZklSUUl2SWJfSThxbFVvVVRKUlZnVXUtMW5jbVk00gHKAUFVX3lxTFBRXzRzQW1oRWN0cnZrdjRiMm1MVjlWemFuRDZuVEVmc3A1VGRUQ2dGMnVrb0dmeHlqcXJWME1jYXhPMkdxQlBCeHdpc3JpOUNna2VwUDZOanI2bnhiNlRGbjNkX0tMT1Z4cW9qZ2RMREdnV3N2bGVNVXFTT3pKSU0wQlVYZkd3MWl2NUtTNVNsVklFNjRyRDhwZGhNbXE0b3oxSzgxdUU2dTFkWHpjUzVSU2cwZDBGeGNNRjNJOWllU1AtVURtSnN3V3c?oc=5"
-   ],
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVVA1c29jc25scFlPY2V6TjhVSTRnM2RyeWZfM3V3bUUtaEdKLUN4S0FyRG1fNF85TTFLdWZQeUF1SFlXQ3BQYW55cGo3TlNIRUk4aDJYdXMwZjZtZWVJRWR2bDl5UFFYaDRpMmhWcE1MZW5uMUlvXzZaRTFUX3l2MTdfdDdROEFKcmgwWGU0Yy16UjhCQVktQlB6czBJdjY1ODZaRGxCZTFhQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260920-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-20",
-  "ko": "이란 협상단장 갈리바프, 미국이 이란 조건 전부 이행 전까지 호르무즈 해협 봉쇄 지속 경고",
-  "en": "Iran's chief negotiator Ghalibaf warns Hormuz Strait will remain closed until US fully meets Iran's conditions",
-  "ar": "رئيس فريق التفاوض الإيراني قاليباف يحذر من استمرار إغلاق مضيق هرمز حتى تلبي أمريكا شروط إيران بالكامل",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "매일경제",
-    "https://www.mk.co.kr/news/world/12157638"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260920_0003797289"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20260920035100009"
-   ]
-  ],
-  "first_seen": "20260920-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-20",
-  "ko": "카타르, 후티의 리야드 공격 강력 규탄 성명 발표",
-  "en": "Qatar strongly condemns Houthi attack on Riyadh in official statement",
-  "ar": "قطر تدين بشدة هجوم الحوثيين على الرياض في بيان رسمي",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdzFmZnRQMng5bjFxN19oR19ZdEpWbzNGbmNCV253R2hwQlZ5Q3BvQnRMbndURzJ3NHMyQXR6UDVIV0lMcTkwYXRMeXBMTG12dG9vSXJfUXdEYTh6OEg2NDJMMkxJakRFVG0ybVluekJhMnZhbFdIUXNBclVOS1R1QXk1bjF0Wm9LWGwyR1BVQ2lZNTBBNFBoMjQtVzDSAaIBQVVfeXFMTjgwWnlXV1JLOFlLVTVYREV0Snc1UjlUVXRzZXFRay1uR0dwQjBMUnNLQ2xxa2ZJSjB2b0JpVkNGeWhUUjh5bW1fMWpPNzBUd0xXTVZOVEVjS2lOVE1SSXM3Rk00dDlmelZfZElrNTIzZzBybjJCMm1mWUR0MTFTd0ZxNjI4cU5lNHlFUE9PWktMVmx0VS1lZ2w1WGozLVZmQmhR?oc=5"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxPYzQ3MERJMWljdnRLRV9nUFFfMUIxcFFvNEtPbHU4cDNYdkdjS0t4U0oybmJabGpVcUFNNUJhbS1FdnZQeV9YQml3ZlpkcVE4ejZtdFFDemk4LVRHbURMRDltdGUtR0RZN0JHOWR5Y2R4NExEVDZzM2VkejBJd01GZVFqNkVlWHlQMjRrTXF6WnZQRmVRRDdveHJjN3ZHQQ?oc=5"
-   ],
-   [
-    "صدى البلد",
-    "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1tSWlrUXVIMkhYcE9pcW04UWtGUEUxUWU4MC1ic2xfQVcxZW03aFVuLW1LY19lTHF5VHBLOFlnOHdpWFlwdEpR?oc=5"
-   ]
-  ],
-  "first_seen": "20260920-1530",
   "status": "pending"
  }
 ]
