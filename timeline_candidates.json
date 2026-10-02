@@ -1,5 +1,55 @@
 [
  {
+  "d": "2026-10-02",
+  "ko": "美, 사우디·카타르에 패트리어트 포대 추가 배치 — 양국 석유·가스 시설 보호 목적, 이란 추가 공습 대비",
+  "en": "US deploys additional Patriot batteries to Saudi Arabia and Qatar — aimed at protecting oil/gas facilities ahead of possible renewed Iran strikes",
+  "ar": "الولايات المتحدة ترسل بطاريات باتريوت إضافية إلى السعودية وقطر — لحماية منشآت النفط والغاز قبل احتمال تجدد الضربات على إيران",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYU1oRW1nOE1XM2RHb09JMUVhYndmYnJzc1hHUDdicC0xbEYtYVhpS1F6T05CUVJPRXZUN2lpSTY0TFVfc2xPamdsN0ZsRnJxdGllWU5VYklrOGVzMUhXSEg1clRTTmZFQ21zdXRVQ2hUTE5pOVdtaUZwdFhYLVh3YUdxbVVwcHZEWl9JRE1oMWxnbVFORUV3amx2b0VSTk1XRDVUcmI5OXFCSnFfOFNzUWVNTUVUQ1pCZWozQQ?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zRGRjS1NtVmMyd3Jxb1JMQVRtS0tfb3c0NTFVeXBRdDlqNzBoY3kzV0wtUW45RnhmMzZETDVfa0o0d2d5X29vTC00blJaZEcwOEl5N0Zsc1FRR3F0?oc=5"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261002_0003812027"
+   ]
+  ],
+  "first_seen": "20261002-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-02",
+  "ko": "美, 이란 대응 위해 세 번째 항모강습단·해병대 2000명 등 대규모 증파 — 총 병력 증강 지속",
+  "en": "US sends third aircraft carrier strike group and 2,000 Marines in major military buildup against Iran",
+  "ar": "الولايات المتحدة ترسل حاملة طائرات ثالثة و2000 جندي من مشاة البحرية في حشد عسكري كبير ضد إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/2/us-to-send-third-aircraft-carrier-towards-iran-us-official-to-al-jazeera?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/oct/02/us-third-aircraft-carrier-middle-east-iran"
+   ]
+  ],
+  "first_seen": "20261002-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-01",
   "ko": "미국, 뉴욕 주재 이란 유엔대표단에 조기 출국 명령 — 루비오 국무장관이 미·이란 협상 교착 속 아라그치 대표단에 뉴욕 즉시 철수 지시",
   "en": "US orders Iranian UN delegation to leave New York early — Secretary Rubio directs Araghchi's delegation to depart amid stalled US-Iran talks",
@@ -81,6 +131,48 @@
    ]
   ],
   "first_seen": "20261001-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-01",
+  "ko": "사우디 주도 연합군, 후티가 메디나 예언자모스크 전력공급 변전소 드론·미사일로 타격했다고 주장 — 카타르 등 이슬람권 강력 규탄",
+  "en": "Saudi-led coalition says Houthis struck power distribution station serving Prophet's Mosque in Medina with drone/missile — Qatar and Muslim world strongly condemn",
+  "ar": "التحالف بقيادة السعودية يتهم الحوثيين باستهداف محطة توزيع كهرباء تخدم المسجد النبوي في المدينة المنورة بطائرة مسيرة/صاروخ — قطر والعالم الإسلامي يدينان بشدة",
+  "q": true,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "qna.org.qa",
+    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQS19fNnp3T09MbTZ6THp3cmZna2ZXR1FXUkZlcWpLOWYtLUUyY0xHU3ZqWFVkaVh6ZUhiQ3Fmb0VPd3A3NWw5SHRUd1hIbUhvSnByaG1zc2FFZnp1Wm9YSHhqbDRrR2luaW42NXlWWlNfMWhjdE8teERsVVpqTWpTSjBPLUIzd2VNWFBLRFBwTzVSM1A5aGlzSXp1aFcwQmpIcXRJRUR2Z0hwam9NM29SeDZjS3d6c1J2d1NWYl8weEVJWkU?oc=5"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPb3FtZ3FsYmZvZUp3T01lOEhnSmtuTkt6Y0FoOTUxb0YyY3B6clQxTHVLODFxdjh0Wk42X2hsaEtPZVhVYS1pT1JCVVc3aERvOGx5b0NHbm5ZU1kxYUkyVDBqWk56dDE0bVlWZ184SUxzNGhCX1RPYnJ5TnJkbFkyRXZoanVtaVlkellfcUJmWUhwaGVzelRETHFseUEyRkwyQXNHME4tLXRLZGpfenFObTN6SGZwSnF1cDJzNDIydlNoVUNJZUpnaGdpR05CS2VRNk5VREI4TQ?oc=5"
+   ],
+   [
+    "qna.org.qa",
+    "https://news.google.com/rss/articles/CBMi2AVBVV95cUxQNkNiV243a0d2aktPN2d0RVNmVHhPclp5TUpuZDBzVEJsV040Zkxlc2RXZm5SeW5BMmt3U3cwUVdOdVBDb2VWVjhfamxpc2tKV2h0Y3hkeVdEcktqUzdzaEdhVElzelowbkhiR2lDOWRuLUN6WHVKaVpYLTdrWWJJQWZVcHhkVUw5U0xSZEwtTFZaYW1qb1VVdmIydHBYRzZGSzhFRE5sc0NVMEhXblFkYnl0Qk1ZVlJXX0Y5UkRleWViQjZ6TC1sY19nZlQ2NGVKQlNRUmxkUExUZEtrWHNHbTJGeDZyNnNsTkxjMzNieUE5SnVuMDZabGhBY1R1TzdEYVhzRDJyWHc3WjB0aU1lRDNLcTdVX2JKVUNIQUVOeG5xRnljaGpvMUpGcndVdjNFdTlhdzQ3ZjhFRnF5d2NRUzlCdk1CeVpLSDgxZFQxbGt0cEZ2VE51V2hLSloxM2xVRFFDUmVVWW5qNW5JblpqbjJsUmdqRUJtWXowUFROMU12WHBwRlcyYWtNUk9xV0hjOExOYU8wMHI0b0wwanVhU1FIVzY4U0ZsWVlEN3FQTHFfWF9IQmE4OGFUWFpsX0VMZDBWWmFFdVgxUk1rVXAxSkhfTGg3MnB2OWFXaEJSUGQ5d2JiZmlLbUVsZ1g0a2dqdmVxXzlNQTB3S2dMbHUxS0JIWnU4dzVGcTIzcnBrdDYyYlBfdFlfQ1VKMnFFS0VmNEw2TUVzUEYxeURvOUdVZXRYRXZla3hJY2xRUS02OFhMaWkyWkppRFZ3c0RaWGM1cU1KM2FybEQ4a05KSEZUZlhJbTh0UXFUNFl1LVF0VzBEb2dCbXhVYnM1MkF1c0ZpNlZTM3RKZ3JGSmdiTzdocTVaajNxYzJOMk5PMGFaUzJ0YlNjZHk1VXV1QV84MnJhQXpfZUZpOFJZYTdnRG1SMEUxTTdXMWJSMHJCVy1TOGg0MDVIbThvWg?oc=5"
+   ]
+  ],
+  "first_seen": "20261002-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-01",
+  "ko": "이란 호르무즈해협 당국, 에미라티 유조선 3척 피격은 '불응 리스트' 대상이었다고 주장",
+  "en": "Iran's Strait of Hormuz authority claims 3 struck Emirati tankers were on its non-compliance list",
+  "ar": "سلطة مضيق هرمز الإيرانية تزعم أن الناقلات الإماراتية الثلاث المستهدفة كانت على قائمة عدم الامتثال",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSG5PZl9UcmZzZFJnejk1WVE3V21hWkRHTjJHYng2UnNLRURaQ3NSNU1ZRWQ0M01pSjRvU0dWWFFmT2ZsYVZ6elBEOGt2X0xzblhfcWhvMkhJeUVVWTdaazhFWXoxUFhSZWswdnhlY3M1dEplSXNXUllMbS1CMnA4d2Q4SmpMSko2d3NSTUVBMDE4bmFfT20tandLcHRBakxSc2pEM3gzZENxNldiWnk4em5Jb3BSMXlCcHNYRnZFX0FzOUNPQmZ4N2VoMUkxTDBz?oc=5"
+   ]
+  ],
+  "first_seen": "20261002-0700",
   "status": "pending"
  },
  {
@@ -227,6 +319,23 @@
    ]
   ],
   "first_seen": "20261001-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-09-30",
+  "ko": "美 재무장관, 9월 이란 원유 수출량 '제로'라고 주장 — 4월 이후 항구 봉쇄 지속",
+  "en": "US Treasury Secretary claims Iran loaded zero crude oil onto tankers in September amid port blockade since April",
+  "ar": "وزير الخزانة الأمريكي يزعم أن إيران لم تحمّل أي نفط خام على الناقلات في سبتمبر وسط حصار الموانئ منذ أبريل",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/no-iranian-oil-exports-september-bessent"
+   ]
+  ],
+  "first_seen": "20261002-0700",
   "status": "pending"
  },
  {
@@ -1684,115 +1793,6 @@
    ]
   ],
   "first_seen": "20260921-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-21",
-  "ko": "사우디, 예멘 홍해 항구 모카 공습 — 최소 6명 사망, 후티 공세 확대 속 교전 격화",
-  "en": "Saudi airstrikes hit Yemen's Red Sea port of Mokha, killing at least six as Houthi offensive escalates",
-  "ar": "غارات سعودية على ميناء المخا اليمني على البحر الأحمر تقتل ستة أشخاص على الأقل وسط تصاعد هجوم الحوثيين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "© Houthi Military Media, Reuters",
-    "https://www.france24.com/en/middle-east/20260922-middle-east-live-yemen-fighting-escalates-as-trump-heads-to-un"
-   ]
-  ],
-  "first_seen": "20260922-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-21",
-  "ko": "후티 반군, 바브엘만데브 해협 통제권 장악 — 사우디 홍해 원유 수출 사실상 중단, 아람코 물량 호르무즈로 재전환(최근 2주 하루 240만배럴)",
-  "en": "Houthis consolidate control of Bab al-Mandab strait, halting Saudi Red Sea oil exports; Aramco shifts ~2.4 million bpd back through Hormuz over past two weeks",
-  "ar": "يسيطر الحوثيون على مضيق باب المندب ما يوقف صادرات النفط السعودية عبر البحر الأحمر، وتعيد أرامكو توجيه نحو 2.4 مليون برميل يوميا عبر مضيق هرمز خلال الأسبوعين الماضيين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Guardian",
-    "https://www.theguardian.com/news/audio/2026/sep/22/houthis-shock-advance-what-it-means-for-world-podcast"
-   ],
-   [
-    "Tehran Times",
-    "https://www.tehrantimes.com/news/530263/Ansarallah-consolidates-Red-Sea-control-as-Trump-rejects-MBS"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260922_0003800075"
-   ]
-  ],
-  "first_seen": "20260922-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-21",
-  "ko": "영국, 사우디 전투기에 대공 지원(공중급유) 승인 — 후티 대응 위해 한시적 군사지원 제공",
-  "en": "UK approves time-limited military support (aerial refueling) to Saudi jets to counter Houthi attacks",
-  "ar": "بريطانيا توافق على دعم عسكري محدود المدة (تزويد جوي بالوقود) لطائرات سعودية لمواجهة هجمات الحوثيين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Guardian",
-    "https://www.theguardian.com/politics/2026/sep/21/uk-to-give-support-to-saudi-jets-in-attempt-to-counter-houthi-fighters"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsQVV0cXVRMWVlNy1NRHAtS0x6bEpFUGpiZlB2blREaGxab0VTc0R2LTBzdWFhSmdXa0tjb3hEWjhxVmVaQk5SM1RRM0p1QXJfbEVVQzN5YXZZRi1D?oc=5"
-   ]
-  ],
-  "first_seen": "20260922-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-21",
-  "ko": "미 재무장관, 이란 항공사 전면 운항중단(23일부) 발표 — 대이란 제재 강화 일환",
-  "en": "US Treasury Secretary Bessent announces all Iranian airlines to be shut down from Wednesday as part of intensified sanctions",
-  "ar": "وزير الخزانة الأمريكي بيسنت يعلن إيقاف جميع شركات الطيران الإيرانية اعتبارا من الأربعاء ضمن تشديد العقوبات على إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMibkFVX3lxTE56cTJuZUVZVG1nNHo0SVU2eGgxQzNqbF9aWWhycHVZZmJNTDE5UkJSV3YzVDFVb042YTFOc08xd0M4cUo2MjFtakxyZVUxQ3drNnFKb182cU1JSGhtQ05vd2NTaDhHTXMyYktKcEdR0gFzQVVfeXFMUGpLbzc2YkZoQWFzOUFNRVNqejU0SF9lY3Rfa0lFNlFIUzR5ZUdrRE9VUDBjWllFSkU5YndMMU5kM2RCbDQ5UmVVR0NLSGtuY2ZvZWk1VXBBSVBDRWlTNHlwcjdEWUVycXd1QWVxLWtIV1RCTQ?oc=5"
-   ],
-   [
-    "Amwaj.media",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc2lZdjRRY3c4OXJwUXNBRXZhcUZxaFJUZzhlaXJYTjI0OTBxWVRWQ3lxVE1Ramw1MW5EU2lVVGczaHgwc1dtanY4cWNYLTJJY2VaNWtka05EQzJqcGNpSlpTUEVRdlVYMl8zdDNRWlczSkRfVVVXb09XTy1XVFNKYm1UZGgtckItOUdnSEJhVWxDWTZBbldIZmhaTE9VZXBCZlR5d1MxdUNFdw?oc=5"
-   ]
-  ],
-  "first_seen": "20260922-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-21",
-  "ko": "미 정부, 걸프 에너지시설 재건기금 100억달러 조성 제안 — 이란전으로 파괴된 역내 송유관·정유시설 복구 목적",
-  "en": "US administration proposes $10bn fund to rebuild Gulf energy infrastructure damaged by the Iran war, reducing Hormuz dependence",
-  "ar": "الإدارة الأمريكية تقترح صندوقا بقيمة 10 مليارات دولار لإعادة إعمار البنية التحتية للطاقة الخليجية المتضررة من حرب إيران",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260922_0003799976"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdGszMmdZWW9pTjZ0X3JKcl9NNW9RNVdIN3dzX0hiV2xFam05R19NTngzaTV5TXo2ZC1IOVNaVkRreDBpY0paYnB2WVpOOGc4UDZsZ25TZF9QT2RkS3cwMENPd0xrMGF2ZWZoYkVwSEh0V0RQcGFZZXlFLV9wVVJkaWhPMlpjMUZ2Q1p6aTJ6LVBOanRJZDhB?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQzdFZjM2QWJJQ0xUUE1Tb2llS3dpWkd3QU9lZWk1QjVCenN4VlE2RnVyUnVFRjhNd29mbWxVVVJDWWlCVnFDbFRfY1NldDQzOTg5UEN1UF9oWVZMS0FSeTZLT1NxZU5DN0lYbzgwNVktTjhrMGFtaUp0T3FsWjVQT1JsZFhQSmV2NU1Kd3hpVjdPdFhTbG8yaWFNV1RfeXNLQ1lvU2tkRmJzSnMtN2kzR2d6NDUtUzUwWDRRWkRQYURQMzl0Q0pLRS0tWVE?oc=5"
-   ]
-  ],
-  "first_seen": "20260922-0700",
   "status": "pending"
  }
 ]
