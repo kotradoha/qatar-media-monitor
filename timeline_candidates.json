@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-10-04",
+  "ko": "후티, 사우디 리야드 아람코 시설 미사일·드론 공격 주장 — 예멘군은 사나·사다 등지에 맞불 공습으로 보복",
+  "en": "Houthis claim missile and drone attack on Aramco facility in Riyadh — Yemeni army retaliates with strikes on Sanaa, Saada",
+  "ar": "الحوثيون يزعمون شن هجوم بالصواريخ والمسيّرات على منشأة أرامكو في الرياض — الجيش اليمني يرد بضربات على صنعاء وصعدة",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/4/houthis-claim-strike-on-saudi-energy-facility-as-yemen-fighting-intensifies?traffic_source=rss"
+   ],
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPN0ZWTFBnOTZucG1MRVpnczVNb0EzZ09meUJIbmpQSGxQVy1obV9OdXdnUTM5UV9rUDZXUkNQOG10VDFicS1URzZlTnppNUFTRUtyUjcxQXltNGh6VVo3ZGI0V0I3RjFPcDh3ZGFCNG9jaDhhMmJNeS00UEE2b1VUM2tid25ObTBZbjRSd2xJM2pWeTF2d3VDSHBBYkxLU1hPbWdsXzA1SDZaZUt2bElFYmZud1VUMHc?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-attack-aramco-oil-facility-saudi-arabia"
+   ]
+  ],
+  "first_seen": "20261004-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-03",
   "ko": "호르무즈 해협에서 유조선 2척 피격 — 영국해사기구(UKMTO) 발표, 공격 주체 미상",
   "en": "Two oil tankers attacked in Strait of Hormuz — UK maritime agency (UKMTO) reports, attacker unidentified",
@@ -68,6 +93,27 @@
    ]
   ],
   "first_seen": "20261003-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-03",
+  "ko": "미 국방장관 헤그세스, 호르무즈 해협 봉쇄 '철통같다' 재확인 — 이란에 '올바른 선택' 촉구",
+  "en": "US Defense Secretary Hegseth reaffirms Hormuz blockade 'ironclad' — urges Iran to make right choice",
+  "ar": "وزير الدفاع الأمريكي هيغسيث يؤكد أن حصار مضيق هرمز 'لا يتزعزع' — ويحث إيران على الاختيار الصحيح",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVGU4NnBiNEotamlDUDlDZXBiLXBsWnF5S2hxb3RadWxiTjFvWTYtUVJXalI5Wmk2RS0xM3FuRXMxQ2liNy11XzhiN0c3SU5TZDVDUzZrZTJWUEdVU0dKb21kR2tUMkpvcUZBLXp3bEo4MnhzYjJraUthNU5Nb3A3Yk1xQWVsbWx6VnRqWGlILXpkVEFPZ0ZLWUVORjhyVXVE?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/hegseth-us-blockade-hormuz-ironclad-iran-should-make-right-choice"
+   ]
+  ],
+  "first_seen": "20261004-0700",
   "status": "pending"
  },
  {
@@ -503,6 +549,23 @@
    ]
   ],
   "first_seen": "20261002-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-01",
+  "ko": "호르무즈 해협서 10월 1일 이후 유조선 3척 피격 — UKMTO 발표, 정체불명 발사체 공격 급증",
+  "en": "Three tankers struck in Strait of Hormuz since Oct 1 — UKMTO reports surge in unidentified projectile attacks",
+  "ar": "استهداف ثلاث ناقلات نفط في مضيق هرمز منذ 1 أكتوبر — مكتب UKMTO يفيد بتصاعد هجمات بمقذوفات مجهولة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/three-commercial-vessels-struck-hormuz-1-oct-ukmto-says"
+   ]
+  ],
+  "first_seen": "20261004-0700",
   "status": "pending"
  },
  {
@@ -1746,77 +1809,6 @@
    ]
   ],
   "first_seen": "20260923-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-23",
-  "ko": "호르무즈 해협서 화물선 미상 발사체 피격 — 카고선 화재, 사상자 2명 발생(UKMTO 보고)",
-  "en": "Cargo ship struck by unknown projectile in Strait of Hormuz — vessel ablaze, 2 casualties reported (UKMTO)",
-  "ar": "استهداف سفينة شحن بمقذوف مجهول في مضيق هرمز — اندلاع حريق وإصابة شخصين (بحسب مكتب التجارة البحرية البريطاني)",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/cargo-vessel-struck-unknown-projectile-strait-hormuz-two-casualties"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR2g0cWxBZXFoQVZRd0tRdTA5UmIyQVNxRWRsNlppc2RPc3VBazd2ejJlbFc3UXpIb0hfRnJPY3RrTWJJcG1jRWVJc1FpNm9nclJJTDJHRlltMlhKRDZ4YkMySzJ6LXpXRkNqQ2FNc0tuR1djQ3pQRWx2UnNQMGdUMWJ5QTFmNUtUalI3RUgzV3RwLWRxazVTUnhJN2U3dmQ2Q2hXNkg2Ykx4eUc1Qzc0TkNXSQ?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE5JWUNYVXJuZDNDdFA2NFNjNTJqMWgwdmlKa3BPeWNLQU1GS2ZUUXNxaV9pVjN5SVBnelRhc0dNZ2t4dkFTb2Y0WUctNFhuWEhKR0VnX25SczRrOUhHeFdOUHQwRUpGWW55a1ZNTXREV2d5bzdpMWxKU0NMYw?oc=5"
-   ]
-  ],
-  "first_seen": "20260923-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-23",
-  "ko": "후티 반군, 미국 개입시 역내 미군 시설 타격 및 바브엘만데브 봉쇄 경고 — 사우디 지원 견제",
-  "en": "Houthis warn of striking US regional bases and blocking Bab el-Mandeb if Washington intervenes to support Saudi",
-  "ar": "الحوثيون يحذرون من استهداف القواعد الأمريكية الإقليمية وإغلاق باب المندب في حال تدخل واشنطن لدعم السعودية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-adviser-warns-attacks-us-interests-if-washington-intervenes-yemen"
-   ],
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202609232114001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ],
-   [
-    "news.sbs.co.kr",
-    "https://news.google.com/rss/articles/CBMihgFBVV95cUxOaTBBVzVyZGFaYy1pdzJGM3NYNC1IWnp2QmF2djVnRDBuaG55SXM4MFZCNEt6clFHMEV4U3RrU3NIZTVfdTQzTWhvcnJ1TXVhcnZHZy1HdnRJRG1iUkUtWlFQRElTX3ZaYUhRZ0FvbllHb3htMHBQT2hoNWJOVXRlMnNuckprUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260923-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-23",
-  "ko": "예멘 정부군, 타이즈 카르판산 장악 주장 — 후티 5명 사망·20명 부상, 사우디 반격으로 전세 만회",
-  "en": "Yemen government forces claim capture of Mount Qarfan in Taiz — 5 Houthi fighters killed, 20 wounded amid Saudi counteroffensive",
-  "ar": "القوات الحكومية اليمنية تعلن السيطرة على جبل قرفان في تعز — مقتل 5 من الحوثيين وإصابة 20 وسط هجوم سعودي مضاد",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/23/yemen-government-forces-claim-control-of-mount-qarfan-in-taiz?traffic_source=rss"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE13UFpTME1LTnYtOVJqbUhPWjlCakk1cTBoeGZ2NXR2ZHpSZmJ6VTJnd3l2V2FCUExWRDNIRWpncWllYi13eEwtNDUtLTFIcnhkZ01HdXU1VGNFWjU0ZUFaWkRmaUQxXzBBbGpUcjd4SHp0OWZoekJkRdIBeEFVX3lxTE5ndmhPeDJOc0hIWjNvYUNxNE1CWTFPYW1DSHY5Y040bTQ5NEJPRkE4NzBkUldKdGdjbFA1NVdRbzIwVmNMRjNhUzNSTFItc25sRHhkUVZEc1h5UUg3U0k3dU9US2cwUUtZQ19ET1NVUkViZWR6MlFEMg?oc=5"
-   ]
-  ],
-  "first_seen": "20260923-1530",
   "status": "pending"
  }
 ]
