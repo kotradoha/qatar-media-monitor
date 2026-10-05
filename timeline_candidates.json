@@ -1,5 +1,177 @@
 [
  {
+  "d": "2026-10-05",
+  "ko": "예멘 사우디지원 정부군, 후티 장악지 전면 탈환 작전 개시 — '해방 전투' 선포로 예멘 내전 재확전",
+  "en": "Yemen's Saudi-backed government launches full-scale offensive to retake all Houthi-held territory — declares 'battle for liberation'",
+  "ar": "الحكومة اليمنية المدعومة من السعودية تشن عملية شاملة لاستعادة كل الأراضي التي يسيطر عليها الحوثيون — تعلن 'معركة التحرير'",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/5/yemen-govt-forces-commence-major-combat-operation-against-houthis?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/5/iran-war-live-fighting-in-yemen-intensifies-tehran-says-ready-for-us-war?traffic_source=rss"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPX2NSanBYSU1hTkV1X3IxWkRCTE1KNmV0ZjlpVlpHMHNRQlVpdlRhcVI5bXV3aVhWbW9iR0hKNDd1ZFdSV0hrTmhSX2tDeHE3cnJRc1BIUWxBQmFSOHlUT1lYODRBUU82X3ZsU3gtOGdadDFzNHBDbVB4bk0tVXRUUlZxYlJDXzZITW5SOXBmSkpkMm1IN0p4NjFpTkhyc29UQzlsSVJJVUlUUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "후티 반군, 사우디 아람코 시설 타격 주장 — 예멘 확전과 함께 사우디 석유시설 공격 재개",
+  "en": "Houthis claim strike on Saudi Aramco site amid intensifying Yemen fighting",
+  "ar": "الحوثيون يزعمون ضرب منشأة لأرامكو السعودية في ظل تصاعد القتال في اليمن",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxONmY5RE5ILWt6MWtRZTJBS2VXVzdQdERuNHZFbk9PVHVuZFNfTVhjdm1yTWdUSTR0Q0xlNTN2eGhOUkE2WThVcXdDZ1pEcDAtQWJWWUFQbUM2RE9pbmtCa2lfM2t2RUxxVF9kUkJxd0htRjA0aXprc0NEQWZlNHVQTWpPVDdPNDVmZ25sNXFISGhaa0MxdEJzNEQxekE1ZVRoZWFkVEZsOElNR1g1amRXRFdkZm85RnPSAbwBQVVfeXFMUHdUakUzMklBc1VSRGZwMXN1X2M1NVg3b1dmUFZ5aXUtX2tmbW84UHNSckw2TlBmS1pXdmx1VE4tclZ6cGpSSFU1WTZRRmg3c3V2N3lYME1BRmUwa0RHZS1rd1BINkowa0xrMHNReUxXdmZyRzduTkN0TTlpVWV4c0p2Um5uWHRlNG14b0MwNF8zd2JTMHppaHlnN0tHMWJJTlhKMTltOE5MN0ktQVdoNGhRekg1RmhoVVBrdGM?oc=5"
+   ],
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLUVlMG9WRll2UEktWEpZWG16enBSa0xacFV6eHlOTk91cXgwV0VGbDZzUjVvc2pJWDJfWVFXSGtHdXBMQ0xzWHNNcUhnSklCMTlhOFBmSEpSbWUwc2V0WjZQaDBIV1hxQjBTVmcyTDFTOERrMTVmWnR4N1hSWXlJTWQ3bTIwVi1QZ3E2ZVhhUXlNazdtUUh6OHJOcmVYZjQyazUtRFBaVHlHNUptZXMxSnJ6UjV5eWZBUDZDcg?oc=5"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "이란, 미국 조건 충족 전까지 호르무즈 해협 봉쇄 지속 발표 — 해협 통항 재개 거부",
+  "en": "Iran says Strait of Hormuz will remain closed until US meets its conditions",
+  "ar": "إيران تقول إن مضيق هرمز سيبقى مغلقا حتى تلبي الولايات المتحدة شروطها",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdEpOSExlamJ6VFM3V3hVMXl2M09LVHYxQnZpUHV6bXZuRkJmM3ljVHA0NFpQTmJ2WS1uZzhQVjAxVUJJYUZXeE5rMTVZMkdma3Z0a2NWUU9qRGJXZlhkSFYyVkVINHE1NjR6bklmTmxZUWdWNS1qaXc0cTNnU0xtZWV2QTRubWoyakdyMDNIUm9KcmpfSy1Jb3Nrb09mTEVMbjBlYVFybGNaa0JFOFhF0gG0AUFVX3lxTE12RHNGM054RWlsaVJaeEgtRWlIUDNKVWN0N0JLQmRfOHA1MU5SUVhXV1pjM1RKRlY2YjVkZlkyaG5vaDhWa0Fhd2hDeVZGMXRYcm5odHB1RWZ1eWJGeEZxRnZrWVNib2FvZHFySGVnNjdqTHlmUVJLdThHZHkwYk14ajdNWlptejNOYnhNR3dacmZMTWlLRDdGMFpkczBqcTBWZlN5UnlSUTV6a3NsWFBvY0djdQ?oc=5"
+   ],
+   [
+    "대구MBC",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBCR3BwXzVXZktNM09NVGhFSDNCTU9xMFZzcTlNcGZaemdQRWlJbUhoY09YbmZnRkJXWlc0M2NGR3RYSmh2SXJPOGJvbk0?oc=5"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "호르무즈 해협서 유조선 추가 피격 발생 — 이란은 해협 재개방 거부 재확인",
+  "en": "Another tanker attacked in Strait of Hormuz — Iran reaffirms refusal to reopen the strait",
+  "ar": "هجوم جديد على ناقلة نفط في مضيق هرمز — إيران تؤكد رفضها إعادة فتح المضيق",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "대구MBC",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBCR3BwXzVXZktNM09NVGhFSDNCTU9xMFZzcTlNcGZaemdQRWlJbUhoY09YbmZnRkJXWlc0M2NGR3RYSmh2SXJPOGJvbk0?oc=5"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9LMlMxZXJhS2NrLWFFYlVXaDJCQmxEVmFheF9uVUFxV0pPMjE2MWV0cUdHMnF5eU84dDFfNEdhajYtcW9QVlFLUnBRMGgyRl9YcHhTTFlUTndJT1pFRmVNdTY2Uk5ENGFZSHhUZ2VfNnRGMFNB0gF0QVVfeXFMT0syUzFlcmFLY2stYUViVVdoMkJCbERWYWF4X25VQXFXSk8yMTYxZXRxR0cycXl5Tzh0MV80R2FqNi1xb1BWUUtScFEwaDJGX1hweFNMWVROd0lPWkVGZU11NjZSTkQ0YVlIeFRnZV82dEYwU0E?oc=5"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "미국, 영국 페어포드 기지서 B-1 폭격기 전격 철수 — 테러 관련 체포 등 이란 위협 우려 속 조치",
+  "en": "US abruptly withdraws B-1 bombers from UK's Fairford base amid Iran-related security fears and terrorism arrests",
+  "ar": "الولايات المتحدة تسحب قنابل B-1 بشكل مفاجئ من قاعدة RAF Fairford في بريطانيا وسط مخاوف أمنية مرتبطة بإيران واعتقالات متعلقة بالإرهاب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/4/us-withdraws-b-1-bomber-aircraft-from-uks-fairford-base-amid-iran-fears?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "UAE, 플라이두바이 항공편 테러 시도와 관련 조종사 정보 이스라엘에 공유했던 것으로 확인 — 네타냐후, 이스라엘행 외국항공 보안점검 지시",
+  "en": "UAE confirmed to have shared FlyDubai pilots' details with Israel after attempted attack — Netanyahu orders security checks on foreign flights to Israel",
+  "ar": "تأكد أن الإمارات شاركت تفاصيل عن طياري فلاي دبي مع إسرائيل بعد محاولة الهجوم — نتنياهو يأمر بتفتيش أمني للرحلات الأجنبية إلى إسرائيل",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUDB6OUQwcTRCN3p2Mnl0MnY3Mlk4S2pITUZacXlNVDhaV2RkbFo2VUtIOGd3TGxCZVZ5bmhWNXNESUlsN09BX21NaUtLSkFSNjFjdVlqaXpZZDNGRWFlekoxTzlTd2FlbFh2cXF0WnVtSEk0T0t3VkF5Nkx4M3RYVmprS21Cd2FHbUcyaV83OEdVcDBQSWwyaXRmckE1YkJxTVQxVWhIRQ?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfS2pWVERhQlNvU0xhT1RKTkF1dlhvelRXWFgtU1Jrb3hTNmtRTy1QQUktUk9rbEhWRzhtMHZZeXZwcFhsYWxvb1plRHhKSDd0dk1Ia0dLQTBfam9HWFRkTDln0gFnQVVfeXFMUHFOdkxmaHh6R3JNcjB4SFhyRHdDaWRPb284U1BYUDJ1QXVzSE55ZDQtWmkxRG5GMWN1Nzd5bnJBS1VpZnZ6ZzVBVVdvNTduVzhwazExUXZuRENsenl6STNZZS05UHRRNA?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMkNrX20xM2MzcnNXcDFNV3Z1WWZXU3JVWlRVdy1IRF9uZVoySHpFTE1XTDhlSEpubWRBLWJRRzhLSUtVMXhZdl9PSVVUa3dEZ2d3OGVxY3dBa2pxVzNxdVFDMWRaSzZiNkZOaVBmdFpvU0hyRGg1YjV3VFVCaFBseFhzU1Y4b3pyVnRwODZpVnY1WjhXQzg0UHNJQ2Q1dWNBZElXTWVVU2JCOU5NcHVlWTY4UXdRRFJQM0FNeno1RnAyN1RFVjJtTDk2Q25Rb3hhbzNFN05BY3J0dw?oc=5"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "사우디, 11월 아시아向 원유가격 6년來 최저로 대폭 인하 — 걸프 원유수출은 전쟁 이전 수준 회복했으나 유조선 공격은 증가",
+  "en": "Saudi Arabia cuts flagship oil price to Asia to lowest in six years — Gulf crude exports recover to pre-war levels even as tanker attacks rise",
+  "ar": "السعودية تخفض سعر خامها الرئيسي لآسيا إلى أدنى مستوى في ست سنوات — صادرات النفط الخليجي تتجاوز مستويات ما قبل الحرب مع تزايد هجمات الناقلات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb01qWHdweHgtSmN2bldGUVdQLVNYS1ZZcnZVSW9kSUxudm8zLUFJNlVtZVUxOTQ3dDF0d0pNaTZCM2JDbDU0N0NUb0dBaXVyVk1RcUY0NEZ4dWFYSjUwc3dPZzRwVXk0aDU2MnZUellVVG9NOG9wTTdzdFFCQ3ROaFpDQTFmUUdoVG5nWW1GN3RrM3BGNDVXNUdEczVDbUxKa3NMVEJNVUdGN1VldDl5Ng?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261005028100009"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE1OOTBmbFltUE9ldlVJYjFxbHdCcFhDYWdJT0praGgwbUxLNmRpYW94Z05PUlRidzJ3MnZycVdkWXZTTGRTekluWHNXQVBsb1E0UFd6c28xbjNlT1p3MUxsWGQwVG0zRy1iazRFdE5UbV9IUVRlaVNGRk1TSnJyanc?oc=5"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "트럼프, '이란전 중대 결정' 임박—미 안보수뇌부 캠프데이비드 총집결",
+  "en": "Trump reportedly nears 'major decision' on Iran war as US security leadership gathers at Camp David",
+  "ar": "ترامب قريب من 'قرار كبير' بشأن الحرب مع إيران مع تجمع قيادات الأمن الأمريكية في كامب ديفيد",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMib0FVX3lxTE52dDdUbnY5X2REZU9DcHVObHFheEtZNlByaHltZXN5aDVTaUlmS0VWb2Vud0o3TVJTMFFhWGFmbFI0SWNnNFZpOGFQelNTNEdMaFlzaWZuQnJsMHc3bF9DaHFpU3VpbFhQcVZEU2dwNA?oc=5"
+   ]
+  ],
+  "first_seen": "20261005-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-04",
   "ko": "후티, 사우디 리야드 아람코 시설 미사일·드론 공격 주장 — 예멘군은 사나·사다 등지에 맞불 공습으로 보복",
   "en": "Houthis claim missile and drone attack on Aramco facility in Riyadh — Yemeni army retaliates with strikes on Sanaa, Saada",
@@ -1637,182 +1809,6 @@
    ]
   ],
   "first_seen": "20260925-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "아람코, 이라크발 드론 공격받은 동서 원유파이프라인 공급 차질 수일 내 복구 발표—원유 공급은 지속",
-  "en": "Aramco says East-West pipeline disruption from Iraq-launched drone attack to be restored within days, crude supply continues",
-  "ar": "أرامكو تعلن أن اضطراب خط الأنابيب الشرقي-الغربي الناجم عن هجوم بطائرة مسيرة أطلقت من العراق سيُستعاد خلال أيام، مع استمرار إمدادات النفط الخام",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20260925024300073"
-   ]
-  ],
-  "first_seen": "20260925-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "GCC, 사우디 타이프·얀부 겨냥 후티 미사일 발사 규탄 공동성명 발표",
-  "en": "GCC condemns Houthi missile launches toward Saudi cities of Taif and Yanbu in joint statement",
-  "ar": "مجلس التعاون الخليجي يدين إطلاق الحوثيين صواريخ باتجاه مدينتي الطائف وينبع السعوديتين في بيان مشترك",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSmktNEhJaTZXZXViclI2aE4yTHVvR0VrMGNINWxhNVlkOElRYWloSVZiOWFuTGdhR1R1WjI5dHM0a1BkeEcwMmxFZm50RG1PYy1IcWtJZkVUd1lYQnpVcm5YVXM2eVFpeFd4UlJWREw2VVlPYVAxeEZrU0tfRG5md090M1VzdzVNeHFMMmhURDlVNWxVVDY2WjZKMnNtQmwxQ0l2dUFGczcySURIRUJjckI1dHhTV2pT?oc=5"
-   ]
-  ],
-  "first_seen": "20260925-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "이란, 미국에 '호르무즈 해협 7일 내 개방·협상 재개' 로드맵 제안 — 지역분쟁 중단 조건부 개방안, 미·이란 뉴욕서 단계적 봉쇄해제 맞교환 논의",
-  "en": "Iran pitches seven-day roadmap to US to reopen Strait of Hormuz — conditional offer tied to halting regional conflicts, US-Iran explore phased Hormuz-sanctions swap deal in New York",
-  "ar": "إيران تقدم خارطة طريق لمدة سبعة أيام للولايات المتحدة لإعادة فتح مضيق هرمز — عرض مشروط بوقف النزاعات الإقليمية، ومباحثات أمريكية-إيرانية في نيويورك حول صفقة تبادل تدريجية لرفع الحصار",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/25/whats-in-irans-seven-day-plan-to-reopen-the-strait-of-hormuz?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/25/iran-pitches-seven-day-roadmap-to-end-conflict-with-us?traffic_source=rss"
-   ],
-   [
-    "bloomberg.com",
-    "https://news.google.com/rss/articles/CBMirAFBVV95cUxObjhvVmd4dDgxX3YyWXk2dHRYM2N2M0pKRHlZU1pzOHRCNjRmUDNIYWxvajdBTzZRb2tzZDlPTnVPdlFyV0NwZ0JYbDljakNtMVVTQ2xXLWtPbjE1SXhRdi1tYXdqTllxaUZ2RzVmVjhzdzA5WG1Reng2Z1c0cnpOVldGZ01NLURzUjA3eE0wZGxieFUyR1JsaFI5UFN3OWxnb1pPbmNJNEcxN2Rs?oc=5"
-   ]
-  ],
-  "first_seen": "20260925-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "사우디·튀르키예·파키스탄 '메카 공동방위협정' 3국, 후티 공세 강화에 대응 착수 — 나토식 집단방위 조항 발동 논의",
-  "en": "Saudi Arabia, Turkiye, Pakistan under 'Mecca Joint Defense Pact' begin coordinated response to intensified Houthi offensive — discussing NATO-style collective defense clause",
-  "ar": "السعودية وتركيا وباكستان بموجب 'اتفاق الدفاع المشترك لمكة' تبدأ استجابة منسقة لتصعيد هجمات الحوثيين — بحث تفعيل بند الدفاع الجماعي على غرار الناتو",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/25/pakistan-turkiye-edge-closer-towards-joining-saudi-war-against-houthis?traffic_source=rss"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260925_0003803535"
-   ],
-   [
-    "news1.kr",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB5X1VsUFNSM3dhNndaUnNFNHRRWGlrM2k3T2tkVWViNVdnZkRRdzc0RnRmMzhkV1FtZ0xjN3plakVmYVJzZ1hoZllCeE1Qa3JxcnpCc0lEaGhGY0s4WVdyV2tsQmx2YlHSAWdBVV95cUxQeV9VbFBTUjN3YTZ3WlJzRTR0UVhpazNpN09rZFVlYjVXZ2ZEUXc3NEZ0ZjM4ZFdRbWdMYzd6ZWpFZmFSc2dYaGZZQnhNUGtycXJ6QnNJRGhoRmNLOFlXcldrbEJsdmJR?oc=5"
-   ]
-  ],
-  "first_seen": "20260925-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "이라크 에르빌·술라이마니야 공항, 이란행 항공편 잠정 중단 — 나자프 등 이라크 전역 공항으로 미 제재 이행 확산, 이란 최고지도자 고문 동참국 보복 시사",
-  "en": "Iraq's Erbil and Sulaimaniya airports suspend Iranian flights — enforcement of US sanctions spreads across Iraqi airports including Najaf, Iranian supreme leader adviser hints at retaliation against participating countries",
-  "ar": "مطارا أربيل والسليمانية العراقيان يعلقان الرحلات الإيرانية — تطبيق العقوبات الأمريكية يمتد إلى مطارات عراقية أخرى بينها النجف، ومستشار المرشد الأعلى الإيراني يلمح لرد انتقامي ضد الدول المشاركة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/iraqs-erbil-and-sulaimaniya-airports-suspend-iranian-flights"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1DWVB4eHlneXRfRElyV0U0S0FMMDU3VzQtQUQ0Zm85OUpEcEc1UnZJZ3cxWkRJLWNOZVVIUDQ4c0FhQkM3WmVwTm81WUlWOV9OMEdrUHR3U2tKTmhCMXRn?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/iraqs-najaf-suspends-iranian-airlines-move-enforce-us-sanctions"
-   ]
-  ],
-  "first_seen": "20260925-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "이란, 카타르 통해 '7일 내 호르무즈 재개방' 계획 미국에 전달 — 적대행위 중단·동결자산 해제·원유수출 재개 등 조건, '선택은 워싱턴에 달려' 라고 이란 외무장관 주장",
-  "en": "Iran submits seven-day plan via Qatar to reopen Strait of Hormuz — conditions include halting hostilities, unfreezing assets, resuming oil exports; FM says 'the choice rests with Washington'",
-  "ar": "إيران تقدم عبر قطر خطة لإعادة فتح مضيق هرمز خلال 7 أيام — تشمل وقف الأعمال العدائية وتحرير الأصول المجمدة واستئناف تصدير النفط، ويقول وزير الخارجية إن 'الكرة في ملعب واشنطن'",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "aljazeera.net",
-    "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPSXBrNk4yNkFKbWFuZUR1TGFBYmpabi11aEQ2MDRJbmhBby14S2p2Y1VrMFhBNUxfa2hJN2NOdjAxdnZnbnBzc21QSGIxeGlSOTJJemZueVRHaktNT285YWRtZjR4akdFNXJ2RUFITGFpWmFvOHZVcmlwbFlRWXQzTVRiWTEzR3lfRXRDd0pQeW9oRHVnUlp3REljT1JJZ2FXRnpUUFFYMTVrZUYyV3M5bWdDNzRHRjU1ZU9FNjZpeTJJRzdUMnJNT3BNdk1lLTg4WE14cFZha2FmUjJncDFJMUcwQ0o5Z2VMSGlKLVlXLVZ1VnY4b3JnOHRrNnpkNXRqVFVVZHVGMjVyZ3JGbU1nN01IejNMbFUxcWJyZXZvak9wcU5kS0JkejZZZ0hrOFhYNFJONHQtU0RsSGNFdUw3TGhWU2JwbjZqbWYtazZmSUZvZ9IB1wJBVV95cUxQWUFKSGhKR0VtbzZXV056UVV2aElCSnRSTTduWTc3bHl0d3dMbzBKak1YcDVfanBlNmRWM3lyMGVzOHZtVFNzTXp3anRXcTEtR1Q2UHowc3o1REZwanZCVklfRnU2LUNpNFdGdnZNR3lEZzZ0dkJ4WC16cVVaZG5wYktBZGhjVnVNYjlLaXFsaXdONEt2aWp6QjNyWURCUHVWeVV0bWZjSlYyYUxzOExUWGdiOF9WZXUtazE4QWpJaUJwZGRaN2pEcE5DVHcyNXhqSWlteXVYSXVXa3hJcEdzQW9ac3JtNlpXY3NLdWpzUTFQMUlfUV9GdWpNakVJTk85eTg1d2VYZUdvVGhyWjFWUTU0T1JNZm90MHIwTkhiRk1Ma0Z5TjhVR2swZW5hOVpfdk9oLWJqX1VVd1I1LVB1R1I3RjJuUmVDZlpBWjlNa2JCMEQxTFBJ?oc=5"
-   ],
-   [
-    "aljazeera.net",
-    "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOS1h3aEtLeWZiVUJSR3F1Q09KaUY5UHJSaE1NX3BLZGIwcmxvc01jaGFOWmlGRWtubXRYcktyRFFQcHMtenlxSU1DdkFUNXRFekktUWIwejVLUU1EOWI1RjdFektpVzVBSG9oeU9xVGlDQ0x2dmFwMExTR3RqRHpkYTdGYjltMk1uZXNNWHgtTU9RUkxsS0xzMERoam8zMGhPSGs0c1phUmlqcFdPUW04VTRnR19JRlRsS1F5aS1JNlpKV2NKUVVXSlhVZ0VNSG42ZE9nNm5nLUE2N3Nkc3QyenVOWjdqYVRsODQwU1Vtelplc3dOZ2x4SXpwT2VOcDBBNHBiaDdYeTctU3p2aEF3OVZNVm9PMVVMVm81LWExdTNJV2gtc2pDMmh0QWxRaHlVNkpGdHJfcW12TFBFN01GRHZsNDJra2FjYlJ0SndYNF9RUEnSAdgCQVVfeXFMUDVWOGgyRzVNMDB5TXpDcDdidnowRVM3ZU5LTUN5WHNPbktHYjNVS0FuVnB3NFp3UFBiQnVMeXlVaEtIT0NPWkNfbzBpclo2VjdwX2w1NjdWUk1ObXd5YjBhemNoNnVNdGZocjVnLVRCdjgtVU5vZ1NsOGpwQlF4X2F5MC1LZ2hPUWFwX2VKWS1NalpIa1VpY3lnVWRRVlJVN1pOeDBBMjRjbzEtLVU0RERVN0ZlMjUtcWd3b05MTmhUR1ZQelJaUks3XzIxWVVFUVBNdGhqOVE0anVkczNQUDAxd1FTaGhwRVFxV3Bpbk0wSEpLdDZqaUJYMmdxTmxJUEZTSTYyamR0dVRrV2lYZ1BFM3dQcVNPcllCanFHSmd5LTBiWGZUeVExb0hBY0RmUFJYOGF6VFJWVm15NjVFYVdMWlZjejFVRERfZVdLZEhhRURyQ3FCb0o?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/9/26/iran-war-live-tehran-offers-us-plan-to-reopen-hormuz-within-seven-days?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20260926-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "WSJ 보도 — 트럼프, 이란의 '7일 휴전안' 거부하고 중간선거(11월) 이후 폭격 재개 방침 참모진에 밝힘",
-  "en": "WSJ reports Trump rejects Iran's seven-day ceasefire proposal, tells aides he plans to resume bombing after November midterms",
-  "ar": "وول ستريت جورنال: ترامب يرفض مقترح إيران للهدنة لمدة 7 أيام ويخبر مساعديه بخطته لاستئناف القصف بعد انتخابات التجديد النصفي في نوفمبر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "aljazeera.net",
-    "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOS1h3aEtLeWZiVUJSR3F1Q09KaUY5UHJSaE1NX3BLZGIwcmxvc01jaGFOWmlGRWtubXRYcktyRFFQcHMtenlxSU1DdkFUNXRFekktUWIwejVLUU1EOWI1RjdFektpVzVBSG9oeU9xVGlDQ0x2dmFwMExTR3RqRHpkYTdGYjltMk1uZXNNWHgtTU9RUkxsS0xzMERoam8zMGhPSGs0c1phUmlqcFdPUW04VTRnR19JRlRsS1F5aS1JNlpKV2NKUVVXSlhVZ0VNSG42ZE9nNm5nLUE2N3Nkc3QyenVOWjdqYVRsODQwU1Vtelplc3dOZ2x4SXpwT2VOcDBBNHBiaDdYeTctU3p2aEF3OVZNVm9PMVVMVm81LWExdTNJV2gtc2pDMmh0QWxRaHlVNkpGdHJfcW12TFBFN01GRHZsNDJra2FjYlJ0SndYNF9RUEnSAdgCQVVfeXFMUDVWOGgyRzVNMDB5TXpDcDdidnowRVM3ZU5LTUN5WHNPbktHYjNVS0FuVnB3NFp3UFBiQnVMeXlVaEtIT0NPWkNfbzBpclo2VjdwX2w1NjdWUk1ObXd5YjBhemNoNnVNdGZocjVnLVRCdjgtVU5vZ1NsOGpwQlF4X2F5MC1LZ2hPUWFwX2VKWS1NalpIa1VpY3lnVWRRVlJVN1pOeDBBMjRjbzEtLVU0RERVN0ZlMjUtcWd3b05MTmhUR1ZQelJaUks3XzIxWVVFUVBNdGhqOVE0anVkczNQUDAxd1FTaGhwRVFxV3Bpbk0wSEpLdDZqaUJYMmdxTmxJUEZTSTYyamR0dVRrV2lYZ1BFM3dQcVNPcllCanFHSmd5LTBiWGZUeVExb0hBY0RmUFJYOGF6VFJWVm15NjVFYVdMWlZjejFVRERfZVdLZEhhRURyQ3FCb0o?oc=5"
-   ],
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMVJ2My13MURURGZsYXpJS1FuZlE2YkljTTFGSURkRHBTNElKcWg4S05BQk9fc2tlNy1KYk11c05vcWVZdm5Td1Q3UW9ybGVOR1BjVm9GU2NzbllWTzdubUVzanBzRlNXY3NoU0NqTkpqUjNaSkRROVFJSlJwSUtpeFJialE4cU1vY3M4aUN4RXNKV3BEVi1raS1QejEyRVBpb1ZiaE0tUWFFNGIzVko0Xw?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTTBKQW9pWXhtSDhDTW5VTHhGeGJVU01GWU9OdDBUUVpka3lDc2E0WVU5S09WSXlHTjY0cTRDeDZ0aW0zUlVUNFFlOHBxaG4yeEx5djRxYUpJWGNLdFpaVjBMTVdmY3NJbVZMdi0xWno4dnpKTk5PVjJTVnRWLTY4V0dCcXRlbHhreDg2MTlJTEwyeE0wbTVOSEl5T2FtYS1JNnZ6cWlEd0RHdndQdVVtcVBoRjhkQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260926-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-24",
-  "ko": "오만 인근 인도 화물선 피격 — 승선원 1명 사망",
-  "en": "Deadly attack on Indian cargo ship off coast of Oman — one crew member killed",
-  "ar": "هجوم مميت على سفينة شحن هندية قبالة سواحل عمان — مقتل أحد أفراد الطاقم",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/24/deadly-attack-on-indian-cargo-ship-off-coast-of-oman?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20260924-1530",
   "status": "pending"
  }
 ]
