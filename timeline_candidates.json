@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-10-06",
+  "ko": "튀르키예·파키스탄, '메카 방위협정'에 따라 사우디아라비아에 신속배치군 파병 합의 — 후티 공세 대응 집단억지 조치 발동",
+  "en": "Turkiye and Pakistan agree to deploy rapid deployment forces to Saudi Arabia under the Mecca Defence Pact, triggering collective deterrence against Houthi attacks",
+  "ar": "تركيا وباكستان تتفقان على نشر قوات رد سريع في السعودية بموجب ميثاق مكة للدفاع، وتفعيل إجراءات الردع الجماعي ردًا على هجمات الحوثيين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/6/10-6-yemen-war-update-sv?traffic_source=rss"
+   ],
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWkhEY2lZckRXaEVwVXhnd0FwR2JGR2x5dHB5RWk5QmpIUkZuanMyU1BPTnFGUU5sWTIyZWxRZHJhLUh1YUk1NUYwVWhxRmxfMzlqX0thWC1UaUlXTERtcm9tUjRFMjJhM1RXSFBnMXV1V2VhSzRaYWc5Z3ZaanFrbzg0ODhYb2N5cmNPNHdhaVBOS0NhUVRqMjJjX0NFMUxMaGJIUzJoMUxJVjcwY0FvdVdVYmhpamlwNGNvQzM5V1VQTE9oVmJPbktZREVKd9IBzgFBVV95cUxNWkhEY2lZckRXaEVwVXhnd0FwR2JGR2x5dHB5RWk5QmpIUkZuanMyU1BPTnFGUU5sWTIyZWxRZHJhLUh1YUk1NUYwVWhxRmxfMzlqX0thWC1UaUlXTERtcm9tUjRFMjJhM1RXSFBnMXV1V2VhSzRaYWc5Z3ZaanFrbzg0ODhYb2N5cmNPNHdhaVBOS0NhUVRqMjJjX0NFMUxMaGJIUzJoMUxJVjcwY0FvdVdVYmhpamlwNGNvQzM5V1VQTE9oVmJPbktZREVKdw?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdU0zbXpPMm9EaG84Zy1sTGhaVGZhM0Rid3QzZUVuMXBYdVFhYzVGTkpIRmUyWDlaaGNaRTlSLWZyc2ZRY19VbkFObl8zVG5RSjR2aTBCN0hDWk9UanBHTm5tOV9vOWt3Y29OTXRTSFJKdzZpWDNfaENicmluek56MHRfemRvMzdac1IwanhvMFAtV1IzVDlISmM0OGktVVpyaTJZdElR0gGrAUFVX3lxTFBja0xFYkx0NDJiak1nYUFXTFNpZ1ZmMkN1cVlxT01FU2RpVjhkdTBGUEgxM3dDSzhESE43Mk9Ncll2MEFGN2NOOWhpWWQ1TC00YlNzazJSUENraDlDR2JpUkVTbXlDYUVuMkVkX1ZkLTYyUzE4ZkljNnpENWR2X25kckR4cV9adlN6am1PeFoxUVNqV1BtWXpNdGhkWGFxYUI2bWxtRnB0UEdmZw?oc=5"
+   ]
+  ],
+  "first_seen": "20261006-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-05",
   "ko": "예멘 사우디지원 정부군, 후티 장악지 전면 탈환 작전 개시 — '해방 전투' 선포로 예멘 내전 재확전",
   "en": "Yemen's Saudi-backed government launches full-scale offensive to retake all Houthi-held territory — declares 'battle for liberation'",
@@ -268,6 +293,56 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-05",
+  "ko": "예멘 정부군, 모카항 탈환 및 바브엘만데브 해협 통제권 회복 발표 — 두바브·밥·호데이다 등 홍해 요충지 후티로부터 탈환, 후티는 부인",
+  "en": "Yemeni government forces retake port city of Mokha and claim control of Bab al-Mandab Strait — also seize Dubab, Bab, and Hodeidah from Houthis; Houthis deny",
+  "ar": "القوات الحكومية اليمنية تستعيد ميناء المخا وتعلن السيطرة على مضيق باب المندب — واستعادة ضباب وباب والحديدة من الحوثيين، والحوثيون ينفون ذلك",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis?traffic_source=rss"
+   ],
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWkhEY2lZckRXaEVwVXhnd0FwR2JGR2x5dHB5RWk5QmpIUkZuanMyU1BPTnFGUU5sWTIyZWxRZHJhLUh1YUk1NUYwVWhxRmxfMzlqX0thWC1UaUlXTERtcm9tUjRFMjJhM1RXSFBnMXV1V2VhSzRaYWc5Z3ZaanFrbzg0ODhYb2N5cmNPNHdhaVBOS0NhUVRqMjJjX0NFMUxMaGJIUzJoMUxJVjcwY0FvdVdVYmhpamlwNGNvQzM5V1VQTE9oVmJPbktZREVKd9IBzgFBVV95cUxNWkhEY2lZckRXaEVwVXhnd0FwR2JGR2x5dHB5RWk5QmpIUkZuanMyU1BPTnFGUU5sWTIyZWxRZHJhLUh1YUk1NUYwVWhxRmxfMzlqX0thWC1UaUlXTERtcm9tUjRFMjJhM1RXSFBnMXV1V2VhSzRaYWc5Z3ZaanFrbzg0ODhYb2N5cmNPNHdhaVBOS0NhUVRqMjJjX0NFMUxMaGJIUzJoMUxJVjcwY0FvdVdVYmhpamlwNGNvQzM5V1VQTE9oVmJPbktZREVKdw?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdU0zbXpPMm9EaG84Zy1sTGhaVGZhM0Rid3QzZUVuMXBYdVFhYzVGTkpIRmUyWDlaaGNaRTlSLWZyc2ZRY19VbkFObl8zVG5RSjR2aTBCN0hDWk9UanBHTm5tOV9vOWt3Y29OTXRTSFJKdzZpWDNfaENicmluek56MHRfemRvMzdac1IwanhvMFAtV1IzVDlISmM0OGktVVpyaTJZdElR0gGrAUFVX3lxTFBja0xFYkx0NDJiak1nYUFXTFNpZ1ZmMkN1cVlxT01FU2RpVjhkdTBGUEgxM3dDSzhESE43Mk9Ncll2MEFGN2NOOWhpWWQ1TC00YlNzazJSUENraDlDR2JpUkVTbXlDYUVuMkVkX1ZkLTYyUzE4ZkljNnpENWR2X25kckR4cV9adlN6am1PeFoxUVNqV1BtWXpNdGhkWGFxYUI2bWxtRnB0UEdmZw?oc=5"
+   ]
+  ],
+  "first_seen": "20261006-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-05",
+  "ko": "후티 반군, 24시간 동안 60차례 폭격 보복으로 사우디 아람코 제다·리야드 등 주요 시설 및 공항·정유시설에 미사일·드론 공격",
+  "en": "Houthi rebels retaliate with 60 strikes in 24 hours, launching missiles and drones at Saudi Aramco facilities in Jeddah, Riyadh and airports/refineries",
+  "ar": "يشن الحوثيون 60 غارة خلال 24 ساعة ردًا، ويطلقون صواريخ وطائرات مسيّرة على منشآت أرامكو السعودية في جدة والرياض والمطارات ومصافي النفط",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Tehran Times",
+    "https://www.tehrantimes.com/news/530785/Ansarallah-sets-Aramco-sites-ablaze-as-mercenaries-commit-war"
+   ],
+   [
+    "seoul.co.kr",
+    "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Q2N3dkNHbFBWUXZ4MVJrU0NhYzVQUWM4dFZkV3UwUFVfNGZMakVOVkF0ekNwQTUzZ1lRUVNBNEFHUFU4amg2b2d6bTB0cHJnOUFqNVkyNA?oc=5"
+   ],
+   [
+    "조선일보",
+    "https://www.chosun.com/international/international_general/2026/10/06/HE2WGMBRGEYGGODDGYYTIZTDMU/"
+   ]
+  ],
+  "first_seen": "20261006-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-04",
   "ko": "후티, 사우디 리야드 아람코 시설 미사일·드론 공격 주장 — 예멘군은 사나·사다 등지에 맞불 공습으로 보복",
   "en": "Houthis claim missile and drone attack on Aramco facility in Riyadh — Yemeni army retaliates with strikes on Sanaa, Saada",
@@ -424,6 +499,31 @@
    ]
   ],
   "first_seen": "20261004-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-04",
+  "ko": "미국, 이란 드론 공격 위협으로 영국 페어포드 공군기지서 B-1 폭격기 12대 전원 긴급 철수",
+  "en": "US urgently evacuates all 12 B-1 bombers from RAF Fairford in UK over Iranian drone attack threat",
+  "ar": "الولايات المتحدة تسحب جميع قاذفاتها الاستراتيجية الـ12 من طراز B-1 من قاعدة فيرفورد الجوية البريطانية بسبب تهديد هجوم بطائرات مسيّرة إيرانية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTGJJZVJNaVRXVmJHdWlWUG9Hd3YxS0FoNFZKdUtqTGgwWGJJRzB5aW1BZ24ydG5PSndKQU5KX0tMT3lXQ3Q5MGw3Q0Vvc1pHUll1WnlYMGk3Z3ZxeGtWaDFIcW1EVFFYU2lxd3d4TjNUX3ZGd2JBVkpTM2ZweFoxeW9NcDdXbDR5cnJvdHJWU2RCaHhKbFZ4aTBXVWpKYVpjXzdzWWViV0xKdU9IZC1QZUloQ2FoMXF30gG-AUFVX3lxTE9OVGdoUi1COFlnTS01eE1vVXhoNWF0WlJ4YlB1ekpvWHRObmQ3QmlPcU8wUV9ScGM3NGRMNjF3Y09Bd1JOaEVtaFI4cU1FdGZsbGZOOENJS1h2VDFaNnJmdU9wTEVreGlQd1VwZkQzTUJMRzlXSW9oYmFqeGNra0Z3Ti00SWVHeVhOejdnU0FLX3dsNE03LXNQMFpIUHZjWUZKSmdlcG91V1FvZm1DUE9vUWlNLWtSMjNEQU45RXc?oc=5"
+   ],
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQjRsdk41T0lIa1daTjFnY2Vaek1lcW5EUTdXNmtXT19XNm1VUDFjU29fOEtwSWhVbjU5bUtXcEJZNjNMZTk5TXV0VThpSjUyQ2J3dm1JcUNwNGNSdzVPbTdlWE5pQkc0X3d1VldTWjR2czBZb0xfa0lEcnB2Q2NJTHdB?oc=5"
+   ],
+   [
+    "Axios",
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaGVFcXp0VEluYW14M2pjWk91QUdjLWNoS25SdVBEeU1vZjZ6Y1BRSUVsaHc2aVRmR2V3elJJSHdFdUx6bGpHU01ZVUExRnVCRXpEZUYtSEVkampkVTBhZGlnM181RXVIbXZJN3NOcV8zdlc1QnpQRy0xMjlDUDkycjZfOG5sc192alU1bmp4Nk92QW1xYnRGRm1fQ0cyVGk4Q3J3?oc=5"
+   ]
+  ],
+  "first_seen": "20261006-0700",
   "status": "pending"
  },
  {
@@ -1733,90 +1833,6 @@
    ]
   ],
   "first_seen": "20260926-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-26",
-  "ko": "DP월드, 호르무즈 해협 통항 차질로 물류비 급증하자 화물 우회 경로로 전환",
-  "en": "DP World reroutes cargo as costs mount from Hormuz Strait disruption",
-  "ar": "دي بي وورلد تعيد توجيه شحناتها مع تصاعد التكاليف الناجمة عن اضطراب مضيق هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQc3pQaEp4QU1wYTE2NUM3dTN5aDh2MExKS2duTHBTMTFOcE9jbzU3MkNzUWhXSnBrNlRITmM2cGd0bmFmWTVPVGFlY19kdDRuWXFLa3JJNmR1dnlxZGJaUkVJMWZjSjZRVzZLdkpwUmEwZnRCZVpPNXM3Y0JLYU9idURveldxaTl6Q0hkYWtDQy00Qks0VmR1RWRXM3ZDOXJzUjFxRmh2ZGlhYTQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260926-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-26",
-  "ko": "연합군, 후티가 카미스무샤이트 겨냥 발사한 탄도미사일 2발째 요격",
-  "en": "Coalition intercepts second Houthi ballistic missile fired toward Khamis Mushait",
-  "ar": "التحالف يعترض الصاروخ الباليستي الثاني الذي أطلقه الحوثيون تجاه خميس مشيط",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "qna.org.qa",
-    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdV9vLTlydGE2cl9Id3hLTkh6bXRNd2UwazBIMEZZWXJsMGZaV1lielhRNjVkSjBHZDNKOVlpWEJQUFIxb0lDYWNvNUxjWDkyc2U4aE8yakJHdjRNeFd3Vjl2T09aR1R3WEFXNFVkZk5NbkpJV1FqaTF1R0tWemVURnJ1b1lrQi1MZkJBMUNVSnhLUy1aZ0pKVzVzamJHWXR1QzJmOHlpQllHSS1lSE1TdmVGTXN4QlFuWmJycFFRbjk4ekhTY3FlQzFQSTRhYkRZME44MUY1TU5udw?oc=5"
-   ]
-  ],
-  "first_seen": "20260926-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-26",
-  "ko": "트럼프, 이란의 '호르무즈 재개방 7일 계획' 제안 거부 발표 — 이란은 뉴욕에서 9/30까지 미국 최종 답변 대기 방침, 강경파 내 '미국 기습작전' 관측 제기",
-  "en": "Trump rejects Iran's '7-day Hormuz reopening plan' proposal — Iran says it will await US final response in New York until Sep 30, hardliners speculate on possible US surprise strike",
-  "ar": "ترامب يرفض مقترح إيران 'خطة السبعة أيام لإعادة فتح هرمز' — إيران تنتظر الرد الأمريكي النهائي في نيويورك حتى 30 سبتمبر، وتكهنات لدى المتشددين بعملية أمريكية مفاجئة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMirAFBVV95cUxQd0R6MW9Vbm9HMjF0bkNUR3J5UmZ6WlhHSmZFenUtZEgzOU5RMmg4eWlDRElHODRNVW9ycUFwb0ZhbWoyV2lRQ2oxRTRfVXFmZXQ5TmpwTFNJUVFzZW1mLWRzRGZ4OGJsWC1PSHNYU3k4QlpUdTc5QkF2VlNFMnZSdDByLVpyX09wQ2FYVFFJOXIzTEU1R0tXZUVTMlZUbmtKSTFtb0J6T3dLUFc1?oc=5"
-   ],
-   [
-    "CNN Arabic",
-    "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMUZDQTFjQXlQU2VxblJuYUlEVnJtVGpJX3hUMzd0ZGFXMmVDam4xc3pUSC1hMV9fcW0xMHNyREdnTHZaeFk5Wm1lU1VGSE5CRTFtOGJFb0NlZDczVjFBN0VGTmhaMGxCeVJjTkIxMzJDZTNtbFJBaG1MUFJqTVBSTXZmNEdIZEhnWHBkc1FPaFNuM1pZeDVfMUllbXI1QU92blJhdDctNGp6RzdoT1hfYVduLThBaloxaUdxU2FSYkY4d1dibi1UZ21n?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSVR2bkkxYXA2cmJpVVk0ZzRTUTRPb0p2NGdNU3R5MTR6RUhRaGR1T04zMFAySE4ydFNMVDBkSElVV2lLdFFmVWczQmlUeWo0UDVQMDZSUVJEakRNc2xWZ1habGpucE9FZ0l5dS1DWUI4eDZPaGNtV21tbk5tNUh0T0NhZmxfQWRTbDBEQk9POEw4THQzX1Z6dHlB0gGfAUFVX3lxTFBObHFkSXhZYWJxXzU0bGhMT0NPSlFQdGNTMHVqdTlLS0hCSTRSTVF5eDRnYnhMSERBWWRnai04NWs5VjREWEt0aUVaaXh4UV96Z0t3REJ1UUFpQV9yLVZpOFVlbDktc3FwOWVkc3NHNkUwazFVbVF3Z04zSUl1R00yYTRxVm43NWN2cFUtNzQ1am5LT2tlSEZ1Q2ZaNng2VQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260927-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-25",
-  "ko": "이란, 미국에 '7일 로드맵' 제안 — 전 전선 종전·봉쇄 해제시 7일 후 호르무즈 해협 개방 및 핵협상 재개 공식 제안(아라그치 외무장관 확인)",
-  "en": "Iran officially proposes 7-day roadmap to US — offers to reopen Strait of Hormuz and resume nuclear talks 7 days after full ceasefire and lifting of blockade, confirmed by FM Araghchi",
-  "ar": "إيران تقدم رسميًا خارطة طريق لمدة 7 أيام للولايات المتحدة — تعرض إعادة فتح مضيق هرمز واستئناف المفاوضات النووية بعد 7 أيام من وقف إطلاق النار الكامل ورفع الحصار، كما أكد وزير الخارجية عراقجي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTkxxQ0tXQkJTWm1HVER6Vk9aOUU2cEhZc3M0ckNEaFBuMHVnOFVDS1dBakZCMmU1MVpjbmpDVHR1SlNkMlY2U2kzMC1YT1BpOVk3RWNUT1ZGWlVjbkF4M1FXcTlDQ3BJN2E4Y29MbjRudzNHWnVTYVB2djIyVUxKc1pGb2pFRjR3WlhMOFIycWlGdkVrMS1SLWlCYTlKdXJaR1J4d3h3ODFZOTVfd3hLc2FqeGY0cW1j?oc=5"
-   ],
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ZNjJzT2M3cmx3aVBfd2c3ZmptNmhmVW5PeE94UEVqS0RkZ3pWN3pjQ2oweFUyMkxVN1A1NU5iOUxNUEpuTzZ5TFNIR0UzUE9Nd1pIUDdDanZnclRxUGUyMzJCejNrcl9fRWpnNlg3cEh5bXh5OGIzNm1R?oc=5"
-   ],
-   [
-    "연합뉴스TV",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkTnMwYXlIcnFrWVQyZ0tjaDI4LVIzX1FTWWVNRmFzcldDLU5YeU1jNmRQTnRLZTN0UHAxYXk0bkptblZwUVAzQWczSmpyZGU3WTNObmZfRVNfUzZ2Ml8wZzlkRlg1RGs?oc=5"
-   ]
-  ],
-  "first_seen": "20260925-0700",
   "status": "pending"
  }
 ]
