@@ -1,5 +1,72 @@
 [
  {
+  "d": "2026-10-07",
+  "ko": "호르무즈해협서 유조선 'On Peace' 피격—부상 선원 12명 중 인도인 11명, 오만이 구조",
+  "en": "Tanker 'On Peace' attacked in Strait of Hormuz — 11 of 12 injured crew are Indian nationals, evacuated by Oman",
+  "ar": "استهداف ناقلة 'أون بيس' في مضيق هرمز — 11 من أصل 12 جريحاً من الهند، وعُمان تنفذ الإجلاء",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261007-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-07",
+  "ko": "후티, 예멘 아덴국제공항에 미사일 2발 발사—인명피해 없음",
+  "en": "Houthis fire two missiles at Yemen's Aden International Airport — no casualties reported",
+  "ar": "الحوثيون يطلقون صاروخين على مطار عدن الدولي في اليمن — دون إصابات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/7/two-houthi-missiles-target-yemens-aden-international-airport?traffic_source=rss"
+   ],
+   [
+    "© AFP",
+    "https://www.france24.com/en/middle-east/20261007-middle-east-live-houthis-target-airport-in-yemen-as-israel-marks-october-7-anniversary"
+   ],
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbzM2ODBLbG9aTlZVenpCN1NrRnI1a3NQX1JLSXFibnNxeUx4YXZtUmhfSk1CWjcwSndIYlRHUDNqUVJjeGJHcTJFREZXbUNZYWgtdTIwMXZxdlhIUlVnbmdsUUdvR0tnTmtDSXJvSGdJd3Q4LVpBMWhNS19hd0wxbWhXVEhhd0NEMkRQcHNOb3BsUkdSOWpOQW1ZdWc5S3hfSzJrR2dXdzJGS2s5Z2c?oc=5"
+   ]
+  ],
+  "first_seen": "20261007-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-07",
+  "ko": "후티, 사우디 자잔·나즈란 공항 등 2개 공항 공격—사우디 주도군 리야드 인근서 미사일 요격, 리야드서 폭발음",
+  "en": "Houthi rebels strike two airports in Saudi Arabia (Jazan, Najran) — Saudi-led coalition intercepts missile near Riyadh amid explosions heard in capital",
+  "ar": "الحوثيون يستهدفون مطاري جازان ونجران في السعودية — التحالف يعترض صاروخاً قرب الرياض وسط دوي انفجارات في العاصمة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/6/houthis-saudi-led-forces-claim-victories-as-yemen-fighting-rages-on?traffic_source=rss"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxNb1V3ay1naHVaQ203NzVqdC1peEhfckdfSG9VX2dRU0lkMHNrT2tRT2tfLWtsS0dyb2pNTzVhYnhEMi1ONFc4OTlwTWlmaVVWWF84ZXdNeFBpbFNyT0ltZFJBem0ycklXZFJsSDVpcGVSSXpBUl9JWm9HWEliSEFDZ2FUN3pwLUZVSGVaME1CYWlIMmE4SVpLazNiVGcxZ2lHVjJrOUh3?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5lM0dIaUxWdy1CTVJsREM5YVFLRW11SnUyN3lKWG1fVWg3cXRyYjhzZnIyRDgtZEtWTzJJRjJIWDBIemdMZUU4enNHVVMtb2l0UWRzQXZyT2NMU2k0?oc=5"
+   ]
+  ],
+  "first_seen": "20261007-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-06",
   "ko": "튀르키예·파키스탄, '메카 방위협정'에 따라 사우디아라비아에 신속배치군 파병 합의 — 후티 공세 대응 집단억지 조치 발동",
   "en": "Turkiye and Pakistan agree to deploy rapid deployment forces to Saudi Arabia under the Mecca Defence Pact, triggering collective deterrence against Houthi attacks",
@@ -1774,73 +1841,6 @@
    ]
   ],
   "first_seen": "20260928-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-27",
-  "ko": "영국 내 '미군 이란공습 거점' 기지서 폭발물 테러 미수 적발 — 5명 테러 혐의로 체포, 배후에 이란 연계 의혹 제기됨",
-  "en": "Bomb plot foiled at UK base used to strike Iran — 5 arrested on terrorism charges, Iranian link suspected",
-  "ar": "إحباط مخطط تفجير في قاعدة بريطانية استُخدمت لضرب إيران — اعتقال 5 أشخاص بتهم إرهابية، مع شبهات بارتباط إيراني",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSUVQdGdQNkExS2gtaXRtcVNzbVp0WXBCei1zZDZXMGpsOUJ3Z0N4eEdvelZUM1ZBRXl6VHpnZWdpWlBsT0lVemdGNy1TdmYzT1RDNVRoNE1PWDdjb3VrV3VaaTlweExWQ1VJdng2Q3B5dGlJQ3BJc21oaEd5ME5ZMWszRlRIOUU0MFU4VjB4YVJqRENy0gGaAUFVX3lxTE5ncmdzQmpQMllQc0lzTk1RUVpRWkoyNFVlaTNWT2p6WDFXWHpuS05zc2g4SU9BQmt1eUt4Q1RXRWxSNFNDbk1BVGFPUW1IUF9SNkc2WWwyQ2NzaFdDUGFDc0JRcUliYlU4aUZUY2V1R3c5X1YxTldyNTlfOUZlN3EwTjhwbHBkR2U0WjYxa1NzaUxjWC16Sk95eVE?oc=5"
-   ],
-   [
-    "문화일보",
-    "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9KeTNUTVJrWHFXczlDdVJDM29GN2RtcTFvdFhleTdMb3h1UjFXeVYzUnBfMFFKWHVmeFd4Tk44V2xUZUNseFZJOFZDamtmamNj?oc=5"
-   ],
-   [
-    "seoul.co.kr",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZEg5UmFQc2hFZ2lNOWpHWEZBVUhsMHBqYjg0ZFVfcFp1YnJRanBSaDFOeHJTcmJzZ3pxSzlpLUVPc0FrQXVnLVlwa1pPZnY5aDhIeW1WcVNCUTlaLU42ZmxxMGl4WlladU5mU2lqaVVENXdMWWxsM2NFSEdNQVRiaQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260928-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-27",
-  "ko": "미 재무장관, 2주 내 이란의 대중국 원유수출 사실상 중단 전망 — 미 해상봉쇄로 신규 수출 차질",
-  "en": "US Treasury Secretary predicts Iran's oil exports to China will effectively end within two weeks — due to US naval blockade disrupting new exports",
-  "ar": "وزير الخزانة الأمريكي يتوقع توقف صادرات النفط الإيرانية إلى الصين فعلياً خلال أسبوعين — بسبب الحصار البحري الأمريكي",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260928_0003804966"
-   ]
-  ],
-  "first_seen": "20260928-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-27",
-  "ko": "트럼프, 이란 휴전(정전) 제안 거부 — 미 대통령이 이란 측 새 정전 제안을 거부하고 호르무즈 해협 재개방 제안도 배제, 이번주 추가 협상 예고",
-  "en": "Trump rejects Iran's latest ceasefire proposal — US president rejects Iran's new ceasefire offer including reopening of Strait of Hormuz, signals further talks this week",
-  "ar": "ترامب يرفض مقترح إيران الأخير لوقف إطلاق النار — الرئيس الأمريكي يرفض عرض إيران الجديد بما في ذلك إعادة فتح مضيق هرمز، ويلمح لمحادثات إضافية هذا الأسبوع",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "NPR",
-    "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-terror-plot-iran-strait-hormuz-cnn-trump"
-   ],
-   [
-    "cnbc.com",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeXpWNldIRDQ5empkU08yMVltS1BhcDhDd2lHOFpiN0tkUHVsTUJ2aTBNQUoxODhJX1BDTWdQbm1jSGh4SFZIbEFpNFpQUHF0dGdodjY3dzFPVVY5eUZiazJGTEt0U3p2dVdueG92Zkd0V1hWMmo5UWRGYlRSWDdxYnFxWUdxY00tTEhhSFl6RTNjMHVma0pNVUQ1akV5WUgxVFdXdGc0NmIzeTd2QmhxVjJBRXU1WExiWUFjZlh2blEyRnFP?oc=5"
-   ],
-   [
-    "NPR",
-    "https://news.google.com/rss/articles/CBMilAFBVV95cUxQT1VrMVZBQ3MtdDItbFhBSGlDdVBsRm8wUEdob2xpbUk5Q0xRWnNPU2psUk5Wczk1WlI4ZWJzbUJsSzVBaXJnU19NYWV6eldvOTZtQm9OS21iNWlJaC16Z3V4b25mUUxhTmFLZDNaN1FpbkQ5N1k0bDdZWXVBSXgwLXd0SWxrY0MyM3dqNTBTakhWQjBq?oc=5"
-   ]
-  ],
-  "first_seen": "20260928-1530",
   "status": "pending"
  }
 ]
