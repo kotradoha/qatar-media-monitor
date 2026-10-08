@@ -1,5 +1,143 @@
 [
  {
+  "d": "2026-10-08",
+  "ko": "카타르 인근 걸프 해상서 유조선 'Acers'호 다수 발사체 피격 — 사상자 발생, UKMTO 확인",
+  "en": "Tanker 'Acers' hit by multiple projectiles in Gulf off Qatar — casualties reported, confirmed by UKMTO",
+  "ar": "استهداف ناقلة النفط 'أكيرز' بعدة مقذوفات في الخليج قبالة قطر — سقوط ضحايا، تأكيد من هيئة التجارة البحرية البريطانية",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "BBC Middle East",
+    "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&at_campaign=rss"
+   ],
+   [
+    "BBC",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1WLUp3NXNGaDVzNS1OZGI4bFdRMjRqNjFXcEpGZVUzZW1PMUVtVlV6dTdxTDIzRjdlNkxWd2E2b2EwcVBWMmwwOGhYMTBMQ05LYkF2R1c0M1dTcHc?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWGpBZ3dHeE0yV0pvMTR0VTBMdHpZQUZoWjdneXNyV0d3RWVoZm1TWFJ5cS16Y0lCRk5PM2dEdVp1dlp2ZEJwTkQ5SlR4dVVoYzVwa0pEdjd5OUJCUTZmaVdRTUk4alo5TTJFRlVVV2lkSzl3MU5PMER5WkR1T2tlYVdNNU15cGQxMVViendna1NZRjBxdnUxb2dMZHFua2ZzVFZ4YTJ4cUg?oc=5"
+   ]
+  ],
+  "first_seen": "20261008-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "호르무즈 통항 회복 시도에 이란군 유조선 공격 최대치로 확대 — 이란, 해협 통로 '폐쇄' 주장",
+  "en": "Iran escalates tanker attacks to highest level as Hormuz transit recovery attempted — Iran claims route will be 'closed'",
+  "ar": "إيران تصعّد هجمات الناقلات إلى أعلى مستوى مع محاولة استعادة الملاحة في هرمز — إيران تزعم أن الممر سيُغلق",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SZUVlai1DdXdzUGI0LV9fLS1rbHM5M0QtcWV2Q3ZwdzBIclVHNllNYnFJdkFVU0J3VEpoeGZtbTQyTzJTdDZqbVJrNGptQmd1RUI3WHkxXzBNU1hIcl9xaTE4ekhlNElWZzZzUzlORmRTVG8?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWGpBZ3dHeE0yV0pvMTR0VTBMdHpZQUZoWjdneXNyV0d3RWVoZm1TWFJ5cS16Y0lCRk5PM2dEdVp1dlp2ZEJwTkQ5SlR4dVVoYzVwa0pEdjd5OUJCUTZmaVdRTUk4alo5TTJFRlVVV2lkSzl3MU5PMER5WkR1T2tlYVdNNU15cGQxMVViendna1NZRjBxdnUxb2dMZHFua2ZzVFZ4YTJ4cUg?oc=5"
+   ]
+  ],
+  "first_seen": "20261008-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "미 의회조사국(CRS) 보고서 — 이란전쟁서 미군 항공기 81대 파손·손실, 피해규모 최대 4.4조원 상당",
+  "en": "US CRS report — 81 US military aircraft damaged or lost in Iran war, costs estimated up to $3.3 billion",
+  "ar": "تقرير خدمة أبحاث الكونغرس الأمريكي — تضرر أو فقدان 81 طائرة عسكرية أمريكية في الحرب مع إيران بتكلفة تصل إلى 3.3 مليار دولار",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261008_0003819651"
+   ]
+  ],
+  "first_seen": "20261008-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "미국, 이란에 대한 추가 공습 가능성 보도에 유가 4%대 급등·증시 하락",
+  "en": "Oil prices surge over 4% and stocks fall on reports US eyes fresh strikes on Iran",
+  "ar": "ارتفاع أسعار النفط أكثر من 4% وهبوط الأسهم وسط تقارير عن احتمال شن ضربات أمريكية جديدة على إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AFP.com",
+    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMHRxQ1JCaF94S21UaER2NkVnampRVTE4NXZwMjVOYTgzckRFMU9rdk1QSHdDbmozQVcycmg1aHRiQncxbXExajJwZEdyVWZPNlJDZmhCT1JzVkYzVjZqeDlHVnRPNWhIU2lRd3Z3SWxaU0p3RUVqc1VGcTFhNnBwdmFVUW81dUtKVTk0?oc=5"
+   ],
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMid0FVX3lxTE4wZ3Yta1V2T3owckxzV2FLdnNPYkl0R25reHF4ZWVQTGNaQksxWkJKMkplNmYyYzBtMVdnQXZZNXYwSVI4emwweVJZcVp4Tl9qNDJXcnY2UGZJN3l1OG42OE9DLVQtNlB4cW10bzdLU2VQNG55di1F?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaWE4OFltWXdIcGFibFAtOHBsNDZ4aFVpZkNtQmpkcWdyWHNnWG9adHJhdm40SXZuS09Dd2VlM3k1cEQ1RENqNVJEcUFiMzE4SGllbDJnZ213TzliSW1NWk94M092SzdDbkpQaVFHUjRlSDJUdENzb2VKMEtPMVNxOEtnUXd1aXVoUDBVLXdZMjNBNkt4dlpCMG1PbzlxZTBiWEFPOXFZOWY2SEpZOGpxSw?oc=5"
+   ]
+  ],
+  "first_seen": "20261008-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "영국, 이스라엘의 동예루살렘 총영사관 폐쇄 통보에 '대표부'로 격하 운영 — 막판 합의",
+  "en": "UK downgrades East Jerusalem consulate to 'mission' after Israeli closure order — last-minute deal reached",
+  "ar": "بريطانيا تخفض قنصليتها في القدس الشرقية إلى 'بعثة' بعد أمر إسرائيلي بالإغلاق — اتفاق في اللحظة الأخيرة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "BBC",
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtd0NncHdwc01jdDU0Q0ViMFdhMTBodVFFcGlGV09yaGd5ZE1mcE5USDBYZTZoT2VHazh1WFQ2SnpPM2FQOElXaDI4ZnI4UHVQQUZ2VE1zUnE?oc=5"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSFROS3RaVVVkdm9MNEVMa3lvSWxCZjNlN3BpUjVPUDFUOUI2R2tleklJS2djaXA0YnE5LUFERDRaV1FTalp5RU9NcUp6dFRqY1RRMjRSUkVpNEg4NUVNQ3lGUTlIQjJjM3RBaVp0Ni1TSXR6emNfZzdBN29KUU1fczVHSEd5Q3NvTU8yaEZNTXpqbTczSE1vbEk3QURWQUtlNnUzTFZtSHYyaVnSAbABQVVfeXFMUFNBV3MyMS0xUm1tRnZlYk5idzByYmhCUVg4T1c1ZGJtVF9INnNYOThCVEdJUmpNQ01HQzFpQks5dzBIbHVPVXNwMWpxeS1tc2VVaDFlUXNweHhsUjAtT0ZlMG9VSGM3aHlscUpKa0xMMWFCX2hYVV9nbVVoSVlRRC1DZjZ0WDlLc2RzdnlXdjdRLUo2dVdzMnVGdGFFb3hNemNaY19oV09Tb1ZTYXRfT2Y?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMlNEY1FDQTNvSVJRVUJ3bGcxb25tbkN2Y0VrZndjcUFFTzZrd3FIVXZRNmhzLThNLVpNSFNfOWxPQkJTTVkzU0xSa1JKUWhRX0d3MjRnbHU4YVpnSE5JUVZWV0ROYy1pMFRTcFJ6cnJpVy1wSWdocDVWbGNOc1ZHenI5QVRDVm5GcGYyeV9tSUhuZlRXYkFjNHZLV2tyNC1NcXdmWmpzcGdtR3VleFd1ak84d0Jnc3MyRHF2ZTg2Qk9lUC0xOHE5V3JwV3ZnaTRSYVdJM2NwdGN2Z2Fqbi1Kdw?oc=5"
+   ]
+  ],
+  "first_seen": "20261008-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "시리아 정부, 예멘 후티 반군 소탕 지원 위한 파병 검토 — 종파전쟁 확전 우려",
+  "en": "Syria government considers deploying troops to Yemen to support anti-Houthi operations — fears of sectarian war spread",
+  "ar": "الحكومة السورية تدرس إرسال قوات إلى اليمن لدعم عمليات مكافحة الحوثيين — مخاوف من اتساع حرب طائفية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ka1Z6MFRWQXEzQVA1U0Y2TzFPeTA4RVZoSXA3cklDYkROWFVlX1lMSHBFVEVEdkI0SEUxZjlQUEVERFl6MkktQm1ZOEFwSHZuWXhnTDh5cU9sUQ?oc=5"
+   ],
+   [
+    "서울신문",
+    "https://www.seoul.co.kr/news/newsView.php?id=20261009012003"
+   ],
+   [
+    "SBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTZXp2UDR4N2ZzNTBPSDF2NHhUMkVvV3RjLXhDYUItdFZwaXZWdG1tYUEtM1E5QTJ5WHhjUEN0ck15R3pOUW1HN1FoN0N6bkUwa3FKd1JkbGEtNmstTEFPR0EyUkFFa0t6ZlHSAWZBVV95cUxQek5SMUlwUHhRcG9zXzl5MS1QWXVTQUI2YXJDT2lLWmE3RlJ5by1RY0kyNUxtSlNxaURmT1diUnhxR0FXcHhRVDdmM2l4Nk85SW1XUUxreUsxSFV6Z1dldVI3dC1Odmc?oc=5"
+   ]
+  ],
+  "first_seen": "20261008-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-07",
   "ko": "호르무즈해협서 유조선 'On Peace' 피격—부상 선원 12명 중 인도인 11명, 오만이 구조",
   "en": "Tanker 'On Peace' attacked in Strait of Hormuz — 11 of 12 injured crew are Indian nationals, evacuated by Oman",
@@ -1707,140 +1845,6 @@
    ]
   ],
   "first_seen": "20260928-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-28",
-  "ko": "이란 최고지도자 하메네이, '적군을 아라비아해에서 몰아낼 것' 경고 — 미군 등 외국 세력 축출 위협 발언",
-  "en": "Iran's Supreme Leader Khamenei warns 'enemy forces will be driven out of the Arabian Sea' — threatens expulsion of US and foreign forces",
-  "ar": "المرشد الأعلى الإيراني خامنئي يحذر بأن 'القوات المعادية ستُطرد من بحر العرب' — تهديد بطرد القوات الأمريكية والأجنبية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVm5oOE82ZFZKWWl1el9NdHV1YTZ2c0t4UUtaU2hfQ0lvNzNxMWNMMm9GZ2o3NzBMTE8zTFRpZHg5SXFxU0piT0VzWkJvd3VJdzdkdEZJenN5TU9hYTNfN19McUl6T2t5RVVlWk9rNE5ZOWxFNTNvZUY2Z2VlNkxtYWZkMFhlVUdmSHdnbnhOdHpQWC1kRzZBZVZ2cTZhQzZEMkZfT1dneFNQRkpzbEduc1V2WHlJdlZsN0ZETE5fLUhfclVXNzE4?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/khamenei-says-iran-will-push-enemy-forces-out-arabian-sea"
-   ],
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86277306/Leader-Iran-won-t-return-to-era-that-enemy-longs-for"
-   ]
-  ],
-  "first_seen": "20260928-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-28",
-  "ko": "사우디, 주요 원유 파이프라인 보수 완료 후 수출 재개 — 피격·손상 이후 정상화 진전",
-  "en": "Saudi Arabia's crucial oil pipeline resumes exports after repairs completed following earlier damage",
-  "ar": "السعودية تستأنف تصدير النفط عبر خط الأنابيب الحيوي بعد اكتمال الإصلاحات في أعقاب الأضرار السابقة",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "bloomberg.com",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWG4wbWZuVUlMby1wTk1zSURXY2tUM1NtM1BlVVRlUjF0UDJ1bmgxOEgyOE9MMjZWX09vRmhaWElGQ0VmNTJDX1dycHctS2xmTU04VUZrLUQ5emttVEZzdm5kMUJnMFlIY3FvVEgzd2RMTFg0RlpSM2hYTk11Uk1INDA2SlVoWEtPZlhGQjlNYmR0RUY5T2hrZGtmXzhrNDFpcjREckR4UTJ5X0RJRkw0dDZXdFFtQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260928-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-28",
-  "ko": "美 마린 부상 — 이란의 비군사 선박 공격으로 미 해병대원들 부상(WP 보도)",
-  "en": "US Marines wounded — Iranian attack on a nonmilitary vessel injures US Marines, per WaPo report",
-  "ar": "إصابة جنود مشاة البحرية الأمريكية — هجوم إيراني على سفينة غير عسكرية يصيب جنود مشاة البحرية الأمريكية بحسب تقرير واشنطن بوست",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYjBnQkVEcThIYVdFODR1WURPRldmdEdxenYtZjFLRXNURmlqN0o2dURQV3RqVFkyS1gzcUpLamhSSmVXR1owYjFTSVpHejUwZVgwY3NSWlJVZmlZeFN5S3pCcDJnSFhhN1FQanhaMzVVbjRnYVhrS0VHZ055Y0RYTE56ejVwdTQzOWltTjdNRTAxcEN5MFB1LXJjdVVFTkZZZ1djSl9Bb1Y0SWpmRWZlSGpuQmtFVkN4dHc?oc=5"
-   ]
-  ],
-  "first_seen": "20260929-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-28",
-  "ko": "트럼프, 이란 호르무즈 재개방안 거부 — 유가 급등, 브렌트유 배럴당 약 106.56달러(전일比+1.22%)로 이틀 연속 상승",
-  "en": "Trump rejects Iran's Hormuz reopening plan — oil prices surge, Brent crude rises to about $106.56/barrel (+1.22%), gaining for second straight session",
-  "ar": "ترامب يرفض خطة إيران لإعادة فتح مضيق هرمز — أسعار النفط ترتفع، خام برنت يصل إلى نحو 106.56 دولار للبرميل (+1.22%) للجلسة الثانية على التوالي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "aljazeera.com",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTG9KcEZwMUZtVnNtZnBmMnBsa0RZN1I2V250T0xaSjBmT2tpNWx0T1ZodnBubENDcks5SWZiZlgwV1NWT3NDemFaX3FkRHFYNV8zdmo0elJfdGY2SWoxMUZZMTBmN1JjczNVYkVGNHNmOGNLR1NUeUJiMzJBejl1c2d5NUo0TFZKdkEtbHBEZFN0Slo5eDM3N1k5eXNpcnBNeVdOQ3U0M1FlVmk1aWNlLVkteVRKVDliUFHSAb8BQVVfeXFMT1lDRk9jWTJZZnFlQXprRWFFZ3pKVFZocjNKYTNtb014MFFXMDc0WEhNa2Exeng5Z1pRb21rWG5NUTYtUVNyeXZNck5pVVpPMDRRZHNIUDlHQUhMeTRsWGlwUWF0SEVGY3U2MGgtWjBDVlB1TWI0QldYRTZLQ0FfZDRfMW9hWXVTWldIZ3JyN2FWWlkxTkcxMHozT2gyNHdwTFM0clU2RDhFNTVGaC1WVG5Hc3d1aFNhTlk2N29VclE?oc=5"
-   ],
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMiekFVX3lxTE9kSktEczQ1cU5VX0RyU21RTFFyVFlsSFJyMkhBYmtjSGtxMk5uT0FqMjFSSzkyUk1VY0pFNHpRaW51dWN2bVpnRU1YX0U2by1oRDRJTkNhekFncUhicGlLdEd5YzhSenE0R3NyY0h6VmNUczhwWEs3Y0930gF_QVVfeXFMTThHUHBKazFqa1M4UUh0THhoN1JBUkFxOURNQlpxbXRHeVBzNThjaDlXZVNRS1NPVnFVMEpfWGFzQm1nX1JCRThpWjhXMS1HRzlUUG5ESGtkRHowU3E3U1FPbXlIRDMxc1M2ZHFiTDVFTm5UVzRoTkUtRnhTM0xMSQ?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalFIekNtR2pWcEdaNDNsUElsMTRodXZvOVBPbFJnSFlhbDlqbldRbE1TTGVUeTJGN2NRTk4zUGFlWG1NTl9PUkVjNHVzbnZ4YVJxbXg5aVZfZXJzYWhDa3FfZl92OG5Ic3ZNWEluX0N5ZV9aRlRYYXVYeUNUR3lXVGo1dHp4dmdzaF9pZDVGMjVCUGptMU5YcmlzcEhBa2t1NTZMMmsyeFVBWnNPLVJxS2NoM0FIUEQ0Q2ZF?oc=5"
-   ]
-  ],
-  "first_seen": "20260929-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-28",
-  "ko": "이란, 카타르 통해 호르무즈 재개방 조건 美에 재전달 — 카타르가 새 아이디어 제시 예정, 美 최종 답변 카타르 경유 예상",
-  "en": "Iran resubmits Hormuz reopening conditions to US via Qatar — Qatar to present new ideas, final US response expected through Doha",
-  "ar": "إيران تعيد تقديم شروط إعادة فتح هرمز إلى الولايات المتحدة عبر قطر — قطر ستقدم أفكاراً جديدة، والرد الأمريكي النهائي متوقع عبر الدوحة",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/9/29/irans-araghchi-meets-qatari-mediators-as-us-insists-on-nuclear-talks?traffic_source=rss"
-   ],
-   [
-    "한국경제",
-    "https://www.hankyung.com/article/2026092912387"
-   ],
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202609291046001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ]
-  ],
-  "first_seen": "20260929-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-28",
-  "ko": "美·이란 물밑대화 — 이란 핵 양보시 제재완화·동결자금 해제 제안 보도(Axios·CNN), 트럼프는 부인",
-  "en": "US-Iran back-channel talks — reports (Axios, CNN) say US offered sanctions relief and unfrozen funds for nuclear concessions, Trump denies",
-  "ar": "محادثات أمريكية-إيرانية خلف الكواليس — تقارير (أكسيوس، سي إن إن) تفيد بعرض أمريكي لتخفيف العقوبات وتحرير الأموال المجمدة مقابل تنازلات نووية، وترامب ينفي",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260929_0003806154"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaHRhTmk2ZHNFN0FEVVpTZVJ5aENoYXVDekQ0RUJWT1NlRGVGejRGdlJPOVNJcUFwNklQZnBuaktmYkQ5T2tBSjVfVElPaXNHaXRERU9sTW5yUTRTYkFLckNhRTNxRk4tS0NwSi05RDVnX0NQeVI3YVhKUVE2Z3YyeFBGbHBxejdmYWxRd3RHYUJHZkF5Z1RFbFdlcTJuOFFKQ2JDbVcxRHBQbUxiWEdNMXlFOV9UTWNTd2fSAb8BQVVfeXFMUDlCVTFUX1o2akd3UVZsUllkQWlOT2hYeUp6LW5jY3NSRS1ocjBXbnUtME9IbTQ3WFA4X29fVVBfd1lsYmJHblNzeUxLczl4WWx6Rk1vbExfOTNQV2hJMWxzM1JMOFEwbHA4T2xSbHZLMlQzY3BYT1hKMFh5aFFsOUZQYjZSZUotaDlaam9VREFEeVFkZlVlcDlPcUE2bGE3dWVNcHlqTC1tQWpIQ1E0SnlXMXlGZG5IMC1Gd3U2UUU?oc=5"
-   ],
-   [
-    "Axios",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzLTlNS2xVWTYwTmVybXRITlF0dW9lUXpfZkRpdjRXR29CQ2pKWTJORTlBUmZWaFBSLVIybG42Q3Z2TEp4aDlVMURMZmtoOGNfclJmSjMwS2hFZFZGUE1OenhhMzVSRUxCeDNnMkFlUlBoQWxuTFhMRkF3Zk9pdjA?oc=5"
-   ]
-  ],
-  "first_seen": "20260929-0700",
   "status": "pending"
  }
 ]
