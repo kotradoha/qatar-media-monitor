@@ -1,5 +1,26 @@
 [
  {
+  "d": "2026-10-09",
+  "ko": "USS 에이브러햄 링컨 항공모함, 대이란전 지원 321일 기록 작전 마치고 샌디에이고 귀환",
+  "en": "USS Abraham Lincoln carrier returns to San Diego after record 321-day deployment supporting war on Iran",
+  "ar": "حاملة الطائرات يو إس إس أبراهام لينكولن تعود إلى سان دييغو بعد انتشار قياسي استمر 321 يومًا لدعم الحرب على إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/9/uss-lincoln-returns-to-us-after-long-deployment-supporting-war-on-iran?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/uss-abraham-lincoln-returns-san-diego-after-deployment-during-war-iran"
+   ]
+  ],
+  "first_seen": "20261009-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-08",
   "ko": "카타르 인근 걸프 해상서 유조선 'Acers'호 다수 발사체 피격 — 사상자 발생, UKMTO 확인",
   "en": "Tanker 'Acers' hit by multiple projectiles in Gulf off Qatar — casualties reported, confirmed by UKMTO",
@@ -135,6 +156,131 @@
    ]
   ],
   "first_seen": "20261008-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "후티 반군, 리야드 공항 이틀 연속 피격 주장 — 사우디 항공기 1대 심각 손상, 항공사들 리야드행 운항 중단, 앞서 공항 피격으로 3명 사망 확인·튀르키예 방공지원 검토",
+  "en": "Houthis claim second consecutive strike on Riyadh airport — at least one Saudi plane severely damaged, airlines suspend flights to Riyadh; Saudi Arabia earlier confirmed 3 killed in airport strikes, Türkiye weighs air defense support",
+  "ar": "الحوثيون يعلنون استهدافهم مطار الرياض لليوم الثاني على التوالي — تضرر طائرة سعودية بشدة وتعليق شركات الطيران رحلاتها إلى الرياض، بعد تأكيد السعودية مقتل 3 أشخاص في وقت سابق وبحث تركيا دعم الدفاع الجوي",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZzcxVDZ1YjRVdmFDQTA4YnlHMW84TlJKcG45ZW5JSklaMi1DNEZHVXFBQmRFVGNXMEJtMkdieGZseUJCc0pWWHBqSTVsY0RFenV4YmRDN3hnRTZHSUotTWd5cjlqMHdFU05qZjE5dVc5dDFFRVhoOThYVnlpV0pSc2J1QnVZV1pCUEkybFNjOEEweTFCenl0eFhLZjdaWjJE0gGmAUFVX3lxTE9Sa29fOE56QVNxamdpZkxYS01BR3U2c2p5cUl6Z3dRaHhLRE1EMHVWWXhTaWFiWTNqZmxtcFhYbkxDNjRrMTNtMHlRNHZWVzJYOEtsNmw3X1l1LVhKR21wOVR2enk4SzVfRGt0anNHMktuVTEzNlIwdk9KdTh6R29PZURZVlZRc1hVZ1o0ZHJ2VlBWazh5WWZDOHRBMDlSa3J3Z1RMUmc?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/oct/09/riyadh-airport-flights-suspended-houthis-claim-attack"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/watch-least-one-plane-severely-damaged-houthis-claim-third-riyadh"
+   ]
+  ],
+  "first_seen": "20261009-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "이란 유조선 공격이 호르무즈 해협 넘어 카타르 인근까지 확산 — 브렌트유 배럴당 105달러 돌파, 이란·후티의 호르무즈 신규 공격 격화",
+  "en": "Iranian tanker attacks spread beyond Strait of Hormuz to near Qatar — Brent crude surpasses $105/barrel amid escalating new Iran-Houthi attacks in Hormuz",
+  "ar": "هجمات إيرانية على ناقلات نفط تمتد من مضيق هرمز إلى قرب قطر — خام برنت يتجاوز 105 دولارات للبرميل وسط تصاعد هجمات إيران والحوثيين الجديدة في هرمز",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFTlk3OFhGSzdQbG5NWlhwako0cFV6ejNqNV9DTDQtRjhrU0Y4RmtfOHRMTk1CeFA2aW1LcXFhMDhJaGxOVEFSdHhJdHdEdjZKVjJwRk50QzJiVWJqWHNGRkZR?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRlR3UHNEMFo0Zkt2RUV0S2VYUXh6RDY1MTBVQ3hjeTRXLTh2TlpZaUFoejFjMDM1WjVOYTRpYTZvNjBNUEprY3psWmxaOVgwNHJpZjZsVDZ4eXlSX3kzOFZ0czFIUlJKazJSSW5mNmxPcXJTQjlKX19teGVpOXBGSVhGTF94cXpfOVRrU2dWdXZRYmpVRmxzSDAyaXFlLU55UWtReVR2ZWs3bXE2RDAxdGVJQWhHUQ?oc=5"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQT0QxZmt6OUdKUzlCX0xERlR1VlVGQ01ObEY4SXIwMWY1X0lRYmNzT3FXWEF1QXVOMzJRT0pfWVN3ak8xeDRWNTV5T2pWclB5aTZPM2R2VnVBc1lLMi02a1dIYlVHSkFCV0kyYXlzS0daajJyMVo1WnhNZDBiRmpHQWNhelVfUmJMb1VTZ1VTQjNQU25SOUhxMjhQT2FibFpFMHJmZU5sNzUtZkRLWVFTVUhndzZ1TXc1QjJHa2ZKUG9UUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261009-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "미 재무부, 이란산 원유 밀수 '그림자 선단' 유조선 17척 및 튀르키예·UAE·인도 기업 10곳 신규 제재 발표",
+  "en": "US Treasury sanctions 17 'shadow fleet' tankers smuggling Iranian oil plus 10 companies in Türkiye, UAE and India",
+  "ar": "الخزانة الأمريكية تفرض عقوبات على 17 ناقلة من \"الأسطول الخفي\" المهربة للنفط الإيراني و10 شركات في تركيا والإمارات والهند",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "서울신문",
+    "https://www.seoul.co.kr/news/newsView.php?id=20261009500051"
+   ],
+   [
+    "중앙일보",
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3NFNMdlFuX3NtWFJia1NEU2tHZ0o0WnhxakctZXFmaGcxaDRxMFdOWmFEeXlURFBxcFVnSWdqV0ZqRktGVi16REhKUi1ic21JQXVZQ0JB?oc=5"
+   ],
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1sVERBSUNOU2ZaaXhrY1ppUy1MZHV0NmZFWHBidzZpYXZmM0RlMzhBc1ZEU24xSlBtdnJpajdPLWdFMmFuTDhQTEhSWjU5SUpQN08xWUJiSVA1QQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261009-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "트럼프, 11월 3일 중간선거 전까지 이란 추가 공격 보류 발표 — 다만 호르무즈 봉쇄 조치는 유지, 유가 급등 속 결정",
+  "en": "Trump announces no new attacks on Iran before Nov. 3 midterm elections while maintaining Hormuz blockade measures, amid oil price spike",
+  "ar": "ترامب يعلن عدم شن هجمات جديدة على إيران قبل انتخابات التجديد النصفي في 3 نوفمبر مع الإبقاء على إجراءات حصار هرمز وسط ارتفاع أسعار النفط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/trump-rules-out-new-attack-iran-until-after-midterms-oil-prices-spike"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOM0d0NjRJOURlUVRQaHRFeHB3eV9hNDBxTGlsWTZObEJjcUl3WFE1VDhnUUlPa1dKOElCM0Z5VE9aazRpM09wOHBQODJVOThmdzQ0RFJnNFdHTnFZb3R3VVJzRlFMOVI0cUU4NUh6RUwxU3F5SHlLSjFidVlPWG90T2l1RzFqSVdFaXNRSVBuQTFHMy0yandHRnIzb09NblBCOFRGNlJPTWZGNXpsTDBkdWx3VDA5TzVnbjc5MzNfUkZvYzZVdTAydXlvVWtPMkNoaV94R0podldrMjBpNXprNUxDcTZ3RFpVMmMxZ2VTN0pBRnJKUUpvSFNXakdNQQ?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSGZLdXBQSHN4LURXRDV0LTVTdGQ0WTlYWFdWenRmVTFrOERrZFdOa3MxN2RabDNIYXhMWkdBQm5ybVhUT21DNEI5dFI2cDZYbmRVN0RSWDhlckYyZHZNc3g3RG1TbkM5ckVlS1dic0NNeDM4ZFdEUkdpbWZpRFdBd0pRcnl2WUtEWVhxcm14VjBjQTBGcktHTFVMRmVPY28tZEJHaEtHNXZKUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261009-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "NYT, 미 국방부가 이란에 대한 '3일간 집중공습' 등 전쟁 재개 옵션 준비 중이라고 보도 — 이스라엘군 참모총장 자미르는 대이란 전쟁 재개 시 총선 연기 가능성 언급",
+  "en": "NYT reports Pentagon preparing options to renew Iran war including a 3-day intense strike plan; Israeli military chief Zamir says resumed Iran war could postpone Israel election",
+  "ar": "نيويورك تايمز: البنتاغون يعد خيارات لاستئناف الحرب على إيران تشمل خطة لثلاثة أيام من الضربات المكثفة؛ رئيس الأركان الإسرائيلي زامير يقول إن استئناف الحرب قد يؤجل الانتخابات",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hVzc5S3ltTERidDhlOF9yOXk3UExQOXU2dHBzdWF2ampPLWFsTFdPbHZodmZRS0t6VEhobDdNSFl1bEZDc01wSXBETXluQ2ZaUEM4Mm1kczR6SVNnUzRtOVhoZE5wTGZkWXc?oc=5"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPM0xzLW9SY0FCaUtXQW1rTmN6Mm43SURsMm1Yc0Z0dDRObUkydDlGZHpYTE4tTGVCdDVkSDh2NWdrVXJRdHE0S3Q1NHBGT0x1dWo4T29wcWRXNUdSRlQzZFNEMW11aE5HbVUzSEZ2ZERQYU5hTHN4TDY1bDRlY1dmQ09KNUhPZ0dmR3FEb2JLSjE0UXhlYk95TlE2Y1RVZTZHSk9HYVZhREZmQl9PcXVWV1NWWFlVblZDWXhyZzRRWVZkYklkMzB2YzJTNUdaVFREZ1E0?oc=5"
+   ],
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMib0FVX3lxTE9hdExyZ3U4N1pBR0RPbnp0SEJFUWtra1Fla0lFNXFfMWdHVTVpX1lGSGVuNXd0OFh0RGRUSlVHeGs4azkxSXdqWGl3YklBZFgyNzRwRnJlS09mNS1tclhITXZBdGZpVGhfaXZJNGJpcw?oc=5"
+   ]
+  ],
+  "first_seen": "20261009-0700",
   "status": "pending"
  },
  {
@@ -1703,148 +1849,6 @@
    ]
   ],
   "first_seen": "20260929-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-29",
-  "ko": "이란 리알화, 달러당 250만 리알 돌파 또 최저치 경신 — 7개월 전쟁으로 경제 안정성 급속 잠식",
-  "en": "Iranian rial breaks 2.5 million per dollar, new record low — economic stability rapidly eroding after seven months of war",
-  "ar": "الريال الإيراني يتجاوز 2.5 مليون مقابل الدولار في أدنى مستوى قياسي جديد — تآكل سريع للاستقرار الاقتصادي بعد سبعة أشهر من الحرب",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTkZqOU1Eb1lNVlIyWnpScnBRd2RqbkYtNTV0ME5vV1h4bnBBckhqVWlMUmlLazBJYkt2RjZ0SmlBdXFtckV2aW9uX0xJQUlGZmdFbVVObGJMTUZ4SUZkR0laU2t5cUFwWFdLazkyV19reDc1eTJBb1A1QUhBdFBxUDNiTlRDRENLTnhCT2dWX1pDZW9YbERvVGZ3ZzNXNEM1UDAtM1lyb1N4b1Q5anppMVhPZ05Lak5wMFk4WDZMamJUXzB1Q2FvRg?oc=5"
-   ],
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNTBsa0xGWmtzLU4wSkY1UGhway1HSTI0d21Gb2hHOUxNMkN5ZDgwTWNMODZfa1NJT1BqZzZkSGFzeWdkbXF0SnNuTlFpWUJVeXRDc0RxdkRiUm5HQi1heE1CaUdCdHFTWnN4dDh6VGJOVDB2YUJMOG1rLWNIQW5zMWJlNERmMHV0UHNMZng1LUdnOUFl?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20260929_0003807809"
-   ]
-  ],
-  "first_seen": "20260929-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-29",
-  "ko": "EU, 이란전쟁 발발 이후 에너지 추가 비용 1130억달러 넘어서—대체 에너지원 모색",
-  "en": "EU nations spend over $113 billion extra on energy since Iran war began, seek alternatives",
-  "ar": "دول الاتحاد الأوروبي تنفق أكثر من 113 مليار دولار إضافية على الطاقة منذ بدء الحرب مع إيران وتبحث عن بدائل",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "ft.com",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVmhkcmdrQ2pqakRxWUpuODlCU1BXUTZmX0FObWtHYkctZGU2cFFiX2dvN2JsWERiQWJSbEMwVDBwS2JucXlkX1hXd2M0a0NKTEVsa2RmSkFZSWNkczVVZUpybHZuUmVBSFNtdEU3dUVoZXB0c2RNZGFPQ2RyVDJkY2xwZU4?oc=5"
-   ],
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxOUFhoMjc4SEJRSnJ2YzdCMVdBMTlKQ0ROZFBvaVJxbmwwSDdENGFqVmc3ZEZVMUNBRnR5dTBkRzRmeDJ3UXpjUWNxeG5FWTJQeU52TlB1aGltMWhyRGdtdzI4Z2NJbWZuYy1UOS1NM1VrZFg2S1ZrMXJiMXlLTmxkR1Bwd2pmU01oekNvdFQtSXRMNFQwekhRNW5WRkhpZw?oc=5"
-   ]
-  ],
-  "first_seen": "20260929-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-29",
-  "ko": "미군, 이라크 내 12년 만 완전 철수 완료 — 이란 대리세력·IS 공백 우려 확산",
-  "en": "US completes full troop withdrawal from Iraq after 12 years — fears grow of power vacuum emboldening Iran-backed militias and IS",
-  "ar": "القوات الأمريكية تكمل الانسحاب الكامل من العراق بعد 12 عاماً — مخاوف من فراغ يشجع الميليشيات المدعومة من إيران وداعش",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa3pxVVVPOVd2UmNNZ3NhcVhvMFJTVzFkdE5KbGhVSjRicUtCTGZ2T2d5MHFBcFR0SVUtMnNfUEs3aGJURGxSSWwxOWlGdEVCbUhoQ2lwSDZ1Y3hSZmQ5eWlrVkhsdWM5SU9OTUxHdWlnRzJSSGVkWU1wNUxZVF8xUVVSYUwtME9pSkVkSEp2SnZiM1VTcnRSaTAyQWE5WDk5?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxOemFDVTJ6blJhRFNIeVgzYzJoRzUtcG45RURTckFyYzJZb2RlX0g5TndKd1lqbmdSOG1HREZRTFZaM3dSTFZaQ3ZrQTg3a2xSZ2YyRldVT2JCMDZlVmVJOVFHTjI3TnExSktyZ25ZMjU5cXZrdDlITjVTOC11a2sxbmRjd2pvZC10UlRDQlRYclVTREt3S2c5TXRLc1NkdUxJcGFz?oc=5"
-   ],
-   [
-    "© Reuters",
-    "https://www.france24.com/en/middle-east/20260930-us-forces-leave-iraq-raising-fears-of-iran-backed-militias-amid-power-vacuum"
-   ]
-  ],
-  "first_seen": "20260930-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-29",
-  "ko": "카타르 총리, 네타냐후를 '전쟁범죄자'로 규정—도하 겨냥 이스라엘 공습 비판, 중재 지속 표명",
-  "en": "Qatari PM brands Netanyahu a 'war criminal', condemns Israeli strike on Doha during mediation, vows to continue diplomacy",
-  "ar": "رئيس وزراء قطر يصف نتنياهو بـ'مجرم حرب' وينتقد الضربة الإسرائيلية على الدوحة أثناء الوساطة، ويؤكد استمرار الجهود الدبلوماسية",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/248198/Qatar-PM-slams-Israel-strike-on-Doha-amid-mediation-efforts"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/qatars-prime-minister-calls-netanyahu-war-criminal-says-doha-will"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiygFBVV95cUxPODM0Z3VOaVEza0x4VEx2b3lPb0JheVNRMWZKZW1sWG9yME9hckNDcm1GcV9sUVJpQ3pNTVY5elYyM2ZtaWtFMkx3MGx0MlJnNkFjU213aGlCUkx3MnhvNDMzdFdGaFlGcEc2SWV5Z3hpU29NMGJaSHc5bW93bTc4SDQ2RndsVWVncXd4UndJR3hwRndDaE51TzVQTk11WnF1Q3EzVS14R1FIVEZIeWJiTWpOdExNWmJWQmE4a01tR2Ixa2hxNUpqMUNn?oc=5"
-   ]
-  ],
-  "first_seen": "20260930-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-29",
-  "ko": "악시오스 보도—카타르 중재 미·이란 협상 성과 없이 교착, 충돌 재개 가능성 고조",
-  "en": "Axios reports Qatari-mediated US-Iran talks stalled with no progress, raising odds of renewed combat",
-  "ar": "أكسيوس: مفاوضات أمريكا وإيران بوساطة قطرية تصل إلى طريق مسدود دون تقدم، مما يرفع احتمالات تجدد القتال",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "머니투데이",
-    "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKdUl1eFhaNFBKWkVKY0lxVHA2cENRMXVyNHdQYVJVdVo0XzdtWFEyUFU1WmlMUmNNRElkXzNwdzVDLXRvUDlwdW9HclBfTVdDYy1aZzF4M3h2T3J0U1pTM2RORUVTeU5ScldLNHlQU2QxS3VXa0HSAXtBVV95cUxOLWVxeDNaUG0xWG55d25idGE5MUhEbUNvSk9hb2doZVMxVW9scnR6R3I3OUVkVlRzUzgyVUxYVW11ZWgtZTRFTEo3LUtjemFBbm45ejNNZlNPWFktWmpWV3VGbEUyUjV6TU9YeXo4d1NLZFNnbUFUWGFPcms?oc=5"
-   ],
-   [
-    "연합인포맥스",
-    "https://news.google.com/rss/articles/CBMicEFVX3lxTE5xaFNYTjhETGJrNWJzZjZZY25mN3NseEQzQVlpaDJHTkdfQXc4bHZ3ZFU1dUNqTGh2SkZEbEdOTHlXaVI4Tm1jWHdyX3ZNMkpVNW1ibXcwSlRSRHl5Uy1teEVMa1NFSkhnRGd6aV92UEQ?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRSkZ0MVNBRFhqVWJkOExOYW44am50RmhxRndnYjBmUWN5STJFUUUzTWhlME9UdmszcUZXMExDcEpsRHNqZDJ3cUxjRGhVZHpCRzNHNXZ3QTM3MmdRTllGRFNB0gFnQVVfeXFMTXNNZU5hQmt6NlJDYlBiQXk5RHRQUkRFTXlfNkg1OVViVHdZY2lvS0dZSUFhMHpKMlBTMDlxRWdqOEtWbW40Rm1oLXJfRFVUcmJCNGJCbUdKX3p3d2lvVXlBVzUwd0tnQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20260930-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-28",
-  "ko": "카타르 에너지, LNG 불가항력 선언 최소 1개월 추가 연장 — 이탈리아 에디슨 등 유럽 고객사에 12월 초까지 공급 중단 통보",
-  "en": "Qatar Energy extends LNG force majeure by at least one more month — European client Edison notified gas delivery will not resume until early December",
-  "ar": "قطر للطاقة تمدد إعلان القوة القاهرة لصادرات الغاز الطبيعي المسال شهراً إضافياً على الأقل — إخطار العميل الأوروبي إديسون بعدم استئناف التسليم حتى بداية ديسمبر",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGR2YWh1SkZjYkRfN2stTV9rMm0xYzZnamc2WnVlZTJVSWNkMTBQb2RHa2RKRVhhMUpBWjlVYWZJZ0hwS3ktOTFkMzNZV0hqYXR1d01jOWdaTGFmR3JKZkxvZDV5MmM5WjA4LVljTnd0c3JQdFBlMkNubkgzYWZnQ2dmRDE3ZzNxNHAyLUdrdDZLVHZjOFE2NjdLYWZLZWVKQU5ETkNNQ2VabmhYdXh0YmR2TDBDdWhQZHBlbFFXcFQ0d0Vv?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxWmNWanBoV215ZFctMWNad2NsbWd4Z216SDJvUU5pZjlCUFc4Y2s0c2MwWXlkSkRqeDJ2eWdoaHBNMzRDekFDZDRfTmdaS3UxZjFlYUtDblJzUF9JMlktMnJmXzJoNk3SAWdBVV95cUxQcVpjVmpwaFdteWRXLTFjWndjbG1neGdtekgyb1FOaWY5QlBXOGNrNHNjMFl5ZEpEangydnlnaGhwTTM0Q3pBQ2Q0X05nWkt1MWYxZWFLQ25Sc1BfSTJZLTJyZl8yaDZN?oc=5"
-   ]
-  ],
-  "first_seen": "20260928-1530",
   "status": "pending"
  }
 ]
