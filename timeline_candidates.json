@@ -21,6 +21,31 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-09",
+  "ko": "트럼프, 11월 중간선거 전까지 이란 공격 미실시 발표 — 미 국방부의 '3일 집중공격' 계획에도 불구, 해상 봉쇄는 유지 방침, 유가 하락",
+  "en": "Trump announces US will not strike Iran before November midterms — despite Pentagon's '3-day intensive strike' plan, maritime blockade to remain; oil prices drop",
+  "ar": "ترامب يعلن أن الولايات المتحدة لن تضرب إيران قبل انتخابات التجديد النصفي في نوفمبر — رغم خطة البنتاغون لـ'ضربة مكثفة لثلاثة أيام'، مع استمرار الحصار البحري؛ وتراجع أسعار النفط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/9/trump-says-us-will-not-strike-iran-before-midterm-elections?traffic_source=rss"
+   ],
+   [
+    "NPR",
+    "https://www.npr.org/2026/10/09/g-s1-147455/up-first-newsletter-hurricane-isaias-ukraine-russia-trump-iran-ice-shooting"
+   ],
+   [
+    "NPR",
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQalhmck5wcTF4VERITW41U2xVWTNUX0NEelJ0b2VObGhmQW90cW1RcGx5VnpQMU9rajBwS1dKbUNnOUNPcnQ2ZWdlTE9abVJIV05UZEhDUnNzYzg5WUdjTDVFemxEYkVYcUpVaFRScGpvQmZvY3VOd3lwdl9UMFF5ZEFib21qYTdhNnp4aFpFMkxITEFvQTdJLUcwQUhPUGF4NkNVWkp0SVpKNXJQMlg1NlA1Q2ZVb1MwMnc?oc=5"
+   ]
+  ],
+  "first_seen": "20261009-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-08",
   "ko": "카타르 인근 걸프 해상서 유조선 'Acers'호 다수 발사체 피격 — 사상자 발생, UKMTO 확인",
   "en": "Tanker 'Acers' hit by multiple projectiles in Gulf off Qatar — casualties reported, confirmed by UKMTO",
@@ -281,6 +306,31 @@
    ]
   ],
   "first_seen": "20261009-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-08",
+  "ko": "후티 반군, 리야드 킹칼리드 국제공항 공격 — 공항시설·사우디아 여객기 2차례 피격으로 기장 등 사우디 국민 3명 사망, 공항 일시 폐쇄 후 재개",
+  "en": "Houthi rebels attack Riyadh King Khalid International Airport — two strikes hit airport facility and a Saudia aircraft, killing 3 Saudi nationals including a pilot; airport temporarily closed then reopened",
+  "ar": "هجوم الحوثيين على مطار الملك خالد الدولي بالرياض — ضربتان استهدفتا مرافق المطار وطائرة للخطوط السعودية، ما أسفر عن مقتل 3 مواطنين سعوديين بينهم طيار، وإغلاق المطار مؤقتا قبل إعادة فتحه",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three?traffic_source=rss"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTkZXNFczdGx0ZDRJY1A5ZW5JSzMyZkRyMHNmUXpVM0pHMzdBNGVRbkNGdVI5SG14bEFvMVQyWXNwTFl2Um5CbTJpODRoUkFkQldxUUZHcl9HcUM5eXNCbmgxb1pWa1dSN3R6cHhteGtncl9ZWHdaTU04cDM1QU8wQktaZDVnWHBmaUdMMXZKWU04ZG14VFo4N1lfWTVwTVNEWU9hTTg1WWk5SGJ2U09kcFF4T2dpVk1DM0tLbw?oc=5"
+   ],
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0MtOFlNWi1mcnROSTYxUl9MbmNkbVJ1cGJMMGlVclp6WlpMMHRDYzhScHlKSXQzSHdINm5BQ3FkVFctVzhnVDBGbndLQ0xEajh1RmYwSVEzZ1FENndkYnAzVVJGSlZVeDJ1YzJNMVprRE91VmZKbU40TjVzUFNFOUJPMERFRVVVTHB4YUp6czNGRjdLRDJQSXBab1pmc0RRbkd0dzNnTQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261009-1530",
   "status": "pending"
  },
  {
@@ -1803,52 +1853,6 @@
    ]
   ],
   "first_seen": "20261002-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-30",
-  "ko": "호르무즈 해협, 지난달 LNG선 19척 통과—개전 이후 최대치로 이란 봉쇄력 약화 시사",
-  "en": "Record 19 LNG tankers transited Strait of Hormuz last month — highest since war began, suggesting Iran's grip loosening",
-  "ar": "مرور 19 ناقلة غاز مسال عبر مضيق هرمز الشهر الماضي — أعلى رقم منذ بدء الحرب، ما يشير إلى تراجع سيطرة إيران",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "연합뉴스TV",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5sTjhqZEItSnh3QnlrN2k4YVRpT0VmUzN0UktyX19iZlZzbjJxbldZWmtpb000SWVncG5iWDFrUE1DUDJHSkxubkljYm10XzktTWVQaFpzMlQ5OEw5RWJZRjVFQ3plMTQ?oc=5"
-   ],
-   [
-    "news.sbs.co.kr",
-    "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1EQ0VzdE5XZFRVaUp2OEFBYU5PWmd6QXZ5TkZ0ZGt3QXpldy1aTzhLbFpEZ3ZwbjBMSEMwWkdNMkVHaGVKWjhZcFlPUEJzemxWd1J0bUw0NEN0b29QMVRQd3otd2tWdw?oc=5"
-   ],
-   [
-    "news.sbs.co.kr",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTFA0Z3l3Y2NoU21OaURRNHEtOVlaRjBra1pESDEtY1VHaVpJTzgzQk9oM2ZWY1k2bVRpZXNqRXBCckFKcFVWNFdqU1RqNzFoelpTTjZnMVZBRXdlb053d0lVb3E0SXBSZjJiZlE?oc=5"
-   ]
-  ],
-  "first_seen": "20261002-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-29",
-  "ko": "호르무즈 해협서 선박 피격 화재 발생 — 해양당국 확인, 오만 등 걸프국은 호르무즈 우회 위해 석유저장 확대 추진",
-  "en": "Ship struck in Hormuz Strait sparking fire — maritime agency confirms; Gulf states including Oman boost oil storage to bypass Hormuz",
-  "ar": "استهداف سفينة في مضيق هرمز واندلاع حريق — تؤكده وكالة بحرية، ودول خليجية منها عمان توسع تخزين النفط لتجاوز هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxQQ3piMWd5M1lYQXZKVlRPYmNqZ0VsamhvcjdXSkhoQ0FYOEhXVTRpUkhJMWtxeWY4Y3ZjbWRfejFhTFFFMVRHa1RnWmN0ZE53Yk56Ny0xendiT2ptdFNtLVBYOVJiMHJvUGRYLVdtSnZPZDFGcy1idnNhendLcjhsRU0tUWN3VE8yZFBNemx5cHFNR0tiU2tOOHlnQVotQQ?oc=5"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxNby1GdjNxTmVSendFRlBNUmJDQks4OXFvMUFKc3ZLdmtmcUtCdmNmOTVLWG9yYXFINzlCOWN0QlZ1MVlmRnRZb20wQ0Z0UGJPRGhfWjhlelhKZ29hVUw1X0p1bzYyeS04cDZzbHQyMkJ0cXBmLWZqRFpkWG1fdFdvVFBBNGFOcXI3cC1qZFBFWTEtb1hHcU91WVZ6ckxSTUtWMGxCMDV4VXpieTEyQndMbUw4VTg?oc=5"
-   ]
-  ],
-  "first_seen": "20260929-1530",
   "status": "pending"
  }
 ]
