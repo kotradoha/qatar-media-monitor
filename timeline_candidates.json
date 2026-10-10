@@ -1,5 +1,47 @@
 [
  {
+  "d": "2026-10-10",
+  "ko": "사우디 주도 연합군, 후티 반군 겨냥 대규모 공습 단행 — 리야드 공항·사우디항공기 피격에 대응해 예멘 내 군사목표물 136곳 파괴",
+  "en": "Saudi-led coalition launches large-scale strikes on Houthi forces — destroys 136 military targets in Yemen in response to attacks on Riyadh Airport and a Saudia aircraft",
+  "ar": "التحالف بقيادة السعودية يشن غارات واسعة على الحوثيين — تدمير 136 هدفاً عسكرياً في اليمن رداً على استهداف مطار الرياض وطائرة سعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/10/saudi-led-coalition-says-its-carrying-out-operation-in-yemen?traffic_source=rss"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX1ZaSjhHakhEb2hLUXUxdWZVb1pVQXJicTgtVENldndaRTI4VG5iaFJyV0sxSTRieVliX0c3SV81SEYtNmFxOXd2YUM2bDh6Tjk0cnBCVWM0RWNJeE4xLUVKXy10ZUM5cVNHc2tZYXR2R1A5U21MRVVjb0hMcHp5VTNfc29FTWFUaW51MVhnemJfRW9CMk8wb29HWVpzQ3pENDZscW43SEVxNHhUcUxrN3JBaUo4bWtENEE?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUcDM2aW9McHlHZUw5ZVhZYTIwTEt3R0lTOF9CTnlhSndicGIxSVJBZ3hIV2xrT2F5THVrdUNHYzJuZnFTMkpFS1dUcEFSRS1tT1JCbUxmTDJPQ1FKMTcwWjFR?oc=5"
+   ]
+  ],
+  "first_seen": "20261010-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-10",
+  "ko": "미 중부사령부, 걸프 산유국 원유 12억5천만 배럴 이상 호르무즈 통항 지원했으나 이란산 원유 수송은 '제로'라고 발표",
+  "en": "US CENTCOM says it has escorted over 1.25 billion barrels of Gulf crude through Hormuz while Iranian oil transport remains at 'zero'",
+  "ar": "القيادة المركزية الأمريكية تعلن دعم مرور أكثر من 1.25 مليار برميل من نفط الخليج عبر هرمز بينما نقل النفط الإيراني 'صفر'",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "프리진뉴스",
+    "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lMVAwbGI5ZEtPUUhxeWEzaFRnM0l4cGI0NVlmeTd2bDhWSEpjd3BTYXFpTi1qZDVocmtuWmphMWMzRlZaRnZ4YXExRUNGeHdHWmY4VDlWdkVqeGRITHFTOXJqWmI1dHk3WGZsYS1PSQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261010-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-09",
   "ko": "USS 에이브러햄 링컨 항공모함, 대이란전 지원 321일 기록 작전 마치고 샌디에이고 귀환",
   "en": "USS Abraham Lincoln carrier returns to San Diego after record 321-day deployment supporting war on Iran",
@@ -143,6 +185,31 @@
    ]
   ],
   "first_seen": "20261010-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-09",
+  "ko": "후티 반군, 리야드 킹칼리드 공항과 사우디항공 여객기 공격 — 이집트·이집트 등 주변국 규탄 성명 잇따라",
+  "en": "Houthi rebels attack Riyadh's King Khalid Airport and a Saudi Airlines aircraft — Egypt and other states condemn the attack",
+  "ar": "الحوثيون يهاجمون مطار الملك خالد في الرياض وطائرة تابعة للخطوط السعودية — إدانات من مصر ودول أخرى",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxORkNUZUQzeWtNT2FZcE9VNUw0RzVJWXdJWk5DdHk4emxjdElqVWpkbktGQWxNM1JCUEZWWlQ1SHNSN1JnWWJncTFvbElYRzJMMlFFZm9Wa1JJY3M0ZXJMTlFDS1M2Y182OU9MdGxmSm1wSElCRUZoTndzdHBzX0stRml6d21oN0h2ZnVtTXdDbXFNb1V4UFZfYU9FbGRoVzlILVlCbEFjOUxNT0JwTVJNVVZWZWtXY3M?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcnVjMU1JZGVHbmtGTWJNaDY4YWF2NGhOQnhfeXkwNlVJMEZIemxKM3FmVG5ITjJIaVpjZlVEZ0E5UDRsZ3V4MTBERTZZazZGMHdza3ZObl9ZZTNESWs0TlBPNzhVdjMzUndNWXQ4Z2VpbGt1emdaaVBEc2RWMWVDOU1SdUkyUjVDUFlhZ0RNZDhLTzN3V1JOTEFGY05POWhPT2d2T1p2QzN4MDFHTFhOWUd3dUhNc1FhdFc3RkdONUhBcm1ZcVBaMERTVdIB0AFBVV95cUxOTEdKMXljY3dlbDhINFRYOTQxQnRkbUI5UTJzdlJiYzFHSlR5ODQyRUszYnRxTTJLV2p3aHVLRldyME5vemlPMHFhMkF0Wjd2aGFKQ2pIQll4MDg3bmFZU2twNnhSVjRGcDVqQ3ZzVWtrTzE0X3JVcjBXQzdQZWtWT0NBVjVGRFk2RU1lZnJlWGpORGxsVXFyZDBJWFdFU082OW5HOFAxaHV4WmdMVTZLdGE1V3UxOUp4ZklXZHExRV9mR1RJSVJKd1VFeXlKZFZw?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMi6ARBVV95cUxNUmVQZ2xfbUJWOVNIc3lCSFZoR0x2REFubTRZZHJqelc4WHFrbWN1M09KN2tkV2FqdEVFVW5UZ3AyRGFCUEloUmxvUVl4YjNMV1ZvMTZvWTI5aU1HVjRSSm1jRE9na0dnRGVPdkNBelZ0dk94ckpTU2oxQVdJQ0FiSHNUc0J4Q2I3TG9LMjJkT0tIT2J0Z1RZQzJiVXhzNEUzZjFhSDIxbDk1UWRZWktLS3o1a2VNeUN4RnNsMGRGWURobjRsaTJWVU13VHFadDhKQXZnZkF2Umc1TWQxd1lOcmJFYUk0UFQ3dzF2cm41TUFGQ1lySmc2RWFzVjlkQXZDbE9CcWlpYkJzc0VIb1lmcHNZcWw1U1dfWWsyRWw3U1lqejI5Sk5iRzBSeWtJZ2JyTFBvVnlRcW53MGs1WGRUdk50VkpiQ3RfUHNQME1JUzZ2TEhvbTBqWXpwZEFkczFJODc4bHlWWHVNMnotWHowajlaaGpsNHpNS2cxVmIxZHpMWDRDQTJQbW4yR0VpQllIX1M3bXRHTXpDQnlxblpMMzBUWGJWWk40a1l5b0FLMFE1TTJrZUt4eU9CLU5leHIwcXh5TXNOOTJNb2xQUG9NZEdpMlFWeElHNzVtTUpGYXlES1RHeUdFTGlnR0RNanpuZEJ3Y3VaWk5fVV9mWFFpN3paOS1RNkgtMGVjb3h2TDNrRC1UTlJhN1pwdEh4NGtFNFVzb3BIU0hCejRXaVRNUUxDSnpPbkJtUS1WbFJzQ3F5YjgwNjBQcE54V2lWZHV3dURoSkVMWW9FeXQ5aTI2N3p6dXZfRExT?oc=5"
+   ]
+  ],
+  "first_seen": "20261010-1530",
   "status": "pending"
  },
  {
@@ -1790,81 +1857,6 @@
    ]
   ],
   "first_seen": "20261004-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-09-30",
-  "ko": "미군, 이라크 철수 완료 — 친이란 무장세력 환호 속 이란 쪽으로 힘의 균형 이동",
-  "en": "US completes troop withdrawal from Iraq — power balance shifts toward Iran as pro-Iran militias cheer",
-  "ar": "القوات الأمريكية تكمل انسحابها من العراق — ميليشيات موالية لإيران تحتفل مع تحول ميزان القوى لصالح إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNa3pxVVVPOVd2UmNNZ3NhcVhvMFJTVzFkdE5KbGhVSjRicUtCTGZ2T2d5MHFBcFR0SVUtMnNfUEs3aGJURGxSSWwxOWlGdEVCbUhoQ2lwSDZ1Y3hSZmQ5eWlrVkhsdWM5SU9OTUxHdWlnRzJSSGVkWU1wNUxZVF8xUVVSYUwtME9pSkVkSEp2SnZiM1VTcnRSaTAyQWE5WDk5?oc=5"
-   ],
-   [
-    "NPR",
-    "https://www.npr.org/2026/09/30/g-s1-145604/up-first-newsletter-iraq-us-troops-scotus-deportations-trump-ai"
-   ],
-   [
-    "KBS 뉴스",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhbF9aR0lZTFdzQlJpeEFqbXVvbVkwbHV4WWVUZ1UyTU9ZUkNXMjlMcXlXOUt1OXZ0MUY4ZFdJTll6SmRjNzlkTmZxcERKX2pHZnFIUWFnWXZicGs?oc=5"
-   ]
-  ],
-  "first_seen": "20260930-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-30",
-  "ko": "이란, 호르무즈 재개방 '7일 계획'에 대한 미국의 공식 답변 수령 — 도하서 중재국 통해 전달, 이행 순서 두고 이견 지속",
-  "en": "Iran receives official US response to its '7-day plan' for reopening Hormuz — delivered via mediators in Doha, dispute over implementation sequence continues",
-  "ar": "إيران تتلقى ردا رسميا من الولايات المتحدة على 'خطة السبعة أيام' لإعادة فتح هرمز — تم تسليمه عبر وسطاء في الدوحة، والخلاف مستمر حول ترتيب التنفيذ",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202609301930001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ],
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa0ZnME5PM2tFOXBTRG9ibkxwMG5Pd1AtTmY4V0ZCU3I4Z0tsam1mcjdNWDVTQ3Jwa0d5YUg3YTdvcXkzNTFSdy1FbktYWHJFazAxRGlMaGozVXNxcXpFZm9GUGpXazBTSVpFdjdzQUNoaDZYMmVvWGUtckxtTjVRQzN5Y3M0bnczVkVnbVMtek9ONGZJ?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR2hTZHg3aFBHZnJsWE56aHhkcXdubk5JOFFvRmhzb3lWQjFrd3NVbmJDOVk4SjBTSE4tSm1pbXJVUVFGSWxKdUMwV1JhcE83TVVhWC12ZkNBZThNaGRrLXNSZE9jUWEtbWxPV3hnRDlHcFBmaldvdjNHYUxyM3NiYS1iX3BjZVZYN0hfbWdMN0Y5SDJkVHhPOHh3?oc=5"
-   ]
-  ],
-  "first_seen": "20260930-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-09-30",
-  "ko": "두바이발 텔아비브행 플라이두바이 여객기 조종석 내 흉기 다툼으로 피랍 신호 발신, 사우디에 비상착륙",
-  "en": "Flydubai flight from Dubai to Tel Aviv sends hijack alert after cockpit knife fight, makes emergency landing in Saudi Arabia",
-  "ar": "طائرة فلاي دبي المتجهة من دبي إلى تل أبيب ترسل إشارة اختطاف بعد شجار بالسكاكين في قمرة القيادة وتهبط اضطراريا في السعودية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/30/flydubai-flight-to-israel-diverted-after-attack-on-pilot?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/30/flydubai-flight-to-israel-diverted-to-saudi-arabia-after-emergency-alert-2?traffic_source=rss"
-   ],
-   [
-    "The Guardian",
-    "https://www.theguardian.com/world/live/2026/sep/30/dubai-israel-saudi-arabia-flydubai-flight-diversion-pilots-fight-latest-news-updates"
-   ]
-  ],
-  "first_seen": "20260930-1530",
   "status": "pending"
  }
 ]
