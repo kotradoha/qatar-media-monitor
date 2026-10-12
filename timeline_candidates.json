@@ -1,5 +1,51 @@
 [
  {
+  "d": "2026-10-12",
+  "ko": "리야드 공항 하루 만에 재피격 — 파키스탄인 1명 사망, 11명 부상, 사우디 보복 천명",
+  "en": "Riyadh airport struck again a day later — one Pakistani national killed, 11 injured, Saudi Arabia vows retaliation",
+  "ar": "استهداف مطار الرياض مجدداً بعد يوم واحد — مقتل باكستاني وإصابة 11، والسعودية تتعهد بالرد",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/12/saudi-arabia-says-1-dead-11-injured-in-latest-attack-on-riyadh-airport?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/12/iran-war-live-riyadh-airport-hit-again-tehran-says-us-reply-inadequate?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/11/pakistani-national-killed-second-houthi-strike-riyadh-airport?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261012-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-12",
+  "ko": "호르무즈해협서 세 번째 유조선 기뢰 피격·화재 — 승인되지 않은 항로 진입 주장",
+  "en": "Third oil tanker catches fire in Strait of Hormuz after hitting mine — Iran claims vessel entered unauthorized route",
+  "ar": "ناقلة نفط ثالثة تشتعل فيها النيران في مضيق هرمز بعد اصطدامها بلغم — إيران تزعم دخول السفينة مساراً غير مصرح به",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248502/Third-oil-tanker-catches-fire-in-Strait-of-Hormuz"
+   ],
+   [
+    "Mehr News Agency",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVjVBRjJtRWgwNHFWd0plUkQ3M3gxMEdTNVJxUVgxYXlnQXRiT1MzZ2I1YTEyeXo2YThxWklVMFg1SXlrY1cwX0pLak93MEZlaFlsaG95dTVSM3BaX185cWdKaXVsYnQ5aXVUVktYbDhrczJlNFdVam80TzlvWWdJSF9oZHViT2RteTlWbEln?oc=5"
+   ]
+  ],
+  "first_seen": "20261012-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-11",
   "ko": "미군, 호르무즈 인근 오만만에서 이란 해상봉쇄 돌파 시도 화물선에 전투기로 공격해 무력화 — 센트컴 발표, 7월14일 이후 무력화 4척·회항 유도 135척 집계",
   "en": "US military strikes and disables cargo ship attempting to run Iran naval blockade in Gulf of Oman — CENTCOM says 4 vessels disabled, 135 redirected since July 14",
@@ -185,6 +231,123 @@
    ]
   ],
   "first_seen": "20261011-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-11",
+  "ko": "후티, 리야드 킹칼리드국제공항 미사일 공습 — 13명 사망·309명 부상, 공항 운영 일시 중단",
+  "en": "Houthi missile strike hits Riyadh's King Khalid International Airport — 13 killed, 309 injured, airport operations halted",
+  "ar": "هجوم صاروخي حوثي على مطار الملك خالد الدولي بالرياض — مقتل 13 وإصابة 309، وتوقف عمليات المطار مؤقتاً",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/12/saudi-arabia-says-1-dead-11-injured-in-latest-attack-on-riyadh-airport?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/11/pakistani-national-killed-second-houthi-strike-riyadh-airport?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/11/houthi-strike-riyadh-international-airport-cctv-footage?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261012-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-11",
+  "ko": "이란 IRGC, 호르무즈해협서 슈퍼탱커 기뢰 충돌·화재 발생 — 2월 전쟁 이후 최대 규모 선박공격 주간(9/29~10/5, 최소 12척) 속 2번째 피격",
+  "en": "Iran's IRGC says a super tanker struck a naval mine and caught fire in the Strait of Hormuz — part of worst week of vessel attacks (at least 12 ships) since February war",
+  "ar": "الحرس الثوري الإيراني: ناقلة عملاقة اصطدمت بلغم بحري واشتعلت فيها النيران في مضيق هرمز — ضمن أسوأ أسبوع لهجمات السفن (12 سفينة على الأقل) منذ حرب فبراير",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261012_0003821780"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxPay1HXzR1TTgwYWd6aVdQVURuYmJkMll4ZUpQUnVBMmQxVEFxQnZUV0M1VUlHTWJxS2l0eHJYTklIR3Y5VVU0eEdqZWZSUTZEeUVhaTdsYUE2TkN0cWhWSG5MVl9iWGZ2R2hDeWZzODBhY08zOV8zUHU5OXBKWnJUcUp5ZTMteENRQlFjWHpnb2VhekZLVkZpcmd0eXlZa3RFVk1qWmdZQkFMOEtwV1FjOW5FQWp2eFZGSmpTQXdR?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRDhqelFLTG1uLS0xaWxRRVdTYVhPcFMzR0lVT2QzUklpRVYyUGd3clFvVVQwUjZrWjVGUWMySUs0TnoySktOZ3REVjRrU0tWU0ZkSlRkTE03eFlGS0JpOTd2a3dRV1NSSmJscE9nSnIxZ0xCRE40Y2VoS2NzLV9FdHQzck03V0RxQWtTVlNUWUdaQVB4WTdZeTB3eW51bWZmdDY3QnV0OHJDbHVqTGo5UzRtUW1JQTFyYllTOUJNbU1WZw?oc=5"
+   ]
+  ],
+  "first_seen": "20261012-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-11",
+  "ko": "이란, 美 평화안 응답 '불충분' 선언 — 호르무즈 재개방엔 '7개 조건' 전면 수용 요구",
+  "en": "Iran calls US response to peace proposal 'insufficient' — demands full acceptance of its seven conditions for reopening Hormuz",
+  "ar": "إيران تصف رد الولايات المتحدة على مقترح السلام بأنه 'غير كافٍ' — وتطالب بقبول كامل لشروطها السبعة لإعادة فتح هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/12/iran-war-live-riyadh-airport-hit-again-tehran-says-us-reply-inadequate?traffic_source=rss"
+   ],
+   [
+    "https://aapnews.aap.com.au/",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOHhCdDI2Z3B4dC1xVXo2ZHNOMlRndjhhYVRjN3BxNWFwbTJ1R3NXNXFvWTFhWVRpUWh3S2wzekFiMUxfSmVwR041NVdnU1ZEbnZYWVUzTmFTMThOSUhXaUZyc3lpQUpUUGZfb05XTFQybjNKUEt2bW1pRzBDYVFibExoNGs3MHFlaDkxZHlMbw?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248504/US-response-to-Iran-s-conditions-insufficient"
+   ]
+  ],
+  "first_seen": "20261012-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-11",
+  "ko": "트럼프, 중간선거 전 이란 공습 재개 배제 시사 — 유가 안정세",
+  "en": "Trump appears to rule out resuming strikes on Iran before midterms — oil prices steady",
+  "ar": "ترامب يستبعد على ما يبدو استئناف الضربات على إيران قبل الانتخابات النصفية — استقرار أسعار النفط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxPenNnUDYybWpPV1NGRGZCVnRjbGxHNEZVRnBobXR4YUlfZ3FuVDFrZF95enJwZUF1cm1vZEFCYkFLVmxTU2RwRzg1dGQyWVE2dDE2bks5YkxRNzhlaEt6eUJSVHpJdFlYRVpaMGtmX3l4T2NyUzZiSkhCMnFMWkFETjlZdG9WbVhqMkNqU0NzV0hxSzFKRE0yQWNZOFZxMFJMVF9meW1aa3FsZk9HV0luU0VVZVp0RE0xYXQyTTk1SlFoUW9uMEZ3?oc=5"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRDd3elZ0bVdvd2R0ZGd0bHRTR3owa2FXVjhOWUswX0RyR1lmUk8xaVhTUnNrRzgwS21RbGZ5NDRTV0dNZUNKN2RtSFpVUExqeVFkeUwwTXVuSU10SGhfYk95WF96Wmdpb1haWlkybTJEOGhhejEtMEFtNmlLb0luR0N3bnVSb0RkNU1RaUFaQm5mUmlPdk9PX1dIeHJzZFBKbFA1U2E3cmNvU3hwaXJXTjJxUV8?oc=5"
+   ]
+  ],
+  "first_seen": "20261012-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-11",
+  "ko": "수단 북부 금광 공습으로 광부 최소 72명 사망·50명 이상 부상 — 이집트 책임 지목",
+  "en": "Air strike on gold mine in northern Sudan kills at least 72 miners, wounds over 50 — Egypt blamed",
+  "ar": "غارة جوية على منجم ذهب في شمال السودان تقتل 72 عاملاً على الأقل وتصيب أكثر من 50 — اتهام مصر بالمسؤولية",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/11/at-least-72-sudanese-miners-killed-in-air-strike-rights-monitor?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/11/deadly-air-strike-kills-dozens-at-sudan-gold-mine-near-egypt-border?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261012-0700",
   "status": "pending"
  },
  {
@@ -1714,173 +1877,6 @@
    ]
   ],
   "first_seen": "20261002-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "美, 이란 대응 위해 세 번째 항모강습단·해병대 2000명 등 대규모 증파 — 총 병력 증강 지속",
-  "en": "US sends third aircraft carrier strike group and 2,000 Marines in major military buildup against Iran",
-  "ar": "الولايات المتحدة ترسل حاملة طائرات ثالثة و2000 جندي من مشاة البحرية في حشد عسكري كبير ضد إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/2/us-to-send-third-aircraft-carrier-towards-iran-us-official-to-al-jazeera?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/10/2/iran-war-live-us-moves-2000-marines-to-middle-east-tanker-hit-in-hormuz?traffic_source=rss"
-   ],
-   [
-    "The Guardian",
-    "https://www.theguardian.com/world/2026/oct/02/us-third-aircraft-carrier-middle-east-iran"
-   ]
-  ],
-  "first_seen": "20261002-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "美, 사우디·카타르에 패트리엇 미사일 추가 배치—양국 석유·가스 시설 방어 목적",
-  "en": "US sends additional Patriot missile batteries to Saudi Arabia and Qatar — aimed at protecting oil and gas facilities in both countries",
-  "ar": "الولايات المتحدة ترسل بطاريات باتريوت إضافية إلى السعودية وقطر — بهدف حماية منشآت النفط والغاز في البلدين",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Armenpress",
-    "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAwckEyVG45c3ROSUtNMVY2NTc3U3lkSlBmd09yeXg5WU5wdnlIYVJKRVF1UUtYNXNVbWp2WWhHeGI3U3lqMzVxR3RSWmU3VEE1MnfSAVdBVV95cUxPVkZGekZTZHMwdDNCaWw0UmNmeWxFVGRyYURheTZWMFRpNDhhX2RrM0hkSVd5ZHQ3MTh4Zm1PVnA3NWE1a3VuamcyemlmR3VjVWI1RF9kRFk?oc=5"
-   ],
-   [
-    "goodnews1.com",
-    "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uaUJzVHdWY19UWUMwd0IxOEJUamJuYlludzRnVFhYdEZPN2ZGakUyaDhNUWtSR3dJTzFnSDhZdUZ4UWoyXzJPNEVGNGZReFpBQnFFSDhNSWNUM0xmTlRtbXJoczlrTVJYZEV6LUhkd23SAXBBVV95cUxObmlCc1R3VmNfVFlDMHdCMThCVGpibmJZbnc0Z1RYWHRGTzdmRmpFMmg4TVFrUkd3SU8xZ0g4WXVGeFFqMl8yTzRFRjRmUXhaQUJxRUg4TUljVDNMZk5UbW1yaHM5a01SWGRFei1IZHdt?oc=5"
-   ],
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtRDN4TFFuNzd0X2c5ajRWSUFIUHB4R3Z1V3MzV0dRbWsxblEwTzVGbzlnRFdMNFhuWmpoX21WeHB0TVM4Nk1xQmpfWGVCOGp2T1BrSjZPN2NUWGlKOXg5V2s3UnZZZFpJRkZyRDk1REVieXhZZmc?oc=5"
-   ]
-  ],
-  "first_seen": "20261002-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "美, 중동에 항공모함 3척·수륙양용강습단 2개·병력 1만명 추가 배치—11월 말까지 완료 전망, 이란전 확전 우려",
-  "en": "US to deploy 3 aircraft carriers, 2 amphibious groups and 10,000 troops near Iran by end of November — fears of escalation in Iran war",
-  "ar": "الولايات المتحدة تنشر 3 حاملات طائرات ومجموعتين برمائيتين و10 آلاف جندي قرب إيران بحلول نهاية نوفمبر — مخاوف من تصعيد الحرب مع إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE11dWxzSDRSZ0lrVC11Z1g4azdnaXR6ekpVZ21SYXd6bjFPbWpaSHZpM090N0VSNGtFejJTa3hJYXB3N3dmZDRqRjFRRnNKNDVEMVN1cUE1VzJPVDlmaFRWcjM4YW9MdG5LRlEyeC1vMTd5RkZYRk9KWNIBeEFVX3lxTE41YmxtN29IZkhTYTJmRm1WZE00c3lIT0o5d0djUG9mRmc4YXZ5T3ozM19FaEkxNF9sQ3FBZUIzcnVNWElFRGhsOW9Bbzg5cUV4b2g4ZUdtSW1zSkNyTmlBQzJqYlV0MTdVT1hhV2U0cy1lUWtxcU1uTg?oc=5"
-   ],
-   [
-    "서울경제",
-    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jS1d4STlQZjVGbk1TMDlIRW9XOEs4OEpQSDhURGQtZHBQLUhTYndSQ2hRaHU3R0pOMkZkNnQ5WERRMUtERFJ6Vjh4anNrbnl4Y0HSAVNBVV95cUxPVGV4V2RiUS1nVUpHMUlWaU94OWJzbkxiTGhVMk5VWGluUEtIaFFWNWxJRzJ5YTg4SGl5SGVINGd0UUp5ZjJOQkZQQmEyZ01UbVQwRQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261002-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "플라이두바이 이스라엘행 여객기서 부기장이 기장 흉기 피습—두바이 긴급 회항, UAE 테러 공격으로 규정",
-  "en": "FlyDubai flight to Israel diverted after co-pilot stabs captain in cockpit — UAE labels it a terrorist attack",
-  "ar": "رحلة فلاي دبي المتجهة إلى إسرائيل تحول مسارها بعد طعن الطيار المساعد للقائد في قمرة القيادة — الإمارات تصفها بالهجوم الإرهابي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/2/flydubai-pilot-describes-opening-cockpit-door-during-attack?traffic_source=rss"
-   ],
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdHpuT190UjhnNS03Z3hzYU4xQ3NzQ0x4WGxBb2xqSDk3MjJkWEg4TzF1RFg0R21oS1RiT0VnUE5GUllLbXBaRjRlMV9MRWJDMU5RV3lKbWlodTVFT0NRVFVQMzFvMXRVQlZVS2duLVpEVk9SZGNneWRLa1A3ZVYzSl9oeHBCMUxROTVCNzJJVEpnM1JJaFRVbEdn?oc=5"
-   ],
-   [
-    "BBC Middle East",
-    "https://www.bbc.co.uk/news/articles/cje3r3z7g0zzo?at_medium=RSS&at_campaign=rss"
-   ]
-  ],
-  "first_seen": "20261002-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "UAE, 플라이두바이 피습 사건 후 이스라엘 항공사 두바이 착륙 허가 취소—엘알 구조 비행 취소",
-  "en": "UAE withdraws landing permits for Israeli airlines after FlyDubai attack — El Al cancels evacuation flights from Dubai",
-  "ar": "الإمارات تسحب تصاريح الهبوط للخطوط الإسرائيلية بعد هجوم فلاي دبي — العال تلغي رحلات الإجلاء من دبي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "apnews.com",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX3lLb3dodFBqQ1FjUVI2X21hS21zSDVxbnJCVEtNcHEwYlNuVGlZRlFMNnBlNE9hVVZZLS1xaFNVQTNEOE5EaGJxUGV1QW5Eamh3aFdRUmdRY3NwTC1YRS1TMVhFZHJ5Y2RGNnBqY3RDbHVVYXBUMU9mZmtIRDNQOGt1TWc1UkV1dXFCeWw0ZTFxTGxkdXIxN1ViOFQ0VHVfRFJQTTh4OGlTVWV4aHc?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSWxLbUN2X2k3aHRiNVc4a2NXQjFuMUhPZDF6MlBJLUFwQjl3OG1CV2owVHFOT1paSHNvbnBoSkdXVHlkYV9qbm1tYV93Rm9ubUVpM3FqUU14M2cxalZ2UlBURHIzRC1aNGN5UlZ0MGtyeHBJdW8zSXM2RHlUTVJVLUJQSG1hbTNabW4xUVZBT0pQdjhrOHdMcF96MGZxQ2Z1S3A5LTllLXpMVXJ4NXRub0JPRkZ4VlRwaGRKZVYyYVpYOGt5SHVRM1lRYnVaMEJ1?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261002_0003813241"
-   ]
-  ],
-  "first_seen": "20261002-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "사우디 아람코, 주요 송유관 가동률 80% 이상으로 상향—중동발 공급 우려 속 원유 수송 능력 확대",
-  "en": "Saudi Arabia hikes oil flow on key pipeline to over 80% capacity — expanding crude transport amid Middle East supply fears",
-  "ar": "السعودية ترفع تدفق النفط عبر خط الأنابيب الرئيسي إلى أكثر من 80% من الطاقة الاستيعابية — توسيع نقل النفط وسط مخاوف الإمداد في الشرق الأوسط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "bloomberg.com",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMVFoRHBobVlibHVtNk16T1NGRG9YVnozSm50ZEZnOGhZZkhULXRmUlhQeTJhLVYycnJIMEJRYXVhUm0xZlQ5ZURZVF9xREgxSG50Nm9xb295NFlQRTkySVlUazdzalg1WklCcUZhbU1mWkEwazRuVmxFeS1NWDVlTFlkTVU4OEdScXpHOFZqcWx4YU9obnZiNzdvNHk2T0lING1HQ1VyS1V4R2NfdDE2Rlg4Qkw?oc=5"
-   ]
-  ],
-  "first_seen": "20261002-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "호르무즈해협 인근(오만 동쪽)서 유조선 2척 미상 발사체 피격 — UKMTO 접수, 쿠웨이트 선적 유조선 포함, 인도 선원 5명 구조·선원 전원 무사",
-  "en": "Two tankers struck by unknown projectiles near Strait of Hormuz off Oman — UKMTO reports, including Kuwait-flagged tanker; 5 Indian seafarers rescued, all crew safe",
-  "ar": "هجوم بمقذوف مجهول يستهدف ناقلتين قرب مضيق هرمز شرق عُمان — بلاغ لهيئة أمن الملاحة البحرية البريطانية، من بينها ناقلة كويتية العلم، وإنقاذ 5 بحارة هنود وسلامة جميع الطاقم",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "aljazeera.net",
-    "https://news.google.com/rss/articles/CBMiuwJBVV95cUxNMWw3TURaTXZlMXRaTWNtam4wX2VOMnBKN2Y2XzdIeGxkdkJLaTh6WDNod3BxLWRxUDNYd3FUTjlNQlNPWTlhZE91X2lpNmpKN245aldEZEdZOXdzNHRsOUloOFgwdWJDUzFiTkZsY3NZV2s5Ukp5Qk9jUnNJLTJTLVlMSDJTRDA1WGdfZllveF9KcVBEZERvRS1tZ3puYlR0WlhvLTNQdVVmQkpNS1hHemFYZGU4ZmdFWWEwcDAxcWFuTjBjcW95SXpSeGJIMUY1YzN0U29XREZnOGhlSFNFelRQRndWemZsRG43bUI0bmRoWGFCd1VMeVhobFc1akR3SlNLNjNBZjhEMG1jQXllTzUzM290a2tfVHFxUDFaUnFpQ2VBdXJjbTdWcjd0RGRraDlqQk1JVUJtUjDSAcACQVVfeXFMTUVjVllMVXZqNHg2LVJKTDJOR2xDQks5NTdHcnZZQXVaZS1hcV9KSy1YaTFibWhNY1NlVFpzdmZSdWFRV0FBMy1ETXlTR1JhY2JrZGVoelotRFF2V2dwQmxfTVY5dnU2dE42Q1I1X3lQVzZTa3pPWGtDOVotMzdGZmc4VG1hV3hUdU5rcjhpYmZlUEI0VUdnLXNwZ2xuWnJyUDBVcVd4cmExQ0JaZjdtQU52SzJXdGkwNTUyRmhpVWZvWTVhbHFzaWFrbDd6U0twVGgzbFUxckoweG54bkFTZEJacHdmdnRER2tVTGp6Zkl0bWJiY3RxVWswNTFvUG5qemlxVjVhcDh0UXVKZUc5aGQ0UkpETEpfY1JKbHgxYlZKbVRVWFBWVVRjQUZfb2dWLWgtOUdnc3VMY1pFeWJ5RGI?oc=5"
-   ],
-   [
-    "BBC",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB0bHpCRHBlcDFaVmVuRXBlbm1ad3hIR2NfNGRscnpLaTRtTUdmMmk5bjJCeUIyMi1PZGJOSlk4TlpIXzBPT3RkRzZoZXhvQ0N5cFBSTTB2em5mWlZBTGfSAWNBVV95cUxOdk1Tb2JIaFF6alYtY3FQdUQycmJ0RDdjRktVQ2l3QjduQzBIaEltVDBXWnI2XzZ5NmdLUWtWZmRZVjRPdkNiVkVsMEdhRjRrbE9ITE1MZUNEM1dralo2ZVhYRG8?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMisAFBVV95cUxNekhNbmw2MjZLS3RndW0yeElheVh0b01QVHVYZWFGRzBHejMzWjhFcHZuZ3l6c245bkZVMzVIdWhKNUdNRDFNQms4RjlPenB6MlBHYVdnY0ZqQzBsRHNYeGlIal9ZZnlXWVp1QTdqaW5lSk02M3hXU3pRUjFkSlU2LXc1aEZ5YWZGcHo5ejlLNGRVRVoxQXVGSUJNbDI0MF91Z0ZaUG5ESUdhc01HNGN2aQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261003-0700",
   "status": "pending"
  }
 ]
