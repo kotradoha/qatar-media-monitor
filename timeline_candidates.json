@@ -46,6 +46,69 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-12",
+  "ko": "후티, 리야드 공항 재차 공습 — 1명 사망·11명 부상, 공항 운영 연장 중단·추가 미사일 요격 보고",
+  "en": "Houthis strike Riyadh airport again — 1 killed, 11 injured; flight suspension extended, additional missiles reportedly intercepted",
+  "ar": "الحوثيون يضربون مطار الرياض مجدداً — مقتل شخص وإصابة 11، وتمديد تعليق الرحلات واعتراض صواريخ إضافية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOVZ4cmRQVWZRbDZRaHZoZVhiN0pvNWJodEYySHhlQjZKUlhnU25KVXdDRjlhcTdOQmRHbUt2UGFhZDFWSHZTZ2JDYTUxLVFmdXdEbmRSNnBXV0xKMWVjYWc4NjdoTUNSV2lZYmd6VmhZem9KYWNEX0twT2h4ZWt6eHZfV3FjczIyRHRTdUp1cDd1U0FkRlJ4cXJXWE52YS0wY0lKVkhKQTBpT3BNSXE4QklXbkNMX1pOcTBWYTZ3?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/12/saudi-arabia-vows-resilience-as-houthi-strikes-hit-riyadh-airport?traffic_source=rss"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/oct/12/saudi-arabia-suspends-flights-latest-deadly-houthi-attack-airport"
+   ]
+  ],
+  "first_seen": "20261012-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-12",
+  "ko": "미국, 호르무즈 원유 수송량 공격에도 일일 1400만 배럴로 회복됐다고 발표",
+  "en": "US says Hormuz oil flows recover to 14 million bpd despite Saudi attacks",
+  "ar": "الولايات المتحدة: تدفقات النفط عبر هرمز تعافت إلى 14 مليون برميل يومياً رغم الهجمات",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUHUxYVFBNmYtSEw1T0lrMlFYWUU2OU02NjRrSlF5SWdiRWR5X3BwMC1Fd0VUUzRJSXRsbFV3YWtVbHdfMkQ4cGpRQ2h2UDZZRXplMHFxYkZjX3QzTTZxLWhMWko4bUZPUDBlOUR4R3hNRUF3ZDh5bk1rZVFFN1YwQVVEbks3ZDdtcUdyMUlHQ3B6RGc2djV6R3lfSXdfMG1HT1FnZTRmaGZGUGo5a19FUEFtem9fOEc1NmlKM1Y3UTNFTGY5dEQ4Rk50Nno?oc=5"
+   ]
+  ],
+  "first_seen": "20261012-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-12",
+  "ko": "호르무즈 공격 여파로 유럽 가스 가격 상승 — LNG 공급 차질 우려 확대",
+  "en": "European gas prices rise on Hormuz attacks amid LNG supply risk concerns",
+  "ar": "ارتفاع أسعار الغاز الأوروبية بسبب هجمات هرمز وسط مخاوف من مخاطر إمدادات الغاز المسال",
+  "q": true,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdGo0dTZXQ2lFUjV4NWw1aUdRaUdzTS15RXlSV18yS2o1T2dFc0dUMDJwMlJzTzFpeDFIa1Y3VFJXUUxmcmpNSm5NX2tiQXpLbUhLNzY0SDZ5b3hZS3BFOUxFdzFwWWcwUlFvQjJtcWFsUHdfcmY2V1A3b2tfeW81V2NOSnFMZnAxTENrbzZNeVJPSUJLUWlwTGxzWjc0M3VUVjB3UzJOY3Bwa2ZU?oc=5"
+   ],
+   [
+    "경향신문",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1zSGNjLXM3eDB3NXE4U2R5QXc0WFlWejc3bW9fZmQwR2NSN0taQkdRWGtxbjFYMkFmT0pBaHR2d2NEUG42dFhSUjRQNW9TUDJGZnhYdGhNUFE3QdIBX0FVX3lxTE1OU01VRUdMTVpQTzFUQlFoZlA4NVlQTW5wOEt2WktFNkNyeWZpdWlvTloxVG5EekpsZUg5dXZUX0JvdGpXazdBeEtDNGNUSU1OUUx0TnVxN1RrMXAydERB?oc=5"
+   ]
+  ],
+  "first_seen": "20261012-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-11",
   "ko": "미군, 호르무즈 인근 오만만에서 이란 해상봉쇄 돌파 시도 화물선에 전투기로 공격해 무력화 — 센트컴 발표, 7월14일 이후 무력화 4척·회항 유도 135척 집계",
   "en": "US military strikes and disables cargo ship attempting to run Iran naval blockade in Gulf of Oman — CENTCOM says 4 vessels disabled, 135 redirected since July 14",
@@ -1806,77 +1869,6 @@
    ]
   ],
   "first_seen": "20261003-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-03",
-  "ko": "트럼프 외교안보 수뇌부, 캠프데이비드서 극비 회의 — 대이란 군사작전 재개 및 사우디·후티 확전 개입 여부 논의",
-  "en": "Trump's top security officials hold secret Camp David meeting — discuss resuming Iran military operations and possible US role in Saudi-Houthi escalation",
-  "ar": "كبار مسؤولي الأمن القومي لترامب يعقدون اجتماعاً سرياً في كامب ديفيد — لبحث استئناف العمليات العسكرية ضد إيران ودور أمريكا المحتمل في تصعيد السعودية-الحوثيين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "KBS 뉴스",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9wVk1Vb3lqX1Nsd09xNnl2Qk1sb3FhdjZwNTNIb09FU28tTlBoa09YTmIwVnQwdnRyZ1pGWmVzOG5pTk9jM1FHNi1IbkJfN3BxaXROZm52UDM4X1E?oc=5"
-   ],
-   [
-    "동아일보",
-    "https://www.donga.com/news/Inter/article/all/20261003/134780359/2"
-   ],
-   [
-    "매일경제",
-    "https://www.mk.co.kr/news/world/12167786"
-   ]
-  ],
-  "first_seen": "20261003-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-03",
-  "ko": "미 국방장관 헤그세스, 호르무즈 해협 봉쇄 '철통같다' 재확인 — 이란에 '올바른 선택' 촉구",
-  "en": "US Defense Secretary Hegseth reaffirms Hormuz blockade 'ironclad' — urges Iran to make right choice",
-  "ar": "وزير الدفاع الأمريكي هيغسيث يؤكد أن حصار مضيق هرمز 'لا يتزعزع' — ويحث إيران على الاختيار الصحيح",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVGU4NnBiNEotamlDUDlDZXBiLXBsWnF5S2hxb3RadWxiTjFvWTYtUVJXalI5Wmk2RS0xM3FuRXMxQ2liNy11XzhiN0c3SU5TZDVDUzZrZTJWUEdVU0dKb21kR2tUMkpvcUZBLXp3bEo4MnhzYjJraUthNU5Nb3A3Yk1xQWVsbWx6VnRqWGlILXpkVEFPZ0ZLWUVORjhyVXVE?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/hegseth-us-blockade-hormuz-ironclad-iran-should-make-right-choice"
-   ]
-  ],
-  "first_seen": "20261004-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-02",
-  "ko": "美, 사우디·카타르에 패트리어트 포대 추가 배치 — 양국 석유·가스 시설 보호 목적, 이란 추가 공습 대비",
-  "en": "US deploys additional Patriot batteries to Saudi Arabia and Qatar — aimed at protecting oil/gas facilities ahead of possible renewed Iran strikes",
-  "ar": "الولايات المتحدة ترسل بطاريات باتريوت إضافية إلى السعودية وقطر — لحماية منشآت النفط والغاز قبل احتمال تجدد الضربات على إيران",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYU1oRW1nOE1XM2RHb09JMUVhYndmYnJzc1hHUDdicC0xbEYtYVhpS1F6T05CUVJPRXZUN2lpSTY0TFVfc2xPamdsN0ZsRnJxdGllWU5VYklrOGVzMUhXSEg1clRTTmZFQ21zdXRVQ2hUTE5pOVdtaUZwdFhYLVh3YUdxbVVwcHZEWl9JRE1oMWxnbVFORUV3amx2b0VSTk1XRDVUcmI5OXFCSnFfOFNzUWVNTUVUQ1pCZWozQQ?oc=5"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zRGRjS1NtVmMyd3Jxb1JMQVRtS0tfb3c0NTFVeXBRdDlqNzBoY3kzV0wtUW45RnhmMzZETDVfa0o0d2d5X29vTC00blJaZEcwOEl5N0Zsc1FRR3F0?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261002_0003812027"
-   ]
-  ],
-  "first_seen": "20261002-0700",
   "status": "pending"
  }
 ]
