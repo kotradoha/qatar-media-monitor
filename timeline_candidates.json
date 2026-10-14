@@ -1,5 +1,51 @@
 [
  {
+  "d": "2026-10-14",
+  "ko": "후티, 리야드 킹칼리드국제공항·아람코 정유시설도 공격 주장 — 사우디 연합군은 예멘 수도 사나 공습으로 반격, 향후 수일간 추가 공격 예고",
+  "en": "Houthis claim attacks on Riyadh's King Khalid International Airport and Aramco refinery — Saudi-led coalition retaliates with strikes on Sanaa, vows further attacks in coming days",
+  "ar": "الحوثيون يعلنون استهداف مطار الملك خالد الدولي بالرياض ومصفاة أرامكو — التحالف بقيادة السعودية يرد بضربات على صنعاء ويتوعد بهجمات إضافية خلال الأيام المقبلة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-attacks-aramco-sites-and-riyadh-airport"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxONWdueUJOUjR1R3lHbnNzcVZyMG1KdXlyeTNsWlJTcFFSUjhuQjJIMzNDeDdMY29feW1FXzFIY3o5cWlXaFhWbTZ6RVhVLUJxQV9Td0hxUFlQYTVEWERieDdBTTB3bTBMQnA1dzFTZ0k0bGxFNGgtdVJLMUxDZTEtNDQ2dXNzSnlZbWZZOEhzQ3Q?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261014170000079"
+   ]
+  ],
+  "first_seen": "20261014-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-14",
+  "ko": "호르무즈 해협서 컨테이너선 정체불명 발사체 피격 — 이란은 선박이 기뢰에 부딪혀 침몰했다고 주장(UKMTO 보고)",
+  "en": "Container ship struck by unknown projectile in Strait of Hormuz — UKMTO reports incident; Iran claims vessel sank after hitting a mine",
+  "ar": "سفينة حاويات تتعرض لإصابة بمقذوف مجهول في مضيق هرمز — مكتب العمليات البحرية البريطاني يبلغ عن الحادث، وإيران تزعم غرق السفينة بعد اصطدامها بلغم",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/container-ship-struck-unknown-projectile-strait-hormuz-ukmto-says"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMirANBVV95cUxOY2NZdDlwdE8ycHEwYlFlUFNtRVZxVkJIcEttZzliTXlRVDR1cHBtdVNJUzNacEJyc2dGS3kyVnh4ZnREUFZvUkdoR09qd0U5MTRWRGRFV3hocHhnRUhXY082a0l2d0YtNjlVUVB3QjhyRkpOdnd0M1ZBS3dKbUlUN2M3dHVmQXhSSEZwdmxIMjFLOVFkY1g4eDYyc2M4MGliVHA4Z21yQzV4azlCS2tlX3QxLXhlTTZJVnZDVFNKX0owN1ZULTVVNERIaE9hWnZ0ZjhvQlJrZ202U003XzlzRWU4UnZCQ0gzZUdlblJTMXNwanJMMklHbDBzOHBuSU42WkFtMVRMUHNxRFpCZkt3NWtvdldoVUJkeTdhY1Jia3pnN1ZTV2FPOC1abmtKd0JoVTc1Qm9aVEoxRV9kSEFFdC1tdEpPMk8xRlpsbFg5ZnJCWlJRT0MtYWxWczZuZEhoR0ZQRVloREQ0SU9Xa3dSQWRpSlppY1pDRW02Rm5hWWlIQXZwcERrM2NjUzAzYmxrRkhiVUJoZmdmc0w3dXUyN0Fyc0hLYnQzdGFkSQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261014-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-13",
   "ko": "에티하드·카타르항공, 리야드·제다·담맘 등 사우디 노선 운항 전면 중단 — 공항 피격 여파로 항공편 차질",
   "en": "Etihad and Qatar Airways suspend all flights to Saudi cities Riyadh, Jeddah, Dammam — air travel disrupted after airport attacks",
@@ -139,6 +185,31 @@
    ]
   ],
   "first_seen": "20261014-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-13",
+  "ko": "후티, 사우디 아람코 본사(다란) 타격 — 아람코 본사 단지 '제한적 화재' 발생, 본사에 광범위한 피해 보고됨",
+  "en": "Houthis strike Saudi Aramco headquarters in Dhahran — 'limited fire' at HQ complex, extensive damage to headquarters reported",
+  "ar": "الحوثيون يضربون مقر أرامكو السعودية في الظهران — نشوب حريق محدود في مجمع المقر وأضرار واسعة أُبلغ عنها",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "BBC Middle East",
+    "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdEZUUE1nNkI4WnhQUnBTYXhiMld6dUE5YWRPMktUenBRdzhOc2Z1RVF1ekF3QnRLRnZLb0lTRmdKaHpwVzM2amNIaGJNUkNyZ1FhRUE0YS1CT3hFQmxWSGxLNjJyeG5uaWMzcmpoOV9kUDc0b1JmQ0JtamZEWVlTSjJCQXBOOUVsQTdHZzMzN3k3S2lzZHZEOEl2ejY5VDI1SDR1cXBCYXo5aXlpSmZGM0pPNUNxTjhyZTgyaV9zTks1MG4tSzlSbnlrUTItV0o4Qm5iXzJxMU5uM1FrMEFB?oc=5"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMlNwZk5yVkRuM3dmeGtQdkpzR2MyWW51Tkx2QmtSX092emtNLW5qaVVnWDFDMlp0YmpWYmRnSl9xRG9PaHB0N1JPRWFZQURCamVyS0FnVXo5TlNOa0x5cjVGNHRrSkExcVBVUEFURDFldi1VTzZvUEdPbGNuWXhNOENORzkxYTNU?oc=5"
+   ]
+  ],
+  "first_seen": "20261014-1530",
   "status": "pending"
  },
  {
@@ -603,6 +674,27 @@
    ]
   ],
   "first_seen": "20261012-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-11",
+  "ko": "호르무즈 해협 선박 피격 급증 — 최근 2주간 24척 피격, 개전 초기 2주(13척) 대비 2배로 전쟁 중 최다 기록",
+  "en": "Hormuz Strait ship attacks surge — 24 vessels struck in past two weeks, double the 13 hit in the war's first two weeks, a wartime high",
+  "ar": "تصاعد هجمات السفن في مضيق هرمز — استهداف 24 سفينة خلال أسبوعين، ضعف عدد السفن المستهدفة في أول أسبوعين من الحرب (13 سفينة)، وهو أعلى رقم منذ اندلاع الحرب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "서울신문",
+    "https://www.seoul.co.kr/news/newsView.php?id=20261015010001"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261014-1530",
   "status": "pending"
  },
  {
@@ -1781,106 +1873,6 @@
    ]
   ],
   "first_seen": "20261005-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "예멘 정부군, 모카항 탈환 및 바브엘만데브 해협 통제권 회복 발표 — 두바브·밥·호데이다 등 홍해 요충지 후티로부터 탈환, 후티는 부인",
-  "en": "Yemeni government forces retake port city of Mokha and claim control of Bab al-Mandab Strait — also seize Dubab, Bab, and Hodeidah from Houthis; Houthis deny",
-  "ar": "القوات الحكومية اليمنية تستعيد ميناء المخا وتعلن السيطرة على مضيق باب المندب — واستعادة ضباب وباب والحديدة من الحوثيين، والحوثيون ينفون ذلك",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/10/6/iran-war-live-yemen-forces-reclaim-strategic-port-city-mocha-from-houthis?traffic_source=rss"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWkhEY2lZckRXaEVwVXhnd0FwR2JGR2x5dHB5RWk5QmpIUkZuanMyU1BPTnFGUU5sWTIyZWxRZHJhLUh1YUk1NUYwVWhxRmxfMzlqX0thWC1UaUlXTERtcm9tUjRFMjJhM1RXSFBnMXV1V2VhSzRaYWc5Z3ZaanFrbzg0ODhYb2N5cmNPNHdhaVBOS0NhUVRqMjJjX0NFMUxMaGJIUzJoMUxJVjcwY0FvdVdVYmhpamlwNGNvQzM5V1VQTE9oVmJPbktZREVKd9IBzgFBVV95cUxNWkhEY2lZckRXaEVwVXhnd0FwR2JGR2x5dHB5RWk5QmpIUkZuanMyU1BPTnFGUU5sWTIyZWxRZHJhLUh1YUk1NUYwVWhxRmxfMzlqX0thWC1UaUlXTERtcm9tUjRFMjJhM1RXSFBnMXV1V2VhSzRaYWc5Z3ZaanFrbzg0ODhYb2N5cmNPNHdhaVBOS0NhUVRqMjJjX0NFMUxMaGJIUzJoMUxJVjcwY0FvdVdVYmhpamlwNGNvQzM5V1VQTE9oVmJPbktZREVKdw?oc=5"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdU0zbXpPMm9EaG84Zy1sTGhaVGZhM0Rid3QzZUVuMXBYdVFhYzVGTkpIRmUyWDlaaGNaRTlSLWZyc2ZRY19VbkFObl8zVG5RSjR2aTBCN0hDWk9UanBHTm5tOV9vOWt3Y29OTXRTSFJKdzZpWDNfaENicmluek56MHRfemRvMzdac1IwanhvMFAtV1IzVDlISmM0OGktVVpyaTJZdElR0gGrAUFVX3lxTFBja0xFYkx0NDJiak1nYUFXTFNpZ1ZmMkN1cVlxT01FU2RpVjhkdTBGUEgxM3dDSzhESE43Mk9Ncll2MEFGN2NOOWhpWWQ1TC00YlNzazJSUENraDlDR2JpUkVTbXlDYUVuMkVkX1ZkLTYyUzE4ZkljNnpENWR2X25kckR4cV9adlN6am1PeFoxUVNqV1BtWXpNdGhkWGFxYUI2bWxtRnB0UEdmZw?oc=5"
-   ]
-  ],
-  "first_seen": "20261006-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "후티 반군, 24시간 동안 60차례 폭격 보복으로 사우디 아람코 제다·리야드 등 주요 시설 및 공항·정유시설에 미사일·드론 공격",
-  "en": "Houthi rebels retaliate with 60 strikes in 24 hours, launching missiles and drones at Saudi Aramco facilities in Jeddah, Riyadh and airports/refineries",
-  "ar": "يشن الحوثيون 60 غارة خلال 24 ساعة ردًا، ويطلقون صواريخ وطائرات مسيّرة على منشآت أرامكو السعودية في جدة والرياض والمطارات ومصافي النفط",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Tehran Times",
-    "https://www.tehrantimes.com/news/530785/Ansarallah-sets-Aramco-sites-ablaze-as-mercenaries-commit-war"
-   ],
-   [
-    "seoul.co.kr",
-    "https://news.google.com/rss/articles/CBMiV0FVX3lxTE12Q2N3dkNHbFBWUXZ4MVJrU0NhYzVQUWM4dFZkV3UwUFVfNGZMakVOVkF0ekNwQTUzZ1lRUVNBNEFHUFU4amg2b2d6bTB0cHJnOUFqNVkyNA?oc=5"
-   ],
-   [
-    "조선일보",
-    "https://www.chosun.com/international/international_general/2026/10/06/HE2WGMBRGEYGGODDGYYTIZTDMU/"
-   ]
-  ],
-  "first_seen": "20261006-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "예멘 정부군, 사우디·튀르키예·파키스탄 지원받아 홍해 요충지 모카항 탈환 — 후티는 탈환 부인하며 사우디 공항 2곳 공격 주장, 사우디 공식 확인(3명 경미한 부상)",
-  "en": "Yemeni government forces, backed by Saudi Arabia, Turkiye and Pakistan, recapture strategic Red Sea port of Mocha — Houthis deny loss, claim attacks on two Saudi airports; Saudi confirms attack with 3 minor injuries",
-  "ar": "القوات الحكومية اليمنية تستعيد ميناء المخا الاستراتيجي على البحر الأحمر بدعم من السعودية وتركيا وباكستان — الحوثيون ينفون الخسارة ويزعمون مهاجمة مطارين سعوديين، والسعودية تؤكد وقوع هجوم وإصابة 3 أشخاص بجروح طفيفة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202610062049025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261006_0003816288"
-   ],
-   [
-    "한국경제",
-    "https://www.hankyung.com/article/2026100662931"
-   ]
-  ],
-  "first_seen": "20261006-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-04",
-  "ko": "후티, 사우디 리야드 아람코 시설 미사일·드론 공격 주장 — 예멘군은 사나·사다 등지에 맞불 공습으로 보복",
-  "en": "Houthis claim missile and drone attack on Aramco facility in Riyadh — Yemeni army retaliates with strikes on Sanaa, Saada",
-  "ar": "الحوثيون يزعمون شن هجوم بالصواريخ والمسيّرات على منشأة أرامكو في الرياض — الجيش اليمني يرد بضربات على صنعاء وصعدة",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/4/houthis-claim-strike-on-saudi-energy-facility-as-yemen-fighting-intensifies?traffic_source=rss"
-   ],
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPN0ZWTFBnOTZucG1MRVpnczVNb0EzZ09meUJIbmpQSGxQVy1obV9OdXdnUTM5UV9rUDZXUkNQOG10VDFicS1URzZlTnppNUFTRUtyUjcxQXltNGh6VVo3ZGI0V0I3RjFPcDh3ZGFCNG9jaDhhMmJNeS00UEE2b1VUM2tid25ObTBZbjRSd2xJM2pWeTF2d3VDSHBBYkxLU1hPbWdsXzA1SDZaZUt2bElFYmZud1VUMHc?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-attack-aramco-oil-facility-saudi-arabia"
-   ]
-  ],
-  "first_seen": "20261004-0700",
   "status": "pending"
  }
 ]
