@@ -1,5 +1,51 @@
 [
  {
+  "d": "2026-10-15",
+  "ko": "호르무즈 해협서 이란 공격으로 선박 2척 침몰 — 싱가포르 선적 포함, 전쟁 발발 후 공격 최다(10월 23건, 월평균 2배)",
+  "en": "Iranian attacks sink two ships in Strait of Hormuz — including a Singapore-flagged vessel; attacks this month hit war-high of 23, nearly double monthly average",
+  "ar": "هجمات إيرانية تغرق سفينتين في مضيق هرمز — إحداهما ترفع علم سنغافورة؛ الهجمات هذا الشهر بلغت 23، أعلى معدل منذ بدء الحرب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/15/iran-war-live-tehran-vows-to-fight-until-us-yields-as-ships-sink-in-hormuz?traffic_source=rss"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNVg0eWh4OTZ1NG5IR1M1ZWJJejUxUncyYVVWeHB3QTdHaHYzUnRDOHBpaFpEZldsb0RNZG5SNVZDMWJIVUV6U0JZRVhLSmdtWEZfSnpGSDlXWVU1UlRRSF9wT0JSbktPRTRWT2dkazNCSmJoWDBaUl9wZEI3bjVpLUNZS2ZDWW9IQk9oUndRNU1qYUpHclhnUzhVYVU1RE0?oc=5"
+   ],
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS0NVeDk4b0lqVEI2VU95RTRfVFF5SmV6aW9nMFZCdTFiQTFWZTRRSjl4R3d5YXRDRlUyeHNwR1dlcjV4NmZOTGVXWUJjQkJXMmxpVlNIQjhQVVN0RktqMlFOaWpVcEZWbTJBVGFWSkJ2VVh3Zk9RSDVNQTRrR1NPbThNckR0cF9BYi1Ud052TTV2SmNORU11ZEhWeERtak9qNmfSAacBQVVfeXFMT1d4Qm1DVkN0Sm95Xzd0N2RjWE92QVVLczItNm9KbzRlTVAtS1BaNmw1OUdLaDF6cElwZjVScGN3enFyRFBSU2lFY3Z4b3lxSGJXODRkX0s0OXdfNWVRTWZfbmtwZnFzWjVKbUVvTFJrTHlicDNDZDNObkN3ei1sZjhmTmJvaW9IdWt0MW9ZZ0tyY0h2MVBsVnpHN3dRSmdzTlVOMmxzRlk?oc=5"
+   ]
+  ],
+  "first_seen": "20261015-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-15",
+  "ko": "미 해군, 이란 연계 소형선박(다우) 격침 — 이란혁명수비대 지휘·통제 관련 정찰 혐의",
+  "en": "US Navy destroys Iran-affiliated dhow — accused of conducting surveillance linked to IRGC command and control",
+  "ar": "البحرية الأمريكية تدمر مركبًا شراعيًا مرتبطًا بإيران — بتهمة إجراء مراقبة مرتبطة بقيادة وسيطرة الحرس الثوري",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/14/us-destroys-dhow-suspected-of-iranian-command-and-control?traffic_source=rss"
+   ],
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUzFlczkybzNHZzhEdWZwVTdrU0tnYlpJc0tBZUVlcXNKTWtaSTRLbGV2LWRCdVc3MzB2VUVPbXVzUTZUcHlwY01vbXNYd05MdHQyczBwUGNBT3VtcUUyVEp2NFlsdTRkUmNRTGpsa0xvekNZc0toTVFla29uUWR2Z2hSdTU2X2oySGxONlFKN3BRZC1IbkNF0gGcAUFVX3lxTFBTdDg3eXFLWmFtV0EzcGxDUEpCbHB5SU90c2VnMjJpQ3FvN0tmUE4xOGtqN2Vaa2NReTltUDNnTWRfQVFvcGZYWXJObTlhNkY5a3BVeW4xNkdBaW5oNmNiUDViTWFPaTg5NWY0Mk5VSkVzVURwcUJhSGp0dldQa3RlbTRpeElFYk9fR0EwaGpFY1JzMnNJSXpCT21aUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261015-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-14",
   "ko": "후티, 리야드 킹칼리드국제공항·아람코 정유시설도 공격 주장 — 사우디 연합군은 예멘 수도 사나 공습으로 반격, 향후 수일간 추가 공격 예고",
   "en": "Houthis claim attacks on Riyadh's King Khalid International Airport and Aramco refinery — Saudi-led coalition retaliates with strikes on Sanaa, vows further attacks in coming days",
@@ -43,6 +89,31 @@
    ]
   ],
   "first_seen": "20261014-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-14",
+  "ko": "후티 반군, 사우디 아람코 본사 타격 — CEO 집무실 등 심각한 피해 발생, 리야드공항·석유시설 추가 공격도 예고",
+  "en": "Houthi forces strike Saudi Aramco HQ — extensive damage including CEO's office; Houthis vow more attacks on Saudi airports and oil facilities",
+  "ar": "الحوثيون يضربون مقر أرامكو السعودية — أضرار بالغة شملت مكتب الرئيس التنفيذي؛ الحوثيون يتوعدون بمزيد من الهجمات على المطارات والمنشآت النفطية السعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ1ZldXo2RjBfTlF2NHFDZDQ3NnJnejktNnl3NVJVcnFVM1FjQ3FQN0x5SjFpZDRBeXplS0lTN2tUdWVZVWVKZm5LaUxkMVFQcmFRX1RRbFJIMm1zOTZDU3l2elZkb0twUkFnU3ZYM1pHYmRhYXRlVlluMHJkcWZITXRSQmMzNnF5d3dBcGl4a043MWkxUlZ5RmNqQ1l3UUxTbGRKOVdHSHhIQlRLZjlv?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV3VzaTd1VDVxNXczQ2FRa2FsXzdOV0Y5ZlFoaUthcVJhUnlFMHROUUMtWWZzUGZNWFd5WVNZbnJyZ3A4azRaUzNabVQ1U2ZMMmNYTzM1R2ZoeDF5dVQ0Q3FldDNEMW5lVC1oaVQ3Rmdaei01eS1GaFVla0prYUVZeEtJZlBZV2hoUm8yVTJNR3RYSXlhZTBPVWswNmdTWE5nclRiSldzUE91cXNZbzRGZzVOSFpMX294VWs3UlFpV2Q1Z09xTnl4Rw?oc=5"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPcGJTT29kRGNrVTFkUnZwMFNZOFB0VjlOZ0FIaFJYS00xR0w0WDU3V3g0amNUbFpTM3VUQ3VDRm1oYTFtNG1MYWxZWjZETWROdXZFMy1Ra1BYY2RTNEZkclQwcFVneW12UE5oWGU3RFBxN2VvWVdfTTU3QTYxbUFoY1IwRVhjUmFXZzBIQlQ2WUt1OG1PajRhVnFjM2o4aVA5b19QemhEaVBlUGozRm1kSEs1RzlLY21BeUx4djFBUzVEN2pFbjVuYzg5TGdiUlZKYVVDd1IyTVowTG8?oc=5"
+   ]
+  ],
+  "first_seen": "20261015-0700",
   "status": "pending"
  },
  {
@@ -1799,77 +1870,6 @@
    [
     "Al Jazeera",
     "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261005-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "이란 IRGC, 오만 카사브 인근 호르무즈에서 유조선에 경고 발령 — 회항 안 하면 타격 위협, UKMTO 확인",
-  "en": "Iran's IRGC warns tanker near Oman's Khasab in Hormuz Strait — threatens to strike unless it turns back, confirmed by UKMTO",
-  "ar": "الحرس الثوري الإيراني يحذر ناقلة نفط قرب خصب العمانية في مضيق هرمز — يهدد بضربها ما لم تعد أدراجها، بحسب تأكيد مكتب التجارة البحرية البريطاني (UKMTO)",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVDAxeXFRZDdkSTNjWTd1LWp4OUhwUkVqU2pJOW9RQjNyTXp3N0RqVW9CdnBkUW9wcDdBaDg3YmlaTkt0RUkyVjFjVDZLT1E4WE5hSGVmbERNVmlJVWgwYmM2QjhscXlYLWhOTTZjZGhsR3BuR2d2UTN1NWI1VGw3SFNIeWpMeDExcTMxVElfMXNWY3JhZE0zc3d6MlpvWWhpcEdpVGlONTlQdHFGSThQWDY3ZURxUQ?oc=5"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUHZVWkNLbTd4VzJZc2Q3MGtGQXFQYXhwNGNTR01YcnJpQ2xXU25YQzFJdVh6SEtuSTlaV2JIUGg4TWpKMkgzX0hMWVBxWURNM1B6cTVQTUYtd1lBOEFuSTVHZllRV3JBSkt2NG9Kbzk3bWlnbkg4eG0tdjRLcnpPZWw4ekZpS05BTnRxU2lwQTlRU1pOaF94MU53aHZhOVZ5cVRBQlVNX2RWM2d4dXJCVWp0Ylo2RWgzYXd3WlBEMUhPZ296enpEWjV2YTFKUEE3Zkh6dGZ30gHbAUFVX3lxTE1EdjVCMjhGUjNzY1htUFJjNEFhTG92UTRrcjhpc1doUk5PVFliOE9YbkMwVWtpSUxJUUpfQ2hpVGJIMUY2OUJNQVI1TkJLenh0Vk1qMU5sRURsM3VQbUt6NDhVQWV6d3UzemE1M1V0NFBpQXN5NHNlVS11NEFXbkFJQlVSUVlYcmRxVU43cGM1Qm1rUWVpQlh6SlRyazlyZ2ZIRFpVX3ktaWhCeUFob3JoOXc2SUowZVJ5bUtIU2NSUTNzT0UtYVJBOHBHZVdGVktQaVRNRTdoXzJyWQ?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/248339/Iran-forces-tanker-north-of-Oman-s-Khasab-to-turn-back-UKMTO"
-   ]
-  ],
-  "first_seen": "20261005-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "미국, 테러위협 우려로 영국 페어포드 기지 주둔 B-1 폭격기 전량 본토 철수 — 대이란 공습 핵심 거점 기능 상실",
-  "en": "US withdraws all B-1 bombers from UK's Fairford base to home territory amid terror threat fears — key strike platform for Iran operations relocated",
-  "ar": "الولايات المتحدة تسحب جميع قاذفات B-1 من قاعدة فيرفورد البريطانية إلى الأراضي الأمريكية وسط مخاوف من تهديدات إرهابية — فقدان منصة رئيسية لعمليات القصف ضد إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQ25McEI1U1lNek91bXVycXhoZ1RvSl9qVkNHOXk4Q0xJeWphblRFb3VFVXBmVDBiQWQzT19RMUJBNGEwbTBiQV9qTG1hQ3NYc0pPZkRxMS1pOUd6WU9mRzd4cFpQc1VvTENlSmlCbE0zRHRVNU9LS1p3NDhrb3RGU3hNVXJGT3NRdHNJa21GSkZ3cVZndG1vU1JNSm41STljZ0FqdURxVnIzUjM2THhGMnlB0gG3AUFVX3lxTFA2MFdWOGhzdllSemkzX093WG1rOGIyU0JKQ0t3U2FqcWdpYzdISGktU2VxaUJ4cXhrWEJoaGl0MU5wbFZHSDNQVnBxOG9uSzYxMHFlZFM4dHB0eHp6eDJ2akpoMmdBY1phaUVMUklJcl9rNnBoQzdwa2RCeWFEQzZ1QVNYVUtLcDA2a2ZiR3ZxamNTYmNZazVnS2sxYlI0Z2p4OWZCMXVkc2JQYkJpX01ZTEFjTmNFaw?oc=5"
-   ],
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORy0ydXNMdTdtR3pXaTlpcDRsZmlWOUFpc1ZQU2F6dlFJZGtJQmw5QlIzeVU3VlBzaVNvREVHYVc0bEoyaEJpUzBEMS1kZUZ1OGlMWWthQmRHQXhNN1RxbFllcjJiSWg0TjJ1cmpqcElzczVnNXlwUW5wNW5yY2VNTnREQ2RKWFAzRTNYcF91Y0xyMDZaRktDYkRxVjVIVGNWaGdpWkYwNUpjWTlWbFRRV21pSjI3R2hzaS1PVzBJbFlRQQ?oc=5"
-   ],
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202610052054015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ]
-  ],
-  "first_seen": "20261005-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "이란 안보수장, 경제난 공식 시인 — '역사상 가장 어려운 시기' 발언",
-  "en": "Iran's security chief officially acknowledges economic crisis — calls it 'the most difficult period in history'",
-  "ar": "كبير مسؤولي الأمن الإيراني يعترف رسميا بالأزمة الاقتصادية — يصفها بـ'أصعب فترة في التاريخ'",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQampVRHRYVE81cURZbFZBTTV3SmptMnB3SndVLTUzejUtbnlIRWJTbDB3ci1yYm9DS3FfUUFaRzlfQk0tc3VFQ1VnVmNuTExCQV9rMFVKeTlIWW1CdEgxZ25ocnBObEJKUVUyRFREa0Nkc0xlS2NCNEpUYnlJT21MZGstLUp5aThUaW11QnhxWG9oZ09GN0FYdEZETzBGdUxTUnU3RHI3SmxFTXdSQnZUbWFuNW9mZ3VBY3hWcVJRZ2_SAcYBQVVfeXFMTUxaNllTMHZZeXNGMlZRQlk4SjNVQVhlWU5td29LSlllLVFOSEdyRTZBdU83OUZhcnRnODFNUHIwUDI5Z2RoVDctaDliVzJSNTIxSjRmOG9xenB4R0tBVDZORGFyR1JZV2N6UWJHbGVRLWhBRTY0SEpXXzN0MnhPLXI4Y3UxTWVtSmNtb1oyY1o5Y25oNW96VTlSWlF1ZHl2MmdQY2l2SG1KaWpJZElmWUdqOThKUm1VNEpacmVNcTFyX1ZBejd3?oc=5"
-   ],
-   [
-    "한국경제",
-    "https://www.hankyung.com/article/2026100538817"
    ]
   ],
   "first_seen": "20261005-1530",
