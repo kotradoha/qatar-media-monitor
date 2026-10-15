@@ -46,6 +46,107 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-15",
+  "ko": "이란 군, 호르무즈해협 '폐쇄 지속' 공식 재확인 — 통항 시 이란 당국과 사전 조율 필요하다고 발표, 미 휘발유 가격 급등을 근거로 제시",
+  "en": "Iranian military reaffirms Strait of Hormuz remains closed — says any transit requires coordination with Iranian authorities, cites rising US gasoline prices as evidence",
+  "ar": "الجيش الإيراني يؤكد مجددًا أن مضيق هرمز لا يزال مغلقًا — يقول إن أي عبور يتطلب التنسيق مع السلطات الإيرانية، مستشهدًا بارتفاع أسعار البنزين الأمريكي كدليل",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86293369/Iran-Strait-of-Hormuz-remains-closed-requires-coordination"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248602/Strait-of-Hormuz-closed-transit-must-be-coordinated"
+   ]
+  ],
+  "first_seen": "20261015-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-15",
+  "ko": "후티 반군, 사우디 이슬람 성지 메디나 겨냥 순항미사일 발사 주장 — 사우디는 요격 발표, 후티는 공격 자체를 부인하며 성명 엇갈림",
+  "en": "Houthi rebels allegedly fire cruise missile at Islamic holy city Medina in Saudi Arabia — Saudi Arabia claims interception, while Houthis deny carrying out the attack, conflicting statements",
+  "ar": "مزاعم بإطلاق الحوثيين صاروخًا كروز باتجاه المدينة المنورة في السعودية — السعودية تعلن اعتراضه بينما ينفي الحوثيون شن الهجوم، تصريحات متضاربة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBJcTM4NFY0QmhVR19MM28wUlZRUDhDVTQ2ZVVoQjlPSWs1ZEt5NTZkWDR1eDRrWF8wZTVBS2NFbGoyc0JUb08xdHRSYzZmamgtdG5GSldtNVQ2Y0kzbEsyZ0RR?oc=5"
+   ],
+   [
+    "서울경제",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5SVjNtM0hYa2NKNm1QcUlPTVZlcTZaQTduQ0NrWFlGemlsb1g2enE5YXpHVEtUeHNHV0dJeDczeDc1QzJBZ3ltektYVVU2bzNQY2c?oc=5"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNSWpaVWtKYjlwS1VwYXB0ajlxeGpDaGpqeTJ1NnJzU1VtdC1UbEY2Qi1RVF9WLVhEUWpXUDR3aVVjTVRNX1dkS2tIOFF3d3YzdlhQOEFBVl91TmNSSVFwbWYxOS1McThBRDlaNVNpcUtzc0RmTjY1NHZCeDBQd2ViQ2dCT01LNldFVFR3bkRZM19UbTVKQmRLYUhxT3R6cFcwRFdUN2x1ZE9wcHNPYURDY1doRS1Yb0JISjBuZ0gwTTdkdjdoYVl4S2tfRnIxUjRKU3NvQ3ZKWmxZMWR0eWp4UDJEUHBXblFhbVFqT2htMHJlbDZfcWUzMjRRTHF5SnM?oc=5"
+   ]
+  ],
+  "first_seen": "20261015-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-15",
+  "ko": "예멘군, 사우디 주도 연합군의 '타이푼' 전투기 격추 주장 — 사다주 상공서 격추했다고 발표, 사우디 측 공식 확인 없음",
+  "en": "Yemeni army claims it downed a Saudi-led coalition Typhoon fighter jet — says it was shot down over Sa'ada province, no official Saudi confirmation",
+  "ar": "الجيش اليمني يزعم إسقاط طائرة تايفون مقاتلة تابعة لتحالف تقوده السعودية — يقول إنها أُسقطت فوق محافظة صعدة، دون تأكيد سعودي رسمي",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86293303/Yemen-says-it-downed-Saudi-Typhoon-fighter"
+   ]
+  ],
+  "first_seen": "20261015-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-15",
+  "ko": "이스라엘 남부 인텔 공장 폭발 사고, 두번째 노동자 사망 — 부상자 치료 중 사망하며 사망자 2명으로 늘어남",
+  "en": "Second worker dies from wounds in Intel plant blast in southern Israel — death toll rises to two as injured worker succumbs",
+  "ar": "وفاة عامل ثانٍ متأثرًا بجروحه في انفجار مصنع إنتل جنوب إسرائيل — ارتفاع عدد القتلى إلى اثنين بعد وفاة المصاب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVkQwaHV4MXRzWm4zWU42Y1FxOEQ2WTZZNHZRR19kN3pFakR1RmJWU253Y3dnQ2EzaHowM0YzeUFqUHViYnFURzFyVGZ5dFNYVXA2TENqNWpWc2RxNElIVDYzT1NVSmppeTZ6Q1RLejVpWEphcVZ5SkQ5eDJfdjJIWEJNN3duOE5kZHBhY3Brb3VsQnVBdVNEdHJxMDZfOXlzVGFSRHZYRGw4TXZzMVpwR1Q3Mm1jcGd1dFgtYkx4b0Q2QQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261015-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-15",
+  "ko": "EU, 후티의 사우디 공습 격화 여파로 걸프협력회의(GCC)와의 2차 정상회의 연기 발표",
+  "en": "EU postpones second summit with Gulf Cooperation Council amid escalating tensions from Houthi attacks on Saudi Arabia",
+  "ar": "الاتحاد الأوروبي يؤجل القمة الثانية مع مجلس التعاون الخليجي وسط تصاعد التوترات جراء هجمات الحوثيين على السعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdzNyVEFTaV9iamhXbDZmWU5PelJBbUY4VXdEMlAySHdNejJBM1lsYXYxQ1NKUE40YnRYajJmNTJTUVNTcEdEUkxmU1RrYl92dUZySFJoeUstVS1KVjA1ZEF1OTFaZUQwM0ZaUHhVZldscXV6VUFFd3pqWU1USVdyc0dpV3dqbmY1QnZKSEFzYzZoTU9SYXA1UThWaTRGYklNQlFnQmtzUXVac08yU3NYVi11LXZ2ek9Oc0ZRa3VmcUxBSkJDOFE?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DMzUyVWR0ZlRLOHZlTWl3eE51S2lXQnYyZ0VwTnExSzc1c2RHZnZWZ1F1elA0VHBYcjcwTUZZM3dyTXY5eHc2Q3JsdkhadTAwOXln?oc=5"
+   ]
+  ],
+  "first_seen": "20261015-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-14",
   "ko": "후티, 리야드 킹칼리드국제공항·아람코 정유시설도 공격 주장 — 사우디 연합군은 예멘 수도 사나 공습으로 반격, 향후 수일간 추가 공격 예고",
   "en": "Houthis claim attacks on Riyadh's King Khalid International Airport and Aramco refinery — Saudi-led coalition retaliates with strikes on Sanaa, vows further attacks in coming days",
@@ -281,6 +382,31 @@
    ]
   ],
   "first_seen": "20261014-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-13",
+  "ko": "호르무즈해협서 싱가포르 선적 화물선 'GFS 프라이드'호 피격·침몰 — 정체불명 발사체에 피격, 이란 드론 공격 추정, 선체서 쏟아진 컨테이너·잔해 해상 표류",
+  "en": "Singapore-flagged cargo ship 'GFS Pride' hit and sunk in Strait of Hormuz — struck by unidentified projectile near Omani coast, suspected Iranian drone attack, containers and debris scattered at sea",
+  "ar": "غرق سفينة الشحن السنغافورية 'جي إف إس برايد' في مضيق هرمز — أصيبت بجسم طائر غير محدد قرب الساحل العماني، يُشتبه بطائرة إيرانية مسيّرة، وتناثرت الحاويات والحطام في البحر",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "경향신문",
+    "https://www.khan.co.kr/article/202610152127005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS2dmbjRMUzJKY3hINE41N1dkUmhxR0k3UGxqM3JnTnVYMnBOZmFRdmotT1FUaWw1NmxORVh0Y2RialVqR05YSVpMa1E0NnVXM3d0V1N5cjFZeDBZN3R5eEJzbXVEN3Q2V2RvV282VnQxZm1WZVdac3dXLXFpQURnbi0xdVVnU2M4U2hxT1JNM1VsYW1lTGdlbmpyNUFITHRHMEJXeU9lZmZyZmRCSHQtal9JcExTbkh2TFNlZkd0V01Wa0k1eTNENE9Dcjc3bG9Hd2lyNVpaM2dKUzFZOXpBWg?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/15/containers-and-debris-captured-floating-around-the-strait-of-hormuz?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261015-1530",
   "status": "pending"
  },
  {
@@ -1743,136 +1869,6 @@
    ]
   ],
   "first_seen": "20261005-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "호르무즈 해협서 유조선 추가 피격 발생 — 이란은 해협 재개방 거부 재확인",
-  "en": "Another tanker attacked in Strait of Hormuz — Iran reaffirms refusal to reopen the strait",
-  "ar": "هجوم جديد على ناقلة نفط في مضيق هرمز — إيران تؤكد رفضها إعادة فتح المضيق",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "대구MBC",
-    "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBCR3BwXzVXZktNM09NVGhFSDNCTU9xMFZzcTlNcGZaemdQRWlJbUhoY09YbmZnRkJXWlc0M2NGR3RYSmh2SXJPOGJvbk0?oc=5"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9LMlMxZXJhS2NrLWFFYlVXaDJCQmxEVmFheF9uVUFxV0pPMjE2MWV0cUdHMnF5eU84dDFfNEdhajYtcW9QVlFLUnBRMGgyRl9YcHhTTFlUTndJT1pFRmVNdTY2Uk5ENGFZSHhUZ2VfNnRGMFNB0gF0QVVfeXFMT0syUzFlcmFLY2stYUViVVdoMkJCbERWYWF4X25VQXFXSk8yMTYxZXRxR0cycXl5Tzh0MV80R2FqNi1xb1BWUUtScFEwaDJGX1hweFNMWVROd0lPWkVGZU11NjZSTkQ0YVlIeFRnZV82dEYwU0E?oc=5"
-   ]
-  ],
-  "first_seen": "20261005-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "미국, 영국 페어포드 기지서 B-1 폭격기 전격 철수 — 테러 관련 체포 등 이란 위협 우려 속 조치",
-  "en": "US abruptly withdraws B-1 bombers from UK's Fairford base amid Iran-related security fears and terrorism arrests",
-  "ar": "الولايات المتحدة تسحب قنابل B-1 بشكل مفاجئ من قاعدة RAF Fairford في بريطانيا وسط مخاوف أمنية مرتبطة بإيران واعتقالات متعلقة بالإرهاب",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/4/us-withdraws-b-1-bomber-aircraft-from-uks-fairford-base-amid-iran-fears?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261005-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "UAE, 플라이두바이 항공편 테러 시도와 관련 조종사 정보 이스라엘에 공유했던 것으로 확인 — 네타냐후, 이스라엘행 외국항공 보안점검 지시",
-  "en": "UAE confirmed to have shared FlyDubai pilots' details with Israel after attempted attack — Netanyahu orders security checks on foreign flights to Israel",
-  "ar": "تأكد أن الإمارات شاركت تفاصيل عن طياري فلاي دبي مع إسرائيل بعد محاولة الهجوم — نتنياهو يأمر بتفتيش أمني للرحلات الأجنبية إلى إسرائيل",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUDB6OUQwcTRCN3p2Mnl0MnY3Mlk4S2pITUZacXlNVDhaV2RkbFo2VUtIOGd3TGxCZVZ5bmhWNXNESUlsN09BX21NaUtLSkFSNjFjdVlqaXpZZDNGRWFlekoxTzlTd2FlbFh2cXF0WnVtSEk0T0t3VkF5Nkx4M3RYVmprS21Cd2FHbUcyaV83OEdVcDBQSWwyaXRmckE1YkJxTVQxVWhIRQ?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfS2pWVERhQlNvU0xhT1RKTkF1dlhvelRXWFgtU1Jrb3hTNmtRTy1QQUktUk9rbEhWRzhtMHZZeXZwcFhsYWxvb1plRHhKSDd0dk1Ia0dLQTBfam9HWFRkTDln0gFnQVVfeXFMUHFOdkxmaHh6R3JNcjB4SFhyRHdDaWRPb284U1BYUDJ1QXVzSE55ZDQtWmkxRG5GMWN1Nzd5bnJBS1VpZnZ6ZzVBVVdvNTduVzhwazExUXZuRENsenl6STNZZS05UHRRNA?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMkNrX20xM2MzcnNXcDFNV3Z1WWZXU3JVWlRVdy1IRF9uZVoySHpFTE1XTDhlSEpubWRBLWJRRzhLSUtVMXhZdl9PSVVUa3dEZ2d3OGVxY3dBa2pxVzNxdVFDMWRaSzZiNkZOaVBmdFpvU0hyRGg1YjV3VFVCaFBseFhzU1Y4b3pyVnRwODZpVnY1WjhXQzg0UHNJQ2Q1dWNBZElXTWVVU2JCOU5NcHVlWTY4UXdRRFJQM0FNeno1RnAyN1RFVjJtTDk2Q25Rb3hhbzNFN05BY3J0dw?oc=5"
-   ]
-  ],
-  "first_seen": "20261005-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "사우디, 11월 아시아向 원유가격 6년來 최저로 대폭 인하 — 걸프 원유수출은 전쟁 이전 수준 회복했으나 유조선 공격은 증가",
-  "en": "Saudi Arabia cuts flagship oil price to Asia to lowest in six years — Gulf crude exports recover to pre-war levels even as tanker attacks rise",
-  "ar": "السعودية تخفض سعر خامها الرئيسي لآسيا إلى أدنى مستوى في ست سنوات — صادرات النفط الخليجي تتجاوز مستويات ما قبل الحرب مع تزايد هجمات الناقلات",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb01qWHdweHgtSmN2bldGUVdQLVNYS1ZZcnZVSW9kSUxudm8zLUFJNlVtZVUxOTQ3dDF0d0pNaTZCM2JDbDU0N0NUb0dBaXVyVk1RcUY0NEZ4dWFYSjUwc3dPZzRwVXk0aDU2MnZUellVVG9NOG9wTTdzdFFCQ3ROaFpDQTFmUUdoVG5nWW1GN3RrM3BGNDVXNUdEczVDbUxKa3NMVEJNVUdGN1VldDl5Ng?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261005028100009"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTE1OOTBmbFltUE9ldlVJYjFxbHdCcFhDYWdJT0praGgwbUxLNmRpYW94Z05PUlRidzJ3MnZycVdkWXZTTGRTekluWHNXQVBsb1E0UFd6c28xbjNlT1p3MUxsWGQwVG0zRy1iazRFdE5UbV9IUVRlaVNGRk1TSnJyanc?oc=5"
-   ]
-  ],
-  "first_seen": "20261005-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "트럼프, '이란전 중대 결정' 임박—미 안보수뇌부 캠프데이비드 총집결",
-  "en": "Trump reportedly nears 'major decision' on Iran war as US security leadership gathers at Camp David",
-  "ar": "ترامب قريب من 'قرار كبير' بشأن الحرب مع إيران مع تجمع قيادات الأمن الأمريكية في كامب ديفيد",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE52dDdUbnY5X2REZU9DcHVObHFheEtZNlByaHltZXN5aDVTaUlmS0VWb2Vud0o3TVJTMFFhWGFmbFI0SWNnNFZpOGFQelNTNEdMaFlzaWZuQnJsMHc3bF9DaHFpU3VpbFhQcVZEU2dwNA?oc=5"
-   ]
-  ],
-  "first_seen": "20261005-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-05",
-  "ko": "예멘 정부군, 사우디 공습 지원받아 '예멘의 새벽' 작전 개시 — 후티 반군 겨냥 전략공세로 바브엘만데브 해협 인근 두밥 등 요충지 탈환, 후티에 1122회 타격",
-  "en": "Yemeni government forces, backed by Saudi-led airstrikes, launch 'Yemen's Dawn' offensive — reclaim Dhubab and other key positions near Bab al-Mandeb Strait from Houthis, with 1,122 strikes reported on Houthi targets",
-  "ar": "القوات الحكومية اليمنية، بدعم من ضربات جوية سعودية، تطلق عملية 'فجر اليمن' — استعادة ذوباب ومواقع رئيسية أخرى قرب مضيق باب المندب من الحوثيين، مع تسجيل 1122 ضربة ضد أهداف حوثية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPei1GRWxVZ0U1T1hGZTJ6YmxVVTJtd19DWENYaDRLUDhIQjFYUDVVNjA1VVp0U1g2VmhDbjBxRXYxcDRYMmloSmxqNDdkOVNEWG9hRGpxb2RKWEhSM0l3bnNrNHprMmh1QkhZUGVZRUg0QnppdHpOWkN2ZWNjdTlwQ0JZU3FZMEh0TE9zeG16cmNBM21UOV9LTnRqYkFEMUR0TldEVWtsY2NIY0RYZnlNeU81cGxSZ9IBuwFBVV95cUxQZE52dGFBalJDa01aMldXQWlUYVhZRnJHXzBZWThsRTZIZEE2LUtjM1NTSFdFTWhMZ1hqY01Pc0xyX1BqWi12RHhrSVBlNy1EMi1GU3pGVHhKNjVTUDZ2OWE5R2dkTzdhQ0xGR2d5NGFpUF9WaEtHd3VzSE5uamlxLWVUODdxb3RGeXlxb2k0aUZDNDFVV3gycGl5dEEzbDU4ZTlvYi12Wnd3bEROYnpRNW8wSUdoTTFmaWt3?oc=5"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYnNPdFJTbF9KMS10cjJyZ1ZQQnJVWVVZVUNMUHpmNWFuZnhMeEk3cWMtNW8tdk1oanpremhVVFZBSGJDWkpGcXdsLVBIb2hWMW5jUk52cUhldk5UNHFtLXdTTzBoR21uMGhyeUZaZXlMZ1d3Wm0wZnl0TllwZVY3WG5EMHM0OUczUTlGazVVeDdKRzJvNzVwdVIwZWljVmRrNFFBTzFWeURtWmhKU0VTRlpUSnFOWXFkYTJIZDAyMEVVbzTSAcgBQVVfeXFMTkhsOVp2RHdOYU1xZVBacUtYa0FOclA3Z1BkMXhoOW1tcG5ZNGJuUG5tQ3hlQXFDOHZfNGdzQ2lOb2ktNDBlUmM0cXVwRl9YYlktcE1aU2pwMERQWkZNdlJKWVJEeHpFbm1iY0JVbzJZbUZkVnhxVEdkcTlPNUEtY0hkMXlSUTBKdWRBOW5SdWkxREZ6QkFoT3lKV0g4VDgzblQtdXo0ZDhFaThKODZKbm9mbmg5Z3lpbEF2T1V6NnZzZHlGeHpJa1g?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/5/yemen-forces-claim-to-seize-dhubab-sites-near-bab-al-mandeb-from-houthis?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261005-1530",
   "status": "pending"
  }
 ]
