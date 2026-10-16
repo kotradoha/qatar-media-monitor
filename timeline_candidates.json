@@ -25,6 +25,73 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-16",
+  "ko": "오만해(호르무즈 동쪽)서 위치추적 끈 유조선 화재 발생 — 이란 해군, 제한구역 무단진입 '위반' 유조선으로 지목·경고",
+  "en": "Tanker fire reported in Gulf of Oman east of Strait of Hormuz — Iran's navy says vessel had disabled tracking and entered restricted area, issues warning",
+  "ar": "حريق في ناقلة نفط شرق مضيق هرمز في بحر عمان — البحرية الإيرانية تقول إن الناقلة أطفأت نظام التتبع ودخلت منطقة محظورة وتصدر تحذيرا",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdXJjbkNhQkF3Y3V5UEZIaC1lTjk5bUJqTXFTTkdfTzY4ZVpBVnoySFlmM0NRZUY0QkVYSXBiUHNTUmJGQW52LXhLU1EwY0ItMHJfT0hkS28ySFJUVnBrSkswSnZGN3l5dF9qdVlnbUlLZk5pTUM3NXkxVFl0a0RNUTVNN05zZ3pSV1R4N21VUEozVmtCb2pwaE8xN0xmRmZxbE8xc1l0TG1nQzBtUUhqNDhEZ09zLW1sZVZyMVlyTdIBvwFBVV95cUxNdXJjbkNhQkF3Y3V5UEZIaC1lTjk5bUJqTXFTTkdfTzY4ZVpBVnoySFlmM0NRZUY0QkVYSXBiUHNTUmJGQW52LXhLU1EwY0ItMHJfT0hkS28ySFJUVnBrSkswSnZGN3l5dF9qdVlnbUlLZk5pTUM3NXkxVFl0a0RNUTVNN05zZ3pSV1R4N21VUEozVmtCb2pwaE8xN0xmRmZxbE8xc1l0TG1nQzBtUUhqNDhEZ09zLW1sZVZyMVlyTQ?oc=5"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbW1TRm53MzQwNmFHcnlyZ2tCVXRLUk81UTQzcW5td3pmTWNlRS0wR0xXOTVSY09hcllTRF9KZGM2VXVQZ3k5QWp0cWNSUHBfaGNpdzl2aGxWYVJGbEQ2Zm5KLWE5S1VYaGdVLW1leUN1ZUN0NTBtVklwcUVRYy10VERwa21neUJzQkpEdGdHQUd0X2lWM3lhS1JJdWNoVDlOZUllVDZJVGdVYWM4eTk3bkw0WFU0UQ?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/irans-navy-says-oil-tanker-detected-fire-gulf-oman"
+   ]
+  ],
+  "first_seen": "20261016-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-16",
+  "ko": "이라크, 미·이란 확전으로 인한 경제적 손실 600억 달러로 추산 발표",
+  "en": "Iraq estimates economic losses from US-Iran escalation at USD 60 billion",
+  "ar": "العراق يقدر الخسائر الاقتصادية الناجمة عن التصعيد الأمريكي الإيراني بـ60 مليار دولار",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYlRmQzZQNHRvUTVveS1sZ0RIX0ZIcEZpRHlwczA1Uk5IUG9qTnVWSzhVaHVSdmd4NHd0cVVXSmlOVkJ5VkcxbV9pRHJ0aEdUY09tcENlUmRBMnJTNmV1bGtBRVF6N04yZDVXZWQzajJ2RjM2QXRDODdkMTZ5eEIyaVZFTnJUZHVMejlTR05WTWJhTFBuTmlQRE5aVm04T1ZhZ2IwaXQtelByMDh4Vk5SQnFFNmFqajN5OU5HeQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261016-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-16",
+  "ko": "한국군, 청해부대 작전범위 호르무즈 길목 오만만까지 확대 검토·파견연장 동의안 제출 추진 — 국방부 '전쟁 개입 아니다' 선긋기",
+  "en": "South Korea considers expanding Cheonghae Unit's operational area to Gulf of Oman near Hormuz, seeks extension approval — defense ministry denies war involvement",
+  "ar": "كوريا الجنوبية تدرس توسيع نطاق عمليات وحدة تشونغهاي إلى خليج عمان قرب هرمز وتسعى لتمديد الانتشار — وزارة الدفاع تنفي التدخل في الحرب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "SBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5zc0tLbF9KN2EzU3BqZVJoTUZ5QU40LWVia2d0MHh4aTdTMW5UZjdyUEp3allyVF9UazdVY3FkTVVfTlJ3R1BJX1N3ZWJvX2U2VG43b2w2SXBIUUkxdE9EcGxkbFAyUW1RWnc?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IM0pBaU40dHN6UlAtZFRtQVBpWU1uUV9pRWdlQmkyUjhlbzdOd21qMGFkZ18tbTNNejFDVFpTWE16ZFp2YjlvXzBaVlhvaUZEY2RDUnRTUmxHNjJaaml1NE9TcDhpTmc?oc=5"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTE10c044TzlFUmNJYjBGRWE0blFsZ0E3dEFfaXFKUl94ek9pUldJUVJCX2JwcDhxMWRVV1hNb0tjd0ptSmxNZUM3ckZYa3lCRXpBNHhJY2puX1MwM21XTUx5eTdGSFMyTU1qNk9meEVHb1YtNFhHOW81QdIBeEFVX3lxTE10c044TzlFUmNJYjBGRWE0blFsZ0E3dEFfaXFKUl94ek9pUldJUVJCX2JwcDhxMWRVV1hNb0tjd0ptSmxNZUM3ckZYa3lCRXpBNHhJY2puX1MwM21XTUx5eTdGSFMyTU1qNk9meEVHb1YtNFhHOW81QQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261016-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-15",
   "ko": "호르무즈 해협서 이란 공격으로 선박 2척 침몰 — 싱가포르 선적 포함, 전쟁 발발 후 공격 최다(10월 23건, 월평균 2배)",
   "en": "Iranian attacks sink two ships in Strait of Hormuz — including a Singapore-flagged vessel; attacks this month hit war-high of 23, nearly double monthly average",
@@ -1794,81 +1861,6 @@
    ]
   ],
   "first_seen": "20261006-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-06",
-  "ko": "튀르키예·파키스탄, 사우디 대(對)후티 억지작전에 군사력 배치 공동성명 발표 — '중동판 나토' 가동, 파키스탄은 방어적 역할 강조",
-  "en": "Turkiye and Pakistan issue joint statement to deploy forces to Saudi Arabia in deterrence against Houthis — seen as 'Middle East NATO', Pakistan stresses defensive role",
-  "ar": "تركيا وباكستان تصدران بيانا مشتركا لنشر قوات في السعودية لردع الحوثيين — يُنظر إليه كـ'ناتو الشرق الأوسط'، باكستان تؤكد الدور الدفاعي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/6/pakistan-turkiye-join-saudi-deterrence-against-houthis-what-that-means?traffic_source=rss"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYTBZQ0I1ZlplcGdxTWxEUm4zMzR6WXRsNW9iaUxhaE0wcGhVbXVPbnl3Q0hycEwwcmxvaVRqLWJwbjAyeVhLc2piaVJaS0dXNzNUWUppc3lrUE9iandOZ3c2eEFqb2NITjBpeEpheEZZUVpGQkhpYmNORDN6WVBuQjlVUy0wUUVPdGk4bXh2Y1NnTFNBMmNhRzhnUDNUWkRXOFVBcEgxelNPSnM?oc=5"
-   ],
-   [
-    "머니투데이",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HTlNGblpnQnR4YWl3cGIzbGc4XzloaDgyNHBjenVHVlU1NGFya1MzWklDOFh3VGdhdDkzdzRvd3VxTGIzLVloalpTTko3VmVPVjk3R2dfZW9UWkEtOXpyQUlNZXF5VGQx?oc=5"
-   ]
-  ],
-  "first_seen": "20261006-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-06",
-  "ko": "인도 국적 11~12명 탑승 파나마 선적 유조선, 호르무즈해협 오만 인근에서 미상 발사체 피격 — 그리스 소유 선박으로 확인",
-  "en": "Panama-flagged, Greek-owned tanker carrying 11-12 Indian nationals struck by unidentified projectile near Strait of Hormuz off Oman",
-  "ar": "ناقلة ترفع علم بنما ومملوكة لليونان تقل 11-12 مواطنا هنديا تتعرض لإصابة بجسم مقذوف مجهول قرب مضيق هرمز قبالة سواحل عمان",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUzh6aUlNN1llN252bC1CUGk4d1ZfcDhCTXZKcVVNc1NfeUl0OTJWcUR2S2RIb1NQekhNQXhQb01ZdXR0dlo3M3ZGbDFwT2hSRElzSEhza3pCUUJSSHppX2VqMktrOHRfbnRiSXM0U19yR3hST2I5YWJ4aEZ1M0R6TmkyTllkR3BfYnl0NWNSNklNbmxURmdPSFZOdXBzUEw3MUZhWXA3c0NhcV91eFZSemFSLWo4eVZJUmVXVkVNUjhEZGp6Rnc4SkU2ODdWTHgwUDB2ZUd4dnVUZw?oc=5"
-   ],
-   [
-    "The National Herald",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdmlPOXVkcXNsN2EwMHFESnFPSlZMMkJmazM5XzhLQmNjRlF3Vy1BV2d4WXBzdmphcFBDWEJPNXpKYllGaGw4dUtMcldERVUwbmNpVUk2VWlsMXZLYkxGOXBCcnFnOEp0Mkk3UGpldlJRUW56cUxFYkV0cV9wS3JEYzgyVjl5c2xfOFI4ZlZXVjlDWHY4bVZnMklDelUzVmdRaVN4RnFFMkNaSUppdVpPVFBfSQ?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/india-says-12-injured-after-tanker-attacked-oman"
-   ]
-  ],
-  "first_seen": "20261006-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-06",
-  "ko": "후티 반군, 사우디 아람코 석유시설 및 공항 겨냥 드론·탄도미사일 공격 개시 선언 — 사우디는 공항 2곳 피격·3명 부상 공식 확인",
-  "en": "Houthis declare active targeting of Saudi Aramco oil facilities and airports with drones and ballistic missiles — Saudi officially confirms strikes on two airports, 3 injured",
-  "ar": "الحوثيون يعلنون استهداف منشآت أرامكو النفطية والمطارات السعودية بالطائرات المسيّرة والصواريخ الباليستية — السعودية تؤكد رسميا إصابة مطارين و3 جرحى",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-saudi-airports-aramco-facilities-being-targeted"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261006_0003816288"
-   ],
-   [
-    "한국경제",
-    "https://www.hankyung.com/article/2026100662931"
-   ]
-  ],
-  "first_seen": "20261006-1530",
   "status": "pending"
  }
 ]
