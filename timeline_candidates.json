@@ -1,5 +1,123 @@
 [
  {
+  "d": "2026-10-18",
+  "ko": "호르무즈해협서 유조선 2척 기뢰 피격·화재 — 이란 IRGC, 각 원유 200만 배럴 적재 유조선이 미승인 항로 이용 중 기뢰 폭발로 화재 발생했다고 발표",
+  "en": "Two tankers carrying ~2 million barrels of crude each catch fire after hitting mines in the Strait of Hormuz — Iran's IRGC says vessels used an unauthorised route",
+  "ar": "إصابة ناقلتي نفط بألغام واشتعال النيران فيهما في مضيق هرمز — الحرس الثوري الإيراني يقول إن الناقلتين كانتا تحملان نحو مليوني برميل نفط لكل منهما وسلكتا طريقاً غير مصرح به",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss"
+   ],
+   [
+    "CNBC عربية",
+    "https://news.google.com/rss/articles/CBMiogRBVV95cUxOdWZtWlFDVERUblVyd1h1c21tVjdqRXBPbVpSOFVsX2llcFZneVFMNGc5MzY5TUlJWlB2MU9EZkEzakd5M3U2UVNTTEZ0RG51NnRSS2FjOW1jVUdkbUVKOXJ0cThIME1xSm5lSXdva0w4eTFBaV84WUpkRWt4YUt6UWNqMk1wLWRvdjVpdi1RalBGSkVWalZCaV8xaGhZeGg2bzNBM2pmWFNOSWMwRF9hSHVXRVlDMTlvaUpreXh4cWdjN3MxRjNnZXR1OW91MV9BWm9od2UzbnlvbVJqaU03UHZwUHhGQVlERHhQVmdqR05nakRMZ2FNRHFFV3Rselo4N010cTEwWncwMlhYOGM0SGRRa3pfSUFFT2IzTWdRRERqTW1raHhRUjlFTHhlNVpGN0VhcGVIU1VjZGtoYV9ldUVXelRHSmFqZUlrY1VnRmpsUXJWc1VKUkRfaVpFRGRkWXpPM0s4U0pGQWhPaVNhcUtMb3BqSXFXU19LZG1qTVlmWk9lUVZocEVmYnEzRVlWRFY1Vi1yUTRTOVZYWE02clJZM01MTXdQazZtaFpwVmlKUTVaSHhfUGxZMTVvd0hKbHN5cUNnRTZYR3pZbEdIU2JPRFp6ZGRpZXRET2ZZbG5qS2lON3BRbkpQbkRRQWViTzRUam5XQjhYLXdQdUoxYUZha3dDNGRrem9HMDlXdG9mMjRwNnVBb3NzaUJVbjZlYWc?oc=5"
+   ]
+  ],
+  "first_seen": "20261018-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-18",
+  "ko": "사우디 수도 리야드·동부·남부 겨냥 드론 4대 요격 — 사우디 주도 연합군, 드론 격추 및 호르무즈 긴장 속 공습경보 발령",
+  "en": "Saudi-led coalition intercepts 4 drones targeting Riyadh, Eastern Province and southern Saudi Arabia amid Hormuz tensions",
+  "ar": "التحالف بقيادة السعودية يعترض 4 طائرات مسيّرة استهدفت الرياض والمنطقة الشرقية وجنوب السعودية وسط توتر هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-drones-targeting-riyadh-eastern-province"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/riyadh-residents-receive-hostile-aerial-threat-alert"
+   ]
+  ],
+  "first_seen": "20261018-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-18",
+  "ko": "사우디 추가 요격 — 후티발 미사일 2발·드론 1대 카미스무샤이트 방면 격추",
+  "en": "Saudi-led coalition destroys two more Houthi missiles and a drone heading towards Khamis Mushait",
+  "ar": "التحالف بقيادة السعودية يدمر صاروخين آخرين وطائرة مسيّرة أطلقهما الحوثيون باتجاه خميس مشيط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-two-missiles-launched-towards-khamis-mushait"
+   ]
+  ],
+  "first_seen": "20261018-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-18",
+  "ko": "사우디 나즈란서 AH-6i 헬기 추락 — 기술 결함으로 승무원 2명 사망",
+  "en": "Saudi AH-6i helicopter crashes in Najran due to technical malfunction, killing two crew members",
+  "ar": "تحطم مروحية AH-6i سعودية في نجران بسبب عطل فني ومقتل طاقمها المكون من شخصين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-helicopter-crashes-due-technical-malfunction-coalition-spokesman"
+   ]
+  ],
+  "first_seen": "20261018-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-18",
+  "ko": "이란 외무장관 아락치, 호르무즈 재개방 '7일 구체안' 제시 주장",
+  "en": "Iran's FM Araghchi claims Tehran presented a 'concrete' 7-day plan to reopen the Strait of Hormuz",
+  "ar": "وزير الخارجية الإيراني عراقجي يزعم أن طهران قدمت خطة ملموسة مدتها 7 أيام لإعادة فتح مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-iran-has-presented-concrete-hormuz-reopening-proposal"
+   ]
+  ],
+  "first_seen": "20261018-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-18",
+  "ko": "예멘 정부군·후티 라흐즈 교전으로 정부군 8명 사망",
+  "en": "Eight Yemeni government forces killed in battle with Houthis in Lahj province",
+  "ar": "مقتل ثمانية من قوات الحكومة اليمنية في معركة مع الحوثيين في محافظة لحج",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/eight-yemeni-government-forces-killed-battle-houthis"
+   ]
+  ],
+  "first_seen": "20261018-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-17",
   "ko": "호르무즈해협 유조선 2척 기뢰 피격 — 미국·이란 모두 해협 통제권 주장, 사우디 주베일 인근서 유조선 1척도 미확인 발사체에 피격·승무원 대피",
   "en": "Two tankers struck by naval mines in Strait of Hormuz; US and Iran both claim control — separately, another tanker hit off Saudi's Jubail coast by unidentified projectile, crew evacuated",
@@ -1703,148 +1821,6 @@
    ]
   ],
   "first_seen": "20261009-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-08",
-  "ko": "트럼프, 11월 3일 중간선거 전까지 이란 추가 공격 보류 발표 — 다만 호르무즈 봉쇄 조치는 유지, 유가 급등 속 결정",
-  "en": "Trump announces no new attacks on Iran before Nov. 3 midterm elections while maintaining Hormuz blockade measures, amid oil price spike",
-  "ar": "ترامب يعلن عدم شن هجمات جديدة على إيران قبل انتخابات التجديد النصفي في 3 نوفمبر مع الإبقاء على إجراءات حصار هرمز وسط ارتفاع أسعار النفط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/trump-rules-out-new-attack-iran-until-after-midterms-oil-prices-spike"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOM0d0NjRJOURlUVRQaHRFeHB3eV9hNDBxTGlsWTZObEJjcUl3WFE1VDhnUUlPa1dKOElCM0Z5VE9aazRpM09wOHBQODJVOThmdzQ0RFJnNFdHTnFZb3R3VVJzRlFMOVI0cUU4NUh6RUwxU3F5SHlLSjFidVlPWG90T2l1RzFqSVdFaXNRSVBuQTFHMy0yandHRnIzb09NblBCOFRGNlJPTWZGNXpsTDBkdWx3VDA5TzVnbjc5MzNfUkZvYzZVdTAydXlvVWtPMkNoaV94R0podldrMjBpNXprNUxDcTZ3RFpVMmMxZ2VTN0pBRnJKUUpvSFNXakdNQQ?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSGZLdXBQSHN4LURXRDV0LTVTdGQ0WTlYWFdWenRmVTFrOERrZFdOa3MxN2RabDNIYXhMWkdBQm5ybVhUT21DNEI5dFI2cDZYbmRVN0RSWDhlckYyZHZNc3g3RG1TbkM5ckVlS1dic0NNeDM4ZFdEUkdpbWZpRFdBd0pRcnl2WUtEWVhxcm14VjBjQTBGcktHTFVMRmVPY28tZEJHaEtHNXZKUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261009-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-08",
-  "ko": "NYT, 미 국방부가 이란에 대한 '3일간 집중공습' 등 전쟁 재개 옵션 준비 중이라고 보도 — 이스라엘군 참모총장 자미르는 대이란 전쟁 재개 시 총선 연기 가능성 언급",
-  "en": "NYT reports Pentagon preparing options to renew Iran war including a 3-day intense strike plan; Israeli military chief Zamir says resumed Iran war could postpone Israel election",
-  "ar": "نيويورك تايمز: البنتاغون يعد خيارات لاستئناف الحرب على إيران تشمل خطة لثلاثة أيام من الضربات المكثفة؛ رئيس الأركان الإسرائيلي زامير يقول إن استئناف الحرب قد يؤجل الانتخابات",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hVzc5S3ltTERidDhlOF9yOXk3UExQOXU2dHBzdWF2ampPLWFsTFdPbHZodmZRS0t6VEhobDdNSFl1bEZDc01wSXBETXluQ2ZaUEM4Mm1kczR6SVNnUzRtOVhoZE5wTGZkWXc?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPM0xzLW9SY0FCaUtXQW1rTmN6Mm43SURsMm1Yc0Z0dDRObUkydDlGZHpYTE4tTGVCdDVkSDh2NWdrVXJRdHE0S3Q1NHBGT0x1dWo4T29wcWRXNUdSRlQzZFNEMW11aE5HbVUzSEZ2ZERQYU5hTHN4TDY1bDRlY1dmQ09KNUhPZ0dmR3FEb2JLSjE0UXhlYk95TlE2Y1RVZTZHSk9HYVZhREZmQl9PcXVWV1NWWFlVblZDWXhyZzRRWVZkYklkMzB2YzJTNUdaVFREZ1E0?oc=5"
-   ],
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE9hdExyZ3U4N1pBR0RPbnp0SEJFUWtra1Fla0lFNXFfMWdHVTVpX1lGSGVuNXd0OFh0RGRUSlVHeGs4azkxSXdqWGl3YklBZFgyNzRwRnJlS09mNS1tclhITXZBdGZpVGhfaXZJNGJpcw?oc=5"
-   ]
-  ],
-  "first_seen": "20261009-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-08",
-  "ko": "후티 반군, 리야드 킹칼리드 국제공항 공격 — 공항시설·사우디아 여객기 2차례 피격으로 기장 등 사우디 국민 3명 사망, 공항 일시 폐쇄 후 재개",
-  "en": "Houthi rebels attack Riyadh King Khalid International Airport — two strikes hit airport facility and a Saudia aircraft, killing 3 Saudi nationals including a pilot; airport temporarily closed then reopened",
-  "ar": "هجوم الحوثيين على مطار الملك خالد الدولي بالرياض — ضربتان استهدفتا مرافق المطار وطائرة للخطوط السعودية، ما أسفر عن مقتل 3 مواطنين سعوديين بينهم طيار، وإغلاق المطار مؤقتا قبل إعادة فتحه",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three?traffic_source=rss"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTkZXNFczdGx0ZDRJY1A5ZW5JSzMyZkRyMHNmUXpVM0pHMzdBNGVRbkNGdVI5SG14bEFvMVQyWXNwTFl2Um5CbTJpODRoUkFkQldxUUZHcl9HcUM5eXNCbmgxb1pWa1dSN3R6cHhteGtncl9ZWHdaTU04cDM1QU8wQktaZDVnWHBmaUdMMXZKWU04ZG14VFo4N1lfWTVwTVNEWU9hTTg1WWk5SGJ2U09kcFF4T2dpVk1DM0tLbw?oc=5"
-   ],
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPb0MtOFlNWi1mcnROSTYxUl9MbmNkbVJ1cGJMMGlVclp6WlpMMHRDYzhScHlKSXQzSHdINm5BQ3FkVFctVzhnVDBGbndLQ0xEajh1RmYwSVEzZ1FENndkYnAzVVJGSlZVeDJ1YzJNMVprRE91VmZKbU40TjVzUFNFOUJPMERFRVVVTHB4YUp6czNGRjdLRDJQSXBab1pmc0RRbkd0dzNnTQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261009-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-07",
-  "ko": "호르무즈해협서 유조선 'On Peace' 피격—부상 선원 12명 중 인도인 11명, 오만이 구조",
-  "en": "Tanker 'On Peace' attacked in Strait of Hormuz — 11 of 12 injured crew are Indian nationals, evacuated by Oman",
-  "ar": "استهداف ناقلة 'أون بيس' في مضيق هرمز — 11 من أصل 12 جريحاً من الهند، وعُمان تنفذ الإجلاء",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/7/oman-evacuates-injured-crew-from-attacked-tanker-in-strait-of-hormuz?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261007-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-07",
-  "ko": "후티, 예멘 아덴국제공항에 미사일 2발 발사—인명피해 없음",
-  "en": "Houthis fire two missiles at Yemen's Aden International Airport — no casualties reported",
-  "ar": "الحوثيون يطلقون صاروخين على مطار عدن الدولي في اليمن — دون إصابات",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/7/two-houthi-missiles-target-yemens-aden-international-airport?traffic_source=rss"
-   ],
-   [
-    "© AFP",
-    "https://www.france24.com/en/middle-east/20261007-middle-east-live-houthis-target-airport-in-yemen-as-israel-marks-october-7-anniversary"
-   ],
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbzM2ODBLbG9aTlZVenpCN1NrRnI1a3NQX1JLSXFibnNxeUx4YXZtUmhfSk1CWjcwSndIYlRHUDNqUVJjeGJHcTJFREZXbUNZYWgtdTIwMXZxdlhIUlVnbmdsUUdvR0tnTmtDSXJvSGdJd3Q4LVpBMWhNS19hd0wxbWhXVEhhd0NEMkRQcHNOb3BsUkdSOWpOQW1ZdWc5S3hfSzJrR2dXdzJGS2s5Z2c?oc=5"
-   ]
-  ],
-  "first_seen": "20261007-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-07",
-  "ko": "후티, 사우디 자잔·나즈란 공항 등 2개 공항 공격—사우디 주도군 리야드 인근서 미사일 요격, 리야드서 폭발음",
-  "en": "Houthi rebels strike two airports in Saudi Arabia (Jazan, Najran) — Saudi-led coalition intercepts missile near Riyadh amid explosions heard in capital",
-  "ar": "الحوثيون يستهدفون مطاري جازان ونجران في السعودية — التحالف يعترض صاروخاً قرب الرياض وسط دوي انفجارات في العاصمة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/6/houthis-saudi-led-forces-claim-victories-as-yemen-fighting-rages-on?traffic_source=rss"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMipgFBVV95cUxNb1V3ay1naHVaQ203NzVqdC1peEhfckdfSG9VX2dRU0lkMHNrT2tRT2tfLWtsS0dyb2pNTzVhYnhEMi1ONFc4OTlwTWlmaVVWWF84ZXdNeFBpbFNyT0ltZFJBem0ycklXZFJsSDVpcGVSSXpBUl9JWm9HWEliSEFDZ2FUN3pwLUZVSGVaME1CYWlIMmE4SVpLazNiVGcxZ2lHVjJrOUh3?oc=5"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5lM0dIaUxWdy1CTVJsREM5YVFLRW11SnUyN3lKWG1fVWg3cXRyYjhzZnIyRDgtZEtWTzJJRjJIWDBIemdMZUU4enNHVVMtb2l0UWRzQXZyT2NMU2k0?oc=5"
-   ]
-  ],
-  "first_seen": "20261007-0700",
   "status": "pending"
  }
 ]
