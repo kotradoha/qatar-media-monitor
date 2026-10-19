@@ -50,6 +50,48 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-19",
+  "ko": "후티, 예멘 샤브와주 정부군 훈련캠프에 탄도미사일 공격 — 최소 20~25명 사망, 30명 이상 부상(예멘 전선 재확전)",
+  "en": "Houthis launch ballistic missile attack on Yemeni government forces' training camp in Shabwa — at least 20–25 killed, over 30 wounded amid resurgent Yemen conflict",
+  "ar": "الحوثيون يشنون هجوما بصاروخ باليستي على معسكر تدريب للقوات الحكومية اليمنية في شبوة — مقتل ما لا يقل عن 20-25 وإصابة أكثر من 30 وسط تجدد الصراع في اليمن",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAtQl9lV1RyWHRFVDAyLUppTEtNMGJxc2M3VzZRN056cVRxVVdFSkNyRnZpMzR5TW9Gdl9qVUxULXpGTHAwSE0xT0V4dXQ1Sy1sSGhWU1VOTjZpai1I?oc=5"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFA5V3ZzQ0dpcGR1SzhkOHlrUTVlYTI2anNDQUdNLTRsaGFMNGk1aDFvNGVKQV8yZFA5Qm1aQ25mYXN2NG5veXdxNUFYTUh6MW5FWm05YnVTV1JzNi1Dekt1OWVqX3F5cjM5NTNnalBSYWxVMWlp0gF0QVVfeXFMTmNHZVJaX1YwQ2JZZUwwRjd6YTdhdDRraDRGVUl0RVBNSmxRWEhDZ1NaaHJqckNWQlloSFNFOEF5OTlXb1VWRmlvTDVqcVJsMTFDTUQ0RjlYVXhKeG4taXBhNkJ0NU5YZU1uN3UyUjd0QUNBbDU?oc=5"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51LXpVUGltWVI1Z3g5RWM4N0otM3FtczlxNjBrb2VZdFQ1OEZjWmQwV180amdmQVEweVpmbFNlUTlpX1ZLRnFUeVhNU1huQnR3LUlXUzVTMjNZQ3NXeEE?oc=5"
+   ]
+  ],
+  "first_seen": "20261019-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-19",
+  "ko": "카타르 부총리, 이란전쟁발 에너지 충격이 아직 정점에 달하지 않았다고 경고 — 호르무즈 통항료 부과 거부 및 테헤란과의 대화 촉구",
+  "en": "Qatar's Deputy PM warns global energy shockwaves from Iran war have yet to peak — rejects Hormuz transit fees, calls for dialogue with Tehran",
+  "ar": "نائب رئيس وزراء قطر يحذر من أن صدمات الطاقة الناجمة عن حرب إيران لم تبلغ ذروتها بعد — يرفض رسوم العبور في هرمز ويدعو للحوار مع طهران",
+  "q": true,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/19/qatar-warns-global-energy-shockwaves-from-iran-war-have-yet-to-peak?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261019-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-18",
   "ko": "호르무즈해협서 유조선 2척 기뢰 피격·화재 — 이란 IRGC, 각 원유 200만 배럴 적재 유조선이 미승인 항로 이용 중 기뢰 폭발로 화재 발생했다고 발표",
   "en": "Two tankers carrying ~2 million barrels of crude each catch fire after hitting mines in the Strait of Hormuz — Iran's IRGC says vessels used an unauthorised route",
@@ -1744,56 +1786,6 @@
    [
     "Middle East Eye",
     "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-qatar-kuwait-condemn-houthi-attacks-saudi-airports"
-   ]
-  ],
-  "first_seen": "20261010-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-09",
-  "ko": "사우디 주도 연합군, 후티 겨냥 대규모 군사작전 개시 — 예멘 정부 '2026년 중 2750회 정밀타격으로 후티 1400명 사살' 발표",
-  "en": "Saudi-led coalition launches wide-ranging military operation against Houthis — Yemen gov't says over 1,400 Houthi fighters killed in 2,750 strikes",
-  "ar": "التحالف بقيادة السعودية يشن عملية عسكرية واسعة ضد الحوثيين — الحكومة اليمنية تعلن مقتل أكثر من 1400 حوثي في 2750 ضربة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-launches-wide-ranging-operation-against"
-   ],
-   [
-    "Middle East Eye",
-    "https://news.google.com/rss/articles/CBMiggJBVV95cUxPdWQxVHNaMVd0LVhBUzhVZXVaMjZYSm9ZRU1RWjhZRmliS3ExQzZ5dXhma0NqcW9YM00wZGZwOWdvNXIteWlpLXplX1hYVWhfQ3Vuc1drZVAzV2ptVWs2b0RUaVV5QUlzdTFhd3hVNEN4ZGlzY2FWTGZiS1pCVFhDVlN2TzFIU3VoMWNYQ28tTVNKaWxidHJWbFpMcUUyZUUyQVVDcjBlWXdIZ0Mxak41VDF0SFlacXotaXNneXVPT3Z1RFFsUHp2T053YXpXNTJyR3FaTWx0MjBlV0ttWDktUGdkckxiVi0tYUF3bk16cmppbjh2Q294YndlQmhoODRWREE?oc=5"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQU5SSVNPNXJGRXp5ZnFHYlNkT0tPcHR6bmgwVldkTzZEdFFPdC12dWJrQnozN1M1aVBnTjFjYXJ0ODc4UFppUURXZDNFWmVUaTNVZHVuOTF2bXcxSVY5N2FaQk5OWjJTSXdrcGxrdGJvQW53ek9qUEpQQkF0azFZS3BrdTdHM1dST1p2ZmxMRHF2UEJ4UE1VUXctYVYtaHZBd0lNV2QtSWEwRkFpMkVjVWtWQVAzamlTbW42a2RkSzVTbVJ5MlhJcktwTzRLZ9IB0wFBVV95cUxQXzZzQnFFbUtHVTI0cGdiaXg5cnRodkl2Qm5ZdDFScEhOMVEtekJSR1ZmZF9Ha2NrUWJ3SUp5OWluYWNBdWxsV3VzNGppNjA3b0hIM0EyelJxS2d4LXEwVl9CS2JyeXA5a05ySnJoaWxUbm1ocTd5bElPeEF1ekRDUGdUSG44c1hvTl9fS05GRVE0TmFEUGZvdlRDZ0pIdzY2THN2d2g0Vm9nQVRPbmE1ZTlrVmFOUVhpQXhjM0lvMDhaX3pSdTliWVUtLWJKYTAzV2xZ?oc=5"
-   ]
-  ],
-  "first_seen": "20261010-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-09",
-  "ko": "UAE 앞바다서 선박 발사체 피격 화재 — IRGC, 미승인항로 LPG운반선 공격 주장 및 추가 단속 경고, 호르무즈 유조선 피격 '이란전쟁 발발 이후 최대' 평가",
-  "en": "Vessel struck by projectile off UAE coast catches fire — IRGC claims it hit unauthorized-route LPG carrier near Strait of Hormuz, warns of further enforcement; called the largest such tanker attack since war began",
-  "ar": "سفينة تتعرض لإطلاق مقذوف قبالة ساحل الإمارات وتشتعل فيها النيران — الحرس الثوري الإيراني يزعم استهداف ناقلة غاز بترولي مسال على طريق غير مصرح به قرب مضيق هرمز ويحذر من مزيد من الإجراءات، ويوصف بأنه أكبر هجوم على ناقلة منذ بدء الحرب",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/fire-extinguished-vessel-hit-uae-coast-ukmto-says"
-   ],
-   [
-    "Tehran Times",
-    "https://www.tehrantimes.com/news/530903/IRGC-reports-fire-aboard-LPG-carrier-in-Strait-of-Hormuz-warns"
-   ],
-   [
-    "동아일보",
-    "https://www.donga.com/news/Inter/article/all/20261010/134817075/1"
    ]
   ],
   "first_seen": "20261010-0700",
