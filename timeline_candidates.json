@@ -92,6 +92,119 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-19",
+  "ko": "이란 IRGC, 호르무즈해협 상공서 美 MQ-9 드론 격추 주장 — 호르무즈 해저 인터넷케이블 7개 언급하며 '새 표적' 경고",
+  "en": "Iran's IRGC claims it downed a US MQ-9 drone over the Strait of Hormuz — also cites 7 undersea internet cables in Hormuz, warning of 'new targets'",
+  "ar": "الحرس الثوري الإيراني يعلن إسقاط طائرة أمريكية مسيّرة من طراز MQ-9 فوق مضيق هرمز — ويشير إلى 7 كابلات إنترنت تحت المضيق محذراً من 'أهداف جديدة'",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-it-downed-us-mq-9-drone-over-hormuz-strait"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZmhzeHVfQkhqTVRucndFVW1BdXdiY05nMllMNXk4TmpNcm52XzhJaG9SRk9KVnVyVHRXaGdObHJ4QnZqVDhoMnROX2p0UzVlY1VUdl8xWXBKV080VEhjZzlGeFRpWWZwNGRocXhTWlEzeGRKVHgzSmNzOXdvTWNreFh6dW5FTkQ3T0l2M0w4VTV5cmdmMy1jamNZX1VwTWxEOVJld1ozT00zT1hSY3pvVTRaV0dUQmRaUFMxS1hBcXByWmw0VVNDOWZ1S09iOWJqSmc?oc=5"
+   ]
+  ],
+  "first_seen": "20261020-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-19",
+  "ko": "사우디, 후티 공세 격화로 '2026 다보스 인 더 데저트' 투자회의 2027년으로 연기 — 정부 재택근무 지시, 항공 운항 차질",
+  "en": "Saudi Arabia postpones 2026 'Davos in the Desert' investment conference to 2027 amid intensifying Houthi attacks — orders government work-from-home, flight disruptions",
+  "ar": "السعودية تؤجل مؤتمر 'دافوس في الصحراء' للاستثمار 2026 إلى 2027 وسط تصاعد هجمات الحوثيين — تأمر بالعمل من المنزل وسط اضطراب الرحلات الجوية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/20/saudi-arabia-cancels-2026-davos-in-the-desert-amid-houthi-attacks?traffic_source=rss"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4RUhJNWdlMm9kaXlDSkxkMEdwYnp2T1JQVkhsa2swX3d2TTJwMHFnanFfTl9hejNHeXMxN050Q0xwUVUtZUl0Q1Y2YUVEd2xRYmo5MWVpRGtvdW9HbGxsdnJ2YnZDMG1DM2NycVJoMGtRRGxGVGdrX9IBeEFVX3lxTE5GdTVCcUhSd0ZyYXdENWo3Y1doVWRVQnkwM1BDdjV6MS1ORVNNNUo5b1pTanJkNl9iS3hzVHQxR3J5SVppblJwNktTcGNKWExkWXNQZUxrWG9pSlAxbWRabm5fb1ZxWWFXSjhZdkthaWc3UTdlQ0JXRg?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261020081700009"
+   ]
+  ],
+  "first_seen": "20261020-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-19",
+  "ko": "후티 반군 공세로 사우디서 50여명 사망, '최악의 위기' — 예멘 알알람 기지 탄도미사일 공격으로 사우디군 헬기 추락 2명 사망 포함, 사우디 하늘길·출퇴근 마비",
+  "en": "Houthi offensive kills over 50 in Saudi Arabia in 'worst crisis' — includes 2 deaths from Saudi military helicopter crash after ballistic missile strike on al-Alam base in Yemen; flights and commutes paralyzed",
+  "ar": "هجمات الحوثيين تقتل أكثر من 50 شخصاً في السعودية في 'أسوأ أزمة' — من بينهم قتيلان في تحطم مروحية عسكرية سعودية إثر هجوم بصاروخ باليستي على قاعدة العلم في اليمن، وشلل في الرحلات الجوية والتنقلات اليومية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4RUhJNWdlMm9kaXlDSkxkMEdwYnp2T1JQVkhsa2swX3d2TTJwMHFnanFfTl9hejNHeXMxN050Q0xwUVUtZUl0Q1Y2YUVEd2xRYmo5MWVpRGtvdW9HbGxsdnJ2YnZDMG1DM2NycVJoMGtRRGxGVGdrX9IBeEFVX3lxTE5GdTVCcUhSd0ZyYXdENWo3Y1doVWRVQnkwM1BDdjV6MS1ORVNNNUo5b1pTanJkNl9iS3hzVHQxR3J5SVppblJwNktTcGNKWExkWXNQZUxrWG9pSlAxbWRabm5fb1ZxWWFXSjhZdkthaWc3UTdlQ0JXRg?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261020081700009"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261020074700704"
+   ]
+  ],
+  "first_seen": "20261020-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-19",
+  "ko": "후티 반군, 48시간 동안 사우디 내 6개 표적 공격 주장",
+  "en": "Yemen's Houthis claim six attacks on targets inside Saudi Arabia over past 48 hours",
+  "ar": "الحوثيون في اليمن يعلنون تنفيذ ست هجمات على أهداف داخل السعودية خلال 48 ساعة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-houthis-claim-six-attacks-targets-saudi-arabia"
+   ]
+  ],
+  "first_seen": "20261020-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-19",
+  "ko": "헤그세스 美국방, 이스라엘 비공개 방문해 네타냐후와 회동 — 美·이스라엘 대이란 대규모 군사작전 재개 논의 속 이스라엘 총선 앞두고 이뤄져",
+  "en": "US Defense Secretary Hegseth makes unannounced visit to Israel, meets Netanyahu — amid discussions of resuming large-scale US-Israel military operations against Iran, ahead of Israeli elections",
+  "ar": "وزير الدفاع الأمريكي هيغسيث يزور إسرائيل بشكل غير معلن ويلتقي نتنياهو — وسط مناقشات لاستئناف عمليات عسكرية أمريكية إسرائيلية واسعة ضد إيران، قبيل الانتخابات الإسرائيلية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWGk4dUNYcTNsMWZSQjRzbk1VQmxOci03Y3F5TzhMeHlRZl9PZVhxMGZqY2luQVBTUTNSanF0ZHpyYzEyNHZXckVYYllTVUZ5ckxCbmozZk1ILXMxMjhPRkxWM3FveGt6ZjVYSWpzUmhiRWJRdDRfXzN0RlhpaF9UcDBKM1lGLUZHSWFubGRSUlFBNWhuWkEtemhxczlieVQ2cjFYczVZaU1wRDZMb0E2ZHlB?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxQazZTcHB2MlowZzVocmZ0eFd2a19IUDY0WUM4YkV6b3Awai1lTFNzeUxXUFBnWW1yMlVocUdUV1hoNXlXWEFjUy1ndXRrNmVZMnRUNHZUdnRQdldXNGFkU0lxWkVtSDl2TTdNVExtWHFTRW5YTVZ1Q0VjdnhSTW5uN2EtQXM1YXhlNnpxd0VIVThQM3gtTlh1OTNMOE13Q19HMEdQUFJ3Z3NWMlhiMlpMNE14V3hNWGJzWkhLOWd3?oc=5"
+   ]
+  ],
+  "first_seen": "20261020-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-18",
   "ko": "호르무즈해협서 유조선 2척 기뢰 피격·화재 — 이란 IRGC, 각 원유 200만 배럴 적재 유조선이 미승인 항로 이용 중 기뢰 폭발로 화재 발생했다고 발표",
   "en": "Two tankers carrying ~2 million barrels of crude each catch fire after hitting mines in the Strait of Hormuz — Iran's IRGC says vessels used an unauthorised route",
@@ -1668,127 +1781,6 @@
    ]
   ],
   "first_seen": "20261011-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-10",
-  "ko": "후티 반군, 리야드 킹칼리드 국제공항 공격 — 12명 사망(미국인 1명 포함)·309명 부상, 이란전 발발 후 걸프국 내 최대 인명피해",
-  "en": "Houthi rebels attack Riyadh's King Khalid International Airport — 12 killed (incl. 1 American), 309 injured, deadliest Gulf attack since Iran war began",
-  "ar": "الحوثيون يهاجمون مطار الملك خالد الدولي في الرياض — 12 قتيلاً (بينهم أمريكي واحد) و309 جرحى، أكبر خسائر بشرية في الخليج منذ بدء الحرب مع إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLWVoSG40NmNyb1B5YkpTVUlpc1l3b1FaYTdlczcwUURLTkt2R2FUX2dfTGFsc2pJS2lfSDY0Tzd5RUpVWjFZdEw1R0o4UUhkdEJSSWpsd0hIRTU5eTZpRkRhV2IyazRnRVc4dzk4STlZWVpobkF1am84bGtHOXZFbk9Kdk5rMU9yR0pGajk1STBYTkdGZFhVbzM1MU1hdV9Rcm11d1ZrdFdCWG96VHfSAbMBQVVfeXFMTmpLZWNQZ1RyWXk2Q0VHMUs3cUpwUGtUQVRJdGgxd01rV1RsbWg0ZkdQTGtyNTlVRFRDcXVGWU5lQTd0VXZYV0FKSlQzWDh2MmZyeWFiNlVYRHBPcTJoTnRLQVRfWFVBb09UUDduNFBfdktFM1k2UDByaFFtNnV6c1l4SHg5bXkyYXQ0a0dDU3hFUFcyUDUtdzNNMHdYTnFCbkFYa2hIeWZfd1BCTjltNktXanc?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/11/yemen-fighting-expands-as-houthis-attack-saudi-airport-what-to-know?traffic_source=rss"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxPR094dC1TQTlURWVUOFpLQUc0a1kxa1cwM1h5aDQ3bmxzdk9jdk50VU9UaEVNbjFtVHpWNGZ5STNpeFB2RlJBUGxheVYza29vbnowUXMzYUh5VmVzTVR2WjhFQjU5M0RlZE9DWkI0UGtCZDEtMF9wUG9vcmtPalI1REsxYXNOYzhNNTJmaGh6Y2tVdVF6Z2F2WXdWMHEtbC11R1dXdnpyZmhkZmQtNWNpZFBvM2tkeS01WC1oRVVfRQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-10",
-  "ko": "후티, 리야드 킹칼리드 국제공항 제3터미널 미사일 공격 — 13명 사망·300명 이상 부상, 사우디 방공망 실패 논란 확산",
-  "en": "Houthi missile strike hits Terminal 3 of Riyadh's King Khalid International Airport — 13 killed, over 300 injured, raising doubts over Saudi air defenses",
-  "ar": "هجوم صاروخي حوثي يستهدف المبنى 3 بمطار الملك خالد الدولي بالرياض — مقتل 13 وإصابة أكثر من 300 واتهامات بفشل الدفاع الجوي السعودي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOY3A1N0dSaEowdHRsQm11d1EzUnJneHRRYWRYa2NWU0ZfeUgwOUNzMHpNN2dVWFJQeVRZRDdYTTJ5YUtwX2YwUEprdWowUW1hYXplbjlsbnBuaTk1RUc3ZnBseDgyMFI2Q09BNllMRXVUWm52RXQ1R3ViSEZpZW1OOWlqenhMSDlPMXY2NWVzOEpHTkctQld3WWJaNVh0M05rdUhTQlBCNGl2SXVqR29UbkVNMm8wR00?oc=5"
-   ],
-   [
-    "BBC Middle East",
-    "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&at_campaign=rss"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261013_0003823713"
-   ]
-  ],
-  "first_seen": "20261013-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-09",
-  "ko": "USS 에이브러햄 링컨 항공모함, 대이란전 지원 321일 기록 작전 마치고 샌디에이고 귀환",
-  "en": "USS Abraham Lincoln carrier returns to San Diego after record 321-day deployment supporting war on Iran",
-  "ar": "حاملة الطائرات يو إس إس أبراهام لينكولن تعود إلى سان دييغو بعد انتشار قياسي استمر 321 يومًا لدعم الحرب على إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/9/uss-lincoln-returns-to-us-after-long-deployment-supporting-war-on-iran?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/uss-abraham-lincoln-returns-san-diego-after-deployment-during-war-iran"
-   ]
-  ],
-  "first_seen": "20261009-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-09",
-  "ko": "트럼프, 11월 중간선거 전까지 이란 공격 미실시 발표 — 미 국방부의 '3일 집중공격' 계획에도 불구, 해상 봉쇄는 유지 방침, 유가 하락",
-  "en": "Trump announces US will not strike Iran before November midterms — despite Pentagon's '3-day intensive strike' plan, maritime blockade to remain; oil prices drop",
-  "ar": "ترامب يعلن أن الولايات المتحدة لن تضرب إيران قبل انتخابات التجديد النصفي في نوفمبر — رغم خطة البنتاغون لـ'ضربة مكثفة لثلاثة أيام'، مع استمرار الحصار البحري؛ وتراجع أسعار النفط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/9/trump-says-us-will-not-strike-iran-before-midterm-elections?traffic_source=rss"
-   ],
-   [
-    "NPR",
-    "https://www.npr.org/2026/10/09/g-s1-147455/up-first-newsletter-hurricane-isaias-ukraine-russia-trump-iran-ice-shooting"
-   ],
-   [
-    "NPR",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQalhmck5wcTF4VERITW41U2xVWTNUX0NEelJ0b2VObGhmQW90cW1RcGx5VnpQMU9rajBwS1dKbUNnOUNPcnQ2ZWdlTE9abVJIV05UZEhDUnNzYzg5WUdjTDVFemxEYkVYcUpVaFRScGpvQmZvY3VOd3lwdl9UMFF5ZEFib21qYTdhNnp4aFpFMkxITEFvQTdJLUcwQUhPUGF4NkNVWkp0SVpKNXJQMlg1NlA1Q2ZVb1MwMnc?oc=5"
-   ]
-  ],
-  "first_seen": "20261009-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-09",
-  "ko": "후티, 사우디 리야드 킹칼리드국제공항·사우디아항공기 공격 — 사우디 국민 3명 사망, 수십명 부상, 전쟁 '전면전' 복귀 경고",
-  "en": "Houthi attack on Riyadh's King Khalid International Airport and Saudia aircraft kills 3 Saudi nationals, injures dozens — UN envoy warns Yemen war returned to 'full-scale war'",
-  "ar": "هجوم الحوثيين على مطار الملك خالد الدولي بالرياض وطائرة تابعة للخطوط السعودية يقتل 3 سعوديين ويصيب العشرات — مبعوث أممي يحذر من عودة الحرب 'الشاملة' في اليمن",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMimwZBVV95cUxOY0FQaS14eFl1YUZPRnlFeEd4aVdXSzd1ZHlrUjM1MkJxNWgtZXA2aUVKc3BLbHl0dXl3UHgwajhwZlRLckRjTWNyazJjSEYxbzlhN0t1Zmsyd3lUUE8yV2lkUkVwN0h0WjNrQmFScFc1MENzN0RZWWZzbFBJSnk1YnFtZVNldW00Y2RtMWxlLUxSbmlMejNmY2s2ZjlpMWRGWW9RT2YteFo3UWhiRlY3YkQ5Vy02N1lGY2g4WG4yNzJ1N0RKSEZJVGlHS0JnMnN1Z3VfYUlWQkN1cTk2MGNiRW5oQ3VCXzBoRlBCZUVNQmk0WUVWZmEtNFM4dWFjVFhrUkdMOUNCUGdzbkc5UDczZzlBeG5sSmR3dl80aU5pSkZ0Nl9FazNvX3g4R3FMR0luLXRvdjlRSWxvbDltaFlMNHZUTGRzdlBENlRLb1F5OW1HaHpqV2JpQTl4YjRrbmN6QmhZMl9uN25wMTBlTi15bXRjSmdiOHpPaXY1UXc2YkVjcXhyblRUREVMU0NrVFhKeEdXVHNWanZrR0ZNclowRFlWUTFzYXdNR1BBYVNyOG12M0JyUnJBa2x0SVhnUXVSbl9NLThJQzVrakw2VlNsNXdkbEJqX25VRjk5YXJuZWhfYVZQd2NyY3NpdHlvTllhLUFhQWNtcklnZEVjdE5DVWxhcE0zRlZSM0psWHItc1FqWFFLXzhTWTA2R0llLXlyTmZHNTlKaVVqWi0wVm9XbVgtdFVMY0M4ZHRyME4tbkx2dVJKNlFGa2lBVzlXMm9Hc2VnaC1hT0JYSnY4MjFpYXllVGF2dW0yTlI4b1hZdndMUDJ5UHM5NXNvOHZNNlhZa3VVaG85RzZqS1BndTEyLVlndDhxUVp1NnJlaVdfd3Zsd2RjbTdERnlQR2kxYXNOa3pHOVBvT3hSalZXZU1fMVVBUjZBMURCUXFrZy0xYkttS1FhdWc3MXFnbTkyUThNMmVqb2dLT1VidG5zQXFHQUVnRm5XR2tUM2ExVVU5c3VGaDZoVWFaeUhzMjNaLVhNSFRka1pydnZzNDQ?oc=5"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMiygVBVV95cUxONFRsbFM5VzNTTERtWnVWTjhmQjBXRWFLLUo0djJOYTdjU0V4MktpM015UkRPMWFGSXBWY1c3bjBOVUVXazJ5alJJTGp6a2x0c05IZ1dXVkljMTFPWG1BM2N5ODJFblFrVUdfNjBEUGQ1Qlc0dnEwMnNNTGhKbkthSk9xeERkbzM4dWVOYjJFWGJjQWRoeWdoRVZUYVY1cU9qYktOREpENG1mQ2NlT0g5d1YtdXZ0ZFdWMVlTcWZ6MlkzX2U3c2xGWV9PR3gwSXZZSzBOS1VvU2dxTERJMGtPTXAyZ0c5OHdtRHktYkNTX3JsWU50SmVrM3c2Z2gtVl9jR2JITGUtRlc1WXYxRjRNS2E5YkpRektCU0h5NWllNmhBSHJ3bmF3WVo2bGpiS2JBcGlWakFhOHBJa3RFamRKMUN3SUZCSFI0MkxyeWxUbHhCdEk3WEZveFhQWG9saDlTN1NHOVFwdU9ZekN5MHFnNG1ucXJCY1JuX1pFSFQ0RXVzSkUwbjFpQnd4T2xaNzlwUWR6TnlXallrTDhSem1DUUlvbmN2X0RiMVF0a3l0Q1UxbGZobnVNd2I1VlNWUmlzQjFKaDlmeVlwRU1ON2xtOHpHZnlyT0VydE1CR244S0R5TC1kZ1BLaloxbUVHdElzS25adm9ncXZlUnhBb0p5TmFnMWV1ZUsyUjhTYlQ1bE5TV0hpZXl5V1JGNFBQRFFtYVhRd3dBQWVRdjd1N2lGNG1xaDA3eC1sM2Y4OFN5VVdrOU8xY3hHYnhQalNXTkZZMDkwTGVPY2FuMWJwYmtMb2VxdWJzOHZXNGczQnRObmVvSVZ6dUIwX05DanNIdVN6cVFsVHN1S0lvVXo3Z2VXS2kxSTJ1X2s0WGZmcGtYUXN3ZS1FRW9jTUdKZ01BMnFSeXFINVZRdXUwNFpMeXd2dEhGX3NNSFlQaVE?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-qatar-kuwait-condemn-houthi-attacks-saudi-airports"
-   ]
-  ],
-  "first_seen": "20261010-0700",
   "status": "pending"
  }
 ]
