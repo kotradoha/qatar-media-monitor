@@ -1,5 +1,148 @@
 [
  {
+  "d": "2026-10-20",
+  "ko": "호르무즈 해협 남쪽서 유조선 2척 이란 기뢰 충돌로 화재·운항 중단 — IRGC 발표, 구체 시점·선박 정보 비공개",
+  "en": "Two tankers hit Iranian mines south of Strait of Hormuz, catching fire and halted — IRGC statement, exact timing/ship details undisclosed",
+  "ar": "ناقلتا نفط تصطدمان بألغام إيرانية جنوب مضيق هرمز وتشتعلان فيهما النيران وتتوقفان عن الإبحار — بيان الحرس الثوري، دون الكشف عن التوقيت أو بيانات السفن",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxPU0ZTOGctTDBGU2daYmpoLUJFdkJaOC16SkRwWFBKN2JIUDBsQ2t0YnJ3bU1waTR5MzJlckVfeEx3UnhVSDI0VEsxS0VrM0sxV0Rja0RfMzJsWThrTHA2NzZWbVNKTEJCVktrdndOQ1JPbnBhdDBfWEM4cVJsUGloeksyUWloVnNiYzZDWFdsVW0zY190MjkzMGlSbWswNVFta0YwaWY1TXBaRHNBVHllUEFqUVRod2QtbkE?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMipgRBVV95cUxQMndkN1NnQjIxS0pDc3lxblNjV2JNOHkyeFp4RTVWVFVZeUw4Znd1S0V0NnZuNXRfdmlBano3T2hWZ1VmbDRpOXMwclVGQkstaXVlRjhRV0pCX1dyZ24zUXF2VXJlWDFpWkFiV1RLM3JsTUZRVWJRVFQ1c01nWEFDMjVPSElLSzhscWRLX1lNQnVpM1RmNHVYdDVsMDFGY3lkbU9LYmVlTWJRa2RjU3ozenNSUEdHUG9UZmJuOWhHZm5ZOWFfVkZpTDZIMVJQWEZnZmVyRVlWbkQwUDVTRy1wSWMzM3k0ekx1T1RHcEx0cFJXd1pVY2IwRktCbkZic0NGVU56d0pnRDNEcklHb0RFOVc3THBvTEhSX1Njb0pmS3NEMnliZmdvSGJMRGw1XzE0eEVrLUhvRklDMXFBYWZkbzRQQ1ZvdG1jNTQzSzNFSHZKMEJSY2RoQ0JqQ1A4WG9GcExGeE00azFRN2NHYnNKODNmTExUYWx5ZUVxZnZGMW5fWmtzcklaSm1vVXd2b2txYnZUTVJubkZXanBGTF9vaXhlYWFwd2VwNFQxUEYwaUdidXhPQlNNRHdrLTdIV0RWLXRjMjAweER3bmFGdWJqbUpqTVVCVTlXVlB1R2FvQkpxVUI2c3lkZW5VYlE0cG9Rc1ZtbkRHWFhLZEpYYUJ0SkJsbnVtcEYzUG53Rmg4bURPeWxfM2pmVV9QVkQ4cklpaDdhQmFR?oc=5"
+   ],
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86298387/IRGC-Two-tanker-caught-fire-halted-in-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261020-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "후티, 예멘 정부군 신병훈련소에 미사일 공격 — 사망자 73명(전원 신병), 3개월 전 재교전 이후 최대 피해",
+  "en": "Houthis missile strike Yemeni government recruit training camp — 73 killed (all recruits), deadliest since fighting resumed 3 months ago",
+  "ar": "الحوثيون يستهدفون معسكر تدريب مجندين تابع للحكومة اليمنية بصاروخ — مقتل 73 شخصا (جميعهم مجندون)، الأكثر دموية منذ استئناف القتال قبل 3 أشهر",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261020_0003834068"
+   ]
+  ],
+  "first_seen": "20261020-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "영국, 후티 공격 격화에 사우디 방어 위해 타이푼 전투기 배치 발표 — '방어적 임무'로 제한",
+  "en": "UK announces deploying Typhoon jets to defend Saudi Arabia amid escalating Houthi attacks — limited to 'defensive' missions",
+  "ar": "بريطانيا تعلن نشر مقاتلات تايفون للدفاع عن السعودية وسط تصاعد هجمات الحوثيين — تقتصر على مهام 'دفاعية'",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/20/uk-to-deploy-raf-fighter-jets-to-defend-saudi-arabia-from-houthi-attacks?traffic_source=rss"
+   ],
+   [
+    "BBC Middle East",
+    "https://www.bbc.co.uk/news/articles/ckr5yqe1r1llo?at_medium=RSS&at_campaign=rss"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks"
+   ]
+  ],
+  "first_seen": "20261020-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "튀르키예·사우디·파키스탄 '메카 방위협정' 체결·공개 — 튀르키예 의회 비준 절차 착수, 상호방위·군사지원 명시",
+  "en": "Turkey, Saudi Arabia, Pakistan sign 'Mecca defense pact' with text revealed — Turkish parliament begins ratification, commits to mutual defense/military assistance",
+  "ar": "تركيا والسعودية وباكستان توقع 'ميثاق مكة الدفاعي' ويُكشف نصه — البرلمان التركي يبدأ إجراءات التصديق وينص على الدفاع المشترك والمساعدة العسكرية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWDc1bGVvUFpIYnkxZnFBczZLeGhScUwzMTh1QmlHN2pJQXhKdndtd2dvSjB2WGQ0WjZSaXJESkFfbFI0aEcwOS01ejZYcFlpN0N4NklqNnp2d0IzM2NnaXpLRUhTMGpDVDFYSXdhbzJYSEJUWFJxdm9qWTRFT2M2NjZUbUNGaEp6Y2JZcFloQzZSRE1nYWdWYkRmaTZVZlFXR0t5a3dzZWx3dFlldGs2dG9Jb3NlczZrOWRvalN6VQ?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/news/full-text-mecca-defence-pact-signed-turkey-saudi-arabia-and-pakistan"
+   ]
+  ],
+  "first_seen": "20261020-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "사우디 수도서 후티 미사일 요격, 폭발음 보고 — 공습경보 상황 지속",
+  "en": "Saudi Arabia intercepts Houthi missile over capital, blasts heard — air alert situation continues",
+  "ar": "السعودية تعترض صاروخا حوثيا فوق العاصمة ويُسمع دوي انفجارات — استمرار حالة الإنذار الجوي",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLXpvTnpUMWgzZzYtbEg2cHVxeHVBNGpwQ0ptSjZXbW5IMGJqQl9HejV0SmU0b2dXOEFnbGVsbXplLUZhZEhxRDNFaDJpX0FqaWtCdnN6bGVVOHRrb0FHQUFlUkktT09jOTdNMlhnNHFwdDZBdFVfeWxTdUR2bGQzMGh4cG9tUmxuTU51eG5Na2Q5Q2gtNUgwUXhEQmxmRTZhTmlzS2gweGZ3Y3BGd3VZ0gG0AUFVX3lxTE9KRlVJUGJuYWhYM0ZkV2tabEpWN0YxMVM1aUhRNU1LajA5emNGTnc2Z0tHX1NwYW5YWFJsdy1lYUxFSy1pbnBLTlA4OHdyOGtJYkdsU1NyUlJYMEFMckQ5QVI4SFhmdnZ1SEdYRnU3Tm5nWXZLYkFzU2xsbHYyZkZsMk9RUWZKVmViTEV4YmEta3B3ZnJDN2d6ZU5pcV9QdENyZi1KSVJMbXB0cFNTN3V2TGpFQw?oc=5"
+   ]
+  ],
+  "first_seen": "20261020-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "헤그세스 미 국방장관, 이란 전쟁 우려 속 전격 비공개 방문해 네타냐후와 회담",
+  "en": "US Defense Secretary Hegseth makes unannounced visit to Israel to meet Netanyahu amid Iran war concerns",
+  "ar": "وزير الدفاع الأميركي هيغسيث يقوم بزيارة غير معلنة لإسرائيل للقاء نتنياهو وسط مخاوف من حرب مع إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaTRUNmIxME1lMkU4azlaVW94LXozajNQaWZuYlcxUHBOcEF3MjZuQjNDQkRVLWxMZWJvZlJ3TkpIeHBQRzN2a04yMUg4c3V3SDU1ZGgwZmZRMTJPcHpWT1JwSEFSSTFmN0VlRmdMOWdqUlkzRnlrSGgycFJ6S0VEa0lSZEY5bnp5cElxMDN0OFhLMXcwaC1NRFBZZXQ?oc=5"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVHU0N3Zvb1BlQXdoRklSYmxwYnlDY1BfUGdpcEFNaDNmX25MNmk1d2hmbzNMVDEyM2V2anZkRDVzTk10SnQ4NzdPdTN2NWNkdzFnVjdQT3B4YUlMUkFDVmZwb1UzNGxaZ1REaGxHbUkwMGNMREk3QjBacV9jMUl6WF9DRTdTeE45ZHNzUURNdTdpN0tQTGlna0hwYndmQUYydDFSeFpidXRNeE9Rbnl4eVQ3ZnRtSzhLOERJSzJHNERyazJOOTdB?oc=5"
+   ]
+  ],
+  "first_seen": "20261020-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "브렌트유 배럴당 111달러까지 급등 — 사우디 석유시설 공격·호르무즈 긴장 겹치며 시장 초긴장",
+  "en": "Brent crude surges to $111/barrel — market on high alert amid Saudi oil facility attacks and Hormuz tensions",
+  "ar": "خام برنت يقفز إلى 111 دولارا للبرميل — توتر كبير في الأسواق وسط هجمات على منشآت نفطية سعودية وتوترات في هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "한국경제",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwT2tpZWJtMTRkb0RuYUppeF9KV2VnMHc4MkxFalRqWHQ2eWd5U3FYVU1JRXpkcV9NOHo1VE9YMUh5dWxwUWkyQnlpOTVicUZtWldhV2tVSWI2QQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261020-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-19",
   "ko": "호르무즈 해협서 초대형 유조선 2척 잇따라 기뢰 접촉·폭발·화재 발생 — 원유 200만 배럴 이상 적재, IRGC 해군 발표",
   "en": "Two VLCC oil tankers carrying over 2 million barrels of crude struck naval mines and caught fire in the Strait of Hormuz — IRGC Navy announcement",
@@ -1626,161 +1769,6 @@
    ]
   ],
   "first_seen": "20261012-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "수단 북부 금광 공습으로 광부 최소 72명 사망·50명 이상 부상 — 이집트 책임 지목",
-  "en": "Air strike on gold mine in northern Sudan kills at least 72 miners, wounds over 50 — Egypt blamed",
-  "ar": "غارة جوية على منجم ذهب في شمال السودان تقتل 72 عاملاً على الأقل وتصيب أكثر من 50 — اتهام مصر بالمسؤولية",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/11/at-least-72-sudanese-miners-killed-in-air-strike-rights-monitor?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/11/deadly-air-strike-kills-dozens-at-sudan-gold-mine-near-egypt-border?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261012-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "호르무즈 해협 선박 피격 급증 — 최근 2주간 24척 피격, 개전 초기 2주(13척) 대비 2배로 전쟁 중 최다 기록",
-  "en": "Hormuz Strait ship attacks surge — 24 vessels struck in past two weeks, double the 13 hit in the war's first two weeks, a wartime high",
-  "ar": "تصاعد هجمات السفن في مضيق هرمز — استهداف 24 سفينة خلال أسبوعين، ضعف عدد السفن المستهدفة في أول أسبوعين من الحرب (13 سفينة)، وهو أعلى رقم منذ اندلاع الحرب",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "서울신문",
-    "https://www.seoul.co.kr/news/newsView.php?id=20261015010001"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261014-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-10",
-  "ko": "사우디 주도 연합군, 후티 반군 겨냥 대규모 공습 단행 — 리야드 공항·사우디항공기 피격에 대응해 예멘 내 군사목표물 136곳 파괴",
-  "en": "Saudi-led coalition launches large-scale strikes on Houthi forces — destroys 136 military targets in Yemen in response to attacks on Riyadh Airport and a Saudia aircraft",
-  "ar": "التحالف بقيادة السعودية يشن غارات واسعة على الحوثيين — تدمير 136 هدفاً عسكرياً في اليمن رداً على استهداف مطار الرياض وطائرة سعودية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/10/saudi-led-coalition-says-its-carrying-out-operation-in-yemen?traffic_source=rss"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX1ZaSjhHakhEb2hLUXUxdWZVb1pVQXJicTgtVENldndaRTI4VG5iaFJyV0sxSTRieVliX0c3SV81SEYtNmFxOXd2YUM2bDh6Tjk0cnBCVWM0RWNJeE4xLUVKXy10ZUM5cVNHc2tZYXR2R1A5U21MRVVjb0hMcHp5VTNfc29FTWFUaW51MVhnemJfRW9CMk8wb29HWVpzQ3pENDZscW43SEVxNHhUcUxrN3JBaUo4bWtENEE?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBUcDM2aW9McHlHZUw5ZVhZYTIwTEt3R0lTOF9CTnlhSndicGIxSVJBZ3hIV2xrT2F5THVrdUNHYzJuZnFTMkpFS1dUcEFSRS1tT1JCbUxmTDJPQ1FKMTcwWjFR?oc=5"
-   ]
-  ],
-  "first_seen": "20261010-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-10",
-  "ko": "미 중부사령부, 걸프 산유국 원유 12억5천만 배럴 이상 호르무즈 통항 지원했으나 이란산 원유 수송은 '제로'라고 발표",
-  "en": "US CENTCOM says it has escorted over 1.25 billion barrels of Gulf crude through Hormuz while Iranian oil transport remains at 'zero'",
-  "ar": "القيادة المركزية الأمريكية تعلن دعم مرور أكثر من 1.25 مليار برميل من نفط الخليج عبر هرمز بينما نقل النفط الإيراني 'صفر'",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "프리진뉴스",
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lMVAwbGI5ZEtPUUhxeWEzaFRnM0l4cGI0NVlmeTd2bDhWSEpjd3BTYXFpTi1qZDVocmtuWmphMWMzRlZaRnZ4YXExRUNGeHdHWmY4VDlWdkVqeGRITHFTOXJqWmI1dHk3WGZsYS1PSQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261010-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-10",
-  "ko": "후티, 사우디 리야드 킹칼리드 공항 공습 — 12명 사망·309명(최대321명) 부상, 이란전쟁 이후 걸프 최대 피해로 기록",
-  "en": "Houthi strike on Riyadh's King Khalid International Airport kills 12, injures 309 (up to 321) — deadliest Gulf attack since start of Iran war",
-  "ar": "هجوم الحوثيين على مطار الملك خالد الدولي في الرياض يقتل 12 ويصيب 309 (حتى 321) — أكبر خسائر خليجية منذ حرب إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdGcxd2Q2QXhUSGFCZ3NmdUotNFR2bkxvZ0t5dUN3ZGFoWnEyeVVMaXU3YmxST3daXzhOeVpCcDRIbXJhYlJ2MUdsOEhNYVcwcThEZlQyZUFGQWFpeklPYlY2T0FZb3hQY0liUkRfZ3hpT3pOUTRkb2hhSUhkdmJSTmtrSURzZEhMdllIa1pqNm9mUDhCT3hnM1k5cDQ4bjh0OVBaNk9YMHpJd9IBrwFBVV95cUxOeEY5RWlrVmxYUFllYXkyMk5QeUZQZGZ6OGNGZ2dvVlo5cXB3STlBbnMxWmFpQUJYQ200VFZoaVdmM0lTRFpKTWRWMXRQUDhuc1lSdjduZHhSSXRLQjZNalhjNXdiYjhwd2xhbzlqbUF3RnN4bmV2U1hFdHJKYTZlWkllancybkk4Y0Rkc2tSZ0dPZlFiZzAyT0EzX29wMEJ0WnRGR3JUdU80aWU2TU00?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/11/11-10-reported-latest-attack-on-riyadh-king-khalid-airport-houthis?traffic_source=rss"
-   ],
-   [
-    "BBC Middle East",
-    "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&at_campaign=rss"
-   ]
-  ],
-  "first_seen": "20261011-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-10",
-  "ko": "GCC, 리야드 공항 공격을 '배신적 테러 공격'으로 규정하며 강력 규탄 — 카타르도 별도 성명으로 강력 비난",
-  "en": "GCC condemns Riyadh airport attack as 'treacherous terrorist attacks'; Qatar issues separate strong condemnation",
-  "ar": "مجلس التعاون الخليجي يدين هجوم مطار الرياض بوصفه 'هجمات إرهابية غادرة'؛ قطر تدين بشدة أيضاً",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdVNFYzFscVExcmpNd2tzT29iZkJJVzlXZUNINXh2VFMyR01HbjVBZEVrOTUxWjZtZGdtNUY4NndXV09INkVxVU1NeTYxSDJpRnprdHZDRk1YaThCZ1ZYUTZNeFlhSk8ydzlXUjhoWmdqR1VibDVVYllJbFpnTDZsUEVySzN2Z0huRTZpN2p1MHNXWTkzRDFHTGxBUWtFbzZOS1V3YldoNjlsTUpmVzNaNEhJOW9yaF9pUzhmLUJmc2JkWVc2OUhKM1o0dVE3eU1pU1d2Q2pTQ25DZ9IB3wFBVV95cUxOOU1RVlM2QXRoaW9SOUFsTGQ4LUVXZ1NZQkhZcExTYUgta20yRGllQVVNdnN6Y0owcUtfZ0V2NDl3ZVVzMXJmU0JwdHh4Mms0aEZHbFhWY2VKS2xGanowNEx3VkJrM2VUNl8zOUpKekE3cWZFdEE1M1ZOXzNKN0pnSVJQVDFNWE5pT00tbDZPU2gtN1VhQUJFWjc2Uy1pSEFVcGNJOUkzaHZsUUp2WXZyZHNMNkRweFBrVEJsTU9rSjc3T3VhOHRnU041aEFJUmFEOFo5RmNkVUlMY3JLaVlB?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/gcc-condemns-strikes-riyadh-airport-treacherous-terrorist-attacks"
-   ]
-  ],
-  "first_seen": "20261011-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-10",
-  "ko": "트럼프, 리야드 공항 공격 이후 미국의 후티·이란 대응 공습 참전 가능성 시사 — '매우 빠르게' 결정하겠다고 발언",
-  "en": "Trump signals US 'may' join Saudi strikes on Houthis after Riyadh airport attack, says decision coming 'very quickly'",
-  "ar": "ترامب يلمح إلى احتمال انضمام الولايات المتحدة لضربات السعودية ضد الحوثيين بعد هجوم مطار الرياض، ويقول إن القرار سيأتي 'بسرعة كبيرة'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/11/world-condemns-deadly-houthi-attack-on-saudi-arabias-riyadh-airport?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/11/10-10-clip-trump-weighs-joining-saudi-strikes-on-houthis-us?traffic_source=rss"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQd19vOW1ON19pOTN6d3RmNHFxTF9WaEtIOWh0VmhFTVVaTWx3ZUlDQUpvNkJGQkQ1U2ZLellXSjd6aFk4ZXNwOUJPamxyT3U2YjRnU2ZDQU16dXBlZE16TWdWYVFqbVVFOXpZOVpJX1N1S21tMlFqdjJZQkZkNWgtVlpjOUpQMG92T2pVeHJ6VlE3QXJpTkpLRnN1cmVsU0NYd01aNWRjTWVULWxwT1ZNd0dReC10dzYtVVE?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-0700",
   "status": "pending"
  }
 ]
