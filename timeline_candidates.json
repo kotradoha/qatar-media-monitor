@@ -143,6 +143,82 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-20",
+  "ko": "호르무즈해협서 초대형유조선 기뢰 피격 폭발 — 원유 200만배럴 이상 적재 슈퍼탱커가 해협 남쪽서 기뢰에 부딪혀 화재 발생(IRGC 해군 발표)",
+  "en": "Supertanker carrying over 2 million barrels explodes after hitting naval mine south of Strait of Hormuz, IRGC navy says",
+  "ar": "ناقلة نفط عملاقة تحمل أكثر من مليوني برميل تنفجر بعد اصطدامها بلغم بحري جنوب مضيق هرمز، بحسب بحرية الحرس الثوري الإيراني",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86298772/Super-tanker-catches-fire-after-hitting-mine-in-Hormuz"
+   ]
+  ],
+  "first_seen": "20261021-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "예멘 타이즈서 사우디군 어선 공격 — 어부 8명 사망(보건부 발표)",
+  "en": "Saudi attacks on boats in Yemen's Taiz kill eight fishermen, health ministry says",
+  "ar": "هجمات سعودية على قوارب في تعز اليمنية تقتل ثمانية صيادين، وفق وزارة الصحة",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attacks-boats-yemens-taiz-kills-eight-fishermen"
+   ]
+  ],
+  "first_seen": "20261021-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "영국, 후티 공격 속 사우디 방어 위해 전투기 파견",
+  "en": "Britain sends fighter jets to defend Saudi Arabia amid Houthi attacks",
+  "ar": "بريطانيا ترسل مقاتلات للدفاع عن السعودية وسط هجمات الحوثيين",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVRQWlNkZkR6eGRXb0ttcXVxY2hBNkZqWm93a0pveDAtdnBTODhVSHBWZS1seHFrRzAzdVo4V21WbEQtckVvS2hEX09VNWVuNGJqZXVXNnpyODJ6QkZmT3RhcU41VHFMYnFrUk5YV0k1aVVkX3duOVI1Mk1LQ1A0UkFtb2l0UW1sdUVQZUh3Wkw0X21YUWxINGZfeDFfdVhlbUplM0dIVGpMdXlDY0txb09GU2FuQQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261021-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-20",
+  "ko": "중동 원유수출 이란전쟁 이전 수준 회복 — 호르무즈 통과물량도 82%까지 회복(케이플러 집계, WSJ 보도)",
+  "en": "Middle East oil exports surpass pre-war levels, Hormuz transit volume recovers to 82%, per Kpler data cited by WSJ",
+  "ar": "صادرات النفط من الشرق الأوسط تتجاوز مستويات ما قبل الحرب، وعودة حركة العبور في مضيق هرمز إلى 82% وفق بيانات كبلر التي استشهدت بها وول ستريت جورنال",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261021_0003834756"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9BSElqZmR3d25kVFNwZEgxX2ZrSkxnSFlDUTFoTGU1LWhoU0ZYanBCUXVsVkxGSTJUSXM0UDJfUWtBR29yMkxsajNpQmM2dzNLOWhMWld3X3VsSFFVbUsyZlJuLXNSLU5FamlKN2R4VXJvSnBx0gF0QVVfeXFMTzNISlJXOVcyd3BZaW9WX09lYk5CZW4tWTZiSllZS3ZwVTduTHlkNU5pWWVKYl80ZE9uNU5NN2ZnUXd5Q2N1ZzdzN1pGTG1yRFlTcXkwaW5WTUdkb0lqemRhSmdqYU52REFZRjBhcEhnWXVfdG4?oc=5"
+   ],
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OazdOd3dtWFY0R0ZkM050SHdtejZRUnluU1hNQjd2UUdqTmQydHpZNlhzWEZlUHRLZFh1alNGakFLZVA0aVB6X2tBZV93QU5IUEp4LTItU1p6dw?oc=5"
+   ]
+  ],
+  "first_seen": "20261021-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-19",
   "ko": "호르무즈 해협서 초대형 유조선 2척 잇따라 기뢰 접촉·폭발·화재 발생 — 원유 200만 배럴 이상 적재, IRGC 해군 발표",
   "en": "Two VLCC oil tankers carrying over 2 million barrels of crude struck naval mines and caught fire in the Strait of Hormuz — IRGC Navy announcement",
@@ -1673,102 +1749,6 @@
    ]
   ],
   "first_seen": "20261011-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "후티, 리야드 킹칼리드국제공항 미사일 공습 — 13명 사망·309명 부상, 공항 운영 일시 중단",
-  "en": "Houthi missile strike hits Riyadh's King Khalid International Airport — 13 killed, 309 injured, airport operations halted",
-  "ar": "هجوم صاروخي حوثي على مطار الملك خالد الدولي بالرياض — مقتل 13 وإصابة 309، وتوقف عمليات المطار مؤقتاً",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/12/saudi-arabia-says-1-dead-11-injured-in-latest-attack-on-riyadh-airport?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/11/pakistani-national-killed-second-houthi-strike-riyadh-airport?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/11/houthi-strike-riyadh-international-airport-cctv-footage?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261012-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "이란 IRGC, 호르무즈해협서 슈퍼탱커 기뢰 충돌·화재 발생 — 2월 전쟁 이후 최대 규모 선박공격 주간(9/29~10/5, 최소 12척) 속 2번째 피격",
-  "en": "Iran's IRGC says a super tanker struck a naval mine and caught fire in the Strait of Hormuz — part of worst week of vessel attacks (at least 12 ships) since February war",
-  "ar": "الحرس الثوري الإيراني: ناقلة عملاقة اصطدمت بلغم بحري واشتعلت فيها النيران في مضيق هرمز — ضمن أسوأ أسبوع لهجمات السفن (12 سفينة على الأقل) منذ حرب فبراير",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261012_0003821780"
-   ],
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxPay1HXzR1TTgwYWd6aVdQVURuYmJkMll4ZUpQUnVBMmQxVEFxQnZUV0M1VUlHTWJxS2l0eHJYTklIR3Y5VVU0eEdqZWZSUTZEeUVhaTdsYUE2TkN0cWhWSG5MVl9iWGZ2R2hDeWZzODBhY08zOV8zUHU5OXBKWnJUcUp5ZTMteENRQlFjWHpnb2VhekZLVkZpcmd0eXlZa3RFVk1qWmdZQkFMOEtwV1FjOW5FQWp2eFZGSmpTQXdR?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRDhqelFLTG1uLS0xaWxRRVdTYVhPcFMzR0lVT2QzUklpRVYyUGd3clFvVVQwUjZrWjVGUWMySUs0TnoySktOZ3REVjRrU0tWU0ZkSlRkTE03eFlGS0JpOTd2a3dRV1NSSmJscE9nSnIxZ0xCRE40Y2VoS2NzLV9FdHQzck03V0RxQWtTVlNUWUdaQVB4WTdZeTB3eW51bWZmdDY3QnV0OHJDbHVqTGo5UzRtUW1JQTFyYllTOUJNbU1WZw?oc=5"
-   ]
-  ],
-  "first_seen": "20261012-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "이란, 美 평화안 응답 '불충분' 선언 — 호르무즈 재개방엔 '7개 조건' 전면 수용 요구",
-  "en": "Iran calls US response to peace proposal 'insufficient' — demands full acceptance of its seven conditions for reopening Hormuz",
-  "ar": "إيران تصف رد الولايات المتحدة على مقترح السلام بأنه 'غير كافٍ' — وتطالب بقبول كامل لشروطها السبعة لإعادة فتح هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/10/12/iran-war-live-riyadh-airport-hit-again-tehran-says-us-reply-inadequate?traffic_source=rss"
-   ],
-   [
-    "https://aapnews.aap.com.au/",
-    "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOHhCdDI2Z3B4dC1xVXo2ZHNOMlRndjhhYVRjN3BxNWFwbTJ1R3NXNXFvWTFhWVRpUWh3S2wzekFiMUxfSmVwR041NVdnU1ZEbnZYWVUzTmFTMThOSUhXaUZyc3lpQUpUUGZfb05XTFQybjNKUEt2bW1pRzBDYVFibExoNGs3MHFlaDkxZHlMbw?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/248504/US-response-to-Iran-s-conditions-insufficient"
-   ]
-  ],
-  "first_seen": "20261012-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "트럼프, 중간선거 전 이란 공습 재개 배제 시사 — 유가 안정세",
-  "en": "Trump appears to rule out resuming strikes on Iran before midterms — oil prices steady",
-  "ar": "ترامب يستبعد على ما يبدو استئناف الضربات على إيران قبل الانتخابات النصفية — استقرار أسعار النفط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxPenNnUDYybWpPV1NGRGZCVnRjbGxHNEZVRnBobXR4YUlfZ3FuVDFrZF95enJwZUF1cm1vZEFCYkFLVmxTU2RwRzg1dGQyWVE2dDE2bks5YkxRNzhlaEt6eUJSVHpJdFlYRVpaMGtmX3l4T2NyUzZiSkhCMnFMWkFETjlZdG9WbVhqMkNqU0NzV0hxSzFKRE0yQWNZOFZxMFJMVF9meW1aa3FsZk9HV0luU0VVZVp0RE0xYXQyTTk1SlFoUW9uMEZ3?oc=5"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRDd3elZ0bVdvd2R0ZGd0bHRTR3owa2FXVjhOWUswX0RyR1lmUk8xaVhTUnNrRzgwS21RbGZ5NDRTV0dNZUNKN2RtSFpVUExqeVFkeUwwTXVuSU10SGhfYk95WF96Wmdpb1haWlkybTJEOGhhejEtMEFtNmlLb0luR0N3bnVSb0RkNU1RaUFaQm5mUmlPdk9PX1dIeHJzZFBKbFA1U2E3cmNvU3hwaXJXTjJxUV8?oc=5"
-   ]
-  ],
-  "first_seen": "20261012-0700",
   "status": "pending"
  }
 ]
