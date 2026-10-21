@@ -1,5 +1,97 @@
 [
  {
+  "d": "2026-10-21",
+  "ko": "호르무즈 해협서 유조선 3척 기뢰 충돌 — 이란 측 주장, 미 중간선거 앞두고 '혼돈의 호르무즈' 우려 고조",
+  "en": "Three tankers reportedly hit mines in Strait of Hormuz — Iran's claim, raising chaos fears ahead of US midterms",
+  "ar": "إيران تزعم اصطدام 3 ناقلات نفط بألغام في مضيق هرمز قبيل انتخابات التجديد النصفي الأمريكية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxObEwwU1RMRGc2T0drRU40c2RDMDMxYVNkZEp0QVZUeWlIR1ZIUE5uVENqWVU5eFl6ZzlhajdtZThjQTNIVTJzWjZMU1hYUkVFcFBNcXRRdThpRWkxTEdXT1pGeDlXaTRkRDlkTlk5ZWROWExGOUphUkp1NEJNVUxBcnln?oc=5"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0zWTQ4eWtmSnJhT0xYN0pHelZ2MGhmdHFmUDZDNmlpOFZDRkNzVWpPdFRxU2JxdDQtcmdmdjk1aW1nMVlRZXVWQ3RNLUZnSTJxR3J3ek1ERXNld0ZxbHc?oc=5"
+   ]
+  ],
+  "first_seen": "20261021-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-21",
+  "ko": "후티, 사우디군이 어부 8명 살해했다며 아덴 내 사우디 연합군 진지·작전본부에 탄도미사일 등 타격 — 사우디 연합군은 동부·메디나서 드론 5기 요격",
+  "en": "Houthis strike Saudi-led coalition operations room in Aden with ballistic missile after accusing Saudi forces of killing 8 fishermen — Saudi coalition intercepts 5 drones over Eastern, Medina regions",
+  "ar": "الحوثيون يضربون غرفة عمليات التحالف السعودي في عدن بصاروخ باليستي بعد اتهام السعودية بقتل 8 صيادين — التحالف السعودي يعترض 5 طائرات مسيّرة في المنطقتين الشرقية والمدينة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/news/yemen-houthis-strikes-saudi-led-coalition-targets-kingdom-killed-fishermen"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxOdlFOZGdubWlWTzMzVkVyRHdSWkdYZXNDeFJaejJETHFQdG1QMmhrblRSWnFRbGI0czdlVGFJVnZOOFhkR25HZ2JYUUF3MzR3MVhBQnNlZVBPb3B2YU5hLU4tQlFMd0xGbGhfMlE5eGJwTUwwUGJvSkNBMEoxeWRPeFA3cjNKMWFoTFdFYnQ2aTF5WWRHRkhGTmlNcFVJUQ?oc=5"
+   ],
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKVFZrQk1HNXhqVUFXSGxlWmZ4eENJYldnRjZUVzVSaERLUWRsRDQtdS1XaG5GZjNoaUdwdjJZYkxZWFFLVDZFeHo4d2FQeDZtV3hOMDFXRkdJQzg?oc=5"
+   ]
+  ],
+  "first_seen": "20261021-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-21",
+  "ko": "영국, 후티 공습에 맞서 사우디 영공 방어 지원 위해 타이푼 전투기 파견 발표",
+  "en": "UK announces deployment of Typhoon jets to defend Saudi airspace against Houthi attacks",
+  "ar": "المملكة المتحدة تعلن إرسال مقاتلات تايفون للدفاع عن المجال الجوي السعودي ضد هجمات الحوثيين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/21/ww1-to-houthis-british-jets-for-saudi-arabia-build-on-long-military-bond?traffic_source=rss"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261021156400704"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261021153300704"
+   ]
+  ],
+  "first_seen": "20261021-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-21",
+  "ko": "오만 인근서 미상 발사체에 유조선 피격 — 영국 해사당국(UKMTO) 확인, 이라크 알파우 동남쪽 해상서도 신규 사건 접수",
+  "en": "Tanker struck by unknown projectile off Oman confirmed by UK maritime agency; new incident reported southeast of Al-Faw, Iraq",
+  "ar": "ناقلة نفط تتعرض لإطلاق مقذوف مجهول قبالة عُمان بتأكيد الهيئة البحرية البريطانية، وحادثة جديدة قرب الفاو العراقية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQll2MFhhQTF4aHdKRDRYM0J6VGl6VWpuOTVtZnh6RTQ1aG1TX05UVnJZZzN2RXRKZjN5U0xDZjRmMEFFNzZjc0JUc3Y3bURxTTI2bS1DSGFMNThCLWx0d2F2WXg2a3ZlRVdzd1FtYVVNcE9fTVRTM25kYkZPRnRuNGVFdE1LeEhER0pwc3F2d3JvcU04LWV1cmd2ODZDazdDaFQ0UXdFc3hHNVo1?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248798/UKMTO-reports-new-maritime-incident-off-Iraqi-waters"
+   ]
+  ],
+  "first_seen": "20261021-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-20",
   "ko": "호르무즈 해협 남쪽서 유조선 2척 이란 기뢰 충돌로 화재·운항 중단 — IRGC 발표, 구체 시점·선박 정보 비공개",
   "en": "Two tankers hit Iranian mines south of Strait of Hormuz, catching fire and halted — IRGC statement, exact timing/ship details undisclosed",
@@ -1654,98 +1746,6 @@
    [
     "The Washington Post",
     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMVRBcXB6cXc5aURYeTNPbDBKejFNemI3VnVxR1ZSMVJRQkktbmNQSXo3bzVGYmV2R3dlR1VYM0hMQzlRSnFzUV9MVnltNmNMTWNvYkdFaGJDVjRPQTd2QlI1em5xbTkxX284MkZ3SHJpUlFvQjVfR3VWcHpiNElXX0d3eXJzZ2hhTjk3VGZuR2RVN0VQRl80RWdOQzc0eDdLcWZuZklOVENOYnFFSjdtOG9KSVBIR2cteEVYeEtGdS15MFoyVW43cA?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "트럼프, 후티 공격 대응해 미국의 대후티 군사개입 가능성 검토 발표",
-  "en": "Trump says he is weighing joining Saudi Arabia's fight against Houthis after deadly airport strike",
-  "ar": "ترامب يقول إنه يدرس الانضمام إلى السعودية في مواجهة الحوثيين بعد الهجوم القاتل على المطار",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Guardian",
-    "https://www.theguardian.com/world/live/2026/oct/11/saudi-arabia-riyadh-airport-houthis-yemen-attack-blockade-trump-latest-news-updates"
-   ],
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMid0FVX3lxTE51bzM0YzNwbUhGUUpVMHhPQWNZenkwZDdQM3QxdVdpQ2xOYjROVkZpVHU5cko1VDFUMnRVd3o0S3dmZVdlTlZ6cldhZ0RqTEgzREZhSXA3d1hFakpMYnNiaUxja2hyTThCejJOVEhnSFEzcGR3eF9N0gF8QVVfeXFMTVZ4YzZyc1U3S2NyVFBIVXpPZ3BJenI3T1lTZ0tGZ0ozcDZRZGJ0SEM0a21KTDhXdjN3VGxocXEteUlhbnJVRVhTRGlNRkdrb25NaEdfNVFYc0J6ZUN6b2pTUHNYcDdIY3c2T1dTekwxYUJReTlwS2NoSFBZOQ?oc=5"
-   ],
-   [
-    "KBS 뉴스",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5yR2w1d3dOREJuc1NJNGxNMUxvOVNKYkJGMkpMbVZtLVBuMFhaQWdid0k0VmJCZXNaMTBIdUlhVENYVEpGUWVzbjJWdXNadzY4cmd0Nnd1OWF5Tk0?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "후티 반군, 사우디 전역 공항·영공 이용 자제 경고 재확인—성지 제외 추가 타격 가능 시사",
-  "en": "Houthis reiterate warning against using Saudi airports/airspace, hint at further strikes excluding holy sites",
-  "ar": "الحوثيون يكررون التحذير من استخدام المطارات والمجال الجوي السعودي، ويلمحون إلى ضربات إضافية باستثناء الأماكن المقدسة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHRkVxTWs1Sng3dnk4M1Q4MzZpckxoNWlHX0w2S3VfNzQzcEtDb2dTSHFlUGR4TGZmVTVXUU51VnRDNkV6aGN3MEdXVkpXaUIxUmJhek8zU0s4MDh0?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSEo0VkFTZkY2VzMzeFV0OVRVbWN4aHFzaXFjV0FBN05uaEFONHhQVTN2a3JJM09NdFBzY1R3MnRrUFZOeFZfUDItOUd1NkxiT3dfOWduTHJKTlBzSGsyN3VCYTNkWG1ZTWlZMUpzbDdrc1dOZUs3VDRwa0lHN21tNnFNdFhQYUxoNmdfN1Zyb3FMRm04RzRVei0zY3FKN0FoY2JYTGFodjYtemdITVpKVXk3NlR2QXFIMU9YMnUtX004QW1GZ0UzZA?oc=5"
-   ],
-   [
-    "이데일리",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN1FaNDRhZXgyTkp6aWpPTGpaNldiMnJrak1LQjZsMHpYb054Wm9ZeXhGOHFXN1FFQmNLRWowTXNuODBYTkNzT01Ia0hSMUpaTXJwZ2o2TWF4Z2tiWUtYOExCdDkySXRJU3Q0bGFHUmRVVnM1OWJ2MUQ4R25vR0owUw?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "한국 외교부, 사우디아라비아 전역에 여행경보 3단계(출국권고) 상향 발표—후티 공격 여파",
-  "en": "South Korea's foreign ministry raises Saudi Arabia travel advisory to level 3 (departure recommended) following Houthi attack",
-  "ar": "وزارة الخارجية الكورية الجنوبية ترفع تحذير السفر للسعودية إلى المستوى الثالث (التوصية بالمغادرة) إثر هجوم الحوثيين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "조선일보",
-    "https://www.chosun.com/international/international_general/2026/10/11/7VZSRQXGC5BO7PY3L5K7JPICLI/"
-   ],
-   [
-    "조선일보",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxQZ0hGZ0JLUjNCdE9oNUYwVkJTd2RqWGpfSV9PN1hZMzFuVUtldWNsNWhEd3dJc19VVW1DcDRHNUVlcS1PVDAwMF9wMGxMUkx6cGt3ZEsya1BuRlpLYXBiZnZRcHoweE5JaGIyTDdIRDlEbFRVUFRFQXMyRmY4OWxKcE1HSXM0YlF3NWdYQlZMQU8xSWt0c0FJZTc2ZnZtZw?oc=5"
-   ],
-   [
-    "조선일보",
-    "https://www.chosun.com/politics/diplomacy-defense/2026/10/11/753BRHHF4FAPJLWEMJID2OYE7A/"
-   ]
-  ],
-  "first_seen": "20261011-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "미국 대사관, 사우디 제다·담맘 공항 직원 출입 제한 조치 시행",
-  "en": "US embassy restricts staff access to Saudi's Jeddah and Dammam airports",
-  "ar": "السفارة الأمريكية تقيد وصول الموظفين إلى مطاري جدة والدمام السعوديين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVXdOQlYtNVFOMW5GRHY1UGp2M0ItZHVjcmJ4allSVW4wa1B6Z1UtamtVcEVNVWZLNDFxUDRpU2xEc1lZcnNBTVhTZ2ZqLTQ1RmlfazkyUDJzdjJzaWNGZUdvcnh2WU9obTFRNlZncGFEZ2NrcGVQc2RDYkJ5dDlNSmxYVnNfTm01QzhmeW5Fdkw0UEFiVHR0YnRLX2dSUmM5azY3aFVlc21NUmJPWjZBYldheFlxUdIBuwFBVV95cUxNZDNyc0NhNHQ1cU1lbHBtckhEQkFjZE5zUV9QRXJoQXgxTk5OckZndENqWmR5Vms2aW93QUJkckRTSzlzckVkY3p4TzRwSUQxQ0FjMVdSR3N5NGNkdWVnLXZjdy16ckFmODdBOFNYc1JPOXh3TjRvUm5EMkFLOUc3V0JnbHlseG51dkg1aGxjSWlHNFVTamgwS01aV242YmE5WWZpWXJIeEh4UzdJLXNRRVBkVFRiTTBIWUxn?oc=5"
    ]
   ],
   "first_seen": "20261011-1530",
