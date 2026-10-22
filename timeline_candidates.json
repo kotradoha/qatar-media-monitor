@@ -1,5 +1,80 @@
 [
  {
+  "d": "2026-10-22",
+  "ko": "후티, 사우디 담맘 킹파드공항 미사일·드론 공격 — 2명 사망(인도인 포함), 美 자국 외교관 사우디 철수 지시",
+  "en": "Houthis attack King Fahd Airport in Dammam, Saudi Arabia — 2 killed (incl. Indian national); US orders some diplomats to leave Saudi Arabia",
+  "ar": "هجوم الحوثيين بصواريخ ومسيّرات على مطار الملك فهد بالدمام بالسعودية - مقتل شخصين (من بينهم هندي)، وأمريكا تأمر بعض الدبلوماسيين بمغادرة السعودية",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWTYzSnNKRnFMSThUQkFTekpBNXdGZDNELVRmcUhpWWJCWVh0dWVXWEt5WnU0bU10X1BhTEdaUlpmOThKRk5Vdm15YlZaZ1d4OEhmTWZwZ19RZlBVQWR6ZFhneHlWVWZEZm9CTE1CSE45NWtyQjlxTnZzWHE0RTlhTXdTamNEcnV2bEpCaVdYRUVPbUFycXRfd1oxbGVPVXIwY18zaDR0bnZsRGdHMEZVTzdmZ0M2RGdHUjFlWE94MHY4S1d6U3h4VUEwZw?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMktOQVdUcmhmWlhhcHVNQ1laMzRELXBuXzhLMHFqNHdLdEE5TVdmbDR0eXJlT3ZwVjgtQi1KVXNWWm9ReHhsNjhER0phWmxadWdDZDRfWk1xdGNOSWNkUDRSSW1fMC1RNkhCbUJxRTlZTUFoUkYtUGt1Z0tkalVHVWFXSks0N3llZ1g1ZXJWUXpDN2l3MjJFVzlhZVVROWwybnlYMkZWVkdkYkFxTHlGaUQ2Z9IBuAFBVV95cUxObmo4ZHczZ2Fza2VqLS1NUHoxem5hcHVTUXloZnBSeHo5Tk9LUUoxMVpRVGNLYURhanlfb09qcnhRMmtkT3N6bEpObHZwaTJhY0xCWW5oMjI0YWpRNUFnX1VaTkFmb3c4YTUzamdzZUxMVWZ2Yk9oVk1sYmZ1TkdJMXpjQUxFcGFEa0lpVHF4SGdWa0Y0eG9rUG1MeHVKY3VLM2hkUHpPZWJsR0haMUQ5UDhOVmRNcFFE?oc=5"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbmI4ZGlXSjJmLWJDbjBZZnZjaG1KaklOeXBVbGJOeFNWUXFfdEVuMC1waWNMUWdkUks5Tk4yODZnd3JDYmc5VERidVhPRl92aVZPcXJsaWFoZGZrZUZZSkdTb2JVRVYtSEx0ZUpfMGVCVWtidUhYUmdMOE5EUUpaVThFZzdBWHdDbW1qUDRQcm9sYlZJbVNkZVl4RDdubmFtb0d0VjZlX0MxVGp6TE9kSk0waGk4RlJqbjlsaU56SnlvcDNaNmR3SThMWQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261022-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-22",
+  "ko": "이란 IRGC, 호르무즈해협 인근서 유조선 7척 공격 주장 — 걸프 내 4척 피격·3척은 기뢰로 피해, 유가 5개월래 최고치 급등",
+  "en": "Iran's IRGC claims attacks on 7 oil tankers near Strait of Hormuz — 4 vessels hit in Gulf, 3 more damaged by mines near strait; oil prices jump to 5-month high",
+  "ar": "الحرس الثوري الإيراني يعلن استهداف 7 ناقلات نفط قرب مضيق هرمز - إصابة 4 سفن في الخليج وتضرر 3 أخرى بألغام قرب المضيق، وارتفاع أسعار النفط لأعلى مستوى في 5 أشهر",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOVo5NGVvb09wSzBSTFVOa21PVVRNWWlEYUd1ZEU2U0tjTm55R3hYQ2Ezd1lUWUYwbFNpVUhJVDBxNlZaamJKaDJvblV1dl83LVhSX21rMkZuUXQtWFZmZmpZbXRrMkwwRzloVnA0QUs0cjN5MXNiZDBKR2MwaW9Sa1BKUGlaRUlQeG5PYnNPcTQ3YXZFc3QybjE1ZmVCYVJmY0doag?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/business/2026/oct/22/oil-prices-jump-five-month-high-threats-supply"
+   ],
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86300121/IRGC-Navy-says-four-oil-carrying-ships-hit-in-Persian-Gulf"
+   ]
+  ],
+  "first_seen": "20261022-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-22",
+  "ko": "미국·이스라엘, 11월 미 중간선거 이후 이란에 사흘간 집중공습 계획 수립 — 올 2월 합동공습보다 강력한 타격 검토",
+  "en": "US and Israel reportedly draft plans for three-day intensive strikes on Iran after November US midterm elections — stronger than February joint strikes",
+  "ar": "تقارير: أمريكا وإسرائيل تضعان خططاً لضربات مكثفة لمدة ثلاثة أيام على إيران بعد انتخابات التجديد النصفي الأمريكية في نوفمبر - أقوى من الضربات المشتركة في فبراير",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "NPR",
+    "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxORG5EaGdJUGZNRDc3XzA5eUphY0hrMl9zS0V6djFQQVJCVG5HSEVreDNrTFdIWjczQ1pURjFrQ2xQSVhPa3Zva3hxNkRpMDhnZHAxTkpXLVpJMDlkQklvWXViTzNEV01FRXo5Z3ZSWTI0c0VZUW1ON05YVFJmTERTMHQ1T0pvYWs0RU5FQjR4UXlSX1BkdE5DREtiS3ZpZUluVzZmU2JBUnpkYzRvU2NyNTJn0gG3AUFVX3lxTE9Ma0l6QW1yS0tVQXpuOXlnNjhSa3p3Q1hRSTNPak1DS1JVRHR3SWtwRFNkOHZDcGxTdlkwV1NFeEZQV1I5NDl2bDVFbFMtS1RsOVdsTUNxMk5ZNWdyMEhSaml6XzlDeWw0YXZrVXY0NHZBOVVZYy11X1FLRzZnYzE4S1VoRVpJOEF3cWh0TGFSNWxhbURaV0R4QmM1Y250RmZmRWF4eTNNNnh3aEx2MWx0R3NwWkJDQQ?oc=5"
+   ],
+   [
+    "동아일보",
+    "https://www.donga.com/news/Inter/article/all/20261022/134888696/1"
+   ]
+  ],
+  "first_seen": "20261022-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-21",
   "ko": "호르무즈 해협서 유조선 3척 기뢰 충돌 — 이란 측 주장, 미 중간선거 앞두고 '혼돈의 호르무즈' 우려 고조",
   "en": "Three tankers reportedly hit mines in Strait of Hormuz — Iran's claim, raising chaos fears ahead of US midterms",
@@ -1678,77 +1753,6 @@
    ]
   ],
   "first_seen": "20261011-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "호르무즈 해협에서 유조선이 미상 발사체에 피격돼 화재 발생 — UKMTO 조사 착수, 미군 공격과 연관성 조사 중",
-  "en": "Tanker catches fire after being struck by unknown projectile in Strait of Hormuz — UKMTO investigating possible link to US strike",
-  "ar": "ناقلة نفط تشتعل بعد إصابتها بجسم مجهول في مضيق هرمز — وكالة UKMTO تحقق في احتمال ارتباط الحادث بالضربة الأمريكية",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-probes-gulf-oman-incident-after-centcom-strike"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPb2g1WmJWRG1iLTBwMW9waVM3b1VJZVlGdkNkUUdhd2NPTEtZd09XOHVMeFF6TUMzeUh1NklyLVA2UTdvMVZsUHZEcjdoaVJ5eUZRSHQxT1cxQ3RUTEJjaW1oRkE2aUd4alg4a2FQSHZPWWFtSS1DVGZrMmljRng0b2RINlI2dFNjYnM4RnVod0ZBQXdnd0pWclVwTjFXaW85TzEtckZvS1JqRFBhamJWNjM2aTdpdW1NR0lZRXJRemo5c3F1LTlTUDlWNWFZYkdsV0M5alNxd0g?oc=5"
-   ],
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZF9DS1hBWldLa0lJMWU3YkJTdkNKZGpCRlhlSnFPMFlMWmRLWUhZYW1ydmJSUGVvOU9NUTA3YWI5SDFKRy1mZ3ZWemRURF9XZVRhUmhBdXRGMnJSVGFYcmdoNHJHYlpveXl2djJFTmhzWjJ1ZU84VzJZc2Q5enVSdm1QTmU?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "미 국방부, 이란전쟁 미군 전사자 공식 집계를 21명으로 상향 발표",
-  "en": "Pentagon raises official US troop death toll from Iran war to 21",
-  "ar": "البنتاغون يرفع العدد الرسمي لقتلى الجنود الأمريكيين في حرب إيران إلى 21",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTHZoelUtdHRTbk42U19GLVM4OGV3QlR5SFI4VFJzQzNObUlUS19BR1UyMTE0alVmMFppTzF2NFpNQUdBTUhhTjJFVVlGanQwdUM0UGRSb2p6eWJJenZQbDlScGlFU2FfbWJncUd5ZEUwX1ZsY2N5dW5wRUU4MlctVUpUbWNRdmE0MkFDb0RkcjJYRWdSdm1LWnA0M0lmQkdBTjRDTE9PbkFPc2FhNnpsQ3JVQzZ2Z1FwaE9sRkxHX1hqcU5ENFlz?oc=5"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0UldOTjhJTlB5dUNsc2I2MGg5eUZxWWlxVWN6T2oyX2haZWU1MFVRRjAtMTZaTmR4b3k2Tml3VlVhRUhWYzQ5TUxWcHFjZkg5YjZ1WGRhT3hZMnlnVllyaVo3b2dxbXNfblE?oc=5"
-   ],
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNXl5UlVxZURveWxEVGg4R3dwbXItWHl3WC1EaUYwVTh1MlVIY01Mb08yQ3liamhIYkpTY0ZUMi11dkNNRWZqQUxvRW02Vkt4M0N4YlotT2x3SHcxdUdHQWptazZIUDNXazEySEExMHpDWHM5dGYyS2w3blhqOEJiVGIzZ3BXM28?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-11",
-  "ko": "사우디아라비아, 공항 폐쇄 연장 및 리야드 학교 온라인 전환—추가 공격 위협 지속, 중대 대응 예고",
-  "en": "Saudi Arabia extends airport closure, shifts Riyadh schools online as attack threats continue; vows major response",
-  "ar": "السعودية تمدد إغلاق المطار وتحول مدارس الرياض إلى التعليم عن بُعد مع استمرار تهديدات الهجمات؛ وتتعهد برد كبير",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxPR094dC1TQTlURWVUOFpLQUc0a1kxa1cwM1h5aDQ3bmxzdk9jdk50VU9UaEVNbjFtVHpWNGZ5STNpeFB2RlJBUGxheVYza29vbnowUXMzYUh5VmVzTVR2WjhFQjU5M0RlZE9DWkI0UGtCZDEtMF9wUG9vcmtPalI1REsxYXNOYzhNNTJmaGh6Y2tVdVF6Z2F2WXdWMHEtbC11R1dXdnpyZmhkZmQtNWNpZFBvM2tkeS01WC1oRVVfRQ?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMVRBcXB6cXc5aURYeTNPbDBKejFNemI3VnVxR1ZSMVJRQkktbmNQSXo3bzVGYmV2R3dlR1VYM0hMQzlRSnFzUV9MVnltNmNMTWNvYkdFaGJDVjRPQTd2QlI1em5xbTkxX284MkZ3SHJpUlFvQjVfR3VWcHpiNElXX0d3eXJzZ2hhTjk3VGZuR2RVN0VQRl80RWdOQzc0eDdLcWZuZklOVENOYnFFSjdtOG9KSVBIR2cteEVYeEtGdS15MFoyVW43cA?oc=5"
-   ]
-  ],
-  "first_seen": "20261011-1530",
   "status": "pending"
  }
 ]
