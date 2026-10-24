@@ -100,6 +100,102 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-23",
+  "ko": "미국, 이란 위협 정보 입수 — 요르단·레바논·카타르·UAE 4개국 미 대사관 인력 감축 발표",
+  "en": "US reduces staffing at embassies in Jordan, Lebanon, Qatar, UAE over Iran threat intelligence",
+  "ar": "الولايات المتحدة تقلص عدد موظفي سفاراتها في الأردن ولبنان وقطر والإمارات بسبب معلومات استخباراتية عن تهديد إيراني",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261024027300009"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261024_0003839481"
+   ],
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYmtHSXQwRFhlWlZKbTU2TEhPODc5MERFTG9feGQwRUY1ZklES2JWS3UxTUxOelgxRExOSFdUWEJnVFFDX284OHNsZWxIUzBVRzdINlpRRVhIYlBTN3A4Q2JrYWFrZVZ0MEZGRXVXVXVKTW82dmgwRWROUHFXcVVPU0oxdkljc3lldHc?oc=5"
+   ]
+  ],
+  "first_seen": "20261024-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-23",
+  "ko": "트럼프, 이란 재공습 가능성 경고 — '장대한 분노(Epic Fury)' 작전 소규모 재개 시사, 이란은 '레드라인 없다' 반박",
+  "en": "Trump warns of possible renewed strikes on Iran, suggests smaller-scale 'Epic Fury' operation; Iran says it has 'no red lines'",
+  "ar": "ترامب يحذر من احتمال شن ضربات جديدة على إيران ويلمح لعملية أصغر باسم 'الغضب الملحمي'، وإيران ترد بأنه لا خطوط حمراء لديها",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PSl96RmJmdnZkaWRtd3dmcEMxMG1BUk5faXRzZEZ6Y0JMZnJkM2hkOEhaX21Rc3dmazF1RHZPcUk1X0lETDVXam1oT2VwQlJaZ0hPRTZQaXNCV3UxNWc?oc=5"
+   ],
+   [
+    "동아일보",
+    "https://www.donga.com/news/Inter/article/all/20261024/134900727/2"
+   ],
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0temVZUkF6RVY5V0dQZG9TakpxbmRtVzI0Z2hxb1pfVTNvalg0Yy1LUVZjbnhUVzVOemVOSWs5aDcxdHcySG1QdU9pQks1QlRZREVwVnlpRVJwWnM?oc=5"
+   ]
+  ],
+  "first_seen": "20261024-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-23",
+  "ko": "호르무즈 긴장 고조에 브렌트유 배럴당 116달러 돌파 — 반년 내 최고치",
+  "en": "Brent crude surges past $116 per barrel, highest in six months, amid Hormuz tensions",
+  "ar": "سعر خام برنت يتجاوز 116 دولاراً للبرميل، الأعلى منذ ستة أشهر، وسط توتر مضيق هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "SBS Biz",
+    "https://news.google.com/rss/articles/CBMibEFVX3lxTE45cUFtdUtKeGNxbkdrT3NKZjhnLUozYzlBN25nd2pTaDdHM0tyWkxHOUxPemZ0V254Um5DMXNjV05pWmtIS1N2bU1meUxPandyQmZlUnpJbm1wU3hsNG9rbkpyNW5xcWRRelYxV9IBWEFVX3lxTE1rVjlLRTdRcHlya2FYMDFmVlF6N1B6WWtpck5pYkR4R1ZTSlZGNENwT0NnNWJFUWwwWXZRRFFhNWQ4T2xPXy1lNGhaNTdGeGRyaC1yaXYxTVo?oc=5"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PSl96RmJmdnZkaWRtd3dmcEMxMG1BUk5faXRzZEZ6Y0JMZnJkM2hkOEhaX21Rc3dmazF1RHZPcUk1X0lETDVXam1oT2VwQlJaZ0hPRTZQaXNCV3UxNWc?oc=5"
+   ]
+  ],
+  "first_seen": "20261024-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-23",
+  "ko": "사우디, 리야드 겨냥 후티 탄도미사일 요격 — 리야드·나즈란·와디 다와시르 경보 해제",
+  "en": "Saudi-led coalition intercepts Houthi ballistic missile targeting Riyadh; alerts lifted in Riyadh, Najran, Wadi al-Dawasir",
+  "ar": "التحالف بقيادة السعودية يعترض صاروخاً باليستياً حوثياً يستهدف الرياض، وإلغاء حالة التأهب في الرياض ونجران ووادي الدواسر",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/24/iran-war-live-israel-launches-targeted-hebron-operation-after-attack?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-ballistic-missile-aimed-riyadh-destroyed"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-civil-defence-says-danger-passes-riyadh-najran-wadi-al-dawasir"
+   ]
+  ],
+  "first_seen": "20261024-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-22",
   "ko": "후티, 사우디 담맘 킹파드공항 미사일·드론 공격 — 2명 사망(인도인 포함), 美 자국 외교관 사우디 철수 지시",
   "en": "Houthis attack King Fahd Airport in Dammam, Saudi Arabia — 2 killed (incl. Indian national); US orders some diplomats to leave Saudi Arabia",
@@ -286,6 +382,56 @@
    ]
   ],
   "first_seen": "20261023-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-22",
+  "ko": "호르무즈 해협서 유조선 2척 기뢰 피격 — 원유 450만배럴 적재, 이란 혁명수비대 발표·승조원 탈출",
+  "en": "Two supertankers carrying 4.5 million barrels hit naval mines in Strait of Hormuz, crews abandon ships, IRGC says",
+  "ar": "ناقلتا نفط تحملان 4.5 مليون برميل تصطدمان بألغام بحرية في مضيق هرمز وطواقمها تهجرهما وفق الحرس الثوري الإيراني",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/two-supertankers-using-unauthorised-hormuz-route-hit-naval-mines-irgc"
+   ],
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWUo2d2JHUkZfdEwxNmswcnk5V3FtSnpLQnBUVEsxNTVMSHJLejFUUUVxN1BRVGl4SDByRnBXakxOUVFBT05hdkFEeVlfM2pGU0JKX2hreDFQYnRmMXhCUF9TcDFfNWVxMFdnNjRCQ05meTVUY1VzTzRLbHJ4dmFndjd1YndUckhVZmNacFh3aWEycndwdmZNdWZ6aUl3RzdQTmJORGQ0d0F5dm1yd3F0TjRqR21WRFhwODV1SEZEeW53VFZxVGhsWDdNZVZsZw?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248839/Yet-two-other-supertankers-hit-mines-in-Hormuz-IRGC"
+   ]
+  ],
+  "first_seen": "20261024-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-22",
+  "ko": "오만 인근 해상서 유조선 미상 발사체 피격 — UKMTO 확인, 10월 호르무즈 일대 선박공격 28건으로 역대 최다",
+  "en": "Tanker struck by unknown projectile off Oman, UKMTO confirms; October sees record 28 ship attacks near Hormuz",
+  "ar": "ناقلة تتعرض لإطلاق مقذوف مجهول قبالة سواحل عمان بحسب مكتب التجارة البحرية البريطاني، وأكتوبر يشهد رقماً قياسياً بـ28 هجوماً على السفن قرب هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/tanker-hit-unknown-projectile-oman-ukmto-says"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248837/Tanker-hit-by-unknown-projectile-in-Strait-of-Hormuz"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/october-sees-highest-number-ship-attacks-record-report-says"
+   ]
+  ],
+  "first_seen": "20261024-0700",
   "status": "pending"
  },
  {
@@ -1591,148 +1737,6 @@
    ]
   ],
   "first_seen": "20261015-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-13",
-  "ko": "에티하드·카타르항공, 리야드·제다·담맘 등 사우디 노선 운항 전면 중단 — 공항 피격 여파로 항공편 차질",
-  "en": "Etihad and Qatar Airways suspend all flights to Saudi cities Riyadh, Jeddah, Dammam — air travel disrupted after airport attacks",
-  "ar": "الاتحاد للطيران والخطوط الجوية القطرية تعلقان جميع الرحلات إلى الرياض وجدة والدمام — اضطراب حركة الطيران بعد الهجمات على المطارات",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/etihad-and-qatar-airways-suspend-flights-saudi-cities"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOUNMdWNXRTRDVDNieVhIMlhHT3hzQmt2Yk9ieGVockUzUm1VWV9TMXNSMzI0b2dpNXpvaWFlcFZ1dmZQQ2tSNzhJREJ0aG9WOFNqSzhqWnZvXzY0MUhibUdZOHNoX2t2Sk1mTDBqVmxMeWt5bGVYUVNlcE54cnJPOWViT0xpdUhuM3N3WDhFcGZZelRxNDhQMngyVzlndEFFRHc0?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMizgFBVV95cUxON3hKM0tyUDRYZ0ptS1I1ZGpDMzdHLU9zbER2LTNSb1QzcHk2SkR3VzY4VHBpQXIxR2hRcjk3d19pbTVqLWkzQTRtVkQ4R0lWV25rSFpzVGQwdkhMTGxaSDdDMVR5RUhEQ3FXS1RfY01heEl1ek5hSHFkNlBkOU83cnN1VkFVQjhUMlJuTUpqYnVxQV9zVkpBMGc3SkhadUhqMXJOM3lqVTdSRFBvbzdITWlSSVB3RW9HWkZnVEM5Skx4aWhNVjlfZWZOS3ROdw?oc=5"
-   ]
-  ],
-  "first_seen": "20261013-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-13",
-  "ko": "후티, 리야드·다란 등 사우디 본토 미사일·드론 복합공습 — 리야드 공항 피격 최소 12명 사망·수백명 부상, 다란 아람코 건물 화재·4명 부상",
-  "en": "Houthi missile/drone barrage hits Saudi Arabia — at least 12 killed, hundreds injured at Riyadh airport; Aramco building in Dhahran on fire, 4 wounded",
-  "ar": "هجوم الحوثيين الصاروخي والمسيَّر على السعودية—مقتل 12 على الأقل وإصابة المئات في مطار الرياض، واندلاع حريق بمبنى أرامكو في الظهران وإصابة 4",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "© Image satellite UE/Copernicus Sentin via Reuters",
-    "https://www.france24.com/en/middle-east/20261014-live-saudi-arabia-reports-aramco-building-hit-and-four-wounded-in-houthi-missile-attacks"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOY3A1N0dSaEowdHRsQm11d1EzUnJneHRRYWRYa2NWU0ZfeUgwOUNzMHpNN2dVWFJQeVRZRDdYTTJ5YUtwX2YwUEprdWowUW1hYXplbjlsbnBuaTk1RUc3ZnBseDgyMFI2Q09BNllMRXVUWm52RXQ1R3ViSEZpZW1OOWlqenhMSDlPMXY2NWVzOEpHTkctQld3WWJaNVh0M05rdUhTQlBCNGl2SXVqR29UbkVNMm8wR00?oc=5"
-   ],
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQR002VVo0b3ZvU0RXV3V5TWdvX0Jmc1NiQjBDNjljbTVWbFZnQ1hIUm5WTUNHZFZSNlV4WWoxZVBDNFhwZUEzZF9kVUlla0dZOWstVWZQQnA1TGpqeXI4Y05KbkpOay00U3NLYkZxZ1BHQWQ4ay14eEk3bHlfSzBMVzlrd2tuQ1hyaHoteGZSZ0pyYjdvYjB1QlEtOTR1YVNZZnZTRw?oc=5"
-   ]
-  ],
-  "first_seen": "20261014-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-13",
-  "ko": "사우디 주도 연합군, 예멘 사나 소재 후티 석유·군사시설에 보복 공습 단행 — 공항 피격 보복 명분",
-  "en": "Saudi-led coalition launches retaliatory strikes on Houthi oil and military sites in Sanaa, Yemen, citing airport attack",
-  "ar": "التحالف بقيادة السعودية يشن ضربات انتقامية على مواقع نفطية وعسكرية للحوثيين في صنعاء، اليمن، رداً على هجوم المطار",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxOa1YtbFV5bXc3azRQU1Qxc0N5WXR0dWNqWnJUMkNZU2ZubzAzUWFfZ3YzRFhCMkljUS1FZU4yQk1rdmxjVU9lNC12OHE3RGh2UEZGdlVrRURmYmRwc3FvVXhBWEdzNVViUDA1Y0l5U3dNTlpzcUNDaXNBS1dpeVdSRGhWazRkY1h1TjlfQ0FicFgteFZQWkVnTmJYanVkRUEtZWhMM1Z5OTNlQV9YZGx2bEk3QTFCVUhIb080dHlxa256MjlX?oc=5"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdl9iN3k5VENod2hRNGM1aG0tcmV4RnBMY0hhTWtSbnRUdDZ6VVJlb1E3VWJXS0lCVTRtMmtpM3lQOUlmZ01tU2pzdklSdHREY280ZVo0WVFLSERKUm1FbmhTTGNyOTBTWDUyWXEtc29NRnZfOTJTTjAxNEhGUm1KRy01Z0dUNFBjSjlCcHpKTWtrdm9sbUU5V3hPLXltLVNoVG8xaGJUS2VDWjBDRzFsRjhyekpwdw?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261014080700704"
-   ]
-  ],
-  "first_seen": "20261014-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-13",
-  "ko": "후티, 사우디 보복공습 수시간 뒤 아람코 시설 재타격 — 확전 가속",
-  "en": "Houthis strike Aramco facility again hours after Saudi retaliatory strikes, escalating conflict",
-  "ar": "الحوثيون يضربون منشأة أرامكو مجدداً بعد ساعات من الضربات الانتقامية السعودية، في تصعيد للصراع",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdmRBdUZFd2VfLThKOWQ3elR2ZWJzVzFrdDhMMkU2TGlFbnhiR0ZkeVVYOUhhZnNDTFNndHd3azRFZ0lqbG50Z0hlS2tVbkxhRmptNWhVRHJ3aER0WTc4ZXRPSTluRWpjdnVhOEF4bncxU3h6ZTkxSF9OQkduWWxnZTNtOURzQXM5OWRvNWNBUXBEYzlEM0VjR3N0WF9WWDdZU00yd0hR0gGrAUFVX3lxTE9xYjVUdUk4dUhhTmNFYnFCbl9TamRndElPREdPaFM3ZW0zc0NGYjd2aWRlVU1SUGxaS3NsZEY3UDBTaVJaMHZ5YnM2ZmVHNUhmTk9md0xIVzl6WFZTam13bm1iSHpEenFoUkJIcnU4dTBNSnY3NkFLZkhZajdWT2JQRUNCYlh5bWRfTGZJcS1BdEY0VUlCdzlWT1ZnUGQ1Tl9ocEdiUWZOX2Q4RQ?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/10/14/iran-war-live-saudi-coalition-hits-houthi-sites-aramco-office-hit-in-east?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261014-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-13",
-  "ko": "이란, 美선거 앞두고 호르무즈 선박 공격 전술 전환·확대 — 로이터, 유가 끌어올리기 목적 보도",
-  "en": "Iran shifts and expands tactics for shipping attacks in Strait of Hormuz ahead of US election, Reuters reports, aiming to keep oil prices high",
-  "ar": "إيران تغيّر وتوسّع تكتيكاتها في استهداف السفن بمضيق هرمز قبل الانتخابات الأمريكية، بحسب رويترز، بهدف رفع أسعار النفط",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/ahead-us-polls-iran-shifts-hormuz-attack-tactics-report-says"
-   ],
-   [
-    "News18",
-    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWjBnMkltaWNWZG85OEFZMXVvVEZGLWFsUzV0OXozd0ZkdEhJSFV0ckducHlMbDMxd3JnNnJOaGJlYTFzZFo5ZlU1YjNQT2k2dldudWJJN1c3RERqd3JWUVFWTkNSMUR2QThWc1ZpZDZDUnJqbVI3c3pLMnJEQlhsSGt6aC1lWXg3N29rTGxBUDU5NXNGODNfdG02MDBhajVOYlNaRk9pY1puTlVjcmgyWk0xYWVDU2RMT3loS0Q4anZpX0pHWV8wRV95N2IyWDdDczhlemxpUktnQdIB3wFBVV95cUxQaUFjUlk3MHlZeC15Q1VaWVhzbUU3T2Q4TEV2eUVxU1pFWno3WDFhWWp0cWlDbkVpY2MyNXVGeFRlQ2tLZy1QZDh4NFZTdTNHWnFBdTMxUUtWRV9DbG4yVEp0WEFtR3VPQzdqNldMc3poNnJHR25GTUlVMTF1RE5UTlhHcERoalBaamtJVnlKNkJfdlVEQy0wNlBOdkkxRFBvQUlSSHhZNWdIMXBEeWM2cHFseW1zVnc5ZmFFZ1ZWTkRpdGRiclkwQlVYZHkwRWJVYlVtZkhIQU5MeWpJd1FF?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOXl4Z2E1ajJabkV2V0d3VVN4TE4xZVdXU0xjY1FwX2QwNzVpSEZ2UUdWY2d2N0w0TEZCXzRFR2oyZ3l4MlZkMER3cDZtOFRMc2p4VzRSWE1OZGdJaHBvRlZieVJ3Unc4bXEyRHFvalF4MEkwTmduUEFtV0lBX3NZS2Q0M2hoSkozeWFNMS02MnF5QmNveXNFNklHVktxYy1RM1BRcHlSVm92aWYzRnJpNTJvVWYtemNjbklpM3Jna2t0bUIweUV6VQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261014-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-13",
-  "ko": "美중부사령부, 이란 IRGC의 '호르무즈 해협 장악·미군함 격침' 주장 반박 — \"IRGC 해군 보유 안 해\"",
-  "en": "US Centcom rejects Iranian IRGC's claim of controlling Strait of Hormuz and threat to sink US warships, says 'IRGC has no navy'",
-  "ar": "القيادة المركزية الأمريكية ترفض ادعاء الحرس الثوري الإيراني بالسيطرة على مضيق هرمز وتهديده بإغراق السفن الحربية الأمريكية، قائلة إن 'الحرس الثوري لا يملك بحرية'",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-has-no-navy-centcom-rejects-tehrans-hormuz-control-claim"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/248568/If-US-ships-approach-Hormuz-Strait-we-will-sink-them"
-   ]
-  ],
-  "first_seen": "20261014-0700",
   "status": "pending"
  }
 ]
