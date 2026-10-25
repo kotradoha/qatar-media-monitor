@@ -1,5 +1,51 @@
 [
  {
+  "d": "2026-10-25",
+  "ko": "사우디, 후티 공격으로 약 2주간 폐쇄됐던 리야드 킹칼리드 국제공항 운영 재개",
+  "en": "Saudi Arabia reopens Riyadh's King Khalid International Airport after around two-week closure caused by Houthi attacks",
+  "ar": "السعودية تعيد تشغيل مطار الملك خالد الدولي في الرياض بعد إغلاق استمر نحو أسبوعين إثر هجمات الحوثيين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSGZseXBZQldFX3dHcUVkdUs5SU1KTUZCN2w5eklnVnNnSEJQY0NfMmF6OVhmdldnWUZnRTdGMWxNM1JqVkl6R2pFRVc2cDh3WVJmdGM3YWF3dGlnVHNEd3BFcTBxTU1yNUxpalU1TzAwMW9iOVJNT2RkOTFWaFRuQVlzQ0pqN1F4cDkzY05iNm9Cdmk1RlhGVGR0S3MtamdyeEE?oc=5"
+   ],
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CR2U2bU4wQ3k5VllNQVRIXzNVY01IdUlhTWJHNnVTd1dWQ05mVE9YUHFtdnkwVkVRR3pOQVFvS1ZQeHRpam9EczZCQmlTT2tFbElNelFmUW5YQQ?oc=5"
+   ],
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1RandPaGJpUnJpdEhUZTdFNkFOUnF4RVA2eWtIRWFqQVhxdTkxMWV0VTNVWGJYbHVMejRaVExHRVlrbWp6djBBVzAxQ2Z6b1NZUnFCUGF4V1RJZUhQWTU0M1poZjU1UQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261025-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-25",
+  "ko": "미 정보수장, 이란의 미국 관리 암살 음모가 '진전 단계'라고 경고 — 중동 주재 인력 일부 철수",
+  "en": "US intelligence chief warns Iran's plot to kill US officials is in 'advanced stages' — personnel being withdrawn from the region",
+  "ar": "رئيس الاستخبارات الأمريكية يحذر من أن مؤامرة إيران لقتل مسؤولين أمريكيين في 'مراحل متقدمة' — سحب بعض الموظفين من المنطقة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbTBsQXJ4YU5ycmhZRVMxSGhhLVBUMFo5NXBLM3FJMVM2cU53ZExHcmlZRDM5RXU2ZWtnUXNaOFprWXF1eWNEREhEUWtlejI3bWN0bEQyaWRVUGpIMkRNMF91NVRKVXIwdnNlSDhLWmdUeU4yVHB6Sm93TnNFTnYzQk9HMHpIZDBJZ0ZRcU1QTUZSX2ctZzRzRUF3RTRZTUlvV3ZLWnI5MmhCckROTHdZbQ?oc=5"
+   ],
+   [
+    "이데일리",
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMUlmcUdJRnJia1JEajBycnlBTXFCNlM0emlXdXI2MWpLQVRTRk1XTGt6NzlCeDlkcEVoQkhtMjV3MlhYSWY3cHd6UFZuRmJKUVVIX01kWktSQ0dWcDNVOE1yNUpNcjRPNFdmY0dkNEZLakhCMHFkLVowZ3drSER6Xw?oc=5"
+   ]
+  ],
+  "first_seen": "20261025-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-24",
   "ko": "트럼프, '장대한 분노' 추가 작전 가능성 경고—이란은 '레드라인 없다' 반발하며 해저케이블 절단 위협, 중동 재확전 우려 고조",
   "en": "Trump warns of possible additional 'Epic Fury' operation against Iran — Iran responds there are 'no red lines' and threatens to cut undersea cables, raising fears of renewed Middle East conflict",
@@ -114,6 +160,56 @@
    ]
   ],
   "first_seen": "20261024-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-24",
+  "ko": "후티, 사우디(메카·메디나 포함)와 예멘 아덴에 미사일·드론 공격 — 아덴 공항·해안경비대 기지 등 피격, 리야드 상공 탄도미사일·드론 다수 요격",
+  "en": "Houthis launch missile/drone attacks on Saudi Arabia (including Mecca/Medina areas) and Yemen's Aden — Aden airport, coast guard base hit; multiple ballistic missiles/drones intercepted over Riyadh",
+  "ar": "الحوثيون يشنون هجمات بالصواريخ والمسيّرات على السعودية (بما في ذلك مكة والمدينة) وعدن اليمنية — إصابة مطار عدن وقاعدة لخفر السواحل، واعتراض عدة صواريخ باليستية ومسيّرات فوق الرياض",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-ballistic-missile-intercepted-over-riyadh"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/minutes-after-danger-alert-saudi-civil-defence-says-danger-has-passed"
+   ]
+  ],
+  "first_seen": "20261025-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-24",
+  "ko": "OIC·GCC 사무총장, 후티의 메카·메디나·사우디 공격 규탄 성명 발표",
+  "en": "OIC and GCC Secretary-General condemn Houthi attacks on Mecca, Medina and Saudi areas",
+  "ar": "منظمة التعاون الإسلامي والأمين العام لمجلس التعاون الخليجي يدينان هجمات الحوثيين على مكة والمدينة ومناطق سعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxObWM5bElWOHpQZ1F4aFAxdHQzNGRZZTg0ZTg1OXZmeUNWZUt6Umxod1dxM1ozaWlXWDJiOEF2NFhsVFV6dGZXX0dPUzJseFZXWmc3RlkwemdkVS02QTNwdWI2T2tDd3haUTQ1WjY2RXdnbWk1SUpJY0EtSjcwZ0Q0MnFxNW5zUV9wdEpmQXRjX1VORGN1RkpRaFpxTlNkUQ?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcVBjTENoQnhSUi1EX3NuWmdLWXpKZzhoT2EtZ29CdEdMcmQwX1VqVWJ3c3hTTEstQ0RpUlRNWXI3NmNJdGQ0TUpMd0VfbjVlSzVQdll3bkR1bWZYVWFyUzRsTUo1d2ljTlJPQWRFVTNlTllfTXFwUkt4WDd0R0dqcDVseGZZV0ZTdktkRE1lcjJxelRmYllPbm5qXzlHZWRpWHNMMTdkVV9WalA3cnc2a1BPRGFQd3dt?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMipwVBVV95cUxQWTBiUlpkZERiMllqdXhzTVRZTi1TeUtUc3RqSWo1aDAyX3BQRXI3MnJYNXR2QTZNMl8zV0xKSG52QUpySk1ITDJMY2VPZUVrQl90R20zU0hYUFFaN3hlRzYxU3FwaUctVTJMNXRhdWQxck1QNTgzUWtPdHcyZi1taHBQOWI5bzVQcmU3dXFZWE5OZ0NKcU1TQWotc2VFSWhxRTYzeDBNSENrU0ZZQXliSGJTN2xnOW5lRUxSUGpuY1RXbm9tekpqSEZPb2llbHhZTnMtTUYxakNDeDJ0dnFFU2dVR3pCYUFjUVFPamQ5d3FLVXdCQmlramRXQk1IdWJ2WEdaZFFBS3FOTDZUX2Rkd3dDNWJRcUlVVUZjdUNNTDRkdEF0cGk4UmJGTFlkaXJnMnFjYUs2YkRtMjhNSzFUQ2NveGc5dnFIdVdwN25Vc3NHTkgxWDAzVzJrQ0ZlYVkyb2xEY0ZTWEhJSXBMVjgwdkk3UTFMQmNLdGdLVlpCT0VpTG54M0JIN3k3ZjdRY2hHc2ozem9Gbm0zSGZOMk9xdVhqSXhJRGRSWHlhVmdxb29FSUlHc1Y0WUpNM0JJREZTNVJ1bl9RZHNTemxrZTdPRkxsNHlqZENWUEZrbUx1NWp2VW03XzUyRzl2M2thNk1uazFJYXR0eUJuTWRGNFMtQ2JlRXl3RGtybkVkMHI5STNUejhqSWNicnFIbEtkQXdDbHltZzF3bGVLNzZPQndsTEN5aG45U0w5QUlHcU85OGpMVm44ckFCYTJiZERJZWl5Q3otUFdDa3JuaDVpYVhsalRNZE9NX1hfbWhma3F0eHVseVM0d1FJemxxTlNBa3YxMXp1Rjhxc2dhSXFuTXZsczQwbkJFOGNZSDlDcE9uMzhuYnhncE1N?oc=5"
+   ]
+  ],
+  "first_seen": "20261025-0700",
   "status": "pending"
  },
  {
@@ -1661,86 +1757,6 @@
    ]
   ],
   "first_seen": "20261015-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-15",
-  "ko": "예멘군, 사우디 주도 연합군의 '타이푼' 전투기 격추 주장 — 사다주 상공서 격추했다고 발표, 사우디 측 공식 확인 없음",
-  "en": "Yemeni army claims it downed a Saudi-led coalition Typhoon fighter jet — says it was shot down over Sa'ada province, no official Saudi confirmation",
-  "ar": "الجيش اليمني يزعم إسقاط طائرة تايفون مقاتلة تابعة لتحالف تقوده السعودية — يقول إنها أُسقطت فوق محافظة صعدة، دون تأكيد سعودي رسمي",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86293303/Yemen-says-it-downed-Saudi-Typhoon-fighter"
-   ]
-  ],
-  "first_seen": "20261015-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-15",
-  "ko": "이스라엘 남부 인텔 공장 폭발 사고, 두번째 노동자 사망 — 부상자 치료 중 사망하며 사망자 2명으로 늘어남",
-  "en": "Second worker dies from wounds in Intel plant blast in southern Israel — death toll rises to two as injured worker succumbs",
-  "ar": "وفاة عامل ثانٍ متأثرًا بجروحه في انفجار مصنع إنتل جنوب إسرائيل — ارتفاع عدد القتلى إلى اثنين بعد وفاة المصاب",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVkQwaHV4MXRzWm4zWU42Y1FxOEQ2WTZZNHZRR19kN3pFakR1RmJWU253Y3dnQ2EzaHowM0YzeUFqUHViYnFURzFyVGZ5dFNYVXA2TENqNWpWc2RxNElIVDYzT1NVSmppeTZ6Q1RLejVpWEphcVZ5SkQ5eDJfdjJIWEJNN3duOE5kZHBhY3Brb3VsQnVBdVNEdHJxMDZfOXlzVGFSRHZYRGw4TXZzMVpwR1Q3Mm1jcGd1dFgtYkx4b0Q2QQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261015-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-15",
-  "ko": "EU, 후티의 사우디 공습 격화 여파로 걸프협력회의(GCC)와의 2차 정상회의 연기 발표",
-  "en": "EU postpones second summit with Gulf Cooperation Council amid escalating tensions from Houthi attacks on Saudi Arabia",
-  "ar": "الاتحاد الأوروبي يؤجل القمة الثانية مع مجلس التعاون الخليجي وسط تصاعد التوترات جراء هجمات الحوثيين على السعودية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdzNyVEFTaV9iamhXbDZmWU5PelJBbUY4VXdEMlAySHdNejJBM1lsYXYxQ1NKUE40YnRYajJmNTJTUVNTcEdEUkxmU1RrYl92dUZySFJoeUstVS1KVjA1ZEF1OTFaZUQwM0ZaUHhVZldscXV6VUFFd3pqWU1USVdyc0dpV3dqbmY1QnZKSEFzYzZoTU9SYXA1UThWaTRGYklNQlFnQmtzUXVac08yU3NYVi11LXZ2ek9Oc0ZRa3VmcUxBSkJDOFE?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DMzUyVWR0ZlRLOHZlTWl3eE51S2lXQnYyZ0VwTnExSzc1c2RHZnZWZ1F1elA0VHBYcjcwTUZZM3dyTXY5eHc2Q3JsdkhadTAwOXln?oc=5"
-   ]
-  ],
-  "first_seen": "20261015-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-15",
-  "ko": "후티, 예멘 아덴 대통령궁 미사일 공격 — 최소 5명 사망, 사우디는 '이란이 확전 부추겨'라고 비난함",
-  "en": "Houthi missile attack on Yemen's presidential palace in Aden kills at least 5; Saudi Arabia accuses Iran of fueling escalation",
-  "ar": "هجوم صاروخي حوثي على القصر الرئاسي في عدن باليمن يقتل 5 أشخاص على الأقل؛ السعودية تتهم إيران بتأجيج التصعيد",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRHZJUmhnT0VWMDRFLVVBX3ZVeDFPQVphWWhLWndQWFgydVNCUGswZU81U2tKc2MzRl9BcFlCLWw3WnZwR013MXBxQ2czQ3BNYno3Y2VTeUhyQkUwVGN4SEVOLUd1Q3ptT2FWRDRPd1VEVWVyM1NrOE9lWFpGbDVhQks3MndlQXBEZTZrNTd2X181ZDlLYzZyOFhrVDNFS1NyMzRJR3ZXYWnSAa4BQVVfeXFMTVVpdThSSzRBSGdub3dMa1RPX0hIRFRUOFVIdnZZalZPTWR3cmxiMlM3MDVtdk4wR0Izb3V4OXBYMFptN2otc1YtUm1mdm10cVQ1Sko3MlVWb2pzZ2tWMjF3aF9VeFctOU00Ukdaa0luall1aTVTenRkS0V4RnNGMy1lSjE1N1NqSVdPN0dZUzQ0eEFKaW1VN2JOb1dIQk1nT09DNzgzVGdKYXJQZUt3?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNejl2N3FOeFEzWXNrdmxLVDIyS2NrZXEtU0pyNVo5SFR3T3BhMVVPYWMwX2tmZk16d2VfS1Q1RkVsb1JGeGVMSlJDR3k4aWYySnQtTUQyU3M4UThBaTVkTlV3WlJfc0NKSFNVcG9ITV91ZTBUT3RPTFJfczktc01MVENPR05DcXNDZjBVRXAwa1pubTluTHQxMVZ1RVpBU2U1YlNnX3cxbTNCVmhXNTNiMnBRTlN0OVVoSFpFMTh5NHNKOVdxbTY0TmJWWk1ydEdfdTE4cVdUQQ?oc=5"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE1hUEo4VkJvbzZJU0RMdDRkanpXU3hqM2tCcTA2SUViaU5QX0xSQzUxTU1IUUtxVGp0X1NJRDFkSnNib0gxQ3p3eXRDREJJUUdEeE5aLXliRGl6WFZRWTJTUGNoSXpWSkJSUElwNy1mUHlwSG5vRUp2YdIBeEFVX3lxTE1NQ2poMzFacWNQVmpUVTFSQ3JOUGF3Z3h4YkV6a0NuaEpsbGdFVjlUcW1lbVZuVlEtQTFRY0lJb0lfZF9JdjFCclg2WGxVQ0t6Z1dSY1NkLWtXazVVQ05BQm5vamRpM0NlZlA3djJURFFscUtfenlRTQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261016-0700",
   "status": "pending"
  }
 ]
