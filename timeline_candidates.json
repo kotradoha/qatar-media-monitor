@@ -46,6 +46,81 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-25",
+  "ko": "美 중부사령부, 중간선거 후 이란 재공습 계획안 마련해 국방장관에 보고 — 트럼프 승인 대기",
+  "en": "US CENTCOM drafts Iran re-strike plans post-midterms, reports to Defense Secretary — awaiting Trump approval",
+  "ar": "القيادة المركزية الأمريكية تعد خططا لضرب إيران بعد الانتخابات النصفية وترفعها لوزير الدفاع — في انتظار موافقة ترامب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/25/centcom-reportedly-has-plans-for-iran-strikes-will-trump-approve-them?traffic_source=rss"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbS1tMzRuM2wzRGNDV0R5b3o5N3p0V1U1OVhreW01YXB6dWdmQlBCMS1Hb2FmQnJYYVZsSVJKNG5pVHFGN1pqWlJYUk13cC02OTR5RWpZczZ1c21KMjkyMmIxOXJOQ1VDZFg0V3pSTENZTi1DM1NDeGx1OHJBVVc4TjlyeG84ZUhTZ3NXVnVHZGZVaE9tVFFoSHVkUlJoeE5BMkJJVU9kOFNSUG05YVRtc09R?oc=5"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261025_0003840237"
+   ]
+  ],
+  "first_seen": "20261025-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-25",
+  "ko": "이란 외무장관 아라그치, '전쟁 재발해도 호르무즈 통항 정책 되돌리지 않을 것' 발표",
+  "en": "Iranian FM Araghchi says Hormuz Strait policy will not revert to pre-war status even if new war erupts",
+  "ar": "وزير الخارجية الإيراني عراقجي: إدارة مضيق هرمز لن تعود إلى ما كانت عليه حتى لو اندلعت حرب جديدة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiygNBVV95cUxPV1JBQ0xHd3E0OTVjSVlOcUsyLTFpd3VwbFJzUDFpZXJkdkN4NTdyVHlZdmdaUG8wSHUtRHBwTXQ5dEVsOTJuOUhnc2FuUjdpYmNGbkExYlg5SnJOay1sX3REOV8tLXowaUFoNXZWWlVrOW0tWHNZLTQ5NWJjYzdPWG1JczNiNzNUVVZZTFJQVl9fMUxMZVBvVzNjT1NXUHJhTGt5ZFFSNHR5U193TE50ZzN4bEdFd0tNTXpWQTdOblhRa3p4cGJjZVk3cXBNWW90ZnZkaGlxbzlHNkpFaXJ0elFmLXFDVjRBenl2WllGSjY4aTF3Zlk2ck82OU5ueHVjUzlQdU00VzZCUWJ0SVJnemsxdzYxN0hPZHg0Nkgya1U3Y29od3h6LVFsTDg2T3N3aG4zN2E2SmxoRUUzT0syUTBfVFpzM25FS0hmWGdGWWRHNkJaX1Vxdlc3REdVZ210cW5RTklJcWlzdEtGYXcwMkRac2NBQnZ2MVpNTHRWWWMxR196cnNOOEE2eVZHc3d4VVU4OEZXVDhfZjNhN0dDRzY4OElHcXVDeUtjUUdaZTl5a0xyWGtzTUY1X0FmeEQwSmdlaU5VMEpaQQ?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248901/Hormuz-management-to-never-return-to-pre-war-era-Araghchi"
+   ],
+   [
+    "조선일보",
+    "https://www.chosun.com/international/international_general/2026/10/25/MM4TOZTDMJSTQNRQHAZDONTEHE/"
+   ]
+  ],
+  "first_seen": "20261025-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-25",
+  "ko": "사우디 주도 연합군, 리야드 및 남부지역 겨냥한 후티 탄도미사일 10발·드론 요격",
+  "en": "Saudi-led coalition intercepts 10 Houthi ballistic missiles and a drone targeting Riyadh and southern region",
+  "ar": "التحالف بقيادة السعودية يعترض 10 صواريخ باليستية حوثية وطائرة مسيّرة استهدفت الرياض والمنطقة الجنوبية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/25/saudi-arabia-intercepts-missiles-and-drones-as-fighting-with-houthis-rages?traffic_source=rss"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZUVZb3ExbWxrN1ZZTFBfQVRYSWtFYTMwTjVYS1hHODhRU0w1NTNjXzNJQTJncm5PbW5fcnh1WEJqdmg5RzV4RFdSVlcyOEZhOVhaZzNWblh4V2lIVF95cEhKY0kyVlJNQXNya0lxTTQxWFZDN1RvWlY4TEo2WWNwWTRhYzIzQ2puZGtpRm00THVBVVFHZ1B0SlJnU2c2Yl9jR25Lei1WZXJnQ2FpSTNiS3ZnbVdhRFJpaVRqRXNUcERlSURLYVNiRFFZYzF3SzJKQTFibUplZ2UyTGM?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMivwZBVV95cUxNZUZQa3FSWFpBR1BINnN4TkVLUlAtMzRjNkFpMldvS1lZWnVuRFo3ZE9va0dZUTUzMmNuTEFSQ0RWdW1sRWw0c2NkbDJZeGlIVjNKSG5hREhuWTk1cTBzTWN1aGluUnctb3dTcFF5MEdtRXl1SWhzdUtYRXFBcl90TzFFc041VngxdUhPUXFXci1JdjZwM3FhanpJcWZ0T1FhMTJCNV9OY3dBdHNJS1pydWpReXlFeWU1dUFqdGsxenFMMmlpYW80SEdKdUlFS1AxaTFqa2xOeUZuVy1fdnpJQlpoTktPZXp1R25nNzlIbWFpaU9YS0xsX0oxNC1lRUtvQzQzRmlWdUNoWi1qN3RhblRpY29pVENwZTR0dmxYeEx2LWhzWXdfQ2JDSXlnMzNBaUdYd2tSTmVIaDNpeDJTTTM3QUx1YW5WOEZoZF83V1BxUzlDNzloV1czWG1QTWhINXJ1cXVNTkt4blFiY1A1NUdCWDU3alBRLTBHRTdBMnJQVUNkOXlGNzQ3Yzdua0hORUxIcnNSWkVnNGk2TUNCbWNTYzQ2MjBhdW1DdUhmZW9GTEtBd1dvanBMV292SzNfazktTXhXc3MzRDZrT0pmeHJnb09vZ0RDVzExa2dLc1JCUU01Z3JYdGFYWDZqTHhSOU9zdHlEV2NycGlQNWpjc3IyN1pTSVJCbnBBYjV1MVJJbWR2QnNXTjAzMDA2NVc5cXpzcTF2Y21fT2xhRzBua25rYzE5aFh0LU9vcGl1OFJBeFpqRjlOUnhiSFdva0RQeDJaTVlkd05GWThOREp0YWctNzlmQnIwU3FDeWduajVtQ0tqWmduNHFQZXFWbElZc1JWTEJiS1REekRvN1VTSXVQX2JFR1FXSUMyWklTZlFVc1A3OGgxUWdnR2ZDYTJoOVdoLXdhUUExazhIdHIyU1VtZW9wV2h4aTBhNm9BVDFoMmtDaEN1blh5VU90WG1KQTdaZ2FOWHRwV1N3RmZxLU1WRmRhV0wtQ3dUbUtjQUYwNkg1RTdzUjNMQWo5WHpWaFpTOXBDdUw0clZ5c1V3M29yY2pINXV0Si1ZYmZiN3Q0RUxuVGRJSGtDTUFTNW8?oc=5"
+   ]
+  ],
+  "first_seen": "20261025-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-24",
   "ko": "트럼프, '장대한 분노' 추가 작전 가능성 경고—이란은 '레드라인 없다' 반발하며 해저케이블 절단 위협, 중동 재확전 우려 고조",
   "en": "Trump warns of possible additional 'Epic Fury' operation against Iran — Iran responds there are 'no red lines' and threatens to cut undersea cables, raising fears of renewed Middle East conflict",
@@ -1690,73 +1765,6 @@
    ]
   ],
   "first_seen": "20261015-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-15",
-  "ko": "미 해군, 이란 연계 소형선박(다우) 격침 — 이란혁명수비대 지휘·통제 관련 정찰 혐의",
-  "en": "US Navy destroys Iran-affiliated dhow — accused of conducting surveillance linked to IRGC command and control",
-  "ar": "البحرية الأمريكية تدمر مركبًا شراعيًا مرتبطًا بإيران — بتهمة إجراء مراقبة مرتبطة بقيادة وسيطرة الحرس الثوري",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/14/us-destroys-dhow-suspected-of-iranian-command-and-control?traffic_source=rss"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUzFlczkybzNHZzhEdWZwVTdrU0tnYlpJc0tBZUVlcXNKTWtaSTRLbGV2LWRCdVc3MzB2VUVPbXVzUTZUcHlwY01vbXNYd05MdHQyczBwUGNBT3VtcUUyVEp2NFlsdTRkUmNRTGpsa0xvekNZc0toTVFla29uUWR2Z2hSdTU2X2oySGxONlFKN3BRZC1IbkNF0gGcAUFVX3lxTFBTdDg3eXFLWmFtV0EzcGxDUEpCbHB5SU90c2VnMjJpQ3FvN0tmUE4xOGtqN2Vaa2NReTltUDNnTWRfQVFvcGZYWXJObTlhNkY5a3BVeW4xNkdBaW5oNmNiUDViTWFPaTg5NWY0Mk5VSkVzVURwcUJhSGp0dldQa3RlbTRpeElFYk9fR0EwaGpFY1JzMnNJSXpCT21aUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261015-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-15",
-  "ko": "이란 군, 호르무즈해협 '폐쇄 지속' 공식 재확인 — 통항 시 이란 당국과 사전 조율 필요하다고 발표, 미 휘발유 가격 급등을 근거로 제시",
-  "en": "Iranian military reaffirms Strait of Hormuz remains closed — says any transit requires coordination with Iranian authorities, cites rising US gasoline prices as evidence",
-  "ar": "الجيش الإيراني يؤكد مجددًا أن مضيق هرمز لا يزال مغلقًا — يقول إن أي عبور يتطلب التنسيق مع السلطات الإيرانية، مستشهدًا بارتفاع أسعار البنزين الأمريكي كدليل",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86293369/Iran-Strait-of-Hormuz-remains-closed-requires-coordination"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/248602/Strait-of-Hormuz-closed-transit-must-be-coordinated"
-   ]
-  ],
-  "first_seen": "20261015-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-15",
-  "ko": "후티 반군, 사우디 이슬람 성지 메디나 겨냥 순항미사일 발사 주장 — 사우디는 요격 발표, 후티는 공격 자체를 부인하며 성명 엇갈림",
-  "en": "Houthi rebels allegedly fire cruise missile at Islamic holy city Medina in Saudi Arabia — Saudi Arabia claims interception, while Houthis deny carrying out the attack, conflicting statements",
-  "ar": "مزاعم بإطلاق الحوثيين صاروخًا كروز باتجاه المدينة المنورة في السعودية — السعودية تعلن اعتراضه بينما ينفي الحوثيون شن الهجوم، تصريحات متضاربة",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBJcTM4NFY0QmhVR19MM28wUlZRUDhDVTQ2ZVVoQjlPSWs1ZEt5NTZkWDR1eDRrWF8wZTVBS2NFbGoyc0JUb08xdHRSYzZmamgtdG5GSldtNVQ2Y0kzbEsyZ0RR?oc=5"
-   ],
-   [
-    "서울경제",
-    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5SVjNtM0hYa2NKNm1QcUlPTVZlcTZaQTduQ0NrWFlGemlsb1g2enE5YXpHVEtUeHNHV0dJeDczeDc1QzJBZ3ltektYVVU2bzNQY2c?oc=5"
-   ],
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNSWpaVWtKYjlwS1VwYXB0ajlxeGpDaGpqeTJ1NnJzU1VtdC1UbEY2Qi1RVF9WLVhEUWpXUDR3aVVjTVRNX1dkS2tIOFF3d3YzdlhQOEFBVl91TmNSSVFwbWYxOS1McThBRDlaNVNpcUtzc0RmTjY1NHZCeDBQd2ViQ2dCT01LNldFVFR3bkRZM19UbTVKQmRLYUhxT3R6cFcwRFdUN2x1ZE9wcHNPYURDY1doRS1Yb0JISjBuZ0gwTTdkdjdoYVl4S2tfRnIxUjRKU3NvQ3ZKWmxZMWR0eWp4UDJEUHBXblFhbVFqT2htMHJlbDZfcWUzMjRRTHF5SnM?oc=5"
-   ]
-  ],
-  "first_seen": "20261015-1530",
   "status": "pending"
  }
 ]
