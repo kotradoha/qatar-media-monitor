@@ -21,6 +21,52 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-27",
+  "ko": "이란, 호르무즈 해협 운항 한국 장금상선(시노코)에 법적조치 경고 — VLCC 등 7척 통항위반 적발, 11월 억류·몰수 가능성",
+  "en": "Iran warns South Korea's Sinokor (Jangkeum Shipping) over Hormuz Strait transits — at least 7 VLCCs cited for violations, legal action threatened for November, risking detention/seizure",
+  "ar": "إيران تحذر شركة سينوكور الكورية الجنوبية بشأن عبور مضيق هرمز — رصد مخالفات لـ7 ناقلات نفط عملاقة على الأقل، مع التهديد باتخاذ إجراء قانوني في نوفمبر واحتمال الاحتجاز أو المصادرة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5rTDNmaHZwZjFha1JLdGlmOW9NQWNHV2hOejdETVBSYTZpVndVY1NaV2M1TXBfMFVmVk9OS25ZdlctOWFKaWhGeUdOcVczRExyQjU0dkZmRlQwMlU?oc=5"
+   ],
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE5hWWhneFpsWkhPOFFkX0UyMEs1WURhalBfekZMYTRzTkxZdnZ5bXJpMGhfakFaSXlzSEJOYWRvZkZhMGdmenRzMkRZQ28teXhlNjIwMWY3ZlhhM0YxRmExcy1GcVdOMXFrWHdtMEpDTlRrWTg?oc=5"
+   ],
+   [
+    "서울경제",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBVY0x4RU4xMHRsR1ZxbHUwRU9OaU9Sd0ZWM1lXQU9Cbm5JMGNUUUcwdDE0eUhEb2Z6RElEQ25wclM5MktVRExQVTRfZ253NFdILWfSAVNBVV95cUxQMkJINDF3TmhtczJZZmJNdXVMYmdnMEhQUnNOcHdqeGFjSGZER2tWZkI0UU1fMzYyMDBDbnlGRWxIbFU0QUwtZVNJa29TRS14c3Vqdw?oc=5"
+   ]
+  ],
+  "first_seen": "20261027-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-27",
+  "ko": "카타르에너지, 이탈리아 에디슨向 LNG 선적 불가항력 12월말까지 연장",
+  "en": "QatarEnergy extends force majeure on LNG cargoes to Italy's Edison until end-December",
+  "ar": "قطر للطاقة تمدد القوة القاهرة بشأن شحنات الغاز الطبيعي المسال إلى شركة إديسون الإيطالية حتى نهاية ديسمبر",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE1iSlBsNEZZWG5kV2VSSXR4T1JYcXE5d0dCSUlzT2FLS1lJcGFua2RRVDRPY2UzZERCbUNUUU4yUUY3bV9Zd3poNWV5c0pYcEJ4YUtLZjRkaDJjcUl5YVlYRWJSeEtQTF91bUtuQ3piTTRpTFpHTWlCSC0tSDZRRFk?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZWRlZmpfTjMzTk8wb2tLV1hzbFprenNTR2JMcDVlWmFUQ3hkemhVVzd3X0loUXlGeHRENDd0Nll3cTh2eUpOSVJNVU53MThUaC1HYjJwSkFpa1BreXRxdm0teFoyZGJpaXowcXgtUmE0OTdSYXdDVzhuV0hCSlZqUjdpMHRNUjJxbDAzNDBfbDRjZjFpZUU2djNfV3RPaENwb1M2TzNUV0xIRUZFTVMtSDVhWmpFQU1ZaG0zZzhEa29Udw?oc=5"
+   ]
+  ],
+  "first_seen": "20261027-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-26",
   "ko": "메카협정국(사우디·튀르키예·파키스탄) 고위대표단, 테헤란서 이란 당국과 긴급 회담—후티 공습 이후 이란 최초 고위급 접촉, 확전 방지 중재",
   "en": "Senior delegations from Mecca Pact countries (Saudi Arabia, Turkey, Pakistan) hold urgent talks with Iranian officials in Tehran — first high-level contact with Iran since Houthi escalation, aimed at preventing wider war",
@@ -1724,44 +1770,6 @@
    [
     "Middle East Eye",
     "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-declares-strait-hormuz-closed-after-tankers-hit"
-   ]
-  ],
-  "first_seen": "20261017-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-17",
-  "ko": "UAE, 사우디와 합의해 예멘 내전 재개입 결정 — 후티 세력 확대에 걸프국 비상, 예멘군은 라흐지주서 후티 진지 공격",
-  "en": "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi territorial gains; Yemeni forces strike Houthi positions in Lahj",
-  "ar": "الإمارات توافق مع السعودية على إعادة التدخل في النزاع اليمني وسط مكاسب حوثية، والقوات اليمنية تستهدف مواقع حوثية في لحج",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Guardian",
-    "https://www.theguardian.com/world/2026/oct/17/uae-yemen-conflict-agreement-saudi-arabia-houthi-gains"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTGJfcVFXMjlicUo2SkRUcUVHWVRxMHQ1LTZONGgyYzhCNGsxZmtWSnRaaUU3QTZ5Sk5EREl4a1FGSzhvSDQwckJLTEtiaXZXTDIzdE41RGpIRV9OU0hMbjRSTVZDM3VpaWppM3dOcDM1YmpsX0tzaXhHVlY3bUNhbklOMm1xRlA5YjF5TjhXaDFWeW5LamZsaEhyOGcwZGvSAaQBQVVfeXFMUEtSa0VfaEhkbkNQdV9rUHZvQUQ2eVB4YTl0ak9WTlVOUXctUkZpNnM2c3JmZWlPUHYzM2N5VWtNQWRUMUpBLWNGLWVzR185MFFFV0NRR25yRjViOWVaeGVvUU91RnhwSWd1UDBTalZVck8xTDBWSlhmVjFCQjdyTUNFc2FuQnBRSHl1V0hyWTJoNWZZTGFPSFBDMUM1WllXQkVKVjU?oc=5"
-   ]
-  ],
-  "first_seen": "20261017-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-17",
-  "ko": "미국 CENTCOM, 대이란 봉쇄로 이란 원유수입 250억달러 손실 발생했다고 발표",
-  "en": "US CENTCOM says blockade has cost Iran $25 billion in oil revenue",
-  "ar": "القيادة المركزية الأمريكية تعلن أن الحصار كلف إيران 25 مليار دولار من عائدات النفط",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OU2lzM3RFUURPWVA4dW01Qnc3QW5GY2RxdUxCMF9qMmFOaVlDZi1wQ05aSURxZVNWVTQ1eV9GbFNKNjR1eHkyRFFPcW5DV3p6aVFKV2VJaE55cUNrRGZnX2cyYUdQMUxrc0E?oc=5"
    ]
   ],
   "first_seen": "20261017-1530",
