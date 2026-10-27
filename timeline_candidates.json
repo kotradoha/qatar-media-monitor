@@ -1,5 +1,26 @@
 [
  {
+  "d": "2026-10-27",
+  "ko": "사우디 주도 연합군, 후티 드론 4기·탄도미사일 3발 요격 — 사우디 남부·동부 지역 겨냥 공격 저지",
+  "en": "Saudi-led coalition intercepts 4 Houthi drones and 3 ballistic missiles targeting southern and Eastern regions of Saudi Arabia",
+  "ar": "التحالف بقيادة السعودية يعترض 4 طائرات مسيرة حوثية و3 صواريخ باليستية استهدفت المنطقتين الجنوبية والشرقية من السعودية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/air-defences-destroy-four-houthi-drones-targeting-saudi-arabias-southern"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-intercepted-houthi-missiles-launched-towards"
+   ]
+  ],
+  "first_seen": "20261027-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-26",
   "ko": "메카협정국(사우디·튀르키예·파키스탄) 고위대표단, 테헤란서 이란 당국과 긴급 회담—후티 공습 이후 이란 최초 고위급 접촉, 확전 방지 중재",
   "en": "Senior delegations from Mecca Pact countries (Saudi Arabia, Turkey, Pakistan) hold urgent talks with Iranian officials in Tehran — first high-level contact with Iran since Houthi escalation, aimed at preventing wider war",
@@ -68,6 +89,56 @@
    ]
   ],
   "first_seen": "20261026-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-26",
+  "ko": "메카방위협정(사우디·튀르키예·파키스탄) 대표단, 테헤란서 이란과 긴장완화 회담 — 이란 '매우 좋은 논의'라고 평가, 확전 방지 외교 추진",
+  "en": "Mecca Defence Alliance envoys (Saudi Arabia, Turkey, Pakistan) meet Iranian leaders in Tehran to defuse Iran-US tensions — Iran calls talks 'very good', push to prevent renewed war",
+  "ar": "وفود ميثاق مكة (السعودية وتركيا وباكستان) تجتمع مع قادة إيران في طهران لنزع فتيل التوتر مع الولايات المتحدة — إيران تصف المحادثات بأنها 'جيدة جداً' في مسعى لمنع تجدد الحرب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxONk1ubVptNEpFS3lXMGZ6TnEwaHN4aVh1c3ZhMkc3T0xoYzBXWHpJYXgyZ20tMmRhQTQ0X1ptZ3RJd2c0bjVuN19kaDRHS1hKdjM5R1dNbjN2Y1ZCRkhpdndVYXlibUFreS13QmN3dC1NcmJSel9aUHdBcEE0QUxUcTlHS2NkdGhwSjFGc0lGT2lIOWY5OW9aX2dNX3RLdTNvWEF3NVI5dGNIa3pnalFiT0hMVEFoZ9IBuwFBVV95cUxOUEFzeTRiSDlJa0pLZXVPUVI3NVRqSjVfSzlxMnJGQWNtMzNTcmdwVTFkR2dTXzB5MXRzLUF2ZEFqcHVyRDE2Z0IwaW94UUVDQTltQjFKbGNJd1RTRjV3UTBXY0NxQmh1aExGWEVaMnJscUZmRkJLTWJoaG1aU2drSDRMcnJYVXBVUVYxbmZ3MFpnYkFjLWp4b2dSMFdpdkphbE90UHFfZHBVUTJyQXVNcFVGV0JRM2REZ18w?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-meeting-mecca-pact-states-will-mark-beginning-real"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFkczNnNTlDQi1sY3d3VkFxUjVSb1lJWEFYVGV1dDUydnFKRmxwTzctQnNzRzkzUjd0c05YMXZiak8xX2ZYSnhWQjZ5QWRrbEFabS16VzJVS2U3aWhpbm9nU0E3YndHRVYxX09tcTRIMF9YZU5ZbXRNRHBQTExJNWZ4ZnhWQndPNk9mYVVyOGR4Nzc4Mlkzdjl6WUJSa0NEM3E5LXdlZ1NpZEFIVktCYXB3VQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261027-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-26",
+  "ko": "트럼프, '이란전쟁 곧 끝날 것, 휴전은 시간 낭비였다' 발언 — 전쟁 재개 시사 속 유가 변동",
+  "en": "Trump says 'Iran war will end soon, ceasefire was a waste of time' — remarks hint at resumed conflict amid oil price swings",
+  "ar": "ترامب يقول 'الحرب مع إيران ستنتهي قريباً، ووقف إطلاق النار كان مضيعة للوقت' — تصريحات توحي باستئناف النزاع وسط تقلبات أسعار النفط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Sc2VUWmxzejFuRTMwRXFUNnNQNFhnYWFxOTAtTmNMUGdjREQzaWJ3NXM3Mm1jeDhPMk1JU0otM0tNSEg3UlRsNG94VUtQa0xlWUwxaGlpUUY?oc=5"
+   ],
+   [
+    "중앙일보",
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HWnVPS0tKd0FCRlIzYXJ3TzJyRlU5ODdfZm52S0xWUzBqb0lmVmF1UzVHbTY5SmVkUDhHRFBremZFU1FHamJISHl4SzF6TTlmUGxDdWdn?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5VMmQyRmNxd3Y2bF9OODJNZ3hwNWtieEpWV0N6MTZOc2hSazJyRXhSOExUXzNDQVA5MWhqM0MzTVlOTzB1MWRnU0xmYmpETS1Dc1E5NXZZVGk?oc=5"
+   ]
+  ],
+  "first_seen": "20261027-0700",
   "status": "pending"
  },
  {
@@ -1694,73 +1765,6 @@
    ]
   ],
   "first_seen": "20261017-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-16",
-  "ko": "한국 정부, 청해부대 작전범위 호르무즈 해협·오만만 인근까지 확대 검토",
-  "en": "South Korea considers expanding Cheonghae Unit naval operations near the Strait of Hormuz and Gulf of Oman",
-  "ar": "كوريا الجنوبية تدرس توسيع نطاق عمليات وحدة تشيونغهاي البحرية لتشمل مضيق هرمز وخليج عمان",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE52SXBDV0E1Rm52UTJKaFFBRzNEZXRfTVVsNkRrZmloYWN1VkJWZ1B0ZEhmQ2JFX0MyZE5EUXhWNUVUT3ZJU25oZFh3U3QyQ1U4Nm5RcUp4MlphT2lZNE5PYWxUMTZNeVMtSUlqRzgxdGliZVdJMF9wR9IBeEFVX3lxTE9MRW9lNmNEdmN0YnRReVJ5VUpiLWI0a3BkQ0loRmVnUGdBbVlxaTJCQ2xjUDBUWEtVdkdwV0FiZzJDUmo2SFZKbEJDcHZhbVdTaEVPWk1QbW1ESWZNV1Jhc2YwaTlDQ1R1QXhXa1RPWVdNZnVnTmFlRw?oc=5"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE5LRWo2ZGFhUVd6N3V5LVR6VzVvQ0xRTzF1V0V6MkhncXdVR3ZFUWRaTEEtYnoxcU53YklpWlVxUmRCNFR1R1lFel91a0Z6dmV5OHl2dDNRbmJvUW1kUlBmVHF3RDV3czZLMkNMS0xSTHFrUHhfbFY5MdIBeEFVX3lxTE5LRWo2ZGFhUVd6N3V5LVR6VzVvQ0xRTzF1V0V6MkhncXdVR3ZFUWRaTEEtYnoxcU53YklpWlVxUmRCNFR1R1lFel91a0Z6dmV5OHl2dDNRbmJvUW1kUlBmVHF3RDV3czZLMkNMS0xSTHFrUHhfbFY5MQ?oc=5"
-   ],
-   [
-    "KBS 뉴스",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MYkJuTDNDM3VEUjR6aTNURnZYV2JLLW91QWVfM2U0djFCcVUwTHJTWmhtUFVlUjc5d2h1SzhLckY2X3MwYnlzQmRjOWhiUWNhOFB5QjI3TU1pd2c?oc=5"
-   ]
-  ],
-  "first_seen": "20261016-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-16",
-  "ko": "오만해(호르무즈 동쪽)서 위치추적 끈 유조선 화재 발생 — 이란 해군, 제한구역 무단진입 '위반' 유조선으로 지목·경고",
-  "en": "Tanker fire reported in Gulf of Oman east of Strait of Hormuz — Iran's navy says vessel had disabled tracking and entered restricted area, issues warning",
-  "ar": "حريق في ناقلة نفط شرق مضيق هرمز في بحر عمان — البحرية الإيرانية تقول إن الناقلة أطفأت نظام التتبع ودخلت منطقة محظورة وتصدر تحذيرا",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdXJjbkNhQkF3Y3V5UEZIaC1lTjk5bUJqTXFTTkdfTzY4ZVpBVnoySFlmM0NRZUY0QkVYSXBiUHNTUmJGQW52LXhLU1EwY0ItMHJfT0hkS28ySFJUVnBrSkswSnZGN3l5dF9qdVlnbUlLZk5pTUM3NXkxVFl0a0RNUTVNN05zZ3pSV1R4N21VUEozVmtCb2pwaE8xN0xmRmZxbE8xc1l0TG1nQzBtUUhqNDhEZ09zLW1sZVZyMVlyTdIBvwFBVV95cUxNdXJjbkNhQkF3Y3V5UEZIaC1lTjk5bUJqTXFTTkdfTzY4ZVpBVnoySFlmM0NRZUY0QkVYSXBiUHNTUmJGQW52LXhLU1EwY0ItMHJfT0hkS28ySFJUVnBrSkswSnZGN3l5dF9qdVlnbUlLZk5pTUM3NXkxVFl0a0RNUTVNN05zZ3pSV1R4N21VUEozVmtCb2pwaE8xN0xmRmZxbE8xc1l0TG1nQzBtUUhqNDhEZ09zLW1sZVZyMVlyTQ?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbW1TRm53MzQwNmFHcnlyZ2tCVXRLUk81UTQzcW5td3pmTWNlRS0wR0xXOTVSY09hcllTRF9KZGM2VXVQZ3k5QWp0cWNSUHBfaGNpdzl2aGxWYVJGbEQ2Zm5KLWE5S1VYaGdVLW1leUN1ZUN0NTBtVklwcUVRYy10VERwa21neUJzQkpEdGdHQUd0X2lWM3lhS1JJdWNoVDlOZUllVDZJVGdVYWM4eTk3bkw0WFU0UQ?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irans-navy-says-oil-tanker-detected-fire-gulf-oman"
-   ]
-  ],
-  "first_seen": "20261016-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-16",
-  "ko": "이라크, 미·이란 확전으로 인한 경제적 손실 600억 달러로 추산 발표",
-  "en": "Iraq estimates economic losses from US-Iran escalation at USD 60 billion",
-  "ar": "العراق يقدر الخسائر الاقتصادية الناجمة عن التصعيد الأمريكي الإيراني بـ60 مليار دولار",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYlRmQzZQNHRvUTVveS1sZ0RIX0ZIcEZpRHlwczA1Uk5IUG9qTnVWSzhVaHVSdmd4NHd0cVVXSmlOVkJ5VkcxbV9pRHJ0aEdUY09tcENlUmRBMnJTNmV1bGtBRVF6N04yZDVXZWQzajJ2RjM2QXRDODdkMTZ5eEIyaVZFTnJUZHVMejlTR05WTWJhTFBuTmlQRE5aVm04T1ZhZ2IwaXQtelByMDh4Vk5SQnFFNmFqajN5OU5HeQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261016-1530",
   "status": "pending"
  }
 ]
