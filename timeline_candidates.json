@@ -1,5 +1,127 @@
 [
  {
+  "d": "2026-10-28",
+  "ko": "후티, 중동4국 회담 직후 사우디 국방부·정유시설 공격 주장 — 역내 평화 공동성명에도 긴장 지속, 사우디 최대 정유시설 공격으로 국제유가 재상승",
+  "en": "Houthis claim attack on Saudi defense ministry and major refinery day after regional 4-nation summit — tensions persist despite joint peace statement, oil prices surge again",
+  "ar": "الحوثيون يزعمون استهداف وزارة الدفاع السعودية ومصفاة نفط كبرى بعد يوم من قمة إقليمية رباعية — استمرار التوتر رغم البيان المشترك للسلام، وارتفاع أسعار النفط مجددا",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oWjFXVjRSR05QVENrWWNlbXJPUkJ3bFFGckhUYnYwVXRaT3RQZ0RHRy1ZaVZlVkNTZFpTZ0MzbnZqTllIM3kyMkp0R1FxSGlSbk15THVkZjRSQQ?oc=5"
+   ],
+   [
+    "경향신문",
+    "https://www.khan.co.kr/article/202610282043005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+   ]
+  ],
+  "first_seen": "20261028-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "이란, 호르무즈해협서 또 기뢰 피격 주장 — 한국 해운사엔 '규정 위반' 경고 발령",
+  "en": "Iran claims another mine strike in Strait of Hormuz — issues 'regulation violation' warning to Korean shipping firm",
+  "ar": "إيران تزعم وقوع هجوم آخر بلغم في مضيق هرمز — وتوجه تحذيرا بشأن 'انتهاك اللوائح' لشركة شحن كورية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "경향신문",
+    "https://www.khan.co.kr/article/202610282043005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+   ]
+  ],
+  "first_seen": "20261028-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "브렌트유, 10월 두 번째로 배럴당 116달러 돌파 — 후티 공격·미·이란 전쟁 재개 위협 속 상승",
+  "en": "Brent crude tops $116/barrel for second time in October amid Houthi strikes and renewed US-Iran war threat",
+  "ar": "خام برنت يتجاوز 116 دولاراً للبرميل للمرة الثانية في أكتوبر وسط هجمات الحوثيين وتهديد تجدد الحرب الأمريكية الإيرانية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/248994/Brent-crude-price-tops-116-per-barrel-for-2nd-time-in-Oct"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxON0ZQWGd3MURSX1JkR05Kd0NkZ0FlbFpCdjFZSzhqVE1GVkJlU0p4bVg0UlJsOGhFWmRwZHFjY2NMNXRHeTNSZzhXanZTLVFrVVVBMml6X3JjNXNZaDBFMGs3TndLdXRWNFdLM0lRNjk0eTg0NkswalJrenBwaVVIUUdfRUptb0s1Z0U0YW9VeG9TMjBPbkNjQXNrTGhlU05JOUQ5U2dHRTFhY3IydTNjMnB2dWQ1Wk5ZMWdPMmcyNWEyUTZMOHc?oc=5"
+   ]
+  ],
+  "first_seen": "20261028-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "호르무즈해협 유조선 기름유출로 UAE 해변 폐쇄 — 샤르자 전 해변 봉쇄, 정화작업 지속",
+  "en": "Oil spill from damaged tanker in Strait of Hormuz forces closure of UAE beaches — Sharjah shuts all beaches amid clean-up",
+  "ar": "تسرب نفطي من ناقلة متضررة في مضيق هرمز يجبر إغلاق شواطئ الإمارات — الشارقة تغلق جميع شواطئها وسط عمليات التنظيف",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/28/hormuz-oil-spill-forces-closure-of-uae-beaches?traffic_source=rss"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNkwtUlV4VTBHZTQ0MnFsb3l4MEVKMUNQNTlvekpXY1JxaTZHdnNYdDROWDc2UldYcHZfbFlrOVZOVk9Sa2VjUUtHUEYzb3NtZEhGOWU3bkUzS3VqUnQxQ2ZxYjZ2S09Sb2syLUM0cGx5bDR6TTB3YTIzSTFOZVN3VUVrWkdCcjhaLVlUXy15WmpvemlBN21QcHUzNnlyTzBkdDhOLWhocw?oc=5"
+   ]
+  ],
+  "first_seen": "20261028-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "WSJ, 미 중간선거 후 미국이 걸프국에 '짧고 강력한' 이란전 재개 가능성 경고했다고 보도",
+  "en": "WSJ reports US warned Gulf states of possible short, intense renewal of Iran war after midterms",
+  "ar": "وول ستريت جورنال: الولايات المتحدة حذرت دول الخليج من احتمال تجدد قصير ومكثف للحرب مع إيران بعد الانتخابات النصفية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYXd0OHZEUnBrMFNkRjJ5dHFUakFsTDU0NUxhdzhQUnpPQ0JxMllJanhoeVFQWm1GMmk2RkRUdDFWLVR2N0VwczZOQmZmbG9BanpUSTE2VEhnSS1xd29mUzFzbEdRTVBDWGRSOW1hRW41WU04eE9OSUo4QmFoSG9DUUhUNi13bzNkbEZaWlFUaVUzUzZPWGtMc2JDeEZyODg2Q09JdFZBekl1WnNJdDVBYnZQMzhieGt4bjFuOFZnMA?oc=5"
+   ]
+  ],
+  "first_seen": "20261028-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "카타르 중재 종전안, 이란이 '수용 불가'로 거부 — 이란 고위관리 '새 제안 없었다' 반박",
+  "en": "Iran rejects Qatari-mediated war-ending proposal as 'unacceptable' — senior Iranian official says no new proposal was presented",
+  "ar": "إيران ترفض مقترح قطر لإنهاء الحرب ووصفته بـ'غير المقبول' — مسؤول إيراني كبير ينفي تقديم اقتراح جديد",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/news/iran-rejects-unacceptable-proposal-qatar-end-war-us"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMifkFVX3lxTE1lem9tb1QwUDdzdGVId2ZLZXBTc0tsTGs1aTdHS29mRjR1di1IOThPYVFLQUp6MFdoN3VBZF9GWWZzQVp4RmpRQTFucmhOMEF6eUZpdXpCa05SQjlkVVdhbFJOVnFBMDVXaFg0WDBfZi1nQmsyYnVCdXhFQmVRdw?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTE0yeTBHT1o2M1VGTlhnbVpOZjMwSVJvaERmamV6U2NUWnZtWE10ajVob3NBM2dQWGFhblppVHpjRW1CcVkxSDExRnZQdHhkNGdfTHVoVWowQ1VKUWtoZ1E1TUJ4YlpaenA4SGV2dlI1RFUwcTFBUDM5TnlyQQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261028-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-27",
   "ko": "사우디 주도 연합군, 후티 드론 4기·탄도미사일 3발 요격 — 사우디 남부·동부 지역 겨냥 공격 저지",
   "en": "Saudi-led coalition intercepts 4 Houthi drones and 3 ballistic missiles targeting southern and Eastern regions of Saudi Arabia",
@@ -1651,144 +1773,6 @@
    ]
   ],
   "first_seen": "20261018-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "UAE·이집트, 반후티 진영 재결집 공식화 — UAE 사우디 군사지원 재개, 이집트 '필요한 지원' 제공 발표로 예멘 전선 확전 기로",
-  "en": "UAE and Egypt join anti-Houthi camp — UAE resumes military support to Saudi forces, Egypt pledges 'necessary' support, raising risk of Yemen war escalation",
-  "ar": "الإمارات ومصر تنضمان لمعسكر مناهضة الحوثيين — الإمارات تستأنف الدعم العسكري والسعودية ومصر تتعهد بدعم 'ضروري' وسط مخاوف من تصعيد الحرب في اليمن",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/18/egypt-to-provide-all-necessary-and-possible-support-to-saudi?traffic_source=rss"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaUZDbW1Tc1RtQl9mamtjSzFTVnJFX1dKdF9PcFkxclNxaktCa1ZvQXAwN25qZktIbVhMMzk4SjNqV0ZYRFVXSVNFamwzaGhQR2NUS2NmMDd0VTdxMEREMEFiTjNUWVlrX3BoQ1pXckhoM0VTVmtZYlhKNlQyZWZBZlhEX190ZnVlbEJfaGlKSUpBOVhlOS0wWHdUbDltVTh0QmM2VjJfaXoyb1ltdHdFeXhRdnFFWmVDdXRTSTBDOV9sMWvSAcgBQVVfeXFMUE1uRUZ6SFhBZ1BuU0FLUFZIWHBvc1o3dGVUZFMyWlRYa1FteUZDbzB2WklWQXZPcVlSVlZ2OTRFY08xTWtDY2xpWVpfT0hhZkxnci1oSDNrMG0xYnVWM0JwUXNLS1JxWFhWSmd2VjlLMWxxenIxd1g1cjZ1UWlncHBqOGV6bW1VcDcteXNmekFLeFhyaC1sY0s5VE5Sa05KZzNNSkdtOXlPelR6cU9BY2NfMzN6ZE1MTEpqam4yNnUyQXppRWFkZXQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261018-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "이란, 신임 국방장관에 메흐르다드 아흘라기 케탑치 임명 — 미국 공격 시 '엄청난 피해' 경고",
-  "en": "Iran appoints Mehrdad Akhlaghi Ketabchi as new defense minister — warns of 'enormous damage' if US attacks",
-  "ar": "إيران تعيّن مهرداد أخلاقي كتابجي وزيرا جديدا للدفاع — يحذر من 'أضرار هائلة' في حال الهجوم الأمريكي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/18/who-is-mehrdad-akhlagh-irans-new-tech-focused-defence-minister?traffic_source=rss"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi0wNBVV95cUxPNzJ2ZmVYMHlkWUlxcHRqTXp0ZnlsdmExSFNobjdzTHdCR2hTS29BWHJ5WWFnSDFTeFVIV2RzeERVWTlzZnp4SWNvNGFNUURQMG5lSG9HcVJaWDBpOHNldkNGWlplTFViWV9GME1oN0lhYkk0NGYzTks5QTBjQ1FLc2dqeVVqaGNlS1I0ektIYlhMMjluc1RuaWpCOEFNa0t6MXpRbnRsTzZIQ1RIR0E1bTBSanVrcmw2NmRBejlNeDFlTlZ1TVVYak90ajRsTFpWM19VZmRLVV9kQ0luUGV5Y3hreHZEc2JJdnkwTnRnQjRUZkwxWUU3WF91VTB6S1I1enpEdExkUUJ1ZUVjbHJoYm0zN2pTbFpJeks1UFNDcjdyeDVLNUItalY5QTEwX0tQV3R1c2FfbnZPbG9uZ3RzSklRb0huMlA4UkxxczAtQkNrZHVodi1BU3UtNkowckh6Smh2WnFnR182WkNTd1VZZ0hVeVNmYnJjT3JKSFZKZm1sb01TMlgtaDBjQVV2alBrY1JvS2F1ZU9hMThhTEs3bEVsTFJoSHZMTFFpQVY0NFFUNGtUZTFZcloxN1hZdTdVejNzVjhWOVJodFdpSGxXWW1pSQ?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxNT0prMlFzOFlqazh1bk4xbFgzM2RGYlE5UjdqZkJyVGdjQXFjUHNIODJBYzlNVG9uUkFzekFtbmpvYzU1VGxlZlRkUnA1ZV84cnJ3OHBWX1hLbEtPZzNJNFdBcS1DSnVqMFFkQXN0UDMyRXFoOG5iQ2xsU3IxTm5xM1hvRlMwQ2hCd1dzSjVnaC1ybkJZemFqNmxieUJxcFR4WnVjaTN4d0hWajFYQ05ZZ2dpbERUdGxmVmwwajhlZw?oc=5"
-   ]
-  ],
-  "first_seen": "20261018-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "이란 외무장관 아락치, 미국이 조건 수용 시 호르무즈해협 7일 내 재개방 가능 발언",
-  "en": "Iran FM Araghchi says Strait of Hormuz could reopen within 7 days if US accepts Iran's conditions",
-  "ar": "وزير الخارجية الإيراني عراقجي: مضيق هرمز يمكن أن يُفتح خلال 7 أيام إذا قبلت واشنطن الشروط الإيرانية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "CNN Arabic",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNWpTYUdyeUdoUlVidFpXbTdyQlVqb3NTYl85SjdBS3R2ZlUtWVMzemR3Y3ZrNVpHQVhLeDlSemI1YVhrSzVFSXpoc2ZickZoZ3oxMFppcElWZ2dZNm50ZEl6NzZyRkZBOS1XaVlQalZoeWFERWd0dkp3ZkxCUEhyYU1MN3UwaWpBZHBDOXl2T242dEhKOHI3c1NScF83U2hOYnVvUmpnN1IwNzAzNGNkcjBqUQ?oc=5"
-   ],
-   [
-    "News18",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxPM0ZBd3F6OFZqb2JBZzk1Wl9Xa3dNUnVPdmNHSmlqaUVtMm1MODBkbEpHcUhlekVJUWlUcmg5T2FseW5UNzB2SnFoOFB4UFBrRVV5ZVFidGg5U0drZk0tZEIzMVBydjdsQXRLM1dFNzJoMEVmdmxkcXFpdGdteHBxNVZzZTBpc2FjLXdkd1VhcEVCWU5yeF9DTkRfUmNvUzRvY01ka09DLVg1a1o0djJPcWowcGhsSEVhMVAtazNMMG9naTRYX1lR0gHMAUFVX3lxTE14RmJkYTJvU2E1RkJvYm5WQmxWSEJ2NHJURG85TVZhQ0lza1BfSDRVWGhpUTBydjlMQmRaWXloU3BXRUtxWkViTk5GN2RYdzNUeGpiLUdOX2VQaVVPZzBiTFZPajEwZFdsT1FBTHVGeTBHU2NsUFZrUUtWcnJBbkpacTNTSExRbTFTbWtWZlo0WXhELU1hM21qd25MaTZ0bjlMNnhUR1Z0NnhNbzRDbHBib21MSVlBZVhZYjJPa0sweTZuTUoxRzJ6RldWXw?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/248682/Hormuz-Strait-to-be-opened-once-US-accepts-Iran-s-conditions"
-   ]
-  ],
-  "first_seen": "20261018-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "사우디 나즈란 거주지역 적대적 발사체 피격 — 민간인 6명 부상",
-  "en": "Hostile projectile strikes residential area in Najran, Saudi Arabia — six citizens injured",
-  "ar": "إصابة ستة مواطنين جراء سقوط مقذوف معادٍ على منطقة سكنية في نجران بالسعودية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNGRqemdlQkRxQ2tJdGN2NnJvejdBYmJpcnp4bGs5ZGljbDB3Z1pURzRpanFLdUU0bF9ZMXRyM0R2MFpuREhWU0J4STNkN0F1M3FrTTZKRWVVVnVnMDI0b0V1QmpDWjV0a2NtUkhCOVJrYmItYWxvaHJuT1h6aDNQUTZWOHQ2SksyYl9HbHd3bHY4UU1zb1Nhc09Va1VVX2VJZjJjT1RtOUFIRHA1d20tRFN5QWlFYU9KbXdEcXl3OA?oc=5"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUUtZLURHNThmSlZIMURNSXF2YlByNkhJUWV4dE9WTmNfZ1daMS10Qm13bGMtcXc3N25meHNiMTJPLUdiLWhQREtYMm5HYjFvS25fWUpoamd6RVFDSDNNQnBsME5FajV1bDNXNzhFZnh5eXA1MWh5ZGhKbE1rRUJHNnExUTFOaVVTLVFralRrNmNaeThCM25OVUYyanV3SE9Nd2FFaVhnY0tFV2I2MXNxb3ZlcXBWUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261019-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "사우디군 헬기 추락으로 군인 2명 사망 — 후티 측 격추 주장",
-  "en": "Saudi military helicopter crashes, killing two soldiers — Houthis claim they shot it down",
-  "ar": "سقوط مروحية عسكرية سعودية يودي بحياة جنديين — الحوثيون يزعمون إسقاطها",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9wYkFZb3Y2MlNfazI3T0NkVV9VTWlXZC1USmJWYW92U0MzWTRwRncwTTJwbGRxMXplazQ1LXl3U1Nnd0VuRlo2ZmhVRGJCeGxUQW5MMlVRT25MaGhEV29iWWVldnZ4aHJtcXU4WGw0VDhRMUJF0gF0QVVfeXFMTmsxc2g0QUdXa09hSnM5NVJhSGFUSW1TMjc4RWpRbGRDQnRGbWI2RFV0aDdKQjZkRGpUdXY4M1ZQQ0VSUmxhWUt0U2doa0tfajZqcGhTbTNNUW5fZDRKSWV4NWpOZkhFS1k2R1lnVUx3Q2xUNFY?oc=5"
-   ],
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vTlFGTkJoSVV3QlVKblhlOUVEMGp3bXlNamdXd3lRNS1kLVdoZ3NBblgzVTRVTnk2cThWaG91MkJWMWRUQmF3ZWo0UFpXSnBVcVIxMlNrc1NvbDU2UHdIWTBOWXRqLTkwVDVEeWs3VU1adEE?oc=5"
-   ]
-  ],
-  "first_seen": "20261019-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "사우디 공습으로 후티 9명 사망 주장 속 예멘 24시간 내 사우디 공습 110회로 민간인 다수 사상",
-  "en": "Saudi strike reportedly kills nine Houthis as Yemen reports dozens of civilian casualties from 110 Saudi airstrikes in 24 hours",
-  "ar": "غارة سعودية يُزعم أنها قتلت تسعة حوثيين بينما أفاد اليمن بسقوط عشرات الضحايا المدنيين جراء 110 غارات سعودية خلال 24 ساعة",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbnEwS1N1SlJjY0FFZkptQ0FXSVhyS0FXbV84elA5SzlmZWU2SUZ1SGlXMFRHZGFGMi1jRWVrTmd4d0l1QVk0bVY5c2lfWk1BNi1KY1RPUk9ja0RBUkpHRUlmc1V6eTVEbThzNk9WRldXZjJoR0NtcnBTRW1QNjlGX1Y3MU1LVktFdGN2OUFQM0lPeGI5Uk8yVG9ueFpzYlNXTTFibWVrYmjSAa4BQVVfeXFMT3dJWVBpR0tJd3FNbDVZZTJSR2tkaDUwd2JxTFlDQnpOZzZQMFB6ZHRieFNGOG5VN0ozSXg5MUV1Q3RwcHNUWV9DSG9hblcwNVA4Tm9VWW1PZzhacDJ4X2ZIaVdlRE93Wno1R2tHWkN1Z1NHYXRxWXFzdkYxQjFNeHJSX1dSeTlKYkFIdU5wTkZVV0d2a21IOUlUQUQ0U19udjNpekpiOHBZU2N6ZXdB?oc=5"
-   ],
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMijAFBVV95cUxQU3czSXplb1BTMXk0TWFJcjJwMmx4dUtRcVhnVmJXYnRxdzVIYl9pVGJVbEVUWWNVZFBWYUhYUndaLXJxOE4yR29wUXlwN09pREwydXlYM3NJTFU1Nzh6aTI1YjYzbDFHbEF4VkstSDM4Vk1yb1AyLV8xdVVzMGd5aXlLYzR5dEFscy1RYw?oc=5"
-   ]
-  ],
-  "first_seen": "20261019-0700",
   "status": "pending"
  }
 ]
