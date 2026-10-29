@@ -25,6 +25,69 @@
   "status": "pending"
  },
  {
+  "d": "2026-10-29",
+  "ko": "호르무즈해협서 유조선 3척 기뢰 폭발 — IRGC, 미승인 항로 통과 시도 중 해상기뢰 접촉·화재 발생 발표",
+  "en": "Three oil tankers explode after hitting sea mines in Strait of Hormuz — IRGC says tankers caught fire while attempting unauthorized route south of the strait",
+  "ar": "انفجار 3 ناقلات نفط بعد اصطدامها بألغام بحرية في مضيق هرمز — الحرس الثوري الإيراني يعلن اشتعال النيران فيها أثناء محاولتها عبور طريق غير مصرح به جنوب المضيق",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "CNN Arabic",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRjBJYVYzcWplLUFxdndvcmt5MklRcXZMRlVMNmQ5Z2J2WTcyVW1yNjMtOWNpWjg1cTNLcjhkR1RTaWw5OEM0dl9uLWZobHVGNTFNd2NKOWp0c0Q2em1kT3otRGpuOHFlQm5objlYNXFwOFc4eVliSXAtSzQyNVppMkxKdWVfX2hrYU5zbEI0QzlNNTItLXUyeWhpVWszSWc4MEZ0VnplZkwzNTZMWEk4?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxNc2dqR0tHT2ZrV1FKNmI1RXVhS0lqYjVZdjFxeUVrcjJVOHNPLXBTNzcyVmg3WjdDUWtQZk5pX3dESWxKRWFfMmRfNk55THhpNm52TVZ6SjVQdkx6cFhCN2swaWprVU94ZTBSWThiY0VSbXJfYTJKUFNpSzBWUUxMMXNiUS1wenJsOU80YWt4VjBTSVAtcHc?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249018/Three-violating-oil-tankers-explode-in-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261029-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-29",
+  "ko": "이란 IRGC, 호르무즈 상공서 미군 MQM-170 정찰드론 무사 나포 — 전자전으로 유도·통제시스템 장악",
+  "en": "Iran's IRGC captures US MQM-170 spy drone intact over Strait of Hormuz — seized via electronic warfare, taking control of guidance systems",
+  "ar": "الحرس الثوري الإيراني يستولي سليماً على طائرة تجسس أمريكية من طراز MQM-170 فوق مضيق هرمز — عبر عملية حرب إلكترونية للسيطرة على نظام التوجيه",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86306801/IRGC-Navy-captures-US-drone-intact-over-Strait-of-Hormuz"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249017/IRGC-captures-US-MQM-170-spy-drone"
+   ]
+  ],
+  "first_seen": "20261029-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-29",
+  "ko": "이란군, 40일 교전기간 미군 함정 겨냥 20회 이상 해군작전·약 300회 추가작전 수행했다고 주장 — 사령관 발표",
+  "en": "Iranian Navy says it conducted over 20 operations against US warships and roughly 300 additional operations during 40-day conflict since Feb 28 — commander claims",
+  "ar": "القوات البحرية الإيرانية تزعم تنفيذ أكثر من 20 عملية ضد سفن حربية أمريكية ونحو 300 عملية إضافية خلال النزاع الذي استمر 40 يوماً منذ 28 فبراير — بحسب قائد عسكري",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86306716/Exclusive-Iranian-Navy-carried-out-more-than-20-operations"
+   ]
+  ],
+  "first_seen": "20261029-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-28",
   "ko": "후티, 중동4국 회담 직후 사우디 국방부·정유시설 공격 주장 — 역내 평화 공동성명에도 긴장 지속, 사우디 최대 정유시설 공격으로 국제유가 재상승",
   "en": "Houthis claim attack on Saudi defense ministry and major refinery day after regional 4-nation summit — tensions persist despite joint peace statement, oil prices surge again",
@@ -1722,81 +1785,6 @@
    ]
   ],
   "first_seen": "20261020-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-19",
-  "ko": "헤그세스 美국방, 이스라엘 비공개 방문해 네타냐후와 회동 — 美·이스라엘 대이란 대규모 군사작전 재개 논의 속 이스라엘 총선 앞두고 이뤄져",
-  "en": "US Defense Secretary Hegseth makes unannounced visit to Israel, meets Netanyahu — amid discussions of resuming large-scale US-Israel military operations against Iran, ahead of Israeli elections",
-  "ar": "وزير الدفاع الأمريكي هيغسيث يزور إسرائيل بشكل غير معلن ويلتقي نتنياهو — وسط مناقشات لاستئناف عمليات عسكرية أمريكية إسرائيلية واسعة ضد إيران، قبيل الانتخابات الإسرائيلية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWGk4dUNYcTNsMWZSQjRzbk1VQmxOci03Y3F5TzhMeHlRZl9PZVhxMGZqY2luQVBTUTNSanF0ZHpyYzEyNHZXckVYYllTVUZ5ckxCbmozZk1ILXMxMjhPRkxWM3FveGt6ZjVYSWpzUmhiRWJRdDRfXzN0RlhpaF9UcDBKM1lGLUZHSWFubGRSUlFBNWhuWkEtemhxczlieVQ2cjFYczVZaU1wRDZMb0E2ZHlB?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxQazZTcHB2MlowZzVocmZ0eFd2a19IUDY0WUM4YkV6b3Awai1lTFNzeUxXUFBnWW1yMlVocUdUV1hoNXlXWEFjUy1ndXRrNmVZMnRUNHZUdnRQdldXNGFkU0lxWkVtSDl2TTdNVExtWHFTRW5YTVZ1Q0VjdnhSTW5uN2EtQXM1YXhlNnpxd0VIVThQM3gtTlh1OTNMOE13Q19HMEdQUFJ3Z3NWMlhiMlpMNE14V3hNWGJzWkhLOWd3?oc=5"
-   ]
-  ],
-  "first_seen": "20261020-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "호르무즈해협서 유조선 2척 기뢰 피격·화재 — 이란 IRGC, 각 원유 200만 배럴 적재 유조선이 미승인 항로 이용 중 기뢰 폭발로 화재 발생했다고 발표",
-  "en": "Two tankers carrying ~2 million barrels of crude each catch fire after hitting mines in the Strait of Hormuz — Iran's IRGC says vessels used an unauthorised route",
-  "ar": "إصابة ناقلتي نفط بألغام واشتعال النيران فيهما في مضيق هرمز — الحرس الثوري الإيراني يقول إن الناقلتين كانتا تحملان نحو مليوني برميل نفط لكل منهما وسلكتا طريقاً غير مصرح به",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/18/iran-says-two-tankers-catch-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss"
-   ],
-   [
-    "CNBC عربية",
-    "https://news.google.com/rss/articles/CBMiogRBVV95cUxOdWZtWlFDVERUblVyd1h1c21tVjdqRXBPbVpSOFVsX2llcFZneVFMNGc5MzY5TUlJWlB2MU9EZkEzakd5M3U2UVNTTEZ0RG51NnRSS2FjOW1jVUdkbUVKOXJ0cThIME1xSm5lSXdva0w4eTFBaV84WUpkRWt4YUt6UWNqMk1wLWRvdjVpdi1RalBGSkVWalZCaV8xaGhZeGg2bzNBM2pmWFNOSWMwRF9hSHVXRVlDMTlvaUpreXh4cWdjN3MxRjNnZXR1OW91MV9BWm9od2UzbnlvbVJqaU03UHZwUHhGQVlERHhQVmdqR05nakRMZ2FNRHFFV3Rselo4N010cTEwWncwMlhYOGM0SGRRa3pfSUFFT2IzTWdRRERqTW1raHhRUjlFTHhlNVpGN0VhcGVIU1VjZGtoYV9ldUVXelRHSmFqZUlrY1VnRmpsUXJWc1VKUkRfaVpFRGRkWXpPM0s4U0pGQWhPaVNhcUtMb3BqSXFXU19LZG1qTVlmWk9lUVZocEVmYnEzRVlWRFY1Vi1yUTRTOVZYWE02clJZM01MTXdQazZtaFpwVmlKUTVaSHhfUGxZMTVvd0hKbHN5cUNnRTZYR3pZbEdIU2JPRFp6ZGRpZXRET2ZZbG5qS2lON3BRbkpQbkRRQWViTzRUam5XQjhYLXdQdUoxYUZha3dDNGRrem9HMDlXdG9mMjRwNnVBb3NzaUJVbjZlYWc?oc=5"
-   ]
-  ],
-  "first_seen": "20261018-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "사우디 수도 리야드·동부·남부 겨냥 드론 4대 요격 — 사우디 주도 연합군, 드론 격추 및 호르무즈 긴장 속 공습경보 발령",
-  "en": "Saudi-led coalition intercepts 4 drones targeting Riyadh, Eastern Province and southern Saudi Arabia amid Hormuz tensions",
-  "ar": "التحالف بقيادة السعودية يعترض 4 طائرات مسيّرة استهدفت الرياض والمنطقة الشرقية وجنوب السعودية وسط توتر هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-drones-targeting-riyadh-eastern-province"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/riyadh-residents-receive-hostile-aerial-threat-alert"
-   ]
-  ],
-  "first_seen": "20261018-0700",
   "status": "pending"
  }
 ]
