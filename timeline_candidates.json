@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-10-29",
+  "ko": "미국, 동맹국들에 선거 이후 이란 공습 및 보복 가능성 대비 경고 — AP 복수 소식통 확인",
+  "en": "US warns allies to prepare for possible Iran strikes and retaliation after elections, AP sources say",
+  "ar": "الولايات المتحدة تحذر الحلفاء من الاستعداد لضربات محتملة ضد إيران وردود انتقامية بعد الانتخابات، بحسب مصادر أسوشيتد برس",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSjBaT3BqdnFQYS1UeUNSUWJLTUljTWt3NnBfQkxBUmtGMUVYSXNCaEFBc1djNkhnZXl2SnFHTDNXZ2taRzlVc0FPSmVmb1k2WG45clBiMVdWQ3lYRFRtWTA5Zk5ySGdjcnBJNzBhNFJDQU5iRWlsSXYwMWRpTW1jRlBGVzgxYTJuanlYc3d5dkRDaFoycnBLVWIydFY?oc=5"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261029_0003845895"
+   ],
+   [
+    "연합인포맥스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBRjFVeFVYSDVNR29aSXE0Y2YtVlVfZVB6c0FtVkR0Z1JkOThXRFRJLWI2UjVXWWsxYlVfOHhMeHZJdHFFYVY2alYxTVBrYTVHOEJONmtKS1JPU0s0YmtUR3gzY1hTTWd5RDROTERrUG9YcW5M?oc=5"
+   ]
+  ],
+  "first_seen": "20261029-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-28",
   "ko": "후티, 중동4국 회담 직후 사우디 국방부·정유시설 공격 주장 — 역내 평화 공동성명에도 긴장 지속, 사우디 최대 정유시설 공격으로 국제유가 재상승",
   "en": "Houthis claim attack on Saudi defense ministry and major refinery day after regional 4-nation summit — tensions persist despite joint peace statement, oil prices surge again",
@@ -119,6 +144,90 @@
    ]
   ],
   "first_seen": "20261028-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "미 하원 군사위, 이란과의 전쟁 비용 10/16 기준 471억 달러 집계 — 폭탄·미사일 등 탄약이 전체 60% 이상 차지(미 국방부 발표)",
+  "en": "US-Iran war cost reaches $47.1 billion as of Oct 16 — munitions account for over 60% of total, Pentagon figures show",
+  "ar": "تكلفة حرب الولايات المتحدة ضد إيران تصل إلى 47.1 مليار دولار حتى 16 أكتوبر - الذخائر تمثل أكثر من 60% من الإجمالي وفق أرقام البنتاغون",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Tehran Times",
+    "https://www.tehrantimes.com/news/531620/US-Iran-war-bill-reaches-47-1-billion"
+   ]
+  ],
+  "first_seen": "20261029-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "걸프협력회의(GCC) 정보장관들, 걸프 안보·안정 보호 및 성과 수호 위한 단결 중요성 강조하는 공동성명 발표",
+  "en": "GCC information ministers issue joint statement stressing importance of unity to protect Gulf security, stability and achievements",
+  "ar": "وزراء الإعلام بدول مجلس التعاون الخليجي يؤكدون في بيان مشترك أهمية التكاتف لحماية الأمن والاستقرار وصون المنجزات الخليجية",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiogZBVV95cUxQM1NsLUVfTTFxZjNtRzZvZldUaUtKZnFscnIzOWpWRjBFZVRaS08wbEFlX1E4Q21tYkpqTDBtTE9LVUJSZ3BDQnd6WTlpZ3B3MEVvbzVRYkZuTjE4dkZ6c3d0UkdrODgzZnRaQUlVeGQyNnA1WGxaMmZYNkZON3ZUVkxkaXZoNUlza2daZ0Z4OElzRUp5TzBUc191bzI3NXNUMnBiZTFkODN4enkyc1NpRjh5dkJiTHJqWEtQa0l5SVhwMmdCaU5oREJJUXJMRC1rcTM5X0hVaVVPcUR4MUtnZ0FpbWJaN2dBZm40OHVZcDVOMjM2UExoZDBpTmVDTVZwOWNIOGxDR0VlcC12eXFtaFBacWRSak5mVnpKUFM1SE8xUllOVUV2UHN2cUE4bFQzSDdzeUJmM3BqYlhPQ3BldlRhdW5EaTdQWW12Nk4tWHJodTIyc1Bwa2F6akF0VGMtMEVRcmZ0dnZlZVMzemh2WThfWUhZYWJyWEJxMWJFU1p5d19aaDZKeHFBWXRURTRSY3prWXZlVldvZVlsVloyaGNpc0g0X05aV3hGNDFnVENQSVVDc0FsZnU4RGh0TWx4emFRM2tJaW01YUUtV3hhS1A1SWo5NnVNYkZXVFVSZ05jV0c0ckZnSFZ1OF9aTUNtWF8zdDR1Q1JXYV9QUlYyZjVnMFhDQklwYmM4YzFmbjRxZHlKVWY1Vk8zRTFuTmxCSDdsYXZ0OHZObzZpRHlRdlhqd3ZQdmdXN2J3UEFLUU9JOTVRZGZvQU84UXE2cXdYNDJveUZ0ZWNydnZHbFdsSnNIN2xObUQtSllZQ2hCVnhIYUtjYTZWcjFSekZrTnUzQ0xLWWhOVU9mMkU3NEdDaXlnUU00T0xVaUlkQnFjZ2RRRTc5dV92ZkNJcmptQk9GSGc4Qnk3c25Wa2duZUFObnNHU2dJT2YxZnZSWm1Sak5VRUFHWFBhMTlGZ2kwUEY1cWNoemNyZG5qaVlWQzZmS0JVTU1wNkNoZzV5UzJrazhPUF81MUxzeWVNcDdodHZqQmxicVQ3VHJFRDUxNDdPTXdR?oc=5"
+   ]
+  ],
+  "first_seen": "20261029-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "JD 밴스 미 부통령, 이란 고위 안보 당국자에게 평화협상 재개 제안 서한 발송 — 핵 문제 논의 강조",
+  "en": "US VP JD Vance sends letter to senior Iranian security official proposing restart of peace talks, stressing nuclear discussion",
+  "ar": "نائب الرئيس الأمريكي جي دي فانس يرسل رسالة إلى مسؤول أمني إيراني رفيع يقترح فيها استئناف محادثات السلام مع التركيز على المسألة النووية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNU94Q29pdUFIbXY3Y1V4aUh3RFNiTG5OdkpYYzJUeFQwb2tkTGtCQUlXM2RwdGVTbjJMMEk1NWhTdWZudHZwMWhUa2cyMHJNUjhQVm5fR0hYdGtGczdLcVFXc3FnZEoyaVhiMXlfN0dvNFJTSjNtY3BUOEc5N1FjdTJyUzhLbHF1TXhybUZlcTlnaUEwV2I4OXhsLVJMY3Y4d2pzUm1CeDJid04zT3RZS21ZOE7SAboBQVVfeXFMTjFmLVc3S2kzdFh0Y2doM0FwSHZDWmZwbnNhVEVZbmtXWXkyMWdGdE5JbllmVXVfWHo0ekpsWFdkcmdrX3hiWGo5YVVkU2x1Y29VX255Skx1UHFLb3dNOGFrQ1lldzlWZEFnQ2U1dFFlSlJhdGtTQ1hqbFhTYnRKVnhLdUdiV2ZHa3dwWEg2Z1ZqTGtvYUYxLVdhWHhsVjhOcmF2bHROa0JDc0NkX0JPTl92ZXhZbTJPN3VR?oc=5"
+   ],
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNemZJSjRtc0JweVpHQnlEQmdXV3FWYkJFSUo4RVJPQkhrdTlydXBYdzk2M08zd2QyaVdxRmlfY2xNVGdLaEtPN2dVNkgwam5oZ2ZKRmRnTGZkLXdFTWhCWHhYNTY5YkJNMHBnRXFfcE8zeUo3MVhTTjJVSGRXaWh1bnN0cjBzbTNM?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xRGdOSUNnWlYwNUVMQjBOUGM0SkhZek5ET2F0cWlWcXdZNlpzTWd6dmY5cVJGWExyZFBYdzdvNXBsbFBncDlGTXdMb2wwLVpPdGdVbEJhZTdaZkNxVlcyeXg2MHdQTE9SMlE?oc=5"
+   ]
+  ],
+  "first_seen": "20261029-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-28",
+  "ko": "이란, 중재국이 제시한 새 중재안(핵사찰 포함) 수용 불가 입장 표명 — 호르무즈 재개방 '7일 계획' 조기이행만 논의",
+  "en": "Iran rejects new mediator-proposed deal including nuclear inspections as unacceptable, discusses only early implementation of its 7-day Hormuz reopening plan",
+  "ar": "إيران ترفض مقترح الوساطة الجديد الذي يشمل التفتيش النووي باعتباره غير مقبول، وتناقش فقط التنفيذ المبكر لخطتها لإعادة فتح مضيق هرمز خلال 7 أيام",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA5UkdmbWliWUNKNVpXZXVUWU1HcDR3bVhaNGpEWVlZQWFYb01Hd050Y2pObVh3SnA1T1BreDY2YjhTY0twUVpsZUNVbUpYazFSTGIyWkNNbm5vSmlMQkE?oc=5"
+   ],
+   [
+    "이데일리",
+    "https://news.google.com/rss/articles/CBMia0FVX3lxTE9hZDR1Z1hUUkpTUXNvLWVBcEExcHNVTWd0UDFWdENTek5oYXhxZlk1UHdycEoyVG9hQkFUTEJXZS1PUWZjdzRPWW0wRmh3NTlBUDRzLVZ4T3M4b3RBLTJ3YTVyMGR5aXduMWk0?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/29/iran-war-live-tehran-presses-7-day-hormuz-plan-trump-denies-peace-talks?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261029-0700",
   "status": "pending"
  },
  {
@@ -1688,91 +1797,6 @@
    ]
   ],
   "first_seen": "20261018-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "사우디 추가 요격 — 후티발 미사일 2발·드론 1대 카미스무샤이트 방면 격추",
-  "en": "Saudi-led coalition destroys two more Houthi missiles and a drone heading towards Khamis Mushait",
-  "ar": "التحالف بقيادة السعودية يدمر صاروخين آخرين وطائرة مسيّرة أطلقهما الحوثيون باتجاه خميس مشيط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-two-missiles-launched-towards-khamis-mushait"
-   ]
-  ],
-  "first_seen": "20261018-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "사우디 나즈란서 AH-6i 헬기 추락 — 기술 결함으로 승무원 2명 사망",
-  "en": "Saudi AH-6i helicopter crashes in Najran due to technical malfunction, killing two crew members",
-  "ar": "تحطم مروحية AH-6i سعودية في نجران بسبب عطل فني ومقتل طاقمها المكون من شخصين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-helicopter-crashes-due-technical-malfunction-coalition-spokesman"
-   ]
-  ],
-  "first_seen": "20261018-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "이란 외무장관 아락치, 호르무즈 재개방 '7일 구체안' 제시 주장",
-  "en": "Iran's FM Araghchi claims Tehran presented a 'concrete' 7-day plan to reopen the Strait of Hormuz",
-  "ar": "وزير الخارجية الإيراني عراقجي يزعم أن طهران قدمت خطة ملموسة مدتها 7 أيام لإعادة فتح مضيق هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-iran-has-presented-concrete-hormuz-reopening-proposal"
-   ]
-  ],
-  "first_seen": "20261018-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "예멘 정부군·후티 라흐즈 교전으로 정부군 8명 사망",
-  "en": "Eight Yemeni government forces killed in battle with Houthis in Lahj province",
-  "ar": "مقتل ثمانية من قوات الحكومة اليمنية في معركة مع الحوثيين في محافظة لحج",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/eight-yemeni-government-forces-killed-battle-houthis"
-   ]
-  ],
-  "first_seen": "20261018-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-18",
-  "ko": "사우디 헬리콥터 예멘 국경 인근 추락 — 사우디군 2명 사망",
-  "en": "Saudi helicopter crashes near Yemen border — 2 Saudi troops killed",
-  "ar": "سقوط مروحية سعودية قرب الحدود اليمنية — مقتل جنديين سعوديين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOFVUdmRWVzFVaXFmOUdZMEpBc20wdnpOVU9UU1dFYmVSLWZRQ3pRbHVaSXFQeFZZelVCMW9iRXI5ZE50UXZXTmpjaFBGRnB6VnpYUEp4OEJQb0hBMHBxR3AzY3pKZENiNHlXdUExM3RzYWJsR3Y2SU1DSWhPOS1pSTFCWVY?oc=5"
-   ]
-  ],
-  "first_seen": "20261018-1530",
   "status": "pending"
  }
 ]
