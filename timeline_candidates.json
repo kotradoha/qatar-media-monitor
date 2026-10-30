@@ -1,5 +1,80 @@
 [
  {
+  "d": "2026-10-30",
+  "ko": "호르무즈해협서 유조선 연쇄 피격·기뢰 폭발 — IRGC '무단항로 이용 유조선 4척 기뢰 접촉' 주장, 오만 인근 선박 화재 추가 발생",
+  "en": "Chain of tanker incidents in Strait of Hormuz — IRGC claims 4 tankers hit mines after using unauthorized routes, additional vessel fire reported near Oman",
+  "ar": "سلسلة حوادث لناقلات في مضيق هرمز — الحرس الثوري يزعم اصطدام 4 ناقلات بألغام بعد استخدام طرق غير مصرح بها، واندلاع حريق إضافي في ناقلة قرب عمان",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz?traffic_source=rss"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbDVxeEJiWWk1bDV6LS14SGhkNjI4N3pnb2gtMnhjRVhhLXNZdW45TXJKYW14Z3hoZXM3eTRraUFadlRQTmlIR2Uya2U0UG54M0p1MFQ1SDl3WDlSV2doRGx4RjlmdE01SGdkdjZkNzNfLVJHaXo1cVFoUTR3bjNKbjdVYXRjbkhuYXFYcDlqczF1Q2hxVHhiRlNLRFhucHZjbXp1LWVhNVBlbGM?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/vessel-ablaze-hormuz-strait-25-nautical-miles-away-oman"
+   ]
+  ],
+  "first_seen": "20261030-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-30",
+  "ko": "이스라엘 총선 과반 실패 — 네타냐후 블록 53석·에이젠코트 48석, 연정 구성 교착·네타냐후측 '부정선거' 주장 제기",
+  "en": "Israeli election yields no majority — Netanyahu bloc wins 53 seats, Eisenkot 48, coalition talks deadlocked as Netanyahu's party alleges fraud",
+  "ar": "الانتخابات الإسرائيلية لا تفرز أغلبية — كتلة نتنياهو تفوز بـ53 مقعداً وأيزنكوت بـ48، وتعثر مفاوضات الائتلاف وسط ادعاءات حزب نتنياهو بتزوير",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/10/30/netanyahu-attacks-israels-arab-parties-as-he-falls-short-of-majority?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/can-netanyahu-cling-power-again"
+   ]
+  ],
+  "first_seen": "20261030-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-30",
+  "ko": "카타르에너지, 우드사이드와 20년 계약으로 미국산 LNG 연 300만톤 구매 — 호르무즈 재봉쇄 대비 다변화",
+  "en": "QatarEnergy signs 20-year deal to buy 3 MTPA of US LNG from Woodside — diversification amid Hormuz re-blockade risk",
+  "ar": "قطر للطاقة توقع اتفاقية 20 عاماً لشراء 3 ملايين طن سنوياً من الغاز الأمريكي المسال من وودسايد — تنويع تحسباً لإعادة إغلاق هرمز",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMC02S2x2MGxPSUZfOGppbUZzTHJtWWcwYllRSGEyZXN6TndwZ05jVF82anZxcVd2Tnh6QVFOMEMzRkdJcmdkT1VOQVBsRDNOV3l4OTVsY2x6czRTY2ZlY1RBWWs3ckN4WXdaT2xuZWlidm9rR2ZtTXVlaHlSWERvY0ppMTZ3Ri1FN090RmFZckN1dDltaEE3ZjBJYVNXZUVhMWRVcVN3U2hEeUVtcEJPMkZYeEJIRUdodzRORUlxSXI4bWJWU2c?oc=5"
+   ],
+   [
+    "SBS Biz",
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE15Q0RCaHU2SWxua3dsT0NsT2V4TkNPTU03ZDRHMldlaDUzZnc1eWowR3pYczhyLWFpM09FZ1NRekZLN0dqZnpnT3F1di1HTm1TNUhHMk90M2fSAVhBVV95cUxNeUNEQmh1Nklsbmt3bE9DbE9leE5DT01NN2Q0RzJXZWg1M2Z3NXlqMEd6WHM4ci1haTNPRWdTUXpGSzdHamZ6Z09xdXYtR05tUzVIRzJPdDNn?oc=5"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9RWlBsa0NCd3Q4ZkEzRjFDNjNTSEZnVFdiWTZXOExhZURjMVZTTDVobHpyUXA1MTBmZzAwWFFZVmFMS1gzQkk3dmlrWGFfYkhtN1Jya1laMGpTQ3I0T3c?oc=5"
+   ]
+  ],
+  "first_seen": "20261030-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-29",
   "ko": "미국, 동맹국들에 선거 이후 이란 공습 및 보복 가능성 대비 경고 — AP 복수 소식통 확인",
   "en": "US warns allies to prepare for possible Iran strikes and retaliation after elections, AP sources say",
@@ -85,6 +160,52 @@
    ]
   ],
   "first_seen": "20261029-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-29",
+  "ko": "미군 2명 중동서 비전투 사망 — 펜타곤 집계, 이란전쟁 관련 사망자에 포함",
+  "en": "Two US troops die in non-combat incident in Middle East — Pentagon tally includes them in Iran war deaths",
+  "ar": "وفاة جنديين أمريكيين في ظروف غير قتالية بالشرق الأوسط — يضمهما تعداد البنتاغون لقتلى حرب إيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYVRPSzRlRVc4Q2VvaVJkcU5wM1UzcktoQXhBdnNlTGJkRFB1QnBiM0M0c0FmQVpNX3dBczR6QmE1aUFLY0U3LWprcFdXUGVSQVpIbkRIRmI5QmlKYTZGeXJaUmlDWWdONVFEbENzck42a0h5bXp1Q0ZHejVzanRuTFBpSjhFQzhkNFN3S25FbzdqMFdrV3BVV2k0RG5sRGt5NUFHZV80QTRNSmJiSEh5a19Bdw?oc=5"
+   ],
+   [
+    "CNN Arabic",
+    "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVVEzOGNpQ3J3Y2lpUkIxMktIQzI2bUpkUDhwYVZWU1c3RDMwSl9JX3AwRmdpWFd3MFdrcGxmN01XOXYwaV9wUzFoaEltemtFOVlqMUEzTjlnWlZTNEU5RFV6TF91NlM5TnlJSVEtVjB5OUdDc3V2NE5QQnhFbnVDbzlHZEY1Tl9Rb2NpNDdTemJYLWRfQmpEVG51MkhRLXh5Qy1HcDlmMVJSVGNsazRKVVpqTTlPY25GbmZmcHlYUlJ0bFVDTEthSmc0WGRkbHc?oc=5"
+   ]
+  ],
+  "first_seen": "20261030-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-29",
+  "ko": "미 중부사령관, 트럼프에 대이란 군사옵션 직보 — 미군기 10대 이스라엘 공군기지 전개, 대이란 공습 재개 임박 신호",
+  "en": "US CENTCOM commander briefs Trump on Iran military options — 10 US military planes land in Israel, signaling imminent resumption of strikes on Iran",
+  "ar": "قائد القيادة المركزية الأمريكية يطلع ترامب على خيارات عسكرية ضد إيران — وصول 10 طائرات عسكرية أمريكية إلى إسرائيل وسط إشارات لاستئناف وشيك للضربات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/report-us-sends-10-military-planes-israel-amid-plans-possible-military"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaXg4cWkxb0hZU0FMMnRrNjNhd1VDLVJaN3h5UlhKZ0s4UEZTVmJMXy1YUDlZc2hySkJ2VjZYX1RLR3BuaF8zU0UxRDBMc3JqS0psbUFPdjU2dFRmeUY3dDN0T0RUMUJCdWVPX3VuZTB5dEV1WWN1T3kwdE1ESldvSXZCN2hjWGZ5LXlSM05hM0wzMkxweW9BcHVDNDdYMHRUSElNZ2hFYWFQY3RTeC1YdNIBtgFBVV95cUxQVGtUTHVaSDAyNGo0cUlROTcwWk5GYXRwUlZST214WUZuMmtKWmZic1pVM1k1UE8wcUM4OTJxMGM3WVE0WVd1WVF1amRGLUxKb0dBeTY0cE5sQlBHTDFSSEJoUlBmNW54MENFZHVOUkpvdEVIazgxRC1xdFZ6dXBrMmFPSXNFOWdiMFV2VlBJMk1qRVhaMjNzSmRELVVjODdzZ190ZlhNWkdKd29aQXRnTFVxSHI2dw?oc=5"
+   ],
+   [
+    "Axios",
+    "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX2pVTGZCQ3oyNjhZekVWemhzeGwyR0t5TFlFbS1IcTZTZmlzQXg4RkVVN0JXcloxbFBFZlF3V2ZXUTIyUS1IeDROcERqTnJaYXNnMFlxM25oUkxQRl84bUJrVUFqMUxQRVJ0anJCYTkybUItMmxFaFR2NzNMZWswRGh3dw?oc=5"
+   ]
+  ],
+  "first_seen": "20261030-0700",
   "status": "pending"
  },
  {
@@ -1680,111 +1801,6 @@
    ]
   ],
   "first_seen": "20261019-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-19",
-  "ko": "카타르 부총리, 이란전쟁발 에너지 충격이 아직 정점에 달하지 않았다고 경고 — 호르무즈 통항료 부과 거부 및 테헤란과의 대화 촉구",
-  "en": "Qatar's Deputy PM warns global energy shockwaves from Iran war have yet to peak — rejects Hormuz transit fees, calls for dialogue with Tehran",
-  "ar": "نائب رئيس وزراء قطر يحذر من أن صدمات الطاقة الناجمة عن حرب إيران لم تبلغ ذروتها بعد — يرفض رسوم العبور في هرمز ويدعو للحوار مع طهران",
-  "q": true,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/19/qatar-warns-global-energy-shockwaves-from-iran-war-have-yet-to-peak?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261019-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-19",
-  "ko": "이란 IRGC, 호르무즈해협 상공서 美 MQ-9 드론 격추 주장 — 호르무즈 해저 인터넷케이블 7개 언급하며 '새 표적' 경고",
-  "en": "Iran's IRGC claims it downed a US MQ-9 drone over the Strait of Hormuz — also cites 7 undersea internet cables in Hormuz, warning of 'new targets'",
-  "ar": "الحرس الثوري الإيراني يعلن إسقاط طائرة أمريكية مسيّرة من طراز MQ-9 فوق مضيق هرمز — ويشير إلى 7 كابلات إنترنت تحت المضيق محذراً من 'أهداف جديدة'",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-it-downed-us-mq-9-drone-over-hormuz-strait"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZmhzeHVfQkhqTVRucndFVW1BdXdiY05nMllMNXk4TmpNcm52XzhJaG9SRk9KVnVyVHRXaGdObHJ4QnZqVDhoMnROX2p0UzVlY1VUdl8xWXBKV080VEhjZzlGeFRpWWZwNGRocXhTWlEzeGRKVHgzSmNzOXdvTWNreFh6dW5FTkQ3T0l2M0w4VTV5cmdmMy1jamNZX1VwTWxEOVJld1ozT00zT1hSY3pvVTRaV0dUQmRaUFMxS1hBcXByWmw0VVNDOWZ1S09iOWJqSmc?oc=5"
-   ]
-  ],
-  "first_seen": "20261020-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-19",
-  "ko": "사우디, 후티 공세 격화로 '2026 다보스 인 더 데저트' 투자회의 2027년으로 연기 — 정부 재택근무 지시, 항공 운항 차질",
-  "en": "Saudi Arabia postpones 2026 'Davos in the Desert' investment conference to 2027 amid intensifying Houthi attacks — orders government work-from-home, flight disruptions",
-  "ar": "السعودية تؤجل مؤتمر 'دافوس في الصحراء' للاستثمار 2026 إلى 2027 وسط تصاعد هجمات الحوثيين — تأمر بالعمل من المنزل وسط اضطراب الرحلات الجوية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/20/saudi-arabia-cancels-2026-davos-in-the-desert-amid-houthi-attacks?traffic_source=rss"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4RUhJNWdlMm9kaXlDSkxkMEdwYnp2T1JQVkhsa2swX3d2TTJwMHFnanFfTl9hejNHeXMxN050Q0xwUVUtZUl0Q1Y2YUVEd2xRYmo5MWVpRGtvdW9HbGxsdnJ2YnZDMG1DM2NycVJoMGtRRGxGVGdrX9IBeEFVX3lxTE5GdTVCcUhSd0ZyYXdENWo3Y1doVWRVQnkwM1BDdjV6MS1ORVNNNUo5b1pTanJkNl9iS3hzVHQxR3J5SVppblJwNktTcGNKWExkWXNQZUxrWG9pSlAxbWRabm5fb1ZxWWFXSjhZdkthaWc3UTdlQ0JXRg?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261020081700009"
-   ]
-  ],
-  "first_seen": "20261020-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-19",
-  "ko": "후티 반군 공세로 사우디서 50여명 사망, '최악의 위기' — 예멘 알알람 기지 탄도미사일 공격으로 사우디군 헬기 추락 2명 사망 포함, 사우디 하늘길·출퇴근 마비",
-  "en": "Houthi offensive kills over 50 in Saudi Arabia in 'worst crisis' — includes 2 deaths from Saudi military helicopter crash after ballistic missile strike on al-Alam base in Yemen; flights and commutes paralyzed",
-  "ar": "هجمات الحوثيين تقتل أكثر من 50 شخصاً في السعودية في 'أسوأ أزمة' — من بينهم قتيلان في تحطم مروحية عسكرية سعودية إثر هجوم بصاروخ باليستي على قاعدة العلم في اليمن، وشلل في الرحلات الجوية والتنقلات اليومية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4RUhJNWdlMm9kaXlDSkxkMEdwYnp2T1JQVkhsa2swX3d2TTJwMHFnanFfTl9hejNHeXMxN050Q0xwUVUtZUl0Q1Y2YUVEd2xRYmo5MWVpRGtvdW9HbGxsdnJ2YnZDMG1DM2NycVJoMGtRRGxGVGdrX9IBeEFVX3lxTE5GdTVCcUhSd0ZyYXdENWo3Y1doVWRVQnkwM1BDdjV6MS1ORVNNNUo5b1pTanJkNl9iS3hzVHQxR3J5SVppblJwNktTcGNKWExkWXNQZUxrWG9pSlAxbWRabm5fb1ZxWWFXSjhZdkthaWc3UTdlQ0JXRg?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261020081700009"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261020074700704"
-   ]
-  ],
-  "first_seen": "20261020-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-19",
-  "ko": "후티 반군, 48시간 동안 사우디 내 6개 표적 공격 주장",
-  "en": "Yemen's Houthis claim six attacks on targets inside Saudi Arabia over past 48 hours",
-  "ar": "الحوثيون في اليمن يعلنون تنفيذ ست هجمات على أهداف داخل السعودية خلال 48 ساعة",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-houthis-claim-six-attacks-targets-saudi-arabia"
-   ]
-  ],
-  "first_seen": "20261020-0700",
   "status": "pending"
  }
 ]
