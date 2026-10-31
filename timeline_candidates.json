@@ -1,5 +1,56 @@
 [
  {
+  "d": "2026-10-31",
+  "ko": "호르무즈 해협 선박 통항량 전쟁 전 대비 70% 감소 지속 — UKMTO, 공격·항행방해 지속 발표",
+  "en": "Hormuz shipping traffic remains 70% below pre-war levels — UKMTO reports ongoing attacks and navigation interference",
+  "ar": "حركة الشحن في مضيق هرمز لا تزال أقل بنسبة 70% عن مستويات ما قبل الحرب — مكتب العمليات التجارية البحرية البريطاني يفيد باستمرار الهجمات والتشويش الملاحي",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/hormuz-shipping-traffic-remains-70-below-pre-war-levels-ukmto-says"
+   ]
+  ],
+  "first_seen": "20261031-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-31",
+  "ko": "중동 비료 수출 70% 급감 — 이란 전쟁으로 공급망 차질 심화",
+  "en": "Middle East fertiliser exports plunge 70% as Iran war disrupts supply chains",
+  "ar": "صادرات الأسمدة في الشرق الأوسط تنخفض 70% بسبب اضطراب سلاسل الإمداد جراء الحرب الإيرانية",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMDJEcGZ2akk1ZnFLcHJoeUNUSU5TZWdTVEk5NHVJOS1WLUZhX1ZWRVlKcThMTHYwSTZETXBBbmh0Xzc2RmpjU29aTnNNVHIwLTJSQTRleUlPc1ZKQnZPdnhNTE9zMjVuQXh0YjBWSFZZUG5pRElfMUR4dWdFNFZLb0JFbjc4bk1ITTlqV1Vfd25ORm1hUjVfOGt5STZSS0Z5YkkyLXh5UGlJUHl1NHhDbkhLVWIxSHozSmRVbGxkM2dwMnI1U3ZDaFloUG9ldTg?oc=5"
+   ]
+  ],
+  "first_seen": "20261031-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-31",
+  "ko": "독일 메르츠 총리, 이란전쟁으로 유럽 경제적 비용 1120억 달러 발생 발표",
+  "en": "German Chancellor Merz says Iran war has cost Europe over $112 billion",
+  "ar": "المستشار الألماني ميرتس يقول إن الحرب الإيرانية كلفت أوروبا أكثر من 112 مليار دولار",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/merz-says-germany-working-end-iran-war-has-cost-europe-112bn"
+   ]
+  ],
+  "first_seen": "20261031-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-30",
   "ko": "호르무즈해협서 유조선 연쇄 피격·기뢰 폭발 — IRGC '무단항로 이용 유조선 4척 기뢰 접촉' 주장, 오만 인근 선박 화재 추가 발생",
   "en": "Chain of tanker incidents in Strait of Hormuz — IRGC claims 4 tankers hit mines after using unauthorized routes, additional vessel fire reported near Oman",
@@ -160,6 +211,73 @@
    ]
   ],
   "first_seen": "20261030-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-30",
+  "ko": "호르무즈 해협서 유조선 4척 기뢰 피격·화재 — 이란 IRGC, 지정항로 이탈 선박 피격 주장·인도선원 27명 포함 다수 승선, 오만이 25명 구조",
+  "en": "Four tankers hit by mines and catch fire in Strait of Hormuz — Iran's IRGC claims strikes on vessels deviating from designated route, including tanker with 27 Indian crew; Oman rescues 25",
+  "ar": "أربع ناقلات تتعرض لانفجارات ألغام وحرائق في مضيق هرمز — الحرس الثوري الإيراني يزعم استهداف سفن خارجة عن المسار المحدد، من بينها ناقلة على متنها 27 هنديا؛ عُمان تنقذ 25 بحاراً",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSmtrMGdTY1l0TXhmX2xJcFdJRllzTXpsT0lSSFhhbWQ2Y3NPbUhLSTByYVdFaU1MdmJuVTA0UWRoNjF2TlBYWjBNWk1fYmhhV0dMRzg2b2RJblNabTVXREhvVkFXaFRtYzJ3T0ZaNU4zNWNkQ3ZRRVU2THhmeEE1OEJ6bE4zU3o0MXQtekFiNXg2andqVnFEWTFRLVhYX2xHVGp30gGoAUFVX3lxTE9GV3BYaG9nbDM0LWQyOWduOXZIeV9nWVl6NGR6cVlqLTB4cHdFWkV3U2NQTjRhNGpkSnF5QWQ4RFhVV0JvRTNVRUo4SmVWZHI1Vll3emlOTWRkQUd4bHdpNmZubGg4WEhRYzloYXNQUVZ4ZVFtTHVhbW9JMlNLOV9ncFRZNGlSdmVvWEhMTkN6emJ0QlEzYU13bzFqSHYwOHBDSHRUZUxjcw?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTVEwcEljcXRtLXNuQU9tajllVmlORllZVExCVWxQS1VGWTFoTVJ4R0M5VkRMd0dycFdVTFpSTHdLRTZ5eHFVRkRza1Rmamhfdy1ad3Z0QjQ2NEhZWjJtUEdkOWtsYTFLbUNxejBsVlJ4YUw3dDVJMjVmYjBkVnVGNTQ1ajZ6a2d4Y0NBYk9ZWEc2cmJicUNfTUsxdVJ1MkR5SEg3Uko3eHl0MGhaaFZOR0pyQ2NTU2E1NmdpOEhYZVpSRU1VZm43eG4wV2RUek1C?oc=5"
+   ]
+  ],
+  "first_seen": "20261031-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-30",
+  "ko": "카타르 대표단, 종전협상 재개 위해 테헤란 재방문 — 미·이란 협상 최신 중재안 제시, 미 공습 우려 고조 속 진행",
+  "en": "Qatari delegation revisits Tehran to push for US-Iran deal — latest mediation proposal presented amid fears of fresh US strikes",
+  "ar": "وفد قطري يزور طهران مجدداً لدفع صفقة أمريكية إيرانية — تقديم أحدث مقترح وساطة وسط مخاوف من ضربات أمريكية جديدة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Axios",
+    "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMTg1UTZmdFFiVndiNS1OTnU2cUhBSk1lTVJDMWFOTEdKNmhtLV9wc0hJSlBqaEk0d2Z3UTdqQTRpbE1UMjV3WG1kaUE5TEFrOWp2clJGTTBFc2JkN0tXNXR5dnd3RGdjWlNhTkFRRFRwSmo5YW1Val83VWZuN3VYQnUteDFtdw?oc=5"
+   ],
+   [
+    "TheDailyNewsOnline.com",
+    "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQelJPQzZPMjhxSllCLWRCM05JRUtiMmRVX2R4bHhfcjBueWF4eXpHMnR2alRHbnhYWjJCMUpuMTB4Qnc1TF9JYm85WFlpMHpwemZmSVVlaDF1RWxuWFV3Z2RPcGd5Q2ROcVVROVJPTmxUQzR0Tm9IdWVmLW9CMFJIN3BfdkRhZ1hWM1lFd1dUOHZDdFdqb2VPbU9iLTc1UUxBNnJNOVhzYnVxQ0cwT2hYVXZ3ZUNKM1hLTWNrcUJyelBqTm9ydmI1bXItSEowRnhpaTZmY1FuZVN2d01CYmJNalFTNllxTHc?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxNc2dqR0tHT2ZrV1FKNmI1RXVhS0lqYjVZdjFxeUVrcjJVOHNPLXBTNzcyVmg3WjdDUWtQZk5pX3dESWxKRWFfMmRfNk55THhpNm52TVZ6SjVQdkx6cFhCN2swaWprVU94ZTBSWThiY0VSbXJfYTJKUFNpSzBWUUxMMXNiUS1wenJsOU80YWt4VjBTSVAtcHc?oc=5"
+   ]
+  ],
+  "first_seen": "20261031-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-10-30",
+  "ko": "바레인·카타르 보안경보 발령, 쿠웨이트는 미사일·드론에 요격 대응 — 걸프 긴장 고조",
+  "en": "Bahrain, Qatar issue security alerts as Kuwait intercepts missiles and drones — Gulf tensions escalate",
+  "ar": "البحرين وقطر تصدران تنبيهات أمنية بينما تتصدى الكويت لصواريخ وطائرات مسيّرة — تصاعد التوتر الخليجي",
+  "q": true,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUEpRR1JQMTUyYXN1MlgwclN5SGlaTHIxYjdMU0VqdG8tczNfVl9oMzRSN0ZyYzQ5S0I1UUNhYkhmRWkxelZEcksyeEY5NzJvckthT0VyUjdzVU9FSHptUU1ENHJid2dfX3h3aUowRzQtRm0tQm04Mk1OS0hFOHk4Zm5WTm1Bc1ZudUhlMG81dmZaenMzVmRMWElabUtFZlpMUmlEM1RvQ0dQRXRjVjR6TGhkUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261031-0700",
   "status": "pending"
  },
  {
@@ -1683,112 +1801,6 @@
    ]
   ],
   "first_seen": "20261020-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-20",
-  "ko": "사우디 수도서 후티 미사일 요격, 폭발음 보고 — 공습경보 상황 지속",
-  "en": "Saudi Arabia intercepts Houthi missile over capital, blasts heard — air alert situation continues",
-  "ar": "السعودية تعترض صاروخا حوثيا فوق العاصمة ويُسمع دوي انفجارات — استمرار حالة الإنذار الجوي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLXpvTnpUMWgzZzYtbEg2cHVxeHVBNGpwQ0ptSjZXbW5IMGJqQl9HejV0SmU0b2dXOEFnbGVsbXplLUZhZEhxRDNFaDJpX0FqaWtCdnN6bGVVOHRrb0FHQUFlUkktT09jOTdNMlhnNHFwdDZBdFVfeWxTdUR2bGQzMGh4cG9tUmxuTU51eG5Na2Q5Q2gtNUgwUXhEQmxmRTZhTmlzS2gweGZ3Y3BGd3VZ0gG0AUFVX3lxTE9KRlVJUGJuYWhYM0ZkV2tabEpWN0YxMVM1aUhRNU1LajA5emNGTnc2Z0tHX1NwYW5YWFJsdy1lYUxFSy1pbnBLTlA4OHdyOGtJYkdsU1NyUlJYMEFMckQ5QVI4SFhmdnZ1SEdYRnU3Tm5nWXZLYkFzU2xsbHYyZkZsMk9RUWZKVmViTEV4YmEta3B3ZnJDN2d6ZU5pcV9QdENyZi1KSVJMbXB0cFNTN3V2TGpFQw?oc=5"
-   ]
-  ],
-  "first_seen": "20261020-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-20",
-  "ko": "헤그세스 미 국방장관, 이란 전쟁 우려 속 전격 비공개 방문해 네타냐후와 회담",
-  "en": "US Defense Secretary Hegseth makes unannounced visit to Israel to meet Netanyahu amid Iran war concerns",
-  "ar": "وزير الدفاع الأميركي هيغسيث يقوم بزيارة غير معلنة لإسرائيل للقاء نتنياهو وسط مخاوف من حرب مع إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaTRUNmIxME1lMkU4azlaVW94LXozajNQaWZuYlcxUHBOcEF3MjZuQjNDQkRVLWxMZWJvZlJ3TkpIeHBQRzN2a04yMUg4c3V3SDU1ZGgwZmZRMTJPcHpWT1JwSEFSSTFmN0VlRmdMOWdqUlkzRnlrSGgycFJ6S0VEa0lSZEY5bnp5cElxMDN0OFhLMXcwaC1NRFBZZXQ?oc=5"
-   ],
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVHU0N3Zvb1BlQXdoRklSYmxwYnlDY1BfUGdpcEFNaDNmX25MNmk1d2hmbzNMVDEyM2V2anZkRDVzTk10SnQ4NzdPdTN2NWNkdzFnVjdQT3B4YUlMUkFDVmZwb1UzNGxaZ1REaGxHbUkwMGNMREk3QjBacV9jMUl6WF9DRTdTeE45ZHNzUURNdTdpN0tQTGlna0hwYndmQUYydDFSeFpidXRNeE9Rbnl4eVQ3ZnRtSzhLOERJSzJHNERyazJOOTdB?oc=5"
-   ]
-  ],
-  "first_seen": "20261020-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-20",
-  "ko": "브렌트유 배럴당 111달러까지 급등 — 사우디 석유시설 공격·호르무즈 긴장 겹치며 시장 초긴장",
-  "en": "Brent crude surges to $111/barrel — market on high alert amid Saudi oil facility attacks and Hormuz tensions",
-  "ar": "خام برنت يقفز إلى 111 دولارا للبرميل — توتر كبير في الأسواق وسط هجمات على منشآت نفطية سعودية وتوترات في هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "한국경제",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwT2tpZWJtMTRkb0RuYUppeF9KV2VnMHc4MkxFalRqWHQ2eWd5U3FYVU1JRXpkcV9NOHo1VE9YMUh5dWxwUWkyQnlpOTVicUZtWldhV2tVSWI2QQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261020-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-20",
-  "ko": "호르무즈해협서 초대형유조선 기뢰 피격 폭발 — 원유 200만배럴 이상 적재 슈퍼탱커가 해협 남쪽서 기뢰에 부딪혀 화재 발생(IRGC 해군 발표)",
-  "en": "Supertanker carrying over 2 million barrels explodes after hitting naval mine south of Strait of Hormuz, IRGC navy says",
-  "ar": "ناقلة نفط عملاقة تحمل أكثر من مليوني برميل تنفجر بعد اصطدامها بلغم بحري جنوب مضيق هرمز، بحسب بحرية الحرس الثوري الإيراني",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86298772/Super-tanker-catches-fire-after-hitting-mine-in-Hormuz"
-   ]
-  ],
-  "first_seen": "20261021-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-20",
-  "ko": "예멘 타이즈서 사우디군 어선 공격 — 어부 8명 사망(보건부 발표)",
-  "en": "Saudi attacks on boats in Yemen's Taiz kill eight fishermen, health ministry says",
-  "ar": "هجمات سعودية على قوارب في تعز اليمنية تقتل ثمانية صيادين، وفق وزارة الصحة",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attacks-boats-yemens-taiz-kills-eight-fishermen"
-   ]
-  ],
-  "first_seen": "20261021-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-20",
-  "ko": "영국, 후티 공격 속 사우디 방어 위해 전투기 파견",
-  "en": "Britain sends fighter jets to defend Saudi Arabia amid Houthi attacks",
-  "ar": "بريطانيا ترسل مقاتلات للدفاع عن السعودية وسط هجمات الحوثيين",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVRQWlNkZkR6eGRXb0ttcXVxY2hBNkZqWm93a0pveDAtdnBTODhVSHBWZS1seHFrRzAzdVo4V21WbEQtckVvS2hEX09VNWVuNGJqZXVXNnpyODJ6QkZmT3RhcU41VHFMYnFrUk5YV0k1aVVkX3duOVI1Mk1LQ1A0UkFtb2l0UW1sdUVQZUh3Wkw0X21YUWxINGZfeDFfdVhlbUplM0dIVGpMdXlDY0txb09GU2FuQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261021-0700",
   "status": "pending"
  }
 ]
