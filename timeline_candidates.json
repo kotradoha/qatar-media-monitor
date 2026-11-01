@@ -1,5 +1,51 @@
 [
  {
+  "d": "2026-11-01",
+  "ko": "카타르 LNG 운반선 '알 마예다' 걸프 해상 운항 중 정체불명 물체에 피격 — 카타르가스운송회사(Nakilat), 인명피해·환경피해 없다고 발표",
+  "en": "Qatari LNG carrier 'Al Mayeda' struck by unidentified objects while transiting the Gulf — Qatar Gas Transport Company reports no injuries or environmental damage",
+  "ar": "ناقلة الغاز القطرية 'المائدة' تتعرض لأجسام مجهولة أثناء عبورها الخليج — شركة قطر لنقل الغاز تعلن عدم وجود إصابات أو أضرار بيئية",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR1YtZVpYb1lJeUVSMXFnakU1dlI2bW5DZlExMnZGTk5CTUNJV3JhX2d1T1U0SnJxbS1Gb0J4NzBQRmpNUDB0cHFsdTRzWm43NjBWNURaWFVyY1VvVDhlRUU1eThHNVdrTEhyYUI4cU5WemNCTmV4Z01pdkdqaXl6cmZOTDhwbUxjVkxBR1k2T2U?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/1/qatar-lng-carrier-struck-by-unidentified-objects-in-gulf?traffic_source=rss"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxNanh5Z2gxLWZQc0ota1lrQldiQ09SYkNPSEY5RlFiZmo2eE1JNHBLemJqcUJnbV9QYXJFbUZsV2x3RzF5UThnazRMZVNWV2FNdVRXZTE2TUpTemZKYWVhdzg2VWVWVnFOamhQWlV2SlYyWTMtNjgtQjh3WFdYQUQxblRlNXZGakRtRWg4MW1sV1RRVm52bDhTeDN6aEcza0Fmd08wSzFIUy1fMG5VVGFLcUZMM3JQT1ZRN29STTBmb1FfUDlGTm5OUXBMaw?oc=5"
+   ]
+  ],
+  "first_seen": "20261101-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-01",
+  "ko": "이란 외무장관 아락치, 워싱턴이 조건 수용 시 호르무즈 해협 48시간 내 재개방 가능 발언",
+  "en": "Iranian FM Araghchi says Hormuz Strait could reopen within two days if Washington meets a set of conditions",
+  "ar": "وزير الخارجية الإيراني عراقجي يقول إن مضيق هرمز يمكن أن يعاد فتحه خلال يومين إذا وافقت واشنطن على مجموعة من الشروط",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-657"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-hormuz-could-be-reopened-two-days-if-conditions-met"
+   ]
+  ],
+  "first_seen": "20261101-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-10-31",
   "ko": "호르무즈 해협 선박 통항량 전쟁 전 대비 70% 감소 지속 — UKMTO, 공격·항행방해 지속 발표",
   "en": "Hormuz shipping traffic remains 70% below pre-war levels — UKMTO reports ongoing attacks and navigation interference",
@@ -1756,52 +1802,6 @@
    [
     "뉴시스",
     "https://www.newsis.com/view/NISX20261023_0003838417"
-   ]
-  ],
-  "first_seen": "20261023-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-22",
-  "ko": "이란, 호르무즈해협에서 하루 최다 유조선 7척 피해 발생했다고 주장—단일일 최대 기록",
-  "en": "Iran claims seven oil tankers damaged in Strait of Hormuz in single day — largest such record",
-  "ar": "إيران تزعم تضرر سبع ناقلات نفط في مضيق هرمز في يوم واحد — أكبر رقم مسجل",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "SBS",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxNT25NTVZxNDdfaHlGS0NyYWpXY0N1c085YWpzM0lKcTZuOTNXN21EN3duVUxfeGtfWE9xaVVIVkVsZVc5bllCTEtlV3ltTFpGbnJpRUNkaWZsVldHTEZWaXRweEZIekQ3UTdZZ1hpQ1QxYVdHLUR1QTRDUHRNRVRsalEyVE9nRHc5cE5PWDF3cURabFJtaHBLd2szRUdHbTV4bGdQVXpwVTFaUU9scjZTd0JHellaNThMVFg3a05sVFBWYlRUNHI0?oc=5"
-   ],
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMidkFVX3lxTE9qRldUaUl6SDRhVml2TlBkTTlnamNMd01vQ0kwX3RRVFFibnBDNFdoSGx5anNoOW5ReGNManhZeHBKVWpzMmprN05QLXRGT0RwMGpUNXFaQ2ZLQk5WYWNyM2ZralBCMXFnbkQ3T3Bjc3ppME54UkE?oc=5"
-   ]
-  ],
-  "first_seen": "20261023-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-22",
-  "ko": "네타냐후, 이란 정권전복을 군·모사드에 지시했다고 발표—총선 앞두고 공격재개 시사",
-  "en": "Netanyahu says he ordered military and Mossad to topple Iranian regime — hints at resuming strikes ahead of election",
-  "ar": "نتنياهو يعلن أنه أمر الجيش والموساد بإسقاط النظام الإيراني — يلمح لاستئناف الضربات قبل الانتخابات",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261023_0003838210"
-   ],
-   [
-    "문화일보",
-    "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5IaVluTkttUWlqYVVkNDVKNllkNjZvYXJtQjllQTVaUW0tZGhiT214bmcyMWNsN2FLOUo1Tkh5bzJyNTlPcER4QXQ2SkFoNThZ?oc=5"
-   ],
-   [
-    "연합뉴스TV",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1GeWJIVW03S05DdFVrWjZ5T2hybWV6RkhuOFBqZ25TeVItTG1GQjBveHBWZ1hWY0NyU0s5Y3ZYRFhsYXRDQXJjaXRuUWR0SkpKZUJ0VVpoVEY4ejFmamstR0VGaWJkYzA?oc=5"
    ]
   ],
   "first_seen": "20261023-0700",
