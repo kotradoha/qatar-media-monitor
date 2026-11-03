@@ -138,6 +138,81 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-02",
+  "ko": "미국, 호르무즈 해협 이란 케슘섬 '방어적' 공습 단행 — 이란 발사대가 미군 항공기 겨냥 미사일 발사한 데 대응, 중간선거 전날 긴장 고조",
+  "en": "US carries out 'defensive' strikes on Iran's Qeshm Island in Strait of Hormuz — response to Iranian launcher firing missile at US aircraft, tensions rise eve of US midterms",
+  "ar": "الولايات المتحدة تشن ضربات 'دفاعية' على جزيرة قشم الإيرانية في مضيق هرمز — رداً على إطلاق منصة إيرانية صاروخاً باتجاه طائرة أمريكية، تصاعد التوتر عشية الانتخابات النصفية الأمريكية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/3/explosions-hit-irans-qeshm-island-as-us-media-report-us-strikes-in-hormuz?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/3/iran-war-live-vance-sees-progress-in-talks-tehran-says-ball-in-us-court?traffic_source=rss"
+   ],
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTmFFOGhpWHVzSEdLTVJ0Nnl6Z1JWS2ZnejFCcTJrck4zSXIzV2xPdy1PZ1h0ZkNCbWhTUFlIdzFwRHladmduOG5FWkZuSzhiOFhOUXNmR0dfY0UtdHNlQjBEenQ5RDBqLVFKeWVMNTBQdUgyeW5aRkVKekRoWVlnaU82Znh5TmNqdDh5N2ZR?oc=5"
+   ]
+  ],
+  "first_seen": "20261103-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-02",
+  "ko": "이란 IRGC, 호르무즈 해협 인근 미군 드론 다수 격추·포획 주장 — MQ-9 55번째 격추, MQM-170 정찰드론 4기 나포 주장",
+  "en": "Iran's IRGC claims downing/capturing multiple US drones near Strait of Hormuz — claims 55th MQ-9 shot down, four MQM-170 reconnaissance drones captured",
+  "ar": "الحرس الثوري الإيراني يزعم إسقاط/أسر عدة طائرات أمريكية مسيّرة قرب مضيق هرمز — يزعم إسقاط خامس وخمسين طائرة MQ-9 وأسر أربع طائرات استطلاع MQM-170",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249120/IRGC-downs-55th-US-MQ-9-over-Strait-of-Hormuz"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249118/Iran-captures-two-US-MQM-170-drones-over-Qeshm-Island"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249116/IRGC-says-downed-two-US-drones-near-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261103-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-02",
+  "ko": "카타르 중재단, 미·이란 잠정 합의안 논의 위해 테헤란 방문 — 아라그치 이란 외무장관과 회담, 협상 기대에 유가 급락",
+  "en": "Qatari mediation delegation visits Tehran to discuss interim US-Iran agreement — meets with FM Araghchi, oil prices plunge on negotiation hopes",
+  "ar": "وفد الوساطة القطري يزور طهران لمناقشة اتفاق مؤقت بين الولايات المتحدة وإيران — يلتقي وزير الخارجية عراقجي، وانخفاض حاد في أسعار النفط وسط آمال التفاوض",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxNakZ5bm9iVklLMzM2MXdRa05IamVSMkRjOU9McU5XaGM5OFhnRjdabEpVbS1VMFJ6QWJMN1o2TGk3TjBaWU16bkN6TTR4RTdQNTl5eE9hN2t3djJSOWZCeXliOVI0Y3hubXhDMXRFNlZWWENEbWpEZFpwcG5pXzN3Q2l3?oc=5"
+   ],
+   [
+    "경향신문",
+    "https://www.khan.co.kr/article/202611030738001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
+   ],
+   [
+    "SBS 뉴스",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxQS2ltXzA2SDRiNEZfZnk4cWZCUHVjMFZVM1JDZGZ2S1RTcURDZWJ5UVRBQTRNaXpFMjB2Zk9CbXdPcGF0bWtwYmVGTGFwQjB1eElHN3JabWI2bVU3VW54LUktVWVBZGFwLUpZQlhSbUJ0NmJueHFVeXJDU3J2YTF4ZW1PWUZXZDFLWXhDRlNrUdIBZkFVX3lxTE4yVXlaRXlPMDVBanc1OENIX3hsamNmQ0tpNG5YQkRJNFJSVWRBRllONWo3Y1hZejAyTFhtYU5MVjZIY3pNM0tfT013T2ZGbTd6bjRuVEFLMmpraFU5eFZwQ1N5NWZzdw?oc=5"
+   ]
+  ],
+  "first_seen": "20261103-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-01",
   "ko": "카타르 LNG 운반선 '알 마예다' 걸프 해상 운항 중 정체불명 물체에 피격 — 카타르가스운송회사(Nakilat), 인명피해·환경피해 없다고 발표",
   "en": "Qatari LNG carrier 'Al Mayeda' struck by unidentified objects while transiting the Gulf — Qatar Gas Transport Company reports no injuries or environmental damage",
@@ -1730,81 +1805,6 @@
    ]
   ],
   "first_seen": "20261023-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-23",
-  "ko": "이스라엘 서안지구 헤브론서 총격테러로 이스라엘인 5명 부상·용의자 2명 사살 — 네타냐후, 서안지구 전면 봉쇄 지시",
-  "en": "Shooting attack in Hebron, West Bank wounds 5 Israelis, 2 suspected attackers killed — Netanyahu orders full West Bank closure",
-  "ar": "هجوم بإطلاق النار في الخليل بالضفة الغربية يصيب 5 إسرائيليين ومقتل مهاجمين مشتبه بهما — نتنياهو يأمر بإغلاق كامل للضفة الغربية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNWcwd29TZTBrbzlHdjUweHBrMFlISXJIdjdjMk9pbG55RkJLVXNVdDlBU09iYjY0S0pDWWtSZGJab2tNemd4QUw0andQaUI5N2RSNTFjM21oZHU4cWx4UGljZFRNZWZSUkk1ME10VGNyVTBTTUZGQWE4azRnemZqcmp6ekp2NVdoSnRCTW5CVU80TlYwY3hKSkJGeDBCME9kUGRTWkxObnFrOF9fbHh0aU1GeGlOMGo4VVdmaTZQZnZQMWE0MHlxR19B?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmJyQXhhU1ZfQUJvRVp4cENkNzhMZFl3ajF2UjByeFJGMzdmY2VUdEI1ekRFV1EzZE5KNERXOVFYSTFzckZXYUN4QXc5ZC1CUFl5cGEzOTZ3WnpGa2tLV3NKYW9lZkFGMkFzUl9tekZnM213ZXJOdnJwaTBLMlhlRU5wZEFvYWN6OG9fSDRZMzM0dEw5SFZZX0oza0poNDlCNzhuTlBXSE96UlEyWWtpNkRGZjcySWV6VGx0NndLWkM0c0E?oc=5"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRmhKWG84WHRaUC1ld2x4ZlUxMW5JanJLS3pJZHdBN29GX0h0MWRRM01kYUR0M0gtcnlMR3VpTkdiRHpFd2dwSUVxX2Njb3JEdzFKQU9UVHVPMDdpN1NFMW14LXAyWGxVcXJ2cXNKSW83ZkhZZ3BlMjdlOUhIZlc4OGhvM1ZDd0p0MnlMMVdpeGR6YmxRTXNWN0lpanByLUtUTWVmLU9JT0NGN051RGI4VU1CRVlUdnB4VVFYX2JRNUt3azJBSU1zeGhFaE5fZ1p1SG0w0gHYAUFVX3lxTE9ER3ZmZGFFd0MyTlREbzFKSHNUQi12a1g2RU15RlN0N25ablB3ZU5acFJZcElEUXpUMGxIbXlJOWdJUnRvVEQ3MU84UGpDRGRKandIeHFUeVpDOTNiYm84bHRmTzF6djJqb0p6MWhvS0dRcU1pNzRxdm9aWnhmV3ltUkxqSnAzbERDTlVTOXBiSDU4T2VwOERkTlp4SmtaemhaQ1MwMDRyV0dzQWVDZnFFc3k3bVRtMnNMZXVvNmxsSGx2Vi0zSHhyM3BiT18yYzhyOGloc05yMQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261023-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-23",
-  "ko": "미국·이스라엘, 중간선거 이후 대이란 공습 계획 추진 — 중동 지역 미군 증파 보도",
-  "en": "US and Israel plan possible post-midterm attack on Iran — reports of US military reinforcements moving to Middle East",
-  "ar": "الولايات المتحدة وإسرائيل تخططان لضربة محتملة على إيران بعد الانتخابات النصفية — تقارير عن تعزيزات عسكرية أمريكية إلى الشرق الأوسط",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "NPR",
-    "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc"
-   ],
-   [
-    "NPR",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxOT0RnVkhiRE0yM2VUR0tlUnpiNmtYRDkxRzlSbHR2R1duVERtWElyQ3F2MldySS0wX0g3RFVsTl8tQ3hoNmxDdnprTVl0UWNXRDVjck9nS1ZkXzMwZFZNT0N5MFZBMmx3S0FTTDJZTDRVd09ScUFZYlhOb1ptTFhWMW9oXzRWeE9tX042dmdpbHBwcHpKUWwxRnBZbUpRbUdWdlZNNVc4dEhOYWtDRElCTndCdW5SeEVaR0lHRUhR?oc=5"
-   ],
-   [
-    "NPR",
-    "https://www.npr.org/2026/10/23/nx-s1-6012303/retired-general-discusses-the-u-s-and-israeli-plan-for-possible-attack-on-iran"
-   ]
-  ],
-  "first_seen": "20261023-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-23",
-  "ko": "미국, 이란 위협 정보 입수 — 요르단·레바논·카타르·UAE 4개국 미 대사관 인력 감축 발표",
-  "en": "US reduces staffing at embassies in Jordan, Lebanon, Qatar, UAE over Iran threat intelligence",
-  "ar": "الولايات المتحدة تقلص عدد موظفي سفاراتها في الأردن ولبنان وقطر والإمارات بسبب معلومات استخباراتية عن تهديد إيراني",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261024027300009"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261024_0003839481"
-   ],
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYmtHSXQwRFhlWlZKbTU2TEhPODc5MERFTG9feGQwRUY1ZklES2JWS3UxTUxOelgxRExOSFdUWEJnVFFDX284OHNsZWxIUzBVRzdINlpRRVhIYlBTN3A4Q2JrYWFrZVZ0MEZGRXVXVXVKTW82dmgwRWROUHFXcVVPU0oxdkljc3lldHc?oc=5"
-   ]
-  ],
-  "first_seen": "20261024-0700",
   "status": "pending"
  }
 ]
