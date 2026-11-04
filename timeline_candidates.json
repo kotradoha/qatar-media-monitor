@@ -1,5 +1,22 @@
 [
  {
+  "d": "2026-11-04",
+  "ko": "이란 IRGC, 호르무즈해협 인근서 유조선 4척이 기뢰 접촉 후 화재 발생했다고 주장 — 로이터 단독 인용, 미확인",
+  "en": "Iran's IRGC claims four tankers ablaze after hitting mines near Strait of Hormuz — reported by Reuters, unverified",
+  "ar": "الحرس الثوري الإيراني يزعم اشتعال النيران في 4 ناقلات بعد اصطدامها بألغام قرب مضيق هرمز — حصري لرويترز، غير مؤكد",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbjcyLUxfeTMxaHFnbENrc2tqdlowSDFqWU5DUWtqOWhVUUdSYWdSbFpBRGQ4VHI3Rm5DbDVsLTV6bkM4d3FjcmVPRnpsQlJ6RkNSLWNZX0ZtWURvUExKaGZ2M2diWUFvZWZfSE5FN01PR2FXc1pSN1kyeXhHX0ZFS0k4S1FjSDJLc2ZfbGx2cm9TYW9JSThiZVZIeFQxTnVBXzAwYnhlaGxsN3lwQkxOZTdFRVVpc3RPa2J2M0JZNVduZXA3Z2pz?oc=5"
+   ]
+  ],
+  "first_seen": "20261104-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-03",
   "ko": "이란 IRGC, 호르무즈 해협서 유조선 3척 기뢰 폭발로 화재 발생 주장 — 불법 항로 이용 주장",
   "en": "Iran's IRGC claims 3 oil tankers exploded after hitting naval mines in Strait of Hormuz, caught fire — alleges unauthorized passage",
@@ -68,6 +85,56 @@
    ]
   ],
   "first_seen": "20261103-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-03",
+  "ko": "트럼프, 연간 38억~40억달러 규모 이스라엘 군사원조 연말 중단 발표 — 중간선거 당일 전격 발표",
+  "en": "Trump announces plan to end annual $3.8-4bn US military aid to Israel by year-end — announced on US midterm election day",
+  "ar": "ترامب يعلن وقف المساعدات العسكرية السنوية لإسرائيل البالغة 3.8-4 مليار دولار بنهاية العام — أُعلن يوم الانتخابات النصفية الأمريكية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/4/scepticism-as-trump-says-hes-ending-israels-3-8-bn-military-aid-deal?traffic_source=rss"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPMFowT3NIV2I2d2xRSjh6c3BqZ2ZWNkN2cWRJX05nYlNtbmUydVlrOUxYcUs0RlhHZkR3OEJYQTJMcjFOTEMxeUYxTG1LVFpUY1R2SlJZMjI0VHF2UENPTnRrQ0czQ21IMTNQQjV2Z2s4ZTJ1eEpFMnJFdHRpM25CVTVCSk5XSjJEeGdKR0xzRlhndnlaVThXM21Hd1I4Ymt6Vk13d1RscHhHTFJhZWpVdW5kdmlTamNPRFlGcnFOdk5qbnFnX1BiYnNSWXM5cjE4MVV6RTJRVkRXTjhjOFpTYmVtWmxoS2VZdmpYbEF5N1gzSU5u?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGowUjZTUXY5RDBhdG5MelV3UmlubXdCbXVsR3FZc3hsOUFYQkM2Vk9JQU5OVkJrOVJVUzl0TmlOdWN6eXFJVzY1Wk9xeHdDcUVxNkpiWVpUbzk4emYwbUN6YkIyNWx3OUphc1lLT2JhXzRvM2QzdmhqWWRyOUdzRWFmSmpDVEQxUUZud2NWTjZIUjZCblc5Tm1GaVRmSkhSYms4T1plMnhyV00?oc=5"
+   ]
+  ],
+  "first_seen": "20261104-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-03",
+  "ko": "이란, 중국·인도·이라크·카타르 선박에 대해 호르무즈 통항 제한 면제 조치 발표",
+  "en": "Iran exempts ships from China, India, Iraq and Qatar from Hormuz transit restrictions",
+  "ar": "إيران تعفي سفن الصين والهند والعراق وقطر من قيود العبور في مضيق هرمز",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NY3htQ0hJb2ZnOXUzM3dMbTFRd24xZF9wWWhpWDRoQ29DU0ZTVHVFdnc4Y1hYSURTeXk5YWFYelFiTC1wRWh4VWlVNkpXQ0pVYkZTekFLY2JfRXZJZnc?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tRWVPT2JtWXZBTXY4QktwVFJvWGFlT1RMWkF3RHZyRThJOVVQWmNFS2xFUHJ2Q2lNX0hjS2VBenBuaGxRU0pPcHBIX1VkcV9FUjA0R0V4cDJ6UDk3MVZDcGxB?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWDRKUmdWclVhZlpLVnFCNlJvSkl0NHJXVHJkQXQtWkdYNWtRMnBjRkRlT1Q4NlRlUTlSa3Y5eEU4LUFqNEZla1J6QXlRTlg3TGpickMtUGNRR1o4dkYtTml0Qzl2YW00UGVoZEo1NXNDZ3V5a045RXEzeU8yamVpLWptNFRnaVhvZEpsN1RGVHZyT3gwQ08zenJILUppY1JtZFRjQTV5TUJIVUlfbXhfYlhQSVpTVzJRM0pESHJVYnZBQ245MGM3M1FkQktIUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261104-0700",
   "status": "pending"
  },
  {
@@ -1723,73 +1790,6 @@
    [
     "한겨레",
     "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTTdYT1J5TkdISjkxX05sSHo1YmZVa0NMTnNWbWN3b0tlV201RE1ZT1lWNUVwa2lFaFVBaWFTZS1wQzVxRHUyRWVMVmxBSUFYYzdvR2hCWXZJYjBxTWpmcFFEMFJwMjRia2lseTJaOHVtWXlRMTFQNGN6TDhQMWp4S05n?oc=5"
-   ]
-  ],
-  "first_seen": "20261024-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-24",
-  "ko": "미 정보당국, 이란의 미국 관리 암살 모의 진전 경고—요르단·레바논·카타르·UAE 등 중동 4개국 미 대사관 인력 축소",
-  "en": "US intelligence warns Iran's plots to assassinate US officials have advanced — Washington reduces embassy staff in Jordan, Lebanon, Qatar and UAE",
-  "ar": "الاستخبارات الأمريكية تحذر من تقدم مخططات إيرانية لاغتيال مسؤولين أمريكيين — واشنطن تخفض عدد موظفي سفاراتها في الأردن ولبنان وقطر والإمارات",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "조선일보",
-    "https://www.chosun.com/international/international_general/2026/10/24/GNRDAMRRGFSTIOJSG5SWGMBRGY/"
-   ],
-   [
-    "الجزيرة نت",
-    "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPUzBFMVR4NWhzWEg4bmdRbkFjYUxTS3FDTERsRUgxUUZYSWtZUm00NnRoOWROZ0NOX3F2ME9xdmFuVE0wZnhwMENlMHJ0XzdzbkZRaXJHc05UNGNmWHJNQjk4Yl9IYm1LUzhhR1l6UmlvcEN5NHRqVHZJanRMa1RwTEpoTlQzWDd5NnNzdmFWQWcxRXAzMHhRbjRQSGFPSlVWbkctVGRqdmlkV0FiQXNfalR6WDc3TXp5WlRUczFHSEprMFJqYThIUTNya0l2dVpQQWE3NHBMVHlaN2JtT3poYlN6TWdQZ1pCaGIyYmVrTzNUelljdmdVZFJjeU53UWRla1QzbTRjZ3RESVNWUk14eFlUcHIza2ZZblBtLU1vSHJucHA5cTdQOFJ1eUU2ZW9teVl1R3JxV0PSAb4CQVVfeXFMTWRsSjZXcThRREx6bEJyS29tNjhqd09mQVA3Z3VCQ1pQUlQxVWRtOXVOLWt3cmFSNWg5Z05vZ3ZrbDMzOS1PN0JpRkxhVHQ5VzlQaDhzXzAzN01TZTUxeVlMOHdCSnJBQ295Tm1EVTkzVnQ3Vl9NdzZ4aGw2V3hsNkpwLW5nNTRRMVpjTkNTX2xETTdQQ0tLOE5QWkVUcG1xR3BHR0oyYS1NMl91WTB1UzRrcmpLeTcxeXRKakZfSk1jNDRzbDNQS21qbHU2STk3WVp1dEVUUmJJOV9tNlpSSGhyZGlCN0oyMXQ2ZFhSMjNORzNDc0h0Sl81ZmliY2N2ZlBBbVRfVU04bzV3LTZWOW1reFkyU0dVWE9BMngxY0hEREYxamFTaFQtSVFmTFlMVXpFS3piQ3RSRWU1S1NB?oc=5"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTE85WmFMTkVad2lweWl6NGZCYldycmhSTWNJOFphUjJDR3d4aUx0czJBWVNlQUVuTjBEbHR3N3NNaC11SVVOYzZYR2hBNWhjWDJOdTNJdU1RaWNUZEtUMk84TVZXQ19KaERIRUE?oc=5"
-   ]
-  ],
-  "first_seen": "20261024-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-24",
-  "ko": "카타르에너지, 미국과 2054년까지 연간 최대 400만t LNG 수입 장기계약 체결—이란전쟁發 에너지 시장 재편 속 카타르의 대미 LNG 수입 전환",
-  "en": "QatarEnergy signs long-term deal to import up to 4 million tonnes of US LNG annually through 2054, as Iran war reshapes global energy market",
-  "ar": "قطر للطاقة توقع اتفاقية طويلة الأمد لاستيراد ما يصل إلى 4 ملايين طن من الغاز الأمريكي المسال سنويا حتى 2054 وسط إعادة تشكيل سوق الطاقة بفعل حرب إيران",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "파이낸셜뉴스",
-    "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTLXo3TDNSWmVZc3VkYXpodG9nb2NYU0EyMERUaVJ0c1A2SGNaNWJMTVhOdFRIb195eXVQSml3X3J6QUh3bnR5N3RtZmlha0xPampuNHpJWk4?oc=5"
-   ],
-   [
-    "파이낸셜뉴스",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFByRUVKTUtXWkI3SjR2YmFfVEg5R1k0T0Q2OFJackVTYklHMjBwaTRvZ2g1cW1FQi1udVNyWVdjdUdXVm1ReXNkNDhvb2dsQWRSMUNWWXIzcW9qdw?oc=5"
-   ],
-   [
-    "London Daily News",
-    "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZE9xdVhTekNsVjJHZ1FjWjU4NjFKTG1KWmtuenlEOWVlM3I2TERNZmlqM1h1eVQ0T1RIR1YwRnp2UFhXQzkxaGctU0JXNm5EWjZ1UGdVYUx5bUVlZFBIZWR4R1prLWdGSmpsbHNkeGJWeU91NHd1ZEF2c0dkSHg4R2xFLVF0U25KczE4WnYwd0tqSVdCNWxhUkdIZk5WMnQ1OE9nYzFPQ09FUWJLaTdmSQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261024-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-24",
-  "ko": "이란 군 수뇌부, '낡은(rusty)' 미 군함의 페르시아만 재진입 불허 선언—호르무즈 긴장 재점화",
-  "en": "Iran's military chief declares 'rusty' US warships will not be allowed to re-enter the Persian Gulf, reigniting Strait of Hormuz tensions",
-  "ar": "رئيس أركان الجيش الإيراني يعلن عدم السماح لسفن حربية أمريكية 'صدئة' بالعودة إلى الخليج الفارسي وسط تصاعد التوتر في مضيق هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/wont-allow-rusty-us-warships-re-enter-persian-gulf-irans-military-chief"
    ]
   ],
   "first_seen": "20261024-1530",
