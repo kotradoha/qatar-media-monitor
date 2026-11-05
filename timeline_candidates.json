@@ -67,6 +67,123 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-05",
+  "ko": "카타르 북부 해상서 유조선 발사체 2발 피격 — 승조원·선박 피해 상태 미확인, 영국 해사당국(UKMTO) 확인",
+  "en": "Tanker struck by two projectiles in waters off northern Qatar — crew/vessel condition unconfirmed, confirmed by UK maritime authority (UKMTO)",
+  "ar": "استهداف ناقلة نفط بمقذوفين في بحر شمال قطر — حالة الطاقم والسفينة غير مؤكدة، تؤكدها الهيئة البحرية البريطانية",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZERHQ3lTWV93OWtyU0o4cHdZYU1naWRZbjZ6c3JhMDcyUlN0TVdvb040bkpPZVE1Vmd6VlNnVGFKNVZqbnFUX2tjNmoza2lYOXU3eUR0M08xT3ROenpRcmRUNno5TUdndEwydEI4TmQ5T1RhZzdSTWl1US1leVc1VnFlbUs1eFJZdzh1WWZYUC1LejZOZlE?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBxYUhsTV9YdlRtZWlGRm04eGh1bmRHVElRRmZyalpLdGhtd0hQOTNjX2pDQjI3bnNDSUlmMmxQS1JQUk5zYVJudlV3TmhzMncyc3MyUTEyZC1XTERTV1RLVXZ3?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMi7gNBVV95cUxNLTJ3ZUhKeEgzZ2dmbmRVdTZockZ4c1A1VEszVFZuRGl0TFdSbVd3azYwaXpUeHo5NkFCdC1sOTAtWXJMYjNUR1lQVEJQR0tZM2xnb2VjbGRnT09ib25LVTlUQVhVZ2N4SU9Wa3p3VVk1XzgxT3VlNGxxNmtkMjAzc2F6X0s4clI5VEM4T2dieWxKUlZ6eHVpalVMSWFwZzZ5QWxGNmhvZFU5TU9aNjRlaXZaSWtDU1lPZkFMMHVXdVN1bGdtZWZZQXQwUkdpSFc1RXJqSHhnQkhKWHB6bDc5MG1rZVdwdTNQN3ExakkzX2FZajZlalBYS3Y0bmgtYi1uSGU2eWVoWUVVaFVDbEdCMHlMR2NjRWhJSm8yem5jbVBCUWtseWx1bXJJdlJPaUE2dUtGTWhscDhLclc2UmZ2V2hjWlk2Wmd0enM2ZGxMaDdxUXBWVzlIVjZ6VHB4Zlc0amFOQ0x2RFNyeGcxcW51T1l4aExoSzE2Z05iN0o0M05zNkVIVEJZaEJLWTdac21PTnVkN25ULU5nM01EVXJWbG5FbGtGOXRaR0xHQ2VyazdMdVJnVGFSV3pOQnJaVWg5MHR0R0tDa1RoUFlXMmh1ZFFqcncxX3hJQ1I2RTJVSk4yRzdfQl84akJLVDlIUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261105-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-05",
+  "ko": "이란 해군, 호르무즈해협 동쪽서 기뢰 접촉으로 '위반 유조선' 화재 발생 발표 — 이란 측 주장",
+  "en": "Iranian navy reports 'violating tanker' caught fire after hitting a naval mine east of Strait of Hormuz — Iranian claim",
+  "ar": "البحرية الإيرانية تعلن اشتعال النيران في ناقلة 'مخالفة' بعد اصطدامها بلغم بحري شرق مضيق هرمز — ادعاء إيراني",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-navy-reports-tanker-fire-strait-hormuz"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249187/Another-violating-oil-tanker-catches-fire-in-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261105-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-05",
+  "ko": "사우디 주도 연합군, 메디나 지역 겨냥 후티 탄도미사일 요격·격추",
+  "en": "Saudi-led coalition intercepts and destroys Houthi ballistic missile targeting Medina region",
+  "ar": "التحالف بقيادة السعودية يعترض ويدمر صاروخاً باليستياً حوثياً استهدف منطقة المدينة المنورة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRWxTeTktbEtsMmh3VF9Sc0tuMklWRmZBcHZCaFZfMTNZOWJET1BCc3FnNGJlQXI4OEl4Rk9fTzlfRV8yU045VkEwOHI1RThfM2NKTUVvNHJoZDJTaDVjZWlXcGlNbmYtOTZrMHlHVU8taDMxS19SMjBHX0ZMOXF2NlBVclFsWTY5aTZodDJmZm5QWUpEMzNibmNoelM5RDhyMmlGVzhxXzVaUFZFMTNqN2ZBdmJCVGJyVURXYXlxa21zdmR1aUdERkZB0gHPAUFVX3lxTFBlUjJjam8teVVHVFZzZC1uWjJaRUNWNk9TXzdqTG5qVzBFWGdPRkRMOGdGTDBaaVVKOXM3NEtsVjIyNFZnXzYyUFp6LUQxc29yeTQ2SkREY0xaX2IxNnJZTWRlVloxbmlzb2lXNTF4RWF5dTRUM2J3c3VCYUxyU2xlb1l4TnRTcWdVcDMybC1McmJqQTNsNWlhOXhSREN0NC16c0FQbTFyUXZlV0lqUUsxYi1ZOUJxSjgxVk1yY3FPUDBsT3Q0MTNQYTBrb1I1bw?oc=5"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQc2ltOGZrdXFPNWNlUUtnVzBXMGdQNEdhT2hHX1RmTl9xOFMzb1hOWmRPc3B4VnRhTkw5bzdzZTFuZXNOaEprZi0tSWxsd191Z2Zlam1ZcjlSck1uVGpQa1BXa2JPNVg0VmpRanNNaGhfVV9fdU1Kb2swWERNekFEbHppeFFxOHRvOU9mRTFTOVdfaU5TRjVXRE5xQ1VRUTlVbEN6cFV6dmJXS3VEVjdibkc1X0Iwd3RxV1NtZGNZMHg?oc=5"
+   ],
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTnZvNVN5cTJyYnZYR3BLU1o3Q3NCWjZnc0tPNlpBYU4xQXBoaWxqUzdFb1Y0N2lGOTdJYnk2TVo3Y3ZiM2M3Nk1meTZrMncwM2JfWnlDSFI0UXYyM1FTb2U1ZF9jTkNWVk1uNXNHd1hLdEplLWlkYnlTSmg4R1pXWmg4QWIzTnVUYS1fM090Q2NuYlpPaWV2aUFNbk1RcUxPRTBwbkFhUHUwdERvVUtlSGVRM3dKbHFPMV9Mb3ZQZE1vOXo4dmEwSDRWYnpqQlhi0gHWAUFVX3lxTE9nek5OZHl2ZndCSndtUlk1SFgwNlFaRzEyOU5NUWJXMThQR0RYQ20xQWhhMmtQdUxhbTlybFZxbHI1ZnVjU2VxQTNaWWdLOFdINC11MjRaQjFPNkVRSUxtUEh3WXhfbnRvV19NQy1nY3Y5ZlVyN0F1cnVleGpLUm5BR3cxU3otQWhnWTBnTFZfdkVZSC1ZNDBZNnJwbF9rc1VUVzM5a0MzaVF0UjE0VUVITDA4cGtsOUJFZnZvREgzY3dPMVJUcXVHYWd0Q0VTWVEzenFUd0E?oc=5"
+   ]
+  ],
+  "first_seen": "20261105-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-05",
+  "ko": "튀르키예-이란 국경서 총격으로 튀르키예 군인 1명 사망",
+  "en": "One Turkish soldier killed in shooting at Turkey-Iran border",
+  "ar": "مقتل جندي تركي في إطلاق نار على الحدود التركية الإيرانية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RVzlVcWlfamRSZlBCWlFZSFpYLWhXSzBVVDJsdGJGQkdoNEJsX01CVWFfSnZFQ29FYm9pQ3Q5a1hRTDFhQ091aG1uWnBOZXhKZFJxR3dGZVRaVnc?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261105178300108"
+   ]
+  ],
+  "first_seen": "20261105-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-05",
+  "ko": "美 중간선거서 공화당 참패—이란전쟁 책임론 확산, 밴스 부통령도 '전쟁이 패인' 자인하며 트럼프와 거리두기",
+  "en": "Republicans suffer midterm defeat as Iran war blamed for loss—VP Vance distances from Trump, citing war as factor",
+  "ar": "هزيمة الجمهوريين في الانتخابات النصفية وسط اتهامات بأن حرب إيران كانت السبب — نائب الرئيس فانس يبتعد عن ترامب معتبراً الحرب عاملاً رئيسياً",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/5/congress-defeat-how-trumps-allies-are-distancing-themselves-from-iran-war?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/news/jd-vance-blames-iran-war-and-support-israel-failure-us-mid-term-elections"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249174/How-Iran-war-led-to-Trump-s-defeat-in-congressional-election"
+   ]
+  ],
+  "first_seen": "20261105-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-04",
   "ko": "이란 IRGC, 호르무즈해협 인근서 유조선 4척이 기뢰 접촉 후 화재 발생했다고 주장 — 로이터 단독 인용, 미확인",
   "en": "Iran's IRGC claims four tankers ablaze after hitting mines near Strait of Hormuz — reported by Reuters, unverified",
@@ -1656,119 +1773,6 @@
    ]
   ],
   "first_seen": "20261028-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-27",
-  "ko": "美 국방부, 이란전쟁 8개월 전쟁비용 471억 달러로 상승 발표—탄약 보충에만 약 39조원",
-  "en": "Pentagon tells lawmakers Iran war costs rise to $47.1 billion over 8 months, with ~$39 trillion KRW for munitions replenishment alone",
-  "ar": "البنتاغون يبلغ المشرعين بارتفاع تكاليف الحرب مع إيران إلى 47.1 مليار دولار خلال 8 أشهر، منها نحو 39 تريليون وون كوري لتجديد الذخائر فقط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU01EejJkTVN3UlJGSjRWZGoteW5Pb3VXal9pRk44QVZFSFRwVVZXcE5VYl9HMXpsdkEtcmZYelRqVExPZGFYalRiQXVfanppQm1iaE9wMG9PamwzeFdzcWpUVUNoWW5xSi1kVGp0VTFpX0pMN0lfSUdwdjc2N1MyNw?oc=5"
-   ],
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE1TTUZTQXdTX1VoLXBEdnpiRzZ5MWRuRFh6aS1FZGRhdWdtNDlyZVJZbmdNYjhfRkl5QUtkbmF6RktUTXFQWkJYRnlMUTExUEpFYkUtS1B3cmE3ZEFrXzJNYzJKakdOTkN1Q1RNX0hfaXRGT256aW5Uazl6MA?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxON0xLbkM2QTkxYlhXamlwOVJQeW9tc1RmOVdPbFZ3WG1lTlkyVEl4Nm9HU0x1T0l6WlpmUzBhbWdNNG92ZnRlbHhEUGlkbXJVT1dVNjNjUUtOOFBURWNxOVpNQ3NxUGd2RzdfbE5JQnRWNFdrQ0lfWUxLeTl3b1BQZ2l6QmNSbTZubWgtQi1uVWFRVGtLNjRMeGtJcjF1WmQ0SFM4YmhRMlB3TFhobnpONFVQQUhZX3psZmZJMGNR?oc=5"
-   ]
-  ],
-  "first_seen": "20261028-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-27",
-  "ko": "이란, 韓 장금상선(시노코)에 호르무즈 통항규칙 위반 이유로 11/1부터 법적조치 경고—해당 선사가 호르무즈 통과 VLCC의 47% 차지",
-  "en": "Iran warns Korean shipper Sinokor of legal action from Nov 1 over Hormuz transit rule violations — the firm accounts for 47% of VLCCs transiting the strait",
-  "ar": "إيران تحذر شركة الشحن الكورية سينوكور من إجراءات قانونية اعتباراً من 1 نوفمبر بسبب انتهاكات قواعد العبور في مضيق هرمز — الشركة تمثل 47% من ناقلات النفط العملاقة العابرة للمضيق",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "문화일보",
-    "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqWVlFaXFhUFEtLURWdXQyZk50bFFHSkxGSFU0RnV5NjZkZTdkbVFHWXRDcmNfcjZnelc0Q202aDdFUGxndGxRYmxucXpZQ1ZI?oc=5"
-   ],
-   [
-    "서울신문",
-    "https://www.seoul.co.kr/news/newsView.php?id=20261028500097"
-   ]
-  ],
-  "first_seen": "20261028-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-27",
-  "ko": "사우디, 리야드서 요격 미사일 피해 보고—후티, 추가 공격 주장 지속",
-  "en": "Saudi Arabia reports interception-related missile damage in Riyadh as Houthis claim further attacks",
-  "ar": "السعودية تبلغ عن أضرار ناجمة عن اعتراض صاروخ في الرياض فيما يواصل الحوثيون ادعاء هجمات إضافية",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdmN6SzJtQ0JYM2gwc3RFSmQ5V3lFTFVfbk04VEdnUXJDcVRZTE90aDVfSUhvVzFUOExCT0FNd2h5MFFjMlltY3dwd2JUc3ZtM1R6RXRXdldlMUZBSnZrR1pteE4yeGd2Vi1saWwySzh3MTJFQWpsNGFNQ1NQWFRPMmtkMkE4Uko4LUZaZTdUMWFQOWFqRXhSZ0k1ZWVPcmhpc1FXZ0FaYVBxRWFuTkNydzF3?oc=5"
-   ],
-   [
-    "스포츠경향",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ienNtTUR6QXBXMVBtczc0aTlmbmR4RC1QSWVqX25ISHR3cTllU0dZQ3FuRmxqcG9aZ1M5REVBaWVmTXpzSjE1M19QeUtfbXlGdkx6a08wZFpHdGQ1NXfSAWNBVV95cUxOU2swRm15TGFYM25uV0JzV2ZsVkliWG0zSXlsVVZnd19TZ0k3WEJCbzRlaXpPZDBRRkVTZlVsUWZfU2Ewb3JZWnNXeUowUS1PZVN2djZnWmlHd3hDTnVFZWtkeEE?oc=5"
-   ]
-  ],
-  "first_seen": "20261028-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-26",
-  "ko": "메카협정국(사우디·튀르키예·파키스탄) 고위대표단, 테헤란서 이란 당국과 긴급 회담—후티 공습 이후 이란 최초 고위급 접촉, 확전 방지 중재",
-  "en": "Senior delegations from Mecca Pact countries (Saudi Arabia, Turkey, Pakistan) hold urgent talks with Iranian officials in Tehran — first high-level contact with Iran since Houthi escalation, aimed at preventing wider war",
-  "ar": "وفود رفيعة المستوى من دول ميثاق مكة (السعودية وتركيا وباكستان) تعقد محادثات عاجلة مع مسؤولين إيرانيين في طهران — أول اتصال رفيع المستوى مع إيران منذ تصعيد الحوثيين، بهدف منع اتساع الحرب",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ1FLZmRCQnhJalR6LVdlUWtGdXFEVllyVUVvMHg1TEpUUkFlWU1LNVRBLXR6NnhTYlJnQU00QVBvaThRQlJZM3ptMHB0TEJCZ29fclVkbmhhMEJuTUd0dEJ3MHNEVlNnMmJPNXhwUEdQT2VDRlVPeFlob3VnOTlBUXdIU2VhS3B4SVZBT2hkcjZGMzA1MWlnQ1pxNkZQVkgtMjhiZ2dLdnAwb2dIakJhRDRVTjVLZ0g2SFcyZF9R0gHDAUFVX3lxTE9SN3hyR0wwc1kzWGR5RlFkOElNUUFHMUJpTHdlcTBJdmJLZWVoRFZ3N0o4ZmtkM0Z0Ync2LWFSUVpUakRvcWxZdGczQ0NXclp5YWkxTmVLU2dLM1BCVjJzbG85Qk1ja1REWGNBTl85YmRUN2Q1NVZEYTE2blV1WXlkdTRoa0lmRjN6OFZVRkZwOVZGU0NXalBEMmV6WW5TNUFwRTRCY1BEaS1BdWx3S3FvN0xyaHZjT2lSREVYUE03UkF1Zw?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/26/officials-from-mecca-pact-states-to-hold-talks-in-iran-amid-regional-tensions?traffic_source=rss"
-   ],
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMUJsM2R4ODZmeV9taEQzSnl2UDNKTVB2dldvLUFKeU5DenV1bk9RelNDT2NuWGhpZWpzVUd3VFFONjE0eEVrdnY1VDU2RnVHd3Q5Uk8xNlhHOWxHYjJLaDBuWWlZZXdUMmpZOWU5YU1YMUE1MGl1bFVzY1hBTVZrRXJBQmJZeFFDSzZGNjBMS051UnpMVzhjNA?oc=5"
-   ]
-  ],
-  "first_seen": "20261026-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-26",
-  "ko": "사우디 주도 연합군, 후티 반군 탄도미사일 시설 공습—발사대·터널·미사일 저장고 파괴 발표",
-  "en": "Saudi-led coalition strikes Houthi ballistic missile facilities — destroys launchers, tunnels and missile depot",
-  "ar": "التحالف بقيادة السعودية يضرب منشآت الصواريخ الباليستية للحوثيين — تدمير منصات إطلاق وأنفاق ومستودع صواريخ",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/26/saudi-led-coalition-says-it-struck-houthi-missile-facilities?traffic_source=rss"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdHd1Q1FTWEFlUlUtZ1FQRWJfYm1QYm5KZW1jTVA2cS01R0cxb0xsNVNrdXJVNm44VTd2ZWN4WnY1R0tla0JuM3NVUmpBVF9GLTl2WEdFRmNUTFpEVUpHVHQzdUREUFBwN2ZEZ2xGcThUa0lKamdzaEY2c19pRy1PcXZCd2hPUmRfTmQ4bUNGWkFPbTM3Z04zLXB2bUdtclBvVmpmQmhqcEloSTJUOHg2ZzRsbEI?oc=5"
-   ]
-  ],
-  "first_seen": "20261026-1530",
   "status": "pending"
  }
 ]
