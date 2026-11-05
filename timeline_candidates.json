@@ -1,5 +1,72 @@
 [
  {
+  "d": "2026-11-05",
+  "ko": "이란 IRGC, 호르무즈 해협 케슘섬 상공서 미군 MQ-1 드론 격추 — 이란 측 주장 '15번째' 격추",
+  "en": "Iran's IRGC claims it downed a US MQ-1 drone over Qeshm Island in the Strait of Hormuz — the 15th such aircraft downed, according to Iran",
+  "ar": "الحرس الثوري الإيراني يدّعي إسقاط طائرة مسيّرة أمريكية من طراز MQ-1 فوق جزيرة قشم في مضيق هرمز — الخامسة عشرة بحسب الادعاء الإيراني",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86312921/IRGC-downs-15th-advanced-US-MQ-1-drone-over-Qeshm-Island"
+   ]
+  ],
+  "first_seen": "20261105-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-05",
+  "ko": "한국 청해부대, 호르무즈 해협 인근 오만 남방까지 작전구역 2배 확대 — 해상초계기 추가 투입, 미국 압박 속 결정",
+  "en": "South Korea's Cheonghae Unit doubles its operational area toward southern Oman near the Strait of Hormuz, deploying additional maritime patrol aircraft amid US pressure",
+  "ar": "الوحدة الكورية الجنوبية 'تشونغهاي' تضاعف منطقة عملياتها نحو جنوب عُمان قرب مضيق هرمز، مع نشر طائرات دورية بحرية إضافية وسط ضغوط أمريكية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdUkzR05pR2VZZm05SjdDTGFpR3VQeVNxeG5scnA0RnVJdklvWFVyc0QtcDF0LXYwWjhvdThwS1FZcnRtY05uYmNnVGQzc0M1bFpVd3BCUVdyV1FMc1RhcXBkeHd3cnhYUTFxMXRyWmptUzRrUmxyVDVmR0x2NlZ3bXpWcWZuMGJJOTBpWlhGNWFOeXpDMXRTbFdDcTd1UTc2MncwV1BHQ01nUFY5REZ3eHdMZ2k4bmRPMHpsczZWRng2ZGE5SEIxdEZ3ZmRGOFVpS3c?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAxODhKRDRlTW5NVU5qZm5KdlU3NloyUW5JdDVqT3Y2d0txU2JCOEpkYVBSQmktV0VING01a0JTbENxQ2VTWDU1MlZBZ1Nta1d4NXRmLTg3YmlVcWFjWXFn?oc=5"
+   ],
+   [
+    "Korea JoongAng Daily",
+    "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSmM3RkJKYXJBbl8xemhxMGpYYjNBd3FjeVVhZ0ZLYXZxU3FHdlQwZDVEN2VUQzFYNS1QVnZQeFB5TUh4OHpiaUZRNkVIUnR0bzhfQVdCT3Z5NXBLOWdzSFltanhtazBucnVSamhsUzF2cUxFNGYyRGlMbG96TjFQbWFjZDNPNFUxUmJ5emFmeHc5OElEM1E0NkdrVmMzemdkQW5DTGZ5TFBOZ2JXd1I0OFJjSXhLSVRTZmM3Yzc2ZTZnZTd4MXJpMXo0ZkNIS1l0OFVoTA?oc=5"
+   ]
+  ],
+  "first_seen": "20261105-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-05",
+  "ko": "트럼프·밴스, 미 중간선거 공화당 참패 원인으로 '이란 전쟁' 지목 — 반전 여론이 선거 패배 촉발했다고 인정",
+  "en": "Trump and Vance point to the 'Iran war' as a key cause of Republican midterm losses, acknowledging anti-war sentiment triggered the Democratic landslide",
+  "ar": "ترامب وفانس يشيران إلى 'حرب إيران' كسبب رئيسي لخسائر الجمهوريين في الانتخابات النصفية، معترفين بأن المشاعر المناهضة للحرب أدت إلى الانتصار الديمقراطي الساحق",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/4/trump-blames-iran-war-for-midterms-losses?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNFdoTi1INVRLRUdkTG9SY3pPQ1dQcTgwTzVjMWQySGdBWUJLczFfMWV1anNEbElxY29VSy1ieGh5dzlCTUhFdEtIMUViLWNURVFEWUw2X3lsbXJVM2dCWW9jQnV2Slg3bm5NMW1iU3JzeHlja2xOSFN6U0ZUR3hwVVRuaU1zV1FmR2p3bTQtczVmMU5VS3NWR2d5d0pzdEpVcFAzNzB6VXc1MUdfVExXX0RwOXRyVEXSAbwBQVVfeXFMTUlnRGFpN3h6WmRvdWJNS1pDdkV3WGJKSC1xNFZtSjNLMWIxRjBweTZYcDZRRzVmdDYxXzNaenQxMzQwUVRqNlpuRW9MaGxHakxsV011NkVTUXZ6LXVjWGItOFZUVzRkTklkOTFYa25oRnNvZTItTWdFLTZpUkwzR3E5ZGpQMzlZdXJNdXRwc2NNRXlYQnQ4LTI0YnExc2RscHhKWEw2ZzdHOHVyWEZaZDFNelVkOGlLOGI4eDM?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/watch-trump-admits-iran-war-caused-election-losses"
+   ]
+  ],
+  "first_seen": "20261105-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-04",
   "ko": "이란 IRGC, 호르무즈해협 인근서 유조선 4척이 기뢰 접촉 후 화재 발생했다고 주장 — 로이터 단독 인용, 미확인",
   "en": "Iran's IRGC claims four tankers ablaze after hitting mines near Strait of Hormuz — reported by Reuters, unverified",
@@ -1702,81 +1769,6 @@
    ]
   ],
   "first_seen": "20261026-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-26",
-  "ko": "CNN, 네타냐후가 선거(10/27) 전 이란 공습 추진했으나 트럼프가 거부—곧 공동작전 가능성 시사(이스라엘 총리실은 보도 부인)",
-  "en": "CNN reports Netanyahu pushed for Iran strike before Oct 27 election, Trump refused but signaled joint action may come soon; Israeli PMO denies report",
-  "ar": "سي إن إن: نتنياهو دفع لضرب إيران قبل انتخابات 27 أكتوبر لكن ترامب رفض وأشار إلى عمل مشترك قريب؛ مكتب رئيس الوزراء الإسرائيلي ينفي التقرير",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "News18",
-    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSHotRlRZaDVTLTZOSVI2Z0NXVWdjbGdvSWpWNWF0V0d6d0dPR19ZWnJnOXJ6T2JsV3V2WVdHbU5HU0p4WWRfRUxjU0pvaVFra1NUU21BYUlvc1FvTEh2R1hKTVVjeVJZOFVNaW9TakJjNGl5bkNuRHhzbEdlT0luVU45Q1JJcV9lb19XdzRWWFVGc0Zka2xCLXpKd1ZDR1lWT01RNE9jaHZHSDVoMXQ1RVZrQ21taktXX3FVSkp4U2haRGZHU2NLdzI4YldlTTRBMUHSAdcBQVVfeXFMUFNmSVlwdkloQy1WMS1BR1ptTTczWkxvcVpkQS1ZWDNTSkxYRkZDaXFGTzZjSEVPbGNYb05oQmkwT0V5aGVYTlZHTF8xVDc5Vms5RFdoSEpIQlZrR1c1eVphb2JNZFpkQnRTcm41RUdrQW9Cckp5cXlid3ZIcWU0T3ZpU0N4MF81VXZoN0hYanhnZ1dJTFFBWFVkLWJFUU1nNDlaLXYtTWJxUU50RkhkTF9MdzNRMk50blQ1T1N5MnFja0FiODl0ZTJGZ2VYcGVRZTFuZ2xjUm8?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMihgJBVV95cUxOaHRkSzc1X2M3aWd6bU1CTE9FU01RbVlEazZlazRFOWFvbjI2TnpTMFFpTDB1aE9EbEJGbm0xU1FUNzBESmpiQ0Nzd00xUExQZDlHWTNjYnpRbTNNTVBGbUs0ZXFmRGVBU0tfREdMa3dVa1RsTlFibXk0WEdWU3Z0eGdkZkpIM2tfNlkyUUtYWUZMZGVrVlBKTWR0MGYzc2FSeTdWMlV3eWgtOHFNTmRTRC1iUi12YkMxU2o0UF9sdXRnN2pOOF8wQmsyYWhWX2taRmNwZnBhWHhyQ3dsSkdlMGdoVkZiSHdHbjlLMXdvRVNMZ3ZKZm8xa0dTdVNUWWZNYWJCNmFB?oc=5"
-   ],
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVzROZEVjU1JBRktyZ1ZvZG1lVEp1bFh0ckpFS2VYMjBDUGFSWTdpaXR1MDZLc3RWRW5xUUlrNG5hc19Yd01fUjVTY19UNWtXS2JwaDZEVENIUFRxem03MnFBakY2TFVNdEFXcWVoMVpPaExySmhoZmxmNXlIbTBCc0xFS1A?oc=5"
-   ]
-  ],
-  "first_seen": "20261026-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-26",
-  "ko": "메카방위협정(사우디·튀르키예·파키스탄) 대표단, 테헤란서 이란과 긴장완화 회담 — 이란 '매우 좋은 논의'라고 평가, 확전 방지 외교 추진",
-  "en": "Mecca Defence Alliance envoys (Saudi Arabia, Turkey, Pakistan) meet Iranian leaders in Tehran to defuse Iran-US tensions — Iran calls talks 'very good', push to prevent renewed war",
-  "ar": "وفود ميثاق مكة (السعودية وتركيا وباكستان) تجتمع مع قادة إيران في طهران لنزع فتيل التوتر مع الولايات المتحدة — إيران تصف المحادثات بأنها 'جيدة جداً' في مسعى لمنع تجدد الحرب",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxONk1ubVptNEpFS3lXMGZ6TnEwaHN4aVh1c3ZhMkc3T0xoYzBXWHpJYXgyZ20tMmRhQTQ0X1ptZ3RJd2c0bjVuN19kaDRHS1hKdjM5R1dNbjN2Y1ZCRkhpdndVYXlibUFreS13QmN3dC1NcmJSel9aUHdBcEE0QUxUcTlHS2NkdGhwSjFGc0lGT2lIOWY5OW9aX2dNX3RLdTNvWEF3NVI5dGNIa3pnalFiT0hMVEFoZ9IBuwFBVV95cUxOUEFzeTRiSDlJa0pLZXVPUVI3NVRqSjVfSzlxMnJGQWNtMzNTcmdwVTFkR2dTXzB5MXRzLUF2ZEFqcHVyRDE2Z0IwaW94UUVDQTltQjFKbGNJd1RTRjV3UTBXY0NxQmh1aExGWEVaMnJscUZmRkJLTWJoaG1aU2drSDRMcnJYVXBVUVYxbmZ3MFpnYkFjLWp4b2dSMFdpdkphbE90UHFfZHBVUTJyQXVNcFVGV0JRM2REZ18w?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-meeting-mecca-pact-states-will-mark-beginning-real"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFkczNnNTlDQi1sY3d3VkFxUjVSb1lJWEFYVGV1dDUydnFKRmxwTzctQnNzRzkzUjd0c05YMXZiak8xX2ZYSnhWQjZ5QWRrbEFabS16VzJVS2U3aWhpbm9nU0E3YndHRVYxX09tcTRIMF9YZU5ZbXRNRHBQTExJNWZ4ZnhWQndPNk9mYVVyOGR4Nzc4Mlkzdjl6WUJSa0NEM3E5LXdlZ1NpZEFIVktCYXB3VQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261027-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-26",
-  "ko": "트럼프, '이란전쟁 곧 끝날 것, 휴전은 시간 낭비였다' 발언 — 전쟁 재개 시사 속 유가 변동",
-  "en": "Trump says 'Iran war will end soon, ceasefire was a waste of time' — remarks hint at resumed conflict amid oil price swings",
-  "ar": "ترامب يقول 'الحرب مع إيران ستنتهي قريباً، ووقف إطلاق النار كان مضيعة للوقت' — تصريحات توحي باستئناف النزاع وسط تقلبات أسعار النفط",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Sc2VUWmxzejFuRTMwRXFUNnNQNFhnYWFxOTAtTmNMUGdjREQzaWJ3NXM3Mm1jeDhPMk1JU0otM0tNSEg3UlRsNG94VUtQa0xlWUwxaGlpUUY?oc=5"
-   ],
-   [
-    "중앙일보",
-    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HWnVPS0tKd0FCRlIzYXJ3TzJyRlU5ODdfZm52S0xWUzBqb0lmVmF1UzVHbTY5SmVkUDhHRFBremZFU1FHamJISHl4SzF6TTlmUGxDdWdn?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5VMmQyRmNxd3Y2bF9OODJNZ3hwNWtieEpWV0N6MTZOc2hSazJyRXhSOExUXzNDQVA5MWhqM0MzTVlOTzB1MWRnU0xmYmpETS1Dc1E5NXZZVGk?oc=5"
-   ]
-  ],
-  "first_seen": "20261027-0700",
   "status": "pending"
  }
 ]
