@@ -113,6 +113,90 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-06",
+  "ko": "미국, 이란 게슘섬 재차 제한공습 — 트럼프 확인, 이란 방공장비 일부 무력화 주장(중재 협상 지속 중 발생)",
+  "en": "US conducts another limited strike on Iran's Qeshm Island — confirmed by Trump as 'minor' strike hitting anti-aircraft device, amid ongoing mediation talks",
+  "ar": "الولايات المتحدة تشن ضربة محدودة أخرى على جزيرة قشم الإيرانية — أكدها ترامب كضربة 'طفيفة' استهدفت جهاز دفاع جوي، وسط استمرار مفاوضات الوساطة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNmpOc3NISlNqd2RIa3JOMjU1TUxPQ1loWXFoN2ZycXNmZ1QyU3hBVG9TWVhHcDNuWlZ2MGE1eVdLRGw5b2tCOTdseGZ6RHQ0RDB6UzZQVWpMSENnTmRSZFhWaGpBRWgyZXJEalpsc0xIbnpHQi1mQmJya1BXTlE4MTdnd056SkZlc1BXTnE2YktwRmhrR1kw0gGcAUFVX3lxTFBQamY0WVlzbUcwRjcyeXRQVFhPZWc0cTZmZWw5WEZxQmhwRkk0TnZlNDhwMFBLb2RZVWNKcGRjTENOV2NKeDlDbHkzUWs0SnBFS3ZkRkpwOXl5VWUza3RELUtQZm1HbTkzMlZCUjJMdHRoN1dHb1FTTTZxZlF1TzFKSXlnU1VWbnBSSjFJUzBqWWVPOUFHYmJua2pabA?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-knocked-out-iranian-little-bit-anti-aircraft-device"
+   ]
+  ],
+  "first_seen": "20261107-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-06",
+  "ko": "이란 IRGC, 게슘섬 상공서 미군 드론 2대 추가 격추 발표 — MQ-1·MQM-170 포함 누적 격추 주장",
+  "en": "Iran's IRGC claims downing of two more US drones (MQ-1 and MQM-170 type) over Qeshm Island",
+  "ar": "الحرس الثوري الإيراني يعلن إسقاط طائرتين أمريكيتين مسيّرتين إضافيتين (MQ-1 وMQM-170) فوق جزيرة قشم",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLVhpeUtrcTVsbnVyOEs0bDZFNWM5TUNmYkM5cm1uczk5S0Joc1JzNVlIQUQyZ21HSExXSExvRExiYVNzQzFKR2dIcVBSNnpIeU1RYW5QaGRLbGp0c1d2M0NVYmJvN3RSNVd6WnBYQk83eHRxemlNUmFiXzdKMWk5ekVlNF9mR3JDZ1VOUktKQkQ3eFVNNW9hYkw2dnl4NDBRek93eVhURm85Zw?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-air-defence-destroys-mq-9-drone-over-qeshm-island-report-says"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249198/IRGC-says-it-shot-down-US-MQ-1-drone-over-Qeshm-island"
+   ]
+  ],
+  "first_seen": "20261107-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-06",
+  "ko": "UKMTO, 11월4일까지 일주일간 호르무즈·아라비아만서 상선 11척 피격 보고",
+  "en": "UKMTO reports 11 commercial ships attacked in Hormuz and Arabian Gulf in the week to Nov 4",
+  "ar": "مكتب عمليات التجارة البحرية البريطاني (UKMTO) يفيد بتعرض 11 سفينة تجارية لهجمات في مضيق هرمز والخليج العربي خلال الأسبوع المنتهي في 4 نوفمبر",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-11-ships-attacked-week-4-nov-hormuz-arabian-gulf"
+   ]
+  ],
+  "first_seen": "20261107-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-06",
+  "ko": "걸프만서 유조선 화재 발생, 선원 1명 사망",
+  "en": "Tankers catch fire in the Gulf, one sailor killed",
+  "ar": "اندلاع حريق في ناقلات نفط في الخليج ومقتل بحار واحد",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVEk3Ujluc1FEc2RDSWlCRjJQUTRzRldCOEtqLXRTTkVmR0VfTGg1eXhOWDh1aEhVWDlERmh6OVNGNHNlU2FxVkhtLW9QVzhWMEJtZWxEV1oxckt4V3Z3bTBDaHVOQjNmTnBfblF3QTAyVFV2cnZwOWVpRkRIWldNNGFfUUhLSVk2ekNESzVYONIBlAFBVV95cUxNcjlCc0xUZHhTUUZKeUpHTTFPSHNaaXE1cnV4RFlycmwyR1FScVZiRjZtalVETkJabE5Hd2taeEhRM1dwZGpMWVpYNUtVQndKSTFOaUZ2akNRcWNaNFNjTEd1ZmVhWG9GTDVhQTdNci01UFF0TVdqbWltRi1SaGpzLWtFaHljWm5fN3h3U1M0QWxzTklW?oc=5"
+   ]
+  ],
+  "first_seen": "20261107-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-05",
   "ko": "이란 IRGC, 호르무즈 해협 케슘섬 상공서 미군 MQ-1 드론 격추 — 이란 측 주장 '15번째' 격추",
   "en": "Iran's IRGC claims it downed a US MQ-1 drone over Qeshm Island in the Strait of Hormuz — the 15th such aircraft downed, according to Iran",
@@ -1697,90 +1781,6 @@
    ]
   ],
   "first_seen": "20261030-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-29",
-  "ko": "미 중부사령관, 트럼프에 대이란 군사옵션 직보 — 미군기 10대 이스라엘 공군기지 전개, 대이란 공습 재개 임박 신호",
-  "en": "US CENTCOM commander briefs Trump on Iran military options — 10 US military planes land in Israel, signaling imminent resumption of strikes on Iran",
-  "ar": "قائد القيادة المركزية الأمريكية يطلع ترامب على خيارات عسكرية ضد إيران — وصول 10 طائرات عسكرية أمريكية إلى إسرائيل وسط إشارات لاستئناف وشيك للضربات",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/report-us-sends-10-military-planes-israel-amid-plans-possible-military"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaXg4cWkxb0hZU0FMMnRrNjNhd1VDLVJaN3h5UlhKZ0s4UEZTVmJMXy1YUDlZc2hySkJ2VjZYX1RLR3BuaF8zU0UxRDBMc3JqS0psbUFPdjU2dFRmeUY3dDN0T0RUMUJCdWVPX3VuZTB5dEV1WWN1T3kwdE1ESldvSXZCN2hjWGZ5LXlSM05hM0wzMkxweW9BcHVDNDdYMHRUSElNZ2hFYWFQY3RTeC1YdNIBtgFBVV95cUxQVGtUTHVaSDAyNGo0cUlROTcwWk5GYXRwUlZST214WUZuMmtKWmZic1pVM1k1UE8wcUM4OTJxMGM3WVE0WVd1WVF1amRGLUxKb0dBeTY0cE5sQlBHTDFSSEJoUlBmNW54MENFZHVOUkpvdEVIazgxRC1xdFZ6dXBrMmFPSXNFOWdiMFV2VlBJMk1qRVhaMjNzSmRELVVjODdzZ190ZlhNWkdKd29aQXRnTFVxSHI2dw?oc=5"
-   ],
-   [
-    "Axios",
-    "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX2pVTGZCQ3oyNjhZekVWemhzeGwyR0t5TFlFbS1IcTZTZmlzQXg4RkVVN0JXcloxbFBFZlF3V2ZXUTIyUS1IeDROcERqTnJaYXNnMFlxM25oUkxQRl84bUJrVUFqMUxQRVJ0anJCYTkybUItMmxFaFR2NzNMZWswRGh3dw?oc=5"
-   ]
-  ],
-  "first_seen": "20261030-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-28",
-  "ko": "후티, 중동4국 회담 직후 사우디 국방부·정유시설 공격 주장 — 역내 평화 공동성명에도 긴장 지속, 사우디 최대 정유시설 공격으로 국제유가 재상승",
-  "en": "Houthis claim attack on Saudi defense ministry and major refinery day after regional 4-nation summit — tensions persist despite joint peace statement, oil prices surge again",
-  "ar": "الحوثيون يزعمون استهداف وزارة الدفاع السعودية ومصفاة نفط كبرى بعد يوم من قمة إقليمية رباعية — استمرار التوتر رغم البيان المشترك للسلام، وارتفاع أسعار النفط مجددا",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "파이낸셜뉴스",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oWjFXVjRSR05QVENrWWNlbXJPUkJ3bFFGckhUYnYwVXRaT3RQZ0RHRy1ZaVZlVkNTZFpTZ0MzbnZqTllIM3kyMkp0R1FxSGlSbk15THVkZjRSQQ?oc=5"
-   ],
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202610282043005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ]
-  ],
-  "first_seen": "20261028-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-28",
-  "ko": "이란, 호르무즈해협서 또 기뢰 피격 주장 — 한국 해운사엔 '규정 위반' 경고 발령",
-  "en": "Iran claims another mine strike in Strait of Hormuz — issues 'regulation violation' warning to Korean shipping firm",
-  "ar": "إيران تزعم وقوع هجوم آخر بلغم في مضيق هرمز — وتوجه تحذيرا بشأن 'انتهاك اللوائح' لشركة شحن كورية",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202610282043005/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ]
-  ],
-  "first_seen": "20261028-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-28",
-  "ko": "브렌트유, 10월 두 번째로 배럴당 116달러 돌파 — 후티 공격·미·이란 전쟁 재개 위협 속 상승",
-  "en": "Brent crude tops $116/barrel for second time in October amid Houthi strikes and renewed US-Iran war threat",
-  "ar": "خام برنت يتجاوز 116 دولاراً للبرميل للمرة الثانية في أكتوبر وسط هجمات الحوثيين وتهديد تجدد الحرب الأمريكية الإيرانية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/248994/Brent-crude-price-tops-116-per-barrel-for-2nd-time-in-Oct"
-   ],
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMixgFBVV95cUxON0ZQWGd3MURSX1JkR05Kd0NkZ0FlbFpCdjFZSzhqVE1GVkJlU0p4bVg0UlJsOGhFWmRwZHFjY2NMNXRHeTNSZzhXanZTLVFrVVVBMml6X3JjNXNZaDBFMGs3TndLdXRWNFdLM0lRNjk0eTg0NkswalJrenBwaVVIUUdfRUptb0s1Z0U0YW9VeG9TMjBPbkNjQXNrTGhlU05JOUQ5U2dHRTFhY3IydTNjMnB2dWQ1Wk5ZMWdPMmcyNWEyUTZMOHc?oc=5"
-   ]
-  ],
-  "first_seen": "20261028-1530",
   "status": "pending"
  }
 ]
