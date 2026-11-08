@@ -1,5 +1,118 @@
 [
  {
+  "d": "2026-11-08",
+  "ko": "미군, 봉쇄 돌파 시도 세인트키츠 국적 상선 공격·무력화 — 경고 무시 후 호르무즈 해협 봉쇄 돌파 시도 선박에 발포",
+  "en": "US attacks St Kitts-flagged vessel attempting to break naval blockade — US forces disable ship near Strait of Hormuz after it ignored warnings and left Iranian port",
+  "ar": "الجيش الأمريكي يهاجم سفينة تحمل علم سانت كيتس حاولت خرق الحصار البحري — تعطيل السفينة قرب مضيق هرمز بعد تجاهلها التحذيرات ومغادرتها ميناء إيرانياً",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261108_0003859143"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAtdERGTlh0d3ZBSGNYZ0NpQktkS0ppeE11LW9ma0w4THRzNFVVTDktNzB5QV9EWHpKeHFhc1hDQnNmNTRHay16V0RaWDhvY0F4OHVWRUk5T21RWmxSanc?oc=5"
+   ]
+  ],
+  "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-08",
+  "ko": "호르무즈 해협서 유조선 2척 기뢰 충돌로 폭발·화재 — 이란 IRGC해군, 미승인 항로 통과 시도 유조선 2척이 기뢰에 부딪혀 불탔다고 발표",
+  "en": "Two tankers hit mines, explode and burn in Strait of Hormuz — Iran's IRGC Navy says tankers attempting unauthorized route struck mines",
+  "ar": "ناقلتان تصطدمان بألغام وتنفجران وتحترقان في مضيق هرمز — الحرس الثوري الإيراني يعلن أن الناقلتين حاولتا عبور مسار غير مصرح به",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249226/Two-tankers-explode-burn-in-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-08",
+  "ko": "미 중부사령부, 이란 무기 육상운송 차단 전담조직 '아이언 게이트' 창설 — 해상봉쇄에 이어 지상 보급로 차단 작전 확대",
+  "en": "US Centcom establishes 'Task Force Iron Gate' to disrupt Iran's land weapons routes — expands naval blockade to ground supply lines",
+  "ar": "القيادة المركزية الأمريكية تنشئ 'قوة المهام آيرون غيت' لقطع طرق نقل الأسلحة الإيرانية البرية — توسيع للحصار البحري ليشمل طرق الإمداد البرية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTHJ4Z08xMkRQRml0cEZYUFhnRmJ2X294S2tERkkwNTN4MjdVVmxqcE5UOWJEZlI1eFlSSXo0RFI3Wnp2bjJlc1JiV2xNX0ljMGUxN1RRU29OV2M3VVp2OWlubzdOSlBOajE2N0h6bEVXbm9QY1lkaXNXbEV1NUdSSXEyQkFZb2VvUzVJNzYtS3pKUFVaUG1Jd0JJN3liMVFWOXJ2a2U0ZlVHY04wdVZFVk1yVzZCNm9MLW81NkNzNGE3czVXWm9HMg?oc=5"
+   ]
+  ],
+  "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-08",
+  "ko": "UAE, 오만만 화재 화물선서 22명 구조 — 아랍계 선원 전원 생존 구조",
+  "en": "UAE rescues 22 crew from burning cargo ship in Gulf of Oman — all Arab-nationality crew members saved",
+  "ar": "الإمارات تنقذ 22 شخصاً من سفينة شحن مشتعلة في بحر عمان — جميع أفراد الطاقم من الجنسيات العربية نجوا",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcFpIT1RkWTNZSXVhbzNJWHpVSGVFa3hDal9pbVpJZUlnY0p4VS1lWHdycmlXNzlKU3JNNEIxNWRfd1ZQY2tWNUN0SUg1UlRWNFdaUFE3SnJuLXFHMklwWjAtQ1pxQk1rYkhfQjRaNnNodWNlSHhkQzE4RXJiRnJ1T0l6UmhMNEJoU1pCOG5uV0dQN2s?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/uae-rescues-22-people-after-cargo-ship-caught-fire-sea-oman"
+   ]
+  ],
+  "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-08",
+  "ko": "이란 IRGC, 자체 설정 탄도미사일 사거리 2000㎞ 제한 해제 발표 — 전면전 재개 우려 속 원거리 타격 능력 확대 시사",
+  "en": "Iran's IRGC announces removal of self-imposed 2,000km ballistic missile range limit — signals potential expansion of long-range strike capability amid renewed war fears",
+  "ar": "الحرس الثوري الإيراني يعلن رفع القيد الذاتي على مدى الصواريخ الباليستية البالغ 2000 كم — إشارة إلى توسيع محتمل للقدرة على الضرب بعيد المدى وسط مخاوف تجدد الحرب",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "KBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qdG8xX0xPNlFNYlVpLW9BS2NKaVRzUkhEQ0JIREhwcDVvQWEyc2o2VC1MRENBZmNhX2R4eXU2Nk4wTDQ2eXFBYUF6M1NtR2prSHNvWkxmcktwbkU?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261108020200009"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261108_0003859141"
+   ]
+  ],
+  "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-07",
   "ko": "호르무즈해협 동편에서 유조선이 기뢰에 충돌해 화재 발생 — 이란 해군 '금지·위험구역 항해 중 피격' 발표",
   "en": "Oil tanker hits sea mine and catches fire east of Strait of Hormuz — Iran's navy says vessel was sailing through a 'prohibited and unsafe zone'",
@@ -64,6 +177,77 @@
    ]
   ],
   "first_seen": "20261107-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-07",
+  "ko": "사우디 동부지역 후티 탄도미사일 요격 — 사우디 주도 연합군, 다맘·알아흐사·아브카이크 지역 경보 후 위험 해제 발표",
+  "en": "Saudi-led coalition intercepts Houthi ballistic missile over Eastern Province — all-clear issued for Dammam, al-Ahsa and Abqaiq after alerts",
+  "ar": "التحالف بقيادة السعودية يعترض صاروخاً باليستياً حوثياً فوق المنطقة الشرقية — إعلان زوال الخطر في الدمام والأحساء وأبقيق بعد التحذيرات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-claims-houthi-missile-destroyed-over-eastern"
+   ],
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSDRERm9jLV9waGJ4eTlzTG9DM2U1MHNDWWFFQVA4NE9NTGppTHlKcTZqVTdmcDNCUV9vSDQ2ektVMERPSktNak5xSFc1NlliVlFIY0FMZ3BqSU9vOXdrUnRNTzVMWjlWNXM3ZEduQnRUaWdGS28yOE5tLWhuV2VlYUZySmJ5NHMwRjFTaU5FeUZVeGZseGVGNGVvWnVIcGdhb0FGWEtVa05yMHA3R0c4?oc=5"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUjdtajRBVmlWQ0NDeTY2RjdLeFVKdDJiYXlUeUhQWngwTkJEU3NyYzBqUGluNjd2SloyN0xQMmw0eGg0SG85dmZySGEzSzBleS02LWFoNVZFWldsQ1liZmNnQ1VOOFZGa25ramstUTZjNlQ4TC11YW5hM0Z4dXJnYlUtX2kxRFhuckNOcWdxai12YVRFTl9pcjhCdzlnNlJDTzBJbkNsVXd4M1djcnpDRmFhSTQxRXc?oc=5"
+   ]
+  ],
+  "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-07",
+  "ko": "예멘 사나 인근 공습 사망자 33명으로 증가 — 후티 측 발표, 부상자 39명",
+  "en": "Death toll from air strikes near Yemen's Sanaa rises to 33 — Houthis report 39 wounded",
+  "ar": "ارتفاع حصيلة قتلى الغارات الجوية قرب صنعاء اليمنية إلى 33 — الحوثيون يعلنون إصابة 39 آخرين",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-air-strikes-near-yemeni-capital-rises-33-houthis-say"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-07",
+  "ko": "이스라엘 대통령, 네타냐후 대신 야권 아이젠코트에 연정구성권 부여 — 28일 내 크네세트 과반(61석) 확보 시 총리 교체",
+  "en": "Israel's president tasks opposition leader Eisenkot, not Netanyahu, with forming next government — 28 days to secure 61 Knesset seats",
+  "ar": "الرئيس الإسرائيلي يكلف زعيم المعارضة أيزنكوت بدلاً من نتنياهو بتشكيل الحكومة المقبلة — 28 يوماً لتأمين 61 مقعداً في الكنيست",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/7/eisenkot-chosen-over-netanyahu-to-form-israels-next-government?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss"
+   ],
+   [
+    "Axios",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNmlUTjlyRlZYWGxKSWtiSE42dVl5N1QtdFlhS3ZKWFQ1cGVwU3dFZDFmUHRFZGYxak9jOVFteVVPcy1SUGVURGFVVnQ2QlIxYUJRbkg5bFZVN3l5NEZDSEs3RFllcFF0aXF4LVRGWTA2NE9LZ3ZraWtzdkl4dm1MRWJn?oc=5"
+   ]
+  ],
+  "first_seen": "20261108-0700",
   "status": "pending"
  },
  {
@@ -1609,186 +1793,6 @@
    ]
   ],
   "first_seen": "20261030-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-30",
-  "ko": "호르무즈 해협서 유조선 2척 림펫 기뢰 공격 받아 화재·운항 중단 — 이란 IRGC, 무전 경고 무시 선박 2척 나포·억류 발표",
-  "en": "Two tankers hit by limpet mines in Strait of Hormuz, catch fire and halt operations — Iran's IRGC says it stopped 2 vessels that ignored radio warnings",
-  "ar": "ناقلتان تتعرضان لهجوم بألغام لاصقة في مضيق هرمز وتحترقان وتتوقفان عن العمل — الحرس الثوري الإيراني يعلن توقيف سفينتين تجاهلتا تحذيرات لاسلكية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZ05LTFJ6eHZMZkNNMDVOZi1JeEZobkRCRTFJVVhNaHBCMjhqVkRKdEoydXNnZi1EWWtYeFZxSXF0SDhoZEhXa0VoZjZVX3gtX0ctM3dRS3lKTkpsU183STRTd0ZQaEZBLWs3bFQwSGRWdHdZSVJhSjlKTmZuTTZPUk9hZzlHQVBndGVYeEp0czhWcEtpcDN0SmRFVUphcVF6?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMm90NFYwSXBfUXlRUU16cklhbm1vdXEwNDlnQVVFczhyV1hnSFVHeTdrRWRyanZkSldJaDNqQlJlREZuVGJvS0hIM1RKV2tuT2s1akRBUHB2Rmxic25pOUQ1WkhRQUJCQUZVNTYxTXozUWZCLW1RQUJreWlkNXZZT2l0dlA5bG1QaUduN1h6NlNqVGNKZDhrSGR2MG9RZzBiSUhuQ0hJcEZVbjFYVGRiRWNoclg1Nkk?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUjdDdUxXVENSNGdpbWJZOEp2QXMtSy1WSUdCVFdHc21FVnMwTE9uMC1xMkFEaS1wTHRjd2JMQzFTZEtPX0drQ3hPMlZVeDlITnc2RndQRElNUy13Ny1UdXpROVVpejNQRHJ4a3l6Q0t3TTZwOUptZDNKdlRVQWJXLXBxTldad19oZUFGS3BKSUlLWlk3d055R290THF3ckRWb3hRYjlR?oc=5"
-   ]
-  ],
-  "first_seen": "20261030-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-30",
-  "ko": "이란, 호르무즈 해협서 미군 무인수상정(USV) 1척 격파 주장 — 미국 측 확인 없어 미확인 주장으로 귀속",
-  "en": "Iran claims it destroyed a US unmanned surface vessel (USV) in the Strait of Hormuz — unconfirmed by US side, attributed as claim",
-  "ar": "إيران تدعي تدمير زورق سطحي أمريكي بدون طيار في مضيق هرمز — ادعاء غير مؤكد من الجانب الأمريكي",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1GSmVVX0tDM1Vnb2FlZFFiT3ZoM2M0WlFnNFZwdHhDc0JWSnpMUmF6SnB0SXNER004UUdmXzhDV2lfcWhoUWM5Y1JxT0xrMzV4NmZTUGpoODdJZkwtZ2ljNmRR?oc=5"
-   ]
-  ],
-  "first_seen": "20261030-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-30",
-  "ko": "카타르 중재단, 美 대이란 공습 재개 우려 속 테헤란 재방문—美·이란 잠정합의 중재 총력전",
-  "en": "Qatari mediators return to Tehran amid fears of renewed US strikes on Iran, in last-ditch push for interim US-Iran deal",
-  "ar": "وسطاء قطريون يعودون إلى طهران وسط مخاوف من ضربات أمريكية متجددة على إيران في مسعى أخير للتوصل إلى اتفاق مؤقت بين واشنطن وطهران",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZzM5VUhnZWJaM1RSaE5fdXVodWdFalAyZXZ3ZHM3YmFQMU9nU1pSanh5bFlyZDFiTmpZejJSQl9TUFc1NDVCZHN1WEozV29TMkJXM2hqaTVueE1FVV9KQVNtMHpReGFyblRUWTdCeHg5WThyV05wQUtNbDI1MHVDN2VrVVk?oc=5"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTEVPUUxXREtET3ZoQzNHclJiS2JGUU11YVd5bFB6VkluZWF0ZHRNZlBqUmlCN3RkMDJnN0x5aTN5eTNpa0FzVE1ueUhYZ1gyNFlNa2FaVGRscmw0RVFsM05hNjI4cjAxdHB5dlhzd0tVUUdhU2lhWElLcWJMaW5TeFB3YmRrMXdzLTV4LUlpWE5tZGo4TUFNeU8xRG8weks2R0RaVW9BRlVLc1NGSmotb0Rsdw?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbTJjSlF1RWJZUU5lWVVYeG44aWtwcFlQcWdmdThRV0lsTXVBT1hkVkx4SXJ6ZHBIUFFpNGdUMFY0VzBXeGtuWnkxQWVycHk5S1Vrd1pTTUV2Y3Q0V19HZHhfNzdPZVhIVzJfWHJnUVBqbEJRY3BFU1pxVmVxQk1hN1FjM3Q2VVgzMkN5TkVTVEFoU2M4aDJuZ3hYcGVzaGl0dzM0UUNIMWI?oc=5"
-   ]
-  ],
-  "first_seen": "20261030-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-30",
-  "ko": "사우디, 메카(마카 지역) 겨냥 후티 드론 요격 발표—후티는 해당 지역 겨냥 부인",
-  "en": "Saudi Arabia reports interception of Houthi drone targeting Mecca region — Houthis deny targeting the area",
-  "ar": "السعودية تعلن اعتراض طائرة مسيّرة للحوثيين استهدفت منطقة مكة المكرمة — الحوثيون ينفون استهداف المنطقة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/10/30/saudi-arabia-reports-interception-of-houthi-drone-targeting-mecca?traffic_source=rss"
-   ],
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdmpfNHBhRi04bFU1US1qNUViNXU3M2h0RXJEbm1wQjg0aHZ0Mkw5M0dYN1FmX1U4cmdXcXNfX3NYeXFrMDN4MjVFNzMzMDBaaElWMWdraUx0cWs1UGZ4aGZkQThzaDh4b056MTBqQVRqUUNTQklwZG9FXzNaQjJyQ2haNzM4eVhka3FzSXh6dHJDMlpoUDZOcVk0eXNtdDFQUnNUS0d1Y09ZaXhrdUtDVFRMbjZkQdIBuwFBVV95cUxNSzlHQWlyQlA4bG5FQ1g0cVRiWnB1ZUc3WEMweWwwMFRicWlXR3d6MURNNkFZeXg1WXZoVGc3NFkxa1c1VTR1UmNFMzdpVzItVjZFNENGZzNPUVZyMjI5WVR5RzVSSS1UXzlFTUQ3SFBwOGZSalVnSlYwVm44MWs3Z3RmUGxubU45elhVWEpZenN3dkpBY252ZDlUdzZ2YjFLb0plTlR5WnAwVjhSajZrWmtPTWhTNGpPa3dZ?oc=5"
-   ]
-  ],
-  "first_seen": "20261030-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-10-30",
-  "ko": "호르무즈 해협서 유조선 4척 기뢰 피격·화재 — 이란 IRGC, 지정항로 이탈 선박 피격 주장·인도선원 27명 포함 다수 승선, 오만이 25명 구조",
-  "en": "Four tankers hit by mines and catch fire in Strait of Hormuz — Iran's IRGC claims strikes on vessels deviating from designated route, including tanker with 27 Indian crew; Oman rescues 25",
-  "ar": "أربع ناقلات تتعرض لانفجارات ألغام وحرائق في مضيق هرمز — الحرس الثوري الإيراني يزعم استهداف سفن خارجة عن المسار المحدد، من بينها ناقلة على متنها 27 هنديا؛ عُمان تنقذ 25 بحاراً",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/10/31/iran-war-live-oil-tankers-hit-in-hormuz-trump-says-conflict-will-end-soon?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSmtrMGdTY1l0TXhmX2xJcFdJRllzTXpsT0lSSFhhbWQ2Y3NPbUhLSTByYVdFaU1MdmJuVTA0UWRoNjF2TlBYWjBNWk1fYmhhV0dMRzg2b2RJblNabTVXREhvVkFXaFRtYzJ3T0ZaNU4zNWNkQ3ZRRVU2THhmeEE1OEJ6bE4zU3o0MXQtekFiNXg2andqVnFEWTFRLVhYX2xHVGp30gGoAUFVX3lxTE9GV3BYaG9nbDM0LWQyOWduOXZIeV9nWVl6NGR6cVlqLTB4cHdFWkV3U2NQTjRhNGpkSnF5QWQ4RFhVV0JvRTNVRUo4SmVWZHI1Vll3emlOTWRkQUd4bHdpNmZubGg4WEhRYzloYXNQUVZ4ZVFtTHVhbW9JMlNLOV9ncFRZNGlSdmVvWEhMTkN6emJ0QlEzYU13bzFqSHYwOHBDSHRUZUxjcw?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQTVEwcEljcXRtLXNuQU9tajllVmlORllZVExCVWxQS1VGWTFoTVJ4R0M5VkRMd0dycFdVTFpSTHdLRTZ5eHFVRkRza1Rmamhfdy1ad3Z0QjQ2NEhZWjJtUEdkOWtsYTFLbUNxejBsVlJ4YUw3dDVJMjVmYjBkVnVGNTQ1ajZ6a2d4Y0NBYk9ZWEc2cmJicUNfTUsxdVJ1MkR5SEg3Uko3eHl0MGhaaFZOR0pyQ2NTU2E1NmdpOEhYZVpSRU1VZm43eG4wV2RUek1C?oc=5"
-   ]
-  ],
-  "first_seen": "20261031-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-30",
-  "ko": "카타르 대표단, 종전협상 재개 위해 테헤란 재방문 — 미·이란 협상 최신 중재안 제시, 미 공습 우려 고조 속 진행",
-  "en": "Qatari delegation revisits Tehran to push for US-Iran deal — latest mediation proposal presented amid fears of fresh US strikes",
-  "ar": "وفد قطري يزور طهران مجدداً لدفع صفقة أمريكية إيرانية — تقديم أحدث مقترح وساطة وسط مخاوف من ضربات أمريكية جديدة",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Axios",
-    "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMTg1UTZmdFFiVndiNS1OTnU2cUhBSk1lTVJDMWFOTEdKNmhtLV9wc0hJSlBqaEk0d2Z3UTdqQTRpbE1UMjV3WG1kaUE5TEFrOWp2clJGTTBFc2JkN0tXNXR5dnd3RGdjWlNhTkFRRFRwSmo5YW1Val83VWZuN3VYQnUteDFtdw?oc=5"
-   ],
-   [
-    "TheDailyNewsOnline.com",
-    "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQelJPQzZPMjhxSllCLWRCM05JRUtiMmRVX2R4bHhfcjBueWF4eXpHMnR2alRHbnhYWjJCMUpuMTB4Qnc1TF9JYm85WFlpMHpwemZmSVVlaDF1RWxuWFV3Z2RPcGd5Q2ROcVVROVJPTmxUQzR0Tm9IdWVmLW9CMFJIN3BfdkRhZ1hWM1lFd1dUOHZDdFdqb2VPbU9iLTc1UUxBNnJNOVhzYnVxQ0cwT2hYVXZ3ZUNKM1hLTWNrcUJyelBqTm9ydmI1bXItSEowRnhpaTZmY1FuZVN2d01CYmJNalFTNllxTHc?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://news.google.com/rss/articles/CBMilgFBVV95cUxNc2dqR0tHT2ZrV1FKNmI1RXVhS0lqYjVZdjFxeUVrcjJVOHNPLXBTNzcyVmg3WjdDUWtQZk5pX3dESWxKRWFfMmRfNk55THhpNm52TVZ6SjVQdkx6cFhCN2swaWprVU94ZTBSWThiY0VSbXJfYTJKUFNpSzBWUUxMMXNiUS1wenJsOU80YWt4VjBTSVAtcHc?oc=5"
-   ]
-  ],
-  "first_seen": "20261031-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-30",
-  "ko": "바레인·카타르 보안경보 발령, 쿠웨이트는 미사일·드론에 요격 대응 — 걸프 긴장 고조",
-  "en": "Bahrain, Qatar issue security alerts as Kuwait intercepts missiles and drones — Gulf tensions escalate",
-  "ar": "البحرين وقطر تصدران تنبيهات أمنية بينما تتصدى الكويت لصواريخ وطائرات مسيّرة — تصاعد التوتر الخليجي",
-  "q": true,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUEpRR1JQMTUyYXN1MlgwclN5SGlaTHIxYjdMU0VqdG8tczNfVl9oMzRSN0ZyYzQ5S0I1UUNhYkhmRWkxelZEcksyeEY5NzJvckthT0VyUjdzVU9FSHptUU1ENHJid2dfX3h3aUowRzQtRm0tQm04Mk1OS0hFOHk4Zm5WTm1Bc1ZudUhlMG81dmZaenMzVmRMWElabUtFZlpMUmlEM1RvQ0dQRXRjVjR6TGhkUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261031-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-29",
-  "ko": "미국, 동맹국들에 선거 이후 이란 공습 및 보복 가능성 대비 경고 — AP 복수 소식통 확인",
-  "en": "US warns allies to prepare for possible Iran strikes and retaliation after elections, AP sources say",
-  "ar": "الولايات المتحدة تحذر الحلفاء من الاستعداد لضربات محتملة ضد إيران وردود انتقامية بعد الانتخابات، بحسب مصادر أسوشيتد برس",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "AP News",
-    "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSjBaT3BqdnFQYS1UeUNSUWJLTUljTWt3NnBfQkxBUmtGMUVYSXNCaEFBc1djNkhnZXl2SnFHTDNXZ2taRzlVc0FPSmVmb1k2WG45clBiMVdWQ3lYRFRtWTA5Zk5ySGdjcnBJNzBhNFJDQU5iRWlsSXYwMWRpTW1jRlBGVzgxYTJuanlYc3d5dkRDaFoycnBLVWIydFY?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261029_0003845895"
-   ],
-   [
-    "연합인포맥스",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBRjFVeFVYSDVNR29aSXE0Y2YtVlVfZVB6c0FtVkR0Z1JkOThXRFRJLWI2UjVXWWsxYlVfOHhMeHZJdHFFYVY2alYxTVBrYTVHOEJONmtKS1JPU0s0YmtUR3gzY1hTTWd5RDROTERrUG9YcW5M?oc=5"
-   ]
-  ],
-  "first_seen": "20261029-0700",
   "status": "pending"
  }
 ]
