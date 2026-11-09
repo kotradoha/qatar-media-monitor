@@ -1,5 +1,64 @@
 [
  {
+  "d": "2026-11-09",
+  "ko": "사우디 아람코 리야드 건물 '공격 시도'로 손상 — 알자지라 단독 보도, 미확인",
+  "en": "Saudi Aramco building in Riyadh damaged in 'attempted' attack — reported by Al Jazeera, unverified",
+  "ar": "تضرر مبنى أرامكو السعودية في الرياض جراء هجوم 'محاولة' — بحسب الجزيرة، غير مؤكد",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOam9zc1FkUTVXSWFQS0FvbG5pRlRaTjVyRDNrU0pubVYtU1Q2SUM3T0NuVWltenY4VUNXRGh6LW1fLWRxcFVKWEhyY2ZlODZHdEV5UkJiNkhBOHpYUUY2U3FLNnM3RHpkS3o3Tm9jNnEzUEg1VGdCdmlHV0trMDdEX3p5UWp6XzJFTEtyWlBTUFhocldQcXlJeTg1N3d6d0FSMGk4WVdwZW16Q3Q4dlZTdDVoSm_SAboBQVVfeXFMTnlpdEw5V3RCT3NRU2pOUUdmSExLODRyNVY5US1jTnkyWG9POFRpM3JGMVFEb0ZpZ2ZieFBWd1Brd0kyQll0dlBtenRZQjVoQ2J6UDBQSFlCVDhfNU5obnpHM0lLYkpRVHJvUmt6YkRzc3loMnpiSnUtczlrOHdFTm5rNWVmdlJGbWt2RXhnbUxyaDBoRkN2dXBmM3R1T2JTczhaUEpiV3hZbmpVV1ZSSjh3ZUNQRXFNOVJn?oc=5"
+   ]
+  ],
+  "first_seen": "20261109-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-09",
+  "ko": "트럼프, 이란 육상 봉쇄 발효 선언 — 이란은 미군 재공습시 '지옥 쏟아붓겠다' 위협",
+  "en": "Trump declares Iran land blockade now in effect — Tehran threatens to 'rain down hell' if US resumes attacks",
+  "ar": "ترامب يعلن سريان الحصار البري على إيران — طهران تهدد بـ'إنزال الجحيم' إذا استأنفت الولايات المتحدة هجماتها",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq?traffic_source=rss"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xVEQ0c1BDRGNhbVFrQm5fT0RWREs3Tnc5R1l3dGRrRkFPWVpBQUV1c25XOWtDazdUMjREMjk3R0xMbjdEcFZYRTY5bTJCTTF1d2VCdFlFRTVKS2NfUk55UUQyTENlcnl6clVfdEZZQU5TTmwzSEE?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-mocks-us-military-initiative-disrupt-supply-routes"
+   ]
+  ],
+  "first_seen": "20261109-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-09",
+  "ko": "이라크 쿠르디스탄 호르모르 가스전 드론 공격 받음 — 보안 소식통 확인",
+  "en": "Drone attack targets Khor Mor gas field in Iraqi Kurdistan — confirmed by security sources",
+  "ar": "هجوم بطائرة مسيّرة يستهدف حقل خور مور للغاز في كردستان العراق — بحسب مصادر أمنية",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249253/Drone-attack-targets-Khor-Mor-gas-field-in-Iraqi-Kurdistan"
+   ]
+  ],
+  "first_seen": "20261109-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-08",
   "ko": "미군, 봉쇄 돌파 시도 세인트키츠 국적 상선 공격·무력화 — 경고 무시 후 호르무즈 해협 봉쇄 돌파 시도 선박에 발포",
   "en": "US attacks St Kitts-flagged vessel attempting to break naval blockade — US forces disable ship near Strait of Hormuz after it ignored warnings and left Iranian port",
@@ -180,6 +239,31 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-08",
+  "ko": "예멘 교전 재개 이후 최악 수준—24시간 50명 이상 사망, 예멘군은 후티 267명 사살·자군 9명 전사 주장",
+  "en": "Worst Yemen clashes since fighting resumed—over 50 killed in 24 hours; Yemeni army claims 267 Houthis 'neutralized', 9 own officers lost",
+  "ar": "أسوأ اشتباكات في اليمن منذ استئناف القتال - مقتل أكثر من 50 شخصا خلال 24 ساعة؛ يزعم الجيش اليمني 'تحييد' 267 حوثيا وفقدان 9 من ضباطه",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1aUEFsdFhCNVJSRzJISTRvYUZzaUdpY1FYU0dITTZiT2hRSTNMMTItTFp5Tk5uT3pnbDhlcVVZa1BfLWFHR3ZqRURxR1BjRG96WE9YV241MjJXTlowQnByM3lB?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxOeUw2bWExN2N5ZXI3T3pvVlM3cjVDTXNBbXB2UXNWS3Q5cTVGSFNCTjVLSnI1UzFqSk1lUGw1cDZwQjdiSl9jOWJZZEJjQ2Jtdk5leUlJb3Y3NkJhUnNubUpOcEJXR0xKZndFY3ZPWWlPMlNKaFRERWhvV19hWE9Ibnp4RWhGM3hRRzBmX0w3Y2F5OFJhOEJxZy1xaHZfN2FsQ0E?oc=5"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DeVJIdE9KbmZMNkZBT29RVEVNTlBNNk9vM3diMkhKTHdCYm9ickY1c2RhbkUtM19JcnVGSEV3QkFMMDBDa28zZ1RVaG1oOGtTMWlVOEhSZXpPSVRZZW5sUHZUbHoyaUdWX2NhMExoTXB2OWk20gF0QVVfeXFMT0N5Ukh0T0puZkw2RkFPb1FURU1OUE02T28zd2IySEpMd0Jib2JyRjVzZGFuRS0zX0lydUZIRXdCQUwwMENrbzNnVFVobWg4a1MxaVU4SFJlek9JVFllbmxQdlRsejJpR1ZfY2EwTGhNcHY5aTY?oc=5"
+   ]
+  ],
+  "first_seen": "20261109-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-07",
   "ko": "호르무즈해협 동편에서 유조선이 기뢰에 충돌해 화재 발생 — 이란 해군 '금지·위험구역 항해 중 피격' 발표",
   "en": "Oil tanker hits sea mine and catches fire east of Strait of Hormuz — Iran's navy says vessel was sailing through a 'prohibited and unsafe zone'",
@@ -315,6 +399,27 @@
    ]
   ],
   "first_seen": "20261108-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-07",
+  "ko": "이집트 카이로 인근 열차 충돌—7명 사망·112명 부상",
+  "en": "Train crash near Egypt's Cairo kills 7, injures 112",
+  "ar": "تحطم قطار قرب القاهرة في مصر يقتل 7 أشخاص ويصيب 112",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVDQyempZTmxsVW9MZ1FJX1VfWFQ5TkNXZTJOVXFZRkd4Q0JXR1VZWWZwa1VtWGh4SkRReURQQ1B6NGZjNUVUTWh2eEV6S0pJc3lCZ2x0R2xUZVpJb1BFWmcxcG05eFJTeGppUXk4VjhVZzNzQ0RNWkN4NVhJbWxmSXU0VXE3UmtWR2RrTklUcVR4OHhZckxXWjJVb29pM25udFNZ0gGoAUFVX3lxTFBCOGI1QVAzX0hnWDR5MzdBbEJVRUZYQ29qQXRncjlWZXByWXhiaGtYclQxaFEzSTJHbEVBQklsQ1lnempNYTBodkh1M05JOF9CVEhFNVdsWjhqdTFtY2d4WEpMRGczaElNQkZIZElIdXJ2YlNDQ0s4RTJzTXZFRXcxTGFYYkVlZ3I5dU9JdVJUemVOSkR6UmhjUkFHajhYeUlVdDItRkU4aQ?oc=5"
+   ],
+   [
+    "MBC 뉴스",
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTE11a2JlMWNhX0p4X3pvMTRuVDVRT1dkUFJkdEg2Q2R3UnhJclY0cHdCRjdodXZiejBSUWo0ZVdhb3MyU2xuV2FEV3VlUVJKc2pDeF9vRmlpZE1fUnhMS0RSN0FaMW9HZUIyNkRpYW01U0lYMWp6VGJaLdIBeEFVX3lxTE0xYXNLYTlFWkk5NjlKR3h1X1RZVEZqb0lwRVN3N2pMNUpZMkxwTURDN01FZHR2UDZBQTNiSzJ4RFYxcVlOTGZ0czUxNVg1Y1BjZUJIb2dPR1RkdzJ5SFhXU0FtSF9FZWwxdmdGRVpvcXk0TVJJbWo4Tg?oc=5"
+   ]
+  ],
+  "first_seen": "20261109-0700",
   "status": "pending"
  },
  {
@@ -1685,103 +1790,6 @@
    [
     "Al Arabiya English",
     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWTBoVE9OdElZUmRES01ndXBpUUNTNEl0V2p0alBPeW1Gc1NUbUVscFRnWGlQbF9oZDBCckFTX0lUdktlV2dILUw0SWlVSm5sdW5NWEFlM3VPS3FRRW1SOTBiMVFicjlGUVVWa2N1eDNPRWZUZlZfRUU5dzMzVkkwMndxMVNPckJCbzlhQVd5ZV92aDFWcGNUMnhobTliR3NKUXRCSkZyVzE0ZDNtVC1OWHRoR3ZKV3dlWDRLTUtNdFhtd2J4bHFramVaTDlneHBWOUpB0gHYAUFVX3lxTE45dmlrN3JwNG1oeEc3SVJOOWp1Z2k4OEtycGxUT2VkekJlUzV5dXpZRFEyYTJlSUZPQVpOQnhnaXNYUjF6UGZyZjd6cWVsWUwxaFRiZFJIdDZNa29XUnduZUhSVHA2a3UzekNTZnVlUjFkNGhvVDBPTGVrZmtZaGVWdjhwSU9KZGFxYWtOSHY3LXNsUk12NUQzNHJHUWt4ZDZuZlNsM1RqSzJiWmtkZFpzWDZwRmlvWDh3a2NhcGZCYlVVMnZsMy00S29QcE9sVmt4dzVMeDhfaw?oc=5"
-   ]
-  ],
-  "first_seen": "20261101-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-31",
-  "ko": "이란군 보복 타격으로 미군 연계 24개 군사시설 내 274개 구조물 손상 — 복구비용 최대 150억달러 추산(이란측 주장)",
-  "en": "Iran's retaliatory strikes reportedly damaged 274 structures at 24 US-linked military sites — estimated repair cost up to $15 billion (Iranian claim)",
-  "ar": "ضربات إيران الانتقامية ألحقت أضراراً بـ274 منشأة في 24 موقعاً عسكرياً مرتبطاً بالولايات المتحدة — تقديرات تكلفة الإصلاح تصل إلى 15 مليار دولار (بحسب الادعاء الإيراني)",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Tehran Times",
-    "https://www.tehrantimes.com/news/531697/Iranian-strikes-damage-274-structures-at-24-US-linked-military"
-   ]
-  ],
-  "first_seen": "20261101-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-31",
-  "ko": "미군 중부사령부, '철통' 대이란 해상봉쇄로 10월31일 기준 상선 144척 우회시켰다고 발표",
-  "en": "US Centcom says 144 commercial vessels have been redirected as of Oct 31 under its 'ironclad' naval blockade on Iran",
-  "ar": "القيادة المركزية الأمريكية تعلن إعادة توجيه 144 سفينة تجارية حتى 31 أكتوبر في إطار الحصار البحري 'الحديدي' على إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-says-144-vessels-redirected-under-ironclad-iran-blockade"
-   ]
-  ],
-  "first_seen": "20261101-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-31",
-  "ko": "이란 최고지도자 하메네이, 군에 대미 보복계획 확대 지시 — '모든 미 자산 타격권 내, 제한 없는 대응' 천명",
-  "en": "Iran's Supreme Leader Khamenei orders military to expand US retaliation plans — declares 'all US assets within striking range, unrestricted response'",
-  "ar": "المرشد الأعلى الإيراني خامنئي يأمر الجيش بتوسيع خطط الرد على الولايات المتحدة — ويعلن أن 'جميع الأصول الأمريكية في مرمى الضربة، ورد بلا قيود'",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOEQyUXVZd3NxbDRqMFNvYWlqRnFTNWJ0bGhSZ1VXNHJwdEEwTXZtVERNdDVTR0NXWE1CMXVJSmF3cEt4ZVlXLUZEbTJ5bFJfdEs3UUZPYU4weXVmWl9KUHhRTmFHbVFsVktyUjJhVkNiOEVFQWhhY2ZVQUFpSmxfU2ROQ05pOWxubnlKRzZVN3VTQ0g0bUFCVkwzY3U3RURIWko2aW9UaGsyNXNmM2VrZDNwaw?oc=5"
-   ],
-   [
-    "연합뉴스 한민족센터",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LQ1ZkQXk0TzRfOHRORkxVVFE5RUZ2b0RVWE9aTkRXYy05LXdRWEI4aXprQkNmWk5jcVlJeHlOeDFLa2tRTHVoc0Zvb1JyUklLSUlRbkFRMW9mSlJTSTNEVm1NbTlicS1XejFoN1F0UUZTcTFI?oc=5"
-   ],
-   [
-    "Tehran Times",
-    "https://www.tehrantimes.com/news/531691/Immediate-effective-with-no-geographical-limitation"
-   ]
-  ],
-  "first_seen": "20261101-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-31",
-  "ko": "UN직원 모하마드 엘샤미, 후티 반군 구금 중 사망 — 구테흐스 사무총장 강력 규탄 및 조사 요구",
-  "en": "UN staff member Mohammad el-Shami dies in Houthi custody — UN chief Guterres condemns death and demands investigation",
-  "ar": "وفاة موظف الأمم المتحدة محمد الشامي أثناء احتجازه لدى الحوثيين — الأمين العام غوتيريش يدين الحادثة ويطالب بالتحقيق",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/guterres-condemns-death-un-staff-member-houthi-custody"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVjU5VUNuY25Gb0FFSjFteXRhNE1EeTJkZk53dUxJOEpmNmpqZzZ0Nm1nZFdiMXU1cmI5ODVDa3ZYVTRuZDVkQTdfRWFZd3hVTm1EMXNYalp5NHctOGpLM0RDYVVreHFmN1VLa293VzZNZG1iX2cxZFNsOFVYSUlaN0Z1MTR3OWZMelRZLXBkb3RQOW16NUc0d2t0Y0tfZndpalVKZ245U01HU1V0OVdGbk5MNjJIOExSeVV2QkZzT1c?oc=5"
-   ]
-  ],
-  "first_seen": "20261101-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-10-31",
-  "ko": "이란 외교장관 아락치, 카타르와 호르무즈해협 재개방 2일 계획 합의 — 미국의 테헤란 조건 수용이 전제",
-  "en": "Iran FM Araghchi says Iran and Qatar reached a 2-day plan to reopen Strait of Hormuz, contingent on US meeting Tehran's conditions",
-  "ar": "وزير الخارجية الإيراني عراقجي يقول إن إيران وقطر توصلتا إلى خطة لإعادة فتح مضيق هرمز خلال يومين، شريطة التزام واشنطن بشروط طهران",
-  "q": true,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz?traffic_source=rss"
    ]
   ],
   "first_seen": "20261101-0700",
