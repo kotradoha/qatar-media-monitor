@@ -1,5 +1,80 @@
 [
  {
+  "d": "2026-11-11",
+  "ko": "호르무즈해협서 유조선 2척 추가 기뢰 피격·화재 — 이란 IRGC, 위조서류 사용 선박 겨냥 '위반 선박' 단속 발표",
+  "en": "Two more tankers hit naval mines and catch fire in Strait of Hormuz — Iran's IRGC says vessels were 'violating' using forged documents",
+  "ar": "ناقلتان نفط إضافيتان تصطدمان بألغام بحرية وتشتعلان فيهما النيران في مضيق هرمز — الحرس الثوري الإيراني يقول إنهما 'مخالفتان' باستخدام وثائق مزورة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86319077/Two-more-violating-oil-tankers-hit-naval-mines-in-Strait-of-Hormuz"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVmVxNWZwUHdsbWJoX0IxMnpsVEJjSk5YOFhuMndYMkxwVnZmU21rTUowb0daQnlxbEpTTVBFeUJSRUxQYVF5YzBqd01PRFdrUHI4MkUzWGtLRmRWTVV6MlM5TDQ2Nk8tcnVIaWZrV29DRzFmLUZjQWM5czd2c0pkWW1MWnE1UTR3N1Rma1BVOGtKSnBVQTdDN05xRU56ekxEc1lheVJDXzVSX21JLUhwdlNaN1hua2Y3?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261111-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-11",
+  "ko": "이란, 미국과 협상 사실 부인하며 '요구 충족 전까지 호르무즈 봉쇄 유지' 재천명",
+  "en": "Iran denies talks with US, reaffirms Hormuz will stay shut until its demands are met",
+  "ar": "إيران تنفي إجراء محادثات مع واشنطن وتؤكد بقاء هرمز مغلقا حتى تلبية مطالبها",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/enriched-nuclear-material-will-not-leave-iran-security-chief-says"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249336/Not-a-particle-of-enriched-nuclear-material-to-be-exited"
+   ]
+  ],
+  "first_seen": "20261111-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-11",
+  "ko": "미 재무장관 베센트, 이란 암살위협에 자택서 군기지로 긴급 이전",
+  "en": "US Treasury Secretary Bessent relocated to military base after Iranian assassination threat",
+  "ar": "وزير الخزانة الأمريكي بيسنت ينتقل إلى قاعدة عسكرية بعد تهديد إيراني بالاغتيال",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/11/us-treasury-chief-bessent-moved-to-military-base-after-iranian-threats?traffic_source=rss"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTkFHa2J6ZmV1aGJjcDNaNzE3dUh6aGowWWt4QVFPQkNDQXdNLUxia2NrMHpMSXNubnY5M1QwZ3JlNTBlUEhlRWZTME1Lb3IxUHlhd3k1REVRcDFLOVYwaHdZelhYeHQtRjN5ellNUHJDclV6Njhza1liRTNVV1ZBdDJnbElLODZxcGtpXzZuVGZucXc5a2ZuYmIxV3BkQTd1Y2taQklySUkzOU5QMUJvSklR0gG3AUFVX3lxTE90aWF5VV84aHQ1MXJnWmsxSUhiNXFsTUY4RHUxMUNZcU1nSkJoVDJiVjdwRndqWVEtTXU1QldnTUZ5RDB0YUJVb3ZwcGIzNVlGZXhlRWdodjhfQ1plSFplbWpHa19LYWkweXlzLTR1cGdoczNBNDhUMnFsbVN1ckVlNFdVUjNRM1U4d3NlcjlKdV9vX3pYcjhYWHRNcWNnTkhRQjBUOWxoVEJfLUdCVkg2VU9jU0d5UQ?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249334/US-Treasury-Chief-Bessent-relocates-to-base-after-Iran-threat"
+   ]
+  ],
+  "first_seen": "20261111-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-10",
   "ko": "한국 정부, 청해부대 작전구역 호르무즈 해협까지 확대하는 파견연장안 국무회의 의결 — 이란은 자제 촉구",
   "en": "South Korea expands Cheonghae naval unit's operation area to Strait of Hormuz via cabinet decision — Iran urges restraint",
@@ -1734,81 +1809,6 @@
    ]
   ],
   "first_seen": "20261104-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-03",
-  "ko": "이란, 중국·인도·이라크·카타르 선박에 대해 호르무즈 통항 제한 면제 조치 발표",
-  "en": "Iran exempts ships from China, India, Iraq and Qatar from Hormuz transit restrictions",
-  "ar": "إيران تعفي سفن الصين والهند والعراق وقطر من قيود العبور في مضيق هرمز",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NY3htQ0hJb2ZnOXUzM3dMbTFRd24xZF9wWWhpWDRoQ29DU0ZTVHVFdnc4Y1hYSURTeXk5YWFYelFiTC1wRWh4VWlVNkpXQ0pVYkZTekFLY2JfRXZJZnc?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8tRWVPT2JtWXZBTXY4QktwVFJvWGFlT1RMWkF3RHZyRThJOVVQWmNFS2xFUHJ2Q2lNX0hjS2VBenBuaGxRU0pPcHBIX1VkcV9FUjA0R0V4cDJ6UDk3MVZDcGxB?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWDRKUmdWclVhZlpLVnFCNlJvSkl0NHJXVHJkQXQtWkdYNWtRMnBjRkRlT1Q4NlRlUTlSa3Y5eEU4LUFqNEZla1J6QXlRTlg3TGpickMtUGNRR1o4dkYtTml0Qzl2YW00UGVoZEo1NXNDZ3V5a045RXEzeU8yamVpLWptNFRnaVhvZEpsN1RGVHZyT3gwQ08zenJILUppY1JtZFRjQTV5TUJIVUlfbXhfYlhQSVpTVzJRM0pESHJVYnZBQ245MGM3M1FkQktIUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261104-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-02",
-  "ko": "카타르 LNG운반선 '알마이다' 피격 — 걸프 해상에서 미상 물체(발사체)에 피격, 사우디·UAE·바레인·쿠웨이트·요르단·이집트·팔레스타인 및 아랍연맹 등 규탄 성명 잇따름",
-  "en": "Qatar's LNG carrier 'Al Mayeda' struck in the Gulf — hit by unidentified objects/projectiles; Saudi Arabia, UAE, Bahrain, Kuwait, Jordan, Egypt, Palestine and Arab Parliament issue condemnations",
-  "ar": "استهداف ناقلة الغاز القطرية 'المايدة' في الخليج — إصابتها بأجسام/مقذوفات مجهولة، وإدانات من السعودية والإمارات والبحرين والكويت والأردن ومصر وفلسطين والبرلمان العربي",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxQSU1Fc3JpWUM4REFIanVUZEJBRUZyQmxQbW82TTJ2TlB5bWp2bVNQV25pWlhGcmY5T19mWUV5M0xvekFGODFoLVkzMnR3a25wSVhIUWpHM2xkcS10OGtwVXFTZHY1ZGVqNGl1dTdMa19yWllzUmVqc2ZWOEtINDBJaDJ5d241UE1rTFFuMTFwcEVrUDdBb2tIQmdVc05ld9IBowFBVV95cUxNZEtDQS12eTRKS0NESXZxRVgyLVB4QXhRRmVsR2I4UEJxSG5yUzVjS1gtZUs3Z28yUXlTcHhiUEVvY2JVXy1KYjNveHZvS0ZHZVk2a1d5aXlBSUlNSHgwNWFCUWg3dzBPajF6UkZrVDFHTWJUdU9DYmhyRTlnTjVuV0ZRNVBVTC1XSFVPT3dBbDNfV2xFWXV6WC14LXZQbnM2eTRJ?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/uae-condemns-attack-qatars-lng-carrier-gulf"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMimwRBVV95cUxNNDM0eE9wQ2JiR3ZQNmZlSWxXVHMtZFZVVmpZTkNSSVBhckUxV1g2WVViWVNwbmk0ZDlMLUZOcjF1ZWRxVkQyZ2VtUFAxNk5zYnZtaUtacDJUTHQ0SzhsNkVXcWVQeVhjRlUwZHZlcnl6UGxXbFZBOXB0SUdJeExUMWZvZ3ZIMzhWOXhXdHVhdWN0SjhNT3F3T1AxcTcwY1UyWndRSWJKRTdDajNZUGp4dHhYcjZtZkg5MThzMF9abldNenR3YVFtR201TTZuZTd1aUw0T09fNU5LR3dGcTE1YkpUSkNvMFI0ODNkOXdHTmV3V0Uxa1VaVGxBWV9UQzNMZmoyd0Y0M3Z0YVV3T2NxQnl3cFI2OWxNZkhHYjJDNlctOUVLVHptZm52dDBGYUlta2lDekFZeDlRSW03TGdaNTF5MXVoLWNscUgwaHliaFZlMnRuX2FvdzZtLXBEajVxdURneUkwOG8zcWdOYUJ0b21uTTlXWC0wNmltQ3o3dHFQU3ZRVUdHM0ppeHFjTko5UTNaRGFHM09sWFB6aTBIYTRzMFZtRE5feWhuc0VHUnJhYWd6dUVtcUk5RXY5dTdDMDRtbjhna2pUU1EzallJSlZVa051VTZOcE9PQzZRTUhob0hCb2FfV3BFNm9DODNPRFdEOUs1WEZNZ3o5S3FYajRRSFd5Vklld05LT0tHcnQ0TlNwWU1Ybi1XYw?oc=5"
-   ]
-  ],
-  "first_seen": "20261102-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-02",
-  "ko": "UKMTO, 사우디 인근서 유조선 미상 발사체 2발 피격 보고 — 호르무즈 긴장 속 추가 해상 공격 확인",
-  "en": "UKMTO reports tanker struck by two unidentified projectiles near Saudi Arabia — additional maritime attack amid Hormuz tensions",
-  "ar": "الهيئة البحرية البريطانية (UKMTO) تبلغ عن إصابة ناقلة بمقذوفين مجهولين قرب السعودية — هجوم بحري إضافي وسط توتر هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-vessel-hit-two-projectiles-near-saudi-arabia"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiygFBVV95cUxQY0QxaWVsaXZha1ZLd3ZmVmx5UnB3X3BOWTFxd21pSlJBY3lZQkNWNzV4SUhaa3FLb3BuVWxOWVJDbmZVX2RCaVoxTHR1RDdrTnFNdkFfa0ROYkJMN3V6MUdsRjlrZ0FqNHVMeGs4dGlBX3JuV1V6V3NTRUZiMEgzMnBpdHE1WmxYMWgtTnBFMjZTbEhGNnlnM0ZsLXg2YWU5aUhMbVJpMUNIeHZDeGJmVnluUEROcUNZYllibW9tUEttaVRGeEhJaHF3?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249089/Two-unknown-projectiles-struck-tanker-off-Saudi-Arabia"
-   ]
-  ],
-  "first_seen": "20261102-0700",
   "status": "pending"
  }
 ]
