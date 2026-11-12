@@ -1,5 +1,47 @@
 [
  {
+  "d": "2026-11-12",
+  "ko": "가자 나세르 병원 공습 — 이스라엘군의 가자 칸유니스 나세르 병원 공습으로 의사·장애인 포함 최소 6명 사망, 28명 부상, 정전 위반 논란 확산",
+  "en": "Israeli strike on Gaza's Nasser Hospital — At least 6 killed including a surgeon and a disabled man, 28 wounded, in strike on southern Gaza's largest medical facility amid ceasefire violation accusations",
+  "ar": "قصف إسرائيلي على مستشفى ناصر في غزة — مقتل 6 أشخاص على الأقل بينهم جراح وشخص من ذوي الإعاقة وإصابة 28 في قصف على أكبر مرفق طبي في جنوب غزة وسط اتهامات بخرق وقف إطلاق النار",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUjFPWWxmYkExQ2pkYVBVZ0N3RFJnUjh4a0pmM0JEQVI2Z09td01Yd1J1Ym14ZEVKaGFFTWczb1NSRnpqWnJvdkhxdEZJU0JCdXVlb3Rjb1JmSFZDWHpHdW94MHlLOHhveDBwZXp1YzliTXd5bG5XM1pra3VqUGZfR1lTaTctWjBQcmdINkdOZ3lvSHdRMkJmclhn0gGfAUFVX3lxTE8xbmxmdzdrZDUtNGx6SnJ3NjlTOFV0YzFZZEhtUjNnSVRuVXd2UXBoQzVheEZCYkF3b21FZHhDWVo3UnFtZlg0NWRTc2ZQVlMtODFid3FhZWRGaGQxbFNhY1JpemZqNTVuRTB5QlVxWVdFSW5yakROZTI0WHdoQ1o2OEh2NU9EUzZtcnVETS1TUUZwLUNvcXJtQlp1aDQ0aw?oc=5"
+   ],
+   [
+    "BBC Middle East",
+    "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss"
+   ],
+   [
+    "CNN",
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcU1aTEhSMkdRVDdDRzlvRmxvMk5yZFotN1RZM3h0dHhhRFFvZ2NJZWRUWXlCN0Jtcmt3RlcxeUY3VF9LNmxZc3lwQlVaQjB5UG5sZ1F0Nm01ZG81M3ZSNWx3RkhEcVF3cGFtMWo0VGFoV0RIb0Z6eVlnak04cWtzSUc3MFdXSEk2NVhZX2FnNV9Kd1E?oc=5"
+   ]
+  ],
+  "first_seen": "20261112-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-12",
+  "ko": "이란 국가가스회사(NIGC), 3월 공습 당시 3분 만에 가스생산 28% 손실 발표",
+  "en": "Iran's NIGC chief says country lost 28% of gas production within three minutes during March attacks",
+  "ar": "رئيس الشركة الوطنية الإيرانية للغاز يعلن فقدان 28% من إنتاج الغاز خلال ثلاث دقائق أثناء هجمات مارس",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMixgFBVV95cUxPU1FrdTFaM194RkthVkhxQWZydkZkcERGVllWeW1Dd2s5RmJPWXlGb0FEWlI2ODEyMWdIWU1PME44X2luOVVERVJhbjhySm9NV0tUN1diX3hlZkgtanozdFl3VUdSdFNza3BiMWd2WGxWQ3NsZnJtVmRFVjFFVTl1dFgwT1htRDZUakJ0SFkzNERNbGhlXzM1a2toMmNhTGlXd3pfbW03MGw5V1daX1BsU09pbTRJa0NrMXVTVEtFUzRxYjlxMnc?oc=5"
+   ]
+  ],
+  "first_seen": "20261112-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-11",
   "ko": "호르무즈해협서 유조선 2척 추가 기뢰 피격·화재 — 이란 IRGC, 위조서류 사용 선박 겨냥 '위반 선박' 단속 발표",
   "en": "Two more tankers hit naval mines and catch fire in Strait of Hormuz — Iran's IRGC says vessels were 'violating' using forged documents",
@@ -72,6 +114,23 @@
    ]
   ],
   "first_seen": "20261111-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-11",
+  "ko": "이란 IRGC, 호르무즈 해협 남부 항로서 미허가 통항 유조선 2척 폭발로 무력화 발표",
+  "en": "Iran's IRGC says two supertankers disabled by explosions in unauthorized passage through Hormuz Strait's southern route",
+  "ar": "الحرس الثوري الإيراني يعلن تعطيل ناقلتي نفط عملاقتين بانفجارات أثناء مرورهما غير المصرح به عبر الممر الجنوبي لمضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261112_0003866277"
+   ]
+  ],
+  "first_seen": "20261112-1530",
   "status": "pending"
  },
  {
@@ -1738,77 +1797,6 @@
    ]
   ],
   "first_seen": "20261103-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-03",
-  "ko": "이란 IRGC, 호르무즈 해협 상공서 미군 드론 2기 격추 주장 — 반다르에 하미르 상공",
-  "en": "Iran's IRGC claims to have downed 2 US drones over Bandar-e Khamir near Strait of Hormuz",
-  "ar": "الحرس الثوري الإيراني يزعم إسقاط طائرتين مسيّرتين أمريكيتين فوق بندر خمیر قرب مضيق هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMizwFBVV95cUxOX3ZqMGZkelQzeXlnck40U2E5X201QXdTeVlETlBja0NxeXNNckIxeFpiOEJHOEJWZkVURUpDeUcxeHRiVFNlSnZzUHJpYzhwYndmeFJQZWl2azU2OXVZcXhPZHp2emE4N2Q2eGpvWU1XbnZvSE0zb1F1aGRULWE4MUxtY1dHT3Q2anZjOUdlUkdaSWtBcWxqd244OHAyY0JLQWo5cFdzUHFGMWxDR3NHMDE2TWNfWHduLVQwaUxfcjljR1RUQVF6bGVsSGd3VUk?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249140/2-more-US-drones-downed-in-south-of-Iran-over-Bandar-e-Khamir"
-   ]
-  ],
-  "first_seen": "20261103-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-03",
-  "ko": "카타르, 美·이란 간접협상 진전 평가—양측 제안 검토 중, 테헤란 방문 중재팀 도하 복귀",
-  "en": "Qatar says US-Iran indirect talks progressing — both sides' proposals under review, mediation team returns from Tehran",
-  "ar": "قطر تقول إن المحادثات غير المباشرة بين أمريكا وإيران تحرز تقدماً — الجانبان يراجعان المقترحات، وعودة فريق الوساطة من طهران",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "파이낸셜뉴스",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yMTdKWE1SOVJWZS1uc0xCZVl2MUFDcXRHckU4NXVuN0JsQ2dpdEFkejE2MVNyMDh3VWhYek1ZdTB4X2pQUmRlalBiSHlDeDRtRnhoNzg3VnJ4Zw?oc=5"
-   ],
-   [
-    "조선일보",
-    "https://www.chosun.com/international/international_general/2026/11/03/G43DQYZRMM3DKNJYG4ZDSYJTME/"
-   ],
-   [
-    "Chosunbiz",
-    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQQTBBakdYazBiVUFRQy1LSUVPN1VJcVdrV3NXZUxvT1I0aGxDcnVZWWs1SnJPOU56c0FTMlFMdjBnRmlEcTVDaG1RdHRKVld4dkRqbzF0bG1lU2NtZ2FFVTc5MEo1TWNwQkd1aHJUWVVEdFE2bkV5Tk9xZWlOX3FCWGZTUzZyVEtU0gGcAUFVX3lxTE5DTUdSWmdUU3VmSExEdGNxZi1tTlNyTTZVbHN0Q3ctc3pDSi1KQklZd0Vtcll4THk1c002U3hqaEVDd0ZOLWR1WDhrWTVkR1VXTzZ5V2hVQjlwUkROQ0kybW1YSWhxOUtZcVFFOXZjSU0yUXZldmpoWkxVOXdEaVZ0SF9FaHY2RXdsNG8yX2V1MGlpUFJYMEZuQkhMRw?oc=5"
-   ]
-  ],
-  "first_seen": "20261103-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-03",
-  "ko": "트럼프, 연간 38억~40억달러 규모 이스라엘 군사원조 연말 중단 발표 — 중간선거 당일 전격 발표",
-  "en": "Trump announces plan to end annual $3.8-4bn US military aid to Israel by year-end — announced on US midterm election day",
-  "ar": "ترامب يعلن وقف المساعدات العسكرية السنوية لإسرائيل البالغة 3.8-4 مليار دولار بنهاية العام — أُعلن يوم الانتخابات النصفية الأمريكية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/4/scepticism-as-trump-says-hes-ending-israels-3-8-bn-military-aid-deal?traffic_source=rss"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPMFowT3NIV2I2d2xRSjh6c3BqZ2ZWNkN2cWRJX05nYlNtbmUydVlrOUxYcUs0RlhHZkR3OEJYQTJMcjFOTEMxeUYxTG1LVFpUY1R2SlJZMjI0VHF2UENPTnRrQ0czQ21IMTNQQjV2Z2s4ZTJ1eEpFMnJFdHRpM25CVTVCSk5XSjJEeGdKR0xzRlhndnlaVThXM21Hd1I4Ymt6Vk13d1RscHhHTFJhZWpVdW5kdmlTamNPRFlGcnFOdk5qbnFnX1BiYnNSWXM5cjE4MVV6RTJRVkRXTjhjOFpTYmVtWmxoS2VZdmpYbEF5N1gzSU5u?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGowUjZTUXY5RDBhdG5MelV3UmlubXdCbXVsR3FZc3hsOUFYQkM2Vk9JQU5OVkJrOVJVUzl0TmlOdWN6eXFJVzY1Wk9xeHdDcUVxNkpiWVpUbzk4emYwbUN6YkIyNWx3OUphc1lLT2JhXzRvM2QzdmhqWWRyOUdzRWFmSmpDVEQxUUZud2NWTjZIUjZCblc5Tm1GaVRmSkhSYms4T1plMnhyV00?oc=5"
-   ]
-  ],
-  "first_seen": "20261104-0700",
   "status": "pending"
  }
 ]
