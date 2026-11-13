@@ -25,6 +25,119 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-13",
+  "ko": "이란 IRGC, 바레인 주둔 미군 조기경보 레이더 파괴 발표 — 미 통신탑 공습에 대한 보복 타격이라고 주장, 호르무즈 해협 '무제한 대응' 경고",
+  "en": "Iran's IRGC announces it destroyed a US early-warning radar in Bahrain — claimed retaliation for US strike on a communications tower, warns of 'unlimited response' over Strait of Hormuz",
+  "ar": "الحرس الثوري الإيراني يعلن تدمير رادار إنذار مبكر أمريكي في البحرين — رداً مزعوماً على ضربة أمريكية لبرج اتصالات، مع تهديد بـ'رد غير محدود' بشأن مضيق هرمز",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-reported-resul-serdar-iran-basij?traffic_source=rss"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/nov/13/iran-us-radar-bahrain-sirik-hormuz"
+   ]
+  ],
+  "first_seen": "20261113-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-13",
+  "ko": "이란 해군, 호르무즈 해협 인근 시리크 해안에서 미군 MQ-1 프레데터 드론 격추 발표",
+  "en": "Iran's navy announces it shot down a US MQ-1 Predator drone off the Sirik coast near the Strait of Hormuz",
+  "ar": "البحرية الإيرانية تعلن إسقاط طائرة مسيّرة أمريكية من طراز MQ-1 بريداتور قبالة ساحل سيريك قرب مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-reports-shooting-down-us-predator-drone-its-southern-coast"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249373/Iran-s-Army-shoots-down-US-MQ-1drone-off-Sirik-coast"
+   ]
+  ],
+  "first_seen": "20261113-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-13",
+  "ko": "호르무즈 해협 동쪽서 LPG 운반선이 기뢰와 충돌해 대형 폭발 — IRGC, 경고 무시한 불법 항로 운항 선박이라고 주장",
+  "en": "LPG carrier strikes naval mine and explodes east of the Strait of Hormuz — IRGC claims vessel ignored warnings and took unauthorized route",
+  "ar": "ناقلة غاز بترولي مسال تصطدم بلغم بحري وتنفجر شرق مضيق هرمز — الحرس الثوري يزعم أن السفينة تجاهلت التحذيرات وسلكت طريقاً غير مصرح به",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUFJScWpnMzJTclBFUEpnMDJsRXp1OEI0cEZkNHZwa05US1hwRTNZZU92RFhIdWpheGdIMGtlYnhQMjlZT1NxV1BHLVNXYUdPQm5INVNVTUx0a3A2ZjRWYU9kRkZVWkpIM1ZhbXB4cHNxNVBjcVZjelp1cDR3aEZjbnJhNWVnVy1adnNTSERxcDMwV1hFRzdscTczUHZfYkJFRXdibDBRaHNqcFdtdmY0bEdjTG9hM200NlNsTTh3WnFwM2szbTluUWJmRQ?oc=5"
+   ],
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86320447/Liquefied-gas-carrier-explodes-after-striking-naval-mine-in-Strait"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0weFR6eWk4ZHlha2xsUFpsTF9PbVRxVGJnSll0TEhxX2FRLTh2UUk0dGRTMDFYZkh0SkQydUQ0WVc5VmhJWDEtYmdXWllWbVhSM1lTb29TQklvNUM0TGI5clNn?oc=5"
+   ]
+  ],
+  "first_seen": "20261113-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-13",
+  "ko": "IEA, 걸프 산유국 수출 회복으로 세계 원유시장 공급과잉 전환 전망 발표",
+  "en": "IEA says world oil market is swinging back to surplus as Gulf exports recover",
+  "ar": "الوكالة الدولية للطاقة تقول إن سوق النفط العالمي يتحول نحو الفائض مع تعافي صادرات الخليج",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcWtzQXhRVUlUbWQ0VVloOTVjekFCcC1XQlNXNWNRcERHNDFEbnBNTTFhZjV3Qjk5bGxCaDhoRFE1Yi1mdGNoR3JCVXY5MmQ0ODVnUWRabHowUDhYSUNKOXV5X0lLQzRBbWNabUFMTzVlMzBNOUUyWTgyeUg1cW5sRjJtUHo3TldPOEY4S19xOGwwYjlkemFibktTVTltVF94WUg5ekdJczcyUlBHOHZ0V3EtdWdjU0JOVkY4?oc=5"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQVljaDkwUzhILVlYVTR6aFdubUJxUV9xMURUOWpaVkpmejFYcXZCOGUyYUlKZDhMVzJkNF9idTIyOVI4OGtMdWJiMlhVN1VKUV9qX181SUs0azJ6S2wyR2hBY3Q0cU5NaXlXaUZodFJBTFlXRjdtRkVmVGFBWFBhTTlFNWRWaUxtSF9RREF2YUluNkZyVFlybW14RlBPRFFJcFFiN3R6em84MXdKT0w0amJpSDlRbnEyYmExQ3VDVGljdw?oc=5"
+   ],
+   [
+    "Financial Times",
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZWVlalpISmRrSTJBMVh4YUVzVUdOZWJhTU1jbmZfc0JwMmNpZGllLUNibThMdHFzV0tfT1paVlZsWGJTSUNQcjNYa196SEdvWnRVaEFZWGFmaTlVcUM0Uy14NlRjWFZZdVU0NFB6RnpKMmZXdUFoME1vdXVtUmZGaXUyTGU?oc=5"
+   ]
+  ],
+  "first_seen": "20261113-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-13",
+  "ko": "유엔 안보리, 사우디 겨냥 후티 공격 및 상업해운 위협 규탄 결의안 채택 — GCC 사무총장, 결의 2837호에 대한 국제적 합의 환영",
+  "en": "UN Security Council condemns Houthi attacks on Saudi Arabia and threats to commercial shipping — GCC chief welcomes international consensus on Resolution 2837",
+  "ar": "مجلس الأمن الدولي يدين هجمات الحوثيين على السعودية والتهديدات للملاحة التجارية — الأمين العام لمجلس التعاون الخليجي يرحب بالتوافق الدولي على القرار 2837",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMigAJBVV95cUxNbzVaZXZySURoQzRONzIzSHVIYkxBcl9vdHFaWWM4NGFvc1ZZWHdJU0sxd1ozRl9fblB3WXRMNzBDbnJOT2dKcjN1Z1RyT1N3MWViTE9BaEt1VjVSTzZsNVhQUTJ4b1ZBX09CRHo1bVVaZTZmR1hvR3BJdElmSGp0Q2phUkpiQ3Z4SWZIQVBSVEd3TkRnNjlSa3FBRGZ0ZHpJdXJac3l5TXd4c2s0XzlOUUZPVElRNVBIbGNiMGtzVW1TYk4xUTgwZkQtOE9tdUI4MFdubzc5M3hKV3QwSW0tTXg1SHItUzdTQnFCb1psUWxsalctWmRxWjYxQlM3RmlI?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRTdJTjUtTUozRjJubHJtRnNPS25nMUJWMjRUMDE3d3hydTFjcHlxRWtDUS15UDhydWpqSTBsUzh6alk0OXZ4anhidTJSUWgwS3lGMHJjbVdZaTdiT1MtMG5JSVNpQzRabjlIQ0FPSW9xVU9KV1BpSDI5ZmNncjZxOVZ3NDlJb21pYVEyVTVoemxodFQySUZfSEtQS2o5eTFmQjVKR2dZUmR3RkZlRVdHTk54WUlkazAtV1V6ZW4xN3VCZkItM1h4MW5jWFFNdUZKb1JnUGZJLVRwQTA?oc=5"
+   ]
+  ],
+  "first_seen": "20261113-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-12",
   "ko": "가자 나세르 병원 공습 — 이스라엘군의 가자 칸유니스 나세르 병원 공습으로 의사·장애인 포함 최소 6명 사망, 28명 부상, 정전 위반 논란 확산",
   "en": "Israeli strike on Gaza's Nasser Hospital — At least 6 killed including a surgeon and a disabled man, 28 wounded, in strike on southern Gaza's largest medical facility amid ceasefire violation accusations",
@@ -1692,119 +1805,6 @@
    ]
   ],
   "first_seen": "20261106-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-04",
-  "ko": "이란 IRGC, 호르무즈해협 인근서 유조선 4척이 기뢰 접촉 후 화재 발생했다고 주장 — 로이터 단독 인용, 미확인",
-  "en": "Iran's IRGC claims four tankers ablaze after hitting mines near Strait of Hormuz — reported by Reuters, unverified",
-  "ar": "الحرس الثوري الإيراني يزعم اشتعال النيران في 4 ناقلات بعد اصطدامها بألغام قرب مضيق هرمز — حصري لرويترز، غير مؤكد",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbjcyLUxfeTMxaHFnbENrc2tqdlowSDFqWU5DUWtqOWhVUUdSYWdSbFpBRGQ4VHI3Rm5DbDVsLTV6bkM4d3FjcmVPRnpsQlJ6RkNSLWNZX0ZtWURvUExKaGZ2M2diWUFvZWZfSE5FN01PR2FXc1pSN1kyeXhHX0ZFS0k4S1FjSDJLc2ZfbGx2cm9TYW9JSThiZVZIeFQxTnVBXzAwYnhlaGxsN3lwQkxOZTdFRVVpc3RPa2J2M0JZNVduZXA3Z2pz?oc=5"
-   ]
-  ],
-  "first_seen": "20261104-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-04",
-  "ko": "美 중간선거 민주당 압승·공화당 참패 — 이란전쟁 여파로 공화당 상하원 상실, 트럼프 '이란이 패배 원인 중 일부' 인정",
-  "en": "US midterms: Democrats sweep Congress as Republicans lose both chambers amid Iran war fallout — Trump admits Iran 'part of' GOP losses",
-  "ar": "الانتخابات النصفية الأمريكية: الديمقراطيون يكتسحون الكونغرس وسط تداعيات حرب إيران — ترامب يعترف بأن إيران 'جزء' من خسائر الجمهوريين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/4/seismic-shift-world-reacts-to-us-midterm-election-results?traffic_source=rss"
-   ],
-   [
-    "BBC Middle East",
-    "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/news/I-think-part-of-it-was-iran-trump-acknowledges-impact-war-midterm-election-losses"
-   ]
-  ],
-  "first_seen": "20261104-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-04",
-  "ko": "이란 혁명수비대, 美 중간선거 결과를 '대이란 전쟁 패배'로 규정하며 '미국인들 전쟁 반대(NO TO WAR)' 메시지 지지 표명",
-  "en": "Iran's IRGC and top officials call US midterm results a 'defeat in war against Iran,' endorse Americans' 'NO TO WAR' message",
-  "ar": "الحرس الثوري الإيراني ومسؤولون كبار يصفون نتائج الانتخابات النصفية الأمريكية بـ'هزيمة في الحرب ضد إيران' ويؤيدون رسالة 'لا للحرب'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/4/seismic-shift-world-reacts-to-us-midterm-election-results?traffic_source=rss"
-   ],
-   [
-    "BBC Middle East",
-    "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&at_campaign=rss"
-   ],
-   [
-    "IRNA",
-    "https://en.irna.ir/photo/86312538/Ghalibaf-Americans-said-No-to-War-and-Iran-endorses-their"
-   ]
-  ],
-  "first_seen": "20261104-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-04",
-  "ko": "이란 최고지도자 하메네이, 美 선거 결과에도 대이란 적대정책 지속 경고하며 '침략 재발 시 더 큰 보복' 재천명",
-  "en": "Iran's Supreme Leader Khamenei warns US hostility will persist despite election results, threatens 'broader response' if aggression repeats",
-  "ar": "المرشد الأعلى الإيراني خامنئي يحذر من استمرار العداء الأمريكي رغم نتائج الانتخابات ويهدد بـ'رد أوسع' في حال تكرار العدوان",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaEZ3aWJLQkFSaS1sTE9sRklmbC1uMVhZSXdGcW4wd1hMSmNhY05BYVdpVjVaRHU3Y01tX0lhTXBNMjVEYjd0b1piOVdOWGxfaXNWNFBLdXlmTnZZSVJhalEtbmtoWVZZYmdXNnlBYmZ4R1FzZERiQUVQZjEtTWZPNkNtemxBMmlnSUxUYXBQZzJSTE1WYnRjYlJyaHJweFF6dUNJck1UM0VIR2c5cGRFNmJjWmp3ZTNuckpQT3dKMG95MzFyT2VuMFNtV2VQdDTSAdQBQVVfeXFMTl9iMzBMb2E1cU9BSTgwVWFvbHo5WG5iYjNYdHNicG5NcGVzSU5ZdllmemdYUEhtellGOFU4T0ViWXppWFowWjhRSi11UHU0akpzNU9YX3ZycDFiRFZiNUtQbnRUYjBza3dlXzR4REpub25wTjlwcXhjaWNtaHNLOVZncFk3WTJZbk44d1dTY1FpZDlqM3hmdG13UFlzcGt2Y2p1SkFaLWo2M01MR3ZNMXJVc2JCM0F5NWo3clprYnAyenM5MXdvRHg3QlBJalNSUXJ4LVg?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMDE0MndFaUVMclZpVkpRc3c4WE5OaWtvaWZpdHVta1dYQncxZGJYZ1ZTWkxsdUFtMDlBZGwzeGM3QlA4LWxmb0h6TDJNZGRxYlR3WkMtQy1OaGhYdkw2VG1ab19VYmliN2lGbmNsVG5FMjdEcjZxODJ2MkFvWW1NNFZudFlueXY4SDdrZGM3dmVycGtEVmhEMG5OanJKQjY0OTdwX295SUczWlU5ZVA3bHlhX3lldWhGdjlYXzRINi11am54OGVtOWJQSQ?oc=5"
-   ],
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZUJpWFN1Mk9MR1J5dGYzd0xld25oanpjSXJvcS1jQWhVY2tBUi1iY2Q5Z3RUZW9Ia0hkcURmMHhoM3VvU1ZrMnRzcHM3S093cVNGQzdvR3NoRERIMmkxUWpuYnJaODBHU1pfTFNjNGk2WTdVNFRrVU5jUFJza19TUS1Mb3JWQTk0M0E?oc=5"
-   ]
-  ],
-  "first_seen": "20261104-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-04",
-  "ko": "이란, 걸프국들에 '美 공격에 영토 제공 시 보복 범위 확대' 경고 — IRGC 총사령관 고문 모가담파르 발언",
-  "en": "Iran warns Gulf states of expanded retaliation if they allow US to use their territory for attacks on Iran — IRGC adviser Moghadampour",
-  "ar": "إيران تحذر دول الخليج من توسيع نطاق الانتقام إذا سمحت باستخدام أراضيها لهجمات أمريكية — بحسب مستشار الحرس الثوري مقدم‌پور",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "연합뉴스TV",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9SaFU2Y0hhcEZjUGJrTERJazdDNU9OZEpHbUNDcVM3cjV3aGxHeFZ6X1VZa3Eya1VwUGoyZmpDYnU0U1hSekEwWVVFVjhaSzRJX3BvUFJUVW1JVXhvay1YcVcwelNIT0U?oc=5"
-   ],
-   [
-    "매일경제",
-    "https://www.mk.co.kr/news/world/12196860"
-   ]
-  ],
-  "first_seen": "20261104-1530",
   "status": "pending"
  }
 ]
