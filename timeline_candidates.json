@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-11-13",
+  "ko": "이란 IRGC, 바레인 주둔 미군 조기경보 레이더 타격 — 이란 시리크 통신탑 공격 보복 주장, 미국·이란 재확전 우려 고조",
+  "en": "Iran's IRGC strikes US early-warning radar in Bahrain — claims retaliation for attack on Sirik telecom tower, raising fears of US-Iran war resumption",
+  "ar": "الحرس الثوري الإيراني يستهدف رادار الإنذار المبكر الأمريكي في البحرين — بزعم الرد على ضربة برج اتصالات سيريك، وسط مخاوف من استئناف الحرب الأمريكية الإيرانية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/13/iran-says-it-struck-us-radar-site-in-bahrain?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks?traffic_source=rss"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qZWhoaVp5V1BxSWw2MC1OU21JR0xpMVhxeHBuaWFCak9tZlFwN2ZXdHItWnQ1Mk5iRExJdWpFLTJEMklfMC15ZXFwNnNpN3hlY1laUkUxdWhKQ0FuMXVTUjZVc2RCaWEzNXc?oc=5"
+   ]
+  ],
+  "first_seen": "20261113-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-12",
   "ko": "가자 나세르 병원 공습 — 이스라엘군의 가자 칸유니스 나세르 병원 공습으로 의사·장애인 포함 최소 6명 사망, 28명 부상, 정전 위반 논란 확산",
   "en": "Israeli strike on Gaza's Nasser Hospital — At least 6 killed including a surgeon and a disabled man, 28 wounded, in strike on southern Gaza's largest medical facility amid ceasefire violation accusations",
@@ -39,6 +64,48 @@
    ]
   ],
   "first_seen": "20261112-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-12",
+  "ko": "페르시아만서 한국계 장금상선 VLCC 2척 피격 — 선원 4명 부상, 이란의 호르무즈 통항 규정 위반 경고 이후 발생",
+  "en": "Two Korea-linked VLCC tankers (Changkeum Shipping) struck in Persian Gulf — 4 crew injured, follows Iran's warning over Hormuz transit rule violations",
+  "ar": "استهداف ناقلتي نفط عملاقتين كوريتين (تشانغكيوم) في الخليج الفارسي — إصابة 4 من الطاقم، عقب تحذير إيران من انتهاكات قواعد العبور في هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "서울신문",
+    "https://www.seoul.co.kr/news/newsView.php?id=20261113500151"
+   ]
+  ],
+  "first_seen": "20261113-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-12",
+  "ko": "트럼프, '이란과 합의 불필요, 호르무즈 장악 중' 발언 — 밴스 이란 협상 임무 배제, 추가 항모 전개로 군사압박 선회",
+  "en": "Trump says 'no deal needed with Iran, we control Hormuz' — sidelines Vance from Iran talks, shifts to military pressure with additional carrier deployment",
+  "ar": "ترامب: 'لا حاجة لاتفاق مع إيران، ونحن نسيطر على هرمز' — يستبعد فانس من محادثات إيران ويتجه للضغط العسكري بنشر حاملة طائرات إضافية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMHdnX0NFU1pwMlVRRFQ2V1V6b0g0T3MyNkhUOEw2aTFMcF90ODhFSDBoWUxhaWFxdzFQbmVhbXpUNlhOVzFoZ0hsM2hpU19iSmJ2bFJSMmlPYk1EUThHSlBJM3djbmRKekdHa0tpRDZheGlMOHczV2FHUDRudW5vbXVNLUdVOEhEQklxNFFrVXRDQTgzUlVwc0xfa1hLNTg5cGhwYm4tLUYzZHRXWjdVR25xU2N4emc?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSjB6XzQzTU9Mckp1Ync2VE56WDBEQlA1cHNDYTAxRjdIejNNR0NRVHp6dkluNlZuZFdvSl9XNzdDcnRmQk9MSzJITVR2VktKRW1RRDVDZkdNb290UjlVQXQ0enJSZEpoeXNFYTZJa1Z3cGxmRXlxVmlMOGtNZ2JObjNQdFdSWnFNZ3ZoUktR0gGTAUFVX3lxTE80dWVpZ1dMYnhuRWVXTzNnT1dqZlBiSTBaVDVHSjNyRE93WXZHcEJIaENkOHJYY0JObDkyUUlUbktkMURZY3E2M2hpZUFVVERPaW0zRXpjdURHR1NBbzh2RVgzeEhBT0Zyc0ppaFF2ZFVZNDJYWjJlanhfLXltLXk1aHJ5QWtjUjJjWDc2cGl4cEFBUQ?oc=5"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxOWUZPalZVeXJPblBWRk9oeUJmUlpLanVvemFJWlJaWm16RGxYSWE3UE44czR3N09QaXVLTFFkOTdQMjJrd2NDVTYxZld3Y2MwLW14d2ZmTFhHNHZTVDhCMU9GMlN1aXZITEllYkplLUFTZDJWbGNBSk9IY1kwSFN6cUY4aEVab2lNYUEtOEZpWXlkaHR4V2Q0OE9UbmEwUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261113-0700",
   "status": "pending"
  },
  {
@@ -1738,65 +1805,6 @@
    ]
   ],
   "first_seen": "20261104-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-04",
-  "ko": "트럼프, 선거일 이스라엘에 대한 군사원조 중단 전격 발표",
-  "en": "Trump abruptly announces suspension of military aid to Israel on election day",
-  "ar": "ترامب يعلن فجأة تعليق المساعدات العسكرية لإسرائيل يوم الانتخابات",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxOc1NyWk9ndFRXUVBlLWZ1NEswek9VWHQ4bDNfR0xObHpFSFFsdlVNVHBMcC1tbTFWRWtxYmZKSmhxMWgzWFR0RHAzeTMtdFp3V2VsN0xQQUxHa3VibTJncmxoZll1QWkwXzJKTXJIR25DU09XamJBalJsOW1xZDFGcUxn?oc=5"
-   ]
-  ],
-  "first_seen": "20261104-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-04",
-  "ko": "IEA, 이란전쟁으로 세계 LNG 공급 사상 최대 연간 감소 위협 경고 — 카타르 라스라판 등 불가항력 장기화 영향",
-  "en": "IEA warns Iran war threatens record annual drop in global LNG supply, citing prolonged Qatar Ras Laffan force majeure",
-  "ar": "الوكالة الدولية للطاقة تحذر من أن حرب إيران تهدد بانخفاض قياسي سنوي في إمدادات الغاز الطبيعي المسال العالمية بسبب استمرار القوة القاهرة في رأس لفان القطرية",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXlWSVExOEg2WWUxMi14SlEtNzRUWjVMMUJpWmdKb1ZqRUhfMWQ0ZmNmcXdPSlZuR2dWUVlxZWtINjNsdDRzbUJCdFdTTlppbHZudFRnZHh1SzFMQmNOd180ZmdNXzhGc0FGZF9IYkNTVnJqOVVwZmZsWWxpTVYzeUIzOGZzRVluaUtyR3ZYeE9oUVNMV1RrSmxYcXlYSUd5WkIyb0lROEl0T0J4bjJXNW9Md1VzSkk?oc=5"
-   ]
-  ],
-  "first_seen": "20261104-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-03",
-  "ko": "이란 IRGC, 호르무즈 해협서 유조선 3척 기뢰 폭발로 화재 발생 주장 — 불법 항로 이용 주장",
-  "en": "Iran's IRGC claims 3 oil tankers exploded after hitting naval mines in Strait of Hormuz, caught fire — alleges unauthorized passage",
-  "ar": "الحرس الثوري الإيراني يزعم انفجار 3 ناقلات نفط بعد اصطدامها بألغام بحرية في مضيق هرمز واندلاع حرائق — بزعم استخدام ممرات غير مصرح بها",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-three-tankers-exploded-after-hitting-naval-mines-hormuz"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249137/3-rankers-exploded-after-hitting-naval-mines-in-Hormuz-IRGC"
-   ],
-   [
-    "Mehr News Agency",
-    "https://news.google.com/rss/articles/CBMimwFBVV95cUxONGEteFczNFlMSy1wbHFLVk1LcVVqNERUMzFfTTZCS184d2g3NTJoV2hON0FSWWVEay1xRjdvMmZscnREWGVNZGtwUVh2WjRMcGNZU1VyR0tEMkdhSG4wN21zSUd6VVd1UExRbl9yajFOcGNiWFo0VDZVTWtJTGZjWXlGaGUzUW1UOHFJbFl4Q1dZblNfMDRzS2hOUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261103-1530",
   "status": "pending"
  }
 ]
