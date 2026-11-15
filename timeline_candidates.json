@@ -75,6 +75,73 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-15",
+  "ko": "이란 IRGC, 바레인 주둔 미군기지 레이더 시설에 드론 6기 공습 — 바레인군 요격 성공, 전역 사이렌·경보 발령, 사우디·요르단 등 GCC 국가들 일제히 규탄",
+  "en": "Iran's IRGC launches six drones at US military radar site in Bahrain — Bahrain intercepts attacks, nationwide sirens sound, Saudi Arabia and Jordan among GCC states condemn strike",
+  "ar": "فيلق الحرس الثوري الإيراني يشن هجوماً بست طائرات مسيرة على منشأة رادار عسكرية أمريكية في البحرين — القوات البحرينية تعترض الهجوم، صفارات الإنذار تدوي في جميع أنحاء البلاد، والسعودية والأردن ضمن دول الخليج التي تدين الهجوم",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/15/iran-targets-us-military-radar-in-bahrain-in-retaliatory-drone-strikes?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know?traffic_source=rss"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN0FLcVJxWm41NjVHalI2NmVlRHIwODg5MFhyZUlsUFQ4YXhMMFg2cmkwSTU0TnBtOFd2cnRxaU5tdmdTVmJrcWQ5ekhKT1JpLVp6dXlIbW8wazFsN1p4Wm1TU1ZtRElvNnFxRDNuN1gzN2lweUZYYlRoRTFQNVlEZXo3S1plRE5ZcG1EREhZTUV5bHZ5bUxKQ2ptbHdteExVUktsTThFNVltMF9ta1HSAbMBQVVfeXFMTmNtc2o5cVBHYTlaTXZ0TTFncnVoTkNSVHMxbm8yMDhHaHd3cTl6RVlIaXhKRTRMdEdPa002YkhzdWtIMlk2RmZIY0tpOVFiSXJEeXRIWWl6Yjlrd0MxQkVPLXZpSUhWQUt3N21ocG1xWVRFSGdfaTRtbGRoNzA5R2NiNHJrTHBiUHd6WmV5NkFQYXVSUzR0MkJCMldMNHE3YWlDT0FvNWtGNjJmSHFkU0ZqN2s?oc=5"
+   ]
+  ],
+  "first_seen": "20261115-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-15",
+  "ko": "카타르, 이란의 대(對)바레인 연속 공격을 강력 규탄하는 공식 성명 발표 — GCC 역내 결속 표명",
+  "en": "Qatar issues official statement strongly condemning Iran's continued attacks on Bahrain — signals GCC regional solidarity",
+  "ar": "قطر تصدر بياناً رسمياً تدين فيه بشدة استمرار الهجمات الإيرانية على البحرين — في إشارة إلى التضامن الإقليمي لدول مجلس التعاون الخليجي",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTEhMcmY3RUwxVFdLaGN2U0VLQ09SYVdSd2xXRnVpN0FkVVNhUTk0WDRORjNvdGpHZThCRzBxSEJmUmZuTTV4cElHVmdESnhhTm1IV1F1bTRBd28tLXlRMGhnTTNvblNGZkpnYjdDY285QWhRX29GeDVMZk5RaHRZU1VhbTMydTZycEpITWJUVll4TzhNMEdHamxVMUhjd05WblpkckpIUi13QUxC?oc=5"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcEZXZmtqY2RDQ0MzWW5WbTJkbHF6WlU2WVZOd1RQbS1IWm80V0toMXh6TTI5UmNJRG5NcG9nVUpxbUVHMVl2MjA2MGNwVWZlSjJLbFdZYVptRXR4dDRIR2QxdEhUb0ljYUJtd0ZvX3ZBZzZFenJNdnBuY3lwclhnY2lTTEVuTWVLUVRaSFBCNlZON0w1STBsdDljdHRMTlJCZVhJUDFENWV1SjQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261115-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-15",
+  "ko": "사우디아라비아, 이란의 바레인 공격 규탄 및 즉각 중단 촉구 — '완전한 연대' 표명",
+  "en": "Saudi Arabia condemns Iranian attacks on Bahrain, calls for immediate halt — expresses 'full solidarity' with Bahrain",
+  "ar": "السعودية تدين الهجمات الإيرانية على البحرين وتدعو إلى وقفها فوراً — وتعبر عن 'تضامنها الكامل' مع البحرين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-joins-condemnation-iranian-attacks-bahrain"
+   ],
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObXBYN2lzUGxCMzd2dFlpalVHYzJFMmtiTWpxSEVtVzNEOXdlUk91NmdHTHpkYjhhTUd1WktYaFVTblFjMUM2NlM4RW1VMk1KcVZlNk9iY0dVUzlLNzBqSjdXVXB3QWgzX3M4ZG1SMVNGTDliZFpNLWdHdzBsa1pVYzBITGE1eVFOTjNnVllIVHBBb01Qa2F2aTh0cEZ4YXQtOVVfOElJQUpBWjB0OXBIOGVTZFExcks5bnFweWotb3RxZkEwdGhlRmZlNG9PcXNGcXpydEtDQmR6QdIB3wFBVV95cUxNXzV1ODl4S09neElCdnFKR184S3JqMGdzaU1aelYyc1haVjNYLTFqMmJRMHhYZUdsWnl6YlZwOE85bWNFTmoybnRLZllPMXoxbzBZR2pMYVMxUG0zQWFURTRhRjM0VFJPSERUcHhqcmQ0RHBTYnBzY2dadFpXTzV3Y3N6NlJXZXREemhkdzNpTk1xR1d6ODdXRjQ4cnd5MVJqZl9Mc2ViMlZJZnN6UzRCS3gzQVNJOFQ1ZFhyWi14V3g0OGxibnNNZlJMRU1HMS1NdTN6QTJUOFRQRGU1UER3?oc=5"
+   ]
+  ],
+  "first_seen": "20261115-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-14",
   "ko": "GCC, 이란에 걸프국가 공격 피해에 대한 전액 배상 요구",
   "en": "GCC demands Iran pay full compensation for attacks on Gulf states",
@@ -457,6 +524,27 @@
    ]
   ],
   "first_seen": "20261114-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-13",
+  "ko": "이란, 두 달 만에 바레인 내 미군기지 첫 공습 재개 — IRGC 드론 공격, '美 공격 대응' 주장(2일 간격 2차 공격 중 1차)",
+  "en": "Iran resumes attacks on US base in Bahrain after two months — IRGC drone strike, claimed as response to 'US aggression' (first of two strikes within days)",
+  "ar": "إيران تستأنف الهجمات على قاعدة أمريكية في البحرين بعد شهرين — هجوم بطائرات مسيرة لفيلق الحرس الثوري، بزعم الرد على 'العدوان الأمريكي' (الأولى من ضربتين خلال أيام)",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The New York Times",
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxObmV0c0pwNVZmTU04SXFiQktmeFVOX2FhVkxlTkRrb3dRY0xYZEhaM3BKZmZ6V1FOUUJWOTJva3psREkzR2Q5ems3VVZYWFkyNEJ2V185V196bnZqVndfYXZCT2hZTVhzTjZEb2RyVnpCQ21QT0NpNTR5SThLbG0wWUFB?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcDJzX3ZZUmk0ZHJvY3hHNFpBbDRfQlBpT25MWEZNNGY1QUsxWnlRVkl2WXNFN3puTS1ra2pHc2ZkeDI5WUxZcm9yZ1JheGRQYXlGM0VfMVRmY01UdmVDc1R1UDYyUk9MWGpKTzQ0bzFKOGJQS3VhMDhJdzkyaDQwanNLTFMzVU5vRVdUbVRudjQtQ0NCZXdleUJOeWwxaEVXQ3c0TEs1dkNZSTY4RnAxc1I3c1JhY3dNNy1JRFR4cmJnWHNl?oc=5"
+   ]
+  ],
+  "first_seen": "20261115-1530",
   "status": "pending"
  },
  {
@@ -1725,90 +1813,6 @@
    ]
   ],
   "first_seen": "20261107-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-06",
-  "ko": "이란 IRGC, 게슘섬 상공서 미군 드론 2대 추가 격추 발표 — MQ-1·MQM-170 포함 누적 격추 주장",
-  "en": "Iran's IRGC claims downing of two more US drones (MQ-1 and MQM-170 type) over Qeshm Island",
-  "ar": "الحرس الثوري الإيراني يعلن إسقاط طائرتين أمريكيتين مسيّرتين إضافيتين (MQ-1 وMQM-170) فوق جزيرة قشم",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLVhpeUtrcTVsbnVyOEs0bDZFNWM5TUNmYkM5cm1uczk5S0Joc1JzNVlIQUQyZ21HSExXSExvRExiYVNzQzFKR2dIcVBSNnpIeU1RYW5QaGRLbGp0c1d2M0NVYmJvN3RSNVd6WnBYQk83eHRxemlNUmFiXzdKMWk5ekVlNF9mR3JDZ1VOUktKQkQ3eFVNNW9hYkw2dnl4NDBRek93eVhURm85Zw?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-air-defence-destroys-mq-9-drone-over-qeshm-island-report-says"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249198/IRGC-says-it-shot-down-US-MQ-1-drone-over-Qeshm-island"
-   ]
-  ],
-  "first_seen": "20261107-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-06",
-  "ko": "UKMTO, 11월4일까지 일주일간 호르무즈·아라비아만서 상선 11척 피격 보고",
-  "en": "UKMTO reports 11 commercial ships attacked in Hormuz and Arabian Gulf in the week to Nov 4",
-  "ar": "مكتب عمليات التجارة البحرية البريطاني (UKMTO) يفيد بتعرض 11 سفينة تجارية لهجمات في مضيق هرمز والخليج العربي خلال الأسبوع المنتهي في 4 نوفمبر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-11-ships-attacked-week-4-nov-hormuz-arabian-gulf"
-   ]
-  ],
-  "first_seen": "20261107-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-06",
-  "ko": "걸프만서 유조선 화재 발생, 선원 1명 사망",
-  "en": "Tankers catch fire in the Gulf, one sailor killed",
-  "ar": "اندلاع حريق في ناقلات نفط في الخليج ومقتل بحار واحد",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVEk3Ujluc1FEc2RDSWlCRjJQUTRzRldCOEtqLXRTTkVmR0VfTGg1eXhOWDh1aEhVWDlERmh6OVNGNHNlU2FxVkhtLW9QVzhWMEJtZWxEV1oxckt4V3Z3bTBDaHVOQjNmTnBfblF3QTAyVFV2cnZwOWVpRkRIWldNNGFfUUhLSVk2ekNESzVYONIBlAFBVV95cUxNcjlCc0xUZHhTUUZKeUpHTTFPSHNaaXE1cnV4RFlycmwyR1FScVZiRjZtalVETkJabE5Hd2taeEhRM1dwZGpMWVpYNUtVQndKSTFOaUZ2akNRcWNaNFNjTEd1ZmVhWG9GTDVhQTdNci01UFF0TVdqbWltRi1SaGpzLWtFaHljWm5fN3h3U1M0QWxzTklW?oc=5"
-   ]
-  ],
-  "first_seen": "20261107-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-06",
-  "ko": "트럼프, 중간선거 참패 사흘 만에 이란 게슘섬 방공시설 공습 — 트럼프 '경미한 공격, 15분 만에 방공시설 파괴' 발표, 본인은 '전쟁 아니다' 주장",
-  "en": "Trump confirms new US strikes on Iran's Qeshm island three days after midterm defeat — Trump calls it a 'minor strike' destroying air defenses in about 15 minutes, insists 'it's not a war'",
-  "ar": "ترامب يؤكد شن ضربات أمريكية جديدة على جزيرة قشم الإيرانية بعد ثلاثة أيام من هزيمة الانتخابات النصفية — وصفها ترامب بأنها 'ضربة بسيطة' دمرت الدفاعات الجوية خلال نحو 15 دقيقة، وأكد أن 'الأمر ليس حربا'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNmpOc3NISlNqd2RIa3JOMjU1TUxPQ1loWXFoN2ZycXNmZ1QyU3hBVG9TWVhHcDNuWlZ2MGE1eVdLRGw5b2tCOTdseGZ6RHQ0RDB6UzZQVWpMSENnTmRSZFhWaGpBRWgyZXJEalpsc0xIbnpHQi1mQmJya1BXTlE4MTdnd056SkZlc1BXTnE2YktwRmhrR1kw0gGcAUFVX3lxTFBQamY0WVlzbUcwRjcyeXRQVFhPZWc0cTZmZWw5WEZxQmhwRkk0TnZlNDhwMFBLb2RZVWNKcGRjTENOV2NKeDlDbHkzUWs0SnBFS3ZkRkpwOXl5VWUza3RELUtQZm1HbTkzMlZCUjJMdHRoN1dHb1FTTTZxZlF1TzFKSXlnU1VWbnBSSjFJUzBqWWVPOUFHYmJua2pabA?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/7/trump-confirms-us-strikes-in-iran-insists-its-not-a?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/news/trump-says-us-military-carried-out-fresh-round-minor-strikes-irans-qesham-island-claims-talks"
-   ]
-  ],
-  "first_seen": "20261107-1530",
   "status": "pending"
  }
 ]
