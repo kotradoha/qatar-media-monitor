@@ -1,5 +1,102 @@
 [
  {
+  "d": "2026-11-16",
+  "ko": "이란, 바레인 미군기지 재공격 — 종전협상판 흔들 가능성 제기됨",
+  "en": "Iran attacks US base in Bahrain again — raises concerns over derailing ceasefire talks",
+  "ar": "إيران تهاجم القاعدة الأمريكية في البحرين مجدداً — مخاوف من زعزعة محادثات وقف إطلاق النار",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "한겨레",
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE1EbUFlclVOajlsQWM1S3ZzNWZzbUhrMEo2YVp2a1Z1RjhBSFlIVjhZekNsamNVeUlVazI4QkZzN0dHXzBxQnBLWVN5TUxGOXBPcDBkVnBOOWxQRVU5VFdDY1VuRVVFcTRoaVRic1puSGx2aEU?oc=5"
+   ]
+  ],
+  "first_seen": "20261116-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-16",
+  "ko": "미국, 중동 항모 전력 3개로 증강 — usstheodoreroosevelt호 역내 도착",
+  "en": "US boosts carrier presence in Middle East to three — USS Theodore Roosevelt arrives in region",
+  "ar": "الولايات المتحدة تزيد وجود حاملات الطائرات في الشرق الأوسط إلى ثلاث — وصول يو إس إس ثيودور روزفلت إلى المنطقة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSGt1dzlFajdua3M4bDZoT3YweVZaaDBZbXUzWEdSZTBWblhVU09BUE1XVEg0UFpiODBfLXVsTnR1S2lMcVg5aF9xOFladzd6b0xjNjZIX1d0MFByaThEdWF4R1VpcC1xZDhvLTEzM2RnNUFWMjNsV284eGNxRVQ3ME5uQk11S0haVzk4ZUlDSEt1dEgxMWxkVmRITW9XQkg5eFJqbF82SE1zdFU4NERNZzFRMFc0cThta2U2Wmx5TG1US2FDMzNVZl9JUnVmUkFudzNGeVZXU2hpZw?oc=5"
+   ]
+  ],
+  "first_seen": "20261116-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-16",
+  "ko": "바레인, 이란연계 테러혐의로 시아파 성직자 등 64명 무기징역·5명 징역15년 선고",
+  "en": "Bahrain sentences 64 Shiite clerics to life in prison and 5 to 15 years over Iran-linked terror charges",
+  "ar": "البحرين تحكم بالسجن المؤبد على 64 من رجال الدين الشيعة وبالسجن 15 عاماً على 5 آخرين بتهم إرهاب مرتبطة بإيران",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVHVkbXgwNFAycXlMbjdWQ05nbHViTHdYRXpYd3U2NUZTUU5mVDFuNHFuSTM5b1doMlFFN2RSWlhNRlp0ei1Ec3hxUmM0TW9wWkxoRDNrbzZFMVVMRFctN2FSVWVGS1IzSHozZGcwc2FMSTR3NkZkOElMcnZYUmctY2MwclBmOUloU1lUdEdSZWFXbnN0NmtNZHRPWDA1UE15M00tMHZDR2pydkJwWXFJUTNCSEhoQ3VoS2VrYTF1LTBzUQ?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPanludnBDamtkVEE2Z001ZE5MczVVaTJMell5ZHZvSEJtcHJCaW9qMWNQS3hzRDVQVHBmWXFxUnB6MHFpN0pIRVJqV3dobWhEQ2R6QlRDdmw1R2tLZ1ROUUZGaEsxR2JfUFlhcFQ1MUJrR0JzM2luNy1SOEFzSGw1VkVRSDNtNWc0cldSR3RnTXYzRjd6RGZZaTd3UEdQOWZHeThLeGpZaURNUmc?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lV0dnVHJfcm9rYkpPYXNBLVUtWHJzOHo2cVZ2czRZWi1xc2U0QnNyamZvaDhWaXJMbFY4cnJfWDZFNG4wMGdjSnh3SndUMUI2aXJ4ZXFnUmRFemd5YUJ2cVJ3?oc=5"
+   ]
+  ],
+  "first_seen": "20261116-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-16",
+  "ko": "이란, 호르무즈해협 48시간 내 재개방 계획에 주변국 지지 확보 주장",
+  "en": "Iran claims neighboring countries support its plan to reopen Strait of Hormuz within 48 hours",
+  "ar": "إيران تدعي حصولها على دعم دول الجوار لخطة إعادة فتح مضيق هرمز خلال 48 ساعة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE45VEJPREdqSWFNVzdaRnJ4WVhrdFN0dUVzY0duUnl1R2ctcDFOLUlQTG9iRTBXUWUwNW9PZ0xxRTBrSXlMU2pFeHU2Z3dMNzV6R2RGUlpLRmZTREVzWHc?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBmaG5QOFlYN1BWRHlXNDFSV3k0N1Juc1hwN09DRTgyQTdHb0FsR1Q4S0VEQXpmRXNKY1g5WkdiX3E2azNSZjFwN3ZISXNDNlF0UnNyOE1BeWdWUDZrUFE?oc=5"
+   ]
+  ],
+  "first_seen": "20261116-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-16",
+  "ko": "IEA, 걸프산유국 수출 회복으로 세계 원유시장 공급과잉 전환 전망",
+  "en": "IEA forecasts global oil market to return to surplus as Gulf exports recover",
+  "ar": "الوكالة الدولية للطاقة تتوقع عودة سوق النفط العالمي إلى الفائض مع تعافي صادرات الخليج",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQVljaDkwUzhILVlYVTR6aFdubUJxUV9xMURUOWpaVkpmejFYcXZCOGUyYUlKZDhMVzJkNF9idTIyOVI4OGtMdWJiMlhVN1VKUV9qX181SUs0azJ6S2wyR2hBY3Q0cU5NaXlXaUZodFJBTFlXRjdtRkVmVGFBWFBhTTlFNWRWaUxtSF9RREF2YUluNkZyVFlybW14RlBPRFFJcFFiN3R6em84MXdKT0w0amJpSDlRbnEyYmExQ3VDVGljdw?oc=5"
+   ]
+  ],
+  "first_seen": "20261116-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-15",
   "ko": "미 정보당국, 이란이 전쟁 피해에도 최대 미사일 2500발 보유 추산 — 트럼프 '승리' 주장과 배치",
   "en": "US intelligence estimates Iran retains up to 2,500 missiles despite war damage, countering Trump's 'victory' claims",
@@ -1708,123 +1805,6 @@
    ]
   ],
   "first_seen": "20261107-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-07",
-  "ko": "사우디 동부지역 후티 탄도미사일 요격 — 사우디 주도 연합군, 다맘·알아흐사·아브카이크 지역 경보 후 위험 해제 발표",
-  "en": "Saudi-led coalition intercepts Houthi ballistic missile over Eastern Province — all-clear issued for Dammam, al-Ahsa and Abqaiq after alerts",
-  "ar": "التحالف بقيادة السعودية يعترض صاروخاً باليستياً حوثياً فوق المنطقة الشرقية — إعلان زوال الخطر في الدمام والأحساء وأبقيق بعد التحذيرات",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-claims-houthi-missile-destroyed-over-eastern"
-   ],
-   [
-    "Al-Monitor",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSDRERm9jLV9waGJ4eTlzTG9DM2U1MHNDWWFFQVA4NE9NTGppTHlKcTZqVTdmcDNCUV9vSDQ2ektVMERPSktNak5xSFc1NlliVlFIY0FMZ3BqSU9vOXdrUnRNTzVMWjlWNXM3ZEduQnRUaWdGS28yOE5tLWhuV2VlYUZySmJ5NHMwRjFTaU5FeUZVeGZseGVGNGVvWnVIcGdhb0FGWEtVa05yMHA3R0c4?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUjdtajRBVmlWQ0NDeTY2RjdLeFVKdDJiYXlUeUhQWngwTkJEU3NyYzBqUGluNjd2SloyN0xQMmw0eGg0SG85dmZySGEzSzBleS02LWFoNVZFWldsQ1liZmNnQ1VOOFZGa25ramstUTZjNlQ4TC11YW5hM0Z4dXJnYlUtX2kxRFhuckNOcWdxai12YVRFTl9pcjhCdzlnNlJDTzBJbkNsVXd4M1djcnpDRmFhSTQxRXc?oc=5"
-   ]
-  ],
-  "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-07",
-  "ko": "예멘 사나 인근 공습 사망자 33명으로 증가 — 후티 측 발표, 부상자 39명",
-  "en": "Death toll from air strikes near Yemen's Sanaa rises to 33 — Houthis report 39 wounded",
-  "ar": "ارتفاع حصيلة قتلى الغارات الجوية قرب صنعاء اليمنية إلى 33 — الحوثيون يعلنون إصابة 39 آخرين",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-air-strikes-near-yemeni-capital-rises-33-houthis-say"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-07",
-  "ko": "이스라엘 대통령, 네타냐후 대신 야권 아이젠코트에 연정구성권 부여 — 28일 내 크네세트 과반(61석) 확보 시 총리 교체",
-  "en": "Israel's president tasks opposition leader Eisenkot, not Netanyahu, with forming next government — 28 days to secure 61 Knesset seats",
-  "ar": "الرئيس الإسرائيلي يكلف زعيم المعارضة أيزنكوت بدلاً من نتنياهو بتشكيل الحكومة المقبلة — 28 يوماً لتأمين 61 مقعداً في الكنيست",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/7/eisenkot-chosen-over-netanyahu-to-form-israels-next-government?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss"
-   ],
-   [
-    "Axios",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNmlUTjlyRlZYWGxKSWtiSE42dVl5N1QtdFlhS3ZKWFQ1cGVwU3dFZDFmUHRFZGYxak9jOVFteVVPcy1SUGVURGFVVnQ2QlIxYUJRbkg5bFZVN3l5NEZDSEs3RFllcFF0aXF4LVRGWTA2NE9LZ3ZraWtzdkl4dm1MRWJn?oc=5"
-   ]
-  ],
-  "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-07",
-  "ko": "이집트 카이로 인근 열차 충돌—7명 사망·112명 부상",
-  "en": "Train crash near Egypt's Cairo kills 7, injures 112",
-  "ar": "تحطم قطار قرب القاهرة في مصر يقتل 7 أشخاص ويصيب 112",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVDQyempZTmxsVW9MZ1FJX1VfWFQ5TkNXZTJOVXFZRkd4Q0JXR1VZWWZwa1VtWGh4SkRReURQQ1B6NGZjNUVUTWh2eEV6S0pJc3lCZ2x0R2xUZVpJb1BFWmcxcG05eFJTeGppUXk4VjhVZzNzQ0RNWkN4NVhJbWxmSXU0VXE3UmtWR2RrTklUcVR4OHhZckxXWjJVb29pM25udFNZ0gGoAUFVX3lxTFBCOGI1QVAzX0hnWDR5MzdBbEJVRUZYQ29qQXRncjlWZXByWXhiaGtYclQxaFEzSTJHbEVBQklsQ1lnempNYTBodkh1M05JOF9CVEhFNVdsWjhqdTFtY2d4WEpMRGczaElNQkZIZElIdXJ2YlNDQ0s4RTJzTXZFRXcxTGFYYkVlZ3I5dU9JdVJUemVOSkR6UmhjUkFHajhYeUlVdDItRkU4aQ?oc=5"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE11a2JlMWNhX0p4X3pvMTRuVDVRT1dkUFJkdEg2Q2R3UnhJclY0cHdCRjdodXZiejBSUWo0ZVdhb3MyU2xuV2FEV3VlUVJKc2pDeF9vRmlpZE1fUnhMS0RSN0FaMW9HZUIyNkRpYW01U0lYMWp6VGJaLdIBeEFVX3lxTE0xYXNLYTlFWkk5NjlKR3h1X1RZVEZqb0lwRVN3N2pMNUpZMkxwTURDN01FZHR2UDZBQTNiSzJ4RFYxcVlOTGZ0czUxNVg1Y1BjZUJIb2dPR1RkdzJ5SFhXU0FtSF9FZWwxdmdGRVpvcXk0TVJJbWo4Tg?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-06",
-  "ko": "호르무즈 해협서 유조선 2척 기뢰 충돌·화재 — 이란 IRGC, '미허가 경로' 통과 시도 유조선 2척이 기뢰와 충돌해 화재 발생했다고 주장(미군 지원 받았다고 비난, 해상당국 확인 없음)",
-  "en": "Two oil tankers catch fire after hitting mines in Strait of Hormuz — Iran's IRGC claims two tankers attempting 'unauthorized' passage struck mines and caught fire, accusing them of US military support; no independent maritime authority confirmation",
-  "ar": "اشتعال ناقلتي نفط بعد اصطدامهما بألغام في مضيق هرمز — زعم الحرس الثوري الإيراني أن ناقلتين كانتا تحاولان المرور عبر مسار 'غير مصرح به' اصطدمتا بألغام بحرية واشتعلت فيهما النيران، متهماً إياهما بتلقي دعم عسكري أمريكي، دون تأكيد من السلطات البحرية المستقلة",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-two-oil-tankers-ablaze-after-collision-mines-hormuz-strait"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxNU1lWam9DOFZMV1U5UU1Ma3hudDNSMFUybFlaSWtkcERWOFdqVzdsZndYWU9oNF9NWkFYRWw4alZZUzVqRllwbDk4OGFPMnBfTU5WYzM0LVg0RmtoWUZCbEdQdnBya1ZzNGItT0t4bWkycVFfeHRBejFWbEdJR3UwWjk1eEhwT3NFbmh6WGM1MlJpUV9YSE5VaEZ0d0kxREZFTHVrSVdrVjBYT3p2aGxNb1ZHbjlTanh2S1E?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE5PT0xVNllLS3hCeXJnZ1NyWm1jTzQxQjRvSE9BNlZ4ay1iYkpkZ0dLQTFTNmV5QmF5aXNhc1lCbXJkaGhTWklkQ21NdlJHVzRSaVJ3c1N0WHEtdzFyVTZFVHJsNUN3ZmE5T2VwYXFuVjZxWnFCRWFOZkhKOA?oc=5"
-   ]
-  ],
-  "first_seen": "20261106-1530",
   "status": "pending"
  }
 ]
