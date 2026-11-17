@@ -1,5 +1,72 @@
 [
  {
+  "d": "2026-11-17",
+  "ko": "미 항공모함 3번째 중동 전개 — 이란의 호르무즈 봉쇄 지속 속 워싱턴포스트 보도",
+  "en": "Third US aircraft carrier arrives in Middle East — as Iran's Hormuz blockade continues, per Washington Post",
+  "ar": "وصول حاملة الطائرات الأمريكية الثالثة إلى الشرق الأوسط — وسط استمرار الحصار الإيراني لمضيق هرمز، بحسب واشنطن بوست",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUVlLQzhTNkp4OVh5aWIwYllRRjRpOU9jM3FDQUM5eDc1eVhXVk9jai1ibFEzSTU0TzdjeFJLS05VdkpNZTVVN2EydGRQVldwcEQyeGNsXzZfcWQwRU5JdEFHai1sc2IxSWFxRk9WbzF3UDkzRHlVMzNkWVJIOFpmM2JqY01nR29tRVJlVFMwcUFwSXZUX0xNLWkydzk2WEdoZy13aXptUG9FZlEydVVhcHhOcW1hT3d6S0NUX3g2NXMta080U1VwVS1n?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/17/tankers-hit-in-strait-of-hormuz-as-drone-raises-alarm-at-iraq-gas-field?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261117-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-17",
+  "ko": "IRGC, 카슘섬 인근서 미군 MQM-170 드론 9번째 나포 주장 — 이란 메흐르통신 보도",
+  "en": "IRGC claims seizure of 9th US MQM-170 drone near Qeshm Island — per Iran's Mehr News",
+  "ar": "الحرس الثوري الإيراني يعلن احتجاز الطائرة المسيّرة الأمريكية MQM-170 التاسعة قرب جزيرة قشم — وفق وكالة مهر الإيرانية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-forces-seized-us-drone-near-hormuz-strait"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249462/IRGC-captures-ninth-U-S-MQM-170-drone-over-Qeshm"
+   ]
+  ],
+  "first_seen": "20261117-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-17",
+  "ko": "美 정보당국, 이란의 워싱턴DC 겨냥 '더티밤'·화학무기 테러 모의 정황 포착 — CNN 보도, 백악관·재무장관 등 표적 지목",
+  "en": "US intelligence detects Iran plot for 'dirty bomb' or chemical attack targeting Washington DC — CNN reports White House and Treasury officials among targets",
+  "ar": "الاستخبارات الأمريكية ترصد مؤامرة إيرانية لاستخدام 'قنبلة قذرة' أو هجوم كيميائي يستهدف واشنطن — سي إن إن تفيد باستهداف مسؤولين في البيت الأبيض ووزارة الخزانة",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "CNN",
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX3h4djBXM3Z2bjVGYjJMdVhJZzhzQnU2ZWZLSUNGQXd4M1RWOTdFM0h1NFB5M1VhR21MOFE2d3UwNElNbms2Z3I3bm5mT3JTbGN5NXdfSXBpc0w3WlFxdl9zcjdWNGo3NjdDV2FlNjdUWTV6NjNRZC10V2FnY2xtWVZhNnA?oc=5"
+   ],
+   [
+    "CNN",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbDBpdVpoV2NyT1AtTHVFQWNVeEp3OGozbmN5MjBEeTJfc2N6TVl6S1RuNmQzbUFTRDRvLXdNWDlobnRQQ0VOYm5ocTZSWmlpdjVHZDE3NGthTWlTRHhLNWNud2FqS05CZmRkUWYzMFkxNUtMd0xlNHMxMXZMUUVIaDJkWUI1Z04yWFJJRHVhTQ?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oY1lRMlZjdFNOYy1LWkpjZ05CMzZUTm1uVThrNGNKYUprcGh6RFZLQmhEVW9QRC1PbmV1cUZsWGdwcEMzUlFaM2NXT1Z4Rzk3UjdISVhPNlhxcVVXT3BqY0RUeGZPX1VuREE?oc=5"
+   ]
+  ],
+  "first_seen": "20261117-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-16",
   "ko": "이란, 바레인 미군기지 재공격 — 종전협상판 흔들 가능성 제기됨",
   "en": "Iran attacks US base in Bahrain again — raises concerns over derailing ceasefire talks",
@@ -94,6 +161,44 @@
    ]
   ],
   "first_seen": "20261116-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-16",
+  "ko": "이란 공군, 호르무즈 해협 상공에서 미군 MQ-1 드론 격추 — 이란 국방부 자체 방공시스템으로 요격 주장",
+  "en": "Iranian Army shoots down US MQ-1 drone over Strait of Hormuz — Iran claims interception with domestic air defense systems",
+  "ar": "الجيش الإيراني يسقط طائرة أمريكية مسيّرة من طراز MQ-1 فوق مضيق هرمز — تزعم إيران اعتراضها بأنظمة دفاع جوي محلية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249461/Iranian-Army-shoots-down-MQ-1-drone-over-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261117-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-16",
+  "ko": "바레인 법원, 이란과 연계 테러 혐의로 시아파 성직자 등 64명에 종신형 선고 — 이란 보복공격 이후 종교 탄압 논란",
+  "en": "Bahrain court sentences 64 Shia figures including clerics to life in prison on Iran-linked terror charges — sparks sectarian persecution controversy after Iran's retaliatory strikes",
+  "ar": "محكمة بحرينية تصدر أحكاماً بالسجن المؤبد على 64 من الشيعة بينهم رجال دين بتهم مرتبطة بإيران — وسط جدل حول الاضطهاد الطائفي بعد الهجمات الإيرانية الانتقامية",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261117_0003870990"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbGZSVXl2N1RfOW5qeHlqdkNTTkJ4cG95WFE3VHRucTlxQnZfUUlhWDlrMGJFS2NxYmJGLXhtQ09lZ2JPeW1sVmJYdTZRWGJxTVVDbE8yclFESTFmcUZjajUtQ2tFOTRtdEFrN0c3SGk3RE5LaWJScEFtMmFHWlZ0aUdfNU5hdWhWaGZqTFJPSXRnNXZZN3d3anlfTVdiYmNsWnc?oc=5"
+   ]
+  ],
+  "first_seen": "20261117-0700",
   "status": "pending"
  },
  {
@@ -1696,115 +1801,6 @@
    ]
   ],
   "first_seen": "20261108-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "예멘 교전 재개 이후 최악 수준—24시간 50명 이상 사망, 예멘군은 후티 267명 사살·자군 9명 전사 주장",
-  "en": "Worst Yemen clashes since fighting resumed—over 50 killed in 24 hours; Yemeni army claims 267 Houthis 'neutralized', 9 own officers lost",
-  "ar": "أسوأ اشتباكات في اليمن منذ استئناف القتال - مقتل أكثر من 50 شخصا خلال 24 ساعة؛ يزعم الجيش اليمني 'تحييد' 267 حوثيا وفقدان 9 من ضباطه",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1aUEFsdFhCNVJSRzJISTRvYUZzaUdpY1FYU0dITTZiT2hRSTNMMTItTFp5Tk5uT3pnbDhlcVVZa1BfLWFHR3ZqRURxR1BjRG96WE9YV241MjJXTlowQnByM3lB?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiogFBVV95cUxOeUw2bWExN2N5ZXI3T3pvVlM3cjVDTXNBbXB2UXNWS3Q5cTVGSFNCTjVLSnI1UzFqSk1lUGw1cDZwQjdiSl9jOWJZZEJjQ2Jtdk5leUlJb3Y3NkJhUnNubUpOcEJXR0xKZndFY3ZPWWlPMlNKaFRERWhvV19hWE9Ibnp4RWhGM3hRRzBmX0w3Y2F5OFJhOEJxZy1xaHZfN2FsQ0E?oc=5"
-   ],
-   [
-    "MBC 뉴스",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DeVJIdE9KbmZMNkZBT29RVEVNTlBNNk9vM3diMkhKTHdCYm9ickY1c2RhbkUtM19JcnVGSEV3QkFMMDBDa28zZ1RVaG1oOGtTMWlVOEhSZXpPSVRZZW5sUHZUbHoyaUdWX2NhMExoTXB2OWk20gF0QVVfeXFMT0N5Ukh0T0puZkw2RkFPb1FURU1OUE02T28zd2IySEpMd0Jib2JyRjVzZGFuRS0zX0lydUZIRXdCQUwwMENrbzNnVFVobWg4a1MxaVU4SFJlek9JVFllbmxQdlRsejJpR1ZfY2EwTGhNcHY5aTY?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "케슘섬서 재차 폭발음 포착·이라크-이란 국경 검문소 폐쇄 美 요구 — 트럼프 '이란 재공격 가능성 매우 낮다' 발언 속 긴장 지속(경향신문)",
-  "en": "New explosion reported on Qeshm Island; US demands Iraq close Iran border crossings — tension persists despite Trump saying renewed Iran strikes 'very unlikely' (Kyunghyang)",
-  "ar": "دوي انفجار جديد في جزيرة قشم ومطالبة أمريكية للعراق بإغلاق المعابر الحدودية مع إيران — يستمر التوتر رغم قول ترامب إن استئناف الضربات 'غير مرجح جداً' (كيونغهيانغ)",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "경향신문",
-    "https://www.khan.co.kr/article/202611092059015/?utm_source=khan_rss&utm_medium=rss&utm_campaign=kh_world"
-   ]
-  ],
-  "first_seen": "20261109-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-07",
-  "ko": "호르무즈해협 동편에서 유조선이 기뢰에 충돌해 화재 발생 — 이란 해군 '금지·위험구역 항해 중 피격' 발표",
-  "en": "Oil tanker hits sea mine and catches fire east of Strait of Hormuz — Iran's navy says vessel was sailing through a 'prohibited and unsafe zone'",
-  "ar": "ناقلة نفط تصطدم بلغم بحري وتشتعل فيها النيران شرق مضيق هرمز — البحرية الإيرانية تقول إن السفينة كانت تبحر في 'منطقة محظورة وغير آمنة'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi6ANBVV95cUxOUHZDRE1JSU9yOE1zc1BKWFBhRWVfS3J4cmlqb3gwdDNhdjA1ZXdhaEtZcFg0cFVYbHQ4dU9GSFV5SUZPZ29oTHV0cnBGR2sxb3ZsYjdabElfY0JmZDAtbTNvajJONjFyUkRONmVOZjBYcVJEZnIzRGw4dGw0SEo0RXhBLXBsZ0pZLWdIQVB2VzhhNUtRalcteGtVbnZuM2ZBdjRXMEtweGVnWGplX1NvM0k5QnU1QmlpVktoZXl3MXVxVm5vSUFNdTVWQnBWVnZaWXZjLXotUmVoN3dSd2hLWVpKRzhQQllrN0dudzRCekZMSDBkd0ZPVjBRWUxFLUE0djhjMXQ3Sjl6U3d5YlVkQWFkZTlsRi01X2ZvMjE5ZE1OUG9Fak91Mll2M25ORUxXTFV1ZV8xbDlzV3dHUUhEd0Y2eDdiZ3JaQ1JJM0ZmY1V3eGNSZmlrRUVzS0FoTzdwRm9FV3hoWHlZUkdmS0JGTWZRcnRxQnAxdXJsYXEyOU4tYjRjVnR5UEVWN1FRT2FHX0hpdjBVVUd5ZWk4MHpxYmhqMGhZVVQ5S0x0VmZuN0pGU0F1VFFHcGhpbXIzOTZaQVRqRnFKZjgyZXU4X2ROT0otSWlybElmeVE3OVlpemRUWmxEWlQ2Rg?oc=5"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMDRnUEg2QTB1blV5ckVFRXg1Q0JXcUpTZ2liS2RHYlRvQ01MQjNVSHp4NVpMRGc0dW1HQTQ3WFpqNy0yWGhGZlkzMm9Jckg1aUZPU09tT21oTDFaZy1lQlpiY3cwY3BPTE1vTHlacTNIWXI0STltdURYcGdwdUozaTNXd1dEd1N4VlFjQUFTTUxyNVpUNlVuM1pjQUQtbGxFclBGZU54cDJoUWtRZXg1d2NB0gG3AUFVX3lxTE1BN2RnTzhyNWZtU0tGWmlvQ1E4MHRwOE5XQlE0NmVuM2ZVRVFlS2RKUnJKSDE2Nk1fb25IbXRVZ3Vxb1NSdXByWlM1UFBySHVaTTRBeXRveVl4NW1DSXhMM3h5NmJLUmN4NmI5aDBvRDFMbWpPNTFmcHJnSjE0RmVBa1U1c214S0hxcGVlTm1JaDdGc2I2czdFU3cxLUtuNElaS2lCbDYyVWFDbFRHQTN4YWhlMXZSWQ?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxOU2FIb01FNHNWRmZFVFQ3dVhqZUpnckhnVUU5TXVDYnRPeWQ2Snh3NUZTWkNzMEZETE5RVXE4Si1zZWdXazF2VVYtUGp2TmZsbEtBN2dvNUlFY05QSmVONzFKUi1aaWFldWdSTGxpQjZETGNhMWNrd1hPdi1DLXVrSEFNcnFYZEpIYUxTV1MtYVF6MDhzR1FWaUpuSHhvdWNmSUJkZVN6X2oyeFlEZHoycUphWExOVUtqdG9veA?oc=5"
-   ]
-  ],
-  "first_seen": "20261107-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-07",
-  "ko": "이란군, 호르무즈 게슘섬 상공에서 미군 mq-9 드론 요격·격추 발표 — 이란 측 주장",
-  "en": "Iran's army says it intercepted and destroyed a US MQ-9 drone over Qeshm Island in the Strait of Hormuz — claim by Iranian military",
-  "ar": "الجيش الإيراني يعلن اعتراض وتدمير طائرة مسيّرة أمريكية من طراز mq-9 فوق جزيرة قشم في مضيق هرمز — بحسب ادعاء الجيش الإيراني",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249211/Iran-s-Army-air-defense-destroys-US-MQ-9-drone-over-Qeshm"
-   ]
-  ],
-  "first_seen": "20261107-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-07",
-  "ko": "미 중부사령부, 이란 핵프로그램 정보 제보에 최대 2000만달러(약 273억원) 포상금 공식 제시 — 핵과학자·인력 이동정보까지 포함, 해외 이주 지원도 약속",
-  "en": "US CENTCOM offers reward of up to $20 million for information on Iran's nuclear program — includes data on nuclear scientists and personnel movements, with relocation assistance offered",
-  "ar": "القيادة المركزية الأمريكية تعرض مكافأة تصل إلى 20 مليون دولار مقابل معلومات عن برنامج إيران النووي — تشمل بيانات عن العلماء النوويين وتحركات الأفراد، مع تقديم مساعدة لإعادة التوطين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TeUNiSDFDMjdhOHNsX0RPeTdBNVZZcU43eG80SXFaWXdJY1YzTXlDZjdBdjV3MHNQZG12WFo5OGhGOU1kWGdjWjY0b0tuYmhHV05LWENZdWc1NHdyV1B0ZklTaHo1RWFUZ3c?oc=5"
-   ],
-   [
-    "중앙일보",
-    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE84VW1RV0JuU2Jxdkd3VkUzQTk0SE1iOGxaTFRRSkdlbWpqWFNhQzc0S3Fkc054OE1XWG4tMTVNMmwxYnJMR0ZpWG1PblRhWHVOVjBwYlRn?oc=5"
-   ],
-   [
-    "매일경제",
-    "https://www.mk.co.kr/news/world/12201470"
-   ]
-  ],
-  "first_seen": "20261107-1530",
   "status": "pending"
  }
 ]
