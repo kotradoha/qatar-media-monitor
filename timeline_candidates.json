@@ -1,5 +1,72 @@
 [
  {
+  "d": "2026-11-18",
+  "ko": "미군, 이란 케슈름섬 IRGC 미사일 발사기지 공습—'자위권' 명분, 쿠웨이트·바레인은 이란의 보복 드론·미사일 공격 요격했다고 발표",
+  "en": "US jets strike IRGC missile launch site on Iran's Qeshm Island in 'self-defence', as Kuwait and Bahrain say they intercepted retaliatory Iranian drone/missile attacks",
+  "ar": "طائرات أمريكية تقصف موقع إطلاق صواريخ تابع للحرس الثوري في جزيرة قشم الإيرانية بدافع 'الدفاع عن النفس'، فيما أعلنت الكويت والبحرين اعتراض هجمات إيرانية انتقامية بطائرات مسيرة وصواريخ",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/17/kuwait-reports-drone-attacks-as-iran-us-trade-attacks-on-qeshm-and-bahrain?traffic_source=rss"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObTl5a2Q4YWQ3dVZxaGJtRGJ5RXBUdk9ZQWZLOFh2WTE5VU9CanNUU2hqcDF5T0ZVeF8zZV91LWpjRFNxU3FPWlJvNUtBcHozMDgwTlF2dnBVZWJva2k0WjVzcnRKZDZQLXRFNXhLOFQ2TjJQVTdBWWJfSUg2LWp3dUZCMmtGZUVYWlRYZEYwZTNFbzBOUENFaG5sRWZySjFOYW42aTNlekYwaFpEVUhGUFhJaFRWdGFpVFRPejU4cG9GMHhkSlE4WQ?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQU9YS1VxNl91Wllmb1lpejQxNUI0SGJPOEZTVGVIaVhnUW9SVC1jN1hWUGdDWl9ObHFIaDgzemx5WUVVUzdLZTJJU3JnYjh5SXgwSERUby1RWms1dkdzb0kzeHpHV3hpU0kyNGVNcGhHeUlwUjdZSVJQbmpCU2tiMWtGbHVQQ0dFQTN3SUdiS3FKaXVGRThvdUZMc3pIRkVZWkNZbHZmdTg4XzRKQmVIYg?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "호르무즈해협서 세 번째 유조선이 기뢰와 충돌해 폭발—IRGC해군, '무단침입 유조선'이라 주장",
+  "en": "Third trespassing oil tanker explodes after striking naval mine in Strait of Hormuz, IRGC Navy claims",
+  "ar": "انفجار ناقلة نفط ثالثة 'متعدية' بعد اصطدامها بلغم بحري في مضيق هرمز، بحسب زعم البحرية التابعة للحرس الثوري الإيراني",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "PressTV",
+    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMXUyMkVheGhEUHVsaDBMTmptSHF6cjlZcU1xLUpSRFh1ZzFTVmsyc0JxRmlVV3kxRUxUQXgxZXpDVHVDelI2d1pEVWVveFFyMlJBOXpMS3JIdE1DbW1MZ1JIMjNRdnFiWWlzdEFXYUFmY29CY0Y0aTVwTXdPSHo0Z19sZEJPSWlGdTRWenlqYkotVDhJem1pdVdqNkRnVkZaS0p6SUZHczVCSUZneE9TQk9YYV9nOFg2T3B6eHkzNEdlMDR4TEZXRXdlNUhaa1F4Njg4d3JCWng?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "CNN, 이란이 워싱턴 대상 방사능·화학무기(더티밤) 공격 검토 중이라는 美 첩보 보도—루비오 국무장관 '임박한 위협 없다'며 평가절하, 이란은 '조작된 서사'라 반박",
+  "en": "CNN reports US intelligence indicating Iran considered a dirty-bomb/chemical attack on Washington; Secretary Rubio downplays 'no imminent threat', Iran calls it fabricated narrative",
+  "ar": "تقرير CNN يفيد بأن استخبارات أمريكية رصدت احتمال تخطيط إيران لهجوم بقنبلة قذرة أو كيميائية على واشنطن، فيما قلل وزير الخارجية روبيو من الأمر قائلاً لا تهديد وشيك، ونفت إيران الأمر واصفة إياه برواية ملفقة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSm1mWW1QR2ozUmkzRnJzbnhQeWt2Zm9FakozVUhGa21lMER4Mm51U3E2ZVYtdkZleFVCZVlEV2RUem5ZcXhmM29GSUt1TTgtQWZXaXdyWTJnVG9Rb2lVVEY4Q2QxMEJsd1k2d2pkS0dzNDk3cXNKWlllOEZJYVZFVjh4WHJQVDJwcnVCZzF2cmdUckNza1FOSExIUG1TcmV3Y1FHWWMtMElDeHZ1ZXVlSHZESy1sazVJMmozVElYQWdCVFY1UzdmNXBvalZsZDViLTJHUTEyNUVBYzlJ?oc=5"
+   ],
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQb3cwNW9ab0FmUEpaenBheFN2ZVFJMG8wVDNqWEFGZ0dYYkRvTTh4eUNORnkxS0p0NFE0TTJQUG1jRktJU0VpM29ramtuY3owbmxOQTFfNDRUUTVEM3piMDNyRUdiQUhPUE1CT203Rmx2b28yQ3dsd0hqZlA1R01RZW5TSUs1cGgwOFhuc1JLd0s3Uk1TVm1aTGFZa3FobTh6QmpmN0NvS1NBMHVOWTlFeHdRcWxXeFcwWUtLUzVHM3J6TzJneHNJT1QyMkJlRlp4UkE?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5jNGs4THRvWmRibWpHYl9fZ3ZheTkyM2QwTTFIYmp6bG0xN2RRaUhjaFRLdTFRdjE0TldDalZCMlRpWUt2OWFlYnk4bU0td3RIb2lYUFlFbnI2eHZTdy13?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-17",
   "ko": "미 항공모함 3번째 중동 전개 — 이란의 호르무즈 봉쇄 지속 속 워싱턴포스트 보도",
   "en": "Third US aircraft carrier arrives in Middle East — as Iran's Hormuz blockade continues, per Washington Post",
@@ -1734,73 +1801,6 @@
    ]
   ],
   "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "후티 반군, 리야드 아람코 타워 피격 — 예멘 후티 반군이 사우디 수도 리야드 킹압둘라 금융지구(KAFD) 아람코 타워를 순항미사일로 공격, 파편으로 경미한 손상·인명피해는 없음(사우디 에너지부)",
-  "en": "Houthi rebels strike Aramco tower in Riyadh — Yemen's Houthis attacked Saudi Aramco tower in Riyadh's King Abdullah Financial District with cruise missiles; minor debris damage, no casualties reported (Saudi Energy Ministry)",
-  "ar": "الحوثيون يستهدفون برج أرامكو في الرياض — هاجم الحوثيون اليمنيون برج أرامكو في مركز الملك عبدالله المالي بالرياض بصواريخ كروز؛ أضرار طفيفة من الحطام ولا إصابات (وزارة الطاقة السعودية)",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPb0tVZkJhVUlFREVRTWNvR2RSZGJaUnhISVhrSzQ1SzV1V0xzM3pLX1RBRWVGTm83dGZieGdZTVRXM3BNcVFZelYwWGVvVmFBZlVHbHlSeWV6V1ozd1JzWjUyaHh2WmZoOGM3UlJGeWJBVzIycVRjRFBIWVB6OG1ralQ2ajZseTBpS2ttRS1Ca2YyQU9xcUNuYVNHZWVRSXFyZTRyLTF1T3poYVNhZk9ZV2tDZ29HcFUyN012b0kxdkxqT0xvN0xocGlLS2VER2VobVk4?oc=5"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZW9BbDVFeE4wMVJVR0dOUUVCNmlCNXR3WFF6R3M2VlZhME1HTldZWDNEVVFmXy1CaklLT3VEMXk2Qm84ZGQ2MDdUVnFmbGlKOUZnanRFcU1xckpxcmlUTVZISFd1eG1tS2lnU2l4NDRwMDZCSmNsVWM5WTNOUlNuMHpFZEZoUEZ0UWRYRjZmdDVyeFdhOGVCbkNaUXJfdlpXek9DSGZFblhXOHFvUmY0TW1wMnRJWTJ3aHJmbTNSbjlkQ01uUGNGSzJ3R0JTQnh2Z0RVZUx30gHbAUFVX3lxTE9yNHg0Si1oMlJWZHhYa0NwdDAyVTlBM0d1MGtCRlZjRlVSemRNbDRCTThYM0xMTllrckFhZ3NhLVRIamhCTjlfRGEweHZZY0pIQnN3enhDUlVYRVM0eEZrRFFKdHdKSFRpblZjMDVQUk90dWlVc0dzU04yTlNOd1lqazVmQkhnMWdsZmhVX0xvR2VXaW10VVZ1WklKbjhwNGo3WEhxazZDZEp4Z0hRYmJPVnJlaFZwek9mNU9aOGE4NWhOSWhLQWJzS0UtcFVNZUdfR0JGU3pBZWRqRQ?oc=5"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeVhzbkJGamJPZzZ4X2lwcHlFdDZPMllZRGNpV3NBdnJnQ1RVWE8wYWZUNU5NaXZ4Q3VWZXVEaWNEd1hSYjFULTVWWUhMYUdEX0ViWWhxMTh2ejU0VmFUcTRubF91d3hQdHl0bVNla2Rjd3VzNEZzQTZHeUdaNkFva0xBWnhseTRrWE9jVVcwZnIyQ3VtNlRJQzlyS3ZMc1pYekRhLWxtMDhwamJKVVE?oc=5"
-   ]
-  ],
-  "first_seen": "20261108-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "호르무즈해협서 유조선 3척 화재·침몰 위기 — IRGC가 '규정 위반 항로' 통과 중이던 유조선 3척이 기뢰 접촉 등으로 폭발·화재했다고 발표, 미 중부사령부도 별도 성명으로 오만만 화물선 무력화 확인(상호 주장 교차, 세부 원인 불일치)",
-  "en": "Three oil tankers catch fire in Strait of Hormuz — IRGC says three tankers on an 'unauthorized route' exploded and caught fire, reportedly after hitting naval mines; US CENTCOM separately confirms disabling a cargo ship in Gulf of Oman",
-  "ar": "اشتعال النيران في 3 ناقلات نفط بمضيق هرمز — أعلن الحرس الثوري الإيراني أن ثلاث ناقلات كانت تسلك 'طريقا غير مصرح به' انفجرت واشتعلت فيها النيران بعد اصطدامها بألغام بحرية، بينما أكدت القيادة المركزية الأمريكية تعطيل سفينة شحن في خليج عُمان بشكل منفصل",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/8/us-military-attacks-cargo-ship-in-the-gulf-of-oman?traffic_source=rss"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTkktRFZfTFk5UDR1THdxSDU1aThxMlNuZldPVkR6SHNVOHpJYVdWbjFTSTlLaDVMLU5iUmlfTjJTWE4wSTM1cW5yd0VXM3RCMXQ2NEhTanZHWlFSWG8tN3djRC1tRlVMblJtWmFpQ21uMkRZODNnTTZVYTVkTGZoblhWc2ZMR2JPR25kdTFiMGl6QzYwNmQxb0NRZHNvdUdZQjJGcWRmS3J3VV9pZHhyRG9HSdIBuAFBVV95cUxQOWZRU2NLN2IyT2dPLXE2SFdxNHpRdHlrVGZaYmtsaHZmaTVLQXRXQkVCdExHci1hUS0wUy1mbmxGN1VMT2JUdk5CbFRpTUFmSk9CX0lqZGQ3VTFWc3p4U0RMM09YNWwxb0M5VGFjMDZiaTZYbm51c01KOGgwTzVaWm9JUDVOOURaTlVHeEp3Y0F3RGlLM2NQMW5Ec0Z5TS1fNkxuQzNVdUd3Z0R6eVlHVnVPTUc0QnBz?oc=5"
-   ],
-   [
-    "CNN Arabic",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSjVkbDlaVGtJQ2lNcVMxamU2c2J5VHU4RmdkOWFWZTJ1SVpZd0I3bmpGYndDYXppM1FxZGlLSDJsa1I1NDktMXFqSVBlUm9pV3ZVcnAtWWxJeFJWRW9CbFRsMXdQTExOUXBTTlhHeEZOWG81UkR2RkhFMzlMd1hQZ0FnVHBZRTdMM201aVhJdnlXNHp6dl9jcDlQX1NveHNZb0J3Q1VJMmlvM2M?oc=5"
-   ]
-  ],
-  "first_seen": "20261108-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "IRGC, 호르무즈해협 완전 장악 선언 — 이란 혁명수비대 해군이 호르무즈해협을 완전히 통제하고 있다며 규정 위반 선박은 기뢰 피격 위험 있다고 경고",
-  "en": "IRGC declares full control over Strait of Hormuz — Iran's Revolutionary Guards Navy spokesman claims the strait is fully under IRGC control, warning violating vessels risk hitting naval mines",
-  "ar": "الحرس الثوري يعلن السيطرة الكاملة على مضيق هرمز — أعلن متحدث باسم القوات البحرية للحرس الثوري الإيراني أن المضيق تحت السيطرة الكاملة للحرس، محذرا من أن السفن المخالفة معرضة لخطر الألغام البحرية",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249243/Strait-of-Hormuz-fully-under-IRGC-Navy-control-spox"
-   ]
-  ],
-  "first_seen": "20261108-1530",
   "status": "pending"
  }
 ]
