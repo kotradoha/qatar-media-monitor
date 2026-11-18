@@ -67,6 +67,65 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-18",
+  "ko": "호르무즈 해협서 ADNOC L&S 선박 피격 — 승선원 11명 부상, 1명 실종",
+  "en": "ADNOC L&S vessel attacked in Strait of Hormuz — 11 crew injured, one missing",
+  "ar": "هجوم على سفينة تابعة لـADNOC L&S في مضيق هرمز — إصابة 11 من الطاقم وفقدان شخص واحد",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb0l0Y2VzeUJJcExGbFg4dk1LVVdpYVJ3WEtWN0FINEF3VHR4eVVTdElJWVJmUVBlTWZUWTRmanVTbjdJTC1WeXEtSDlBc1dtS2lTQnNqQ1dDcVBMQXBPVFpVRl9xbUlZQ2hLb3BjVDdBZ0ktbFh3Umk4WjhSV3UyRUZhenA5M3FkU0VMV0VObzhsbFRPR2JSRFlQdWlWckRJczRZVkFBc2ZnVFdQYWUxZ3YtSHVZWEpMeTVzMzNrLWkweFE?oc=5"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxPQ3VacGM4Zk9FdHRLZmZaRTZQYVNXQjYzYkJnc2hwcEJWMl84bDdVdWpTVG5xNmJUWENoZ3FtYWlzQnpWSzE2WWUycFVtMzR3aHMtcUlZZUJlVkdKYWVDdTRuVWQ4eDRObDZCb0Q1cXVaNFk1ZG42N1FnUmltQnFzeXdSZXh0Zm5pUk9kOUVydTNEV1VFU0l3TDFxZC1vUVJCanJxWl9SRUdsbmRGTXd4aWt0SnVHVHBLRHZmWHIxeVlUdHkwTW9SV1Jabw?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "이란, 호르무즈 해협 상공서 미군 MQ-9 드론 추가 격추 발표",
+  "en": "Iran announces downing of another US MQ-9 drone over Strait of Hormuz",
+  "ar": "إيران تعلن إسقاط طائرة مسيّرة أمريكية أخرى من طراز MQ-9 فوق مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86325873/Iran-shoots-down-another-US-MQ-9-drone-over-Strait-of-Hormuz"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249519/Iran-army-downs-US-MQ-9-drone-east-of-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261118-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "폴란드 Orlen, 수개월간 불가항력 지속되던 카타르 LNG 공급계약 취소",
+  "en": "Poland's Orlen cancels Qatar LNG supply deal after months of force majeure",
+  "ar": "شركة أورلين البولندية تلغي اتفاقية توريد الغاز المسال القطري بعد أشهر من القوة القاهرة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNzZ6TU1aVFp1V016QWE3MmlOQzNVSHE5Y3V4SjJLZ29QVUV4bnFaUkdXRHE0QU5SZm4wc2ZoRkZCb2s1WTFEOFlHMG40RVB6V3RBU1JoOUxCMzcxLWpSMGZKTUdsdU5JRDcxVHhkQ3g3SGRlN3FIUWdhTUh1NWwyWlp6VW5PcXpaU3ppRF9ncnFkQmdyVUlObmZGTlA2eE9JNWpIMjJsS0ZFZzJFSVA0ZUVXZ1VWWVFLWEx4SFVRTW5lc1dkdGNWNS1n?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-17",
   "ko": "미 항공모함 3번째 중동 전개 — 이란의 호르무즈 봉쇄 지속 속 워싱턴포스트 보도",
   "en": "Third US aircraft carrier arrives in Middle East — as Iran's Hormuz blockade continues, per Washington Post",
@@ -131,6 +190,77 @@
    ]
   ],
   "first_seen": "20261117-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-17",
+  "ko": "이란, 쿠웨이트 알리 알살렘 공군기지·바레인 다수 목표 공격 — 전날 미군의 케슈름섬 공격에 대한 보복, 약 2개월 만의 확전",
+  "en": "Iran strikes Ali al-Salem airbase in Kuwait and multiple sites in Bahrain — retaliation for US strike on Qeshm Island a day earlier, first such escalation in ~2 months",
+  "ar": "إيران تهاجم قاعدة علي السالم الجوية في الكويت ومواقع متعددة في البحرين — ردا على ضربة أمريكية على جزيرة قشم قبل يوم، أول تصعيد من نوعه منذ نحو شهرين",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVkpMQk5Ha1FZNG45Vmt6WWxWeUtMS3lSU0hON0F0b0ItSHlWY0NnUHFyQ1JTWFBPSWViZTFVZHpKNWI3V3R1TjM0b25HWTNEZGZ2Q1ItZG5hdXNGcG03M3FjZlJKNmE5SC1lYTJERmRETERvdGJOUGlsMG9pQjVVU2dEWkJxOEY2eXJYd1RtVmNlN2pIcGlLcHJlaw?oc=5"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcGVKcXlHY1EycS1qaFBrcVduLWwzS1B4RmhJeDg5eFlxR0FIeVNFclFqZVczdXFBVGVLa0xpcHZXZkVWa3JEeHJxVXA5YWxVa3YtejhlaHd1T1JmWDd1NHp3V1E1SEdsS0tkOEc2bVpZNER2elNveGdNTk9xanNjSDZZM2NwSXhULUVPSk84TW1JRFJUbkRRZVBYN2JHd0NnQkYxN0hhVDhVaVYzUEtlTGUwUUpuZw?oc=5"
+   ],
+   [
+    "Al-Monitor",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcG15NTlheTJMUjg5RDdvWWZEQmQ1QWxzc3lOTXhYa2FCOTVfUXd6cmhxTlp2OFVGME9tM1NsLUhrV2hjQjMxcTJaNFFGMnZNckZ0Wm9HNkFzenVpOXFIMVYyejV6anZJeU1FcFBPN2RUc1pmMHZhaXd5VEVyTEdTM0Y3ck5jc25xRFczVjZYSWE0SlRIVmFPWQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-17",
+  "ko": "카타르, 이란의 쿠웨이트·바레인 공격을 강력 규탄 — '탈긴장 노력 저해' 성명 발표",
+  "en": "Qatar strongly condemns Iran's attacks on Kuwait and Bahrain — statement says attacks undermine de-escalation efforts",
+  "ar": "قطر تدين بشدة هجمات إيران على الكويت والبحرين — بيان يؤكد أنها تقوض جهود التهدئة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiwARBVV95cUxPNDE1QWhRNkxUaXRLNDRGa0pnV3NfNklEbkVMdHFGOWduX2VISnNEYUdIOXB2dV9rXzlPNjdfdXlXdmVBcFdjUmJCTF84T2xDczJuWFdGdFdONDU3a1NXVUtxMGd2bmFNQXRlX2hyRC12VlVqS0c1eGhMMWo4czRkUUJzcW1xRlpQZlpGOGktZVg1NnZoVWpLM2ZmRkxFdFlJdjl2Q2pkLVN6cGRuVUszQlV6eVJHUGx5TGlHNmU1VXpSUGVZY2VUNXZ4Q0lpREJ0TTNUdTgzZXlBaFRwNEd1NVlkZjZsRVBManpvWFI3TTA3ZDFfOTdzNnNNYWRnanRvUUtpcXk0MXo2T1NXcjFCWDhKRmEwbjdSbHQwcllkU1MxS0tJcWJESngzcmV5VGRKTTZ6Sk1Xd01zeFhOYTF2Zmkxai1ZbXhsZkZXbjBaUHB6UlhUU2ZQa21mQW41UnNwRVY4MThTN1NacUNsTUhySzd0TkxjZDRHOUNINjAtRm5faEI2Z0phWUgyX0V6Q1RhdEZSLTdEZ1FZODJJLVN2bEJGUGRFSkxtYUs4V3NEYVBnUkU1SGZiUUctVUVpVWViTTA0LU5jQVBjaXUwQ1U3Tkotc0hISkRoSVhkMElrTkMtZE94QlA5MXg2TnJSNmJPdmluMGg2TjkwMEVkNzAzSC02MW80cDhXMDBQWjY4cnM1bFR4YVVNY1QwMFRqeXpENnpzNVgyZHFEVXBfMXhDSWVhaGJPV0xJWDBPTFo1S1c?oc=5"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZ3AtZUVKb1FoMy1USUFkUWp1S2ZOVGFKTG9uTnVSY2JwRTNDYi11RUJxZEJMMDN3TnhmOFJwUzJyb0tudmM1UWU0U2kxLVBKVXNLYTg1bnJjNUExZm9rNkwxVE52Uk90OW90bC1lN2dVTFlZYXBvaEtxZzFNbWVmX2JaUG5IQ1FxOFFWS1Jzc1NOYUNqSHc1WjVwWkR6MXNndFZSLUNLQzlKa1NwZ3F5NnhsbDAtZ0N6?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-17",
+  "ko": "사우디 주도 연합군, 후티 점령지 전역 대규모 공습 — 후티 측 최소 17명 사망 주장",
+  "en": "Saudi-led coalition launches large-scale strikes across Houthi-held areas — Houthis claim at least 17 killed",
+  "ar": "التحالف بقيادة السعودية يشن غارات واسعة على مناطق سيطرة الحوثيين — الحوثيون يزعمون مقتل 17 شخصا على الأقل",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/18/houthis-advance-on-aden-as-saudi-coalition-targets-military-sites?traffic_source=rss"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTGdKNEV2dGQxbWV0MUEzMUh5czNJQXBGSjZQUUlTbmJWYWQwMnB4bElQYWpOOC1LaGZkYUVZeUdYRFdrcVYtcWhFNDRLdzk2OUI5Rlh2T1k2cGI1T0lKdUprbzBnNG5SOGhvdnd4eFhFVE9KN1ZUdGJkY3MyWWZSVS1LWnUzUHpPN0tiYTdBQUZ3b0tIX24xWlNHNVZ4TUNHQWhubHFhT00?oc=5"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPanZPTTZ6QzdLcEd4bzlITmRjVl9GOUxMaHczSGd1MkNfTDl0UnBzYWt1cl94SkNXQS0zZWZhSTZwVjBNUVd1X2JSVXpHNEJPVm1yZ0ZvZkUxM2VneHpwQ1pnc3VUT0FxQlJLR1FnLS1UOU9nOUNnYWhpUVRSdnA4TzFjUjRpLVhxai0yTkp4VlhTdGhXRWx5em50QXR4RVRvWW5MNi1OZUZQdw?oc=5"
+   ]
+  ],
+  "first_seen": "20261118-1530",
   "status": "pending"
  },
  {
@@ -1663,144 +1793,6 @@
    ]
   ],
   "first_seen": "20261110-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "프랑스, 10월 슈퍼마켓 냉장고 해킹 사건 배후로 이란 혁명수비대 지목",
-  "en": "France blames Iranian IRGC for October cyberattack that sabotaged supermarket refrigerators",
-  "ar": "فرنسا تتهم الحرس الثوري الإيراني بالوقوف وراء الهجوم السيبراني في أكتوبر الذي خرب ثلاجات السوبر ماركت",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/10/france-blames-iran-for-october-supermarket-cyberattack?traffic_source=rss"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaDBnQlE3aDk3bFMwa25Ec21wc0ZRMWVMNmRoNUt3QVVqZWZGZUttOFYteURiaVZxa0RJbko3cmxKS1RBX3NtUHlsRmw0VDB4ZXdCTGZHR0ZVc2pVNHBoVVQzX01kQy03TVZrTV9XbWxvZEI1eUI2TjVDZFJnZFk3RHk3Rzk2czlzbUdQdlYtSERiVVVjOW05QXJhZ0pPT09UN1NIUU5STEd6eHEyZjRkd2FmQnI?oc=5"
-   ],
-   [
-    "Axios",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxOb05tSnJXbmNvWGJQdlI1a0c3MTBydWdEZHloT3h0S3B3NVFjSkc3bWlLQlVTRmgyZ2dPT1dpWHVCUm5jS2MweEdPUDZlSEhpT3FEQ1VjdEt3RllfbUpEZ05OZlVBSG1PaHFmZmg0ZDk2c0ZjZUtiMFQ1NWtwWElJZ1Fn?oc=5"
-   ]
-  ],
-  "first_seen": "20261110-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "미군, 봉쇄 돌파 시도 세인트키츠 국적 상선 공격·무력화 — 경고 무시 후 호르무즈 해협 봉쇄 돌파 시도 선박에 발포",
-  "en": "US attacks St Kitts-flagged vessel attempting to break naval blockade — US forces disable ship near Strait of Hormuz after it ignored warnings and left Iranian port",
-  "ar": "الجيش الأمريكي يهاجم سفينة تحمل علم سانت كيتس حاولت خرق الحصار البحري — تعطيل السفينة قرب مضيق هرمز بعد تجاهلها التحذيرات ومغادرتها ميناء إيرانياً",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261108_0003859143"
-   ],
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAtdERGTlh0d3ZBSGNYZ0NpQktkS0ppeE11LW9ma0w4THRzNFVVTDktNzB5QV9EWHpKeHFhc1hDQnNmNTRHay16V0RaWDhvY0F4OHVWRUk5T21RWmxSanc?oc=5"
-   ]
-  ],
-  "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "호르무즈 해협서 유조선 2척 기뢰 충돌로 폭발·화재 — 이란 IRGC해군, 미승인 항로 통과 시도 유조선 2척이 기뢰에 부딪혀 불탔다고 발표",
-  "en": "Two tankers hit mines, explode and burn in Strait of Hormuz — Iran's IRGC Navy says tankers attempting unauthorized route struck mines",
-  "ar": "ناقلتان تصطدمان بألغام وتنفجران وتحترقان في مضيق هرمز — الحرس الثوري الإيراني يعلن أن الناقلتين حاولتا عبور مسار غير مصرح به",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249226/Two-tankers-explode-burn-in-Strait-of-Hormuz"
-   ]
-  ],
-  "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "미 중부사령부, 이란 무기 육상운송 차단 전담조직 '아이언 게이트' 창설 — 해상봉쇄에 이어 지상 보급로 차단 작전 확대",
-  "en": "US Centcom establishes 'Task Force Iron Gate' to disrupt Iran's land weapons routes — expands naval blockade to ground supply lines",
-  "ar": "القيادة المركزية الأمريكية تنشئ 'قوة المهام آيرون غيت' لقطع طرق نقل الأسلحة الإيرانية البرية — توسيع للحصار البحري ليشمل طرق الإمداد البرية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTHJ4Z08xMkRQRml0cEZYUFhnRmJ2X294S2tERkkwNTN4MjdVVmxqcE5UOWJEZlI1eFlSSXo0RFI3Wnp2bjJlc1JiV2xNX0ljMGUxN1RRU29OV2M3VVp2OWlubzdOSlBOajE2N0h6bEVXbm9QY1lkaXNXbEV1NUdSSXEyQkFZb2VvUzVJNzYtS3pKUFVaUG1Jd0JJN3liMVFWOXJ2a2U0ZlVHY04wdVZFVk1yVzZCNm9MLW81NkNzNGE3czVXWm9HMg?oc=5"
-   ]
-  ],
-  "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "UAE, 오만만 화재 화물선서 22명 구조 — 아랍계 선원 전원 생존 구조",
-  "en": "UAE rescues 22 crew from burning cargo ship in Gulf of Oman — all Arab-nationality crew members saved",
-  "ar": "الإمارات تنقذ 22 شخصاً من سفينة شحن مشتعلة في بحر عمان — جميع أفراد الطاقم من الجنسيات العربية نجوا",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss"
-   ],
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcFpIT1RkWTNZSXVhbzNJWHpVSGVFa3hDal9pbVpJZUlnY0p4VS1lWHdycmlXNzlKU3JNNEIxNWRfd1ZQY2tWNUN0SUg1UlRWNFdaUFE3SnJuLXFHMklwWjAtQ1pxQk1rYkhfQjRaNnNodWNlSHhkQzE4RXJiRnJ1T0l6UmhMNEJoU1pCOG5uV0dQN2s?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/uae-rescues-22-people-after-cargo-ship-caught-fire-sea-oman"
-   ]
-  ],
-  "first_seen": "20261108-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-08",
-  "ko": "이란 IRGC, 자체 설정 탄도미사일 사거리 2000㎞ 제한 해제 발표 — 전면전 재개 우려 속 원거리 타격 능력 확대 시사",
-  "en": "Iran's IRGC announces removal of self-imposed 2,000km ballistic missile range limit — signals potential expansion of long-range strike capability amid renewed war fears",
-  "ar": "الحرس الثوري الإيراني يعلن رفع القيد الذاتي على مدى الصواريخ الباليستية البالغ 2000 كم — إشارة إلى توسيع محتمل للقدرة على الضرب بعيد المدى وسط مخاوف تجدد الحرب",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "KBS 뉴스",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qdG8xX0xPNlFNYlVpLW9BS2NKaVRzUkhEQ0JIREhwcDVvQWEyc2o2VC1MRENBZmNhX2R4eXU2Nk4wTDQ2eXFBYUF6M1NtR2prSHNvWkxmcktwbkU?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261108020200009"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261108_0003859141"
-   ]
-  ],
-  "first_seen": "20261108-0700",
   "status": "pending"
  }
 ]
