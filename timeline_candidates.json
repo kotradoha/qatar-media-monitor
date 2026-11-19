@@ -1,5 +1,47 @@
 [
  {
+  "d": "2026-11-19",
+  "ko": "사우디 주도 연합군, 후티의 리야드 겨냥 미사일 위협에 대응 — 리야드서 폭발음 보고, 와디알다와시르·아스술라일 위험경보 해제",
+  "en": "Saudi-led coalition responds to Houthi missile threat targeting Riyadh — blast reported in Riyadh, danger passed in Wadi Al Dawasir and As Sulayyil",
+  "ar": "التحالف بقيادة السعودية يتصدى لتهديد صاروخي حوثي يستهدف الرياض — سُمع دوي انفجار في الرياض وانتهى الخطر في وادي الدواسر والسليل",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-forces-responded-houthi-missile-threat"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/blast-reported-saudi-arabias-riyadh"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-says-danger-wadi-al-dawasir-sulayyil-passed-after-warning"
+   ]
+  ],
+  "first_seen": "20261119-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "미군, 호르무즈 인근 케슘섬 재차 공습 — '이란 공격 대응' 명목",
+  "en": "US forces again strike Qeshm Island near Hormuz — cited as response to Iranian attacks",
+  "ar": "القوات الأمريكية تشن ضربة جديدة على جزيرة قشم قرب هرمز — بذريعة الرد على الهجمات الإيرانية",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "머니투데이",
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTE1UN3FrN3c0ZW04STFBTE5xeUpGUnA0YWFXLVY0VWpJcmU5Q2VxWWQwUThqYl9lYU5PVmpPRmVVT3JZSzdSdDZQWElQR013V0Q0S1BneGlXQzhOZVBLZk9DZ3BVelRkallNM25od1dOMktvS3RCV1HSAXtBVV95cUxOVm9oWnZiVkpaQmZlRFNiLTRMSE1XZnN6N2dTVXRjRFBYemc5STQ4Smc0RUpDOEZpU1lhNm0yaFR5RFA3OFhpT296OE1lLWw5dWdxSU9ZdzJrVnNteDFHSkxJS3BSY3FDUU1uYUdOanlCckxYUzNid2ZIQ00?oc=5"
+   ]
+  ],
+  "first_seen": "20261119-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-18",
   "ko": "미군, 이란 케슈름섬 IRGC 미사일 발사기지 공습—'자위권' 명분, 쿠웨이트·바레인은 이란의 보복 드론·미사일 공격 요격했다고 발표",
   "en": "US jets strike IRGC missile launch site on Iran's Qeshm Island in 'self-defence', as Kuwait and Bahrain say they intercepted retaliatory Iranian drone/missile attacks",
@@ -123,6 +165,102 @@
    ]
   ],
   "first_seen": "20261118-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "폴란드 오를렌, 수개월간 불가항력 끝에 카타르 LNG 공급계약 해지 — 이후 카타르에너지와 신규계약 협상 재개",
+  "en": "Poland's Orlen cancels Qatar LNG supply deal after months of force majeure — subsequently resumes talks with QatarEnergy on new deal",
+  "ar": "شركة أورلين البولندية تلغي اتفاقية توريد الغاز الطبيعي المسال القطري بعد أشهر من القوة القاهرة — وتجري لاحقاً محادثات مع قطر للطاقة بشأن اتفاقية جديدة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNzZ6TU1aVFp1V016QWE3MmlOQzNVSHE5Y3V4SjJLZ29QVUV4bnFaUkdXRHE0QU5SZm4wc2ZoRkZCb2s1WTFEOFlHMG40RVB6V3RBU1JoOUxCMzcxLWpSMGZKTUdsdU5JRDcxVHhkQ3g3SGRlN3FIUWdhTUh1NWwyWlp6VW5PcXpaU3ppRF9ncnFkQmdyVUlObmZGTlA2eE9JNWpIMjJsS0ZFZzJFSVA0ZUVXZ1VWWVFLWEx4SFVRTW5lc1dkdGNWNS1n?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxNN09ma2xvQVVUbWJDcFlLNWNXVUZJQmk4YnJNRkZIODF5VkNxX1BMemVKR3FxYTNMeEM1MEtGemYtQ0NrY2QwbWlDbV9YcGVrX3VuaUtXX040X2xET1JqckxHSWdUdUhXTE1YVE1lMUZabWotTnBlM2NFMDZrSFRZOGR4RTllNm5sUzM5ZkEwUm9jc0tYajk4U0RYYWxqaXJodW5rN1hMcWZ1WEtTZE5FQWRXQ2dMWVZYSWk0OTBCX2VUWkNONHQ0NWJYeWQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261119-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "GCC 사무총장·카타르·쿠웨이트, 이란의 쿠웨이트·바레인 반복 공격 강력 규탄 — 걸프국가들 '적대적' 공격 공동 비난",
+  "en": "GCC Secretary General, Qatar and Kuwait strongly condemn Iran's repeated attacks on Kuwait and Bahrain — Gulf nations jointly denounce 'hostile' strikes",
+  "ar": "الأمين العام لمجلس التعاون الخليجي وقطر والكويت يدينون بشدة هجمات إيران المتكررة على الكويت والبحرين — دول الخليج تستنكر الهجمات 'العدائية' بشكل مشترك",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTzZNUnRjRmgzV0w0dUlobXlEZGlsZHlsQjZ0QXRtZ1p6OThFMG5seVljZ3oySHRzZUhOQ0VTSjh0Z2pBbXpDVTJpVllyREE5OGFPQVpvNWlGVVNuN1AtYzE0RFRGSy1SM214TVc4ZTFTSnQwUUZ3SFM2YUdDcm96QkpDbm5zVmRkWDFwdFJKVEswZFVzbDVpZ3NjR1RIcHJENjd1WnR1Y0s?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcTBYa2tQaW9SMzVwZ0ZJTndDeVhhTmRrTWlkVUpvOGc4NGdpTzBSNHV6anlxSGN4OHMtMGR6QzA2Ulp6Wk93TjcxUjhaaUJEcm95ZXdiOENUMDh3SnQtS1owZGxYUHRJV0c0ZTU5V01DLUx3MEdPSC1GRVBsQnFwYU9ZUnAzQ3Y1MXlLT0NsMlhDY2l1VGIyUkhZc2J2Wl9RYkF4c2VYSEFfVm1iMjBySktlQV8yd0E?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWDBxRFItdWxHcVdwTmNnZzNaVlczMmI1SEk1cDJTYnNxcFNraVY0ZW1XX0syMFR4bkUwNGxVX1g0bUIxUFFoUmhrSDNRSW1vbnZiZEFUSXJ5a1dsekR1cktWb1BRaGo5aEhSblprR2pRUXBLMFhpVm51TU5FY0Z6YnNQVUxFVktoc2Q4ZTdOZW44QQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261119-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "미 항모 조지워싱턴함, 3개월 주둔 끝에 중동서 철수—중동 항모전력 3척에서 2척으로 감축",
+  "en": "USS George Washington aircraft carrier leaves Middle East after three months — US carrier presence in region reduced from three to two",
+  "ar": "حاملة الطائرات الأمريكية جورج واشنطن تغادر الشرق الأوسط بعد ثلاثة أشهر — تراجع عدد حاملات الطائرات الأمريكية في المنطقة من ثلاث إلى اثنتين",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/uss-george-washington-aircraft-carrier-leaves-middle-east-after-three"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBacTRMT19rWjV0aS01NVppT2RrOGpESHZQMk9RZVNrTHRSWFcxUjhGWEFzeEtUeVFaVWZ5bDUzZFlCLWR4MENJVXZIcGd5UURaaWo1R1p2YWRxLVVu?oc=5"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261119_0003874648"
+   ]
+  ],
+  "first_seen": "20261119-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-18",
+  "ko": "이스라엘, 가자 '옐로라인' 넘어 중부 지역서 신규 지상작전 개시 — 누세이라트 등서 팔레스타인 주민 대피",
+  "en": "Israel launches new ground offensive beyond 'Yellow Line' in central Gaza — Palestinians flee Nuseirat and other areas",
+  "ar": "إسرائيل تشن عملية برية جديدة تتجاوز 'الخط الأصفر' في وسط غزة — فرار الفلسطينيين من النصيرات ومناطق أخرى",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/18/what-does-israels-new-ground-offensive-mean-for-palestinians-in-gaza?traffic_source=rss"
+   ],
+   [
+    "theopenpress.in",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcnpzTGtYOW0tYnRUQ0lYcnBaU1M0SzJGVTd1bDB0UjBhMVNBODlMY1h2aW1NZURHTEd1SFBPUFdYRDQ4elNCajJZaWtoZmFKS2VCSTJnZjRWZjRnOVhtU0RoS29Cc0xabkhGR2gwekFQZUJfaXRiV2I0c01UNnhHc1BBRXN2djdqR29mNXd1UVBnbE1vSDZfRjU0eDJISXJEbkk4aU9CbXM?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/watch-palestinians-flee-gazas-nuseirat-israeli-army-launches-ground"
+   ]
+  ],
+  "first_seen": "20261119-0700",
   "status": "pending"
  },
  {
@@ -1647,152 +1785,6 @@
    ]
   ],
   "first_seen": "20261109-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "이란, 한국에 호르무즈 해협 청해부대 작전구역 확대 자제 촉구 — '미 침략 공범 되지 말라' 경고(외무부 대변인)",
-  "en": "Iran urges South Korea to refrain from expanding Cheonghae unit operations in Hormuz Strait — warns against becoming 'complicit in US aggression' (Foreign Ministry spokesperson)",
-  "ar": "إيران تحث كوريا الجنوبية على عدم توسيع عمليات وحدة تشيونغهاي في مضيق هرمز — تحذر من 'التواطؤ في العدوان الأمريكي' (المتحدث باسم الخارجية)",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVjRQWnVSVlp3SXJtQTBXX1JBWG51NVB1TmRVWGtFTVotaFpyX0NpSFR2Wm1lYnhWNFlPWVp4WVU4ekdXbHFxUnJ2Y1dUeWZvVU1pQk1Ed1haNzVnbldoSm94V2lsWjMxQjBfU1hjUWZJb19yYWgwblkxOHZhaDZaSGV3?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261109_0003861122"
-   ],
-   [
-    "조선일보",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxOWHJxdWNzZVhodUZlXzhyT3JPUWZpT2lsOHEyWmxDX01DLWl5TFcwbW9zcU50dFF2TWlqUjN4WW1TcGdWaTlla255Mk1DUnNZLTRoVWh4eGhVZHN1RzhpWV9maVZPUFlfR3VWYTNFZ083RTZCMm9udERxV1NHUXRTOURMZVJlS2I4UzU5cGVVQmlKTXJfb19qTWpFUHNCQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "오만, 이란의 호르무즈 통항 요구 완화 미확인 보도에 유가 하락 — 외교적 진전 기대감 반영(블룸버그)",
-  "en": "Oil falls on unconfirmed report that Iran eased Hormuz transit demands — reflects hopes for diplomatic progress (Bloomberg)",
-  "ar": "أسعار النفط تنخفض على خلفية تقرير غير مؤكد عن تخفيف إيران لمطالبها بشأن هرمز — يعكس آمالاً بتقدم دبلوماسي (بلومبرغ)",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcW93cEFyUFVLaWRELUxWYWlfVEF4MVgwT1JBZ1lSMmF0N3dFSjdJWGJ3aUVkTEhHN3VZSVFqVER5QkRSTHFWM1pGZUJJazUwTmJjaEJtbTB6TVNjdjg3d0FhaG05QnhLeU9rWGVieU0yV2Z5aXlPVXNIeFFpckt3b1dIU19wRHFOTVdDaEhoNjVYYWx6QkVQMDgxUmEzWFBHYkdUdjBONlB2dFQ3elhyYUkwUQ?oc=5"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxPT04yMnppWUt6Sld5MV84N3FXMk8wY1ZUeTdPV2pzblBnY0VtbDZsclRtYmZWcE1BQjZjQk9fQlJHZXZoM0RkWlZ6UkRTbmEyY2k2VDJqZUhBTkpoWnN1THcwNTFhUEo4U05uTWh3UmthQmNQVkx1bzFfY3BWUU80UU5TUHdVRDJxdU1lN3RaMVVYUndPOWlhQmJndHZPWEo3Qk9mUFRMU2Q3U0hQUTJKSEFB?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "루비오 국무장관, 이란 요구를 '터무니없다' 비판하며 외교적 돌파구 가능성 낮다고 발언 — 트럼프는 재공습 가능성 낮다고 밝힘",
-  "en": "Secretary Rubio calls Iran's demands 'outrageous', sees little hope for diplomatic breakthrough — Trump separately says renewed strikes unlikely",
-  "ar": "الوزير روبيو يصف مطالب إيران بـ'الفاحشة' ويرى ضآلة فرص الاختراق الدبلوماسي — ترامب يقول من جانبه إن استئناف الضربات غير مرجح",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeExIMG9FM09YaHRFZFhkVTJOQVdkQjVMb1o1OHRRY1pGU1duSDU5TGFObU5vWmxreEU3dEVpaDZId1Z2N28tdU1kSmxrdVJydFp5ZC16TTg0a0s0b2plYllBeDNodjZUeG4zOFRqZGFZdDhPamVOb3RZTDVMeU54S0VCMGU0X1F3azhETFRWSmVXS3RTemY2bmxiY1R0QW1OUlhhT3RBWDNQZGI1djVN?oc=5"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR1JUa0FQMWUzTVllcmxJbGhSd2p0b3lwc0RKbmhiVE9WZzVmMmQtY3dQV180TlpoaFpFb0V0YWdjc1hCTzltckF6eVdFRHRibTlrQ25CWEdMMlBuMklWRDVkb0Q5WFE0RTlKWXRFVjhBMXJnZWRfUzFFWDNfaDdERGtQTDJRMlZHSUI4NlZjaTM5VnBNNVFZRWl5dmFZMzI4MU1IOVNSVWVHWkpqVnM1V3dTVQ?oc=5"
-   ],
-   [
-    "CNBC",
-    "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jUnFoaUY5Uk04NjQzYzVvZzIxYTVvbUhGZTMzSGFFUjdYcVc1ZS1lT3JqUi1rU3pZT1EyNUl2MkZHdFF2cGhzenBldXZJcEpBOXRJUEpjVGVpNUkzWUMtTklXLTNRT01pUmV6ajVR?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "트럼프, 카타르 총리와 회담 예정 — 美-이란 핵협상·정전 교착 타개 논의, 이란은 카타르 중재로 '2일간 제안' 제시(알자지라)",
-  "en": "Trump set to meet Qatar's PM — talks aim to break US-Iran nuclear/ceasefire deadlock; Iran reportedly submitted a two-day proposal via Qatari mediators (Al Jazeera)",
-  "ar": "ترامب يستعد للقاء رئيس وزراء قطر — محادثات تهدف لكسر الجمود في مفاوضات إيران النووية ووقف إطلاق النار؛ وإيران تقدم مقترحاً لمدة يومين عبر الوساطة القطرية (الجزيرة)",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://news.google.com/rss/articles/CBMilgFBVV95cUxNc2dqR0tHT2ZrV1FKNmI1RXVhS0lqYjVZdjFxeUVrcjJVOHNPLXBTNzcyVmg3WjdDUWtQZk5pX3dESWxKRWFfMmRfNk55THhpNm52TVZ6SjVQdkx6cFhCN2swaWprVU94ZTBSWThiY0VSbXJfYTJKUFNpSzBWUUxMMXNiUS1wenJsOU80YWt4VjBTSVAtcHc?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations?traffic_source=rss"
-   ],
-   [
-    "KBS 뉴스",
-    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5Z2c4bGFzZ1JNSmdKdVFZTkJKdUJXRXozMXF4bzhHaXhZaHFhUjRBTkhid0tDbnA2dDlwR1J3RXo3ZnkzdkpGc1UycU1UaFNqNmIwclA1Q21NQTg?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "트럼프, 카타르 총리 회담 후 '이란전 사실상 종료' 선언 — 추가 공습 가능성 낮다며 '현상 유지' 방침 표명",
-  "en": "Trump declares Iran war 'effectively over' after meeting Qatari PM — says further strikes 'quite unlikely', maintaining 'status quo'",
-  "ar": "ترامب يعلن أن الحرب مع إيران 'انتهت عملياً' بعد لقاء رئيس وزراء قطر — يستبعد ضربات جديدة ويؤكد الإبقاء على 'الوضع الراهن'",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "theopenpress.in",
-    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ01LM3gzYlExWnhkeHlZQXVtdFROY1padnJNY0Y0LXJHaWdlTi1ybXJBZjd1eGdvZ0tFZjBVbXlWTU5QUE5lbEppblZvdXBNRWpVZTRsRnhFUnAyVHFpSENMODRwMmJTdlFwSWt0bUxUeXZpYVBwSFRIdlloRzhOYXVkSWtWTTRq?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/10/trump-signals-positive-momentum-with-iran-after-meeting-qatari-pm?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261110-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "후티 반군, 사우디 동-서 송유관 타격 및 리야드 겨냥 미사일 2발 발사 — 사우디 주도 연합군이 요격",
-  "en": "Houthis strike Saudi East-West pipeline and fire two missiles toward Riyadh — Saudi-led coalition intercepts both",
-  "ar": "الحوثيون يستهدفون خط الأنابيب الشرقي-الغربي السعودي ويطلقون صاروخين نحو الرياض — التحالف بقيادة السعودية يعترضهما",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/10/saudi-arabia-downs-missiles-fired-at-riyadh-after-houthi-attack-on-pipeline?traffic_source=rss"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeEFMZHZXSnB4Q1RWMGxYRGJrYUFLdXBsc2ZGcmowbDhlNGVjMWxtOWt6bno5WWZnd2F2NVNncnJKdFM1bm1QU2RGQmNNOFBXampZcHpYLU1mdGxIRFJ4Z0drcHcyNHYtTmhVWEVlY0FldWp1d3ZoWlpoZXljR2w1b1lvb2pSR3owY2tnbUF2MDFYQXZlNUxsUUM1TGdaQ1lJZ3ZSUzl6cVp2czBFeTA3akRSS19vMTR3LW1qcGZGUExhbEJQTlpzSFdfNGc2dw?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/two-houthi-missiles-launched-towards-riyadh-destroyed-saudi-led"
-   ]
-  ],
-  "first_seen": "20261110-0700",
   "status": "pending"
  }
 ]
