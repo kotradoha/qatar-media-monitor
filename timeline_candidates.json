@@ -42,6 +42,115 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-19",
+  "ko": "이스라엘군, 가자지구 '옐로라인' 넘어 중부지역 지상작전 수행 — 정전 후 첫 월선, 하마스 '정전 위반' 규정",
+  "en": "Israeli military crosses 'Yellow Line' into central Gaza, completes ground operation — first incursion since ceasefire; Hamas calls it a flagrant violation",
+  "ar": "الجيش الإسرائيلي يعبر 'الخط الأصفر' إلى وسط غزة وينفذ عملية برية — أول اختراق منذ وقف إطلاق النار، وحماس تعتبره خرقا فاضحا",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQ3BPdDdZb09qU2VoUXliekY4cnZGdnNna2gybGZDWFA0Q0dPYlZoSUd1a1ZoT2R3d3ZCT2hBMTYtQ2NtYlNtOU1nb1NkSjF5WFNGMmVEdjFxWHJNUk9fYnZOMUhQT2VRNlVJU3lNc24yX3dWS0pVR3hpQnNyN1ZlYzhlTmFOUV9GendQZWl6YTktTzVGNHBvelVzV29pdEhOTm42WEZlU0fSAa4BQVVfeXFMT3p4LUVBYnhWT1Fxcm55c1B1N0RkNDUtZTJLVmJURjNxOVlmQ1k1eEpSbnBYSTBXR0ROTktEaDl4djltd2hJT3NIa2dORW91ZHhRZ0d5Y1pKNjFCTTRXM2FNcEF1VkQwYXY4dUNtZ290eUNGTFZMTDViOEJnNDZCeFYyVWg3M0xnRHlIQkxrRWRuamVUUm9yMUtnZjJVUnZlYU4zZGVMaFBwbUtJOTdR?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE13aXMycTRwZFJkOHotV19qRVFOVHZ3ODREeDBSdXBUUmRBS0FhT1ZZS3MzbXV1WFk3UjNBcFFuRGVMd19CTnN0YmJNQTBDTUhYNkFBQkdMM1p3eFk?oc=5"
+   ],
+   [
+    "The Guardian",
+    "https://www.theguardian.com/world/2026/nov/18/israeli-tanks-cross-yellow-line-boundary-into-hamas-controlled-central-gaza"
+   ]
+  ],
+  "first_seen": "20261119-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "호르무즈해협서 유조선 2척 기뢰 충돌·화재 — 이란 irgc해군, 원유 400만배럴 이상 적재 슈퍼탱커 2척 피격 주장",
+  "en": "Two supertankers hit naval mines and catch fire in Strait of Hormuz — Iran's IRGC Navy claims tankers carrying over 4 million barrels of crude were struck",
+  "ar": "ناقلتا نفط عملاقتان تصطدمان بألغام بحرية وتشتعلان في مضيق هرمز — البحرية الإيرانية (الحرس الثوري) تزعم استهداف ناقلتين تحملان أكثر من 4 ملايين برميل خام",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNckM5YkUwR3dRZTNCb25IaTExVkpGSlQ2QlpEY0xxd3o2NWU0U09qNkZ5ckVMQTJFdk0yQm4xd3RISWlvYURyVHpSUlRkU2lWYjhZd2EtbWRfaEFZb01iQ2NXRWJPMy0zSk9JRF9SY3pOQjgtOVVVVnh3X1dHTUQ3LW1Cb25JVHpPeHhWbHl0SkdJZHZhYTAxNllSY3JkVGNoMU4xZHc3R0ZMZFk3YkFoRmxzdGVoWDlHemtv?oc=5"
+   ],
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86326732/Two-more-violating-supertankers-catch-fire-in-Strait-of-Hormuz"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249538/Two-violating-supertankers-explode-in-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261119-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "후티, 사우디 리야드·남부 겨냥 탄도·순항미사일 발사 — 연합군이 요격, 국부펀드(pif) 타워 파편피해 발생",
+  "en": "Houthis launch ballistic and cruise missiles at Riyadh and southern Saudi Arabia — coalition intercepts strikes, PIF sovereign wealth fund tower damaged by falling debris",
+  "ar": "الحوثيون يطلقون صواريخ باليستية وجوالة تستهدف الرياض وجنوب السعودية — التحالف يعترضها وأضرار بأحد أبراج صندوق الاستثمارات العامة جراء الحطام",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south?traffic_source=rss"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMkJJV1BxNzdDUmtQYlJ4bllmdG14UEx5UG9PWk1HSFRoMzdRck1rSFV2ZHk5eE9uWmROSU1MMDNuOXlidlJFYWNxZFlkVmt5VWNYMFdKQlVxVU44SU9aX0tNc3pZMm1wWGlFeDZ0bDVJbVZrZEYtQ3Z3OUFVa2VOSm5uUDFHTlNWcVpmcWJWd1hJUlhUWDdIQlRvb2xreUNrVVg5UFlZWnkzemtZcXV4Mndqb1NrYno4S0V0TTdwVURqaTRBM1ZaZ2pB0gHPAUFVX3lxTFBfaG1wU1RweXU2ZFduQkpXR0o3RVFhY281c2lObWthNDBTX1Z2bk1QZEljNGJDWVB2WWNXYW8tWGtabUV6bEt2RWt0UkVpRTFEcHEtQjRZY2RiNExJd0hFc1lRaWg0TUpiY3hjZkhsbExjN3lYbFJndUN6MGJ6OFNWV3VDQTgzQUU1cjU4S0h6ejNxUVBmWTBvY0huRzZTOTM2NEczcFZwN2NISzlhNnhIYlpJZ25rV0dVVURRb19LVkVaVUdpOVJORUNid3p6RQ?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTjFjZnY2Z0hXSkJ3TjQ5amEwMDVCaTFKTjFoUDRNNWpTdXd5TUVFdzVLWXNPalZMQ3M4OUpNWkZTaE1iYlg0UVpEVUlrNXhMNGxWTmxvc0NwbHFkZmJiLTNSZzYyR19XMDI3Qzh5ZzJIYXBhdU5VZHZDRU9ZYTJBV1VCMDBDX2xsZzdEMEhxdy01eDdYNnM1TGFoS0RKbk9wRXZFTFZfUDBIYlotYVhqZW1KZGllLUdmOFBrSGw4eW3SAcYBQVVfeXFMTlVuMG0yR0hZSmp0YzhscVI1LXV6bGoxWE5PbEFtUmk5N2tKYTFReENLVXBvWHAtYnlyTzVBZldzUk1OaDJVa3U4bEZMNEs5WktUdmM0NUhETWFsTXZmeUNqb2dNUFpmVEYtWEhNRXlWMzBLZTcyTW04czE0UGhYTEhJdm1qdklsZ0NDak9rSzVEM3FwNkFvTHo2enVobE5FTC0ybmRCRVVEWU5vXzUyNWlKdnNlTEhnN1EyZVpvTHhJclFlUFhB?oc=5"
+   ]
+  ],
+  "first_seen": "20261119-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "미 항공모함 조지워싱턴호 서아시아서 철수 — 미군, 역내 항모 2척 체제로 축소",
+  "en": "USS George Washington departs West Asia region — US military presence reduced to two-carrier posture",
+  "ar": "حاملة الطائرات الأمريكية جورج واشنطن تغادر غرب آسيا — الوجود العسكري الأمريكي يتقلص إلى حاملتين",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249537/Another-US-carrier-leaves-West-Asia-region"
+   ]
+  ],
+  "first_seen": "20261119-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "폴란드 오를렌, 수개월간 불가항력 지속 끝에 카타르 lng 공급계약 전격 취소",
+  "en": "Poland's Orlen cancels Qatar LNG supply deal after months of force majeure",
+  "ar": "شركة أورلين البولندية تلغي اتفاقية توريد الغاز الطبيعي المسال القطري بعد أشهر من القوة القاهرة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNzZ6TU1aVFp1V016QWE3MmlOQzNVSHE5Y3V4SjJLZ29QVUV4bnFaUkdXRHE0QU5SZm4wc2ZoRkZCb2s1WTFEOFlHMG40RVB6V3RBU1JoOUxCMzcxLWpSMGZKTUdsdU5JRDcxVHhkQ3g3SGRlN3FIUWdhTUh1NWwyWlp6VW5PcXpaU3ppRF9ncnFkQmdyVUlObmZGTlA2eE9JNWpIMjJsS0ZFZzJFSVA0ZUVXZ1VWWVFLWEx4SFVRTW5lc1dkdGNWNS1n?oc=5"
+   ]
+  ],
+  "first_seen": "20261119-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-18",
   "ko": "미군, 이란 케슈름섬 IRGC 미사일 발사기지 공습—'자위권' 명분, 쿠웨이트·바레인은 이란의 보복 드론·미사일 공격 요격했다고 발표",
   "en": "US jets strike IRGC missile launch site on Iran's Qeshm Island in 'self-defence', as Kuwait and Bahrain say they intercepted retaliatory Iranian drone/missile attacks",
@@ -1684,107 +1793,6 @@
    ]
   ],
   "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "사우디 아람코 리야드 건물 '공격 시도'로 손상 — 알자지라 단독 보도, 미확인",
-  "en": "Saudi Aramco building in Riyadh damaged in 'attempted' attack — reported by Al Jazeera, unverified",
-  "ar": "تضرر مبنى أرامكو السعودية في الرياض جراء هجوم 'محاولة' — بحسب الجزيرة، غير مؤكد",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxOam9zc1FkUTVXSWFQS0FvbG5pRlRaTjVyRDNrU0pubVYtU1Q2SUM3T0NuVWltenY4VUNXRGh6LW1fLWRxcFVKWEhyY2ZlODZHdEV5UkJiNkhBOHpYUUY2U3FLNnM3RHpkS3o3Tm9jNnEzUEg1VGdCdmlHV0trMDdEX3p5UWp6XzJFTEtyWlBTUFhocldQcXlJeTg1N3d6d0FSMGk4WVdwZW16Q3Q4dlZTdDVoSm_SAboBQVVfeXFMTnlpdEw5V3RCT3NRU2pOUUdmSExLODRyNVY5US1jTnkyWG9POFRpM3JGMVFEb0ZpZ2ZieFBWd1Brd0kyQll0dlBtenRZQjVoQ2J6UDBQSFlCVDhfNU5obnpHM0lLYkpRVHJvUmt6YkRzc3loMnpiSnUtczlrOHdFTm5rNWVmdlJGbWt2RXhnbUxyaDBoRkN2dXBmM3R1T2JTczhaUEpiV3hZbmpVV1ZSSjh3ZUNQRXFNOVJn?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "트럼프, 이란 육상 봉쇄 발효 선언 — 이란은 미군 재공습시 '지옥 쏟아붓겠다' 위협",
-  "en": "Trump declares Iran land blockade now in effect — Tehran threatens to 'rain down hell' if US resumes attacks",
-  "ar": "ترامب يعلن سريان الحصار البري على إيران — طهران تهدد بـ'إنزال الجحيم' إذا استأنفت الولايات المتحدة هجماتها",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq?traffic_source=rss"
-   ],
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMidkFVX3lxTE8xVEQ0c1BDRGNhbVFrQm5fT0RWREs3Tnc5R1l3dGRrRkFPWVpBQUV1c25XOWtDazdUMjREMjk3R0xMbjdEcFZYRTY5bTJCTTF1d2VCdFlFRTVKS2NfUk55UUQyTENlcnl6clVfdEZZQU5TTmwzSEE?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-mocks-us-military-initiative-disrupt-supply-routes"
-   ]
-  ],
-  "first_seen": "20261109-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "이라크 쿠르디스탄 호르모르 가스전 드론 공격 받음 — 보안 소식통 확인",
-  "en": "Drone attack targets Khor Mor gas field in Iraqi Kurdistan — confirmed by security sources",
-  "ar": "هجوم بطائرة مسيّرة يستهدف حقل خور مور للغاز في كردستان العراق — بحسب مصادر أمنية",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249253/Drone-attack-targets-Khor-Mor-gas-field-in-Iraqi-Kurdistan"
-   ]
-  ],
-  "first_seen": "20261109-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "사우디 리야드, '공중 위협' 경보 짧게 발령 후 해제 — 리야드 상공 위협 경보 발령됐다 곧 해제됨(걸프타임스)",
-  "en": "Saudi authorities briefly issue 'aerial threat' warning in Riyadh — alert raised then lifted shortly after (Gulf Times)",
-  "ar": "السلطات السعودية تصدر تحذيراً عابراً من 'تهديد جوي' في الرياض — رُفع التحذير بعد فترة وجيزة (جلف تايمز)",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbFVzNFhwY2pGRHcwWG9LUXJ2LVNScTdUTGdjX0s2UFJtZXZUTDZGNy1peW5aSkJhMlZqZ1l5bl9BU0RReUlqYmNMUTREcVRYLXgzbnJVY2x5T2VkbGdYU0NaZC11N0pndTlQNGtDZDN5bUJMcVJyM3RheEh1Ynk1RW1MVHdJYVp1dkJZUElYd2Z3c3E2Ui16dGlieHNZSC1nTlpzTnVxd1hLd9IBrwFBVV95cUxNUUFmOTB1Wjl0STlmOTVwZEhCc3J0V1dqMXpZS1JRak04R3hzTVkwNFprMEtFOFQteGZEVDVJUFllWUpLRG9zdlJTVWg4VWd6QlVacFA5QVFPTktibmYxeFNTSlNWblltdHhkRUJ4TUlpZURBUFp4SDE2bjQ3NHVMSHF6a1NISEJLMTRzSU5DaHlxQkVMT2lyRC1XUGhmOUdJY2tEd21IX0IyeTQ2SGsw?oc=5"
-   ]
-  ],
-  "first_seen": "20261109-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-09",
-  "ko": "이란, 공세적 군 교리 전환 발표 — 지리적 제한 없는 대응·신속대응·작전범위 확대 천명(이란군 대변인)",
-  "en": "Iran announces shift to offensive military doctrine — pledges geographically unrestricted, rapid response with expanded operational reach (Army spokesperson)",
-  "ar": "إيران تعلن التحول إلى عقيدة عسكرية هجومية — تتعهد برد سريع وغير مقيد جغرافياً وبنطاق عملياتي موسّع (المتحدث باسم الجيش)",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249270/Iran-s-Army-doctrine-shifted-towards-an-offensive-approach"
-   ],
-   [
-    "Mehr News Agency",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeHJ2X2U3NEM3STR1UzNUR0RoRjVrV1kxRDN4UkxMSTZFeV9qNVRfaFlHQmpkV3ZGdXp4MDNfaDNfNW5YQ0ljal9yZkRvc0dFQ0ZqbU9MQ20tc1RwTVc0X19Cc2V6c2V3YU5MNjBERFNUNWFhTGtOeWVHa1FxVER5dmZYb1d1LTlkczRwT1BrM1N2NU5fVmNLWUVn?oc=5"
-   ],
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86316892/Iran-adopts-faster-response-expanded-operational-reach-under"
-   ]
-  ],
-  "first_seen": "20261109-1530",
   "status": "pending"
  }
 ]
