@@ -1,5 +1,110 @@
 [
  {
+  "d": "2026-11-20",
+  "ko": "미국, 이란 선박 간 환적(STS) 겨냥—봉쇄 우회 선박 나포·검문 가능 선언",
+  "en": "US targets Iran's ship-to-ship oil transfers — CENTCOM says vessels evading blockade may be stopped, boarded or seized",
+  "ar": "الولايات المتحدة تستهدف عمليات نقل النفط الإيراني بين السفن — القيادة المركزية تعلن إمكانية إيقاف السفن المتحايلة على الحصار وتفتيشها أو مصادرتها",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/20/us-targets-irans-ship-to-ship-transfers-can-tehran-break-the-blockade?traffic_source=rss"
+   ],
+   [
+    "Bloomberg.com",
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxObUNtdVJyTEZDb1BTbnhxeWpKdFdhU0YyQ19xTHQxYVNtR1ljZzIzbnYzTWR6eElWSk1QeTRVQ3RqQ05ZYi1VYV95QmdWaWxCeVE5b0dNdk1WbWN4XzVEZFdKOHdXejV0MTdHQkRnc2xyU2I1R2dZTlBySHA5b3Y1dnpNMFQxUVlGeEw3ZmV1ekh4ZDBIQWFRdlJ1NEdBOVBZRjBSa0tMWVZQQjVkM0FuNk53?oc=5"
+   ]
+  ],
+  "first_seen": "20261120-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-20",
+  "ko": "미 해상청, 이란 봉쇄로 걸프 해상보험료 급등·선복량 차질 내부메모로 확인",
+  "en": "US Maritime Administration memo confirms Iran blockade is driving up Gulf insurance premiums and straining cargo capacity",
+  "ar": "مذكرة لإدارة الملاحة البحرية الأمريكية تؤكد أن الحصار على إيران يرفع أقساط التأمين في الخليج ويضغط على سعة الشحن",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/economy/2026/11/20/us-maritime-agency-warned-iran-blockade-was-adding-to-rising-gulf-premiums?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261120-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-20",
+  "ko": "후티 반군, 사우디 주도 연합군의 호데이다 공습 임박 조짐에 젯다 등 홍해 항구 '즉각 대피' 위협",
+  "en": "Houthis threaten 'immediate evacuation' of Jeddah and other Saudi Red Sea ports amid signs of imminent Saudi-led coalition strike on Hodeida",
+  "ar": "الحوثيون يهددون بـ'الإخلاء الفوري' لميناء جدة وموانئ البحر الأحمر السعودية الأخرى وسط مؤشرات على ضربة وشيكة للتحالف بقيادة السعودية على الحديدة",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/evacuate-immediately-houthis-threaten-target-saudi-red-sea-ports"
+   ],
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEhueTEyb19KV04wMnJLQThRdmJ2QUdQdFhVRGJQTUNLYlNlaGRoLWgxOTdvWFhuNl9QdkNGcmF0Nm5Wb1JjZGdfa1NmR004T0hJMlJBM040a3F6dExGYk1zQ2VVWjA1VlZqampJQWgwcnJ1MVVPVnRsd0NVcW1yT010dVZ6TjFnYWxmVnBVdXlSZjU0c0hpQmFITGh0VGNpTGNlX3RsV0hRRFdMSFF1dzRKeEFTSWo1bVN4MERNY2ZraC10OHNXVU1VOWJRY0N3R0HSAdcBQVVfeXFMUFhyN2FjU1A2by1UcXJZMWJuQWo2MWxUQlJPN1Z3a1ltRkN3UkpVQndVWlNzYVAxcGt4R2VpaU9YRlRpaFFiTWtYN3M4eDlaUGozWUZxTTM3dHNMbTA5WVZ3V2dlUVJZWHVOU3phSS04WXNOMk9nRG9ZdUdMRENoYjhqVXRwdlVCWHY4dUdlOURrTGRoNFNBMGFtei1OVzBzYlU3clkyRm5pZXVYSzN3VFJ2MGxvS0FCTi1KMHQyQThwZ0F1Vk9uQWdRa2J5NERaTmNMYzhsVE0?oc=5"
+   ]
+  ],
+  "first_seen": "20261120-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-20",
+  "ko": "사우디 주도 연합군, 예멘 호데이다항 일부 지역 주민 대피 요청—공습 임박 신호",
+  "en": "Saudi-led coalition asks residents to evacuate parts of Yemen's Hodeida port, signaling imminent strikes",
+  "ar": "التحالف بقيادة السعودية يطلب من السكان إخلاء أجزاء من ميناء الحديدة اليمني، في إشارة إلى ضربات وشيكة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEhueTEyb19KV04wMnJLQThRdmJ2QUdQdFhVRGJQTUNLYlNlaGRoLWgxOTdvWFhuNl9QdkNGcmF0Nm5Wb1JjZGdfa1NmR004T0hJMlJBM040a3F6dExGYk1zQ2VVWjA1VlZqampJQWgwcnJ1MVVPVnRsd0NVcW1yT010dVZ6TjFnYWxmVnBVdXlSZjU0c0hpQmFITGh0VGNpTGNlX3RsV0hRRFdMSFF1dzRKeEFTSWo1bVN4MERNY2ZraC10OHNXVU1VOWJRY0N3R0HSAdcBQVVfeXFMUFhyN2FjU1A2by1UcXJZMWJuQWo2MWxUQlJPN1Z3a1ltRkN3UkpVQndVWlNzYVAxcGt4R2VpaU9YRlRpaFFiTWtYN3M4eDlaUGozWUZxTTM3dHNMbTA5WVZ3V2dlUVJZWHVOU3phSS04WXNOMk9nRG9ZdUdMRENoYjhqVXRwdlVCWHY4dUdlOURrTGRoNFNBMGFtei1OVzBzYlU3clkyRm5pZXVYSzN3VFJ2MGxvS0FCTi1KMHQyQThwZ0F1Vk9uQWdRa2J5NERaTmNMYzhsVE0?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/evacuate-immediately-houthis-threaten-target-saudi-red-sea-ports"
+   ]
+  ],
+  "first_seen": "20261120-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-20",
+  "ko": "사우디 주도 연합군, 드론 2기 요격—후티 공격 지속에 바레인 규탄 성명",
+  "en": "Saudi-led coalition intercepts two drones as Houthi attacks continue — Bahrain issues condemnation statement",
+  "ar": "التحالف بقيادة السعودية يعترض طائرتين مسيرتين مع استمرار هجمات الحوثيين — البحرين تصدر بيان إدانة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxOLUk4WDZtOEhfSGIyb05xcEgzVFFSazZCdU9YYThRN1VDb2lKdXNhSUE0aGg3VVUwZHBUTHNKVEpMRVo2N2hWRzlOMUZ2ZHBFRXRodElEcnIwNWoxdHZ5ZWQ5R0pJS25zbTlKMFZlVGJCLXRWdV9kMzBmdEp4Q1c1ekdLQURyTktST3F2N2x5QkQwTTc5?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWjU4VlFtYTkwRGpuZUZsQjdsNEItY0E0UC1YOXE0Vm5KZG5HYURWU25PR01CUElGUS1McmFxZTduNlVCb1pOOTVPMlU0UDFURmlaOEhuenNKU3ZqdjRkOE52WEtPWGU5d1VWcFd6SEh6VWQxc2JYb2JpVjQ2Rk1naW1kMEF1OUFXSjNma1VmcWxlQ1pEX0dyc3EtczZJQVk0cXp1cXFvaGQ?oc=5"
+   ],
+   [
+    "AP News",
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWG11c0t2cHNUVFlEZEwyWHVQRk40anlnM3ltcWtYOE1hV01IaEswQmpnRExZNEk1Z0xGRkZ0T083cWNGTUhvZUd6YUxwWjVwNjA1djJZZWZZQXh4SjI4SGRLVmtBMzN6Q0cxWVJjMFpJOW5DdUFWVlUtNEF5NW5IcU5sMHNwcmNVZTBfeXZVMWRKMk5HV1UwTGVycE1xd0c3TG9HYQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261120-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-19",
   "ko": "사우디 주도 연합군, 후티의 리야드 겨냥 미사일 위협에 대응 — 리야드서 폭발음 보고, 와디알다와시르·아스술라일 위험경보 해제",
   "en": "Saudi-led coalition responds to Houthi missile threat targeting Riyadh — blast reported in Riyadh, danger passed in Wadi Al Dawasir and As Sulayyil",
@@ -1688,111 +1793,6 @@
    ]
   ],
   "first_seen": "20261110-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "브렌트유 90달러·WTI 80달러대 진입 — 트럼프 '이란 추가 공습 불필요' 발언에 유가 하락세 지속",
-  "en": "Brent falls to $90, WTI in $80s — oil prices decline further as Trump downplays need for further Iran strikes",
-  "ar": "خام برنت ينخفض إلى 90 دولارًا وخام غرب تكساس إلى الثمانينيات — استمرار تراجع أسعار النفط مع تقليل ترامب من الحاجة لضربات إضافية ضد إيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZGtQeENiZTdiN1dPVDFNWjY0SGlydGRDM0tVLWdUN1U3SzBjc3I1NWlseXhZQXRXbXNYcFJ0Y0lTSGctWUxiMXdUSDJTLVFjOEhJcU9USVhWVjlURUpaWndnRnFCYnNYdHJ6ZDlWTTFvSlNHVm1wdWJ6U2l1bDZVakdObE1yUUE1dUNLd3JWclpHTWhPRTZWSW1DWk9FTGs?oc=5"
-   ],
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxORXVTWTJrd1dRMmt1X2R2cFNGa1pXUjNxVTNOakZIbXlLRnp3NVlVM0lHYUVKcWZuR0FXTm51SU9iUm5uWVFpNm9YeWJiNGtRNklpZkprNnUzVlhnRHAzMExUMFNMbDNzNEVha194MWVlc2hJdnJSdHlqNHZqU2xTZ1BkalQ?oc=5"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTWhveWF6aFh3LUNiQi14X0pVTHp0Vks5WHFBM3Q4aFJEZDN6MWJPTHBEdFB6RGJNRlV2SE5TSDhKU0QzQWl5VDdOOF9iczZxa25SakVIRUNGNU83OVBpQjdFWnZhREFJTC1PMzNXYmlHTWxCSFYzcG1WQmZ2UkVwZFZ2ckhaQlJvT0FZTUZwU0sySHV2ODlEVGZ5eWtsYlZiQk1KZGdSZHdHd3QwVzlBQk56NA?oc=5"
-   ]
-  ],
-  "first_seen": "20261110-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "폴란드 Orlen, 카타르에너지와 LNG 장기공급계약 종료 — 공급 불이행 사유로 계약 해지 발표",
-  "en": "Poland's Orlen terminates long-term LNG supply deal with QatarEnergy over delivery failure",
-  "ar": "شركة أورلين البولندية تنهي اتفاقية توريد الغاز الطبيعي المسال طويلة الأجل مع قطر للطاقة بسبب فشل التسليم",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRDZlLU1sVU5HbmVvd3dCTWRUalRBWW1PbDNBYUFlUWtaRGxhWUktYl9ZWm8wZC1KajR1ZnFycUlXZl9mVk8xcllfSmtNN1ZGY29IbHpvSHNNU25DOG9SUHNmUUVJNjV4RVVremRELXNVRFB0RmdXZkZRUmVGLWkxUFJIaXZyQy1xanN5a2oydnR5clZYM0xScDJscDF2QXJyRGlqOWlDS0ZqWVJseVJGbERB?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWWNsbHZIOFpSN0NER012RTNDdE9jRzFkWXRJZVY1X2hkVTlnUHhDcFNrVDU0Ul9yVXlvcHpfblFEYkYyNW9jRXA2OHNldXhuaEhQQTZYX3V0R1R5dFdVNkRNZFNrVWtWdHI3N0FrYVFFNEx1MlhBYkFJY1c0MEQ3Ym1RRzF0YWY2OWZWZmR0RlFYeU5YOWhlR0UycW9jODJDMjZob2VIR0JNcHd5dkFKSzZYYUpSYUJkcEtwMlRXZ3pPcHN2dWc?oc=5"
-   ]
-  ],
-  "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "GCC 국방장관들, 쿠웨이트 내 통합군사사령부 전진기지 개설 승인",
-  "en": "GCC defense ministers approve opening of advanced command for unified military command in Kuwait",
-  "ar": "وزراء دفاع دول مجلس التعاون الخليجي يوافقون على افتتاح قيادة متقدمة للقيادة العسكرية الموحدة في الكويت",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQLUk4LXdLblByT0h5UTgyMkNRVm5HZ3R2S0xRSWFRbGl1ampNdUpELVBxZEVfTnh0eGdPa3NKWnFrVUkzSDFENmRRSTd0a2dHYU1hbUxVMFBlUjRqRGxSM2pYZWs2eDRpUHBBWXktYkhLaUdHOEs1cl9zcDVMWldUTFZjM2tDTllfNW10S1BTSGlHaWk5Q01xQ2NqUU9neVgyXy1CTTFXSGtYM0t3RVFzMkRnZzBsQk43T0J1ZWdUdzFDSXRuZDExUjJoX1ljekczOEV2Qi0xSDZsY0tnRlBKWTlobnRuRGFycF9GbFFLdVluR2h3QXJMR1U4MHdrdw?oc=5"
-   ]
-  ],
-  "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "UAE 해역서 유조선 피격 — Adnoc 운영사 확인, 호르무즈 해협서도 유조선 사건 추가 보고",
-  "en": "Tanker attacked in UAE waters per operator Adnoc, as separate tanker incident also reported in Strait of Hormuz",
-  "ar": "هجوم على ناقلة في مياه الإمارات بحسب شركة أدنوك المشغلة، مع الإبلاغ عن حادثة ناقلة أخرى في مضيق هرمز",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdTMwLTRPRTZsZHJPR0lQTVNtNHdyWWxZNHMydXJzUjEySVZIZzJfUFlvbXZfQWJPc25aSm5kM3lzNmxFMFVMdFl3NTZLZWVjZnZPaTFyWjZtcl9peGd6ZlpDU2hnQmxDVFBLRlF1cVR3U2QwR2R4dWRRNEFDaDBzSTY2YUFWZEsyZ3dIOGQwX2tudV81a1pRRXQtVzl0TWYw?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-reports-tanker-incident-hormuz-strait"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE9JVjdjbEl5bVkxQ0VaUUd4Rng5a2FRUm1Id1BLbkdmNndNX0g2SmM5U0tKdlE3V1dXNkozWDRvTTlyMnVKbUhacms4RHh1LWpMZ3pHX3hCZkNBS0FtX0ZLS21KMFRLWXRlRUNRODhIeDRtaFFWZjFYbk1zWQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "유조선 피격 사우디산 원유, UAE가 대리 판매 추진 — 유출 피해 초대형 유조선 적재분",
-  "en": "UAE arranges to sell Saudi crude oil loaded on supertanker that was attacked and leaked oil",
-  "ar": "الإمارات تتولى بيع النفط السعودي المحمّل على ناقلة عملاقة تعرضت للهجوم وتسرب منها النفط",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261111058500009"
-   ]
-  ],
-  "first_seen": "20261111-0700",
   "status": "pending"
  }
 ]
