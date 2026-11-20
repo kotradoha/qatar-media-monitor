@@ -151,6 +151,102 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-19",
+  "ko": "후티, 리야드 금융지구 PIF 타워(385m) 미사일 공격 — 사우디 국부펀드 사옥 고층부 파손, 왕국이 공격 공식 확인",
+  "en": "Houthi missile strike hits Riyadh's PIF skyscraper (385m) — Saudi sovereign wealth fund tower damaged, kingdom confirms attack",
+  "ar": "صاروخ حوثي يصيب برج صندوق الاستثمارات العامة في الرياض (385 مترًا) — تضرر مبنى الصندوق السيادي السعودي وتؤكد المملكة الهجوم",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-kuwait-gcc-condemn-attack-riyadhs-financial-district"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN2dSRXcyNzdIa2VEZW4zd1NlS2pyb2gwaTkzVUw1aDQ5VDVsdjJDeFJfekYtekhlNFgzRHE0VnNxVXN6dC1ZNUoxaXA1SDZ5VW9QLUl2REU0d3VDdEpFSXNCWDJIaWZtMUJKanU4amNhWExFY29pZzE0RXpnQmVhbFQySl90STgxdkFzTzllTkNUYnBlWWhGSXdOaWRmS0hQUVFVZkw5S0dNbXpZSXpBd184Yll6QdIBuwFBVV95cUxQYmoxb3ZGV0R2YVcycm1LM3phc2FRaWJoTXhMc19TVjhISWJ1ZERTNE9Ra2Exbjg3QjNuZEJMcGltNWZ6Y2N2cHJ4bUcxcWw0aU04Y1RPV3l4dEh6cXVLRDlxSGJubGloeGVSbGZrUTRJcjk2YlRiWGVTT1Znb19xdmgyYlZHYVZua2NvcXlfNW1TdHJ3YmhEOHRzOVpKMkpObTh4Qkw3RUp5OHBlMDRIZ1ZYTVo0X1dxa2s0?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-hit-saudi-arabias-sovereign-wealth-fund-skyscraper-0"
+   ]
+  ],
+  "first_seen": "20261120-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "이란 전쟁 미국 전비 480억 달러(약 64조원) 돌파 — 탄약·장비 비용 포함, 미군기지 피해 복구비는 별도 집계 안 됨",
+  "en": "US war costs on Iran surpass $48.3B — figure covers munitions and equipment but excludes damage to US bases in region",
+  "ar": "تكاليف الحرب الأمريكية على إيران تتجاوز 48.3 مليار دولار — يشمل الرقم الذخائر والمعدات ولا يشمل أضرار القواعد الأمريكية في المنطقة",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/pentagon-official-says-us-war-iran-cost-483b"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261120_0003876563"
+   ],
+   [
+    "서울경제",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GeDI4MXVFVWIyQVllenB6SjFWYm8wNXZONlNuZFpXajNJUk9wWll5S1hYdDJPRm00OG1lakVZaW9xS1pIN0JZa1RQcm5vZndUMEHSAVNBVV95cUxPc2x4dWFrV3NGa1Y2YzVHbmQ0dmhyaU5TMVNsblN1Z3JmT0x3NTUzSXNXb3lONU8tSy1NZDkyNTdkSldmUnFmQkd2cVZ6dC1adGVvUQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261120-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "미 상원, 트럼프 대이란 전쟁권한 제한 결의안 부결 — 공화당 다수 반대로 추가 군사행동 견제 무산",
+  "en": "US Senate rejects resolution to limit Trump's war powers on Iran — Republican majority blocks move to constrain further military action",
+  "ar": "مجلس الشيوخ الأمريكي يرفض قرارًا للحد من صلاحيات ترامب الحربية تجاه إيران — الأغلبية الجمهورية تحبط الجهود لكبح العمل العسكري الإضافي",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSm1IYzd0dmZPZEpYYTY3Yk5PRnJZNGVfYkl5bGhHd0NaekY3ektkbnFWdXlEZFNKTlVCOVJnWXF6WGM1Y2U3U2xPRmw5NG5ZbWNxTS1pWV9IbUItZTdxNjVaZUJwZEYxR1o2ZlJSa1VCYXNVbEJmODMyQUFwWnVxcnFLU3U5UkYzX0pvQmx0NXpkVk5aOWptNVlFOHowbVpfQWlEUDlrVWFhZXJMUWszLWFoNWdQWTDSAbwBQVVfeXFMTzJLaF83bXZxcVN3Vy1tb0F4LTA3bjJiWjh5empUbEplU1VUMXYtR21UdmpzSDBsNHJVTHZrNUFMVWdxbE53ZHZ5S1dQLUllazJQR1RlUnpLNEZqeHl0aWFxRlVnNEVkMGpKUVZMdWh3aURvTmJaTkI1NzMxcWxyLUNISVhaZU9vbWVzVDU4OVpRQnRTZTVvRWNtSlZ4TDZQMHNsYk5GLXJkTXFxMzhYbHQ5XzdYLVNOWW9odko?oc=5"
+   ],
+   [
+    "The Washington Post",
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYUhPc1MzUmliSzFkVG16b3R4WmdnM2tTQlhHX19ONGU1Ui15MWZZcmJ0NDA4a0lkenNvRXdvUFRaMDdvcjZoOHd3YW5KNVNEelUxVEx0VU83WlJMTkFLYVV0WEtwNGVGQ2RjRmwxTlNhZ2xseHkxbGxjNTBsWU5XclJnZkRCVHJBVURwOHVoR1JjZEVSSzFuRjRRdVh3NHRpd3VTVnF3?oc=5"
+   ]
+  ],
+  "first_seen": "20261120-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-19",
+  "ko": "이스라엘군, 가자 중부 '옐로우라인' 넘어 첫 대규모 지상작전 개시 — 확전 신호",
+  "en": "Israeli army launches first major ground offensive beyond 'Yellow Line' in central Gaza — signals escalation",
+  "ar": "الجيش الإسرائيلي يشن أول هجوم بري كبير يتجاوز 'الخط الأصفر' في وسط غزة — إشارة إلى التصعيد",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/19/jerusalem-daily-israel-launches-ground-offensive-in-gaza-2?traffic_source=rss"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE13aXMycTRwZFJkOHotV19qRVFOVHZ3ODREeDBSdXBUUmRBS0FhT1ZZS3MzbXV1WFk3UjNBcFFuRGVMd19CTnN0YmJNQTBDTUhYNkFBQkdMM1p3eFk?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249541/Arab-Parliament-condemns-Israeli-operation-in-central-Gaza"
+   ]
+  ],
+  "first_seen": "20261120-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-18",
   "ko": "미군, 이란 케슈름섬 IRGC 미사일 발사기지 공습—'자위권' 명분, 쿠웨이트·바레인은 이란의 보복 드론·미사일 공격 요격했다고 발표",
   "en": "US jets strike IRGC missile launch site on Iran's Qeshm Island in 'self-defence', as Kuwait and Bahrain say they intercepted retaliatory Iranian drone/missile attacks",
@@ -1694,102 +1790,6 @@
    [
     "연합뉴스",
     "https://www.yna.co.kr/view/AKR20261111058500009"
-   ]
-  ],
-  "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "미 재무장관 베선트, 이란 암살 위협 받아 군사기지로 거처 이전 — NYT 단독 보도",
-  "en": "US Treasury Secretary Bessent moved to military base after alleged Iranian assassination threats, NYT reports",
-  "ar": "نقل وزير الخزانة الأمريكي بيسنت إلى قاعدة عسكرية بعد تهديدات إيرانية مزعومة بالاغتيال، بحسب نيويورك تايمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-moved-military-base-after-alleged-iranian-threats"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTE92MkFkeUJvY1JyYjhzSC15RGRic0pRQVVPRlktYUZyRXhURllEYV9pMGNnN0c0QVZFYWFxUnhuOG1PQm1JVUlWWkdmYnZ6ZTlPR3o5Q1dEMHI4QXhtX2xiNE1wNExBLVdURVE?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMizgFBVV95cUxPT3lYOEw5X1FaSkpweDhiUmp3d0QybFR3ZU4xRl8wYXRRMS1CbzFFWENqLXNBVDZhOHBvSHdXSFh3NW5oNXEyUjRfWmFMT0g1bkV2NXRWWDc5UUpsaXVWLWxwQ0RLSkRkTW5jSWlkQ1p1dzFRa2pySzFVTklVb0k3TFo1bmZPb0lZTXVId1oyN2hCZGxkRmZua2R1ay1LN3VkNE1zb1FFNHUwNGNwSlBVdE5aMzFocFlGWTNINElWV3BvY21lOWRNTmxaNHB2dw?oc=5"
-   ]
-  ],
-  "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "미 하원, 이란전 관련 헤그세스 국방장관 탄핵소추안 부결(211표 반대) — 공화당 단일대오",
-  "en": "US House blocks Hegseth impeachment motion over Iran war, 211 votes against with GOP unity",
-  "ar": "مجلس النواب الأمريكي يرفض مقترح عزل وزير الدفاع هيغسيث بشأن حرب إيران بأغلبية 211 صوتاً مع وحدة الجمهوريين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/11/republicans-block-hegseth-impeachment-motion?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/11/11/iran-war-live-hegseth-survives-impeachment-bid-iran-denies-us-talks?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/10/us-house-begins-vote-on-motion-to-advance-impeachment-of-pete-hegseth?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "미 공군기 10여대, 이란 위협 속 영국 밀든홀 기지서 재배치",
-  "en": "About a dozen US military aircraft redeployed from UK Mildenhall base amid Iranian threats",
-  "ar": "إعادة نشر نحو عشر طائرات عسكرية أمريكية من قاعدة ميلدنهول البريطانية وسط تهديدات إيرانية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44eWRNTWxzR0t3TXlXa1lFSkV3TnZOZ3VTQm5Rb25KYWRVclhFM3R2WDZBejN0RGREcGw1WEpzNlh1RE9jYmVHc0JnRWk4V2VtbTRYSmdPZTZ6cmRKV0E?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261111048500009"
-   ]
-  ],
-  "first_seen": "20261111-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "미 검찰, 이란 연계 조직원 3명 영국 RAF 페어포드 공군기지 공격 모의 혐의로 기소",
-  "en": "US charges 3 Iran-backed operatives over alleged plot to attack UK RAF Fairford air base",
-  "ar": "الولايات المتحدة تتهم ثلاثة عناصر مدعومين من إيران بالتخطيط لهجوم على قاعدة فيرفورد الجوية البريطانية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261111_0003863449"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/11/us-charges-3-iranian-backed-men-over-alleged-plot-at-uk-fairford-air-base?traffic_source=rss"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMnVpbms2X0N0ckR4UHhzN2FvNGVvbEJ5cXlYYXhWMkdGMlE3a0U3T1B6T1NLTEpzMUViMko4aVRaOFR6QkFHZFZZNlhMclVnNzd6QXpuRUdPN1lUZ1NTMS1KbldFWDNQbEpTM1g5Yzc0aVNRZlJSWl82eDdjVkVpMUhObDRvWmtvUzUxSjFMRkMwZEhNRFBpQ196eDBGcl95UTZFM0txbDJWSG8xc09mMDNtMUxQSW4zc0HSAb8BQVVfeXFMTXJtVGtCWEZmMmF5SVpsaEZ1Y3VzWEhUcWRiT2ZsUG43UGtSWEZGQmRyZm5vM3FGR0dpSWxmbUxaaWFOaUNybENXOUVBWFc0R2tFc3Y2enN1cUlIdlFBZkMzNVBBa2lVOXh6c2tJNzRpSlpiem0tVWFHWG5UWE9uazdFS0t4WnJ0WVNUdjZNVWM0UGNoQTlGSzctbXpJbW1Wbk0tSVF6SDBLUlNwZnNlZ3k0NHRGcTF3ZjVQUUF1TWs?oc=5"
    ]
   ],
   "first_seen": "20261111-0700",
