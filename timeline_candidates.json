@@ -1,5 +1,64 @@
 [
  {
+  "d": "2026-11-21",
+  "ko": "UKMTO, 호르무즈 해협 주간 상선 피격 6건 보고 — 해협 선박 통항량 전쟁 전 대비 65% 감소(11월 중순 기준)",
+  "en": "UKMTO reports six vessel attacks in/around Hormuz this week — Strait shipping down 65% from pre-war levels as of mid-November",
+  "ar": "يوكمتو يبلغ عن 6 هجمات على سفن في مضيق هرمز هذا الأسبوع — حركة الشحن في المضيق تنخفض 65% عن مستويات ما قبل الحرب بحلول منتصف نوفمبر",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-weekly-report-says-six-vessels-attacked-and-around-hormuz"
+   ],
+   [
+    "Iran International",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9aOXdZVG1QeXBFX2ttT1FmZ3FscnV0UDZGZ3ctLXFhSGhfVHJLZ1picjlyaFJsWWNtdFE2TktPU0o3czRZc3lGd2FiYkJLc3I4Q1E?oc=5"
+   ]
+  ],
+  "first_seen": "20261121-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-21",
+  "ko": "이란 IRGC, 호르무즈 해협 상공서 美 MQ-9 드론 격추 주장 — 미측 확인 없음",
+  "en": "Iran's IRGC claims it downed a US MQ-9 drone over Strait of Hormuz — unconfirmed by US side",
+  "ar": "الحرس الثوري الإيراني يزعم إسقاط طائرة أمريكية مسيّرة MQ-9 فوق مضيق هرمز — دون تأكيد أمريكي",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-its-aerospace-forces-intercepted-us-mq-9-drone-over-hormuz"
+   ]
+  ],
+  "first_seen": "20261121-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-21",
+  "ko": "미국의 대이란 전쟁 비용 483억 달러로 집계",
+  "en": "Cost of US war with Iran reaches $48.3 billion",
+  "ar": "تكلفة الحرب الأمريكية مع إيران تصل إلى 48.3 مليار دولار",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBaOHNaV3NsZnJNYlFGSHdseU80RXhLUjR0RGRCd2NJZHVBTEJYYTV6MDA3Tm95QzQ1bzNlUzhYcFQ3cWhEajdWTFFvM0h0YzE0NnU3SnJ1NFdNalk?oc=5"
+   ]
+  ],
+  "first_seen": "20261121-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-20",
   "ko": "미국, 이란 선박 간 환적(STS) 겨냥—봉쇄 우회 선박 나포·검문 가능 선언",
   "en": "US targets Iran's ship-to-ship oil transfers — CENTCOM says vessels evading blockade may be stopped, boarded or seized",
@@ -102,6 +161,56 @@
    ]
   ],
   "first_seen": "20261120-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-20",
+  "ko": "사우디 주도 연합군, 예멘 후티 호데이다항 공습 — 후티는 리야드로 탄도미사일 3발 발사, 전량 요격",
+  "en": "Saudi-led coalition strikes Houthi targets at Hodeidah port — Houthis fire 3 ballistic missiles at Riyadh, all intercepted",
+  "ar": "التحالف بقيادة السعودية يقصف أهدافاً حوثية في ميناء الحديدة — الحوثيون يطلقون 3 صواريخ باليستية على الرياض ويتم اعتراضها جميعاً",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbDEycWY2UV8ydC1iUkxXeEJsVkVPakgybEdjaDRaMmZMMFRwdlhoZENuUEg1dXRXOVA3TDJOaU5oWEVXTVFSNTYzMUtLQklqX1BBa3Bzdy1yTFJCY1RtWF9XQTRHN1JOazdvWWN4NGJMZFlzamdVbld5QUdCSXNFdU41NldVVzQ?oc=5"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxPV2s2d2xVNlpZamM1RXpfRURTUFM4eFhHeFBkQVp6TTlLTXZWMjB5WFEwcF8wQ2dqR3U5SDd2VUNKdm1uV2RfV256RHUzUS1ZQWZJdnNlRmJtemxFeUZLR2tLWXhza2EwOVBWUEVPeUJ2VG9aV0R0RjVSWU1wVG8zU3p4RWJQMmhDcjdKOF9XZXBMQQ?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE80ZjRCNEE2cHY4aFNLRml5eVhmaTFYakU1eWhWdmx5ZUk1SG41TFRJU1NyTy1WNWFRSkkzNG9PYmhRZ0dWd2lNbndqMWFQZURLYUpQMmQwM2dhU09J?oc=5"
+   ]
+  ],
+  "first_seen": "20261121-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-20",
+  "ko": "윗코프·쿠슈너, 베를린서 카타르 중재단과 美·이란 협상 논의 — '의미 있는 진전 없음'",
+  "en": "Witkoff, Kushner meet Qatari mediators in Berlin to discuss US-Iran talks — 'no meaningful progress'",
+  "ar": "ويتكوف وكوشنر يلتقيان الوسطاء القطريين في برلين لمناقشة محادثات أمريكا وإيران — 'لا تقدم ملموس'",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "CNN Arabic",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdzNnWWFpMVVKNWh0MzhxMF9CdTdfMXJCU1FYclVnQnlfcmhvY0NqXzNvNjJ3WU1EMkc5bVZpOWczYzhUQzlCSFgwb3otRFY4MlBaU29ITF9OZzFnZ2NsRlRmcGRFZGl3aEk5b1hZS2ZzRU5GckljclQ4Mkp0OG9GS0pwN3Z2WkNVOGRabEhXUVhOMUxIRWhDbUp3NjBQaEZOMFVVUGg3MjRteXJZVkVCc3ZGaE5wNjA?oc=5"
+   ],
+   [
+    "Axios",
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaUJNYkNiQm5OX0tYbUNBcTR4VUZTRm1ZYlF0ajJHM2JudHNwSEJ3dGxCNDhVdUE5QWVoMk1mSjRxc2pkVUxaV1p6dXRpUTVZcE9VWDFvMW5JbDBDRmtPVk01enNSQi10ZVFYYWUzd2lRRHh3clhKQXIyQkZQTzcySw?oc=5"
+   ],
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261121_0003877510"
+   ]
+  ],
+  "first_seen": "20261121-0700",
   "status": "pending"
  },
  {
@@ -1676,123 +1785,6 @@
    ]
   ],
   "first_seen": "20261111-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-11",
-  "ko": "이란 IRGC, 호르무즈 해협 남부 항로서 미허가 통항 유조선 2척 폭발로 무력화 발표",
-  "en": "Iran's IRGC says two supertankers disabled by explosions in unauthorized passage through Hormuz Strait's southern route",
-  "ar": "الحرس الثوري الإيراني يعلن تعطيل ناقلتي نفط عملاقتين بانفجارات أثناء مرورهما غير المصرح به عبر الممر الجنوبي لمضيق هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261112_0003866277"
-   ]
-  ],
-  "first_seen": "20261112-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "한국 정부, 청해부대 작전구역 호르무즈 해협까지 확대하는 파견연장안 국무회의 의결 — 이란은 자제 촉구",
-  "en": "South Korea expands Cheonghae naval unit's operation area to Strait of Hormuz via cabinet decision — Iran urges restraint",
-  "ar": "كوريا الجنوبية توسع منطقة عمليات وحدة تشونغهاي البحرية لتشمل مضيق هرمز بقرار من مجلس الوزراء — إيران تدعو إلى ضبط النفس",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzTGN2NUxjNXc2Q3FWNzh1N3JxckZCNS1DWjhTQXl1WlJMYVFaLUVCdnAtcHZoU2Vja2hQNEJXeV9VQnJYbGJndTBGSDJkMmh2SnJYNGYxdVlDTURSamd1VzRNYjV1dEk?oc=5"
-   ],
-   [
-    "조선일보",
-    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNR2diT3RRWEhCVXM0S19CNVc4NTFTVnZVZHdTS2hhT0Vmc2R0MFZtQnFZQkNFUXJIYnZlSnBGSFhtaDFTT1NvMWMwZG1nLXRQaEg2SFBSZXowblZHekNTeHpJZEFpemVZakMtU1BYcF8tQVZKVUkwM1BqZFZ0aDhSNm15MVVsbzZr?oc=5"
-   ],
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTE9rR09reHdXNWJHaTNjdExBRmlhVy1FdEVNTEE4RnMxLXlPckQwSzRuRnBVazNGOUZhNDhYWkZrV3QxRmJ6Znc4aWlyODR5dEJaNWdMYVBPNGh0dTJKVHFXWmQ0eENCWGNpWGx1YndlRUpheGJo?oc=5"
-   ]
-  ],
-  "first_seen": "20261110-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "호르무즈 해협서 유조선 2척 기뢰 충돌 추정 화재·폭발 — 이란 IRGC, '불법 항로 운항 중 폭발로 화재' 발표",
-  "en": "Two oil tankers catch fire/explode in Strait of Hormuz — Iran's IRGC says vessels were on 'unauthorized route' and hit mines",
-  "ar": "اشتعال النيران في ناقلتي نفط في مضيق هرمز — الحرس الثوري الإيراني يعلن أن السفينتين كانتا تسلكان مسارًا غير مصرح به واصطدمتا بألغام",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ1VoSFdSRFJXX0hfWHh3RWxpaG1qZnZoeExJd0h4eG56M0FTcVM5cDRKSkJ1eG5DRUotNVZ3X0toTWQtdEVRTnVNV29XdUkxMmhldXlrV0FDTHliR0VGM0hIajJRYXMtNjVKdXJCSVZneTgxNGZIWjhFU2FaUGtRcFpSVmJ1NE16b19vOFlkT1hBQnZac1k5WF93czRQZmFDNWZVNG9sa3NTUnJv?oc=5"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-oil-tankers-catch-fire-strait-hormuz"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE1nTV8yS090dzM0Z212Qkg5MEk3VUhxTGRBTEp4bkJGVWdlWWc1aDBDbXFmNFdnRmZIRFZQc0gyUmFLc2dUNXR6aDMyR1RvY0tJNzFWNkJqTWdseEV4ZkFBYU0zUDBQTFRHTzdZTWstZDBRLVZtRl9PX05VYw?oc=5"
-   ]
-  ],
-  "first_seen": "20261110-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "걸프협력회의(GCC), 이란 공격 대응 위해 쿠웨이트에 통합군사령부 전진지휘본부 설치 승인 — 마나마 합동방위위원회서 결정",
-  "en": "GCC approves establishing forward command HQ for Unified Military Command in Kuwait in response to Iran attacks — decided at Manama Joint Defense Council meeting",
-  "ar": "مجلس التعاون الخليجي يوافق على إنشاء مقر قيادة متقدم للقيادة العسكرية الموحدة في الكويت ردًا على الهجمات الإيرانية — القرار في اجتماع لجنة الدفاع المشترك بالمنامة",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNDBXTkt6aGFOYXdNblpCMkdudFRQOVBWdG0xbW1UWldrdkR3VWZFa25LVG1VV3A2SkJuOFZlQkZxWXZTMUI5eUJLd0lDSFAzdGl6YU80Yy1TQjdrNHQtblJHVll2bHl2bDUzcjF6RmV5UHVuUnUwc2dzWFlWT2xxTktfeDc4OXA2dVQzU19FUFRSdGZlanE5NGZCbi16VWJOWUc1WDlhZElZQnJjeU5FRdIBtgFBVV95cUxQRkpXRi1LRHRFWFNZRXVMU2lIVUpHbnlWV3hpajAtZVBiTFB5MFFSNVFHbHpfMzRoQjZ3VVUxWFduOF9CTHp5eHl6QlAyTnhpQWVTSkRwTmlZUTZGMklRNGsxMXNaSVFONGNrQ2hycERkNlFBdXBGMVh6V3RpTUwzYno2MjhVdXg0ZzNOSml0Y2dUakUtNEkxWkQwR25BaFYzM3Y4SE5EQWRmMTRqYkNuY01kVWk1UQ?oc=5"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWWtub3NYYlZkTlNXWDNkWGh3RHczanY4amFINEdLSnFzT0FXLUtsOVZ4VEZDeGFCZnRjWmtjVk14d0RIWjBYbjZvcktPOFZQTW9CTG1wSmczZVVPYzZ0TXpOWVExS3F1QVZRUUdQUUF3MjFoSklIZFJ1TlhSeWZfVUF1bEprZGQ3ek8xdHJXa3dDYV9mZTBIVFhyd1JaMWJvaUU3Z3RwZnBUTWZFYlM3WDVvTVROS0c1LWJNcXg2VWxvdFk?oc=5"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQjZWYjlWQi1hQ2MxWUNPNk1ERVZwb2p4VGdiV0NsY3NwTmFaNkNGT3JfaXhJWGJTcnNHNk95X1BUN3R1Q0dKaVdBNE5TTGZPNGNnUGtvSmdyVVktWk12UnVGaGNNR01HbzJDZkVRejRDSlh2dUNmMHdXTDNqRDRaUWtGLWpIZ09JcTJiM1BSNFdkLUdQZnZmdVdLQmJlYndrRUtIRC13akZwUFVjdmlmSWZDdFQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261110-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-10",
-  "ko": "미·이란, 카타르·파키스탄 중재로 우라늄 농축 상한(3.67%)·동결자금 해제 등 예비 합의 근접 — 카타르 '양측 모두 긍정적 반응' 발표",
-  "en": "US and Iran near preliminary deal on uranium enrichment cap (3.67%) and frozen asset release via Qatar/Pakistan mediation — Qatar says both sides gave 'positive responses'",
-  "ar": "الولايات المتحدة وإيران تقتربان من اتفاق أولي بشأن سقف تخصيب اليورانيوم (3.67%) والإفراج عن الأصول المجمدة بوساطة قطرية-باكستانية — قطر تعلن ردود فعل إيجابية من الجانبين",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "이데일리",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxOX0ZRaURFTlhrSzRrNXlJYVpYVVZLNE9rMXVJTWJDWDVZbTl3SVF0TkV0dnh2QlRqcE9mcWo1RjBJMGVCNTB6ekw2cU1tY3d6LUhZYWFucUdRVTdzRWI1M0hKOTZKN1ItcW9hY051YTVva3ZublprUE83SzJmdEREbw?oc=5"
-   ],
-   [
-    "연합뉴스",
-    "https://www.yna.co.kr/view/AKR20261110175000079"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdmhqaE81aFJQckVUSnRLZ1FMTGZFSFhyOUcxNUEzS25MT3JKc01LMGRtLUFSNzEzZ2lLNTFEdG8ySDRacmd3NzJBMkVoSlJkVVNTOFltX3lGUk5TeDgzYTRiVGgxcHZWa1F0QUQza2JOQmEwaDVQVTN4amQ3cHplMWtLb2RrMERWOHdfQzN3QkpWcU9ST3M5c1o3dmF5RzY3dkpFNHdGMHpKRDlJQXpJVTFmb0hSQQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261110-1530",
   "status": "pending"
  }
 ]
