@@ -59,6 +59,102 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-21",
+  "ko": "오만 하사브 인근 호르무즈 해협서 유조선 2척 연속 피격 — UKMTO 접수, 원인 미확인 발사체·이란은 기뢰 접촉 주장",
+  "en": "Two tankers struck near Oman's Khasab in Strait of Hormuz — UKMTO reports unknown projectiles, Iran claims one hit a mine",
+  "ar": "هجومان متتاليان على ناقلتي نفط قرب خصب العمانية في مضيق هرمز — مكتب العمليات البحرية البريطاني يسجل الحادثتين وإيران تزعم اصطدام إحداها بلغم",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbG5nWWM5SGtZVU1VQkNvYTJpbTFYU2NtdEx1ZFBaV2oyeG9OYlhCRTM3YTdiX2YyOFJ0UWFHYXJQci1mOHhRZE9oc010MWlCOThjcXc1dTBueFBTWWo4SGtab1ZkcFFhMG1CNFZYczhpQ0ZOY3VQUVlsWEdINml4SEJ6WjZKY2FpVG9OVDB1UjEzQUtyYWJxdlkzX2VhMFl4Vm9XNHRlNEtVMHc?oc=5"
+   ],
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUmFyQWpXTk9nTzJGUDgtdW5qMm1CZU9VWTZiTWZjUEhuSWRfd3Etc18zc09KR0JfbGQ1emx3ZHpuY1d6WFctZVREZDlnTDd3LThMcndkejR6S3pUdVp2eFpMRFZyUU0zQ2lSMDU2Q2dsVzEwUGl4b3lHejk1MGoyOU81dmVIdDdwSVpBcnRGQ1IxLUV5T3kxZ9IBngFBVV95cUxQb2o5YWI3QUp1R2trSUFzQVV6MVVmcUItN1VBSXhXWk13bHhRdWdGcmVqdjJ3S2F3WkN4WXpzYTR6TEVlSUNGS1RueGduYVgtTXlQS1JXVjRpSkotVHJLWjFvbVJqY3J0aWE0bjM4cDRsaS04b3NMY3pyZWMwZnpBd0I5dmpPYUVEYkJkRlJiRi1EbXMwYzRBX21lU3dUUQ?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUUFObUZpUXpmZmVqd21XLXJYLXpISGFEUW9sX0MtbWtzYUxIOXpZalJ3OENmN1lDRXd0Z3plVGVweld3WTE3NkhJUi1keUZqenhkQmhLZWdlZUxvaWlwdlRqM1Q0WlpjZW1OVWkwRWk0UW9YeENtODc4aTYtbDNIcU9xd0pPcXdMeE56R1d0VnVOQmstSWxjOERuZEZsTGh1YTFNa0Y5X0RnbGFxYTZhSHdR?oc=5"
+   ]
+  ],
+  "first_seen": "20261121-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-21",
+  "ko": "이란, 호르무즈 상공서 미군 드론 2대 추가 격추 주장 — MQ-9 리퍼 및 케슘섬 상공 MQ-1 프레데터(19번째)",
+  "en": "Iran claims downing of two more US drones over Hormuz — an MQ-9 Reaper and the 19th MQ-1 Predator near Qeshm Island",
+  "ar": "إيران تزعم إسقاط طائرتين مسيّرتين أمريكيتين إضافيتين فوق هرمز — إم كيو-9 ريبر وإم كيو-1 برِداتور (التاسعة عشرة) قرب جزيرة قشم",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-downed-us-drone-over-qeshm-island"
+   ]
+  ],
+  "first_seen": "20261121-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-21",
+  "ko": "예멘 반후티 연합군, 리야드 겨냥 후티 탄도미사일 3발 요격 발표",
+  "en": "Saudi-led coalition says it intercepted three Houthi ballistic missiles aimed at Riyadh",
+  "ar": "التحالف العربي يعلن اعتراض ثلاثة صواريخ باليستية حوثية استهدفت الرياض",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNNzU4SFh3dy1SUHJVLVYyR0JpSHB5ZTFQWVlDRG9aaEZfWkZuTUo5VEdDdkk2elNrV0FpVDVMOEFaSlp3eHVSdTk1c2ptclNWV3dFVG9HQTgtUjk2eEZWSDh3RGNoN2Q1RUpPcm5sR3NVOWFKYmxLeE1sS25VZDNhUTRUZGtPdzhUUTlISHdid0MxWGRWdDgyNEY1cXZvTXFJdXJOOFItbXBUVGo4T1RHSlZLZzBVYmxjT3k4ejN6VzMyQmp5VG14enA2M2J0cFNBbVBQQVFISUhhSkl6SElsd01iRlg3RndZdndB?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMi0AVBVV95cUxQSW83MGZkUmNNVmk4WUJlekNzY2F1UHBYNDJzTDIzeEpCZjBSQlc5am9aLXBVRFlKV1IwSDd0bTZDY3ZRTGRpTWhyN21VWXBuNG1oSUxWVHhMMUlteXh6MXBYczgtNGk5dmlxakt0eDhUVHFoS2FBeXh6cGZNRno1V3dVNVVGVl9ucEFCc0pIUzZkbnFlaW5ZVHRkUmNkQjd1emQ1WGR1UTBlRmp6WF92eHg1RzhJVFBnMzBVVW9YYy1VZjltRGg3ZjRxT0MwVk0zeGFzcXc5cF9DM215ZWNDRDBHS0lPYmwyeGE5dDNVZEd6a1JHajNKa1A2Q1NUY1hhOFE2RFE2VXd3WnNrOGI0YzNVXzNZR1V0cVhJaXljbFc4N1NqVEU5U1ZSRTN5aFNpTEt0Mm1RUWhNdXlFSjIzWFVlbEJ4akRVSTdBVU81YU80VFhzZVJ0M0UzejdpNVhiOFgxWE5RVTJTSGkxUU04MDRyaldGRGo4aWc3VDBCVzkxdTZqbWVzNjlqVjYwRmpTdW9ia3A3QXNmZVo0QnlpY1JxUUpWRTR4S0hpSVQxQXUtU3NUcmd3SjZZdWtPRHNCY0NaTUQ1M3pSNXJITl9ycG50bXE0ZlVHUEdvVzhIZnphNXhkVF8yUVkycFBYOFFPbkxFUXpTUjh6dkkwVl9NQnlPclNpdG5tbDhNUzh6R1hYV2JZZF9lUmJucWljejB5WXJqUEt4VjNPX0pyZkRkeng0NDBraGRvSjNqUVU0Zlp4cHBucC1WN2FNM3Zzd3dZdUFmaV9Za2t2bnIxT0Ntd0pNUmg5ZXdYR2YyZlVOMUxuTjN3eExHUXJ6dmdnSTVqVl9yWlRnXzNsWjJNaXpUTDNEaElzelFUZ3FTbTBxU3ZiNS1CQXc4a2xaSnpiZUlRZzduR2tKUWwwQm5EdTE2Vl9WbTEzZXdvdzNRUU04cVA?oc=5"
+   ]
+  ],
+  "first_seen": "20261121-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-21",
+  "ko": "이란 외무장관 아락치, '이슬라마바드 양해각서' 폐기 선언 — 호르무즈 재개방 위한 '7개 조건'이 새 협상 기준이라고 주장",
+  "en": "Iran FM Araghchi declares Islamabad MoU 'no longer on the table', says Iran's 'Seven Conditions' now basis for Hormuz reopening talks",
+  "ar": "وزير الخارجية الإيراني عراقجي يعلن أن مذكرة تفاهم إسلام آباد لم تعد مطروحة، ويؤكد أن 'الشروط السبعة' الإيرانية هي الأساس الجديد لمفاوضات إعادة فتح هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86328309/Iran-s-seven-conditions-basis-for-reopening-Strait-of-Hormuz"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-seeking-good-honorable-and-dignified-agreement-araghchi"
+   ],
+   [
+    "Al Arabiya English",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNno3azdteHl0cFZHMFdCVVlQclBOdk95aWkxeWhLNFBWd3c0QU0tMDhXeDFYMUViS3h6N0VtTjF1TzVaMFlkTklUdlh2SGVjcnV6RkJ6dHlvQllvQUxXZWJuaGZMcnlxcW5oci1mWXZUeWdINWZpN0hycDdiR1FXUUcxNTNVemFubVJlbS1tQ3FTZHIzTTM0U0pKUGlJVXpzM0pua094SkpBbEtYUnlCcW16eWt2U1ctNThwMWlITjlIcnVvSWdoTVhOVWV6QdIB0wFBVV95cUxQNjB0amdBVTFRY0JuaGV0MmRJeXFzcGNiRGRNTzhHYlh0TUlPREt4YXBIaFY0VEFNUkEweXljVnFacERDS2tGWnJZc1daR0xYejVGeDlfSXM1RlVidzBhSm5PdmtxejBIcEIteFRuX2hINldTWTN0VXJSUlNjcDVDcUJXd2lwZE5GRUJxN0dndEFaT1R3YVJUdGdPSjlHZVE4N2NBMW1DMlREd19PWG1nYlJnbFI1X2VzM05jdmNNczJaNk4tZU4zR3Qtd1Nwd0ZLcEVF?oc=5"
+   ]
+  ],
+  "first_seen": "20261121-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-20",
   "ko": "미국, 이란 선박 간 환적(STS) 겨냥—봉쇄 우회 선박 나포·검문 가능 선언",
   "en": "US targets Iran's ship-to-ship oil transfers — CENTCOM says vessels evading blockade may be stopped, boarded or seized",
@@ -1685,106 +1781,6 @@
    ]
   ],
   "first_seen": "20261113-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-12",
-  "ko": "트럼프, '이란과 합의 불필요, 호르무즈 장악 중' 발언 — 밴스 이란 협상 임무 배제, 추가 항모 전개로 군사압박 선회",
-  "en": "Trump says 'no deal needed with Iran, we control Hormuz' — sidelines Vance from Iran talks, shifts to military pressure with additional carrier deployment",
-  "ar": "ترامب: 'لا حاجة لاتفاق مع إيران، ونحن نسيطر على هرمز' — يستبعد فانس من محادثات إيران ويتجه للضغط العسكري بنشر حاملة طائرات إضافية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar Tribune",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPMHdnX0NFU1pwMlVRRFQ2V1V6b0g0T3MyNkhUOEw2aTFMcF90ODhFSDBoWUxhaWFxdzFQbmVhbXpUNlhOVzFoZ0hsM2hpU19iSmJ2bFJSMmlPYk1EUThHSlBJM3djbmRKekdHa0tpRDZheGlMOHczV2FHUDRudW5vbXVNLUdVOEhEQklxNFFrVXRDQTgzUlVwc0xfa1hLNTg5cGhwYm4tLUYzZHRXWjdVR25xU2N4emc?oc=5"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSjB6XzQzTU9Mckp1Ync2VE56WDBEQlA1cHNDYTAxRjdIejNNR0NRVHp6dkluNlZuZFdvSl9XNzdDcnRmQk9MSzJITVR2VktKRW1RRDVDZkdNb290UjlVQXQ0enJSZEpoeXNFYTZJa1Z3cGxmRXlxVmlMOGtNZ2JObjNQdFdSWnFNZ3ZoUktR0gGTAUFVX3lxTE80dWVpZ1dMYnhuRWVXTzNnT1dqZlBiSTBaVDVHSjNyRE93WXZHcEJIaENkOHJYY0JObDkyUUlUbktkMURZY3E2M2hpZUFVVERPaW0zRXpjdURHR1NBbzh2RVgzeEhBT0Zyc0ppaFF2ZFVZNDJYWjJlanhfLXltLXk1aHJ5QWtjUjJjWDc2cGl4cEFBUQ?oc=5"
-   ],
-   [
-    "Bloomberg.com",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxOWUZPalZVeXJPblBWRk9oeUJmUlpLanVvemFJWlJaWm16RGxYSWE3UE44czR3N09QaXVLTFFkOTdQMjJrd2NDVTYxZld3Y2MwLW14d2ZmTFhHNHZTVDhCMU9GMlN1aXZITEllYkplLUFTZDJWbGNBSk9IY1kwSFN6cUY4aEVab2lNYUEtOEZpWXlkaHR4V2Q0OE9UbmEwUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261113-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-11",
-  "ko": "호르무즈해협서 유조선 2척 추가 기뢰 피격·화재 — 이란 IRGC, 위조서류 사용 선박 겨냥 '위반 선박' 단속 발표",
-  "en": "Two more tankers hit naval mines and catch fire in Strait of Hormuz — Iran's IRGC says vessels were 'violating' using forged documents",
-  "ar": "ناقلتان نفط إضافيتان تصطدمان بألغام بحرية وتشتعلان فيهما النيران في مضيق هرمز — الحرس الثوري الإيراني يقول إنهما 'مخالفتان' باستخدام وثائق مزورة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86319077/Two-more-violating-oil-tankers-hit-naval-mines-in-Strait-of-Hormuz"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVmVxNWZwUHdsbWJoX0IxMnpsVEJjSk5YOFhuMndYMkxwVnZmU21rTUowb0daQnlxbEpTTVBFeUJSRUxQYVF5YzBqd01PRFdrUHI4MkUzWGtLRmRWTVV6MlM5TDQ2Nk8tcnVIaWZrV29DRzFmLUZjQWM5czd2c0pkWW1MWnE1UTR3N1Rma1BVOGtKSnBVQTdDN05xRU56ekxEc1lheVJDXzVSX21JLUhwdlNaN1hua2Y3?oc=5"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261111-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-11",
-  "ko": "이란, 미국과 협상 사실 부인하며 '요구 충족 전까지 호르무즈 봉쇄 유지' 재천명",
-  "en": "Iran denies talks with US, reaffirms Hormuz will stay shut until its demands are met",
-  "ar": "إيران تنفي إجراء محادثات مع واشنطن وتؤكد بقاء هرمز مغلقا حتى تلبية مطالبها",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/enriched-nuclear-material-will-not-leave-iran-security-chief-says"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249336/Not-a-particle-of-enriched-nuclear-material-to-be-exited"
-   ]
-  ],
-  "first_seen": "20261111-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-11",
-  "ko": "미 재무장관 베센트, 이란 암살위협에 자택서 군기지로 긴급 이전",
-  "en": "US Treasury Secretary Bessent relocated to military base after Iranian assassination threat",
-  "ar": "وزير الخزانة الأمريكي بيسنت ينتقل إلى قاعدة عسكرية بعد تهديد إيراني بالاغتيال",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/11/us-treasury-chief-bessent-moved-to-military-base-after-iranian-threats?traffic_source=rss"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTkFHa2J6ZmV1aGJjcDNaNzE3dUh6aGowWWt4QVFPQkNDQXdNLUxia2NrMHpMSXNubnY5M1QwZ3JlNTBlUEhlRWZTME1Lb3IxUHlhd3k1REVRcDFLOVYwaHdZelhYeHQtRjN5ellNUHJDclV6Njhza1liRTNVV1ZBdDJnbElLODZxcGtpXzZuVGZucXc5a2ZuYmIxV3BkQTd1Y2taQklySUkzOU5QMUJvSklR0gG3AUFVX3lxTE90aWF5VV84aHQ1MXJnWmsxSUhiNXFsTUY4RHUxMUNZcU1nSkJoVDJiVjdwRndqWVEtTXU1QldnTUZ5RDB0YUJVb3ZwcGIzNVlGZXhlRWdodjhfQ1plSFplbWpHa19LYWkweXlzLTR1cGdoczNBNDhUMnFsbVN1ckVlNFdVUjNRM1U4d3NlcjlKdV9vX3pYcjhYWHRNcWNnTkhRQjBUOWxoVEJfLUdCVkg2VU9jU0d5UQ?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249334/US-Treasury-Chief-Bessent-relocates-to-base-after-Iran-threat"
-   ]
-  ],
-  "first_seen": "20261111-1530",
   "status": "pending"
  }
 ]
