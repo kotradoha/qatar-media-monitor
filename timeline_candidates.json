@@ -1,5 +1,22 @@
 [
  {
+  "d": "2026-11-22",
+  "ko": "이란 외무장관 아락치, '이란 요구 충족 전까지 호르무즈해협 재개방 없다' 공언 — 봉쇄 장기화 시사",
+  "en": "Iranian FM Araghchi declares Strait of Hormuz will not reopen until Iran's demands are met, signaling prolonged closure",
+  "ar": "وزير الخارجية الإيراني عراقجي يعلن أن مضيق هرمز لن يُعاد فتحه حتى تُلبى مطالب إيران، في إشارة إلى استمرار الإغلاق",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/photo/86329275/Strait-of-Hormuz-will-not-be-reopened-until-Iran-s-demands-are"
+   ]
+  ],
+  "first_seen": "20261122-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-21",
   "ko": "UKMTO, 호르무즈 해협 주간 상선 피격 6건 보고 — 해협 선박 통항량 전쟁 전 대비 65% 감소(11월 중순 기준)",
   "en": "UKMTO reports six vessel attacks in/around Hormuz this week — Strait shipping down 65% from pre-war levels as of mid-November",
@@ -152,6 +169,52 @@
    ]
   ],
   "first_seen": "20261121-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-21",
+  "ko": "이란, 바레인 민간 산업시설 공습 — 화재 발생, 파키스탄인 포함 2명 부상(1명 중태), 걸프협력국 일제히 규탄",
+  "en": "Iran strikes civilian industrial facility in Bahrain — fire breaks out, 2 injured (1 critical) including a Pakistani, GCC states strongly condemn",
+  "ar": "إيران تقصف منشأة صناعية مدنية في البحرين — اندلاع حريق وإصابة شخصين (أحدهما بحالة حرجة) بينهم باكستاني، ودول الخليج تدين الهجوم بشدة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNT1hnQ0MzeDBSbWhndndQV3hydzl0SHl0WEZrYlgtUExNR0p5N3Z6SHRLMDlNWDMzWnFVUWc0R3AyQ0J6YmpnVUFvWldxa3lhUzU3YTItZE5oU3FoeXBWTjVMSlEtSWRENWtmSXhqRXdFTFZ4cXY0b3hFelVrSzhNR1RENzdTanhrSmdxdlVPbE5FOEdzZjJrM3d2VnpSVEZ5dE1CMlYzNFd1YVJJREdjaGpjWDQ0S1h0LS1valZzcE93azEwckNCMA?oc=5"
+   ],
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxObDhVUWs0THg2c2dONlhxQ3BBT2pWejlEa0JIWTliNWNFSXVlRjEwZ1BzVTVWUG9rTUhoVnhHUHdJYVAzQ1BvS1RmYnctRXZTeUk5NDJRVE5uQjNaZXZHbHQxZUJVWi1oTDgwOWgzWGZTTTNlZG5WZVZwSmVPRzZKR09ES0J5emYxLVVsc1pkaUNkUmVCWlpLMGEtM09LWDFxQUZrQzYwSXYxYmo5YVBmYllBSWdIdjdPb0hVNWI2TVBLbTV1bXpWYjl2RlBqSHhEWjkw?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEtpcEk1MExLTkJTT3BjZFBvS1FYMlo4bFZYNnBlZjBHMkNDaEhOYkI3WnhvY1BGWDhLT2VPazFGUVlKTUFLQjF6MFUzT2c2MkVRa3NiQUE5Ym1MMFk1Z2FsVTFXd296WXFHU0hPczItY2xreDhwZWk2al9RWS01VWEtcVdQQzJLRHAzY1FESXBpY3M0OXI5Vzg5b3dEekVQaXd4S3FLc1o1YV82dVp1SGpQYw?oc=5"
+   ]
+  ],
+  "first_seen": "20261122-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-21",
+  "ko": "이란 irgc, 바레인 미군기지 내 패트리엇 레이더 2기 타격 발표 — 미사일·드론 복합 작전 수행 주장",
+  "en": "Iran's IRGC says it struck two US Patriot radar systems at bases in Bahrain in combined missile-drone operation",
+  "ar": "الحرس الثوري الإيراني يعلن استهداف نظامي رادار باتريوت أميركيين في قاعدتين بالبحرين بعملية مشتركة من الصواريخ والمسيّرات",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86328844/IRGC-hits-two-US-patriot-radar-systems-in-Bahrain"
+   ],
+   [
+    "Daily Sabah",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZnpQa3NoMDRKbURETmwwOGNNNzlGU1NXRnhnR0YxVWo3M2YzLVgxek44R1ZseGNLRXlsVk90YVdnc1BwNzVhY3U2dDA4RkRwWGliVkJCSVNzWHQ3ZjNXenBMZkc4VVlHU3pkbFJsSGxmT1ZVNWNOTm9pR2c0SzF4VkRER2w2RVFuVVRvUWtIMTVuLTh6WVhyUDJyeTIxcDZsMmRLOWFUZ0UxN0hFM0HSAbMBQVVfeXFMT1hldXR2U1QyYzBNQTluN2xPX0tXamdIdjRJcTVkZ2p2QjNTQ1ZRejdmRDRTTTQtTXZpNUJwT0huWnlHUFRKOUlXakpaYWdhamZwdzBaby1hTTF6ZmtjTkdxc0MwN1VqNEx1eEpBRGx6eHZsX1lkWS1ZZ3d2S1VPUnhPbE9qdWRvT1JnM0pKMkV3T3Q5ak5UYV9ob0VIaEVfWjg2Qzdia2J1QlJtWXFOWmxicVE?oc=5"
+   ]
+  ],
+  "first_seen": "20261122-1530",
   "status": "pending"
  },
  {
@@ -1722,65 +1785,6 @@
    ]
   ],
   "first_seen": "20261116-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-12",
-  "ko": "가자 나세르 병원 공습 — 이스라엘군의 가자 칸유니스 나세르 병원 공습으로 의사·장애인 포함 최소 6명 사망, 28명 부상, 정전 위반 논란 확산",
-  "en": "Israeli strike on Gaza's Nasser Hospital — At least 6 killed including a surgeon and a disabled man, 28 wounded, in strike on southern Gaza's largest medical facility amid ceasefire violation accusations",
-  "ar": "قصف إسرائيلي على مستشفى ناصر في غزة — مقتل 6 أشخاص على الأقل بينهم جراح وشخص من ذوي الإعاقة وإصابة 28 في قصف على أكبر مرفق طبي في جنوب غزة وسط اتهامات بخرق وقف إطلاق النار",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUjFPWWxmYkExQ2pkYVBVZ0N3RFJnUjh4a0pmM0JEQVI2Z09td01Yd1J1Ym14ZEVKaGFFTWczb1NSRnpqWnJvdkhxdEZJU0JCdXVlb3Rjb1JmSFZDWHpHdW94MHlLOHhveDBwZXp1YzliTXd5bG5XM1pra3VqUGZfR1lTaTctWjBQcmdINkdOZ3lvSHdRMkJmclhn0gGfAUFVX3lxTE8xbmxmdzdrZDUtNGx6SnJ3NjlTOFV0YzFZZEhtUjNnSVRuVXd2UXBoQzVheEZCYkF3b21FZHhDWVo3UnFtZlg0NWRTc2ZQVlMtODFid3FhZWRGaGQxbFNhY1JpemZqNTVuRTB5QlVxWVdFSW5yakROZTI0WHdoQ1o2OEh2NU9EUzZtcnVETS1TUUZwLUNvcXJtQlp1aDQ0aw?oc=5"
-   ],
-   [
-    "BBC Middle East",
-    "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss"
-   ],
-   [
-    "CNN",
-    "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcU1aTEhSMkdRVDdDRzlvRmxvMk5yZFotN1RZM3h0dHhhRFFvZ2NJZWRUWXlCN0Jtcmt3RlcxeUY3VF9LNmxZc3lwQlVaQjB5UG5sZ1F0Nm01ZG81M3ZSNWx3RkhEcVF3cGFtMWo0VGFoV0RIb0Z6eVlnak04cWtzSUc3MFdXSEk2NVhZX2FnNV9Kd1E?oc=5"
-   ]
-  ],
-  "first_seen": "20261112-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-12",
-  "ko": "이란 국가가스회사(NIGC), 3월 공습 당시 3분 만에 가스생산 28% 손실 발표",
-  "en": "Iran's NIGC chief says country lost 28% of gas production within three minutes during March attacks",
-  "ar": "رئيس الشركة الوطنية الإيرانية للغاز يعلن فقدان 28% من إنتاج الغاز خلال ثلاث دقائق أثناء هجمات مارس",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMixgFBVV95cUxPU1FrdTFaM194RkthVkhxQWZydkZkcERGVllWeW1Dd2s5RmJPWXlGb0FEWlI2ODEyMWdIWU1PME44X2luOVVERVJhbjhySm9NV0tUN1diX3hlZkgtanozdFl3VUdSdFNza3BiMWd2WGxWQ3NsZnJtVmRFVjFFVTl1dFgwT1htRDZUakJ0SFkzNERNbGhlXzM1a2toMmNhTGlXd3pfbW03MGw5V1daX1BsU09pbTRJa0NrMXVTVEtFUzRxYjlxMnc?oc=5"
-   ]
-  ],
-  "first_seen": "20261112-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-12",
-  "ko": "페르시아만서 한국계 장금상선 VLCC 2척 피격 — 선원 4명 부상, 이란의 호르무즈 통항 규정 위반 경고 이후 발생",
-  "en": "Two Korea-linked VLCC tankers (Changkeum Shipping) struck in Persian Gulf — 4 crew injured, follows Iran's warning over Hormuz transit rule violations",
-  "ar": "استهداف ناقلتي نفط عملاقتين كوريتين (تشانغكيوم) في الخليج الفارسي — إصابة 4 من الطاقم، عقب تحذير إيران من انتهاكات قواعد العبور في هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "서울신문",
-    "https://www.seoul.co.kr/news/newsView.php?id=20261113500151"
-   ]
-  ],
-  "first_seen": "20261113-0700",
   "status": "pending"
  }
 ]
