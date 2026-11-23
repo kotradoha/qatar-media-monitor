@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-11-23",
+  "ko": "트럼프, 이란과 합의 불발 시 새해(2027년) 추가 군사타격 경고",
+  "en": "Trump warns of additional military strikes on Iran in the new year if a deal fails to materialize",
+  "ar": "ترامب يحذر من توجيه ضربات عسكرية إضافية لإيران في العام الجديد في حال فشل الاتفاق",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "CNBC",
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE9YeVVuSzlMa1Vza0JNYXpXbGw2emp5RndTVHplTzB1QllobEw0SW5Dc3VyTFhwMFJnMkpRSEJEZnhPOFFZYWZhckZXaUlKdTZPRzNyOGNzLWp0YUZDOHM4N0xZQWZHVm9zOHRPbXp1a040YUHSAXhBVV95cUxNcG02RV9VeGk3SG90SjhQdWEyTGd3RVdNRmw4YkZreEZmY2JHUU5nVGNBQklaSmFES0ppelA3UmZFVFVUdVF0RzlzdVBtWWF1emF1U3o1N0x4T25VRDVTMS1Od3BWZnhTVERFN0hJd1Bud1hHdkk3MnA?oc=5"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE13cnVuUGlNSlRKbDJ3RTh5dEZxa1QwNnlLaTlJMklpblJ4NE1IcWtlOGpLTllNdlVqWGR0b0VONTBNSTJpM0hFNTdCZlhoT0d1QTdWMlhqaFo?oc=5"
+   ],
+   [
+    "중앙일보",
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBIbHhTam1yS3JENHRZQmJIQld3N1hDWTFsalNCRXowU2JGb284QUhZOXNfbnVVU3RQRExUU1RIbGlIQTltNVN6YW1ZNHlNcHQwcUM2TENn?oc=5"
+   ]
+  ],
+  "first_seen": "20261123-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-22",
   "ko": "이란 외무장관 아락치, '이란 요구 충족 전까지 호르무즈해협 재개방 없다' 공언 — 봉쇄 장기화 시사",
   "en": "Iranian FM Araghchi declares Strait of Hormuz will not reopen until Iran's demands are met, signaling prolonged closure",
@@ -14,6 +39,65 @@
    ]
   ],
   "first_seen": "20261122-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-22",
+  "ko": "호르무즈 해협에서 유조선 다수 피격·화재—이란 해군이 자국 규정 위반 선박 방화 주장, 개전 후 최다 규모 선박 공격 기록",
+  "en": "Multiple tankers struck and set ablaze in the Strait of Hormuz — Iran's navy claims it torched ships violating its rules, marking the highest number of vessel attacks since the war began",
+  "ar": "استهداف وإحراق عدة ناقلات نفط في مضيق هرمز — تدعي البحرية الإيرانية أنها أحرقت سفنًا خالفت قواعدها، في أكبر عدد من هجمات السفن منذ بدء الحرب",
+  "q": true,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaU5TeXJsWmZ2MWhRd0xFSXc2M0xfMFhvLXE5amhZNGo5dkN3VXphY0RCR0h6UlVSZHV5aFVuZkRBOUwyNHdYU1VtY01xVnlQOUVkMTBhN2VxTGhILVlzTnQ5WWE4NEVfMV9Wa3Y5UUNZeFVqekxtdGl3SjdHN0p6T0RCZm5DVWlDMlMyZThZQTNlUjRiWFU4cmNWWnBmajUxOENBWm4wTlFPZw?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/22/iran-war-live-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat?traffic_source=rss"
+   ],
+   [
+    "서울신문",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaldWWV9ZSG13UDJxcmQ2TVNhbWNNeWxSaC1VS2ZkU1dCVFZxeFZXMS1pb1pSbVJnRF9NY1U0RVhRdkcySXJORDV6WXA5Z1VTZ1lJY3dDWlQzN1IwdHc4S201RjQ5YzNiOFBUVTMtdkVEVFN0RzVPSXR6WGpnNnVzSGtGMkNENjRDdWpycE52TQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261123-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-22",
+  "ko": "사우디, 예멘 호데이다 공습으로 4명 사망·18명 부상",
+  "en": "Saudi strike on Yemen's Hodeida kills four and wounds 18",
+  "ar": "ضربة سعودية على الحديدة اليمنية تقتل أربعة أشخاص وتصيب 18 آخرين",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attack-yemens-hodeida-kills-four-wounds-18-others"
+   ]
+  ],
+  "first_seen": "20261123-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-22",
+  "ko": "사우디, 예멘 타이즈·사다 공습으로 3명 사망(여아 포함)·16명 부상",
+  "en": "Saudi strikes on Taiz and Saada in Yemen kill three, including a girl, and wound 16",
+  "ar": "ضربات سعودية على تعز وصعدة في اليمن تقتل ثلاثة أشخاص بينهم فتاة وتصيب 16 آخرين",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249616/Fresh-Saudi-strikes-on-Yemen-leave-dozens-killed-injured"
+   ]
+  ],
+  "first_seen": "20261123-0700",
   "status": "pending"
  },
  {
@@ -1697,94 +1781,6 @@
    ]
   ],
   "first_seen": "20261114-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "IEA, 이란전 발발 후 처음으로 세계 석유공급이 수요 초과(공급과잉) 전환 — 걸프 수출 회복으로 전월 하루 약 200만 배럴 초과 공급",
-  "en": "IEA: global oil supply exceeds demand for first time since start of Iran war — Gulf export recovery drives ~2 million bpd surplus last month",
-  "ar": "الوكالة الدولية للطاقة: المعروض النفطي العالمي يتجاوز الطلب لأول مرة منذ بدء حرب إيران — تعافي صادرات الخليج يدفع فائضاً بنحو 2 مليون برميل يومياً الشهر الماضي",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRV9yU2NQSlZQVU9xbUZLbjJtRkZnckZIRnlhaktKV1ZWU3UxNF8yWkxYbDl3WnZTbVdIM0ZHVTJFaVlLYUxld0lNWlAzeDRadTBmM1NtX0RMNlpVajRJUTE3bXVvMXhjMU9VLWFCLS03QnNka1hWNkpWN3hEbnQzMXVXM2hibTZNUWRaVEJKZXVJXzg0U2ZiSVdZTDRtd3dHNDk4OGs1b0hzWFBOdW92UGVwY9IBuAFBVV95cUxOdUx1b01NN0NPVFZ2Vmd3WXRYQS1oVFIwU1Q5NnhZV3h2R3VqVE1ZUmRFRGNFNWVuaV9PUlBTNkZ2V25oczJmZFdKZEVsM1dXWGI2YTQ5VlYzRzZhZ2FGTEVEQ0gyaE5qNXNGWnF2MHFpRFBkTTBrTXA5WTZBWFZyY09GV3JOZGN4M3dMeURSZnVORXJ4WmYwbmVGajNDeVhLMWt0cFgyVEpleDkyamNWb2dLSm5fTTgx?oc=5"
-   ],
-   [
-    "The Guardian",
-    "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNndNZUdKRnhDVGRkRE85YjZfUG1pUFd5NlVkbjBhbWZaTjZqZlRCU3RmMlBzR1ZjMmJpZi1jX2FvT01wbVc0ZDNaYm9YZUFTZm4wX29QQ3NLN0VpVS1CUjRBVm1GeWlHRk8yb1R4QkMySE5HUjdMUEM3OGVXdU5XM3lORndmX1RwRFdEbkZhalpnVmdONXhJYkR6bUpDZ2xfTXB1MlNuWDNFOGtPSFh0NzF0OWFYSjFBdU1hdVNqQnNSbUdMMi1JZW9vV1UwUQ?oc=5"
-   ],
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261114_0003867965"
-   ]
-  ],
-  "first_seen": "20261114-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "예멘 후티, 사우디 군사표적·리야드 공항 겨냥 대규모 탄도미사일·드론 공격 감행",
-  "en": "Yemen's Houthis launch sweeping ballistic missile and drone strikes on Saudi military targets and Riyadh airport",
-  "ar": "الحوثيون في اليمن يشنون ضربات صاروخية باليستية ومسيّرة واسعة على أهداف عسكرية سعودية ومطار الرياض",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbnZfUGp2WERGSzJtc0RzMWlEU0s0S2hkSmd0ajZUS0ZQNDllNDdXTkc0WXloUEkxZ1h3ZU1XX0U0ZklSYy1QaGxQUEF0S2YxRzFQX3d5V21XM2doSEVNSGJncUhCaElvTGkyV25CcjU5ZVBsQVhneG83TWdWdkFXS0JIUjhQazRxd29aZkNyR2dKTnVBYUpGYnlsaEpVeVZXYzgzVG9mRnV2ekowdzQtZmZMdUk0WVdMSHhXMk40T1lPYUd1RS1Bb1hya21kMzBjUmc?oc=5"
-   ]
-  ],
-  "first_seen": "20261114-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "이란, 두 달 만에 바레인 내 미군기지 첫 공습 재개 — IRGC 드론 공격, '美 공격 대응' 주장(2일 간격 2차 공격 중 1차)",
-  "en": "Iran resumes attacks on US base in Bahrain after two months — IRGC drone strike, claimed as response to 'US aggression' (first of two strikes within days)",
-  "ar": "إيران تستأنف الهجمات على قاعدة أمريكية في البحرين بعد شهرين — هجوم بطائرات مسيرة لفيلق الحرس الثوري، بزعم الرد على 'العدوان الأمريكي' (الأولى من ضربتين خلال أيام)",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The New York Times",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxObmV0c0pwNVZmTU04SXFiQktmeFVOX2FhVkxlTkRrb3dRY0xYZEhaM3BKZmZ6V1FOUUJWOTJva3psREkzR2Q5ems3VVZYWFkyNEJ2V185V196bnZqVndfYXZCT2hZTVhzTjZEb2RyVnpCQ21QT0NpNTR5SThLbG0wWUFB?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcDJzX3ZZUmk0ZHJvY3hHNFpBbDRfQlBpT25MWEZNNGY1QUsxWnlRVkl2WXNFN3puTS1ra2pHc2ZkeDI5WUxZcm9yZ1JheGRQYXlGM0VfMVRmY01UdmVDc1R1UDYyUk9MWGpKTzQ0bzFKOGJQS3VhMDhJdzkyaDQwanNLTFMzVU5vRVdUbVRudjQtQ0NCZXdleUJOeWwxaEVXQ3c0TEs1dkNZSTY4RnAxc1I3c1JhY3dNNy1JRFR4cmJnWHNl?oc=5"
-   ]
-  ],
-  "first_seen": "20261115-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "이란, 두 달여 만에 바레인 주둔 美기지 공격 재개 — IRGC가 13·15일 두 차례 바레인 리마 기지 공격, 美항모 3척 중동 집결",
-  "en": "Iran resumes attacks on US base in Bahrain after two months — IRGC strikes Bahrain's base twice on Nov 13 and 15; three US carriers converge on the region",
-  "ar": "إيران تستأنف استهداف قاعدة أمريكية في البحرين بعد شهرين من الهدوء — الحرس الثوري يهاجم قاعدة في البحرين مرتين يومي 13 و15 نوفمبر، وتجمع 3 حاملات طائرات أمريكية في المنطقة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Bloomberg",
-    "https://news.google.com/rss/articles/CBMingFBVV95cUxPSTlsTGpib2E2Sm9JYXBzRlBxWTZNbGFEWHhjaHk3MG5ab1VybmtNNlAyaWtWYnFranRoZFRWNmY1clprM3lzeXJETGtTRW5oeldDa0NqdFJrWF9SZWkwUUZnSnNoVXJBcTk3ZmVNODB6Z21ZMVJLejZPSjI5S0pybXByY1hJNGEtWm5mNmVqZlJzVGxrblBCdVBiQVFNQQ?oc=5"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcDJzX3ZZUmk0ZHJvY3hHNFpBbDRfQlBpT25MWEZNNGY1QUsxWnlRVkl2WXNFN3puTS1ra2pHc2ZkeDI5WUxZcm9yZ1JheGRQYXlGM0VfMVRmY01UdmVDc1R1UDYyUk9MWGpKTzQ0bzFKOGJQS3VhMDhJdzkyaDQwanNLTFMzVU5vRVdUbVRudjQtQ0NCZXdleUJOeWwxaEVXQ3c0TEs1dkNZSTY4RnAxc1I3c1JhY3dNNy1JRFR4cmJnWHNl?oc=5"
-   ],
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRWFZVVhzUDVtSFIwNTY3QjZWN2NIRzJXVmdMWEc4ZEtKQlpQb1NBZ2VnUGxtaFZtc1IyLUZ0ZGFXZUtaUEVsd1lSNG1vSmF0Sy1KRndMcDdSYTdYaWI0ZXowSEwzLUhRN0ZKTVlhZ2ZiT2M1RTRwMEF4dEJQVGY4aExtUnF5T1RQLTlOMHdsLTVUblN2QUN1SXhmZ3hjZWV1?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-0700",
   "status": "pending"
  }
 ]
