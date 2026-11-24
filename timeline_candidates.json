@@ -71,6 +71,98 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-23",
+  "ko": "호르무즈해협서 기뢰 접촉으로 유조선 3척 화재 발생 — 이란 IRGC 해군, 미국 지원 하 통항 중 기뢰 폭발로 유조선 3척이 불타고 있다고 주장(미확인)",
+  "en": "Three oil tankers catch fire in Strait of Hormuz after hitting naval mines — Iran's IRGC Navy claims tankers transiting with US support struck mines (unverified claim)",
+  "ar": "اشتعال النيران في ثلاث ناقلات نفط بمضيق هرمز بعد اصطدامها بألغام بحرية — الحرس الثوري الإيراني يزعم أن الناقلات كانت تعبر بدعم أمريكي (ادعاء غير مؤكد)",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/24/iran-war-live-iran-says-three-ships-catch-fire-after-hitting-hormuz-mines?traffic_source=rss"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XWExsME9tRlJLdnpnRmdYX2gwVmVoa2p6eEVYWEtTaHVPaDNJTGw3SVp5WS1vQlNaX2xHb2tWeE5LTW9IVjRyVDlzWFFNRzZOUWc3MWtjSFczM3JpTkk3TGdTYzc4YzFmN0E?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdk5VNk5GVlA5aXBGZ21rWHFrQW1DRGdRMDFzdmQtVkNwUHYwU1RWYlVERGFqSkg2d3ZXY2syWXVHX1BGNUc5VU1ocnUxX19lV05FWTh5VGpwRTc2Sk0zOHkwLUo5LTFlOTRSaFJnTGMxc1lUeHNIV3lzSmRxa3Y0R2lXZWY0VXhDY1licmYtZVhYdFdmNzE1OTFIWmxGTEV5MFJqLUtDRlZfN1BSQVNETTFVeDN6cFhveGtTN3NCcV9JLUZKYl9WRzd6d2JTYkJyRk44Tlpsbw?oc=5"
+   ]
+  ],
+  "first_seen": "20261124-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-23",
+  "ko": "美, 유조선·LNG선 등 최대 50척 사이버공격 포착 — 이란 배후 가능성 조사 착수(WSJ 단독보도)",
+  "en": "US investigates cyberattacks on up to 50 oil/LNG tankers, suspects Iran involvement — exclusive WSJ report",
+  "ar": "الولايات المتحدة تحقق في هجمات إلكترونية على ما يصل إلى 50 ناقلة نفط وغاز، وتشتبه بتورط إيران — بحسب تقرير حصري لوول ستريت جورنال",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yNTZuZXNPQlEybjZUTE92MGNoR2JoRWt2SFRiRlJSUks1R1BNU1UwZzZMVkxyelVOaFROcnAzN1NOd0pDMEZXT0hUZmJPVEJCNmxYWXZHbktZN0hxN1RYU0pMN2pZWTRIVkE?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVjR1WG9RTVdfSTNnS1RTOWcwVlhpeGMtaUdMZGVIU1I0ZWt1ZlhtQ2F1ODJZOEwxVzB2ZHBYNDIxMkEtdjdMY1Z2X050QjY2VjYwR1VmTDZSbWxiQTNwZ09nZTRHYzdweXEzajYxcnZxTUp3eWdSdEtvX2RMTllnY205N3VoTlJnTEQtOEYySEVHNDZMa0p5bHdPWG9KTUw1Zzg3VnZuVEVGV3czanhjQUJxdDNqTXFvMXlZT1k4bmlQYkJfYXUya0lsbzRoUQ?oc=5"
+   ],
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaDNLV040WjYxakp4SFpkLW1ZSWo1M3dJOE8xV3pZTmRDZ0EwclVFclVWQlZpazJiRTJwNWtCdmZGeTZkcmJqQUlWbVo5ME92cFZXSUFFOUkyUmp3SldOYmR5S2xXZUVHR1lSZXgzSEFWdHhkTm5HeEM4NVEyc0djNFNrTW9GTFh5WW1j?oc=5"
+   ]
+  ],
+  "first_seen": "20261124-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-23",
+  "ko": "美 해상봉쇄 장기화로 이란 국경에 화물차 42km 정체 — 넉 달 넘게 지속된 해상봉쇄로 이란 육로 물류대란 발생",
+  "en": "US naval blockade on Iran causes 42km truck queue at border — over four months of blockade triggers land logistics crisis",
+  "ar": "الحصار البحري الأمريكي على إيران يتسبب في طابور شاحنات بطول 42 كم على الحدود — أزمة لوجستية برية بعد أكثر من أربعة أشهر من الحصار",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "m.news.sbs.co.kr",
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcUNDaDBhX3pQNFNJU2lCZU9ldTI3YVd4eGUzUGg0TjRWLUQycXpJcEZnemhOUzJaeWtmWXRHcHVhOUZFQ1ROTS1mUVN1a3ZpZWhaaW5aMGxnVWZJVzFhWFVpeHMyV1pORy1xOXN2NnJNdkQ1NUVoclpTLS1GbXgxNEFTNzJVemxuZWRUc1JxQlFqRFF5a0I4bjhKcm84cFl4a0cxWlJjSm1Idk9xMkE?oc=5"
+   ],
+   [
+    "SBS Biz",
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Qa0dKTDBhZ3hPRHhKU3JiX1BzNW5YSURvTzdneVB4RzRLb1VCUXBEUGQxOGxVXzlJUFA0X1oxcmRnSXJ3ZFQ0aEpSeTZkMjdoOUlJ0gFYQVVfeXFMT29rQy03QVJPbUhLZUo1TXpiTHlsMFl0eEZuSlNoNDRLbmh2WFBEdXZnaWVOalhTelNPMUo1RHRFRjA3MnpqSjc1WkZxQ0F3R041Wk5tazgwdQ?oc=5"
+   ],
+   [
+    "연합뉴스",
+    "https://www.yna.co.kr/view/AKR20261124076900009"
+   ]
+  ],
+  "first_seen": "20261124-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-23",
+  "ko": "美 재무부, 이란 '그림자 금융망' 겨냥 제재 확대 — 이란계 기업 20여곳 신규 제재",
+  "en": "US Treasury expands sanctions targeting Iran's 'shadow banking' networks — over two dozen Iranian entities newly sanctioned",
+  "ar": "الخزانة الأمريكية توسع العقوبات المستهدفة لشبكات 'الخدمات المصرفية الخفية' الإيرانية — فرض عقوبات جديدة على أكثر من 20 كيانًا إيرانيًا",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/23/us-escalates-sanctions-on-iran-targets-shadow-banking-networks?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261124-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-22",
   "ko": "이란 외무장관 아락치, '이란 요구 충족 전까지 호르무즈해협 재개방 없다' 공언 — 봉쇄 장기화 시사",
   "en": "Iranian FM Araghchi declares Strait of Hormuz will not reopen until Iran's demands are met, signaling prolonged closure",
@@ -1682,98 +1774,6 @@
    [
     "The Guardian",
     "https://www.theguardian.com/world/2026/nov/13/iran-us-radar-bahrain-sirik-hormuz"
-   ]
-  ],
-  "first_seen": "20261113-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "이란 해군, 호르무즈 해협 인근 시리크 해안에서 미군 MQ-1 프레데터 드론 격추 발표",
-  "en": "Iran's navy announces it shot down a US MQ-1 Predator drone off the Sirik coast near the Strait of Hormuz",
-  "ar": "البحرية الإيرانية تعلن إسقاط طائرة مسيّرة أمريكية من طراز MQ-1 بريداتور قبالة ساحل سيريك قرب مضيق هرمز",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/iran-reports-shooting-down-us-predator-drone-its-southern-coast"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249373/Iran-s-Army-shoots-down-US-MQ-1drone-off-Sirik-coast"
-   ]
-  ],
-  "first_seen": "20261113-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "호르무즈 해협 동쪽서 LPG 운반선이 기뢰와 충돌해 대형 폭발 — IRGC, 경고 무시한 불법 항로 운항 선박이라고 주장",
-  "en": "LPG carrier strikes naval mine and explodes east of the Strait of Hormuz — IRGC claims vessel ignored warnings and took unauthorized route",
-  "ar": "ناقلة غاز بترولي مسال تصطدم بلغم بحري وتنفجر شرق مضيق هرمز — الحرس الثوري يزعم أن السفينة تجاهلت التحذيرات وسلكت طريقاً غير مصرح به",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "PressTV",
-    "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUFJScWpnMzJTclBFUEpnMDJsRXp1OEI0cEZkNHZwa05US1hwRTNZZU92RFhIdWpheGdIMGtlYnhQMjlZT1NxV1BHLVNXYUdPQm5INVNVTUx0a3A2ZjRWYU9kRkZVWkpIM1ZhbXB4cHNxNVBjcVZjelp1cDR3aEZjbnJhNWVnVy1adnNTSERxcDMwV1hFRzdscTczUHZfYkJFRXdibDBRaHNqcFdtdmY0bEdjTG9hM200NlNsTTh3WnFwM2szbTluUWJmRQ?oc=5"
-   ],
-   [
-    "IRNA",
-    "https://en.irna.ir/news/86320447/Liquefied-gas-carrier-explodes-after-striking-naval-mine-in-Strait"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0weFR6eWk4ZHlha2xsUFpsTF9PbVRxVGJnSll0TEhxX2FRLTh2UUk0dGRTMDFYZkh0SkQydUQ0WVc5VmhJWDEtYmdXWllWbVhSM1lTb29TQklvNUM0TGI5clNn?oc=5"
-   ]
-  ],
-  "first_seen": "20261113-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "IEA, 걸프 산유국 수출 회복으로 세계 원유시장 공급과잉 전환 전망 발표",
-  "en": "IEA says world oil market is swinging back to surplus as Gulf exports recover",
-  "ar": "الوكالة الدولية للطاقة تقول إن سوق النفط العالمي يتحول نحو الفائض مع تعافي صادرات الخليج",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcWtzQXhRVUlUbWQ0VVloOTVjekFCcC1XQlNXNWNRcERHNDFEbnBNTTFhZjV3Qjk5bGxCaDhoRFE1Yi1mdGNoR3JCVXY5MmQ0ODVnUWRabHowUDhYSUNKOXV5X0lLQzRBbWNabUFMTzVlMzBNOUUyWTgyeUg1cW5sRjJtUHo3TldPOEY4S19xOGwwYjlkemFibktTVTltVF94WUg5ekdJczcyUlBHOHZ0V3EtdWdjU0JOVkY4?oc=5"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQVljaDkwUzhILVlYVTR6aFdubUJxUV9xMURUOWpaVkpmejFYcXZCOGUyYUlKZDhMVzJkNF9idTIyOVI4OGtMdWJiMlhVN1VKUV9qX181SUs0azJ6S2wyR2hBY3Q0cU5NaXlXaUZodFJBTFlXRjdtRkVmVGFBWFBhTTlFNWRWaUxtSF9RREF2YUluNkZyVFlybW14RlBPRFFJcFFiN3R6em84MXdKT0w0amJpSDlRbnEyYmExQ3VDVGljdw?oc=5"
-   ],
-   [
-    "Financial Times",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZWVlalpISmRrSTJBMVh4YUVzVUdOZWJhTU1jbmZfc0JwMmNpZGllLUNibThMdHFzV0tfT1paVlZsWGJTSUNQcjNYa196SEdvWnRVaEFZWGFmaTlVcUM0Uy14NlRjWFZZdVU0NFB6RnpKMmZXdUFoME1vdXVtUmZGaXUyTGU?oc=5"
-   ]
-  ],
-  "first_seen": "20261113-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-13",
-  "ko": "유엔 안보리, 사우디 겨냥 후티 공격 및 상업해운 위협 규탄 결의안 채택 — GCC 사무총장, 결의 2837호에 대한 국제적 합의 환영",
-  "en": "UN Security Council condemns Houthi attacks on Saudi Arabia and threats to commercial shipping — GCC chief welcomes international consensus on Resolution 2837",
-  "ar": "مجلس الأمن الدولي يدين هجمات الحوثيين على السعودية والتهديدات للملاحة التجارية — الأمين العام لمجلس التعاون الخليجي يرحب بالتوافق الدولي على القرار 2837",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMigAJBVV95cUxNbzVaZXZySURoQzRONzIzSHVIYkxBcl9vdHFaWWM4NGFvc1ZZWHdJU0sxd1ozRl9fblB3WXRMNzBDbnJOT2dKcjN1Z1RyT1N3MWViTE9BaEt1VjVSTzZsNVhQUTJ4b1ZBX09CRHo1bVVaZTZmR1hvR3BJdElmSGp0Q2phUkpiQ3Z4SWZIQVBSVEd3TkRnNjlSa3FBRGZ0ZHpJdXJac3l5TXd4c2s0XzlOUUZPVElRNVBIbGNiMGtzVW1TYk4xUTgwZkQtOE9tdUI4MFdubzc5M3hKV3QwSW0tTXg1SHItUzdTQnFCb1psUWxsalctWmRxWjYxQlM3RmlI?oc=5"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRTdJTjUtTUozRjJubHJtRnNPS25nMUJWMjRUMDE3d3hydTFjcHlxRWtDUS15UDhydWpqSTBsUzh6alk0OXZ4anhidTJSUWgwS3lGMHJjbVdZaTdiT1MtMG5JSVNpQzRabjlIQ0FPSW9xVU9KV1BpSDI5ZmNncjZxOVZ3NDlJb21pYVEyVTVoemxodFQySUZfSEtQS2o5eTFmQjVKR2dZUmR3RkZlRVdHTk54WUlkazAtV1V6ZW4xN3VCZkItM1h4MW5jWFFNdUZKb1JnUGZJLVRwQTA?oc=5"
    ]
   ],
   "first_seen": "20261113-1530",
