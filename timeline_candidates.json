@@ -21,6 +21,111 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-25",
+  "ko": "호르무즈해협서 유조선 기뢰 피격 추정—이란 '선박 폭발' 주장, 이스라엘 매체는 기뢰 의심 보도",
+  "en": "Tankers reportedly hit by explosions/mines in Hormuz — Iran claims blasts, Israeli media cites mine suspicion",
+  "ar": "ناقلات تتعرض لانفجارات في هرمز—إيران تزعم ذلك وتقارير إسرائيلية تشير إلى شبهة ألغام",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcmtlRFNiV0dOSFRPN25iYzdDbjJwWTV1bzJzMFdsSmVpWEhxYU9fQ1lxQ0VJT0dUNEE0cG00dFJ3YXc2NGtWaW52SGw2ZWppQy1XVWtIenRYMUk0Y1NxREl2U0pqc3BwcUVGdjJxOFpwdjVjYXNTWjZFTmZZb0M3Ui00aFpkM3UyYm5GSmk4dk40RTczZVo0WDdIT1NBZmc?oc=5"
+   ],
+   [
+    "The Jerusalem Post",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Tb21wTjg0aWQ1WF9Rbi1PMTNsRUoxWHFjNjJnNmRZVTRPa0w5NGZRSnprX00wSjhDQVFXaVgtSWhXWE9uakg1Y053a2JLUnBkRmxfaExlZ200UHNYeUluSzdFTk9iSnpyS3c?oc=5"
+   ]
+  ],
+  "first_seen": "20261125-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-25",
+  "ko": "사우디 리야드 PIF타워 닷새 만에 재차 피격, 후티는 호데이다항·정유시설 등 확전—걸프국 2차 전선 확대",
+  "en": "Riyadh's PIF Tower struck again within 5 days; Houthi attacks expand to Hodeidah port and refineries, opening a Gulf 'second front'",
+  "ar": "برج صندوق الاستثمارات العامة في الرياض يتعرض لهجوم ثانٍ خلال 5 أيام، وتوسع هجمات الحوثيين إلى ميناء الحديدة ومصافي النفط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249690/VIDEO-PIF-in-Riyadh-targeted-for-2nd-time-in-less-than-week"
+   ],
+   [
+    "뉴스1",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE11R3JJdkxYODM3VnBGcFZFbkE3cFNYOV9Vc1V3YU5CVVZPWFFyNnBHY05mUENPSnkxRFAzekRuTURKQjZaNHN3N00wekJuRTlqTE5iTXppMldTcFRIUkdOU2hR?oc=5"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcnZ5TGlIcndkLWs0YmFxMzl1Z1dkVlE2ODFrUnAzejJXNC1tY1AzR3hVTVJ6OW9hSnZIanJpTFZDUDhySXBVZHFicTMweEktY3E1SXBtQ0lvNlctbmlQak9XcjZRYTZGQVd6YTBNeXlpMUotVHB6TXc4NHBIVTJGVmRaUFA1b2trOWRINVV5UVNURi1ZLTJZRjdR?oc=5"
+   ]
+  ],
+  "first_seen": "20261125-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-25",
+  "ko": "카타르 아미리 해군 대원 순직에 걸프·아랍국 조의 연대 성명 발표",
+  "en": "Gulf and Arab states express solidarity over death of Qatar's Amiri Naval Forces member",
+  "ar": "دول الخليج والعرب تعرب عن تضامنها إثر استشهاد أحد أفراد القوات البحرية الأميرية القطرية",
+  "q": true,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "The Peninsula Qatar",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZzdlU3BDSkJEazcyWEh3RG9TNHIzdTBPZ3FZSG1oc3F1bHZTdS1vTF9Nd21zOGlHeTZqemdwcGxvZ1A3VUw2OVBwQ0dabzRxTm9MN3hCa1Fod1NHWWRVdDJuMUsyM0dHVDdBdDlkR0hIZDRBdklYU3NqNERsMWdJWDEwTklpWHoxSko4UEluRDAzQzV2Mng3RTFFUHpmdkpHVWUzX0lrbnNCNjFTTWd3RWxrcEpPTzg3MG9lWjhmQUtLM09iODBpX2F5Yw?oc=5"
+   ]
+  ],
+  "first_seen": "20261125-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-25",
+  "ko": "이란, 호르무즈해협 남쪽 규정 위반 선박지원 예인선 26척 비준수 명단 추가—해상봉쇄 대응 강화",
+  "en": "Iran adds 26 tugboats to non-compliance list south of Hormuz Strait amid blockade standoff",
+  "ar": "إيران تضيف 26 قاطرة إلى قائمة عدم الامتثال جنوب مضيق هرمز وسط مواجهة الحصار",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249687/Iran-adds-26-tugboats-to-its-non-compliance-list"
+   ]
+  ],
+  "first_seen": "20261125-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-25",
+  "ko": "한국, 청해부대 작전범위 오만 남방 외해까지 확대하되 호르무즈해협 활동은 제외·전쟁 불개입 원칙 재확인",
+  "en": "South Korea expands Cheonghae unit's operational area to waters south of Oman but excludes Hormuz Strait, reaffirming non-involvement in war",
+  "ar": "كوريا الجنوبية توسع نطاق عمليات وحدة تشونغهاي إلى جنوب عمان مع استبعاد مضيق هرمز، مؤكدة مبدأ عدم التدخل في الحرب",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "경향신문",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNeklvR2xrSkJRcW42MGUybkVEc1lrWkRWbzhocE80cE9VQ21nMDdaWkJRLVprTDlTZTZrYU5aUFhSUlVUaWhjNG01MURubV9iSFp2dFd6LVJyQdIBX0FVX3lxTE45ZTJxdmlucHJQd1A4YzByRmRFUjlOMDhXZFByalk4cmd6RVNGU2xObnBjWkc4QnhSaGZGcjVyV0NPT2NiLWRqMlV0X1Rrc0NzYzFmTkpILTRXX3RzdXJB?oc=5"
+   ],
+   [
+    "중앙일보",
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE92Q0l4NW53dGZkUkdZQlpmSmJYaURXbVNTdzVSME1kLWR6YmtHMTFxSm81Tlp0UUZWaW13YWZrcnpUVVZDXzZseHcybHV3ZW5vRVVTNFdB?oc=5"
+   ],
+   [
+    "연합인포맥스",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE5NblBVWjVuT19QdHFjUUJoOFM5eDdtTWRfU3ZUU2QwOTZrRXVuT1VudUo5Q3I5MkJUY0dsT3RxeFNHMGR3S0V0Y1YwSm9kTTB3M0pBbTduUy1rRUhJR0RxZ3VOSTFWWjVlSFpTcE5USWVpU1hW?oc=5"
+   ]
+  ],
+  "first_seen": "20261125-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-24",
   "ko": "카타르 해군 소속 군인 순직 — 아미리 해군 대원 전사에 UAE가 애도 연대 표명",
   "en": "Qatari Amiri Naval Forces member killed in duty — UAE expresses solidarity with Qatar",
@@ -1664,123 +1769,6 @@
    ]
   ],
   "first_seen": "20261115-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "카타르, 이란의 대(對)바레인 연속 공격을 강력 규탄하는 공식 성명 발표 — GCC 역내 결속 표명",
-  "en": "Qatar issues official statement strongly condemning Iran's continued attacks on Bahrain — signals GCC regional solidarity",
-  "ar": "قطر تصدر بياناً رسمياً تدين فيه بشدة استمرار الهجمات الإيرانية على البحرين — في إشارة إلى التضامن الإقليمي لدول مجلس التعاون الخليجي",
-  "q": true,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTEhMcmY3RUwxVFdLaGN2U0VLQ09SYVdSd2xXRnVpN0FkVVNhUTk0WDRORjNvdGpHZThCRzBxSEJmUmZuTTV4cElHVmdESnhhTm1IV1F1bTRBd28tLXlRMGhnTTNvblNGZkpnYjdDY285QWhRX29GeDVMZk5RaHRZU1VhbTMydTZycEpITWJUVll4TzhNMEdHamxVMUhjd05WblpkckpIUi13QUxC?oc=5"
-   ],
-   [
-    "The Peninsula Qatar",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcEZXZmtqY2RDQ0MzWW5WbTJkbHF6WlU2WVZOd1RQbS1IWm80V0toMXh6TTI5UmNJRG5NcG9nVUpxbUVHMVl2MjA2MGNwVWZlSjJLbFdZYVptRXR4dDRIR2QxdEhUb0ljYUJtd0ZvX3ZBZzZFenJNdnBuY3lwclhnY2lTTEVuTWVLUVRaSFBCNlZON0w1STBsdDljdHRMTlJCZVhJUDFENWV1SjQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261115-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "사우디아라비아, 이란의 바레인 공격 규탄 및 즉각 중단 촉구 — '완전한 연대' 표명",
-  "en": "Saudi Arabia condemns Iranian attacks on Bahrain, calls for immediate halt — expresses 'full solidarity' with Bahrain",
-  "ar": "السعودية تدين الهجمات الإيرانية على البحرين وتدعو إلى وقفها فوراً — وتعبر عن 'تضامنها الكامل' مع البحرين",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-joins-condemnation-iranian-attacks-bahrain"
-   ],
-   [
-    "Al Arabiya English",
-    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObXBYN2lzUGxCMzd2dFlpalVHYzJFMmtiTWpxSEVtVzNEOXdlUk91NmdHTHpkYjhhTUd1WktYaFVTblFjMUM2NlM4RW1VMk1KcVZlNk9iY0dVUzlLNzBqSjdXVXB3QWgzX3M4ZG1SMVNGTDliZFpNLWdHdzBsa1pVYzBITGE1eVFOTjNnVllIVHBBb01Qa2F2aTh0cEZ4YXQtOVVfOElJQUpBWjB0OXBIOGVTZFExcks5bnFweWotb3RxZkEwdGhlRmZlNG9PcXNGcXpydEtDQmR6QdIB3wFBVV95cUxNXzV1ODl4S09neElCdnFKR184S3JqMGdzaU1aelYyc1haVjNYLTFqMmJRMHhYZUdsWnl6YlZwOE85bWNFTmoybnRLZllPMXoxbzBZR2pMYVMxUG0zQWFURTRhRjM0VFJPSERUcHhqcmQ0RHBTYnBzY2dadFpXTzV3Y3N6NlJXZXREemhkdzNpTk1xR1d6ODdXRjQ4cnd5MVJqZl9Mc2ViMlZJZnN6UzRCS3gzQVNJOFQ1ZFhyWi14V3g0OGxibnNNZlJMRU1HMS1NdTN6QTJUOFRQRGU1UER3?oc=5"
-   ]
-  ],
-  "first_seen": "20261115-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "바레인, 전국 경계경보 속 이란의 공중공격 요격 발표 — 美국방 겨냥 보복 주장, 아랍국들 이란의 '끊임없는 공격' 규탄 공동성명",
-  "en": "Bahrain says it intercepted Iranian aerial attacks after nationwide alert — Iran claims retaliation against US; Arab countries issue joint condemnation of Iran's relentless attacks",
-  "ar": "البحرين تعلن اعتراض هجمات جوية إيرانية بعد إنذار على مستوى البلاد — إيران تدعي الانتقام من الولايات المتحدة، ودول عربية تدين الهجمات الإيرانية المتواصلة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcDJzX3ZZUmk0ZHJvY3hHNFpBbDRfQlBpT25MWEZNNGY1QUsxWnlRVkl2WXNFN3puTS1ra2pHc2ZkeDI5WUxZcm9yZ1JheGRQYXlGM0VfMVRmY01UdmVDc1R1UDYyUk9MWGpKTzQ0bzFKOGJQS3VhMDhJdzkyaDQwanNLTFMzVU5vRVdUbVRudjQtQ0NCZXdleUJOeWwxaEVXQ3c0TEs1dkNZSTY4RnAxc1I3c1JhY3dNNy1JRFR4cmJnWHNl?oc=5"
-   ],
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRWFZVVhzUDVtSFIwNTY3QjZWN2NIRzJXVmdMWEc4ZEtKQlpQb1NBZ2VnUGxtaFZtc1IyLUZ0ZGFXZUtaUEVsd1lSNG1vSmF0Sy1KRndMcDdSYTdYaWI0ZXowSEwzLUhRN0ZKTVlhZ2ZiT2M1RTRwMEF4dEJQVGY4aExtUnF5T1RQLTlOMHdsLTVUblN2QUN1SXhmZ3hjZWV1?oc=5"
-   ],
-   [
-    "Qatar news agency",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRjdFdkJHazR1Y1Q2QTBGMlE3WURuU2xnVlNwVG55TnNYTHZSSVBwby1IUWJVcXYycnpSUmU0SFFHQ3Azb1VTejZjS1JSdEtmZlA0TXpfcnFleEJVQnNKQVN5LVJNejVTWXpwSTRKa3Q5eGxITnNxYmZBQ2RHTWd2VUw4dnp6V3VORW5YeF9YQ01oZjA1QjFGM3JULWFsZFRkREJVR3pTaHhadw?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "예멘 정부군, 바브엘만데브 해협서 사실상 철수 — 후티 공세에 밀려 아덴 방어로 전환, 홍해 요충지 후티 장악",
-  "en": "Yemeni government forces effectively withdraw from Bab al-Mandeb Strait — retreat under Houthi offensive to defend Aden, leaving Houthis in control of key Red Sea waterway",
-  "ar": "القوات الحكومية اليمنية تنسحب فعلياً من مضيق باب المندب — تراجع أمام هجوم الحوثيين للدفاع عن عدن، ليسيطر الحوثيون على الممر المائي الاستراتيجي في البحر الأحمر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOX0xpSGNEdEpuQk5wYUNlODVmNjNjTm1jR1czQ1kzd3R5R2VGRE1SSVZzR1ZsVHhWV2M5YTBKY2JmcXRBc3VUV2ZkN1c0QUZja0t4TTNwU2dOQ0IyNGhROVpDNUdUN1U4UmNLc2pTZE90dGIxV2xJMXlDY2N2amlhTldDaTZMYTVzZk81aXp0MlQtcXlXMlI3dnAtU1gtRFJWUE9LeGlCcW1raUtNenfSAbMBQVVfeXFMTldGWmxyYnNQdGFJdEpQY3pJbnVwUzBjNUw4RWFKdUx4cWpJbVJXRjRtQUNNcUlKaFA0V1FmUTczcTBFQVJZUVlKOFpxNFJEYWZCMktVaEZMbVJkaDNjbTZsMjZ1WUI1NWlRT0xkUEpTdlgwV3p0QU5ONHAtNi1BRVVSSDNCeGRObWlEa3BIRGp5Wk1VY1VpWmVLcE9MbEhCRWVOaVV2TVF1MUpMUVVIbjViczA?oc=5"
-   ],
-   [
-    "BBC",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qTkNnRFZrMXp4T0RaZE5iNHpsMkZqVU9XNGRVSWpDWEItZVd1Q1Q5Q2RUU1JVQzAyWDJfQ1M0TnhCVVNMNDl4MVU3SklvT2JMdjJlY1VrdXFEOTFaN1E?oc=5"
-   ],
-   [
-    "© Khaled Abdullah, Reuters",
-    "https://www.france24.com/en/middle-east/20261115-yemen-houthis-advance-to-within-60-kilometres-of-aden-military-sources-say"
-   ]
-  ],
-  "first_seen": "20261116-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "호르무즈 해협 동쪽서 유조선 기뢰 충돌로 화재 — 이란 해군 '금지구역 위반' 주장, 두 달 만의 기뢰 사건 재발",
-  "en": "Oil tanker catches fire after mine strike east of Strait of Hormuz — Iran's navy claims vessel violated prohibited zone, first such incident in two months",
-  "ar": "ناقلة نفط تشتعل فيها النيران بعد اصطدامها بلغم شرق مضيق هرمز — البحرية الإيرانية تزعم انتهاك الناقلة للمنطقة المحظورة، أول حادث من نوعه منذ شهرين",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMie0FVX3lxTE5PZFRwN1A1SkhiOThORGtnelNQUDJXZUdKUndxa1FFbDJPeTBONGtDbzBaRXcxaEJqZ3hFckZ4bzVWR1puU2lKV2FHZUF6UDlMemt3czl3aTBiZzJtX1ZFcDdfU0lFTFZyMjQxVlNLZGNJR25HWmtMNnNUOA?oc=5"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249429/Oil-tanker-burns-after-mine-strike-in-Strait-of-Hormuz"
-   ],
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE42MGNZeUU3YWtQZFJtWk5KdWdHQmNrQ1VnaEttSHBRT3FmUkl5Y29yQlVsa3hJdVlNVlJnRnkyUU9yV0pBLWpTMUpDWlRWUDVhS0RMR2VRd0U4ZHU0ZVpKSzZaMzhUay1fb3FMamRvSQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-0700",
   "status": "pending"
  }
 ]
