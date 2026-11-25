@@ -1,5 +1,26 @@
 [
  {
+  "d": "2026-11-25",
+  "ko": "이란군, 호르무즈 해협 상공에서 미군 드론 2대(루카스·MQ-9) 격추 주장",
+  "en": "Iran's military claims it destroyed two US drones (Lucas, MQ-9) over Strait of Hormuz",
+  "ar": "الجيش الإيراني يزعم إسقاط طائرتين أمريكيتين مسيرتين (لوكاس وإم كيو-9) فوق مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "BBC",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9TWk94V2IteXUtbm5NNFU0NWtyTlJDcmtKWC1vcHVma0EweGg3ZWZJZWx3RUh3enpUVkctWkhsUkdMUzVzUlIwMG94dDZXVjB0OHVRQjFDYkVvVUo5VWfSAWNBVV95cUxQVG9KcmlQZk9paHZxRm4yRm9aYldOY0VzTVRvUWpiV0plV041MjBObV9sNUhyU2RDeDRvZ3BEbjFwYXRyOUNra3dxZW9EeUh0OHVqWnJhVHotTl84SkFOZUM5bTQ?oc=5"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249677/Iran-destroys-U-S-Lucas-MQ-9-drones-over-southern-waters"
+   ]
+  ],
+  "first_seen": "20261125-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-24",
   "ko": "카타르 해군 소속 군인 순직 — 아미리 해군 대원 전사에 UAE가 애도 연대 표명",
   "en": "Qatari Amiri Naval Forces member killed in duty — UAE expresses solidarity with Qatar",
@@ -135,6 +156,77 @@
    ]
   ],
   "first_seen": "20261124-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-24",
+  "ko": "후티, 리야드 최고층 타워(PIF 본사) 재피격 — 닷새만에 두번째 공격, 11명 부상",
+  "en": "Houthis strike Riyadh's tallest tower (PIF HQ) again — second attack in under a week, 11 injured",
+  "ar": "الحوثيون يستهدفون أطول برج في الرياض (مقر صندوق الاستثمارات العامة) مجددا — ثاني هجوم خلال أقل من أسبوع، وإصابة 11 شخصا",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQT3JsaU96a05ySk9rVHZIazNjQmt6Z2ZCZF9nRWFSVHVqa0s1LVhhRXhVc1VSMjNfWHhQTVZyZU9GZEtsZHRRVU5yVGVUYmVwZkRDNC1iSmYyWDc0UTdhV2pOenhuWDFkQ0ZWWkhwcTFoN2tsU3JjcllUWWJkcDBvUHU4MTAzSi0zX05oM0NLQVpua1VFNmJfcWE3cmh1al82V29SdDhCSkc4d9IBrwFBVV95cUxPQ1M5eHo1Rk9NaE5DM2hNbGF1akUxczVaekNKRWRUN3JxZ0ZJd05TYno2b2o2bVU0ZWJxWE5GWE5kT19lRHR6Z3k0TVpkaXFuY2dBMXNmaFE2YWpubno0VGZFUFlEbEJqY2NKODVWX09BVUpEUGZTXzRrY3RZWi1YUFdtaUN2amFOSm1sNXJRRzA3TW84Sk0wcUJYN1NCSEpKbV9ZZk8zNUtZSzJVdjFV?oc=5"
+   ],
+   [
+    "Gulf Times",
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxPS0Foc01GbDRQV1h0YWNrUkgzR0d3OHBVel9McTRvUlJMNHZMaXJac0NaS1llaXdFWU9hd3ZzNG4teWdLME1YejQwRzhabkFPTE5HdVNIS0RrRXc0ZGRMMkxQTWFWb2lPWklIczVPSDV6cDBDZ2doUXFiUVgtd3hjMGRtZ090Tkc4Q3VSUnBNUkxFUTlDblRr0gGcAUFVX3lxTFBGMGJEUHhUQjlWSUlOSTV3WkJnT0FRZkRpMjFaMS1zSnNKV0ZYQUF6eWNJRkkyUXBHMUJfV19KWjJRbWkxak9yQUFKbmx2SFNNS2ZnRkVOWE44T3U1YTdIdUVWcDczb1V3X3hId1czWFBBTDhUaTFLNG1nZTVjU2lsNHlETDd5ckg3VkFINHZKS2ZUWVNpNGRXOC1paw?oc=5"
+   ],
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYmhwT296MV9ZZGFxVkl5dXRBZkVTLUxRdXpTS0J0VHpUOTNhWXRMbk1felpjVmt0WGxrRm9HU1hLNDFsMUg2T1hYcUhwak1PeU1OVXIyX0hBcG5aNVJFektrRWk0QWFJUTNqU2ZwbGVDcl92UmdkMnAzU1pWamNVOGUzTUVFNHVfMTFsRHdpTDMwU3VLVEF4TjRRTkRORm5GV3ZEUUoxcW82cFF4cXE0c05ISW5LWjBfRkE?oc=5"
+   ]
+  ],
+  "first_seen": "20261125-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-24",
+  "ko": "사우디 주도 연합군, 예멘 호데이다항 공습 — 후티 아덴 총공세 임박 속 확전",
+  "en": "Saudi-led coalition strikes Yemen's Hodeidah port amid imminent Houthi offensive on Aden",
+  "ar": "التحالف بقيادة السعودية يقصف ميناء الحديدة اليمني وسط تصعيد مع استعداد الحوثيين لهجوم على عدن",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/25/iran-war-live-houthis-threaten-saudi-ports-over-coalitions-hodeidah-order?traffic_source=rss"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-claims-attack-yemens-hodeidah-port"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/report-says-saudi-led-coalition-attacked-yemens-hodeidah-port"
+   ]
+  ],
+  "first_seen": "20261125-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-24",
+  "ko": "호르무즈 해협서 화물선 기뢰 피격 후 화재 — 비인가 항로 운항 중 발생, 이란 혁명수비대 발표",
+  "en": "Cargo ship hits mine and catches fire in Strait of Hormuz — occurred while navigating unauthorized route, IRGC says",
+  "ar": "سفينة شحن تصطدم بلغم بحري وتشتعل فيها النيران في مضيق هرمز أثناء إبحارها في طريق غير مصرح به، وفق الحرس الثوري الإيراني",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249674/Cargo-ship-strikes-sea-mine-catches-fire-in-south-of-Hormuz"
+   ],
+   [
+    "Tehran Times",
+    "https://www.tehrantimes.com/news/532508/Fourth-oil-tanker-reportedly-catches-fire-east-of-Hormuz-Strait"
+   ]
+  ],
+  "first_seen": "20261125-0700",
   "status": "pending"
  },
  {
@@ -1689,90 +1781,6 @@
    ]
   ],
   "first_seen": "20261116-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "후티, 리야드 킹칼리드 공항·금융지구에 탄도미사일 2발 발사 주장 — 사우디 연합군, 메카·메디나 상공 드론 4기 요격 발표",
-  "en": "Houthis claim firing 2 ballistic missiles at Riyadh's King Khalid Airport and financial district — Saudi-led coalition says it intercepted 4 drones over Mecca and Medina",
-  "ar": "الحوثيون يزعمون إطلاق صاروخين باليستيين على مطار الملك خالد والمركز المالي بالرياض — التحالف بقيادة السعودية يعلن اعتراض 4 طائرات مسيرة فوق مكة والمدينة",
-  "q": false,
-  "verified": false,
-  "confidence": "med",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-they-fired-missiles-riyadh-airport-and-financial-district"
-   ],
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249428/Yemen-says-targeted-King-Khalid-Airport-in-Saudi-Arabia"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONktfa0xtLWVVd3RTSkRNN0xqWmRfZ0FzclNVdjJlZ0pEZlctNmVqU3ZrNVlkYzBHTzM5NWhsdmQzR2ZFUmI1Q2pRSU81YUM1MkQtQkt6MVJrYmdZaC1VVUI5eWR3OG1BTl9Gdkc5QkRvaXNFMWxkTVJUU3RkWXpTOTVGcFo3VF9RVkdEYm1kbmRlaXdPNDJ4TEdMTEpMaDk4aTFCc3RuTld3Zms1QkdYa193MWp1RG9QT2RjUTBqUVUxaklteFlydUprOGFQSE9NYnNkdlZFZw?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-14",
-  "ko": "GCC, 이란에 걸프국가 공격 피해에 대한 전액 배상 요구",
-  "en": "GCC demands Iran pay full compensation for attacks on Gulf states",
-  "ar": "مجلس التعاون الخليجي يطالب إيران بدفع تعويضات كاملة عن الهجمات على دول الخليج",
-  "q": true,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONzVvaVJURWsxWVI0eE5HbkRXWjZUNUZyMWQyeGYybGxNdGk2bTBhWTkwWG85VFQzZUlJRmo3OWFJQmlnYldyU0RoeUI0TmZLM0ZJYUpJajBqamNYb3lMSUJaUXFDbFdDUEs1eGxJcWpsbGY0MDZvdGI4QkJONEJpbE9Jc1p4SEJy?oc=5"
-   ]
-  ],
-  "first_seen": "20261114-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-14",
-  "ko": "호르무즈 해협서 유조선 3척이 기뢰 충돌로 화재 — 이란 해군 발표, 금지구역 통과 시도 중 피격",
-  "en": "Three oil tankers catch fire in Strait of Hormuz after hitting naval mines — Iranian navy reports vessels struck while crossing prohibited zone",
-  "ar": "اشتعال النيران في 3 ناقلات نفط في مضيق هرمز بعد اصطدامها بألغام بحرية — البحرية الإيرانية تعلن إصابة السفن أثناء محاولة العبور في منطقة محظورة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/oil-tanker-fire-strait-hormuz-iran-navy"
-   ],
-   [
-    "The Jerusalem Post",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNVjhPM3hwZ1NUdmp1cjJsTjZpc1hhYlBObHFZeVBYX0VhbTBPVEd4RHhrbmxMOG9ISEQ5MWFVSG5VQWR4d1NCQ1pjQWtCMkk3dGNyV2dGYTN5UzRlZXVBTVRzaEVScTVBd1E?oc=5"
-   ],
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMGk1cWtKWlVoQjFBbGdTdDNUaDYwS1pBQVhJRW5paGpMSGdCSW51di0yNk5rdjgtMGRPZkx4WU1tTEI4bVFWX1lMa2hNdkZnemFXOWJmN19SYzFiaGQwaVBERnlLdHAtb28wS2dFZ1VVZzFURlJmeEdyYmI3U3BqUTdfenYyeTZ2SW9MRm5tVldSSVRkdElqdlhpSTVfU3B2UUZoQ0plRGVXQ0JTc0lYWGV4R2lrczJIal9Z?oc=5"
-   ]
-  ],
-  "first_seen": "20261114-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-14",
-  "ko": "유엔, 호르무즈 해협 일대서 미·이스라엘 이란전쟁 이후 선원 25명 사망 집계 — 기뢰 피격 등 '뉴노멀 안돼' 경고",
-  "en": "UN says 25 seafarers killed in and around Hormuz since US-Israel war on Iran — warns situation 'cannot become new normal' amid mine strikes",
-  "ar": "الأمم المتحدة: مقتل 25 بحارًا في مضيق هرمز وحوله منذ الحرب الأمريكية الإسرائيلية على إيران — تحذر من أن الوضع 'لا يمكن أن يصبح طبيعيًا جديدًا'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february?traffic_source=rss"
-   ]
-  ],
-  "first_seen": "20261114-1530",
   "status": "pending"
  }
 ]
