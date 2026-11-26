@@ -1,5 +1,30 @@
 [
  {
+  "d": "2026-11-26",
+  "ko": "예멘 후티 반군, 임시수도 아덴 60km 앞까지 진격 — 정부 핵심 거점 함락 임박, 주민·국제NGO 대피 초읽기",
+  "en": "Yemen's Houthi rebels advance to within 60km of interim capital Aden — government's key stronghold nears collapse, residents and NGOs brace for evacuation",
+  "ar": "متمردو الحوثي في اليمن يتقدمون حتى مسافة 60 كم من العاصمة المؤقتة عدن — اقتراب سقوط معقل حكومي رئيسي وسط استعدادات السكان والمنظمات الدولية للإجلاء",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "SBS 뉴스",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTE1yaS1fd2VxZy1KeHRUa04tcEUzZzNLYXUyOFV1UFRyaUFJaVFDNDFvZTdOMmRfMlVYU0ZlNEJyVDVFc2tNOWR2d0pqSUVUVndXOVR5SWh2UXI5WFg1RG9OX0cwR2dnOVVrZ3c?oc=5"
+   ],
+   [
+    "YTN",
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBIX01EZFBqZDBEYWxSeXVWcnRFbEl4THIwZmNoQV9xaGhXNUUxdmtNTWRIMmdZZ0o2THRCTFZKbXo1czRlNWgyOFNXaGZqTVVkWEpGYm5ZNElPeWFzY1E?oc=5"
+   ],
+   [
+    "파이낸셜뉴스",
+    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RM0FrSlRiYmRhYzAxT0Q2bFdxSzdreTZqMGZFcVg2Z2hBMG1FV2VYc2tFazF5ek9uU185TDE2TkpXWjhHZnQ1RjBYSnRkc0Q5NmtITjlmRUs1Zw?oc=5"
+   ]
+  ],
+  "first_seen": "20261126-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-25",
   "ko": "이란군, 호르무즈 해협 상공에서 미군 드론 2대(루카스·MQ-9) 격추 주장",
   "en": "Iran's military claims it destroyed two US drones (Lucas, MQ-9) over Strait of Hormuz",
@@ -123,6 +148,52 @@
    ]
   ],
   "first_seen": "20261125-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-25",
+  "ko": "후티, 사우디 라스타누라 정유시설 및 리야드·젯다·지잔항 동시 공격 — 호데이다항 공습 보복 주장, 리야드서 폭발·요격 발생",
+  "en": "Houthis strike Saudi Ras Tanura refinery and Riyadh/Jeddah/Jazan ports simultaneously — claimed in retaliation for Hodeidah port strike, explosions and interceptions reported in Riyadh",
+  "ar": "الحوثيون يهاجمون مصفاة رأس تنورة السعودية ومرافئ الرياض وجدة وجازان في آن واحد — يزعمون أنه رد على قصف ميناء الحديدة، وتقارير عن انفجارات واعتراضات في الرياض",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/26/iran-war-live-explosion-rocks-sanaa-missiles-intercepted-over-riyadh?traffic_source=rss"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/25/houthis-target-saudi-arabias-red-sea-ports-as-strikes-escalate?traffic_source=rss"
+   ],
+   [
+    "The National",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcnZ5TGlIcndkLWs0YmFxMzl1Z1dkVlE2ODFrUnAzejJXNC1tY1AzR3hVTVJ6OW9hSnZIanJpTFZDUDhySXBVZHFicTMweEktY3E1SXBtQ0lvNlctbmlQak9XcjZRYTZGQVd6YTBNeXlpMUotVHB6TXc4NHBIVTJGVmRaUFA1b2trOWRINVV5UVNURi1ZLTJZRjdR?oc=5"
+   ]
+  ],
+  "first_seen": "20261126-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-25",
+  "ko": "호르무즈해협 동쪽서 '규정위반' 유조선, 기뢰 접촉 후 화재 — 이란 해군 발표, 선박 운항불능 상태",
+  "en": "Tanker 'violating regulations' catches fire after striking naval mine east of Strait of Hormuz — announced by Iran's Navy, vessel immobilized",
+  "ar": "ناقلة 'مخالفة للأنظمة' تشتعل فيها النيران بعد اصطدامها بلغم بحري شرق مضيق هرمز — بحسب إعلان البحرية الإيرانية، والسفينة معطلة",
+  "q": false,
+  "verified": false,
+  "confidence": "low",
+  "links": [
+   [
+    "IRNA",
+    "https://en.irna.ir/news/86332672/Violating-tanker-catches-fire-after-striking-mine-east-of-Hormuz"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249698/Violating-oil-tanker-catches-fire-east-of-Strait-of-Hormuz"
+   ]
+  ],
+  "first_seen": "20261126-0700",
   "status": "pending"
  },
  {
@@ -1694,81 +1765,6 @@
    ]
   ],
   "first_seen": "20261115-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "바레인 내무부, 잠재적 위협 경계경보 발령 — 사우디 주도 연합군 리야드 향 미사일 2발·동부 드론 2~3기 요격",
-  "en": "Bahrain Interior Ministry issues hazard alert — Saudi-led coalition intercepts 2 missiles toward Riyadh and 2-3 drones in Eastern Province",
-  "ar": "وزارة الداخلية البحرينية تصدر تحذيراً من خطر محتمل — التحالف بقيادة السعودية يعترض صاروخين باتجاه الرياض و2-3 طائرات مسيّرة في المنطقة الشرقية",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/15/saudi-led-coalition-intercepts-two-missiles-two-drones-in-riyadh?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status?traffic_source=rss"
-   ],
-   [
-    "Middle East Eye",
-    "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-intercepts-third-drone-houthis-claim-downing"
-   ]
-  ],
-  "first_seen": "20261115-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "이스라엘, 가자지구 공습으로 하마스 라파여단 사령관 사미르 아부 유니스 암살 — 하마스는 10월7일 공격 기획자 중 한명이라 확인",
-  "en": "Israel assassinates Hamas Rafah brigade commander Samir Abu Younis in Gaza strike on Khan Younis — Hamas confirms he was a planner of the Oct 7 attack",
-  "ar": "إسرائيل تغتال قائد لواء رفح في حماس سمير أبو يونس في غارة على خان يونس بغزة — حماس تؤكد أنه كان أحد مخططي هجوم 7 أكتوبر",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza?traffic_source=rss"
-   ],
-   [
-    "The Times of Israel",
-    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSlViNW9qeWFtTWFqUEEwUFFQYkUzeElheGpmUUVHdk9zd2FjRy1hYmRuVndHTU5tYnl2Wk1TMExXazZBeEszY3VaYTZKczVCN1ZNQ3RvczNyajhHZGtoWUxNcGlQTFhwd25IUGlIVkVwcmhkejlHY1UxVU95WHJZZnNsOEVIZXd2c3ZGLU9uUzl5VFJaaXh4MEQtSGx6WVhTWm9RMXpUTUNCQ2lkT1VST3padUpMZ01uRlc0?oc=5"
-   ],
-   [
-    "BBC",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5hZnVNYU9vaWdYWW5OWnNuZXNNWEM2dzE1RVM2cEJMMzk5UHFWNFZuSm5lanlLN2lHSWdSQm1keWZTRXVCcU56dHVjVzBhSW1zR1dTWFozV1c4d3VGT0HSAWNBVV95cUxOZjVfbEkzWDFZdUF4M0oyS1FsZUF2MXpISXhnODZTbHV1N0JSbEdiVVdEc1kwUXFyQ0NycE5nQjVBb0ozMkJfUWE0Q0pNczRBUmJ5MmtUWnVIZUQ3eGlJS2R4Q1E?oc=5"
-   ]
-  ],
-  "first_seen": "20261115-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "이란 IRGC, 바레인 주둔 미군기지 레이더 시설에 드론 6기 공습 — 바레인군 요격 성공, 전역 사이렌·경보 발령, 사우디·요르단 등 GCC 국가들 일제히 규탄",
-  "en": "Iran's IRGC launches six drones at US military radar site in Bahrain — Bahrain intercepts attacks, nationwide sirens sound, Saudi Arabia and Jordan among GCC states condemn strike",
-  "ar": "فيلق الحرس الثوري الإيراني يشن هجوماً بست طائرات مسيرة على منشأة رادار عسكرية أمريكية في البحرين — القوات البحرينية تعترض الهجوم، صفارات الإنذار تدوي في جميع أنحاء البلاد، والسعودية والأردن ضمن دول الخليج التي تدين الهجوم",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/video/newsfeed/2026/11/15/iran-targets-us-military-radar-in-bahrain-in-retaliatory-drone-strikes?traffic_source=rss"
-   ],
-   [
-    "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know?traffic_source=rss"
-   ],
-   [
-    "Gulf Times",
-    "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN0FLcVJxWm41NjVHalI2NmVlRHIwODg5MFhyZUlsUFQ4YXhMMFg2cmkwSTU0TnBtOFd2cnRxaU5tdmdTVmJrcWQ5ekhKT1JpLVp6dXlIbW8wazFsN1p4Wm1TU1ZtRElvNnFxRDNuN1gzN2lweUZYYlRoRTFQNVlEZXo3S1plRE5ZcG1EREhZTUV5bHZ5bUxKQ2ptbHdteExVUktsTThFNVltMF9ta1HSAbMBQVVfeXFMTmNtc2o5cVBHYTlaTXZ0TTFncnVoTkNSVHMxbm8yMDhHaHd3cTl6RVlIaXhKRTRMdEdPa002YkhzdWtIMlk2RmZIY0tpOVFiSXJEeXRIWWl6Yjlrd0MxQkVPLXZpSUhWQUt3N21ocG1xWVRFSGdfaTRtbGRoNzA5R2NiNHJrTHBiUHd6WmV5NkFQYXVSUzR0MkJCMldMNHE3YWlDT0FvNWtGNjJmSHFkU0ZqN2s?oc=5"
-   ]
-  ],
-  "first_seen": "20261115-1530",
   "status": "pending"
  }
 ]
