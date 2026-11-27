@@ -25,6 +25,90 @@
   "status": "pending"
  },
  {
+  "d": "2026-11-26",
+  "ko": "쿠웨이트 드론 공격으로 이탈리아인 2명 사망 — 쿠웨이트군, 이란 소행 지목·이란은 부인, '우크라 소행' 주장도 제기",
+  "en": "Drone attack in Kuwait kills 2 Italian nationals — Kuwaiti military blames Iran, Tehran denies and some Iranian officials suggest Ukrainian 'false flag'",
+  "ar": "هجوم بطائرة مسيّرة في الكويت يقتل مواطنَين إيطاليَين — الجيش الكويتي يتهم إيران التي تنفي وتزعم تورط أوكرانيا",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "뉴시스",
+    "https://www.newsis.com/view/NISX20261127_0003885943"
+   ],
+   [
+    "Al Jazeera",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTTJLR040dFNoUlFYaVk0RF9CMUp2d1drUlVYVkNXWGQ4MldxM0VFTE52MDMzTHNXVmpFVEZjeGUteHlCY00zWjFNcFVVX1ZWOWhLSE9GeF9tRGE2bWVVd1l4eHVtY3hUc0dnN19rbVZfN0k4cUtZcTRwQlgzbXF5NUZmM242RmU2UGVXR2tGRHM1RUNOMF9qdVZDTjBFZFZDOWp1blozM3lhU1VXcVhR0gG0AUFVX3lxTFBoVDAzRnVkN1JNUEliazROM0hQamFsWVF0a3lxZXBISlcwOFhoWndKNnlDU1JVMzZWVXM1aVVLRm1aQXNNOU45bnZIVHlqcUg2R2hCbHY4bEtHaEFqS2dmY0RmUlpRMG9MRTZoZTYxMDRLLXhaLWtla2dzNWY1b0xzMU15R0dlVkdJTW9EeFNHYkdRN0RwT2llT2ZWUVlKQ3IwS1ZrRWRHSXdwMUdGZGVkcjF0WA?oc=5"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261127-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-26",
+  "ko": "사우디 자잔 정유시설 피격 — 네팔 국적자 1명 사망, 다수 부상, 화재 발생·가동 차질",
+  "en": "Attack on Saudi Jazan refinery kills Nepali worker, injures several, sparks fire and disrupts operations",
+  "ar": "هجوم على مصفاة جازان السعودية يقتل عاملاً نيبالياً ويصيب عدة أشخاص ويشعل حريقاً ويعطل العمليات",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/26/attack-on-saudi-aramcos-jazan-refinery-kills-worker-disrupts-operations?traffic_source=rss"
+   ]
+  ],
+  "first_seen": "20261127-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-26",
+  "ko": "쿠웨이트 드론 피격 직후 UAE·GCC 사무총장, 이란 공격 규탄 공동 발표",
+  "en": "UAE and GCC Secretary-General condemn Iranian attack on Kuwait following drone strike",
+  "ar": "الإمارات والأمين العام لمجلس التعاون الخليجي يدينان الهجوم الإيراني على الكويت عقب ضربة الطائرة المسيّرة",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdmgxcVJnSmwySzZQUm84bVFSZ0EzN2tsekxPb0tOMVgwMW9EZHNFMFl5QmlfS2NwaHN5TVRuVDVScVc2NVRkX1FhNlRoVS1oaEZhVmF1QUN3N3F0MFI0cXJSVDBVV2J2c0h6TmRlV1RTMHFKSTFYYm5JMzJZNjF5eUFrZm5Ob1c4MC1qam93?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxORXdEVEdENGNTWVBhNlJJcE1hd0Z1TEx5bnRNWXF2dloyTDVKTVlzRlpGQTllNWxnc0drdVRwazE1OWkycU1VZFlMNTVpbXJRRjNuRnpRSWJ2c21YVkJhZU4xRDdKYWxxV1F1bE53TnNQajhjd2thXzg0VGZVcFhpbmhEcVB2VmI2RlR1U2Y3VDdTY0dSSW5QTl9OMFNEM3FLYy1UQ2JNc3pXblMzRDg2WlFB?oc=5"
+   ],
+   [
+    "Middle East Eye",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/several-countries-slam-suspected-iranian-attack-kuwait"
+   ]
+  ],
+  "first_seen": "20261127-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-26",
+  "ko": "후티 역량 겨냥 연합군 군사작전 발표 — 카타르통신 보도",
+  "en": "Coalition announces military operation against Houthi capabilities, Qatar News Agency reports",
+  "ar": "التحالف يعلن عملية عسكرية ضد قدرات الحوثيين وفق وكالة الأنباء القطرية",
+  "q": false,
+  "verified": true,
+  "confidence": "med",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxONVlfQVZHQVlfVGltZ2FwckZrM3REY0RzYmxJOGtLZ256UzVqZl9INnVKUlJCLVh4UHhiZFRDQzI5NEhBenk1aTZLQTBhbllVUU9XNmJnWHlrUl9ndHV2bVJBLXdUY3psUVJoRlBEOXVsU0w0Y1c4Qy1uYkNCOE90S1VPU0lTZDlnZGFFS3V2dGJZa3VmbW9OU2lka2J2QmViTTdxQlYzb2RJUmxTcno5dm9KWEM?oc=5"
+   ]
+  ],
+  "first_seen": "20261127-0700",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-25",
   "ko": "이란군, 호르무즈 해협 상공에서 미군 드론 2대(루카스·MQ-9) 격추 주장",
   "en": "Iran's military claims it destroyed two US drones (Lucas, MQ-9) over Strait of Hormuz",
@@ -1685,86 +1769,6 @@
    ]
   ],
   "first_seen": "20261116-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-16",
-  "ko": "IEA, 걸프산유국 수출 회복으로 세계 원유시장 공급과잉 전환 전망",
-  "en": "IEA forecasts global oil market to return to surplus as Gulf exports recover",
-  "ar": "الوكالة الدولية للطاقة تتوقع عودة سوق النفط العالمي إلى الفائض مع تعافي صادرات الخليج",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQVljaDkwUzhILVlYVTR6aFdubUJxUV9xMURUOWpaVkpmejFYcXZCOGUyYUlKZDhMVzJkNF9idTIyOVI4OGtMdWJiMlhVN1VKUV9qX181SUs0azJ6S2wyR2hBY3Q0cU5NaXlXaUZodFJBTFlXRjdtRkVmVGFBWFBhTTlFNWRWaUxtSF9RREF2YUluNkZyVFlybW14RlBPRFFJcFFiN3R6em84MXdKT0w0amJpSDlRbnEyYmExQ3VDVGljdw?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-16",
-  "ko": "이란 공군, 호르무즈 해협 상공에서 미군 MQ-1 드론 격추 — 이란 국방부 자체 방공시스템으로 요격 주장",
-  "en": "Iranian Army shoots down US MQ-1 drone over Strait of Hormuz — Iran claims interception with domestic air defense systems",
-  "ar": "الجيش الإيراني يسقط طائرة أمريكية مسيّرة من طراز MQ-1 فوق مضيق هرمز — تزعم إيران اعتراضها بأنظمة دفاع جوي محلية",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "Mehr News",
-    "https://en.mehrnews.com/news/249461/Iranian-Army-shoots-down-MQ-1-drone-over-Strait-of-Hormuz"
-   ]
-  ],
-  "first_seen": "20261117-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-16",
-  "ko": "바레인 법원, 이란과 연계 테러 혐의로 시아파 성직자 등 64명에 종신형 선고 — 이란 보복공격 이후 종교 탄압 논란",
-  "en": "Bahrain court sentences 64 Shia figures including clerics to life in prison on Iran-linked terror charges — sparks sectarian persecution controversy after Iran's retaliatory strikes",
-  "ar": "محكمة بحرينية تصدر أحكاماً بالسجن المؤبد على 64 من الشيعة بينهم رجال دين بتهم مرتبطة بإيران — وسط جدل حول الاضطهاد الطائفي بعد الهجمات الإيرانية الانتقامية",
-  "q": false,
-  "verified": true,
-  "confidence": "med",
-  "links": [
-   [
-    "뉴시스",
-    "https://www.newsis.com/view/NISX20261117_0003870990"
-   ],
-   [
-    "The Washington Post",
-    "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbGZSVXl2N1RfOW5qeHlqdkNTTkJ4cG95WFE3VHRucTlxQnZfUUlhWDlrMGJFS2NxYmJGLXhtQ09lZ2JPeW1sVmJYdTZRWGJxTVVDbE8yclFESTFmcUZjajUtQ2tFOTRtdEFrN0c3SGk3RE5LaWJScEFtMmFHWlZ0aUdfNU5hdWhWaGZqTFJPSXRnNXZZN3d3anlfTVdiYmNsWnc?oc=5"
-   ]
-  ],
-  "first_seen": "20261117-0700",
-  "status": "pending"
- },
- {
-  "d": "2026-11-15",
-  "ko": "미 정보당국, 이란이 전쟁 피해에도 최대 미사일 2500발 보유 추산 — 트럼프 '승리' 주장과 배치",
-  "en": "US intelligence estimates Iran retains up to 2,500 missiles despite war damage, countering Trump's 'victory' claims",
-  "ar": "الاستخبارات الأمريكية تقدر احتفاظ إيران بما يصل إلى 2500 صاروخ رغم أضرار الحرب، في تناقض مع ادعاءات ترامب بـ'الانتصار'",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRERKOGFNblFuMXowX3VMdEtEN0JqNXRJMlplZzRhYXhpTTd4RGowY0VLWDFLaWtNLU8zQ0RJZGR2NlY3clF4eW1BZ0dLMkJnYXVrQ2FMdy1ubE0tWVI1ME9FVW1kV2prT0YzY1VzTWxBcVloVllxSmEtNG9CTm83Y2thVmxQQjV0UEp0a0Ztb0k1S2h6U29UemNIdjV5a2pRUjJOX0l3TWZtcVlxVXN5RUJkMlVscHpHQ0RucA?oc=5"
-   ],
-   [
-    "WSJ",
-    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUDVwNnk4SFpaRVhKQVNBZFI3VkdXM1VQaEtPcURJT3FMUUxXaVF5NjNVOUt6U0gyY0NWeV8tQkR5cXQtT2V0OUVncDhrdlh3amRZckptN2Uzbi1yNXhteFN2S1hMbGpIZEdXLTN0YTQ5aXVkVURRWmFHTTdIS2cxUjFKWVlFY19JbmZFN3ZucXVFTkV5OV83a2xrdnFRb0VUT0x2R3N5TVJFbWZFNzF5N0hSQlVhNmpYUDExU1Njbw?oc=5"
-   ],
-   [
-    "서울신문",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14dUxjMDRhZkJTcmNZY09Bb1JKY1JpTjhaYUZkX2dkNTRKUExxSHpNZWtobHpDaTZIVzZfdmFZd1dxWnNadW1aRWpsemhzR3NOOGs4OWU3UF9oUQ?oc=5"
-   ]
-  ],
-  "first_seen": "20261115-0700",
   "status": "pending"
  }
 ]
