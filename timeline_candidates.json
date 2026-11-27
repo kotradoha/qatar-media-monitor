@@ -1,5 +1,55 @@
 [
  {
+  "d": "2026-11-27",
+  "ko": "이란 IRGC, 호르무즈해협 인근서 유조선 기뢰 피격·폭발 발표",
+  "en": "Iran's IRGC says tanker hits mine and explodes near Strait of Hormuz",
+  "ar": "الحرس الثوري الإيراني يعلن اصطدام ناقلة بلغم وانفجارها قرب مضيق هرمز",
+  "q": false,
+  "verified": false,
+  "confidence": "med",
+  "links": [
+   [
+    "The Times of Israel",
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaFd5LVdBaW01Sjk2R1lDSEZpZVJHTGhWQ2V0NjJFSUNLMDU3Q0ZpbXJ4YjU2NkMyRktsYUlXZzFJVFhWNTUzRWhxNklKd3QzUTZqMEs1VTVNcE5seEl6YkJYMFNQc1FhcVk5Y3BvOGItUDlDU252N1h1OTY1U2FJc3A1SFdqQ0hBU0IzTWpIaXE3TV9Mcm1OTlRQNVNZYjg1LVE?oc=5"
+   ],
+   [
+    "Anadolu Ajansı",
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdUVPUTlEQ05fLVA1MTNqa2tOejlucTkwaWZjZGxjWm9taWNneG12aFhKLXJqeEQ4QkdSWTYwcTBSX1VhcmlYclBkZXVOZnI3UFh1QThLeHJMbTBfU01Ia2FnTnRJb1NBcjg2c0pPeXRpNG1vejBUd2JoTGU2U2xTakp3UV9weHEzQy00RFZKS0M2bmUtMlpTWWUyWjF5NG1jZFloeUVnMEJrNWk1TVg4OXgydTYxLUFRZjBF?oc=5"
+   ],
+   [
+    "Reuters",
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTE84bXBLUG5nRzNfZjdueldwZ2FvX3JFWEgyMG1rNVpwM0gwRGdPV2VfWlZMMGJET09mNS00M2lIZVloTkMtdjZldGNRam9vNDlwdW1kc0tlTF94TmxTeFJPSzFjR0U2THMxbmdSYnJqdHZsa3NrYlBSeHBlWQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261127-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-27",
+  "ko": "국제유가, 중동 에너지시설·해상 공격 여파로 3주 만에 하락세 마침표",
+  "en": "Oil prices end three-week decline amid Middle East energy and shipping attacks",
+  "ar": "أسعار النفط تنهي تراجعها المستمر منذ ثلاثة أسابيع وسط هجمات على منشآت الطاقة والشحن في الشرق الأوسط",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "WSJ",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNElnc21mUVJWTGEwdHJtLW92M2loQ2dEUW1majlOZzhqMThGeTdYUHJiS2xfSEFIY3JQbnhZdUJjV3VtVG9HYUdYY2JaU2M0bmhIU25aQkNPa2tmSlR1N0VGUlNQekJlMEtHS1hYQWZZYmh4WXFRYndQTzNNdlFkMm1oU3NiS3VhaWw0NVFObVktazlrR0dLamM4Uy1wNkkydmFSS1hOa0pIMmdjUHR4dzc0VkZ6SjRqa3RPXw?oc=5"
+   ],
+   [
+    "서울신문",
+    "https://news.google.com/rss/articles/CBMib0FVX3lxTE0wNmR4a29Ld0FpYTNNZmtUdjZpX09NYnJubDdiUWdTek9KWnV4NTVMS3lXNlN3Yk42T1ltY20zcmkyU2pkSzNteUZGWkNEVFFDaWpvNUZhRndGazRKMjR6S2l0ZUQ0LXdiS2R2R0dqWQ?oc=5"
+   ],
+   [
+    "서울경제",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBTXA5TXU3b1k5MDQxWEcxUlZfTUtzRVh0Q25nWE0zNmJPZV9HYXVSUDBrSWlHYy14OWtwUTFlSmFiYk84WW9mWWttUkVTR0poaWfSAVNBVV95cUxOOU5JWVdCZXVaYWxKdXdoOFJ5OTk4SjFuWmVEalN1dkZ2VlpMa0J3Tm81b2N6UVc1djFIZVBnUXRiMi0xNGF6V1BKWXZYTTBsMEtmTQ?oc=5"
+   ]
+  ],
+  "first_seen": "20261127-1530",
+  "status": "pending"
+ },
+ {
   "d": "2026-11-26",
   "ko": "예멘 후티 반군, 임시수도 아덴 60km 앞까지 진격 — 정부 핵심 거점 함락 임박, 주민·국제NGO 대피 초읽기",
   "en": "Yemen's Houthi rebels advance to within 60km of interim capital Aden — government's key stronghold nears collapse, residents and NGOs brace for evacuation",
@@ -106,6 +156,52 @@
    ]
   ],
   "first_seen": "20261127-0700",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-26",
+  "ko": "쿠웨이트 드론 공격으로 이탈리아인 사망 — 이란, 배후설 전면 부인",
+  "en": "Drone attack in Kuwait kills Italian nationals — Iran denies responsibility",
+  "ar": "هجوم بطائرة مسيرة في الكويت يقتل مواطنين إيطاليين — إيران تنفي المسؤولية",
+  "q": false,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/27/italians-killed-in-kuwait-why-is-iran-denying-responsibility?traffic_source=rss"
+   ],
+   [
+    "Mehr News",
+    "https://en.mehrnews.com/news/249724/Iran-FM-rejects-role-in-suspicious-drone-attack-in-Kuwait"
+   ]
+  ],
+  "first_seen": "20261127-1530",
+  "status": "pending"
+ },
+ {
+  "d": "2026-11-26",
+  "ko": "후티, 사우디 자잔 정유시설 공격 — 네팔인 노동자 1명 사망·수명 부상, 카타르·오만 등 규탄 성명",
+  "en": "Houthi strike hits Saudi Jazan refinery — one Nepali worker killed, several injured; Qatar and Oman condemn attack",
+  "ar": "هجوم حوثي على مصفاة جازان السعودية — مقتل عامل نيبالي وإصابة عدة آخرين، وقطر وعُمان تدينان الهجوم",
+  "q": true,
+  "verified": true,
+  "confidence": "high",
+  "links": [
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZnczclpMVzg2QWUwUXlMM0RrcmdZb2pYT1JCdUlxelg0ZS10cGNvRXZsSVM4TFp5STBUTm03NVBGMWFKMWhaY0U1OHVKQWt1TmE5NTJzbldBNlVRanFBY1Rmdk9pdEt0aU1tMlJraEZnTEg5c3BuV1prbTlUOHlxVXJSU2tDcnRjUlEtWHhaSlA5ck5weDB2V2l0UVlNNGFqbXhzcC1wdlZ0T3E3UnJBMWtmWTFmWDVfWUcteGkwWWVwQQ?oc=5"
+   ],
+   [
+    "Qatar Tribune",
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZlNabWVZNWJZNnExbmltY21aTmZ1aVZIZVB2SnhnaVJBWXQ3VjYxN0hRZm5salY3WmdZSm1KWHBjZFFnOUdCckMwaG9HOUlnUjl1cXVtTU5uVnhDdnN6TnFwMHpUTXNieTZHYUZRZlZSb2VxSVlBdURNd3RVQXlqUW5NSjliaFcyQjE3NFhlV0NKY3NpaGoyRmF4MHVBV0FhZDE4UFZxSEcwSDZSa3E4ZUNEZ1ozbkpFTnBtUkxRVDBGMkJ0a1hB?oc=5"
+   ],
+   [
+    "Qatar news agency",
+    "https://news.google.com/rss/articles/CBMivgRBVV95cUxPbFdRN2p6YXVVczZKWUZldlJmdk9GUERVOExVelcyYk5iWG8wN3phOVY4RVZvZWFqbVkzT0F0QnAzTkdSZmlkQXJSbnVVSEdfNWhUZmJqTVpZRHdMSnZNcDduUllBd0JCTXh5WnNzMjBvUzgxYmxPbGhnQXcyUy00dlpDWVFjYWI1OW43SDlOWHVMMGhHSGlBbTFJbU1Zamt0ZmczQmJfNkM1TWJreVBGdVNYRzlXcExfX3VTU05Bc1BmbjVOZEt3VWlnOHZGN3IxS1FRakczMnRfRkpKdFJnUlpaUHowMDFtRGZCaXFYYnduendNem03dHlMYjFsVzAyOUItWjhpZUZWMkZwR1J6STJMb3VZYWUwNEg3ZlprT2Y0TnVIcXBzN254QVg2ZjZIdHVZMXpHaHpXa2ZzRkNWTFNvVUZnNk4wX1FXOUgyQjNsMEtJaXItUm5XbTZyeHk3NVd1WEJZNGpONGdtOTE0ZkcydXNseDZ4aW1MNkFJWElXLTZtcDBqdTBkSEFqU1JPenVrU0k0dW9vdm55SlhoZlZyaDZldkJMNUFCV3B3OVpKS1FYZV9rSTZzTE1pNjlSNjA4YU1xU3d5emw2MFlxM1NZLTFFdmNVMVI3OURIbXBOMW5mSmJ4a2VSdThOMXhwZ3l5SF9feFQtNEZjaWVuZnFzTU0zV2hlTXpNN3FzdlFxbkM0Wms1R0lSV0VyMGpkemY0ZS10SXhkMTJPVnZVZDJhV0pPWlVHX0FxT0Fn?oc=5"
+   ]
+  ],
+  "first_seen": "20261127-1530",
   "status": "pending"
  },
  {
@@ -1689,86 +1785,6 @@
    ]
   ],
   "first_seen": "20261118-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-16",
-  "ko": "이란, 바레인 미군기지 재공격 — 종전협상판 흔들 가능성 제기됨",
-  "en": "Iran attacks US base in Bahrain again — raises concerns over derailing ceasefire talks",
-  "ar": "إيران تهاجم القاعدة الأمريكية في البحرين مجدداً — مخاوف من زعزعة محادثات وقف إطلاق النار",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "한겨레",
-    "https://news.google.com/rss/articles/CBMic0FVX3lxTE1EbUFlclVOajlsQWM1S3ZzNWZzbUhrMEo2YVp2a1Z1RjhBSFlIVjhZekNsamNVeUlVazI4QkZzN0dHXzBxQnBLWVN5TUxGOXBPcDBkVnBOOWxQRVU5VFdDY1VuRVVFcTRoaVRic1puSGx2aEU?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-16",
-  "ko": "미국, 중동 항모 전력 3개로 증강 — usstheodoreroosevelt호 역내 도착",
-  "en": "US boosts carrier presence in Middle East to three — USS Theodore Roosevelt arrives in region",
-  "ar": "الولايات المتحدة تزيد وجود حاملات الطائرات في الشرق الأوسط إلى ثلاث — وصول يو إس إس ثيودور روزفلت إلى المنطقة",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "Anadolu Ajansı",
-    "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSGt1dzlFajdua3M4bDZoT3YweVZaaDBZbXUzWEdSZTBWblhVU09BUE1XVEg0UFpiODBfLXVsTnR1S2lMcVg5aF9xOFladzd6b0xjNjZIX1d0MFByaThEdWF4R1VpcC1xZDhvLTEzM2RnNUFWMjNsV284eGNxRVQ3ME5uQk11S0haVzk4ZUlDSEt1dEgxMWxkVmRITW9XQkg5eFJqbF82SE1zdFU4NERNZzFRMFc0cThta2U2Wmx5TG1US2FDMzNVZl9JUnVmUkFudzNGeVZXU2hpZw?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-16",
-  "ko": "바레인, 이란연계 테러혐의로 시아파 성직자 등 64명 무기징역·5명 징역15년 선고",
-  "en": "Bahrain sentences 64 Shiite clerics to life in prison and 5 to 15 years over Iran-linked terror charges",
-  "ar": "البحرين تحكم بالسجن المؤبد على 64 من رجال الدين الشيعة وبالسجن 15 عاماً على 5 آخرين بتهم إرهاب مرتبطة بإيران",
-  "q": false,
-  "verified": true,
-  "confidence": "high",
-  "links": [
-   [
-    "The National",
-    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVHVkbXgwNFAycXlMbjdWQ05nbHViTHdYRXpYd3U2NUZTUU5mVDFuNHFuSTM5b1doMlFFN2RSWlhNRlp0ei1Ec3hxUmM0TW9wWkxoRDNrbzZFMVVMRFctN2FSVWVGS1IzSHozZGcwc2FMSTR3NkZkOElMcnZYUmctY2MwclBmOUloU1lUdEdSZWFXbnN0NmtNZHRPWDA1UE15M00tMHZDR2pydkJwWXFJUTNCSEhoQ3VoS2VrYTF1LTBzUQ?oc=5"
-   ],
-   [
-    "Reuters",
-    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPanludnBDamtkVEE2Z001ZE5MczVVaTJMell5ZHZvSEJtcHJCaW9qMWNQS3hzRDVQVHBmWXFxUnB6MHFpN0pIRVJqV3dobWhEQ2R6QlRDdmw1R2tLZ1ROUUZGaEsxR2JfUFlhcFQ1MUJrR0JzM2luNy1SOEFzSGw1VkVRSDNtNWc0cldSR3RnTXYzRjd6RGZZaTd3UEdQOWZHeThLeGpZaURNUmc?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lV0dnVHJfcm9rYkpPYXNBLVUtWHJzOHo2cVZ2czRZWi1xc2U0QnNyamZvaDhWaXJMbFY4cnJfWDZFNG4wMGdjSnh3SndUMUI2aXJ4ZXFnUmRFemd5YUJ2cVJ3?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-1530",
-  "status": "pending"
- },
- {
-  "d": "2026-11-16",
-  "ko": "이란, 호르무즈해협 48시간 내 재개방 계획에 주변국 지지 확보 주장",
-  "en": "Iran claims neighboring countries support its plan to reopen Strait of Hormuz within 48 hours",
-  "ar": "إيران تدعي حصولها على دعم دول الجوار لخطة إعادة فتح مضيق هرمز خلال 48 ساعة",
-  "q": false,
-  "verified": false,
-  "confidence": "low",
-  "links": [
-   [
-    "YTN",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE45VEJPREdqSWFNVzdaRnJ4WVhrdFN0dUVzY0duUnl1R2ctcDFOLUlQTG9iRTBXUWUwNW9PZ0xxRTBrSXlMU2pFeHU2Z3dMNzV6R2RGUlpLRmZTREVzWHc?oc=5"
-   ],
-   [
-    "뉴스1",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBmaG5QOFlYN1BWRHlXNDFSV3k0N1Juc1hwN09DRTgyQTdHb0FsR1Q4S0VEQXpmRXNKY1g5WkdiX3E2azNSZjFwN3ZISXNDNlF0UnNyOE1BeWdWUDZrUFE?oc=5"
-   ]
-  ],
-  "first_seen": "20261116-1530",
   "status": "pending"
  }
 ]
